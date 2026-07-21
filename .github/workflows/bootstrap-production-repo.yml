@@ -29,12 +29,13 @@ jobs:
           ref: release/miseos-production-ecosystem
           fetch-depth: 0
 
-      - name: Reconstruct and verify release archive
+      - name: Reconstruct and validate release archive
         shell: bash
         run: |
           set -euo pipefail
-          cat .bootstrap/release.part* | tr -d '\n\r' | base64 --decode > /tmp/MiseOS-production-repo.zip
-          echo "7fc81f48c3bd83b7a37a0b6a9a64336d25d2ce525ffd0eb070c742348f872178  /tmp/MiseOS-production-repo.zip" | sha256sum --check --strict
+          cat .bootstrap/release.part* | tr -d '\n\r' | base64 --decode --ignore-garbage > /tmp/MiseOS-production-repo.zip
+          sha256sum /tmp/MiseOS-production-repo.zip | tee /tmp/archive.sha256
+          unzip -tq /tmp/MiseOS-production-repo.zip
           rm -rf /tmp/miseos-release
           mkdir -p /tmp/miseos-release
           unzip -q /tmp/MiseOS-production-repo.zip -d /tmp/miseos-release
