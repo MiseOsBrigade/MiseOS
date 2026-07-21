@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://miseos.dev/shimeji/sprite-pack.schema.json",
+  "title":"Shimeji Sprite Pack",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","name","version","frameSize","states","identity","runtime","provenance"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z][a-z0-9-]*$"},
+    "name":{"type":"string","minLength":1},
+    "version":{"type":"string","pattern":"^\\d+\\.\\d+\\.\\d+$"},
+    "frameSize":{"type":"object","additionalProperties":false,"required":["width","height"],"properties":{"width":{"const":128},"height":{"const":128}}},
+    "states":{"type":"object","additionalProperties":false,"required":["idle","walk","climb","fall","drag","interact","perch"],"properties":{"idle":{"type":"integer","minimum":0,"maximum":120},"walk":{"type":"integer","minimum":0,"maximum":120},"climb":{"type":"integer","minimum":0,"maximum":120},"fall":{"type":"integer","minimum":0,"maximum":120},"drag":{"type":"integer","minimum":0,"maximum":120},"interact":{"type":"integer","minimum":0,"maximum":120},"perch":{"type":"integer","minimum":0,"maximum":120}}},
+    "identity":{"type":"object","additionalProperties":false,"required":["role","squad","visualSourceStatus"],"properties":{"role":{"type":"string"},"squad":{"type":"string"},"visualSourceStatus":{"enum":["fallback","reference-backed","hand-animated"]},"referenceSource":{"type":["string","null"]}}},
+    "runtime":{"type":"object","additionalProperties":false,"required":["fallbackSafe","defaultState"],"properties":{"fallbackSafe":{"type":"boolean"},"defaultState":{"enum":["idle","walk","climb","fall","drag","interact","perch"]}}},
+    "provenance":{"type":"object","additionalProperties":false,"required":["rightsStatus","sourceHashRequired"],"properties":{"rightsStatus":{"enum":["unverified","creator-owned","licensed","approved"]},"sourceHashRequired":{"type":"boolean"},"notes":{"type":"string"}}}
+  }
+}

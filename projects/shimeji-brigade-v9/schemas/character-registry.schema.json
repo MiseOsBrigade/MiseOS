@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://miseos.dev/shimeji/character-registry.schema.json",
+  "type":"object",
+  "required":["version","characters"],
+  "properties":{"version":{"type":"string"},"characters":{"type":"array","items":{"type":"object","required":["id","name","role","squad","spriteRoot","recordKind"],"properties":{"id":{"type":"string"},"name":{"type":"string"},"role":{"type":"string"},"squad":{"type":"string"},"spriteRoot":{"type":"string"},"recordKind":{"const":"character"},"referenceSource":{"type":["string","null"]},"personality":{"type":"object"}}}}}
+}

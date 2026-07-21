@@ -1,0 +1,6 @@
+{
+  "name": "@shimeji/character-studio",
+  "version": "9.0.0",
+  "private": true,
+  "description": "Import seam for the v8 Character Studio UI."
+}
