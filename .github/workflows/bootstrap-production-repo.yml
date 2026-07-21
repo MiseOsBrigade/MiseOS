@@ -7,6 +7,12 @@ on:
     paths:
       - '.bootstrap/**'
       - '.github/workflows/bootstrap-production-repo.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.bootstrap/**'
+      - '.github/workflows/bootstrap-production-repo.yml'
   workflow_dispatch:
 
 permissions:
