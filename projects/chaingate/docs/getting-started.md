@@ -1,6 +1,6 @@
 # Getting started
 
-This guide takes a contributor from clone to a validated local workspace.
+This guide takes a contributor from clone to a validated ChainGate workspace inside the MiseOS monorepo.
 
 ## Prerequisites
 
@@ -19,15 +19,15 @@ docker compose version
 ## Install
 
 ```bash
-git clone https://github.com/GoodShyt-Group/miseos-chaingate.git
-cd miseos-chaingate
+git clone https://github.com/MiseOsBrigade/MiseOS.git
+cd MiseOS/projects/chaingate
 corepack enable
 pnpm install
 cp .env.example .env
 docker compose up -d
 ```
 
-Install dependencies only from the repository root. The pnpm workspace links internal packages.
+Install ChainGate dependencies from `projects/chaingate/`. Its local `pnpm-workspace.yaml` links the internal ChainGate packages without changing the existing MiseOS workspace.
 
 ## Validate
 
@@ -44,6 +44,8 @@ Before a pull request, run:
 ```bash
 pnpm validate
 ```
+
+The imported subtree does not yet have an active repository-root GitHub Actions workflow. Files under `projects/chaingate/.github/workflows/` are reference workflows and must be adapted into `MiseOS/.github/workflows/` before GitHub executes them.
 
 ## Execution invariant
 
