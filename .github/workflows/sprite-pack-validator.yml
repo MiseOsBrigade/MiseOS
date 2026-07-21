@@ -1,0 +1,36 @@
+name: Shimeji Sprite Pack Validator
+
+on:
+  pull_request:
+    paths:
+      - 'packages/shimeji-brigade/**'
+      - '.github/workflows/sprite-pack-validator.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'packages/shimeji-brigade/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile=false
+      - run: pnpm --filter @miseos/shimeji-brigade validate
+      - run: pnpm --filter @miseos/shimeji-brigade build:packs
+      - run: pnpm --filter @miseos/shimeji-brigade export:metadata
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shimeji-runtime-packs
+          path: packages/shimeji-brigade/exports/
+          if-no-files-found: error
