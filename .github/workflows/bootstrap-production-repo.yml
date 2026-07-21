@@ -29,36 +29,36 @@ jobs:
           ref: release/miseos-production-ecosystem
           fetch-depth: 0
 
-      - name: Reconstruct and validate release archive
+      - name: Diagnose staged archive
         shell: bash
         run: |
-          set -euo pipefail
-          cat .bootstrap/release.part* | tr -d '\n\r' | base64 --decode --ignore-garbage > /tmp/MiseOS-production-repo.zip
-          sha256sum /tmp/MiseOS-production-repo.zip | tee /tmp/archive.sha256
-          unzip -tq /tmp/MiseOS-production-repo.zip
-          rm -rf /tmp/miseos-release
-          mkdir -p /tmp/miseos-release
-          unzip -q /tmp/MiseOS-production-repo.zip -d /tmp/miseos-release
-          test -f /tmp/miseos-release/MiseOS-production-repo/README.md
-          test -f /tmp/miseos-release/MiseOS-production-repo/RELEASE-MANIFEST.json
+          set +e
+          {
+            echo "part sizes:"
+            wc -c .bootstrap/release.part*
+            echo "part git hashes:"
+            git hash-object .bootstrap/release.part*
+            cat .bootstrap/release.part* | tr -d '\n\r' > /tmp/release.b64
+            echo "base64 chars: $(wc -c < /tmp/release.b64)"
+            base64 --decode --ignore-garbage /tmp/release.b64 > /tmp/MiseOS-production-repo.zip 2>/tmp/base64.err
+            echo "decode exit: $?"
+            cat /tmp/base64.err
+            echo "zip bytes: $(wc -c < /tmp/MiseOS-production-repo.zip)"
+            echo "zip sha256: $(sha256sum /tmp/MiseOS-production-repo.zip | cut -d' ' -f1)"
+            unzip -tq /tmp/MiseOS-production-repo.zip >/tmp/unzip.out 2>&1
+            echo "unzip exit: $?"
+            cat /tmp/unzip.out
+          } > .bootstrap/diagnostics.txt
+          cat .bootstrap/diagnostics.txt
 
-      - name: Replace branch contents with production repository
-        shell: bash
-        run: |
-          set -euo pipefail
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -a /tmp/miseos-release/MiseOS-production-repo/. .
-
-      - name: Commit extracted repository
+      - name: Commit diagnostics
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "miseos-release-bot"
           git config user.email "info.miseossystems@aol.com"
-          git add --all
-          if git diff --cached --quiet; then
-            echo "No repository changes to commit."
-            exit 0
+          git add .bootstrap/diagnostics.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(bootstrap): record archive diagnostics"
+            git push origin HEAD:release/miseos-production-ecosystem
           fi
-          git commit -m "feat(gridops): publish production repository ecosystem"
-          git push origin HEAD:release/miseos-production-ecosystem
