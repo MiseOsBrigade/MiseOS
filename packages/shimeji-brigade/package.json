@@ -1,0 +1,15 @@
+{
+  "name": "@miseos/shimeji-brigade",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate-sprite-packs.mjs",
+    "build:packs": "node tools/build-runtime-packs.mjs",
+    "export:metadata": "node tools/export-mint-metadata.mjs",
+    "build": "pnpm validate && pnpm build:packs && pnpm export:metadata",
+    "test": "pnpm validate",
+    "lint": "node --check tools/validate-sprite-packs.mjs && node --check tools/build-runtime-packs.mjs && node --check tools/export-mint-metadata.mjs",
+    "typecheck": "echo 'No TypeScript sources yet'"
+  }
+}
