@@ -12,18 +12,30 @@ Shimeji Brigade Runtime
   -> load, preview, and animate validated sprite packs
 
 Shimeji Mint
-  -> rights attestation, storage, IPFS pinning, and optional publishing
+  -> rights attestation, storage, IPFS pinning, and optional Polygon publishing
 ```
 
-No wallet signing, private keys, seed phrases, or minting logic belongs in this package.
+No wallet signing, private keys, seed phrases, production credentials, or minting logic belongs in this package.
 
 ## Commands
 
 ```bash
+pnpm --filter @miseos/shimeji-brigade generate:frames
 pnpm --filter @miseos/shimeji-brigade validate
 pnpm --filter @miseos/shimeji-brigade build:packs
 pnpm --filter @miseos/shimeji-brigade export:metadata
+pnpm --filter @miseos/shimeji-brigade build
 ```
+
+## Character Studio
+
+Open the static Studio prototype at:
+
+```text
+packages/shimeji-brigade/studio/index.html
+```
+
+The Studio provides the repo-ready UI path for reference upload, crop preview, canonical 128×128 approval, motion state planning, manifest download, and validation preview.
 
 ## Pack contract
 
@@ -41,11 +53,21 @@ Frames must be transparent 128×128 PNG files named `frame_001.png`, `frame_002.
 
 ## Launch characters
 
-- **Mizu** — Ticket Alchemist
-- **Kurogami** — Chef Sentinel
+| Character | Role | Reference source | Frames |
+|---|---|---|---:|
+| Mizu | Ticket Alchemist | `IMG_5944 2.pdf` page 1 | 37 |
+| Kurogami | Chef Sentinel | `IMG_5944 2.pdf` page 2 | 37 |
 
-The current manifests define the intended frame counts, but `referenceBacked` remains `false` until approved source art and matching frames are committed. This prevents placeholder artwork from being presented as canonical character IP.
+The committed generator creates first-pass reference-backed motion frames that preserve visual role, color, and silhouette cues until final hand-drawn animation frames are approved.
 
 ## Runtime export
 
-The build step creates one runtime bundle per character plus a metadata bridge document. Runtime bundles contain only animation assets, registry data, and validation evidence.
+The build step creates one runtime bundle per character plus a metadata bridge document. Runtime bundles contain only animation assets, registry data, validation evidence, and preview config.
+
+## Brand kit
+
+Brand tokens and copy rules live under:
+
+```text
+packages/shimeji-brigade/brand/
+```
