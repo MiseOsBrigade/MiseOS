@@ -1,0 +1,38 @@
+name: Repo Steward CI
+
+on:
+  pull_request:
+    paths:
+      - "products/repo-steward/**"
+      - ".github/workflows/repo-steward-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "products/repo-steward/**"
+      - ".github/workflows/repo-steward-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: products/repo-steward
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 9.15.0 }
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+          cache-dependency-path: products/repo-steward/pnpm-lock.yaml
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm format:check
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
