@@ -1,0 +1,64 @@
+name: Bootstrap MiseOS production repository
+
+on:
+  push:
+    branches:
+      - release/miseos-production-ecosystem
+    paths:
+      - '.bootstrap/**'
+      - '.github/workflows/bootstrap-production-repo.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.bootstrap/**'
+      - '.github/workflows/bootstrap-production-repo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release branch
+        uses: actions/checkout@v4
+        with:
+          ref: release/miseos-production-ecosystem
+          fetch-depth: 0
+
+      - name: Reconstruct and validate release archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/release.part* | tr -d '\n\r' | base64 --decode --ignore-garbage > /tmp/MiseOS-production-repo.zip
+          sha256sum /tmp/MiseOS-production-repo.zip | tee /tmp/archive.sha256
+          unzip -tq /tmp/MiseOS-production-repo.zip
+          rm -rf /tmp/miseos-release
+          mkdir -p /tmp/miseos-release
+          unzip -q /tmp/MiseOS-production-repo.zip -d /tmp/miseos-release
+          test -f /tmp/miseos-release/MiseOS-production-repo/README.md
+          test -f /tmp/miseos-release/MiseOS-production-repo/RELEASE-MANIFEST.json
+
+      - name: Replace branch contents with production repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/miseos-release/MiseOS-production-repo/. .
+
+      - name: Commit extracted repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "miseos-release-bot"
+          git config user.email "info.miseossystems@aol.com"
+          git add --all
+          if git diff --cached --quiet; then
+            echo "No repository changes to commit."
+            exit 0
+          fi
+          git commit -m "feat(gridops): publish production repository ecosystem"
+          git push origin HEAD:release/miseos-production-ecosystem
