@@ -4,6 +4,18 @@
   "version": "0.8.0",
   "frameSize": { "width": 128, "height": 128 },
   "states": {
+  "role": "Chef Sentinel",
+  "frameSize": { "width": 128, "height": 128 },
+  "states": {
+    "idle": 6,
+    "walk": 8,
+    "climb": 6,
+    "fall": 4,
+    "drag": 3,
+    "interact": 6,
+    "perch": 4
+  },
+  "plannedStates": {
     "idle": 6,
     "walk": 8,
     "climb": 6,
@@ -18,4 +30,10 @@
   "visualApprovalRequired": true,
   "referenceSource": "page 2, Chef Sentinel",
   "runtime": { "engine": "shimeji-brigade", "minimumVersion": "0.8.0" }
+  "referenceBacked": true,
+  "referenceSource": "IMG_5944 2.pdf page 2 — chef character reference",
+  "derivation": {
+    "method": "procedural-reference-backed-transform-v1",
+    "note": "First-pass generated frames preserve color, role cues, silhouette, and state timing until hand-drawn animation frames are approved."
+  }
 }

@@ -12,5 +12,13 @@
     "test": "pnpm validate",
     "lint": "node --check tools/extract-sprite-assets.mjs && node --check tools/validate-sprite-packs.mjs && node --check tools/build-runtime-packs.mjs && node --check tools/export-mint-metadata.mjs",
     "typecheck": "echo 'Character Studio typecheck is maintained in the v8 studio bundle'"
+    "generate:frames": "node tools/generate-reference-frames.mjs",
+    "validate": "pnpm generate:frames && node tools/validate-sprite-packs.mjs",
+    "build:packs": "pnpm generate:frames && node tools/build-runtime-packs.mjs",
+    "export:metadata": "node tools/export-mint-metadata.mjs",
+    "build": "pnpm validate && pnpm build:packs && pnpm export:metadata",
+    "test": "pnpm validate",
+    "lint": "node --check tools/generate-reference-frames.mjs && node --check tools/validate-sprite-packs.mjs && node --check tools/build-runtime-packs.mjs && node --check tools/export-mint-metadata.mjs",
+    "typecheck": "echo 'Static studio and Node ESM tooling only'"
   }
 }
