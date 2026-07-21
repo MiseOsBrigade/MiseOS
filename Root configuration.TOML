@@ -1,0 +1,132 @@
+# mise.toml
+min_version = "2024.12.0"
+
+[tools]
+node = "22"
+pnpm = "10"
+python = "3.12"
+rust = "stable"
+
+# Repository utilities
+"github:BurntSushi/ripgrep" = "latest"
+"github:sharkdp/fd" = "latest"
+"github:jqlang/jq" = "latest"
+"github:astral-sh/ruff" = "latest"
+
+# AI and developer tooling
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:typescript" = "latest"
+"npm:turbo" = "latest"
+"npm:prettier" = "latest"
+"npm:eslint" = "latest"
+
+[env]
+MISEOS_ENV = "development"
+NODE_ENV = "development"
+PNPM_HOME = "{{env.HOME}}/.local/share/pnpm"
+
+# Keep secrets outside the repository.
+_.file = [
+  ".env",
+  ".env.local",
+]
+
+[tasks.setup]
+description = "Install tools and initialize the MiseOS workspace"
+run = """
+pnpm install
+pnpm run db:generate
+"""
+
+[tasks.dev]
+description = "Start the full MiseOS development environment"
+depends = ["setup"]
+run = "pnpm turbo run dev --parallel"
+
+[tasks.build]
+description = "Build every MiseOS package and application"
+run = "pnpm turbo run build"
+
+[tasks.check]
+description = "Run formatting, linting, type checks, and tests"
+depends = [
+  "format:check",
+  "lint",
+  "typecheck",
+  "test",
+]
+
+[tasks."format"]
+description = "Format the repository"
+run = "pnpm prettier --write ."
+
+[tasks."format:check"]
+description = "Verify repository formatting"
+run = "pnpm prettier --check ."
+
+[tasks.lint]
+description = "Lint all packages"
+run = "pnpm turbo run lint"
+
+[tasks.typecheck]
+description = "Type-check all packages"
+run = "pnpm turbo run typecheck"
+
+[tasks.test]
+description = "Run all automated tests"
+run = "pnpm turbo run test"
+
+[tasks."test:coverage"]
+description = "Run tests with coverage"
+run = "pnpm turbo run test:coverage"
+
+[tasks."db:generate"]
+description = "Generate database client and migrations"
+run = "pnpm run db:generate"
+
+[tasks."db:migrate"]
+description = "Apply local database migrations"
+run = "pnpm run db:migrate"
+
+[tasks."db:studio"]
+description = "Open the database management interface"
+run = "pnpm run db:studio"
+
+[tasks."registry:validate"]
+description = "Validate MiseOS registry and ecosystem data"
+run = "pnpm run registry:validate"
+
+[tasks."registry:import"]
+description = "Import existing registry and ecosystem datasets"
+run = "pnpm run registry:import"
+
+[tasks."brigade:guardian"]
+description = "Run Pull Request Guardian locally"
+run = "pnpm --filter @miseos/pr-guardian start"
+
+[tasks."brigade:workflow-medic"]
+description = "Run Workflow Medic locally"
+run = "pnpm --filter @miseos/workflow-medic start"
+
+[tasks."gridops:dev"]
+description = "Start the GridOps dashboard"
+run = "pnpm --filter @miseos/gridops dev"
+
+[tasks."api:dev"]
+description = "Start the MiseOS API"
+run = "pnpm --filter @miseos/api dev"
+
+[tasks."cli:dev"]
+description = "Run the MiseOS CLI in development"
+run = "pnpm --filter @miseos/cli dev"
+
+[tasks."release:check"]
+description = "Validate the repository before release"
+depends = ["check", "build", "registry:validate"]
+
+[tasks.clean]
+description = "Remove generated build artifacts"
+run = """
+pnpm turbo run clean
+rm -rf node_modules .turbo
+"""
