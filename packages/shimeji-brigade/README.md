@@ -1,6 +1,6 @@
 # Shimeji Brigade
 
-Shimeji Brigade is the visual character-runtime layer for MiseOS. It turns approved reference art into validated 128×128 sprite packs that can roam in documentation, demos, and GridOps surfaces.
+Shimeji Brigade is the visual character-runtime layer for MiseOS. Version 0.8 unifies the runtime, candidate sprite packs, reference-to-pack boundary, Character Studio direction, validation tooling, runtime exports, and brand system.
 
 ## Boundary
 
@@ -27,6 +27,7 @@ pnpm --filter @miseos/shimeji-brigade export:metadata
 pnpm --filter @miseos/shimeji-brigade build
 ```
 
+Candidate PNG frames are stored in `assets/sprite-packs-v8.tar.gz` and extracted deterministically before validation. They pass structural checks but remain visually unapproved until replaced with reference-accurate art derived from the character packet.
 ## Character Studio
 
 Open the static Studio prototype at:
@@ -39,20 +40,20 @@ The Studio provides the repo-ready UI path for reference upload, crop preview, c
 
 ## Pack contract
 
-Every character pack contains a `manifest.json` and seven required states:
+## Character mapping
 
-- `idle`
-- `walk`
-- `climb`
-- `fall`
-- `drag`
-- `interact`
-- `perch`
+- Mizu: page 1, blue-haired Ticket Alchemist
+- Kurogami: page 2, Chef Sentinel
 
-Frames must be transparent 128×128 PNG files named `frame_001.png`, `frame_002.png`, and so on.
+Each candidate pack contains 37 frames across `idle`, `walk`, `climb`, `fall`, `drag`, `interact`, and `perch`.
 
-## Launch characters
+## Integrity status
 
+- structural validation: enabled
+- PNG dimensions: 128×128
+- runtime export: enabled
+- Shimeji Mint metadata bridge: enabled
+- visual reference fidelity: human approval required
 | Character | Role | Reference source | Frames |
 |---|---|---|---:|
 | Mizu | Ticket Alchemist | `IMG_5944 2.pdf` page 1 | 37 |

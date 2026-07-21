@@ -1,0 +1,20 @@
+{
+  "name": "Shimeji Brigade Unified",
+  "version": "0.8.0",
+  "status": "candidate-validated",
+  "characters": {
+    "mizu": { "frames": 37, "referencePage": 1 },
+    "kurogami": { "frames": 37, "referencePage": 2 }
+  },
+  "verification": {
+    "spriteStructure": "passed locally",
+    "runtimePackBuild": "passed locally",
+    "metadataExport": "passed locally",
+    "visualReferenceFidelity": "human approval required"
+  },
+  "securityBoundary": {
+    "noWalletLogic": true,
+    "noPrivateKeys": true,
+    "noMintingLogic": true
+  }
+}
