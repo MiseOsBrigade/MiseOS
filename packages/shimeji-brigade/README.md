@@ -1,6 +1,6 @@
 # Shimeji Brigade
 
-Shimeji Brigade is the visual character-runtime layer for MiseOS. It turns approved reference art into validated 128×128 sprite packs that can roam in documentation, demos, and GridOps surfaces.
+Shimeji Brigade is the visual character-runtime layer for MiseOS. Version 0.8 unifies the runtime, candidate sprite packs, reference-to-pack boundary, Character Studio direction, validation tooling, runtime exports, and brand system.
 
 ## Boundary
 
@@ -12,10 +12,10 @@ Shimeji Brigade Runtime
   -> load, preview, and animate validated sprite packs
 
 Shimeji Mint
-  -> rights attestation, storage, IPFS pinning, and optional publishing
+  -> rights attestation, storage, IPFS pinning, and optional Polygon publishing
 ```
 
-No wallet signing, private keys, seed phrases, or minting logic belongs in this package.
+No wallet signing, private keys, seed phrases, RPC credentials, or minting logic belongs in this package.
 
 ## Commands
 
@@ -25,27 +25,19 @@ pnpm --filter @miseos/shimeji-brigade build:packs
 pnpm --filter @miseos/shimeji-brigade export:metadata
 ```
 
-## Pack contract
+Candidate PNG frames are stored in `assets/sprite-packs-v8.tar.gz` and extracted deterministically before validation. They pass structural checks but remain visually unapproved until replaced with reference-accurate art derived from the character packet.
 
-Every character pack contains a `manifest.json` and seven required states:
+## Character mapping
 
-- `idle`
-- `walk`
-- `climb`
-- `fall`
-- `drag`
-- `interact`
-- `perch`
+- Mizu: page 1, blue-haired Ticket Alchemist
+- Kurogami: page 2, Chef Sentinel
 
-Frames must be transparent 128×128 PNG files named `frame_001.png`, `frame_002.png`, and so on.
+Each candidate pack contains 37 frames across `idle`, `walk`, `climb`, `fall`, `drag`, `interact`, and `perch`.
 
-## Launch characters
+## Integrity status
 
-- **Mizu** — Ticket Alchemist
-- **Kurogami** — Chef Sentinel
-
-The current manifests define the intended frame counts, but `referenceBacked` remains `false` until approved source art and matching frames are committed. This prevents placeholder artwork from being presented as canonical character IP.
-
-## Runtime export
-
-The build step creates one runtime bundle per character plus a metadata bridge document. Runtime bundles contain only animation assets, registry data, and validation evidence.
+- structural validation: enabled
+- PNG dimensions: 128×128
+- runtime export: enabled
+- Shimeji Mint metadata bridge: enabled
+- visual reference fidelity: human approval required
