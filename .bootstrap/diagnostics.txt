@@ -1,0 +1,21 @@
+part sizes:
+12000 .bootstrap/release.part00
+12000 .bootstrap/release.part01
+12000 .bootstrap/release.part02
+36000 total
+part git hashes:
+112f40de9dfe70472d139be5ab37e81cb181a60e
+cda36cda98beb24ece5b859129eeea2554c3c216
+6cea92e8137feff8bb50607b386251735b158406
+base64 chars: 36000
+decode exit: 0
+zip bytes: 27000
+zip sha256: 45e83b821992f85d1c3273d214945724d9fd73e73e9be43a5cd79d5e79f2c958
+unzip exit: 9
+[/tmp/MiseOS-production-repo.zip]
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of /tmp/MiseOS-production-repo.zip or
+        /tmp/MiseOS-production-repo.zip.zip, and cannot find /tmp/MiseOS-production-repo.zip.ZIP, period.
