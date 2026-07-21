@@ -19,6 +19,7 @@ for (const character of registry.characters) {
   await writeFile(join(target, 'registry-entry.json'), JSON.stringify(character, null, 2) + '\n');
   await writeFile(join(target, 'validation-report.json'), JSON.stringify({ id: character.id, generatedAt: new Date().toISOString(), status: 'validated-by-ci' }, null, 2) + '\n');
   const zip = join(EXPORTS, `${character.id}-runtime-pack.zip`);
+  await rm(zip, { force: true });
   try {
     execFileSync('zip', ['-qr', zip, character.id], { cwd: STAGING });
     console.log(`BUILT exports/${character.id}-runtime-pack.zip`);
