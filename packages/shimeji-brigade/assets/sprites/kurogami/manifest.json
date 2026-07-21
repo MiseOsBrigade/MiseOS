@@ -4,6 +4,15 @@
   "version": "0.1.0",
   "frameSize": { "width": 128, "height": 128 },
   "states": {
+    "idle": 0,
+    "walk": 0,
+    "climb": 0,
+    "fall": 0,
+    "drag": 0,
+    "interact": 0,
+    "perch": 0
+  },
+  "plannedStates": {
     "idle": 6,
     "walk": 8,
     "climb": 6,
