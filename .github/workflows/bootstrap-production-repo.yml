@@ -1,0 +1,57 @@
+name: Bootstrap MiseOS production repository
+
+on:
+  push:
+    branches:
+      - release/miseos-production-ecosystem
+    paths:
+      - '.bootstrap/**'
+      - '.github/workflows/bootstrap-production-repo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release branch
+        uses: actions/checkout@v4
+        with:
+          ref: release/miseos-production-ecosystem
+          fetch-depth: 0
+
+      - name: Reconstruct and verify release archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/release.part* | tr -d '\n\r' | base64 --decode > /tmp/MiseOS-production-repo.zip
+          echo "7fc81f48c3bd83b7a37a0b6a9a64336d25d2ce525ffd0eb070c742348f872178  /tmp/MiseOS-production-repo.zip" | sha256sum --check --strict
+          rm -rf /tmp/miseos-release
+          mkdir -p /tmp/miseos-release
+          unzip -q /tmp/MiseOS-production-repo.zip -d /tmp/miseos-release
+          test -f /tmp/miseos-release/MiseOS-production-repo/README.md
+          test -f /tmp/miseos-release/MiseOS-production-repo/RELEASE-MANIFEST.json
+
+      - name: Replace branch contents with production repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/miseos-release/MiseOS-production-repo/. .
+
+      - name: Commit extracted repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "miseos-release-bot"
+          git config user.email "info.miseossystems@aol.com"
+          git add --all
+          if git diff --cached --quiet; then
+            echo "No repository changes to commit."
+            exit 0
+          fi
+          git commit -m "feat(gridops): publish production repository ecosystem"
+          git push origin HEAD:release/miseos-production-ecosystem

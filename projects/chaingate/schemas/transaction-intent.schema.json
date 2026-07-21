@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MiseOS Transaction Intent",
+  "type": "object",
+  "required": ["intentId", "scope", "operation", "target", "nonce", "expiresAt", "requiresHumanApproval"],
+  "properties": {
+    "intentId": { "type": "string", "format": "uuid" },
+    "scope": { "type": "string" },
+    "operation": { "enum": ["contract_write", "native_transfer", "token_transfer", "message_signature"] },
+    "target": { "type": "string" },
+    "nonce": { "type": "string", "minLength": 16 },
+    "expiresAt": { "type": "string", "format": "date-time" },
+    "requiresHumanApproval": { "const": true }
+  },
+  "additionalProperties": true
+}
