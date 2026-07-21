@@ -1,0 +1,67 @@
+name: Validate Character Import
+
+on:
+  pull_request:
+    paths:
+      - "docs/characters/**"
+      - "imports/characters/**"
+      - "schemas/**"
+      - ".github/workflows/character-import-validator.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate JSON and registry contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          required = [
+              Path('docs/characters/CHARACTER_REGISTRY_001_300.md'),
+              Path('imports/characters/source-manifest.json'),
+              Path('schemas/gridops-dashboard.schema.json'),
+              Path('schemas/metric-observation.schema.json'),
+          ]
+          for path in required:
+              if not path.is_file() or path.stat().st_size == 0:
+                  raise SystemExit(f'missing or empty: {path}')
+
+          manifest = json.loads(Path('imports/characters/source-manifest.json').read_text())
+          names = {item['source_name'] for item in manifest['sources']}
+          expected = {
+              'miseos_character_master_inventory_001_300.csv',
+              'miseos_agents_113_300.csv',
+              'IMG_5931.pdf',
+              'Branding .zip',
+              'Branding social media .zip',
+          }
+          missing = expected - names
+          if missing:
+              raise SystemExit(f'manifest missing sources: {sorted(missing)}')
+
+          for path in Path('schemas').glob('*.json'):
+              json.loads(path.read_text())
+
+          registry = Path('docs/characters/CHARACTER_REGISTRY_001_300.md').read_text()
+          for marker in ('MISE-001', 'MISE-076', 'MISE-078', 'MISE-113', 'MISE-300'):
+              if marker not in registry:
+                  raise SystemExit(f'registry missing marker: {marker}')
+
+          print('Character import proof validated.')
+          PY

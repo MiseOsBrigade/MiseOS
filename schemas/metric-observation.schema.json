@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/metric-observation.schema.json",
+  "title": "MiseOS Metric Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["observation_id", "metric_id", "value", "period_start", "period_end", "recorded_at", "confidence", "evidence", "status"],
+  "properties": {
+    "observation_id": {"type": "string", "pattern": "^obs_[A-Za-z0-9_-]+$"},
+    "metric_id": {"type": "string", "pattern": "^miseos\\.metric\\.[a-z0-9_]+$"},
+    "value": {"type": ["number", "null"]},
+    "period_start": {"type": "string", "format": "date-time"},
+    "period_end": {"type": "string", "format": "date-time"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "dimensions": {"type": "object", "additionalProperties": {"type": ["string", "number", "boolean"]}},
+    "confidence": {"type": "object", "additionalProperties": false, "required": ["score", "freshness", "completeness", "source_reliability", "calculation_reliability", "historical_stability", "independent_verification", "provenance_completeness"], "properties": {"score": {"type": "number", "minimum": 0, "maximum": 1}, "freshness": {"type": "number", "minimum": 0, "maximum": 1}, "completeness": {"type": "number", "minimum": 0, "maximum": 1}, "source_reliability": {"type": "number", "minimum": 0, "maximum": 1}, "calculation_reliability": {"type": "number", "minimum": 0, "maximum": 1}, "historical_stability": {"type": "number", "minimum": 0, "maximum": 1}, "independent_verification": {"type": "number", "minimum": 0, "maximum": 1}, "provenance_completeness": {"type": "number", "minimum": 0, "maximum": 1}}},
+    "evidence": {"type": "object", "additionalProperties": false, "required": ["source_systems", "source_record_count", "provenance_uri", "calculation_version"], "properties": {"source_systems": {"type": "array", "items": {"type": "string"}, "minItems": 1}, "source_record_count": {"type": "integer", "minimum": 0}, "provenance_uri": {"type": "string", "pattern": "^miseos://"}, "calculation_version": {"type": "string"}, "artifact_hashes": {"type": "array", "items": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"}}}},
+    "status": {"type": "string", "enum": ["green", "amber", "red", "unknown", "suppressed"]},
+    "review_status": {"type": "string", "enum": ["unreviewed", "verified", "disputed", "superseded"], "default": "unreviewed"}
+  }
+}

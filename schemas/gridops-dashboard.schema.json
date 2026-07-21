@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/gridops-dashboard.schema.json",
+  "title": "MiseOS GridOps Dashboard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dashboard_id", "title", "description", "audience", "refresh", "filters", "sections", "governance", "version"],
+  "properties": {
+    "dashboard_id": {"type": "string", "pattern": "^gridops\\.dashboard\\.[a-z0-9_]+$"},
+    "title": {"type": "string"},
+    "description": {"type": "string"},
+    "audience": {"type": "array", "items": {"type": "string", "enum": ["executive", "operator", "developer", "governance", "commercial", "customer"]}, "uniqueItems": true},
+    "refresh": {"type": "string", "enum": ["near_real_time", "hourly", "daily", "weekly"]},
+    "filters": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "label", "type"], "properties": {"id": {"type": "string"}, "label": {"type": "string"}, "type": {"type": "string", "enum": ["time_range", "select", "multi_select", "boolean"]}, "dimension": {"type": "string"}, "default": {}}}},
+    "sections": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/section"}},
+    "governance": {"type": "object", "additionalProperties": false, "required": ["hide_low_confidence", "show_provenance", "red_requires_acknowledgement"], "properties": {"hide_low_confidence": {"type": "boolean"}, "minimum_confidence": {"type": "number", "minimum": 0, "maximum": 1}, "show_provenance": {"type": "boolean"}, "red_requires_acknowledgement": {"type": "boolean"}, "canonical_ecosystem_statement": {"type": "string"}}},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"}
+  },
+  "$defs": {
+    "section": {"type": "object", "additionalProperties": false, "required": ["section_id", "title", "layout", "widgets"], "properties": {"section_id": {"type": "string"}, "title": {"type": "string"}, "layout": {"type": "object", "required": ["columns"], "properties": {"columns": {"type": "integer", "minimum": 1, "maximum": 24}}}, "widgets": {"type": "array", "items": {"$ref": "#/$defs/widget"}}}},
+    "widget": {"type": "object", "additionalProperties": false, "required": ["widget_id", "title", "type", "metric_ids", "position"], "properties": {"widget_id": {"type": "string"}, "title": {"type": "string"}, "type": {"type": "string", "enum": ["scorecard", "gauge", "timeseries", "bar", "table", "heatmap", "risk_matrix", "event_stream", "funnel", "text"]}, "metric_ids": {"type": "array", "items": {"type": "string", "pattern": "^miseos\\.metric\\.[a-z0-9_]+$"}}, "position": {"type": "object", "required": ["x", "y", "w", "h"], "properties": {"x": {"type": "integer", "minimum": 0}, "y": {"type": "integer", "minimum": 0}, "w": {"type": "integer", "minimum": 1, "maximum": 24}, "h": {"type": "integer", "minimum": 1}}}, "group_by": {"type": "array", "items": {"type": "string"}}, "sort": {"type": "string"}, "limit": {"type": "integer", "minimum": 1}, "show_confidence": {"type": "boolean", "default": true}, "show_trend": {"type": "boolean", "default": true}, "drilldown_uri": {"type": "string"}, "description": {"type": "string"}}}
+  }
+}
