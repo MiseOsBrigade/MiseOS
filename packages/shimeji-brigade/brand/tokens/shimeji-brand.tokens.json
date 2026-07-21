@@ -1,0 +1,25 @@
+{
+  "brand": {
+    "name": "Shimeji Brigade",
+    "version": "0.8.0",
+    "tagline": "Tiny agents. Big motion.",
+    "positioning": "A creator studio and runtime for reference-backed autonomous sprite characters."
+  },
+  "colors": {
+    "void": "#050713",
+    "midnight": "#0B1020",
+    "forest": "#124734",
+    "charcoalGreen": "#0F2F25",
+    "mint": "#38D39F",
+    "signalTeal": "#1E9BB8",
+    "ticketCyan": "#7DD3FC",
+    "sunOrange": "#E97B22",
+    "softGold": "#F2C94C",
+    "cream": "#F6F1E7",
+    "warningRed": "#FF5E57"
+  },
+  "voice": {
+    "traits": ["playful", "technical", "creator-first", "clear", "trustworthy"],
+    "avoid": ["crypto hype", "vague AI language", "overpromising", "wallet-first messaging"]
+  }
+}
