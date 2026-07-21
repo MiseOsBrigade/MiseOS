@@ -1,11 +1,16 @@
 # Assumptions and open questions
 
-## Confirm before public release
+## Current integration
 
-1. **Repository owner and URL:** documentation assumes `GoodShyt-Group/miseos-chaingate`. Update badges, CODEOWNERS, links, and package metadata if the final owner differs.
-2. **License:** Apache-2.0 is the recommended implementation assumption. GoodShyt Group Inc. should confirm it before publication.
+ChainGate is currently maintained as the isolated `projects/chaingate/` subtree of `MiseOsBrigade/MiseOS`. A dedicated standalone repository may be created later, but it is not required for local development.
+
+## Confirm before public production release
+
+1. **Long-term repository model:** decide whether ChainGate remains a MiseOS subtree or becomes a dedicated repository. Update badges, root workflows, issue links, and package metadata when that decision changes.
+2. **License ownership:** the subtree uses Apache-2.0 with GoodShyt Group Inc. copyright language. Confirm final legal ownership and contributor terms before external package publication.
 3. **Package publication:** packages are configured as private/restricted alpha components. Decide which packages should eventually publish to npm.
 4. **MetaMask API pin:** install the current `@metamask/connect-multichain` version and adapt only `packages/metamask-adapter`.
-5. **Lockfile:** generate and commit `pnpm-lock.yaml` in a network-enabled environment, then switch CI back to `pnpm install --frozen-lockfile`.
-6. **Production chains:** Base Sepolia is the reference environment. Mainnet chain and contract allowlists remain intentionally unset.
-7. **Security contacts:** configure GitHub private vulnerability reporting and an internal escalation owner.
+5. **Lockfile:** generate and commit `pnpm-lock.yaml` in a network-enabled environment, then use `pnpm install --frozen-lockfile` in active CI.
+6. **Repository-root CI:** promote the reference workflows from `projects/chaingate/.github/workflows/` into the MiseOS root workflow directory with `projects/chaingate/**` path filters.
+7. **Production chains:** Base Sepolia is the reference environment. Mainnet chain and contract allowlists remain intentionally unset.
+8. **Security contacts:** configure GitHub private vulnerability reporting and an internal escalation owner.
