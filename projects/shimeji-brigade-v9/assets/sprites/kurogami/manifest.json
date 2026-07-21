@@ -1,0 +1,7 @@
+{
+  "id":"kurogami","name":"Kurogami","version":"0.1.0","frameSize":{"width":128,"height":128},
+  "states":{"idle":0,"walk":0,"climb":0,"fall":0,"drag":0,"interact":0,"perch":0},
+  "identity":{"role":"Chef Sentinel","squad":"Sentinels","visualSourceStatus":"fallback","referenceSource":"IMG_5944 2.pdf page 2"},
+  "runtime":{"fallbackSafe":true,"defaultState":"idle"},
+  "provenance":{"rightsStatus":"unverified","sourceHashRequired":true,"notes":"Replace fallback state with approved reference-backed assets before publication."}
+}

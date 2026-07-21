@@ -1,0 +1,6 @@
+{
+  "name": "@shimeji/pack-gallery",
+  "version": "9.0.0",
+  "private": true,
+  "description": "Gallery and validation report surface."
+}
