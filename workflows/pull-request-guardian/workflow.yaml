@@ -1,0 +1,38 @@
+apiVersion: miseos.dev/v1alpha1
+kind: Workflow
+metadata:
+  id: miseos.workflow.pull-request-guardian
+  name: Pull Request Guardian
+  version: 0.1.0
+  brand:
+    agent: miseos.agent.repo-steward
+trigger:
+  provider: github
+  events:
+    - pull_request.opened
+    - pull_request.synchronize
+permissions:
+  contents: read
+  pullRequests: write
+  checks: write
+steps:
+  - id: inspect
+    uses: miseos.action.repository-health-scan@0.1.0
+    with:
+      severityThreshold: high
+  - id: lint
+    uses: miseos.action.workflow-lint@0.1.0
+  - id: policy
+    uses: miseos.action.pull-request-policy@0.1.0
+    needs:
+      - inspect
+      - lint
+proofGate:
+  requiredEvidence:
+    - inspect.report
+    - lint.report
+    - policy.decision
+  failureMode: block
+outputs:
+  githubCheck: true
+  retainEvidenceDays: 90
