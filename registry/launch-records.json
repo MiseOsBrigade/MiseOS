@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "miseos.registry/v1alpha1",
+  "ecosystem": {
+    "characterAgents": 112,
+    "registryManifests": 23,
+    "totalItems": 135,
+    "canonicalDescription": "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items."
+  },
+  "launch": {
+    "agents": [
+      {
+        "registryId": "miseos.agent.repo-steward",
+        "kind": "agent",
+        "name": "Repo Steward",
+        "status": "published",
+        "capabilities": ["repository.inspect", "repository.health.report", "policy.evaluate"],
+        "mayInvoke": ["miseos.action.repository-health-scan"]
+      },
+      {
+        "registryId": "miseos.agent.workflow-linter",
+        "kind": "agent",
+        "name": "Workflow Linter",
+        "status": "published",
+        "capabilities": ["workflow.parse", "workflow.validate", "workflow.security.inspect"],
+        "mayInvoke": ["miseos.action.workflow-lint"]
+      },
+      {
+        "registryId": "miseos.agent.policy-engine",
+        "kind": "agent",
+        "name": "Policy Engine",
+        "status": "published",
+        "capabilities": ["policy.evaluate", "approval.require", "execution.block"],
+        "mayInvoke": ["miseos.action.pull-request-policy"]
+      },
+      {
+        "registryId": "miseos.agent.sbom-indexer",
+        "kind": "agent",
+        "name": "SBOM Indexer",
+        "status": "published",
+        "capabilities": ["dependency.inventory", "sbom.generate", "license.inventory"],
+        "mayInvoke": ["miseos.action.sbom-index"]
+      },
+      {
+        "registryId": "miseos.agent.release-sentinel",
+        "kind": "agent",
+        "name": "Release Sentinel",
+        "status": "published",
+        "capabilities": ["release.inspect", "evidence.verify", "release.block"],
+        "mayInvoke": ["miseos.action.release-readiness"]
+      }
+    ],
+    "actions": [
+      {"registryId": "miseos.action.repository-health-scan", "version": "0.1.0", "runtime": "node", "timeoutSeconds": 120},
+      {"registryId": "miseos.action.workflow-lint", "version": "0.1.0", "runtime": "node", "timeoutSeconds": 120},
+      {"registryId": "miseos.action.pull-request-policy", "version": "0.1.0", "runtime": "node", "timeoutSeconds": 60},
+      {"registryId": "miseos.action.sbom-index", "version": "0.1.0", "runtime": "container", "timeoutSeconds": 300},
+      {"registryId": "miseos.action.release-readiness", "version": "0.1.0", "runtime": "node", "timeoutSeconds": 180}
+    ],
+    "workflows": [
+      {"registryId": "miseos.workflow.pull-request-guardian", "version": "0.1.0", "status": "production_candidate"},
+      {"registryId": "miseos.workflow.repository-onboarding", "version": "0.1.0", "status": "preview"},
+      {"registryId": "miseos.workflow.release-gate", "version": "0.1.0", "status": "preview"}
+    ]
+  }
+}
