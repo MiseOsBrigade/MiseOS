@@ -4,8 +4,7 @@
 
 ### Human-approved multichain trust infrastructure for AI-assisted blockchain applications
 
-[![CI](https://github.com/GoodShyt-Group/miseos-chaingate/actions/workflows/ci.yml/badge.svg)](https://github.com/GoodShyt-Group/miseos-chaingate/actions/workflows/ci.yml)
-[![Security](https://github.com/GoodShyt-Group/miseos-chaingate/actions/workflows/security.yml/badge.svg)](https://github.com/GoodShyt-Group/miseos-chaingate/actions/workflows/security.yml)
+[![Repository](https://img.shields.io/badge/repository-MiseOS%20monorepo-124734)](https://github.com/MiseOsBrigade/MiseOS/tree/main/projects/chaingate)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D22-339933)](package.json)
 [![Status](https://img.shields.io/badge/status-alpha-orange)](CHANGELOG.md)
@@ -16,6 +15,9 @@
 
 > [!IMPORTANT]
 > ChainGate is an alpha security architecture and reference implementation. It is not audited and must not custody production private keys or move mainnet funds without independent review.
+
+> [!NOTE]
+> ChainGate currently lives at `projects/chaingate/` inside [`MiseOsBrigade/MiseOS`](https://github.com/MiseOsBrigade/MiseOS). Workflow files inside this subtree are reference definitions; GitHub executes workflows only from the repository-root `.github/workflows/` directory.
 
 ## Table of contents
 
@@ -98,7 +100,7 @@ schemas/                      JSON Schemas for external boundaries
 database/                     PostgreSQL reference schema
 docs/                         Architecture, operations, security, ADRs
 examples/                     Copyable integration examples
-.github/                      CI, security, release, issue and PR automation
+.github/                      Reference CI, security and release automation
 ```
 
 ## Quick start
@@ -112,14 +114,16 @@ examples/                     Copyable integration examples
 - Optional: Foundry for Solidity compilation and tests
 
 ```bash
-git clone https://github.com/GoodShyt-Group/miseos-chaingate.git
-cd miseos-chaingate
+git clone https://github.com/MiseOsBrigade/MiseOS.git
+cd MiseOS/projects/chaingate
 corepack enable
 pnpm install
 cp .env.example .env
 docker compose up -d
 pnpm validate
 ```
+
+The source package was imported with a deterministic archive checksum recorded in [`FILE_MANIFEST.json`](FILE_MANIFEST.json). A network-enabled environment must still generate `pnpm-lock.yaml` and run the full pnpm and Foundry validation suite.
 
 ## Example workflow
 
@@ -131,7 +135,7 @@ Upload artifact
 → create typed registerArtifact intent
 → deterministically encode calldata
 → simulate on Base Sepolia
-→ evaluate contract, value, expiry, and method policy
+→ evaluate contract, value, expiry and method policy
 → show human-readable review
 → request MetaMask signature
 → broadcast
@@ -167,7 +171,7 @@ pnpm contracts:check
 
 ## Documentation
 
-Start with the [documentation index](docs/README.md).
+Start with the [documentation index](docs/README.md). The [push-status record](PUSH_STATUS.md) describes the import state, source checksum, and remaining external gates.
 
 ## Security model
 
@@ -187,23 +191,26 @@ Provenance explains.
 - [x] MetaMask adapter boundary and EIP-6963 discovery
 - [x] Proof Registry contract and provenance workflow
 - [x] Blockscout, Stripe, Spaces, Airbyte, and OpenAI adapters
-- [x] CI, security workflows, governance files, and release process
+- [x] Governance, documentation, tests, schemas, and reference automation
+- [x] Full import into the MiseOS monorepo
+- [ ] Generate and commit the dependency lockfile
+- [ ] Promote path-filtered ChainGate workflows to the repository root
 - [ ] Pin and integrate the production MetaMask Connect package API
 - [ ] Add EVM and Solana signature verification
-- [ ] Add Foundry unit, fuzz, and invariant tests
-- [ ] Deploy Base Sepolia reference environment
+- [ ] Add complete Foundry fuzz and invariant coverage
+- [ ] Deploy the Base Sepolia reference environment
 - [ ] Add transaction simulation provider implementations
-- [ ] Add browser UI with accessible transaction previews
+- [ ] Add an accessible browser transaction-review interface
 - [ ] Add C2PA media provenance and COSE-signed release manifests
-- [ ] Complete external security audit before mainnet use
+- [ ] Complete an external security audit before mainnet use
 
 ## Contributing
 
-Changes affecting authorization, wallet sessions, signatures, contracts, or settlement require tests, threat-model notes, and a security reviewer.
+Changes affecting authorization, wallet sessions, signatures, contracts, or settlement require tests, threat-model notes, and a security reviewer. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License and support
 
-Apache-2.0 is the current implementation assumption and should be confirmed by GoodShyt Group Inc. before public release.
+The subtree is provided under [Apache-2.0](LICENSE). Final legal ownership and external package-publication terms should be confirmed by GoodShyt Group Inc. before a public production release.
 
 <div align="center">
 
