@@ -1,0 +1,8 @@
+{
+  "name": "@miseos/steward-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "miseos-steward": "dist/index.js" },
+  "scripts": { "build": "tsc -b" },
+  "dependencies": { "@miseos/steward-core": "workspace:*" }
+}
