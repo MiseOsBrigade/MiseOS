@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - 'packages/shimeji-brigade/**'
+      - '.github/workflows/sprite-pack-validator.yml'
 
 permissions:
   contents: read
@@ -26,11 +27,14 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile=false
+      - run: pnpm --filter @miseos/shimeji-brigade lint
       - run: pnpm --filter @miseos/shimeji-brigade validate
       - run: pnpm --filter @miseos/shimeji-brigade build:packs
       - run: pnpm --filter @miseos/shimeji-brigade export:metadata
       - uses: actions/upload-artifact@v4
         with:
           name: shimeji-runtime-packs
-          path: packages/shimeji-brigade/exports/
+          path: |
+            packages/shimeji-brigade/exports/
+            packages/shimeji-brigade/reports/
           if-no-files-found: error

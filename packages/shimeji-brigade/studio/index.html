@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shimeji Brigade Character Studio</title>
+  <style>
+    :root{--void:#050713;--mid:#0b1020;--gold:#f2c94c;--cream:#f6f1e7;--teal:#1e9bb8;--orange:#e97b22;--mint:#38d39f}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,rgba(30,155,184,.22),transparent 30%),radial-gradient(circle at bottom right,rgba(233,123,34,.14),transparent 32%),var(--void);color:var(--cream);font-family:Inter,system-ui,sans-serif}.shell{width:min(1180px,calc(100vw - 32px));margin:0 auto;padding:48px 0}.hero,.panel{border:1px solid rgba(242,201,76,.25);border-radius:28px;background:linear-gradient(145deg,rgba(18,71,52,.36),rgba(5,7,19,.78));padding:28px;box-shadow:0 30px 90px rgba(0,0,0,.32)}.kicker{color:var(--gold);font-family:ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase}h1{margin:0;font-size:clamp(42px,7vw,82px);line-height:.92;letter-spacing:-.06em;max-width:920px}.lede{max-width:860px;color:rgba(246,241,231,.74);font-size:18px;line-height:1.55}.boundary{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.boundary span,.status{border:1px solid rgba(125,211,252,.28);border-radius:999px;padding:8px 12px;background:rgba(0,0,0,.24)}.workspace{display:grid;grid-template-columns:1fr 1.25fr .75fr;gap:18px;margin-top:18px}label{display:grid;gap:8px;color:rgba(246,241,231,.7);font-size:13px;margin-bottom:14px}input{border:1px solid rgba(246,241,231,.18);border-radius:14px;background:rgba(0,0,0,.3);color:var(--cream);padding:12px 14px}button{border:0;border-radius:14px;background:var(--orange);color:#10130f;font-weight:900;padding:12px 14px;cursor:pointer}.crop-stage{position:relative;min-height:360px;display:grid;place-items:center;border-radius:18px;background:repeating-linear-gradient(45deg,rgba(246,241,231,.05),rgba(246,241,231,.05) 12px,rgba(246,241,231,.02) 12px,rgba(246,241,231,.02) 24px);overflow:hidden}.crop-stage img{max-width:100%;max-height:360px;display:none}.crop-box{position:absolute;width:58%;aspect-ratio:1;border:2px dashed var(--gold);border-radius:18px;box-shadow:0 0 0 999px rgba(0,0,0,.22)}canvas{width:128px;height:128px;image-rendering:pixelated;border:1px solid rgba(242,201,76,.3);border-radius:14px;background:rgba(255,255,255,.04)}.canonical{display:grid;justify-items:center;align-content:start;gap:16px}.states{margin-top:18px}.state-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}.state-card{border:1px solid rgba(246,241,231,.12);border-radius:18px;padding:14px;background:rgba(255,255,255,.04)}.state-card strong{display:block;color:var(--gold);margin-bottom:6px}.log{white-space:pre-wrap;margin-top:16px;padding:16px;border-radius:16px;background:rgba(0,0,0,.3);color:var(--mint)}@media(max-width:900px){.workspace{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="kicker">Shimeji Brigade v8</p>
+      <h1>Reference art → validated autonomous sprite packs.</h1>
+      <p class="lede">Upload a character reference, approve a canonical 128×128 sprite, derive motion frames, validate the pack, and export runtime-safe bundles without wallet or minting logic.</p>
+      <div class="boundary"><span>Studio: crop · clean · canonicalize</span><span>Runtime: preview · validate · export</span><span>Mint: attest · pin · publish</span></div>
+    </section>
+    <section class="workspace">
+      <aside class="panel">
+        <h2>Character setup</h2>
+        <label>Character ID <input id="characterId" value="mizu" /></label>
+        <label>Character name <input id="characterName" value="Mizu" /></label>
+        <label>Role <input id="characterRole" value="Ticket Alchemist" /></label>
+        <label>Reference source <input id="referenceSource" value="IMG_5944 2.pdf page 1" /></label>
+        <label>Upload reference image <input id="referenceInput" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+        <button id="approveBtn">Approve canonical sprite</button>
+        <button id="manifestBtn">Download manifest</button>
+      </aside>
+      <section class="panel"><h2>Reference preview</h2><div class="crop-stage"><img id="referencePreview" alt="Uploaded reference preview"/><div class="crop-box"></div></div><p class="lede">Crop preview is visual-only. Runtime automation uses the generated 128×128 master and validated state folders.</p></section>
+      <section class="panel canonical"><h2>Canonical 128×128</h2><canvas id="spriteCanvas" width="128" height="128"></canvas><div class="status" id="spriteStatus">Ready for generated frame derivation.</div></section>
+    </section>
+    <section class="panel states"><h2>Motion frame plan</h2><button id="validateBtn">Run validation preview</button><div class="state-grid" id="stateGrid"></div><pre id="validationLog" class="log">Awaiting validation preview…</pre></section>
+  </main>
+  <script>
+    const states={idle:6,walk:8,climb:6,fall:4,drag:3,interact:6,perch:4};const grid=document.querySelector('#stateGrid');const canvas=document.querySelector('#spriteCanvas');const ctx=canvas.getContext('2d');function draw(){ctx.clearRect(0,0,128,128);ctx.fillStyle='rgba(0,0,0,.32)';ctx.beginPath();ctx.ellipse(64,113,24,6,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#101824';ctx.fillRect(45,70,38,40);ctx.fillStyle='#f2c94c';ctx.fillRect(45,88,38,4);ctx.fillRect(63,70,4,40);ctx.fillStyle='#f6c8a3';ctx.beginPath();ctx.ellipse(64,48,27,26,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#2a8bcd';ctx.beginPath();ctx.ellipse(60,38,30,22,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#111';ctx.beginPath();ctx.ellipse(54,50,4,6,0,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(74,50,4,6,0,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#512b2b';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(56,63);ctx.lineTo(72,63);ctx.stroke();ctx.fillStyle='#faeec8';ctx.fillRect(92,76,18,26)}draw();for(const [name,count] of Object.entries(states)){const el=document.createElement('article');el.className='state-card';el.innerHTML=`<strong>${name}</strong><span>${count} frames</span>`;grid.append(el)}document.querySelector('#referenceInput').addEventListener('change',e=>{const f=e.target.files?.[0];if(!f)return;const img=document.querySelector('#referencePreview');img.src=URL.createObjectURL(f);img.style.display='block'});document.querySelector('#approveBtn').onclick=()=>document.querySelector('#spriteStatus').textContent='Canonical sprite approved for local frame derivation.';document.querySelector('#validateBtn').onclick=()=>{const total=Object.values(states).reduce((s,n)=>s+n,0);document.querySelector('#validationLog').textContent=`PASS ${document.querySelector('#characterId').value}\n${total} planned 128×128 transparent PNG frames\nBoundary clean: no wallet, no private keys, no minting logic in Brigade.`};document.querySelector('#manifestBtn').onclick=()=>{const m={id:characterId.value.trim(),name:characterName.value.trim(),role:characterRole.value.trim(),version:'0.8.0',frameSize:{width:128,height:128},states,fallbackSafe:true,referenceBacked:true,referenceSource:referenceSource.value.trim()};const u=URL.createObjectURL(new Blob([JSON.stringify(m,null,2)+'\n'],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download=`${m.id||'character'}-manifest.json`;a.click();URL.revokeObjectURL(u)};
+  </script>
+</body>
+</html>

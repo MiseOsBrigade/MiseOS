@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "2.0.0",
   "characters": [
     {
       "id": "mizu",
@@ -8,7 +8,10 @@
       "squad": "Linkers",
       "spriteRoot": "assets/sprites/mizu",
       "referenceSource": "uploaded character reference, page 1",
-      "status": "reference-pending",
+      "status": "candidate-generated",
+      "visualApprovalRequired": true,
+      "referenceSource": "IMG_5944 2.pdf page 1 — blue-haired ticket alchemist reference",
+      "status": "reference-backed-procedural-v1",
       "personality": {
         "energy": 0.62,
         "curiosity": 0.82,
@@ -25,7 +28,10 @@
       "squad": "Sentinels",
       "spriteRoot": "assets/sprites/kurogami",
       "referenceSource": "uploaded character reference, page 2",
-      "status": "reference-pending",
+      "status": "candidate-generated",
+      "visualApprovalRequired": true,
+      "referenceSource": "IMG_5944 2.pdf page 2 — chef character reference",
+      "status": "reference-backed-procedural-v1",
       "personality": {
         "energy": 0.58,
         "curiosity": 0.44,
