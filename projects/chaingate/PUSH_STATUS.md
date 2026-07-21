@@ -1,6 +1,12 @@
 # ChainGate push status
 
-This subtree records the completed MiseOS ChainGate documentation and architecture package prepared on 2026-07-21.
+The completed MiseOS ChainGate ecosystem was pushed to the canonical `MiseOsBrigade/MiseOS` repository on 2026-07-21.
+
+## Included in GitHub
+
+- Public project overview and documentation index under `projects/chaingate/`
+- Complete validated repository archive under `projects/chaingate/releases/`
+- SHA-256 checksum and extraction instructions
 
 ## Source snapshot
 
@@ -12,6 +18,4 @@ This subtree records the completed MiseOS ChainGate documentation and architectu
 
 ## Integration decision
 
-No standalone `miseos-chaingate` repository was available in the connected GitHub installation. The project is therefore staged under `projects/chaingate/` in the canonical `MiseOsBrigade/MiseOS` repository without overwriting existing MiseOS product files.
-
-The full source archive remains the authoritative import package until a dedicated repository is created.
+No standalone `miseos-chaingate` repository was available in the connected GitHub installation. ChainGate remains isolated under `projects/chaingate/`, preserving the existing MiseOS product code and history.
