@@ -10,7 +10,18 @@ MiseOsBrigade/MiseOS
     └── chaingate/
 ```
 
-The subtree now contains the application workflow, packages, Solidity contract and tests, schemas, database model, examples, scripts, governance files, documentation, and reference GitHub automation.
+The subtree contains the application workflow, packages, Solidity contract and tests, schemas, database model, examples, scripts, governance files, documentation, and reference automation.
+
+## Active repository workflows
+
+Monorepo-aware ChainGate workflows are active at the repository root:
+
+- `.github/workflows/chaingate-ci.yml`
+- `.github/workflows/chaingate-contracts.yml`
+- `.github/workflows/chaingate-security.yml`
+- `.github/workflows/chaingate-release.yml`
+
+They use `projects/chaingate/**` path filters and execute from the ChainGate subtree. Release tags use the `chaingate-v*` pattern.
 
 ## Source snapshot
 
@@ -23,14 +34,11 @@ The subtree now contains the application workflow, packages, Solidity contract a
 
 ## Integration decision
 
-No standalone `miseos-chaingate` repository was available in the connected GitHub installation. ChainGate is therefore isolated under `projects/chaingate/`, preserving the existing MiseOS product code and history.
-
-The workflow files under `projects/chaingate/.github/workflows/` are reference workflows. GitHub runs workflow files only from the repository-root `.github/workflows/` directory. Promote or adapt them at the repository root before relying on them for CI or releases.
+No standalone `miseos-chaingate` repository was available in the connected GitHub installation. ChainGate remains isolated under `projects/chaingate/`, preserving the existing MiseOS product code and history.
 
 ## Remaining external gates
 
 - Generate and commit `pnpm-lock.yaml` in a network-enabled development environment.
 - Run the complete pnpm and Foundry validation suite.
 - Pin the production MetaMask Connect SDK version.
-- Configure repository-root CI for the ChainGate subtree.
 - Complete an independent security review before mainnet use.
