@@ -1,0 +1,36 @@
+version: 1
+commands:
+  sync:
+    description: Pull the canonical GitHub state into Working Copy.
+    risk: low
+    human_confirmation: false
+
+  inspect:
+    description: Search files, symbols, status, and recent history.
+    risk: low
+    human_confirmation: false
+
+  agent_patch:
+    description: Apply an agent-generated patch for human diff review.
+    risk: medium
+    human_confirmation: true
+
+  signed_commit:
+    description: Stage reviewed changes and create a signed commit.
+    risk: high
+    human_confirmation: true
+
+  push:
+    description: Push an approved branch to GitHub.
+    risk: high
+    human_confirmation: true
+
+  validate:
+    description: Dispatch or observe repository validation in GitHub Actions.
+    risk: low
+    human_confirmation: false
+
+  release:
+    description: Start a release workflow after repository policy checks pass.
+    risk: critical
+    human_confirmation: true
