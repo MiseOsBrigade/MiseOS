@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "MiseOS",
+  "version": "1.0.0",
+  "mobileGit": {
+    "adapter": "working-copy",
+    "role": "mobile-edge-node",
+    "humanApprovalRequired": true,
+    "offlineCapable": true
+  },
+  "canonicalRemote": "github",
+  "editorHandoffs": ["textastic", "swift-playgrounds", "files"],
+  "automation": {
+    "transport": ["shortcuts", "x-callback-url"],
+    "ci": "github-actions"
+  },
+  "security": {
+    "signedCommitsRecommended": true,
+    "leastPrivilege": true,
+    "noRepositoryCredentials": true
+  }
+}
