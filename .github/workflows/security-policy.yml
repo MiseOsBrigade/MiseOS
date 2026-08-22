@@ -1,0 +1,20 @@
+name: Security Policy Validation
+
+on:
+  push:
+    branches: ["main", "security/agent-trust-upgrade"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Validate security policy
+        run: node scripts/validate-security-policy.mjs
