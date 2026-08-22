@@ -2,6 +2,31 @@
 
 MiseOS is an agent-native operating layer for coordinating repositories, automation, human approvals, and production workflows.
 
+## 2026–2030 Developer Workflow Portfolio
+
+MiseOS now includes a foundational portfolio of **10 GitHub App concepts targeting AI-fatigue, workflow exhaustion, and broken repository primitives**.
+
+The thesis is simple: as AI makes software generation cheaper, the scarce resources become **trust, review attention, verification, provenance, CI reliability, ownership, and safe automation**.
+
+### The 10-app portfolio
+
+| # | App | Problem |
+|---|---|---|
+| 1 | **Promptimus Prime** | AI-generated PR risk and review fatigue |
+| 2 | **Nit Picard** | AI review-comment noise |
+| 3 | **Flake It Till You Make It** | Flaky CI tests |
+| 4 | **Unstuck Norris** | Stuck required checks and merge queues |
+| 5 | **CODEOWNERS Noah** | Broken or orphaned ownership |
+| 6 | **Debt Vader** | Invisible PR-level technical debt |
+| 7 | **The Stacks Bunny** | Dependency-stack coordination |
+| 8 | **Cover Me Impressed** | Diff-coverage visibility |
+| 9 | **The Keymaker** | Aging secrets and rotation debt |
+| 10 | **FreshPRince of Bel-Repo** | First-contributor onboarding friction |
+
+**Full portfolio specification:** [`docs/viral-github-apps/README.md`](docs/viral-github-apps/README.md)
+
+> These are reference concepts/specifications unless an individual application repository and deployment explicitly exists. The portfolio is designed as a foundation for building toward the 2026–2030 developer-infrastructure needs rather than claiming services are already deployed.
+
 ## Working Copy + MiseOS
 
 Working Copy is the **mobile Git edge node** for MiseOS on iPhone and iPad. It gives the operator a local, offline-capable Git workspace while GitHub remains the canonical remote, CI/CD system, and governance layer.
