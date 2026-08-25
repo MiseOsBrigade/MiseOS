@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   analyze:
-    name: Analyze JavaScript/TypeScript
+    name: Analyze GitHub Actions
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,9 +24,9 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          languages: javascript-typescript
+          languages: actions
           build-mode: none
       - name: Analyze
         uses: github/codeql-action/analyze@v3
         with:
-          category: /language:javascript-typescript
+          category: /language:actions
