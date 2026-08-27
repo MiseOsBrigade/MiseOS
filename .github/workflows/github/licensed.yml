@@ -1,0 +1,9 @@
+- name: Setup github/licensed
+  uses: github/setup-licensed@v1.3.1
+  with:
+    # Authentication token to use with the GitHub API
+    github_token: # optional
+    # The github/licensed version to install
+    version: 
+    # The target install directory for the github/licensed executable
+    install-dir: # optional, default is /usr/local/bin
