@@ -1,0 +1,8 @@
+- name: MiseOS
+  
+  # You may pin to the exact commit or the version.
+  # uses: stackql/setup-stackql@2ccca03622b2c88d707460325429e096c4d81bc9
+  uses: stackql/setup-stackql@v2.3.1
+  with:
+    # Whether or not to install a wrapper to wrap subsequent calls of the `stackql` binary and expose its STDOUT, STDERR, and exit code as outputs named `stdout`, `stderr`, and `exitcode` respectively. Defaults to `true`.
+    use_wrapper: # optional, default is false
