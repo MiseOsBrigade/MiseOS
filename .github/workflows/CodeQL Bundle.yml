@@ -1,0 +1,63 @@
+- name: CodeQL Bundle
+  id: codeql-bundle
+  # Pin to specific version for reproducibility, or use commit SHA for maximum security
+  uses: advanced-security/codeql-bundle-action@v1.1.0
+  # Alternative: uses: advanced-security/codeql-bundle-action@9437ba7f33c2a978c8897fb21b2a7e0809199d20
+  
+  with:
+    # Bundle version to use (e.g., 'codeql-bundle-20220311')
+    # Leave empty/commented to use 'latest' (recommended for CI)
+    # Pin to specific version for reproducible builds in production
+    # bundle-version: 'codeql-bundle-20240101'
+    
+    # Comma-separated list of CodeQL packs to include
+    # Examples: 'codeql/java-queries', 'codeql/javascript-queries@1.2.3'
+    # Custom packs: 'my-org/my-custom-pack', 'my-org/my-pack@~1.0.0'
+    packs: ''
+    
+    # Directory containing codeql-workspace.yml
+    # Default is repository root (.)
+    # Use this if your workspace file is in a subdirectory
+    # workspace: './codeql-workspace'
+    
+    # Upload the created bundle as a workflow artifact
+    # Default: true - set to false if you only need the bundle locally
+    upload: true
+    
+    # GitHub token for API authentication
+    # Default: ${{ github.token }} - usually sufficient
+    # Use PAT with 'read:packages' scope for private CodeQL packs
+    token: ${{ github.token }}
+    
+    # Maximum concurrent pack processing jobs
+    # Default: 2 - increase for faster builds on larger runners
+    # Reduce to 1 if experiencing rate limiting or memory issues
+    concurrency-limit: 2
+
+  # Optional: Add error handling and outputs
+  continue-on-error: false
+  
+  # Optional: Conditional execution
+  # if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+# Optional: Use the bundle in subsequent steps
+# - name: Use Bundle
+#   run: |
+#     echo "Bundle path: ${{ steps.codeql-bundle.outputs.bundle-path }}"
+```
+
+**Key Enhancements Made:**
+
+| Aspect | Improvement |
+|--------|-------------|
+| **Version Pinning** | Added notes on SHA vs version tag trade-offs |
+| **Examples** | Sample values for `packs` and `bundle-version` |
+| **Token Scope** | Clarified when PAT is needed vs default token |
+| **ID Field** | Added `id` for referencing outputs in later steps |
+| **Conditionals** | Example `if` statement for workflow control |
+| **Comments** | Actionable guidance, not just descriptions |
+
+**Pro Tips:**
+- Use `bundle-version` pinning in production for reproducible security scans
+- Increase `concurrency-limit` on larger GitHub-hosted runners (4+ cores)
+- Set `upload: false` if you're pushing the bundle to a registry instead
