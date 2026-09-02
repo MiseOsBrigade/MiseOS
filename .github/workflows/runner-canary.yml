@@ -1,0 +1,19 @@
+name: Hosted Runner Canary
+
+on:
+  push:
+    branches:
+      - ietf/aid1-publication
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prove hosted runner execution
+        run: |
+          echo "runner-started=true"
+          uname -a
