@@ -18,8 +18,8 @@ Claim == [
   supersedes: 0..MaxVer
 ]
 
-VARIABLE claims
-vars == <<claims>>
+VARIABLES claims, active
+vars == <<claims, active>>
 
 SafeAuthority(c) ==
   /\ (c.authority = "allow" => /\ c.evaluation_status = "pass" /\ c.requirements_satisfied = TRUE)
@@ -51,15 +51,18 @@ Seed(id) ==
 
 TypeOK ==
   /\ DOMAIN claims = ClaimIds
+  /\ active \in ClaimIds
   /\ \A id \in ClaimIds:
        /\ Len(claims[id]) \in 1..MaxVer
        /\ \A i \in 1..Len(claims[id]): claims[id][i] \in Claim
 
 Init ==
   /\ claims = [id \in ClaimIds |-> <<Seed(id)>>]
+  /\ active \in ClaimIds
   /\ \A id \in ClaimIds: SafeAuthority(Seed(id))
 
 CreateSuccessor(id, eval, req, auth) ==
+  /\ id = active
   /\ Len(claims[id]) < MaxVer
   /\ eval \in Eval /\ req \in BOOLEAN /\ auth \in Auth
   /\ (auth = "allow" => /\ eval = "pass" /\ req = TRUE)
@@ -70,7 +73,8 @@ CreateSuccessor(id, eval, req, auth) ==
          neu == [id |-> id, ver |-> v + 1, proposition |-> old.proposition,
                  evaluation_status |-> eval, requirements_satisfied |-> req,
                  authority |-> auth, supersedes |-> v]
-     IN claims' = [claims EXCEPT ![id] = Append(@, neu)]
+     IN /\ claims' = [claims EXCEPT ![id] = Append(@, neu)]
+        /\ active' = active
 
 Next == \E id \in ClaimIds, e \in Eval, r \in BOOLEAN, a \in Auth: CreateSuccessor(id,e,r,a)
 Spec == Init /\ [][Next]_vars
