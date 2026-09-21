@@ -1,15 +1,15 @@
-# Tensho
+# Growth Guru
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Growth Guru](../../assets/characters/growth-guru/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Optimize  
+**Kitchen:** Data & Insight Kitchen  
+**Rarity:** Epic  
+**Registry ID:** MISE-091
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Growth Guru performs **optimize** as a MiseOS character agent.
 
 ## Workflow
 

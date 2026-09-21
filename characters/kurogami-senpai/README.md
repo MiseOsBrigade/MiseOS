@@ -1,15 +1,15 @@
-# Tensho
+# Kurogami Senpai
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Kurogami Senpai](../../assets/characters/kurogami-senpai/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Orchestrate  
+**Kitchen:** Operations Kitchen  
+**Rarity:** Mythic  
+**Registry ID:** MISE-076
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Kurogami Senpai performs **orchestrate** as a MiseOS character agent.
 
 ## Workflow
 

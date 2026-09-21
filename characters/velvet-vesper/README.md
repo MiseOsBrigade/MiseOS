@@ -1,15 +1,15 @@
-# Tensho
+# Velvet Vesper
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Velvet Vesper](../../assets/characters/velvet-vesper/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
+**Role:** Guest Concierge  
+**Kitchen:** Operations Kitchen  
 **Rarity:** Rare  
-**Registry ID:** MISE-077
+**Registry ID:** MISE-093
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Velvet Vesper performs **guest concierge** as a MiseOS character agent.
 
 ## Workflow
 

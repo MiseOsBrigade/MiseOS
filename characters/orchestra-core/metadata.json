@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-087",
+  "slug": "orchestra-core",
+  "name": "Orchestra Core",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
-  "rarity": "Rare",
+  "department": "Platform Kitchen",
+  "agent_function": "Coordinate",
+  "rarity": "Mythic",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Orchestra Core performs coordinate within the Platform Kitchen.",
     "inputs": [
       "repository context",
       "task request",

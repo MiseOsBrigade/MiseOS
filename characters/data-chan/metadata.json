@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-088",
+  "slug": "data-chan",
+  "name": "Data-chan",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Collect",
   "rarity": "Rare",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Data-chan performs collect within the Data & Insight Kitchen.",
     "inputs": [
       "repository context",
       "task request",

@@ -1,15 +1,15 @@
-# Tensho
+# Kaji
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Kaji](../../assets/characters/kaji/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Compute  
+**Kitchen:** Operations Kitchen  
+**Rarity:** Epic  
+**Registry ID:** MISE-079
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Kaji performs **compute** as a MiseOS character agent.
 
 ## Workflow
 

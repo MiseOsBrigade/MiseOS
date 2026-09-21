@@ -1,15 +1,15 @@
-# Tensho
+# Null-chan
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Null-chan](../../assets/characters/null-chan/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
+**Role:** Cleanse  
+**Kitchen:** Reliability Kitchen  
 **Rarity:** Rare  
-**Registry ID:** MISE-077
+**Registry ID:** MISE-081
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Null-chan performs **cleanse** as a MiseOS character agent.
 
 ## Workflow
 

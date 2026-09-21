@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-098",
+  "slug": "ladle-lumen",
+  "name": "Ladle Lumen",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
+  "department": "Operations Kitchen",
+  "agent_function": "Broth Beacon",
   "rarity": "Rare",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Ladle Lumen performs broth beacon within the Operations Kitchen.",
     "inputs": [
       "repository context",
       "task request",

@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-094",
+  "slug": "flavor-forager",
+  "name": "Flavor Forager",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
+  "department": "Operations Kitchen",
+  "agent_function": "Ingredient Scout",
   "rarity": "Rare",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Flavor Forager performs ingredient scout within the Operations Kitchen.",
     "inputs": [
       "repository context",
       "task request",

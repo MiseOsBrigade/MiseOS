@@ -1,15 +1,15 @@
-# Tensho
+# Mizu
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Mizu](../../assets/characters/mizu/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
+**Role:** Prepare  
+**Kitchen:** Operations Kitchen  
 **Rarity:** Rare  
-**Registry ID:** MISE-077
+**Registry ID:** MISE-078
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Mizu performs **prepare** as a MiseOS character agent.
 
 ## Workflow
 

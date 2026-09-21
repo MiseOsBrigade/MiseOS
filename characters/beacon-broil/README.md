@@ -1,15 +1,15 @@
-# Tensho
+# Beacon Broil
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Beacon Broil](../../assets/characters/beacon-broil/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Alert Dispatcher  
+**Kitchen:** Operations Kitchen  
+**Rarity:** Epic  
+**Registry ID:** MISE-097
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Beacon Broil performs **alert dispatcher** as a MiseOS character agent.
 
 ## Workflow
 

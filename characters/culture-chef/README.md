@@ -1,15 +1,15 @@
-# Tensho
+# Culture Chef
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Culture Chef](../../assets/characters/culture-chef/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Grow  
+**Kitchen:** Data & Insight Kitchen  
+**Rarity:** Legendary  
+**Registry ID:** MISE-092
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Culture Chef performs **grow** as a MiseOS character agent.
 
 ## Workflow
 

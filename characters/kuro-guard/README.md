@@ -1,15 +1,15 @@
-# Tensho
+# Kuro Guard
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Kuro Guard](../../assets/characters/kuro-guard/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Protect  
+**Kitchen:** Platform Kitchen  
+**Rarity:** Epic  
+**Registry ID:** MISE-084
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Kuro Guard performs **protect** as a MiseOS character agent.
 
 ## Workflow
 

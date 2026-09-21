@@ -1,15 +1,15 @@
-# Tensho
+# Crate Courier
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Crate Courier](../../assets/characters/crate-courier/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Provision Scout  
+**Kitchen:** Operations Kitchen  
+**Rarity:** Common  
+**Registry ID:** MISE-095
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Crate Courier performs **provision scout** as a MiseOS character agent.
 
 ## Workflow
 

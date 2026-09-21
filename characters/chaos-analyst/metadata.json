@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-090",
+  "slug": "chaos-analyst",
+  "name": "Chaos Analyst",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
-  "rarity": "Rare",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Learn",
+  "rarity": "Legendary",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Chaos Analyst performs learn within the Data & Insight Kitchen.",
     "inputs": [
       "repository context",
       "task request",

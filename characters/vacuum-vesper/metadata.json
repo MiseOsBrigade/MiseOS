@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-100",
+  "slug": "vacuum-vesper",
+  "name": "Vacuum Vesper",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
+  "department": "Operations Kitchen",
+  "agent_function": "Seal Keeper",
   "rarity": "Rare",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Vacuum Vesper performs seal keeper within the Operations Kitchen.",
     "inputs": [
       "repository context",
       "task request",

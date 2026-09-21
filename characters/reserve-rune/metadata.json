@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-099",
+  "slug": "reserve-rune",
+  "name": "Reserve Rune",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
-  "rarity": "Rare",
+  "department": "Operations Kitchen",
+  "agent_function": "Backup Archivist",
+  "rarity": "Epic",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Reserve Rune performs backup archivist within the Operations Kitchen.",
     "inputs": [
       "repository context",
       "task request",

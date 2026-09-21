@@ -1,15 +1,15 @@
-# Tensho
+# Ladle Lumen
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Ladle Lumen](../../assets/characters/ladle-lumen/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
+**Role:** Broth Beacon  
+**Kitchen:** Operations Kitchen  
 **Rarity:** Rare  
-**Registry ID:** MISE-077
+**Registry ID:** MISE-098
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Ladle Lumen performs **broth beacon** as a MiseOS character agent.
 
 ## Workflow
 

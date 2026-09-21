@@ -1,15 +1,15 @@
-# Tensho
+# Orchestra Core
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Orchestra Core](../../assets/characters/orchestra-core/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Coordinate  
+**Kitchen:** Platform Kitchen  
+**Rarity:** Mythic  
+**Registry ID:** MISE-087
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Orchestra Core performs **coordinate** as a MiseOS character agent.
 
 ## Workflow
 

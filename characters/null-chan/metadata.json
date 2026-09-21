@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-081",
+  "slug": "null-chan",
+  "name": "Null-chan",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
+  "department": "Reliability Kitchen",
+  "agent_function": "Cleanse",
   "rarity": "Rare",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Null-chan performs cleanse within the Reliability Kitchen.",
     "inputs": [
       "repository context",
       "task request",

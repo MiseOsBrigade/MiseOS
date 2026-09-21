@@ -1,15 +1,15 @@
-# Tensho
+# Reserve Rune
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Reserve Rune](../../assets/characters/reserve-rune/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Backup Archivist  
+**Kitchen:** Operations Kitchen  
+**Rarity:** Epic  
+**Registry ID:** MISE-099
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Reserve Rune performs **backup archivist** as a MiseOS character agent.
 
 ## Workflow
 

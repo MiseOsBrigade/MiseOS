@@ -1,15 +1,15 @@
-# Tensho
+# Ledger Ladle
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Ledger Ladle](../../assets/characters/ledger-ladle/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Cost Steward  
+**Kitchen:** Operations Kitchen  
+**Rarity:** Epic  
+**Registry ID:** MISE-096
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Ledger Ladle performs **cost steward** as a MiseOS character agent.
 
 ## Workflow
 

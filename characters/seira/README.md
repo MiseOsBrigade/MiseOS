@@ -1,15 +1,15 @@
-# Tensho
+# Seira
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Seira](../../assets/characters/seira/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Secure  
+**Kitchen:** Platform Kitchen  
+**Rarity:** Epic  
+**Registry ID:** MISE-083
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Seira performs **secure** as a MiseOS character agent.
 
 ## Workflow
 

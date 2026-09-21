@@ -1,15 +1,15 @@
-# Tensho
+# Flavor Forager
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Flavor Forager](../../assets/characters/flavor-forager/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
+**Role:** Ingredient Scout  
+**Kitchen:** Operations Kitchen  
 **Rarity:** Rare  
-**Registry ID:** MISE-077
+**Registry ID:** MISE-094
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Flavor Forager performs **ingredient scout** as a MiseOS character agent.
 
 ## Workflow
 

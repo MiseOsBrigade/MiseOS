@@ -1,15 +1,15 @@
-# Tensho
+# Vacuum Vesper
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Vacuum Vesper](../../assets/characters/vacuum-vesper/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
+**Role:** Seal Keeper  
+**Kitchen:** Operations Kitchen  
 **Rarity:** Rare  
-**Registry ID:** MISE-077
+**Registry ID:** MISE-100
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Vacuum Vesper performs **seal keeper** as a MiseOS character agent.
 
 ## Workflow
 

@@ -1,15 +1,15 @@
-# Tensho
+# Scale Oni
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Scale Oni](../../assets/characters/scale-oni/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Scale  
+**Kitchen:** Operations Kitchen  
+**Rarity:** Legendary  
+**Registry ID:** MISE-085
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Scale Oni performs **scale** as a MiseOS character agent.
 
 ## Workflow
 

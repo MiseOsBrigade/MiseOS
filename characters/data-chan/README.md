@@ -1,15 +1,15 @@
-# Tensho
+# Data-chan
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Data-chan](../../assets/characters/data-chan/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
+**Role:** Collect  
+**Kitchen:** Data & Insight Kitchen  
 **Rarity:** Rare  
-**Registry ID:** MISE-077
+**Registry ID:** MISE-088
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Data-chan performs **collect** as a MiseOS character agent.
 
 ## Workflow
 

@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-093",
+  "slug": "velvet-vesper",
+  "name": "Velvet Vesper",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
+  "department": "Operations Kitchen",
+  "agent_function": "Guest Concierge",
   "rarity": "Rare",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Velvet Vesper performs guest concierge within the Operations Kitchen.",
     "inputs": [
       "repository context",
       "task request",

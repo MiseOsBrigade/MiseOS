@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-078",
+  "slug": "mizu",
+  "name": "Mizu",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
+  "department": "Operations Kitchen",
+  "agent_function": "Prepare",
   "rarity": "Rare",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Mizu performs prepare within the Operations Kitchen.",
     "inputs": [
       "repository context",
       "task request",

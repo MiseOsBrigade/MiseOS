@@ -1,13 +1,13 @@
 {
-  "id": "MISE-086",
-  "slug": "build-kun",
-  "name": "Build-Kun",
+  "id": "MISE-092",
+  "slug": "culture-chef",
+  "name": "Culture Chef",
   "collection": "MiseOS Character Agent Registry",
-  "department": "Pipeline Kitchen",
-  "agent_function": "Build",
-  "rarity": "Rare",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Grow",
+  "rarity": "Legendary",
   "workflow": {
-    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "summary": "Culture Chef performs grow within the Data & Insight Kitchen.",
     "inputs": [
       "repository context",
       "task request",

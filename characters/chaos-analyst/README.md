@@ -1,15 +1,15 @@
-# Tensho
+# Chaos Analyst
 
-![Tensho](../../assets/characters/tensho/profile.svg)
+![Chaos Analyst](../../assets/characters/chaos-analyst/profile.svg)
 
-**Role:** Task Flow  
-**Kitchen:** Pipeline Kitchen  
-**Rarity:** Rare  
-**Registry ID:** MISE-077
+**Role:** Learn  
+**Kitchen:** Data & Insight Kitchen  
+**Rarity:** Legendary  
+**Registry ID:** MISE-090
 
 ## Mission
 
-Tensho performs **task flow** as a MiseOS character agent.
+Chaos Analyst performs **learn** as a MiseOS character agent.
 
 ## Workflow
 
