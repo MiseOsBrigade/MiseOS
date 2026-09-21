@@ -1,0 +1,25 @@
+{
+  "id": "MISE-067",
+  "slug": "cost-kaito",
+  "name": "Cost Kaito",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Cost & Efficiency Monitor",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Cost Kaito performs cost & efficiency monitor within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "MISE-099",
+  "slug": "reserve-rune",
+  "name": "Reserve Rune",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Operations Kitchen",
+  "agent_function": "Backup Archivist",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Reserve Rune performs backup archivist within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

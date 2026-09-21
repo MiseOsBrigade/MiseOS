@@ -1,0 +1,25 @@
+{
+  "id": "MISE-084",
+  "slug": "kuro-guard",
+  "name": "Kuro Guard",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Protect",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Kuro Guard performs protect within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

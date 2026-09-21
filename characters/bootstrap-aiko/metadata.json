@@ -1,0 +1,25 @@
+{
+  "id": "MISE-021",
+  "slug": "bootstrap-aiko",
+  "name": "Bootstrap Aiko",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Bootstrap Automation",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Bootstrap Aiko performs bootstrap automation within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

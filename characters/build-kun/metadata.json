@@ -1,0 +1,25 @@
+{
+  "id": "MISE-086",
+  "slug": "build-kun",
+  "name": "Build-Kun",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Pipeline Kitchen",
+  "agent_function": "Build",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

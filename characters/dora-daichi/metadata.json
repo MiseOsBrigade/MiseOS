@@ -1,0 +1,25 @@
+{
+  "id": "MISE-065",
+  "slug": "dora-daichi",
+  "name": "DORA Daichi",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Pipeline Analytics Engine",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "DORA Daichi performs pipeline analytics engine within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "MISE-087",
+  "slug": "orchestra-core",
+  "name": "Orchestra Core",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Coordinate",
+  "rarity": "Mythic",
+  "workflow": {
+    "summary": "Orchestra Core performs coordinate within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

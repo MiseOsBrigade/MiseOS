@@ -1,0 +1,25 @@
+{
+  "id": "MISE-092",
+  "slug": "culture-chef",
+  "name": "Culture Chef",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Grow",
+  "rarity": "Legendary",
+  "workflow": {
+    "summary": "Culture Chef performs grow within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

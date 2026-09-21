@@ -1,0 +1,25 @@
+{
+  "id": "MISE-098",
+  "slug": "ladle-lumen",
+  "name": "Ladle Lumen",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Operations Kitchen",
+  "agent_function": "Broth Beacon",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Ladle Lumen performs broth beacon within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
