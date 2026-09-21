@@ -1,0 +1,25 @@
+{
+  "id": "MISE-033",
+  "slug": "chaos-kaito",
+  "name": "Chaos Kaito",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Reliability Kitchen",
+  "agent_function": "Load & Chaos Profiles",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Chaos Kaito performs load & chaos profiles within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
