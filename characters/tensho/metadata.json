@@ -1,0 +1,25 @@
+{
+  "id": "MISE-016",
+  "slug": "tensho",
+  "name": "Tensho",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Pipeline Kitchen",
+  "agent_function": "Task Flow",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Tensho performs task flow within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
