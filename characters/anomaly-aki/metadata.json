@@ -1,0 +1,25 @@
+{
+  "id": "MISE-072",
+  "slug": "anomaly-aki",
+  "name": "Anomaly Aki",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Anomaly Detection Studio",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Anomaly Aki performs anomaly detection studio within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "MISE-056",
+  "slug": "incident-kitsune",
+  "name": "Incident Kitsune",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Security Kitchen",
+  "agent_function": "Security Incident Playbooks",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Incident Kitsune performs security incident playbooks within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
