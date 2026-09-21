@@ -1,0 +1,25 @@
+{
+  "id": "MISE-101",
+  "slug": "flavor-scribe",
+  "name": "Flavor Scribe",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Operations Kitchen",
+  "agent_function": "Menu Curator",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Flavor Scribe performs menu curator within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
