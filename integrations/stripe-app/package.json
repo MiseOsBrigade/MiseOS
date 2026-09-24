@@ -1,0 +1,14 @@
+{
+  "name": "@miseos/stripe-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "stripe:start": "stripe apps start",
+    "stripe:validate": "stripe apps validate",
+    "stripe:upload": "stripe apps upload",
+    "check": "node scripts/check-config.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
