@@ -1,0 +1,25 @@
+{
+  "id": "MISE-057",
+  "slug": "evidence-scribe",
+  "name": "Evidence Scribe",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Security Kitchen",
+  "agent_function": "Compliance Evidence Collector",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Evidence Scribe performs compliance evidence collector within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

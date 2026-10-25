@@ -1,0 +1,25 @@
+{
+  "id": "MISE-054",
+  "slug": "watchtower-yoru",
+  "name": "Watchtower Yoru",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Security Kitchen",
+  "agent_function": "Runtime Threat Detector",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Watchtower Yoru performs runtime threat detector within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

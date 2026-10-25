@@ -1,0 +1,27 @@
+name: Workflow Lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/**"
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  actionlint:
+    name: Lint workflow definitions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # actionlint walks .github/workflows recursively, so stray or
+      # misplaced workflow files fail here instead of silently never running.
+      - name: Lint workflow definitions
+        run: docker run --rm -v "$PWD:$PWD" -w "$PWD" rhysd/actionlint:1.7.7

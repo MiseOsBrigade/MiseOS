@@ -1,0 +1,25 @@
+{
+  "id": "MISE-048",
+  "slug": "token-toshi",
+  "name": "Token Toshi",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Security Kitchen",
+  "agent_function": "Credential Hygiene Scanner",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Token Toshi performs credential hygiene scanner within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

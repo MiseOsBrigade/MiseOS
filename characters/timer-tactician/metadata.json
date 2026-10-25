@@ -1,0 +1,25 @@
+{
+  "id": "MISE-109",
+  "slug": "timer-tactician",
+  "name": "Timer Tactician",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Operations Kitchen",
+  "agent_function": "Chrono Chef",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Timer Tactician performs chrono chef within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

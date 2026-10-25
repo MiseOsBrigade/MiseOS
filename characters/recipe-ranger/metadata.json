@@ -1,0 +1,25 @@
+{
+  "id": "MISE-110",
+  "slug": "recipe-ranger",
+  "name": "Recipe Ranger",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Operations Kitchen",
+  "agent_function": "Knowledge Pathfinder",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Recipe Ranger performs knowledge pathfinder within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

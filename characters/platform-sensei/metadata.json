@@ -1,0 +1,25 @@
+{
+  "id": "MISE-030",
+  "slug": "platform-sensei",
+  "name": "Platform Sensei",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Platform Health Board",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Platform Sensei performs platform health board within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

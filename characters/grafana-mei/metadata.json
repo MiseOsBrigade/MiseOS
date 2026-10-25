@@ -1,0 +1,25 @@
+{
+  "id": "MISE-024",
+  "slug": "grafana-mei",
+  "name": "Grafana Mei",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Observability Dashboard Templates",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Grafana Mei performs observability dashboard templates within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

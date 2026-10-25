@@ -1,0 +1,25 @@
+{
+  "id": "MISE-051",
+  "slug": "seira-vaultkeeper",
+  "name": "Seira Vaultkeeper",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Security Kitchen",
+  "agent_function": "Secrets Lifecycle Manager",
+  "rarity": "Genesis",
+  "workflow": {
+    "summary": "Seira Vaultkeeper performs secrets lifecycle manager within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
