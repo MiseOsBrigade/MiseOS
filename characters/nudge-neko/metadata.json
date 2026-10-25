@@ -1,0 +1,25 @@
+{
+  "id": "MISE-058",
+  "slug": "nudge-neko",
+  "name": "Nudge Neko",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Security Kitchen",
+  "agent_function": "Security Training Nudges",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Nudge Neko performs security training nudges within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

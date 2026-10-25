@@ -1,0 +1,25 @@
+{
+  "id": "MISE-111",
+  "slug": "portion-paladin",
+  "name": "Portion Paladin",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Operations Kitchen",
+  "agent_function": "Balance Steward",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Portion Paladin performs balance steward within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "MISE-009",
+  "slug": "nina-promoter",
+  "name": "Nina Promoter",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Pipeline Kitchen",
+  "agent_function": "Environment Promotion Gate",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Nina Promoter performs environment promotion gate within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

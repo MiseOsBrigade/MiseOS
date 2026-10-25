@@ -1,0 +1,25 @@
+{
+  "id": "MISE-061",
+  "slug": "taxonomy-taka",
+  "name": "Taxonomy Taka",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Event Taxonomy Manager",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Taxonomy Taka performs event taxonomy manager within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "MISE-028",
+  "slug": "portal-rei",
+  "name": "Portal Rei",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Self-Service Portal UI",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Portal Rei performs self-service portal ui within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

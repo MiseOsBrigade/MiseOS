@@ -1,0 +1,25 @@
+{
+  "id": "MISE-082",
+  "slug": "flash-riku",
+  "name": "Flash Riku",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Pipeline Kitchen",
+  "agent_function": "Deploy",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Flash Riku performs deploy within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

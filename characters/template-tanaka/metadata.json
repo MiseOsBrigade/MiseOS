@@ -1,0 +1,25 @@
+{
+  "id": "MISE-020",
+  "slug": "template-tanaka",
+  "name": "Template Tanaka",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Service Template Curator",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Template Tanaka performs service template curator within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

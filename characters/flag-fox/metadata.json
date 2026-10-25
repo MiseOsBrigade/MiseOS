@@ -1,0 +1,25 @@
+{
+  "id": "MISE-066",
+  "slug": "flag-fox",
+  "name": "Flag Fox",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Feature Flag Analytics",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Flag Fox performs feature flag analytics within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

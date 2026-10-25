@@ -1,0 +1,25 @@
+{
+  "id": "MISE-060",
+  "slug": "red-oni",
+  "name": "Red Oni",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Security Kitchen",
+  "agent_function": "Red Team / Chaos Security Mode",
+  "rarity": "Epic",
+  "workflow": {
+    "summary": "Red Oni performs red team / chaos security mode within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

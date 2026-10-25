@@ -1,0 +1,25 @@
+{
+  "id": "MISE-062",
+  "slug": "lake-haru",
+  "name": "Lake Haru",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Data & Insight Kitchen",
+  "agent_function": "Telemetry Ingestion Pipeline",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Lake Haru performs telemetry ingestion pipeline within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

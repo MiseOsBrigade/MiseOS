@@ -1,0 +1,25 @@
+{
+  "id": "MISE-034",
+  "slug": "capacity-kanna",
+  "name": "Capacity Kanna",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Reliability Kitchen",
+  "agent_function": "Pre-Deployment Reliability Check",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Capacity Kanna performs pre-deployment reliability check within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
