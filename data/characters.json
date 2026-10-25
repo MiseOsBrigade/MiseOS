@@ -1,0 +1,898 @@
+[
+  {
+    "number": 1,
+    "slug": "build-kun",
+    "name": "Build-Kun",
+    "profile": "characters/build-kun/README.md",
+    "metadata": "characters/build-kun/metadata.json",
+    "avatar": "assets/characters/build-kun/profile.svg"
+  },
+  {
+    "number": 2,
+    "slug": "canary-judge",
+    "name": "Canary Judge",
+    "profile": "characters/canary-judge/README.md",
+    "metadata": "characters/canary-judge/metadata.json",
+    "avatar": "assets/characters/canary-judge/profile.svg"
+  },
+  {
+    "number": 3,
+    "slug": "data-chan",
+    "name": "Data Chan",
+    "profile": "characters/data-chan/README.md",
+    "metadata": "characters/data-chan/metadata.json",
+    "avatar": "assets/characters/data-chan/profile.svg"
+  },
+  {
+    "number": 4,
+    "slug": "flash-riku",
+    "name": "Flash Riku",
+    "profile": "characters/flash-riku/README.md",
+    "metadata": "characters/flash-riku/metadata.json",
+    "avatar": "assets/characters/flash-riku/profile.svg"
+  },
+  {
+    "number": 5,
+    "slug": "flavor-scribe",
+    "name": "Flavor Scribe",
+    "profile": "characters/flavor-scribe/README.md",
+    "metadata": "characters/flavor-scribe/metadata.json",
+    "avatar": "assets/characters/flavor-scribe/profile.svg"
+  },
+  {
+    "number": 6,
+    "slug": "garnish-ghost",
+    "name": "Garnish Ghost",
+    "profile": "characters/garnish-ghost/README.md",
+    "metadata": "characters/garnish-ghost/metadata.json",
+    "avatar": "assets/characters/garnish-ghost/profile.svg"
+  },
+  {
+    "number": 7,
+    "slug": "growth-guru",
+    "name": "Growth Guru",
+    "profile": "characters/growth-guru/README.md",
+    "metadata": "characters/growth-guru/metadata.json",
+    "avatar": "assets/characters/growth-guru/profile.svg"
+  },
+  {
+    "number": 8,
+    "slug": "kaji",
+    "name": "Kaji",
+    "profile": "characters/kaji/README.md",
+    "metadata": "characters/kaji/metadata.json",
+    "avatar": "assets/characters/kaji/profile.svg"
+  },
+  {
+    "number": 9,
+    "slug": "kuro-guard",
+    "name": "Kuro Guard",
+    "profile": "characters/kuro-guard/README.md",
+    "metadata": "characters/kuro-guard/metadata.json",
+    "avatar": "assets/characters/kuro-guard/profile.svg"
+  },
+  {
+    "number": 10,
+    "slug": "ladle-lumen",
+    "name": "Ladle Lumen",
+    "profile": "characters/ladle-lumen/README.md",
+    "metadata": "characters/ladle-lumen/metadata.json",
+    "avatar": "assets/characters/ladle-lumen/profile.svg"
+  },
+  {
+    "number": 11,
+    "slug": "ledger-ladle",
+    "name": "Ledger Ladle",
+    "profile": "characters/ledger-ladle/README.md",
+    "metadata": "characters/ledger-ladle/metadata.json",
+    "avatar": "assets/characters/ledger-ladle/profile.svg"
+  },
+  {
+    "number": 12,
+    "slug": "mizu",
+    "name": "Mizu",
+    "profile": "characters/mizu/README.md",
+    "metadata": "characters/mizu/metadata.json",
+    "avatar": "assets/characters/mizu/profile.svg"
+  },
+  {
+    "number": 13,
+    "slug": "null-chan",
+    "name": "Null-chan",
+    "profile": "characters/null-chan/README.md",
+    "metadata": "characters/null-chan/metadata.json",
+    "avatar": "assets/characters/null-chan/profile.svg"
+  },
+  {
+    "number": 14,
+    "slug": "orchestra-core",
+    "name": "Orchestra Core",
+    "profile": "characters/orchestra-core/README.md",
+    "metadata": "characters/orchestra-core/metadata.json",
+    "avatar": "assets/characters/orchestra-core/profile.svg"
+  },
+  {
+    "number": 15,
+    "slug": "policy-kenji",
+    "name": "Policy Kenji",
+    "profile": "characters/policy-kenji/README.md",
+    "metadata": "characters/policy-kenji/metadata.json",
+    "avatar": "assets/characters/policy-kenji/profile.svg"
+  },
+  {
+    "number": 16,
+    "slug": "prep-pulse",
+    "name": "Prep Pulse",
+    "profile": "characters/prep-pulse/README.md",
+    "metadata": "characters/prep-pulse/metadata.json",
+    "avatar": "assets/characters/prep-pulse/profile.svg"
+  },
+  {
+    "number": 17,
+    "slug": "queue-quartz",
+    "name": "Queue Quartz",
+    "profile": "characters/queue-quartz/README.md",
+    "metadata": "characters/queue-quartz/metadata.json",
+    "avatar": "assets/characters/queue-quartz/profile.svg"
+  },
+  {
+    "number": 18,
+    "slug": "scale-oni",
+    "name": "Scale Oni",
+    "profile": "characters/scale-oni/README.md",
+    "metadata": "characters/scale-oni/metadata.json",
+    "avatar": "assets/characters/scale-oni/profile.svg"
+  },
+  {
+    "number": 19,
+    "slug": "seira",
+    "name": "Seira",
+    "profile": "characters/seira/README.md",
+    "metadata": "characters/seira/metadata.json",
+    "avatar": "assets/characters/seira/profile.svg"
+  },
+  {
+    "number": 20,
+    "slug": "tensho",
+    "name": "Tensho",
+    "profile": "characters/tensho/README.md",
+    "metadata": "characters/tensho/metadata.json",
+    "avatar": "assets/characters/tensho/profile.svg"
+  },
+  {
+    "number": 21,
+    "slug": "timer-tactician",
+    "name": "Timer Tactician",
+    "profile": "characters/timer-tactician/README.md",
+    "metadata": "characters/timer-tactician/metadata.json",
+    "avatar": "assets/characters/timer-tactician/profile.svg"
+  },
+  {
+    "number": 22,
+    "slug": "vacuum-vesper",
+    "name": "Vacuum Vesper",
+    "profile": "characters/vacuum-vesper/README.md",
+    "metadata": "characters/vacuum-vesper/metadata.json",
+    "avatar": "assets/characters/vacuum-vesper/profile.svg"
+  },
+  {
+    "number": 23,
+    "slug": "yume",
+    "name": "Yume",
+    "profile": "characters/yume/README.md",
+    "metadata": "characters/yume/metadata.json",
+    "avatar": "assets/characters/yume/profile.svg"
+  },
+  {
+    "number": 24,
+    "slug": "seira-scan",
+    "name": "Seira Scan",
+    "profile": "characters/seira-scan/README.md",
+    "metadata": "characters/seira-scan/metadata.json",
+    "avatar": "assets/characters/seira-scan/profile.svg"
+  },
+  {
+    "number": 25,
+    "slug": "beacon-broil",
+    "name": "Beacon Broil",
+    "profile": "characters/beacon-broil/README.md",
+    "metadata": "characters/beacon-broil/metadata.json",
+    "avatar": "assets/characters/beacon-broil/profile.svg"
+  },
+  {
+    "number": 26,
+    "slug": "kurogami-senpai",
+    "name": "Kurogami Senpai",
+    "profile": "characters/kurogami-senpai/README.md",
+    "metadata": "characters/kurogami-senpai/metadata.json",
+    "avatar": "assets/characters/kurogami-senpai/profile.svg"
+  },
+  {
+    "number": 27,
+    "slug": "plate-inspector",
+    "name": "Plate Inspector",
+    "profile": "characters/plate-inspector/README.md",
+    "metadata": "characters/plate-inspector/metadata.json",
+    "avatar": "assets/characters/plate-inspector/profile.svg"
+  },
+  {
+    "number": 28,
+    "slug": "reserve-rune",
+    "name": "Reserve Rune",
+    "profile": "characters/reserve-rune/README.md",
+    "metadata": "characters/reserve-rune/metadata.json",
+    "avatar": "assets/characters/reserve-rune/profile.svg"
+  },
+  {
+    "number": 29,
+    "slug": "velvet-vesper",
+    "name": "Velvet Vesper",
+    "profile": "characters/velvet-vesper/README.md",
+    "metadata": "characters/velvet-vesper/metadata.json",
+    "avatar": "assets/characters/velvet-vesper/profile.svg"
+  },
+  {
+    "number": 30,
+    "slug": "culture-chef",
+    "name": "Culture Chef",
+    "profile": "characters/culture-chef/README.md",
+    "metadata": "characters/culture-chef/metadata.json",
+    "avatar": "assets/characters/culture-chef/profile.svg"
+  },
+  {
+    "number": 31,
+    "slug": "cve-kumo",
+    "name": "CVE Kumo",
+    "profile": "characters/cve-kumo/README.md",
+    "metadata": "characters/cve-kumo/metadata.json",
+    "avatar": "assets/characters/cve-kumo/profile.svg"
+  },
+  {
+    "number": 32,
+    "slug": "hugo-matrix",
+    "name": "Hugo Matrix",
+    "profile": "characters/hugo-matrix/README.md",
+    "metadata": "characters/hugo-matrix/metadata.json",
+    "avatar": "assets/characters/hugo-matrix/profile.svg"
+  },
+  {
+    "number": 33,
+    "slug": "insight-sensei",
+    "name": "Insight Sensei",
+    "profile": "characters/insight-sensei/README.md",
+    "metadata": "characters/insight-sensei/metadata.json",
+    "avatar": "assets/characters/insight-sensei/profile.svg"
+  },
+  {
+    "number": 34,
+    "slug": "iron-hashi",
+    "name": "Iron Hashi",
+    "profile": "characters/iron-hashi/README.md",
+    "metadata": "characters/iron-hashi/metadata.json",
+    "avatar": "assets/characters/iron-hashi/profile.svg"
+  },
+  {
+    "number": 35,
+    "slug": "yume-builder",
+    "name": "Yume Builder",
+    "profile": "characters/yume-builder/README.md",
+    "metadata": "characters/yume-builder/metadata.json",
+    "avatar": "assets/characters/yume-builder/profile.svg"
+  },
+  {
+    "number": 36,
+    "slug": "alko-commit-chef",
+    "name": "Alko Commit Chef",
+    "profile": "characters/alko-commit-chef/README.md",
+    "metadata": "characters/alko-commit-chef/metadata.json",
+    "avatar": "assets/characters/alko-commit-chef/profile.svg"
+  },
+  {
+    "number": 37,
+    "slug": "crate-courier",
+    "name": "Crate Courier",
+    "profile": "characters/crate-courier/README.md",
+    "metadata": "characters/crate-courier/metadata.json",
+    "avatar": "assets/characters/crate-courier/profile.svg"
+  },
+  {
+    "number": 38,
+    "slug": "flavor-forager",
+    "name": "Flavor Forager",
+    "profile": "characters/flavor-forager/README.md",
+    "metadata": "characters/flavor-forager/metadata.json",
+    "avatar": "assets/characters/flavor-forager/profile.svg"
+  },
+  {
+    "number": 39,
+    "slug": "metrics-miko",
+    "name": "Metrics Miko",
+    "profile": "characters/metrics-miko/README.md",
+    "metadata": "characters/metrics-miko/metadata.json",
+    "avatar": "assets/characters/metrics-miko/profile.svg"
+  },
+  {
+    "number": 40,
+    "slug": "bruno-blast-radius",
+    "name": "Bruno Blast Radius",
+    "profile": "characters/bruno-blast-radius/README.md",
+    "metadata": "characters/bruno-blast-radius/metadata.json",
+    "avatar": "assets/characters/bruno-blast-radius/profile.svg"
+  },
+  {
+    "number": 41,
+    "slug": "lila-branchkeeper",
+    "name": "Lila Branchkeeper",
+    "profile": "characters/lila-branchkeeper/README.md",
+    "metadata": "characters/lila-branchkeeper/metadata.json",
+    "avatar": "assets/characters/lila-branchkeeper/profile.svg"
+  },
+  {
+    "number": 42,
+    "slug": "omar-reviewer",
+    "name": "Omar Reviewer",
+    "profile": "characters/omar-reviewer/README.md",
+    "metadata": "characters/omar-reviewer/metadata.json",
+    "avatar": "assets/characters/omar-reviewer/profile.svg"
+  },
+  {
+    "number": 43,
+    "slug": "nina-promoter",
+    "name": "Nina Promoter",
+    "profile": "characters/nina-promoter/README.md",
+    "metadata": "characters/nina-promoter/metadata.json",
+    "avatar": "assets/characters/nina-promoter/profile.svg"
+  },
+  {
+    "number": 44,
+    "slug": "release-conductor",
+    "name": "Release Conductor",
+    "profile": "characters/release-conductor/README.md",
+    "metadata": "characters/release-conductor/metadata.json",
+    "avatar": "assets/characters/release-conductor/profile.svg"
+  },
+  {
+    "number": 45,
+    "slug": "felix-rollback",
+    "name": "Felix Rollback",
+    "profile": "characters/felix-rollback/README.md",
+    "metadata": "characters/felix-rollback/metadata.json",
+    "avatar": "assets/characters/felix-rollback/profile.svg"
+  },
+  {
+    "number": 46,
+    "slug": "tariq-notesmith",
+    "name": "Tariq Notesmith",
+    "profile": "characters/tariq-notesmith/README.md",
+    "metadata": "characters/tariq-notesmith/metadata.json",
+    "avatar": "assets/characters/tariq-notesmith/profile.svg"
+  },
+  {
+    "number": 47,
+    "slug": "ivun-cache",
+    "name": "Ivun Cache",
+    "profile": "characters/ivun-cache/README.md",
+    "metadata": "characters/ivun-cache/metadata.json",
+    "avatar": "assets/characters/ivun-cache/profile.svg"
+  },
+  {
+    "number": 48,
+    "slug": "canary-taster",
+    "name": "Canary Taster",
+    "profile": "characters/canary-taster/README.md",
+    "metadata": "characters/canary-taster/metadata.json",
+    "avatar": "assets/characters/canary-taster/profile.svg"
+  },
+  {
+    "number": 49,
+    "slug": "pipeline-sensei",
+    "name": "Pipeline Sensei",
+    "profile": "characters/pipeline-sensei/README.md",
+    "metadata": "characters/pipeline-sensei/metadata.json",
+    "avatar": "assets/characters/pipeline-sensei/profile.svg"
+  },
+  {
+    "number": 50,
+    "slug": "template-tanaka",
+    "name": "Template Tanaka",
+    "profile": "characters/template-tanaka/README.md",
+    "metadata": "characters/template-tanaka/metadata.json",
+    "avatar": "assets/characters/template-tanaka/profile.svg"
+  },
+  {
+    "number": 51,
+    "slug": "bootstrap-aiko",
+    "name": "Bootstrap Aiko",
+    "profile": "characters/bootstrap-aiko/README.md",
+    "metadata": "characters/bootstrap-aiko/metadata.json",
+    "avatar": "assets/characters/bootstrap-aiko/profile.svg"
+  },
+  {
+    "number": 52,
+    "slug": "terra-forge",
+    "name": "Terra Forge",
+    "profile": "characters/terra-forge/README.md",
+    "metadata": "characters/terra-forge/metadata.json",
+    "avatar": "assets/characters/terra-forge/profile.svg"
+  },
+  {
+    "number": 53,
+    "slug": "schema-sora",
+    "name": "Schema Sora",
+    "profile": "characters/schema-sora/README.md",
+    "metadata": "characters/schema-sora/metadata.json",
+    "avatar": "assets/characters/schema-sora/profile.svg"
+  },
+  {
+    "number": 54,
+    "slug": "runtime-riku",
+    "name": "Runtime Riku",
+    "profile": "characters/runtime-riku/README.md",
+    "metadata": "characters/runtime-riku/metadata.json",
+    "avatar": "assets/characters/runtime-riku/profile.svg"
+  },
+  {
+    "number": 55,
+    "slug": "vault-hana",
+    "name": "Vault Hana",
+    "profile": "characters/vault-hana/README.md",
+    "metadata": "characters/vault-hana/metadata.json",
+    "avatar": "assets/characters/vault-hana/profile.svg"
+  },
+  {
+    "number": 56,
+    "slug": "streama",
+    "name": "Streama",
+    "profile": "characters/streama/README.md",
+    "metadata": "characters/streama/metadata.json",
+    "avatar": "assets/characters/streama/profile.svg"
+  },
+  {
+    "number": 57,
+    "slug": "preview-yuki",
+    "name": "Preview Yuki",
+    "profile": "characters/preview-yuki/README.md",
+    "metadata": "characters/preview-yuki/metadata.json",
+    "avatar": "assets/characters/preview-yuki/profile.svg"
+  },
+  {
+    "number": 58,
+    "slug": "portal-rei",
+    "name": "Portal Rei",
+    "profile": "characters/portal-rei/README.md",
+    "metadata": "characters/portal-rei/metadata.json",
+    "avatar": "assets/characters/portal-rei/profile.svg"
+  },
+  {
+    "number": 59,
+    "slug": "guardrail-goro",
+    "name": "Guardrail Goro",
+    "profile": "characters/guardrail-goro/README.md",
+    "metadata": "characters/guardrail-goro/metadata.json",
+    "avatar": "assets/characters/guardrail-goro/profile.svg"
+  },
+  {
+    "number": 60,
+    "slug": "platform-sensei",
+    "name": "Platform Sensei",
+    "profile": "characters/platform-sensei/README.md",
+    "metadata": "characters/platform-sensei/metadata.json",
+    "avatar": "assets/characters/platform-sensei/profile.svg"
+  },
+  {
+    "number": 61,
+    "slug": "slo-sage",
+    "name": "SLO Sage",
+    "profile": "characters/slo-sage/README.md",
+    "metadata": "characters/slo-sage/metadata.json",
+    "avatar": "assets/characters/slo-sage/profile.svg"
+  },
+  {
+    "number": 62,
+    "slug": "trace-sensei",
+    "name": "Trace Sensei",
+    "profile": "characters/trace-sensei/README.md",
+    "metadata": "characters/trace-sensei/metadata.json",
+    "avatar": "assets/characters/trace-sensei/profile.svg"
+  },
+  {
+    "number": 63,
+    "slug": "chaos-kaito",
+    "name": "Chaos Kaito",
+    "profile": "characters/chaos-kaito/README.md",
+    "metadata": "characters/chaos-kaito/metadata.json",
+    "avatar": "assets/characters/chaos-kaito/profile.svg"
+  },
+  {
+    "number": 64,
+    "slug": "capacity-kanna",
+    "name": "Capacity Kanna",
+    "profile": "characters/capacity-kanna/README.md",
+    "metadata": "characters/capacity-kanna/metadata.json",
+    "avatar": "assets/characters/capacity-kanna/profile.svg"
+  },
+  {
+    "number": 65,
+    "slug": "alert-akira",
+    "name": "Alert Akira",
+    "profile": "characters/alert-akira/README.md",
+    "metadata": "characters/alert-akira/metadata.json",
+    "avatar": "assets/characters/alert-akira/profile.svg"
+  },
+  {
+    "number": 66,
+    "slug": "allergen-oracle",
+    "name": "Allergen Oracle",
+    "profile": "characters/allergen-oracle/README.md",
+    "metadata": "characters/allergen-oracle/metadata.json",
+    "avatar": "assets/characters/allergen-oracle/profile.svg"
+  },
+  {
+    "number": 67,
+    "slug": "anomaly-aki",
+    "name": "Anomaly Aki",
+    "profile": "characters/anomaly-aki/README.md",
+    "metadata": "characters/anomaly-aki/metadata.json",
+    "avatar": "assets/characters/anomaly-aki/profile.svg"
+  },
+  {
+    "number": 68,
+    "slug": "apprentice-kai",
+    "name": "Apprentice Kai",
+    "profile": "characters/apprentice-kai/README.md",
+    "metadata": "characters/apprentice-kai/metadata.json",
+    "avatar": "assets/characters/apprentice-kai/profile.svg"
+  },
+  {
+    "number": 69,
+    "slug": "auditor-emi",
+    "name": "Auditor Emi",
+    "profile": "characters/auditor-emi/README.md",
+    "metadata": "characters/auditor-emi/metadata.json",
+    "avatar": "assets/characters/auditor-emi/profile.svg"
+  },
+  {
+    "number": 70,
+    "slug": "backlog-benji",
+    "name": "Backlog Benji",
+    "profile": "characters/backlog-benji/README.md",
+    "metadata": "characters/backlog-benji/metadata.json",
+    "avatar": "assets/characters/backlog-benji/profile.svg"
+  },
+  {
+    "number": 71,
+    "slug": "chaos-analyst",
+    "name": "Chaos Analyst",
+    "profile": "characters/chaos-analyst/README.md",
+    "metadata": "characters/chaos-analyst/metadata.json",
+    "avatar": "assets/characters/chaos-analyst/profile.svg"
+  },
+  {
+    "number": 72,
+    "slug": "container-kage",
+    "name": "Container Kage",
+    "profile": "characters/container-kage/README.md",
+    "metadata": "characters/container-kage/metadata.json",
+    "avatar": "assets/characters/container-kage/profile.svg"
+  },
+  {
+    "number": 73,
+    "slug": "cost-kaito",
+    "name": "Cost Kaito",
+    "profile": "characters/cost-kaito/README.md",
+    "metadata": "characters/cost-kaito/metadata.json",
+    "avatar": "assets/characters/cost-kaito/profile.svg"
+  },
+  {
+    "number": 74,
+    "slug": "dora-daichi",
+    "name": "DORA Daichi",
+    "profile": "characters/dora-daichi/README.md",
+    "metadata": "characters/dora-daichi/metadata.json",
+    "avatar": "assets/characters/dora-daichi/profile.svg"
+  },
+  {
+    "number": 75,
+    "slug": "dx-mei",
+    "name": "DX Mei",
+    "profile": "characters/dx-mei/README.md",
+    "metadata": "characters/dx-mei/metadata.json",
+    "avatar": "assets/characters/dx-mei/profile.svg"
+  },
+  {
+    "number": 76,
+    "slug": "evidence-scribe",
+    "name": "Evidence Scribe",
+    "profile": "characters/evidence-scribe/README.md",
+    "metadata": "characters/evidence-scribe/metadata.json",
+    "avatar": "assets/characters/evidence-scribe/profile.svg"
+  },
+  {
+    "number": 77,
+    "slug": "flag-fox",
+    "name": "Flag Fox",
+    "profile": "characters/flag-fox/README.md",
+    "metadata": "characters/flag-fox/metadata.json",
+    "avatar": "assets/characters/flag-fox/profile.svg"
+  },
+  {
+    "number": 78,
+    "slug": "forecast-fuji",
+    "name": "Forecast Fuji",
+    "profile": "characters/forecast-fuji/README.md",
+    "metadata": "characters/forecast-fuji/metadata.json",
+    "avatar": "assets/characters/forecast-fuji/profile.svg"
+  },
+  {
+    "number": 79,
+    "slug": "grafana-mei",
+    "name": "Grafana Mei",
+    "profile": "characters/grafana-mei/README.md",
+    "metadata": "characters/grafana-mei/metadata.json",
+    "avatar": "assets/characters/grafana-mei/profile.svg"
+  },
+  {
+    "number": 80,
+    "slug": "harvest-hex",
+    "name": "Harvest Hex",
+    "profile": "characters/harvest-hex/README.md",
+    "metadata": "characters/harvest-hex/metadata.json",
+    "avatar": "assets/characters/harvest-hex/profile.svg"
+  },
+  {
+    "number": 81,
+    "slug": "impact-ichi",
+    "name": "Impact Ichi",
+    "profile": "characters/impact-ichi/README.md",
+    "metadata": "characters/impact-ichi/metadata.json",
+    "avatar": "assets/characters/impact-ichi/profile.svg"
+  },
+  {
+    "number": 82,
+    "slug": "incident-kitsune",
+    "name": "Incident Kitsune",
+    "profile": "characters/incident-kitsune/README.md",
+    "metadata": "characters/incident-kitsune/metadata.json",
+    "avatar": "assets/characters/incident-kitsune/profile.svg"
+  },
+  {
+    "number": 83,
+    "slug": "lake-haru",
+    "name": "Lake Haru",
+    "profile": "characters/lake-haru/README.md",
+    "metadata": "characters/lake-haru/metadata.json",
+    "avatar": "assets/characters/lake-haru/profile.svg"
+  },
+  {
+    "number": 84,
+    "slug": "lattice",
+    "name": "Lattice",
+    "profile": "characters/lattice/README.md",
+    "metadata": "characters/lattice/metadata.json",
+    "avatar": "assets/characters/lattice/profile.svg"
+  },
+  {
+    "number": 85,
+    "slug": "leaderboard-leo",
+    "name": "Leaderboard Leo",
+    "profile": "characters/leaderboard-leo/README.md",
+    "metadata": "characters/leaderboard-leo/metadata.json",
+    "avatar": "assets/characters/leaderboard-leo/profile.svg"
+  },
+  {
+    "number": 86,
+    "slug": "merge-sentinel",
+    "name": "Merge Sentinel",
+    "profile": "characters/merge-sentinel/README.md",
+    "metadata": "characters/merge-sentinel/metadata.json",
+    "avatar": "assets/characters/merge-sentinel/profile.svg"
+  },
+  {
+    "number": 87,
+    "slug": "nudge-neko",
+    "name": "Nudge Neko",
+    "profile": "characters/nudge-neko/README.md",
+    "metadata": "characters/nudge-neko/metadata.json",
+    "avatar": "assets/characters/nudge-neko/profile.svg"
+  },
+  {
+    "number": 88,
+    "slug": "oncall-naomi",
+    "name": "OnCall Naomi",
+    "profile": "characters/oncall-naomi/README.md",
+    "metadata": "characters/oncall-naomi/metadata.json",
+    "avatar": "assets/characters/oncall-naomi/profile.svg"
+  },
+  {
+    "number": 89,
+    "slug": "pager-hiro",
+    "name": "Pager Hiro",
+    "profile": "characters/pager-hiro/README.md",
+    "metadata": "characters/pager-hiro/metadata.json",
+    "avatar": "assets/characters/pager-hiro/profile.svg"
+  },
+  {
+    "number": 90,
+    "slug": "pantry-paladin",
+    "name": "Pantry Paladin",
+    "profile": "characters/pantry-paladin/README.md",
+    "metadata": "characters/pantry-paladin/metadata.json",
+    "avatar": "assets/characters/pantry-paladin/profile.svg"
+  },
+  {
+    "number": 91,
+    "slug": "policy-ronin",
+    "name": "Policy Ronin",
+    "profile": "characters/policy-ronin/README.md",
+    "metadata": "characters/policy-ronin/metadata.json",
+    "avatar": "assets/characters/policy-ronin/profile.svg"
+  },
+  {
+    "number": 92,
+    "slug": "portion-paladin",
+    "name": "Portion Paladin",
+    "profile": "characters/portion-paladin/README.md",
+    "metadata": "characters/portion-paladin/metadata.json",
+    "avatar": "assets/characters/portion-paladin/profile.svg"
+  },
+  {
+    "number": 93,
+    "slug": "queue-mizu",
+    "name": "Queue Mizu",
+    "profile": "characters/queue-mizu/README.md",
+    "metadata": "characters/queue-mizu/metadata.json",
+    "avatar": "assets/characters/queue-mizu/profile.svg"
+  },
+  {
+    "number": 94,
+    "slug": "recipe-ranger",
+    "name": "Recipe Ranger",
+    "profile": "characters/recipe-ranger/README.md",
+    "metadata": "characters/recipe-ranger/metadata.json",
+    "avatar": "assets/characters/recipe-ranger/profile.svg"
+  },
+  {
+    "number": 95,
+    "slug": "red-oni",
+    "name": "Red Oni",
+    "profile": "characters/red-oni/README.md",
+    "metadata": "characters/red-oni/metadata.json",
+    "avatar": "assets/characters/red-oni/profile.svg"
+  },
+  {
+    "number": 96,
+    "slug": "reliability-sensei",
+    "name": "Reliability Sensei",
+    "profile": "characters/reliability-sensei/README.md",
+    "metadata": "characters/reliability-sensei/metadata.json",
+    "avatar": "assets/characters/reliability-sensei/profile.svg"
+  },
+  {
+    "number": 97,
+    "slug": "repo-ranger",
+    "name": "Repo Ranger",
+    "profile": "characters/repo-ranger/README.md",
+    "metadata": "characters/repo-ranger/metadata.json",
+    "avatar": "assets/characters/repo-ranger/profile.svg"
+  },
+  {
+    "number": 98,
+    "slug": "resilience-ryu",
+    "name": "Resilience Ryu",
+    "profile": "characters/resilience-ryu/README.md",
+    "metadata": "characters/resilience-ryu/metadata.json",
+    "avatar": "assets/characters/resilience-ryu/profile.svg"
+  },
+  {
+    "number": 99,
+    "slug": "revenue-rina",
+    "name": "Revenue Rina",
+    "profile": "characters/revenue-rina/README.md",
+    "metadata": "characters/revenue-rina/metadata.json",
+    "avatar": "assets/characters/revenue-rina/profile.svg"
+  },
+  {
+    "number": 100,
+    "slug": "review-ren",
+    "name": "Review Ren",
+    "profile": "characters/review-ren/README.md",
+    "metadata": "characters/review-ren/metadata.json",
+    "avatar": "assets/characters/review-ren/profile.svg"
+  },
+  {
+    "number": 101,
+    "slug": "risk-ryota",
+    "name": "Risk Ryota",
+    "profile": "characters/risk-ryota/README.md",
+    "metadata": "characters/risk-ryota/metadata.json",
+    "avatar": "assets/characters/risk-ryota/profile.svg"
+  },
+  {
+    "number": 102,
+    "slug": "roadmap-sensei",
+    "name": "Roadmap Sensei",
+    "profile": "characters/roadmap-sensei/README.md",
+    "metadata": "characters/roadmap-sensei/metadata.json",
+    "avatar": "assets/characters/roadmap-sensei/profile.svg"
+  },
+  {
+    "number": 103,
+    "slug": "scorecard-shin",
+    "name": "Scorecard Shin",
+    "profile": "characters/scorecard-shin/README.md",
+    "metadata": "characters/scorecard-shin/metadata.json",
+    "avatar": "assets/characters/scorecard-shin/profile.svg"
+  },
+  {
+    "number": 104,
+    "slug": "secure-sakura",
+    "name": "Secure Sakura",
+    "profile": "characters/secure-sakura/README.md",
+    "metadata": "characters/secure-sakura/metadata.json",
+    "avatar": "assets/characters/secure-sakura/profile.svg"
+  },
+  {
+    "number": 105,
+    "slug": "seira-vaultkeeper",
+    "name": "Seira Vaultkeeper",
+    "profile": "characters/seira-vaultkeeper/README.md",
+    "metadata": "characters/seira-vaultkeeper/metadata.json",
+    "avatar": "assets/characters/seira-vaultkeeper/profile.svg"
+  },
+  {
+    "number": 106,
+    "slug": "storyteller-sumi",
+    "name": "Storyteller Sumi",
+    "profile": "characters/storyteller-sumi/README.md",
+    "metadata": "characters/storyteller-sumi/metadata.json",
+    "avatar": "assets/characters/storyteller-sumi/profile.svg"
+  },
+  {
+    "number": 107,
+    "slug": "taxonomy-taka",
+    "name": "Taxonomy Taka",
+    "profile": "characters/taxonomy-taka/README.md",
+    "metadata": "characters/taxonomy-taka/metadata.json",
+    "avatar": "assets/characters/taxonomy-taka/profile.svg"
+  },
+  {
+    "number": 108,
+    "slug": "threat-taro",
+    "name": "Threat Taro",
+    "profile": "characters/threat-taro/README.md",
+    "metadata": "characters/threat-taro/metadata.json",
+    "avatar": "assets/characters/threat-taro/profile.svg"
+  },
+  {
+    "number": 109,
+    "slug": "ticket-tactician",
+    "name": "Ticket Tactician",
+    "profile": "characters/ticket-tactician/README.md",
+    "metadata": "characters/ticket-tactician/metadata.json",
+    "avatar": "assets/characters/ticket-tactician/profile.svg"
+  },
+  {
+    "number": 110,
+    "slug": "token-toshi",
+    "name": "Token Toshi",
+    "profile": "characters/token-toshi/README.md",
+    "metadata": "characters/token-toshi/metadata.json",
+    "avatar": "assets/characters/token-toshi/profile.svg"
+  },
+  {
+    "number": 111,
+    "slug": "umami-code",
+    "name": "Umami Code",
+    "profile": "characters/umami-code/README.md",
+    "metadata": "characters/umami-code/metadata.json",
+    "avatar": "assets/characters/umami-code/profile.svg"
+  },
+  {
+    "number": 112,
+    "slug": "watchtower-yoru",
+    "name": "Watchtower Yoru",
+    "profile": "characters/watchtower-yoru/README.md",
+    "metadata": "characters/watchtower-yoru/metadata.json",
+    "avatar": "assets/characters/watchtower-yoru/profile.svg"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "id": "MISE-014",
+  "slug": "canary-taster",
+  "name": "Canary Taster",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Pipeline Kitchen",
+  "agent_function": "Pipeline Observability",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Canary Taster performs pipeline observability within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "MISE-022",
+  "slug": "policy-kenji",
+  "name": "Policy Kenji",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Platform Kitchen",
+  "agent_function": "Policy Packs",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Policy Kenji performs policy packs within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

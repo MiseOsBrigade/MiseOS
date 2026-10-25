@@ -1,0 +1,25 @@
+{
+  "id": "MISE-038",
+  "slug": "oncall-naomi",
+  "name": "OnCall Naomi",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Reliability Kitchen",
+  "agent_function": "On-Call Rotation Manager",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "OnCall Naomi performs on-call rotation manager within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

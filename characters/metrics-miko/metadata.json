@@ -1,0 +1,25 @@
+{
+  "id": "MISE-041",
+  "slug": "metrics-miko",
+  "name": "Metrics Miko",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Reliability Kitchen",
+  "agent_function": "SLO Dashboards",
+  "rarity": "Genesis",
+  "workflow": {
+    "summary": "Metrics Miko performs slo dashboards within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

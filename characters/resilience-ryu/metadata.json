@@ -1,0 +1,25 @@
+{
+  "id": "MISE-043",
+  "slug": "resilience-ryu",
+  "name": "Resilience Ryu",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Reliability Kitchen",
+  "agent_function": "Resilience Testing Loop",
+  "rarity": "Rare",
+  "workflow": {
+    "summary": "Resilience Ryu performs resilience testing loop within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}

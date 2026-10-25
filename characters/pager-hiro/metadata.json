@@ -1,0 +1,25 @@
+{
+  "id": "MISE-037",
+  "slug": "pager-hiro",
+  "name": "Pager Hiro",
+  "collection": "MiseOS Character Agent Registry",
+  "department": "Reliability Kitchen",
+  "agent_function": "Incident Triage Runbook",
+  "rarity": "Common",
+  "workflow": {
+    "summary": "Pager Hiro performs incident triage runbook within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "status": "active"
+}
