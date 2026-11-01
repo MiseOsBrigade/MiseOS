@@ -125,6 +125,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Kurogami Senpai performs orchestrate within the Operations Kitchen. <sub>source: `characters/kurogami-senpai/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/kurogami-senpai/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Kurogami](../agents/kurogami.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Kurogami Senpai](../repo-pets/kurogami-senpai.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Mizu](./mizu.md) · [Kaji](./kaji.md) · [Scale Oni](./scale-oni.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -157,5 +163,7 @@ Docs that describe it (docs only, not code):
 | abilities | `data/imports/mise_orchestra_cards.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/kurogami-senpai/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

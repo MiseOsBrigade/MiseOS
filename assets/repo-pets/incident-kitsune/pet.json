@@ -1,0 +1,21 @@
+{
+  "slug": "incident-kitsune",
+  "name": "Incident Kitsune",
+  "kind": "animal_character",
+  "species": "fox (kitsune)",
+  "species_source": "animal word in the name",
+  "role": "Security Incident Playbooks",
+  "department": "Security Kitchen",
+  "sprites": [
+    "assets/characters/incident-kitsune/profile.svg",
+    "assets/player-cards/1by1-chefs/thumbs/incident-kitsune.webp"
+  ],
+  "behaviors": {},
+  "source": "data/characters/incident-kitsune.json",
+  "character": "incident-kitsune",
+  "cards": [
+    "docs/characters/incident-kitsune.md"
+  ],
+  "page": "docs/repo-pets/incident-kitsune.md",
+  "dir": "assets/repo-pets/incident-kitsune"
+}

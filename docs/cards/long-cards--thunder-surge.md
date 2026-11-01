@@ -14,6 +14,8 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original source | `extract:img-long-cards/Long cards /40790C36-50E3-4C9B-BE9D-AC0CB078E843.PNG` |
 | Duplicates | — |
 | Character | Not yet defined in the source material |
+| Agent | Not yet defined in the source material |
+| Repo pet | Not yet defined in the source material |
 | Workflow / actions / implementation | Not yet defined in the source material |
 
 ## Printed text (OCR)

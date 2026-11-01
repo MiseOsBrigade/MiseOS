@@ -192,5 +192,7 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Yume Builder performs artifact builder within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

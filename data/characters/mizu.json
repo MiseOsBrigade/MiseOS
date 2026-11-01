@@ -29,7 +29,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/mizu/metadata.json"
+    "helps.station": "characters/mizu/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 12,
@@ -367,5 +369,19 @@
     "mission": "Keep the kitchen running smoothly.",
     "problem": "Mizu performs prepare within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "mizu",
+      "name": "Mizu",
+      "page": "docs/agents/mizu.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "mizu",
+      "name": "Mizu",
+      "page": "docs/repo-pets/mizu.md"
+    }
+  ]
 }

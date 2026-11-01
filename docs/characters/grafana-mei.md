@@ -101,6 +101,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Grafana Mei performs observability dashboard templates within the Platform Kitchen. <sub>source: `characters/grafana-mei/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/grafana-mei/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Umami Code](./umami-code.md) · [Queue Mizu](./queue-mizu.md) · [Streama](./streama.md) · [Policy Kenji](./policy-kenji.md) · [Iron Hashi](./iron-hashi.md) · [OnCall Naomi](./oncall-naomi.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -29,7 +29,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/flash-riku/metadata.json"
+    "helps.station": "characters/flash-riku/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 4,
@@ -303,5 +305,19 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Flash Riku performs deploy within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "flash-riku",
+      "name": "Flash Riku",
+      "page": "docs/agents/flash-riku.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "flash-riku",
+      "name": "Flash Riku",
+      "page": "docs/repo-pets/flash-riku.md"
+    }
+  ]
 }

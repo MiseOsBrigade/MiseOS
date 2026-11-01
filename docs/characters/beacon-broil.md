@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Beacon Broil performs alert dispatcher within the Operations Kitchen. <sub>source: `characters/beacon-broil/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/beacon-broil/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Ladle Lumen](./ladle-lumen.md) · [Reserve Rune](./reserve-rune.md) · [Vacuum Vesper](./vacuum-vesper.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

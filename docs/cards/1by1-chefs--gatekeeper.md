@@ -14,6 +14,8 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original source | `extract:img-1by1-chefs/1by1 chefs /0A62F4EE-68DE-4F88-996A-1E14B8C4F3A2.PNG` |
 | Duplicates | — |
 | Character | Not yet defined in the source material |
+| Agent | [Gatekeeper](../agents/gatekeeper.md) |
+| Repo pet | Not yet defined in the source material |
 | Workflow / actions / implementation | Not yet defined in the source material |
 
 ## Printed text (OCR)

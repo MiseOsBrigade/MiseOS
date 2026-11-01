@@ -87,6 +87,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Bruno Blast-Radius performs change impact scanner within the Pipeline Kitchen. <sub>source: `characters/bruno-blast-radius/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/bruno-blast-radius/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Lila Branchkeeper](./lila-branchkeeper.md) · [Omar Reviewer](./omar-reviewer.md) · [Hugo Matrix](./hugo-matrix.md) · [Alko Commit Chef](./alko-commit-chef.md) · [Bootstrap Aiko](./bootstrap-aiko.md) · [Trace Sensei](./trace-sensei.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -1,0 +1,18 @@
+{
+  "slug": "database",
+  "name": "Database",
+  "kind": "brigade_mascot_agent",
+  "role": "Database Steward",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:152",
+  "thumbnail": "agents/database/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/database.md",
+  "dir": "agents/database",
+  "files": [
+    "agents/database/Database.png"
+  ]
+}

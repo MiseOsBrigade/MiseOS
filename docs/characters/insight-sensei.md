@@ -99,6 +99,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Insight Sensei performs analyze within the Data & Insight Kitchen. <sub>source: `characters/insight-sensei/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/insight-sensei/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Chaos Analyst](./chaos-analyst.md) · [Growth Guru](./growth-guru.md) · [Culture Chef](./culture-chef.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

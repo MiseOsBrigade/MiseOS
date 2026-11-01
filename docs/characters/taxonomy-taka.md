@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Taxonomy Taka performs event taxonomy manager within the Data & Insight Kitchen. <sub>source: `characters/taxonomy-taka/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/taxonomy-taka/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Lake Haru](./lake-haru.md) · [Lattice](./lattice.md) · [Repo Ranger](./repo-ranger.md) · [Alko Commit Chef](./alko-commit-chef.md) · [Template Tanaka](./template-tanaka.md) · [SLO Sage](./slo-sage.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

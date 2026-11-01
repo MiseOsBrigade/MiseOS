@@ -14,6 +14,8 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original source | `extract:img-character-building-theme/Character building theme /E3E28BB7-7D2A-480B-AF44-2D5C0B7DEBBA.PNG` |
 | Duplicates | — |
 | Character | Not yet defined in the source material |
+| Agent | Not yet defined in the source material |
+| Repo pet | Not yet defined in the source material |
 | Workflow / actions / implementation | Not yet defined in the source material |
 
 ## Printed text (OCR)

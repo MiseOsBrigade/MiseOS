@@ -113,6 +113,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Flash Riku performs deploy within the Pipeline Kitchen. <sub>source: `characters/flash-riku/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/flash-riku/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Flash Riku](../agents/flash-riku.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Flash Riku](../repo-pets/flash-riku.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Build-Kun](./build-kun.md) · [Alko Commit Chef](./alko-commit-chef.md) · [Bruno Blast-Radius](./bruno-blast-radius.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -152,5 +158,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/flash-riku/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

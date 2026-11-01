@@ -1,0 +1,23 @@
+{
+  "slug": "mise-locker",
+  "name": "Mise Locker",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Pattern Keeper",
+  "department": "Security",
+  "glyph": "🔐",
+  "catchphrase": "Protects secrets and reusable patterns.",
+  "behaviors": {
+    "preferred_paths": [
+      "docs",
+      "security",
+      "infra"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-locker.md",
+  "dir": "assets/repo-pets/mise-locker"
+}

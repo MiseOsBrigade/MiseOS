@@ -77,6 +77,11 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Problem it addresses | Not yet defined in the source material |
 | Safety gate | Not yet defined in the source material |
 
+## Agents and repo pets
+
+
+Repo pets: [Orderly Owl](../repo-pets/orderly-owl.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 _Not yet defined in the source material_
@@ -93,5 +98,6 @@ _Not yet defined in the source material_
 | catalogue_status | `data/imports/photo-alignment.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

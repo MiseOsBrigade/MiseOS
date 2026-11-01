@@ -99,6 +99,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Growth Guru performs optimize within the Data & Insight Kitchen. <sub>source: `characters/growth-guru/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/growth-guru/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Culture Chef](./culture-chef.md) · [Taxonomy Taka](./taxonomy-taka.md) · [Lake Haru](./lake-haru.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

@@ -1,0 +1,15 @@
+{
+  "slug": "miseos-github-agent",
+  "name": "MiseOS GitHub Agent",
+  "kind": "github_actions_agent",
+  "role": null,
+  "source": "extract/code/agentkit/miseos-github-agent-kit/.github/workflows/miseos-agent.yml",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/miseos-github-agent.md",
+  "dir": "agents/miseos-github-agent",
+  "files": [
+    "agents/miseos-github-agent/miseos-agent.yml"
+  ]
+}

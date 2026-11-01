@@ -1,0 +1,15 @@
+{
+  "slug": "devops-orchestra",
+  "name": "DevOps Orchestra agents",
+  "kind": "agents_md",
+  "role": null,
+  "source": "extract/code/orch760/AGENTS.md",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/devops-orchestra.md",
+  "dir": "agents/devops-orchestra",
+  "files": [
+    "agents/devops-orchestra/AGENTS.md"
+  ]
+}

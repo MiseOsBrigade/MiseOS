@@ -1,0 +1,44 @@
+{
+  "slug": "seira",
+  "name": "Seira",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Navigator",
+  "department": "Routing",
+  "glyph": "🧭",
+  "catchphrase": "Finds the clean path through the repo.",
+  "behaviors": {
+    "preferred_paths": [
+      "src",
+      "lib",
+      "routes"
+    ],
+    "roaming_bias": {
+      "directories": 4,
+      "files": 3,
+      "parent": 2,
+      "secrets": 9,
+      "config": 6,
+      "docs": 2
+    },
+    "verbs": {
+      "enterDirectory": "quietly enters the vault corridor",
+      "inspectFile": "checks the seal around",
+      "inspectConfig": "samples the secret policy in",
+      "inspectDocs": "reads the cellar ledger in",
+      "inspectTests": "tests the lock ritual in",
+      "retreat": "locks the cellar and retreats"
+    }
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "also_defined_in": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "character": "seira",
+  "cards": [
+    "docs/characters/seira.md",
+    "docs/characters/seira.md",
+    "docs/characters/seira.md"
+  ],
+  "page": "docs/repo-pets/seira.md",
+  "dir": "assets/repo-pets/seira"
+}

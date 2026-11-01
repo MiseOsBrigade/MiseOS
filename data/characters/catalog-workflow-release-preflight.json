@@ -1,0 +1,84 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "catalog-workflow-release-preflight",
+  "name": "Release Preflight",
+  "kind": "catalog_item",
+  "aliases": [],
+  "sources": {
+    "name": "data/imports/miseos-individual-catalog-items.json",
+    "role": "data/imports/miseos-individual-catalog-items.json (category)",
+    "workflow.summary": "data/imports/miseos-individual-catalog-items.json",
+    "dependencies": "data/imports/miseos-individual-catalog-items.json",
+    "implementation": "git ls-files grep + repo"
+  },
+  "catalog_item": {
+    "id": "workflow-release-preflight",
+    "category": "workflow",
+    "title": "Release Preflight",
+    "description": "Release readiness workflow with its required local release-sentinel Action.",
+    "dependencies": [
+      "CHANGELOG.md",
+      "LICENSE"
+    ],
+    "files": [
+      ".github/workflows/release-preflight.yml",
+      "actions/release-sentinel/action.yml",
+      "actions/release-sentinel/dist/index.js"
+    ],
+    "notes": []
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "dependencies": [
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [],
+    "doc_refs": [],
+    "payload_files": [
+      "docs/source-library/icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/action-release-sentinel/payload/actions/release-sentinel/dist/index.js",
+      "tools/devops-foundry/actions/release-sentinel/action.yml",
+      "tools/devops-foundry/templates/workflows/release-preflight.yml"
+    ],
+    "tool_dir": "docs/source-library/icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/action-release-sentinel/payload/actions/release-sentinel/dist",
+    "app_code_refs": [],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {},
+  "role": "workflow",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Release readiness workflow with its required local release-sentinel Action.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "installs_files": ".github/workflows/release-preflight.yml, actions/release-sentinel/action.yml, actions/release-sentinel/dist/index.js",
+      "source": "data/imports/miseos-individual-catalog-items.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Not yet defined in the source material",
+    "mission": "Not yet defined in the source material",
+    "problem": "Release readiness workflow with its required local release-sentinel Action.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

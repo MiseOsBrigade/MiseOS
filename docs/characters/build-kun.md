@@ -115,6 +115,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Build-Kun performs build within the Pipeline Kitchen. <sub>source: `characters/build-kun/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/build-kun/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Build Kun](../agents/build-kun.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Build-Kun](../repo-pets/build-kun.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Alko Commit Chef](./alko-commit-chef.md) · [Bruno Blast-Radius](./bruno-blast-radius.md) · [Lila Branchkeeper](./lila-branchkeeper.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -156,5 +162,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/build-kun/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

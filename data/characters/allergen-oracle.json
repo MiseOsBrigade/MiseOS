@@ -225,5 +225,7 @@
     "mission": "Keep the kitchen running smoothly.",
     "problem": "Allergen Oracle performs safety seer within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

@@ -1,0 +1,18 @@
+{
+  "slug": "argo-chef",
+  "name": "Argo Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "GitOps Deployer",
+  "group": "Integrations & Ecosystem",
+  "group_tagline": "Connect · Deploy · Extend",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:170",
+  "thumbnail": "agents/argo-chef/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/argo-chef.md",
+  "dir": "agents/argo-chef",
+  "files": [
+    "agents/argo-chef/Argo-Chef.png"
+  ]
+}

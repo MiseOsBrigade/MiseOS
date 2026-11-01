@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Pantry Paladin performs provision steward within the Operations Kitchen. <sub>source: `characters/pantry-paladin/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/pantry-paladin/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Ticket Tactician](./ticket-tactician.md) · [Plate Inspector](./plate-inspector.md) · [Timer Tactician](./timer-tactician.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

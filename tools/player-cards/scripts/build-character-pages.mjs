@@ -14,7 +14,7 @@ const COLL = {
   'character-building': 'Character Building Theme', 'orchestra-trading-cards': 'Mise Orchestra Trading Cards (Season 1)',
   'final-roster': 'Final Roster', 'registry-pages': 'Registry Catalogue Pages', 'icloud-screens': 'Studio Art & Screens',
 };
-const KIND = { registry_character: 'Registry character agent', registry_manifest: 'Registry manifest (product / tool)', card_character: 'Card-defined chef (catalogue: visual reference only)' };
+const KIND = { registry_character: 'Registry character agent', registry_manifest: 'Registry manifest (product / tool)', card_character: 'Card-defined chef (catalogue: visual reference only)', catalog_item: 'Individual catalogue item (action / workflow / primitive)' };
 const STATUS = {
   implemented_in_code: 'Implemented in code', referenced_in_app_code: 'Referenced in app code (no dedicated handler)',
   described_in_docs_only: 'Described in docs only', not_defined: UNDEF,
@@ -29,7 +29,7 @@ const rel = (from, to) => path.relative(path.dirname(from), to).split(path.sep).
 const v = (x) => (x === undefined || x === null || x === '' || (Array.isArray(x) && !x.length) ? UNDEF : x);
 const src = (e, k) => (e.sources?.[k] ? ` <sub>source: \`${e.sources[k]}\`</sub>` : '');
 const esc = (s) => String(s).replace(/\|/g, '\\|').replace(/\n/g, ' ');
-const link = (from, p, line) => `[\`${p}${line ? `:${line}` : ''}\`](${rel(from, p)}${line ? `#L${line}` : ''})`;
+const link = (from, p, line) => `[\`${p}${line ? `:${line}` : ''}\`](${encodeURI(rel(from, p)).replace(/#/g, '%23')}${line ? `#L${line}` : ''})`;
 export const cardPage = (c) => c.page;
 
 function cardGallery(out, cards) {
@@ -96,6 +96,9 @@ function charPage(e) {
   if (e.permissions) L.push(`- Permissions: ${Object.entries(e.permissions).map(([k, x]) => `${k}=\`${x}\``).join(', ')}${src(e, 'permissions')}`);
   if (e.distribution) L.push(`- Distribution channels: ${e.distribution.channels.join(', ')}${src(e, 'distribution')}`);
   if (e.marketplace) L.push(`- Marketplace: category \`${e.marketplace.category}\`, published \`${e.marketplace.published}\`${src(e, 'marketplace')}`);
+  if (im.payload_files?.length) { L.push('', 'Payload files (installed by this catalogue item):'); for (const f of im.payload_files) L.push(`- ${link(out, f)}`); }
+  if (e.dependencies) L.push('', `Dependencies: ${e.dependencies.join('; ')}${src(e, 'dependencies')}`);
+  if (e.notes) L.push('', `Notes: ${e.notes.join('; ')}${src(e, 'notes')}`);
   if (im.app_code_refs?.length) { L.push('', 'Application code that uses this entry:'); for (const r of im.app_code_refs) L.push(`- ${link(out, r.path, r.line)}`); }
   const other = (im.code_refs ?? []).filter((r) => !(im.app_code_refs ?? []).some((a) => a.path === r.path));
   if (other.length) { L.push('', 'Roster data / types / tests in code that list this entry (not an implementation):'); for (const r of other) L.push(`- ${link(out, r.path, r.line)}`); }
@@ -112,6 +115,10 @@ function charPage(e) {
   row('Mission', e.helps.mission, 'department_mission');
   row('Problem it addresses', e.helps.problem, 'workflow.summary');
   row('Safety gate', e.helps.proof_gate, 'workflow.proof_gate');
+  L.push('', '## Agents and repo pets', '');
+  if (e.agents?.length) L.push('Agents: ' + e.agents.map((a) => `[${a.name}](../agents/${a.slug}.md)`).join(' · ') + src(e, 'agents'));
+  if (e.repo_pets?.length) L.push('', 'Repo pets: ' + e.repo_pets.map((p) => `[${p.name}](../repo-pets/${p.slug}.md)`).join(' · ') + src(e, 'repo_pets'));
+  if (!e.agents?.length && !e.repo_pets?.length) L.push(`_${UNDEF}_`);
   L.push('', '## Related characters', '');
   if (Array.isArray(e.related)) L.push(e.related.map((r) => (r.slug && bySlug[r.slug] ? `[${r.name}](./${r.slug}.md)` : r.name)).join(' · ') + src(e, 'related'));
   else L.push(`_${UNDEF}_`);
@@ -135,11 +142,44 @@ function unmatchedCardPage(c, ocr) {
   L.push(`| Collection | ${COLL[c.collection] ?? c.collection} |`, `| Printed title | ${esc(c.title ?? UNDEF)} |`, `| File | [\`${c.file}\`](${rel(out, c.file)}) |`,
     `| Original size | ${c.original_size ? c.original_size.join('×') : UNDEF} |`, `| Original source | \`${esc(c.source ?? UNDEF)}\` |`,
     `| Duplicates | ${c.duplicates?.length ? c.duplicates.map((d) => `\`${esc(d)}\``).join('<br>') : '—'} |`,
-    `| Character | ${UNDEF} |`, `| Workflow / actions / implementation | ${UNDEF} |`);
+    `| Character | ${UNDEF} |`, `| Agent | ${AG.filter((a) => a.cards.includes(c.page)).map((a) => `[${esc(a.name)}](../agents/${a.slug}.md)`).join(', ') || UNDEF} |`,
+    `| Repo pet | ${PE.filter((p) => p.cards.includes(c.page)).map((p) => `[${esc(p.name)}](../repo-pets/${p.slug}.md)`).join(', ') || UNDEF} |`, `| Workflow / actions / implementation | ${UNDEF} |`);
   L.push('', '## Printed text (OCR)', '', ocr?.length ? ocr.map((x) => `- ${esc(x)}`).join('\n') : '_No text detected on this card._', '', '[← All characters](../characters/README.md)', '');
   return [out, L.join('\n')];
 }
 
+const AG = fs.existsSync('data/agents.json') ? JSON.parse(fs.readFileSync('data/agents.json', 'utf8')).agents : [];
+const PE = fs.existsSync('data/repo-pets.json') ? JSON.parse(fs.readFileSync('data/repo-pets.json', 'utf8')).pets : [];
+const v2 = (x) => (x === undefined || x === null || x === '' ? UNDEF : x);
+function agentPage(a) {
+  const out = a.page; const L = ['<!-- generated by tools/player-cards/scripts/build-character-pages.mjs from data/agents.json; do not edit by hand -->', `# ${a.name}`, ''];
+  if (a.thumbnail) L.push(`<img src="${rel(out, a.thumbnail)}" alt="${esc(a.name)}" width="200" align="right" />`, '');
+  L.push('| Field | Value |', '|---|---|', `| Kind | ${a.kind} |`, `| Role | ${esc(v2(a.role))} |`, `| Group | ${esc(v2(a.group))}${a.group_tagline ? ` — ${esc(a.group_tagline)}` : ''} |`,
+    `| Aliases | ${a.aliases?.join(', ') || '—'} |`, `| Source | \`${esc(a.source)}\` |`,
+    `| Character | ${a.character ? `[${esc(bySlug[a.character]?.name ?? a.character)}](../characters/${a.character}.md)` : UNDEF} |`,
+    `| Cards | ${a.cards.length ? a.cards.map((p) => `[${path.basename(p, '.md')}](${rel(out, p)})`).join(', ') : UNDEF} |`,
+    `| Repo pet | ${a.pet ? `[${a.pet}](../repo-pets/${a.pet}.md)` : '—'} |`, '');
+  L.push('## Config and definition files', '', ...(a.files.length ? a.files.map((f) => `- ${link(out, f)}`) : [`_${UNDEF}_`]), '', '[← All agents](./README.md)', '');
+  return [out, L.join('\n')];
+}
+function petPage(p) {
+  const out = p.page; const L = ['<!-- generated by tools/player-cards/scripts/build-character-pages.mjs from data/repo-pets.json; do not edit by hand -->', `# ${p.name}`, ''];
+  const img = p.sprites.find((x) => /\.(png|svg|webp|jpe?g)$/.test(x));
+  if (img) L.push(`<img src="${rel(out, img)}" alt="${esc(p.name)}" width="180" align="right" />`, '');
+  L.push('| Field | Value |', '|---|---|', `| Kind | ${p.kind} |`, `| Species / animal | ${esc(p.species ? `${p.species} (${p.species_source ?? 'from name'})` : UNDEF)} |`,
+    `| Role | ${esc(v2(p.role))} |`, `| Department | ${esc(v2(p.department))} |`, `| Glyph | ${v2(p.glyph)} |`, `| Catchphrase | ${esc(v2(p.catchphrase))} |`,
+    `| Source | \`${esc(p.source)}\`${p.also_defined_in ? ` and \`${esc(p.also_defined_in)}\`` : ''}${p.art_source ? `; art \`${esc(p.art_source)}\`` : ''} |`,
+    `| Character | ${p.character ? `[${esc(bySlug[p.character]?.name ?? p.character)}](../characters/${p.character}.md)` : UNDEF} |`,
+    `| Agent | ${AG.filter((a) => a.pet === p.slug).map((a) => `[${esc(a.name)}](../agents/${a.slug}.md)`).join(', ') || UNDEF} |`,
+    `| Cards | ${p.cards.length ? p.cards.map((c) => `[${path.basename(c, '.md')}](${rel(out, c)})`).join(', ') : UNDEF} |`,
+    `| Pet folder | ${link(out, p.dir)} |`, '');
+  L.push('## Behaviors', '');
+  const b = p.behaviors ?? {};
+  if (!Object.keys(b).length) L.push(`_${UNDEF}_`);
+  for (const [k, x] of Object.entries(b)) L.push(`- **${k}**: ${esc(typeof x === 'object' ? Object.entries(x ?? {}).map(([a, y]) => `${a}: ${y}`).join(' · ') || JSON.stringify(x) : x)}`);
+  L.push('', '## Sprites', '', ...(p.sprites.length ? p.sprites.map((x) => `<img src="${rel(out, x)}" alt="" height="64" /> ${link(out, x)}<br>`) : [`_${UNDEF}_`]), '', '[← All repo pets](./README.md)', '');
+  return [out, L.join('\n')];
+}
 const ocrAll = JSON.parse(fs.readFileSync('data/player-cards-ocr.json', 'utf8'));
 const pages = [];
 for (const e of ents) pages.push(charPage(e));
@@ -153,10 +193,18 @@ for (const e of ents) idx.push(`| [${esc(e.name)}](./${e.slug}.md) | ${e.kind.re
 const um = cardsDoc.cards.filter((c) => !c.entity_slug);
 idx.push('', `## Unmatched cards (${um.length})`, '', um.map((c) => `[${esc(c.title ?? path.basename(c.file))}](../cards/${path.basename(c.page)})`).join(' · '), '');
 pages.push(['docs/characters/README.md', idx.join('\n')]);
+for (const a of AG) pages.push(agentPage(a));
+for (const p of PE) pages.push(petPage(p));
+pages.push(['docs/agents/README.md', ['<!-- generated; do not edit -->', '# MiseOS agents', '', `${AG.length} agent definitions from [\`data/agents.json\`](../../data/agents.json).`, '',
+  '| Agent | Kind | Role | Character | Cards | Files |', '|---|---|---|---|---|---|',
+  ...AG.map((a) => `| [${esc(a.name)}](./${a.slug}.md) | ${a.kind} | ${esc(v2(a.role))} | ${a.character ? `[${esc(bySlug[a.character]?.name ?? a.character)}](../characters/${a.character}.md)` : '—'} | ${a.cards.length} | ${a.files.length} |`), ''].join('\n')]);
+pages.push(['docs/repo-pets/README.md', ['<!-- generated; do not edit -->', '# MiseOS repo pets', '', `${PE.length} repo pets (${PE.filter((p) => p.species).length} animals) from [\`data/repo-pets.json\`](../../data/repo-pets.json).`, '',
+  '| Pet | Kind | Species | Role | Character | Sprites |', '|---|---|---|---|---|---|',
+  ...PE.map((p) => `| [${esc(p.name)}](./${p.slug}.md) | ${p.kind} | ${esc(p.species ?? '—')} | ${esc(v2(p.role))} | ${p.character ? `[${esc(bySlug[p.character]?.name ?? p.character)}](../characters/${p.character}.md)` : '—'} | ${p.sprites.length} |`), ''].join('\n')]);
 
 const check = process.argv.includes('--check');
 let stale = 0;
-for (const dir of ['docs/characters', 'docs/cards']) {
+for (const dir of ['docs/characters', 'docs/cards', 'docs/agents', 'docs/repo-pets']) {
   fs.mkdirSync(dir, { recursive: true });
   if (!check) for (const f of fs.readdirSync(dir)) if (f.endsWith('.md')) fs.rmSync(path.join(dir, f));
 }
@@ -180,6 +228,9 @@ sec = sec.replace(/(<summary><b>[^<]+<\/b> — (\d+) cards \()\d+( matched to ch
 });
 readme = readme.slice(0, start) + sec + readme.slice(end);
 readme = readme.replace(/<a href="\.\/characters\/([a-z0-9-]+)\/README\.md"><img src="\.\/assets\/characters\//g, (m, s) => (bySlug[s] ? `<a href="./docs/characters/${s}.md"><img src="./assets/characters/` : m));
+const blk = `<!-- universe-index:start -->\n**Universe indexes:** [Characters](./docs/characters/README.md) · [Agents (${AG.length})](./docs/agents/README.md) · [Repo pets (${PE.length}, ${PE.filter((p) => p.species).length} animals)](./docs/repo-pets/README.md) · [Source library manifest](./data/source-files.json)\n\n<p align="center"><img src="./assets/repo-pets/walk-animals.svg" alt="MiseOS animal repo pets" width="100%" /></p>\n<!-- universe-index:end -->`;
+if (readme.includes('<!-- universe-index:start -->')) readme = readme.replace(/<!-- universe-index:start -->[\s\S]*?<!-- universe-index:end -->/, blk);
+else readme = readme.replace('## Repo pets\n', `## Repo pets\n\n${blk}\n`);
 if (check) { if (fs.readFileSync('README.md', 'utf8') !== readme) { stale++; console.error('stale: README.md'); } }
 else fs.writeFileSync('README.md', readme);
 if (check && stale) { console.error(`${stale} generated files are stale; run npm run cards:pages`); process.exit(1); }

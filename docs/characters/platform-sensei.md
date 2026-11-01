@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Platform Sensei performs platform health board within the Platform Kitchen. <sub>source: `characters/platform-sensei/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/platform-sensei/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Seira](./seira.md) · [Kuro Guard](./kuro-guard.md) · [Orchestra Core](./orchestra-core.md) · [Guardrail Goro](./guardrail-goro.md) · [Pipeline Sensei](./pipeline-sensei.md) · [Reliability Sensei](./reliability-sensei.md) · [Red Oni](./red-oni.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

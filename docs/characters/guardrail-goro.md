@@ -101,6 +101,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Guardrail Goro performs golden path guardrails within the Platform Kitchen. <sub>source: `characters/guardrail-goro/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/guardrail-goro/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Platform Sensei](./platform-sensei.md) · [Seira](./seira.md) · [Kuro Guard](./kuro-guard.md) · [Portal Rei](./portal-rei.md) · [Canary Taster](./canary-taster.md) · [Impact Ichi](./impact-ichi.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

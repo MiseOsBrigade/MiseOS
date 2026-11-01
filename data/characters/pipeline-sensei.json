@@ -25,7 +25,8 @@
     "unique_trait": "data/imports/merged_roster.json",
     "role_category": "data/imports/merged_roster.json",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/pipeline-sensei/metadata.json"
+    "helps.station": "characters/pipeline-sensei/metadata.json",
+    "agents": "data/agents.json"
   },
   "registry": {
     "number": 49,
@@ -196,5 +197,13 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Pipeline Sensei performs pipeline tuner agent within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "pipeline",
+      "name": "Pipeline",
+      "page": "docs/agents/pipeline.md"
+    }
+  ],
+  "repo_pets": []
 }

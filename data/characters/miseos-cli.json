@@ -6,6 +6,8 @@
   "aliases": [],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.cli.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
     "cards": "data/player-cards.json",
     "card_text": "data/player-cards-ocr.json (OCR of the card image)",
     "card_rarity_printed": "data/player-cards-ocr.json",
@@ -22,6 +24,34 @@
     "helps.station": "apps/registry-platform/registry/manifests/miseos.cli.manifest.json (marketplace.category)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.cli.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.cli",
+    "name": "MiseOS CLI",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "developer-tooling",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/cli"
+  },
+  "catalog_item": {
+    "id": "registry-cli",
+    "category": "registry-capability",
+    "title": "MiseOS CLI",
+    "description": "Executable baseline capability for MiseOS CLI.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.cli.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: cliInfo",
+      "Source status: active"
+    ]
+  },
   "cards": [
     {
       "file": "assets/player-cards/long-cards/miseos-cli.webp",
@@ -311,5 +341,7 @@
     "mission": "Not yet defined in the source material",
     "problem": "Executable baseline capability for MiseOS CLI.",
     "proof_gate": "Not yet defined in the source material"
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

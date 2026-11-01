@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Prep Pulse performs mise monitor within the Operations Kitchen. <sub>source: `characters/prep-pulse/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/prep-pulse/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Queue Quartz](./queue-quartz.md) · [Harvest Hex](./harvest-hex.md) · [Garnish Ghost](./garnish-ghost.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

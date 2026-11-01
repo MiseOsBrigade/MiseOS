@@ -89,6 +89,11 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Flag Fox performs feature flag analytics within the Data & Insight Kitchen. <sub>source: `characters/flag-fox/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/flag-fox/metadata.json`</sub> |
 
+## Agents and repo pets
+
+
+Repo pets: [Flag Fox](../repo-pets/flag-fox.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Cost Kaito](./cost-kaito.md) · [DX Mei](./dx-mei.md) · [Revenue Rina](./revenue-rina.md) · [DORA Daichi](./dora-daichi.md) · [Seira Scan](./seira-scan.md) · [Vault Hana](./vault-hana.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>
@@ -118,5 +123,6 @@ Docs that describe it (docs only, not code):
 | role_category | `data/imports/merged_roster.json` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/flag-fox/metadata.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

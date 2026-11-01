@@ -288,5 +288,7 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Tariq Notesmith performs release notes generator within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

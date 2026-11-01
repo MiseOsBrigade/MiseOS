@@ -1,0 +1,15 @@
+{
+  "slug": "bootstrap-registry",
+  "name": "Bootstrap Registry agent guide",
+  "kind": "agents_md",
+  "role": null,
+  "source": "icloud/miseos-bootstrap-registry-integrated-v3.zip/miseos-bootstrap-registry/AGENTS.md",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/bootstrap-registry.md",
+  "dir": "agents/bootstrap-registry",
+  "files": [
+    "agents/bootstrap-registry/AGENTS.md"
+  ]
+}

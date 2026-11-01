@@ -28,7 +28,9 @@
     "orchestra_card": "data/imports/mise_orchestra_cards.csv",
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/tensho/metadata.json"
+    "helps.station": "characters/tensho/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 20,
@@ -417,5 +419,19 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Tensho performs task flow within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "tensho",
+      "name": "Tensho",
+      "page": "docs/agents/tensho.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "tensho",
+      "name": "Tensho",
+      "page": "docs/repo-pets/tensho.md"
+    }
+  ]
 }

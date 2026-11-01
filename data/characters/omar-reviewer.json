@@ -193,5 +193,7 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Omar Reviewer performs pr hygiene check within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

@@ -119,6 +119,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Executable baseline capability for MiseOS Maven Policy Adapter. <sub>source: `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (capability.description)`</sub> |
 | Safety gate | Not yet defined in the source material |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 _Not yet defined in the source material_
@@ -128,6 +132,8 @@ _Not yet defined in the source material_
 | Field | Source |
 |---|---|
 | name | `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json` |
+| registry_catalog | `data/imports/miseos-registry-catalog.csv` |
+| catalog_item | `data/imports/miseos-individual-catalog-items.json` |
 | cards | `data/player-cards.json` |
 | card_text | `data/player-cards-ocr.json (OCR of the card image)` |
 | card_rarity_printed | `data/player-cards-ocr.json` |

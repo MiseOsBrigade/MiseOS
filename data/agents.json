@@ -1,0 +1,1818 @@
+{
+  "schema": "miseos.agents.v1",
+  "count": 92,
+  "agents": [
+    {
+      "slug": "orchestra-core",
+      "files": [
+        "agents/orchestra-core/Orchestra-Core.png",
+        "agents/orchestra-core/agent.json"
+      ],
+      "name": "Orchestra Core",
+      "kind": "brigade_mascot_agent",
+      "role": "Chief Orchestrator",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:53",
+      "thumbnail": "agents/orchestra-core/thumb.png",
+      "character": "orchestra-core",
+      "cards": [
+        "docs/characters/orchestra-core.md",
+        "docs/characters/orchestra-core.md",
+        "docs/characters/orchestra-core.md"
+      ],
+      "pet": "orchestra-core",
+      "page": "docs/agents/orchestra-core.md",
+      "dir": "agents/orchestra-core"
+    },
+    {
+      "slug": "kurogami",
+      "files": [
+        "agents/kurogami/Kurogami.png",
+        "agents/kurogami/agent.json"
+      ],
+      "name": "Kurogami",
+      "kind": "brigade_mascot_agent",
+      "role": "Master Strategist",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:54",
+      "thumbnail": "agents/kurogami/thumb.png",
+      "character": "kurogami-senpai",
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/kurogami.md",
+      "dir": "agents/kurogami"
+    },
+    {
+      "slug": "kuro-guard",
+      "files": [
+        "agents/kuro-guard/Kuro-Guard.png",
+        "agents/kuro-guard/agent.json"
+      ],
+      "name": "Kuro Guard",
+      "kind": "brigade_mascot_agent",
+      "role": "Chief Sentinel",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:55",
+      "thumbnail": "agents/kuro-guard/thumb.png",
+      "character": "kuro-guard",
+      "cards": [
+        "docs/characters/kuro-guard.md",
+        "docs/characters/kuro-guard.md",
+        "docs/characters/kuro-guard.md",
+        "docs/characters/kuro-guard.md"
+      ],
+      "pet": "kuro-guard",
+      "page": "docs/agents/kuro-guard.md",
+      "dir": "agents/kuro-guard"
+    },
+    {
+      "slug": "seira",
+      "files": [
+        "agents/seira/Seira.png",
+        "agents/seira/agent.json"
+      ],
+      "name": "Seira",
+      "kind": "brigade_mascot_agent",
+      "role": "Signal Conductor",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:56",
+      "thumbnail": "agents/seira/thumb.png",
+      "character": "seira",
+      "cards": [
+        "docs/characters/seira.md",
+        "docs/characters/seira.md",
+        "docs/characters/seira.md"
+      ],
+      "pet": "seira",
+      "page": "docs/agents/seira.md",
+      "dir": "agents/seira"
+    },
+    {
+      "slug": "conductor",
+      "files": [
+        "agents/conductor/Conductor.png",
+        "agents/conductor/agent.json"
+      ],
+      "name": "Conductor",
+      "kind": "brigade_mascot_agent",
+      "role": "Workflow Conductor",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:57",
+      "thumbnail": "agents/conductor/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--conductor.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/conductor.md",
+      "dir": "agents/conductor"
+    },
+    {
+      "slug": "steward-prime",
+      "files": [
+        "agents/steward-prime/Steward-Prime.png",
+        "agents/steward-prime/agent.json"
+      ],
+      "name": "Steward Prime",
+      "kind": "brigade_mascot_agent",
+      "role": "Resource Steward",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:58",
+      "thumbnail": "agents/steward-prime/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/steward-prime.md",
+      "dir": "agents/steward-prime"
+    },
+    {
+      "slug": "root-chef",
+      "files": [
+        "agents/root-chef/Root-Chef.png",
+        "agents/root-chef/agent.json"
+      ],
+      "name": "Root Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "Root Authority",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:59",
+      "thumbnail": "agents/root-chef/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/root-chef.md",
+      "dir": "agents/root-chef"
+    },
+    {
+      "slug": "policy-monk",
+      "files": [
+        "agents/policy-monk/Policy-Monk.png",
+        "agents/policy-monk/agent.json"
+      ],
+      "name": "Policy Monk",
+      "kind": "brigade_mascot_agent",
+      "role": "Policy Arbiter",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:60",
+      "thumbnail": "agents/policy-monk/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/policy-monk.md",
+      "dir": "agents/policy-monk"
+    },
+    {
+      "slug": "audit-sensei",
+      "files": [
+        "agents/audit-sensei/Audit-Sensei.png",
+        "agents/audit-sensei/agent.json"
+      ],
+      "name": "Audit Sensei",
+      "kind": "brigade_mascot_agent",
+      "role": "Audit Master",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:61",
+      "thumbnail": "agents/audit-sensei/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/audit-sensei.md",
+      "dir": "agents/audit-sensei"
+    },
+    {
+      "slug": "human-liaison",
+      "files": [
+        "agents/human-liaison/Human-Liaison.png",
+        "agents/human-liaison/agent.json"
+      ],
+      "name": "Human Liaison",
+      "kind": "brigade_mascot_agent",
+      "role": "Human-in-the-Loop",
+      "group": "Executive Chefs",
+      "group_tagline": "Leadership & Orchestration",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:62",
+      "thumbnail": "agents/human-liaison/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--human-liaison.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/human-liaison.md",
+      "dir": "agents/human-liaison"
+    },
+    {
+      "slug": "build-kun",
+      "files": [
+        "agents/build-kun/Build-Kun.png",
+        "agents/build-kun/agent.json"
+      ],
+      "name": "Build Kun",
+      "kind": "brigade_mascot_agent",
+      "role": "Build Runner",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:72",
+      "thumbnail": "agents/build-kun/thumb.png",
+      "character": "build-kun",
+      "cards": [
+        "docs/characters/build-kun.md",
+        "docs/characters/build-kun.md"
+      ],
+      "pet": "build-kun",
+      "page": "docs/agents/build-kun.md",
+      "dir": "agents/build-kun"
+    },
+    {
+      "slug": "dispatcher",
+      "files": [
+        "agents/dispatcher/Dispatcher.png",
+        "agents/dispatcher/agent.json"
+      ],
+      "name": "Dispatcher",
+      "kind": "brigade_mascot_agent",
+      "role": "Task Dispatcher",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:73",
+      "thumbnail": "agents/dispatcher/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--dispatcher.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/dispatcher.md",
+      "dir": "agents/dispatcher"
+    },
+    {
+      "slug": "gatekeeper",
+      "files": [
+        "agents/gatekeeper/Gatekeeper.png",
+        "agents/gatekeeper/agent.json"
+      ],
+      "name": "Gatekeeper",
+      "kind": "brigade_mascot_agent",
+      "role": "Queue Gatekeeper",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:74",
+      "thumbnail": "agents/gatekeeper/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--gatekeeper.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/gatekeeper.md",
+      "dir": "agents/gatekeeper"
+    },
+    {
+      "slug": "kaji",
+      "files": [
+        "agents/kaji/Kaji.png",
+        "agents/kaji/agent.json"
+      ],
+      "name": "Kaji",
+      "kind": "brigade_mascot_agent",
+      "role": "Incident Firefighter",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:75",
+      "thumbnail": "agents/kaji/thumb.png",
+      "character": "kaji",
+      "cards": [
+        "docs/characters/kaji.md",
+        "docs/characters/kaji.md",
+        "docs/characters/kaji.md",
+        "docs/characters/kaji.md"
+      ],
+      "pet": "kaji",
+      "page": "docs/agents/kaji.md",
+      "dir": "agents/kaji"
+    },
+    {
+      "slug": "mizu",
+      "files": [
+        "agents/mizu/Mizu.png",
+        "agents/mizu/agent.json"
+      ],
+      "name": "Mizu",
+      "kind": "brigade_mascot_agent",
+      "role": "Flow Coordinator",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:76",
+      "thumbnail": "agents/mizu/thumb.png",
+      "character": "mizu",
+      "cards": [
+        "docs/characters/mizu.md",
+        "docs/characters/mizu.md"
+      ],
+      "pet": "mizu",
+      "page": "docs/agents/mizu.md",
+      "dir": "agents/mizu"
+    },
+    {
+      "slug": "prepbot",
+      "files": [
+        "agents/prepbot/PrepBot.png",
+        "agents/prepbot/agent.json"
+      ],
+      "name": "PrepBot",
+      "kind": "brigade_mascot_agent",
+      "role": "Mise-en-place Prep",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:77",
+      "thumbnail": "agents/prepbot/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/prepbot.md",
+      "dir": "agents/prepbot"
+    },
+    {
+      "slug": "scale-oni",
+      "files": [
+        "agents/scale-oni/Scale-Oni.png",
+        "agents/scale-oni/agent.json"
+      ],
+      "name": "Scale Oni",
+      "kind": "brigade_mascot_agent",
+      "role": "Autoscaler",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:78",
+      "thumbnail": "agents/scale-oni/thumb.png",
+      "character": "scale-oni",
+      "cards": [
+        "docs/characters/scale-oni.md",
+        "docs/characters/scale-oni.md",
+        "docs/characters/scale-oni.md"
+      ],
+      "pet": "scale-oni",
+      "page": "docs/agents/scale-oni.md",
+      "dir": "agents/scale-oni"
+    },
+    {
+      "slug": "scheduler",
+      "files": [
+        "agents/scheduler/Scheduler.png",
+        "agents/scheduler/agent.json"
+      ],
+      "name": "Scheduler",
+      "kind": "brigade_mascot_agent",
+      "role": "Job Scheduler",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:79",
+      "thumbnail": "agents/scheduler/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--scheduler.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/scheduler.md",
+      "dir": "agents/scheduler"
+    },
+    {
+      "slug": "swarmar",
+      "files": [
+        "agents/swarmar/Swarmar.png",
+        "agents/swarmar/agent.json"
+      ],
+      "name": "Swarmar",
+      "kind": "brigade_mascot_agent",
+      "role": "Swarm Coordinator",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:80",
+      "thumbnail": "agents/swarmar/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--swarmer.md"
+      ],
+      "aliases": [
+        "Swarmer"
+      ],
+      "pet": null,
+      "page": "docs/agents/swarmar.md",
+      "dir": "agents/swarmar"
+    },
+    {
+      "slug": "tensho",
+      "files": [
+        "agents/tensho/Tensho.png",
+        "agents/tensho/agent.json"
+      ],
+      "name": "Tensho",
+      "kind": "brigade_mascot_agent",
+      "role": "Shift Lead",
+      "group": "Kitchen Operations",
+      "group_tagline": "Build · Schedule · Dispatch",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:81",
+      "thumbnail": "agents/tensho/thumb.png",
+      "character": "tensho",
+      "cards": [
+        "docs/characters/tensho.md",
+        "docs/characters/tensho.md",
+        "docs/characters/tensho.md"
+      ],
+      "pet": "tensho",
+      "page": "docs/agents/tensho.md",
+      "dir": "agents/tensho"
+    },
+    {
+      "slug": "cache-cat",
+      "files": [
+        "agents/cache-cat/Cache-Cat.png",
+        "agents/cache-cat/agent.json"
+      ],
+      "name": "Cache Cat",
+      "kind": "brigade_mascot_agent",
+      "role": "Cache Keeper",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:91",
+      "thumbnail": "agents/cache-cat/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": "cache-cat",
+      "page": "docs/agents/cache-cat.md",
+      "dir": "agents/cache-cat"
+    },
+    {
+      "slug": "flash-riku",
+      "files": [
+        "agents/flash-riku/Flash-Riku.png",
+        "agents/flash-riku/agent.json"
+      ],
+      "name": "Flash Riku",
+      "kind": "brigade_mascot_agent",
+      "role": "Edge Accelerator",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:92",
+      "thumbnail": "agents/flash-riku/thumb.png",
+      "character": "flash-riku",
+      "cards": [
+        "docs/characters/flash-riku.md"
+      ],
+      "pet": "flash-riku",
+      "page": "docs/agents/flash-riku.md",
+      "dir": "agents/flash-riku"
+    },
+    {
+      "slug": "iron-hashi",
+      "files": [
+        "agents/iron-hashi/Iron-Hashi.png",
+        "agents/iron-hashi/agent.json"
+      ],
+      "name": "Iron Hashi",
+      "kind": "brigade_mascot_agent",
+      "role": "Service Mesh",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:93",
+      "thumbnail": "agents/iron-hashi/thumb.png",
+      "character": "iron-hashi",
+      "cards": [
+        "docs/characters/iron-hashi.md",
+        "docs/characters/iron-hashi.md",
+        "docs/characters/iron-hashi.md"
+      ],
+      "pet": "iron-hashi",
+      "page": "docs/agents/iron-hashi.md",
+      "dir": "agents/iron-hashi"
+    },
+    {
+      "slug": "null-chan",
+      "files": [
+        "agents/null-chan/Null-Chan.png",
+        "agents/null-chan/agent.json"
+      ],
+      "name": "Null Chan",
+      "kind": "brigade_mascot_agent",
+      "role": "Fallback Handler",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:94",
+      "thumbnail": "agents/null-chan/thumb.png",
+      "character": "null-chan",
+      "cards": [
+        "docs/characters/null-chan.md"
+      ],
+      "pet": "null-chan",
+      "page": "docs/agents/null-chan.md",
+      "dir": "agents/null-chan"
+    },
+    {
+      "slug": "patch-panda",
+      "files": [
+        "agents/patch-panda/Patch-Panda.png",
+        "agents/patch-panda/agent.json"
+      ],
+      "name": "Patch Panda",
+      "kind": "brigade_mascot_agent",
+      "role": "Hotfix Patcher",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:95",
+      "thumbnail": "agents/patch-panda/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": "patch-panda",
+      "page": "docs/agents/patch-panda.md",
+      "dir": "agents/patch-panda"
+    },
+    {
+      "slug": "relay-fox",
+      "files": [
+        "agents/relay-fox/Relay-Fox.png",
+        "agents/relay-fox/agent.json"
+      ],
+      "name": "Relay Fox",
+      "kind": "brigade_mascot_agent",
+      "role": "Message Relay",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:96",
+      "thumbnail": "agents/relay-fox/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": "relay-fox",
+      "page": "docs/agents/relay-fox.md",
+      "dir": "agents/relay-fox"
+    },
+    {
+      "slug": "streama",
+      "files": [
+        "agents/streama/Streama.png",
+        "agents/streama/agent.json"
+      ],
+      "name": "Streama",
+      "kind": "brigade_mascot_agent",
+      "role": "Stream Processor",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:97",
+      "thumbnail": "agents/streama/thumb.png",
+      "character": "streama",
+      "cards": [
+        "docs/characters/streama.md",
+        "docs/characters/streama.md"
+      ],
+      "pet": "streama",
+      "page": "docs/agents/streama.md",
+      "dir": "agents/streama"
+    },
+    {
+      "slug": "ticket-tengu",
+      "files": [
+        "agents/ticket-tengu/Ticket-Tengu.png",
+        "agents/ticket-tengu/agent.json"
+      ],
+      "name": "Ticket Tengu",
+      "kind": "brigade_mascot_agent",
+      "role": "Ticket Router",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:98",
+      "thumbnail": "agents/ticket-tengu/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": "ticket-tengu",
+      "page": "docs/agents/ticket-tengu.md",
+      "dir": "agents/ticket-tengu"
+    },
+    {
+      "slug": "umami-code",
+      "files": [
+        "agents/umami-code/Umami-Code.png",
+        "agents/umami-code/agent.json"
+      ],
+      "name": "Umami Code",
+      "kind": "brigade_mascot_agent",
+      "role": "API Responder",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:99",
+      "thumbnail": "agents/umami-code/thumb.png",
+      "character": "umami-code",
+      "cards": [
+        "docs/characters/umami-code.md",
+        "docs/characters/umami-code.md"
+      ],
+      "pet": "umami-code",
+      "page": "docs/agents/umami-code.md",
+      "dir": "agents/umami-code"
+    },
+    {
+      "slug": "yume",
+      "files": [
+        "agents/yume/Yume.png",
+        "agents/yume/agent.json"
+      ],
+      "name": "Yume",
+      "kind": "brigade_mascot_agent",
+      "role": "Async Worker",
+      "group": "Service Layer",
+      "group_tagline": "Runtime · Cache · Delivery",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:100",
+      "thumbnail": "agents/yume/thumb.png",
+      "character": "yume",
+      "cards": [
+        "docs/characters/yume.md",
+        "docs/characters/yume.md"
+      ],
+      "pet": "yume",
+      "page": "docs/agents/yume.md",
+      "dir": "agents/yume"
+    },
+    {
+      "slug": "architect",
+      "files": [
+        "agents/architect/Architect.png",
+        "agents/architect/agent.json"
+      ],
+      "name": "Architect",
+      "kind": "brigade_mascot_agent",
+      "role": "System Architect",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:110",
+      "thumbnail": "agents/architect/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--architect.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/architect.md",
+      "dir": "agents/architect"
+    },
+    {
+      "slug": "coder",
+      "files": [
+        "agents/coder/Coder.png",
+        "agents/coder/agent.json"
+      ],
+      "name": "Coder",
+      "kind": "brigade_mascot_agent",
+      "role": "Implementation Coder",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:111",
+      "thumbnail": "agents/coder/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--coder.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/coder.md",
+      "dir": "agents/coder"
+    },
+    {
+      "slug": "debugger",
+      "files": [
+        "agents/debugger/Debugger.png",
+        "agents/debugger/agent.json"
+      ],
+      "name": "Debugger",
+      "kind": "brigade_mascot_agent",
+      "role": "Bug Hunter",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:112",
+      "thumbnail": "agents/debugger/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/debugger.md",
+      "dir": "agents/debugger"
+    },
+    {
+      "slug": "devrel",
+      "files": [
+        "agents/devrel/DevRel.png",
+        "agents/devrel/agent.json"
+      ],
+      "name": "DevRel",
+      "kind": "brigade_mascot_agent",
+      "role": "Developer Advocate",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:113",
+      "thumbnail": "agents/devrel/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--devrel.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/devrel.md",
+      "dir": "agents/devrel"
+    },
+    {
+      "slug": "doc-writer",
+      "files": [
+        "agents/doc-writer/Doc-Writer.png",
+        "agents/doc-writer/agent.json"
+      ],
+      "name": "Doc Writer",
+      "kind": "brigade_mascot_agent",
+      "role": "Documentation Scribe",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:114",
+      "thumbnail": "agents/doc-writer/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--doc-writer.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/doc-writer.md",
+      "dir": "agents/doc-writer"
+    },
+    {
+      "slug": "perf-chef",
+      "files": [
+        "agents/perf-chef/Perf-Chef.png",
+        "agents/perf-chef/agent.json"
+      ],
+      "name": "Perf Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "Performance Tuner",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:115",
+      "thumbnail": "agents/perf-chef/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/perf-chef.md",
+      "dir": "agents/perf-chef"
+    },
+    {
+      "slug": "reviewer",
+      "files": [
+        "agents/reviewer/Reviewer.png",
+        "agents/reviewer/agent.json"
+      ],
+      "name": "Reviewer",
+      "kind": "brigade_mascot_agent",
+      "role": "Code Reviewer",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:116",
+      "thumbnail": "agents/reviewer/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--reviewer.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/reviewer.md",
+      "dir": "agents/reviewer"
+    },
+    {
+      "slug": "sre-chef",
+      "files": [
+        "agents/sre-chef/SRE-Chef.png",
+        "agents/sre-chef/agent.json"
+      ],
+      "name": "SRE Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "Reliability Engineer",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:117",
+      "thumbnail": "agents/sre-chef/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--sre-chef.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/sre-chef.md",
+      "dir": "agents/sre-chef"
+    },
+    {
+      "slug": "tester",
+      "files": [
+        "agents/tester/Tester.png",
+        "agents/tester/agent.json"
+      ],
+      "name": "Tester",
+      "kind": "brigade_mascot_agent",
+      "role": "QA Tester",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:118",
+      "thumbnail": "agents/tester/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--tester.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/tester.md",
+      "dir": "agents/tester"
+    },
+    {
+      "slug": "ux-chef",
+      "files": [
+        "agents/ux-chef/UX-Chef.png",
+        "agents/ux-chef/agent.json"
+      ],
+      "name": "UX Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "Experience Designer",
+      "group": "Engineering & Development",
+      "group_tagline": "Code · Test · Review",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:119",
+      "thumbnail": "agents/ux-chef/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--ux-chef.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/ux-chef.md",
+      "dir": "agents/ux-chef"
+    },
+    {
+      "slug": "compliance",
+      "files": [
+        "agents/compliance/Compliance.png",
+        "agents/compliance/agent.json"
+      ],
+      "name": "Compliance",
+      "kind": "brigade_mascot_agent",
+      "role": "Compliance Officer",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:129",
+      "thumbnail": "agents/compliance/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--compliance.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/compliance.md",
+      "dir": "agents/compliance"
+    },
+    {
+      "slug": "encryptor",
+      "files": [
+        "agents/encryptor/Encryptor.png",
+        "agents/encryptor/agent.json"
+      ],
+      "name": "Encryptor",
+      "kind": "brigade_mascot_agent",
+      "role": "Encryption Specialist",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:130",
+      "thumbnail": "agents/encryptor/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--encryptor.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/encryptor.md",
+      "dir": "agents/encryptor"
+    },
+    {
+      "slug": "firewall",
+      "files": [
+        "agents/firewall/Firewall.png",
+        "agents/firewall/agent.json"
+      ],
+      "name": "Firewall",
+      "kind": "brigade_mascot_agent",
+      "role": "Perimeter Guard",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:131",
+      "thumbnail": "agents/firewall/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--firewall.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/firewall.md",
+      "dir": "agents/firewall"
+    },
+    {
+      "slug": "pen-tester",
+      "files": [
+        "agents/pen-tester/Pen-Tester.png",
+        "agents/pen-tester/agent.json"
+      ],
+      "name": "Pen Tester",
+      "kind": "brigade_mascot_agent",
+      "role": "Penetration Tester",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:132",
+      "thumbnail": "agents/pen-tester/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--pen-tester.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/pen-tester.md",
+      "dir": "agents/pen-tester"
+    },
+    {
+      "slug": "quality-guard",
+      "files": [
+        "agents/quality-guard/Quality-Guard.png",
+        "agents/quality-guard/agent.json"
+      ],
+      "name": "Quality Guard",
+      "kind": "brigade_mascot_agent",
+      "role": "Quality Gate",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:133",
+      "thumbnail": "agents/quality-guard/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/quality-guard.md",
+      "dir": "agents/quality-guard"
+    },
+    {
+      "slug": "risk-oracle",
+      "files": [
+        "agents/risk-oracle/Risk-Oracle.png",
+        "agents/risk-oracle/agent.json"
+      ],
+      "name": "Risk Oracle",
+      "kind": "brigade_mascot_agent",
+      "role": "Risk Analyst",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:134",
+      "thumbnail": "agents/risk-oracle/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/risk-oracle.md",
+      "dir": "agents/risk-oracle"
+    },
+    {
+      "slug": "scanner",
+      "files": [
+        "agents/scanner/Scanner.png",
+        "agents/scanner/agent.json"
+      ],
+      "name": "Scanner",
+      "kind": "brigade_mascot_agent",
+      "role": "Vulnerability Scanner",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:135",
+      "thumbnail": "agents/scanner/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/scanner.md",
+      "dir": "agents/scanner"
+    },
+    {
+      "slug": "security-auditor",
+      "files": [
+        "agents/security-auditor/Security-Auditor.png",
+        "agents/security-auditor/agent.json"
+      ],
+      "name": "Security Auditor",
+      "kind": "brigade_mascot_agent",
+      "role": "Security Auditor",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:136",
+      "thumbnail": "agents/security-auditor/thumb.png",
+      "character": null,
+      "cards": [
+        "docs/cards/1by1-chefs--security-auditor.md"
+      ],
+      "pet": null,
+      "page": "docs/agents/security-auditor.md",
+      "dir": "agents/security-auditor"
+    },
+    {
+      "slug": "token-monk",
+      "files": [
+        "agents/token-monk/Token-Monk.png",
+        "agents/token-monk/agent.json"
+      ],
+      "name": "Token Monk",
+      "kind": "brigade_mascot_agent",
+      "role": "Secrets Custodian",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:137",
+      "thumbnail": "agents/token-monk/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/token-monk.md",
+      "dir": "agents/token-monk"
+    },
+    {
+      "slug": "vault-link",
+      "files": [
+        "agents/vault-link/Vault-Link.png",
+        "agents/vault-link/agent.json"
+      ],
+      "name": "Vault Link",
+      "kind": "brigade_mascot_agent",
+      "role": "Vault Connector",
+      "group": "Security & Quality",
+      "group_tagline": "Guard · Audit · Comply",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:138",
+      "thumbnail": "agents/vault-link/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/vault-link.md",
+      "dir": "agents/vault-link"
+    },
+    {
+      "slug": "alarmer",
+      "files": [
+        "agents/alarmer/Alarmer.png",
+        "agents/alarmer/agent.json"
+      ],
+      "name": "Alarmer",
+      "kind": "brigade_mascot_agent",
+      "role": "Alert Manager",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:148",
+      "thumbnail": "agents/alarmer/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/alarmer.md",
+      "dir": "agents/alarmer"
+    },
+    {
+      "slug": "automator",
+      "files": [
+        "agents/automator/Automator.png",
+        "agents/automator/agent.json"
+      ],
+      "name": "Automator",
+      "kind": "brigade_mascot_agent",
+      "role": "Automation Engine",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:149",
+      "thumbnail": "agents/automator/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/automator.md",
+      "dir": "agents/automator"
+    },
+    {
+      "slug": "cloud-chef",
+      "files": [
+        "agents/cloud-chef/Cloud-Chef.png",
+        "agents/cloud-chef/agent.json"
+      ],
+      "name": "Cloud Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "Cloud Provisioner",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:150",
+      "thumbnail": "agents/cloud-chef/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/cloud-chef.md",
+      "dir": "agents/cloud-chef"
+    },
+    {
+      "slug": "cost-guard",
+      "files": [
+        "agents/cost-guard/Cost-Guard.png",
+        "agents/cost-guard/agent.json"
+      ],
+      "name": "Cost Guard",
+      "kind": "brigade_mascot_agent",
+      "role": "Cost Optimizer",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:151",
+      "thumbnail": "agents/cost-guard/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/cost-guard.md",
+      "dir": "agents/cost-guard"
+    },
+    {
+      "slug": "database",
+      "files": [
+        "agents/database/Database.png",
+        "agents/database/agent.json"
+      ],
+      "name": "Database",
+      "kind": "brigade_mascot_agent",
+      "role": "Database Steward",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:152",
+      "thumbnail": "agents/database/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/database.md",
+      "dir": "agents/database"
+    },
+    {
+      "slug": "dr-builder",
+      "files": [
+        "agents/dr-builder/DR-Builder.png",
+        "agents/dr-builder/agent.json"
+      ],
+      "name": "DR Builder",
+      "kind": "brigade_mascot_agent",
+      "role": "Disaster Recovery",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:153",
+      "thumbnail": "agents/dr-builder/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/dr-builder.md",
+      "dir": "agents/dr-builder"
+    },
+    {
+      "slug": "load-balancer",
+      "files": [
+        "agents/load-balancer/Load-Balancer.png",
+        "agents/load-balancer/agent.json"
+      ],
+      "name": "Load Balancer",
+      "kind": "brigade_mascot_agent",
+      "role": "Load Balancer",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:154",
+      "thumbnail": "agents/load-balancer/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/load-balancer.md",
+      "dir": "agents/load-balancer"
+    },
+    {
+      "slug": "logger",
+      "files": [
+        "agents/logger/Logger.png",
+        "agents/logger/agent.json"
+      ],
+      "name": "Logger",
+      "kind": "brigade_mascot_agent",
+      "role": "Log Aggregator",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:155",
+      "thumbnail": "agents/logger/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/logger.md",
+      "dir": "agents/logger"
+    },
+    {
+      "slug": "networker",
+      "files": [
+        "agents/networker/Networker.png",
+        "agents/networker/agent.json"
+      ],
+      "name": "Networker",
+      "kind": "brigade_mascot_agent",
+      "role": "Network Engineer",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:156",
+      "thumbnail": "agents/networker/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/networker.md",
+      "dir": "agents/networker"
+    },
+    {
+      "slug": "observatory",
+      "files": [
+        "agents/observatory/Observatory.png",
+        "agents/observatory/agent.json"
+      ],
+      "name": "Observatory",
+      "kind": "brigade_mascot_agent",
+      "role": "Observability Hub",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:157",
+      "thumbnail": "agents/observatory/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/observatory.md",
+      "dir": "agents/observatory"
+    },
+    {
+      "slug": "pipeline",
+      "files": [
+        "agents/pipeline/Pipeline.png",
+        "agents/pipeline/agent.json"
+      ],
+      "name": "Pipeline",
+      "kind": "brigade_mascot_agent",
+      "role": "CI/CD Pipeline",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:158",
+      "thumbnail": "agents/pipeline/thumb.png",
+      "character": "pipeline-sensei",
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/pipeline.md",
+      "dir": "agents/pipeline"
+    },
+    {
+      "slug": "storage",
+      "files": [
+        "agents/storage/Storage.png",
+        "agents/storage/agent.json"
+      ],
+      "name": "Storage",
+      "kind": "brigade_mascot_agent",
+      "role": "Storage Manager",
+      "group": "Platform & Infrastructure",
+      "group_tagline": "Compute · Storage · Observe",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:159",
+      "thumbnail": "agents/storage/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/storage.md",
+      "dir": "agents/storage"
+    },
+    {
+      "slug": "api-gateway",
+      "files": [
+        "agents/api-gateway/API-Gateway.png",
+        "agents/api-gateway/agent.json"
+      ],
+      "name": "API Gateway",
+      "kind": "brigade_mascot_agent",
+      "role": "API Gateway",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:169",
+      "thumbnail": "agents/api-gateway/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/api-gateway.md",
+      "dir": "agents/api-gateway"
+    },
+    {
+      "slug": "argo-chef",
+      "files": [
+        "agents/argo-chef/Argo-Chef.png",
+        "agents/argo-chef/agent.json"
+      ],
+      "name": "Argo Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "GitOps Deployer",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:170",
+      "thumbnail": "agents/argo-chef/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/argo-chef.md",
+      "dir": "agents/argo-chef"
+    },
+    {
+      "slug": "community-rep",
+      "files": [
+        "agents/community-rep/Community-Rep.png",
+        "agents/community-rep/agent.json"
+      ],
+      "name": "Community Rep",
+      "kind": "brigade_mascot_agent",
+      "role": "Community Liaison",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:171",
+      "thumbnail": "agents/community-rep/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/community-rep.md",
+      "dir": "agents/community-rep"
+    },
+    {
+      "slug": "datadog",
+      "files": [
+        "agents/datadog/Datadog.png",
+        "agents/datadog/agent.json"
+      ],
+      "name": "Datadog",
+      "kind": "brigade_mascot_agent",
+      "role": "Monitoring Connector",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:172",
+      "thumbnail": "agents/datadog/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/datadog.md",
+      "dir": "agents/datadog"
+    },
+    {
+      "slug": "docker",
+      "files": [
+        "agents/docker/Docker.png",
+        "agents/docker/agent.json"
+      ],
+      "name": "Docker",
+      "kind": "brigade_mascot_agent",
+      "role": "Container Builder",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:173",
+      "thumbnail": "agents/docker/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/docker.md",
+      "dir": "agents/docker"
+    },
+    {
+      "slug": "github-chef",
+      "files": [
+        "agents/github-chef/GitHub-Chef.png",
+        "agents/github-chef/agent.json"
+      ],
+      "name": "GitHub Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "GitHub Integrator",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:174",
+      "thumbnail": "agents/github-chef/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/github-chef.md",
+      "dir": "agents/github-chef"
+    },
+    {
+      "slug": "gitlab-chef",
+      "files": [
+        "agents/gitlab-chef/GitLab-Chef.png",
+        "agents/gitlab-chef/agent.json"
+      ],
+      "name": "GitLab Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "GitLab Integrator",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:175",
+      "thumbnail": "agents/gitlab-chef/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/gitlab-chef.md",
+      "dir": "agents/gitlab-chef"
+    },
+    {
+      "slug": "jenkins-chef",
+      "files": [
+        "agents/jenkins-chef/Jenkins-Chef.png",
+        "agents/jenkins-chef/agent.json"
+      ],
+      "name": "Jenkins Chef",
+      "kind": "brigade_mascot_agent",
+      "role": "CI Integrator",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:176",
+      "thumbnail": "agents/jenkins-chef/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/jenkins-chef.md",
+      "dir": "agents/jenkins-chef"
+    },
+    {
+      "slug": "kubernetes",
+      "files": [
+        "agents/kubernetes/Kubernetes.png",
+        "agents/kubernetes/agent.json"
+      ],
+      "name": "Kubernetes",
+      "kind": "brigade_mascot_agent",
+      "role": "Cluster Connector",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:177",
+      "thumbnail": "agents/kubernetes/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/kubernetes.md",
+      "dir": "agents/kubernetes"
+    },
+    {
+      "slug": "prometheus",
+      "files": [
+        "agents/prometheus/Prometheus.png",
+        "agents/prometheus/agent.json"
+      ],
+      "name": "Prometheus",
+      "kind": "brigade_mascot_agent",
+      "role": "Metrics Collector",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:178",
+      "thumbnail": "agents/prometheus/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/prometheus.md",
+      "dir": "agents/prometheus"
+    },
+    {
+      "slug": "slack-bot",
+      "files": [
+        "agents/slack-bot/Slack-Bot.png",
+        "agents/slack-bot/agent.json"
+      ],
+      "name": "Slack Bot",
+      "kind": "brigade_mascot_agent",
+      "role": "Notifications Bot",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:179",
+      "thumbnail": "agents/slack-bot/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/slack-bot.md",
+      "dir": "agents/slack-bot"
+    },
+    {
+      "slug": "teacher",
+      "files": [
+        "agents/teacher/Teacher.png",
+        "agents/teacher/agent.json"
+      ],
+      "name": "Teacher",
+      "kind": "brigade_mascot_agent",
+      "role": "Onboarding Mentor",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:180",
+      "thumbnail": "agents/teacher/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/teacher.md",
+      "dir": "agents/teacher"
+    },
+    {
+      "slug": "terraformer",
+      "files": [
+        "agents/terraformer/Terraformer.png",
+        "agents/terraformer/agent.json"
+      ],
+      "name": "Terraformer",
+      "kind": "brigade_mascot_agent",
+      "role": "Infrastructure as Code",
+      "group": "Integrations & Ecosystem",
+      "group_tagline": "Connect · Deploy · Extend",
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:181",
+      "thumbnail": "agents/terraformer/thumb.png",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/terraformer.md",
+      "dir": "agents/terraformer"
+    },
+    {
+      "slug": "agent-issue-triage",
+      "files": [
+        "agents/agent-issue-triage/README.md",
+        "agents/agent-issue-triage/item.json",
+        "agents/agent-issue-triage/install.sh",
+        "agents/agent-issue-triage/payload/.github/workflows/issue-triage.md",
+        "agents/agent-issue-triage/agent.json"
+      ],
+      "name": "Issue Triage gh-aw Source",
+      "kind": "agentic_workflow",
+      "role": "Bounded issue triage source with comment-only safe output.",
+      "source": "icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/agent-issue-triage/item.json",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/agent-issue-triage.md",
+      "dir": "agents/agent-issue-triage"
+    },
+    {
+      "slug": "agent-ci-doctor",
+      "files": [
+        "agents/agent-ci-doctor/README.md",
+        "agents/agent-ci-doctor/item.json",
+        "agents/agent-ci-doctor/install.sh",
+        "agents/agent-ci-doctor/payload/.github/workflows/ci-doctor.md",
+        "agents/agent-ci-doctor/agent.json"
+      ],
+      "name": "CI Doctor gh-aw Source",
+      "kind": "agentic_workflow",
+      "role": "Bounded CI failure diagnosis source with issue creation safe output.",
+      "source": "icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/agent-ci-doctor/item.json",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/agent-ci-doctor.md",
+      "dir": "agents/agent-ci-doctor"
+    },
+    {
+      "slug": "agent-docs-updater",
+      "files": [
+        "agents/agent-docs-updater/README.md",
+        "agents/agent-docs-updater/item.json",
+        "agents/agent-docs-updater/install.sh",
+        "agents/agent-docs-updater/payload/.github/workflows/docs-updater.md",
+        "agents/agent-docs-updater/agent.json"
+      ],
+      "name": "Documentation Updater gh-aw Source",
+      "kind": "agentic_workflow",
+      "role": "Bounded documentation drift updater with pull-request safe output.",
+      "source": "icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/agent-docs-updater/item.json",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/agent-docs-updater.md",
+      "dir": "agents/agent-docs-updater"
+    },
+    {
+      "slug": "miseos-github-agent",
+      "files": [
+        "agents/miseos-github-agent/miseos-agent.yml",
+        "agents/miseos-github-agent/agent.json"
+      ],
+      "name": "MiseOS GitHub Agent",
+      "kind": "github_actions_agent",
+      "role": null,
+      "source": "extract/code/agentkit/miseos-github-agent-kit/.github/workflows/miseos-agent.yml",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/miseos-github-agent.md",
+      "dir": "agents/miseos-github-agent"
+    },
+    {
+      "slug": "nemotron-voice-agent",
+      "files": [
+        "agents/nemotron-voice-agent/nemotron-voice-agent.yml",
+        "agents/nemotron-voice-agent/agent.json"
+      ],
+      "name": "Nemotron Voice Agent",
+      "kind": "agent_config",
+      "role": null,
+      "source": "extract/code/gpu2/mise-enhanced-gpu-pack-a-punch-workflow-machine/vendor/nv-skills/components.d/nemotron-voice-agent.yml",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/nemotron-voice-agent.md",
+      "dir": "agents/nemotron-voice-agent"
+    },
+    {
+      "slug": "repo-steward",
+      "files": [
+        "agents/repo-steward/autonomous-repo-steward.md",
+        "agents/repo-steward/mise-repo-steward.yml",
+        "agents/repo-steward/mise-repo-steward-v2.yml",
+        "agents/repo-steward/mise-repo-steward 2.yml",
+        "agents/repo-steward/agent.json"
+      ],
+      "name": "Autonomous Repository Steward",
+      "kind": "agent_prompt_and_workflow",
+      "role": null,
+      "source": "icloud/autonomous-repo-steward.md; icloud/mise-repo-steward.yml; icloud/mise-repo-steward-v2.yml; icloud/mise-repo-steward 2.yml",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-steward.md",
+      "dir": "agents/repo-steward"
+    },
+    {
+      "slug": "repo-steward-agent",
+      "files": [
+        "agents/repo-steward-agent/CONTRIBUTING.md",
+        "agents/repo-steward-agent/.editorconfig",
+        "agents/repo-steward-agent/CHANGELOG.md",
+        "agents/repo-steward-agent/README.md",
+        "agents/repo-steward-agent/package.json",
+        "agents/repo-steward-agent/SECURITY.md",
+        "agents/repo-steward-agent/AGENTS.md",
+        "agents/repo-steward-agent/CODE_OF_CONDUCT.md",
+        "agents/repo-steward-agent/LICENSE",
+        "agents/repo-steward-agent/.gitignore",
+        "agents/repo-steward-agent/test/policy.test.js",
+        "agents/repo-steward-agent/src/policy.js",
+        "agents/repo-steward-agent/src/report.js",
+        "agents/repo-steward-agent/.github/pull_request_template.md",
+        "agents/repo-steward-agent/.github/dependabot.yml",
+        "agents/repo-steward-agent/.github/ISSUE_TEMPLATE/config.yml",
+        "agents/repo-steward-agent/.github/ISSUE_TEMPLATE/bug_report.yml",
+        "agents/repo-steward-agent/.github/workflows/ci.yml",
+        "agents/repo-steward-agent/.github/workflows/secret-scan.yml",
+        "agents/repo-steward-agent/.github/workflows/repo-steward.yml",
+        "agents/repo-steward-agent/agent.json"
+      ],
+      "name": "MiseOS Repo Steward Agent",
+      "kind": "agent_package",
+      "role": null,
+      "source": "icloud/# Autonomous Repository Steward Prompt/miseos-repository-ecosystem.zip/miseos-repository-ecosystem/repos/05-miseos-repo-steward-agent",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-steward-agent.md",
+      "dir": "agents/repo-steward-agent"
+    },
+    {
+      "slug": "devops-orchestra",
+      "files": [
+        "agents/devops-orchestra/AGENTS.md",
+        "agents/devops-orchestra/agent.json"
+      ],
+      "name": "DevOps Orchestra agents",
+      "kind": "agents_md",
+      "role": null,
+      "source": "extract/code/orch760/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/devops-orchestra.md",
+      "dir": "agents/devops-orchestra"
+    },
+    {
+      "slug": "repo-reliability-kit",
+      "files": [
+        "agents/repo-reliability-kit/AGENTS.md",
+        "agents/repo-reliability-kit/agent.json"
+      ],
+      "name": "Repo Reliability Kit agent guide",
+      "kind": "agents_md",
+      "role": null,
+      "source": "extract/code/reliab/miseos-repo-reliability-kit/templates/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-reliability-kit.md",
+      "dir": "agents/repo-reliability-kit"
+    },
+    {
+      "slug": "bootstrap-registry",
+      "files": [
+        "agents/bootstrap-registry/AGENTS.md",
+        "agents/bootstrap-registry/agent.json"
+      ],
+      "name": "Bootstrap Registry agent guide",
+      "kind": "agents_md",
+      "role": null,
+      "source": "icloud/miseos-bootstrap-registry-integrated-v3.zip/miseos-bootstrap-registry/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/bootstrap-registry.md",
+      "dir": "agents/bootstrap-registry"
+    },
+    {
+      "slug": "supermemory-mcp",
+      "files": [
+        "agents/supermemory-mcp/mcp.config.example.json",
+        "agents/supermemory-mcp/agent.json"
+      ],
+      "name": "Supermemory MCP config",
+      "kind": "mcp_config",
+      "role": null,
+      "source": "icloud/Catalogue/MiseOS-Supermemory-Implementation.zip/MiseOS-Supermemory-Implementation/supermemory/mcp.config.example.json",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/supermemory-mcp.md",
+      "dir": "agents/supermemory-mcp"
+    },
+    {
+      "slug": "repo-apps-brigade-steward",
+      "files": [
+        "apps/brigade-steward/AGENTS.md"
+      ],
+      "name": "apps/brigade-steward agent guide",
+      "kind": "agents_md_in_repo",
+      "role": null,
+      "source": "apps/brigade-steward/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-apps-brigade-steward.md",
+      "dir": null
+    },
+    {
+      "slug": "repo-apps-devops-orchestra",
+      "files": [
+        "apps/devops-orchestra/AGENTS.md"
+      ],
+      "name": "apps/devops-orchestra agent guide",
+      "kind": "agents_md_in_repo",
+      "role": null,
+      "source": "apps/devops-orchestra/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-apps-devops-orchestra.md",
+      "dir": null
+    },
+    {
+      "slug": "repo-tools-github-agent-kit-github-workflows",
+      "files": [
+        "tools/github-agent-kit/.github/workflows/miseos-agent.yml"
+      ],
+      "name": "tools/github-agent-kit/.github/workflows agent guide",
+      "kind": "agents_md_in_repo",
+      "role": null,
+      "source": "tools/github-agent-kit/.github/workflows/miseos-agent.yml",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-tools-github-agent-kit-github-workflows.md",
+      "dir": null
+    },
+    {
+      "slug": "repo-tools-mise-pr",
+      "files": [
+        "tools/mise-pr/AGENTS.md"
+      ],
+      "name": "tools/mise-pr agent guide",
+      "kind": "agents_md_in_repo",
+      "role": null,
+      "source": "tools/mise-pr/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-tools-mise-pr.md",
+      "dir": null
+    },
+    {
+      "slug": "repo-tools-repo-reliability-kit-templates",
+      "files": [
+        "tools/repo-reliability-kit/templates/AGENTS.md"
+      ],
+      "name": "tools/repo-reliability-kit/templates agent guide",
+      "kind": "agents_md_in_repo",
+      "role": null,
+      "source": "tools/repo-reliability-kit/templates/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-tools-repo-reliability-kit-templates.md",
+      "dir": null
+    },
+    {
+      "slug": "repo-tools-salt-shakers",
+      "files": [
+        "tools/salt-shakers/AGENTS.md"
+      ],
+      "name": "tools/salt-shakers agent guide",
+      "kind": "agents_md_in_repo",
+      "role": null,
+      "source": "tools/salt-shakers/AGENTS.md",
+      "character": null,
+      "cards": [],
+      "pet": null,
+      "page": "docs/agents/repo-tools-salt-shakers.md",
+      "dir": null
+    }
+  ]
+}

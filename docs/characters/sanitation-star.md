@@ -77,6 +77,10 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Problem it addresses | Not yet defined in the source material |
 | Safety gate | Not yet defined in the source material |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 _Not yet defined in the source material_

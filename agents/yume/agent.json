@@ -1,0 +1,21 @@
+{
+  "slug": "yume",
+  "name": "Yume",
+  "kind": "brigade_mascot_agent",
+  "role": "Async Worker",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:100",
+  "thumbnail": "agents/yume/thumb.png",
+  "character": "yume",
+  "cards": [
+    "docs/characters/yume.md",
+    "docs/characters/yume.md"
+  ],
+  "pet": "yume",
+  "page": "docs/agents/yume.md",
+  "dir": "agents/yume",
+  "files": [
+    "agents/yume/Yume.png"
+  ]
+}

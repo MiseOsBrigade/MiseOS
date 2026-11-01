@@ -8,6 +8,8 @@
   ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
     "aliases": "card titles / OCR in data/player-cards-ocr.json",
     "cards": "data/player-cards.json",
     "card_text": "data/player-cards-ocr.json (OCR of the card image)",
@@ -25,6 +27,34 @@
     "helps.station": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json (marketplace.category)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.workflow-pack",
+    "name": "MiseOS Workflow Pack",
+    "type": "workflow",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "bootstrap",
+    "criticality": "critical",
+    "registries": "repo",
+    "artifacts": ".github/workflows"
+  },
+  "catalog_item": {
+    "id": "registry-workflow-pack",
+    "category": "registry-capability",
+    "title": "MiseOS Workflow Pack",
+    "description": "Executable baseline capability for MiseOS Workflow Pack.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.workflow-pack.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: workflowPack",
+      "Source status: active"
+    ]
+  },
   "cards": [
     {
       "file": "assets/player-cards/long-cards/packaged-for-infinity-built-for-synergy.webp",
@@ -284,5 +314,7 @@
     "mission": "Not yet defined in the source material",
     "problem": "Executable baseline capability for MiseOS Workflow Pack.",
     "proof_gate": "Not yet defined in the source material"
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

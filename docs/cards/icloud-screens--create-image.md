@@ -14,6 +14,8 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original source | `icloud:D533B19E-712A-4EF3-BE8B-A59513731480.PNG` |
 | Duplicates | — |
 | Character | Not yet defined in the source material |
+| Agent | Not yet defined in the source material |
+| Repo pet | Not yet defined in the source material |
 | Workflow / actions / implementation | Not yet defined in the source material |
 
 ## Printed text (OCR)

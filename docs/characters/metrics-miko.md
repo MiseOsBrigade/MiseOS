@@ -107,6 +107,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Metrics Miko performs slo dashboards within the Reliability Kitchen. <sub>source: `characters/metrics-miko/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/metrics-miko/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Forecast Fuji](./forecast-fuji.md) · [Resilience Ryu](./resilience-ryu.md) · [Impact Ichi](./impact-ichi.md) · [Backlog Benji](./backlog-benji.md) · [Felix Rollback](./felix-rollback.md) · [Streama](./streama.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

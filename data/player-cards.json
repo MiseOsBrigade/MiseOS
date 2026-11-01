@@ -5358,7 +5358,7 @@
     "zen-plater"
   ],
   "alignment": {
-    "cards_matched_before": 99,
+    "cards_matched_before": 104,
     "cards_matched_after": 180,
     "script": "tools/player-cards/scripts/align-characters.py",
     "ocr": "data/player-cards-ocr.json"

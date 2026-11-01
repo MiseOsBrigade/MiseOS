@@ -91,6 +91,12 @@ MiseOS models software delivery as a kitchen brigade. Every character is a playe
 
 ## Repo pets
 
+<!-- universe-index:start -->
+**Universe indexes:** [Characters](./docs/characters/README.md) · [Agents (92)](./docs/agents/README.md) · [Repo pets (35, 8 animals)](./docs/repo-pets/README.md) · [Source library manifest](./data/source-files.json)
+
+<p align="center"><img src="./assets/repo-pets/walk-animals.svg" alt="MiseOS animal repo pets" width="100%" /></p>
+<!-- universe-index:end -->
+
 <p align="center"><img src="./assets/repo-pets/walk-kitchen.svg" alt="MiseOS repo pets on patrol" width="100%" /></p>
 
 The brigade roams this repository as Shimeji-style repo pets. The strips above and below are self-contained animated SVGs built from the characters' card art and the Shimeji Brigade sprite packs (Kurogami and Mizu walk, perch and climb frame by frame). They pause when your system asks for reduced motion.

@@ -6,6 +6,8 @@
   "aliases": [],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
     "cards": "data/player-cards.json",
     "card_text": "data/player-cards-ocr.json (OCR of the card image)",
     "card_rarity_printed": "data/player-cards-ocr.json",
@@ -22,6 +24,34 @@
     "helps.station": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json (marketplace.category)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.docs-hub-template",
+    "name": "MiseOS Docs Hub Template",
+    "type": "template",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "npm; repo",
+    "artifacts": "@mise-os/docs-hub-template; templates/docs-hub"
+  },
+  "catalog_item": {
+    "id": "registry-docs-hub-template",
+    "category": "registry-capability",
+    "title": "MiseOS Docs Hub Template",
+    "description": "Executable baseline capability for MiseOS Docs Hub Template.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.docs-hub-template.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: docsHubTemplate",
+      "Source status: active"
+    ]
+  },
   "cards": [
     {
       "file": "assets/player-cards/long-cards/miseos-docs-hub-template.webp",
@@ -269,5 +299,7 @@
     "mission": "Not yet defined in the source material",
     "problem": "Executable baseline capability for MiseOS Docs Hub Template.",
     "proof_gate": "Not yet defined in the source material"
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

@@ -1,0 +1,20 @@
+{
+  "slug": "ux-chef",
+  "name": "UX Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "Experience Designer",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:119",
+  "thumbnail": "agents/ux-chef/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--ux-chef.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/ux-chef.md",
+  "dir": "agents/ux-chef",
+  "files": [
+    "agents/ux-chef/UX-Chef.png"
+  ]
+}

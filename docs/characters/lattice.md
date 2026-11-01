@@ -114,6 +114,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Lattice performs trace correlator within the Data & Insight Kitchen. <sub>source: `characters/lattice/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/lattice/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Repo Ranger](./repo-ranger.md) · [DORA Daichi](./dora-daichi.md) · [Flag Fox](./flag-fox.md) · [Lake Haru](./lake-haru.md) · [Lila Branchkeeper](./lila-branchkeeper.md) · [Terra Forge](./terra-forge.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

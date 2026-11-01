@@ -124,6 +124,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Mizu performs prepare within the Operations Kitchen. <sub>source: `characters/mizu/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/mizu/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Mizu](../agents/mizu.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Mizu](../repo-pets/mizu.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Kaji](./kaji.md) · [Scale Oni](./scale-oni.md) · [Velvet Vesper](./velvet-vesper.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -163,5 +169,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/mizu/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

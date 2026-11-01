@@ -1,0 +1,36 @@
+{
+  "slug": "flash-riku",
+  "name": "Flash Riku",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Runner",
+  "department": "Pipeline Department",
+  "glyph": "⚡",
+  "catchphrase": "Fastest chef in the kitchen. Delivers with zero delay.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 5,
+      "files": 3,
+      "parent": 2,
+      "ci": 8,
+      "scripts": 6,
+      "deploy": 9
+    },
+    "verbs": {
+      "enterDirectory": "dashes through",
+      "inspectFile": "speed-checks",
+      "inspectConfig": "tightens the deploy route in",
+      "inspectDocs": "skims the mission card in",
+      "inspectTests": "checks the launch signal in",
+      "retreat": "blinks back to staging"
+    }
+  },
+  "sprites": [],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "character": "flash-riku",
+  "cards": [
+    "docs/characters/flash-riku.md"
+  ],
+  "page": "docs/repo-pets/flash-riku.md",
+  "dir": "assets/repo-pets/flash-riku"
+}

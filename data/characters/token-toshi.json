@@ -251,5 +251,7 @@
     "mission": "Guard. Audit. Comply.",
     "problem": "Token Toshi performs credential hygiene scanner within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

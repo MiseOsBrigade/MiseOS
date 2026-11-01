@@ -1,0 +1,50 @@
+{
+  "slug": "mizu",
+  "name": "Mizu",
+  "kind": "terminal_repo_pet+shimeji",
+  "species": null,
+  "role": "Prep Chef",
+  "department": "Operations Department",
+  "glyph": "💧",
+  "catchphrase": "Prepares everything in advance. Organization is key.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 5,
+      "files": 3,
+      "parent": 2,
+      "config": 4,
+      "data": 5,
+      "docs": 3
+    },
+    "verbs": {
+      "enterDirectory": "sets up mise en place inside",
+      "inspectFile": "preps the ingredients in",
+      "inspectConfig": "sorts the prep list",
+      "inspectDocs": "labels the recipe notes",
+      "inspectTests": "checks prep readiness",
+      "retreat": "flows back upstream"
+    },
+    "shimeji_states": [
+      "climb",
+      "idle",
+      "perch",
+      "walk"
+    ]
+  },
+  "sprites": [
+    "assets/repo-pets/sprites/mizu/climb/frame_001.png",
+    "assets/repo-pets/sprites/mizu/idle/frame_001.png",
+    "assets/repo-pets/sprites/mizu/perch/frame_001.png",
+    "assets/repo-pets/sprites/mizu/walk/frame_001.png",
+    "assets/repo-pets/cutouts/mizu.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/mizu.png",
+  "character": "mizu",
+  "cards": [
+    "docs/characters/mizu.md",
+    "docs/characters/mizu.md"
+  ],
+  "page": "docs/repo-pets/mizu.md",
+  "dir": "assets/repo-pets/mizu"
+}

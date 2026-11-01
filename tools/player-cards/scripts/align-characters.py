@@ -65,6 +65,19 @@ for f in sorted(glob.glob(MANI_DIR + '/*.manifest.json')):
     m = rjson(f); slug = m['registry_id'].replace('.', '-')
     e = new(slug, m['name'], 'registry_manifest'); e['manifest'] = m; e['manifest_path'] = f
     e['sources']['name'] = f
+# registry catalogue (CSV) and individual catalogue items
+REGCSV_P = 'data/imports/miseos-registry-catalog.csv'; ITEMS_P = 'data/imports/miseos-individual-catalog-items.json'
+regcsv = {r['id'].replace('.', '-'): r for r in rcsv(REGCSV_P)} if os.path.exists(REGCSV_P) else {}
+items = rjson(ITEMS_P)['items'] if os.path.exists(ITEMS_P) else []
+for s, r in regcsv.items():
+    if s in ents: ents[s]['registry_catalog'] = r; ents[s]['sources']['registry_catalog'] = REGCSV_P
+for it in items:
+    ms = 'miseos-' + it['id'][len('registry-'):] if it['id'].startswith('registry-') else None
+    if ms in ents:
+        ents[ms]['catalog_item'] = it; ents[ms]['sources']['catalog_item'] = ITEMS_P
+    elif it.get('category') != 'agentic':
+        e = new('catalog-' + it['id'], it.get('title', it['id']), 'catalog_item'); e['catalog_item'] = it
+        e['sources']['name'] = ITEMS_P
 # card-defined chefs: photo-alignment rows that are visual_reference_only
 for r in photo:
     if r['alignment_status'] == 'visual_reference_only':
@@ -124,9 +137,10 @@ cards_doc['alignment'] = {'cards_matched_before': before, 'cards_matched_after':
                           'script': 'tools/player-cards/scripts/align-characters.py', 'ocr': OCR_P}
 json.dump(cards_doc, open(CARDS_P, 'w'), indent=2, ensure_ascii=False); open(CARDS_P, 'a').write('\n')
 
+SOURCE_FILES = rjson('data/source-files.json')['files'] if os.path.exists('data/source-files.json') else []
 # ---------- code / docs references ----------
 files = subprocess.run(['git', 'ls-files'], capture_output=True, text=True).stdout.split('\n')
-SKIP = re.compile(r'^(data|characters|assets|docs/characters|docs/cards)/|node_modules|^README\.md$|^tools/player-cards/')
+SKIP = re.compile(r'^(data|characters|assets|agents|docs/characters|docs/cards|docs/agents|docs/repo-pets|docs/source-library)/|node_modules|^README\.md$|^tools/player-cards/')
 CODE_EXT = ('.js', '.mjs', '.cjs', '.ts', '.tsx', '.jsx', '.py', '.sh', '.yml', '.yaml', '.sol', '.go', '.rs')
 DOC_EXT = ('.md', '.mdx', '.txt', '.html')
 texts = {}
@@ -227,6 +241,14 @@ for s, e in ents.items():
         e['marketplace'] = m.get('marketplace'); e['compatibility'] = m.get('compatibility'); e['pricing'] = m.get('pricing')
         for k in ('runtime', 'permissions', 'distribution', 'marketplace', 'compatibility', 'pricing'): src[k] = mp
         e.pop('manifest')
+    elif e['kind'] == 'catalog_item':
+        it = e['catalog_item']
+        role = it.get('category', UNDEF); src['role'] = ITEMS_P + ' (category)'
+        if it.get('description'): workflow['summary'] = it['description']; src['workflow.summary'] = ITEMS_P
+        if it.get('files'): actions.append({'installs_files': ', '.join(it['files']), 'source': ITEMS_P})
+        if it.get('dependencies'): e['dependencies'] = it['dependencies']; src['dependencies'] = ITEMS_P
+        if it.get('notes'): e['notes'] = it['notes']; src['notes'] = ITEMS_P
+        e['catalog_source_dir'] = 'docs/source-library/icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/' + it['id']
     else:
         # card-defined chef: role is the subtitle printed under the name on the card
         subs = []
@@ -248,6 +270,7 @@ for s, e in ents.items():
     # implementation
     terms = [e['name']] + ([s] if '-' in s else [])
     if e['kind'] == 'registry_manifest': terms += [ids['registry_id'], e['runtime']['handler']]
+    if e['kind'] == 'catalog_item': terms = [e['catalog_item']['id']]
     code = refs(terms, CODE_EXT)
     code = [r for r in code if not r['path'].endswith(('.json', '.csv'))]
     data_refs = refs(terms, ('.json', '.csv'))
@@ -259,6 +282,11 @@ for s, e in ents.items():
             if re.search(r'export const ' + re.escape(h) + r'\b', L):
                 impl['handler'] = {'path': HANDLERS_P, 'line': i + 1, 'name': h}; break
         if s in TOOL_DIRS: impl['tool_dir'] = TOOL_DIRS[s]
+    if e['kind'] == 'catalog_item':
+        pre = 'icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/' + e['catalog_item']['id'] + '/payload/'
+        pay = sorted({r['repo_path'] for r in SOURCE_FILES if r['original'].startswith(pre) and r.get('repo_path')})
+        if pay: impl['payload_files'] = pay[:20]; impl['tool_dir'] = os.path.dirname(pay[0])
+        e.pop('catalog_source_dir', None)
     DATA_LIKE = re.compile(r'/data/|/types/|\.generated\.|/test/|\.test\.')
     impl['app_code_refs'] = [r for r in code if not DATA_LIKE.search(r['path'])][:15]
     if impl.get('handler') or impl.get('tool_dir'):
@@ -286,6 +314,14 @@ for s, e in ents.items():
     e['helps'] = helps
     if e['kind'] != 'registry_manifest' and helps['station'] != UNDEF: src['helps.station'] = src.get('department', src.get('role'))
 
+# cross-links to agents and repo pets
+AG = rjson('data/agents.json')['agents'] if os.path.exists('data/agents.json') else []
+PE = rjson('data/repo-pets.json')['pets'] if os.path.exists('data/repo-pets.json') else []
+for s, e in ents.items():
+    e['agents'] = [{'slug': a['slug'], 'name': a['name'], 'page': a['page']} for a in AG if a.get('character') == s]
+    e['repo_pets'] = [{'slug': p['slug'], 'name': p['name'], 'page': p['page']} for p in PE if p.get('character') == s or p['slug'] == s]
+    if e['agents']: e['sources']['agents'] = 'data/agents.json'
+    if e['repo_pets']: e['sources']['repo_pets'] = 'data/repo-pets.json'
 os.makedirs('data/characters', exist_ok=True)
 for f in glob.glob('data/characters/*.json'): os.remove(f)
 for s, e in ents.items():

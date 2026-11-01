@@ -184,5 +184,7 @@
     "mission": "Keep the kitchen running smoothly.",
     "problem": "Ladle Lumen performs broth beacon within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

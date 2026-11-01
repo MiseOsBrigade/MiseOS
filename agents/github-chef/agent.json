@@ -1,0 +1,18 @@
+{
+  "slug": "github-chef",
+  "name": "GitHub Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "GitHub Integrator",
+  "group": "Integrations & Ecosystem",
+  "group_tagline": "Connect · Deploy · Extend",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:174",
+  "thumbnail": "agents/github-chef/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/github-chef.md",
+  "dir": "agents/github-chef",
+  "files": [
+    "agents/github-chef/GitHub-Chef.png"
+  ]
+}

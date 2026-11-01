@@ -1,0 +1,18 @@
+{
+  "slug": "ticket-tengu",
+  "name": "Ticket Tengu",
+  "kind": "brigade_mascot_agent",
+  "role": "Ticket Router",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:98",
+  "thumbnail": "agents/ticket-tengu/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": "ticket-tengu",
+  "page": "docs/agents/ticket-tengu.md",
+  "dir": "agents/ticket-tengu",
+  "files": [
+    "agents/ticket-tengu/Ticket-Tengu.png"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "alarmer",
+  "name": "Alarmer",
+  "kind": "brigade_mascot_agent",
+  "role": "Alert Manager",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:148",
+  "thumbnail": "agents/alarmer/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/alarmer.md",
+  "dir": "agents/alarmer",
+  "files": [
+    "agents/alarmer/Alarmer.png"
+  ]
+}

@@ -101,6 +101,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Scorecard Shin performs security scorecard within the Security Kitchen. <sub>source: `characters/scorecard-shin/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/scorecard-shin/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Red Oni](./red-oni.md) · [Threat Taro](./threat-taro.md) · [Secure Sakura](./secure-sakura.md) · [Nudge Neko](./nudge-neko.md) · [Canary Taster](./canary-taster.md) · [Guardrail Goro](./guardrail-goro.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -187,5 +187,7 @@
     "mission": "Learn. Optimize. Evolve.",
     "problem": "Storyteller Sumi performs narrative report generator within the Data & Insight Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

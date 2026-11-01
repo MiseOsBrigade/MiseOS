@@ -1,0 +1,20 @@
+{
+  "slug": "devrel",
+  "name": "DevRel",
+  "kind": "brigade_mascot_agent",
+  "role": "Developer Advocate",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:113",
+  "thumbnail": "agents/devrel/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--devrel.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/devrel.md",
+  "dir": "agents/devrel",
+  "files": [
+    "agents/devrel/DevRel.png"
+  ]
+}

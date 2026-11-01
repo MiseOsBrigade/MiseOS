@@ -34,7 +34,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/iron-hashi/metadata.json"
+    "helps.station": "characters/iron-hashi/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 34,
@@ -424,5 +426,19 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Iron Hashi performs artifact validator within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "iron-hashi",
+      "name": "Iron Hashi",
+      "page": "docs/agents/iron-hashi.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "iron-hashi",
+      "name": "Iron Hashi",
+      "page": "docs/repo-pets/iron-hashi.md"
+    }
+  ]
 }

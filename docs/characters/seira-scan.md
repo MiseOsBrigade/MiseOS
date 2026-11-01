@@ -90,6 +90,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Seira Scan performs security scan stage within the Pipeline Kitchen. <sub>source: `characters/seira-scan/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/seira-scan/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Yume Builder](./yume-builder.md) · [Iron Hashi](./iron-hashi.md) · [Nina Promoter](./nina-promoter.md) · [Hugo Matrix](./hugo-matrix.md) · [Vault Hana](./vault-hana.md) · [Alert Akira](./alert-akira.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

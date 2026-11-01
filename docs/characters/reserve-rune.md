@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Reserve Rune performs backup archivist within the Operations Kitchen. <sub>source: `characters/reserve-rune/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/reserve-rune/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Vacuum Vesper](./vacuum-vesper.md) · [Flavor Scribe](./flavor-scribe.md) · [Prep Pulse](./prep-pulse.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

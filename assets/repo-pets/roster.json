@@ -3,18 +3,23 @@
   "strips": [
     {
       "file": "walk-header.svg",
-      "bytes": 174675,
+      "bytes": 170527,
       "walkers": 8
     },
     {
       "file": "walk-kitchen.svg",
-      "bytes": 125321,
+      "bytes": 221810,
       "walkers": 5
     },
     {
       "file": "walk-footer.svg",
-      "bytes": 126279,
-      "walkers": 5
+      "bytes": 169060,
+      "walkers": 6
+    },
+    {
+      "file": "walk-animals.svg",
+      "bytes": 205422,
+      "walkers": 4
     }
   ]
 }

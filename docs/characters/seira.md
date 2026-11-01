@@ -122,6 +122,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Seira performs secure within the Platform Kitchen. <sub>source: `characters/seira/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/seira/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Seira](../agents/seira.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Seira](../repo-pets/seira.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Kuro Guard](./kuro-guard.md) · [Orchestra Core](./orchestra-core.md) · [Template Tanaka](./template-tanaka.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -154,5 +160,7 @@ Docs that describe it (docs only, not code):
 | abilities | `data/imports/mise_orchestra_cards.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/seira/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

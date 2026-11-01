@@ -1,0 +1,20 @@
+{
+  "slug": "sre-chef",
+  "name": "SRE Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "Reliability Engineer",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:117",
+  "thumbnail": "agents/sre-chef/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--sre-chef.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/sre-chef.md",
+  "dir": "agents/sre-chef",
+  "files": [
+    "agents/sre-chef/SRE-Chef.png"
+  ]
+}

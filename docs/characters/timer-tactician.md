@@ -91,6 +91,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Timer Tactician performs chrono chef within the Operations Kitchen. <sub>source: `characters/timer-tactician/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/timer-tactician/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Recipe Ranger](./recipe-ranger.md) · [Portion Paladin](./portion-paladin.md) · [Allergen Oracle](./allergen-oracle.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

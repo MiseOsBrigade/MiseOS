@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Alko Commit Chef performs commit intake within the Pipeline Kitchen. <sub>source: `characters/alko-commit-chef/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/alko-commit-chef/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Bruno Blast-Radius](./bruno-blast-radius.md) · [Lila Branchkeeper](./lila-branchkeeper.md) · [Omar Reviewer](./omar-reviewer.md) · [Template Tanaka](./template-tanaka.md) · [SLO Sage](./slo-sage.md) · [Threat Taro](./threat-taro.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

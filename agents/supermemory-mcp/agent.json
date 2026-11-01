@@ -1,0 +1,15 @@
+{
+  "slug": "supermemory-mcp",
+  "name": "Supermemory MCP config",
+  "kind": "mcp_config",
+  "role": null,
+  "source": "icloud/Catalogue/MiseOS-Supermemory-Implementation.zip/MiseOS-Supermemory-Implementation/supermemory/mcp.config.example.json",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/supermemory-mcp.md",
+  "dir": "agents/supermemory-mcp",
+  "files": [
+    "agents/supermemory-mcp/mcp.config.example.json"
+  ]
+}

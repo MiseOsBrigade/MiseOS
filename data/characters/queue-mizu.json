@@ -202,5 +202,7 @@
     "mission": "Provide golden paths and stable service foundations.",
     "problem": "Queue Mizu performs job & queue templates within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Repo Ranger performs repo health analyzer within the Data & Insight Kitchen. <sub>source: `characters/repo-ranger/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/repo-ranger/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [DORA Daichi](./dora-daichi.md) · [Flag Fox](./flag-fox.md) · [Cost Kaito](./cost-kaito.md) · [Lattice](./lattice.md) · [Omar Reviewer](./omar-reviewer.md) · [Schema Sora](./schema-sora.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -92,6 +92,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Reliability Sensei performs reliability advisor agent within the Reliability Kitchen. <sub>source: `characters/reliability-sensei/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/reliability-sensei/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Null-chan](./null-chan.md) · [SLO Sage](./slo-sage.md) · [Trace Sensei](./trace-sensei.md) · [Impact Ichi](./impact-ichi.md) · [Pipeline Sensei](./pipeline-sensei.md) · [Platform Sensei](./platform-sensei.md) · [Red Oni](./red-oni.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

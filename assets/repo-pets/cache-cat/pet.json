@@ -1,0 +1,23 @@
+{
+  "slug": "cache-cat",
+  "name": "Cache Cat",
+  "kind": "brigade_mascot",
+  "species": "cat",
+  "species_source": "animal word in the name",
+  "role": "Cache Keeper",
+  "department": "Service Layer",
+  "sprites": [
+    "assets/repo-pets/cache-cat/Cache-Cat.png",
+    "assets/repo-pets/cutouts/cache-cat.png"
+  ],
+  "cutout": "assets/repo-pets/cutouts/cache-cat.png",
+  "behaviors": {
+    "walks_in_readme_strip": true
+  },
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:91",
+  "art_source": "icloud/Mise-OS-main.zip/Mise-OS-main/attached_assets/miseos_agents/03_service_layer/Cache-Cat.png",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/cache-cat.md",
+  "dir": "assets/repo-pets/cache-cat"
+}

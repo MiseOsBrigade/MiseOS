@@ -1,0 +1,20 @@
+{
+  "slug": "compliance",
+  "name": "Compliance",
+  "kind": "brigade_mascot_agent",
+  "role": "Compliance Officer",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:129",
+  "thumbnail": "agents/compliance/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--compliance.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/compliance.md",
+  "dir": "agents/compliance",
+  "files": [
+    "agents/compliance/Compliance.png"
+  ]
+}

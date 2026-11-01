@@ -1,0 +1,18 @@
+{
+  "slug": "dr-builder",
+  "name": "DR Builder",
+  "kind": "brigade_mascot_agent",
+  "role": "Disaster Recovery",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:153",
+  "thumbnail": "agents/dr-builder/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/dr-builder.md",
+  "dir": "agents/dr-builder",
+  "files": [
+    "agents/dr-builder/DR-Builder.png"
+  ]
+}

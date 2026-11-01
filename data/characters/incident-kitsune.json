@@ -28,7 +28,8 @@
     "role_category": "data/imports/merged_roster.json",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/incident-kitsune/metadata.json"
+    "helps.station": "characters/incident-kitsune/metadata.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 82,
@@ -271,5 +272,13 @@
     "mission": "Guard. Audit. Comply.",
     "problem": "Incident Kitsune performs security incident playbooks within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": [
+    {
+      "slug": "incident-kitsune",
+      "name": "Incident Kitsune",
+      "page": "docs/repo-pets/incident-kitsune.md"
+    }
+  ]
 }

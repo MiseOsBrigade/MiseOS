@@ -1,0 +1,18 @@
+{
+  "slug": "gitlab-chef",
+  "name": "GitLab Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "GitLab Integrator",
+  "group": "Integrations & Ecosystem",
+  "group_tagline": "Connect · Deploy · Extend",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:175",
+  "thumbnail": "agents/gitlab-chef/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/gitlab-chef.md",
+  "dir": "agents/gitlab-chef",
+  "files": [
+    "agents/gitlab-chef/GitLab-Chef.png"
+  ]
+}

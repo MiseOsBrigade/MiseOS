@@ -33,7 +33,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/streama/metadata.json"
+    "helps.station": "characters/streama/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 56,
@@ -348,5 +350,19 @@
     "mission": "Provide golden paths and stable service foundations.",
     "problem": "Streama performs data streaming profiles within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "streama",
+      "name": "Streama",
+      "page": "docs/agents/streama.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "streama",
+      "name": "Streama",
+      "page": "docs/repo-pets/streama.md"
+    }
+  ]
 }

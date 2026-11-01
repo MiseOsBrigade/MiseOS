@@ -117,6 +117,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Streama performs data streaming profiles within the Platform Kitchen. <sub>source: `characters/streama/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/streama/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Streama](../agents/streama.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Streama](../repo-pets/streama.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Preview Yuki](./preview-yuki.md) · [Portal Rei](./portal-rei.md) · [Guardrail Goro](./guardrail-goro.md) · [Queue Mizu](./queue-mizu.md) · [Felix Rollback](./felix-rollback.md) · [Metrics Miko](./metrics-miko.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>
@@ -160,5 +166,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/streama/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

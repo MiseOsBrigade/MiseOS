@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Roadmap Sensei performs strategic roadmap recommender within the Data & Insight Kitchen. <sub>source: `characters/roadmap-sensei/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/roadmap-sensei/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Data-chan](./data-chan.md) · [Insight Sensei](./insight-sensei.md) · [Chaos Analyst](./chaos-analyst.md) · [Storyteller Sumi](./storyteller-sumi.md) · [Pipeline Sensei](./pipeline-sensei.md) · [Platform Sensei](./platform-sensei.md) · [Reliability Sensei](./reliability-sensei.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

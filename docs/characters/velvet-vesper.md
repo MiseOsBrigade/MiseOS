@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Velvet Vesper performs guest concierge within the Operations Kitchen. <sub>source: `characters/velvet-vesper/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/velvet-vesper/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Flavor Forager](./flavor-forager.md) · [Crate Courier](./crate-courier.md) · [Ledger Ladle](./ledger-ladle.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

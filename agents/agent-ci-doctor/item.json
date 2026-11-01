@@ -1,0 +1,15 @@
+{
+  "id": "agent-ci-doctor",
+  "category": "agentic",
+  "title": "CI Doctor gh-aw Source",
+  "description": "Bounded CI failure diagnosis source with issue creation safe output.",
+  "dependencies": [
+    "gh-aw CLI initialization and compilation"
+  ],
+  "files": [
+    ".github/workflows/ci-doctor.md"
+  ],
+  "notes": [
+    "Compile and review generated lock workflow before enabling."
+  ]
+}

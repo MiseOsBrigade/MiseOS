@@ -12,7 +12,8 @@
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "repo_pets": "data/repo-pets.json"
   },
   "photo_alignment": [
     {
@@ -98,5 +99,13 @@
     "mission": "Not yet defined in the source material",
     "problem": "Not yet defined in the source material",
     "proof_gate": "Not yet defined in the source material"
-  }
+  },
+  "agents": [],
+  "repo_pets": [
+    {
+      "slug": "orderly-owl",
+      "name": "Orderly Owl",
+      "page": "docs/repo-pets/orderly-owl.md"
+    }
+  ]
 }

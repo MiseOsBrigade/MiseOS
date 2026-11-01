@@ -90,6 +90,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Template Tanaka performs service template curator within the Platform Kitchen. <sub>source: `characters/template-tanaka/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/template-tanaka/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Bootstrap Aiko](./bootstrap-aiko.md) · [Terra Forge](./terra-forge.md) · [Schema Sora](./schema-sora.md) · [Alko Commit Chef](./alko-commit-chef.md) · [SLO Sage](./slo-sage.md) · [Threat Taro](./threat-taro.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

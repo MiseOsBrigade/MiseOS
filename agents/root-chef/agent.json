@@ -1,0 +1,18 @@
+{
+  "slug": "root-chef",
+  "name": "Root Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "Root Authority",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:59",
+  "thumbnail": "agents/root-chef/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/root-chef.md",
+  "dir": "agents/root-chef",
+  "files": [
+    "agents/root-chef/Root-Chef.png"
+  ]
+}

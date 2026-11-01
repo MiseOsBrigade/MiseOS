@@ -29,7 +29,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/yume/metadata.json"
+    "helps.station": "characters/yume/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 23,
@@ -304,5 +306,19 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Yume performs build within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "yume",
+      "name": "Yume",
+      "page": "docs/agents/yume.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "yume",
+      "name": "Yume",
+      "page": "docs/repo-pets/yume.md"
+    }
+  ]
 }

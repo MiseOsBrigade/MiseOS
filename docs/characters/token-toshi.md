@@ -101,6 +101,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Token Toshi performs credential hygiene scanner within the Security Kitchen. <sub>source: `characters/token-toshi/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/token-toshi/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [CVE Kumo](./cve-kumo.md) · [Container Kage](./container-kage.md) · [Seira Vaultkeeper](./seira-vaultkeeper.md) · [Secure Sakura](./secure-sakura.md) · [Lila Branchkeeper](./lila-branchkeeper.md) · [Terra Forge](./terra-forge.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

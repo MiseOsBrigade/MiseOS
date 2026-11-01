@@ -92,6 +92,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Capacity Kanna performs pre-deployment reliability check within the Reliability Kitchen. <sub>source: `characters/capacity-kanna/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/capacity-kanna/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Canary Judge](./canary-judge.md) · [Alert Akira](./alert-akira.md) · [Pager Hiro](./pager-hiro.md) · [Chaos Kaito](./chaos-kaito.md) · [Omar Reviewer](./omar-reviewer.md) · [Schema Sora](./schema-sora.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

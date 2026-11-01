@@ -1,0 +1,23 @@
+{
+  "slug": "mise-soul",
+  "name": "Mise Soul",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Human-in-the-loop Steward",
+  "department": "Ethics",
+  "glyph": "🫶",
+  "catchphrase": "Keeps the system accountable to people.",
+  "behaviors": {
+    "preferred_paths": [
+      "docs",
+      "governance",
+      "community"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-soul.md",
+  "dir": "assets/repo-pets/mise-soul"
+}

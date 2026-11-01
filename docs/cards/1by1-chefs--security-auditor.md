@@ -14,6 +14,8 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original source | `extract:img-1by1-chefs/1by1 chefs /64D17467-6CCD-4F63-B5A7-5E904BFE949B.PNG` |
 | Duplicates | — |
 | Character | Not yet defined in the source material |
+| Agent | [Security Auditor](../agents/security-auditor.md) |
+| Repo pet | Not yet defined in the source material |
 | Workflow / actions / implementation | Not yet defined in the source material |
 
 ## Printed text (OCR)

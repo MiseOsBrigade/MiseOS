@@ -192,5 +192,7 @@
     "mission": "Provide golden paths and stable service foundations.",
     "problem": "Terra Forge performs infrastructure forge within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

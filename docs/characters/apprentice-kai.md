@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Apprentice Kai performs self-improvement agent within the Data & Insight Kitchen. <sub>source: `characters/apprentice-kai/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/apprentice-kai/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Anomaly Aki](./anomaly-aki.md) · [Leaderboard Leo](./leaderboard-leo.md) · [Storyteller Sumi](./storyteller-sumi.md) · [Risk Ryota](./risk-ryota.md) · [Felix Rollback](./felix-rollback.md) · [Streama](./streama.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

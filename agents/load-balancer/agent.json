@@ -1,0 +1,18 @@
+{
+  "slug": "load-balancer",
+  "name": "Load Balancer",
+  "kind": "brigade_mascot_agent",
+  "role": "Load Balancer",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:154",
+  "thumbnail": "agents/load-balancer/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/load-balancer.md",
+  "dir": "agents/load-balancer",
+  "files": [
+    "agents/load-balancer/Load-Balancer.png"
+  ]
+}

@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Harvest Hex performs produce alchemist within the Operations Kitchen. <sub>source: `characters/harvest-hex/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/harvest-hex/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Garnish Ghost](./garnish-ghost.md) · [Pantry Paladin](./pantry-paladin.md) · [Ticket Tactician](./ticket-tactician.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

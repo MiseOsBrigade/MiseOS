@@ -8,6 +8,8 @@
   ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
     "aliases": "card titles / OCR in data/player-cards-ocr.json",
     "cards": "data/player-cards.json",
     "card_text": "data/player-cards-ocr.json (OCR of the card image)",
@@ -25,6 +27,34 @@
     "helps.station": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json (marketplace.category)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.nuget-client",
+    "name": "MiseOS NuGet Client",
+    "type": "sdk",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "nuget",
+    "artifacts": "MiseOS.Registry.Client"
+  },
+  "catalog_item": {
+    "id": "registry-nuget-client",
+    "category": "registry-capability",
+    "title": "MiseOS NuGet Client",
+    "description": "Executable baseline capability for MiseOS NuGet Client.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.nuget-client.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: nugetClient",
+      "Source status: active"
+    ]
+  },
   "cards": [
     {
       "file": "assets/player-cards/long-cards/miseosnugetclient.webp",
@@ -301,5 +331,7 @@
     "mission": "Not yet defined in the source material",
     "problem": "Executable baseline capability for MiseOS NuGet Client.",
     "proof_gate": "Not yet defined in the source material"
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

@@ -12,11 +12,11 @@ for (const card of index.cards) {
 }
 const UNDEF = 'Not yet defined in the source material';
 let links = 0;
-for (const dir of ['docs/characters', 'docs/cards']) {
+for (const dir of ['docs/characters', 'docs/cards', 'docs/agents', 'docs/repo-pets']) {
   for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.md'))) {
     const p = path.join(dir, f); const body = fs.readFileSync(p, 'utf8');
     for (const m of body.matchAll(/(?:src|href)="([^"#]+)"|\]\((?!https?:)([^)#\s]+)(?:#[^)]*)?\)/g)) {
-      const target = path.normalize(path.join(dir, m[1] ?? m[2])); links++;
+      const target = path.normalize(path.join(dir, decodeURI(m[1] ?? m[2]))); links++;
       if (!fs.existsSync(target)) errors.push(`${p}: broken link ${m[1] ?? m[2]}`);
     }
   }

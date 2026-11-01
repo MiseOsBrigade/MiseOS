@@ -1,0 +1,18 @@
+{
+  "slug": "prepbot",
+  "name": "PrepBot",
+  "kind": "brigade_mascot_agent",
+  "role": "Mise-en-place Prep",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:77",
+  "thumbnail": "agents/prepbot/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/prepbot.md",
+  "dir": "agents/prepbot",
+  "files": [
+    "agents/prepbot/PrepBot.png"
+  ]
+}

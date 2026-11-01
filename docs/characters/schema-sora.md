@@ -102,6 +102,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Schema Sora performs schema steward within the Platform Kitchen. <sub>source: `characters/schema-sora/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/schema-sora/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Runtime Riku](./runtime-riku.md) · [Vault Hana](./vault-hana.md) · [Policy Kenji](./policy-kenji.md) · [Terra Forge](./terra-forge.md) · [Omar Reviewer](./omar-reviewer.md) · [Capacity Kanna](./capacity-kanna.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

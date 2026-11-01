@@ -1,0 +1,18 @@
+{
+  "slug": "agent-issue-triage",
+  "name": "Issue Triage gh-aw Source",
+  "kind": "agentic_workflow",
+  "role": "Bounded issue triage source with comment-only safe output.",
+  "source": "icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/agent-issue-triage/item.json",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/agent-issue-triage.md",
+  "dir": "agents/agent-issue-triage",
+  "files": [
+    "agents/agent-issue-triage/README.md",
+    "agents/agent-issue-triage/item.json",
+    "agents/agent-issue-triage/install.sh",
+    "agents/agent-issue-triage/payload/.github/workflows/issue-triage.md"
+  ]
+}

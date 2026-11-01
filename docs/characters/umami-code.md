@@ -117,6 +117,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Umami Code performs developer workflow profiles within the Platform Kitchen. <sub>source: `characters/umami-code/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/umami-code/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Umami Code](../agents/umami-code.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Umami Code](../repo-pets/umami-code.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Queue Mizu](./queue-mizu.md) · [Streama](./streama.md) · [Preview Yuki](./preview-yuki.md) · [Grafana Mei](./grafana-mei.md) · [Nina Promoter](./nina-promoter.md) · [Review Ren](./review-ren.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>
@@ -159,5 +165,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/umami-code/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

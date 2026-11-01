@@ -1,0 +1,20 @@
+{
+  "slug": "orderly-owl",
+  "name": "Orderly Owl",
+  "kind": "animal_character",
+  "species": "owl",
+  "species_source": "animal word in the name",
+  "role": "Controleur",
+  "department": "Not yet defined in the source material",
+  "sprites": [
+    "assets/player-cards/1by1-chefs/thumbs/orderly-owl.webp"
+  ],
+  "behaviors": {},
+  "source": "data/characters/orderly-owl.json",
+  "character": "orderly-owl",
+  "cards": [
+    "docs/characters/orderly-owl.md"
+  ],
+  "page": "docs/repo-pets/orderly-owl.md",
+  "dir": "assets/repo-pets/orderly-owl"
+}

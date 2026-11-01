@@ -1,0 +1,18 @@
+{
+  "slug": "policy-monk",
+  "name": "Policy Monk",
+  "kind": "brigade_mascot_agent",
+  "role": "Policy Arbiter",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:60",
+  "thumbnail": "agents/policy-monk/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/policy-monk.md",
+  "dir": "agents/policy-monk",
+  "files": [
+    "agents/policy-monk/Policy-Monk.png"
+  ]
+}

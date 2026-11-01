@@ -119,6 +119,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Scale Oni performs scale within the Operations Kitchen. <sub>source: `characters/scale-oni/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/scale-oni/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Scale Oni](../agents/scale-oni.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Scale Oni](../repo-pets/scale-oni.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Velvet Vesper](./velvet-vesper.md) · [Flavor Forager](./flavor-forager.md) · [Crate Courier](./crate-courier.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -159,5 +165,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/scale-oni/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

@@ -29,7 +29,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/scale-oni/metadata.json"
+    "helps.station": "characters/scale-oni/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 18,
@@ -338,5 +340,19 @@
     "mission": "Keep the kitchen running smoothly.",
     "problem": "Scale Oni performs scale within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "scale-oni",
+      "name": "Scale Oni",
+      "page": "docs/agents/scale-oni.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "scale-oni",
+      "name": "Scale Oni",
+      "page": "docs/repo-pets/scale-oni.md"
+    }
+  ]
 }

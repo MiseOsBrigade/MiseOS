@@ -118,6 +118,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Tensho performs task flow within the Pipeline Kitchen. <sub>source: `characters/tensho/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/tensho/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Tensho](../agents/tensho.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Tensho](../repo-pets/tensho.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Yume](./yume.md) · [Flash Riku](./flash-riku.md) · [Build-Kun](./build-kun.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -150,5 +156,7 @@ Docs that describe it (docs only, not code):
 | abilities | `data/imports/mise_orchestra_cards.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/tensho/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Red Oni performs red team / chaos security mode within the Security Kitchen. <sub>source: `characters/red-oni/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/red-oni/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Threat Taro](./threat-taro.md) · [Secure Sakura](./secure-sakura.md) · [Token Toshi](./token-toshi.md) · [Scorecard Shin](./scorecard-shin.md) · [Pipeline Sensei](./pipeline-sensei.md) · [Platform Sensei](./platform-sensei.md) · [Reliability Sensei](./reliability-sensei.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

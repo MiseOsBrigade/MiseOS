@@ -34,6 +34,12 @@ const names = new Map();
 const charactersFile = path.join(root, 'data', 'characters.json');
 if (fs.existsSync(charactersFile)) for (const c of JSON.parse(fs.readFileSync(charactersFile, 'utf8'))) names.set(c.slug, c.name);
 
+const petsFile = path.join(root, 'data', 'repo-pets.json');
+const animalSlugs = new Set();
+if (fs.existsSync(petsFile)) for (const p of JSON.parse(fs.readFileSync(petsFile, 'utf8')).pets) {
+  if (!names.has(p.slug)) names.set(p.slug, p.name);
+  if (p.species && p.cutout) animalSlugs.add(p.slug);
+}
 const cutoutDir = path.join(petsDir, 'cutouts');
 const cutouts = fs.readdirSync(cutoutDir).filter((f) => f.endsWith('.png')).sort().map((f) => {
   const slug = f.slice(0, -4);
@@ -131,6 +137,15 @@ const floor = (h, size) => h - 6 - size + 2;
     extras = `<rect x="${W - 14}" y="0" width="6" height="${h}" rx="3" fill="#D4AF37" opacity=".35"/><g transform="translate(${W - 92} 0)"><g style="animation:climbup 9s ease-in-out infinite"><title>${esc(climber.id)} climbing the repository wall</title>${framesGroup(climber.states.climb, 84, 8)}</g></g>`;
   }
   results.push(strip({ file: 'walk-footer.svg', title: 'MiseOS repo pets climbing and walking', height: h, walkers: ws, extras }));
+}
+
+// Animal pets: every repo pet with an animal species and a usable cutout (data/repo-pets.json).
+if (animalSlugs.size) {
+  css.length = 0;
+  const h = 120, size = 84;
+  const animals = shuffle(cutouts.filter((c) => animalSlugs.has(c.slug)));
+  const ws = animals.map((c, i) => walker({ body: cutoutBody(c, size), size, y: floor(h, size), speed: 30 + rand() * 30, offset: i / animals.length + rand() * 0.1, label: c.name }));
+  results.push(strip({ file: 'walk-animals.svg', title: 'MiseOS animal repo pets', height: h, walkers: ws }));
 }
 
 fs.writeFileSync(path.join(petsDir, 'roster.json'), `${JSON.stringify({ seed: seedText, strips: results }, null, 2)}\n`);

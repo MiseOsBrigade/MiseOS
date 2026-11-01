@@ -269,5 +269,7 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Nina Promoter performs environment promotion gate within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

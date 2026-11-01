@@ -1,0 +1,15 @@
+{
+  "slug": "repo-reliability-kit",
+  "name": "Repo Reliability Kit agent guide",
+  "kind": "agents_md",
+  "role": null,
+  "source": "extract/code/reliab/miseos-repo-reliability-kit/templates/AGENTS.md",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/repo-reliability-kit.md",
+  "dir": "agents/repo-reliability-kit",
+  "files": [
+    "agents/repo-reliability-kit/AGENTS.md"
+  ]
+}

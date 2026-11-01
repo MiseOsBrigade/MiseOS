@@ -104,6 +104,11 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Incident Kitsune performs security incident playbooks within the Security Kitchen. <sub>source: `characters/incident-kitsune/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/incident-kitsune/metadata.json`</sub> |
 
+## Agents and repo pets
+
+
+Repo pets: [Incident Kitsune](../repo-pets/incident-kitsune.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Evidence Scribe](./evidence-scribe.md) · [Nudge Neko](./nudge-neko.md) · [Scorecard Shin](./scorecard-shin.md) · [Auditor Emi](./auditor-emi.md) · [Felix Rollback](./felix-rollback.md) · [Streama](./streama.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>
@@ -142,5 +147,6 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/incident-kitsune/metadata.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

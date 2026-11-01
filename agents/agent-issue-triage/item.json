@@ -1,0 +1,15 @@
+{
+  "id": "agent-issue-triage",
+  "category": "agentic",
+  "title": "Issue Triage gh-aw Source",
+  "description": "Bounded issue triage source with comment-only safe output.",
+  "dependencies": [
+    "gh-aw CLI initialization and compilation"
+  ],
+  "files": [
+    ".github/workflows/issue-triage.md"
+  ],
+  "notes": [
+    "Compile and review generated lock workflow before enabling."
+  ]
+}

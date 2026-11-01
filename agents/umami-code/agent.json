@@ -1,0 +1,21 @@
+{
+  "slug": "umami-code",
+  "name": "Umami Code",
+  "kind": "brigade_mascot_agent",
+  "role": "API Responder",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:99",
+  "thumbnail": "agents/umami-code/thumb.png",
+  "character": "umami-code",
+  "cards": [
+    "docs/characters/umami-code.md",
+    "docs/characters/umami-code.md"
+  ],
+  "pet": "umami-code",
+  "page": "docs/agents/umami-code.md",
+  "dir": "agents/umami-code",
+  "files": [
+    "agents/umami-code/Umami-Code.png"
+  ]
+}

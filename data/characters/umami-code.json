@@ -32,7 +32,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/umami-code/metadata.json"
+    "helps.station": "characters/umami-code/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 111,
@@ -328,5 +330,19 @@
     "mission": "Provide golden paths and stable service foundations.",
     "problem": "Umami Code performs developer workflow profiles within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "umami-code",
+      "name": "Umami Code",
+      "page": "docs/agents/umami-code.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "umami-code",
+      "name": "Umami Code",
+      "page": "docs/repo-pets/umami-code.md"
+    }
+  ]
 }

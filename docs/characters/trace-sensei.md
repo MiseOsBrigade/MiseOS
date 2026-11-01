@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Trace Sensei performs instrumentation booster within the Reliability Kitchen. <sub>source: `characters/trace-sensei/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/trace-sensei/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Chaos Kaito](./chaos-kaito.md) · [Capacity Kanna](./capacity-kanna.md) · [Canary Judge](./canary-judge.md) · [SLO Sage](./slo-sage.md) · [Bruno Blast-Radius](./bruno-blast-radius.md) · [Bootstrap Aiko](./bootstrap-aiko.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

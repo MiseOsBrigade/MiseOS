@@ -264,5 +264,7 @@
     "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Felix Rollback performs rollback & fix-forward within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

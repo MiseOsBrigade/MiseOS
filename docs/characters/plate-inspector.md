@@ -92,6 +92,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Plate Inspector performs asset auditor within the Operations Kitchen. <sub>source: `characters/plate-inspector/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/plate-inspector/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Timer Tactician](./timer-tactician.md) · [Recipe Ranger](./recipe-ranger.md) · [Portion Paladin](./portion-paladin.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

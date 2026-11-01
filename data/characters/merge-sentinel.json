@@ -259,5 +259,7 @@
     "mission": "Guard. Audit. Comply.",
     "problem": "Merge Sentinel performs pre-merge security gate within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

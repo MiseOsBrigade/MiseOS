@@ -191,5 +191,7 @@
     "mission": "Learn. Optimize. Evolve.",
     "problem": "Roadmap Sensei performs strategic roadmap recommender within the Data & Insight Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

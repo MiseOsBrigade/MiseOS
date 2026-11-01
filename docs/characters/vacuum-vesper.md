@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Vacuum Vesper performs seal keeper within the Operations Kitchen. <sub>source: `characters/vacuum-vesper/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/vacuum-vesper/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Flavor Scribe](./flavor-scribe.md) · [Prep Pulse](./prep-pulse.md) · [Queue Quartz](./queue-quartz.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Auditor Emi performs access review workflow within the Security Kitchen. <sub>source: `characters/auditor-emi/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/auditor-emi/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Incident Kitsune](./incident-kitsune.md) · [Evidence Scribe](./evidence-scribe.md) · [Nudge Neko](./nudge-neko.md) · [Watchtower Yoru](./watchtower-yoru.md) · [Release Conductor](./release-conductor.md) · [Queue Mizu](./queue-mizu.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

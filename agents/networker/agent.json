@@ -1,0 +1,18 @@
+{
+  "slug": "networker",
+  "name": "Networker",
+  "kind": "brigade_mascot_agent",
+  "role": "Network Engineer",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:156",
+  "thumbnail": "agents/networker/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/networker.md",
+  "dir": "agents/networker",
+  "files": [
+    "agents/networker/Networker.png"
+  ]
+}

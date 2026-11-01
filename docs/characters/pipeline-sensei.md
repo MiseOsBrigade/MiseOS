@@ -90,6 +90,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Pipeline Sensei performs pipeline tuner agent within the Pipeline Kitchen. <sub>source: `characters/pipeline-sensei/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/pipeline-sensei/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Pipeline](../agents/pipeline.md) <sub>source: `data/agents.json`</sub>
+
 ## Related characters
 
 [Tensho](./tensho.md) · [Yume](./yume.md) · [Flash Riku](./flash-riku.md) · [Canary Taster](./canary-taster.md) · [Platform Sensei](./platform-sensei.md) · [Reliability Sensei](./reliability-sensei.md) · [Red Oni](./red-oni.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>
@@ -119,5 +123,6 @@ Docs that describe it (docs only, not code):
 | role_category | `data/imports/merged_roster.json` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/pipeline-sensei/metadata.json` |
+| agents | `data/agents.json` |
 
 [← All characters](./README.md)

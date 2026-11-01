@@ -1,0 +1,18 @@
+{
+  "slug": "quality-guard",
+  "name": "Quality Guard",
+  "kind": "brigade_mascot_agent",
+  "role": "Quality Gate",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:133",
+  "thumbnail": "agents/quality-guard/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/quality-guard.md",
+  "dir": "agents/quality-guard",
+  "files": [
+    "agents/quality-guard/Quality-Guard.png"
+  ]
+}

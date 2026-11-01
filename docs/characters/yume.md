@@ -114,6 +114,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Yume performs build within the Pipeline Kitchen. <sub>source: `characters/yume/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/yume/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Yume](../agents/yume.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Yume](../repo-pets/yume.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Flash Riku](./flash-riku.md) · [Build-Kun](./build-kun.md) · [Alko Commit Chef](./alko-commit-chef.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -153,5 +159,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/yume/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

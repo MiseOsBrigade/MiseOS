@@ -102,6 +102,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Runtime Riku performs runtime steward within the Platform Kitchen. <sub>source: `characters/runtime-riku/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/runtime-riku/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Vault Hana](./vault-hana.md) · [Policy Kenji](./policy-kenji.md) · [Grafana Mei](./grafana-mei.md) · [Schema Sora](./schema-sora.md) · [Hugo Matrix](./hugo-matrix.md) · [Canary Judge](./canary-judge.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

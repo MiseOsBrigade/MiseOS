@@ -104,6 +104,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Executable baseline capability for MiseOS Repo Reliability Kit. <sub>source: `apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (capability.description)`</sub> |
 | Safety gate | Not yet defined in the source material |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 _Not yet defined in the source material_
@@ -113,6 +117,7 @@ _Not yet defined in the source material_
 | Field | Source |
 |---|---|
 | name | `apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json` |
+| catalog_item | `data/imports/miseos-individual-catalog-items.json` |
 | ids.registry_id | `apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json` |
 | role | `apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (type)` |
 | workflow.summary | `apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (capability.description)` |

@@ -1,0 +1,21 @@
+{
+  "slug": "mizu",
+  "name": "Mizu",
+  "kind": "brigade_mascot_agent",
+  "role": "Flow Coordinator",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:76",
+  "thumbnail": "agents/mizu/thumb.png",
+  "character": "mizu",
+  "cards": [
+    "docs/characters/mizu.md",
+    "docs/characters/mizu.md"
+  ],
+  "pet": "mizu",
+  "page": "docs/agents/mizu.md",
+  "dir": "agents/mizu",
+  "files": [
+    "agents/mizu/Mizu.png"
+  ]
+}

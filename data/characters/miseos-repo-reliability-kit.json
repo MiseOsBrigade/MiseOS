@@ -6,6 +6,7 @@
   "aliases": [],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
     "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
     "role": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (type)",
     "workflow.summary": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (capability.description)",
@@ -19,6 +20,23 @@
     "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (marketplace.category)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+  "catalog_item": {
+    "id": "registry-repo-reliability-kit",
+    "category": "registry-capability",
+    "title": "MiseOS Repo Reliability Kit",
+    "description": "Executable baseline capability for MiseOS Repo Reliability Kit.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.repo-reliability-kit.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: repoReliabilityKit",
+      "Source status: active"
+    ]
+  },
   "cards": [],
   "collections": [],
   "card_text": [],
@@ -251,5 +269,7 @@
     "mission": "Not yet defined in the source material",
     "problem": "Executable baseline capability for MiseOS Repo Reliability Kit.",
     "proof_gate": "Not yet defined in the source material"
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

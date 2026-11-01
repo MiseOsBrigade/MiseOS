@@ -107,6 +107,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | SLO Sage performs slo definition workflow within the Reliability Kitchen. <sub>source: `characters/slo-sage/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/slo-sage/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Trace Sensei](./trace-sensei.md) · [Chaos Kaito](./chaos-kaito.md) · [Capacity Kanna](./capacity-kanna.md) · [Alko Commit Chef](./alko-commit-chef.md) · [Template Tanaka](./template-tanaka.md) · [Threat Taro](./threat-taro.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -30,7 +30,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/kuro-guard/metadata.json"
+    "helps.station": "characters/kuro-guard/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 9,
@@ -403,5 +405,19 @@
     "mission": "Provide golden paths and stable service foundations.",
     "problem": "Kuro Guard performs protect within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "kuro-guard",
+      "name": "Kuro Guard",
+      "page": "docs/agents/kuro-guard.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "kuro-guard",
+      "name": "Kuro Guard",
+      "page": "docs/repo-pets/kuro-guard.md"
+    }
+  ]
 }

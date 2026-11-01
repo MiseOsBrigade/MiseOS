@@ -101,6 +101,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Hugo Matrix performs test matrix runner within the Pipeline Kitchen. <sub>source: `characters/hugo-matrix/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/hugo-matrix/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Seira Scan](./seira-scan.md) · [Yume Builder](./yume-builder.md) · [Iron Hashi](./iron-hashi.md) · [Omar Reviewer](./omar-reviewer.md) · [Runtime Riku](./runtime-riku.md) · [Canary Judge](./canary-judge.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

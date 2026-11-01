@@ -191,5 +191,7 @@
     "mission": "Guard. Audit. Comply.",
     "problem": "Red Oni performs red team / chaos security mode within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

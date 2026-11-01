@@ -1,0 +1,22 @@
+{
+  "slug": "iron-hashi",
+  "name": "Iron Hashi",
+  "kind": "brigade_mascot_agent",
+  "role": "Service Mesh",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:93",
+  "thumbnail": "agents/iron-hashi/thumb.png",
+  "character": "iron-hashi",
+  "cards": [
+    "docs/characters/iron-hashi.md",
+    "docs/characters/iron-hashi.md",
+    "docs/characters/iron-hashi.md"
+  ],
+  "pet": "iron-hashi",
+  "page": "docs/agents/iron-hashi.md",
+  "dir": "agents/iron-hashi",
+  "files": [
+    "agents/iron-hashi/Iron-Hashi.png"
+  ]
+}

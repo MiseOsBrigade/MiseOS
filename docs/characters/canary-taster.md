@@ -115,6 +115,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Canary Taster performs pipeline observability within the Pipeline Kitchen. <sub>source: `characters/canary-taster/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/canary-taster/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Pipeline Sensei](./pipeline-sensei.md) · [Tensho](./tensho.md) · [Yume](./yume.md) · [Ivun Cache](./ivun-cache.md) · [Guardrail Goro](./guardrail-goro.md) · [Impact Ichi](./impact-ichi.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

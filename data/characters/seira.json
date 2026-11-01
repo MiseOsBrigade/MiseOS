@@ -28,7 +28,9 @@
     "orchestra_card": "data/imports/mise_orchestra_cards.csv",
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/seira/metadata.json"
+    "helps.station": "characters/seira/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 19,
@@ -497,5 +499,19 @@
     "mission": "Provide golden paths and stable service foundations.",
     "problem": "Seira performs secure within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "seira",
+      "name": "Seira",
+      "page": "docs/agents/seira.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "seira",
+      "name": "Seira",
+      "page": "docs/repo-pets/seira.md"
+    }
+  ]
 }

@@ -1,0 +1,59 @@
+name: MiseOS Agentic GitHub Operator
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Agent task"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  checks: write
+
+jobs:
+  validate-agent:
+    runs-on: ubuntu-latest
+    environment: agent-production
+
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GITHUB_APP_ID: ${{ secrets.GITHUB_APP_ID }}
+      GITHUB_APP_INSTALLATION_ID: ${{ secrets.GITHUB_APP_INSTALLATION_ID }}
+      GITHUB_APP_PRIVATE_KEY_B64: ${{ secrets.GITHUB_APP_PRIVATE_KEY_B64 }}
+      GITHUB_WEBHOOK_SECRET: ${{ secrets.GITHUB_WEBHOOK_SECRET }}
+      INTERNAL_API_SECRET: ${{ secrets.INTERNAL_API_SECRET }}
+
+      GITHUB_OWNER: ${{ vars.GITHUB_OWNER }}
+      GITHUB_REPO: ${{ vars.GITHUB_REPO }}
+      GITHUB_DEFAULT_BRANCH: ${{ vars.GITHUB_DEFAULT_BRANCH }}
+      AGENT_MODE: ${{ vars.AGENT_MODE }}
+      REQUIRE_HUMAN_APPROVAL: ${{ vars.REQUIRE_HUMAN_APPROVAL }}
+      MORAL_GOVERNANCE_ENABLED: ${{ vars.MORAL_GOVERNANCE_ENABLED }}
+      DRY_RUN: "true"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Print safe runtime status
+        run: |
+          echo "Task: ${{ inputs.task }}"
+          echo "Agent mode: $AGENT_MODE"
+          echo "Human approval required: $REQUIRE_HUMAN_APPROVAL"
+          echo "Governance enabled: $MORAL_GOVERNANCE_ENABLED"
+          echo "Dry run: $DRY_RUN"

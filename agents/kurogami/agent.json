@@ -1,0 +1,18 @@
+{
+  "slug": "kurogami",
+  "name": "Kurogami",
+  "kind": "brigade_mascot_agent",
+  "role": "Master Strategist",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:54",
+  "thumbnail": "agents/kurogami/thumb.png",
+  "character": "kurogami-senpai",
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/kurogami.md",
+  "dir": "agents/kurogami",
+  "files": [
+    "agents/kurogami/Kurogami.png"
+  ]
+}

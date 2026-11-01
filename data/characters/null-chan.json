@@ -29,7 +29,9 @@
     "orchestra_card": "data/imports/mise_orchestra_cards.csv",
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/null-chan/metadata.json"
+    "helps.station": "characters/null-chan/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 13,
@@ -330,5 +332,19 @@
     "mission": "Observe. Measure. Improve.",
     "problem": "Null-chan performs cleanse within the Reliability Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "null-chan",
+      "name": "Null Chan",
+      "page": "docs/agents/null-chan.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "null-chan",
+      "name": "Null-chan",
+      "page": "docs/repo-pets/null-chan.md"
+    }
+  ]
 }

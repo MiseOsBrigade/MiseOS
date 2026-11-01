@@ -1,0 +1,22 @@
+{
+  "slug": "tensho",
+  "name": "Tensho",
+  "kind": "brigade_mascot_agent",
+  "role": "Shift Lead",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:81",
+  "thumbnail": "agents/tensho/thumb.png",
+  "character": "tensho",
+  "cards": [
+    "docs/characters/tensho.md",
+    "docs/characters/tensho.md",
+    "docs/characters/tensho.md"
+  ],
+  "pet": "tensho",
+  "page": "docs/agents/tensho.md",
+  "dir": "agents/tensho",
+  "files": [
+    "agents/tensho/Tensho.png"
+  ]
+}

@@ -202,5 +202,7 @@
     "mission": "Guard. Audit. Comply.",
     "problem": "Policy Ronin performs policy-as-code engine within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

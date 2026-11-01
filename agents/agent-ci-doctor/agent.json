@@ -1,0 +1,18 @@
+{
+  "slug": "agent-ci-doctor",
+  "name": "CI Doctor gh-aw Source",
+  "kind": "agentic_workflow",
+  "role": "Bounded CI failure diagnosis source with issue creation safe output.",
+  "source": "icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/agent-ci-doctor/item.json",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/agent-ci-doctor.md",
+  "dir": "agents/agent-ci-doctor",
+  "files": [
+    "agents/agent-ci-doctor/README.md",
+    "agents/agent-ci-doctor/item.json",
+    "agents/agent-ci-doctor/install.sh",
+    "agents/agent-ci-doctor/payload/.github/workflows/ci-doctor.md"
+  ]
+}

@@ -29,7 +29,9 @@
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/kaji/metadata.json"
+    "helps.station": "characters/kaji/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 8,
@@ -327,5 +329,19 @@
     "mission": "Keep the kitchen running smoothly.",
     "problem": "Kaji performs compute within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "kaji",
+      "name": "Kaji",
+      "page": "docs/agents/kaji.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "kaji",
+      "name": "Kaji",
+      "page": "docs/repo-pets/kaji.md"
+    }
+  ]
 }

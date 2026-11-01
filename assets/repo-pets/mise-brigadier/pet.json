@@ -1,0 +1,23 @@
+{
+  "slug": "mise-brigadier",
+  "name": "Mise Brigadier",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Repo Steward",
+  "department": "Merge Gates",
+  "glyph": "📋",
+  "catchphrase": "Keeps the brigade coordinated.",
+  "behaviors": {
+    "preferred_paths": [
+      ".github",
+      "docs",
+      "issues"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-brigadier.md",
+  "dir": "assets/repo-pets/mise-brigadier"
+}

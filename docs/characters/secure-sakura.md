@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Secure Sakura performs secure template library within the Security Kitchen. <sub>source: `characters/secure-sakura/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/secure-sakura/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Token Toshi](./token-toshi.md) · [CVE Kumo](./cve-kumo.md) · [Container Kage](./container-kage.md) · [Threat Taro](./threat-taro.md) · [Bruno Blast-Radius](./bruno-blast-radius.md) · [Bootstrap Aiko](./bootstrap-aiko.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

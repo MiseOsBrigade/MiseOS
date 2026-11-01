@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Canary Judge performs canary judge within the Reliability Kitchen. <sub>source: `characters/canary-judge/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/canary-judge/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Alert Akira](./alert-akira.md) · [Pager Hiro](./pager-hiro.md) · [OnCall Naomi](./oncall-naomi.md) · [Capacity Kanna](./capacity-kanna.md) · [Hugo Matrix](./hugo-matrix.md) · [Runtime Riku](./runtime-riku.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

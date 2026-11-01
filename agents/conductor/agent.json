@@ -1,0 +1,20 @@
+{
+  "slug": "conductor",
+  "name": "Conductor",
+  "kind": "brigade_mascot_agent",
+  "role": "Workflow Conductor",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:57",
+  "thumbnail": "agents/conductor/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--conductor.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/conductor.md",
+  "dir": "agents/conductor",
+  "files": [
+    "agents/conductor/Conductor.png"
+  ]
+}

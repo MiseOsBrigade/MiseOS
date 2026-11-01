@@ -6,6 +6,8 @@
   "aliases": [],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
     "cards": "data/player-cards.json",
     "card_text": "data/player-cards-ocr.json (OCR of the card image)",
     "card_rarity_printed": "data/player-cards-ocr.json",
@@ -22,6 +24,34 @@
     "helps.station": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json (marketplace.category)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.policy-engine",
+    "name": "MiseOS Policy Engine",
+    "type": "policy",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "critical",
+    "registries": "npm; container",
+    "artifacts": "@mise-os/policy-engine; ghcr.io/mise-os/miseos-policy-checker"
+  },
+  "catalog_item": {
+    "id": "registry-policy-engine",
+    "category": "registry-capability",
+    "title": "MiseOS Policy Engine",
+    "description": "Executable baseline capability for MiseOS Policy Engine.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.policy-engine.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: policyEngine",
+      "Source status: active"
+    ]
+  },
   "cards": [
     {
       "file": "assets/player-cards/long-cards/i-am-the-will-that-governs-all-action.webp",
@@ -299,5 +329,7 @@
     "mission": "Not yet defined in the source material",
     "problem": "Executable baseline capability for MiseOS Policy Engine.",
     "proof_gate": "Not yet defined in the source material"
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

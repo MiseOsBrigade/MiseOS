@@ -1,0 +1,40 @@
+{
+  "slug": "umami-code",
+  "name": "Umami Code",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Saucier",
+  "department": "Platform Department",
+  "glyph": "🍜",
+  "catchphrase": "Creates the API sauce that connects everything.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 4,
+      "files": 4,
+      "parent": 2,
+      "api": 8,
+      "config": 3,
+      "docs": 2
+    },
+    "verbs": {
+      "enterDirectory": "follows an API aroma into",
+      "inspectFile": "tastes the integration sauce in",
+      "inspectConfig": "balances the connector seasoning",
+      "inspectDocs": "reads the service menu",
+      "inspectTests": "samples the contract tests",
+      "retreat": "returns to the sauce station"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/umami-code.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/umami-code.png",
+  "character": "umami-code",
+  "cards": [
+    "docs/characters/umami-code.md",
+    "docs/characters/umami-code.md"
+  ],
+  "page": "docs/repo-pets/umami-code.md",
+  "dir": "assets/repo-pets/umami-code"
+}

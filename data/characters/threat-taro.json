@@ -187,5 +187,7 @@
     "mission": "Guard. Audit. Comply.",
     "problem": "Threat Taro performs threat modeling starter within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

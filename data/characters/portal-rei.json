@@ -274,5 +274,7 @@
     "mission": "Provide golden paths and stable service foundations.",
     "problem": "Portal Rei performs self-service portal ui within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

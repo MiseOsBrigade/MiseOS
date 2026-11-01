@@ -1,0 +1,23 @@
+{
+  "slug": "swarmar",
+  "name": "Swarmar",
+  "kind": "brigade_mascot_agent",
+  "role": "Swarm Coordinator",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:80",
+  "thumbnail": "agents/swarmar/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--swarmer.md"
+  ],
+  "aliases": [
+    "Swarmer"
+  ],
+  "pet": null,
+  "page": "docs/agents/swarmar.md",
+  "dir": "agents/swarmar",
+  "files": [
+    "agents/swarmar/Swarmar.png"
+  ]
+}

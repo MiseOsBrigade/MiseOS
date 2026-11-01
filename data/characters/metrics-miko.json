@@ -268,5 +268,7 @@
     "mission": "Observe. Measure. Improve.",
     "problem": "Metrics Miko performs slo dashboards within the Reliability Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

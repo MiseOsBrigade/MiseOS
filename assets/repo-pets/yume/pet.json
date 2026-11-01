@@ -1,0 +1,40 @@
+{
+  "slug": "yume",
+  "name": "Yume",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Pastry Chef",
+  "department": "Pipeline Department",
+  "glyph": "🍰",
+  "catchphrase": "Turns code into beautiful artifacts. Perfection is the recipe.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 3,
+      "files": 5,
+      "parent": 2,
+      "assets": 8,
+      "build": 5,
+      "docs": 4
+    },
+    "verbs": {
+      "enterDirectory": "floats toward a sweeter shelf",
+      "inspectFile": "glazes the artifact recipe in",
+      "inspectConfig": "checks the bake temperature in",
+      "inspectDocs": "decorates the release notes",
+      "inspectTests": "samples the finished dish in",
+      "retreat": "twirls back to pastry"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/yume.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/yume.png",
+  "character": "yume",
+  "cards": [
+    "docs/characters/yume.md",
+    "docs/characters/yume.md"
+  ],
+  "page": "docs/repo-pets/yume.md",
+  "dir": "assets/repo-pets/yume"
+}

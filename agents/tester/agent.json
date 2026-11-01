@@ -1,0 +1,20 @@
+{
+  "slug": "tester",
+  "name": "Tester",
+  "kind": "brigade_mascot_agent",
+  "role": "QA Tester",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:118",
+  "thumbnail": "agents/tester/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--tester.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/tester.md",
+  "dir": "agents/tester",
+  "files": [
+    "agents/tester/Tester.png"
+  ]
+}

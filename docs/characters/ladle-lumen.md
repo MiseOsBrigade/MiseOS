@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Ladle Lumen performs broth beacon within the Operations Kitchen. <sub>source: `characters/ladle-lumen/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/ladle-lumen/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Reserve Rune](./reserve-rune.md) · [Vacuum Vesper](./vacuum-vesper.md) · [Flavor Scribe](./flavor-scribe.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

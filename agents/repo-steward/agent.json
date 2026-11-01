@@ -1,0 +1,18 @@
+{
+  "slug": "repo-steward",
+  "name": "Autonomous Repository Steward",
+  "kind": "agent_prompt_and_workflow",
+  "role": null,
+  "source": "icloud/autonomous-repo-steward.md; icloud/mise-repo-steward.yml; icloud/mise-repo-steward-v2.yml; icloud/mise-repo-steward 2.yml",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/repo-steward.md",
+  "dir": "agents/repo-steward",
+  "files": [
+    "agents/repo-steward/autonomous-repo-steward.md",
+    "agents/repo-steward/mise-repo-steward.yml",
+    "agents/repo-steward/mise-repo-steward-v2.yml",
+    "agents/repo-steward/mise-repo-steward 2.yml"
+  ]
+}

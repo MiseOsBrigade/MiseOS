@@ -1,0 +1,18 @@
+{
+  "slug": "debugger",
+  "name": "Debugger",
+  "kind": "brigade_mascot_agent",
+  "role": "Bug Hunter",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:112",
+  "thumbnail": "agents/debugger/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/debugger.md",
+  "dir": "agents/debugger",
+  "files": [
+    "agents/debugger/Debugger.png"
+  ]
+}

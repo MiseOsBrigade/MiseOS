@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Backlog Benji performs reliability backlog builder within the Reliability Kitchen. <sub>source: `characters/backlog-benji/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/backlog-benji/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Metrics Miko](./metrics-miko.md) · [Forecast Fuji](./forecast-fuji.md) · [Resilience Ryu](./resilience-ryu.md) · [Review Ren](./review-ren.md) · [Release Conductor](./release-conductor.md) · [Queue Mizu](./queue-mizu.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

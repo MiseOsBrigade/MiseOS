@@ -1,0 +1,23 @@
+{
+  "slug": "mise-bootstrap",
+  "name": "Mise Bootstrap",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Repo Starter",
+  "department": "Setup",
+  "glyph": "🥾",
+  "catchphrase": "Gets every station ready.",
+  "behaviors": {
+    "preferred_paths": [
+      "templates",
+      "docs",
+      "package.json"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-bootstrap.md",
+  "dir": "assets/repo-pets/mise-bootstrap"
+}

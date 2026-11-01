@@ -1,0 +1,40 @@
+{
+  "slug": "streama",
+  "name": "Streama",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Poissonnier",
+  "department": "Infrastructure Department",
+  "glyph": "🌊",
+  "catchphrase": "Streams data like water. Flow never stops.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 4,
+      "files": 4,
+      "parent": 2,
+      "data": 10,
+      "api": 4,
+      "logs": 6
+    },
+    "verbs": {
+      "enterDirectory": "flows through",
+      "inspectFile": "channels data currents in",
+      "inspectConfig": "checks the stream valve in",
+      "inspectDocs": "reads the current map in",
+      "inspectTests": "watches the flow tests in",
+      "retreat": "drifts back to calm water"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/streama.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/streama.png",
+  "character": "streama",
+  "cards": [
+    "docs/characters/streama.md",
+    "docs/characters/streama.md"
+  ],
+  "page": "docs/repo-pets/streama.md",
+  "dir": "assets/repo-pets/streama"
+}

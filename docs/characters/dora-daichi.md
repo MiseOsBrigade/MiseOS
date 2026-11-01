@@ -101,6 +101,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | DORA Daichi performs pipeline analytics engine within the Data & Insight Kitchen. <sub>source: `characters/dora-daichi/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/dora-daichi/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Flag Fox](./flag-fox.md) · [Cost Kaito](./cost-kaito.md) · [DX Mei](./dx-mei.md) · [Repo Ranger](./repo-ranger.md) · [Hugo Matrix](./hugo-matrix.md) · [Runtime Riku](./runtime-riku.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -91,6 +91,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Queue Quartz performs service timer within the Operations Kitchen. <sub>source: `characters/queue-quartz/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/queue-quartz/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Harvest Hex](./harvest-hex.md) · [Garnish Ghost](./garnish-ghost.md) · [Pantry Paladin](./pantry-paladin.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

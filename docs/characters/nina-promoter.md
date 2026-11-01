@@ -102,6 +102,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Nina Promoter performs environment promotion gate within the Pipeline Kitchen. <sub>source: `characters/nina-promoter/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/nina-promoter/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Release Conductor](./release-conductor.md) · [Felix Rollback](./felix-rollback.md) · [Tariq Notesmith](./tariq-notesmith.md) · [Iron Hashi](./iron-hashi.md) · [Umami Code](./umami-code.md) · [Review Ren](./review-ren.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -28,7 +28,9 @@
     "orchestra_card": "data/imports/mise_orchestra_cards.csv",
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/kurogami-senpai/metadata.json"
+    "helps.station": "characters/kurogami-senpai/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
   },
   "registry": {
     "number": 26,
@@ -363,5 +365,19 @@
     "mission": "Keep the kitchen running smoothly.",
     "problem": "Kurogami Senpai performs orchestrate within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [
+    {
+      "slug": "kurogami",
+      "name": "Kurogami",
+      "page": "docs/agents/kurogami.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "kurogami-senpai",
+      "name": "Kurogami Senpai",
+      "page": "docs/repo-pets/kurogami-senpai.md"
+    }
+  ]
 }

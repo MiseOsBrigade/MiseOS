@@ -92,6 +92,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Container Kage performs container hardening workflow within the Security Kitchen. <sub>source: `characters/container-kage/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/container-kage/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Seira Vaultkeeper](./seira-vaultkeeper.md) · [Policy Ronin](./policy-ronin.md) · [Merge Sentinel](./merge-sentinel.md) · [CVE Kumo](./cve-kumo.md) · [Hugo Matrix](./hugo-matrix.md) · [Runtime Riku](./runtime-riku.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

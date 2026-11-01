@@ -88,6 +88,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Crate Courier performs provision scout within the Operations Kitchen. <sub>source: `characters/crate-courier/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/crate-courier/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Ledger Ladle](./ledger-ladle.md) · [Beacon Broil](./beacon-broil.md) · [Ladle Lumen](./ladle-lumen.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>

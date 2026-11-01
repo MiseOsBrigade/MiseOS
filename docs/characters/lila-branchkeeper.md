@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Lila Branchkeeper performs branch policy gate within the Pipeline Kitchen. <sub>source: `characters/lila-branchkeeper/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/lila-branchkeeper/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Omar Reviewer](./omar-reviewer.md) · [Hugo Matrix](./hugo-matrix.md) · [Seira Scan](./seira-scan.md) · [Bruno Blast-Radius](./bruno-blast-radius.md) · [Terra Forge](./terra-forge.md) · [Chaos Kaito](./chaos-kaito.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

@@ -102,6 +102,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Felix Rollback performs rollback & fix-forward within the Pipeline Kitchen. <sub>source: `characters/felix-rollback/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/felix-rollback/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Tariq Notesmith](./tariq-notesmith.md) · [Ivun Cache](./ivun-cache.md) · [Canary Taster](./canary-taster.md) · [Release Conductor](./release-conductor.md) · [Streama](./streama.md) · [Metrics Miko](./metrics-miko.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

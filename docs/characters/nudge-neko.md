@@ -105,6 +105,11 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Nudge Neko performs security training nudges within the Security Kitchen. <sub>source: `characters/nudge-neko/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/nudge-neko/metadata.json`</sub> |
 
+## Agents and repo pets
+
+
+Repo pets: [Nudge Neko](../repo-pets/nudge-neko.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Scorecard Shin](./scorecard-shin.md) · [Red Oni](./red-oni.md) · [Threat Taro](./threat-taro.md) · [Evidence Scribe](./evidence-scribe.md) · [Ivun Cache](./ivun-cache.md) · [Portal Rei](./portal-rei.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>
@@ -145,5 +150,6 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/nudge-neko/metadata.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

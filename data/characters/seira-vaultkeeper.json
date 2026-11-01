@@ -187,5 +187,7 @@
     "mission": "Guard. Audit. Comply.",
     "problem": "Seira Vaultkeeper performs secrets lifecycle manager within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
-  }
+  },
+  "agents": [],
+  "repo_pets": []
 }

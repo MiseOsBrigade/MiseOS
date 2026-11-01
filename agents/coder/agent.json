@@ -1,0 +1,20 @@
+{
+  "slug": "coder",
+  "name": "Coder",
+  "kind": "brigade_mascot_agent",
+  "role": "Implementation Coder",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:111",
+  "thumbnail": "agents/coder/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--coder.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/coder.md",
+  "dir": "agents/coder",
+  "files": [
+    "agents/coder/Coder.png"
+  ]
+}

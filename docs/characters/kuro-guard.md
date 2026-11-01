@@ -119,6 +119,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Kuro Guard performs protect within the Platform Kitchen. <sub>source: `characters/kuro-guard/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/kuro-guard/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Kuro Guard](../agents/kuro-guard.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Kuro Guard](../repo-pets/kuro-guard.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [Orchestra Core](./orchestra-core.md) · [Template Tanaka](./template-tanaka.md) · [Bootstrap Aiko](./bootstrap-aiko.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -159,5 +165,7 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/kuro-guard/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)

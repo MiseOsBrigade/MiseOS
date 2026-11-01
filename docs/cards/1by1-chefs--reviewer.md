@@ -14,6 +14,8 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original source | `extract:img-1by1-chefs/1by1 chefs /261F5B1A-4C3C-4242-982A-78885D6437DC.PNG` |
 | Duplicates | — |
 | Character | Not yet defined in the source material |
+| Agent | [Reviewer](../agents/reviewer.md) |
+| Repo pet | Not yet defined in the source material |
 | Workflow / actions / implementation | Not yet defined in the source material |
 
 ## Printed text (OCR)

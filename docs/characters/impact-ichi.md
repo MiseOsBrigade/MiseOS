@@ -89,6 +89,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Impact Ichi performs customer impact simulator within the Reliability Kitchen. <sub>source: `characters/impact-ichi/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/impact-ichi/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Reliability Sensei](./reliability-sensei.md) · [Null-chan](./null-chan.md) · [SLO Sage](./slo-sage.md) · [Resilience Ryu](./resilience-ryu.md) · [Canary Taster](./canary-taster.md) · [Guardrail Goro](./guardrail-goro.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

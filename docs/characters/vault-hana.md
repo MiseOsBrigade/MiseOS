@@ -90,6 +90,10 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Vault Hana performs secrets & vault integration within the Platform Kitchen. <sub>source: `characters/vault-hana/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/vault-hana/metadata.json`</sub> |
 
+## Agents and repo pets
+
+_Not yet defined in the source material_
+
 ## Related characters
 
 [Policy Kenji](./policy-kenji.md) · [Grafana Mei](./grafana-mei.md) · [Umami Code](./umami-code.md) · [Runtime Riku](./runtime-riku.md) · [Seira Scan](./seira-scan.md) · [Alert Akira](./alert-akira.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>

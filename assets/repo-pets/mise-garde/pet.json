@@ -1,0 +1,23 @@
+{
+  "slug": "mise-garde",
+  "name": "Mise Garde",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Quality Guard",
+  "department": "Review",
+  "glyph": "🛡️",
+  "catchphrase": "Checks before service.",
+  "behaviors": {
+    "preferred_paths": [
+      "test",
+      ".github",
+      "docs"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-garde.md",
+  "dir": "assets/repo-pets/mise-garde"
+}

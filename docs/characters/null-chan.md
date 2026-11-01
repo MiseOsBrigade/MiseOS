@@ -115,6 +115,12 @@ Docs that describe it (docs only, not code):
 | Problem it addresses | Null-chan performs cleanse within the Reliability Kitchen. <sub>source: `characters/null-chan/metadata.json`</sub> |
 | Safety gate | No merge, deployment, publication, billing action, or mint without evidence. <sub>source: `characters/null-chan/metadata.json`</sub> |
 
+## Agents and repo pets
+
+Agents: [Null Chan](../agents/null-chan.md) <sub>source: `data/agents.json`</sub>
+
+Repo pets: [Null-chan](../repo-pets/null-chan.md) <sub>source: `data/repo-pets.json`</sub>
+
 ## Related characters
 
 [SLO Sage](./slo-sage.md) · [Trace Sensei](./trace-sensei.md) · [Chaos Kaito](./chaos-kaito.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub>
@@ -148,5 +154,7 @@ Docs that describe it (docs only, not code):
 | abilities | `data/imports/mise_orchestra_cards.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/null-chan/metadata.json` |
+| agents | `data/agents.json` |
+| repo_pets | `data/repo-pets.json` |
 
 [← All characters](./README.md)
