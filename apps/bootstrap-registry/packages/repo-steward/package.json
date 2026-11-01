@@ -1,0 +1,17 @@
+{
+  "name": "@mise-os/repo-steward",
+  "version": "0.2.0",
+  "description": "Repository health steward for MiseOS repositories.",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

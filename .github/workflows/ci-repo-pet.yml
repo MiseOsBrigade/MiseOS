@@ -1,0 +1,26 @@
+name: "ci / tools/repo-pet"
+
+on:
+  push:
+    branches: [main]
+    paths: ["tools/repo-pet/**", "assets/repo-pets/**", ".github/workflows/ci-repo-pet.yml"]
+  pull_request:
+    paths: ["tools/repo-pet/**", "assets/repo-pets/**", ".github/workflows/ci-repo-pet.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/repo-pet
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run test

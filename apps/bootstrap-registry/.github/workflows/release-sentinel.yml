@@ -1,0 +1,33 @@
+name: MiseOS Release Sentinel
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  packages: read
+
+jobs:
+  sentinel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.4
+      - run: pnpm install --frozen-lockfile=false
+      - run: pnpm sentinel:dry-run
+      - run: pnpm diff || true
+      - name: Upload sentinel report
+        uses: actions/upload-artifact@v4
+        with:
+          name: miseos-release-sentinel-report
+          path: |
+            .miseos/sentinel/
+            reports/registry-diff.json

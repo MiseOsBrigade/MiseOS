@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 150" role="img" aria-labelledby="title">
+  <title id="title">Shimeji Brigade wordmark</title>
+  <g transform="translate(12 12) scale(.78)"><circle cx="80" cy="80" r="72" fill="#07130f" stroke="#1e9bb8" stroke-width="5"/><path d="M41 73c-8-17 8-29 22-22 5-22 39-22 44 0 16-7 30 8 21 23v16H41z" fill="#f2c94c" stroke="#f6f1e7" stroke-width="5"/><path d="M48 88h64v35H48z" fill="#f6f1e7" stroke="#0f2f25" stroke-width="5"/></g>
+  <text x="145" y="78" fill="#f2c94c" font-family="ui-rounded, sans-serif" font-weight="900" font-size="44">SHIMEJI</text>
+  <text x="148" y="120" fill="#f6f1e7" font-family="ui-monospace, monospace" font-weight="700" font-size="22" letter-spacing="5">BRIGADE</text>
+</svg>

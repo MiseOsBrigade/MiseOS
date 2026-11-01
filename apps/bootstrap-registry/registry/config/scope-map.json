@@ -1,0 +1,14 @@
+{
+  "githubOwner": "Mise-OS",
+  "npmScope": "@mise-os",
+  "containerNamespace": "ghcr.io/mise-os",
+  "nugetPrefix": "MiseOS",
+  "rubygemsPrefix": "miseos",
+  "mavenGroup": "dev.miseos",
+  "gradleGroup": "dev.miseos",
+  "migrationNotes": [
+    "GitHub npm packages usually use the owner scope. For the Mise-OS org, prefer @mise-os/*.",
+    "Keep @miseos/* only if that GitHub owner/scope exists and owns the package namespace.",
+    "GHCR image names should remain lowercase: ghcr.io/mise-os/<image>."
+  ]
+}

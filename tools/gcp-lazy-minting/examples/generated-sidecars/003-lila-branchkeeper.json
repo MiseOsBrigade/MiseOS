@@ -1,0 +1,49 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Branch Policy Gate"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 18
+    },
+    {
+      "trait_type": "Power",
+      "value": 84
+    },
+    {
+      "trait_type": "Precision",
+      "value": 79
+    },
+    {
+      "trait_type": "Speed",
+      "value": 55
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 64
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 74
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 76
+    }
+  ],
+  "description": "Lila Branchkeeper is a MiseOS Branch Policy Gate in the Pipeline Kitchen department.",
+  "external_url": "https://miseos.example/characters/lila-branchkeeper",
+  "name": "Lila Branchkeeper",
+  "record_kind": "character_card",
+  "schema": "miseos.metadata.override.v1"
+}

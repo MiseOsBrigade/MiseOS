@@ -1,0 +1,72 @@
+{
+  "name": "Mise Orchestra #018 - SLO Sage",
+  "description": "SLO Sage is the Guest Chef of the Mise Orchestra Reliability Department. Protects the promises. Maintains SLOs and error budgets. This creator collectible is designed for lore, access, provenance, and community engagement.",
+  "image": "ipfs://REPLACE_WITH_COLLECTION_CID/cards/png/018-slo-sage.png",
+  "external_url": "https://github.com/MiseOsBrigade/Mise-OS",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Mise Orchestra"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Season 1"
+    },
+    {
+      "trait_type": "Card Number",
+      "value": "018"
+    },
+    {
+      "trait_type": "Character",
+      "value": "SLO Sage"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Guest Chef"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Reliability"
+    },
+    {
+      "trait_type": "Function",
+      "value": "Guarantee"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Promise Keeper"
+    },
+    {
+      "trait_type": "Element",
+      "value": "Error Budget"
+    },
+    {
+      "trait_type": "Ability",
+      "value": "SLO Ward"
+    },
+    {
+      "trait_type": "Stat: Guarantee",
+      "value": 97,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Measure",
+      "value": 91,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Protect",
+      "value": 85,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Learn",
+      "value": 76,
+      "display_type": "boost_number"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+name: Deploy GCP Lazy Mint Services
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "gcp-lazy-mint-v*"
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  REGION: us-central1
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOYER_SERVICE_ACCOUNT }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker authentication
+        run: gcloud auth configure-docker "${REGION}-docker.pkg.dev" --quiet
+
+      - name: Build metadata worker
+        run: |
+          IMAGE="${REGION}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_ARTIFACT_REPOSITORY }}/metadata-worker:${GITHUB_SHA}"
+          gcloud builds submit services/metadata-worker --tag "$IMAGE"
+          gcloud run deploy "${{ secrets.GCP_METADATA_WORKER_SERVICE }}" \
+            --image "$IMAGE" \
+            --region "$REGION" \
+            --quiet
+
+      - name: Build metadata API
+        run: |
+          IMAGE="${REGION}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_ARTIFACT_REPOSITORY }}/metadata-api:${GITHUB_SHA}"
+          gcloud builds submit services/metadata-api --tag "$IMAGE"
+          gcloud run deploy "${{ secrets.GCP_METADATA_API_SERVICE }}" \
+            --image "$IMAGE" \
+            --region "$REGION" \
+            --quiet

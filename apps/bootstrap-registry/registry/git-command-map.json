@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.git-command-map",
+  "purpose": "Map Git primitives into MiseOS operating verbs while preserving exact Git escape hatches.",
+  "safetyModel": {
+    "defaultPullMode": "--ff-only",
+    "protectedBranches": [
+      "main",
+      "master",
+      "production",
+      "release"
+    ],
+    "destructiveCommandsRequireConfirmation": true,
+    "forcePushRequiresConfirmation": true,
+    "publicHistoryRewriteBlockedByDefault": true
+  },
+  "commands": [
+    {
+      "miseos": "miseos repo init",
+      "git": "git init",
+      "stage": "prepare",
+      "risk": "low",
+      "purpose": "Start a new repository."
+    },
+    {
+      "miseos": "miseos repo clone <url> [dir]",
+      "git": "git clone <url> [dir]",
+      "stage": "prepare",
+      "risk": "low",
+      "purpose": "Copy a remote repository locally."
+    },
+    {
+      "miseos": "miseos repo status",
+      "git": "git status --short --branch",
+      "stage": "inspect",
+      "risk": "low",
+      "purpose": "Inspect branch, staged files, and working tree state."
+    },
+    {
+      "miseos": "miseos prep stage [paths...]",
+      "git": "git add <paths|.>",
+      "stage": "prepare",
+      "risk": "low",
+      "purpose": "Stage files for the next commit."
+    },
+    {
+      "miseos": "miseos prep commit -m <message>",
+      "git": "git commit -m <message>",
+      "stage": "cook",
+      "risk": "medium",
+      "purpose": "Record a logical unit of work."
+    },
+    {
+      "miseos": "miseos sync pull [remote] [branch]",
+      "git": "git pull --ff-only <remote> <branch>",
+      "stage": "synchronize",
+      "risk": "medium",
+      "purpose": "Safely update local work without surprise merge commits."
+    },
+    {
+      "miseos": "miseos dispatch push [remote] [branch]",
+      "git": "git push <remote> <branch>",
+      "stage": "deploy",
+      "risk": "medium",
+      "purpose": "Publish local commits to the remote."
+    },
+    {
+      "miseos": "miseos hold stash [message]",
+      "git": "git stash push -m <message>",
+      "stage": "hold",
+      "risk": "low",
+      "purpose": "Shelve uncommitted changes safely."
+    },
+    {
+      "miseos": "miseos hold list",
+      "git": "git stash list",
+      "stage": "inspect",
+      "risk": "low",
+      "purpose": "List shelved work."
+    },
+    {
+      "miseos": "miseos hold pop",
+      "git": "git stash pop",
+      "stage": "restore",
+      "risk": "medium",
+      "purpose": "Restore the latest shelved work and remove it from stash."
+    },
+    {
+      "miseos": "miseos pick commit <hash>",
+      "git": "git cherry-pick <hash>",
+      "stage": "orchestrate",
+      "risk": "medium",
+      "purpose": "Apply a specific commit to the current branch."
+    },
+    {
+      "miseos": "miseos undo commit <hash|HEAD>",
+      "git": "git revert <hash|HEAD>",
+      "stage": "repair",
+      "risk": "medium",
+      "purpose": "Safely undo a published commit with a new revert commit."
+    },
+    {
+      "miseos": "miseos rewind soft <ref>",
+      "git": "git reset --soft <ref>",
+      "stage": "repair",
+      "risk": "medium",
+      "purpose": "Move HEAD while keeping changes staged."
+    },
+    {
+      "miseos": "miseos rewind mixed <ref>",
+      "git": "git reset --mixed <ref>",
+      "stage": "repair",
+      "risk": "medium",
+      "purpose": "Move HEAD while keeping changes unstaged."
+    },
+    {
+      "miseos": "miseos rewind hard <ref> --confirm-hard",
+      "git": "git reset --hard <ref>",
+      "stage": "danger",
+      "risk": "high",
+      "purpose": "Discard local work and move HEAD."
+    },
+    {
+      "miseos": "miseos align rebase <branch> --confirm-rewrite",
+      "git": "git rebase <branch>",
+      "stage": "orchestrate",
+      "risk": "high",
+      "purpose": "Replay current commits on top of another branch."
+    },
+    {
+      "miseos": "miseos trace log",
+      "git": "git log --graph --oneline --decorate --all",
+      "stage": "inspect",
+      "risk": "low",
+      "purpose": "Show the repository story graph."
+    },
+    {
+      "miseos": "miseos trace reflog",
+      "git": "git reflog",
+      "stage": "inspect",
+      "risk": "low",
+      "purpose": "Inspect HEAD movement history for recovery."
+    },
+    {
+      "miseos": "miseos release tag <version> [-m message]",
+      "git": "git tag -a <version> -m <message>",
+      "stage": "release",
+      "risk": "medium",
+      "purpose": "Mark a release point."
+    },
+    {
+      "miseos": "miseos release push-tag <version>",
+      "git": "git push origin <version>",
+      "stage": "release",
+      "risk": "medium",
+      "purpose": "Publish a release tag."
+    }
+  ]
+}

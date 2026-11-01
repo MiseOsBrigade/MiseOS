@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06110d">
+  <title>MiseOS Mint Console</title>
+  <style>
+    :root{font-family:Inter,system-ui,sans-serif;color:#edf9f3;background:#06110d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#123f33,#06110d 45%)}main{width:min(1080px,calc(100% - 32px));margin:auto}nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}.hero{padding:70px 0 40px;max-width:780px}.eyebrow{color:#55e4ad;letter-spacing:.18em;font-size:.78rem}h1{font-size:clamp(3rem,9vw,6rem);line-height:.95;margin:12px 0 24px}p{color:#a9c2b7;line-height:1.65}button,a{font:inherit;border:1px solid #55e4ad55;background:#0c2119;color:#edf9f3;padding:12px 16px;border-radius:10px;text-decoration:none;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.primary{background:#55e4ad;color:#04100b;font-weight:800}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.status{border-left:3px solid #55e4ad;padding:10px 14px;color:#b6cfc4}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0 70px}.card{background:#0a1913cc;border:1px solid #ffffff12;border-radius:16px;padding:22px}.card span{color:#72d9b1}.card button,.card a{display:block;width:100%;text-align:center;margin-top:18px}@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{padding-top:40px}}
+  </style>
+</head>
+<body>
+<main>
+  <nav><strong>MISEOS</strong><button id="connect">Connect wallet</button></nav>
+  <section class="hero"><div class="eyebrow">TESTNET-FIRST • FAIL-CLOSED PAYMENTS</div><h1>MiseOS Mint Console</h1><p>Mint Brigade collectibles and select access packages without exposing private keys or enabling unverified payment destinations.</p><div class="actions"><button class="primary" id="mint" disabled>Mint Brigade NFT</button><a href="index.html">Open GridOps</a></div><div class="status" id="status">Loading configuration…</div></section>
+  <h2>Access packages</h2><section class="grid" id="packages"></section>
+</main>
+<script>
+const state={config:null,account:null};const status=document.querySelector('#status');const connect=document.querySelector('#connect');const mint=document.querySelector('#mint');
+const setStatus=(text)=>status.textContent=text;
+async function load(){const response=await fetch('./config/mint.json',{cache:'no-store'});if(!response.ok)throw new Error('Mint configuration unavailable.');state.config=await response.json();renderPackages();const ready=state.config.contractAddress&&state.config.chainIdHex;setStatus(ready?'Configuration loaded. Connect a wallet.':'Testnet contract is not configured. Minting and checkout remain disabled.');mint.disabled=!ready;}
+function renderPackages(){const root=document.querySelector('#packages');root.innerHTML='';for(const item of state.config.packages){const card=document.createElement('article');card.className='card';const usable=state.config.paymentsEnabled&&/^https:\/\//.test(item.checkoutUrl);card.innerHTML=`<span>$${item.priceUsd}</span><h3>${item.name}</h3><p>${item.description}</p>${usable?`<a href="${item.checkoutUrl}" rel="noopener">Secure checkout</a>`:'<button disabled>Checkout not activated</button>'}`;root.appendChild(card);}}
+connect.onclick=async()=>{if(!window.ethereum)return setStatus('Install a compatible wallet such as Coinbase Wallet or MetaMask.');try{const accounts=await ethereum.request({method:'eth_requestAccounts'});state.account=accounts[0];connect.textContent=`${state.account.slice(0,6)}…${state.account.slice(-4)}`;const chain=await ethereum.request({method:'eth_chainId'});if(chain.toLowerCase()!==state.config.chainIdHex.toLowerCase()){await ethereum.request({method:'wallet_switchEthereumChain',params:[{chainId:state.config.chainIdHex}]});}setStatus('Wallet connected on the configured network.');}catch(error){setStatus(error.message||'Wallet connection failed.');}};
+mint.onclick=async()=>{if(!state.account)return setStatus('Connect your wallet first.');if(!state.config.contractAddress)return setStatus('Contract address is not configured.');try{setStatus('Confirm the transaction in your wallet.');const hash=await ethereum.request({method:'eth_sendTransaction',params:[{from:state.account,to:state.config.contractAddress,value:state.config.mintPriceWeiHex,data:'0x1249c58b'}]});setStatus(`Transaction submitted: ${hash}`);}catch(error){setStatus(error.message||'Mint transaction failed.');}};
+load().catch(error=>setStatus(error.message));
+</script>
+</body>
+</html>

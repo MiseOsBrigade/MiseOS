@@ -1,0 +1,24 @@
+{
+  "name": "@miseosbrigade/miseos-fileops",
+  "version": "0.1.0",
+  "description": "MiseOS FileOps Sentinel package for file routing, policy checks, tool payloads, and repo-manager console workflows.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "node scripts/lint-no-secrets.mjs",
+    "verify": "npm run typecheck && npm run lint",
+    "start": "node --import ./dist/instrumentation.js dist/http/server.js"
+  },
+  "files": ["dist", "public", "README.md"],
+  "keywords": ["miseos", "fileops", "xai", "collections", "repo-manager"],
+  "license": "MIT",
+  "engines": { "node": ">=20.11" },
+  "dependencies": {
+    "@opentelemetry/auto-instrumentations-node": "^0.78.0",
+    "@pydantic/logfire-node": "^0.18.3"
+  },
+  "devDependencies": { "@types/node": "^22.10.0", "typescript": "^5.7.2" }
+}

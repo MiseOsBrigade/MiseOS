@@ -25,3 +25,9 @@ Tensho performs **task flow** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/orchestra-trading-cards/tensho.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/tensho.webp" alt="Tensho — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/tensho.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/tensho.webp" alt="Tensho — Studio Art & Screens" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/tensho-2.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/tensho-2.webp" alt="Tensho — Studio Art & Screens" width="160" /></a>

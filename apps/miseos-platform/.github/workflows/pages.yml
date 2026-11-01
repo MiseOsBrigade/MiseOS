@@ -1,0 +1,86 @@
+name: Deploy MiseOS GridOps to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "characters.html"
+      - "mint.html"
+      - "apps/**"
+      - "config/**"
+      - "data/**"
+      - "assets/**"
+      - "cards/**"
+      - "sprites/**"
+      - "output/**"
+      - "docs/**"
+      - "cards/**"
+      - "sprites/**"
+      - "output/manifests/**"
+      - "scripts/validate_repository.py"
+      - ".nojekyll"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and validate static Pages artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate repository proof
+        run: python3 scripts/validate_repository.py
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+      - name: Assemble static site
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site
+          cp index.html _site/index.html
+          cp index.html _site/404.html
+          [ ! -f characters.html ] || cp characters.html _site/characters.html
+          [ ! -f mint.html ] || cp mint.html _site/mint.html
+          touch _site/.nojekyll
+          for directory in apps assets data docs cards sprites config output; do
+            if [ -d "$directory" ]; then cp -R "$directory" "_site/$directory"; fi
+          done
+          test -s _site/index.html
+          test -s _site/apps/lineage-editor/index.html
+          grep -q "MiseOS Lineage Editor v2" _site/apps/lineage-editor/index.html
+          if [ -f _site/mint.html ]; then test -s _site/config/mint.json; fi
+          find _site -maxdepth 3 -type f | sort | sed -n '1,220p'
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v5

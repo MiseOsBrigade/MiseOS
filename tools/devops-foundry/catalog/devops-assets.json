@@ -1,0 +1,1759 @@
+{
+  "schema_version": "1.0.0",
+  "asset_count": 117,
+  "assets": [
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/dependabot.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "governance-security",
+      "size_bytes": 163,
+      "sha256": "779047e1fa30ab104b89a45006d4ed1921b030eba032472a6b1cdeb2b0f02803",
+      "reusable_score": 90,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/ci.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 1006,
+      "sha256": "c19ef887c21307b18bedb98d253e7a091f2da0faa85283ab9ad5a131c7287102",
+      "reusable_score": 95,
+      "status": "candidate",
+      "name": "Validate MiseOS",
+      "triggers": [
+        "pull_request",
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-python@v6"
+      ],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/codeql.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 416,
+      "sha256": "f8a458d5a2542c22d87227446dd03efdc6e5d574aac49b2130b3ef2f3039afe7",
+      "reusable_score": 95,
+      "status": "candidate",
+      "name": "CodeQL",
+      "triggers": [
+        "pull_request",
+        "push",
+        "schedule"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "github/codeql-action/init@v4",
+        "github/codeql-action/analyze@v4"
+      ],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/contracts-ci.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 1111,
+      "sha256": "d9d04694efa765468cb9eaa5d94172f3878ab4de55fb832ab5c2a08e7deb8ce2",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Validate Minting System",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-node@v6"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/setup-node@v6->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/fileops-console-verify.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 1277,
+      "sha256": "018c65c46565a8eaae90ad28570de430af57b1989854504ff2d384eea4b943d1",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Verify FileOps Console",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4"
+      ],
+      "findings": [
+        "workflow-missing-explicit-permissions",
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/setup-node@v4->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/jekyll-gh-pages.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 1409,
+      "sha256": "fd3d53d4ebbbfc6b7616ca857a63e157aaabcdc6dba0673e622894358db033f8",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Deploy Jekyll with GitHub Pages dependencies preinstalled",
+      "triggers": [
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/configure-pages@v5",
+        "actions/jekyll-build-pages@v1",
+        "actions/upload-pages-artifact@v3",
+        "actions/deploy-pages@v5"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/configure-pages@v5->v6",
+        "action-major-behind-current-baseline:actions/upload-pages-artifact@v3->v5"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/lineage-editor.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 1156,
+      "sha256": "4552c423bba68ec5a3384a208f14c8bd640247004de07538e0d2a3c3461ee124",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Validate Lineage Editor and Billing",
+      "triggers": [
+        "pull_request",
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-node@v6"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/setup-node@v6->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/otel-collector-config.yaml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 868,
+      "sha256": "aeea304301a6323e581114e101da659a47e88bd9ee28b11482aace45845421f4",
+      "reusable_score": 10,
+      "status": "quarantine",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": [
+        "workflow-missing-name",
+        "workflow-missing-trigger",
+        "workflow-missing-explicit-permissions",
+        "workflow-missing-jobs"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/pages.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 2430,
+      "sha256": "aebe9c099099e3b8ffe3a0a16c48ad3f372560a30165c5193a8c6b594c2f3848",
+      "reusable_score": 95,
+      "status": "candidate",
+      "name": "Deploy MiseOS GridOps to GitHub Pages",
+      "triggers": [
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-python@v6",
+        "actions/configure-pages@v6",
+        "actions/upload-pages-artifact@v5",
+        "actions/deploy-pages@v5"
+      ],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/pip install logfire.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 5576,
+      "sha256": "f3a2470da34bfe13e868997986df8b285d9d1e11cedb5e9617011ad372883f5d",
+      "reusable_score": 10,
+      "status": "quarantine",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": [
+        "invalid-workflow-yaml:ScannerError"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/static.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 1250,
+      "sha256": "f2d965580744ee9ee893f4f5de6017da9d55a5850b86fc4c47dc138db7b8bcb4",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Deploy static content to Pages",
+      "triggers": [
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/configure-pages@v5",
+        "actions/upload-pages-artifact@v3",
+        "actions/deploy-pages@v5"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/configure-pages@v5->v6",
+        "action-major-behind-current-baseline:actions/upload-pages-artifact@v3->v5"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/supermemory-validate.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 364,
+      "sha256": "3dd3b539d9d8b369edd1a98cc23bfbbf6dcc1710968168c12d56bbaf69f029c4",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Supermemory Records Validation",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4"
+      ],
+      "findings": [
+        "workflow-missing-explicit-permissions",
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/setup-node@v4->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/.github/workflows/validate.yml",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "github-workflow",
+      "size_bytes": 1901,
+      "sha256": "f7fdec315e80083c1561f95f5bd888af3fac9619a0f748b35232b53dcd7a9621",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Validate MiseOS Repository",
+      "triggers": [
+        "pull_request",
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/setup-python@v5",
+        "actions/upload-artifact@v4"
+      ],
+      "findings": [
+        "invalid-upload-artifact-if-no-files-found:facilitate buiding/ coding files needed ",
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/setup-python@v5->v6",
+        "action-major-behind-current-baseline:actions/upload-artifact@v4->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/apps/shimeji-brigade/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 309,
+      "sha256": "5c4cc9b2b909689e61e3d7c3e543065a67e0901a3f3a951aa182900ffa84fc83",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/cards/registry/attestation-gate.md",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 753,
+      "sha256": "35ac96e0765fcfc4b7945116400cfd649a2cdd8dfa6c52528fa63f5b3eab80d6",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/cards/registry/maven-policy-adapter.md",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 905,
+      "sha256": "75b3b500e59949b59b18ddbf3c0c2a6c7a788de813e4aa8df0e2773412f6f8d3",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/cards/registry/policy-checker.md",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 694,
+      "sha256": "9a98f8d1d5ca5975f8e07d225a119f63af53c5721297081fd074aab137a51848",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/cards/registry/release-sentinel.md",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 661,
+      "sha256": "5304935aaafd026a2ceec56e6050a967f2e5e8524c4e1b22d2b38563b83f34de",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/docs/PACKAGES_AND_PAYMENTS.md",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 3742,
+      "sha256": "62d137e879eb494511b84a9d3651da560ce8544b06c3d1d3c1f27ccff4790ef7",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/examples/aval-collectible-player/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 341,
+      "sha256": "637fba0f896138dfd70b9b48466c765b91017104db4e610a9f15c44099f03e37",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 1584,
+      "sha256": "9e6b65f10050cbec75325457aad6a520a6c260dbac74efbfdabcc509a13355c1",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/packages/lineage-editor/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 541,
+      "sha256": "00c3efa21f9543d2ab19d9f49d9338f62c16cecef80eb3cbbd6414c5abedebfb",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/packages/miseos-fileops/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 938,
+      "sha256": "9c9396bde7d2b36fbf59835fb774165e5351263ebd0bd5b59ee17959565a4511",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/packages/miseos-fileops/scripts/lint-no-secrets.mjs",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "automation-script",
+      "size_bytes": 863,
+      "sha256": "ef65f9d630bd0b06e7ef164cd99995b24dde241a47243db374a91099711d96c8",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/packages/miseos-repo-pet/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 954,
+      "sha256": "b88b6fa73d4819ae5fed9f246b3b593778c221dda197a513df82659d1950e45a",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/registry/registry-catalog.manifest.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "registry-manifest",
+      "size_bytes": 4130,
+      "sha256": "9c477697d9948d61c4a827c7f0622c74da41cf195e990e596985e208c6a0287d",
+      "reusable_score": 90,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/scripts/deploy.cjs",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "automation-script",
+      "size_bytes": 881,
+      "sha256": "2defa684ae3d56d3b3b0954bbc5c43dd1edcb239637461ec3dec53593aa999aa",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/scripts/validate_repository.py",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "automation-script",
+      "size_bytes": 3716,
+      "sha256": "474bef3f4ed1b218b959c3f82a9cb2c2100cf1aea446d42ab634d4ea4277cb14",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/services/billing/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 335,
+      "sha256": "6f603fa87760d6f5d53e25a35959bc454442378bf375c2b08a543ce3121633e3",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/package.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "package-manifest",
+      "size_bytes": 396,
+      "sha256": "3c07b78c558e29bdffbcb62858c51a20c2a10a619b1d7322b72b2d25d55a9354",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-010-release-conductor.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2864,
+      "sha256": "22e9daf265862e676bc306783065f69f3bbc74ea570d7e24a052ac2a9ecf5ea7",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-022-policy-kenji.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2793,
+      "sha256": "4f1009d14e5d85fb3fd2e25e8b5e458e39d27944b6d9abec2caddc4cf5107812",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-025-queue-mizu.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2797,
+      "sha256": "8b20bda785bac346843db0742b8e07d0ca6c390efdcab1e2db14aa587b63bc85",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-034-capacity-kanna.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2864,
+      "sha256": "45d536995a1803ee9ed242442cce1700ccef9cd0cdb137a664031374ee021888",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-045-reliability-sensei.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2882,
+      "sha256": "08cfe7a8de68c1a5b3114fb55a24da7eec29c0d50672e150272022fdcda3f0cf",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-050-container-kage.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2847,
+      "sha256": "2ae70a06a38cb579cf58d0f4781a5bdd54c27c07d8056e15d6716d1560c01c39",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-052-policy-ronin.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2817,
+      "sha256": "b7946bfffae8faf464c3ea7c6350bbee985487547e939f8561d2ce58f8b3d0b7",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-056-incident-kitsune.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2859,
+      "sha256": "d5472bd61163cf900be9b7aaa0b3d6fe1fce8c003b27fbe24dc4c9f4446ea3aa",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-057-evidence-scribe.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2854,
+      "sha256": "8d6cd43db206302379ae66a6c3844e5a87d00a54a5690345e64a2ee0117ab13b",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-103-queue-quartz.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2808,
+      "sha256": "7a99c479dee2dac24d8a8b30f829810c17e3a534a7452c3aad4edf6dd3654893",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-107-ticket-tactician.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2850,
+      "sha256": "d29ff9eabda5cdfe6b1615615d9cedc1a6303b9e8df0e95364be292928931e62",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-109-timer-tactician.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2831,
+      "sha256": "0346834752a45a7f3f1cfa3c32fba9178249ea097725af1ff21795c5b002e347",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/characters/mise-110-recipe-ranger.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 2831,
+      "sha256": "230665b6df5e04e90d1d16d8d9ffc1bd9a16fa2a21342649064bd36e957368d3",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/factions/factions-and-relationships-v1.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 23385,
+      "sha256": "29a92f8c06cc4cba39ac58436635190b38f70aff0748c494d9465162c0ede24b",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/records/governance/mise-core-governance-v1.json",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "devops-documentation",
+      "size_bytes": 1904,
+      "sha256": "4482ad9c0eb01b55a19eb269db3eaf1804221384efc3d7b50d384c8e3be5673c",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-Supermemory-Implementation/MiseOS-Supermemory-Implementation/supermemory/scripts/validate.mjs",
+      "source_group": "MiseOS-Supermemory-Implementation",
+      "kind": "automation-script",
+      "size_bytes": 1133,
+      "sha256": "3f24a953d0d0506c741e1f39f3cde26c9aac1086a6b0933b9bc0d08cbf785936",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/dependabot.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "governance-security",
+      "size_bytes": 163,
+      "sha256": "779047e1fa30ab104b89a45006d4ed1921b030eba032472a6b1cdeb2b0f02803",
+      "reusable_score": 90,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/ci.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 1006,
+      "sha256": "c19ef887c21307b18bedb98d253e7a091f2da0faa85283ab9ad5a131c7287102",
+      "reusable_score": 95,
+      "status": "candidate",
+      "name": "Validate MiseOS",
+      "triggers": [
+        "pull_request",
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-python@v6"
+      ],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/codeql.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 416,
+      "sha256": "f8a458d5a2542c22d87227446dd03efdc6e5d574aac49b2130b3ef2f3039afe7",
+      "reusable_score": 95,
+      "status": "candidate",
+      "name": "CodeQL",
+      "triggers": [
+        "pull_request",
+        "push",
+        "schedule"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "github/codeql-action/init@v4",
+        "github/codeql-action/analyze@v4"
+      ],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/contracts-ci.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 1111,
+      "sha256": "d9d04694efa765468cb9eaa5d94172f3878ab4de55fb832ab5c2a08e7deb8ce2",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Validate Minting System",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-node@v6"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/setup-node@v6->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/fileops-console-verify.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 1277,
+      "sha256": "018c65c46565a8eaae90ad28570de430af57b1989854504ff2d384eea4b943d1",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Verify FileOps Console",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4"
+      ],
+      "findings": [
+        "workflow-missing-explicit-permissions",
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/setup-node@v4->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/jekyll-gh-pages.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 1409,
+      "sha256": "fd3d53d4ebbbfc6b7616ca857a63e157aaabcdc6dba0673e622894358db033f8",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Deploy Jekyll with GitHub Pages dependencies preinstalled",
+      "triggers": [
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/configure-pages@v5",
+        "actions/jekyll-build-pages@v1",
+        "actions/upload-pages-artifact@v3",
+        "actions/deploy-pages@v5"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/configure-pages@v5->v6",
+        "action-major-behind-current-baseline:actions/upload-pages-artifact@v3->v5"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/lineage-editor.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 1156,
+      "sha256": "4552c423bba68ec5a3384a208f14c8bd640247004de07538e0d2a3c3461ee124",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Validate Lineage Editor and Billing",
+      "triggers": [
+        "pull_request",
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-node@v6"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/setup-node@v6->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/otel-collector-config.yaml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 868,
+      "sha256": "aeea304301a6323e581114e101da659a47e88bd9ee28b11482aace45845421f4",
+      "reusable_score": 10,
+      "status": "quarantine",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": [
+        "workflow-missing-name",
+        "workflow-missing-trigger",
+        "workflow-missing-explicit-permissions",
+        "workflow-missing-jobs"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/pages.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 2430,
+      "sha256": "aebe9c099099e3b8ffe3a0a16c48ad3f372560a30165c5193a8c6b594c2f3848",
+      "reusable_score": 95,
+      "status": "candidate",
+      "name": "Deploy MiseOS GridOps to GitHub Pages",
+      "triggers": [
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v7",
+        "actions/setup-python@v6",
+        "actions/configure-pages@v6",
+        "actions/upload-pages-artifact@v5",
+        "actions/deploy-pages@v5"
+      ],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/pip install logfire.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 5576,
+      "sha256": "f3a2470da34bfe13e868997986df8b285d9d1e11cedb5e9617011ad372883f5d",
+      "reusable_score": 10,
+      "status": "quarantine",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": [
+        "invalid-workflow-yaml:ScannerError"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/static.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 1250,
+      "sha256": "f2d965580744ee9ee893f4f5de6017da9d55a5850b86fc4c47dc138db7b8bcb4",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Deploy static content to Pages",
+      "triggers": [
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/configure-pages@v5",
+        "actions/upload-pages-artifact@v3",
+        "actions/deploy-pages@v5"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/configure-pages@v5->v6",
+        "action-major-behind-current-baseline:actions/upload-pages-artifact@v3->v5"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/.github/workflows/validate.yml",
+      "source_group": "MiseOS-main_2",
+      "kind": "github-workflow",
+      "size_bytes": 1901,
+      "sha256": "f7fdec315e80083c1561f95f5bd888af3fac9619a0f748b35232b53dcd7a9621",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Validate MiseOS Repository",
+      "triggers": [
+        "pull_request",
+        "push",
+        "workflow_dispatch"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "actions/setup-python@v5",
+        "actions/upload-artifact@v4"
+      ],
+      "findings": [
+        "invalid-upload-artifact-if-no-files-found:facilitate buiding/ coding files needed ",
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/setup-python@v5->v6",
+        "action-major-behind-current-baseline:actions/upload-artifact@v4->v7"
+      ]
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/apps/shimeji-brigade/package.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "package-manifest",
+      "size_bytes": 309,
+      "sha256": "5c4cc9b2b909689e61e3d7c3e543065a67e0901a3f3a951aa182900ffa84fc83",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/cards/registry/attestation-gate.md",
+      "source_group": "MiseOS-main_2",
+      "kind": "devops-documentation",
+      "size_bytes": 753,
+      "sha256": "35ac96e0765fcfc4b7945116400cfd649a2cdd8dfa6c52528fa63f5b3eab80d6",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/cards/registry/maven-policy-adapter.md",
+      "source_group": "MiseOS-main_2",
+      "kind": "devops-documentation",
+      "size_bytes": 905,
+      "sha256": "75b3b500e59949b59b18ddbf3c0c2a6c7a788de813e4aa8df0e2773412f6f8d3",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/cards/registry/policy-checker.md",
+      "source_group": "MiseOS-main_2",
+      "kind": "devops-documentation",
+      "size_bytes": 694,
+      "sha256": "9a98f8d1d5ca5975f8e07d225a119f63af53c5721297081fd074aab137a51848",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/cards/registry/release-sentinel.md",
+      "source_group": "MiseOS-main_2",
+      "kind": "devops-documentation",
+      "size_bytes": 661,
+      "sha256": "5304935aaafd026a2ceec56e6050a967f2e5e8524c4e1b22d2b38563b83f34de",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/docs/PACKAGES_AND_PAYMENTS.md",
+      "source_group": "MiseOS-main_2",
+      "kind": "devops-documentation",
+      "size_bytes": 3742,
+      "sha256": "62d137e879eb494511b84a9d3651da560ce8544b06c3d1d3c1f27ccff4790ef7",
+      "reusable_score": 55,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/examples/aval-collectible-player/package.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "package-manifest",
+      "size_bytes": 341,
+      "sha256": "637fba0f896138dfd70b9b48466c765b91017104db4e610a9f15c44099f03e37",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/package.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "package-manifest",
+      "size_bytes": 1311,
+      "sha256": "002f9aa7dd911b78e3dc67e2155a74b840383028394c306898a48ea6b125f5eb",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/packages/lineage-editor/package.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "package-manifest",
+      "size_bytes": 541,
+      "sha256": "00c3efa21f9543d2ab19d9f49d9338f62c16cecef80eb3cbbd6414c5abedebfb",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/packages/miseos-fileops/package.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "package-manifest",
+      "size_bytes": 938,
+      "sha256": "9c9396bde7d2b36fbf59835fb774165e5351263ebd0bd5b59ee17959565a4511",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/packages/miseos-fileops/scripts/lint-no-secrets.mjs",
+      "source_group": "MiseOS-main_2",
+      "kind": "automation-script",
+      "size_bytes": 863,
+      "sha256": "ef65f9d630bd0b06e7ef164cd99995b24dde241a47243db374a91099711d96c8",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/packages/miseos-repo-pet/package.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "package-manifest",
+      "size_bytes": 954,
+      "sha256": "b88b6fa73d4819ae5fed9f246b3b593778c221dda197a513df82659d1950e45a",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/registry/registry-catalog.manifest.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "registry-manifest",
+      "size_bytes": 4130,
+      "sha256": "9c477697d9948d61c4a827c7f0622c74da41cf195e990e596985e208c6a0287d",
+      "reusable_score": 90,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/scripts/deploy.cjs",
+      "source_group": "MiseOS-main_2",
+      "kind": "automation-script",
+      "size_bytes": 881,
+      "sha256": "2defa684ae3d56d3b3b0954bbc5c43dd1edcb239637461ec3dec53593aa999aa",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/scripts/validate_repository.py",
+      "source_group": "MiseOS-main_2",
+      "kind": "automation-script",
+      "size_bytes": 3716,
+      "sha256": "474bef3f4ed1b218b959c3f82a9cb2c2100cf1aea446d42ab634d4ea4277cb14",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "MiseOS-main_2/MiseOS-main/services/billing/package.json",
+      "source_group": "MiseOS-main_2",
+      "kind": "package-manifest",
+      "size_bytes": 335,
+      "sha256": "6f603fa87760d6f5d53e25a35959bc454442378bf375c2b08a543ce3121633e3",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "mise_orchestra_trading_cards_pack/mise_orchestra_trading_cards/.github/workflows/validate-card-metadata.yml",
+      "source_group": "mise_orchestra_trading_cards_pack",
+      "kind": "github-workflow",
+      "size_bytes": 976,
+      "sha256": "91109a4873714245054ffcacc1abbc13231642e78946eb6fe8b2609bf73b40ea",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Validate Mise Orchestra Card Metadata",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v4"
+      ],
+      "findings": [
+        "workflow-missing-explicit-permissions",
+        "action-major-behind-current-baseline:actions/checkout@v4->v7"
+      ]
+    },
+    {
+      "path": "miseos-gridops-release1/miseos-gridops-release1/Makefile",
+      "source_group": "miseos-gridops-release1",
+      "kind": "container-infrastructure",
+      "size_bytes": 191,
+      "sha256": "f30aa8e51c5045c47b18c3cedbe18af7c2f1afac66387e75bcc814032b53c293",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-gridops-release1/miseos-gridops-release1/apps/api/Dockerfile",
+      "source_group": "miseos-gridops-release1",
+      "kind": "container-infrastructure",
+      "size_bytes": 196,
+      "sha256": "46895f860da395caf2c6477fac087a3e210902f7ebb80044ac68359b5818fc7e",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-gridops-release1/miseos-gridops-release1/apps/web/Dockerfile",
+      "source_group": "miseos-gridops-release1",
+      "kind": "container-infrastructure",
+      "size_bytes": 126,
+      "sha256": "ed2986241b5aff936125c9f65bae857808adf5e5608cd0b3dc4adce6c0a18f86",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-gridops-release1/miseos-gridops-release1/apps/web/package.json",
+      "source_group": "miseos-gridops-release1",
+      "kind": "package-manifest",
+      "size_bytes": 263,
+      "sha256": "02ad152586bb8cf519e6027971091d5c7693fd5884e0c8450c6797a168e87152",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-gridops-release1/miseos-gridops-release1/docker-compose.yml",
+      "source_group": "miseos-gridops-release1",
+      "kind": "container-infrastructure",
+      "size_bytes": 1091,
+      "sha256": "7e908b017272aa909698c9b77949aeb6fbdd260c65b2078ebb25c8305c181b4f",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-gridops-release1/miseos-gridops-release1/scripts/verify_canonical.py",
+      "source_group": "miseos-gridops-release1",
+      "kind": "automation-script",
+      "size_bytes": 457,
+      "sha256": "929b58b471e796c8fed468501314507612b1c778f46e0cb1d98d959ba3ea0edf",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-gridops-release1/miseos-gridops-release1/tests/test_evidence_hash.py",
+      "source_group": "miseos-gridops-release1",
+      "kind": "automation-script",
+      "size_bytes": 155,
+      "sha256": "8521ccf99a3d3412937c9da689936bfae4ed081866306e5c51639532f1deeb1e",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/.github/workflows/ci.yml",
+      "source_group": "miseos-registry-platform",
+      "kind": "github-workflow",
+      "size_bytes": 500,
+      "sha256": "a18d77167ca35df7a5b4c5244c9982018ae44793f17446401340b8c55cad9851",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "CI",
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "pnpm/action-setup@v4",
+        "actions/setup-node@v4"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:actions/setup-node@v4->v7"
+      ]
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/.github/workflows/container.yml",
+      "source_group": "miseos-registry-platform",
+      "kind": "github-workflow",
+      "size_bytes": 610,
+      "sha256": "36342e3dc23636bcea56fead28418ab21142998a13b8c8e84ee2bbd65f459fa7",
+      "reusable_score": 95,
+      "status": "review",
+      "name": "Container",
+      "triggers": [
+        "push"
+      ],
+      "action_refs": [
+        "actions/checkout@v4",
+        "docker/login-action@v3",
+        "docker/metadata-action@v5",
+        "docker/build-push-action@v6"
+      ],
+      "findings": [
+        "action-major-behind-current-baseline:actions/checkout@v4->v7",
+        "action-major-behind-current-baseline:docker/login-action@v3->v4",
+        "action-major-behind-current-baseline:docker/metadata-action@v5->v6",
+        "action-major-behind-current-baseline:docker/build-push-action@v6->v7"
+      ]
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/Dockerfile",
+      "source_group": "miseos-registry-platform",
+      "kind": "container-infrastructure",
+      "size_bytes": 562,
+      "sha256": "9801e416477e96cb6350d837fd67dd198c3ebb640b6e0382a30db9e77f1cc5df",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/Makefile",
+      "source_group": "miseos-registry-platform",
+      "kind": "container-infrastructure",
+      "size_bytes": 184,
+      "sha256": "0d49ef7f6da8fa30d00e7bb2e123ad20001ef6973d8d6add2cd3ee1cc31d37d1",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/SECURITY.md",
+      "source_group": "miseos-registry-platform",
+      "kind": "governance-security",
+      "size_bytes": 195,
+      "sha256": "cb74ab08411047ec7fc0fc553d9267292f6aefe54d74098bc1f91a85e4489f98",
+      "reusable_score": 90,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/apps/api/package.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "package-manifest",
+      "size_bytes": 509,
+      "sha256": "f955beb67755a098895a5aea65669098f1c2377287c97175aa14f78b17f43f7f",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/apps/cli/package.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "package-manifest",
+      "size_bytes": 405,
+      "sha256": "78c9c7d6688cf5d0fc8c80e29c7b077a00c6728c686361069c1f49cb59b5a247",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/docker-compose.yml",
+      "source_group": "miseos-registry-platform",
+      "kind": "container-infrastructure",
+      "size_bytes": 294,
+      "sha256": "578f1588d1f9b23ed19d62239d4b3301cef70d9213967c7cb8a8057bed23e509",
+      "reusable_score": 80,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/package.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "package-manifest",
+      "size_bytes": 731,
+      "sha256": "ba839915a7faeb6f3f43bd6755bb8eb98fa7e69dcc14b1a73e5303a5e720e831",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/packages/core/package.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "package-manifest",
+      "size_bytes": 441,
+      "sha256": "aebc54e6d74c9ae163a43210a3a8f03cb5cb3bef50be3efd3a4a7d14880b7f27",
+      "reusable_score": 75,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 982,
+      "sha256": "e186a2cfe3b71fe886c996c174d9f0b57a237be50f0b55e0a84b69248dd52fbb",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Agent SDK",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1015,
+      "sha256": "abfed6b9fe0f757f1dd55e158bcf27a047d2e18909cbebf5a6989ff952eb3c1c",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Analytics Engine",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1009,
+      "sha256": "deb3ad5969fbbec25f6faa160e66108910bf90bb4164c0cf119d2ab6b88b2dcb",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Attestation Gate",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.cli.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 970,
+      "sha256": "74288cfde8d57288c112f7491d3738160874e3d9c971fe909061a08cae3ef13b",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS CLI",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1009,
+      "sha256": "0ac09dd8c2a0bd53cc9a22c6c5472f893a23781847ddaa94419142094c8d7635",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Docs Builder",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1016,
+      "sha256": "6289530aae45381f4d056cd7d62fa77fb2792ad71c1fcfb81aeb4bb8ce5dce9c",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Docs Hub Template",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1010,
+      "sha256": "821727cce957ab82fe9c6f3181e2e90b1ab2532689378df7a24bc5d119b9b2be",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Gradle Plugin",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1043,
+      "sha256": "43fce12d3ca53437e4d51000be58e0e6473be8467e4938d6f854b888aadd8ad8",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Maven Policy Adapter",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.nuget-client.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 997,
+      "sha256": "a657b6602b169e11e6b4c4cbc3d61d312756f29f61e568d72532c3df17b2d91a",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS NuGet Client",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 999,
+      "sha256": "a5c62d5ff8dd2292f0688bdfe5991c7a90d8819594487b82907471216bcb4a10",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "Mise Orchestra Theme",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.policy-checker.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1020,
+      "sha256": "eccfa86779d9cb49deab151bc55e5a76f9036db27c447727609144736dd834b6",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Policy Checker",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 995,
+      "sha256": "93032cfd456db4a5174e1a45e894d8ea5c53fc1ea6d04ca7b9cbbfb884461adc",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Policy Engine",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1005,
+      "sha256": "8be70044e591423fb242d9467c9f7f5f9a4233ffe89718ffd2e95d044a05033e",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Registry Schema",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1022,
+      "sha256": "64e5439425c27683bbf747b0ef2a6c02d9dea948e9899522c1de1f2cdb91ec9d",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Release Sentinel",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 982,
+      "sha256": "ed3c1de1046452f0959a3a0cf62158a87fbeecc12c6f41fd322029a3a307f0f1",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Repo Pet",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1032,
+      "sha256": "83bc5518904b4d9094ad1bc6a2f9169203d990d867065275a2b2ebbb3d84ed8c",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Repo Reliability Kit",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1002,
+      "sha256": "bfe194cfbf1d99472992a933feaf143cd4769d31b6be24719d3c83e603e647c4",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Repo Steward",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.ruby-steward.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1006,
+      "sha256": "597c5a89ba265a3ac2943a1394ae848d03e717a9c0c6956a96772e72f5c17ff8",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Ruby Steward",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.runner.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 982,
+      "sha256": "2dcff51964488c0de862132a2df9823565662ffd984369e5546ac43a41b6585c",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Runner",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1002,
+      "sha256": "9ff979448d10fb2b9331729b4e6461fe2bff8257c24428ec0b8d6b8b53734dab",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS SBOM Indexer",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.trust-graph.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 991,
+      "sha256": "7a8cb2a4ae32e43bdfbc922f7f56cd4fd9c31f3f8cbc2d4bf0c305a63a08b995",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Trust Graph",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 1017,
+      "sha256": "08710e39141dc8a9d605d0d4adc9cc073533756bef0124d5522cf099ea5530fb",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Workflow Linter",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 999,
+      "sha256": "19d278cad859ed214b9ae0a62b6e66871a55d36d35092c08a67918669542d8bc",
+      "reusable_score": 90,
+      "status": "active",
+      "name": "MiseOS Workflow Pack",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/registry-catalog.manifest.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 27848,
+      "sha256": "75b95bc33655c008cc587db78d27fcc87304a9edd3d52e1020f04deedc162bc9",
+      "reusable_score": 90,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    },
+    {
+      "path": "miseos-registry-platform/miseos-registry-platform/registry/registry-catalog.schema.json",
+      "source_group": "miseos-registry-platform",
+      "kind": "registry-manifest",
+      "size_bytes": 2293,
+      "sha256": "9d53194aca6be03b1d896013f013a5b10590e853b10377c115dc6c32f99dcb2e",
+      "reusable_score": 90,
+      "status": "candidate",
+      "name": "",
+      "triggers": [],
+      "action_refs": [],
+      "findings": []
+    }
+  ]
+}

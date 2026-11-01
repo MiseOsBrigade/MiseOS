@@ -1,0 +1,31 @@
+{
+  "networkName": "Base Sepolia",
+  "chainIdHex": "0x14a34",
+  "contractAddress": "",
+  "mintPriceWeiHex": "0x0",
+  "explorerBaseUrl": "https://sepolia.basescan.org",
+  "paymentsEnabled": false,
+  "packages": [
+    {
+      "id": "community",
+      "name": "Community",
+      "priceUsd": 0,
+      "description": "One community claim and public metadata access.",
+      "checkoutUrl": ""
+    },
+    {
+      "id": "pro",
+      "name": "Brigade Pro",
+      "priceUsd": 29,
+      "description": "Five claims, creator badge, and priority drops.",
+      "checkoutUrl": ""
+    },
+    {
+      "id": "enterprise",
+      "name": "Orchestra Enterprise",
+      "priceUsd": 149,
+      "description": "Twenty-five claims, team registry, and deployment support.",
+      "checkoutUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Mise Brigade de Repo",
+  "system": "Mise en Place Hub",
+  "theme": "Code Chef / Repository Stewardship",
+  "tagline": "Chef-coded stewardship for clean repositories.",
+  "colors": {
+    "stockpot_black": "#0B0F14",
+    "cast_iron": "#111827",
+    "flour": "#F8F3E8",
+    "sauce_gold": "#F6C453",
+    "flame_orange": "#FF7A1A",
+    "garnish_green": "#22C55E",
+    "blue_flame": "#38BDF8"
+  },
+  "workflow_modes": [
+    "issues-review",
+    "merge-pr",
+    "branch-corrections",
+    "comments-commits",
+    "repo-clean"
+  ],
+  "safety_language": [
+    "GITHUB_TOKEN",
+    "scoped job-level permissions",
+    "no pull_request_target",
+    "no PAT recursion",
+    "[skip ci] generated commits",
+    "trusted collaborator command routing",
+    "write actions only when apply is explicitly requested"
+  ]
+}

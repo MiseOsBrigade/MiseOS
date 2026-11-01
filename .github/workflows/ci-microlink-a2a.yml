@@ -1,0 +1,26 @@
+name: "ci / tools/microlink-a2a"
+
+on:
+  push:
+    branches: [main]
+    paths: ["tools/microlink-a2a/**", ".github/workflows/ci-microlink-a2a.yml"]
+  pull_request:
+    paths: ["tools/microlink-a2a/**", ".github/workflows/ci-microlink-a2a.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/microlink-a2a
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e . pytest
+      - run: python -m pytest -q

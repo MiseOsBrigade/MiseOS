@@ -1,0 +1,44 @@
+name: Validate Minting System
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "contracts/**"
+      - "test/**"
+      - "scripts/**"
+      - "config/**"
+      - "package.json"
+      - "hardhat.config.cjs"
+      - ".github/workflows/contracts-ci.yml"
+  pull_request:
+    paths:
+      - "contracts/**"
+      - "test/**"
+      - "scripts/**"
+      - "config/**"
+      - "package.json"
+      - "hardhat.config.cjs"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund
+      - run: npm run compile
+      - run: npm test
+      - run: npm run metadata:generate
+      - name: Validate generated metadata and payment safety
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s cards/metadata/1.json
+          test -s cards/metadata/112.json
+          node -e "const c=require('./config/mint.json'); if(c.paymentsEnabled && c.packages.some(p=>!/^https:\/\//.test(p.checkoutUrl))) process.exit(1)"

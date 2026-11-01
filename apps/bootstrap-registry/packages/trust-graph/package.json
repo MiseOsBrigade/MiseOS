@@ -1,0 +1,17 @@
+{
+  "name": "@mise-os/trust-graph",
+  "version": "0.2.0",
+  "description": "Trust graph tools for linking artifacts, permissions, and agent execution risk.",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

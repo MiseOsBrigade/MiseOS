@@ -1,0 +1,61 @@
+Set up Pydantic Logfire observability in this project.
+
+Target Logfire project: miseos/mise-os
+Logfire base URL: https://logfire-us.pydantic.dev
+Logfire MCP server: https://logfire-us.pydantic.dev/mcp
+Docs: https://pydantic.dev/docs/logfire/get-started/
+
+If there is no obvious application to instrument (an infra-only repo, an empty or bare repo, or you are unsure), do not guess. Ask the user what they want to send to Logfire, then follow the matching guide:
+- OpenTelemetry Collector (centralize credentials, transforms, and exports): https://pydantic.dev/docs/logfire/guides/otel-collector/otel-collector-overview/
+- Host metrics (CPU, memory, disk, network — no SDK required): https://pydantic.dev/docs/logfire/guides/otel-collector/host-monitoring/
+- Kubernetes (cluster state, per-node metrics, pod logs): https://pydantic.dev/docs/logfire/guides/otel-collector/kubernetes-monitoring/
+- Cloud provider metrics (AWS, GCP, Azure): https://pydantic.dev/docs/logfire/guides/cloud-metrics/
+- AWS Lambda: https://pydantic.dev/docs/logfire/integrations/aws-lambda/
+- All integrations (databases, task queues, LLM libraries, and 40+ more): https://pydantic.dev/docs/logfire/integrations/
+
+Before editing:
+1. Read the repo guidance that applies: AGENTS.md, CLAUDE.md, CONTRIBUTING.md, README.md, and dev-docs/.
+2. Decide whether this repo is an application or a library/package.
+   - If it is a library or framework package with no application entry point, do not add `logfire.configure()` to library code.
+   - Instead, propose an example app, docs change, or opt-in helper and ask where it belongs.
+3. If this is a monorepo or workspace, identify the app/service to instrument before changing dependencies.
+   - Check for `[tool.uv.workspace]`, `pnpm-workspace.yaml`, Cargo workspaces, and similar workspace files.
+   - Do not add dependencies to the repo root unless the root is the app being instrumented.
+4. Check for existing telemetry before installing anything.
+   - Search for `opentelemetry`, `telemetry`, `tracing`, `OTEL_`, existing exporters, and logging setup.
+   - Reuse the existing telemetry path instead of adding a parallel exporter.
+5. Print a short plan before making changes: package manager, packages to install, files to edit, environment variables or secrets, and how you will verify data in Logfire.
+
+Implementation guidance:
+1. Prefer the first-party Logfire SDK when it fits.
+   - Python: install `logfire` with the relevant extras, for example `logfire[fastapi]`.
+   - JavaScript/Node: install `@pydantic/logfire-node`.
+   - Browser apps: use the browser setup docs. Never put a write token in browser code.
+   - Cloudflare Workers: use the Workers SDK docs and keep the write token in a Worker secret.
+2. Configure telemetry at the application startup point, before the code you want to instrument runs.
+   - Python local development: run `logfire auth` and `logfire projects use --org 'miseos' 'mise-os'` so the SDK can use the Logfire CLI OAuth flow.
+   - JavaScript/Node, CI, containers, deployed Python, and generic OpenTelemetry: read the write token from `LOGFIRE_TOKEN`.
+   - Do not hard-code a cloud Logfire endpoint. If the app is using self-hosted, on-prem, local, or another non-default Logfire instance, use the Logfire base URL above.
+   - Python on a non-default Logfire instance: authenticate with `logfire --base-url='https://logfire-us.pydantic.dev' auth`, run `logfire --base-url='https://logfire-us.pydantic.dev' projects use --org 'miseos' 'mise-os'`, and configure with `logfire.configure(advanced=logfire.AdvancedOptions(base_url="https://logfire-us.pydantic.dev"))`.
+   - Other SDKs and OTLP exporters: use the SDK-specific base URL or endpoint option from the Logfire docs and set it to https://logfire-us.pydantic.dev.
+3. If there is no first-party SDK, use the standard OpenTelemetry SDK for that language.
+   - Set `service.name` so records are easy to filter in Logfire.
+   - Configure OTLP export with the endpoint from the relevant Logfire docs.
+   - Read the write token from the environment instead of hard-coding it.
+4. For OpenTelemetry Collector, Kubernetes, or platform integrations, keep the write token in the Collector or platform secret.
+   - Configure the Collector `otlphttp` exporter to send to Logfire with `Authorization: Bearer ${LOGFIRE_TOKEN}`.
+   - Applications may send OTLP to the Collector without knowing the Logfire write token.
+5. If multiple services or a frontend/backend pair are present, preserve or add W3C `traceparent` propagation across HTTP boundaries so traces can be connected.
+
+Safety requirements:
+1. Do not make imports, tests, or local development fail when telemetry credentials are missing.
+2. Do not block test runs on browser-based auth or network calls.
+3. Never commit a write token. If the repo has an `.env.example` or equivalent, document `LOGFIRE_TOKEN` there.
+4. If CI or deployment needs telemetry, name the secret that must be wired: `LOGFIRE_TOKEN`.
+5. Use safe production defaults. Do not capture extra PII. Keep existing scrubbing and sampling settings unless there is a clear reason to change them.
+
+Verification:
+1. Run the repo's normal format, lint, typecheck, and tests for the files you changed.
+2. Run the app and trigger one representative request or job.
+3. Confirm data appears in the target Logfire project. If the MCP server is available, query it for the service name or span you generated. Otherwise, tell the user exactly what to search for in Live view.
+4. Do not treat "the code compiles" as success. Success means telemetry reaches Logfire.

@@ -15,3 +15,7 @@ Recipe Ranger performs **knowledge pathfinder** as a MiseOS character agent.
 
 ## Trust model
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/recipe-ranger.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/recipe-ranger.webp" alt="Recipe Ranger — 1×1 Chefs" width="160" /></a>

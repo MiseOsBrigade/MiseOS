@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.master-roster-gallery",
+  "name": "MiseOS Master Roster Gallery",
+  "type": "package",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization",
+    "github": "Mise-OS"
+  },
+  "description": "React + TypeScript + Vite gallery for the 75-card MiseOS Master Roster with departments, rarity tiers, search filters, and copy-ready solo commands.",
+  "artifacts": {
+    "workspace": "apps/registry-console",
+    "data": "registry/cards/master-roster-cards.json",
+    "npm": "@mise-os/master-roster-gallery"
+  },
+  "capabilities": [
+    "master_roster_gallery",
+    "card_search",
+    "department_filter",
+    "rarity_filter",
+    "copy_solo_command",
+    "typed_roster_validation"
+  ],
+  "permissions": {
+    "filesystem": [
+      "read"
+    ],
+    "network": [
+      "local_dev_server"
+    ],
+    "github": {
+      "contents": "read"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "artifactAttestationRequired": true,
+    "scorecardRequired": true,
+    "humanReviewRequiredFor": [
+      "customer_facing_copy_change",
+      "roster_identity_change",
+      "asset_mapping_change",
+      "publish_visibility_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required for schema, card identity, command grammar, or customer-facing release changes.",
+    "minor": "Allowed for new filters, gallery layouts, and validated metadata exports.",
+    "patch": "Allowed for styling fixes, copy fixes, and non-breaking data corrections."
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "static_gallery",
+      "typed_card_data",
+      "csv_export"
+    ],
+    "executionMode": "read_only"
+  },
+  "analytics": {
+    "criticality": "medium",
+    "maturity": "alpha",
+    "riskWeight": 0.24,
+    "operationalTier": "developer-tooling"
+  },
+  "release": {
+    "channel": "alpha",
+    "cadence": "manual until GHCR runner and primary npm packages are published",
+    "currentStrategy": "Keep as workspace app until Vite build passes in CI.",
+    "nextMilestone": "Publish static GitHub Pages preview and package @mise-os/master-roster-gallery."
+  },
+  "answers": {
+    "what": "A React + Vite gallery for the 75-card MiseOS Master Roster.",
+    "does": "Displays, validates, filters, and exports Master Roster cards with MiseOS solo commands.",
+    "owner": "MiseOS / Mise-OS organization.",
+    "permissions": "Read-only local data and local Vite dev server only.",
+    "registry": "Workspace app now; future npm package @mise-os/master-roster-gallery.",
+    "changed": "Added 75-card data, typed TS modules, React gallery components, validation/export scripts, and registry manifest.",
+    "safe": "Safe as a read-only gallery and data export layer; publishing requires review.",
+    "agentExecutable": "Yes. Agents can validate and export roster data without mutating repository state."
+  }
+}

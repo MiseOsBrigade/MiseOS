@@ -1,0 +1,2 @@
+export type Evidence={source:"parallel-search"|"token-terminal"|"conductor";subject:string;observedAt:string;summary:string;confidence:"low"|"medium"|"high";url?:string};
+export function advisoryContext(evidence:Evidence[]){return {advisoryOnly:true,evidence:evidence.sort((a,b)=>b.observedAt.localeCompare(a.observedAt)),warning:"External intelligence may inform review but cannot authorize or cryptographically verify a transaction."};}

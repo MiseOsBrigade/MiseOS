@@ -1,0 +1,31 @@
+name: Repo Pets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  shuffle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test repo pets
+        working-directory: tools/repo-pet
+        run: npm test
+      - name: Rebuild walking strips with this week's line-up
+        run: node tools/repo-pet/scripts/build-readme-pets.mjs --rotate
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/repo-pets; then echo "No change"; exit 0; fi
+          git config user.name "MiseOsBrigade"
+          git config user.email "296804121+MiseOsBrigade@users.noreply.github.com"
+          git add assets/repo-pets
+          git commit -m "Repo pets: rotate walking line-up"
+          git push

@@ -1,0 +1,88 @@
+/**
+ * GoodShyt brand tokens.
+ *
+ * Canonical palette: Obsidian / Forest / Copper / Cream.
+ * Space Grotesk is the house display+body font; Inter is explicitly
+ * off-limits per brand convention (the original vanilla-JS gallery used
+ * Inter — this file is the correction, not a continuation of that choice).
+ */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --gs-obsidian: #090d14;
+  --gs-obsidian-raised: #10151f;
+  --gs-obsidian-border: #1f2733;
+  --gs-forest: #1c7552;
+  --gs-copper: #c46c2d;
+  --gs-cream: #e4ddd3;
+
+  --gs-font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --gs-font-mono: "JetBrains Mono", ui-monospace, "Fira Code", monospace;
+
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--gs-obsidian);
+  color: var(--gs-cream);
+  font-family: var(--gs-font-display);
+}
+
+/* Brigade-trim accent, applied per-card via inline style + this class for
+   the animated hover thickening — keeps the color dynamic while the motion
+   stays declarative and CSS-driven, per frontend-design guidance. */
+.gs-trim {
+  transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gs-card {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s ease;
+}
+
+.gs-card:hover {
+  transform: translateY(-4px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--gs-obsidian-raised);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gs-obsidian-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gs-copper);
+}
+
+@keyframes gs-toast-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes gs-toast-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.gs-toast-enter {
+  animation: gs-toast-in 0.3s ease-out forwards;
+}
+.gs-toast-exit {
+  animation: gs-toast-out 0.3s ease-in forwards;
+}

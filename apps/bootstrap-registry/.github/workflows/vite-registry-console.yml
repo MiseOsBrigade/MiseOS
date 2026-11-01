@@ -1,0 +1,36 @@
+name: Vite Registry Console
+
+on:
+  pull_request:
+    paths:
+      - 'apps/registry-console/**'
+      - 'registry/**'
+      - 'scripts/generate-vite-registry-data.mjs'
+      - 'scripts/validate-vite-config.mjs'
+      - '.github/workflows/vite-registry-console.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile=false
+      - run: pnpm vite:prepare
+      - run: pnpm vite:validate
+      - run: pnpm --filter @mise-os/registry-console typecheck
+      - run: pnpm --filter @mise-os/registry-console build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: miseos-registry-console-dist
+          path: apps/registry-console/dist

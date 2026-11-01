@@ -1,0 +1,18 @@
+{
+  "schema": "miseos.catalyst.deployment-plan.v1",
+  "created_at": "2026-07-07T03:31:20Z",
+  "features": {
+    "hosting": "Web Client Hosting",
+    "functions": "Functions",
+    "storage": "Filestore",
+    "api": "API Gateway",
+    "webhooks": "Webhooks"
+  },
+  "suggested_layout": {
+    "Web Client Hosting": "host preview gallery from output/preview",
+    "Functions": "run image job coordinator / metadata API",
+    "Filestore": "store card PNGs, sprite sheets, reference images",
+    "API Gateway": "public API for roster, cards, jobs, health",
+    "Webhooks": "receive image completion callbacks"
+  }
+}

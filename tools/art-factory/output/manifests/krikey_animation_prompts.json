@@ -1,0 +1,554 @@
+[
+  {
+    "agent": "Apprentice Kai",
+    "slug": "apprentice-kai",
+    "prompt": "Animate Apprentice Kai, a Mythic MiseOS Self-Improvement Agent, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Data & Insight Kitchen self-improvement agent aura; silhouette cue: multinational chibi DevOps chef carrying a orb; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Lattice",
+    "slug": "lattice",
+    "prompt": "Animate Lattice, a Mythic MiseOS Trace Correlator, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Data & Insight Kitchen trace correlator aura; silhouette cue: multinational chibi DevOps chef carrying a orb; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Roadmap Sensei",
+    "slug": "roadmap-sensei",
+    "prompt": "Animate Roadmap Sensei, a Mythic MiseOS Strategic Roadmap Recommender, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Data & Insight Kitchen strategic roadmap recommender aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Kurogami Senpai",
+    "slug": "kurogami-senpai",
+    "prompt": "Animate Kurogami Senpai, a Mythic MiseOS Chef de Cuisine, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Alko Commit Chef",
+    "slug": "alko-commit-chef",
+    "prompt": "Animate Alko Commit Chef, a Mythic MiseOS Commit Intake, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Pipeline Kitchen commit intake aura; silhouette cue: multinational chibi DevOps chef carrying a orb; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Iron Hashi",
+    "slug": "iron-hashi",
+    "prompt": "Animate Iron Hashi, a Mythic MiseOS Artifact Validator, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: crate; aura: Pipeline Kitchen artifact validator aura; silhouette cue: multinational chibi DevOps chef carrying a crate; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Omar Reviewer",
+    "slug": "omar-reviewer",
+    "prompt": "Animate Omar Reviewer, a Mythic MiseOS PR Hygiene Check, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Pipeline Kitchen pr hygiene check aura; silhouette cue: multinational chibi DevOps chef carrying a orb; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Yume Builder",
+    "slug": "yume-builder",
+    "prompt": "Animate Yume Builder, a Mythic MiseOS Artifact Builder, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: crate; aura: Pipeline Kitchen artifact builder aura; silhouette cue: multinational chibi DevOps chef carrying a crate; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Bootstrap Aiko",
+    "slug": "bootstrap-aiko",
+    "prompt": "Animate Bootstrap Aiko, a Mythic MiseOS New Service Wizard, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: tablet; aura: Platform Kitchen new service wizard aura; silhouette cue: multinational chibi DevOps chef carrying a tablet; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Orchestra Core",
+    "slug": "orchestra-core",
+    "prompt": "Animate Orchestra Core, a Mythic MiseOS Chef Spirit, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Queue Mizu",
+    "slug": "queue-mizu",
+    "prompt": "Animate Queue Mizu, a Mythic MiseOS Job & Queue Templates, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: bowl; aura: Platform Kitchen job & queue templates aura; silhouette cue: multinational chibi DevOps chef carrying a bowl; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Streama",
+    "slug": "streama",
+    "prompt": "Animate Streama, a Mythic MiseOS Data Streaming Profiles, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: bowl; aura: Platform Kitchen data streaming profiles aura; silhouette cue: multinational chibi DevOps chef carrying a bowl; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Umami Code",
+    "slug": "umami-code",
+    "prompt": "Animate Umami Code, a Mythic MiseOS Traffic & Ingress Manager, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: ladle; aura: Platform Kitchen traffic & ingress manager aura; silhouette cue: multinational chibi DevOps chef carrying a ladle; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Metrics Miko",
+    "slug": "metrics-miko",
+    "prompt": "Animate Metrics Miko, a Mythic MiseOS SLO Dashboards, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Reliability Kitchen slo dashboards aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "SLO Sage",
+    "slug": "slo-sage",
+    "prompt": "Animate SLO Sage, a Mythic MiseOS SLO Definition Workflow, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Reliability Kitchen slo definition workflow aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Policy Ronin",
+    "slug": "policy-ronin",
+    "prompt": "Animate Policy Ronin, a Mythic MiseOS Policy-as-Code Engine, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Security Kitchen policy-as-code engine aura; silhouette cue: multinational chibi DevOps chef carrying a orb; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Seira Vaultkeeper",
+    "slug": "seira-vaultkeeper",
+    "prompt": "Animate Seira Vaultkeeper, a Mythic MiseOS Secrets Lifecycle Manager, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: key; aura: Security Kitchen secrets lifecycle manager aura; silhouette cue: multinational chibi DevOps chef carrying a key; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Chaos Analyst",
+    "slug": "chaos-analyst",
+    "prompt": "Animate Chaos Analyst, a Legendary MiseOS Guest Chef, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Culture Chef",
+    "slug": "culture-chef",
+    "prompt": "Animate Culture Chef, a Legendary MiseOS Guest Chef, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Scale Oni",
+    "slug": "scale-oni",
+    "prompt": "Animate Scale Oni, a Legendary MiseOS Rotisseur, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; STRICT IDENTITY LOCK: preserve hairstyle silhouette, face proportions, costume shape, emblem placement, prop identity, color hierarchy.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Growth Guru",
+    "slug": "growth-guru",
+    "prompt": "Animate Growth Guru, a Epic MiseOS Guest Chef, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Insight Sensei",
+    "slug": "insight-sensei",
+    "prompt": "Animate Insight Sensei, a Epic MiseOS Guest Chef, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Kaji",
+    "slug": "kaji",
+    "prompt": "Animate Kaji, a Epic MiseOS Grillardin, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Flash Riku",
+    "slug": "flash-riku",
+    "prompt": "Animate Flash Riku, a Epic MiseOS Runner, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Pipeline Sensei",
+    "slug": "pipeline-sensei",
+    "prompt": "Animate Pipeline Sensei, a Epic MiseOS Pipeline Tuner Agent, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Pipeline Kitchen pipeline tuner agent aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Kuro Guard",
+    "slug": "kuro-guard",
+    "prompt": "Animate Kuro Guard, a Epic MiseOS Steward, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Platform Sensei",
+    "slug": "platform-sensei",
+    "prompt": "Animate Platform Sensei, a Epic MiseOS Platform Health Board, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Platform Kitchen platform health board aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Seira",
+    "slug": "seira",
+    "prompt": "Animate Seira, a Epic MiseOS Sommelier, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Reliability Sensei",
+    "slug": "reliability-sensei",
+    "prompt": "Animate Reliability Sensei, a Epic MiseOS Reliability Advisor Agent, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen reliability advisor agent aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Red Oni",
+    "slug": "red-oni",
+    "prompt": "Animate Red Oni, a Epic MiseOS Red Team / Chaos Security Mode, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen red team / chaos security mode aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Risk Ryota",
+    "slug": "risk-ryota",
+    "prompt": "Animate Risk Ryota, a Rare MiseOS Risk Scoring Model, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Data & Insight Kitchen risk scoring model aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Data-chan",
+    "slug": "data-chan",
+    "prompt": "Animate Data-chan, a Rare MiseOS Guest Chef, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Mizu",
+    "slug": "mizu",
+    "prompt": "Animate Mizu, a Rare MiseOS Prep Chef, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Bruno Blast-Radius",
+    "slug": "bruno-blast-radius",
+    "prompt": "Animate Bruno Blast-Radius, a Rare MiseOS Change Impact Scanner, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Pipeline Kitchen change impact scanner aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Build-Kun",
+    "slug": "build-kun",
+    "prompt": "Animate Build-Kun, a Rare MiseOS Boulanger, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Canary Taster",
+    "slug": "canary-taster",
+    "prompt": "Animate Canary Taster, a Rare MiseOS Pipeline Observability, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Pipeline Kitchen pipeline observability aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Lila Branchkeeper",
+    "slug": "lila-branchkeeper",
+    "prompt": "Animate Lila Branchkeeper, a Rare MiseOS Branch Policy Gate, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Pipeline Kitchen branch policy gate aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Seira Scan",
+    "slug": "seira-scan",
+    "prompt": "Animate Seira Scan, a Rare MiseOS Security Scan Stage, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Pipeline Kitchen security scan stage aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Tensho",
+    "slug": "tensho",
+    "prompt": "Animate Tensho, a Rare MiseOS Expediter, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Yume",
+    "slug": "yume",
+    "prompt": "Animate Yume, a Rare MiseOS Pastry Chef, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Policy Kenji",
+    "slug": "policy-kenji",
+    "prompt": "Animate Policy Kenji, a Rare MiseOS Policy Packs, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Platform Kitchen policy packs aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Vault Hana",
+    "slug": "vault-hana",
+    "prompt": "Animate Vault Hana, a Rare MiseOS Secrets & Config Broker, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: key; aura: Platform Kitchen secrets & config broker aura; silhouette cue: multinational chibi DevOps chef carrying a key; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Canary Judge",
+    "slug": "canary-judge",
+    "prompt": "Animate Canary Judge, a Rare MiseOS Canary Judge, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen canary judge aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Null-chan",
+    "slug": "null-chan",
+    "prompt": "Animate Null-chan, a Rare MiseOS Plongeur, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Resilience Ryu",
+    "slug": "resilience-ryu",
+    "prompt": "Animate Resilience Ryu, a Rare MiseOS Resilience Testing Loop, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen resilience testing loop aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Trace Sensei",
+    "slug": "trace-sensei",
+    "prompt": "Animate Trace Sensei, a Rare MiseOS Instrumentation Booster, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen instrumentation booster aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "CVE Kumo",
+    "slug": "cve-kumo",
+    "prompt": "Animate CVE Kumo, a Rare MiseOS Dependency Risk Monitor, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Security Kitchen dependency risk monitor aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Evidence Scribe",
+    "slug": "evidence-scribe",
+    "prompt": "Animate Evidence Scribe, a Rare MiseOS Compliance Evidence Collector, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Security Kitchen compliance evidence collector aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Incident Kitsune",
+    "slug": "incident-kitsune",
+    "prompt": "Animate Incident Kitsune, a Rare MiseOS Security Incident Playbooks, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen security incident playbooks aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Merge Sentinel",
+    "slug": "merge-sentinel",
+    "prompt": "Animate Merge Sentinel, a Rare MiseOS Pre-Merge Security Gate, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen pre-merge security gate aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Nudge Neko",
+    "slug": "nudge-neko",
+    "prompt": "Animate Nudge Neko, a Rare MiseOS Security Training Nudges, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen security training nudges aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Scorecard Shin",
+    "slug": "scorecard-shin",
+    "prompt": "Animate Scorecard Shin, a Rare MiseOS Security Scorecard, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen security scorecard aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Token Toshi",
+    "slug": "token-toshi",
+    "prompt": "Animate Token Toshi, a Rare MiseOS Credential Hygiene Scanner, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: key; aura: Security Kitchen credential hygiene scanner aura; silhouette cue: multinational chibi DevOps chef carrying a key; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Anomaly Aki",
+    "slug": "anomaly-aki",
+    "prompt": "Animate Anomaly Aki, a Common MiseOS Anomaly Detection Studio, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Data & Insight Kitchen anomaly detection studio aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Cost Kaito",
+    "slug": "cost-kaito",
+    "prompt": "Animate Cost Kaito, a Common MiseOS Cost & Efficiency Monitor, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Data & Insight Kitchen cost & efficiency monitor aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "DORA Daichi",
+    "slug": "dora-daichi",
+    "prompt": "Animate DORA Daichi, a Common MiseOS Pipeline Analytics Engine, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Data & Insight Kitchen pipeline analytics engine aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "DX Mei",
+    "slug": "dx-mei",
+    "prompt": "Animate DX Mei, a Common MiseOS Developer Experience Survey Loop, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Data & Insight Kitchen developer experience survey loop aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Flag Fox",
+    "slug": "flag-fox",
+    "prompt": "Animate Flag Fox, a Common MiseOS Feature Flag Analytics, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Data & Insight Kitchen feature flag analytics aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Lake Haru",
+    "slug": "lake-haru",
+    "prompt": "Animate Lake Haru, a Common MiseOS Telemetry Ingestion Pipeline, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: bowl; aura: Data & Insight Kitchen telemetry ingestion pipeline aura; silhouette cue: multinational chibi DevOps chef carrying a bowl; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Leaderboard Leo",
+    "slug": "leaderboard-leo",
+    "prompt": "Animate Leaderboard Leo, a Common MiseOS Scorecards & Leaderboards, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Data & Insight Kitchen scorecards & leaderboards aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Repo Ranger",
+    "slug": "repo-ranger",
+    "prompt": "Animate Repo Ranger, a Common MiseOS Repo Health Analyzer, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Data & Insight Kitchen repo health analyzer aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Revenue Rina",
+    "slug": "revenue-rina",
+    "prompt": "Animate Revenue Rina, a Common MiseOS Customer Behavior → Incident Linker, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Data & Insight Kitchen customer behavior → incident linker aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Storyteller Sumi",
+    "slug": "storyteller-sumi",
+    "prompt": "Animate Storyteller Sumi, a Common MiseOS Narrative Report Generator, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Data & Insight Kitchen narrative report generator aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Taxonomy Taka",
+    "slug": "taxonomy-taka",
+    "prompt": "Animate Taxonomy Taka, a Common MiseOS Event Taxonomy Manager, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Data & Insight Kitchen event taxonomy manager aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Felix Rollback",
+    "slug": "felix-rollback",
+    "prompt": "Animate Felix Rollback, a Common MiseOS Rollback & Fix-Forward, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Pipeline Kitchen rollback & fix-forward aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Hugo Matrix",
+    "slug": "hugo-matrix",
+    "prompt": "Animate Hugo Matrix, a Common MiseOS Test Matrix Runner, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Pipeline Kitchen test matrix runner aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Ivun Cache",
+    "slug": "ivun-cache",
+    "prompt": "Animate Ivun Cache, a Common MiseOS Pipeline Cost Monitor, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Pipeline Kitchen pipeline cost monitor aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Nina Promoter",
+    "slug": "nina-promoter",
+    "prompt": "Animate Nina Promoter, a Common MiseOS Environment Promotion Gate, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Pipeline Kitchen environment promotion gate aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Release Conductor",
+    "slug": "release-conductor",
+    "prompt": "Animate Release Conductor, a Common MiseOS Deployment Orchestrator, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: ladle; aura: Pipeline Kitchen deployment orchestrator aura; silhouette cue: multinational chibi DevOps chef carrying a ladle; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Tariq Notesmith",
+    "slug": "tariq-notesmith",
+    "prompt": "Animate Tariq Notesmith, a Common MiseOS Release Notes Generator, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Pipeline Kitchen release notes generator aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Grafana Mei",
+    "slug": "grafana-mei",
+    "prompt": "Animate Grafana Mei, a Common MiseOS Shared Observability Pack, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Platform Kitchen shared observability pack aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Guardrail Goro",
+    "slug": "guardrail-goro",
+    "prompt": "Animate Guardrail Goro, a Common MiseOS Golden Path Guardrails, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Platform Kitchen golden path guardrails aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Portal Rei",
+    "slug": "portal-rei",
+    "prompt": "Animate Portal Rei, a Common MiseOS Self-Service Portal UI, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: tablet; aura: Platform Kitchen self-service portal ui aura; silhouette cue: multinational chibi DevOps chef carrying a tablet; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Preview Yuki",
+    "slug": "preview-yuki",
+    "prompt": "Animate Preview Yuki, a Common MiseOS Preview Environment Spawner, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Platform Kitchen preview environment spawner aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Runtime Riku",
+    "slug": "runtime-riku",
+    "prompt": "Animate Runtime Riku, a Common MiseOS Runtime Profile Manager, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: tablet; aura: Platform Kitchen runtime profile manager aura; silhouette cue: multinational chibi DevOps chef carrying a tablet; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Schema Sora",
+    "slug": "schema-sora",
+    "prompt": "Animate Schema Sora, a Common MiseOS Database Blueprint Manager, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: blueprint; aura: Platform Kitchen database blueprint manager aura; silhouette cue: multinational chibi DevOps chef carrying a blueprint; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Template Tanaka",
+    "slug": "template-tanaka",
+    "prompt": "Animate Template Tanaka, a Common MiseOS Service Template Catalog, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: blueprint; aura: Platform Kitchen service template catalog aura; silhouette cue: multinational chibi DevOps chef carrying a blueprint; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Terra Forge",
+    "slug": "terra-forge",
+    "prompt": "Animate Terra Forge, a Common MiseOS Environment Provisioner, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Platform Kitchen environment provisioner aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Alert Akira",
+    "slug": "alert-akira",
+    "prompt": "Animate Alert Akira, a Common MiseOS Incident Detection Rules, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen incident detection rules aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Backlog Benji",
+    "slug": "backlog-benji",
+    "prompt": "Animate Backlog Benji, a Common MiseOS Reliability Backlog Builder, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: crate; aura: Reliability Kitchen reliability backlog builder aura; silhouette cue: multinational chibi DevOps chef carrying a crate; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Capacity Kanna",
+    "slug": "capacity-kanna",
+    "prompt": "Animate Capacity Kanna, a Common MiseOS Pre-Deployment Reliability Check, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: ladle; aura: Reliability Kitchen pre-deployment reliability check aura; silhouette cue: multinational chibi DevOps chef carrying a ladle; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Chaos Kaito",
+    "slug": "chaos-kaito",
+    "prompt": "Animate Chaos Kaito, a Common MiseOS Load & Chaos Profiles, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: flame; aura: Reliability Kitchen load & chaos profiles aura; silhouette cue: multinational chibi DevOps chef carrying a flame; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Forecast Fuji",
+    "slug": "forecast-fuji",
+    "prompt": "Animate Forecast Fuji, a Common MiseOS Capacity Planner, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: gauge; aura: Reliability Kitchen capacity planner aura; silhouette cue: multinational chibi DevOps chef carrying a gauge; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Impact Ichi",
+    "slug": "impact-ichi",
+    "prompt": "Animate Impact Ichi, a Common MiseOS Customer Impact Simulator, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen customer impact simulator aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "OnCall Naomi",
+    "slug": "oncall-naomi",
+    "prompt": "Animate OnCall Naomi, a Common MiseOS On-Call Rotation Manager, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen on-call rotation manager aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Pager Hiro",
+    "slug": "pager-hiro",
+    "prompt": "Animate Pager Hiro, a Common MiseOS Incident Triage Runbook, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: orb; aura: Reliability Kitchen incident triage runbook aura; silhouette cue: multinational chibi DevOps chef carrying a orb; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Review Ren",
+    "slug": "review-ren",
+    "prompt": "Animate Review Ren, a Common MiseOS Post-Incident Review, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Reliability Kitchen post-incident review aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Auditor Emi",
+    "slug": "auditor-emi",
+    "prompt": "Animate Auditor Emi, a Common MiseOS Access Review Workflow, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: scroll; aura: Security Kitchen access review workflow aura; silhouette cue: multinational chibi DevOps chef carrying a scroll; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Container Kage",
+    "slug": "container-kage",
+    "prompt": "Animate Container Kage, a Common MiseOS Container Hardening Workflow, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen container hardening workflow aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Secure Sakura",
+    "slug": "secure-sakura",
+    "prompt": "Animate Secure Sakura, a Common MiseOS Secure Template Library, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: blueprint; aura: Security Kitchen secure template library aura; silhouette cue: multinational chibi DevOps chef carrying a blueprint; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Threat Taro",
+    "slug": "threat-taro",
+    "prompt": "Animate Threat Taro, a Common MiseOS Threat Modeling Starter, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen threat modeling starter aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  },
+  {
+    "agent": "Watchtower Yoru",
+    "slug": "watchtower-yoru",
+    "prompt": "Animate Watchtower Yoru, a Common MiseOS Runtime Threat Detector, as a short 3-5 second looping mascot animation: cute idle bounce, tiny prop flourish, spark aura pulse, chef-brigade confidence. Keep on-model: chef-inspired black and gold MiseOS uniform; white chef hat or role-specific headwear unless reference says otherwise; visible signature prop/tool; full body visible; clean character silhouette; signature tool: shield; aura: Security Kitchen runtime threat detector aura; silhouette cue: multinational chibi DevOps chef carrying a shield; SOFT IDENTITY LOCK: preserve main role, prop, outfit language, and department color palette while allowing fresh pose variation.",
+    "target": "Krikey-compatible short loop prompt"
+  }
+]

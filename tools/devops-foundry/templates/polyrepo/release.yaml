@@ -1,0 +1,12 @@
+schema_version: "1.0"
+system_release: "system-2026.08.14"
+components:
+  auth-service:
+    repo: YOUR-ORG/auth-service
+    ref: v2.4.1
+  billing-api:
+    repo: YOUR-ORG/billing-api
+    ref: v1.12.0
+  web-frontend:
+    repo: YOUR-ORG/web-frontend
+    ref: v3.1.0

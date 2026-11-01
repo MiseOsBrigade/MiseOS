@@ -25,3 +25,9 @@ Kurogami Senpai performs **orchestrate** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/kurogami-senpai.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/kurogami-senpai.webp" alt="Kurogami Senpai — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/kurogami-senpai.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/kurogami-senpai.webp" alt="Kurogami Senpai — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/kurogami-senpai.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/kurogami-senpai.webp" alt="Kurogami Senpai — Studio Art & Screens" width="160" /></a>

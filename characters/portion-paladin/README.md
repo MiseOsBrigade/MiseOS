@@ -15,3 +15,7 @@ Portion Paladin performs **balance steward** as a MiseOS character agent.
 
 ## Trust model
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/portion-paladin.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/portion-paladin.webp" alt="Portion Paladin — 1×1 Chefs" width="160" /></a>

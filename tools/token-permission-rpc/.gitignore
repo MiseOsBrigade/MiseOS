@@ -1,0 +1,22 @@
+# build
+dist/
+build/
+out/
+native/mise_permission_metric
+
+# dependencies
+node_modules/
+
+# local env and secrets
+.env
+.env.*
+*.pem
+*.key
+secrets/
+wallets/
+audit.local.jsonl
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

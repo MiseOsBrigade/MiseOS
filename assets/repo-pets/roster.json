@@ -1,0 +1,20 @@
+{
+  "seed": "miseos",
+  "strips": [
+    {
+      "file": "walk-header.svg",
+      "bytes": 174675,
+      "walkers": 8
+    },
+    {
+      "file": "walk-kitchen.svg",
+      "bytes": 125321,
+      "walkers": 5
+    },
+    {
+      "file": "walk-footer.svg",
+      "bytes": 126279,
+      "walkers": 5
+    }
+  ]
+}

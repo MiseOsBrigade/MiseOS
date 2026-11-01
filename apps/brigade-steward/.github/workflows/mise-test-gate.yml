@@ -1,0 +1,109 @@
+name: Mise Test Gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      node_version:
+        description: Node version for manual validation
+        required: false
+        default: "24"
+        type: choice
+        options:
+          - "20"
+          - "22"
+          - "24"
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  checks: read
+  pull-requests: read
+
+concurrency:
+  group: mise-test-gate-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  test:
+    name: Validate repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [20, 22, 24]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Detect Node project
+        id: detect
+        run: |
+          set -euo pipefail
+          if [[ -f package.json ]]; then
+            echo "has_node=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_node=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Node
+        if: steps.detect.outputs.has_node == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+          package-manager-cache: false
+
+      - name: Install dependencies
+        if: steps.detect.outputs.has_node == 'true'
+        run: |
+          set -euo pipefail
+          if [[ -f package-lock.json ]]; then
+            npm ci
+          else
+            npm install --no-audit --no-fund
+          fi
+
+      - name: Typecheck
+        if: steps.detect.outputs.has_node == 'true'
+        run: npm run typecheck --if-present
+
+      - name: Test
+        if: steps.detect.outputs.has_node == 'true'
+        run: npm test --if-present
+
+      - name: Build
+        if: steps.detect.outputs.has_node == 'true'
+        run: npm run build --if-present
+
+      - name: Lint
+        if: steps.detect.outputs.has_node == 'true'
+        run: npm run lint --if-present
+
+      - name: Validate workflow YAML files
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import sys
+          try:
+              import yaml
+          except Exception:
+              print('PyYAML unavailable on runner; skipping strict YAML parse.')
+              sys.exit(0)
+          for path in Path('.github/workflows').glob('*.yml'):
+              with path.open('r', encoding='utf-8') as f:
+                  yaml.safe_load(f)
+              print(f'valid: {path}')
+          PY
+
+      - name: Repository scaffold validation
+        if: steps.detect.outputs.has_node != 'true'
+        run: |
+          echo "No package.json detected. Mise Test Gate passed as a repository scaffold validation."

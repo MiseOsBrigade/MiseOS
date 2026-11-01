@@ -25,3 +25,8 @@ Yume performs **build** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/yume.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/yume.webp" alt="Yume — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/yume.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/yume.webp" alt="Yume — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

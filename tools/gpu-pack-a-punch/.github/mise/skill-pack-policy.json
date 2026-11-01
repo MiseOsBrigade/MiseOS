@@ -1,0 +1,21 @@
+{
+  "schema": "mise.skill-pack-policy.v1",
+  "vendorRoot": "vendor/nv-skills",
+  "executeVendoredSkillsByDefault": false,
+  "requiredArtifacts": [
+    "skill-pack-index.json",
+    "skill-pack-index.md",
+    "skill-pack-validation.json"
+  ],
+  "blockedPatterns": [
+    "curl | bash",
+    "wget | sh",
+    "chmod 777",
+    "literal secrets"
+  ],
+  "reviewRequiredForPaths": [
+    "vendor/nv-skills/**",
+    ".github/workflows/**",
+    "scripts/mise/**"
+  ]
+}

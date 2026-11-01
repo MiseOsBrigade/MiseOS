@@ -1,0 +1,26 @@
+name: "ci / apps/brigade-gallery"
+
+on:
+  push:
+    branches: [main]
+    paths: ["apps/brigade-gallery/**", ".github/workflows/ci-brigade-gallery.yml"]
+  pull_request:
+    paths: ["apps/brigade-gallery/**", ".github/workflows/ci-brigade-gallery.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/brigade-gallery
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build

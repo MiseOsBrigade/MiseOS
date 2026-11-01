@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="MiseOS">
+  <rect width="128" height="128" rx="28" fill="#0F2F25"/>
+  <circle cx="64" cy="64" r="42" fill="none" stroke="#F2C94C" stroke-width="5"/>
+  <path d="M64 26v76" stroke="#F6F1E7" stroke-width="7" stroke-linecap="round"/>
+  <path d="M39 79c12 10 38 10 50 0" fill="none" stroke="#E97B22" stroke-width="7" stroke-linecap="round"/>
+  <path d="M36 54h56" stroke="#1E9BB8" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+</svg>

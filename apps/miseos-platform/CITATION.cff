@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata from this file."
+title: "Research Distribution Engine — Open Source Toolkit"
+authors:
+  - family-names: "Watts"
+    given-names: "Deonte"
+    orcid: "https://orcid.org/0009-0005-8586-3650"
+keywords:
+  - "research automation"
+  - "DOI"
+  - "Zenodo"
+  - "ORCID"
+  - "open science"
+  - "GitHub Actions"
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-07-11"
+type: "software"
+repository-code: "https://github.com/MiseOsBrigade/MiseOS"

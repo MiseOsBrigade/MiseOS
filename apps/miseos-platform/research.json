@@ -1,0 +1,20 @@
+{
+  "title": "Research Distribution Engine — Open Source Toolkit",
+  "description": "A security-first toolkit for automating research output distribution across GitHub, Zenodo, ORCID, OpenAIRE, Medium, and scholarly indices.",
+  "creators": "Deonte Watts (0009-0005-8586-3650)",
+  "keywords": [
+    "research automation",
+    "DOI",
+    "Zenodo",
+    "ORCID",
+    "open science",
+    "GitHub Actions"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "resource_type": "software",
+  "orcid_id": "0009-0005-8586-3650",
+  "doi": "",
+  "github_repo": "https://github.com/MiseOsBrigade/MiseOS",
+  "synced_at": "2026-07-11T08:07:17.435Z"
+}

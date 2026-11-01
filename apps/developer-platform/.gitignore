@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.turbo/
+
+# Build output
+dist/
+.next/
+coverage/
+playwright-report/
+test-results/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+wallet.json
+wallet.*.json
+keystore/
+secrets/
+private/
+credentials/
+**/service-account*.json
+**/*private-key*
+**/*seed-phrase*
+**/*mnemonic*
+
+# Runtime data
+.data/
+artifacts/
+logs/
+*.log
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Legacy AL files
+.alcache/
+.alpackages/
+.snapshots/
+.output/
+*.app
+rad.json
+*.g.xlf
+*.bclicense
+*.flf
+TestResults.xml

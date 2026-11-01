@@ -1,0 +1,49 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Test Matrix Runner"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 17
+    },
+    {
+      "trait_type": "Power",
+      "value": 57
+    },
+    {
+      "trait_type": "Precision",
+      "value": 61
+    },
+    {
+      "trait_type": "Speed",
+      "value": 68
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 81
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 76
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 78
+    }
+  ],
+  "description": "Hugo Matrix is a MiseOS Test Matrix Runner in the Pipeline Kitchen department.",
+  "external_url": "https://miseos.example/characters/hugo-matrix",
+  "name": "Hugo Matrix",
+  "record_kind": "character_card",
+  "schema": "miseos.metadata.override.v1"
+}

@@ -15,3 +15,7 @@ Flavor Scribe performs **menu curator** as a MiseOS character agent.
 
 ## Trust model
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/flavor-scribe.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/flavor-scribe.webp" alt="Flavor Scribe — 1×1 Chefs" width="160" /></a>

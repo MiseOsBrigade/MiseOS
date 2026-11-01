@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "branch": "proof/character-archive-import",
+  "sources": [
+    {
+      "source_name": "miseos_character_master_inventory_001_300.csv",
+      "bytes": 503873,
+      "sha256": "fa52081ab6bb77ec4715ec0a3ea8673592110cf4822cbcab2d7b75bcaa052eeb",
+      "status": "staged_external_source"
+    },
+    {
+      "source_name": "miseos_agents_113_300.csv",
+      "bytes": 317387,
+      "sha256": "567d5d272076c54493d8ad03f42401661c62854acf6203c418583ade1dbc05c3",
+      "status": "staged_external_source"
+    },
+    {
+      "source_name": "IMG_5931.pdf",
+      "bytes": 9549586,
+      "sha256": "63f667b2c832e92457e3a54eb712834dd02e4a0ae2c8438a39d3dbf429e68b51",
+      "status": "staged_external_source"
+    },
+    {
+      "source_name": "0CC93597-6FFA-4CB7-A484-88987E860B5B.pdf",
+      "bytes": 31173297,
+      "sha256": "9ed4ea57c0eed0d0ca2433190e8d5c9f677c05c5533bb550202e67d588b49498",
+      "status": "staged_external_source"
+    },
+    {
+      "source_name": "1E3334AB-3111-4E81-AECF-71CB094259F8.pdf",
+      "bytes": 86838702,
+      "sha256": "f34ec86302886fad17f3d063c62270318e7c7d4b6d453a5b462b12bdeb784426",
+      "status": "staged_external_source"
+    },
+    {
+      "source_name": "Branding .zip",
+      "bytes": 2159758,
+      "sha256": "484700f224cd874470e27ac0a60741cbd6266d7826385bf346a97e7411bedd1f",
+      "status": "archive_inspected_pending_binary_import",
+      "archive_entries": [
+        "Branding /IMG_4465.PNG",
+        "Branding /IMG_4555.PNG"
+      ]
+    },
+    {
+      "source_name": "Branding social media .zip",
+      "bytes": 39462003,
+      "sha256": "cf323499b07fbb64e962e23a4e46588c655458669184e08715a14fc948f1168f",
+      "status": "archive_inspected_pending_binary_import",
+      "archive_entry_count": 15
+    }
+  ]
+}

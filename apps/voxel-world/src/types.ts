@@ -1,0 +1,1 @@
+export type Agent={id:string;name:string;codename:string;department:string;role:string;rarity:string;status:string;stats:Record<string,number>;mission:string;workflow:Record<string,unknown>};export type Zone={name:string;subtitle:string;position:[number,number,number];accent:string};

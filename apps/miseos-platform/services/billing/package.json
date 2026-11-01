@@ -1,0 +1,12 @@
+{
+  "name": "@miseos/billing",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Safe Stripe-ready pricing and webhook configuration for MiseOS commercial tiers.",
+  "scripts": {
+    "check": "node scripts/check-config.mjs",
+    "test": "node scripts/check-config.mjs"
+  },
+  "engines": {"node": ">=20"}
+}

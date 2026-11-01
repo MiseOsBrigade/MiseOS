@@ -1,0 +1,72 @@
+{
+  "name": "Mise Orchestra #010 - Seira",
+  "description": "Seira is the Sommelier of the Mise Orchestra Platform Department. Protects secrets like fine wine. Security is her specialty. This creator collectible is designed for lore, access, provenance, and community engagement.",
+  "image": "ipfs://REPLACE_WITH_COLLECTION_CID/cards/png/010-seira.png",
+  "external_url": "https://github.com/MiseOsBrigade/Mise-OS",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Mise Orchestra"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Season 1"
+    },
+    {
+      "trait_type": "Card Number",
+      "value": "010"
+    },
+    {
+      "trait_type": "Character",
+      "value": "Seira"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Sommelier"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Platform"
+    },
+    {
+      "trait_type": "Function",
+      "value": "Secure"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Security Line"
+    },
+    {
+      "trait_type": "Element",
+      "value": "Secret Wine"
+    },
+    {
+      "trait_type": "Ability",
+      "value": "Vault Pairing"
+    },
+    {
+      "trait_type": "Stat: Secure",
+      "value": 97,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Observe",
+      "value": 85,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Connect",
+      "value": 78,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Taste",
+      "value": 90,
+      "display_type": "boost_number"
+    }
+  ]
+}

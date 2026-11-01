@@ -25,3 +25,7 @@ Hugo Matrix performs **test matrix runner** as a MiseOS character agent. Persona
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/hugo-matrix.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/hugo-matrix.webp" alt="Hugo Matrix — 1×1 Chefs" width="160" /></a>

@@ -25,3 +25,8 @@ Nudge Neko performs **security training nudges** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/nudge-neko.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/nudge-neko.webp" alt="Nudge Neko — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/registry-pages/nudge-neko.webp"><img src="../../assets/player-cards/registry-pages/thumbs/nudge-neko.webp" alt="Nudge Neko — Registry Catalogue Pages" width="160" /></a>

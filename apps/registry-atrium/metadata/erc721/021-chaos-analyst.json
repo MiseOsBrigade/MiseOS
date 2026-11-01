@@ -1,0 +1,72 @@
+{
+  "name": "Mise Orchestra #021 - Chaos Analyst",
+  "description": "Chaos Analyst is the Guest Chef of the Mise Orchestra Insights & Growth Department. Embraces the chaos. Turns incidents into opportunities. This creator collectible is designed for lore, access, provenance, and community engagement.",
+  "image": "ipfs://REPLACE_WITH_COLLECTION_CID/cards/png/021-chaos-analyst.png",
+  "external_url": "https://github.com/MiseOsBrigade/Mise-OS",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Mise Orchestra"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Season 1"
+    },
+    {
+      "trait_type": "Card Number",
+      "value": "021"
+    },
+    {
+      "trait_type": "Character",
+      "value": "Chaos Analyst"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Guest Chef"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Insights & Growth"
+    },
+    {
+      "trait_type": "Function",
+      "value": "Learn"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Incident Wisdom"
+    },
+    {
+      "trait_type": "Element",
+      "value": "Kitsune Chaos"
+    },
+    {
+      "trait_type": "Ability",
+      "value": "Postmortem Bloom"
+    },
+    {
+      "trait_type": "Stat: Learn",
+      "value": 98,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Analyze",
+      "value": 92,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Recover",
+      "value": 88,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Optimize",
+      "value": 82,
+      "display_type": "boost_number"
+    }
+  ]
+}

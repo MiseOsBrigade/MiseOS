@@ -25,3 +25,9 @@ Mizu performs **prepare** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/mizu.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/mizu.webp" alt="Mizu — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/character-building/prepare.webp"><img src="../../assets/player-cards/character-building/thumbs/prepare.webp" alt="Mizu — Character Building Theme" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/mizu.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/mizu.webp" alt="Mizu — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

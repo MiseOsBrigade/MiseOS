@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shimeji Brigade · Spinor Spinners</title>
+  <style>
+    :root{--bg:#07130f;--panel:#0f2f25;--gold:#f2c94c;--orange:#e97b22;--teal:#1e9bb8;--green:#38a169;--red:#ff6262;--purple:#a78bfa;--text:#f6f1e7;--muted:#a8c2b6}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 Inter,system-ui,sans-serif;overflow:hidden}
+    #scene{position:fixed;inset:0}canvas{display:block;width:100%!important;height:100%!important}
+    .hud{position:fixed;z-index:2;left:20px;top:18px;max-width:620px;pointer-events:none;text-shadow:0 2px 8px #000}
+    h1{font:900 clamp(22px,4vw,42px)/1 ui-rounded,system-ui,sans-serif;color:var(--gold);margin:0 0 8px;letter-spacing:-.04em}
+    p{margin:5px 0;color:var(--muted)}.pill{display:inline-block;border:1px solid var(--teal);border-radius:999px;padding:4px 9px;color:var(--text);margin:3px 4px 0 0}
+    .legend{position:fixed;right:18px;bottom:18px;z-index:2;color:var(--muted);background:#07130fcc;border:1px solid #245747;border-radius:12px;padding:10px 12px;max-width:300px}
+    .legend b{color:var(--gold)}.warn{color:var(--orange)}
+  </style>
+</head>
+<body>
+  <div id="scene"></div>
+  <header class="hud">
+    <h1>Shimeji Brigade</h1>
+    <p>Autonomous chibi agents roaming a proof-first spinor kitchen.</p>
+    <span class="pill">Mizu · Linkers</span><span class="pill">Kurogami · Sentinels</span>
+    <p id="status">Loading sprite stations…</p>
+  </header>
+  <aside class="legend"><b>Controls</b><br>Drag to orbit · click a roamer to follow · <b>F</b> follow · <b>S</b> sprites · <b>G</b> guides<br><span class="warn">No wallet, key, or minting logic lives in this runtime.</span></aside>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js" integrity="sha384-mNoDMsj3qyJxOkfse1kNjhDVbbYTNnpuSEL68aRVPnNERG3lHoGH+4FHEQSHJhYV" crossorigin="anonymous"></script>
+  <script>
+    const REGISTRY = [
+      {id:"mizu",name:"Mizu",role:"Ticket Alchemist",squad:"Linkers",hue:190,personality:{energy:.62,curiosity:.82,patience:.68,bravery:.56,sociability:.88,clumsiness:.18}},
+      {id:"kurogami",name:"Kurogami",role:"Chef Sentinel",squad:"Sentinels",hue:42,personality:{energy:.58,curiosity:.44,patience:.88,bravery:.74,sociability:.51,clumsiness:.12}}
+    ];
+    let t=0, showSprites=true, showGuides=true, followSelected=true, selected=null;
+    const N=1300, ROAM_RADIUS=285, roamers=[];
+    function setup(){const c=createCanvas(windowWidth,windowHeight,WEBGL);c.parent("scene");pixelDensity(Math.min(2,window.devicePixelRatio||1));colorMode(HSB,360,100,100,100);textureMode(NORMAL);for(const [i,data] of REGISTRY.entries())roamers.push(new Roamer(i,data));document.querySelector("#status").textContent="Procedural fallback on duty · placeholder frames are generated locally";}
+    function windowResized(){resizeCanvas(windowWidth,windowHeight)}
+    function draw(){orbitControl(.5,.5,.03);background(145,55,5,100);blendMode(ADD);rotateX(-.72+.08*sin(t*.5));rotateY(t*.18);rotateZ(.08*sin(t*.7));drawParticleManifold();drawQuaternionFrame();drawSpinorBelt(0,188,32,35);drawSpinorBelt(PI,128,24,185);drawHopfLinks();if(showGuides)drawSquadGuides();for(const roamer of roamers)roamer.step();blendMode(BLEND);drawOverlay();t+=PI/260}
+    function drawParticleManifold(){strokeWeight(1.05);noFill();beginShape(POINTS);for(let i=N;i--;){const y=i/235,x=i;let k=(4+sin(y*2-t)*3)*cos(x/29);if(abs(k)<.05)k=k<0?-.05:.05;const e=y/8-13,d=mag(k,e),q=3*sin(k*2)+.3/k+sin(y/25)*k*(9+4*sin(e*9-d*3+t*2)),c=d-t,px=q+30*cos(c),py=q*sin(c)+d*39-430,pz=70*sin(k*1.7+t)+55*cos(e*.6-t*2)+20*sin(d*3);stroke((190+80*sin(d*.7+t*2)+i*.01)%360,85,95,38);vertex(px,py,pz)}endShape()}
+    function drawQuaternionFrame(){strokeWeight(1.25);noFill();push();rotateX(HALF_PI);drawRing(245,190,50);pop();push();rotateY(HALF_PI);drawRing(245,310,45);pop();push();rotateZ(t*.25);drawRing(245,48,45);pop()}
+    function drawRing(r,hueValue,alphaValue){stroke(hueValue,80,100,alphaValue);beginShape();for(let u=0;u<=TWO_PI+.05;u+=.035)vertex(r*cos(u),r*sin(u),0);endShape()}
+    function drawSpinorBelt(phase,radius,beltWidth,hueBase){push();rotateY(t*.45+phase*.1);rotateX(sin(t*.35+phase)*.3);strokeWeight(1.7);noFill();for(let side=-1;side<=1;side+=2){beginShape();for(let u=0;u<=TWO_PI*2;u+=.025){const p=spinorPoint(u,side,radius,beltWidth,phase);stroke((hueBase+u*24)%360,85,100,45);vertex(p.x,p.y,p.z)}endShape()}strokeWeight(.8);for(let u=0;u<TWO_PI*2;u+=PI/5){const a=spinorPoint(u,-1,radius,beltWidth,phase),b=spinorPoint(u,1,radius,beltWidth,phase);stroke((hueBase+u*30)%360,60,100,25);line(a.x,a.y,a.z,b.x,b.y,b.z)}pop()}
+    function spinorPoint(u,side,radius,beltWidth,phase){const R=radius+10*sin(3*u+t+phase),cx=R*cos(u),cy=R*sin(u),cz=42*sin(2*u+t+phase),twist=u/2+t*.6+phase,nx=cos(twist)*cos(u),ny=cos(twist)*sin(u),nz=sin(twist),w=side*beltWidth;return{x:cx+w*nx,y:cy+w*ny,z:cz+w*nz}}
+    function drawHopfLinks(){push();rotateY(t*.65);rotateX(.4*sin(t*.4));strokeWeight(1.4);push();translate(-62,0,0);rotateY(HALF_PI);drawRing(92,25,55);pop();push();translate(62,0,0);rotateX(HALF_PI);drawRing(92,205,55);pop();pop()}
+    function drawSquadGuides(){for(const [i,hue] of [[0,150],[1,42]]){push();rotateZ(t*.1+i);stroke(hue,60,100,18);noFill();ellipse(0,0,160+i*100);pop()}}
+    function stateFor(p){const r=random();if(r<p.clumsiness*.04)return"fall";if(r<p.curiosity*.12)return"interact";if(r<p.energy*.25)return"walk";if(r<p.energy*.25+p.bravery*.08)return"climb";if(r>1-p.patience*.06)return"perch";return"idle"}
+    class Roamer{
+      constructor(index,data){this.index=index;this.data=data;this.pos=createVector(random(-180,180),random(-120,120),random(-80,80));this.vel=p5.Vector.random3D().mult(.5);this.state="idle";this.stateUntil=0;this.trail=[];this.sprite=makeChibi(data);this.frames={};this.loadFrames()}
+      loadFrames(){const counts={idle:6,walk:8,climb:6,fall:4,drag:3,interact:6,perch:4};for(const [state,count] of Object.entries(counts)){this.frames[state]=new Array(count).fill(null);for(let i=0;i<count;i++){const path=`assets/sprites/${this.data.id}/${state}/frame_${String(i+1).padStart(3,"0")}.png`;loadImage(path,image=>{this.frames[state][i]=image},()=>{});}}}
+      step(){if(t>this.stateUntil){this.state=stateFor(this.data.personality);this.stateUntil=t+random(.8,3.8)}const p=this.data.personality,anchor=this.index?createVector(62,0,0):createVector(-62,0,0),target=p.sociability>.7?anchor:this.pos.copy();let steer=p5.Vector.sub(target,this.pos);if(this.state==="walk"||this.state==="climb")steer.add(p5.Vector.random3D().mult(p.curiosity*18));if(this.state==="perch"||this.state==="idle")steer.mult(.03);if(this.state==="fall")steer.y-=2;if(this.state==="interact")steer=p5.Vector.sub(createVector(0,0,0),this.pos);steer.limit(.12+p.energy*.12);this.vel.add(steer);this.vel.limit(1.25+p.energy);this.pos.add(this.vel);if(this.pos.mag()>ROAM_RADIUS){this.vel.add(p5.Vector.mult(this.pos,-.01));this.pos.limit(ROAM_RADIUS)}this.trail.push(this.pos.copy());if(this.trail.length>18)this.trail.shift();this.render()}
+      render(){push();translate(this.pos.x,this.pos.y,this.pos.z);if(showGuides){noFill();stroke(this.data.hue,70,100,30);sphere(14,8,5)}if(showSprites){push();rotateY(-t*.18);const frames=(this.frames[this.state]||[]).filter(Boolean),sprite=frames.length?frames[Math.floor(t*8)%frames.length]:this.sprite;texture(sprite);plane(46,46);pop()}else{ambientMaterial(this.data.hue,70,90);sphere(15,8,5)}pop();for(let i=1;i<this.trail.length;i++){const a=this.trail[i-1],b=this.trail[i];stroke(this.data.hue,70,100,12);line(a.x,a.y,a.z,b.x,b.y,b.z)}}
+    }
+    function makeChibi(data){const g=createGraphics(128,128);g.clear();g.noStroke();g.fill(data.id==="mizu"?"#1e9bb8":"#f6f1e7");g.ellipse(64,74,58,54);g.fill(data.id==="mizu"?"#2773b8":"#f2c94c");g.ellipse(64,48,66,34);g.fill("#07130f");g.ellipse(52,68,7,10);g.ellipse(76,68,7,10);g.fill(data.id==="mizu"?"#a78bfa":"#e97b22");g.rect(40,88,48,10,5);g.fill("#07130f");g.textAlign(CENTER,CENTER);g.textSize(11);g.textStyle(BOLD);g.text(data.id==="mizu"?"MZ":"KG",64,93);return g}
+    function drawOverlay(){push();resetMatrix();translate(-width/2,-height/2);noStroke();textFont("monospace");textAlign(LEFT,TOP);fill(185,25,95,80);textSize(13);text("SPINOR SPINNERS: 360° twists the frame • 720° returns it",22,24);fill(45,20,100,65);textSize(11);text("Quaternion rings + Möbius belt logic + Hopf-link topology + particle manifold",22,44);text(`${roamers.length} autonomous Shimeji roamers · click canvas to focus`,22,62);pop()}
+    function mousePressed(){let nearest=null,best=Infinity;for(const r of roamers){const d=dist(mouseX-width/2,mouseY-height/2,r.pos.x,r.pos.y);if(d<best){best=d;nearest=r}}if(best<80)selected=nearest}
+    function keyPressed(){if(key==="F")followSelected=!followSelected;if(key==="S")showSprites=!showSprites;if(key==="G")showGuides=!showGuides}
+  </script>
+</body>
+</html>

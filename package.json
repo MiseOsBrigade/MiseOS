@@ -1,16 +1,27 @@
 {
-  "name": "miseos-character-profile",
+  "name": "miseos-universe",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/brigade-gallery",
+    "apps/4d-playground",
+    "apps/voxel-world",
+    "apps/character-studio",
+    "apps/metric-workflow",
+    "apps/mcp-foundry"
   ],
   "scripts": {
     "validate": "node scripts/validate.mjs",
-    "test": "npm run validate"
+    "validate:cards": "node scripts/validate-player-cards.mjs",
+    "test": "npm run validate && npm run validate:cards",
+    "test:workspaces": "npm test --workspaces --if-present",
+    "build:workspaces": "npm run build --workspaces --if-present"
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "MiseOS Universe: character registry, player cards, apps, tools and packages.",
+  "license": "MIT"
 }

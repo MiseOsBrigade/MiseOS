@@ -1,0 +1,47 @@
+name: Verify FileOps Console
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/fileops-console/**"
+      - "packages/miseos-fileops/**"
+      - "payments/miseos-fileops-products.json"
+      - "scripts/check-fileops-payments-config.mjs"
+      - ".github/workflows/fileops-console-verify.yml"
+      - "package.json"
+  pull_request:
+    paths:
+      - "apps/fileops-console/**"
+      - "packages/miseos-fileops/**"
+      - "payments/miseos-fileops-products.json"
+      - "scripts/check-fileops-payments-config.mjs"
+      - ".github/workflows/fileops-console-verify.yml"
+      - "package.json"
+
+jobs:
+  verify-fileops:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Verify FileOps package
+        run: npm run fileops:verify
+
+      - name: Build FileOps package
+        run: npm run fileops:build
+
+      - name: Validate FileOps payment catalog
+        run: npm run fileops:payments:check
+
+      - name: Confirm interactive console exists
+        run: test -f apps/fileops-console/index.html && test -f packages/miseos-fileops/public/index.html

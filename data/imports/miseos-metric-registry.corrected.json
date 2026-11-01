@@ -1,0 +1,1676 @@
+{
+  "$schema": "../schemas/metric-definition.schema.json",
+  "registry_id": "miseos.metrics.core",
+  "title": "MiseOS Core Metric Registry",
+  "description": "Canonical evidence-driven metrics for GridOps, Chef Brigade operations, governance, registry integrity, knowledge, infrastructure, and commercial performance.",
+  "canonical_ecosystem_statement": "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items.",
+  "generated_at": "2026-07-20T00:00:00Z",
+  "version": "1.0.1",
+  "metrics": [
+    {
+      "metric_id": "miseos.metric.portfolio_health_score",
+      "name": "Portfolio Health Score",
+      "domain": "composite",
+      "description": "Confidence-aware weighted health across delivery, quality, agents, governance, knowledge, infrastructure, product, and commercial domains.",
+      "kind": "composite",
+      "unit": "score_0_10",
+      "calculation": {
+        "expression": "weighted_sum(domain_scores)",
+        "inputs": [
+          "delivery_score",
+          "quality_score",
+          "agent_score",
+          "governance_score",
+          "knowledge_score",
+          "infrastructure_score",
+          "product_score",
+          "commercial_score"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 8
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            6.5,
+            7.99
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 6.5
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "policy_engine",
+        "registry_platform",
+        "stripe"
+      ],
+      "refresh": "daily",
+      "owner": "MiseOS Portfolio Council",
+      "labels": [
+        "executive"
+      ],
+      "dimensions": [
+        "environment",
+        "brigade"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.verified_task_success_rate",
+      "name": "Verified Task Success Rate",
+      "domain": "delivery",
+      "description": "Share of completed tasks that pass every required proof gate.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "verified_successful_tasks / completed_tasks",
+        "inputs": [
+          "verified_successful_tasks",
+          "completed_tasks"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0.92
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.85,
+            0.9199
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.85
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.97,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "github_actions",
+        "policy_engine"
+      ],
+      "refresh": "near_real_time",
+      "owner": "GridOps Operations",
+      "labels": [
+        "proof-gated"
+      ],
+      "dimensions": [
+        "agent_id",
+        "brigade_id",
+        "workflow_id",
+        "repository",
+        "environment"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": true,
+        "red_action": "Pause affected workflow class and require operator review.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.workflow_completion_rate",
+      "name": "Workflow Completion Rate",
+      "domain": "delivery",
+      "description": "Share of started workflows that reach a terminal completed state.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "completed_workflows / started_workflows",
+        "inputs": [
+          "completed_workflows",
+          "started_workflows"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0.95
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.85,
+            0.9499
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.85
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops"
+      ],
+      "refresh": "near_real_time",
+      "owner": "GridOps Operations",
+      "labels": [],
+      "dimensions": [
+        "brigade_id",
+        "workflow_type",
+        "environment"
+      ],
+      "governance": {
+        "severity": "operational",
+        "requires_provenance": true,
+        "human_review_on_red": false,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.proof_coverage",
+      "name": "Proof Coverage",
+      "domain": "governance",
+      "description": "Share of required workflow steps backed by valid evidence.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "steps_with_valid_evidence / required_steps",
+        "inputs": [
+          "steps_with_valid_evidence",
+          "required_steps"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0.95
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.9,
+            0.9499
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.9
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.8,
+        "minimum_for_automation": 0.98,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "policy_engine",
+        "manual_attestation"
+      ],
+      "refresh": "near_real_time",
+      "owner": "Governance Council",
+      "labels": [
+        "evidence"
+      ],
+      "dimensions": [
+        "workflow_id",
+        "policy_id",
+        "environment"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": true,
+        "red_action": "Block promotion and require evidence remediation.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.handoff_reliability",
+      "name": "Agent Handoff Reliability",
+      "domain": "workforce",
+      "description": "Share of agent handoffs accepted with complete context, valid schema, and preserved provenance.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "successful_handoffs / total_handoffs",
+        "inputs": [
+          "successful_handoffs",
+          "total_handoffs"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0.95
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.9,
+            0.9499
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.9
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "supermemory"
+      ],
+      "refresh": "daily",
+      "owner": "Chef Brigade Operations",
+      "labels": [],
+      "dimensions": [
+        "source_agent",
+        "destination_agent",
+        "brigade_id"
+      ],
+      "governance": {
+        "severity": "operational",
+        "requires_provenance": true,
+        "human_review_on_red": false,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.deployment_success_rate",
+      "name": "Deployment Success Rate",
+      "domain": "quality",
+      "description": "Share of production deployment attempts that complete and pass post-deployment verification.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "verified_deployments / deployment_attempts",
+        "inputs": [
+          "verified_deployments",
+          "deployment_attempts"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0.98
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.95,
+            0.9799
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.95
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.85,
+        "minimum_for_automation": 0.99,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "github_actions",
+        "logfire",
+        "digitalocean"
+      ],
+      "refresh": "per_event",
+      "owner": "Release Engineering",
+      "labels": [
+        "release"
+      ],
+      "dimensions": [
+        "repository",
+        "service",
+        "environment"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": true,
+        "red_action": "Pause deployment pipeline and invoke rollback playbook.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.rollback_rate",
+      "name": "Rollback Rate",
+      "domain": "quality",
+      "description": "Share of production deployments requiring rollback.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "rollbacks / production_deployments",
+        "inputs": [
+          "rollbacks",
+          "production_deployments"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "lower_is_better",
+      "thresholds": {
+        "green": {
+          "operator": "<",
+          "value": 0.02
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.02,
+            0.05
+          ]
+        },
+        "red": {
+          "operator": ">",
+          "value": 0.05
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "github_actions",
+        "incident_system"
+      ],
+      "refresh": "per_event",
+      "owner": "Release Engineering",
+      "labels": [],
+      "dimensions": [
+        "repository",
+        "service"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.critical_defect_escape_rate",
+      "name": "Critical Defect Escape Rate",
+      "domain": "quality",
+      "description": "Critical production defects divided by all critical defects detected.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "critical_production_defects / total_critical_defects",
+        "inputs": [
+          "critical_production_defects",
+          "total_critical_defects"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "lower_is_better",
+      "thresholds": {
+        "green": {
+          "operator": "<",
+          "value": 0.01
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.01,
+            0.02
+          ]
+        },
+        "red": {
+          "operator": ">",
+          "value": 0.02
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.99,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "github",
+        "logfire",
+        "incident_system"
+      ],
+      "refresh": "weekly",
+      "owner": "Quality Engineering",
+      "labels": [],
+      "dimensions": [
+        "repository",
+        "service",
+        "release"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Open critical incident, quarantine affected release, and review dependent workflows.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.mean_time_to_verified_recovery",
+      "name": "Mean Time to Verified Recovery",
+      "domain": "quality",
+      "description": "Mean elapsed minutes from incident detection through verified recovery and contamination review.",
+      "kind": "duration",
+      "unit": "minutes",
+      "calculation": {
+        "expression": "avg(verified_recovery_at - detected_at)",
+        "inputs": [
+          "detected_at",
+          "verified_recovery_at"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "lower_is_better",
+      "thresholds": {
+        "green": {
+          "operator": "<=",
+          "value": 60
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            60.01,
+            240
+          ]
+        },
+        "red": {
+          "operator": ">",
+          "value": 240
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "logfire",
+        "incident_system"
+      ],
+      "refresh": "per_event",
+      "owner": "Site Reliability",
+      "labels": [],
+      "dimensions": [
+        "service",
+        "severity",
+        "environment"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.agent_utilization",
+      "name": "Agent Capacity Utilization",
+      "domain": "workforce",
+      "description": "Productive execution time divided by available governed execution capacity.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "productive_execution_time / available_execution_capacity",
+        "inputs": [
+          "productive_execution_time",
+          "available_execution_capacity"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "target_band",
+      "thresholds": {
+        "green": {
+          "operator": "between",
+          "value": [
+            0.7,
+            0.85
+          ]
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.6,
+            0.9
+          ]
+        },
+        "red": {
+          "operator": "outside",
+          "value": [
+            0.6,
+            0.9
+          ]
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "logfire"
+      ],
+      "refresh": "daily",
+      "owner": "Chef Brigade Operations",
+      "labels": [],
+      "dimensions": [
+        "agent_id",
+        "brigade_id"
+      ],
+      "governance": {
+        "severity": "operational",
+        "requires_provenance": true,
+        "human_review_on_red": false,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.agent_reliability",
+      "name": "Agent Reliability",
+      "domain": "workforce",
+      "description": "Verified successful agent runs divided by all terminal agent runs.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "verified_successful_runs / terminal_agent_runs",
+        "inputs": [
+          "verified_successful_runs",
+          "terminal_agent_runs"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0.92
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.85,
+            0.9199
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.85
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "logfire"
+      ],
+      "refresh": "daily",
+      "owner": "Chef Brigade Operations",
+      "labels": [],
+      "dimensions": [
+        "agent_id",
+        "task_type",
+        "model",
+        "toolset"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.human_override_rate",
+      "name": "Human Override Rate",
+      "domain": "governance",
+      "description": "Share of reviewed agent decisions reversed by authorized humans.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "reversed_decisions / reviewed_agent_decisions",
+        "inputs": [
+          "reversed_decisions",
+          "reviewed_agent_decisions"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "lower_is_better",
+      "thresholds": {
+        "green": {
+          "operator": "<",
+          "value": 0.05
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.05,
+            0.12
+          ]
+        },
+        "red": {
+          "operator": ">",
+          "value": 0.12
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "policy_engine"
+      ],
+      "refresh": "weekly",
+      "owner": "Governance Council",
+      "labels": [],
+      "dimensions": [
+        "agent_id",
+        "decision_type",
+        "override_reason"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.governance_compliance",
+      "name": "Governance Compliance",
+      "domain": "governance",
+      "description": "Share of governed actions satisfying permission, approval, provenance, privacy, security, and policy requirements.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "compliant_governed_actions / total_governed_actions",
+        "inputs": [
+          "compliant_governed_actions",
+          "total_governed_actions"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0.95
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.9,
+            0.9499
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.9
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.85,
+        "minimum_for_automation": 0.99,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "policy_engine",
+        "gridops"
+      ],
+      "refresh": "near_real_time",
+      "owner": "Governance Council",
+      "labels": [],
+      "dimensions": [
+        "policy_domain",
+        "agent_id",
+        "environment"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": true,
+        "red_action": "Stop nonessential governed actions and require human acknowledgement.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.memory_provenance_coverage",
+      "name": "Memory Provenance Coverage",
+      "domain": "knowledge",
+      "description": "Share of governed persistent memories with complete source and transformation lineage.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "memories_with_complete_lineage / governed_memories",
+        "inputs": [
+          "memories_with_complete_lineage",
+          "governed_memories"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 1
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.98,
+            0.9999
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.98
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 1.0,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "supermemory",
+        "policy_engine"
+      ],
+      "refresh": "daily",
+      "owner": "Knowledge Governance",
+      "labels": [],
+      "dimensions": [
+        "memory_namespace",
+        "sensitivity",
+        "customer_id"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Quarantine affected memory namespace and invalidate dependent outputs.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.memory_contamination_rate",
+      "name": "Memory Contamination Rate",
+      "domain": "knowledge",
+      "description": "Share of audited persistent records found invalid, unapproved, stale-authoritative, or misattributed.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "contaminated_records / audited_records",
+        "inputs": [
+          "contaminated_records",
+          "audited_records"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "lower_is_better",
+      "thresholds": {
+        "green": {
+          "operator": "<",
+          "value": 0.001
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.001,
+            0.01
+          ]
+        },
+        "red": {
+          "operator": ">",
+          "value": 0.01
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "supermemory",
+        "policy_engine"
+      ],
+      "refresh": "daily",
+      "owner": "Knowledge Governance",
+      "labels": [],
+      "dimensions": [
+        "memory_namespace",
+        "contamination_type"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.registry_integrity",
+      "name": "Registry Integrity Rate",
+      "domain": "registry",
+      "description": "Share of published registry manifests passing schema, artifact, provenance, compatibility, and licensing validation.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "valid_registry_records / published_registry_records",
+        "inputs": [
+          "valid_registry_records",
+          "published_registry_records"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 1
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.99,
+            0.9999
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.99
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.95,
+        "minimum_for_automation": 1.0,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "registry_platform"
+      ],
+      "refresh": "per_event",
+      "owner": "Registry Platform",
+      "labels": [
+        "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items."
+      ],
+      "dimensions": [
+        "registry_type",
+        "status"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": true,
+        "red_action": "Block publication and quarantine invalid registry record.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.character_roster_integrity",
+      "name": "Character Roster Integrity",
+      "domain": "character",
+      "description": "Share of approved character records passing identity, media, lore, workflow-role, license, and provenance validation.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "valid_character_records / approved_character_records",
+        "inputs": [
+          "valid_character_records",
+          "approved_character_records"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 1
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.98,
+            0.9999
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.98
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "registry_platform"
+      ],
+      "refresh": "per_event",
+      "owner": "Character IP Council",
+      "labels": [
+        "character-not-registry"
+      ],
+      "dimensions": [
+        "department",
+        "rarity",
+        "edition"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.cost_per_verified_task",
+      "name": "Cost per Verified Task",
+      "domain": "cost",
+      "description": "Total attributable operating cost divided by tasks passing all proof gates.",
+      "kind": "currency",
+      "unit": "usd",
+      "calculation": {
+        "expression": "total_operating_cost_usd / verified_tasks",
+        "inputs": [
+          "total_operating_cost_usd",
+          "verified_tasks"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "lower_is_better",
+      "thresholds": {
+        "green": {
+          "operator": "<=",
+          "value": 2.5
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            2.51,
+            5.0
+          ]
+        },
+        "red": {
+          "operator": ">",
+          "value": 5.0
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "gridops",
+        "digitalocean",
+        "logfire",
+        "quicknode"
+      ],
+      "refresh": "daily",
+      "owner": "FinOps",
+      "labels": [],
+      "dimensions": [
+        "agent_id",
+        "brigade_id",
+        "customer_id",
+        "workflow_type"
+      ],
+      "governance": {
+        "severity": "operational",
+        "requires_provenance": true,
+        "human_review_on_red": false,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.compute_utilization",
+      "name": "Compute Utilization",
+      "domain": "cost",
+      "description": "Used compute units divided by provisioned compute units.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "used_compute_units / provisioned_compute_units",
+        "inputs": [
+          "used_compute_units",
+          "provisioned_compute_units"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "target_band",
+      "thresholds": {
+        "green": {
+          "operator": "between",
+          "value": [
+            0.75,
+            0.85
+          ]
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.5,
+            0.9
+          ]
+        },
+        "red": {
+          "operator": "outside",
+          "value": [
+            0.5,
+            0.9
+          ]
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "digitalocean",
+        "opentelemetry"
+      ],
+      "refresh": "hourly",
+      "owner": "FinOps",
+      "labels": [],
+      "dimensions": [
+        "resource_id",
+        "environment",
+        "customer_id"
+      ],
+      "governance": {
+        "severity": "operational",
+        "requires_provenance": true,
+        "human_review_on_red": false,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.entitlement_accuracy",
+      "name": "Commercial Entitlement Accuracy",
+      "domain": "commercial",
+      "description": "Share of audited accounts whose platform access matches Stripe product, price, subscription, and registry rules.",
+      "kind": "ratio",
+      "unit": "percent",
+      "calculation": {
+        "expression": "accounts_with_correct_access / accounts_audited",
+        "inputs": [
+          "accounts_with_correct_access",
+          "accounts_audited"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 1
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0.99,
+            0.9999
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0.99
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 1.0,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "stripe",
+        "registry_platform"
+      ],
+      "refresh": "daily",
+      "owner": "Commercial Operations",
+      "labels": [],
+      "dimensions": [
+        "product_id",
+        "price_id",
+        "customer_id"
+      ],
+      "governance": {
+        "severity": "critical",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Suspend conflicting entitlement changes and reconcile billing ledger.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.product_contribution_margin",
+      "name": "Product Contribution Margin",
+      "domain": "commercial",
+      "description": "Product revenue less direct infrastructure, model, API, support, and payment processing costs.",
+      "kind": "currency",
+      "unit": "usd",
+      "calculation": {
+        "expression": "revenue - infrastructure_cost - model_cost - api_cost - support_cost - payment_processing_cost",
+        "inputs": [
+          "revenue",
+          "infrastructure_cost",
+          "model_cost",
+          "api_cost",
+          "support_cost",
+          "payment_processing_cost"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 0
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            -5000,
+            -0.01
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": -5000
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "stripe",
+        "digitalocean",
+        "quicknode",
+        "logfire"
+      ],
+      "refresh": "monthly",
+      "owner": "Commercial Operations",
+      "labels": [],
+      "dimensions": [
+        "registry_item_id",
+        "customer_segment"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": true,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    },
+    {
+      "metric_id": "miseos.metric.stakeholder_nps",
+      "name": "Stakeholder Net Promoter Score",
+      "domain": "stakeholder",
+      "description": "Net Promoter Score from authorized customers, operators, and project stakeholders.",
+      "kind": "score",
+      "unit": "nps",
+      "calculation": {
+        "expression": "percent_promoters - percent_detractors",
+        "inputs": [
+          "percent_promoters",
+          "percent_detractors"
+        ],
+        "window": "configurable",
+        "aggregation": "custom",
+        "zero_denominator_policy": "null"
+      },
+      "direction": "higher_is_better",
+      "thresholds": {
+        "green": {
+          "operator": ">=",
+          "value": 40
+        },
+        "amber": {
+          "operator": "between",
+          "value": [
+            0,
+            39.99
+          ]
+        },
+        "red": {
+          "operator": "<",
+          "value": 0
+        }
+      },
+      "confidence_policy": {
+        "minimum_for_display": 0.7,
+        "minimum_for_automation": 0.95,
+        "factors": {
+          "freshness": 0.15,
+          "completeness": 0.2,
+          "source_reliability": 0.2,
+          "calculation_reliability": 0.15,
+          "historical_stability": 0.1,
+          "independent_verification": 0.1,
+          "provenance_completeness": 0.1
+        }
+      },
+      "sources": [
+        "survey_system"
+      ],
+      "refresh": "monthly",
+      "owner": "Customer Success",
+      "labels": [],
+      "dimensions": [
+        "stakeholder_type",
+        "product_id"
+      ],
+      "governance": {
+        "severity": "material",
+        "requires_provenance": true,
+        "human_review_on_red": false,
+        "automation_allowed": false,
+        "red_action": "Investigate and create incident.",
+        "policy_refs": [
+          "miseos.policy.evidence.v1",
+          "miseos.policy.human_agency.v1"
+        ]
+      },
+      "version": "1.0.0",
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "generatedAt": "2026-07-02T19:25:56.638Z",
+  "mode": "dry_run",
+  "summary": "Release Sentinel does not silently upgrade packages. It creates risk-ranked update plans and requires review for permission, network, security, or major version changes.",
+  "entries": [
+    {
+      "id": "miseos.workflow-pack",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "repo"
+      ],
+      "riskScore": 100,
+      "riskLevel": "high",
+      "requiresNetwork": true,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.release-sentinel",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 87,
+      "riskLevel": "high",
+      "requiresNetwork": true,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.docs-hub-template",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm",
+        "repo"
+      ],
+      "riskScore": 70,
+      "riskLevel": "high",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.docs-builder",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "container"
+      ],
+      "riskScore": 63,
+      "riskLevel": "high",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.policy-engine",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm",
+        "container"
+      ],
+      "riskScore": 58,
+      "riskLevel": "medium",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.workflow-linter",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 57,
+      "riskLevel": "medium",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.policy-checker",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "container"
+      ],
+      "riskScore": 56,
+      "riskLevel": "medium",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.registry-schema",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 50,
+      "riskLevel": "medium",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": false,
+      "recommendedAction": "open_review_pr",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.attestation-gate",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 29,
+      "riskLevel": "low",
+      "requiresNetwork": true,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.sbom-indexer",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 26,
+      "riskLevel": "low",
+      "requiresNetwork": true,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.runner",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "container"
+      ],
+      "riskScore": 14,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.repo-steward",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 11,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.trust-graph",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 10,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.analytics-engine",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 8,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.cli",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 8,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.ruby-steward",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "rubygems"
+      ],
+      "riskScore": 8,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.gradle-plugin",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "gradle"
+      ],
+      "riskScore": 7,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.maven-policy-adapter",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "maven"
+      ],
+      "riskScore": 7,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.nuget-client",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "nuget"
+      ],
+      "riskScore": 7,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    },
+    {
+      "id": "miseos.agent-sdk",
+      "version": "0.2.0",
+      "status": "experimental",
+      "artifacts": [
+        "npm"
+      ],
+      "riskScore": 6,
+      "riskLevel": "low",
+      "requiresNetwork": false,
+      "safeToRunWithoutHuman": true,
+      "recommendedAction": "monitor",
+      "updatePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      }
+    }
+  ],
+  "prPlan": [
+    {
+      "title": "chore(registry): review miseos.workflow-pack update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "high"
+      ],
+      "body": "Review miseos.workflow-pack. Risk=100. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    },
+    {
+      "title": "chore(registry): review miseos.release-sentinel update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "high"
+      ],
+      "body": "Review miseos.release-sentinel. Risk=87. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    },
+    {
+      "title": "chore(registry): review miseos.docs-hub-template update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "high"
+      ],
+      "body": "Review miseos.docs-hub-template. Risk=70. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    },
+    {
+      "title": "chore(registry): review miseos.docs-builder update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "high"
+      ],
+      "body": "Review miseos.docs-builder. Risk=63. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    },
+    {
+      "title": "chore(registry): review miseos.policy-engine update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "medium"
+      ],
+      "body": "Review miseos.policy-engine. Risk=58. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    },
+    {
+      "title": "chore(registry): review miseos.workflow-linter update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "medium"
+      ],
+      "body": "Review miseos.workflow-linter. Risk=57. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    },
+    {
+      "title": "chore(registry): review miseos.policy-checker update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "medium"
+      ],
+      "body": "Review miseos.policy-checker. Risk=56. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    },
+    {
+      "title": "chore(registry): review miseos.registry-schema update surface",
+      "labels": [
+        "miseos",
+        "registry-drift",
+        "medium"
+      ],
+      "body": "Review miseos.registry-schema. Risk=50. Check permissions, trust metadata, SBOM, provenance, and release notes before merge."
+    }
+  ]
+}

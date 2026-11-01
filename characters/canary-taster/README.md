@@ -25,3 +25,9 @@ Canary Taster performs **pipeline observability** as a MiseOS character agent. P
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/character-building/canary-taster.webp"><img src="../../assets/player-cards/character-building/thumbs/canary-taster.webp" alt="Canary Taster — Character Building Theme" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/canary-taster.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/canary-taster.webp" alt="Canary Taster — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/canary-taster.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/canary-taster.webp" alt="Canary Taster — Studio Art & Screens" width="160" /></a>

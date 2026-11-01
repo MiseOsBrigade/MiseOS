@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/three-layer-ecosystem.schema.json",
+  "title": "MiseOS Three-Layer Ecosystem Model",
+  "type": "object",
+  "required": ["schema", "category", "positioning", "strategic_principle", "canonical_counts", "layers", "activation_loop", "market_entry"],
+  "properties": {
+    "schema": {"const": "miseos.ecosystem.three-layer.v1"},
+    "category": {"const": "Character-Native Agent Operations"},
+    "positioning": {"type": "string", "minLength": 40},
+    "strategic_principle": {
+      "type": "object",
+      "required": ["identity", "capability", "authority", "evidence"],
+      "additionalProperties": false,
+      "properties": {"identity":{"type":"string"},"capability":{"type":"string"},"authority":{"type":"string"},"evidence":{"type":"string"}}
+    },
+    "canonical_counts": {
+      "type":"object", "additionalProperties":false,
+      "required":["character_agents","registry_manifests","total_ecosystem_items"],
+      "properties":{"character_agents":{"const":112},"registry_manifests":{"const":23},"total_ecosystem_items":{"const":135}}
+    },
+    "layers": {
+      "type":"array", "minItems":3, "maxItems":3,
+      "prefixItems":[
+        {"$ref":"#/$defs/layer1"},{"$ref":"#/$defs/layer2"},{"$ref":"#/$defs/layer3"}
+      ]
+    },
+    "activation_loop":{"type":"array","minItems":7,"items":{"type":"string"}},
+    "market_entry":{"type":"array","minItems":5,"items":{"type":"string"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "layer":{"type":"object","required":["id","order","name","surface","question","strategic_role","items"],"properties":{"id":{"type":"string"},"order":{"type":"integer"},"name":{"type":"string"},"surface":{"type":"string"},"question":{"type":"string"},"strategic_role":{"type":"string"},"items":{"type":"array","minItems":1,"items":{"type":"string"}}},"additionalProperties":false},
+    "layer1":{"allOf":[{"$ref":"#/$defs/layer"},{"properties":{"id":{"const":"character-ip"},"order":{"const":1}}}]},
+    "layer2":{"allOf":[{"$ref":"#/$defs/layer"},{"properties":{"id":{"const":"agent-utility"},"order":{"const":2}}}]},
+    "layer3":{"allOf":[{"$ref":"#/$defs/layer"},{"properties":{"id":{"const":"participation-economy"},"order":{"const":3}}}]}
+  }
+}

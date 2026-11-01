@@ -25,3 +25,7 @@ Felix Rollback performs **rollback & fix-forward** as a MiseOS character agent. 
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/felix-rollback.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/felix-rollback.webp" alt="Felix Rollback — 1×1 Chefs" width="160" /></a>

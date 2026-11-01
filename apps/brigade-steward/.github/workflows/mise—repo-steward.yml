@@ -1,0 +1,448 @@
+name: Mise Repo Steward
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Steward mode
+        required: true
+        type: choice
+        options:
+          - issues-review
+          - merge-pr
+          - branch-corrections
+          - comments-commits
+          - repo-clean
+      target_number:
+        description: Optional issue or PR number
+        required: false
+        type: string
+      apply_changes:
+        description: Permit safe write/merge actions after gates pass
+        required: false
+        type: boolean
+        default: false
+  issue_comment:
+    types: [created]
+  issues:
+    types: [opened, reopened, edited]
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  schedule:
+    - cron: "17 9 * * 1,4"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mise-repo-steward-${{ github.event_name }}-${{ github.event.issue.number || github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  MISE_BRANCH_PREFIX: mise/steward
+  MISE_BOT_NAME: mise-repo-steward[bot]
+  MISE_BOT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+  NODE_VERSION: "24"
+
+jobs:
+  route:
+    name: Route Mise command
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      mode: ${{ steps.route.outputs.mode }}
+      target_number: ${{ steps.route.outputs.target_number }}
+      apply_changes: ${{ steps.route.outputs.apply_changes }}
+      trusted_run: ${{ steps.route.outputs.trusted_run }}
+    steps:
+      - id: route
+        name: Resolve mode safely
+        run: |
+          set -euo pipefail
+          event="${{ github.event_name }}"
+          mode="${{ inputs.mode || '' }}"
+          target="${{ inputs.target_number || '' }}"
+          apply="${{ inputs.apply_changes || false }}"
+          trusted="false"
+
+          actor="${{ github.actor }}"
+          if [[ "$actor" == "github-actions[bot]" || "$actor" == *"[bot]" ]]; then
+            mode="none"; apply="false"
+          fi
+
+          issue_number="$(jq -r '.issue.number // ""' "$GITHUB_EVENT_PATH")"
+          pr_number="$(jq -r '.pull_request.number // ""' "$GITHUB_EVENT_PATH")"
+          [[ -z "$target" && -n "$pr_number" ]] && target="$pr_number"
+          [[ -z "$target" && -n "$issue_number" ]] && target="$issue_number"
+
+          [[ "$event" == "workflow_dispatch" || "$event" == "schedule" ]] && trusted="true"
+
+          if [[ "$event" == "issue_comment" && "$mode" != "none" ]]; then
+            assoc="$(jq -r '.comment.author_association // ""' "$GITHUB_EVENT_PATH")"
+            case "$assoc" in OWNER|MEMBER|COLLABORATOR) trusted="true" ;; *) mode="none"; apply="false" ;; esac
+            body="$(jq -r '.comment.body // ""' "$GITHUB_EVENT_PATH" | tr '[:upper:]' '[:lower:]')"
+            first="$(printf '%s\n' "$body" | awk '/^[[:space:]]*\/mise[[:space:]]/ {print; exit}')"
+            case "$first" in
+              *"/mise issue-review"*|*"/mise review"*) mode="issues-review" ;;
+              *"/mise merge-pr"*|*"/mise merge"*) mode="merge-pr" ;;
+              *"/mise branch-corrections"*|*"/mise branch-correct"*|*"/mise suggest-branch"*) mode="branch-corrections" ;;
+              *"/mise comments-commits"*|*"/mise digest"*) mode="comments-commits" ;;
+              *"/mise repo-clean"*|*"/mise clean"*|*"/mise audit"*) mode="repo-clean" ;;
+              *) mode="none" ;;
+            esac
+            printf '%s\n' "$first" | grep -Eq '(^|[[:space:]])apply($|[[:space:]])' || apply="false"
+          fi
+
+          if [[ -z "$mode" ]]; then
+            case "$event" in
+              pull_request|issues) mode="issues-review" ;;
+              schedule) mode="repo-clean" ;;
+              *) mode="none" ;;
+            esac
+          fi
+
+          case "$mode" in issues-review|merge-pr|branch-corrections|comments-commits|repo-clean|none) ;; *) mode="none" ;; esac
+          [[ "$trusted" != "true" ]] && apply="false"
+
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "target_number=$target" >> "$GITHUB_OUTPUT"
+          echo "apply_changes=$apply" >> "$GITHUB_OUTPUT"
+          echo "trusted_run=$trusted" >> "$GITHUB_OUTPUT"
+
+  issues_review:
+    name: 01 Issues and review
+    needs: route
+    if: needs.route.outputs.mode == 'issues-review'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+      checks: read
+      statuses: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TARGET_NUMBER: ${{ needs.route.outputs.target_number }}
+      TRUSTED_RUN: ${{ needs.route.outputs.trusted_run }}
+      AUGMENT_SESSION_AUTH: ${{ secrets.AUGMENT_SESSION_AUTH }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        if: hashFiles('package.json') != ''
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          package-manager-cache: false
+      - name: Build deterministic review
+        run: |
+          set -euo pipefail
+          report=MISE_ISSUES_REVIEW.md
+          default_branch="$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')"
+          gate_failed=false
+          run_gate() {
+            local label="$1"; shift
+            echo "### $label" >> "$report"
+            tmp="$(mktemp)"
+            if "$@" >"$tmp" 2>&1; then echo "Status: passed" >> "$report"; else gate_failed=true; echo "Status: failed" >> "$report"; fi
+            echo '```text' >> "$report"; tail -n 160 "$tmp" >> "$report" || true; echo '```' >> "$report"; echo >> "$report"; rm -f "$tmp"
+          }
+          {
+            echo "# Mise Issues & Review"
+            echo
+            echo "Repository: $GITHUB_REPOSITORY"
+            echo "Target: ${TARGET_NUMBER:-repository}"
+            echo "Default branch: $default_branch"
+            echo "Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            echo
+            echo "## Gates"
+          } > "$report"
+          if [[ -f package.json ]]; then
+            [[ -f package-lock.json ]] && run_gate install npm ci || run_gate install npm install --no-audit --no-fund
+            run_gate typecheck npm run typecheck --if-present
+            run_gate test npm run test --if-present
+            run_gate build npm run build --if-present
+            run_gate lint npm run lint --if-present
+            run_gate audit-high npm audit --audit-level=high
+          else
+            echo "No package.json detected; Node gates skipped." >> "$report"
+          fi
+          {
+            echo "## Open PRs"
+            gh pr list --state open --limit 25 --json number,title,headRefName,baseRefName,isDraft,reviewDecision,url -q '.[] | "- #\(.number) \(.title) — \(.headRefName) -> \(.baseRefName) — draft=\(.isDraft) review=\(.reviewDecision // "none") — \(.url)"' || true
+            echo
+            echo "## Open issues"
+            gh issue list --state open --limit 25 --json number,title,url -q '.[] | "- #\(.number) \(.title) — \(.url)"' || true
+            echo
+            echo "## Exact local commands"
+            echo '```bash'
+            echo "git fetch --all --prune"
+            echo "git checkout $default_branch && git pull --ff-only origin $default_branch"
+            echo "npm ci && npm run typecheck --if-present && npm run test --if-present && npm run build --if-present && npm run lint --if-present"
+            echo '```'
+          } >> "$report"
+          [[ "$gate_failed" == true ]] && echo "mise_gate_failed=true" >> "$GITHUB_ENV" || true
+      - name: Optional trusted Auggie synthesis
+        if: env.TRUSTED_RUN == 'true' && env.AUGMENT_SESSION_AUTH != ''
+        run: |
+          npm install -g @augmentcode/auggie >/dev/null 2>&1
+          { echo "Summarize this repo review into Verdict, Risk, Next Branch, Exact Commands."; cat MISE_ISSUES_REVIEW.md; } | auggie --print --compact --max-turns 6 > MISE_AGENT_SYNTHESIS.md || true
+          [[ -s MISE_AGENT_SYNTHESIS.md ]] && { echo; echo "## Agent synthesis"; cat MISE_AGENT_SYNTHESIS.md; } >> MISE_ISSUES_REVIEW.md
+      - name: Comment target
+        if: env.TARGET_NUMBER != ''
+        run: gh issue comment "$TARGET_NUMBER" --body-file MISE_ISSUES_REVIEW.md || true
+      - uses: actions/upload-artifact@v7
+        with:
+          name: mise-issues-review-${{ github.run_id }}
+          path: MISE_ISSUES_REVIEW.md
+          if-no-files-found: ignore
+      - run: cat MISE_ISSUES_REVIEW.md >> "$GITHUB_STEP_SUMMARY"
+
+  merge_pr:
+    name: 02 Merge and PR
+    needs: route
+    if: needs.route.outputs.mode == 'merge-pr'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      checks: read
+      statuses: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TARGET_NUMBER: ${{ needs.route.outputs.target_number }}
+      APPLY_CHANGES: ${{ needs.route.outputs.apply_changes }}
+      TRUSTED_RUN: ${{ needs.route.outputs.trusted_run }}
+    steps:
+      - name: Validate merge boundary
+        run: |
+          set -euo pipefail
+          [[ "$TRUSTED_RUN" == "true" ]] || { echo "trusted route required" >&2; exit 1; }
+          [[ -n "${TARGET_NUMBER:-}" ]] || { echo "target_number required" >&2; exit 1; }
+          gh pr view "$TARGET_NUMBER" --json number,title,url,isDraft,mergeable,reviewDecision,headRefName,baseRefName,headRepository,headRefOid,changedFiles > pr.json
+          jq -e '.isDraft == false' pr.json >/dev/null || { gh pr comment "$TARGET_NUMBER" --body "Mise merge blocked: draft PR."; exit 1; }
+          [[ "$(jq -r '.headRepository.nameWithOwner // ""' pr.json)" == "$GITHUB_REPOSITORY" ]] || { gh pr comment "$TARGET_NUMBER" --body "Mise merge blocked: fork PR requires human merge."; exit 1; }
+          [[ "$(jq -r '.mergeable // "UNKNOWN"' pr.json)" != "CONFLICTING" ]] || { gh pr comment "$TARGET_NUMBER" --body "Mise merge blocked: merge conflicts."; exit 1; }
+          [[ "$(jq -r '.reviewDecision // ""' pr.json)" != "CHANGES_REQUESTED" ]] || { gh pr comment "$TARGET_NUMBER" --body "Mise merge blocked: changes requested."; exit 1; }
+          gh pr diff "$TARGET_NUMBER" --name-only > changed.txt
+          ! grep -Eq '^(\.github/workflows/|\.github/actions/)' changed.txt || { gh pr comment "$TARGET_NUMBER" --body "Mise merge blocked: workflow/action file changes require human merge."; exit 1; }
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v6
+        if: hashFiles('package.json') != ''
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          package-manager-cache: false
+      - name: Run merge gates
+        run: |
+          set -euo pipefail
+          report=MISE_MERGE_PLAN.md
+          gh pr checkout "$TARGET_NUMBER"
+          {
+            echo "# Mise Merge Plan"
+            echo
+            jq -r '"PR: " + .url + "\nHead: " + .headRefName + "\nBase: " + .baseRefName + "\nHead SHA: " + .headRefOid' pr.json
+            echo
+            echo "## Changed files"
+            echo '```text'; cat changed.txt; echo '```'
+            echo
+            echo "## Gates"
+          } > "$report"
+          gate() { echo "### $1" >> "$report"; shift; "$@" >> "$report" 2>&1; echo "passed" >> "$report"; }
+          if [[ -f package.json ]]; then
+            [[ -f package-lock.json ]] && gate install npm ci || gate install npm install --no-audit --no-fund
+            gate typecheck npm run typecheck --if-present
+            gate test npm run test --if-present
+            gate build npm run build --if-present
+            gate lint npm run lint --if-present
+          fi
+          echo "Apply changes: $APPLY_CHANGES" >> "$report"
+          gh pr comment "$TARGET_NUMBER" --body-file "$report" || true
+          cat "$report" >> "$GITHUB_STEP_SUMMARY"
+      - name: Merge when explicitly applied
+        if: env.APPLY_CHANGES == 'true'
+        run: |
+          expected="$(jq -r '.headRefOid' pr.json)"
+          gh pr merge "$TARGET_NUMBER" --squash --delete-branch --match-head-commit "$expected" || gh pr merge "$TARGET_NUMBER" --squash --delete-branch --auto
+
+  branch_corrections:
+    name: 03 Branch corrections and suggestions
+    needs: route
+    if: needs.route.outputs.mode == 'branch-corrections'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      APPLY_CHANGES: ${{ needs.route.outputs.apply_changes }}
+      TRUSTED_RUN: ${{ needs.route.outputs.trusted_run }}
+      TARGET_NUMBER: ${{ needs.route.outputs.target_number }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Generate branch flow report
+        run: |
+          set -euo pipefail
+          git fetch --all --prune
+          default_branch="$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')"
+          report=MISE_BRANCH_FLOW.md
+          gh pr list --state open --limit 100 --json number,title,headRefName,baseRefName,isDraft,reviewDecision,url > prs.json
+          {
+            echo "# Mise Branch Flow Corrections"
+            echo
+            echo "Default branch: $default_branch"
+            echo
+            echo "| Branch | Ahead | Behind | Open PR | Recommendation | Command |"
+            echo "|---|---:|---:|---|---|---|"
+          } > "$report"
+          git for-each-ref refs/remotes/origin --format='%(refname:short)' | sed 's#^origin/##' | grep -v '^HEAD$' | sort | while read -r branch; do
+            [[ "$branch" == "$default_branch" ]] && continue
+            ahead="$(git rev-list --count "origin/$default_branch..origin/$branch" 2>/dev/null || echo 0)"
+            behind="$(git rev-list --count "origin/$branch..origin/$default_branch" 2>/dev/null || echo 0)"
+            pr="$(jq -r --arg b "$branch" '.[] | select(.headRefName == $b) | "#" + (.number|tostring)' prs.json | head -n 1)"
+            [[ -z "$pr" ]] && pr="none"
+            rec="Aligned"; cmd="git checkout $branch && git pull --ff-only"
+            [[ "$ahead" != 0 && "$behind" == 0 && "$pr" == none ]] && { rec="Open PR candidate"; cmd="gh pr create --base $default_branch --head $branch"; }
+            [[ "$ahead" != 0 && "$behind" != 0 ]] && { rec="Rebase/update before PR"; cmd="git checkout $branch && git rebase origin/$default_branch"; }
+            [[ "$ahead" == 0 && "$behind" != 0 ]] && { rec="Delete candidate after human check"; cmd="git push origin --delete $branch"; }
+            echo "| $branch | $ahead | $behind | $pr | $rec | \`$cmd\` |" >> "$report"
+          done
+          { echo; echo "## Exact base sync"; echo '```bash'; echo "git fetch --all --prune"; echo "git checkout $default_branch && git pull --ff-only origin $default_branch"; echo '```'; } >> "$report"
+          [[ -n "${TARGET_NUMBER:-}" ]] && gh issue comment "$TARGET_NUMBER" --body-file "$report" || true
+          cat "$report" >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit branch report PR when applied
+        if: env.APPLY_CHANGES == 'true' && env.TRUSTED_RUN == 'true'
+        run: |
+          set -euo pipefail
+          default_branch="$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')"
+          branch="$MISE_BRANCH_PREFIX/branch-flow-$GITHUB_RUN_ID"
+          git config user.name "$MISE_BOT_NAME"; git config user.email "$MISE_BOT_EMAIL"
+          git checkout -B "$branch"; mkdir -p docs; cp MISE_BRANCH_FLOW.md docs/MISE_BRANCH_FLOW.md
+          git add docs/MISE_BRANCH_FLOW.md; git commit -m "docs: add Mise branch flow report [skip ci]"
+          git push -u origin "$branch"
+          gh pr create --base "$default_branch" --head "$branch" --title "docs: Mise branch flow report" --body-file MISE_BRANCH_FLOW.md || true
+
+  comments_commits:
+    name: 04 Comments and commits
+    needs: route
+    if: needs.route.outputs.mode == 'comments-commits'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      APPLY_CHANGES: ${{ needs.route.outputs.apply_changes }}
+      TRUSTED_RUN: ${{ needs.route.outputs.trusted_run }}
+      TARGET_NUMBER: ${{ needs.route.outputs.target_number }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Generate digest
+        run: |
+          set -euo pipefail
+          report=MISE_COMMENTS_COMMITS.md
+          default_branch="$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')"
+          {
+            echo "# Mise Comments & Commits Digest"
+            echo
+            echo "Default branch: $default_branch"
+            echo
+            echo "## Latest commits"
+            echo '```text'; git log --oneline --decorate -n 30; echo '```'
+            echo
+            echo "## Changed files from default"
+            echo '```text'; git diff --name-only "origin/$default_branch...HEAD" 2>/dev/null || true; echo '```'
+          } > "$report"
+          if [[ -n "${TARGET_NUMBER:-}" ]]; then
+            { echo; echo "## Conversation"; gh issue view "$TARGET_NUMBER" --comments --json title,url,comments -q '"Title: " + .title + "\nURL: " + .url + "\n" + ([.comments[-8:][]? | "- " + .author.login + ": " + (.body | gsub("\n"; " ") | .[0:300])] | join("\n"))'; } >> "$report"
+            gh issue comment "$TARGET_NUMBER" --body-file "$report" || true
+          fi
+          cat "$report" >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit digest PR when applied
+        if: env.APPLY_CHANGES == 'true' && env.TRUSTED_RUN == 'true'
+        run: |
+          default_branch="$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')"
+          branch="$MISE_BRANCH_PREFIX/comments-commits-$GITHUB_RUN_ID"
+          git config user.name "$MISE_BOT_NAME"; git config user.email "$MISE_BOT_EMAIL"
+          git checkout -B "$branch"; mkdir -p docs; cp MISE_COMMENTS_COMMITS.md docs/MISE_COMMENTS_COMMITS.md
+          git add docs/MISE_COMMENTS_COMMITS.md; git commit -m "docs: add Mise comments and commits digest [skip ci]"
+          git push -u origin "$branch"
+          gh pr create --base "$default_branch" --head "$branch" --title "docs: Mise comments and commits digest" --body-file MISE_COMMENTS_COMMITS.md || true
+
+  repo_clean:
+    name: 05 Continuous repo cleanup
+    needs: route
+    if: needs.route.outputs.mode == 'repo-clean'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      APPLY_CHANGES: ${{ needs.route.outputs.apply_changes }}
+      TRUSTED_RUN: ${{ needs.route.outputs.trusted_run }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Health report and guarded cleanup
+        run: |
+          set -euo pipefail
+          git fetch --all --prune
+          report=MISE_REPO_HEALTH.md
+          default_branch="$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')"
+          gh pr list --state open --limit 100 --json number,title,headRefName,url > prs.json
+          {
+            echo "# Mise Repo Health Report"
+            echo
+            echo "Default branch: $default_branch"
+            echo "Apply changes: $APPLY_CHANGES"
+            echo
+            echo "## Open PRs"
+            jq -r '.[] | "- #\(.number) \(.title) — \(.headRefName) — \(.url)"' prs.json || true
+            echo
+            echo "## Safe cleanup scope"
+            echo "Only generated $MISE_BRANCH_PREFIX/* branches without open PRs can be deleted. Human branches are report-only."
+          } > "$report"
+          if [[ "$APPLY_CHANGES" == "true" && "$TRUSTED_RUN" == "true" ]]; then
+            gh label create "mise:steward" --color "7057ff" --description "Mise repository stewardship automation" || true
+            gh label create "mise:blocked" --color "d73a4a" --description "Blocked by gates or safety rules" || true
+            git for-each-ref "refs/remotes/origin/$MISE_BRANCH_PREFIX" --format='%(refname:short)' | sed 's#^origin/##' | while read -r branch; do
+              [[ -z "$branch" ]] && continue
+              open="$(jq -r --arg b "$branch" '.[] | select(.headRefName == $b) | .number' prs.json | head -n 1)"
+              if [[ -z "$open" ]]; then git push origin --delete "$branch" && echo "Deleted $branch" >> "$report"; else echo "Kept $branch because PR #$open is open" >> "$report"; fi
+            done
+          fi
+          existing="$(gh issue list --state open --search 'Mise Repo Health Report in:title' --json number -q '.[0].number // empty')"
+          [[ -n "$existing" ]] && gh issue comment "$existing" --body-file "$report" || gh issue create --title "Mise Repo Health Report" --body-file "$report" || true
+          cat "$report" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: mise-repo-health-${{ github.run_id }}
+          path: MISE_REPO_HEALTH.md
+          if-no-files-found: ignore

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1.0",
+  "count": 5,
+  "departments": [
+    {
+      "id": 1,
+      "slug": "pipeline-masters",
+      "name": "Pipeline Masters",
+      "motto": "Build, test, deploy, repeat.",
+      "headquarters": "Rush Hour Dispatch Center",
+      "color": "#ff3b6b",
+      "count": 15
+    },
+    {
+      "id": 2,
+      "slug": "golden-paths",
+      "name": "Golden Paths",
+      "motto": "Standardize creation, platform paths, templates, and service onboarding.",
+      "headquarters": "Golden Path Kitchen",
+      "color": "#f2c94c",
+      "count": 15
+    },
+    {
+      "id": 3,
+      "slug": "guardians-of-uptime",
+      "name": "Guardians of Uptime",
+      "motto": "Observe, measure, improve, and protect reliability under pressure.",
+      "headquarters": "Uptime Tasting Room",
+      "color": "#34d399",
+      "count": 15
+    },
+    {
+      "id": 4,
+      "slug": "vaultkeepers",
+      "name": "Vaultkeepers",
+      "motto": "Protect the kitchen, guard credentials, and block unsafe execution.",
+      "headquarters": "Vault Cellar",
+      "color": "#8b5cf6",
+      "count": 15
+    },
+    {
+      "id": 5,
+      "slug": "infinite-ledger",
+      "name": "The Infinite Ledger",
+      "motto": "Learn, optimize, correlate, forecast, and turn telemetry into strategy.",
+      "headquarters": "Ledger Observatory",
+      "color": "#1e9bb8",
+      "count": 15
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@mise-os/workflow-linter",
+  "version": "0.2.0",
+  "description": "Static GitHub Actions workflow permission linter for MiseOS registries.",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

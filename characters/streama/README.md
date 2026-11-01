@@ -25,3 +25,8 @@ Streama performs **data streaming profiles** as a MiseOS character agent. Person
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/streama.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/streama.webp" alt="Streama — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/streama.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/streama.webp" alt="Streama — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

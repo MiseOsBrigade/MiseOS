@@ -1,0 +1,26 @@
+name: "ci / apps/4d-playground"
+
+on:
+  push:
+    branches: [main]
+    paths: ["apps/4d-playground/**", ".github/workflows/ci-4d-playground.yml"]
+  pull_request:
+    paths: ["apps/4d-playground/**", ".github/workflows/ci-4d-playground.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/4d-playground
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build

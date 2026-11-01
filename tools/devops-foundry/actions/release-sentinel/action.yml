@@ -1,0 +1,30 @@
+name: MiseOS Release Sentinel
+description: Deterministic release preflight for semantic versioning, changelog, and license gates.
+author: MiseOS
+branding:
+  icon: shield
+  color: green
+inputs:
+  version:
+    description: Release version without an optional leading v.
+    required: true
+  changelog:
+    description: Changelog path.
+    required: false
+    default: CHANGELOG.md
+  license:
+    description: License path.
+    required: false
+    default: LICENSE
+  fail-on-error:
+    description: Fail the step when a release gate is not satisfied.
+    required: false
+    default: "true"
+outputs:
+  release-ready:
+    description: true when all release gates pass.
+  errors:
+    description: Pipe-delimited release gate errors.
+runs:
+  using: node24
+  main: dist/index.js

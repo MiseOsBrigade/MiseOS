@@ -1,0 +1,49 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Change Impact Scanner"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 17
+    },
+    {
+      "trait_type": "Power",
+      "value": 66
+    },
+    {
+      "trait_type": "Precision",
+      "value": 70
+    },
+    {
+      "trait_type": "Speed",
+      "value": 62
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 81
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 76
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 74
+    }
+  ],
+  "description": "Bruno Blast-Radius is a MiseOS Change Impact Scanner in the Pipeline Kitchen department.",
+  "external_url": "https://miseos.example/characters/bruno-blast-radius",
+  "name": "Bruno Blast-Radius",
+  "record_kind": "character_card",
+  "schema": "miseos.metadata.override.v1"
+}

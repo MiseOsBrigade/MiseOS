@@ -1,0 +1,1 @@
+{"mode":"repo-clean","title":"Repo Clean","station":"Dish Pit Cleanup Station","trusted_comment_command":"/mise repo-clean","trusted_apply_command":"/mise repo-clean apply","manual_cli_trigger":"gh workflow run \"Mise Repo Steward\" -f mode=repo-clean -f apply_changes=true","logo":"scrub brush + terminal sink","safety":["GITHUB_TOKEN","no PAT recursion","apply-only writes"]}

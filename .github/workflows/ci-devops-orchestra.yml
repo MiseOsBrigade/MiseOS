@@ -1,0 +1,28 @@
+name: "ci / apps/devops-orchestra"
+
+on:
+  push:
+    branches: [main]
+    paths: ["apps/devops-orchestra/**", ".github/workflows/ci-devops-orchestra.yml"]
+  pull_request:
+    paths: ["apps/devops-orchestra/**", ".github/workflows/ci-devops-orchestra.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/devops-orchestra
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run typecheck
+      - run: npm run test
+      - run: npm run build

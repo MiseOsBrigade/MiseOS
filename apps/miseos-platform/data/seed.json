@@ -1,0 +1,19 @@
+{
+  "repos": [
+    {"name":"MiseOS","health":94,"risk":"Low","agent":"Mise Maestro","operation":"GridOps orchestration"},
+    {"name":"agent-sdk","health":76,"risk":"Medium","agent":"Mise Garde","operation":"Typecheck repair"},
+    {"name":"attestation-gate","health":89,"risk":"Low","agent":"Mise Sentinel","operation":"Policy verification"},
+    {"name":"docs-builder","health":61,"risk":"High","agent":"Mise Scribe","operation":"Pages recovery"}
+  ],
+  "agents": [
+    {"name":"Mise Maestro","role":"Orchestration","model":"Reasoning + tools","permission":"PR only"},
+    {"name":"Mise Garde","role":"CI and PR hygiene","model":"Coding","permission":"PR only"},
+    {"name":"Mise Sentinel","role":"Secrets and policy","model":"Classifier + rules","permission":"Read + report"},
+    {"name":"Mise Auditor","role":"Evidence validation","model":"Reranker","permission":"Read + attest"}
+  ],
+  "tasks": [
+    {"repo":"agent-sdk","task":"Repair stale generated types","agent":"Mise Garde","status":"Running","risk":"Medium","certainty":"UNKNOWN"},
+    {"repo":"attestation-gate","task":"Verify policy bundle","agent":"Mise Sentinel","status":"Done","risk":"Low","certainty":"CONFIRMED"},
+    {"repo":"docs-builder","task":"Correct Pages base path","agent":"Mise Scribe","status":"Ready","risk":"High","certainty":"INFERRED"}
+  ]
+}

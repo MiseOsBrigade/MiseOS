@@ -15,3 +15,7 @@ Timer Tactician performs **chrono chef** as a MiseOS character agent.
 
 ## Trust model
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/timer-tactician.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/timer-tactician.webp" alt="Timer Tactician — 1×1 Chefs" width="160" /></a>

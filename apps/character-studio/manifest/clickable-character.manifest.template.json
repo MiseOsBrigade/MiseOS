@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "character": {
+    "id": "miseos.repo-steward",
+    "name": "MiseOS Repo Steward",
+    "version": "1.0.0"
+  },
+  "asset": {
+    "pngPath": "/assets/repo-steward.png",
+    "sha256": "REPLACE_WITH_64_HEX_ASSET_DIGEST"
+  },
+  "hotspots": [
+    {
+      "id": "steward.inspect",
+      "name": "Inspect repository state",
+      "actionId": "character.inspect",
+      "requiresSession": true,
+      "requiresNft": false,
+      "shape": { "type": "circle", "x": 512, "y": 640, "r": 120 }
+    },
+    {
+      "id": "steward.registry",
+      "name": "Open registry record",
+      "actionId": "registry.open",
+      "requiresSession": true,
+      "requiresNft": false,
+      "shape": { "type": "rect", "x": 260, "y": 1180, "w": 500, "h": 160 }
+    }
+  ],
+  "issuedAt": "2026-07-18T00:00:00.000Z",
+  "expiresAt": "2027-07-18T00:00:00.000Z",
+  "keyId": "miseos-manifest-2026-01",
+  "signature": "UNSIGNED"
+}

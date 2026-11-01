@@ -1,0 +1,49 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "PR Hygiene Check"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Level",
+      "value": 28
+    },
+    {
+      "trait_type": "Power",
+      "value": 68
+    },
+    {
+      "trait_type": "Precision",
+      "value": 75
+    },
+    {
+      "trait_type": "Speed",
+      "value": 64
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 80
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 83
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 87
+    }
+  ],
+  "description": "Omar Reviewer is a MiseOS PR Hygiene Check in the Pipeline Kitchen department.",
+  "external_url": "https://miseos.example/characters/omar-reviewer",
+  "name": "Omar Reviewer",
+  "record_kind": "character_card",
+  "schema": "miseos.metadata.override.v1"
+}

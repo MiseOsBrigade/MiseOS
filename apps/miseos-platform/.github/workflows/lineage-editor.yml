@@ -1,0 +1,44 @@
+name: Validate Lineage Editor and Billing
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/lineage-editor/**"
+      - "packages/lineage-editor/**"
+      - "services/billing/**"
+      - "package.json"
+      - ".github/workflows/lineage-editor.yml"
+  pull_request:
+    paths:
+      - "apps/lineage-editor/**"
+      - "packages/lineage-editor/**"
+      - "services/billing/**"
+      - "package.json"
+      - ".github/workflows/lineage-editor.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lineage-editor-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+      - name: Validate static products
+        run: npm run validate:static
+      - name: Verify browser entrypoint
+        run: |
+          test -s apps/lineage-editor/index.html
+          grep -q "MiseOS Lineage Editor v2" apps/lineage-editor/index.html
+          grep -q "localStorage" apps/lineage-editor/index.html
+          grep -q "GMI" apps/lineage-editor/index.html

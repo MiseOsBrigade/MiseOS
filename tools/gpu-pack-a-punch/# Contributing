@@ -1,0 +1,5 @@
+# Contributing
+
+Use pull requests for workflow changes.
+
+For changes under `.github/workflows`, `.github/mise`, or `scripts`, include why the change is needed, what risk it introduces, how it was tested, and whether GPU execution is required.

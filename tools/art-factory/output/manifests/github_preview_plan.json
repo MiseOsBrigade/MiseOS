@@ -1,0 +1,11 @@
+{
+  "schema": "miseos.github.preview-plan.v1",
+  "created_at": "2026-07-07T03:31:20Z",
+  "recommended_paths": [
+    "docs/README_REPLACEMENT.md",
+    "public/miseos-agent-gallery/",
+    "src/components/MiseAgentCard.tsx",
+    "src/data/miseos-roster.json"
+  ],
+  "note": "No GitHub write occurs from this script. Use generated files as a patch source."
+}

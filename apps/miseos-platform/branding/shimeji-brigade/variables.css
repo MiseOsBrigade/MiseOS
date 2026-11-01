@@ -1,0 +1,20 @@
+:root {
+  --shimeji-bg: #07130f;
+  --shimeji-panel: #0f2f25;
+  --shimeji-orange: #e97b22;
+  --shimeji-gold: #f2c94c;
+  --shimeji-teal: #1e9bb8;
+  --shimeji-green: #38a169;
+  --shimeji-red: #ff6262;
+  --shimeji-purple: #a78bfa;
+  --shimeji-text: #f6f1e7;
+  --shimeji-muted: #a8c2b6;
+  --shimeji-line: #245747;
+  --shimeji-display: ui-rounded, Nunito, system-ui, sans-serif;
+  --shimeji-body: Inter, ui-sans-serif, system-ui, sans-serif;
+  --shimeji-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --shimeji-radius-sm: 8px;
+  --shimeji-radius-md: 14px;
+  --shimeji-radius-lg: 22px;
+  --shimeji-radius-pill: 999px;
+}

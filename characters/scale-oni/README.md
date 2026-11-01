@@ -25,3 +25,9 @@ Scale Oni performs **scale** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/scale-oni.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/scale-oni.webp" alt="Scale Oni — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/1by1-chefs/scale-oni-2.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/scale-oni-2.webp" alt="Scale Oni — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/scale-oni.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/scale-oni.webp" alt="Scale Oni — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

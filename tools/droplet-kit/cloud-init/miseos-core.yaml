@@ -1,0 +1,94 @@
+#cloud-config
+hostname: miseos-core
+manage_etc_hosts: true
+timezone: America/Los_Angeles
+users:
+  - default
+  - name: miseos
+    gecos: MiseOS Service Account
+    groups: [adm, sudo]
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    lock_passwd: true
+ssh_pwauth: false
+disable_root: false
+package_update: true
+package_upgrade: true
+packages: [ca-certificates, curl, git, jq, openssl, unzip, ufw, fail2ban, unattended-upgrades, gnupg, python3]
+write_files:
+  - path: /etc/ssh/sshd_config.d/99-miseos-hardening.conf
+    permissions: "0644"
+    content: |
+      PasswordAuthentication no
+      KbdInteractiveAuthentication no
+      PermitRootLogin prohibit-password
+      X11Forwarding no
+      MaxAuthTries 5
+  - path: /etc/fail2ban/jail.d/miseos.local
+    permissions: "0644"
+    content: |
+      [DEFAULT]
+      bantime = 1h
+      findtime = 10m
+      maxretry = 5
+      [sshd]
+      enabled = true
+  - path: /opt/miseos/bin/healthcheck.sh
+    permissions: "0755"
+    content: |
+      #!/usr/bin/env bash
+      set -Eeuo pipefail
+      cd /opt/miseos/infra
+      docker compose ps
+      curl -fsS http://127.0.0.1/api/health | jq .
+      curl -fsS http://127.0.0.1/api/v1/catalog/summary | jq .
+      test -f /opt/miseos/bootstrap-complete
+  - path: /opt/miseos/bin/backup.sh
+    permissions: "0750"
+    content: |
+      #!/usr/bin/env bash
+      set -Eeuo pipefail
+      umask 077
+      stamp=$(date -u +%Y%m%dT%H%M%SZ)
+      mkdir -p /opt/miseos/backups
+      cd /opt/miseos/infra
+      set -a; source .env; set +a
+      docker compose exec -T postgres pg_dump -U "$POSTGRES_USER" -d "$POSTGRES_DB" -Fc > "/opt/miseos/backups/postgres-${stamp}.dump"
+      find /opt/miseos/backups -type f -mtime +14 -delete
+  - path: /etc/systemd/system/miseos-backup.service
+    permissions: "0644"
+    content: |
+      [Unit]
+      Description=MiseOS backup
+      Requires=docker.service
+      After=docker.service
+      [Service]
+      Type=oneshot
+      ExecStart=/opt/miseos/bin/backup.sh
+  - path: /etc/systemd/system/miseos-backup.timer
+    permissions: "0644"
+    content: |
+      [Unit]
+      Description=Daily MiseOS backup
+      [Timer]
+      OnCalendar=*-*-* 03:17:00
+      Persistent=true
+      RandomizedDelaySec=900
+      [Install]
+      WantedBy=timers.target
+runcmd:
+  - [bash, -lc, "set -Eeuo pipefail; install -d -m 0750 -o miseos -g miseos /opt/miseos/{repo,infra,data,backups,logs,secrets,bin}"]
+  - [bash, -lc, "set -Eeuo pipefail; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg"]
+  - [bash, -lc, "set -Eeuo pipefail; echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo ${VERSION_CODENAME}) stable\" > /etc/apt/sources.list.d/docker.list"]
+  - [bash, -lc, "set -Eeuo pipefail; apt-get update; DEBIAN_FRONTEND=noninteractive apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin"]
+  - [bash, -lc, "set -Eeuo pipefail; usermod -aG docker miseos; systemctl enable --now docker fail2ban"]
+  - [bash, -lc, "set -Eeuo pipefail; ufw default deny incoming; ufw default allow outgoing; ufw allow OpenSSH; ufw allow 80/tcp; ufw allow 443/tcp; ufw --force enable; systemctl restart ssh"]
+  - [bash, -lc, "set -Eeuo pipefail; sudo -u miseos git clone --depth=1 --branch main https://github.com/MiseOsBrigade/MiseOS.git /opt/miseos/repo"]
+  - [bash, -lc, "set -Eeuo pipefail; curl -fsSL https://raw.githubusercontent.com/MiseOsBrigade/MiseOS/main/deploy/digitalocean/infra/compose.yaml -o /opt/miseos/infra/compose.yaml || true"]
+  - [bash, -lc, "set -Eeuo pipefail; if [ ! -s /opt/miseos/infra/compose.yaml ]; then echo 'Deploy bundle must be copied to /opt/miseos/infra before stack start' >&2; exit 1; fi"]
+  - [bash, -lc, "set -Eeuo pipefail; umask 077; P=$(openssl rand -hex 32); M=$(openssl rand -base64 36 | tr -d '\n/+' | cut -c1-40); T=$(openssl rand -hex 32); printf 'MISEOS_PUBLIC_HOST=:80\nPOSTGRES_DB=miseos\nPOSTGRES_USER=miseos\nPOSTGRES_PASSWORD=%s\nMINIO_ROOT_USER=miseos\nMINIO_ROOT_PASSWORD=%s\nMISEOS_INTERNAL_TOKEN=%s\n' \"$P\" \"$M\" \"$T\" > /opt/miseos/infra/.env; chmod 0640 /opt/miseos/infra/.env"]
+  - [bash, -lc, "set -Eeuo pipefail; cd /opt/miseos/infra; docker compose --env-file .env config --quiet; docker compose --env-file .env up -d --build"]
+  - [bash, -lc, "systemctl daemon-reload; systemctl enable --now miseos-backup.timer"]
+  - [bash, -lc, "set -Eeuo pipefail; for i in $(seq 1 60); do curl -fsS http://127.0.0.1/api/health >/dev/null && touch /opt/miseos/bootstrap-complete && exit 0; sleep 5; done; exit 1"]
+final_message: |
+  MiseOS cloud-init finished. Run /opt/miseos/bin/healthcheck.sh

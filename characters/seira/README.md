@@ -25,3 +25,9 @@ Seira performs **secure** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/seira.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/seira.webp" alt="Seira — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/character-building/seira.webp"><img src="../../assets/player-cards/character-building/thumbs/seira.webp" alt="Seira — Character Building Theme" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/seira.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/seira.webp" alt="Seira — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

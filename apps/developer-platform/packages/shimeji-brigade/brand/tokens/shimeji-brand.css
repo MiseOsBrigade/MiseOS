@@ -1,0 +1,20 @@
+:root {
+  --sb-void: #050713;
+  --sb-midnight: #0B1020;
+  --sb-forest: #124734;
+  --sb-charcoal-green: #0F2F25;
+  --sb-mint: #38D39F;
+  --sb-signal-teal: #1E9BB8;
+  --sb-ticket-cyan: #7DD3FC;
+  --sb-sun-orange: #E97B22;
+  --sb-soft-gold: #F2C94C;
+  --sb-cream: #F6F1E7;
+  --sb-warning-red: #FF5E57;
+  --sb-font-display: Sora, Space Grotesk, Inter, system-ui, sans-serif;
+  --sb-font-body: Inter, DM Sans, system-ui, sans-serif;
+  --sb-font-mono: Space Mono, JetBrains Mono, ui-monospace, monospace;
+  --sb-radius-sm: 10px;
+  --sb-radius-md: 16px;
+  --sb-radius-lg: 24px;
+  --sb-radius-pill: 999px;
+}

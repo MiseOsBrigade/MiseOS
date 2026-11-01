@@ -25,3 +25,7 @@ Growth Guru performs **optimize** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/orchestra-trading-cards/growth-guru.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/growth-guru.webp" alt="Growth Guru — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

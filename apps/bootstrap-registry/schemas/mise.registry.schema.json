@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/mise.registry.schema.json",
+  "title": "MiseOS Registry Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "type",
+    "version",
+    "status",
+    "owner",
+    "description",
+    "artifacts",
+    "capabilities",
+    "permissions",
+    "trust",
+    "changePolicy",
+    "agentContract",
+    "analytics",
+    "release",
+    "answers"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^miseos\\.[a-z0-9][a-z0-9.-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "package",
+        "container",
+        "agent",
+        "policy",
+        "workflow",
+        "template",
+        "sdk",
+        "analytics",
+        "schema"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(-[A-Za-z0-9.-]+)?$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "experimental",
+        "active",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "owner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "kind"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "person",
+            "team",
+            "organization"
+          ]
+        },
+        "github": {
+          "type": "string"
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "minProperties": 1
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "permissions": {
+      "type": "object"
+    },
+    "trust": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "licenseRequired",
+        "sbomRequired",
+        "provenanceRequired",
+        "signedReleaseRequired",
+        "artifactAttestationRequired",
+        "scorecardRequired",
+        "humanReviewRequiredFor"
+      ],
+      "properties": {
+        "licenseRequired": {
+          "type": "boolean"
+        },
+        "sbomRequired": {
+          "type": "boolean"
+        },
+        "provenanceRequired": {
+          "type": "boolean"
+        },
+        "signedReleaseRequired": {
+          "type": "boolean"
+        },
+        "artifactAttestationRequired": {
+          "type": "boolean"
+        },
+        "scorecardRequired": {
+          "type": "boolean"
+        },
+        "humanReviewRequiredFor": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "changePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "properties": {
+        "major": {
+          "type": "string"
+        },
+        "minor": {
+          "type": "string"
+        },
+        "patch": {
+          "type": "string"
+        }
+      }
+    },
+    "agentContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "loadStrategy",
+        "safeToRunWithoutHuman",
+        "requiresNetwork",
+        "outputs",
+        "executionMode"
+      ],
+      "properties": {
+        "loadStrategy": {
+          "type": "string",
+          "enum": [
+            "manifest_only",
+            "manifest_plus_docs",
+            "full_context"
+          ]
+        },
+        "safeToRunWithoutHuman": {
+          "type": "boolean"
+        },
+        "requiresNetwork": {
+          "type": "boolean"
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "executionMode": {
+          "type": "string",
+          "enum": [
+            "read_only",
+            "advisory_write",
+            "approved_write",
+            "autonomous_write"
+          ]
+        }
+      }
+    },
+    "analytics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criticality",
+        "maturity",
+        "riskWeight",
+        "operationalTier"
+      ],
+      "properties": {
+        "criticality": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "maturity": {
+          "type": "string",
+          "enum": [
+            "seed",
+            "alpha",
+            "beta",
+            "stable"
+          ]
+        },
+        "riskWeight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "operationalTier": {
+          "type": "string",
+          "enum": [
+            "bootstrap",
+            "runtime",
+            "developer-tooling",
+            "governance",
+            "autonomy",
+            "expansion"
+          ]
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "channel",
+        "cadence",
+        "currentStrategy"
+      ],
+      "properties": {
+        "channel": {
+          "type": "string",
+          "enum": [
+            "dev",
+            "alpha",
+            "beta",
+            "stable"
+          ]
+        },
+        "cadence": {
+          "type": "string"
+        },
+        "currentStrategy": {
+          "type": "string"
+        },
+        "nextMilestone": {
+          "type": "string"
+        }
+      }
+    },
+    "answers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "what",
+        "does",
+        "owner",
+        "permissions",
+        "registry",
+        "changed",
+        "safe",
+        "agentExecutable"
+      ],
+      "properties": {
+        "what": {
+          "type": "string"
+        },
+        "does": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "permissions": {
+          "type": "string"
+        },
+        "registry": {
+          "type": "string"
+        },
+        "changed": {
+          "type": "string"
+        },
+        "safe": {
+          "type": "string"
+        },
+        "agentExecutable": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

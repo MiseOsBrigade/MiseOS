@@ -1,0 +1,28 @@
+name: Validate MiseOS DevOps Foundry
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - run: python -m pip install -r scripts/requirements.txt
+      - run: python scripts/validate_bundle.py
+      - run: node --check actions/repo-health/dist/index.js
+      - run: node --check actions/release-sentinel/dist/index.js
