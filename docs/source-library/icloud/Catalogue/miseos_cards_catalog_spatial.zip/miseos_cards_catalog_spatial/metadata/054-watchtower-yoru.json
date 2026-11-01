@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #054 — Watchtower Yoru",
+  "description": "Watchtower Yoru serves the Security Kitchen as the brigade's runtime threat detector. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/054-watchtower-yoru.svg",
+  "animation_url": "media/animation/054-watchtower-yoru.mp4",
+  "external_url": "https://miseos.dev/agents/watchtower-yoru",
+  "background_color": "8B1E2D",
+  "spatial_screen": {
+    "card_id": "MISE-054",
+    "level": 20,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.054",
+    "number": 54,
+    "slug": "watchtower-yoru",
+    "codename": "WATCHTOWER_YORU",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Security Kitchen",
+    "department_code": "security",
+    "role": "Runtime Threat Detector",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 20
+  },
+  "lore": {
+    "summary": "Watchtower Yoru serves the Security Kitchen as the brigade's runtime threat detector. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Watchtower Yoru performs runtime threat detector within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Auditor Emi",
+      "Incident Kitsune",
+      "Evidence Scribe"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE RUNTIME THREAT DETECTOR",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Runtime Threat Detector Protocol",
+      "type": "active",
+      "effect": "Executes the core runtime threat detector workflow with evidence capture.",
+      "command": "MISE RUNTIME THREAT DETECTOR"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next security station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 65,
+    "precision": 67,
+    "speed": 68,
+    "resilience": 67,
+    "intelligence": 72,
+    "teamwork": 78
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Security Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Runtime Threat Detector"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 20,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 65,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 68,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 72,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 78,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/054-watchtower-yoru.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/054-watchtower-yoru.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/054-watchtower-yoru.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/054-watchtower-yoru.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/054-watchtower-yoru.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/054-watchtower-yoru.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

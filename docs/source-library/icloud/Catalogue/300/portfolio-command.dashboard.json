@@ -1,0 +1,385 @@
+{
+  "$schema": "../schemas/gridops-dashboard.schema.json",
+  "dashboard_id": "gridops.dashboard.portfolio_command",
+  "title": "MiseOS Portfolio Command",
+  "description": "Evidence-driven command dashboard for autonomous operations, governance, delivery, knowledge, product integrity, and commercial health.",
+  "audience": [
+    "executive",
+    "operator",
+    "governance",
+    "developer",
+    "commercial"
+  ],
+  "refresh": "near_real_time",
+  "filters": [
+    {
+      "id": "time",
+      "label": "Time Range",
+      "type": "time_range",
+      "dimension": "recorded_at",
+      "default": "24h"
+    },
+    {
+      "id": "environment",
+      "label": "Environment",
+      "type": "multi_select",
+      "dimension": "environment",
+      "default": [
+        "production"
+      ]
+    },
+    {
+      "id": "brigade",
+      "label": "Brigade",
+      "type": "multi_select",
+      "dimension": "brigade_id",
+      "default": []
+    },
+    {
+      "id": "repository",
+      "label": "Repository",
+      "type": "multi_select",
+      "dimension": "repository",
+      "default": []
+    },
+    {
+      "id": "customer",
+      "label": "Customer",
+      "type": "multi_select",
+      "dimension": "customer_id",
+      "default": []
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "command",
+      "title": "Portfolio Command",
+      "layout": {
+        "columns": 24
+      },
+      "widgets": [
+        {
+          "widget_id": "health",
+          "title": "Confidence-Adjusted Health",
+          "type": "gauge",
+          "metric_ids": [
+            "miseos.metric.portfolio_health_score"
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "w": 6,
+            "h": 4
+          },
+          "show_confidence": true,
+          "show_trend": true,
+          "drilldown_uri": "gridops://metrics/portfolio_health_score"
+        },
+        {
+          "widget_id": "tasks",
+          "title": "Verified Task Success",
+          "type": "scorecard",
+          "metric_ids": [
+            "miseos.metric.verified_task_success_rate"
+          ],
+          "position": {
+            "x": 6,
+            "y": 0,
+            "w": 6,
+            "h": 4
+          },
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "proof",
+          "title": "Proof Coverage",
+          "type": "scorecard",
+          "metric_ids": [
+            "miseos.metric.proof_coverage"
+          ],
+          "position": {
+            "x": 12,
+            "y": 0,
+            "w": 6,
+            "h": 4
+          },
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "governance",
+          "title": "Governance Compliance",
+          "type": "scorecard",
+          "metric_ids": [
+            "miseos.metric.governance_compliance"
+          ],
+          "position": {
+            "x": 18,
+            "y": 0,
+            "w": 6,
+            "h": 4
+          },
+          "show_confidence": true,
+          "show_trend": true
+        }
+      ]
+    },
+    {
+      "section_id": "operations",
+      "title": "Delivery and Reliability",
+      "layout": {
+        "columns": 24
+      },
+      "widgets": [
+        {
+          "widget_id": "flow",
+          "title": "Workflow Performance",
+          "type": "timeseries",
+          "metric_ids": [
+            "miseos.metric.workflow_completion_rate",
+            "miseos.metric.handoff_reliability",
+            "miseos.metric.agent_reliability"
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "w": 12,
+            "h": 6
+          },
+          "group_by": [
+            "brigade_id"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "release",
+          "title": "Release Reliability",
+          "type": "timeseries",
+          "metric_ids": [
+            "miseos.metric.deployment_success_rate",
+            "miseos.metric.rollback_rate",
+            "miseos.metric.critical_defect_escape_rate"
+          ],
+          "position": {
+            "x": 12,
+            "y": 0,
+            "w": 12,
+            "h": 6
+          },
+          "group_by": [
+            "repository",
+            "environment"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "recovery",
+          "title": "Verified Recovery Time",
+          "type": "bar",
+          "metric_ids": [
+            "miseos.metric.mean_time_to_verified_recovery"
+          ],
+          "position": {
+            "x": 0,
+            "y": 6,
+            "w": 8,
+            "h": 5
+          },
+          "group_by": [
+            "service",
+            "severity"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "utilization",
+          "title": "Agent Capacity",
+          "type": "heatmap",
+          "metric_ids": [
+            "miseos.metric.agent_utilization"
+          ],
+          "position": {
+            "x": 8,
+            "y": 6,
+            "w": 8,
+            "h": 5
+          },
+          "group_by": [
+            "agent_id",
+            "brigade_id"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "overrides",
+          "title": "Human Overrides",
+          "type": "bar",
+          "metric_ids": [
+            "miseos.metric.human_override_rate"
+          ],
+          "position": {
+            "x": 16,
+            "y": 6,
+            "w": 8,
+            "h": 5
+          },
+          "group_by": [
+            "override_reason"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        }
+      ]
+    },
+    {
+      "section_id": "integrity",
+      "title": "Knowledge and Ecosystem Integrity",
+      "layout": {
+        "columns": 24
+      },
+      "widgets": [
+        {
+          "widget_id": "memory",
+          "title": "Memory Integrity",
+          "type": "timeseries",
+          "metric_ids": [
+            "miseos.metric.memory_provenance_coverage",
+            "miseos.metric.memory_contamination_rate"
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "w": 10,
+            "h": 6
+          },
+          "group_by": [
+            "memory_namespace"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "catalog",
+          "title": "Ecosystem Boundary",
+          "type": "table",
+          "metric_ids": [
+            "miseos.metric.registry_integrity",
+            "miseos.metric.character_roster_integrity"
+          ],
+          "position": {
+            "x": 10,
+            "y": 0,
+            "w": 8,
+            "h": 6
+          },
+          "show_confidence": true,
+          "show_trend": true,
+          "description": "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items."
+        },
+        {
+          "widget_id": "risks",
+          "title": "Governance and Integrity Events",
+          "type": "event_stream",
+          "metric_ids": [
+            "miseos.metric.governance_compliance",
+            "miseos.metric.memory_contamination_rate",
+            "miseos.metric.registry_integrity"
+          ],
+          "position": {
+            "x": 18,
+            "y": 0,
+            "w": 6,
+            "h": 6
+          },
+          "limit": 25,
+          "sort": "recorded_at desc",
+          "show_confidence": true,
+          "show_trend": false
+        }
+      ]
+    },
+    {
+      "section_id": "economics",
+      "title": "Infrastructure and Commercial Performance",
+      "layout": {
+        "columns": 24
+      },
+      "widgets": [
+        {
+          "widget_id": "cost",
+          "title": "Cost per Verified Task",
+          "type": "timeseries",
+          "metric_ids": [
+            "miseos.metric.cost_per_verified_task"
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "w": 8,
+            "h": 5
+          },
+          "group_by": [
+            "brigade_id",
+            "workflow_type"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "compute",
+          "title": "Compute Utilization",
+          "type": "heatmap",
+          "metric_ids": [
+            "miseos.metric.compute_utilization"
+          ],
+          "position": {
+            "x": 8,
+            "y": 0,
+            "w": 8,
+            "h": 5
+          },
+          "group_by": [
+            "resource_id",
+            "environment"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        },
+        {
+          "widget_id": "commercial",
+          "title": "Commercial Integrity",
+          "type": "timeseries",
+          "metric_ids": [
+            "miseos.metric.entitlement_accuracy",
+            "miseos.metric.product_contribution_margin",
+            "miseos.metric.stakeholder_nps"
+          ],
+          "position": {
+            "x": 16,
+            "y": 0,
+            "w": 8,
+            "h": 5
+          },
+          "group_by": [
+            "registry_item_id"
+          ],
+          "show_confidence": true,
+          "show_trend": true
+        }
+      ]
+    }
+  ],
+  "governance": {
+    "hide_low_confidence": false,
+    "minimum_confidence": 0.7,
+    "show_provenance": true,
+    "red_requires_acknowledgement": true,
+    "canonical_ecosystem_statement": "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items."
+  },
+  "version": "1.0.0"
+}

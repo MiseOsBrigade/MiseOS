@@ -1,0 +1,12 @@
+event_name,trigger,required_properties,primary_question
+instagram_post_published,Post goes live,"content_id,series,format,campaign",What was published and when?
+miseos_content_viewed,Landing-page archive opens,"content_id,series,source,campaign",Which content drives deeper interest?
+chronicles_episode_viewed,Chronicles episode opens,"content_id,season,episode,featured_agent,source",Which stories and agents attract attention?
+chronicles_carousel_completed,Final slide reached,"content_id,slide_count,source",Do viewers finish the episode?
+gridops_brief_viewed,GridOps brief opens,"content_id,source,campaign",Does the audience understand GridOps?
+character_dossier_viewed,Character profile opens,"agent_id,agent_name,department,source",Which agents have the strongest pull?
+instagram_profile_link_clicked,Profile link clicked,"source_content_id,destination,campaign",Which posts drive off-platform action?
+early_access_started,Early-access form begins,"source_content_id,campaign",Which content creates intent?
+github_link_clicked,GitHub link clicked,"source_content_id,repository,campaign",Which posts generate technical interest?
+chronicles_shared,Share action recorded,"content_id,series,episode",Which episodes generate advocacy?
+chronicles_saved,Save action recorded,"content_id,series,episode",Which posts are considered useful?

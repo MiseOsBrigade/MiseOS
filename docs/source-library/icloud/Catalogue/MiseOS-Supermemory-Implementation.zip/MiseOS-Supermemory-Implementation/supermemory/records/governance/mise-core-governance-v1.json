@@ -1,0 +1,20 @@
+{
+  "customId": "mise-core-governance-v1",
+  "content": "# MISE-CORE Governance and Canon Policy v1.0\n\nMiseOS Character Intelligence Core is the authoritative memory layer for character canon.\n\nRules:\n- Preserve stable IDs and version history.\n- Use CANON, INFERRED, PROPOSED, CONFLICT, and UNKNOWN.\n- Never silently promote proposals or resolve conflicts.\n- Keep characters separate from registry products, SDKs, packages, containers, templates, schemas, workflows, themes, and policy tools.\n- Current catalog: 112 character agents and 23 registry manifests, totaling 135 ecosystem items. The broader character-project target is 155.\n- One requested solo image means one separate image, never a collage.\n- Never store credentials, tokens, passwords, or raw secrets.\n- Canon writes require validation and explicit approval.\n",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "governance_policy",
+    "record_id": "GOV-001",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": false
+  }
+}

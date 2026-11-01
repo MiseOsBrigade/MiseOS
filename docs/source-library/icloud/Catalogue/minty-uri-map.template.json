@@ -1,0 +1,20 @@
+{
+  "schema": "miseos.minty.uri-map.v1",
+  "status": "template_not_applied",
+  "base_uri_env": "MISEOS_CDN_BASE",
+  "metadata_pattern": "{base}/miseos/v1/metadata/{token_id_padded}-{slug}.json",
+  "image_pattern": "{base}/miseos/v1/assets/images/{token_id_padded}-{slug}.{ext}",
+  "animation_pattern": "{base}/miseos/v1/media/animation/{token_id_padded}-{slug}.mp4",
+  "collection": {
+    "name": "MiseOS Character Agents",
+    "supply": 112,
+    "registry_manifests_excluded": true
+  },
+  "activation_requirements": [
+    "Upload succeeds and public URIs return HTTP 200.",
+    "All metadata JSON passes schema and URI validation.",
+    "License terms are approved.",
+    "Minty contract or dashboard target is confirmed.",
+    "Token IDs are mapped 1-112 without registry manifests."
+  ]
+}

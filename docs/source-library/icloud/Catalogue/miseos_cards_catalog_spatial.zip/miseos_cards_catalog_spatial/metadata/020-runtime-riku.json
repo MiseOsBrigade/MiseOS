@@ -1,0 +1,197 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #020 — Runtime Riku",
+  "description": "Runtime Riku serves the Platform Kitchen as the brigade's runtime profile manager. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/020-runtime-riku.jpg",
+  "animation_url": "media/animation/020-runtime-riku.mp4",
+  "external_url": "https://miseos.dev/agents/runtime-riku",
+  "background_color": "1B2A41",
+  "spatial_screen": {
+    "card_id": "MISE-020",
+    "level": 14,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 93,
+      "aligned_pages": [
+        93,
+        98
+      ],
+      "reference_image": "assets/reference/page-093.jpg",
+      "thumbnail": "assets/thumbnails/page-093.jpg",
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.020",
+    "number": 20,
+    "slug": "runtime-riku",
+    "codename": "RUNTIME_RIKU",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Platform Kitchen",
+    "department_code": "platform",
+    "role": "Runtime Profile Manager",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 14
+  },
+  "lore": {
+    "summary": "Runtime Riku serves the Platform Kitchen as the brigade's runtime profile manager. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Runtime Riku performs runtime profile manager within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Vault Hana",
+      "Policy Kenji",
+      "Grafana Mei"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE RUNTIME PROFILE MANAGER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Runtime Profile Manager Protocol",
+      "type": "active",
+      "effect": "Executes the core runtime profile manager workflow with evidence capture.",
+      "command": "MISE RUNTIME PROFILE MANAGER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next platform station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 77,
+    "precision": 84,
+    "speed": 57,
+    "resilience": 78,
+    "intelligence": 66,
+    "teamwork": 67
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Platform Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Runtime Profile Manager"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 14,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 77,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 84,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 57,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 66,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 67,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/020-runtime-riku.jpg",
+    "reference_art": "assets/reference/page-093.jpg",
+    "thumbnail": "assets/thumbnails/page-093.jpg",
+    "animation": {
+      "uri": "media/animation/020-runtime-riku.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/020-runtime-riku.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/020-runtime-riku.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/020-runtime-riku.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/020-runtime-riku.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

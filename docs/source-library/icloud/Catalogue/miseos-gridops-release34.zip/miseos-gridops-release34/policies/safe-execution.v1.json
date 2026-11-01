@@ -1,0 +1,9 @@
+{
+  "id": "miseos.safe-execution.v1",
+  "rules": [
+    "tier_3_and_4_require_approval",
+    "tier_4_requires_rollback",
+    "secret_files_are_denied",
+    "risk_90_requires_approval"
+  ]
+}

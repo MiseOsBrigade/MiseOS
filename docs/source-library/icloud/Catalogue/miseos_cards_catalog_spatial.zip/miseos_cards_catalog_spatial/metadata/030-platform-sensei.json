@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #030 — Platform Sensei",
+  "description": "Platform Sensei serves the Platform Kitchen as the brigade's platform health board. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/030-platform-sensei.svg",
+  "animation_url": "media/animation/030-platform-sensei.mp4",
+  "external_url": "https://miseos.dev/agents/platform-sensei",
+  "background_color": "1B2A41",
+  "spatial_screen": {
+    "card_id": "MISE-030",
+    "level": 20,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.030",
+    "number": 30,
+    "slug": "platform-sensei",
+    "codename": "PLATFORM_SENSEI",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Platform Kitchen",
+    "department_code": "platform",
+    "role": "Platform Health Board",
+    "rarity": "Epic",
+    "rarity_tier": 3,
+    "level": 20
+  },
+  "lore": {
+    "summary": "Platform Sensei serves the Platform Kitchen as the brigade's platform health board. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Platform Sensei performs platform health board within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Seira",
+      "Kuro Guard",
+      "Orchestra Core"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE PLATFORM HEALTH BOARD",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Platform Health Board Protocol",
+      "type": "active",
+      "effect": "Executes the core platform health board workflow with evidence capture.",
+      "command": "MISE PLATFORM HEALTH BOARD"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next platform station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 69,
+    "precision": 78,
+    "speed": 75,
+    "resilience": 71,
+    "intelligence": 70,
+    "teamwork": 84
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Platform Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Platform Health Board"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Level",
+      "value": 20,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 69,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 75,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 71,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 70,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 84,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/030-platform-sensei.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/030-platform-sensei.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/030-platform-sensei.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/030-platform-sensei.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/030-platform-sensei.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/030-platform-sensei.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

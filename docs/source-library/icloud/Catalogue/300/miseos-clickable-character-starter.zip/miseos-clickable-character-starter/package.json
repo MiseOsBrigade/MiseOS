@@ -1,0 +1,27 @@
+{
+  "name": "miseos-clickable-character-starter",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "bootstrap": "bash scripts/bootstrap-dev.sh",
+    "dev": "node api/server.js",
+    "start": "node api/server.js",
+    "test": "node --test test/*.test.js",
+    "hash:registry": "node scripts/gen-registry-sha256.mjs",
+    "verify:registry": "node scripts/verify-registry-sha256.mjs",
+    "validate:manifest": "node scripts/validate-manifest.mjs",
+    "prestart": "npm run verify:registry && npm run validate:manifest"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

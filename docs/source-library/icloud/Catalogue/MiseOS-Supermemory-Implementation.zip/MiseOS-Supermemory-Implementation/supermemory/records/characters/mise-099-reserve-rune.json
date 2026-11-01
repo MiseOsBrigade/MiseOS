@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-099",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-099\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-099\",\n    \"number\": 99,\n    \"name\": \"Reserve Rune\",\n    \"slug\": \"reserve-rune\"\n  },\n  \"classification\": {\n    \"department\": \"Operations Kitchen\",\n    \"department_code\": \"operations\",\n    \"role\": \"Backup Archivist\",\n    \"rarity\": \"Epic\",\n    \"level\": 26\n  },\n  \"command\": \"MISE BACKUP ARCHIVIST\",\n  \"stats\": {\n    \"power\": 82,\n    \"precision\": 67,\n    \"speed\": 71,\n    \"resilience\": 81,\n    \"intelligence\": 63,\n    \"teamwork\": 74\n  },\n  \"media\": {\n    \"image\": \"assets/images/099-reserve-rune.jpg\",\n    \"metadata\": \"metadata/099-reserve-rune.json\",\n    \"animation\": \"media/animation/099-reserve-rune.mp4\",\n    \"model_3d\": \"media/models/099-reserve-rune.glb\",\n    \"audio\": \"media/audio/099-reserve-rune.mp3\",\n    \"ar\": \"media/ar/099-reserve-rune.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"photo_aligned_completion\",\n    \"confidence\": \"medium\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-099",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-099",
+    "character_slug": "reserve-rune",
+    "department_code": "operations",
+    "rarity": "Epic",
+    "level": 26,
+    "source_file": "cards-catalog.json"
+  }
+}

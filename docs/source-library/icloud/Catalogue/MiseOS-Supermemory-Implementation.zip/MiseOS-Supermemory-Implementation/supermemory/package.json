@@ -1,0 +1,16 @@
+{
+  "name": "@miseos/supermemory-character-core",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "ingest": "node scripts/ingest.mjs",
+    "ingest:dry": "node scripts/ingest.mjs --dry-run",
+    "profile": "node scripts/profile.mjs",
+    "promote": "node scripts/promote.mjs"
+  }
+}

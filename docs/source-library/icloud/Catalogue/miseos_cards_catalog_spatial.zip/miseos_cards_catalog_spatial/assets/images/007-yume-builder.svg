@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#E97822" stop-opacity=".55"/><stop offset="1" stop-color="#0E0F10"/></radialGradient></defs>
+<rect width="1024" height="1024" rx="64" fill="url(#g)"/>
+<rect x="32" y="32" width="960" height="960" rx="52" fill="none" stroke="#D4AF37" stroke-width="12"/>
+<circle cx="512" cy="410" r="210" fill="none" stroke="#D4AF37" stroke-width="10" opacity=".9"/>
+<text x="512" y="390" text-anchor="middle" fill="#F6F1E7" font-size="46" font-family="monospace">MISEOS</text>
+<text x="512" y="455" text-anchor="middle" fill="#D4AF37" font-size="34" font-family="monospace">SPATIAL CARD 007</text>
+<text x="512" y="720" text-anchor="middle" fill="#F6F1E7" font-size="48" font-weight="bold" font-family="sans-serif">Yume Builder</text>
+<text x="512" y="775" text-anchor="middle" fill="#D4AF37" font-size="28" font-family="sans-serif">Artifact Builder</text>
+<text x="512" y="850" text-anchor="middle" fill="#F6F1E7" font-size="22" font-family="monospace">REFERENCE ART PENDING</text>
+</svg>

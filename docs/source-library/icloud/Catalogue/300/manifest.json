@@ -1,0 +1,57 @@
+{
+  "package": "miseos-gridops-metrics",
+  "version": "1.0.0",
+  "generated_at": "2026-07-18T00:00:00Z",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "d7cf04a333716b3503be4443f5fc6492dc5869d4b65ec39d524ecc6c93c116f5",
+      "bytes": 2443
+    },
+    {
+      "path": "dashboards/portfolio-command.dashboard.json",
+      "sha256": "c5d1a7e91e4bd72d3763d3ee4264d2a6ca68597192d0a3537e020ee116ff82ec",
+      "bytes": 9650
+    },
+    {
+      "path": "docs/implementation.md",
+      "sha256": "8a2f319fe02402061e57a12ff33276833daf7730dd5b589d4c111057a89dea6a",
+      "bytes": 3052
+    },
+    {
+      "path": "examples/metric-observation.example.json",
+      "sha256": "c736795cc0c15ffe90a1fb4bce2d2113a523f1f9893a953cdd72b2da4e9c52ef",
+      "bytes": 975
+    },
+    {
+      "path": "registry/alert-policies.json",
+      "sha256": "69eea4423705cebd0a55d3ea1f20dd534c306327500f44fa95a8a222dfbe021a",
+      "bytes": 3305
+    },
+    {
+      "path": "registry/miseos-metric-registry.json",
+      "sha256": "bcf4387ddd87761bc9d9757af90077ea41a176e5a1dc0998970254212a834fa4",
+      "bytes": 46261
+    },
+    {
+      "path": "schemas/alert-policy.schema.json",
+      "sha256": "de276c087f0ef5bb1479a9ed484bcf75c181c853074b7da1a73b5850817476e6",
+      "bytes": 2347
+    },
+    {
+      "path": "schemas/gridops-dashboard.schema.json",
+      "sha256": "13d0d4f138105dedeafe5cc3e90a6b4f18fa289a13a789dc71f2dd725029e914",
+      "bytes": 5415
+    },
+    {
+      "path": "schemas/metric-definition.schema.json",
+      "sha256": "af164a2bebf681a9188f50fc097b5be40485d1f62495963c9caa1bd1e2adbf33",
+      "bytes": 7597
+    },
+    {
+      "path": "schemas/metric-observation.schema.json",
+      "sha256": "b88a3350c87a80dcbb37385dfbd6cb73dc5b947bdc63fec64c3d5e21649202f9",
+      "bytes": 3635
+    }
+  ]
+}

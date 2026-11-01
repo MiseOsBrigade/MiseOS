@@ -1,0 +1,196 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #094 — Flavor Forager",
+  "description": "Flavor Forager serves the Operations Kitchen as the brigade's ingredient scout. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/094-flavor-forager.jpg",
+  "animation_url": "media/animation/094-flavor-forager.mp4",
+  "external_url": "https://miseos.dev/agents/flavor-forager",
+  "background_color": "D4AF37",
+  "spatial_screen": {
+    "card_id": "MISE-094",
+    "level": 18,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 10,
+      "aligned_pages": [
+        10
+      ],
+      "reference_image": "assets/reference/page-010.jpg",
+      "thumbnail": "assets/thumbnails/page-010.jpg",
+      "alignment_confidence": "medium",
+      "provenance": "photo_aligned_completion"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.094",
+    "number": 94,
+    "slug": "flavor-forager",
+    "codename": "FLAVOR_FORAGER",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Operations Kitchen",
+    "department_code": "operations",
+    "role": "Ingredient Scout",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 18
+  },
+  "lore": {
+    "summary": "Flavor Forager serves the Operations Kitchen as the brigade's ingredient scout. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Flavor Forager performs ingredient scout within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Crate Courier",
+      "Ledger Ladle",
+      "Beacon Broil"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE INGREDIENT SCOUT",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Ingredient Scout Protocol",
+      "type": "active",
+      "effect": "Executes the core ingredient scout workflow with evidence capture.",
+      "command": "MISE INGREDIENT SCOUT"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next operations station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 65,
+    "precision": 70,
+    "speed": 70,
+    "resilience": 76,
+    "intelligence": 61,
+    "teamwork": 83
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Ingredient Scout"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 18,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "photo_aligned_completion"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "medium"
+    },
+    {
+      "trait_type": "Power",
+      "value": 65,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 70,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 70,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 61,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 83,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/094-flavor-forager.jpg",
+    "reference_art": "assets/reference/page-010.jpg",
+    "thumbnail": "assets/thumbnails/page-010.jpg",
+    "animation": {
+      "uri": "media/animation/094-flavor-forager.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/094-flavor-forager.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/094-flavor-forager.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/094-flavor-forager.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/094-flavor-forager.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

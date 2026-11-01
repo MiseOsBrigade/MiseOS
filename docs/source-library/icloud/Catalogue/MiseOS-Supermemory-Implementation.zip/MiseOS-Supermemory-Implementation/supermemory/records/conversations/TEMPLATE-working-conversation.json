@@ -1,0 +1,21 @@
+{
+  "customId": "conversation-YYYYMMDD-topic",
+  "content": "Session title: [TITLE]\nSession ID: [SESSION-ID]\nParticipants: [PARTICIPANTS]\nScope: [SCOPE]\n\nConfirmed decisions:\n- [NONE]\n\nProposals:\n- [NONE]\n\nConflicts discovered:\n- [NONE]\n\nOpen questions:\n- [NONE]\n\nEvidence and source files:\n- [NONE]\n",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "working_conversation",
+    "record_id": "CONV-TEMPLATE",
+    "canon_status": "UNKNOWN",
+    "version": "0.1",
+    "approval_status": "working",
+    "source_type": "conversation",
+    "language": "en",
+    "character_count_included": false,
+    "session_id": "SESSION-ID"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "projectId": "818939",
+  "projectName": "default",
+  "status": "planned-no-events-ingested",
+  "events": [
+    {
+      "event_type": "character_surface_viewed",
+      "properties": [
+        "character_id",
+        "manifest_version",
+        "source"
+      ]
+    },
+    {
+      "event_type": "character_hotspot_clicked",
+      "properties": [
+        "character_id",
+        "hotspot_id",
+        "action_id",
+        "requires_nft"
+      ]
+    },
+    {
+      "event_type": "character_action_authorized",
+      "properties": [
+        "action_id",
+        "wallet_mode",
+        "character_id"
+      ]
+    },
+    {
+      "event_type": "character_workflow_completed",
+      "properties": [
+        "action_id",
+        "duration_ms",
+        "success"
+      ]
+    },
+    {
+      "event_type": "character_workflow_failed",
+      "properties": [
+        "action_id",
+        "error_name"
+      ]
+    }
+  ],
+  "note": "No events currently exist in the Amplitude project. Implement these names consistently before building charts."
+}

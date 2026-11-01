@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-005",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-005\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-005\",\n    \"number\": 5,\n    \"name\": \"Hugo Matrix\",\n    \"slug\": \"hugo-matrix\"\n  },\n  \"classification\": {\n    \"department\": \"Pipeline Kitchen\",\n    \"department_code\": \"pipeline\",\n    \"role\": \"Test Matrix Runner\",\n    \"rarity\": \"Common\",\n    \"level\": 17\n  },\n  \"command\": \"MISE TEST MATRIX RUNNER\",\n  \"stats\": {\n    \"power\": 57,\n    \"precision\": 61,\n    \"speed\": 68,\n    \"resilience\": 81,\n    \"intelligence\": 76,\n    \"teamwork\": 78\n  },\n  \"media\": {\n    \"image\": \"assets/images/005-hugo-matrix.svg\",\n    \"metadata\": \"metadata/005-hugo-matrix.json\",\n    \"animation\": \"media/animation/005-hugo-matrix.mp4\",\n    \"model_3d\": \"media/models/005-hugo-matrix.glb\",\n    \"audio\": \"media/audio/005-hugo-matrix.mp3\",\n    \"ar\": \"media/ar/005-hugo-matrix.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"user_supplied_roster\",\n    \"confidence\": \"high\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-005",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-005",
+    "character_slug": "hugo-matrix",
+    "department_code": "pipeline",
+    "rarity": "Common",
+    "level": 17,
+    "source_file": "cards-catalog.json"
+  }
+}

@@ -1,0 +1,1 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import path from 'node:path';const registryPath=path.resolve('workflow/registry.json');const outPath=path.resolve('workflow/registry.json.sha256');const hash=crypto.createHash('sha256').update(fs.readFileSync(registryPath)).digest('hex');fs.writeFileSync(outPath,`${hash}  registry.json\n`);console.log(`Wrote ${outPath}`);

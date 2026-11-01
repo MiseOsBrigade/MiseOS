@@ -1,0 +1,197 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #019 — Schema Sora",
+  "description": "Schema Sora serves the Platform Kitchen as the brigade's database blueprint manager. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/019-schema-sora.jpg",
+  "animation_url": "media/animation/019-schema-sora.mp4",
+  "external_url": "https://miseos.dev/agents/schema-sora",
+  "background_color": "1B2A41",
+  "spatial_screen": {
+    "card_id": "MISE-019",
+    "level": 23,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 92,
+      "aligned_pages": [
+        92,
+        100
+      ],
+      "reference_image": "assets/reference/page-092.jpg",
+      "thumbnail": "assets/thumbnails/page-092.jpg",
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.019",
+    "number": 19,
+    "slug": "schema-sora",
+    "codename": "SCHEMA_SORA",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Platform Kitchen",
+    "department_code": "platform",
+    "role": "Database Blueprint Manager",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 23
+  },
+  "lore": {
+    "summary": "Schema Sora serves the Platform Kitchen as the brigade's database blueprint manager. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Schema Sora performs database blueprint manager within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Runtime Riku",
+      "Vault Hana",
+      "Policy Kenji"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE DATABASE BLUEPRINT MANAGER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Database Blueprint Manager Protocol",
+      "type": "active",
+      "effect": "Executes the core database blueprint manager workflow with evidence capture.",
+      "command": "MISE DATABASE BLUEPRINT MANAGER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next platform station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 61,
+    "precision": 82,
+    "speed": 53,
+    "resilience": 82,
+    "intelligence": 62,
+    "teamwork": 71
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Platform Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Database Blueprint Manager"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 23,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 61,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 53,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 62,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 71,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/019-schema-sora.jpg",
+    "reference_art": "assets/reference/page-092.jpg",
+    "thumbnail": "assets/thumbnails/page-092.jpg",
+    "animation": {
+      "uri": "media/animation/019-schema-sora.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/019-schema-sora.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/019-schema-sora.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/019-schema-sora.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/019-schema-sora.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

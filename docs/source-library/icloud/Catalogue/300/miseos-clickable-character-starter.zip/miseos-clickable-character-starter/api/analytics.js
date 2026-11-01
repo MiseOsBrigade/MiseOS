@@ -1,0 +1,1 @@
+export function trackServerEvent(config,eventType,eventProperties={}){if(!config.amplitudeApiKey)return;console.log(JSON.stringify({analytics:'amplitude',event_type:eventType,event_properties:eventProperties}));}

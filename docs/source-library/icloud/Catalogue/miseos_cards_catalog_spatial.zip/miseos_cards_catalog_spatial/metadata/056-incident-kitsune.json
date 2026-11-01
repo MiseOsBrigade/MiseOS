@@ -1,0 +1,197 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #056 — Incident Kitsune",
+  "description": "Incident Kitsune serves the Security Kitchen as the brigade's security incident playbooks. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/056-incident-kitsune.jpg",
+  "animation_url": "media/animation/056-incident-kitsune.mp4",
+  "external_url": "https://miseos.dev/agents/incident-kitsune",
+  "background_color": "8B1E2D",
+  "spatial_screen": {
+    "card_id": "MISE-056",
+    "level": 25,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 82,
+      "aligned_pages": [
+        82,
+        88
+      ],
+      "reference_image": "assets/reference/page-082.jpg",
+      "thumbnail": "assets/thumbnails/page-082.jpg",
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.056",
+    "number": 56,
+    "slug": "incident-kitsune",
+    "codename": "INCIDENT_KITSUNE",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Security Kitchen",
+    "department_code": "security",
+    "role": "Security Incident Playbooks",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 25
+  },
+  "lore": {
+    "summary": "Incident Kitsune serves the Security Kitchen as the brigade's security incident playbooks. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Incident Kitsune performs security incident playbooks within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Evidence Scribe",
+      "Nudge Neko",
+      "Scorecard Shin"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE SECURITY INCIDENT PLAYBOOKS",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Security Incident Playbooks Protocol",
+      "type": "active",
+      "effect": "Executes the core security incident playbooks workflow with evidence capture.",
+      "command": "MISE SECURITY INCIDENT PLAYBOOKS"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next security station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 67,
+    "precision": 75,
+    "speed": 59,
+    "resilience": 75,
+    "intelligence": 65,
+    "teamwork": 82
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Security Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Security Incident Playbooks"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 75,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 59,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 75,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 65,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 82,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/056-incident-kitsune.jpg",
+    "reference_art": "assets/reference/page-082.jpg",
+    "thumbnail": "assets/thumbnails/page-082.jpg",
+    "animation": {
+      "uri": "media/animation/056-incident-kitsune.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/056-incident-kitsune.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/056-incident-kitsune.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/056-incident-kitsune.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/056-incident-kitsune.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

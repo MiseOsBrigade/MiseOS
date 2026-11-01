@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #046 — Threat Taro",
+  "description": "Threat Taro serves the Security Kitchen as the brigade's threat modeling starter. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/046-threat-taro.svg",
+  "animation_url": "media/animation/046-threat-taro.mp4",
+  "external_url": "https://miseos.dev/agents/threat-taro",
+  "background_color": "8B1E2D",
+  "spatial_screen": {
+    "card_id": "MISE-046",
+    "level": 22,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.046",
+    "number": 46,
+    "slug": "threat-taro",
+    "codename": "THREAT_TARO",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Security Kitchen",
+    "department_code": "security",
+    "role": "Threat Modeling Starter",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 22
+  },
+  "lore": {
+    "summary": "Threat Taro serves the Security Kitchen as the brigade's threat modeling starter. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Threat Taro performs threat modeling starter within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Secure Sakura",
+      "Token Toshi",
+      "CVE Kumo"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE THREAT MODELING STARTER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Threat Modeling Starter Protocol",
+      "type": "active",
+      "effect": "Executes the core threat modeling starter workflow with evidence capture.",
+      "command": "MISE THREAT MODELING STARTER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next security station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 82,
+    "precision": 83,
+    "speed": 67,
+    "resilience": 67,
+    "intelligence": 62,
+    "teamwork": 72
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Security Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Threat Modeling Starter"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 22,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 83,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 62,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 72,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/046-threat-taro.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/046-threat-taro.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/046-threat-taro.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/046-threat-taro.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/046-threat-taro.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/046-threat-taro.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

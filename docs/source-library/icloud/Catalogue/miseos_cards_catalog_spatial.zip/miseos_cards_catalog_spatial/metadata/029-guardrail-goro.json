@@ -1,0 +1,197 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #029 — Guardrail Goro",
+  "description": "Guardrail Goro serves the Platform Kitchen as the brigade's golden path guardrails. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/029-guardrail-goro.jpg",
+  "animation_url": "media/animation/029-guardrail-goro.mp4",
+  "external_url": "https://miseos.dev/agents/guardrail-goro",
+  "background_color": "1B2A41",
+  "spatial_screen": {
+    "card_id": "MISE-029",
+    "level": 23,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 96,
+      "aligned_pages": [
+        96,
+        101
+      ],
+      "reference_image": "assets/reference/page-096.jpg",
+      "thumbnail": "assets/thumbnails/page-096.jpg",
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.029",
+    "number": 29,
+    "slug": "guardrail-goro",
+    "codename": "GUARDRAIL_GORO",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Platform Kitchen",
+    "department_code": "platform",
+    "role": "Golden Path Guardrails",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 23
+  },
+  "lore": {
+    "summary": "Guardrail Goro serves the Platform Kitchen as the brigade's golden path guardrails. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Guardrail Goro performs golden path guardrails within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Platform Sensei",
+      "Seira",
+      "Kuro Guard"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE GOLDEN PATH GUARDRAILS",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Golden Path Guardrails Protocol",
+      "type": "active",
+      "effect": "Executes the core golden path guardrails workflow with evidence capture.",
+      "command": "MISE GOLDEN PATH GUARDRAILS"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next platform station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 73,
+    "precision": 73,
+    "speed": 59,
+    "resilience": 68,
+    "intelligence": 59,
+    "teamwork": 79
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Platform Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Golden Path Guardrails"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 23,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 73,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 73,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 59,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 68,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 59,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 79,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/029-guardrail-goro.jpg",
+    "reference_art": "assets/reference/page-096.jpg",
+    "thumbnail": "assets/thumbnails/page-096.jpg",
+    "animation": {
+      "uri": "media/animation/029-guardrail-goro.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/029-guardrail-goro.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/029-guardrail-goro.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/029-guardrail-goro.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/029-guardrail-goro.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

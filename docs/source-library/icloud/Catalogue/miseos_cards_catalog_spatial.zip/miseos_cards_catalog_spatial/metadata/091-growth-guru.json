@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #091 — Growth Guru",
+  "description": "Growth Guru serves the Data & Insight Kitchen as the brigade's optimize. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/091-growth-guru.svg",
+  "animation_url": "media/animation/091-growth-guru.mp4",
+  "external_url": "https://miseos.dev/agents/growth-guru",
+  "background_color": "17A2A4",
+  "spatial_screen": {
+    "card_id": "MISE-091",
+    "level": 20,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.091",
+    "number": 91,
+    "slug": "growth-guru",
+    "codename": "GROWTH_GURU",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Data & Insight Kitchen",
+    "department_code": "data-insight",
+    "role": "Optimize",
+    "rarity": "Epic",
+    "rarity_tier": 3,
+    "level": 20
+  },
+  "lore": {
+    "summary": "Growth Guru serves the Data & Insight Kitchen as the brigade's optimize. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Growth Guru performs optimize within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Culture Chef",
+      "Taxonomy Taka",
+      "Lake Haru"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE OPTIMIZE",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Optimize Protocol",
+      "type": "active",
+      "effect": "Executes the core optimize workflow with evidence capture.",
+      "command": "MISE OPTIMIZE"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next data-insight station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 67,
+    "precision": 84,
+    "speed": 58,
+    "resilience": 74,
+    "intelligence": 82,
+    "teamwork": 73
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Data & Insight Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Optimize"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Level",
+      "value": 20,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 84,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 58,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 74,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 73,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/091-growth-guru.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/091-growth-guru.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/091-growth-guru.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/091-growth-guru.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/091-growth-guru.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/091-growth-guru.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

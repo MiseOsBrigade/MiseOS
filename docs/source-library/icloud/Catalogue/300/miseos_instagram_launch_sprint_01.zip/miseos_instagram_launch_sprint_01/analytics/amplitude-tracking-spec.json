@@ -1,0 +1,30 @@
+{
+  "campaign": "miseos_chronicles_launch",
+  "project": "default",
+  "event_naming": "lowercase_snake_case",
+  "common_properties": {
+    "content_id": "string",
+    "series": "string",
+    "format": "string",
+    "source": "instagram",
+    "campaign": "miseos_chronicles_launch",
+    "public_claim_level": "string",
+    "featured_agent": "string|null",
+    "featured_capability": "string|null"
+  },
+  "launch_funnel": [
+    "instagram_impression",
+    "instagram_profile_visit",
+    "instagram_profile_link_clicked",
+    "miseos_content_viewed",
+    "early_access_started",
+    "early_access_completed"
+  ],
+  "dashboards": [
+    "Launch Content Performance",
+    "Chronicles Completion",
+    "Character Interest",
+    "GridOps Product Understanding",
+    "Instagram to Early Access"
+  ]
+}

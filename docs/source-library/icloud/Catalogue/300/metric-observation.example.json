@@ -1,0 +1,35 @@
+{
+  "observation_id": "obs_gridops_verified_tasks_20260718T000000Z",
+  "metric_id": "miseos.metric.verified_task_success_rate",
+  "value": 0.946,
+  "period_start": "2026-07-17T00:00:00Z",
+  "period_end": "2026-07-17T23:59:59Z",
+  "recorded_at": "2026-07-18T00:00:00Z",
+  "dimensions": {
+    "environment": "production",
+    "brigade_id": "chef-brigade-core"
+  },
+  "confidence": {
+    "score": 0.93,
+    "freshness": 1.0,
+    "completeness": 0.97,
+    "source_reliability": 0.96,
+    "calculation_reliability": 0.98,
+    "historical_stability": 0.88,
+    "independent_verification": 0.8,
+    "provenance_completeness": 1.0
+  },
+  "evidence": {
+    "source_systems": [
+      "gridops",
+      "github_actions",
+      "policy_engine"
+    ],
+    "source_record_count": 1284,
+    "provenance_uri": "miseos://evidence/metrics/verified-task-success/2026-07-17",
+    "calculation_version": "1.0.0",
+    "artifact_hashes": []
+  },
+  "status": "green",
+  "review_status": "verified"
+}

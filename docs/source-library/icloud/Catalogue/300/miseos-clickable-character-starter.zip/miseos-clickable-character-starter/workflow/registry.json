@@ -1,0 +1,4 @@
+{
+  "inspect": "./inspect.js",
+  "launch_workflow": "./launch_workflow.js"
+}

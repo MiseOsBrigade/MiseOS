@@ -1,0 +1,1 @@
+import crypto from 'node:crypto';export async function launch_workflow(context){return{ok:true,action:'launch_workflow',message:'Approved workflow queued.',workflowId:crypto.randomUUID(),context}} export default launch_workflow;

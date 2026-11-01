@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #062 — Lake Haru",
+  "description": "Lake Haru serves the Data & Insight Kitchen as the brigade's telemetry ingestion pipeline. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/062-lake-haru.svg",
+  "animation_url": "media/animation/062-lake-haru.mp4",
+  "external_url": "https://miseos.dev/agents/lake-haru",
+  "background_color": "17A2A4",
+  "spatial_screen": {
+    "card_id": "MISE-062",
+    "level": 15,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.062",
+    "number": 62,
+    "slug": "lake-haru",
+    "codename": "LAKE_HARU",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Data & Insight Kitchen",
+    "department_code": "data-insight",
+    "role": "Telemetry Ingestion Pipeline",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 15
+  },
+  "lore": {
+    "summary": "Lake Haru serves the Data & Insight Kitchen as the brigade's telemetry ingestion pipeline. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Lake Haru performs telemetry ingestion pipeline within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Lattice",
+      "Repo Ranger",
+      "DORA Daichi"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE TELEMETRY INGESTION PIPELINE",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Telemetry Ingestion Pipeline Protocol",
+      "type": "active",
+      "effect": "Executes the core telemetry ingestion pipeline workflow with evidence capture.",
+      "command": "MISE TELEMETRY INGESTION PIPELINE"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next data-insight station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 82,
+    "precision": 60,
+    "speed": 79,
+    "resilience": 73,
+    "intelligence": 62,
+    "teamwork": 78
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Data & Insight Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Telemetry Ingestion Pipeline"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 15,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 60,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 79,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 73,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 62,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 78,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/062-lake-haru.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/062-lake-haru.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/062-lake-haru.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/062-lake-haru.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/062-lake-haru.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/062-lake-haru.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

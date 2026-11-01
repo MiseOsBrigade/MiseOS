@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: miseos
+      POSTGRES_USER: miseos
+      POSTGRES_PASSWORD: miseos
+    ports: ["5432:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U miseos -d miseos"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  nats:
+    image: nats:2.11-alpine
+    command: ["-js", "-m", "8222"]
+    ports: ["4222:4222", "8222:8222"]
+
+  api:
+    build: ./apps/api
+    environment:
+      DATABASE_URL: postgresql+psycopg://miseos:miseos@postgres:5432/miseos
+      NATS_URL: nats://nats:4222
+      CANONICAL_DATA_PATH: /app/data/miseos-ecosystem-135.json
+      WORKFLOW_PATH: /app/workflows/operations.service-recovery.v1.json
+      GITHUB_WRITE_ENABLED: "false"
+    volumes:
+      - ./data:/app/data:ro
+      - ./workflows:/app/workflows:ro
+    ports: ["8000:8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      nats:
+        condition: service_started
+
+  web:
+    build: ./apps/web
+    environment:
+      VITE_API_URL: http://localhost:8000
+    ports: ["4173:4173"]
+    depends_on: [api]
+
+volumes:
+  pgdata:

@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-047",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-047\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-047\",\n    \"number\": 47,\n    \"name\": \"Secure Sakura\",\n    \"slug\": \"secure-sakura\"\n  },\n  \"classification\": {\n    \"department\": \"Security Kitchen\",\n    \"department_code\": \"security\",\n    \"role\": \"Secure Template Library\",\n    \"rarity\": \"Common\",\n    \"level\": 23\n  },\n  \"command\": \"MISE SECURE TEMPLATE LIBRARY\",\n  \"stats\": {\n    \"power\": 63,\n    \"precision\": 67,\n    \"speed\": 78,\n    \"resilience\": 62,\n    \"intelligence\": 79,\n    \"teamwork\": 71\n  },\n  \"media\": {\n    \"image\": \"assets/images/047-secure-sakura.svg\",\n    \"metadata\": \"metadata/047-secure-sakura.json\",\n    \"animation\": \"media/animation/047-secure-sakura.mp4\",\n    \"model_3d\": \"media/models/047-secure-sakura.glb\",\n    \"audio\": \"media/audio/047-secure-sakura.mp3\",\n    \"ar\": \"media/ar/047-secure-sakura.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"user_supplied_roster\",\n    \"confidence\": \"high\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-047",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-047",
+    "character_slug": "secure-sakura",
+    "department_code": "security",
+    "rarity": "Common",
+    "level": 23,
+    "source_file": "cards-catalog.json"
+  }
+}

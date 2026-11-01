@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #021 — Vault Hana",
+  "description": "Vault Hana serves the Platform Kitchen as the brigade's secrets & config broker. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/021-vault-hana.svg",
+  "animation_url": "media/animation/021-vault-hana.mp4",
+  "external_url": "https://miseos.dev/agents/vault-hana",
+  "background_color": "1B2A41",
+  "spatial_screen": {
+    "card_id": "MISE-021",
+    "level": 18,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.021",
+    "number": 21,
+    "slug": "vault-hana",
+    "codename": "VAULT_HANA",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Platform Kitchen",
+    "department_code": "platform",
+    "role": "Secrets & Config Broker",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 18
+  },
+  "lore": {
+    "summary": "Vault Hana serves the Platform Kitchen as the brigade's secrets & config broker. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Vault Hana performs secrets & config broker within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Policy Kenji",
+      "Grafana Mei",
+      "Umami Code"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE SECRETS CONFIG BROKER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Secrets & Config Broker Protocol",
+      "type": "active",
+      "effect": "Executes the core secrets & config broker workflow with evidence capture.",
+      "command": "MISE SECRETS CONFIG BROKER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next platform station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 67,
+    "precision": 65,
+    "speed": 69,
+    "resilience": 72,
+    "intelligence": 70,
+    "teamwork": 82
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Platform Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Secrets & Config Broker"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 18,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 65,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 69,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 72,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 70,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 82,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/021-vault-hana.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/021-vault-hana.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/021-vault-hana.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/021-vault-hana.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/021-vault-hana.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/021-vault-hana.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

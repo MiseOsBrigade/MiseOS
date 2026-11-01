@@ -1,0 +1,21 @@
+{
+  "customId": "conflict-CONFLICT-YYYY-NNN",
+  "content": "Conflict ID: CONFLICT-YYYY-NNN\nSubject: [SUBJECT]\nRecord A: [ID AND CLAIM]\nRecord B: [ID AND CLAIM]\nEvidence A: [SOURCE]\nEvidence B: [SOURCE]\nImpact: [IMPACT]\nResolution status: unresolved\nDo not guess or silently merge.\n",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "conflict_record",
+    "record_id": "CONFLICT-TEMPLATE",
+    "canon_status": "CONFLICT",
+    "version": "0.1",
+    "approval_status": "pending",
+    "source_type": "validation",
+    "language": "en",
+    "character_count_included": false,
+    "resolution_status": "unresolved"
+  }
+}

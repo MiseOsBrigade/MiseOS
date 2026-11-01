@@ -1,0 +1,670 @@
+{
+  "schema": "miseos.supermemory.file-manifest.v1",
+  "files": [
+    {
+      "path": "supermemory/.env.example",
+      "sha256": "ca78a23d1ea2fb8075630a9c9d23d920213a6dc2b618c7944a62c5d51839e956",
+      "bytes": 175
+    },
+    {
+      "path": "supermemory/README.md",
+      "sha256": "942d2e5bc06cc5038661c32d0c3df7dbabacd4633b0e6ce50e6cd987c97dd39f",
+      "bytes": 1387
+    },
+    {
+      "path": "supermemory/config/project.json",
+      "sha256": "5696f7fe0a7e5b38cd46ff5085cfbcf48b3efb901b61cb870b650d9a8270359a",
+      "bytes": 2830
+    },
+    {
+      "path": "supermemory/mcp.config.example.json",
+      "sha256": "df40847a29ff44161f032ff1cbbcf5f79920e118ac11d92b8f4a3ce5f02e73c0",
+      "bytes": 232
+    },
+    {
+      "path": "supermemory/package.json",
+      "sha256": "3c07b78c558e29bdffbcb62858c51a20c2a10a619b1d7322b72b2d25d55a9354",
+      "bytes": 396
+    },
+    {
+      "path": "supermemory/records/archive/TEMPLATE-archived-version.json",
+      "sha256": "5471883cd7a74695113923bf34f3b14c7ee1157f3274b370b4f08ca943feb5e2",
+      "bytes": 1355
+    },
+    {
+      "path": "supermemory/records/characters/mise-001-alko-commit-chef.json",
+      "sha256": "73fd61ea365e695de69abf73f06368bc0d9cf6ab59e6a1ba3a7388eddc2de666",
+      "bytes": 2836
+    },
+    {
+      "path": "supermemory/records/characters/mise-002-bruno-blast-radius.json",
+      "sha256": "ce43e92f4ebe95f2700733a72ad0280373f05bdb275bf1a868aab78d62629283",
+      "bytes": 2864
+    },
+    {
+      "path": "supermemory/records/characters/mise-003-lila-branchkeeper.json",
+      "sha256": "163e387e700067c53ef763bdbcaf3e32325d6d5f2741499e77acf53135f088c6",
+      "bytes": 2849
+    },
+    {
+      "path": "supermemory/records/characters/mise-004-omar-reviewer.json",
+      "sha256": "21f423406e471507e7b39258ad4a90d8f79492132003717de2b9d0f08e19ff78",
+      "bytes": 2815
+    },
+    {
+      "path": "supermemory/records/characters/mise-005-hugo-matrix.json",
+      "sha256": "7e6868ff3b97b38533eb2d86c01696c733360e170df57dfba0111640677484b8",
+      "bytes": 2799
+    },
+    {
+      "path": "supermemory/records/characters/mise-006-seira-scan.json",
+      "sha256": "86a8c27cfa5ea22962738819eb32a93288eb877109575423611e0a7fe502b164",
+      "bytes": 2788
+    },
+    {
+      "path": "supermemory/records/characters/mise-007-yume-builder.json",
+      "sha256": "8cfdef17c6f652f77910547afc88e980cf578e87c235afe2221f60a4b36b129b",
+      "bytes": 2806
+    },
+    {
+      "path": "supermemory/records/characters/mise-008-iron-hashi.json",
+      "sha256": "30922f40560a39548a1f6e4a95cb6877750f4c3e80a19797260e4f122da24fca",
+      "bytes": 2792
+    },
+    {
+      "path": "supermemory/records/characters/mise-009-nina-promoter.json",
+      "sha256": "299c8e04e4fa82626007f2c1a093c455338dd4d1b7c56b9e0fc8b368460be4b4",
+      "bytes": 2833
+    },
+    {
+      "path": "supermemory/records/characters/mise-010-release-conductor.json",
+      "sha256": "22e9daf265862e676bc306783065f69f3bbc74ea570d7e24a052ac2a9ecf5ea7",
+      "bytes": 2864
+    },
+    {
+      "path": "supermemory/records/characters/mise-011-felix-rollback.json",
+      "sha256": "9085009112b3b66e8e4cca9b138167983afc2289c8c761755f75465fd8ce5050",
+      "bytes": 2833
+    },
+    {
+      "path": "supermemory/records/characters/mise-012-tariq-notesmith.json",
+      "sha256": "ba7c55ede946ffd7d8a8a3c55854b3748876831a087cdccb9d473f0ef539ce36",
+      "bytes": 2846
+    },
+    {
+      "path": "supermemory/records/characters/mise-013-ivun-cache.json",
+      "sha256": "538eabbebdac6c1b87a8a3e169372e3d30d03e8a38d6b4b9a811877ea196cd0d",
+      "bytes": 2797
+    },
+    {
+      "path": "supermemory/records/characters/mise-014-canary-taster.json",
+      "sha256": "ed6857792c79e6af9735220eb2a1a07586c5a3b0c46879196eb27b867b53020c",
+      "bytes": 2822
+    },
+    {
+      "path": "supermemory/records/characters/mise-015-pipeline-sensei.json",
+      "sha256": "b9e43f7ffbfdff8e4e2cc154950fd8553e78a1725c5ef3ba7b6aa3db490baf6e",
+      "bytes": 2836
+    },
+    {
+      "path": "supermemory/records/characters/mise-016-template-tanaka.json",
+      "sha256": "925b3e26712a745ed5189fe1b6b9657ef09c6faeef93b42bbaaf36911bff83bc",
+      "bytes": 2848
+    },
+    {
+      "path": "supermemory/records/characters/mise-017-bootstrap-aiko.json",
+      "sha256": "acceb1c99b87b3cb3901fa774c037d62c574fabb1089eb6b233309aa3e663571",
+      "bytes": 2829
+    },
+    {
+      "path": "supermemory/records/characters/mise-018-terra-forge.json",
+      "sha256": "a136b506c4ad080b1bdb8ab1b3023dd17be2c26c3b9218ed8875f0d931e56788",
+      "bytes": 2810
+    },
+    {
+      "path": "supermemory/records/characters/mise-019-schema-sora.json",
+      "sha256": "cc514e5b99ca62d11acd9142f51c32c2ec6e5912268909e24246e5b224908e4e",
+      "bytes": 2816
+    },
+    {
+      "path": "supermemory/records/characters/mise-020-runtime-riku.json",
+      "sha256": "1c5bb0025dd037157f2d6c124ea6cc078d46bd04a50331d144b26a3602232fd8",
+      "bytes": 2819
+    },
+    {
+      "path": "supermemory/records/characters/mise-021-vault-hana.json",
+      "sha256": "ebe07231efe503d7c75d362b55ad6d57445e33edc886e553e2ad97e37cb10abf",
+      "bytes": 2795
+    },
+    {
+      "path": "supermemory/records/characters/mise-022-policy-kenji.json",
+      "sha256": "4f1009d14e5d85fb3fd2e25e8b5e458e39d27944b6d9abec2caddc4cf5107812",
+      "bytes": 2793
+    },
+    {
+      "path": "supermemory/records/characters/mise-023-grafana-mei.json",
+      "sha256": "14769cb09f4f25fadd05bed8888f9369c4953af21741f5537144792c4943272e",
+      "bytes": 2814
+    },
+    {
+      "path": "supermemory/records/characters/mise-024-umami-code.json",
+      "sha256": "46441bbfb39f885412c3d41b0530356e5a836352910fe6902600ca46db18cd78",
+      "bytes": 2805
+    },
+    {
+      "path": "supermemory/records/characters/mise-025-queue-mizu.json",
+      "sha256": "8b20bda785bac346843db0742b8e07d0ca6c390efdcab1e2db14aa587b63bc85",
+      "bytes": 2797
+    },
+    {
+      "path": "supermemory/records/characters/mise-026-streama.json",
+      "sha256": "003e5444650fa123f0ec1c05b45652e67ac3482632346a2b7d8b11ca8a5e2a3e",
+      "bytes": 2776
+    },
+    {
+      "path": "supermemory/records/characters/mise-027-preview-yuki.json",
+      "sha256": "db1cb32cc95857d928c8b95598696336c12c3aeb1bdf69b2d7119de328a162ed",
+      "bytes": 2827
+    },
+    {
+      "path": "supermemory/records/characters/mise-028-portal-rei.json",
+      "sha256": "fccfbe8bbe437703c1dbb8b85088b560da18b540006b9331d440912aaa3b6f92",
+      "bytes": 2799
+    },
+    {
+      "path": "supermemory/records/characters/mise-029-guardrail-goro.json",
+      "sha256": "15f6fb399a91f61bd0b69f5b11918f8db331e9aec93cc45eb306a1ca3a27c741",
+      "bytes": 2835
+    },
+    {
+      "path": "supermemory/records/characters/mise-030-platform-sensei.json",
+      "sha256": "aecb04939412a5b6914a09e132065deaa557cc0a01fc940cabd63deba297ab39",
+      "bytes": 2838
+    },
+    {
+      "path": "supermemory/records/characters/mise-031-slo-sage.json",
+      "sha256": "8abd46541afe6a670c54a02a5d4ca557c6af11129591c741a97ca87c8a0bbab0",
+      "bytes": 2794
+    },
+    {
+      "path": "supermemory/records/characters/mise-032-trace-sensei.json",
+      "sha256": "0812cc4a33b0147fc1edaec66a0d0cd8f6d33fb284d2655d92a7fe2a6c8bd92f",
+      "bytes": 2824
+    },
+    {
+      "path": "supermemory/records/characters/mise-033-chaos-kaito.json",
+      "sha256": "89d62b216ddff5df8f7af8e97f1c7268607129442754c62de9e78d7f8d31276c",
+      "bytes": 2813
+    },
+    {
+      "path": "supermemory/records/characters/mise-034-capacity-kanna.json",
+      "sha256": "45d536995a1803ee9ed242442cce1700ccef9cd0cdb137a664031374ee021888",
+      "bytes": 2864
+    },
+    {
+      "path": "supermemory/records/characters/mise-035-canary-judge.json",
+      "sha256": "e83c22302673a9f195ac61a4b4062c86f7f0f7c2004dc6829b6113b8f480e091",
+      "bytes": 2802
+    },
+    {
+      "path": "supermemory/records/characters/mise-036-alert-akira.json",
+      "sha256": "afd950d061d1197f1c3d5f34e33145105681aaf9cd14ee176cc3d401a4486070",
+      "bytes": 2821
+    },
+    {
+      "path": "supermemory/records/characters/mise-037-pager-hiro.json",
+      "sha256": "ce0091b22af32310c53fbbef4267dfce96a3255aaa6c5fe7cc9a7a54d5708042",
+      "bytes": 2810
+    },
+    {
+      "path": "supermemory/records/characters/mise-038-oncall-naomi.json",
+      "sha256": "deee6bf415b594a8ef6b1397d80dd6a3ea22d839f2bebc826a8b9068099392e1",
+      "bytes": 2830
+    },
+    {
+      "path": "supermemory/records/characters/mise-039-review-ren.json",
+      "sha256": "207392c20cd761c451e656d53a884398ebb6dcea8ae7a273f067c22b3b32e967",
+      "bytes": 2804
+    },
+    {
+      "path": "supermemory/records/characters/mise-040-backlog-benji.json",
+      "sha256": "158f1489e079c425c6b062da9174a00e7577f45f78aa12a73343864f33434d17",
+      "bytes": 2845
+    },
+    {
+      "path": "supermemory/records/characters/mise-041-metrics-miko.json",
+      "sha256": "7cfe53d8d93491da94a7046a099f60b88fda0c21961a57e5887ea010902b3f00",
+      "bytes": 2812
+    },
+    {
+      "path": "supermemory/records/characters/mise-042-forecast-fuji.json",
+      "sha256": "0d9eb4910c9840018e73a654189bd4dad4eed5fdc763c7b3f6233d139e495e62",
+      "bytes": 2823
+    },
+    {
+      "path": "supermemory/records/characters/mise-043-resilience-ryu.json",
+      "sha256": "0bbfbd421bfc8488c3648b6c2a648ec13497f454678251cca50f9ad392b7e04d",
+      "bytes": 2842
+    },
+    {
+      "path": "supermemory/records/characters/mise-044-impact-ichi.json",
+      "sha256": "819d452cf92b76ba03395218f2a283804359e23981e8a49a9b55732d380d7d08",
+      "bytes": 2823
+    },
+    {
+      "path": "supermemory/records/characters/mise-045-reliability-sensei.json",
+      "sha256": "08cfe7a8de68c1a5b3114fb55a24da7eec29c0d50672e150272022fdcda3f0cf",
+      "bytes": 2882
+    },
+    {
+      "path": "supermemory/records/characters/mise-046-threat-taro.json",
+      "sha256": "9771db675e636754e8e5205a265bfc9ec6f1ef7e83735f036621decc758d5105",
+      "bytes": 2810
+    },
+    {
+      "path": "supermemory/records/characters/mise-047-secure-sakura.json",
+      "sha256": "9ff8ced8063a64cd0af6d7fd7d6762231ae66eb3769cbd8e0c956113847a93d1",
+      "bytes": 2828
+    },
+    {
+      "path": "supermemory/records/characters/mise-048-token-toshi.json",
+      "sha256": "a7b94003521ce707954b25bf7aae2eca0aa493251854ff4649b13cd4fb4d7f4c",
+      "bytes": 2812
+    },
+    {
+      "path": "supermemory/records/characters/mise-049-cve-kumo.json",
+      "sha256": "e6f5ddecd51a54c01918eb27ba69954de042c52825d7db6b272da08cefd5a191",
+      "bytes": 2779
+    },
+    {
+      "path": "supermemory/records/characters/mise-050-container-kage.json",
+      "sha256": "2ae70a06a38cb579cf58d0f4781a5bdd54c27c07d8056e15d6716d1560c01c39",
+      "bytes": 2847
+    },
+    {
+      "path": "supermemory/records/characters/mise-051-seira-vaultkeeper.json",
+      "sha256": "f666ab64204ebe44edb568d1d29f6504b9605786510dd3e170534e6153b0ff25",
+      "bytes": 2870
+    },
+    {
+      "path": "supermemory/records/characters/mise-052-policy-ronin.json",
+      "sha256": "b7946bfffae8faf464c3ea7c6350bbee985487547e939f8561d2ce58f8b3d0b7",
+      "bytes": 2817
+    },
+    {
+      "path": "supermemory/records/characters/mise-053-merge-sentinel.json",
+      "sha256": "82cdcaf6b71329e9e98e7e22c1332da8ba7323fc3bd1fbd111752e2f0d856c96",
+      "bytes": 2833
+    },
+    {
+      "path": "supermemory/records/characters/mise-054-watchtower-yoru.json",
+      "sha256": "313f1f56d441755eab8e3d9c4564a1b338883c7876d3e07efe2a665d7ecea8c9",
+      "bytes": 2846
+    },
+    {
+      "path": "supermemory/records/characters/mise-055-auditor-emi.json",
+      "sha256": "12301d51148b0a8d6435643e25a9fc87a853209c6f8b67146027b56e40c09178",
+      "bytes": 2808
+    },
+    {
+      "path": "supermemory/records/characters/mise-056-incident-kitsune.json",
+      "sha256": "d5472bd61163cf900be9b7aaa0b3d6fe1fce8c003b27fbe24dc4c9f4446ea3aa",
+      "bytes": 2859
+    },
+    {
+      "path": "supermemory/records/characters/mise-057-evidence-scribe.json",
+      "sha256": "8d6cd43db206302379ae66a6c3844e5a87d00a54a5690345e64a2ee0117ab13b",
+      "bytes": 2854
+    },
+    {
+      "path": "supermemory/records/characters/mise-058-nudge-neko.json",
+      "sha256": "5245c32efb4ee0e9fcd9bb047ef4601c1006fea9a8ea368f0568e959260d7756",
+      "bytes": 2799
+    },
+    {
+      "path": "supermemory/records/characters/mise-059-scorecard-shin.json",
+      "sha256": "dc663cf197be7d58003848add5f90737d691952a32166aeaa49fc806b0b31b06",
+      "bytes": 2823
+    },
+    {
+      "path": "supermemory/records/characters/mise-060-red-oni.json",
+      "sha256": "e19a8c3793cc39db4d4d673ca66c048c11aa4fec6b85e00f1b2bc69be3ca717c",
+      "bytes": 2782
+    },
+    {
+      "path": "supermemory/records/characters/mise-061-taxonomy-taka.json",
+      "sha256": "5227c7b8c3b020287dff8b963473ab72ef0f01a679c15fa332e98d64cc43ef17",
+      "bytes": 2840
+    },
+    {
+      "path": "supermemory/records/characters/mise-062-lake-haru.json",
+      "sha256": "a8133ea183f12de7d87a70da83a6843c3f1827f420a29acc07dc0508924641da",
+      "bytes": 2816
+    },
+    {
+      "path": "supermemory/records/characters/mise-063-lattice.json",
+      "sha256": "7c3197c02190ef2d1c20cadac2fc02fcb3856173e76e8a2c7739b762fad134ab",
+      "bytes": 2776
+    },
+    {
+      "path": "supermemory/records/characters/mise-064-repo-ranger.json",
+      "sha256": "deb50a1ef9eae8d2428fe39c9882af22e078158325cc29f49323463f96461238",
+      "bytes": 2818
+    },
+    {
+      "path": "supermemory/records/characters/mise-065-dora-daichi.json",
+      "sha256": "c1e3a5cbb25aff4d0e5559685b0c4a50e1c74d9561f95e3e20d4aa8fbe35e31f",
+      "bytes": 2828
+    },
+    {
+      "path": "supermemory/records/characters/mise-066-flag-fox.json",
+      "sha256": "becee8e08e01fe7be4b9ded33f5c07a660646e33cd2cca4f4a6d69918f228070",
+      "bytes": 2795
+    },
+    {
+      "path": "supermemory/records/characters/mise-067-cost-kaito.json",
+      "sha256": "4154daa87a5332e759e2fed36a510789e8622dc7c565f556faa80a167d8c9809",
+      "bytes": 2817
+    },
+    {
+      "path": "supermemory/records/characters/mise-068-dx-mei.json",
+      "sha256": "c05413c4aacfca6b4a4bad300510778637d622b5a0822585d48ef2fe5ed46473",
+      "bytes": 2797
+    },
+    {
+      "path": "supermemory/records/characters/mise-069-revenue-rina.json",
+      "sha256": "e8bcd5ce69514a48163195973810d1c2c8f83dacd050594d4d8d55ce68e250b4",
+      "bytes": 2860
+    },
+    {
+      "path": "supermemory/records/characters/mise-070-risk-ryota.json",
+      "sha256": "26e05330887c16af1e42ce4a728cb4426a0007cb30c62dd49f467f15c93394fb",
+      "bytes": 2801
+    },
+    {
+      "path": "supermemory/records/characters/mise-071-apprentice-kai.json",
+      "sha256": "695fe02462ced3abf2a8e157db9a5fe788d26361ace3442d8de4b0d2e338b561",
+      "bytes": 2851
+    },
+    {
+      "path": "supermemory/records/characters/mise-072-anomaly-aki.json",
+      "sha256": "b8a659be77667261bcd1ef1892f73c81249c1a064a35c2c5dbed9b6c80ddaee1",
+      "bytes": 2826
+    },
+    {
+      "path": "supermemory/records/characters/mise-073-leaderboard-leo.json",
+      "sha256": "085b4952d131f1c7229bbef34cc24ad1a024fa275118e22b644ff89161c23e97",
+      "bytes": 2862
+    },
+    {
+      "path": "supermemory/records/characters/mise-074-storyteller-sumi.json",
+      "sha256": "e75d359f08de8beaa3552172ce9a6cd736674d4ad05f2ebeb950f34474d42036",
+      "bytes": 2875
+    },
+    {
+      "path": "supermemory/records/characters/mise-075-roadmap-sensei.json",
+      "sha256": "24315f712256681ecd1026d3e1ef0f718888089cbd409c0d1267a52fd18d15df",
+      "bytes": 2865
+    },
+    {
+      "path": "supermemory/records/characters/mise-076-kurogami-senpai.json",
+      "sha256": "0e9d6d5fb0e4f0d7ac0de5e599308a98c70bc3914cf42b111f82b187b23d73e8",
+      "bytes": 2828
+    },
+    {
+      "path": "supermemory/records/characters/mise-077-tensho.json",
+      "sha256": "047105f41f0525f9974dab613462f9fcf05e628f99621e5a761caf2b3d433f1d",
+      "bytes": 2733
+    },
+    {
+      "path": "supermemory/records/characters/mise-078-mizu.json",
+      "sha256": "47406e66d2ab78b5f832952e416645de6eeb5446c3f561561f3be32d20a19bfd",
+      "bytes": 2717
+    },
+    {
+      "path": "supermemory/records/characters/mise-079-kaji.json",
+      "sha256": "8cdd48f802776e218f6007b4bc271b27c1f6244bce9663738d2f13cf8ad0636f",
+      "bytes": 2717
+    },
+    {
+      "path": "supermemory/records/characters/mise-080-yume.json",
+      "sha256": "e91451c8f4438b364c9c328cb9255d3afbe354ef70c10c31b5f7e9f57f47e71b",
+      "bytes": 2707
+    },
+    {
+      "path": "supermemory/records/characters/mise-081-null-chan.json",
+      "sha256": "27a41c3f84b04de17d6ad565b219a37dc6a5c85c29a2a872f73f97a45257db1b",
+      "bytes": 2765
+    },
+    {
+      "path": "supermemory/records/characters/mise-082-flash-riku.json",
+      "sha256": "a93bd322511b24a0a2930a52670489dd77ebbfae79bc0096c4d3f8eee5a4bf24",
+      "bytes": 2763
+    },
+    {
+      "path": "supermemory/records/characters/mise-083-seira.json",
+      "sha256": "c7fe5d7fbe46b7d0a6d551a17da473d0a5c5fada7b8de4b35b0ea374efa30675",
+      "bytes": 2718
+    },
+    {
+      "path": "supermemory/records/characters/mise-084-kuro-guard.json",
+      "sha256": "648e24728db77faa194f493223687ba8ccd1246bf7925169f32f31c8564305f9",
+      "bytes": 2765
+    },
+    {
+      "path": "supermemory/records/characters/mise-085-scale-oni.json",
+      "sha256": "c1e09f12ff7f79ffc3ed88e3e77f282ce56856609525c2682aae1ef6679d00ec",
+      "bytes": 2768
+    },
+    {
+      "path": "supermemory/records/characters/mise-086-build-kun.json",
+      "sha256": "d1651b6c73891c1693df7a970a95e5e258631b34ade5720c4e2a34f6572bcb58",
+      "bytes": 2752
+    },
+    {
+      "path": "supermemory/records/characters/mise-087-orchestra-core.json",
+      "sha256": "64c4fd53e24d6a1e13ae23aec542bb1ffcb8e7c32aa8cb4842b366aed4ea800c",
+      "bytes": 2811
+    },
+    {
+      "path": "supermemory/records/characters/mise-088-data-chan.json",
+      "sha256": "42047a6b75635daf883b0a5a21e4f002dfd070caa333b7893ccecf0b803ffa44",
+      "bytes": 2770
+    },
+    {
+      "path": "supermemory/records/characters/mise-089-insight-sensei.json",
+      "sha256": "bc461790f39247323a2314ba6537a06bfd4b7b11a1766d6e8dd64d474784085c",
+      "bytes": 2815
+    },
+    {
+      "path": "supermemory/records/characters/mise-090-chaos-analyst.json",
+      "sha256": "6e1330244a3d2d768c926b0b520092d862e6fce626d70e685b9c785c78dc8b8b",
+      "bytes": 2812
+    },
+    {
+      "path": "supermemory/records/characters/mise-091-growth-guru.json",
+      "sha256": "3c689dcfb23471a22e03a65804f61d0f8ba30aa41660a5c8756ce9e009e886d1",
+      "bytes": 2790
+    },
+    {
+      "path": "supermemory/records/characters/mise-092-culture-chef.json",
+      "sha256": "ac1154fd5d1ffc890f7a7644e37b31184a4ecc85d193c2826f994a1b3d2e0e77",
+      "bytes": 2801
+    },
+    {
+      "path": "supermemory/records/characters/mise-093-velvet-vesper.json",
+      "sha256": "1a1dbd6510a8e248749e8401eef59c464a614a422738348624b31690d004ea08",
+      "bytes": 2820
+    },
+    {
+      "path": "supermemory/records/characters/mise-094-flavor-forager.json",
+      "sha256": "d7fd8bafb8578adb5856a545ce6718bf902e240ac7aeb86f23fef0a6ec293bce",
+      "bytes": 2831
+    },
+    {
+      "path": "supermemory/records/characters/mise-095-crate-courier.json",
+      "sha256": "d81cf51c0e62d1c6c19f77537622d8cd7611c8e54bebf9a0c41f0dd0245ef824",
+      "bytes": 2824
+    },
+    {
+      "path": "supermemory/records/characters/mise-096-ledger-ladle.json",
+      "sha256": "af6277514a09910879a74bd716d3eb5f5449f45cb04225d07aa0669a99cd19f4",
+      "bytes": 2805
+    },
+    {
+      "path": "supermemory/records/characters/mise-097-beacon-broil.json",
+      "sha256": "13276bf1fe7e8f9356f9080f87da5a57a8d7dac55609db7d221c117dc688c62d",
+      "bytes": 2813
+    },
+    {
+      "path": "supermemory/records/characters/mise-098-ladle-lumen.json",
+      "sha256": "351271d725ac55ef85bceee785a90aa0cf2bd64f14ecb828676353437d569623",
+      "bytes": 2796
+    },
+    {
+      "path": "supermemory/records/characters/mise-099-reserve-rune.json",
+      "sha256": "c27d2c9f94ee9a81182a2c1871bbec931b6550966663e640c4b11d6f750219f3",
+      "bytes": 2813
+    },
+    {
+      "path": "supermemory/records/characters/mise-100-vacuum-vesper.json",
+      "sha256": "2be22e9d4e2399e91913e111c24514d83ff752eb9775d6db408be9fc0babb57d",
+      "bytes": 2813
+    },
+    {
+      "path": "supermemory/records/characters/mise-101-flavor-scribe.json",
+      "sha256": "f1a14dfd06297b988f68ba31247af0a8de84d7c689be0c18b1a1ea0fd59dca30",
+      "bytes": 2815
+    },
+    {
+      "path": "supermemory/records/characters/mise-102-prep-pulse.json",
+      "sha256": "b556c397ba974601173884e189bc07a1093fc4f2636b3dfe478ef3f82d2cb788",
+      "bytes": 2788
+    },
+    {
+      "path": "supermemory/records/characters/mise-103-queue-quartz.json",
+      "sha256": "7a99c479dee2dac24d8a8b30f829810c17e3a534a7452c3aad4edf6dd3654893",
+      "bytes": 2808
+    },
+    {
+      "path": "supermemory/records/characters/mise-104-harvest-hex.json",
+      "sha256": "0d1ebab9570e6b97d8928b4953bcbfd669d10be1ff5f10537e6a9c3ec0f3094e",
+      "bytes": 2817
+    },
+    {
+      "path": "supermemory/records/characters/mise-105-garnish-ghost.json",
+      "sha256": "11cf5cd68f351b9f35589d6c4b423116b94abed81c08e39ac0d89b05afbe13cd",
+      "bytes": 2817
+    },
+    {
+      "path": "supermemory/records/characters/mise-106-pantry-paladin.json",
+      "sha256": "04bb9e847aa009c0a7213efb24d278a12a91bc81d69d20257502f6e1d0a46116",
+      "bytes": 2834
+    },
+    {
+      "path": "supermemory/records/characters/mise-107-ticket-tactician.json",
+      "sha256": "d29ff9eabda5cdfe6b1615615d9cedc1a6303b9e8df0e95364be292928931e62",
+      "bytes": 2850
+    },
+    {
+      "path": "supermemory/records/characters/mise-108-plate-inspector.json",
+      "sha256": "22201dd4723bd3bf9c1edb54537719eba1aee7177276f2a8c191e2b5ea87d532",
+      "bytes": 2835
+    },
+    {
+      "path": "supermemory/records/characters/mise-109-timer-tactician.json",
+      "sha256": "0346834752a45a7f3f1cfa3c32fba9178249ea097725af1ff21795c5b002e347",
+      "bytes": 2831
+    },
+    {
+      "path": "supermemory/records/characters/mise-110-recipe-ranger.json",
+      "sha256": "230665b6df5e04e90d1d16d8d9ffc1bd9a16fa2a21342649064bd36e957368d3",
+      "bytes": 2831
+    },
+    {
+      "path": "supermemory/records/characters/mise-111-portion-paladin.json",
+      "sha256": "f26711674f7f5c6a2d69f8f5bb084cc73e43ec5450e3f9940357362611c4a611",
+      "bytes": 2839
+    },
+    {
+      "path": "supermemory/records/characters/mise-112-allergen-oracle.json",
+      "sha256": "a7434872cbe446c1d5e6e17c4488051b8fba1bb6f648c86b0ab07258c2b04f03",
+      "bytes": 2841
+    },
+    {
+      "path": "supermemory/records/conflicts/TEMPLATE-conflict-record.json",
+      "sha256": "c8e8b9941e6c90443801122b215b757c9077027ecf25a15e717d5f05afc159b6",
+      "bytes": 1403
+    },
+    {
+      "path": "supermemory/records/conversations/TEMPLATE-working-conversation.json",
+      "sha256": "1019eb448a31422f19682c4eee469561709e328349337518c739bad4505ed7eb",
+      "bytes": 1427
+    },
+    {
+      "path": "supermemory/records/factions/factions-and-relationships-v1.json",
+      "sha256": "29a92f8c06cc4cba39ac58436635190b38f70aff0748c494d9465162c0ede24b",
+      "bytes": 23385
+    },
+    {
+      "path": "supermemory/records/governance/mise-core-governance-v1.json",
+      "sha256": "4482ad9c0eb01b55a19eb269db3eaf1804221384efc3d7b50d384c8e3be5673c",
+      "bytes": 1904
+    },
+    {
+      "path": "supermemory/records/proposals/TEMPLATE-proposed-change.json",
+      "sha256": "624be705aebd872f821a95978a32c629d24334757eb314f742dced8ae9973384",
+      "bytes": 1407
+    },
+    {
+      "path": "supermemory/records/registry-separation/registry-separation-v1.json",
+      "sha256": "5589b03a550e138785bdb5312ba8196cc43c3d19c698805f9074108c58a33927",
+      "bytes": 5891
+    },
+    {
+      "path": "supermemory/records/roster/character-roster-v1.json",
+      "sha256": "f68bd1f83c56db9d47fce7f51ecb460bc1a5796979bf801243f591d8120255f3",
+      "bytes": 27203
+    },
+    {
+      "path": "supermemory/records/visual-guides/visual-guides-v1.json",
+      "sha256": "0123ee11a284c731bb536175218c32bb7ea3de5a51a35eb9ef74596af75f00e9",
+      "bytes": 51981
+    },
+    {
+      "path": "supermemory/schemas/character-canon.schema.json",
+      "sha256": "0d9278a4b845b01d29862467c62a961d5a57f875a5c5c414497d983d2d2a9034",
+      "bytes": 915
+    },
+    {
+      "path": "supermemory/schemas/supermemory-record.schema.json",
+      "sha256": "6ddfcac7b78a4cd6d3d081a996b381b2dc9213e4b38938702627bb9b15f843ab",
+      "bytes": 1931
+    },
+    {
+      "path": "supermemory/scripts/common.mjs",
+      "sha256": "6d566dbd8fec7695ab88ebead6f2fb2794e85fb4c670538e0fc8fd55ad26e037",
+      "bytes": 1292
+    },
+    {
+      "path": "supermemory/scripts/ingest.mjs",
+      "sha256": "268ec95af6f988ff2f4f03a408b5a4617bf42826fb7e92254511d40464565453",
+      "bytes": 955
+    },
+    {
+      "path": "supermemory/scripts/profile.mjs",
+      "sha256": "88d2a84f909c2d5a98224541983a4ff8ca8df015088ce079d49cf2d2e9f13365",
+      "bytes": 308
+    },
+    {
+      "path": "supermemory/scripts/promote.mjs",
+      "sha256": "4744c73d9a2a0ad5fc33ca5a9974357bc5411abf3d749e3ae735f953be7014dc",
+      "bytes": 1211
+    },
+    {
+      "path": "supermemory/scripts/validate.mjs",
+      "sha256": "3f24a953d0d0506c741e1f39f3cde26c9aac1086a6b0933b9bc0d08cbf785936",
+      "bytes": 1133
+    }
+  ]
+}

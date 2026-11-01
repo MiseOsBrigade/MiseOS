@@ -1,0 +1,12 @@
+[
+  {"name":"Orchestra Core","role":"System Consciousness","department":"Executive"},
+  {"name":"Kurogami","role":"Agent Director and platform mascot","department":"Executive"},
+  {"name":"Kuro Guard","role":"Security","department":"Executive"},
+  {"name":"Seira","role":"Vault","department":"Executive"},
+  {"name":"Human Liaison","role":"Approvals","department":"Executive"},
+  {"name":"Audit Sensei","role":"Governance","department":"Executive"},
+  {"name":"Root Chef","role":"System Administration","department":"Executive"},
+  {"name":"Steward Prime","role":"Operations","department":"Executive"},
+  {"name":"Policy Monk","role":"Policy Engine","department":"Executive"},
+  {"name":"Conductor","role":"Workflow Director","department":"Executive"}
+]

@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-042",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-042\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-042\",\n    \"number\": 42,\n    \"name\": \"Forecast Fuji\",\n    \"slug\": \"forecast-fuji\"\n  },\n  \"classification\": {\n    \"department\": \"Reliability Kitchen\",\n    \"department_code\": \"reliability\",\n    \"role\": \"Capacity Planner\",\n    \"rarity\": \"Common\",\n    \"level\": 17\n  },\n  \"command\": \"MISE CAPACITY PLANNER\",\n  \"stats\": {\n    \"power\": 70,\n    \"precision\": 74,\n    \"speed\": 66,\n    \"resilience\": 72,\n    \"intelligence\": 67,\n    \"teamwork\": 70\n  },\n  \"media\": {\n    \"image\": \"assets/images/042-forecast-fuji.svg\",\n    \"metadata\": \"metadata/042-forecast-fuji.json\",\n    \"animation\": \"media/animation/042-forecast-fuji.mp4\",\n    \"model_3d\": \"media/models/042-forecast-fuji.glb\",\n    \"audio\": \"media/audio/042-forecast-fuji.mp3\",\n    \"ar\": \"media/ar/042-forecast-fuji.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"user_supplied_roster\",\n    \"confidence\": \"high\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-042",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-042",
+    "character_slug": "forecast-fuji",
+    "department_code": "reliability",
+    "rarity": "Common",
+    "level": 17,
+    "source_file": "cards-catalog.json"
+  }
+}
