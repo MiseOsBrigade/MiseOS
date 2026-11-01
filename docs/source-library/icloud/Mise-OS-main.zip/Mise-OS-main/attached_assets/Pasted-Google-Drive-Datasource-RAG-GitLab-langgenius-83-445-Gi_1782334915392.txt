@@ -1,0 +1,142 @@
+Google Drive Datasource
+RAG
+GitLab
+langgenius
+·
+83,445
+GitLab Project Datasource - Access projects, issues, merge requests, and files
+RAG
+Firecrawl
+langgenius
+·
+64,896
+Firecrawl Datasource
+RAG
+Notion
+langgenius
+·
+63,457
+Notion Datasource
+RAG
+Jina Reader
+langgenius
+·
+44,851
+Jina Reader Datasource
+RAG
+GitHub
+langgenius
+·
+16,929
+GitHub Repository Datasource - Access repositories, issues, PRs, and wiki pages
+RAG
+SharePoint
+langgenius
+·
+9,736
+SharePoint Datasource
+RAG
+Confluence
+langgenius
+·
+8,764
+Confluence Datasource
+RAG
+Tavily
+langgenius
+·
+8,434
+Tavily Search & Extract Datasource
+RAG
+OneDrive
+langgenius
+·
+7,199
+OneDrive Datasource
+RAG
+AWS S3 Storage
+langgenius
+·
+4,529
+AWS S3 Storage Datasource
+RAG
+Tencent COS Storage
+langgenius
+·
+3,063
+Tencent Cloud COS Storage Datasource
+Google Cloud Storage
+langgenius
+·
+2,790
+Google Cloud Storage Datasource
+RAG
+minio_s3_storage
+shenfor
+·
+2,208
+This plugin integrates with minio, enabling automatic access to your minio buckets and objects. It supports browsing files and folders within your minio bucket and can directly download files for use on platforms like Dify.
+Azure Blob Storage
+langgenius
+·
+2,201
+Azure Blob Storage Datasource - Access containers, blobs, and files with multiple authentication methods
+RAG
+Box Datasource
+langgenius
+·
+1,791
+Box Datasource
+RAG
+Watercrawl
+watercrawl
+·
+1,630
+Watercrawl Datasource
+Dropbox
+langgenius
+·
+1,217
+Dropbox Datasource
+RAG
+Bright Data Web Scraper
+langgenius
+·
+1,010
+Unlock the entire web with enterprise-grade scraping - extract data from any website, bypass anti-bot protection, and access structured data from 50+ platforms including Amazon, LinkedIn, Instagram, and more.
+RAG
+Rustfs S3 Storage Provider
+shenfor
+·
+542
+This plugin integrates with Rustfs, enabling automatic access to your Rustfs buckets and objects. It supports browsing files and folders within your Rustfs bucket and can directly download files for use on platforms like Dify.
+Cloudflare R2 Storage
+aopstudio
+·
+525
+Cloudflare R2 Storage Datasource
+kintone attachment datasource
+r3-yamauchi
+·
+207
+Expose kintone app attachments as a Dify online drive datasource, querying records and serving each file for download.
+RAG
+gokuai yunku
+gokuai
+·
+171
+gokuai yunku Datasource
+RAG
+WebDAV
+shaba
+·
+96
+Browse and ingest files from any WebDAV server (Nextcloud, ownCloud, …)
+RAG
+Litecrawl
+shaba
+·
+55
+Crawl static documentation sites and wikis (VitePress, MkDocs, Docusaurus, Sphinx, MediaWiki, ...) into clean per-page markdown.
+RAG
+Forgejo Repository

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "pkg_free",
+    "name": "MiseOS GridOps Free",
+    "customer": "solo explorers and demos",
+    "monthlyPriceUsd": 0,
+    "reposIncluded": 3,
+    "agentRunsIncluded": 25,
+    "features": [
+      "Manual repo grid",
+      "Basic repo inventory",
+      "Basic task tabs",
+      "CSV import/export",
+      "Demo agent simulation",
+      "Limited evidence cards"
+    ],
+    "upsellTrigger": "User wants GitHub sync, autonomous PRs, or more repos"
+  },
+  {
+    "id": "pkg_builder_pro",
+    "name": "Builder Pro",
+    "customer": "solo developers and technical founders",
+    "monthlyPriceUsd": 29,
+    "annualPriceUsd": 290,
+    "reposIncluded": 25,
+    "agentRunsIncluded": 500,
+    "features": [
+      "GitHub repo sync",
+      "CI failure summaries",
+      "RAG search across repo/docs/issues",
+      "Package drift detection",
+      "Agent simulation lab",
+      "Evidence Vault",
+      "Basic PR generation",
+      "Model-cost dashboard"
+    ],
+    "upsellTrigger": "User needs team workspace, shared permissions, or audit logs"
+  },
+  {
+    "id": "pkg_team_ops",
+    "name": "Team Ops",
+    "customer": "small engineering teams, agencies, internal tools teams",
+    "monthlyPriceUsd": 149,
+    "annualPriceUsd": 1490,
+    "reposIncluded": 100,
+    "agentRunsIncluded": 5000,
+    "features": [
+      "Shared GridOps workspace",
+      "GitHub + Linear sync",
+      "Autonomous PR Steward",
+      "Registry Sentinel",
+      "Secret Hygiene Sentinel",
+      "Workflow builder",
+      "Approval gates",
+      "Team audit logs",
+      "Agent permissions",
+      "Repo City visualization"
+    ],
+    "upsellTrigger": "User needs SSO, private deployment, custom model routing, or compliance exports"
+  },
+  {
+    "id": "pkg_enterprise_governance",
+    "name": "Enterprise Governance",
+    "customer": "regulated teams, platform orgs, AI governance teams",
+    "monthlyPriceUsd": "custom",
+    "reposIncluded": "custom",
+    "agentRunsIncluded": "custom",
+    "features": [
+      "SSO/SAML",
+      "RBAC",
+      "Private deployment",
+      "Dedicated workers",
+      "Custom model routing",
+      "Compliance exports",
+      "Org-wide repo graph",
+      "Advanced prompt-injection guardrails",
+      "Custom agent policies",
+      "Full Evidence Vault audit trail"
+    ],
+    "upsellTrigger": "Dedicated support, professional services, custom integration"
+  },
+  {
+    "id": "addon_registry_sentinel",
+    "name": "Registry Sentinel Add-on",
+    "customer": "SDK, package, and platform teams",
+    "monthlyPriceUsd": 49,
+    "features": [
+      "npm/GHCR/Docker/Maven/Gradle/NuGet/RubyGems monitoring",
+      "Version drift alerts",
+      "Release readiness reports",
+      "Package publish checklist"
+    ]
+  },
+  {
+    "id": "addon_secret_quarantine",
+    "name": "Secret Quarantine Add-on",
+    "customer": "security-conscious teams",
+    "monthlyPriceUsd": 79,
+    "features": [
+      "Secret event tracking",
+      "Redacted evidence records",
+      "Git history exposure flags",
+      "Rotation recommendation workflow",
+      ".gitignore hardening"
+    ]
+  },
+  {
+    "id": "addon_metaverse_playground",
+    "name": "Repo Metaverse Playground Add-on",
+    "customer": "demo-heavy teams, education, agencies, AI showcases",
+    "monthlyPriceUsd": 99,
+    "features": [
+      "Repo City",
+      "Agent Hangar",
+      "Package Forge",
+      "CI Dojo",
+      "Evidence Vault visual mode",
+      "Command Theater replays"
+    ]
+  }
+]

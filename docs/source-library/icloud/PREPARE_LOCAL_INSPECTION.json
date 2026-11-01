@@ -1,0 +1,28 @@
+{
+  "status": "prepared_local_no_generation_credits_used",
+  "total_agents": 92,
+  "job_counts": {
+    "chibi": 92,
+    "kawaii": 92,
+    "shimeji": 92,
+    "card-front": 53,
+    "card-back": 53
+  },
+  "rarity_counts": {
+    "Mythic": 17,
+    "Legendary": 3,
+    "Epic": 10,
+    "Rare": 23,
+    "Common": 39
+  },
+  "department_counts": {
+    "Data & Insight Kitchen": 15,
+    "Operations": 4,
+    "Pipeline": 19,
+    "Platform": 18,
+    "Reliability": 16,
+    "Security Kitchen": 15,
+    "Insights & Growth": 5
+  },
+  "note": "Excluded miseos-registry-catalog.csv from this prepare run to preserve the requested 92-character art roster; including it adds 20 registry/service records and makes 112 total."
+}

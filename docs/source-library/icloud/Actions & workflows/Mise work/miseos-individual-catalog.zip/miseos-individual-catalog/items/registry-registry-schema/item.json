@@ -1,0 +1,17 @@
+{
+  "id": "registry-registry-schema",
+  "category": "registry-capability",
+  "title": "MiseOS Registry Schema",
+  "description": "Executable baseline capability for MiseOS Registry Schema.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.registry-schema.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: registrySchema",
+    "Source status: active"
+  ]
+}

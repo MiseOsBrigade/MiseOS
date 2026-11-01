@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.082",
+  "number": 82,
+  "slug": "flash-riku",
+  "name": "Flash Riku",
+  "mise_name": "Flash Riku",
+  "codename": "FLASH_RIKU",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Deploy",
+  "job_name": "Deploy",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Deploy",
+    "avatar_path": "assets/characters/flash-riku/avatar.png",
+    "card_path": "assets/characters/flash-riku/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Flash Riku performs deploy within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Build-Kun",
+      "Alko Commit Chef",
+      "Bruno Blast-Radius"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 64,
+    "precision": 76,
+    "speed": 68,
+    "resilience": 67,
+    "intelligence": 71,
+    "teamwork": 68
+  },
+  "paths": {
+    "readme": "characters/flash-riku/README.md",
+    "metadata": "characters/flash-riku/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

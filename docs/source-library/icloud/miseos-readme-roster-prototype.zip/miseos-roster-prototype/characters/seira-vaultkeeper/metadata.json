@@ -1,0 +1,68 @@
+{
+  "id": "seira-vaultkeeper",
+  "number": 51,
+  "name": "Seira Vaultkeeper",
+  "miseName": "Mise SecretsLifecycleManager",
+  "codename": "chef.security.secrets-lifecycle-manager",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "genesis",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Secrets Lifecycle Manager",
+    "signaturePhrase": "Secrets Lifecycle Manager done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in secrets lifecycle manager so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen secrets lifecycle manager aura",
+    "silhouette": "multinational chibi DevOps chef carrying a key",
+    "tool": "key",
+    "spritePath": "/assets/characters/seira-vaultkeeper/full-body.png",
+    "cardPath": "/assets/characters/seira-vaultkeeper/card.png"
+  },
+  "workflow": {
+    "jobName": "Secrets Lifecycle Manager",
+    "roleName": "Secrets Lifecycle Manager microagent",
+    "summary": "Runs secrets lifecycle manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Container Kage",
+      "Policy Ronin",
+      "Seira Scan",
+      "Vault Hana"
+    ]
+  },
+  "stats": {
+    "power": 96,
+    "precision": 97,
+    "speed": 74,
+    "resilience": 84,
+    "intelligence": 75,
+    "teamwork": 92
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "seira-vaultkeeper",
+  "seasonOneCard": null,
+  "displayNumber": 51,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/seira-vaultkeeper",
+  "avatarSvg": "assets/characters/seira-vaultkeeper/avatar.svg",
+  "cardSvg": "assets/characters/seira-vaultkeeper/card.svg"
+}

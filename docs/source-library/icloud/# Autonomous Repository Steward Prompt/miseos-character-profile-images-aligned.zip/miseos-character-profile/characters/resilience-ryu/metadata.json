@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.043",
+  "number": 43,
+  "slug": "resilience-ryu",
+  "name": "Resilience Ryu",
+  "mise_name": "Resilience Ryu",
+  "codename": "RESILIENCE_RYU",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "Resilience Testing Loop",
+  "job_name": "Resilience Testing Loop",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "Resilience Testing Loop",
+    "avatar_path": "assets/characters/resilience-ryu/avatar.png",
+    "card_path": "assets/characters/resilience-ryu/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Resilience Ryu performs resilience testing loop within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Impact Ichi",
+      "Reliability Sensei",
+      "Null-chan"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 61,
+    "precision": 77,
+    "speed": 61,
+    "resilience": 65,
+    "intelligence": 77,
+    "teamwork": 86
+  },
+  "paths": {
+    "readme": "characters/resilience-ryu/README.md",
+    "metadata": "characters/resilience-ryu/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

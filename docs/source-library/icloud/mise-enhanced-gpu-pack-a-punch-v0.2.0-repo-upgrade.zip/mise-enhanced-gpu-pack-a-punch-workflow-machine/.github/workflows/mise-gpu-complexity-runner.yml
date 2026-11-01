@@ -1,0 +1,269 @@
+name: Mise GPU Complexity Runner
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled, ready_for_review]
+  push:
+    branches: [main, master, develop]
+  workflow_dispatch:
+    inputs:
+      enable_gpu:
+        description: "Run GPU lane on the configured ephemeral self-hosted runner"
+        required: true
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+      gpu_reason:
+        description: "Why GPU is needed for this run"
+        required: false
+        default: "manual complexity run"
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+
+concurrency:
+  group: mise-gpu-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  measurement-context:
+    name: A0 Measurement Context
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    outputs:
+      score: ${{ steps.measure.outputs.score }}
+      risk_level: ${{ steps.measure.outputs.risk_level }}
+      gpu_recommended: ${{ steps.measure.outputs.gpu_recommended }}
+      review_required: ${{ steps.measure.outputs.review_required }}
+      blocked: ${{ steps.measure.outputs.blocked }}
+      detected_stack: ${{ steps.measure.outputs.detected_stack }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+          persist-credentials: false
+
+      - name: Measure complexity and risk
+        id: measure
+        run: |
+          python3 scripts/mise/complexity_measure.py
+
+      - name: Upload measurement evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-measurement-context
+          path: mise-evidence/
+          retention-days: 14
+
+  risk-gate:
+    name: B1 Risk Gate
+    runs-on: ubuntu-latest
+    needs: [measurement-context]
+    timeout-minutes: 5
+
+    steps:
+      - name: Enforce policy
+        run: |
+          echo "score=${{ needs.measurement-context.outputs.score }}"
+          echo "risk=${{ needs.measurement-context.outputs.risk_level }}"
+          echo "gpu_recommended=${{ needs.measurement-context.outputs.gpu_recommended }}"
+          if [[ "${{ needs.measurement-context.outputs.blocked }}" == "true" ]]; then
+            echo "::error::Mise policy blocked this run. Review the measurement artifact."
+            exit 1
+          fi
+
+  cpu-quality-stack:
+    name: C2 CPU Quality Stack
+    runs-on: ubuntu-latest
+    needs: [risk-gate, measurement-context]
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Python quality
+        if: contains(needs.measurement-context.outputs.detected_stack, 'python')
+        run: |
+          python3 -m pip install --upgrade pip
+          if [[ -f requirements.txt ]]; then python3 -m pip install -r requirements.txt; fi
+          if [[ -f requirements-dev.txt ]]; then python3 -m pip install -r requirements-dev.txt; fi
+          if [[ -f pyproject.toml ]]; then python3 -m pip install -e ".[dev]" || python3 -m pip install -e . || true; fi
+          python3 -m compileall . || exit 1
+          if python3 - <<'PY'
+          import importlib.util
+          raise SystemExit(0 if importlib.util.find_spec("pytest") else 1)
+          PY
+          then
+            python3 -m pytest -q
+          else
+            echo "pytest not installed; compile-only Python check completed."
+          fi
+
+      - name: Node quality
+        if: contains(needs.measurement-context.outputs.detected_stack, 'node')
+        run: |
+          if [[ -f package-lock.json ]]; then npm ci; else npm install; fi
+          npm test --if-present
+          npm run build --if-present
+
+      - name: Go quality
+        if: contains(needs.measurement-context.outputs.detected_stack, 'go')
+        run: |
+          go test ./...
+
+      - name: Rust quality
+        if: contains(needs.measurement-context.outputs.detected_stack, 'rust')
+        run: |
+          cargo test --locked || cargo test
+
+      - name: Java quality
+        if: contains(needs.measurement-context.outputs.detected_stack, 'java')
+        run: |
+          if [[ -f pom.xml ]]; then mvn -B verify; elif [[ -f gradlew ]]; then ./gradlew check; elif [[ -f build.gradle ]]; then gradle check; fi
+
+      - name: C/C++ syntax build probe
+        if: contains(needs.measurement-context.outputs.detected_stack, 'cpp')
+        run: |
+          if [[ -f CMakeLists.txt ]]; then
+            cmake -S . -B build
+            cmake --build build --parallel 2
+          elif [[ -f Makefile ]]; then
+            make -j2
+          else
+            echo "C/C++ detected but no CMakeLists.txt or Makefile found."
+          fi
+
+  gpu-complexity-stack:
+    name: D3 GPU Complexity Stack
+    needs: [risk-gate, measurement-context]
+    if: >
+      (github.event_name == 'workflow_dispatch' && inputs.enable_gpu == 'true') ||
+      (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'gpu-ok'))
+    runs-on: [self-hosted, linux, x64, gpu, mise-gpu-ephemeral]
+    timeout-minutes: 45
+
+    permissions:
+      contents: read
+      actions: read
+
+    env:
+      MISE_GPU_REASON: ${{ inputs.gpu_reason || 'pr-label-or-manual-gpu-run' }}
+      MISE_GPU_CONTAINER_SMOKE: "false"
+      MISE_GPU_CONTAINER_IMAGE: "nvidia/cuda:12.4.1-base-ubuntu22.04"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: GPU preflight
+        run: bash scripts/mise/gpu_preflight.sh
+
+      - name: GPU smoke test
+        run: python3 scripts/mise/gpu_smoke_test.py
+
+      - name: Optional GPU container smoke
+        if: env.MISE_GPU_CONTAINER_SMOKE == 'true'
+        run: |
+          docker run --rm --gpus all "${MISE_GPU_CONTAINER_IMAGE}" nvidia-smi
+
+      - name: GPU-aware Python tests
+        if: contains(needs.measurement-context.outputs.detected_stack, 'python')
+        run: |
+          if [[ -f requirements.txt ]]; then python3 -m pip install -r requirements.txt; fi
+          if [[ -f requirements-dev.txt ]]; then python3 -m pip install -r requirements-dev.txt; fi
+          if python3 - <<'PY'
+          import importlib.util
+          raise SystemExit(0 if importlib.util.find_spec("pytest") else 1)
+          PY
+          then
+            python3 -m pytest -q -m "gpu" || echo "::warning::No passing GPU-marked pytest lane or no gpu marker configured."
+          fi
+
+      - name: Emit final evidence
+        if: always()
+        run: python3 scripts/mise/emit_evidence.py
+
+      - name: Upload GPU evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-gpu-evidence
+          path: mise-evidence/
+          retention-days: 14
+
+  evidence-report:
+    name: E4 Evidence Report
+    runs-on: ubuntu-latest
+    needs: [measurement-context, risk-gate, cpu-quality-stack, gpu-complexity-stack]
+    if: always()
+    timeout-minutes: 10
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Download measurement evidence
+        uses: actions/download-artifact@v4
+        with:
+          name: mise-measurement-context
+          path: mise-evidence
+        continue-on-error: true
+
+      - name: Download GPU evidence when present
+        uses: actions/download-artifact@v4
+        with:
+          name: mise-gpu-evidence
+          path: mise-evidence/gpu
+        continue-on-error: true
+
+      - name: Build report body
+        id: report
+        run: |
+          if [[ -f mise-evidence/mise-measurement.md ]]; then
+            {
+              echo 'body<<EOF'
+              cat mise-evidence/mise-measurement.md
+              echo ''
+              echo '---'
+              echo 'GPU lane only runs on manual dispatch or `gpu-ok` PR label.'
+              echo 'EOF'
+            } >> "$GITHUB_OUTPUT"
+          else
+            {
+              echo 'body<<EOF'
+              echo '# Mise Measurement Evidence'
+              echo ''
+              echo 'No measurement artifact found.'
+              echo 'EOF'
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `${{ steps.report.outputs.body }}`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });

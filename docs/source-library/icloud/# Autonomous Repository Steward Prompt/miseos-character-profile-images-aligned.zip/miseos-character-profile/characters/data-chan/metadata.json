@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.088",
+  "number": 88,
+  "slug": "data-chan",
+  "name": "Data-chan",
+  "mise_name": "Data-chan",
+  "codename": "DATA_CHAN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Collect",
+  "job_name": "Collect",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Collect",
+    "avatar_path": "assets/characters/data-chan/avatar.png",
+    "card_path": "assets/characters/data-chan/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Data-chan performs collect within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Insight Sensei",
+      "Chaos Analyst",
+      "Growth Guru"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 81,
+    "precision": 78,
+    "speed": 63,
+    "resilience": 73,
+    "intelligence": 68,
+    "teamwork": 73
+  },
+  "paths": {
+    "readme": "characters/data-chan/README.md",
+    "metadata": "characters/data-chan/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

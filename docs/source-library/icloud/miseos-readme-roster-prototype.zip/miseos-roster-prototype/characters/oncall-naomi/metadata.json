@@ -1,0 +1,68 @@
+{
+  "id": "oncall-naomi",
+  "number": 38,
+  "name": "OnCall Naomi",
+  "miseName": "Mise OnCallRotationManager",
+  "codename": "chef.reliability.on-call-rotation-manager",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "common",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "On-Call Rotation Manager",
+    "signaturePhrase": "On-Call Rotation Manager done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in on-call rotation manager so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen on-call rotation manager aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/oncall-naomi/full-body.png",
+    "cardPath": "/assets/characters/oncall-naomi/card.png"
+  },
+  "workflow": {
+    "jobName": "On-Call Rotation Manager",
+    "roleName": "On-Call Rotation Manager microagent",
+    "summary": "Runs on-call rotation manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Pager Hiro",
+      "Review Ren",
+      "Iron Hashi",
+      "Grafana Mei"
+    ]
+  },
+  "stats": {
+    "power": 74,
+    "precision": 75,
+    "speed": 84,
+    "resilience": 70,
+    "intelligence": 95,
+    "teamwork": 76
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "oncall-naomi",
+  "seasonOneCard": null,
+  "displayNumber": 38,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/oncall-naomi",
+  "avatarSvg": "assets/characters/oncall-naomi/avatar.svg",
+  "cardSvg": "assets/characters/oncall-naomi/card.svg"
+}

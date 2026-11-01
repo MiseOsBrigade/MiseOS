@@ -1,0 +1,14 @@
+{
+  "gate": "D3 supply-chain-scan",
+  "ok": true,
+  "critical": false,
+  "results": [
+    {
+      "command": "npm audit",
+      "ok": true,
+      "status": 0,
+      "stdout": "Skipped: package-lock.json not present.",
+      "stderr": ""
+    }
+  ]
+}

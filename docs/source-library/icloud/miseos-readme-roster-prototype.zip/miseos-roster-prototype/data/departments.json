@@ -1,0 +1,56 @@
+{
+  "pipeline": {
+    "label": "Pipeline Kitchen",
+    "short": "Pipeline",
+    "tagline": "Build. Test. Deploy. Repeat.",
+    "verbs": "Code \u00b7 Build \u00b7 Test \u00b7 Deploy \u00b7 Monitor",
+    "color": "#E97822",
+    "accent": "#F97316",
+    "brief": "Moves change safely from commit to production."
+  },
+  "platform": {
+    "label": "Platform Kitchen",
+    "short": "Platform",
+    "tagline": "The stage where services live.",
+    "verbs": "Template \u00b7 Provision \u00b7 Route \u00b7 Scale \u00b7 Observe",
+    "color": "#2E6B4E",
+    "accent": "#22C55E",
+    "brief": "Provides golden paths, shared runtime foundations, and self-service portals."
+  },
+  "reliability": {
+    "label": "Reliability Kitchen",
+    "short": "Reliability",
+    "tagline": "Observe. Measure. Improve.",
+    "verbs": "SLO \u00b7 Trace \u00b7 Test \u00b7 Measure \u00b7 Recover",
+    "color": "#1B2A41",
+    "accent": "#0EA5E9",
+    "brief": "Keeps services measurable, resilient, and ready for incidents."
+  },
+  "security": {
+    "label": "Security Kitchen",
+    "short": "Security",
+    "tagline": "Guard. Audit. Comply.",
+    "verbs": "Threat Model \u00b7 Scan \u00b7 Gate \u00b7 Audit \u00b7 Approve",
+    "color": "#E5564B",
+    "accent": "#EF4444",
+    "brief": "Protects the kitchen from secrets leaks, bad inputs, and unsafe releases."
+  },
+  "data-insight": {
+    "label": "Data & Insight Kitchen",
+    "short": "Data & Insight",
+    "tagline": "Learn. Optimize. Evolve.",
+    "verbs": "Collect \u00b7 Analyze \u00b7 Learn \u00b7 Forecast \u00b7 Grow",
+    "color": "#A98BE0",
+    "accent": "#A855F7",
+    "brief": "Turns repository events into dashboards, forecasts, stories, and better decisions."
+  },
+  "operations": {
+    "label": "Operations Kitchen",
+    "short": "Operations",
+    "tagline": "Keep the kitchen running smoothly.",
+    "verbs": "Orchestrate \u00b7 Prepare \u00b7 Compute \u00b7 Scale \u00b7 Coordinate",
+    "color": "#D4AF37",
+    "accent": "#D4AF37",
+    "brief": "The mythic front line: planning, prep, scaling, and the spirit of service."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.011",
+  "number": 11,
+  "slug": "felix-rollback",
+  "name": "Felix Rollback",
+  "mise_name": "Felix Rollback",
+  "codename": "FELIX_ROLLBACK",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Rollback & Fix-Forward",
+  "job_name": "Rollback & Fix-Forward",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Rollback & Fix-Forward",
+    "avatar_path": "assets/characters/felix-rollback/avatar.png",
+    "card_path": "assets/characters/felix-rollback/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Felix Rollback performs rollback & fix-forward within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Tariq Notesmith",
+      "Ivun Cache",
+      "Canary Taster"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 81,
+    "precision": 80,
+    "speed": 65,
+    "resilience": 77,
+    "intelligence": 63,
+    "teamwork": 79
+  },
+  "paths": {
+    "readme": "characters/felix-rollback/README.md",
+    "metadata": "characters/felix-rollback/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

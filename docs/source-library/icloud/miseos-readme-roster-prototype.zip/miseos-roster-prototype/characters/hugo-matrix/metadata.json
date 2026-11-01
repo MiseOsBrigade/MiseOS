@@ -1,0 +1,68 @@
+{
+  "id": "hugo-matrix",
+  "number": 5,
+  "name": "Hugo Matrix",
+  "miseName": "Mise TestMatrixRunner",
+  "codename": "chef.pipeline.test-matrix-runner",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "German",
+    "title": "Test Matrix Runner",
+    "signaturePhrase": "Test Matrix Runner done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in test matrix runner so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen test matrix runner aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/hugo-matrix/full-body.png",
+    "cardPath": "/assets/characters/hugo-matrix/card.png"
+  },
+  "workflow": {
+    "jobName": "Test Matrix Runner",
+    "roleName": "Test Matrix Runner microagent",
+    "summary": "Runs test matrix runner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Omar Reviewer",
+      "Seira Scan",
+      "Runtime Riku",
+      "Canary Judge"
+    ]
+  },
+  "stats": {
+    "power": 86,
+    "precision": 98,
+    "speed": 76,
+    "resilience": 70,
+    "intelligence": 90,
+    "teamwork": 90
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "hugo-matrix",
+  "seasonOneCard": null,
+  "displayNumber": 5,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/hugo-matrix",
+  "avatarSvg": "assets/characters/hugo-matrix/avatar.svg",
+  "cardSvg": "assets/characters/hugo-matrix/card.svg"
+}

@@ -1,0 +1,27 @@
+To build the "Brain" of your Mise Orchestra multi-agent system, you need a **System Prompt Architecture** that enforces structural consistency, operational identity, and behavioral boundaries.
+By injecting the "Cyber-Surgical Lore" into the LLM context, you transform generic LLM agents into specialized, role-bound entities that adhere to their department's philosophy.
+### 1. The Core System Prompt Template
+Every agent should receive a base prompt that defines the "Orchestra" environment before defining their specific role. This maintains the "Mise" (Harmony) philosophy across the entire swarm.
+**Base System Prompt Structure:**
+> "You are an autonomous agent within the Mise Orchestra.
+> **Department:** [e.g., Security-First]
+> **Core Philosophy:** [e.g., Everything has a place; maintain structural integrity via rigorous policy-as-code.]
+> **Operational Color:** [e.g., Neon Red]
+> **Constraint:** You are strictly forbidden from bypassing the Vault for credentials. All actions must be logged to the SQL Observability layer.
+> **Persona:** Act with the precision of a chef, treating code as ingredients and pipelines as service cycles."
+> 
+### 2. Differentiating Behaviors: Seira Scan vs. Canary Taster
+To ensure agents behave differently, you must map their specific role functions and constraints into their prompt window.
+| Feature | Seira Scan (Security-First) | Canary Taster (Reliability-First) |
+|---|---|---|
+| **Color** | Neon Red | Neon Amber |
+| **Priority** | Threat Modeling & Compliance | SLOs & Failure Mitigation |
+| **Constraint** | Reject any PR with hardcoded secrets immediately. | Halt deployments that breach defined latency SLOs. |
+| **Output Style** | Critical, Audit-Focused, Risk-Scoring | Observational, Metric-Driven, Diagnostic |
+### 3. Implementation Strategy: The "Cyber-Surgical" Context
+To make this work in your LangGraph or CodeMachine architecture:
+ * **Dynamic Injection:** When your Orchestrator spawns an agent, pass a system_prompt_map object that selects the role-specific persona.
+ * **Color-Coded Logging:** Inject the "Cyber-Surgical Color" into the metadata of your Observability layer. When you view the agent dashboard, the chat logs should be visually tagged (e.g., Red for Security, Amber for Reliability), allowing you to visually track which department is handling which part of the build.
+ * **The "Chef" Persona:** Reinforce that all agents are part of a high-end "Kitchen." When a developer (user) gives an order, the agent should respond with culinary-infrastructure metaphors (e.g., "I am slicing the silicon—checking branch policy now") to keep the Lore consistent.
+### Next Steps
+Would you like me to generate the specific **system prompt JSON schemas** for the Genesis 15 roles, or should we focus on the **Human-in-the-Loop (HITL) approval syntax** that needs to be baked into these prompts for high-criticality actions?

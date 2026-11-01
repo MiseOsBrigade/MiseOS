@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mise Pack-a-Punch Policy",
+  "type": "object",
+  "required": [
+    "version",
+    "risk",
+    "quality",
+    "stackCoordinates"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "risk": {
+      "type": "object"
+    },
+    "quality": {
+      "type": "object"
+    },
+    "stackCoordinates": {
+      "type": "array"
+    }
+  }
+}

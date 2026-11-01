@@ -1,0 +1,77 @@
+{
+  "name": "MiseOS",
+  "subtitle": "The operating system for autonomous development",
+  "tagline": "Plan. Build. Launch. Grow.",
+  "colors": {
+    "obsidian": "#07090D",
+    "ink": "#101216",
+    "gold": "#D9A941",
+    "ember": "#E85D1B",
+    "cream": "#F5E9CD",
+    "teal": "#19C5C5",
+    "violet": "#7C3AED",
+    "green": "#54C889"
+  },
+  "characters": [
+    {
+      "id": "repo-pet",
+      "name": "MiseOS Repo Pet",
+      "role": "Repository Familiar",
+      "function": "watches source health, broken links, and drift"
+    },
+    {
+      "id": "sear-samurai",
+      "name": "Sear Samurai",
+      "role": "Quality Enforcer",
+      "function": "stress-tests runtime under heat, load, and pressure"
+    },
+    {
+      "id": "scale-oni",
+      "name": "Scale Oni",
+      "role": "Scale Guardian",
+      "function": "checks capacity, budgets, and growth limits"
+    },
+    {
+      "id": "repo-steward",
+      "name": "MiseOS Repo Steward",
+      "role": "Integrity Agent",
+      "function": "guards branches, history, and merge discipline"
+    },
+    {
+      "id": "release-sentinel",
+      "name": "MiseOS Release Sentinel",
+      "role": "Deployment Gatekeeper",
+      "function": "blocks unsafe launches and validates release readiness"
+    },
+    {
+      "id": "analytics-engine",
+      "name": "MiseOS Analytics Engine",
+      "role": "Insight Agent",
+      "function": "turns telemetry, sources, and workflow logs into decisions"
+    },
+    {
+      "id": "attestation-gate",
+      "name": "MiseOS Attestation Gate",
+      "role": "Policy Agent",
+      "function": "verifies identity, entitlement, and action authorization"
+    },
+    {
+      "id": "cli-package",
+      "name": "MiseOS CLI",
+      "role": "Command Agent",
+      "function": "executes repeatable scripts and registry commands"
+    },
+    {
+      "id": "docs-builder",
+      "name": "MiseOS Docs Builder",
+      "role": "Documentation Container",
+      "function": "builds docs, indexes, and repository maps"
+    },
+    {
+      "id": "chief-orchestrator",
+      "name": "Kurogami",
+      "role": "Chief Orchestrator",
+      "function": "coordinates product, prompts, apps, and growth"
+    }
+  ]
+}

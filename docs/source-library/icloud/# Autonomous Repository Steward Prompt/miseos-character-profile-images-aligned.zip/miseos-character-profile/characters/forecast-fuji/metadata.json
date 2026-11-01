@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.042",
+  "number": 42,
+  "slug": "forecast-fuji",
+  "name": "Forecast Fuji",
+  "mise_name": "Forecast Fuji",
+  "codename": "FORECAST_FUJI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "Capacity Planner",
+  "job_name": "Capacity Planner",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "Capacity Planner",
+    "avatar_path": "assets/characters/forecast-fuji/avatar.png",
+    "card_path": "assets/characters/forecast-fuji/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Forecast Fuji performs capacity planner within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Resilience Ryu",
+      "Impact Ichi",
+      "Reliability Sensei"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 70,
+    "precision": 74,
+    "speed": 66,
+    "resilience": 72,
+    "intelligence": 67,
+    "teamwork": 70
+  },
+  "paths": {
+    "readme": "characters/forecast-fuji/README.md",
+    "metadata": "characters/forecast-fuji/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

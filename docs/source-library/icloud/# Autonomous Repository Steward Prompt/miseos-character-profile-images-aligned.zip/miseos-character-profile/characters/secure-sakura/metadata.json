@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.047",
+  "number": 47,
+  "slug": "secure-sakura",
+  "name": "Secure Sakura",
+  "mise_name": "Secure Sakura",
+  "codename": "SECURE_SAKURA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Secure Template Library",
+  "job_name": "Secure Template Library",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Secure Template Library",
+    "avatar_path": "assets/characters/secure-sakura/avatar.png",
+    "card_path": "assets/characters/secure-sakura/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Secure Sakura performs secure template library within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Token Toshi",
+      "CVE Kumo",
+      "Container Kage"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 63,
+    "precision": 67,
+    "speed": 78,
+    "resilience": 62,
+    "intelligence": 79,
+    "teamwork": 71
+  },
+  "paths": {
+    "readme": "characters/secure-sakura/README.md",
+    "metadata": "characters/secure-sakura/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "tensho",
+  "slug": "tensho",
+  "number": 77,
+  "name": "Tensho",
+  "miseName": "Mise Task Flow",
+  "codename": "chef.pipeline.task-flow",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "rare",
+  "roleCategory": "task-flow",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Expediter",
+    "signaturePhrase": "Tensho keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Keeps the orders flowing. Chaos cannot stop the rush."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen Rush Ticket aura",
+    "silhouette": "chibi DevOps chef carrying Rush Ticket",
+    "tool": "Rush Ticket",
+    "spritePath": "/assets/characters/tensho/full-body.png",
+    "cardPath": "/assets/characters/tensho/card.png"
+  },
+  "workflow": {
+    "jobName": "Task Flow",
+    "roleName": "Expediter microagent",
+    "summary": "Keeps the orders flowing. Chaos cannot stop the rush.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Pipeline Sensei",
+      "Yume"
+    ]
+  },
+  "stats": {
+    "power": 73,
+    "precision": 84,
+    "speed": 86,
+    "resilience": 73,
+    "intelligence": 71,
+    "teamwork": 97
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "2",
+    "role": "Expediter",
+    "department": "Pipeline",
+    "function": "Task Flow",
+    "rarity": "Rare",
+    "tier": "Service Line",
+    "element": "Rush Ticket",
+    "ability": "Order Synchronizer",
+    "lore": "Keeps the orders flowing. Chaos cannot stop the rush.",
+    "image_file": "cards/png/002-tensho.png",
+    "metadata_file": "metadata/erc721/002-tensho.json"
+  },
+  "displayNumber": 77,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/tensho",
+  "avatarSvg": "assets/characters/tensho/avatar.svg",
+  "cardSvg": "assets/characters/tensho/card.svg"
+}

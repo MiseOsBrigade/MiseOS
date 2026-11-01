@@ -1,0 +1,17 @@
+{
+  "id": "registry-nuget-client",
+  "category": "registry-capability",
+  "title": "MiseOS NuGet Client",
+  "description": "Executable baseline capability for MiseOS NuGet Client.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.nuget-client.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: nugetClient",
+    "Source status: active"
+  ]
+}

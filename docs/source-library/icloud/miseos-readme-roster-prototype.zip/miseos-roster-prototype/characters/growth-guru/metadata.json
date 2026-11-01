@@ -1,0 +1,78 @@
+{
+  "id": "growth-guru",
+  "slug": "growth-guru",
+  "number": 91,
+  "name": "Growth Guru",
+  "miseName": "Mise Optimize",
+  "codename": "chef.data-insight.optimize",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "epic",
+  "roleCategory": "optimize",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Guest Chef",
+    "signaturePhrase": "Growth Guru keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Always innovating. Seeks better ways to scale."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen Pink Bloom aura",
+    "silhouette": "chibi DevOps chef carrying Pink Bloom",
+    "tool": "Pink Bloom",
+    "spritePath": "/assets/characters/growth-guru/full-body.png",
+    "cardPath": "/assets/characters/growth-guru/card.png"
+  },
+  "workflow": {
+    "jobName": "Optimize",
+    "roleName": "Guest Chef microagent",
+    "summary": "Always innovating. Seeks better ways to scale.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Chaos Analyst",
+      "Culture Chef"
+    ]
+  },
+  "stats": {
+    "power": 79,
+    "precision": 80,
+    "speed": 87,
+    "resilience": 82,
+    "intelligence": 72,
+    "teamwork": 87
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "22",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "function": "Optimize",
+    "rarity": "Epic",
+    "tier": "Growth Line",
+    "element": "Pink Bloom",
+    "ability": "Scale Wisdom",
+    "lore": "Always innovating. Seeks better ways to scale.",
+    "image_file": "cards/png/022-growth-guru.png",
+    "metadata_file": "metadata/erc721/022-growth-guru.json"
+  },
+  "displayNumber": 91,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/growth-guru",
+  "avatarSvg": "assets/characters/growth-guru/avatar.svg",
+  "cardSvg": "assets/characters/growth-guru/card.svg"
+}

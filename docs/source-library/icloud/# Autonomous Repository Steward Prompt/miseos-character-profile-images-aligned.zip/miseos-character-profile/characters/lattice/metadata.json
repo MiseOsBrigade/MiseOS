@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.063",
+  "number": 63,
+  "slug": "lattice",
+  "name": "Lattice",
+  "mise_name": "Lattice",
+  "codename": "LATTICE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Trace Correlator",
+  "job_name": "Trace Correlator",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Trace Correlator",
+    "avatar_path": "assets/characters/lattice/avatar.png",
+    "card_path": "assets/characters/lattice/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Lattice performs trace correlator within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Repo Ranger",
+      "DORA Daichi",
+      "Flag Fox"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 74,
+    "precision": 92,
+    "speed": 58,
+    "resilience": 74,
+    "intelligence": 67,
+    "teamwork": 83
+  },
+  "paths": {
+    "readme": "characters/lattice/README.md",
+    "metadata": "characters/lattice/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

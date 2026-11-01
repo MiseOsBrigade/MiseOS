@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.074",
+  "number": 74,
+  "slug": "storyteller-sumi",
+  "name": "Storyteller Sumi",
+  "mise_name": "Storyteller Sumi",
+  "codename": "STORYTELLER_SUMI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Narrative Report Generator",
+  "job_name": "Narrative Report Generator",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Narrative Report Generator",
+    "avatar_path": "assets/characters/storyteller-sumi/avatar.png",
+    "card_path": "assets/characters/storyteller-sumi/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Storyteller Sumi performs narrative report generator within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Roadmap Sensei",
+      "Data-chan",
+      "Insight Sensei"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 69,
+    "precision": 64,
+    "speed": 62,
+    "resilience": 81,
+    "intelligence": 73,
+    "teamwork": 74
+  },
+  "paths": {
+    "readme": "characters/storyteller-sumi/README.md",
+    "metadata": "characters/storyteller-sumi/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

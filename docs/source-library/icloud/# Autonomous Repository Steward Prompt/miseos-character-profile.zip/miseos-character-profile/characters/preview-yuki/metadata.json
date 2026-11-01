@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.027",
+  "number": 27,
+  "slug": "preview-yuki",
+  "name": "Preview Yuki",
+  "mise_name": "Preview Yuki",
+  "codename": "PREVIEW_YUKI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Preview Environment Spawner",
+  "job_name": "Preview Environment Spawner",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Preview Environment Spawner",
+    "avatar_path": "assets/characters/preview-yuki/avatar.png",
+    "card_path": "assets/characters/preview-yuki/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Preview Yuki performs preview environment spawner within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Portal Rei",
+      "Guardrail Goro",
+      "Platform Sensei"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 62,
+    "precision": 78,
+    "speed": 62,
+    "resilience": 63,
+    "intelligence": 70,
+    "teamwork": 68
+  },
+  "paths": {
+    "readme": "characters/preview-yuki/README.md",
+    "metadata": "characters/preview-yuki/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

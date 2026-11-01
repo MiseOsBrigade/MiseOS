@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.release-sentinel",
+  "name": "MiseOS Release Sentinel",
+  "type": "agent",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "Scheduled release watcher that detects registry drift, compares versions, verifies trust metadata, and prepares update pull requests.",
+  "artifacts": {
+    "npm": "@miseos/release-sentinel",
+    "source": "packages/release-sentinel"
+  },
+  "capabilities": [
+    "scan_registry",
+    "compare_versions",
+    "detect_drift",
+    "verify_release_metadata",
+    "open_pull_request"
+  ],
+  "permissions": {
+    "github": {
+      "contents": "write",
+      "pull_requests": "write",
+      "packages": "read",
+      "issues": "write"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade",
+      "security_policy_change",
+      "dependency_source_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Sentinel may open PR only",
+    "patch": "Sentinel may open PR after policy check"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": false,
+    "requiresNetwork": true,
+    "outputs": [
+      "drift_report",
+      "update_plan",
+      "pull_request"
+    ]
+  }
+}

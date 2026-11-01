@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.046",
+  "number": 46,
+  "slug": "threat-taro",
+  "name": "Threat Taro",
+  "mise_name": "Threat Taro",
+  "codename": "THREAT_TARO",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Threat Modeling Starter",
+  "job_name": "Threat Modeling Starter",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Threat Modeling Starter",
+    "avatar_path": "assets/characters/threat-taro/avatar.png",
+    "card_path": "assets/characters/threat-taro/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Threat Taro performs threat modeling starter within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Secure Sakura",
+      "Token Toshi",
+      "CVE Kumo"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 82,
+    "precision": 83,
+    "speed": 67,
+    "resilience": 67,
+    "intelligence": 62,
+    "teamwork": 72
+  },
+  "paths": {
+    "readme": "characters/threat-taro/README.md",
+    "metadata": "characters/threat-taro/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

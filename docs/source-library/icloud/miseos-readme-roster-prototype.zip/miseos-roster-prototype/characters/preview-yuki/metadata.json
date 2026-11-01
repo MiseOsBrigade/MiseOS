@@ -1,0 +1,68 @@
+{
+  "id": "preview-yuki",
+  "number": 27,
+  "name": "Preview Yuki",
+  "miseName": "Mise PreviewEnvironmentSpawner",
+  "codename": "chef.platform.preview-environment-spawner",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Canadian",
+    "title": "Preview Environment Spawner",
+    "signaturePhrase": "Preview Environment Spawner done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in preview environment spawner so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen preview environment spawner aura",
+    "silhouette": "multinational chibi DevOps chef carrying a scroll",
+    "tool": "scroll",
+    "spritePath": "/assets/characters/preview-yuki/full-body.png",
+    "cardPath": "/assets/characters/preview-yuki/card.png"
+  },
+  "workflow": {
+    "jobName": "Preview Environment Spawner",
+    "roleName": "Preview Environment Spawner microagent",
+    "summary": "Runs preview environment spawner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Streama",
+      "Portal Rei",
+      "Tariq Notesmith",
+      "Forecast Fuji"
+    ]
+  },
+  "stats": {
+    "power": 83,
+    "precision": 88,
+    "speed": 77,
+    "resilience": 75,
+    "intelligence": 91,
+    "teamwork": 95
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "preview-yuki",
+  "seasonOneCard": null,
+  "displayNumber": 27,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/preview-yuki",
+  "avatarSvg": "assets/characters/preview-yuki/avatar.svg",
+  "cardSvg": "assets/characters/preview-yuki/card.svg"
+}

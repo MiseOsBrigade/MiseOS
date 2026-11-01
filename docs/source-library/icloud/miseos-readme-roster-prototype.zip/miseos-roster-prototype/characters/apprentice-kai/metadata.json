@@ -1,0 +1,68 @@
+{
+  "id": "apprentice-kai",
+  "number": 71,
+  "name": "Apprentice Kai",
+  "miseName": "Mise SelfImprovementAgent",
+  "codename": "chef.data-insight.self-improvement-agent",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "genesis",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "New Zealander",
+    "title": "Self-Improvement Agent",
+    "signaturePhrase": "Self-Improvement Agent done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in self-improvement agent so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen self-improvement agent aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/apprentice-kai/full-body.png",
+    "cardPath": "/assets/characters/apprentice-kai/card.png"
+  },
+  "workflow": {
+    "jobName": "Self-Improvement Agent",
+    "roleName": "Self-Improvement Agent microagent",
+    "summary": "Runs self-improvement agent for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Risk Ryota",
+      "Anomaly Aki",
+      "Felix Rollback",
+      "Streama"
+    ]
+  },
+  "stats": {
+    "power": 72,
+    "precision": 89,
+    "speed": 74,
+    "resilience": 80,
+    "intelligence": 85,
+    "teamwork": 96
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "apprentice-kai",
+  "seasonOneCard": null,
+  "displayNumber": 71,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/apprentice-kai",
+  "avatarSvg": "assets/characters/apprentice-kai/avatar.svg",
+  "cardSvg": "assets/characters/apprentice-kai/card.svg"
+}

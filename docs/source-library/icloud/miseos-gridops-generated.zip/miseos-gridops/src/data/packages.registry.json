@@ -1,0 +1,104 @@
+{
+  "packageManagers": [
+    {
+      "ecosystem": "npm",
+      "files": [
+        "package.json",
+        "package-lock.json",
+        "pnpm-lock.yaml",
+        "yarn.lock"
+      ],
+      "registryUrl": "https://registry.npmjs.org",
+      "publishTarget": "npm_or_github_packages",
+      "typicalPackages": [
+        "@miseos/gridops",
+        "@miseos/agent-core",
+        "@miseos/model-router"
+      ]
+    },
+    {
+      "ecosystem": "ghcr",
+      "files": [
+        "Dockerfile",
+        "compose.yaml",
+        "docker-compose.yml"
+      ],
+      "registryUrl": "ghcr.io",
+      "publishTarget": "GitHub Container Registry",
+      "typicalPackages": [
+        "ghcr.io/miseos/gridops-worker",
+        "ghcr.io/miseos/repo-steward"
+      ]
+    },
+    {
+      "ecosystem": "docker",
+      "files": [
+        "Dockerfile",
+        ".dockerignore"
+      ],
+      "registryUrl": "docker.io_or_ghcr.io",
+      "publishTarget": "Container registry",
+      "typicalPackages": [
+        "miseos/gridops-playground"
+      ]
+    },
+    {
+      "ecosystem": "maven",
+      "files": [
+        "pom.xml"
+      ],
+      "registryUrl": "maven.pkg.github.com",
+      "publishTarget": "GitHub Packages Maven",
+      "typicalPackages": [
+        "com.miseos:gridops-core"
+      ]
+    },
+    {
+      "ecosystem": "gradle",
+      "files": [
+        "build.gradle",
+        "build.gradle.kts",
+        "settings.gradle"
+      ],
+      "registryUrl": "maven.pkg.github.com",
+      "publishTarget": "GitHub Packages Gradle/Maven",
+      "typicalPackages": [
+        "com.miseos:gridops-agent"
+      ]
+    },
+    {
+      "ecosystem": "nuget",
+      "files": [
+        "*.csproj",
+        "nuget.config"
+      ],
+      "registryUrl": "nuget.pkg.github.com",
+      "publishTarget": "GitHub Packages NuGet",
+      "typicalPackages": [
+        "MiseOS.GridOps"
+      ]
+    },
+    {
+      "ecosystem": "rubygems",
+      "files": [
+        "*.gemspec",
+        "Gemfile",
+        "Gemfile.lock"
+      ],
+      "registryUrl": "rubygems.pkg.github.com",
+      "publishTarget": "GitHub Packages RubyGems",
+      "typicalPackages": [
+        "miseos-gridops"
+      ]
+    }
+  ],
+  "releaseReadinessRules": [
+    "manifest_exists",
+    "version_is_valid_semver",
+    "changelog_updated",
+    "tests_confirmed_or_unknown_logged",
+    "build_confirmed_or_unknown_logged",
+    "no_secret_in_diff",
+    "publish_requires_human_approval"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@miseos/repo-pet",
+  "version": "0.1.0",
+  "description": "MiseOS Repo Pet: a Shimeji-style terminal mascot that safely roams a repository or container filesystem.",
+  "type": "module",
+  "bin": {
+    "mise-repo-pet": "./bin/mise-roam.mjs",
+    "repo-pet": "./bin/mise-roam.mjs"
+  },
+  "scripts": {
+    "start": "node bin/mise-roam.mjs . --character=orchestra-core",
+    "demo": "node examples/demo-roam.mjs",
+    "roam:repo": "node bin/mise-roam.mjs . --character=kurogami-senpai --max-depth=6 --tick=650",
+    "roam:container": "node bin/mise-roam.mjs / --character=orchestra-core --max-depth=4 --tick=800",
+    "list:characters": "node bin/mise-roam.mjs --list-characters",
+    "test": "node test/smoke.mjs"
+  },
+  "keywords": [
+    "miseos",
+    "repo-pet",
+    "shimeji",
+    "terminal",
+    "devops",
+    "filesystem"
+  ],
+  "author": "MISEOS Brigade Systems",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

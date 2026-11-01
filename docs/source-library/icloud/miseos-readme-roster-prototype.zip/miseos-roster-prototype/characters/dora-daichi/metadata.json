@@ -1,0 +1,68 @@
+{
+  "id": "dora-daichi",
+  "number": 65,
+  "name": "DORA Daichi",
+  "miseName": "Mise PipelineAnalyticsEngine",
+  "codename": "chef.data-insight.pipeline-analytics-engine",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Pipeline Analytics Engine",
+    "signaturePhrase": "Pipeline Analytics Engine done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in pipeline analytics engine so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen pipeline analytics engine aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/dora-daichi/full-body.png",
+    "cardPath": "/assets/characters/dora-daichi/card.png"
+  },
+  "workflow": {
+    "jobName": "Pipeline Analytics Engine",
+    "roleName": "Pipeline Analytics Engine microagent",
+    "summary": "Runs pipeline analytics engine for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Repo Ranger",
+      "Flag Fox",
+      "Hugo Matrix",
+      "Runtime Riku"
+    ]
+  },
+  "stats": {
+    "power": 83,
+    "precision": 87,
+    "speed": 89,
+    "resilience": 71,
+    "intelligence": 83,
+    "teamwork": 91
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "dora-daichi",
+  "seasonOneCard": null,
+  "displayNumber": 65,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/dora-daichi",
+  "avatarSvg": "assets/characters/dora-daichi/avatar.svg",
+  "cardSvg": "assets/characters/dora-daichi/card.svg"
+}

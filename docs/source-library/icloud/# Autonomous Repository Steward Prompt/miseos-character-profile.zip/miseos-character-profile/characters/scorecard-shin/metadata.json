@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.059",
+  "number": 59,
+  "slug": "scorecard-shin",
+  "name": "Scorecard Shin",
+  "mise_name": "Scorecard Shin",
+  "codename": "SCORECARD_SHIN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Security Scorecard",
+  "job_name": "Security Scorecard",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Security Scorecard",
+    "avatar_path": "assets/characters/scorecard-shin/avatar.png",
+    "card_path": "assets/characters/scorecard-shin/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Scorecard Shin performs security scorecard within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Red Oni",
+      "Threat Taro",
+      "Secure Sakura"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 79,
+    "precision": 82,
+    "speed": 55,
+    "resilience": 76,
+    "intelligence": 61,
+    "teamwork": 82
+  },
+  "paths": {
+    "readme": "characters/scorecard-shin/README.md",
+    "metadata": "characters/scorecard-shin/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

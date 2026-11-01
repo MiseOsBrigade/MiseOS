@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.103",
+  "number": 103,
+  "slug": "queue-quartz",
+  "name": "Queue Quartz",
+  "mise_name": "Queue Quartz",
+  "codename": "QUEUE_QUARTZ",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Service Timer",
+  "job_name": "Service Timer",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "uploaded_pdf_page_19",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Service Timer",
+    "avatar_path": "assets/characters/queue-quartz/avatar.png",
+    "card_path": "assets/characters/queue-quartz/card.png",
+    "primary_photo_page": 19
+  },
+  "workflow": {
+    "summary": "Queue Quartz performs service timer within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Harvest Hex",
+      "Garnish Ghost",
+      "Pantry Paladin"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 83,
+    "precision": 86,
+    "speed": 56,
+    "resilience": 76,
+    "intelligence": 80,
+    "teamwork": 83
+  },
+  "paths": {
+    "readme": "characters/queue-quartz/README.md",
+    "metadata": "characters/queue-quartz/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

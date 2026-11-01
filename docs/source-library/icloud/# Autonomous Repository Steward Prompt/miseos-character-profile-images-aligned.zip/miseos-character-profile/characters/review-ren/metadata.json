@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.039",
+  "number": 39,
+  "slug": "review-ren",
+  "name": "Review Ren",
+  "mise_name": "Review Ren",
+  "codename": "REVIEW_REN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "Post-Incident Review",
+  "job_name": "Post-Incident Review",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "Post-Incident Review",
+    "avatar_path": "assets/characters/review-ren/avatar.png",
+    "card_path": "assets/characters/review-ren/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Review Ren performs post-incident review within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Backlog Benji",
+      "Metrics Miko",
+      "Forecast Fuji"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 67,
+    "precision": 78,
+    "speed": 73,
+    "resilience": 79,
+    "intelligence": 79,
+    "teamwork": 79
+  },
+  "paths": {
+    "readme": "characters/review-ren/README.md",
+    "metadata": "characters/review-ren/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

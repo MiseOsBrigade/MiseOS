@@ -1,0 +1,68 @@
+{
+  "id": "ivun-cache",
+  "number": 13,
+  "name": "Ivun Cache",
+  "miseName": "Mise PipelineCostMonitor",
+  "codename": "chef.pipeline.pipeline-cost-monitor",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Ukrainian",
+    "title": "Pipeline Cost Monitor",
+    "signaturePhrase": "Pipeline Cost Monitor done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in pipeline cost monitor so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen pipeline cost monitor aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/ivun-cache/full-body.png",
+    "cardPath": "/assets/characters/ivun-cache/card.png"
+  },
+  "workflow": {
+    "jobName": "Pipeline Cost Monitor",
+    "roleName": "Pipeline Cost Monitor microagent",
+    "summary": "Runs pipeline cost monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Tariq Notesmith",
+      "Canary Taster",
+      "Portal Rei",
+      "Resilience Ryu"
+    ]
+  },
+  "stats": {
+    "power": 84,
+    "precision": 86,
+    "speed": 78,
+    "resilience": 76,
+    "intelligence": 96,
+    "teamwork": 84
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "ivun-cache",
+  "seasonOneCard": null,
+  "displayNumber": 13,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/ivun-cache",
+  "avatarSvg": "assets/characters/ivun-cache/avatar.svg",
+  "cardSvg": "assets/characters/ivun-cache/card.svg"
+}

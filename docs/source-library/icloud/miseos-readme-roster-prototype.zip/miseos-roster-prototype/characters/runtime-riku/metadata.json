@@ -1,0 +1,68 @@
+{
+  "id": "runtime-riku",
+  "number": 20,
+  "name": "Runtime Riku",
+  "miseName": "Mise RuntimeProfileManager",
+  "codename": "chef.platform.runtime-profile-manager",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "American",
+    "title": "Runtime Profile Manager",
+    "signaturePhrase": "Runtime Profile Manager done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in runtime profile manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen runtime profile manager aura",
+    "silhouette": "multinational chibi DevOps chef carrying a tablet",
+    "tool": "tablet",
+    "spritePath": "/assets/characters/runtime-riku/full-body.png",
+    "cardPath": "/assets/characters/runtime-riku/card.png"
+  },
+  "workflow": {
+    "jobName": "Runtime Profile Manager",
+    "roleName": "Runtime Profile Manager microagent",
+    "summary": "Runs runtime profile manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Schema Sora",
+      "Vault Hana",
+      "Hugo Matrix",
+      "Canary Judge"
+    ]
+  },
+  "stats": {
+    "power": 89,
+    "precision": 79,
+    "speed": 83,
+    "resilience": 81,
+    "intelligence": 74,
+    "teamwork": 95
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "runtime-riku",
+  "seasonOneCard": null,
+  "displayNumber": 20,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/runtime-riku",
+  "avatarSvg": "assets/characters/runtime-riku/avatar.svg",
+  "cardSvg": "assets/characters/runtime-riku/card.svg"
+}

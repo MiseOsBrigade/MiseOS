@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.087",
+  "number": 87,
+  "slug": "orchestra-core",
+  "name": "Orchestra Core",
+  "mise_name": "Orchestra Core",
+  "codename": "ORCHESTRA_CORE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Coordinate",
+  "job_name": "Coordinate",
+  "rarity": "Mythic",
+  "rarity_tier": 6,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Coordinate",
+    "avatar_path": "assets/characters/orchestra-core/avatar.png",
+    "card_path": "assets/characters/orchestra-core/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Orchestra Core performs coordinate within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Template Tanaka",
+      "Bootstrap Aiko",
+      "Terra Forge"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 73,
+    "precision": 92,
+    "speed": 75,
+    "resilience": 79,
+    "intelligence": 76,
+    "teamwork": 90
+  },
+  "paths": {
+    "readme": "characters/orchestra-core/README.md",
+    "metadata": "characters/orchestra-core/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,59 @@
+name: Repo Steward
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1"
+  pull_request:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+  security-events: write
+
+jobs:
+  repo-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Detect package manager
+        id: detect
+        shell: bash
+        run: |
+          if [ -f pnpm-lock.yaml ]; then echo "manager=pnpm" >> "$GITHUB_OUTPUT"; fi
+          if [ -f package-lock.json ]; then echo "manager=npm" >> "$GITHUB_OUTPUT"; fi
+          if [ -f yarn.lock ]; then echo "manager=yarn" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Setup Node
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        if: hashFiles('package.json') != ''
+        run: |
+          corepack enable || true
+          if [ -f pnpm-lock.yaml ]; then pnpm install --frozen-lockfile || pnpm install; fi
+          if [ -f package-lock.json ]; then npm ci || npm install; fi
+          if [ -f yarn.lock ]; then yarn install --frozen-lockfile || yarn install; fi
+
+      - name: Run available checks
+        shell: bash
+        run: |
+          if [ -f package.json ]; then
+            npm run lint --if-present
+            npm run typecheck --if-present
+            npm test --if-present
+            npm run build --if-present
+          fi
+
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

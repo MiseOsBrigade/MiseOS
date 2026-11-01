@@ -1,0 +1,17 @@
+{
+  "id": "registry-docs-hub-template",
+  "category": "registry-capability",
+  "title": "MiseOS Docs Hub Template",
+  "description": "Executable baseline capability for MiseOS Docs Hub Template.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.docs-hub-template.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: docsHubTemplate",
+    "Source status: active"
+  ]
+}

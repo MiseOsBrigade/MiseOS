@@ -1,0 +1,182 @@
+[
+  {
+    "id": "kurogami-senpai",
+    "name": "Kurogami Senpai",
+    "role": "Chef de Cuisine",
+    "sprite": "\ud83d\udda4",
+    "focus": [
+      "architecture",
+      "routing",
+      "coordination"
+    ],
+    "message": "sets the service rhythm"
+  },
+  {
+    "id": "tensho",
+    "name": "Tensho",
+    "role": "Expediter",
+    "sprite": "\ud83c\udfab",
+    "focus": [
+      "queues",
+      "handoffs",
+      "issues"
+    ],
+    "message": "calls tickets with precision"
+  },
+  {
+    "id": "mizu",
+    "name": "Mizu",
+    "role": "Prep Chef",
+    "sprite": "\ud83c\udf0a",
+    "focus": [
+      "docs",
+      "prep",
+      "staging"
+    ],
+    "message": "preps the station"
+  },
+  {
+    "id": "umami-code",
+    "name": "Umami Code",
+    "role": "Saucier",
+    "sprite": "\ud83c\udf5c",
+    "focus": [
+      "api",
+      "sdk",
+      "integrations"
+    ],
+    "message": "balances the API sauce"
+  },
+  {
+    "id": "kaji",
+    "name": "Kaji",
+    "role": "Grillardin",
+    "sprite": "\ud83d\udd25",
+    "focus": [
+      "build",
+      "runtime",
+      "performance"
+    ],
+    "message": "turns up compute heat"
+  },
+  {
+    "id": "yume",
+    "name": "Yume",
+    "role": "Pastry Chef",
+    "sprite": "\ud83c\udf70",
+    "focus": [
+      "assets",
+      "creative",
+      "releases"
+    ],
+    "message": "polishes the garnish"
+  },
+  {
+    "id": "iron-hashi",
+    "name": "Iron Hashi",
+    "role": "Boucher",
+    "sprite": "\ud83d\udd2a",
+    "focus": [
+      "tests",
+      "lint",
+      "checks"
+    ],
+    "message": "slices through validation"
+  },
+  {
+    "id": "null-chan",
+    "name": "Null-chan",
+    "role": "Plongeur",
+    "sprite": "\ud83e\uddfc",
+    "focus": [
+      "cleanup",
+      "refactor",
+      "dead-code"
+    ],
+    "message": "keeps the sink clean"
+  },
+  {
+    "id": "flash-riku",
+    "name": "Flash Riku",
+    "role": "Runner",
+    "sprite": "\ud83e\udd77",
+    "focus": [
+      "deploy",
+      "release",
+      "ci"
+    ],
+    "message": "runs the pass"
+  },
+  {
+    "id": "seira",
+    "name": "Seira",
+    "role": "Sommelier",
+    "sprite": "\ud83d\udd10",
+    "focus": [
+      "vault",
+      "secrets",
+      "policy"
+    ],
+    "message": "guards the secret cellar"
+  },
+  {
+    "id": "kuro-guard",
+    "name": "Kuro Guard",
+    "role": "Steward",
+    "sprite": "\ud83d\udee1\ufe0f",
+    "focus": [
+      "auth",
+      "rbac",
+      "threat-model"
+    ],
+    "message": "watches the perimeter"
+  },
+  {
+    "id": "scale-oni",
+    "name": "Scale Oni",
+    "role": "Rotisseur",
+    "sprite": "\ud83d\udc79",
+    "focus": [
+      "containers",
+      "cloud",
+      "traffic"
+    ],
+    "message": "tests the dinner rush"
+  },
+  {
+    "id": "build-kun",
+    "name": "Build-Kun",
+    "role": "Boulanger",
+    "sprite": "\ud83e\udd56",
+    "focus": [
+      "docker",
+      "packages",
+      "builds"
+    ],
+    "message": "proofs the build dough"
+  },
+  {
+    "id": "streama",
+    "name": "Streama",
+    "role": "Poissonier",
+    "sprite": "\ud83d\udca7",
+    "focus": [
+      "logs",
+      "events",
+      "observability"
+    ],
+    "message": "listens to service streams"
+  },
+  {
+    "id": "orchestra-core",
+    "name": "Orchestra Core",
+    "role": "Chef Spirit",
+    "sprite": "\ud83c\udfbc",
+    "focus": [
+      "readme",
+      "brand",
+      "governance"
+    ],
+    "message": "conducts the brigade"
+  }
+]

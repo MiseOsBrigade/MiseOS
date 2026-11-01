@@ -1,0 +1,68 @@
+{
+  "id": "chaos-kaito",
+  "number": 33,
+  "name": "Chaos Kaito",
+  "miseName": "Mise LoadChaosProfiles",
+  "codename": "chef.reliability.load-chaos-profiles",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Load & Chaos Profiles",
+    "signaturePhrase": "Load and Chaos Profiles done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in load & chaos profiles so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen load & chaos profiles aura",
+    "silhouette": "multinational chibi DevOps chef carrying a flame",
+    "tool": "flame",
+    "spritePath": "/assets/characters/chaos-kaito/full-body.png",
+    "cardPath": "/assets/characters/chaos-kaito/card.png"
+  },
+  "workflow": {
+    "jobName": "Load & Chaos Profiles",
+    "roleName": "Load & Chaos Profiles microagent",
+    "summary": "Runs load & chaos profiles for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Trace Sensei",
+      "Capacity Kanna",
+      "Lila Branchkeeper",
+      "Terra Forge"
+    ]
+  },
+  "stats": {
+    "power": 93,
+    "precision": 83,
+    "speed": 83,
+    "resilience": 77,
+    "intelligence": 86,
+    "teamwork": 93
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "chaos-kaito",
+  "seasonOneCard": null,
+  "displayNumber": 33,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/chaos-kaito",
+  "avatarSvg": "assets/characters/chaos-kaito/avatar.svg",
+  "cardSvg": "assets/characters/chaos-kaito/card.svg"
+}

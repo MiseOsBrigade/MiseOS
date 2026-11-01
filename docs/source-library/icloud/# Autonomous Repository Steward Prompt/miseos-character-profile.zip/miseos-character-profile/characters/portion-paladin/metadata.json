@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.111",
+  "number": 111,
+  "slug": "portion-paladin",
+  "name": "Portion Paladin",
+  "mise_name": "Portion Paladin",
+  "codename": "PORTION_PALADIN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Balance Steward",
+  "job_name": "Balance Steward",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "uploaded_pdf_page_27",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Balance Steward",
+    "avatar_path": "assets/characters/portion-paladin/avatar.png",
+    "card_path": "assets/characters/portion-paladin/card.png",
+    "primary_photo_page": 27
+  },
+  "workflow": {
+    "summary": "Portion Paladin performs balance steward within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Allergen Oracle",
+      "Kurogami Senpai",
+      "Mizu"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 72,
+    "precision": 86,
+    "speed": 80,
+    "resilience": 78,
+    "intelligence": 74,
+    "teamwork": 68
+  },
+  "paths": {
+    "readme": "characters/portion-paladin/README.md",
+    "metadata": "characters/portion-paladin/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

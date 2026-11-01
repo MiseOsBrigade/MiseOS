@@ -1,0 +1,68 @@
+{
+  "id": "queue-mizu",
+  "number": 25,
+  "name": "Queue Mizu",
+  "miseName": "Mise JobQueueTemplates",
+  "codename": "chef.platform.job-queue-templates",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "genesis",
+  "roleCategory": "platform",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Job & Queue Templates",
+    "signaturePhrase": "Job and Queue Templates done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in job & queue templates so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen job & queue templates aura",
+    "silhouette": "multinational chibi DevOps chef carrying a bowl",
+    "tool": "bowl",
+    "spritePath": "/assets/characters/queue-mizu/full-body.png",
+    "cardPath": "/assets/characters/queue-mizu/card.png"
+  },
+  "workflow": {
+    "jobName": "Job & Queue Templates",
+    "roleName": "Job & Queue Templates microagent",
+    "summary": "Runs job & queue templates for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Umami Code",
+      "Streama",
+      "Release Conductor",
+      "Backlog Benji"
+    ]
+  },
+  "stats": {
+    "power": 70,
+    "precision": 98,
+    "speed": 84,
+    "resilience": 74,
+    "intelligence": 83,
+    "teamwork": 78
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "queue-mizu",
+  "seasonOneCard": null,
+  "displayNumber": 25,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/queue-mizu",
+  "avatarSvg": "assets/characters/queue-mizu/avatar.svg",
+  "cardSvg": "assets/characters/queue-mizu/card.svg"
+}

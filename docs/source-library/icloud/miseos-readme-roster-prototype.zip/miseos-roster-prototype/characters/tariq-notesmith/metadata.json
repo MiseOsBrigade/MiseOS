@@ -1,0 +1,68 @@
+{
+  "id": "tariq-notesmith",
+  "number": 12,
+  "name": "Tariq Notesmith",
+  "miseName": "Mise ReleaseNotesGenerator",
+  "codename": "chef.pipeline.release-notes-generator",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Moroccan",
+    "title": "Release Notes Generator",
+    "signaturePhrase": "Release Notes Generator done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in release notes generator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen release notes generator aura",
+    "silhouette": "multinational chibi DevOps chef carrying a scroll",
+    "tool": "scroll",
+    "spritePath": "/assets/characters/tariq-notesmith/full-body.png",
+    "cardPath": "/assets/characters/tariq-notesmith/card.png"
+  },
+  "workflow": {
+    "jobName": "Release Notes Generator",
+    "roleName": "Release Notes Generator microagent",
+    "summary": "Runs release notes generator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Felix Rollback",
+      "Ivun Cache",
+      "Preview Yuki",
+      "Forecast Fuji"
+    ]
+  },
+  "stats": {
+    "power": 80,
+    "precision": 80,
+    "speed": 70,
+    "resilience": 92,
+    "intelligence": 82,
+    "teamwork": 90
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "tariq-notesmith",
+  "seasonOneCard": null,
+  "displayNumber": 12,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/tariq-notesmith",
+  "avatarSvg": "assets/characters/tariq-notesmith/avatar.svg",
+  "cardSvg": "assets/characters/tariq-notesmith/card.svg"
+}

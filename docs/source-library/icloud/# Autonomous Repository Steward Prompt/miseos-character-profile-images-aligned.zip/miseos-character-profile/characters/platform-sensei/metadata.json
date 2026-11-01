@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.030",
+  "number": 30,
+  "slug": "platform-sensei",
+  "name": "Platform Sensei",
+  "mise_name": "Platform Sensei",
+  "codename": "PLATFORM_SENSEI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Platform Health Board",
+  "job_name": "Platform Health Board",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Platform Health Board",
+    "avatar_path": "assets/characters/platform-sensei/avatar.png",
+    "card_path": "assets/characters/platform-sensei/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Platform Sensei performs platform health board within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Seira",
+      "Kuro Guard",
+      "Orchestra Core"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 69,
+    "precision": 78,
+    "speed": 75,
+    "resilience": 71,
+    "intelligence": 70,
+    "teamwork": 84
+  },
+  "paths": {
+    "readme": "characters/platform-sensei/README.md",
+    "metadata": "characters/platform-sensei/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

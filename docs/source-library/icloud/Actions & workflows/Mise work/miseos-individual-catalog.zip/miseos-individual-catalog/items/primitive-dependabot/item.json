@@ -1,0 +1,11 @@
+{
+  "id": "primitive-dependabot",
+  "category": "platform",
+  "title": "Dependabot",
+  "description": "Weekly GitHub Actions and npm dependency update configuration.",
+  "dependencies": [],
+  "files": [
+    ".github/dependabot.yml"
+  ],
+  "notes": []
+}

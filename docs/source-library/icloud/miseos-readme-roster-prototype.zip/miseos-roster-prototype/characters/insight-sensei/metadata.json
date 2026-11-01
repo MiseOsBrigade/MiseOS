@@ -1,0 +1,78 @@
+{
+  "id": "insight-sensei",
+  "slug": "insight-sensei",
+  "number": 89,
+  "name": "Insight Sensei",
+  "miseName": "Mise Analyze",
+  "codename": "chef.data-insight.analyze",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "epic",
+  "roleCategory": "analyze",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Guest Chef",
+    "signaturePhrase": "Insight Sensei keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Finds patterns in chaos and turns data into understanding."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen Pattern Crystal aura",
+    "silhouette": "chibi DevOps chef carrying Pattern Crystal",
+    "tool": "Pattern Crystal",
+    "spritePath": "/assets/characters/insight-sensei/full-body.png",
+    "cardPath": "/assets/characters/insight-sensei/card.png"
+  },
+  "workflow": {
+    "jobName": "Analyze",
+    "roleName": "Guest Chef microagent",
+    "summary": "Finds patterns in chaos and turns data into understanding.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Data-chan",
+      "Chaos Analyst"
+    ]
+  },
+  "stats": {
+    "power": 90,
+    "precision": 97,
+    "speed": 80,
+    "resilience": 98,
+    "intelligence": 97,
+    "teamwork": 77
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "20",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "function": "Analyze",
+    "rarity": "Epic",
+    "tier": "Learning Line",
+    "element": "Pattern Crystal",
+    "ability": "Pattern Sight",
+    "lore": "Finds patterns in chaos and turns data into understanding.",
+    "image_file": "cards/png/020-insight-sensei.png",
+    "metadata_file": "metadata/erc721/020-insight-sensei.json"
+  },
+  "displayNumber": 89,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/insight-sensei",
+  "avatarSvg": "assets/characters/insight-sensei/avatar.svg",
+  "cardSvg": "assets/characters/insight-sensei/card.svg"
+}

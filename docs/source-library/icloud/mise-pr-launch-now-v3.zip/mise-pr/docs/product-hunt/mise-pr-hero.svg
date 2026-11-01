@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Mise PR hero image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#94A3B8" stroke-width="1">
+    <path d="M0 70h1200M0 140h1200M0 210h1200M0 280h1200M0 350h1200M0 420h1200M0 490h1200M0 560h1200"/>
+    <path d="M80 0v630M160 0v630M240 0v630M320 0v630M400 0v630M480 0v630M560 0v630M640 0v630M720 0v630M800 0v630M880 0v630M960 0v630M1040 0v630M1120 0v630"/>
+  </g>
+  <g transform="translate(120 92)">
+    <rect x="0" y="0" width="960" height="446" rx="34" fill="#0F172A" stroke="#334155"/>
+    <rect x="36" y="36" width="888" height="72" rx="18" fill="#111827" stroke="#334155"/>
+    <circle cx="74" cy="72" r="10" fill="#FB7185"/>
+    <circle cx="108" cy="72" r="10" fill="#FBBF24"/>
+    <circle cx="142" cy="72" r="10" fill="#34D399"/>
+    <text x="180" y="80" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24">mise-pr-report.md</text>
+    <g transform="translate(58 155)">
+      <text x="0" y="0" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800">Mise PR</text>
+      <text x="0" y="58" fill="#A7F3D0" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Pull requests prepped before review.</text>
+      <rect x="0" y="105" width="520" height="18" rx="9" fill="url(#line)" filter="url(#glow)"/>
+      <text x="0" y="175" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="28">Scope · Risk · Tests · Context · Attention Budget</text>
+      <g transform="translate(0 224)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20">
+        <rect x="0" y="0" width="190" height="48" rx="12" fill="#172554" stroke="#38BDF8"/>
+        <text x="22" y="31" fill="#BAE6FD">risk: AMBER</text>
+        <rect x="214" y="0" width="210" height="48" rx="12" fill="#064E3B" stroke="#34D399"/>
+        <text x="236" y="31" fill="#BBF7D0">churn: 406</text>
+        <rect x="448" y="0" width="278" height="48" rx="12" fill="#312E81" stroke="#A78BFA"/>
+        <text x="470" y="31" fill="#DDD6FE">attention: 35 min</text>
+      </g>
+    </g>
+    <g transform="translate(760 164)" fill="none" stroke="url(#line)" stroke-width="8" filter="url(#glow)">
+      <path d="M40 120c0-45 35-82 80-82s80 37 80 82-35 82-80 82-80-37-80-82Z"/>
+      <path d="M0 154c0-45 35-82 80-82s80 37 80 82-35 82-80 82-80-37-80-82Z" opacity=".72"/>
+      <path d="M80 154c0-45 35-82 80-82s80 37 80 82-35 82-80 82-80-37-80-82Z" opacity=".72"/>
+    </g>
+  </g>
+</svg>

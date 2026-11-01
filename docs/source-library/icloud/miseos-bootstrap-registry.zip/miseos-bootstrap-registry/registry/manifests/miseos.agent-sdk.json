@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.agent-sdk",
+  "name": "MiseOS Agent SDK",
+  "type": "sdk",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "SDK for declaring agent capabilities, permission requests, evidence outputs, and execution contracts.",
+  "artifacts": {
+    "npm": "@miseos/agent-sdk",
+    "source": "packages/agent-sdk"
+  },
+  "capabilities": [
+    "define_agent",
+    "declare_permissions",
+    "emit_evidence",
+    "register_capability"
+  ],
+  "permissions": {
+    "github": {
+      "contents": "read"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Maintainer review required",
+    "patch": "Automated validation allowed"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_only",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "agent_manifest"
+    ]
+  }
+}

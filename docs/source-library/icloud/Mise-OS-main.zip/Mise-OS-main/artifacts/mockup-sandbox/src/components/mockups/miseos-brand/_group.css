@@ -1,0 +1,50 @@
+/* MiseOS Brand tokens — shared across all brand-board panels.
+   Imported (read-only) by each panel .tsx. Do not edit per-panel. */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400..800&family=Inter:wght@400..700&display=swap');
+
+.miseos {
+  /* Core brand hex */
+  --umami-black: #0E0F10;
+  --gold-ladle: #D4AF37;
+  --broth-cream: #F6F1E7;
+  --flame-orange: #E97B22;
+  --ink-blue: #182A41;
+  --matcha-green: #2E8B4E;
+
+  /* Surfaces */
+  --surface-0: #0E0F10;
+  --surface-1: #16181b;
+  --surface-2: #1d2024;
+  --hairline: rgba(246, 241, 231, 0.10);
+  --hairline-strong: rgba(246, 241, 231, 0.18);
+
+  /* Type */
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --ink: #F6F1E7;
+  --ink-dim: rgba(246, 241, 231, 0.62);
+  --ink-faint: rgba(246, 241, 231, 0.38);
+
+  background-color: var(--umami-black);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.miseos *::selection {
+  background: var(--flame-orange);
+  color: #0E0F10;
+}
+
+/* Brigade group accent colors (7 brigades) */
+.miseos {
+  --g-executive: #D4AF37; /* gold */
+  --g-kitchen: #E97B22;   /* flame */
+  --g-service: #5BB1E0;   /* sky */
+  --g-engineering: #2E8B4E; /* matcha */
+  --g-security: #C7423B;  /* chili red */
+  --g-platform: #8A7CE0;  /* infra violet */
+  --g-ecosystem: #4FB3A3; /* teal */
+}

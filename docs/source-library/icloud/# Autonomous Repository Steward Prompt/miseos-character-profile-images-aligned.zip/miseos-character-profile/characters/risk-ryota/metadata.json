@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.070",
+  "number": 70,
+  "slug": "risk-ryota",
+  "name": "Risk Ryota",
+  "mise_name": "Risk Ryota",
+  "codename": "RISK_RYOTA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Risk Scoring Model",
+  "job_name": "Risk Scoring Model",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Risk Scoring Model",
+    "avatar_path": "assets/characters/risk-ryota/avatar.png",
+    "card_path": "assets/characters/risk-ryota/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Risk Ryota performs risk scoring model within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Apprentice Kai",
+      "Anomaly Aki",
+      "Leaderboard Leo"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 63,
+    "precision": 66,
+    "speed": 71,
+    "resilience": 72,
+    "intelligence": 68,
+    "teamwork": 74
+  },
+  "paths": {
+    "readme": "characters/risk-ryota/README.md",
+    "metadata": "characters/risk-ryota/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

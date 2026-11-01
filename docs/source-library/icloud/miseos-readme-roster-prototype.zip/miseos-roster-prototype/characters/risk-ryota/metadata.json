@@ -1,0 +1,68 @@
+{
+  "id": "risk-ryota",
+  "number": 70,
+  "name": "Risk Ryota",
+  "miseName": "Mise RiskScoringModel",
+  "codename": "chef.data-insight.risk-scoring-model",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "rare",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Risk Scoring Model",
+    "signaturePhrase": "Risk Scoring Model done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in risk scoring model so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen risk scoring model aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/risk-ryota/full-body.png",
+    "cardPath": "/assets/characters/risk-ryota/card.png"
+  },
+  "workflow": {
+    "jobName": "Risk Scoring Model",
+    "roleName": "Risk Scoring Model microagent",
+    "summary": "Runs risk scoring model for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Revenue Rina",
+      "Apprentice Kai",
+      "Release Conductor",
+      "Queue Mizu"
+    ]
+  },
+  "stats": {
+    "power": 96,
+    "precision": 83,
+    "speed": 94,
+    "resilience": 96,
+    "intelligence": 96,
+    "teamwork": 78
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "risk-ryota",
+  "seasonOneCard": null,
+  "displayNumber": 70,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/risk-ryota",
+  "avatarSvg": "assets/characters/risk-ryota/avatar.svg",
+  "cardSvg": "assets/characters/risk-ryota/card.svg"
+}

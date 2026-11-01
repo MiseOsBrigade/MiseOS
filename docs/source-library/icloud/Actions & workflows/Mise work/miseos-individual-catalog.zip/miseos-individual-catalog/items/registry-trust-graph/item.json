@@ -1,0 +1,17 @@
+{
+  "id": "registry-trust-graph",
+  "category": "registry-capability",
+  "title": "MiseOS Trust Graph",
+  "description": "Executable baseline capability for MiseOS Trust Graph.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.trust-graph.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: trustGraph",
+    "Source status: active"
+  ]
+}

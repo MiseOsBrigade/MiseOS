@@ -1,0 +1,68 @@
+{
+  "id": "alko-commit-chef",
+  "number": 1,
+  "name": "Alko Commit Chef",
+  "miseName": "Mise CommitIntake",
+  "codename": "chef.pipeline.commit-intake",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "genesis",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Commit Intake",
+    "signaturePhrase": "Commit Intake done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in commit intake so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen commit intake aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/alko-commit-chef/full-body.png",
+    "cardPath": "/assets/characters/alko-commit-chef/card.png"
+  },
+  "workflow": {
+    "jobName": "Commit Intake",
+    "roleName": "Commit Intake microagent",
+    "summary": "Runs commit intake for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Bruno Blast-Radius",
+      "Template Tanaka",
+      "SLO Sage",
+      "Threat Taro"
+    ]
+  },
+  "stats": {
+    "power": 83,
+    "precision": 87,
+    "speed": 85,
+    "resilience": 91,
+    "intelligence": 97,
+    "teamwork": 79
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "alko-commit-chef",
+  "seasonOneCard": null,
+  "displayNumber": 1,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/alko-commit-chef",
+  "avatarSvg": "assets/characters/alko-commit-chef/avatar.svg",
+  "cardSvg": "assets/characters/alko-commit-chef/card.svg"
+}

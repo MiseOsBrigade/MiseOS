@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.091",
+  "number": 91,
+  "slug": "growth-guru",
+  "name": "Growth Guru",
+  "mise_name": "Growth Guru",
+  "codename": "GROWTH_GURU",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Optimize",
+  "job_name": "Optimize",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Optimize",
+    "avatar_path": "assets/characters/growth-guru/avatar.png",
+    "card_path": "assets/characters/growth-guru/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Growth Guru performs optimize within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Culture Chef",
+      "Taxonomy Taka",
+      "Lake Haru"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 67,
+    "precision": 84,
+    "speed": 58,
+    "resilience": 74,
+    "intelligence": 82,
+    "teamwork": 73
+  },
+  "paths": {
+    "readme": "characters/growth-guru/README.md",
+    "metadata": "characters/growth-guru/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "primitive-release-integrity",
+  "category": "platform",
+  "title": "Release Integrity Guidance",
+  "description": "Draft-first release, attestation, immutable-reference, and verification guidance.",
+  "dependencies": [],
+  "files": [
+    "docs/RELEASE_INTEGRITY.md"
+  ],
+  "notes": []
+}

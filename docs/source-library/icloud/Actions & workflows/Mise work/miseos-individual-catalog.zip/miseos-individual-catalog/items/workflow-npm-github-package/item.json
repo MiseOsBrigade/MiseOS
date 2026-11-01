@@ -1,0 +1,11 @@
+{
+  "id": "workflow-npm-github-package",
+  "category": "workflow",
+  "title": "npm GitHub Packages",
+  "description": "Publish npm packages to GitHub Packages on release publication.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/npm-github-package.yml"
+  ],
+  "notes": []
+}

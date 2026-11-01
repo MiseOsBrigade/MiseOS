@@ -1,0 +1,711 @@
+Multi-Agent Terminal Platform Blueprint
+
+Codename: AEON Terminal / Mise Orchestra Control Plane
+
+The goal is not merely “multiple AIs in one chat.”
+
+The goal is a distributed operating system for AI workers:
+
+* Human operator
+* Project workspaces
+* Agent swarms
+* Secure credentials
+* Shared memory
+* Full observability
+* Human approvals
+* Portable deployment
+
+Think:
+
+Slack + Kubernetes + GitHub Actions + Vault + LangGraph
+for AI agents
+
+⸻
+
+High-Level Architecture
+
+┌───────────────────────────────────────┐
+│            HUMAN OPERATOR             │
+│  CLI | TUI | Web Dashboard            │
+└───────────────┬───────────────────────┘
+                │
+                ▼
+┌───────────────────────────────────────┐
+│        ORCHESTRATION CONTROL PLANE    │
+│                                       │
+│ LangGraph / CodeMachine CLI           │
+│ Agent Scheduler                       │
+│ State Manager                         │
+│ Policy Engine                         │
+│ Approval Engine                       │
+└───────────────┬───────────────────────┘
+                │
+────────────────┼────────────────────────
+                │
+                ▼
+┌───────────────────────────────────────┐
+│             AGENT SWARM               │
+├───────────────────────────────────────┤
+│ Architect Agent                       │
+│ Product Manager Agent                 │
+│ Backend Agent                         │
+│ Frontend Agent                        │
+│ DevOps Agent                          │
+│ QA Agent                              │
+│ Security Agent                        │
+│ Research Agent                        │
+│ Documentation Agent                   │
+└───────────────────────────────────────┘
+                │
+                ▼
+┌───────────────────────────────────────┐
+│           TOOL EXECUTION LAYER        │
+│                                       │
+│ GitHub                                │
+│ Docker                                │
+│ Kubernetes                            │
+│ PostgreSQL                            │
+│ OpenAI                                │
+│ Anthropic                             │
+│ Gemini                                │
+│ Claude Code                           │
+│ Local LLMs                            │
+└───────────────────────────────────────┘
+
+⸻
+
+Multi-Tenant Workspace Model
+
+Never create one giant chat.
+
+Instead:
+
+Organization
+ ├── Workspace
+ │     ├── Project
+ │     │     ├── Agents
+ │     │     ├── Secrets
+ │     │     ├── Logs
+ │     │     ├── Files
+ │     │     └── Memory
+
+Example:
+
+GoodShyt Group
+ ├── Mise Orchestra
+ ├── AEON Sentinel
+ ├── RepRally
+ ├── NorCal Volley Intel
+
+Each project gets:
+
+project_id
+agent_pool
+memory_store
+vault_path
+audit_stream
+approval_policy
+
+⸻
+
+Secret Management Architecture
+
+Use:
+
+HashiCorp Vault
+
+⸻
+
+Why Vault
+
+Never store:
+
+OPENAI_KEY=
+ANTHROPIC_KEY=
+
+inside agents.
+
+Instead:
+
+Vault
+   ├── OpenAI
+   ├── Anthropic
+   ├── Gemini
+   ├── GitHub
+   └── Cloud Providers
+
+⸻
+
+Secret Flow
+
+Agent Requests Credential
+           │
+           ▼
+ RBAC Validation
+           │
+           ▼
+ Vault Issues Token
+           │
+           ▼
+ Agent Uses Token
+           │
+           ▼
+ Token Expires
+
+⸻
+
+Example
+
+Architect Agent:
+
+role: architect
+permissions:
+  - openai.read
+  - anthropic.read
+ttl: 30m
+
+Vault returns:
+
+{
+  "token":"vault-generated-token",
+  "expires":"30m"
+}
+
+After expiration:
+
+Credential invalid.
+
+⸻
+
+Unified Provider Gateway
+
+Instead of every agent using:
+
+OpenAI Key
+Claude Key
+Gemini Key
+
+Create:
+
+Agent Gateway API
+
+Agents call:
+
+POST /v1/chat
+
+Gateway routes to:
+
+OpenAI
+Claude
+Gemini
+DeepSeek
+Local Ollama
+
+This creates:
+
+ONE endpoint
+MANY models
+
+for the swarm.
+
+⸻
+
+Agent Identity System
+
+Every agent gets:
+
+agent_id:
+role:
+workspace:
+project:
+permissions:
+token:
+
+Example:
+
+agent_id: backend-01
+role: backend_engineer
+workspace: goodshyt
+project: mise-orchestra
+
+⸻
+
+RBAC Model
+
+Use four layers.
+
+Role
+
+Architect
+Coder
+Tester
+Reviewer
+DevOps
+Security
+Operator
+
+⸻
+
+Resource
+
+Repository
+Database
+Secrets
+Filesystem
+Cloud
+
+⸻
+
+Action
+
+read
+write
+execute
+delete
+deploy
+
+⸻
+
+Policy
+
+Example:
+
+backend_agent:
+ github:
+   - read
+   - write
+ vault:
+   - read
+ deployment:
+   - denied
+
+⸻
+
+Security Agent:
+
+security_agent:
+ github:
+   - read
+ deployment:
+   - approve
+ secrets:
+   - audit
+
+⸻
+
+Human Approval System
+
+Critical actions require approval.
+
+⸻
+
+Criticality Levels
+
+P0
+
+Safe
+
+Research
+Documentation
+Planning
+
+Auto approve.
+
+⸻
+
+P1
+
+Moderate
+
+Code generation
+Tests
+PR creation
+
+Auto approve with logging.
+
+⸻
+
+P2
+
+High
+
+Database migrations
+Merge to main
+Infrastructure changes
+
+Approval required.
+
+⸻
+
+P3
+
+Critical
+
+Delete database
+Production deployment
+Spend money
+External communication
+
+Human approval mandatory.
+
+⸻
+
+Approval Workflow
+
+Agent
+  │
+  ▼
+Request Action
+  │
+  ▼
+Policy Engine
+  │
+  ▼
+Approval Queue
+  │
+  ▼
+Human Reviews
+  │
+  ├── Approve
+  ├── Reject
+  └── Modify
+
+⸻
+
+Example:
+
+action:
+  deploy_prod
+risk:
+  critical
+requested_by:
+  devops-agent
+
+Operator sees:
+
+DevOps Agent wants:
+Deploy Release 1.5.2
+Changes:
+- 5 files
+- 1 migration
+Approve?
+
+⸻
+
+Agent Communication Bus
+
+Agents should not talk directly.
+
+Use:
+
+NATS
+Redis Streams
+Kafka
+
+⸻
+
+Message Format
+
+{
+  "from":"architect",
+  "to":"backend",
+  "task":"implement auth",
+  "priority":"high"
+}
+
+Everything becomes traceable.
+
+⸻
+
+Observability Layer
+
+Most important component.
+
+⸻
+
+Use:
+
+* OpenTelemetry
+* Langfuse
+* LangSmith
+* PostgreSQL
+
+⸻
+
+Event Pipeline
+
+Agent Action
+      │
+      ▼
+OpenTelemetry
+      │
+      ▼
+Collector
+      │
+      ▼
+PostgreSQL
+      │
+      ▼
+Dashboard
+
+⸻
+
+SQL Schema
+
+agents
+
+CREATE TABLE agents(
+ id UUID PRIMARY KEY,
+ name TEXT,
+ role TEXT
+);
+
+⸻
+
+conversations
+
+CREATE TABLE conversations(
+ id UUID PRIMARY KEY,
+ project_id UUID,
+ created_at TIMESTAMP
+);
+
+⸻
+
+messages
+
+CREATE TABLE messages(
+ id UUID PRIMARY KEY,
+ conversation_id UUID,
+ sender TEXT,
+ receiver TEXT,
+ content TEXT,
+ created_at TIMESTAMP
+);
+
+⸻
+
+tool_calls
+
+CREATE TABLE tool_calls(
+ id UUID PRIMARY KEY,
+ agent_id UUID,
+ tool_name TEXT,
+ arguments JSONB,
+ result JSONB,
+ created_at TIMESTAMP
+);
+
+⸻
+
+approvals
+
+CREATE TABLE approvals(
+ id UUID PRIMARY KEY,
+ action TEXT,
+ requested_by TEXT,
+ status TEXT,
+ approved_by TEXT
+);
+
+⸻
+
+Live Swarm Visualization
+
+Build a dashboard showing:
+
+Architect
+   ↓
+Backend
+   ↓
+Tester
+   ↓
+Reviewer
+
+and
+
+Messages/sec
+Token usage
+Latency
+Errors
+Approvals
+
+Think:
+
+Datadog
+for AI agents
+
+⸻
+
+Project Isolation
+
+Each project runs in:
+
+Docker Container
+
+or
+
+Kubernetes Namespace
+
+Example:
+
+workspace:
+  goodshyt
+project:
+  mise-orchestra
+
+Namespace:
+
+goodshyt-mise-orchestra
+
+Agents cannot access:
+
+rep-rally
+aeon-sentinel
+
+resources.
+
+⸻
+
+LangGraph Orchestration
+
+Recommended for v1.
+
+Graph:
+
+Human
+  │
+  ▼
+Architect
+  │
+  ├── Backend
+  ├── Frontend
+  ├── QA
+  └── Security
+
+Example:
+
+Human
+ -> Architect
+Architect
+ -> Backend
+Backend
+ -> QA
+QA
+ -> Human Approval
+Human
+ -> Deploy
+
+Benefits:
+
+* Persistent state
+* Branching workflows
+* Checkpoints
+* Recovery
+* Human intervention
+
+⸻
+
+CodeMachine CLI Alternative
+
+If using CodeMachine CLI:
+
+codemachine init
+codemachine agent create architect
+codemachine agent create backend
+codemachine agent create tester
+codemachine project start
+
+Then wire:
+
+Vault
+Postgres
+Langfuse
+OpenTelemetry
+
+behind it.
+
+⸻
+
+Production Deployment
+
+Frontend:
+  Next.js
+API:
+  FastAPI
+Orchestrator:
+  LangGraph
+Queue:
+  NATS
+Secrets:
+  Vault
+Database:
+  PostgreSQL
+Vector:
+  pgvector
+Observability:
+  Langfuse + OpenTelemetry
+Containers:
+  Docker
+Production:
+  Kubernetes
+
+⸻
+
+Final Recommended Build Order
+
+Phase 1
+
+MVP
+
+CLI
+LangGraph
+Postgres
+OpenAI
+Claude
+
+⸻
+
+Phase 2
+
+Security
+
+Vault
+RBAC
+Approval Engine
+
+⸻
+
+Phase 3
+
+Observability
+
+Langfuse
+OpenTelemetry
+Dashboard
+
+⸻
+
+Phase 4
+
+Swarm
+
+Architect Agent
+Coder Agent
+Tester Agent
+Security Agent
+DevOps Agent
+
+⸻
+
+Phase 5
+
+Enterprise
+
+Multi-tenancy
+Kubernetes
+SSO
+Billing
+Marketplace
+
+At that point, you’ll have a platform capable of hosting GoodShyt Systems projects, Mise Orchestra chef-agents, AEON Sentinel governance agents, and external model providers from OpenAI, Anthropic, Google, or local models behind a single orchestration layer while maintaining isolation, auditability, and controlled autonomy.

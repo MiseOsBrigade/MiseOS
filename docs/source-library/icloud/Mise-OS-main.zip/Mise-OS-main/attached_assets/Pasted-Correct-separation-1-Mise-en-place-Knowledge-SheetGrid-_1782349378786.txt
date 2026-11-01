@@ -1,0 +1,232 @@
+Correct separation:
+
+1. Mise-en-place Knowledge SheetGrid = the structured workspace.
+2. Mise Grid OS Agent = the capability layer that works on top of that workspace.
+
+The SheetGrid is the kitchen.
+The Agent is the sous-chef, expeditor, inspector, and inventory system.
+
+1. Mise-en-place Knowledge SheetGrid
+
+Definition
+
+The Mise-en-place Knowledge SheetGrid is the actual organized spreadsheet-database system.
+
+It is where information lives.
+
+It uses:
+
+Element	Meaning
+Tabs	Tables / stations
+Rows	Atomic records
+Columns	Typed metadata fields
+Views	Different workflow dimensions
+Formulas	Computation and status logic
+Links	Relationships between records
+Sources	Evidence and provenance
+Claims	Verifiable statements
+Tasks	Actionable work
+Dashboards	Operational visibility
+
+Core purpose
+
+Keep every idea, source, claim, task, tool, workflow, and output in its proper place.
+
+SheetGrid does not “think”
+
+It stores, structures, filters, calculates, validates, and displays.
+
+It is best described as:
+
+A structured spreadsheet-database knowledge system
+for organizing work, evidence, sources, tasks, tools,
+claims, workflows, and outputs.
+
+2. Mise Grid OS Agent
+
+Definition
+
+The Mise Grid OS Agent is the intelligent extension layer that operates on the SheetGrid.
+
+It does not replace the SheetGrid.
+It enhances it.
+
+It can:
+
+Agent Function	What it does
+Inspect	Reads rows, files, sources, and relationships
+Triage	Sorts messy inbox items into the right tables
+Verify	Checks whether claims have sources
+Index	Prepares records for RAG/search
+Summarize	Creates clean canonical summaries
+Link	Suggests related records
+Audit	Finds stale, duplicate, unsupported, or broken records
+Snapshot	Creates versioned change logs
+Automate	Triggers workflows and updates statuses
+Report	Produces dashboards, briefs, and summaries
+
+Core purpose
+
+Give the SheetGrid operational intelligence, retrieval, verification, and automation.
+
+The Agent is best described as:
+
+An agentic capability layer that reads, validates,
+links, summarizes, retrieves, audits, and automates
+the Mise-en-place Knowledge SheetGrid.
+
+Clean distinction
+
+Category	Mise-en-place Knowledge SheetGrid	Mise Grid OS Agent
+What it is	Structured spreadsheet/database	Intelligent operating layer
+Role	Stores and organizes	Acts and assists
+Metaphor	Kitchen station	Sous-chef / expeditor
+Primary unit	Row/record	Action/task/tool call
+Main strength	Order, clarity, structure	Automation, verification, retrieval
+Risk if overused	Too many tabs	Too much autonomy
+Best use	Source of truth	Capability extension
+Needs AI?	No	Yes
+Can work manually?	Yes	No
+Output	Tables, views, dashboards	Actions, summaries, audits, reports
+
+Relationship model
+
+flowchart TD
+    A[Mise-en-place Knowledge SheetGrid] --> B[Mise Grid OS Agent]
+    A --> A1[Projects]
+    A --> A2[Tasks]
+    A --> A3[Sources]
+    A --> A4[Claims]
+    A --> A5[Tools]
+    A --> A6[Workflows]
+    A --> A7[Outputs]
+    B --> B1[Triage]
+    B --> B2[Verify]
+    B --> B3[Index]
+    B --> B4[Summarize]
+    B --> B5[Audit]
+    B --> B6[Automate]
+    B --> B7[Report]
+    B -. extends .-> A
+    B -. never replaces .-> A
+
+Better naming hierarchy
+
+Use this:
+
+Mise Grid Ecosystem
+├── Mise-en-place Knowledge SheetGrid
+│   ├── Tables
+│   ├── Records
+│   ├── Views
+│   ├── Metadata
+│   ├── Sources
+│   └── Dashboards
+│
+└── Mise Grid OS Agent
+    ├── Triage Agent
+    ├── Source Agent
+    ├── Claim Agent
+    ├── Workflow Agent
+    ├── Retrieval Agent
+    ├── Audit Agent
+    └── Snapshot Agent
+
+Updated product definitions
+
+Mise-en-place Knowledge SheetGrid
+
+A structured spreadsheet-database workspace inspired by culinary mise en place, where every project, task, source, claim, tool, workflow, and output has a defined place, relationship, status, and verification context.
+
+Mise Grid OS Agent
+
+An agentic extension layer that operates on the Knowledge SheetGrid to triage inputs, verify claims, generate summaries, build retrieval indexes, maintain audit trails, automate workflows, and produce trusted outputs.
+
+Mise Grid Ecosystem
+
+The combined system: a structured knowledge grid plus an intelligent agent layer that makes the grid searchable, verifiable, automatable, and operational.
+
+Technical boundary
+
+The SheetGrid owns the data model.
+
+Projects
+Tasks
+Sources
+Claims
+Tools
+Workflows
+Prompts
+Outputs
+Entities
+Glossary
+Audit Log
+
+The Agent owns the behaviors.
+
+readRecord()
+triageInbox()
+verifyClaim()
+summarizeSource()
+linkRecords()
+buildRetrievalIndex()
+auditGrid()
+createSnapshot()
+generateReport()
+suggestNextAction()
+
+Important rule
+
+The Agent should be permissioned, not sovereign.
+
+Meaning:
+
+The SheetGrid is the source of truth.
+The Agent is the operator.
+The Agent can suggest, prepare, audit, and automate.
+The Agent should not silently overwrite truth-critical records.
+
+Agent permission levels
+
+Level	Permission
+Level 0	Read-only
+Level 1	Suggest changes
+Level 2	Draft updates
+Level 3	Apply low-risk changes
+Level 4	Apply approved workflow automations
+Level 5	Admin actions with human approval
+
+This keeps the system safe.
+
+Correct architecture
+
+Mise-en-place Knowledge SheetGrid
+        ↓
+Structured tables, records, metadata, views
+        ↓
+Mise Grid OS Agent
+        ↓
+Triage, verify, retrieve, audit, automate
+        ↓
+Reports, dashboards, snapshots, actions
+
+Recommended wording going forward
+
+Use this distinction consistently:
+
+Mise-en-place Knowledge SheetGrid is the structured workspace.
+Mise Grid OS Agent is the intelligent extension layer.
+Together, they form the Mise Grid Ecosystem.
+
+Short version for README
+
+# Mise Grid Ecosystem
+Mise Grid Ecosystem separates structure from intelligence.
+## Mise-en-place Knowledge SheetGrid
+The SheetGrid is the source-of-truth workspace. It organizes projects, tasks, sources, claims, tools, workflows, prompts, outputs, entities, and glossary terms into structured tabs, rows, columns, relationships, and views.
+## Mise Grid OS Agent
+The OS Agent is the extension layer. It operates on the SheetGrid to triage new inputs, verify claims, summarize sources, link related records, prepare RAG retrieval text, create snapshots, audit stale records, and generate reports.
+## Core Rule
+The SheetGrid owns the truth.
+The Agent extends capability.
+The Agent never replaces the source of truth.

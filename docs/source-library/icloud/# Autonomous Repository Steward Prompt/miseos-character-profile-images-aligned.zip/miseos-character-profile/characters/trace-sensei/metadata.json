@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.032",
+  "number": 32,
+  "slug": "trace-sensei",
+  "name": "Trace Sensei",
+  "mise_name": "Trace Sensei",
+  "codename": "TRACE_SENSEI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "Instrumentation Booster",
+  "job_name": "Instrumentation Booster",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "Instrumentation Booster",
+    "avatar_path": "assets/characters/trace-sensei/avatar.png",
+    "card_path": "assets/characters/trace-sensei/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Trace Sensei performs instrumentation booster within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Chaos Kaito",
+      "Capacity Kanna",
+      "Canary Judge"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 66,
+    "precision": 66,
+    "speed": 58,
+    "resilience": 66,
+    "intelligence": 84,
+    "teamwork": 70
+  },
+  "paths": {
+    "readme": "characters/trace-sensei/README.md",
+    "metadata": "characters/trace-sensei/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

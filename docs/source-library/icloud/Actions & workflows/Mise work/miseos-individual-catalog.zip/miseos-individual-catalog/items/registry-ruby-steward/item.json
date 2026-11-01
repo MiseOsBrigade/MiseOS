@@ -1,0 +1,17 @@
+{
+  "id": "registry-ruby-steward",
+  "category": "registry-capability",
+  "title": "MiseOS Ruby Steward",
+  "description": "Executable baseline capability for MiseOS Ruby Steward.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.ruby-steward.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: rubySteward",
+    "Source status: active"
+  ]
+}

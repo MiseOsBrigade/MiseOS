@@ -1,0 +1,25 @@
+{
+  "name": "@miseos/gridops-playground",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MiseOS GridOps Playground — multidimensional repo grid, agent control plane, RAG memory, and evidence vault.",
+  "type": "module",
+  "scripts": {
+    "demo": "tsx src/demo/gridops-demo.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings=0",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}

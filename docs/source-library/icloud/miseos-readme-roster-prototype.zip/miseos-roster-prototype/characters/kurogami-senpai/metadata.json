@@ -1,0 +1,78 @@
+{
+  "id": "kurogami-senpai",
+  "slug": "kurogami-senpai",
+  "number": 76,
+  "name": "Kurogami Senpai",
+  "miseName": "Mise Orchestrate",
+  "codename": "chef.operations.orchestrate",
+  "department": "operations",
+  "departmentLabel": "Operations Kitchen",
+  "departmentTagline": "Keep the kitchen running smoothly.",
+  "rarity": "mythic",
+  "roleCategory": "orchestrate",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Chef de Cuisine",
+    "signaturePhrase": "Kurogami Senpai keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Plans every move with perfect precision before the kitchen heats up."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#D4AF37",
+    "aura": "Operations Kitchen Gold Flame aura",
+    "silhouette": "chibi DevOps chef carrying Gold Flame",
+    "tool": "Gold Flame",
+    "spritePath": "/assets/characters/kurogami-senpai/full-body.png",
+    "cardPath": "/assets/characters/kurogami-senpai/card.png"
+  },
+  "workflow": {
+    "jobName": "Orchestrate",
+    "roleName": "Chef de Cuisine microagent",
+    "summary": "Plans every move with perfect precision before the kitchen heats up.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Scale Oni",
+      "Mizu"
+    ]
+  },
+  "stats": {
+    "power": 77,
+    "precision": 75,
+    "speed": 83,
+    "resilience": 79,
+    "intelligence": 71,
+    "teamwork": 85
+  },
+  "genesisVariant": true,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "1",
+    "role": "Chef de Cuisine",
+    "department": "Operations",
+    "function": "Orchestrate",
+    "rarity": "Mythic",
+    "tier": "Season 1 Core",
+    "element": "Gold Flame",
+    "ability": "Master Orchestrator",
+    "lore": "Plans every move with perfect precision before the kitchen heats up.",
+    "image_file": "cards/png/001-kurogami-senpai.png",
+    "metadata_file": "metadata/erc721/001-kurogami-senpai.json"
+  },
+  "displayNumber": 76,
+  "departmentColor": "#D4AF37",
+  "departmentShort": "Operations",
+  "assetBase": "assets/characters/kurogami-senpai",
+  "avatarSvg": "assets/characters/kurogami-senpai/avatar.svg",
+  "cardSvg": "assets/characters/kurogami-senpai/card.svg"
+}

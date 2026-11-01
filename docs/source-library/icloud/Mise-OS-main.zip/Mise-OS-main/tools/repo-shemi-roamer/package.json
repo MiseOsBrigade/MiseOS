@@ -1,0 +1,17 @@
+{
+  "name": "repo-shemi-roamer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A Shimeji-style terminal character that roams through a repo or container filesystem.",
+  "bin": {
+    "shemi": "./shemi-roamer.mjs"
+  },
+  "scripts": {
+    "start": "node shemi-roamer.mjs .",
+    "roam:repo": "node shemi-roamer.mjs . --max-depth=6 --tick=650",
+    "roam:container": "node shemi-roamer.mjs / --max-depth=4 --tick=800"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

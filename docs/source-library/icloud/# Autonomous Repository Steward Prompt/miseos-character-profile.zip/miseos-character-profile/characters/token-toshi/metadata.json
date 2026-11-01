@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.048",
+  "number": 48,
+  "slug": "token-toshi",
+  "name": "Token Toshi",
+  "mise_name": "Token Toshi",
+  "codename": "TOKEN_TOSHI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Credential Hygiene Scanner",
+  "job_name": "Credential Hygiene Scanner",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Credential Hygiene Scanner",
+    "avatar_path": "assets/characters/token-toshi/avatar.png",
+    "card_path": "assets/characters/token-toshi/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Token Toshi performs credential hygiene scanner within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "CVE Kumo",
+      "Container Kage",
+      "Seira Vaultkeeper"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 84,
+    "precision": 69,
+    "speed": 65,
+    "resilience": 80,
+    "intelligence": 61,
+    "teamwork": 67
+  },
+  "paths": {
+    "readme": "characters/token-toshi/README.md",
+    "metadata": "characters/token-toshi/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

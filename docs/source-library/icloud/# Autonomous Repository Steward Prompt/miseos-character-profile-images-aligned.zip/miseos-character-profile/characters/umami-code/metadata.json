@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.024",
+  "number": 24,
+  "slug": "umami-code",
+  "name": "Umami Code",
+  "mise_name": "Umami Code",
+  "codename": "UMAMI_CODE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Traffic & Ingress Manager",
+  "job_name": "Traffic & Ingress Manager",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Traffic & Ingress Manager",
+    "avatar_path": "assets/characters/umami-code/avatar.png",
+    "card_path": "assets/characters/umami-code/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Umami Code performs traffic & ingress manager within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Queue Mizu",
+      "Streama",
+      "Preview Yuki"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 86,
+    "precision": 87,
+    "speed": 69,
+    "resilience": 85,
+    "intelligence": 73,
+    "teamwork": 86
+  },
+  "paths": {
+    "readme": "characters/umami-code/README.md",
+    "metadata": "characters/umami-code/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

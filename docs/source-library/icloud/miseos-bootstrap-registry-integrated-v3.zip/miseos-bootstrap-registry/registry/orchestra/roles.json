@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "0.3.0",
+  "sourceConcept": "Mise Orchestra",
+  "tagline": "Every Role. One Symphony.",
+  "operatingMotto": "Cook. Orchestrate. Deploy.",
+  "coreForces": [
+    {
+      "id": "mise",
+      "name": "MISE",
+      "meaning": "Harmony, preparation, craftsmanship, synchronization, trust, and systems thinking.",
+      "belief": "Everything has a place.",
+      "operationalOutcome": "Flowing deployments, united teams, synchronized systems, and recipes that become repeatable masterpieces."
+    },
+    {
+      "id": "entropy",
+      "name": "ENTROPY",
+      "meaning": "Disorder, fragmentation, shortcuts, neglect, decay, bugs, outages, and lost recipes.",
+      "belief": "Everything eventually falls apart.",
+      "operationalOutcome": "Incidents, broken pipelines, stale packages, missing ownership, degraded trust, and drift."
+    }
+  ],
+  "executionStages": ["prepare", "cook", "orchestrate", "deploy", "scale"],
+  "departments": [
+    {"id": "command", "name": "Command", "mission": "Set direction, synchronize departments, hold the Golden Ladle standard."},
+    {"id": "pipeline", "name": "Pipeline", "mission": "Build, test, deploy, repeat."},
+    {"id": "platform", "name": "Platform", "mission": "Keep the stage where services live stable and composable."},
+    {"id": "reliability", "name": "Reliability", "mission": "Observe, measure, improve, and keep the kitchen calm under load."},
+    {"id": "security", "name": "Security", "mission": "Protect the kitchen, guard secrets, and prevent unsafe execution."},
+    {"id": "data-insights", "name": "Data & Insights", "mission": "Learn, optimize, evolve, and turn telemetry into decisions."}
+  ],
+  "devopsMetaphorMap": [
+    {"devops": "CI/CD Pipeline", "kitchenEquivalent": "Rush Hour Delivery", "action": "Lightning Deploy", "archetype": "Runner"},
+    {"devops": "API Gateway", "kitchenEquivalent": "The Saucier's Station", "action": "Sauce Link", "archetype": "Saucier"},
+    {"devops": "Autoscaling", "kitchenEquivalent": "Rotisseur's Grill", "action": "Elastic Growth", "archetype": "Rotisseur"},
+    {"devops": "Garbage Collection", "kitchenEquivalent": "The Plongeur's Sink", "action": "Void Wash", "archetype": "Plongeur"},
+    {"devops": "Secrets Management", "kitchenEquivalent": "The Wine Cellar", "action": "Vault Lock", "archetype": "Sommelier"},
+    {"devops": "SLIs & SLOs", "kitchenEquivalent": "Tasting Senses", "action": "Measure the perfect deployment dish", "archetype": "Reliability Taster"}
+  ],
+  "founders": [
+    {"id": "gen-001", "name": "Kurogami Senpai", "department": "command", "title": "The First Conductor", "role": "Supreme strategist and workflow synchronizer", "artifact": "Golden Ladle", "rarity": "genesis-founder", "powerLevel": 99},
+    {"id": "gen-015", "name": "Orchestra Core", "department": "command", "title": "Soul of the Kitchen", "role": "Living system consciousness and universal synchronization layer", "artifact": "Galaxy Scrolls", "rarity": "mythic", "powerLevel": 100},
+    {"id": "gen-005", "name": "Kaji", "department": "infrastructure", "title": "Flame of Computation", "role": "Builds power", "artifact": "CPU Inferno", "rarity": "genesis-founder", "powerLevel": 95},
+    {"id": "gen-012", "name": "Scale Oni", "department": "infrastructure", "title": "The Elastic Giant", "role": "Multiplies power", "artifact": "Elastic Growth", "rarity": "genesis-founder", "powerLevel": 97},
+    {"id": "gen-013", "name": "Build-Kun", "department": "infrastructure", "title": "Baker of Containers", "role": "Shapes power", "artifact": "Docker Dough", "rarity": "genesis-founder", "powerLevel": 94}
+  ],
+  "pipelineMasters": [
+    {"id": "pipe-001", "name": "Alko", "title": "Commit Chef", "function": "Commit Intake", "rarity": "rare", "registryCapability": "commit_intake"},
+    {"id": "pipe-002", "name": "Bruno", "title": "Blast-Radius", "function": "Change Impact Scanner", "rarity": "epic", "registryCapability": "change_impact_scan"},
+    {"id": "pipe-003", "name": "Lila", "title": "Branchkeeper", "function": "Branch Policy Gate", "rarity": "rare", "registryCapability": "branch_policy_gate"},
+    {"id": "pipe-004", "name": "Omar", "title": "Reviewer", "function": "PR Hygiene Check", "rarity": "rare", "registryCapability": "pr_hygiene_check"},
+    {"id": "pipe-005", "name": "Hugo", "title": "Matrix", "function": "Test Matrix Runner", "rarity": "epic", "registryCapability": "test_matrix_run"}
+  ],
+  "registryBinding": {
+    "primaryRepository": "miseos-bootstrap-registry",
+    "primaryContainer": "ghcr.io/mise-os/miseos-runner",
+    "primaryPackages": ["@mise-os/cli", "@mise-os/policy-engine", "@mise-os/release-sentinel"],
+    "firstPublishOrder": ["ghcr.io/mise-os/miseos-runner", "@mise-os/cli", "@mise-os/policy-engine", "@mise-os/release-sentinel"]
+  }
+}

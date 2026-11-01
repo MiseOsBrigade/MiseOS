@@ -1,0 +1,68 @@
+{
+  "id": "scorecard-shin",
+  "number": 59,
+  "name": "Scorecard Shin",
+  "miseName": "Mise SecurityScorecard",
+  "codename": "chef.security.security-scorecard",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "rare",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Security Scorecard",
+    "signaturePhrase": "Security Scorecard done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in security scorecard so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen security scorecard aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/scorecard-shin/full-body.png",
+    "cardPath": "/assets/characters/scorecard-shin/card.png"
+  },
+  "workflow": {
+    "jobName": "Security Scorecard",
+    "roleName": "Security Scorecard microagent",
+    "summary": "Runs security scorecard for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Nudge Neko",
+      "Red Oni",
+      "Canary Taster",
+      "Guardrail Goro"
+    ]
+  },
+  "stats": {
+    "power": 93,
+    "precision": 84,
+    "speed": 75,
+    "resilience": 89,
+    "intelligence": 80,
+    "teamwork": 85
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "scorecard-shin",
+  "seasonOneCard": null,
+  "displayNumber": 59,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/scorecard-shin",
+  "avatarSvg": "assets/characters/scorecard-shin/avatar.svg",
+  "cardSvg": "assets/characters/scorecard-shin/card.svg"
+}

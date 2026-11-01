@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" role="img" aria-label="MiseOS wordmark">
+  <rect width="900" height="180" rx="24" fill="#07090D"/>
+  <text x="48" y="112" fill="#F5E9CD" font-family="Arial, sans-serif" font-size="76" font-weight="700">Mise<tspan fill="#E85D1B">OS</tspan></text>
+  <text x="410" y="112" fill="#D9A941" font-family="Arial, sans-serif" font-size="30" letter-spacing="6">PLAN BUILD LAUNCH GROW</text>
+</svg>

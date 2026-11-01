@@ -1,0 +1,500 @@
+[
+  {
+    "id": "alko-commit-chef",
+    "number": 1,
+    "name": "Alko Commit Chef",
+    "miseName": "Mise CommitIntake",
+    "codename": "chef.pipeline.commit-intake",
+    "department": "pipeline",
+    "departmentLabel": "Pipeline Kitchen",
+    "departmentTagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "genesis",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Commit Intake",
+      "signaturePhrase": "Commit Intake done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in commit intake so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen commit intake aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/alko-commit-chef/full-body.png",
+      "cardPath": "/assets/characters/alko-commit-chef/card.png"
+    },
+    "workflow": {
+      "jobName": "Commit Intake",
+      "roleName": "Commit Intake microagent",
+      "summary": "Runs commit intake for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Bruno Blast-Radius",
+        "Template Tanaka",
+        "SLO Sage",
+        "Threat Taro"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 87,
+      "speed": 85,
+      "resilience": 91,
+      "intelligence": 97,
+      "teamwork": 79
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "alko-commit-chef",
+    "seasonOneCard": null,
+    "displayNumber": 1,
+    "departmentColor": "#F97316",
+    "departmentShort": "Pipeline",
+    "assetBase": "assets/characters/alko-commit-chef",
+    "avatarSvg": "assets/characters/alko-commit-chef/avatar.svg",
+    "cardSvg": "assets/characters/alko-commit-chef/card.svg"
+  },
+  {
+    "id": "iron-hashi",
+    "number": 8,
+    "name": "Iron Hashi",
+    "miseName": "Mise ArtifactValidator",
+    "codename": "chef.pipeline.artifact-validator",
+    "department": "pipeline",
+    "departmentLabel": "Pipeline Kitchen",
+    "departmentTagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "genesis",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Artifact Validator",
+      "signaturePhrase": "Artifact Validator done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in artifact validator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen artifact validator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a crate",
+      "tool": "crate",
+      "spritePath": "/assets/characters/iron-hashi/full-body.png",
+      "cardPath": "/assets/characters/iron-hashi/card.png"
+    },
+    "workflow": {
+      "jobName": "Artifact Validator",
+      "roleName": "Artifact Validator microagent",
+      "summary": "Runs artifact validator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Yume Builder",
+        "Nina Promoter",
+        "Grafana Mei",
+        "OnCall Naomi"
+      ]
+    },
+    "stats": {
+      "power": 97,
+      "precision": 88,
+      "speed": 71,
+      "resilience": 77,
+      "intelligence": 81,
+      "teamwork": 95
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "iron-hashi",
+    "seasonOneCard": {
+      "id": "7",
+      "role": "Boucher",
+      "department": "Reliability",
+      "function": "Validate",
+      "rarity": "Rare",
+      "tier": "Quality Gate",
+      "element": "Iron Standard",
+      "ability": "Strict Validation",
+      "lore": "Validates everything with strict standards. No errors on his watch.",
+      "image_file": "cards/png/007-iron-hashi.png",
+      "metadata_file": "metadata/erc721/007-iron-hashi.json"
+    },
+    "displayNumber": 8,
+    "departmentColor": "#F97316",
+    "departmentShort": "Pipeline",
+    "assetBase": "assets/characters/iron-hashi",
+    "avatarSvg": "assets/characters/iron-hashi/avatar.svg",
+    "cardSvg": "assets/characters/iron-hashi/card.svg"
+  },
+  {
+    "id": "omar-reviewer",
+    "number": 4,
+    "name": "Omar Reviewer",
+    "miseName": "Mise PrHygieneCheck",
+    "codename": "chef.pipeline.pr-hygiene-check",
+    "department": "pipeline",
+    "departmentLabel": "Pipeline Kitchen",
+    "departmentTagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "genesis",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "Egyptian",
+      "title": "PR Hygiene Check",
+      "signaturePhrase": "PR Hygiene Check done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in pr hygiene check so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen pr hygiene check aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/omar-reviewer/full-body.png",
+      "cardPath": "/assets/characters/omar-reviewer/card.png"
+    },
+    "workflow": {
+      "jobName": "PR Hygiene Check",
+      "roleName": "PR Hygiene Check microagent",
+      "summary": "Runs pr hygiene check for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Lila Branchkeeper",
+        "Hugo Matrix",
+        "Schema Sora",
+        "Capacity Kanna"
+      ]
+    },
+    "stats": {
+      "power": 86,
+      "precision": 96,
+      "speed": 72,
+      "resilience": 90,
+      "intelligence": 80,
+      "teamwork": 76
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "omar-reviewer",
+    "seasonOneCard": null,
+    "displayNumber": 4,
+    "departmentColor": "#F97316",
+    "departmentShort": "Pipeline",
+    "assetBase": "assets/characters/omar-reviewer",
+    "avatarSvg": "assets/characters/omar-reviewer/avatar.svg",
+    "cardSvg": "assets/characters/omar-reviewer/card.svg"
+  },
+  {
+    "id": "yume-builder",
+    "number": 7,
+    "name": "Yume Builder",
+    "miseName": "Mise ArtifactBuilder",
+    "codename": "chef.pipeline.artifact-builder",
+    "department": "pipeline",
+    "departmentLabel": "Pipeline Kitchen",
+    "departmentTagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "genesis",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "Korean",
+      "title": "Artifact Builder",
+      "signaturePhrase": "Artifact Builder done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in artifact builder so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen artifact builder aura",
+      "silhouette": "multinational chibi DevOps chef carrying a crate",
+      "tool": "crate",
+      "spritePath": "/assets/characters/yume-builder/full-body.png",
+      "cardPath": "/assets/characters/yume-builder/card.png"
+    },
+    "workflow": {
+      "jobName": "Artifact Builder",
+      "roleName": "Artifact Builder microagent",
+      "summary": "Runs artifact builder for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Seira Scan",
+        "Iron Hashi",
+        "Policy Kenji",
+        "Pager Hiro"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 87,
+      "speed": 68,
+      "resilience": 70,
+      "intelligence": 97,
+      "teamwork": 82
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "yume-builder",
+    "seasonOneCard": null,
+    "displayNumber": 7,
+    "departmentColor": "#F97316",
+    "departmentShort": "Pipeline",
+    "assetBase": "assets/characters/yume-builder",
+    "avatarSvg": "assets/characters/yume-builder/avatar.svg",
+    "cardSvg": "assets/characters/yume-builder/card.svg"
+  },
+  {
+    "id": "flash-riku",
+    "slug": "flash-riku",
+    "number": 82,
+    "name": "Flash Riku",
+    "miseName": "Mise Deploy",
+    "codename": "chef.pipeline.deploy",
+    "department": "pipeline",
+    "departmentLabel": "Pipeline Kitchen",
+    "departmentTagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "epic",
+    "roleCategory": "deploy",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Runner",
+      "signaturePhrase": "Flash Riku keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Moves code at lightning speed through the pipeline."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen Blue Lightning aura",
+      "silhouette": "chibi DevOps chef carrying Blue Lightning",
+      "tool": "Blue Lightning",
+      "spritePath": "/assets/characters/flash-riku/full-body.png",
+      "cardPath": "/assets/characters/flash-riku/card.png"
+    },
+    "workflow": {
+      "jobName": "Deploy",
+      "roleName": "Runner microagent",
+      "summary": "Moves code at lightning speed through the pipeline.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Yume",
+        "Build-Kun"
+      ]
+    },
+    "stats": {
+      "power": 96,
+      "precision": 86,
+      "speed": 79,
+      "resilience": 97,
+      "intelligence": 82,
+      "teamwork": 76
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "9",
+      "role": "Runner",
+      "department": "Pipeline",
+      "function": "Deploy",
+      "rarity": "Epic",
+      "tier": "Delivery Line",
+      "element": "Blue Lightning",
+      "ability": "Lightning Delivery",
+      "lore": "Moves code at lightning speed through the pipeline.",
+      "image_file": "cards/png/009-flash-riku.png",
+      "metadata_file": "metadata/erc721/009-flash-riku.json"
+    },
+    "displayNumber": 82,
+    "departmentColor": "#F97316",
+    "departmentShort": "Pipeline",
+    "assetBase": "assets/characters/flash-riku",
+    "avatarSvg": "assets/characters/flash-riku/avatar.svg",
+    "cardSvg": "assets/characters/flash-riku/card.svg"
+  },
+  {
+    "id": "pipeline-sensei",
+    "number": 15,
+    "name": "Pipeline Sensei",
+    "miseName": "Mise PipelineTunerAgent",
+    "codename": "chef.pipeline.pipeline-tuner-agent",
+    "department": "pipeline",
+    "departmentLabel": "Pipeline Kitchen",
+    "departmentTagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "epic",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Pipeline Tuner Agent",
+      "signaturePhrase": "Pipeline Tuner Agent done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in pipeline tuner agent so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen pipeline tuner agent aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/pipeline-sensei/full-body.png",
+      "cardPath": "/assets/characters/pipeline-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Pipeline Tuner Agent",
+      "roleName": "Pipeline Tuner Agent microagent",
+      "summary": "Runs pipeline tuner agent for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Canary Taster",
+        "Platform Sensei",
+        "Reliability Sensei",
+        "Red Oni"
+      ]
+    },
+    "stats": {
+      "power": 94,
+      "precision": 73,
+      "speed": 68,
+      "resilience": 74,
+      "intelligence": 76,
+      "teamwork": 98
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "pipeline-sensei",
+    "seasonOneCard": null,
+    "displayNumber": 15,
+    "departmentColor": "#F97316",
+    "departmentShort": "Pipeline",
+    "assetBase": "assets/characters/pipeline-sensei",
+    "avatarSvg": "assets/characters/pipeline-sensei/avatar.svg",
+    "cardSvg": "assets/characters/pipeline-sensei/card.svg"
+  },
+  {
+    "id": "bruno-blast-radius",
+    "number": 2,
+    "name": "Bruno Blast-Radius",
+    "miseName": "Mise ChangeImpactScanner",
+    "codename": "chef.pipeline.change-impact-scanner",
+    "department": "pipeline",
+    "departmentLabel": "Pipeline Kitchen",
+    "departmentTagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "rare",
+    "roleCategory": "automation",
+    "identity": {
+      "nationality": "Brazilian",
+      "title": "Change Impact Scanner",
+      "signaturePhrase": "Change Impact Scanner done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in change impact scanner so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen change impact scanner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/bruno-blast-radius/full-body.png",
+      "cardPath": "/assets/characters/bruno-blast-radius/card.png"
+    },
+    "workflow": {
+      "jobName": "Change Impact Scanner",
+      "roleName": "Change Impact Scanner microagent",
+      "summary": "Runs change impact scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Alko Commit Chef",
+        "Lila Branchkeeper",
+        "Bootstrap Aiko",
+        "Trace Sensei"
+      ]
+    },
+    "stats": {
+      "power": 89,
+      "precision": 95,
+      "speed": 95,
+      "resilience": 77,
+      "intelligence": 88,
+      "teamwork": 99
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "bruno-blast-radius",
+    "seasonOneCard": null,
+    "displayNumber": 2,
+    "departmentColor": "#F97316",
+    "departmentShort": "Pipeline",
+    "assetBase": "assets/characters/bruno-blast-radius",
+    "avatarSvg": "assets/characters/bruno-blast-radius/avatar.svg",
+    "cardSvg": "assets/characters/bruno-blast-radius/card.svg"
+  }
+]

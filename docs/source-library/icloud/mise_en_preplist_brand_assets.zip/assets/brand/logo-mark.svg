@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mise-en-Preplist logo mark</title>
+  <desc id="desc">A rounded prep-board badge with a checklist, chef knife, and green check mark.</desc>
+  <rect width="512" height="512" rx="112" fill="#121212"/>
+  <rect x="72" y="70" width="368" height="372" rx="54" fill="#FFF5E6"/>
+  <rect x="114" y="112" width="284" height="44" rx="22" fill="#E66A2C"/>
+  <circle cx="158" cy="214" r="18" fill="#1F8A5B"/>
+  <circle cx="158" cy="286" r="18" fill="#1F8A5B"/>
+  <circle cx="158" cy="358" r="18" fill="#1F8A5B"/>
+  <path d="M148 214.5l7.5 7.5 15.5-18" stroke="#FFF5E6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M148 286.5l7.5 7.5 15.5-18" stroke="#FFF5E6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M148 358.5l7.5 7.5 15.5-18" stroke="#FFF5E6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="204" y="202" width="168" height="24" rx="12" fill="#242424"/>
+  <rect x="204" y="274" width="134" height="24" rx="12" fill="#242424"/>
+  <rect x="204" y="346" width="182" height="24" rx="12" fill="#242424"/>
+  <path d="M96 433l305-305c9-9 24-9 33 0l1 1c9 9 9 24 0 33L130 467c-9 9-24 9-33 0l-1-1c-9-9-9-24 0-33z" fill="#C9D1D9"/>
+  <path d="M359 170l42-42c9-9 24-9 33 0l1 1c9 9 9 24 0 33l-42 42-34-34z" fill="#3A3A3A"/>
+  <path d="M96 433l34 34-48 14 14-48z" fill="#E66A2C"/>
+</svg>

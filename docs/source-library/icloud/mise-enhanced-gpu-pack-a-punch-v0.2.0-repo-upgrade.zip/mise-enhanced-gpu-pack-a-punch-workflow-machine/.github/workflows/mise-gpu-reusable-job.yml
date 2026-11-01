@@ -1,0 +1,51 @@
+name: Mise Reusable GPU Job
+
+on:
+  workflow_call:
+    inputs:
+      run_gpu_smoke:
+        required: false
+        default: true
+        type: boolean
+      run_pytest_gpu:
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  reusable-gpu:
+    name: Reusable GPU Lane
+    runs-on: [self-hosted, linux, x64, gpu, mise-gpu-ephemeral]
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: GPU preflight
+        if: inputs.run_gpu_smoke
+        run: bash scripts/mise/gpu_preflight.sh
+
+      - name: GPU smoke test
+        if: inputs.run_gpu_smoke
+        run: python3 scripts/mise/gpu_smoke_test.py
+
+      - name: GPU pytest lane
+        if: inputs.run_pytest_gpu
+        run: |
+          if [[ -f requirements.txt ]]; then python3 -m pip install -r requirements.txt; fi
+          if [[ -f requirements-dev.txt ]]; then python3 -m pip install -r requirements-dev.txt; fi
+          python3 -m pytest -q -m "gpu"
+
+      - name: Upload reusable GPU evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-reusable-gpu-evidence
+          path: mise-evidence/
+          retention-days: 14

@@ -1,0 +1,68 @@
+{
+  "id": "resilience-ryu",
+  "number": 43,
+  "name": "Resilience Ryu",
+  "miseName": "Mise ResilienceTestingLoop",
+  "codename": "chef.reliability.resilience-testing-loop",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "rare",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Resilience Testing Loop",
+    "signaturePhrase": "Resilience Testing Loop done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in resilience testing loop so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen resilience testing loop aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/resilience-ryu/full-body.png",
+    "cardPath": "/assets/characters/resilience-ryu/card.png"
+  },
+  "workflow": {
+    "jobName": "Resilience Testing Loop",
+    "roleName": "Resilience Testing Loop microagent",
+    "summary": "Runs resilience testing loop for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Forecast Fuji",
+      "Impact Ichi",
+      "Ivun Cache",
+      "Portal Rei"
+    ]
+  },
+  "stats": {
+    "power": 92,
+    "precision": 76,
+    "speed": 94,
+    "resilience": 72,
+    "intelligence": 88,
+    "teamwork": 92
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "resilience-ryu",
+  "seasonOneCard": null,
+  "displayNumber": 43,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/resilience-ryu",
+  "avatarSvg": "assets/characters/resilience-ryu/avatar.svg",
+  "cardSvg": "assets/characters/resilience-ryu/card.svg"
+}

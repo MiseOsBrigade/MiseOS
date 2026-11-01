@@ -1,0 +1,2 @@
+# Optional dependency for MiseOS LLM observability.
+langsmith>=0.3,<1

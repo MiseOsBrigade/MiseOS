@@ -1,0 +1,68 @@
+{
+  "id": "pipeline-sensei",
+  "number": 15,
+  "name": "Pipeline Sensei",
+  "miseName": "Mise PipelineTunerAgent",
+  "codename": "chef.pipeline.pipeline-tuner-agent",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "epic",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Pipeline Tuner Agent",
+    "signaturePhrase": "Pipeline Tuner Agent done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in pipeline tuner agent so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen pipeline tuner agent aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/pipeline-sensei/full-body.png",
+    "cardPath": "/assets/characters/pipeline-sensei/card.png"
+  },
+  "workflow": {
+    "jobName": "Pipeline Tuner Agent",
+    "roleName": "Pipeline Tuner Agent microagent",
+    "summary": "Runs pipeline tuner agent for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Canary Taster",
+      "Platform Sensei",
+      "Reliability Sensei",
+      "Red Oni"
+    ]
+  },
+  "stats": {
+    "power": 94,
+    "precision": 73,
+    "speed": 68,
+    "resilience": 74,
+    "intelligence": 76,
+    "teamwork": 98
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "pipeline-sensei",
+  "seasonOneCard": null,
+  "displayNumber": 15,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/pipeline-sensei",
+  "avatarSvg": "assets/characters/pipeline-sensei/avatar.svg",
+  "cardSvg": "assets/characters/pipeline-sensei/card.svg"
+}

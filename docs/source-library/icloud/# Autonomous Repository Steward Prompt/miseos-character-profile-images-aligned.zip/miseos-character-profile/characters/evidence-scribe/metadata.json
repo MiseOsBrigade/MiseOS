@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.057",
+  "number": 57,
+  "slug": "evidence-scribe",
+  "name": "Evidence Scribe",
+  "mise_name": "Evidence Scribe",
+  "codename": "EVIDENCE_SCRIBE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Compliance Evidence Collector",
+  "job_name": "Compliance Evidence Collector",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Compliance Evidence Collector",
+    "avatar_path": "assets/characters/evidence-scribe/card.jpg",
+    "card_path": "assets/characters/evidence-scribe/card.jpg",
+    "primary_photo_page": 83,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-083.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Evidence Scribe performs compliance evidence collector within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Nudge Neko",
+      "Scorecard Shin",
+      "Red Oni"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 75,
+    "precision": 70,
+    "speed": 64,
+    "resilience": 84,
+    "intelligence": 80,
+    "teamwork": 70
+  },
+  "paths": {
+    "readme": "characters/evidence-scribe/README.md",
+    "metadata": "characters/evidence-scribe/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

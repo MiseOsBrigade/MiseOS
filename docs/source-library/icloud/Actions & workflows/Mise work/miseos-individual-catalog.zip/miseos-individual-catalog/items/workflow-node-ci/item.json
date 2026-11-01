@@ -1,0 +1,11 @@
+{
+  "id": "workflow-node-ci",
+  "category": "workflow",
+  "title": "Node CI",
+  "description": "Standard Node 24 CI baseline.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/ci-node.yml"
+  ],
+  "notes": []
+}

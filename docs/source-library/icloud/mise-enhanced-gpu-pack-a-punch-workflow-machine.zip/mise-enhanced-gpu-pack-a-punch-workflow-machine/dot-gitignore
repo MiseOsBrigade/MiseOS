@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+node_modules/
+mise-*.json
+mise-*.md
+mise-artifacts/
+mise-evidence/
+.DS_Store

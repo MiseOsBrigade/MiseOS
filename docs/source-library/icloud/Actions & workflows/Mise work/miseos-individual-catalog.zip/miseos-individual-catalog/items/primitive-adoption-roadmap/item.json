@@ -1,0 +1,11 @@
+{
+  "id": "primitive-adoption-roadmap",
+  "category": "platform",
+  "title": "DevOps Adoption Roadmap",
+  "description": "Five-phase MiseOS DevOps adoption roadmap.",
+  "dependencies": [],
+  "files": [
+    "docs/ADOPTION_ROADMAP.md"
+  ],
+  "notes": []
+}

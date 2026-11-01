@@ -1,0 +1,12 @@
+<!-- Add these keys to your app Info.plist. -->
+<key>NSMicrophoneUsageDescription</key>
+<string>Voice commands control the Neural Aurora Field animation.</string>
+<key>NSSpeechRecognitionUsageDescription</key>
+<string>Speech recognition converts your spoken commands into animation controls.</string>
+
+<!-- Only needed if your Lumerie/local device API uses plain HTTP during development. Prefer HTTPS in production. -->
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsLocalNetworking</key>
+    <true/>
+</dict>

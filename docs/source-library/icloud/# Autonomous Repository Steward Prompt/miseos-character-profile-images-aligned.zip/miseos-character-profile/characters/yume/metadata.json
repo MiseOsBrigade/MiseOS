@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.080",
+  "number": 80,
+  "slug": "yume",
+  "name": "Yume",
+  "mise_name": "Yume",
+  "codename": "YUME",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Build",
+  "job_name": "Build",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Build",
+    "avatar_path": "assets/characters/yume/avatar.png",
+    "card_path": "assets/characters/yume/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Yume performs build within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Flash Riku",
+      "Build-Kun",
+      "Alko Commit Chef"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 67,
+    "precision": 80,
+    "speed": 73,
+    "resilience": 73,
+    "intelligence": 77,
+    "teamwork": 82
+  },
+  "paths": {
+    "readme": "characters/yume/README.md",
+    "metadata": "characters/yume/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

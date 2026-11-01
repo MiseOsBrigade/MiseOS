@@ -1,0 +1,41 @@
+name: Release Readiness
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  release-readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        if: hashFiles('package.json') != ''
+        run: |
+          corepack enable || true
+          if [ -f pnpm-lock.yaml ]; then pnpm install --frozen-lockfile || pnpm install; fi
+          if [ -f package-lock.json ]; then npm ci || npm install; fi
+
+      - name: Validate release gate
+        shell: bash
+        run: |
+          echo "Release gate"
+          if [ -f package.json ]; then npm run lint --if-present; fi
+          if [ -f package.json ]; then npm run typecheck --if-present; fi
+          if [ -f package.json ]; then npm test --if-present; fi
+          if [ -f package.json ]; then npm run build --if-present; fi
+          test -f CHANGELOG.md && echo "CONFIRMED: changelog exists" || echo "UNKNOWN: changelog missing"

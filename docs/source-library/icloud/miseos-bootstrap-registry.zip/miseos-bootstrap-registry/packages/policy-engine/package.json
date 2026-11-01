@@ -1,0 +1,11 @@
+{
+  "name": "@miseos/policy-engine",
+  "version": "0.1.0",
+  "description": "Policy engine for safety, permissions, provenance, package drift, and release gates.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {"miseos-policy": "src/index.js"},
+  "files": ["src", "README.md"],
+  "publishConfig": {"registry": "https://npm.pkg.github.com"},
+  "engines": {"node": ">=20"}
+}

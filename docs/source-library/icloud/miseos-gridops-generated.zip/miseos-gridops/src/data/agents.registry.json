@@ -1,0 +1,181 @@
+[
+  {
+    "id": "agent_mise_garde",
+    "name": "Mise Garde",
+    "role": "PR hygiene, code review, small safe fixes, import repair, CI patch suggestions",
+    "modelType": "coding_reasoning",
+    "permissionTier": "pr_only",
+    "memoryScope": "repo",
+    "costClass": "standard",
+    "allowedTools": [
+      "github.read",
+      "github.branch",
+      "github.pr",
+      "terminal.safe",
+      "rag.search"
+    ],
+    "blockedActions": [
+      "force_push",
+      "delete_repo",
+      "disable_ci",
+      "print_secret",
+      "rewrite_history",
+      "merge_without_validation"
+    ],
+    "defaultWorkflows": [
+      "workflow_ci_repair",
+      "workflow_pr_review",
+      "workflow_import_fix"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "agent_mise_sentinel",
+    "name": "Mise Sentinel",
+    "role": "Security, secret hygiene, permissions, prompt-injection checks, unsafe file detection",
+    "modelType": "classifier_neurosymbolic",
+    "permissionTier": "suggest_only",
+    "memoryScope": "workspace",
+    "costClass": "standard",
+    "allowedTools": [
+      "github.read",
+      "scanner.secret",
+      "rag.search",
+      "evidence.write"
+    ],
+    "blockedActions": [
+      "rotate_secret_without_approval",
+      "print_secret",
+      "rewrite_history",
+      "delete_secret_records"
+    ],
+    "defaultWorkflows": [
+      "workflow_secret_hygiene",
+      "workflow_prompt_injection_scan"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "agent_mise_forge",
+    "name": "Mise Forge",
+    "role": "Package registry checks, release readiness, changelog gates, publish preparation",
+    "modelType": "reasoning",
+    "permissionTier": "release_assist",
+    "memoryScope": "repo",
+    "costClass": "premium",
+    "allowedTools": [
+      "github.read",
+      "registry.read",
+      "github.pr",
+      "terminal.safe",
+      "evidence.write"
+    ],
+    "blockedActions": [
+      "publish_without_approval",
+      "change_billing",
+      "delete_package",
+      "force_push"
+    ],
+    "defaultWorkflows": [
+      "workflow_package_registry_sentinel",
+      "workflow_release_readiness"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "agent_mise_scribe",
+    "name": "Mise Scribe",
+    "role": "README updates, docs, changelogs, release notes, customer-facing summaries",
+    "modelType": "generative_llm",
+    "permissionTier": "pr_only",
+    "memoryScope": "repo",
+    "costClass": "cheap",
+    "allowedTools": [
+      "github.read",
+      "github.branch",
+      "github.pr",
+      "rag.search"
+    ],
+    "blockedActions": [
+      "claim_validation_without_evidence",
+      "write_security_advice_without_review"
+    ],
+    "defaultWorkflows": [
+      "workflow_docs_refresh",
+      "workflow_changelog_draft"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "agent_mise_auditor",
+    "name": "Mise Auditor",
+    "role": "Evidence checks, validation reporting, certainty tagging, audit trail enforcement",
+    "modelType": "classifier_reasoning",
+    "permissionTier": "view_only",
+    "memoryScope": "workspace",
+    "costClass": "standard",
+    "allowedTools": [
+      "github.read",
+      "ci.read",
+      "evidence.read",
+      "evidence.write",
+      "rag.search"
+    ],
+    "blockedActions": [
+      "modify_code",
+      "merge_pr",
+      "delete_evidence"
+    ],
+    "defaultWorkflows": [
+      "workflow_evidence_audit",
+      "workflow_validation_report"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "agent_mise_router",
+    "name": "Mise Router",
+    "role": "Routes work to the cheapest safe model and agent based on task type, risk, and evidence requirements",
+    "modelType": "small_classifier",
+    "permissionTier": "suggest_only",
+    "memoryScope": "workspace",
+    "costClass": "cheap",
+    "allowedTools": [
+      "model.route",
+      "policy.read",
+      "rag.search"
+    ],
+    "blockedActions": [
+      "execute_tool_directly",
+      "override_policy"
+    ],
+    "defaultWorkflows": [
+      "workflow_task_routing"
+    ],
+    "status": "available"
+  },
+  {
+    "id": "agent_mise_librarian",
+    "name": "Mise Librarian",
+    "role": "RAG ingestion, indexing, staleness scoring, repo memory graph, source retrieval",
+    "modelType": "embedding_reranker",
+    "permissionTier": "view_only",
+    "memoryScope": "global",
+    "costClass": "cheap",
+    "allowedTools": [
+      "rag.index",
+      "rag.search",
+      "github.read",
+      "docs.read"
+    ],
+    "blockedActions": [
+      "change_code",
+      "merge_pr",
+      "execute_shell"
+    ],
+    "defaultWorkflows": [
+      "workflow_rag_index_refresh"
+    ],
+    "status": "available"
+  }
+]

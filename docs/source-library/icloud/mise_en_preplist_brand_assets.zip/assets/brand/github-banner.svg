@@ -1,0 +1,41 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mise-en-Preplist GitHub banner</title>
+  <desc id="desc">A GitHub repository banner with a prep kitchen automation theme.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#121212"/>
+      <stop offset="0.62" stop-color="#1F2A24"/>
+      <stop offset="1" stop-color="#1F8A5B"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#FFF5E6" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="420" rx="48" fill="url(#g)"/>
+  <rect width="1600" height="420" rx="48" fill="url(#grid)"/>
+  <rect x="86" y="72" width="276" height="276" rx="66" fill="#FFF5E6"/>
+  <rect x="130" y="112" width="188" height="196" rx="32" fill="#121212"/>
+  <rect x="160" y="138" width="128" height="26" rx="13" fill="#E66A2C"/>
+  <circle cx="168" cy="204" r="12" fill="#47B881"/>
+  <circle cx="168" cy="250" r="12" fill="#47B881"/>
+  <circle cx="168" cy="296" r="12" fill="#47B881"/>
+  <path d="M161 204l5 5 11-13" stroke="#FFF5E6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M161 250l5 5 11-13" stroke="#FFF5E6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M161 296l5 5 11-13" stroke="#FFF5E6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="198" y="196" width="92" height="16" rx="8" fill="#FFF5E6"/>
+  <rect x="198" y="242" width="74" height="16" rx="8" fill="#FFF5E6"/>
+  <rect x="198" y="288" width="96" height="16" rx="8" fill="#FFF5E6"/>
+  <path d="M124 318l176-176c6-6 15-6 21 0s6 15 0 21L145 339c-6 6-15 6-21 0s-6-15 0-21z" fill="#C9D1D9"/>
+  <path d="M278 184l22-22c6-6 15-6 21 0s6 15 0 21l-22 22-21-21z" fill="#3A3A3A"/>
+  <path d="M124 318l21 21-28 8 7-29z" fill="#E66A2C"/>
+  <text x="430" y="166" fill="#FFF5E6" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="-2">Mise-en-Preplist</text>
+  <text x="434" y="226" fill="#C9D1D9" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600">A prep-kitchen workflow for self-unzipping GitHub starter repos.</text>
+  <g transform="translate(434 270)">
+    <rect width="230" height="48" rx="24" fill="#E66A2C"/>
+    <text x="28" y="32" fill="#FFF5E6" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">PREP PAYLOAD</text>
+    <rect x="250" width="188" height="48" rx="24" fill="#FFF5E6"/>
+    <text x="278" y="32" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">RUN ACTION</text>
+    <rect x="458" width="226" height="48" rx="24" fill="#47B881"/>
+    <text x="486" y="32" fill="#121212" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800">COMMIT RESULT</text>
+  </g>
+</svg>

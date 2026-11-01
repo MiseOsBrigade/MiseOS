@@ -1,0 +1,68 @@
+{
+  "id": "container-kage",
+  "number": 50,
+  "name": "Container Kage",
+  "miseName": "Mise ContainerHardeningWorkflow",
+  "codename": "chef.security.container-hardening-workflow",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "common",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Container Hardening Workflow",
+    "signaturePhrase": "Container Hardening Workflow done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in container hardening workflow so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen container hardening workflow aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/container-kage/full-body.png",
+    "cardPath": "/assets/characters/container-kage/card.png"
+  },
+  "workflow": {
+    "jobName": "Container Hardening Workflow",
+    "roleName": "Container Hardening Workflow microagent",
+    "summary": "Runs container hardening workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "CVE Kumo",
+      "Seira Vaultkeeper",
+      "Hugo Matrix",
+      "Runtime Riku"
+    ]
+  },
+  "stats": {
+    "power": 93,
+    "precision": 92,
+    "speed": 95,
+    "resilience": 73,
+    "intelligence": 87,
+    "teamwork": 99
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "container-kage",
+  "seasonOneCard": null,
+  "displayNumber": 50,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/container-kage",
+  "avatarSvg": "assets/characters/container-kage/avatar.svg",
+  "cardSvg": "assets/characters/container-kage/card.svg"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "policy-kenji",
+  "number": 22,
+  "name": "Policy Kenji",
+  "miseName": "Mise PolicyPacks",
+  "codename": "chef.platform.policy-packs",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "rare",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Policy Packs",
+    "signaturePhrase": "Policy Packs done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in policy packs so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen policy packs aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/policy-kenji/full-body.png",
+    "cardPath": "/assets/characters/policy-kenji/card.png"
+  },
+  "workflow": {
+    "jobName": "Policy Packs",
+    "roleName": "Policy Packs microagent",
+    "summary": "Runs policy packs for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Vault Hana",
+      "Grafana Mei",
+      "Yume Builder",
+      "Pager Hiro"
+    ]
+  },
+  "stats": {
+    "power": 94,
+    "precision": 88,
+    "speed": 68,
+    "resilience": 74,
+    "intelligence": 74,
+    "teamwork": 80
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "policy-kenji",
+  "seasonOneCard": null,
+  "displayNumber": 22,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/policy-kenji",
+  "avatarSvg": "assets/characters/policy-kenji/avatar.svg",
+  "cardSvg": "assets/characters/policy-kenji/card.svg"
+}

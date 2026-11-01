@@ -1,0 +1,64 @@
+:root {
+  --mise-stockpot-black: #0B0F14;
+  --mise-cast-iron: #111827;
+  --mise-steel-pan: #1F2937;
+  --mise-knife-steel: #94A3B8;
+  --mise-flour: #F8F3E8;
+  --mise-sauce-gold: #F6C453;
+  --mise-flame-orange: #FF7A1A;
+  --mise-garnish-green: #22C55E;
+  --mise-terminal-green: #7CFFB2;
+  --mise-blue-flame: #38BDF8;
+  --mise-tomato: #EF4444;
+  --mise-violet-apron: #8B5CF6;
+
+  --mise-font-display: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mise-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.mise-card {
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(255, 122, 26, 0.10)),
+    var(--mise-stockpot-black);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 24px;
+  color: var(--mise-flour);
+  font-family: var(--mise-font-display);
+  padding: 24px;
+}
+
+.mise-kicker {
+  color: var(--mise-terminal-green);
+  font-family: var(--mise-font-mono);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mise-title {
+  color: var(--mise-flour);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.mise-pill {
+  align-items: center;
+  background: rgba(17, 24, 39, 0.88);
+  border: 1px solid rgba(124, 255, 178, 0.28);
+  border-radius: 999px;
+  color: var(--mise-terminal-green);
+  display: inline-flex;
+  font-family: var(--mise-font-mono);
+  font-weight: 750;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+}
+
+.mise-grid {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.10) 1px, transparent 1px);
+  background-size: 36px 36px;
+}

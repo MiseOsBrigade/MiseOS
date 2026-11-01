@@ -1,0 +1,15 @@
+{
+  "id": "workflow-polyrepo-manifest",
+  "category": "workflow",
+  "title": "Polyrepo Manifest Validation",
+  "description": "Validates a system release manifest whose component refs are immutable semantic-version tags or commit SHAs.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/polyrepo-manifest-lint.yml",
+    "scripts/validate_polyrepo_manifest.py",
+    "release.yaml"
+  ],
+  "notes": [
+    "Edit YOUR-ORG component references in release.yaml before using it."
+  ]
+}

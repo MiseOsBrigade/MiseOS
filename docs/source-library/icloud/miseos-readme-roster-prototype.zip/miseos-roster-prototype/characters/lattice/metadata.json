@@ -1,0 +1,68 @@
+{
+  "id": "lattice",
+  "number": 63,
+  "name": "Lattice",
+  "miseName": "Mise TraceCorrelator",
+  "codename": "chef.data-insight.trace-correlator",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "genesis",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Pan-Orchestral",
+    "title": "Trace Correlator",
+    "signaturePhrase": "Trace Correlator done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in trace correlator so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen trace correlator aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/lattice/full-body.png",
+    "cardPath": "/assets/characters/lattice/card.png"
+  },
+  "workflow": {
+    "jobName": "Trace Correlator",
+    "roleName": "Trace Correlator microagent",
+    "summary": "Runs trace correlator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Lake Haru",
+      "Repo Ranger",
+      "Lila Branchkeeper",
+      "Terra Forge"
+    ]
+  },
+  "stats": {
+    "power": 92,
+    "precision": 91,
+    "speed": 90,
+    "resilience": 92,
+    "intelligence": 94,
+    "teamwork": 92
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "lattice",
+  "seasonOneCard": null,
+  "displayNumber": 63,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/lattice",
+  "avatarSvg": "assets/characters/lattice/avatar.svg",
+  "cardSvg": "assets/characters/lattice/card.svg"
+}

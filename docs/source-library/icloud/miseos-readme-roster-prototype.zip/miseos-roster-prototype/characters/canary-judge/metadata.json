@@ -1,0 +1,68 @@
+{
+  "id": "canary-judge",
+  "number": 35,
+  "name": "Canary Judge",
+  "miseName": "Mise CanaryJudge",
+  "codename": "chef.reliability.canary-judge",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "rare",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Chilean",
+    "title": "Canary Judge",
+    "signaturePhrase": "Canary Judge done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in canary judge so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen canary judge aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/canary-judge/full-body.png",
+    "cardPath": "/assets/characters/canary-judge/card.png"
+  },
+  "workflow": {
+    "jobName": "Canary Judge",
+    "roleName": "Canary Judge microagent",
+    "summary": "Runs canary judge for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Capacity Kanna",
+      "Alert Akira",
+      "Hugo Matrix",
+      "Runtime Riku"
+    ]
+  },
+  "stats": {
+    "power": 73,
+    "precision": 95,
+    "speed": 71,
+    "resilience": 73,
+    "intelligence": 89,
+    "teamwork": 81
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "canary-judge",
+  "seasonOneCard": null,
+  "displayNumber": 35,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/canary-judge",
+  "avatarSvg": "assets/characters/canary-judge/avatar.svg",
+  "cardSvg": "assets/characters/canary-judge/card.svg"
+}

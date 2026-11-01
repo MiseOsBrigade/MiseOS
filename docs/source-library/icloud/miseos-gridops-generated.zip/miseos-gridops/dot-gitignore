@@ -1,0 +1,54 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+private/
+config/secrets.*
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Builds
+dist/
+build/
+.next/
+out/
+coverage/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+
+# Rust
+target/
+
+# Go
+bin/

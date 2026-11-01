@@ -1,0 +1,15 @@
+{
+  "id": "tool-project-harvester",
+  "category": "tooling",
+  "title": "MiseOS DevOps Project Harvester",
+  "description": "Deterministic read-only scanner that inventories reusable CI/CD and DevOps assets and produces JSON, CSV, and Markdown catalogs.",
+  "dependencies": [
+    "Python 3",
+    "PyYAML>=6,<7"
+  ],
+  "files": [
+    "scripts/harvest_miseos_devops.py",
+    "scripts/requirements.txt"
+  ],
+  "notes": []
+}

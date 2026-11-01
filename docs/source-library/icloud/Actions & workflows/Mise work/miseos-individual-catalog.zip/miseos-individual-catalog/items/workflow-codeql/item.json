@@ -1,0 +1,11 @@
+{
+  "id": "workflow-codeql",
+  "category": "workflow",
+  "title": "CodeQL",
+  "description": "CodeQL security scanning baseline.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/codeql.yml"
+  ],
+  "notes": []
+}

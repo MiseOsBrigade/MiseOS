@@ -1,0 +1,25 @@
+{
+  "id": "cozy-house-a",
+  "name": "Cozy House A",
+  "packId": "cozy-village",
+  "tier": "premium",
+  "files": {
+    "glb": "cdn://cozy-village/cozy-house-a.glb"
+  },
+  "license": {
+    "id": "miseos-commercial-pack-v1"
+  },
+  "triangleCount": 1240,
+  "fileSizeMB": 0.8,
+  "budget": {
+    "maxTriangles": 5000,
+    "maxFileSizeMB": 2
+  },
+  "validation": {
+    "orientation": "Y_UP",
+    "scale": "REAL_WORLD"
+  },
+  "checksum": {
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  }
+}

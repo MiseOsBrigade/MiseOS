@@ -1,0 +1,2 @@
+"role","id","created_date","updated_date","email","full_name","disabled","disabled_reason","is_verified","force_password_reset","app_id","is_service","collaborator_role","_app_role"
+"admin","6a33aaa045c7ac600ee6dd5a","2026-06-18T08:21:52.396000","2026-06-18T08:21:52.396000","deonte.wattss@gmail.com","DW","","","true","false","6a33aaa045c7ac600ee6dd59","false","editor","admin"

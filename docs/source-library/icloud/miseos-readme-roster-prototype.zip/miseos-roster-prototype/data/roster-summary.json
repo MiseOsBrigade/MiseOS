@@ -1,0 +1,22 @@
+{
+  "core75": 75,
+  "collection_manifest_cards": 23,
+  "expansion_only_added": 17,
+  "prototype_total_cards": 92,
+  "departments": {
+    "pipeline": 19,
+    "platform": 18,
+    "reliability": 16,
+    "security": 15,
+    "data-insight": 20,
+    "operations": 4
+  },
+  "rarities": {
+    "genesis": 15,
+    "rare": 23,
+    "common": 39,
+    "epic": 10,
+    "mythic": 2,
+    "legendary": 3
+  }
+}

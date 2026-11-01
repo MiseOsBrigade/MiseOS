@@ -1,0 +1,68 @@
+{
+  "id": "policy-ronin",
+  "number": 52,
+  "name": "Policy Ronin",
+  "miseName": "Mise PolicyAsCodeEngine",
+  "codename": "chef.security.policy-as-code-engine",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "genesis",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Policy-as-Code Engine",
+    "signaturePhrase": "Policy-as-Code Engine done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in policy-as-code engine so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen policy-as-code engine aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/policy-ronin/full-body.png",
+    "cardPath": "/assets/characters/policy-ronin/card.png"
+  },
+  "workflow": {
+    "jobName": "Policy-as-Code Engine",
+    "roleName": "Policy-as-Code Engine microagent",
+    "summary": "Runs policy-as-code engine for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Seira Vaultkeeper",
+      "Merge Sentinel",
+      "Yume Builder",
+      "Policy Kenji"
+    ]
+  },
+  "stats": {
+    "power": 95,
+    "precision": 98,
+    "speed": 77,
+    "resilience": 91,
+    "intelligence": 84,
+    "teamwork": 81
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "policy-ronin",
+  "seasonOneCard": null,
+  "displayNumber": 52,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/policy-ronin",
+  "avatarSvg": "assets/characters/policy-ronin/avatar.svg",
+  "cardSvg": "assets/characters/policy-ronin/card.svg"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Mise OS",
+  "updated": "2026-06-25",
+  "repo": "MiseOsBrigade/Mise-OS",
+  "positioning": "The Kitchen OS that turns AI chaos into coordinated service.",
+  "colors": {
+    "umamiBlack": "#0E0F10",
+    "goldLadle": "#D4AF37",
+    "brothCream": "#F6F1E7",
+    "flameOrange": "#E97822",
+    "inkBlue": "#1B2A41",
+    "matchaGreen": "#2E6B4E"
+  },
+  "taglines": [
+    "Everything In Its Place.",
+    "Cook. Orchestrate. Deploy. Observe.",
+    "The Operating System For Autonomous Development.",
+    "Autonomous Development, Properly Organized.",
+    "Every Role. One Symphony."
+  ],
+  "software": {
+    "node": ">=24.18.0",
+    "module": "ESM",
+    "dependencies": "none"
+  }
+}

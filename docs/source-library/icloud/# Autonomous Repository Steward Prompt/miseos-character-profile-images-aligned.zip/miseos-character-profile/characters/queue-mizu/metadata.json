@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.025",
+  "number": 25,
+  "slug": "queue-mizu",
+  "name": "Queue Mizu",
+  "mise_name": "Queue Mizu",
+  "codename": "QUEUE_MIZU",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Job & Queue Templates",
+  "job_name": "Job & Queue Templates",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Job & Queue Templates",
+    "avatar_path": "assets/characters/queue-mizu/avatar.png",
+    "card_path": "assets/characters/queue-mizu/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Queue Mizu performs job & queue templates within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Streama",
+      "Preview Yuki",
+      "Portal Rei"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 72,
+    "precision": 82,
+    "speed": 76,
+    "resilience": 80,
+    "intelligence": 72,
+    "teamwork": 85
+  },
+  "paths": {
+    "readme": "characters/queue-mizu/README.md",
+    "metadata": "characters/queue-mizu/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

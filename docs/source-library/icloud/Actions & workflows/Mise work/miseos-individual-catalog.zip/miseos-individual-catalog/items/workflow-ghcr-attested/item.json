@@ -1,0 +1,11 @@
+{
+  "id": "workflow-ghcr-attested",
+  "category": "workflow",
+  "title": "GHCR + Provenance Attestation",
+  "description": "Publish a container to GHCR and create provenance attestation.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/container-ghcr-attested.yml"
+  ],
+  "notes": []
+}

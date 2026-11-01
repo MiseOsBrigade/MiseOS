@@ -1,0 +1,27 @@
+{
+  "name": "@mise-os/registry-console",
+  "version": "0.2.0",
+  "private": true,
+  "description": "React + TypeScript + Vite MiseOS registry console with the 75-card Master Roster gallery.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "validate:roster": "node ../../scripts/validate-master-roster.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^latest",
+    "react": "^latest",
+    "react-dom": "^latest",
+    "zod": "^latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vite": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

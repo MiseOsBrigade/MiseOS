@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.029",
+  "number": 29,
+  "slug": "guardrail-goro",
+  "name": "Guardrail Goro",
+  "mise_name": "Guardrail Goro",
+  "codename": "GUARDRAIL_GORO",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Golden Path Guardrails",
+  "job_name": "Golden Path Guardrails",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Golden Path Guardrails",
+    "avatar_path": "assets/characters/guardrail-goro/card.jpg",
+    "card_path": "assets/characters/guardrail-goro/card.jpg",
+    "primary_photo_page": 96,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-096.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Guardrail Goro performs golden path guardrails within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Platform Sensei",
+      "Seira",
+      "Kuro Guard"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 73,
+    "precision": 73,
+    "speed": 59,
+    "resilience": 68,
+    "intelligence": 59,
+    "teamwork": 79
+  },
+  "paths": {
+    "readme": "characters/guardrail-goro/README.md",
+    "metadata": "characters/guardrail-goro/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

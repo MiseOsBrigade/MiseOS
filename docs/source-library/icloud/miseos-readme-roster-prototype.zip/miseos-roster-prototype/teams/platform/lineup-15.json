@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "bootstrap-aiko",
+    "number": 17,
+    "name": "Bootstrap Aiko",
+    "miseName": "Mise NewServiceWizard",
+    "codename": "chef.platform.new-service-wizard",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "genesis",
+    "roleCategory": "platform",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "New Service Wizard",
+      "signaturePhrase": "New Service Wizard done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in new service wizard so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen new service wizard aura",
+      "silhouette": "multinational chibi DevOps chef carrying a tablet",
+      "tool": "tablet",
+      "spritePath": "/assets/characters/bootstrap-aiko/full-body.png",
+      "cardPath": "/assets/characters/bootstrap-aiko/card.png"
+    },
+    "workflow": {
+      "jobName": "New Service Wizard",
+      "roleName": "New Service Wizard microagent",
+      "summary": "Runs new service wizard for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Template Tanaka",
+        "Terra Forge",
+        "Bruno Blast-Radius",
+        "Trace Sensei"
+      ]
+    },
+    "stats": {
+      "power": 95,
+      "precision": 78,
+      "speed": 77,
+      "resilience": 91,
+      "intelligence": 97,
+      "teamwork": 79
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "bootstrap-aiko",
+    "seasonOneCard": null,
+    "displayNumber": 17,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/bootstrap-aiko",
+    "avatarSvg": "assets/characters/bootstrap-aiko/avatar.svg",
+    "cardSvg": "assets/characters/bootstrap-aiko/card.svg"
+  },
+  {
+    "id": "umami-code",
+    "number": 24,
+    "name": "Umami Code",
+    "miseName": "Mise TrafficIngressManager",
+    "codename": "chef.platform.traffic-ingress-manager",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "genesis",
+    "roleCategory": "platform",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Traffic & Ingress Manager",
+      "signaturePhrase": "Traffic and Ingress Manager done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in traffic & ingress manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen traffic & ingress manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a ladle",
+      "tool": "ladle",
+      "spritePath": "/assets/characters/umami-code/full-body.png",
+      "cardPath": "/assets/characters/umami-code/card.png"
+    },
+    "workflow": {
+      "jobName": "Traffic & Ingress Manager",
+      "roleName": "Traffic & Ingress Manager microagent",
+      "summary": "Runs traffic & ingress manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Grafana Mei",
+        "Queue Mizu",
+        "Nina Promoter",
+        "Review Ren"
+      ]
+    },
+    "stats": {
+      "power": 71,
+      "precision": 97,
+      "speed": 81,
+      "resilience": 95,
+      "intelligence": 74,
+      "teamwork": 89
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "umami-code",
+    "seasonOneCard": {
+      "id": "4",
+      "role": "Saucier",
+      "department": "Platform",
+      "function": "Connect",
+      "rarity": "Epic",
+      "tier": "Platform Core",
+      "element": "API Sauce",
+      "ability": "Perfect Integration",
+      "lore": "Creates the perfect sauce that connects every service.",
+      "image_file": "cards/png/004-umami-code.png",
+      "metadata_file": "metadata/erc721/004-umami-code.json"
+    },
+    "displayNumber": 24,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/umami-code",
+    "avatarSvg": "assets/characters/umami-code/avatar.svg",
+    "cardSvg": "assets/characters/umami-code/card.svg"
+  },
+  {
+    "id": "streama",
+    "number": 26,
+    "name": "Streama",
+    "miseName": "Mise DataStreamingProfiles",
+    "codename": "chef.platform.data-streaming-profiles",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "genesis",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "Norwegian",
+      "title": "Data Streaming Profiles",
+      "signaturePhrase": "Data Streaming Profiles done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in data streaming profiles so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen data streaming profiles aura",
+      "silhouette": "multinational chibi DevOps chef carrying a bowl",
+      "tool": "bowl",
+      "spritePath": "/assets/characters/streama/full-body.png",
+      "cardPath": "/assets/characters/streama/card.png"
+    },
+    "workflow": {
+      "jobName": "Data Streaming Profiles",
+      "roleName": "Data Streaming Profiles microagent",
+      "summary": "Runs data streaming profiles for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Queue Mizu",
+        "Preview Yuki",
+        "Felix Rollback",
+        "Metrics Miko"
+      ]
+    },
+    "stats": {
+      "power": 71,
+      "precision": 74,
+      "speed": 89,
+      "resilience": 83,
+      "intelligence": 94,
+      "teamwork": 93
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "streama",
+    "seasonOneCard": {
+      "id": "14",
+      "role": "Poissonnier",
+      "department": "Operations",
+      "function": "Stream",
+      "rarity": "Rare",
+      "tier": "Event Line",
+      "element": "Live Water",
+      "ability": "Smooth Flow",
+      "lore": "Streams data like water. Smooth, continuous, and always flowing.",
+      "image_file": "cards/png/014-streama.png",
+      "metadata_file": "metadata/erc721/014-streama.json"
+    },
+    "displayNumber": 26,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/streama",
+    "avatarSvg": "assets/characters/streama/avatar.svg",
+    "cardSvg": "assets/characters/streama/card.svg"
+  },
+  {
+    "id": "queue-mizu",
+    "number": 25,
+    "name": "Queue Mizu",
+    "miseName": "Mise JobQueueTemplates",
+    "codename": "chef.platform.job-queue-templates",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "genesis",
+    "roleCategory": "platform",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Job & Queue Templates",
+      "signaturePhrase": "Job and Queue Templates done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in job & queue templates so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen job & queue templates aura",
+      "silhouette": "multinational chibi DevOps chef carrying a bowl",
+      "tool": "bowl",
+      "spritePath": "/assets/characters/queue-mizu/full-body.png",
+      "cardPath": "/assets/characters/queue-mizu/card.png"
+    },
+    "workflow": {
+      "jobName": "Job & Queue Templates",
+      "roleName": "Job & Queue Templates microagent",
+      "summary": "Runs job & queue templates for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Umami Code",
+        "Streama",
+        "Release Conductor",
+        "Backlog Benji"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 98,
+      "speed": 84,
+      "resilience": 74,
+      "intelligence": 83,
+      "teamwork": 78
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "queue-mizu",
+    "seasonOneCard": null,
+    "displayNumber": 25,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/queue-mizu",
+    "avatarSvg": "assets/characters/queue-mizu/avatar.svg",
+    "cardSvg": "assets/characters/queue-mizu/card.svg"
+  },
+  {
+    "id": "orchestra-core",
+    "slug": "orchestra-core",
+    "number": 87,
+    "name": "Orchestra Core",
+    "miseName": "Mise Coordinate",
+    "codename": "chef.platform.coordinate",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "mythic",
+    "roleCategory": "coordinate",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Chef Spirit",
+      "signaturePhrase": "Orchestra Core keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "The soul of the platform. Sees everything and coordinates all."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen Golden Gate aura",
+      "silhouette": "chibi DevOps chef carrying Golden Gate",
+      "tool": "Golden Gate",
+      "spritePath": "/assets/characters/orchestra-core/full-body.png",
+      "cardPath": "/assets/characters/orchestra-core/card.png"
+    },
+    "workflow": {
+      "jobName": "Coordinate",
+      "roleName": "Chef Spirit microagent",
+      "summary": "The soul of the platform. Sees everything and coordinates all.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Kuro Guard",
+        "Template Tanaka"
+      ]
+    },
+    "stats": {
+      "power": 90,
+      "precision": 86,
+      "speed": 96,
+      "resilience": 85,
+      "intelligence": 88,
+      "teamwork": 94
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "15",
+      "role": "Chef Spirit",
+      "department": "Platform",
+      "function": "Coordinate",
+      "rarity": "Mythic",
+      "tier": "Soul of Platform",
+      "element": "Golden Gate",
+      "ability": "One Symphony",
+      "lore": "The soul of the platform. Sees everything and coordinates all.",
+      "image_file": "cards/png/015-orchestra-core.png",
+      "metadata_file": "metadata/erc721/015-orchestra-core.json"
+    },
+    "displayNumber": 87,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/orchestra-core",
+    "avatarSvg": "assets/characters/orchestra-core/avatar.svg",
+    "cardSvg": "assets/characters/orchestra-core/card.svg"
+  },
+  {
+    "id": "seira",
+    "slug": "seira",
+    "number": 83,
+    "name": "Seira",
+    "miseName": "Mise Secure",
+    "codename": "chef.platform.secure",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "epic",
+    "roleCategory": "secure",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Sommelier",
+      "signaturePhrase": "Seira keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Protects secrets like fine wine. Security is her specialty."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen Secret Wine aura",
+      "silhouette": "chibi DevOps chef carrying Secret Wine",
+      "tool": "Secret Wine",
+      "spritePath": "/assets/characters/seira/full-body.png",
+      "cardPath": "/assets/characters/seira/card.png"
+    },
+    "workflow": {
+      "jobName": "Secure",
+      "roleName": "Sommelier microagent",
+      "summary": "Protects secrets like fine wine. Security is her specialty.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Platform Sensei",
+        "Kuro Guard"
+      ]
+    },
+    "stats": {
+      "power": 95,
+      "precision": 87,
+      "speed": 84,
+      "resilience": 99,
+      "intelligence": 81,
+      "teamwork": 95
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "10",
+      "role": "Sommelier",
+      "department": "Platform",
+      "function": "Secure",
+      "rarity": "Epic",
+      "tier": "Security Line",
+      "element": "Secret Wine",
+      "ability": "Vault Pairing",
+      "lore": "Protects secrets like fine wine. Security is her specialty.",
+      "image_file": "cards/png/010-seira.png",
+      "metadata_file": "metadata/erc721/010-seira.json"
+    },
+    "displayNumber": 83,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/seira",
+    "avatarSvg": "assets/characters/seira/avatar.svg",
+    "cardSvg": "assets/characters/seira/card.svg"
+  },
+  {
+    "id": "kuro-guard",
+    "slug": "kuro-guard",
+    "number": 84,
+    "name": "Kuro Guard",
+    "miseName": "Mise Protect",
+    "codename": "chef.platform.protect",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "epic",
+    "roleCategory": "protect",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Steward",
+      "signaturePhrase": "Kuro Guard keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Defends the platform with unwavering protection."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen Black Shield aura",
+      "silhouette": "chibi DevOps chef carrying Black Shield",
+      "tool": "Black Shield",
+      "spritePath": "/assets/characters/kuro-guard/full-body.png",
+      "cardPath": "/assets/characters/kuro-guard/card.png"
+    },
+    "workflow": {
+      "jobName": "Protect",
+      "roleName": "Steward microagent",
+      "summary": "Defends the platform with unwavering protection.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Seira",
+        "Orchestra Core"
+      ]
+    },
+    "stats": {
+      "power": 99,
+      "precision": 84,
+      "speed": 82,
+      "resilience": 97,
+      "intelligence": 86,
+      "teamwork": 81
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "11",
+      "role": "Steward",
+      "department": "Platform",
+      "function": "Protect",
+      "rarity": "Epic",
+      "tier": "Security Gate",
+      "element": "Black Shield",
+      "ability": "Platform Ward",
+      "lore": "Defends the platform with unwavering protection.",
+      "image_file": "cards/png/011-kuro-guard.png",
+      "metadata_file": "metadata/erc721/011-kuro-guard.json"
+    },
+    "displayNumber": 84,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/kuro-guard",
+    "avatarSvg": "assets/characters/kuro-guard/avatar.svg",
+    "cardSvg": "assets/characters/kuro-guard/card.svg"
+  },
+  {
+    "id": "platform-sensei",
+    "number": 30,
+    "name": "Platform Sensei",
+    "miseName": "Mise PlatformHealthBoard",
+    "codename": "chef.platform.platform-health-board",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "epic",
+    "roleCategory": "platform",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Platform Health Board",
+      "signaturePhrase": "Platform Health Board done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in platform health board so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen platform health board aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/platform-sensei/full-body.png",
+      "cardPath": "/assets/characters/platform-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Platform Health Board",
+      "roleName": "Platform Health Board microagent",
+      "summary": "Runs platform health board for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Guardrail Goro",
+        "Pipeline Sensei",
+        "Reliability Sensei",
+        "Red Oni"
+      ]
+    },
+    "stats": {
+      "power": 76,
+      "precision": 87,
+      "speed": 82,
+      "resilience": 92,
+      "intelligence": 89,
+      "teamwork": 82
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "platform-sensei",
+    "seasonOneCard": null,
+    "displayNumber": 30,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/platform-sensei",
+    "avatarSvg": "assets/characters/platform-sensei/avatar.svg",
+    "cardSvg": "assets/characters/platform-sensei/card.svg"
+  },
+  {
+    "id": "vault-hana",
+    "number": 21,
+    "name": "Vault Hana",
+    "miseName": "Mise SecretsConfigBroker",
+    "codename": "chef.platform.secrets-config-broker",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "rare",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Secrets & Config Broker",
+      "signaturePhrase": "Secrets and Config Broker done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in secrets & config broker so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen secrets & config broker aura",
+      "silhouette": "multinational chibi DevOps chef carrying a key",
+      "tool": "key",
+      "spritePath": "/assets/characters/vault-hana/full-body.png",
+      "cardPath": "/assets/characters/vault-hana/card.png"
+    },
+    "workflow": {
+      "jobName": "Secrets & Config Broker",
+      "roleName": "Secrets & Config Broker microagent",
+      "summary": "Runs secrets & config broker for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Runtime Riku",
+        "Policy Kenji",
+        "Seira Scan",
+        "Alert Akira"
+      ]
+    },
+    "stats": {
+      "power": 91,
+      "precision": 83,
+      "speed": 89,
+      "resilience": 91,
+      "intelligence": 86,
+      "teamwork": 87
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "vault-hana",
+    "seasonOneCard": null,
+    "displayNumber": 21,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/vault-hana",
+    "avatarSvg": "assets/characters/vault-hana/avatar.svg",
+    "cardSvg": "assets/characters/vault-hana/card.svg"
+  },
+  {
+    "id": "policy-kenji",
+    "number": 22,
+    "name": "Policy Kenji",
+    "miseName": "Mise PolicyPacks",
+    "codename": "chef.platform.policy-packs",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "rare",
+    "roleCategory": "automation",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Policy Packs",
+      "signaturePhrase": "Policy Packs done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in policy packs so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen policy packs aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/policy-kenji/full-body.png",
+      "cardPath": "/assets/characters/policy-kenji/card.png"
+    },
+    "workflow": {
+      "jobName": "Policy Packs",
+      "roleName": "Policy Packs microagent",
+      "summary": "Runs policy packs for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Vault Hana",
+        "Grafana Mei",
+        "Yume Builder",
+        "Pager Hiro"
+      ]
+    },
+    "stats": {
+      "power": 94,
+      "precision": 88,
+      "speed": 68,
+      "resilience": 74,
+      "intelligence": 74,
+      "teamwork": 80
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "policy-kenji",
+    "seasonOneCard": null,
+    "displayNumber": 22,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/policy-kenji",
+    "avatarSvg": "assets/characters/policy-kenji/avatar.svg",
+    "cardSvg": "assets/characters/policy-kenji/card.svg"
+  },
+  {
+    "id": "guardrail-goro",
+    "number": 29,
+    "name": "Guardrail Goro",
+    "miseName": "Mise GoldenPathGuardrails",
+    "codename": "chef.platform.golden-path-guardrails",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "common",
+    "roleCategory": "automation",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Golden Path Guardrails",
+      "signaturePhrase": "Golden Path Guardrails done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in golden path guardrails so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen golden path guardrails aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/guardrail-goro/full-body.png",
+      "cardPath": "/assets/characters/guardrail-goro/card.png"
+    },
+    "workflow": {
+      "jobName": "Golden Path Guardrails",
+      "roleName": "Golden Path Guardrails microagent",
+      "summary": "Runs golden path guardrails for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Portal Rei",
+        "Platform Sensei",
+        "Canary Taster",
+        "Impact Ichi"
+      ]
+    },
+    "stats": {
+      "power": 84,
+      "precision": 93,
+      "speed": 86,
+      "resilience": 92,
+      "intelligence": 87,
+      "teamwork": 76
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "guardrail-goro",
+    "seasonOneCard": null,
+    "displayNumber": 29,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/guardrail-goro",
+    "avatarSvg": "assets/characters/guardrail-goro/avatar.svg",
+    "cardSvg": "assets/characters/guardrail-goro/card.svg"
+  },
+  {
+    "id": "template-tanaka",
+    "number": 16,
+    "name": "Template Tanaka",
+    "miseName": "Mise ServiceTemplateCatalog",
+    "codename": "chef.platform.service-template-catalog",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "common",
+    "roleCategory": "platform",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Service Template Catalog",
+      "signaturePhrase": "Service Template Catalog done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in service template catalog so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen service template catalog aura",
+      "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+      "tool": "blueprint",
+      "spritePath": "/assets/characters/template-tanaka/full-body.png",
+      "cardPath": "/assets/characters/template-tanaka/card.png"
+    },
+    "workflow": {
+      "jobName": "Service Template Catalog",
+      "roleName": "Service Template Catalog microagent",
+      "summary": "Runs service template catalog for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Bootstrap Aiko",
+        "Alko Commit Chef",
+        "SLO Sage",
+        "Threat Taro"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 82,
+      "speed": 79,
+      "resilience": 89,
+      "intelligence": 93,
+      "teamwork": 95
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "template-tanaka",
+    "seasonOneCard": null,
+    "displayNumber": 16,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/template-tanaka",
+    "avatarSvg": "assets/characters/template-tanaka/avatar.svg",
+    "cardSvg": "assets/characters/template-tanaka/card.svg"
+  },
+  {
+    "id": "preview-yuki",
+    "number": 27,
+    "name": "Preview Yuki",
+    "miseName": "Mise PreviewEnvironmentSpawner",
+    "codename": "chef.platform.preview-environment-spawner",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "common",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "Canadian",
+      "title": "Preview Environment Spawner",
+      "signaturePhrase": "Preview Environment Spawner done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in preview environment spawner so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen preview environment spawner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/preview-yuki/full-body.png",
+      "cardPath": "/assets/characters/preview-yuki/card.png"
+    },
+    "workflow": {
+      "jobName": "Preview Environment Spawner",
+      "roleName": "Preview Environment Spawner microagent",
+      "summary": "Runs preview environment spawner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Streama",
+        "Portal Rei",
+        "Tariq Notesmith",
+        "Forecast Fuji"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 88,
+      "speed": 77,
+      "resilience": 75,
+      "intelligence": 91,
+      "teamwork": 95
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "preview-yuki",
+    "seasonOneCard": null,
+    "displayNumber": 27,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/preview-yuki",
+    "avatarSvg": "assets/characters/preview-yuki/avatar.svg",
+    "cardSvg": "assets/characters/preview-yuki/card.svg"
+  },
+  {
+    "id": "portal-rei",
+    "number": 28,
+    "name": "Portal Rei",
+    "miseName": "Mise SelfServicePortalUi",
+    "codename": "chef.platform.self-service-portal-ui",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "common",
+    "roleCategory": "platform",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Self-Service Portal UI",
+      "signaturePhrase": "Self-Service Portal UI done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in self-service portal ui so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen self-service portal ui aura",
+      "silhouette": "multinational chibi DevOps chef carrying a tablet",
+      "tool": "tablet",
+      "spritePath": "/assets/characters/portal-rei/full-body.png",
+      "cardPath": "/assets/characters/portal-rei/card.png"
+    },
+    "workflow": {
+      "jobName": "Self-Service Portal UI",
+      "roleName": "Self-Service Portal UI microagent",
+      "summary": "Runs self-service portal ui for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Preview Yuki",
+        "Guardrail Goro",
+        "Ivun Cache",
+        "Resilience Ryu"
+      ]
+    },
+    "stats": {
+      "power": 84,
+      "precision": 91,
+      "speed": 82,
+      "resilience": 84,
+      "intelligence": 77,
+      "teamwork": 86
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "portal-rei",
+    "seasonOneCard": null,
+    "displayNumber": 28,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/portal-rei",
+    "avatarSvg": "assets/characters/portal-rei/avatar.svg",
+    "cardSvg": "assets/characters/portal-rei/card.svg"
+  },
+  {
+    "id": "grafana-mei",
+    "number": 23,
+    "name": "Grafana Mei",
+    "miseName": "Mise SharedObservabilityPack",
+    "codename": "chef.platform.shared-observability-pack",
+    "department": "platform",
+    "departmentLabel": "Platform Kitchen",
+    "departmentTagline": "The stage where services live.",
+    "rarity": "common",
+    "roleCategory": "automation",
+    "identity": {
+      "nationality": "Chinese",
+      "title": "Shared Observability Pack",
+      "signaturePhrase": "Shared Observability Pack done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in shared observability pack so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen shared observability pack aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/grafana-mei/full-body.png",
+      "cardPath": "/assets/characters/grafana-mei/card.png"
+    },
+    "workflow": {
+      "jobName": "Shared Observability Pack",
+      "roleName": "Shared Observability Pack microagent",
+      "summary": "Runs shared observability pack for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Policy Kenji",
+        "Umami Code",
+        "Iron Hashi",
+        "OnCall Naomi"
+      ]
+    },
+    "stats": {
+      "power": 87,
+      "precision": 83,
+      "speed": 93,
+      "resilience": 75,
+      "intelligence": 77,
+      "teamwork": 87
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "grafana-mei",
+    "seasonOneCard": null,
+    "displayNumber": 23,
+    "departmentColor": "#22C55E",
+    "departmentShort": "Platform",
+    "assetBase": "assets/characters/grafana-mei",
+    "avatarSvg": "assets/characters/grafana-mei/avatar.svg",
+    "cardSvg": "assets/characters/grafana-mei/card.svg"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "self-unzip-expanded-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.7"
+  }
+}

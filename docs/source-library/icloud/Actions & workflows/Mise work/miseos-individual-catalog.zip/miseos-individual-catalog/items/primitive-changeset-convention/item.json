@@ -1,0 +1,11 @@
+{
+  "id": "primitive-changeset-convention",
+  "category": "platform",
+  "title": "Cross-Repository Change-Set Convention",
+  "description": "Cross-repository change planning and promotion template.",
+  "dependencies": [],
+  "files": [
+    "docs/CHANGESET_TEMPLATE.md"
+  ],
+  "notes": []
+}

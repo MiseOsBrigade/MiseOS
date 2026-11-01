@@ -1,0 +1,80 @@
+{
+  "id": "canary-taster",
+  "number": 14,
+  "name": "Canary Taster",
+  "miseName": "Mise PipelineObservability",
+  "codename": "chef.pipeline.pipeline-observability",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "rare",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Peruvian",
+    "title": "Pipeline Observability",
+    "signaturePhrase": "Pipeline Observability done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in pipeline observability so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen pipeline observability aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/canary-taster/full-body.png",
+    "cardPath": "/assets/characters/canary-taster/card.png"
+  },
+  "workflow": {
+    "jobName": "Pipeline Observability",
+    "roleName": "Pipeline Observability microagent",
+    "summary": "Runs pipeline observability for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Ivun Cache",
+      "Pipeline Sensei",
+      "Guardrail Goro",
+      "Impact Ichi"
+    ]
+  },
+  "stats": {
+    "power": 92,
+    "precision": 96,
+    "speed": 90,
+    "resilience": 92,
+    "intelligence": 89,
+    "teamwork": 82
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "canary-taster",
+  "seasonOneCard": {
+    "id": "16",
+    "role": "Guest Chef",
+    "department": "Reliability",
+    "function": "Test",
+    "rarity": "Rare",
+    "tier": "Release Safety",
+    "element": "Canary Signal",
+    "ability": "First Bite Test",
+    "lore": "Tests the waters first. Ensures safe rollouts with canary releases.",
+    "image_file": "cards/png/016-canary-taster.png",
+    "metadata_file": "metadata/erc721/016-canary-taster.json"
+  },
+  "displayNumber": 14,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/canary-taster",
+  "avatarSvg": "assets/characters/canary-taster/avatar.svg",
+  "cardSvg": "assets/characters/canary-taster/card.svg"
+}

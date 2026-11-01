@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.008",
+  "number": 8,
+  "slug": "iron-hashi",
+  "name": "Iron Hashi",
+  "mise_name": "Iron Hashi",
+  "codename": "IRON_HASHI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Artifact Validator",
+  "job_name": "Artifact Validator",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Artifact Validator",
+    "avatar_path": "assets/characters/iron-hashi/avatar.png",
+    "card_path": "assets/characters/iron-hashi/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Iron Hashi performs artifact validator within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Nina Promoter",
+      "Release Conductor",
+      "Felix Rollback"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 90,
+    "precision": 68,
+    "speed": 71,
+    "resilience": 72,
+    "intelligence": 89,
+    "teamwork": 83
+  },
+  "paths": {
+    "readme": "characters/iron-hashi/README.md",
+    "metadata": "characters/iron-hashi/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

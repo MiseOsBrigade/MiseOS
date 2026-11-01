@@ -1,0 +1,68 @@
+{
+  "id": "schema-sora",
+  "number": 19,
+  "name": "Schema Sora",
+  "miseName": "Mise DatabaseBlueprintManager",
+  "codename": "chef.platform.database-blueprint-manager",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Singaporean",
+    "title": "Database Blueprint Manager",
+    "signaturePhrase": "Database Blueprint Manager done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in database blueprint manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen database blueprint manager aura",
+    "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+    "tool": "blueprint",
+    "spritePath": "/assets/characters/schema-sora/full-body.png",
+    "cardPath": "/assets/characters/schema-sora/card.png"
+  },
+  "workflow": {
+    "jobName": "Database Blueprint Manager",
+    "roleName": "Database Blueprint Manager microagent",
+    "summary": "Runs database blueprint manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Terra Forge",
+      "Runtime Riku",
+      "Omar Reviewer",
+      "Capacity Kanna"
+    ]
+  },
+  "stats": {
+    "power": 87,
+    "precision": 75,
+    "speed": 77,
+    "resilience": 71,
+    "intelligence": 87,
+    "teamwork": 79
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "schema-sora",
+  "seasonOneCard": null,
+  "displayNumber": 19,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/schema-sora",
+  "avatarSvg": "assets/characters/schema-sora/avatar.svg",
+  "cardSvg": "assets/characters/schema-sora/card.svg"
+}

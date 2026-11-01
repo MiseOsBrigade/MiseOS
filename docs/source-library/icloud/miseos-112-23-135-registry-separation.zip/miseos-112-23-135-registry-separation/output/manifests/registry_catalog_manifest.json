@@ -1,0 +1,125 @@
+{
+  "schema": "miseos.registry.catalog.v1",
+  "created_at": "2026-07-09T00:53:14Z",
+  "total_registry_manifests": 23,
+  "official_character_cards": 112,
+  "official_ecosystem_items": 135,
+  "note": "Registry manifests are product/package ecosystem items, not character cards.",
+  "items": [
+    {
+      "registry_id": "miseos.agent-sdk",
+      "name": "MiseOS Agent SDK",
+      "type": "SDK"
+    },
+    {
+      "registry_id": "miseos.analytics-engine",
+      "name": "MiseOS Analytics Engine",
+      "type": "Analytics"
+    },
+    {
+      "registry_id": "miseos.attestation-gate",
+      "name": "MiseOS Attestation Gate",
+      "type": "Policy"
+    },
+    {
+      "registry_id": "miseos.cli",
+      "name": "MiseOS CLI",
+      "type": "Package"
+    },
+    {
+      "registry_id": "miseos.docs-builder",
+      "name": "MiseOS Docs Builder",
+      "type": "Container"
+    },
+    {
+      "registry_id": "miseos.docs-hub-template",
+      "name": "MiseOS Docs Hub Template",
+      "type": "Template"
+    },
+    {
+      "registry_id": "miseos.gradle-plugin",
+      "name": "MiseOS Gradle Plugin",
+      "type": "Package"
+    },
+    {
+      "registry_id": "miseos.maven-policy-adapter",
+      "name": "MiseOS Maven Policy Adapter",
+      "type": "Package"
+    },
+    {
+      "registry_id": "miseos.nuget-client",
+      "name": "MiseOS NuGet Client",
+      "type": "SDK"
+    },
+    {
+      "registry_id": "miseos.policy-checker",
+      "name": "MiseOS Policy Checker",
+      "type": "Container"
+    },
+    {
+      "registry_id": "miseos.policy-engine",
+      "name": "MiseOS Policy Engine",
+      "type": "Policy"
+    },
+    {
+      "registry_id": "miseos.registry-schema",
+      "name": "MiseOS Registry Schema",
+      "type": "Schema"
+    },
+    {
+      "registry_id": "miseos.release-sentinel",
+      "name": "MiseOS Release Sentinel",
+      "type": "Agent"
+    },
+    {
+      "registry_id": "miseos.repo-steward",
+      "name": "MiseOS Repo Steward",
+      "type": "Agent"
+    },
+    {
+      "registry_id": "miseos.ruby-steward",
+      "name": "MiseOS Ruby Steward",
+      "type": "Package"
+    },
+    {
+      "registry_id": "miseos.runner",
+      "name": "MiseOS Runner",
+      "type": "Container"
+    },
+    {
+      "registry_id": "miseos.sbom-indexer",
+      "name": "MiseOS SBOM Indexer",
+      "type": "Agent"
+    },
+    {
+      "registry_id": "miseos.trust-graph",
+      "name": "MiseOS Trust Graph",
+      "type": "Analytics"
+    },
+    {
+      "registry_id": "miseos.workflow-linter",
+      "name": "MiseOS Workflow Linter",
+      "type": "Agent"
+    },
+    {
+      "registry_id": "miseos.workflow-pack",
+      "name": "MiseOS Workflow Pack",
+      "type": "Workflow"
+    },
+    {
+      "registry_id": "miseos.repo-pet",
+      "name": "MiseOS Repo Pet",
+      "type": "Agent"
+    },
+    {
+      "registry_id": "miseos.repo-reliability-kit",
+      "name": "MiseOS Repo Reliability Kit",
+      "type": "Workflow"
+    },
+    {
+      "registry_id": "miseos.orchestra-theme",
+      "name": "Mise Orchestra Theme",
+      "type": "Theme"
+    }
+  ]
+}

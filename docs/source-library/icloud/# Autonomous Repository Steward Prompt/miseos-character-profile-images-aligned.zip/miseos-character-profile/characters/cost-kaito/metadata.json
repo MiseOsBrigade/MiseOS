@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.067",
+  "number": 67,
+  "slug": "cost-kaito",
+  "name": "Cost Kaito",
+  "mise_name": "Cost Kaito",
+  "codename": "COST_KAITO",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Cost & Efficiency Monitor",
+  "job_name": "Cost & Efficiency Monitor",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Cost & Efficiency Monitor",
+    "avatar_path": "assets/characters/cost-kaito/card.jpg",
+    "card_path": "assets/characters/cost-kaito/card.jpg",
+    "primary_photo_page": 76,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-076.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Cost Kaito performs cost & efficiency monitor within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "DX Mei",
+      "Revenue Rina",
+      "Risk Ryota"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 63,
+    "precision": 71,
+    "speed": 65,
+    "resilience": 71,
+    "intelligence": 83,
+    "teamwork": 72
+  },
+  "paths": {
+    "readme": "characters/cost-kaito/README.md",
+    "metadata": "characters/cost-kaito/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

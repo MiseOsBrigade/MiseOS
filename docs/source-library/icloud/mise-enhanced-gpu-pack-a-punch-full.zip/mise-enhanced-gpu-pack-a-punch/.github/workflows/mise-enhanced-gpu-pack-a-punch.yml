@@ -1,0 +1,185 @@
+name: Mise Enhanced GPU Pack-a-Punch
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+  workflow_dispatch:
+    inputs:
+      enable_gpu:
+        description: "Run the GPU lane on an authorized ephemeral self-hosted runner"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+      allow_high_risk:
+        description: "Allow high-risk changes to continue after manual dispatch"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+
+concurrency:
+  group: mise-pack-a-punch-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  measurement-context:
+    name: A0 Measurement Context
+    runs-on: ubuntu-latest
+    outputs:
+      risk_level: ${{ steps.extract.outputs.risk_level }}
+      risk_score: ${{ steps.extract.outputs.risk_score }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Choose diff refs
+        id: refs
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "base=${{ github.event.pull_request.base.sha }}" >> "$GITHUB_OUTPUT"
+            echo "head=${{ github.event.pull_request.head.sha }}" >> "$GITHUB_OUTPUT"
+          elif [ -n "${{ github.event.before }}" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            echo "base=${{ github.event.before }}" >> "$GITHUB_OUTPUT"
+            echo "head=${{ github.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=HEAD~1" >> "$GITHUB_OUTPUT"
+            echo "head=HEAD" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Measure complexity and risk
+        run: |
+          python3 scripts/measure_context.py \
+            --base "${{ steps.refs.outputs.base }}" \
+            --head "${{ steps.refs.outputs.head }}" \
+            --policy ".github/mise/mise-policy.json" \
+            --out ".mise-evidence/context.json"
+
+      - name: Extract risk outputs
+        id: extract
+        run: |
+          echo "risk_level=$(python3 -c 'import json; print(json.load(open(".mise-evidence/context.json"))["risk_level"])')" >> "$GITHUB_OUTPUT"
+          echo "risk_score=$(python3 -c 'import json; print(json.load(open(".mise-evidence/context.json"))["risk_score"])')" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mise-measurement-context
+          path: .mise-evidence/context.json
+
+  risk-gate:
+    name: B1 Risk Gate
+    needs: measurement-context
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: mise-measurement-context
+          path: .mise-evidence
+      - name: Enforce gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.allow_high_risk }}" = "true" ]; then
+            python3 scripts/risk_gate.py --context .mise-evidence/context.json --allow-high-risk
+          else
+            python3 scripts/risk_gate.py --context .mise-evidence/context.json
+          fi
+
+  cpu-quality-stack:
+    name: C2 CPU Quality Stack
+    needs: [measurement-context, risk-gate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Set up Node if needed
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Set up Go if needed
+        if: hashFiles('go.mod') != ''
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+
+      - name: Set up Rust if needed
+        if: hashFiles('Cargo.toml') != ''
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Set up Java if needed
+        if: hashFiles('pom.xml') != '' || hashFiles('build.gradle') != '' || hashFiles('build.gradle.kts') != ''
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+
+      - name: Run detected quality stacks
+        run: python3 scripts/run_quality_stack.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mise-quality-results
+          path: .mise-evidence/quality-results.json
+
+  gpu-complexity-stack:
+    name: D3 GPU Complexity Stack
+    needs: [measurement-context, risk-gate]
+    if: >-
+      (github.event_name == 'workflow_dispatch' && inputs.enable_gpu == 'true') ||
+      (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'gpu-ok'))
+    runs-on: [self-hosted, linux, x64, gpu, mise-gpu-ephemeral]
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate GPU visibility
+        run: |
+          nvidia-smi || {
+            echo "GPU runner selected, but nvidia-smi is unavailable."
+            exit 1
+          }
+      - name: Run GPU workload placeholder
+        run: |
+          echo "Add GPU workload commands here."
+
+  evidence-report:
+    name: E4 Evidence Report
+    needs: [measurement-context, risk-gate, cpu-quality-stack]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: mise-measurement-context
+          path: .mise-evidence
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: mise-quality-results
+          path: .mise-evidence
+      - name: Generate report
+        run: python3 scripts/generate_report.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mise-evidence-report
+          path: |
+            .mise-evidence/context.json
+            .mise-evidence/quality-results.json
+            .mise-evidence/evidence-report.md

@@ -1,0 +1,165 @@
+Generate working DevOps powerful prompt for Riplit app Give me a 15-30sec video prompt for This is a strong evolution of Mise Orchestra.
+
+You now have:
+
+5 DevOps Styles
+×
+15 Specialized Roles
+=
+75 Total Character Variants
+
+You mentioned 70, but mathematically the structure you’ve defined produces 75 characters (15 roles across 5 departments/styles).
+
+⸻
+
+🎼 MISE ORCHESTRA GRAND ROSTER
+
+Department 1 — Pipeline Kitchen
+
+“Build. Test. Deploy. Repeat.”
+
+Character	Role
+1	Alko Commit Chef	Commit Intake
+2	Bruno Blast-Radius	Change Impact Scanner
+3	Lila Branchkeeper	Branch Policy Gate
+4	Omar Reviewer	PR Hygiene Check
+5	Hugo Matrix	Test Matrix Runner
+6	Seira Scan	Security Scan Stage
+7	Yume Builder	Artifact Builder
+8	Iron Hashi	Artifact Validator
+9	Nina Promoter	Environment Promotion Gate
+10	Release Conductor	Deployment Orchestrator
+11	Felix Rollback	Rollback & Fix-Forward
+12	Tariq Notesmith	Release Notes Generator
+13	Ivun Cache	Pipeline Cost Monitor
+14	Canary Taster	Pipeline Observability
+15	Pipeline Sensei	Pipeline Tuner Agent
+
+⸻
+
+Department 2 — Platform Kitchen
+
+“The stage where services live.”
+
+Character	Role
+16	Template Tanaka	Service Template Catalog
+17	Bootstrap Aiko	New Service Wizard
+18	Terra Forge	Environment Provisioner
+19	Schema Sora	Database Blueprint Manager
+20	Runtime Riku	Runtime Profile Manager
+21	Vault Hana	Secrets & Config Broker
+22	Policy Kenji	Policy Packs
+23	Grafana Mei	Shared Observability Pack
+24	Umami Code	Traffic & Ingress Manager
+25	Queue Mizu	Job & Queue Templates
+26	Streama	Data Streaming Profiles
+27	Preview Yuki	Preview Environment Spawner
+28	Portal Rei	Self-Service Portal UI
+29	Guardrail Goro	Golden Path Guardrails
+30	Platform Sensei	Platform Health Board
+
+⸻
+
+Department 3 — Reliability Kitchen
+
+“Observe. Measure. Improve.”
+
+Character	Role
+31	SLO Sage	SLO Definition Workflow
+32	Trace Sensei	Instrumentation Booster
+33	Chaos Kaito	Load & Chaos Profiles
+34	Capacity Kanna	Pre-Deployment Reliability Check
+35	Canary Judge	Canary Judge
+36	Alert Akira	Incident Detection Rules
+37	Pager Hiro	Incident Triage Runbook
+38	OnCall Naomi	On-Call Rotation Manager
+39	Review Ren	Post-Incident Review
+40	Backlog Benji	Reliability Backlog Builder
+41	Metrics Miko	SLO Dashboards
+42	Forecast Fuji	Capacity Planner
+43	Resilience Ryu	Resilience Testing Loop
+44	Impact Ichi	Customer Impact Simulator
+45	Reliability Sensei	Reliability Advisor Agent
+
+⸻
+
+Department 4 — Security Kitchen
+
+“Protect the kitchen.”
+
+Character	Role
+46	Threat Taro	Threat Modeling Starter
+47	Secure Sakura	Secure Template Library
+48	Token Toshi	Credential Hygiene Scanner
+49	CVE Kumo	Dependency Risk Monitor
+50	Container Kage	Container Hardening Workflow
+51	Seira Vaultkeeper	Secrets Lifecycle Manager
+52	Policy Ronin	Policy-as-Code Engine
+53	Merge Sentinel	Pre-Merge Security Gate
+54	Watchtower Yoru	Runtime Threat Detector
+55	Auditor Emi	Access Review Workflow
+56	Incident Kitsune	Security Incident Playbooks
+57	Evidence Scribe	Compliance Evidence Collector
+58	Nudge Neko	Security Training Nudges
+59	Scorecard Shin	Security Scorecard
+60	Red Oni	Red Team / Chaos Security Mode
+
+⸻
+
+Department 5 — Data & Insight Kitchen
+
+“Learn. Optimize. Evolve.”
+
+Character	Role
+61	Taxonomy Taka	Event Taxonomy Manager
+62	Lake Haru	Telemetry Ingestion Pipeline
+63	Lattice	Trace Correlator
+64	Repo Ranger	Repo Health Analyzer
+65	DORA Daichi	Pipeline Analytics Engine
+66	Flag Fox	Feature Flag Analytics
+67	Cost Kaito	Cost & Efficiency Monitor
+68	DX Mei	Developer Experience Survey Loop
+69	Revenue Rina	Customer Behavior → Incident Linker
+70	Risk Ryota	Risk Scoring Model
+71	Apprentice Kai	Self-Improvement Agent
+72	Anomaly Aki	Anomaly Detection Studio
+73	Leaderboard Leo	Scorecards & Leaderboards
+74	Storyteller Sumi	Narrative Report Generator
+75	Roadmap Sensei	Strategic Roadmap Recommender
+
+⸻
+
+Legendary Executive Tier
+
+Above all 75 characters sits the executive orchestra:
+
+Character	Function
+Kurogami Senpai	Supreme Conductor
+Orchestra Core	Living System Consciousness
+Tensho	Chief Operations Officer
+Scale Oni Prime	Infrastructure Titan
+Seira Prime	Keeper of Secrets
+Umami Code Prime	Master Gateway Architect
+
+⸻
+
+NFT / Trading Card Structure
+
+Common      = Department Workers
+Rare        = Specialists
+Epic        = Department Leaders
+Legendary   = Executive Tier
+Mythic      = Orchestra Core Variants
+Genesis     = Original 15 Chef Founders
+
+This gives you enough characters for:
+
+ 75 trading cards
+ 75 profile pages
+ 75 mascot sprites
+ 75 comic appearances
+ 5 department posters
+ 1 orchestral command center dashboard
+• seasonal expansions (Cloud Kitchen, AI Kitchen, FinOps Kitchen, Hospitality Kitchen, Community Kitchen)
+
+The strongest path is to establish the Genesis 15 first, then introduce the remaining 60 as department expansions over time rather than launching all 75 at once. This creates a collectible progression and ongoing story development.

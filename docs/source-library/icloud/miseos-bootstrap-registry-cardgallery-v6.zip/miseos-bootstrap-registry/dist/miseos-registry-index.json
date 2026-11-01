@@ -1,0 +1,2099 @@
+{
+  "exportedAt": "2026-07-03T16:01:42.024Z",
+  "registry": {
+    "schemaVersion": "0.2.0",
+    "id": "miseos.bootstrap-registry",
+    "name": "MiseOS Bootstrap Registry",
+    "version": "0.4.0",
+    "description": "Analytics-ready bootstrap registry for MiseOS packages, containers, agents, workflows, Git command wrappers, Vite React registry console, and 75-card Master Roster gallery.",
+    "owner": {
+      "name": "MiseOS",
+      "kind": "organization",
+      "github": "Mise-OS"
+    },
+    "publishingModel": {
+      "defaultGithubOwner": "Mise-OS",
+      "recommendedNpmScope": "@mise-os",
+      "legacyNpmScope": "@miseos",
+      "scopePolicy": "Prefer @mise-os when publishing from the Mise-OS GitHub organization. Keep @miseos only if that owner/scope actually exists and owns the packages.",
+      "strongestPermissionLanes": [
+        "container",
+        "npm",
+        "nuget",
+        "rubygems"
+      ],
+      "repositoryScopedLanes": [
+        "maven",
+        "gradle"
+      ]
+    },
+    "registries": {
+      "container": "https://ghcr.io",
+      "npm": "https://npm.pkg.github.com",
+      "rubygems": "https://rubygems.pkg.github.com",
+      "maven": "https://maven.pkg.github.com",
+      "gradle": "https://maven.pkg.github.com",
+      "nuget": "https://nuget.pkg.github.com"
+    },
+    "namespaces": {
+      "container": "ghcr.io/mise-os",
+      "npm": "@mise-os",
+      "rubygems": "miseos",
+      "maven": "dev.miseos",
+      "gradle": "dev.miseos",
+      "nuget": "MiseOS"
+    },
+    "bootSequence": [
+      "registry",
+      "runtime",
+      "cli",
+      "policy-engine",
+      "release-sentinel",
+      "git-command-layer",
+      "vite-registry-console",
+      "master-roster-gallery",
+      "analytics",
+      "autonomous-updates"
+    ],
+    "registryQuestions": [
+      "What is this?",
+      "What does it do?",
+      "Who owns it?",
+      "What permissions does it need?",
+      "What package registry hosts it?",
+      "What changed since the last version?",
+      "Is it safe to use?",
+      "Can an agent execute it without guessing?"
+    ],
+    "coreArtifacts": [
+      "miseos.cli",
+      "miseos.agent-sdk",
+      "miseos.policy-engine",
+      "miseos.release-sentinel",
+      "miseos.repo-steward",
+      "miseos.runner",
+      "miseos.policy-checker",
+      "miseos.docs-builder",
+      "miseos.registry-schema",
+      "miseos.analytics-engine",
+      "miseos.trust-graph",
+      "miseos.sbom-indexer",
+      "miseos.attestation-gate",
+      "miseos.workflow-pack",
+      "miseos.docs-hub-template",
+      "miseos.nuget-client",
+      "miseos.ruby-steward",
+      "miseos.maven-policy-adapter",
+      "miseos.gradle-plugin",
+      "miseos.workflow-linter",
+      "miseos.git-command-layer",
+      "miseos.vite-registry-console",
+      "miseos.master-roster-gallery"
+    ],
+    "trustDefaults": {
+      "licenseRequired": true,
+      "sbomRequired": true,
+      "provenanceRequired": true,
+      "signedReleaseRequired": true,
+      "artifactAttestationRequired": true,
+      "scorecardRequired": true,
+      "humanReviewRequiredFor": [
+        "permission_change",
+        "major_version_upgrade",
+        "security_policy_change",
+        "dependency_source_change",
+        "network_surface_change",
+        "autonomous_execution_change"
+      ]
+    },
+    "analyticsDefaults": {
+      "riskThresholds": {
+        "lowMax": 29,
+        "mediumMax": 59,
+        "highMin": 60
+      },
+      "qualityGates": {
+        "minManifestCompleteness": 0.95,
+        "maxHighRiskRatio": 0.2,
+        "requireOwnerForEveryArtifact": true
+      },
+      "outputs": [
+        "reports/registry-analytics.json",
+        "reports/registry-analytics.md",
+        "reports/registry-risk-matrix.csv",
+        "docs/registry-dashboard.md"
+      ]
+    },
+    "gitCommandLayer": {
+      "map": "registry/git-command-map.json",
+      "docs": "docs/miseos-git-command-guide.md",
+      "script": "scripts/mise-git.mjs",
+      "safeDefaults": [
+        "pull uses --ff-only",
+        "hard reset requires --confirm-hard",
+        "force push uses --force-with-lease and requires --confirm-force"
+      ]
+    },
+    "vite": {
+      "consoleWorkspace": "apps/registry-console",
+      "primaryCommands": [
+        "pnpm vite:prepare",
+        "pnpm vite:validate",
+        "pnpm vite:dev",
+        "pnpm vite:build"
+      ],
+      "featureCoverage": [
+        "TypeScript",
+        "vite/client types",
+        "import.meta.glob",
+        "JSON imports",
+        "CSS modules",
+        "raw assets",
+        "web workers",
+        "CSP nonce",
+        "build license output",
+        "chunk import map"
+      ]
+    },
+    "masterRoster": {
+      "cards": "registry/cards/master-roster-cards.json",
+      "departments": "registry/cards/master-roster-departments.json",
+      "workspace": "apps/registry-console",
+      "count": 75,
+      "departmentsCount": 5
+    }
+  },
+  "summary": {
+    "manifests": 23,
+    "coreArtifacts": 23,
+    "highRisk": 5,
+    "mediumRisk": 4,
+    "lowRisk": 14
+  },
+  "manifests": [
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.agent-sdk",
+      "name": "MiseOS Agent SDK",
+      "type": "sdk",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Typed SDK for declaring MiseOS agents, capability contracts, permission needs, and evidence outputs.",
+      "artifacts": {
+        "npm": "@mise-os/agent-sdk"
+      },
+      "capabilities": [
+        "define_agent",
+        "validate_capability_contract",
+        "emit_evidence"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.2,
+        "operationalTier": "developer-tooling"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Agent SDK",
+        "does": "Typed SDK for declaring MiseOS agents, capability contracts, permission needs, and evidence outputs.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\"}}",
+        "registry": "npm: @mise-os/agent-sdk",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.analytics-engine",
+      "name": "MiseOS Analytics Engine",
+      "type": "analytics",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Analytics engine for manifest completeness, risk distribution, permission surface, trust compliance, and package graph exports.",
+      "artifacts": {
+        "npm": "@mise-os/analytics-engine"
+      },
+      "capabilities": [
+        "compute_metrics",
+        "risk_distribution",
+        "capability_map",
+        "graph_export",
+        "csv_export"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.28,
+        "operationalTier": "autonomy"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Analytics Engine",
+        "does": "Analytics engine for manifest completeness, risk distribution, permission surface, trust compliance, and package graph exports.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\"}}",
+        "registry": "npm: @mise-os/analytics-engine",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.attestation-gate",
+      "name": "MiseOS Attestation Gate",
+      "type": "policy",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Build provenance and artifact attestation gate for published packages and container images.",
+      "artifacts": {
+        "npm": "@mise-os/attestation-gate"
+      },
+      "capabilities": [
+        "verify_attestation",
+        "check_provenance",
+        "block_unsigned_artifact"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "attestations": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": true,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "critical",
+        "maturity": "alpha",
+        "riskWeight": 0.58,
+        "operationalTier": "governance"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Attestation Gate",
+        "does": "Build provenance and artifact attestation gate for published packages and container images.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"attestations\": \"read\"}}",
+        "registry": "npm: @mise-os/attestation-gate",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.cli",
+      "name": "MiseOS CLI",
+      "type": "package",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Command-line bootloader for validating, inspecting, analyzing, exporting, and operating the MiseOS registry.",
+      "artifacts": {
+        "npm": "@mise-os/cli"
+      },
+      "capabilities": [
+        "registry_validate",
+        "registry_analyze",
+        "registry_export",
+        "scope_check",
+        "doctor"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.25,
+        "operationalTier": "developer-tooling"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS CLI",
+        "does": "Command-line bootloader for validating, inspecting, analyzing, exporting, and operating the MiseOS registry.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+        "registry": "npm: @mise-os/cli",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.docs-builder",
+      "name": "MiseOS Docs Builder",
+      "type": "container",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Containerized documentation builder for registry dashboards, launch plans, trust reports, and GitHub Pages-ready docs.",
+      "artifacts": {
+        "container": "ghcr.io/mise-os/miseos-docs-builder"
+      },
+      "capabilities": [
+        "build_docs",
+        "generate_dashboard",
+        "export_markdown"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "pages": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "approved_write"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "alpha",
+        "riskWeight": 0.4,
+        "operationalTier": "developer-tooling"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Docs Builder",
+        "does": "Containerized documentation builder for registry dashboards, launch plans, trust reports, and GitHub Pages-ready docs.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"write\", \"pages\": \"write\"}}",
+        "registry": "container: ghcr.io/mise-os/miseos-docs-builder",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.docs-hub-template",
+      "name": "MiseOS Docs Hub Template",
+      "type": "template",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "GitHub Pages-ready documentation hub template for registry dashboards, package lifecycle, trust model, and launch plans.",
+      "artifacts": {
+        "npm": "@mise-os/docs-hub-template",
+        "repo": "templates/docs-hub"
+      },
+      "capabilities": [
+        "scaffold_docs",
+        "publish_pages",
+        "generate_nav"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "pages": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "approved_write"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "alpha",
+        "riskWeight": 0.38,
+        "operationalTier": "expansion"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Docs Hub Template",
+        "does": "GitHub Pages-ready documentation hub template for registry dashboards, package lifecycle, trust model, and launch plans.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"write\", \"pages\": \"write\"}}",
+        "registry": "npm: @mise-os/docs-hub-template, repo: templates/docs-hub",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.git-command-layer",
+      "name": "MiseOS Git Command Layer",
+      "type": "package",
+      "version": "0.1.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "A safe MiseOS command wrapper that maps common Git workflows into operational commands while keeping Git as the execution engine.",
+      "artifacts": {
+        "script": "scripts/mise-git.mjs",
+        "docs": "docs/miseos-git-command-guide.md",
+        "data": "registry/git-command-map.json",
+        "npm": "@mise-os/cli"
+      },
+      "capabilities": [
+        "git_status",
+        "git_stage",
+        "git_commit",
+        "git_pull_ff_only",
+        "git_push",
+        "git_stash",
+        "git_revert",
+        "git_reset_guarded",
+        "git_rebase_guarded",
+        "git_tag_release"
+      ],
+      "permissions": {
+        "filesystem": [
+          "read",
+          "write_via_git"
+        ],
+        "network": [
+          "git_remote_when_pull_or_push"
+        ],
+        "github": [
+          "repository_access_via_user_git_credentials"
+        ]
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "destructive_command_change",
+          "force_push_policy_change",
+          "protected_branch_policy_change",
+          "network_behavior_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Human review required for command grammar, destructive behavior, or protected branch policy changes.",
+        "minor": "Maintainer review required for new command wrappers and safety gates.",
+        "patch": "Allowed for docs, examples, and non-behavioral fixes after validation."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": true,
+        "outputs": [
+          "git_stdout",
+          "git_stderr",
+          "exit_code"
+        ],
+        "executionMode": "approved_write"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.52,
+        "operationalTier": "developer-tooling"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "manual until branch policy integration is stable",
+        "currentStrategy": "Ship as part of @mise-os/cli, with destructive commands blocked unless explicit confirmation flags are provided.",
+        "nextMilestone": "Add branch policy awareness and registry-backed command telemetry."
+      },
+      "answers": {
+        "what": "A MiseOS command wrapper for Git.",
+        "does": "Turns basic and advanced Git commands into MiseOS operating commands with safer defaults and explicit confirmation flags.",
+        "owner": "MiseOS / Mise-OS organization.",
+        "permissions": "Uses local Git credentials and filesystem access only through Git commands.",
+        "registry": "Included in @mise-os/cli and documented through registry/git-command-map.json.",
+        "changed": "Added MiseOS command grammar, safety wrappers, docs, aliases, and CLI delegation for Git workflows.",
+        "safe": "Safe when used through its default commands; destructive commands require confirmation flags and force push is guarded.",
+        "agentExecutable": "Agents may run read-only commands automatically; mutating commands require explicit user approval."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.gradle-plugin",
+      "name": "MiseOS Gradle Plugin",
+      "type": "package",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Gradle plugin for checking registry policy requirements inside JVM build pipelines.",
+      "artifacts": {
+        "gradle": "dev.miseos.registry-plugin"
+      },
+      "capabilities": [
+        "gradle_policy_check",
+        "validate_dependencies",
+        "emit_gradle_report"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "seed",
+        "riskWeight": 0.24,
+        "operationalTier": "expansion"
+      },
+      "release": {
+        "channel": "dev",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Gradle Plugin",
+        "does": "Gradle plugin for checking registry policy requirements inside JVM build pipelines.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+        "registry": "gradle: dev.miseos.registry-plugin",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.master-roster-gallery",
+      "name": "MiseOS Master Roster Gallery",
+      "type": "package",
+      "version": "0.1.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "React + TypeScript + Vite gallery for the 75-card MiseOS Master Roster with departments, rarity tiers, search filters, and copy-ready solo commands.",
+      "artifacts": {
+        "workspace": "apps/registry-console",
+        "data": "registry/cards/master-roster-cards.json",
+        "npm": "@mise-os/master-roster-gallery"
+      },
+      "capabilities": [
+        "master_roster_gallery",
+        "card_search",
+        "department_filter",
+        "rarity_filter",
+        "copy_solo_command",
+        "typed_roster_validation"
+      ],
+      "permissions": {
+        "filesystem": [
+          "read"
+        ],
+        "network": [
+          "local_dev_server"
+        ],
+        "github": {
+          "contents": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "customer_facing_copy_change",
+          "roster_identity_change",
+          "asset_mapping_change",
+          "publish_visibility_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Human review required for schema, card identity, command grammar, or customer-facing release changes.",
+        "minor": "Allowed for new filters, gallery layouts, and validated metadata exports.",
+        "patch": "Allowed for styling fixes, copy fixes, and non-breaking data corrections."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "static_gallery",
+          "typed_card_data",
+          "csv_export"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "alpha",
+        "riskWeight": 0.24,
+        "operationalTier": "developer-tooling"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "manual until GHCR runner and primary npm packages are published",
+        "currentStrategy": "Keep as workspace app until Vite build passes in CI.",
+        "nextMilestone": "Publish static GitHub Pages preview and package @mise-os/master-roster-gallery."
+      },
+      "answers": {
+        "what": "A React + Vite gallery for the 75-card MiseOS Master Roster.",
+        "does": "Displays, validates, filters, and exports Master Roster cards with MiseOS solo commands.",
+        "owner": "MiseOS / Mise-OS organization.",
+        "permissions": "Read-only local data and local Vite dev server only.",
+        "registry": "Workspace app now; future npm package @mise-os/master-roster-gallery.",
+        "changed": "Added 75-card data, typed TS modules, React gallery components, validation/export scripts, and registry manifest.",
+        "safe": "Safe as a read-only gallery and data export layer; publishing requires review.",
+        "agentExecutable": "Yes. Agents can validate and export roster data without mutating repository state."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.maven-policy-adapter",
+      "name": "MiseOS Maven Policy Adapter",
+      "type": "package",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Maven-compatible JVM adapter for consuming MiseOS policy data in Java and Kotlin builds.",
+      "artifacts": {
+        "maven": "dev.miseos:policy-adapter"
+      },
+      "capabilities": [
+        "load_policy",
+        "jvm_build_gate",
+        "emit_build_report"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "seed",
+        "riskWeight": 0.24,
+        "operationalTier": "expansion"
+      },
+      "release": {
+        "channel": "dev",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Maven Policy Adapter",
+        "does": "Maven-compatible JVM adapter for consuming MiseOS policy data in Java and Kotlin builds.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+        "registry": "maven: dev.miseos:policy-adapter",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.nuget-client",
+      "name": "MiseOS NuGet Client",
+      "type": "sdk",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": ".NET client package for querying MiseOS registry data and policy reports from C# or PowerShell workflows.",
+      "artifacts": {
+        "nuget": "MiseOS.Registry.Client"
+      },
+      "capabilities": [
+        "read_registry",
+        "query_manifest",
+        "parse_policy_report"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "seed",
+        "riskWeight": 0.22,
+        "operationalTier": "expansion"
+      },
+      "release": {
+        "channel": "dev",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS NuGet Client",
+        "does": ".NET client package for querying MiseOS registry data and policy reports from C# or PowerShell workflows.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+        "registry": "nuget: MiseOS.Registry.Client",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.policy-checker",
+      "name": "MiseOS Policy Checker",
+      "type": "container",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Containerized policy gate that runs registry risk checks and emits SARIF-compatible advisory output.",
+      "artifacts": {
+        "container": "ghcr.io/mise-os/miseos-policy-checker"
+      },
+      "capabilities": [
+        "policy_gate",
+        "sarif_output",
+        "risk_matrix"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "advisory_write"
+      },
+      "analytics": {
+        "criticality": "critical",
+        "maturity": "alpha",
+        "riskWeight": 0.5,
+        "operationalTier": "governance"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Policy Checker",
+        "does": "Containerized policy gate that runs registry risk checks and emits SARIF-compatible advisory output.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"security-events\": \"write\"}}",
+        "registry": "container: ghcr.io/mise-os/miseos-policy-checker",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Requires review-gated execution because this artifact requests write-capable permissions.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.policy-engine",
+      "name": "MiseOS Policy Engine",
+      "type": "policy",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Governance engine for permission drift, release safety, trust metadata, package integrity, and ECTI/CSM/STL/KAQ gates.",
+      "artifacts": {
+        "npm": "@mise-os/policy-engine",
+        "container": "ghcr.io/mise-os/miseos-policy-checker"
+      },
+      "capabilities": [
+        "score_risk",
+        "validate_permissions",
+        "enforce_trust_gates",
+        "generate_policy_report"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "advisory_write"
+      },
+      "analytics": {
+        "criticality": "critical",
+        "maturity": "alpha",
+        "riskWeight": 0.55,
+        "operationalTier": "governance"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Policy Engine",
+        "does": "Governance engine for permission drift, release safety, trust metadata, package integrity, and ECTI/CSM/STL/KAQ gates.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"security-events\": \"write\"}}",
+        "registry": "npm: @mise-os/policy-engine, container: ghcr.io/mise-os/miseos-policy-checker",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Requires review-gated execution because this artifact requests write-capable permissions.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.registry-schema",
+      "name": "MiseOS Registry Schema",
+      "type": "schema",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Canonical JSON Schema contract for MiseOS registry manifests and package metadata.",
+      "artifacts": {
+        "npm": "@mise-os/registry-schema"
+      },
+      "capabilities": [
+        "validate_schema",
+        "publish_schema",
+        "contract_versioning"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "advisory_write"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.3,
+        "operationalTier": "bootstrap"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Registry Schema",
+        "does": "Canonical JSON Schema contract for MiseOS registry manifests and package metadata.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"write\"}}",
+        "registry": "npm: @mise-os/registry-schema",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Requires review-gated execution because this artifact requests write-capable permissions.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.release-sentinel",
+      "name": "MiseOS Release Sentinel",
+      "type": "agent",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Scheduled watcher that detects registry drift, compares versions, classifies update risk, and prepares safe update pull requests.",
+      "artifacts": {
+        "npm": "@mise-os/release-sentinel"
+      },
+      "capabilities": [
+        "detect_drift",
+        "compare_versions",
+        "create_update_plan",
+        "open_pull_request"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "pull-requests": "write",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": true,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "approved_write"
+      },
+      "analytics": {
+        "criticality": "critical",
+        "maturity": "alpha",
+        "riskWeight": 0.8,
+        "operationalTier": "autonomy"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Release Sentinel",
+        "does": "Scheduled watcher that detects registry drift, compares versions, classifies update risk, and prepares safe update pull requests.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"write\", \"pull-requests\": \"write\", \"packages\": \"read\"}}",
+        "registry": "npm: @mise-os/release-sentinel",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.repo-steward",
+      "name": "MiseOS Repo Steward",
+      "type": "agent",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Repository health steward for branch protection readiness, workflow hygiene, docs completeness, and release readiness checks.",
+      "artifacts": {
+        "npm": "@mise-os/repo-steward"
+      },
+      "capabilities": [
+        "scan_repo_health",
+        "check_workflows",
+        "check_docs",
+        "recommend_branch_protection"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "metadata": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.35,
+        "operationalTier": "governance"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Repo Steward",
+        "does": "Repository health steward for branch protection readiness, workflow hygiene, docs completeness, and release readiness checks.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"metadata\": \"read\"}}",
+        "registry": "npm: @mise-os/repo-steward",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.ruby-steward",
+      "name": "MiseOS Ruby Steward",
+      "type": "package",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "RubyGems helper for registry audits, release notes generation, and lightweight repo stewardship tasks.",
+      "artifacts": {
+        "rubygems": "miseos-steward"
+      },
+      "capabilities": [
+        "audit_registry",
+        "generate_release_notes",
+        "repo_hygiene_check"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "seed",
+        "riskWeight": 0.26,
+        "operationalTier": "expansion"
+      },
+      "release": {
+        "channel": "dev",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Ruby Steward",
+        "does": "RubyGems helper for registry audits, release notes generation, and lightweight repo stewardship tasks.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+        "registry": "rubygems: miseos-steward",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.runner",
+      "name": "MiseOS Runner",
+      "type": "container",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Reproducible base runtime image for registry validation, policy checks, analytics generation, and agent execution.",
+      "artifacts": {
+        "container": "ghcr.io/mise-os/miseos-runner"
+      },
+      "capabilities": [
+        "run_validation",
+        "run_analytics",
+        "run_policy_checks",
+        "execute_agent_task"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "critical",
+        "maturity": "alpha",
+        "riskWeight": 0.45,
+        "operationalTier": "runtime"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Runner",
+        "does": "Reproducible base runtime image for registry validation, policy checks, analytics generation, and agent execution.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+        "registry": "container: ghcr.io/mise-os/miseos-runner",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.sbom-indexer",
+      "name": "MiseOS SBOM Indexer",
+      "type": "agent",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Indexes SBOM references, dependency graph exports, and package composition evidence for registry entries.",
+      "artifacts": {
+        "npm": "@mise-os/sbom-indexer"
+      },
+      "capabilities": [
+        "index_sbom",
+        "verify_dependency_snapshot",
+        "emit_sbom_report"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": true,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "critical",
+        "maturity": "alpha",
+        "riskWeight": 0.48,
+        "operationalTier": "governance"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS SBOM Indexer",
+        "does": "Indexes SBOM references, dependency graph exports, and package composition evidence for registry entries.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+        "registry": "npm: @mise-os/sbom-indexer",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.trust-graph",
+      "name": "MiseOS Trust Graph",
+      "type": "analytics",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Graph model that links artifacts, capabilities, permissions, owners, risk scores, and agent execution modes.",
+      "artifacts": {
+        "npm": "@mise-os/trust-graph"
+      },
+      "capabilities": [
+        "build_trust_graph",
+        "detect_permission_hotspots",
+        "map_agent_dependencies"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.32,
+        "operationalTier": "governance"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Trust Graph",
+        "does": "Graph model that links artifacts, capabilities, permissions, owners, risk scores, and agent execution modes.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\"}}",
+        "registry": "npm: @mise-os/trust-graph",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.vite-registry-console",
+      "name": "MiseOS Vite Registry Console",
+      "type": "package",
+      "version": "0.1.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Vite-powered read-only registry console for manifest browsing, risk summaries, publishing sequence visibility, and HMR-fast local development.",
+      "artifacts": {
+        "workspace": "apps/registry-console",
+        "npm": "@mise-os/registry-console"
+      },
+      "capabilities": [
+        "vite_dev_server",
+        "registry_dashboard",
+        "manifest_glob_import",
+        "worker_risk_scoring",
+        "static_console_build"
+      ],
+      "permissions": {
+        "filesystem": [
+          "read"
+        ],
+        "github": [],
+        "network": [
+          "local_dev_server"
+        ]
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "browser_write_capability",
+          "network_surface_change",
+          "dependency_major_upgrade",
+          "csp_policy_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Human review required for dependency major upgrades, browser write capability, CSP policy changes, or external network expansion.",
+        "minor": "Maintainer review required for dashboard features, new imports, or worker behavior.",
+        "patch": "Automated validation allowed for docs, styles, and read-only rendering fixes."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": true,
+        "requiresNetwork": false,
+        "outputs": [
+          "static_dashboard",
+          "vite_build_artifact",
+          "registry_console_report"
+        ],
+        "executionMode": "read_only"
+      },
+      "analytics": {
+        "criticality": "medium",
+        "maturity": "alpha",
+        "riskWeight": 0.24,
+        "operationalTier": "developer-tooling"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "manual until GHCR runner and primary packages are published",
+        "currentStrategy": "Keep browser console read-only and validate with tsc plus Vite build in CI.",
+        "nextMilestone": "Deploy static dashboard after registry publishing sequence stabilizes."
+      },
+      "answers": {
+        "what": "A read-only Vite dashboard for the MiseOS Bootstrap Registry.",
+        "does": "Loads generated registry data, discovers manifests with import.meta.glob, runs risk scoring in a worker, and displays package lane analytics.",
+        "owner": "MiseOS / Mise-OS organization.",
+        "permissions": "Local read-only data access and local dev server network surface only.",
+        "registry": "Workspace package now; optional npm package @mise-os/registry-console later.",
+        "changed": "Added Vite app, config, TypeScript settings, generated registry data, worker analytics, docs, and CI workflow.",
+        "safe": "Safe by default because it is read-only and browser writes are review-gated.",
+        "agentExecutable": "Yes, agents may build or preview the console after running registry validation."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.workflow-linter",
+      "name": "MiseOS Workflow Linter",
+      "type": "agent",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Static workflow linter for GitHub Actions permissions, package publishing surfaces, and risky automation patterns.",
+      "artifacts": {
+        "npm": "@mise-os/workflow-linter"
+      },
+      "capabilities": [
+        "lint_actions_permissions",
+        "detect_overprivilege",
+        "recommend_least_privilege"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": false,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "advisory_write"
+      },
+      "analytics": {
+        "criticality": "high",
+        "maturity": "alpha",
+        "riskWeight": 0.52,
+        "operationalTier": "governance"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Workflow Linter",
+        "does": "Static workflow linter for GitHub Actions permissions, package publishing surfaces, and risky automation patterns.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"read\", \"security-events\": \"write\"}}",
+        "registry": "npm: @mise-os/workflow-linter",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Requires review-gated execution because this artifact requests write-capable permissions.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    },
+    {
+      "schemaVersion": "0.2.0",
+      "id": "miseos.workflow-pack",
+      "name": "MiseOS Workflow Pack",
+      "type": "workflow",
+      "version": "0.2.0",
+      "status": "experimental",
+      "owner": {
+        "name": "MiseOS",
+        "kind": "organization",
+        "github": "Mise-OS"
+      },
+      "description": "Reusable GitHub Actions workflow pack for validation, analytics, publishing, provenance, Scorecard, and drift scans.",
+      "artifacts": {
+        "repo": ".github/workflows"
+      },
+      "capabilities": [
+        "validate_workflow",
+        "publish_workflow",
+        "attest_workflow",
+        "scorecard_workflow"
+      ],
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "packages": "write",
+          "id-token": "write",
+          "attestations": "write",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "changePolicy": {
+        "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+        "minor": "Requires changelog, analytics diff, and policy dry run.",
+        "patch": "May be merged after validation if permissions and trust metadata do not expand."
+      },
+      "agentContract": {
+        "loadStrategy": "manifest_plus_docs",
+        "safeToRunWithoutHuman": false,
+        "requiresNetwork": true,
+        "outputs": [
+          "json_report",
+          "markdown_report",
+          "csv_metrics"
+        ],
+        "executionMode": "approved_write"
+      },
+      "analytics": {
+        "criticality": "critical",
+        "maturity": "alpha",
+        "riskWeight": 0.75,
+        "operationalTier": "bootstrap"
+      },
+      "release": {
+        "channel": "alpha",
+        "cadence": "advisory-first until three clean releases",
+        "currentStrategy": "validate, analyze, publish only through signed workflows",
+        "nextMilestone": "0.3.0 governance hardening"
+      },
+      "answers": {
+        "what": "MiseOS Workflow Pack",
+        "does": "Reusable GitHub Actions workflow pack for validation, analytics, publishing, provenance, Scorecard, and drift scans.",
+        "owner": "MiseOS / Mise-OS organization",
+        "permissions": "{\"github\": {\"contents\": \"write\", \"packages\": \"write\", \"id-token\": \"write\", \"attestations\": \"write\", \"security-events\": \"write\"}}",
+        "registry": "repo: .github/workflows",
+        "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+        "safe": "Safe only within declared executionMode and permission gates.",
+        "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+      }
+    }
+  ]
+}

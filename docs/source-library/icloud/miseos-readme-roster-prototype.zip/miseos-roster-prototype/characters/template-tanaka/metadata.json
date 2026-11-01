@@ -1,0 +1,68 @@
+{
+  "id": "template-tanaka",
+  "number": 16,
+  "name": "Template Tanaka",
+  "miseName": "Mise ServiceTemplateCatalog",
+  "codename": "chef.platform.service-template-catalog",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "platform",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Service Template Catalog",
+    "signaturePhrase": "Service Template Catalog done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in service template catalog so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen service template catalog aura",
+    "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+    "tool": "blueprint",
+    "spritePath": "/assets/characters/template-tanaka/full-body.png",
+    "cardPath": "/assets/characters/template-tanaka/card.png"
+  },
+  "workflow": {
+    "jobName": "Service Template Catalog",
+    "roleName": "Service Template Catalog microagent",
+    "summary": "Runs service template catalog for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Bootstrap Aiko",
+      "Alko Commit Chef",
+      "SLO Sage",
+      "Threat Taro"
+    ]
+  },
+  "stats": {
+    "power": 73,
+    "precision": 82,
+    "speed": 79,
+    "resilience": 89,
+    "intelligence": 93,
+    "teamwork": 95
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "template-tanaka",
+  "seasonOneCard": null,
+  "displayNumber": 16,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/template-tanaka",
+  "avatarSvg": "assets/characters/template-tanaka/avatar.svg",
+  "cardSvg": "assets/characters/template-tanaka/card.svg"
+}

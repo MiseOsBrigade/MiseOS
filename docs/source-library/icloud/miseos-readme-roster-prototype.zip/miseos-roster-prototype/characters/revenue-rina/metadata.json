@@ -1,0 +1,68 @@
+{
+  "id": "revenue-rina",
+  "number": 69,
+  "name": "Revenue Rina",
+  "miseName": "Mise CustomerBehaviorToIncidentLinker",
+  "codename": "chef.data-insight.customer-behavior-incident-linker",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Filipino",
+    "title": "Customer Behavior \u2192 Incident Linker",
+    "signaturePhrase": "Customer Behavior to Incident Linker done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in customer behavior \u2192 incident linker so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen customer behavior \u2192 incident linker aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/revenue-rina/full-body.png",
+    "cardPath": "/assets/characters/revenue-rina/card.png"
+  },
+  "workflow": {
+    "jobName": "Customer Behavior \u2192 Incident Linker",
+    "roleName": "Customer Behavior \u2192 Incident Linker microagent",
+    "summary": "Runs customer behavior \u2192 incident linker for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "DX Mei",
+      "Risk Ryota",
+      "Nina Promoter",
+      "Umami Code"
+    ]
+  },
+  "stats": {
+    "power": 91,
+    "precision": 76,
+    "speed": 85,
+    "resilience": 83,
+    "intelligence": 81,
+    "teamwork": 83
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "revenue-rina",
+  "seasonOneCard": null,
+  "displayNumber": 69,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/revenue-rina",
+  "avatarSvg": "assets/characters/revenue-rina/avatar.svg",
+  "cardSvg": "assets/characters/revenue-rina/card.svg"
+}

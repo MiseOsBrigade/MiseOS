@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.019",
+  "number": 19,
+  "slug": "schema-sora",
+  "name": "Schema Sora",
+  "mise_name": "Schema Sora",
+  "codename": "SCHEMA_SORA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Database Blueprint Manager",
+  "job_name": "Database Blueprint Manager",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Database Blueprint Manager",
+    "avatar_path": "assets/characters/schema-sora/card.jpg",
+    "card_path": "assets/characters/schema-sora/card.jpg",
+    "primary_photo_page": 92,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-092.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Schema Sora performs database blueprint manager within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Runtime Riku",
+      "Vault Hana",
+      "Policy Kenji"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 61,
+    "precision": 82,
+    "speed": 53,
+    "resilience": 82,
+    "intelligence": 62,
+    "teamwork": 71
+  },
+  "paths": {
+    "readme": "characters/schema-sora/README.md",
+    "metadata": "characters/schema-sora/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

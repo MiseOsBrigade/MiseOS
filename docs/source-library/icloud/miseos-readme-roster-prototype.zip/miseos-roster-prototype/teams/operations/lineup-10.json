@@ -1,0 +1,314 @@
+[
+  {
+    "id": "kurogami-senpai",
+    "slug": "kurogami-senpai",
+    "number": 76,
+    "name": "Kurogami Senpai",
+    "miseName": "Mise Orchestrate",
+    "codename": "chef.operations.orchestrate",
+    "department": "operations",
+    "departmentLabel": "Operations Kitchen",
+    "departmentTagline": "Keep the kitchen running smoothly.",
+    "rarity": "mythic",
+    "roleCategory": "orchestrate",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Chef de Cuisine",
+      "signaturePhrase": "Kurogami Senpai keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Plans every move with perfect precision before the kitchen heats up."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#D4AF37",
+      "aura": "Operations Kitchen Gold Flame aura",
+      "silhouette": "chibi DevOps chef carrying Gold Flame",
+      "tool": "Gold Flame",
+      "spritePath": "/assets/characters/kurogami-senpai/full-body.png",
+      "cardPath": "/assets/characters/kurogami-senpai/card.png"
+    },
+    "workflow": {
+      "jobName": "Orchestrate",
+      "roleName": "Chef de Cuisine microagent",
+      "summary": "Plans every move with perfect precision before the kitchen heats up.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Scale Oni",
+        "Mizu"
+      ]
+    },
+    "stats": {
+      "power": 77,
+      "precision": 75,
+      "speed": 83,
+      "resilience": 79,
+      "intelligence": 71,
+      "teamwork": 85
+    },
+    "genesisVariant": true,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "1",
+      "role": "Chef de Cuisine",
+      "department": "Operations",
+      "function": "Orchestrate",
+      "rarity": "Mythic",
+      "tier": "Season 1 Core",
+      "element": "Gold Flame",
+      "ability": "Master Orchestrator",
+      "lore": "Plans every move with perfect precision before the kitchen heats up.",
+      "image_file": "cards/png/001-kurogami-senpai.png",
+      "metadata_file": "metadata/erc721/001-kurogami-senpai.json"
+    },
+    "displayNumber": 76,
+    "departmentColor": "#D4AF37",
+    "departmentShort": "Operations",
+    "assetBase": "assets/characters/kurogami-senpai",
+    "avatarSvg": "assets/characters/kurogami-senpai/avatar.svg",
+    "cardSvg": "assets/characters/kurogami-senpai/card.svg"
+  },
+  {
+    "id": "scale-oni",
+    "slug": "scale-oni",
+    "number": 85,
+    "name": "Scale Oni",
+    "miseName": "Mise Scale",
+    "codename": "chef.operations.scale",
+    "department": "operations",
+    "departmentLabel": "Operations Kitchen",
+    "departmentTagline": "Keep the kitchen running smoothly.",
+    "rarity": "legendary",
+    "roleCategory": "scale",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Rotisseur",
+      "signaturePhrase": "Scale Oni keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Scales up when things get hot. The bigger the load, the stronger he gets."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#D4AF37",
+      "aura": "Operations Kitchen Red Heat aura",
+      "silhouette": "chibi DevOps chef carrying Red Heat",
+      "tool": "Red Heat",
+      "spritePath": "/assets/characters/scale-oni/full-body.png",
+      "cardPath": "/assets/characters/scale-oni/card.png"
+    },
+    "workflow": {
+      "jobName": "Scale",
+      "roleName": "Rotisseur microagent",
+      "summary": "Scales up when things get hot. The bigger the load, the stronger he gets.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Kaji",
+        "Kurogami Senpai"
+      ]
+    },
+    "stats": {
+      "power": 99,
+      "precision": 77,
+      "speed": 71,
+      "resilience": 94,
+      "intelligence": 88,
+      "teamwork": 74
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "12",
+      "role": "Rotisseur",
+      "department": "Operations",
+      "function": "Scale",
+      "rarity": "Legendary",
+      "tier": "Scale Core",
+      "element": "Red Heat",
+      "ability": "Elastic Flame",
+      "lore": "Scales up when things get hot. The bigger the load, the stronger he gets.",
+      "image_file": "cards/png/012-scale-oni.png",
+      "metadata_file": "metadata/erc721/012-scale-oni.json"
+    },
+    "displayNumber": 85,
+    "departmentColor": "#D4AF37",
+    "departmentShort": "Operations",
+    "assetBase": "assets/characters/scale-oni",
+    "avatarSvg": "assets/characters/scale-oni/avatar.svg",
+    "cardSvg": "assets/characters/scale-oni/card.svg"
+  },
+  {
+    "id": "kaji",
+    "slug": "kaji",
+    "number": 79,
+    "name": "Kaji",
+    "miseName": "Mise Compute",
+    "codename": "chef.operations.compute",
+    "department": "operations",
+    "departmentLabel": "Operations Kitchen",
+    "departmentTagline": "Keep the kitchen running smoothly.",
+    "rarity": "epic",
+    "roleCategory": "compute",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Grillardin",
+      "signaturePhrase": "Kaji keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Handles the heat and powers the compute line with blazing passion."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#D4AF37",
+      "aura": "Operations Kitchen Fire aura",
+      "silhouette": "chibi DevOps chef carrying Fire",
+      "tool": "Fire",
+      "spritePath": "/assets/characters/kaji/full-body.png",
+      "cardPath": "/assets/characters/kaji/card.png"
+    },
+    "workflow": {
+      "jobName": "Compute",
+      "roleName": "Grillardin microagent",
+      "summary": "Handles the heat and powers the compute line with blazing passion.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Mizu",
+        "Scale Oni"
+      ]
+    },
+    "stats": {
+      "power": 95,
+      "precision": 92,
+      "speed": 83,
+      "resilience": 94,
+      "intelligence": 97,
+      "teamwork": 87
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "5",
+      "role": "Grillardin",
+      "department": "Operations",
+      "function": "Compute",
+      "rarity": "Epic",
+      "tier": "Compute Core",
+      "element": "Fire",
+      "ability": "Blazing Compute",
+      "lore": "Handles the heat and powers the compute line with blazing passion.",
+      "image_file": "cards/png/005-kaji.png",
+      "metadata_file": "metadata/erc721/005-kaji.json"
+    },
+    "displayNumber": 79,
+    "departmentColor": "#D4AF37",
+    "departmentShort": "Operations",
+    "assetBase": "assets/characters/kaji",
+    "avatarSvg": "assets/characters/kaji/avatar.svg",
+    "cardSvg": "assets/characters/kaji/card.svg"
+  },
+  {
+    "id": "mizu",
+    "slug": "mizu",
+    "number": 78,
+    "name": "Mizu",
+    "miseName": "Mise Prepare",
+    "codename": "chef.operations.prepare",
+    "department": "operations",
+    "departmentLabel": "Operations Kitchen",
+    "departmentTagline": "Keep the kitchen running smoothly.",
+    "rarity": "rare",
+    "roleCategory": "prepare",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Prep Chef",
+      "signaturePhrase": "Mizu keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Prepares everything in advance. Organization is the recipe."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#D4AF37",
+      "aura": "Operations Kitchen Blue Water aura",
+      "silhouette": "chibi DevOps chef carrying Blue Water",
+      "tool": "Blue Water",
+      "spritePath": "/assets/characters/mizu/full-body.png",
+      "cardPath": "/assets/characters/mizu/card.png"
+    },
+    "workflow": {
+      "jobName": "Prepare",
+      "roleName": "Prep Chef microagent",
+      "summary": "Prepares everything in advance. Organization is the recipe.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Kurogami Senpai",
+        "Kaji"
+      ]
+    },
+    "stats": {
+      "power": 86,
+      "precision": 74,
+      "speed": 80,
+      "resilience": 83,
+      "intelligence": 93,
+      "teamwork": 73
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "3",
+      "role": "Prep Chef",
+      "department": "Operations",
+      "function": "Prepare",
+      "rarity": "Rare",
+      "tier": "Service Line",
+      "element": "Blue Water",
+      "ability": "Prep Ledger",
+      "lore": "Prepares everything in advance. Organization is the recipe.",
+      "image_file": "cards/png/003-mizu.png",
+      "metadata_file": "metadata/erc721/003-mizu.json"
+    },
+    "displayNumber": 78,
+    "departmentColor": "#D4AF37",
+    "departmentShort": "Operations",
+    "assetBase": "assets/characters/mizu",
+    "avatarSvg": "assets/characters/mizu/avatar.svg",
+    "cardSvg": "assets/characters/mizu/card.svg"
+  }
+]

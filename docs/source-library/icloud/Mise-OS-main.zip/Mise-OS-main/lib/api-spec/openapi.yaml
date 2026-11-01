@@ -1,0 +1,1091 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: MiseOS Control Plane API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: dashboard
+    description: Dashboard summary and stats
+  - name: jobs
+    description: Orchestration jobs
+  - name: approvals
+    description: Human-in-the-loop approval engine
+  - name: characters
+    description: Character roster
+  - name: departments
+    description: Department info
+  - name: webhooks
+    description: Webhook simulation
+  - name: chat
+    description: Kitchen Comms agent chat (encrypted at rest, mirrored to Slack)
+  - name: grid
+    description: Kitchen Knowledge Grid (projects, tasks, sources, claims, tools)
+
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  # ── Dashboard ─────────────────────────────────────────────────────────────
+  /dashboard/stats:
+    get:
+      operationId: getDashboardStats
+      tags: [dashboard]
+      summary: Aggregate system stats
+      responses:
+        "200":
+          description: Stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DashboardStats"
+
+  /dashboard/activity:
+    get:
+      operationId: getDashboardActivity
+      tags: [dashboard]
+      summary: Recent activity feed (latest 20 logs across all jobs)
+      responses:
+        "200":
+          description: Activity feed
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Log"
+
+  # ── Jobs ──────────────────────────────────────────────────────────────────
+  /jobs:
+    get:
+      operationId: listJobs
+      tags: [jobs]
+      summary: List orchestration jobs
+      parameters:
+        - name: status
+          in: query
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        "200":
+          description: Jobs list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Job"
+    post:
+      operationId: createJob
+      tags: [jobs]
+      summary: Create a new orchestration job (simulate an event)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JobInput"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Job"
+
+  /jobs/{id}:
+    get:
+      operationId: getJob
+      tags: [jobs]
+      summary: Get a single job with its agent instances
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Job detail
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobDetail"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /jobs/{id}/logs:
+    get:
+      operationId: listJobLogs
+      tags: [jobs]
+      summary: Get execution logs for a job (returns last 50)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Logs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Log"
+
+  # ── Approvals ─────────────────────────────────────────────────────────────
+  /approvals:
+    get:
+      operationId: listApprovals
+      tags: [approvals]
+      summary: List pending HITL approval requests
+      parameters:
+        - name: status
+          in: query
+          schema:
+            type: string
+            default: pending
+      responses:
+        "200":
+          description: Approval requests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ApprovalRequest"
+
+  /approvals/{id}/resolve:
+    patch:
+      operationId: resolveApproval
+      tags: [approvals]
+      summary: Approve or deny a HITL request
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ApprovalResolution"
+      responses:
+        "200":
+          description: Updated approval
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApprovalRequest"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  # ── Characters ────────────────────────────────────────────────────────────
+  /characters:
+    get:
+      operationId: listCharacters
+      tags: [characters]
+      summary: List all 75 characters with optional filters
+      parameters:
+        - name: department
+          in: query
+          schema:
+            type: string
+        - name: rarity
+          in: query
+          schema:
+            type: string
+        - name: q
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Characters
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CharacterList"
+
+  /characters/{id}:
+    get:
+      operationId: getCharacter
+      tags: [characters]
+      summary: Get a single character
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Character
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Character"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  # ── Departments ───────────────────────────────────────────────────────────
+  /departments:
+    get:
+      operationId: listDepartments
+      tags: [departments]
+      summary: List all 5 departments with character counts
+      responses:
+        "200":
+          description: Departments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Department"
+
+  /departments/{id}:
+    get:
+      operationId: getDepartment
+      tags: [departments]
+      summary: Get a single department with its characters
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Department
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Department"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  # ── Webhooks ──────────────────────────────────────────────────────────────
+  /webhooks/simulate:
+    post:
+      operationId: simulateWebhook
+      tags: [webhooks]
+      summary: Simulate an incoming webhook event (creates a job)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WebhookSimulation"
+      responses:
+        "201":
+          description: Event accepted, job created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WebhookSimulationResult"
+
+  # ── Chat ──────────────────────────────────────────────────────────────────
+  /chat/messages:
+    get:
+      operationId: listChatMessages
+      tags: [chat]
+      summary: List recent Kitchen Comms messages (decrypted)
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 60
+      responses:
+        "200":
+          description: Messages
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ChatMessage"
+    post:
+      operationId: createChatMessage
+      tags: [chat]
+      summary: Post a message (encrypted at rest, mirrored to Slack)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChatMessageInput"
+      responses:
+        "201":
+          description: Message stored
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ChatMessage"
+
+  # ── Kitchen Knowledge Grid ────────────────────────────────────────────────
+  /grid/summary:
+    get:
+      operationId: getGridSummary
+      tags: [grid]
+      summary: Knowledge Grid summary and verification health
+      responses:
+        "200":
+          description: Summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GridSummary"
+
+  /grid/projects:
+    get:
+      operationId: listGridProjects
+      tags: [grid]
+      summary: List knowledge-grid projects
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: station
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: q
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Projects
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GridProject"
+
+  /grid/tasks:
+    get:
+      operationId: listGridTasks
+      tags: [grid]
+      summary: List knowledge-grid tasks
+      parameters:
+        - name: projectId
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Tasks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GridTask"
+
+  /grid/sources:
+    get:
+      operationId: listGridSources
+      tags: [grid]
+      summary: List knowledge-grid sources
+      parameters:
+        - name: type
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: reliability
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: q
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Sources
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GridSource"
+
+  /grid/claims:
+    get:
+      operationId: listGridClaims
+      tags: [grid]
+      summary: List knowledge-grid claims with verification state
+      parameters:
+        - name: verification
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: confidence
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: projectId
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: q
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Claims
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GridClaim"
+
+  /grid/claims/{id}:
+    patch:
+      operationId: updateGridClaim
+      tags: [grid]
+      summary: Update a claim's verification status (verify / flag / deprecate)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GridClaimUpdate"
+      responses:
+        "200":
+          description: Updated claim
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GridClaim"
+        "400":
+          description: Invalid update (e.g. verifying a claim with no source)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /grid/tools:
+    get:
+      operationId: listGridTools
+      tags: [grid]
+      summary: List knowledge-grid tools
+      parameters:
+        - name: category
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: q
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Tools
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GridTool"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string
+
+    # ── Dashboard ──────────────────────────────────────────────────────────
+    DashboardStats:
+      type: object
+      required:
+        - totalCharacters
+        - totalDepartments
+        - activeJobs
+        - completedJobs
+        - pendingApprovals
+        - totalLogs
+        - departmentBreakdown
+        - rarityBreakdown
+      properties:
+        totalCharacters:
+          type: integer
+        totalDepartments:
+          type: integer
+        activeJobs:
+          type: integer
+        completedJobs:
+          type: integer
+        pendingApprovals:
+          type: integer
+        totalLogs:
+          type: integer
+        departmentBreakdown:
+          type: array
+          items:
+            $ref: "#/components/schemas/DepartmentCount"
+        rarityBreakdown:
+          type: object
+          additionalProperties:
+            type: integer
+
+    DepartmentCount:
+      type: object
+      required: [id, name, color, count]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        color:
+          type: string
+        count:
+          type: integer
+
+    # ── Jobs ───────────────────────────────────────────────────────────────
+    Job:
+      type: object
+      required: [id, triggerEvent, status, startedAt]
+      properties:
+        id:
+          type: integer
+        triggerEvent:
+          type: string
+        status:
+          type: string
+        startedAt:
+          type: string
+        completedAt:
+          type: ["string", "null"]
+
+    JobDetail:
+      type: object
+      required: [id, triggerEvent, status, startedAt, agents]
+      properties:
+        id:
+          type: integer
+        triggerEvent:
+          type: string
+        status:
+          type: string
+        startedAt:
+          type: string
+        completedAt:
+          type: ["string", "null"]
+        agents:
+          type: array
+          items:
+            $ref: "#/components/schemas/AgentInstance"
+
+    JobInput:
+      type: object
+      required: [triggerEvent, characterIds]
+      properties:
+        triggerEvent:
+          type: string
+          example: "pull_request.opened"
+        characterIds:
+          type: array
+          items:
+            type: integer
+          example: [1, 4, 6]
+
+    AgentInstance:
+      type: object
+      required: [id, jobId, characterId, characterName, department, state]
+      properties:
+        id:
+          type: integer
+        jobId:
+          type: integer
+        characterId:
+          type: integer
+        characterName:
+          type: string
+        department:
+          type: string
+        state:
+          type: string
+        tokenUsage:
+          type: integer
+
+    # ── Logs ───────────────────────────────────────────────────────────────
+    Log:
+      type: object
+      required: [id, characterName, department, logLevel, message, timestamp]
+      properties:
+        id:
+          type: integer
+        instanceId:
+          type: ["integer", "null"]
+        jobId:
+          type: ["integer", "null"]
+        characterName:
+          type: string
+        department:
+          type: string
+        logLevel:
+          type: string
+        message:
+          type: string
+        actionTaken:
+          type: ["string", "null"]
+        timestamp:
+          type: string
+
+    # ── Approvals ──────────────────────────────────────────────────────────
+    ApprovalRequest:
+      type: object
+      required: [id, jobId, characterName, department, riskLevel, proposedAction, status, createdAt]
+      properties:
+        id:
+          type: integer
+        jobId:
+          type: integer
+        characterName:
+          type: string
+        department:
+          type: string
+        riskLevel:
+          type: string
+        proposedAction:
+          type: string
+        sqlPreview:
+          type: ["string", "null"]
+        status:
+          type: string
+        resolvedBy:
+          type: ["string", "null"]
+        resolvedAt:
+          type: ["string", "null"]
+        createdAt:
+          type: string
+
+    ApprovalResolution:
+      type: object
+      required: [decision]
+      properties:
+        decision:
+          type: string
+          enum: [approved, denied]
+        resolvedBy:
+          type: string
+
+    # ── Characters ─────────────────────────────────────────────────────────
+    Character:
+      type: object
+      required: [id, name, title, role, department, rarity, tags]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        title:
+          type: string
+        role:
+          type: string
+        department:
+          type: string
+        rarity:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+
+    CharacterList:
+      type: object
+      required: [total, characters]
+      properties:
+        total:
+          type: integer
+        characters:
+          type: array
+          items:
+            $ref: "#/components/schemas/Character"
+
+    # ── Departments ────────────────────────────────────────────────────────
+    Department:
+      type: object
+      required: [id, name, tagline, color, characters]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        tagline:
+          type: string
+        color:
+          type: string
+        characters:
+          type: array
+          items:
+            $ref: "#/components/schemas/Character"
+
+    # ── Webhooks ───────────────────────────────────────────────────────────
+    WebhookSimulation:
+      type: object
+      required: [eventType, source]
+      properties:
+        eventType:
+          type: string
+          example: "pull_request.opened"
+          enum:
+            - "pull_request.opened"
+            - "pipeline.test_failed"
+            - "monitor.alert"
+            - "security.vulnerability_detected"
+            - "deployment.requested"
+        source:
+          type: string
+          example: "github"
+        payload:
+          type: object
+          additionalProperties: true
+
+    WebhookSimulationResult:
+      type: object
+      required: [status, jobId, dispatchedAgents]
+      properties:
+        status:
+          type: string
+        jobId:
+          type: integer
+        dispatchedAgents:
+          type: array
+          items:
+            type: string
+
+    # ── Chat ───────────────────────────────────────────────────────────────
+    ChatMessage:
+      type: object
+      required: [id, agent, department, role, messageType, text, postedToSlack, createdAt]
+      properties:
+        id:
+          type: integer
+        agent:
+          type: string
+        department:
+          type: string
+        role:
+          type: string
+        messageType:
+          type: string
+          enum: [normal, alert, system]
+        text:
+          type: string
+        postedToSlack:
+          type: boolean
+        createdAt:
+          type: string
+
+    ChatMessageInput:
+      type: object
+      required: [agent, department, role, text]
+      properties:
+        agent:
+          type: string
+        department:
+          type: string
+        role:
+          type: string
+        text:
+          type: string
+          maxLength: 2000
+        messageType:
+          type: string
+          enum: [normal, alert, system]
+          default: normal
+
+    # ── Kitchen Knowledge Grid ─────────────────────────────────────────────
+    GridProject:
+      type: object
+      required: [id, name, goal, status, priority, owner, station, deadline, canonicalSummary, tags]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        goal:
+          type: string
+        status:
+          type: string
+          enum: [active, planning, blocked, shipped, archived]
+        priority:
+          type: string
+          enum: [critical, high, medium, low]
+        owner:
+          type: string
+        station:
+          type: string
+          enum: [pipeline, platform, reliability, security, data]
+        deadline:
+          type: string
+        canonicalSummary:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+
+    GridTask:
+      type: object
+      required: [id, title, projectId, status, priority, owner, nextAction, dueDate, toolId]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        projectId:
+          type: string
+        status:
+          type: string
+          enum: [todo, in_progress, review, done, blocked]
+        priority:
+          type: string
+          enum: [critical, high, medium, low]
+        owner:
+          type: string
+        nextAction:
+          type: string
+        dueDate:
+          type: string
+        toolId:
+          type: ["string", "null"]
+
+    GridSource:
+      type: object
+      required: [id, title, url, type, author, datePublished, reliability, summary, tags]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        url:
+          type: string
+        type:
+          type: string
+          enum: [doc, incident, metric, repo, runbook, dataset, external]
+        author:
+          type: string
+        datePublished:
+          type: string
+        reliability:
+          type: string
+          enum: [high, medium, low, unknown]
+        summary:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+
+    GridClaim:
+      type: object
+      required: [id, statement, sourceId, projectId, confidence, verification, lastVerified, verifiedBy, notes, isSupported, isVerifiable]
+      properties:
+        id:
+          type: string
+        statement:
+          type: string
+        sourceId:
+          type: ["string", "null"]
+        projectId:
+          type: ["string", "null"]
+        confidence:
+          type: string
+          enum: [high, medium, low, unknown]
+        verification:
+          type: string
+          enum: [verified, pending, unsupported, deprecated]
+        lastVerified:
+          type: ["string", "null"]
+        verifiedBy:
+          type: ["string", "null"]
+        notes:
+          type: string
+        isSupported:
+          type: boolean
+        isVerifiable:
+          type: boolean
+
+    GridClaimUpdate:
+      type: object
+      required: [verification]
+      properties:
+        verification:
+          type: string
+          enum: [verified, pending, unsupported, deprecated]
+        verifiedBy:
+          type: string
+        notes:
+          type: string
+
+    GridTool:
+      type: object
+      required: [id, name, category, useCase, privacy, integrationType, cost, relatedStation, tags]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        category:
+          type: string
+          enum: [ci, security, observability, infra, data, ai]
+        useCase:
+          type: string
+        privacy:
+          type: string
+          enum: [local, cloud, hybrid]
+        integrationType:
+          type: string
+          enum: [api, cli, webhook, mcp]
+        cost:
+          type: string
+        relatedStation:
+          type: string
+          enum: [pipeline, platform, reliability, security, data]
+        tags:
+          type: array
+          items:
+            type: string
+
+    GridSummary:
+      type: object
+      required: [counts, projectsByStatus, tasksByStatus, claimsByVerification, claimsByConfidence, sourcesByReliability, verificationHealth]
+      properties:
+        counts:
+          type: object
+          required: [projects, tasks, sources, claims, tools]
+          properties:
+            projects:
+              type: integer
+            tasks:
+              type: integer
+            sources:
+              type: integer
+            claims:
+              type: integer
+            tools:
+              type: integer
+        projectsByStatus:
+          type: object
+          additionalProperties:
+            type: integer
+        tasksByStatus:
+          type: object
+          additionalProperties:
+            type: integer
+        claimsByVerification:
+          type: object
+          additionalProperties:
+            type: integer
+        claimsByConfidence:
+          type: object
+          additionalProperties:
+            type: integer
+        sourcesByReliability:
+          type: object
+          additionalProperties:
+            type: integer
+        verificationHealth:
+          type: object
+          required: [total, verified, supported, unsupported, verifiedPct]
+          properties:
+            total:
+              type: integer
+            verified:
+              type: integer
+            supported:
+              type: integer
+            unsupported:
+              type: integer
+            verifiedPct:
+              type: integer

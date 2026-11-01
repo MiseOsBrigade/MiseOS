@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.repo-pet",
+  "name": "MiseOS Repo Pet",
+  "type": "package",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {"name": "MiseOS", "kind": "organization", "github": "Mise-OS"},
+  "description": "A Shimeji-style terminal mascot that safely roams a repository or container filesystem and surfaces repo context without modifying files.",
+  "artifacts": {"npm": "@mise-os/repo-pet", "source": "packages/repo-roamer"},
+  "capabilities": ["repo_context_walk", "terminal_mascot_render", "safe_filesystem_roam", "character_metadata_display"],
+  "permissions": {"filesystem": ["read"], "network": [], "github": []},
+  "trust": {"licenseRequired": true, "sbomRequired": true, "provenanceRequired": true, "signedReleaseRequired": true, "artifactAttestationRequired": true, "scorecardRequired": true, "humanReviewRequiredFor": ["filesystem_scope_change", "write_mode_addition", "network_access_addition"]},
+  "changePolicy": {"major": "Human review required for filesystem behavior, character runtime changes, or write-mode support.", "minor": "Allowed for new characters, renderers, and read-only context improvements.", "patch": "Allowed for bug fixes, docs, and metadata corrections."},
+  "agentContract": {"loadStrategy": "manifest_plus_docs", "safeToRunWithoutHuman": true, "requiresNetwork": false, "outputs": ["terminal_render", "repo_summary"], "executionMode": "read_only"},
+  "analytics": {"criticality": "low", "maturity": "alpha", "riskWeight": 0.18, "operationalTier": "developer-tooling"},
+  "release": {"channel": "alpha", "cadence": "manual until repository publishing is stable", "currentStrategy": "Keep package unpublished until GHCR runner and primary packages are validated.", "nextMilestone": "Publish as optional developer experience package after @mise-os/cli."},
+  "answers": {"what": "A safe read-only terminal mascot package for MiseOS repositories.", "does": "Walks repo context, displays Mise Orchestra characters, and helps make repository state understandable.", "owner": "MiseOS / Mise-OS organization.", "permissions": "Local filesystem read access only; no network and no writes.", "registry": "GitHub npm registry under @mise-os after review.", "changed": "Integrated from the uploaded repo pet patch as packages/repo-roamer with @mise-os scope normalization.", "safe": "Safe by default because it is read-only, local, and has explicit review gates for network or write changes.", "agentExecutable": "Yes, agents may execute it for read-only repository orientation and demos."}
+}

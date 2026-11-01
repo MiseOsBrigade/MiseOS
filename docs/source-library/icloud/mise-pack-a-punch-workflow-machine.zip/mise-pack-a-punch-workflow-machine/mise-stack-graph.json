@@ -1,0 +1,37 @@
+{
+  "gate": "stack-graph",
+  "mermaid": "```mermaid\nflowchart LR\n  A0[A0: measurement-context] --> B1[B1: risk-gate]\n  B1 --> C2[C2: quality-stack]\n  B1 --> D3[D3: supply-chain-scan]\n  B1 --> E4[E4: branch-advisor]\n  C2 --> F5[F5: evidence-report]\n  D3 --> F5\n  E4 --> F5\n  B1 --> F5\n```",
+  "table": "| Coordinate | Stack Node | Purpose |\n|---|---|---|\n| A0 | measurement-context | Capture event, actor, branch, and file-change context before running any enhancement. |\n| B1 | risk-gate | Block secrets, risky workflow edits, and destructive shell patterns. |\n| C2 | quality-stack | Run native lint, test, build, and syntax checks only when matching project files exist. |\n| D3 | supply-chain-scan | Surface dependency and lockfile risk without creating recursive commits. |\n| E4 | branch-advisor | Recommend the next branch/PR path without auto-merging. |\n| F5 | evidence-report | Emit a single Markdown/JSON report artifact and optional PR comment. |",
+  "coordinates": [
+    {
+      "id": "A0",
+      "name": "measurement-context",
+      "purpose": "Capture event, actor, branch, and file-change context before running any enhancement."
+    },
+    {
+      "id": "B1",
+      "name": "risk-gate",
+      "purpose": "Block secrets, risky workflow edits, and destructive shell patterns."
+    },
+    {
+      "id": "C2",
+      "name": "quality-stack",
+      "purpose": "Run native lint, test, build, and syntax checks only when matching project files exist."
+    },
+    {
+      "id": "D3",
+      "name": "supply-chain-scan",
+      "purpose": "Surface dependency and lockfile risk without creating recursive commits."
+    },
+    {
+      "id": "E4",
+      "name": "branch-advisor",
+      "purpose": "Recommend the next branch/PR path without auto-merging."
+    },
+    {
+      "id": "F5",
+      "name": "evidence-report",
+      "purpose": "Emit a single Markdown/JSON report artifact and optional PR comment."
+    }
+  ]
+}

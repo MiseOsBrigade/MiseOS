@@ -1,0 +1,17 @@
+{
+  "id": "registry-repo-steward",
+  "category": "registry-capability",
+  "title": "MiseOS Repo Steward",
+  "description": "Executable baseline capability for MiseOS Repo Steward.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.repo-steward.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: repoSteward",
+    "Source status: active"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.037",
+  "number": 37,
+  "slug": "pager-hiro",
+  "name": "Pager Hiro",
+  "mise_name": "Pager Hiro",
+  "codename": "PAGER_HIRO",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "Incident Triage Runbook",
+  "job_name": "Incident Triage Runbook",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "Incident Triage Runbook",
+    "avatar_path": "assets/characters/pager-hiro/avatar.png",
+    "card_path": "assets/characters/pager-hiro/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Pager Hiro performs incident triage runbook within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "OnCall Naomi",
+      "Review Ren",
+      "Backlog Benji"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 57,
+    "precision": 82,
+    "speed": 62,
+    "resilience": 74,
+    "intelligence": 59,
+    "teamwork": 72
+  },
+  "paths": {
+    "readme": "characters/pager-hiro/README.md",
+    "metadata": "characters/pager-hiro/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

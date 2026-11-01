@@ -1,0 +1,17 @@
+{
+  "id": "registry-maven-policy-adapter",
+  "category": "registry-capability",
+  "title": "MiseOS Maven Policy Adapter",
+  "description": "Executable baseline capability for MiseOS Maven Policy Adapter.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.maven-policy-adapter.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: mavenPolicyAdapter",
+    "Source status: active"
+  ]
+}

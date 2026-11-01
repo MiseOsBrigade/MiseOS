@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.050",
+  "number": 50,
+  "slug": "container-kage",
+  "name": "Container Kage",
+  "mise_name": "Container Kage",
+  "codename": "CONTAINER_KAGE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Container Hardening Workflow",
+  "job_name": "Container Hardening Workflow",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Container Hardening Workflow",
+    "avatar_path": "assets/characters/container-kage/avatar.png",
+    "card_path": "assets/characters/container-kage/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Container Kage performs container hardening workflow within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Seira Vaultkeeper",
+      "Policy Ronin",
+      "Merge Sentinel"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 59,
+    "precision": 81,
+    "speed": 58,
+    "resilience": 83,
+    "intelligence": 79,
+    "teamwork": 64
+  },
+  "paths": {
+    "readme": "characters/container-kage/README.md",
+    "metadata": "characters/container-kage/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

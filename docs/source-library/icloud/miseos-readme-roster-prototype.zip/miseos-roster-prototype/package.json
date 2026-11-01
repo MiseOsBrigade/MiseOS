@@ -1,0 +1,13 @@
+{
+  "name": "miseos-roster-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static proof prototype for MiseOS interactive holo card roster.",
+  "scripts": {
+    "start": "python3 -m http.server 4175",
+    "serve": "python3 -m http.server 4175",
+    "validate": "python3 -m json.tool data/all-characters.json >/dev/null && python3 -m json.tool teams/index.json >/dev/null"
+  },
+  "dependencies": {}
+}

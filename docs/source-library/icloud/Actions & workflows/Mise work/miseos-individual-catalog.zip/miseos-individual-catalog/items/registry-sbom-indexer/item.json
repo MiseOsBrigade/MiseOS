@@ -1,0 +1,17 @@
+{
+  "id": "registry-sbom-indexer",
+  "category": "registry-capability",
+  "title": "MiseOS SBOM Indexer",
+  "description": "Executable baseline capability for MiseOS SBOM Indexer.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.sbom-indexer.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: sbomIndexer",
+    "Source status: active"
+  ]
+}

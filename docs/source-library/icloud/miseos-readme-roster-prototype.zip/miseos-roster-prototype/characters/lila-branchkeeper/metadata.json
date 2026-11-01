@@ -1,0 +1,68 @@
+{
+  "id": "lila-branchkeeper",
+  "number": 3,
+  "name": "Lila Branchkeeper",
+  "miseName": "Mise BranchPolicyGate",
+  "codename": "chef.pipeline.branch-policy-gate",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "rare",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "French",
+    "title": "Branch Policy Gate",
+    "signaturePhrase": "Branch Policy Gate done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in branch policy gate so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen branch policy gate aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/lila-branchkeeper/full-body.png",
+    "cardPath": "/assets/characters/lila-branchkeeper/card.png"
+  },
+  "workflow": {
+    "jobName": "Branch Policy Gate",
+    "roleName": "Branch Policy Gate microagent",
+    "summary": "Runs branch policy gate for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Bruno Blast-Radius",
+      "Omar Reviewer",
+      "Terra Forge",
+      "Chaos Kaito"
+    ]
+  },
+  "stats": {
+    "power": 92,
+    "precision": 73,
+    "speed": 74,
+    "resilience": 88,
+    "intelligence": 76,
+    "teamwork": 92
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "lila-branchkeeper",
+  "seasonOneCard": null,
+  "displayNumber": 3,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/lila-branchkeeper",
+  "avatarSvg": "assets/characters/lila-branchkeeper/avatar.svg",
+  "cardSvg": "assets/characters/lila-branchkeeper/card.svg"
+}

@@ -1,0 +1,133 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.replit.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Task system
+
+> Agent breaks work into tasks you can review, run in the background, and apply back to your main version.
+
+## What is the task system?
+
+A **task** is a unit of work that Agent can plan and execute. Tasks let Agent separate a larger goal into smaller pieces, so you can review each piece before it changes your app.
+
+Agent can work in two places: the **main thread** and **background tasks**. The main thread is the conversation where you describe what you want, refine direction, and decide what gets applied to your main version. Background tasks are separate threads where Agent works independently in isolated copies of your project.
+
+Use the main thread for direction and decisions. Use background tasks for execution that can happen in parallel. Background tasks do not change your main version until you review and apply them.
+
+The task system is how Agent organizes that work. When you describe what you want to build, Agent can split your request into discrete tasks and place them on a board with columns: **Drafts**, **Active**, **Ready**, and **Done**.
+
+<Frame>
+  <img src="https://mintcdn.com/replit/L22mbBMLs80H8_c8/images/replitai/task-board-progress.png?fit=max&auto=format&n=L22mbBMLs80H8_c8&q=85&s=3b4ef2fbede2d057e40c138956ccd74d" alt="Task board showing tasks organized in Drafts, Active, Ready, and Done columns" width="3456" height="1984" data-path="images/replitai/task-board-progress.png" />
+</Frame>
+
+Each task moves from left to right as it progresses, so you can see at a glance what's planned, what Agent is working on, what's ready for your review, and what's finished. Background tasks queue automatically based on your plan, so work keeps moving without crowding the main thread.
+
+When a task is ready, you review the changes and apply them back to your main version, or dismiss them if they're not what you wanted.
+
+## How background tasks work
+
+<Steps>
+  <Step title="Plan your tasks">
+    Start a conversation in the main thread, or create a new thread and plan there. Agent reviews your project, identifies what would have the most impact, and writes up a detailed plan for each task, including what it will do and what "done" looks like.
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/L22mbBMLs80H8_c8/images/replitai/task-describe-idea.png?fit=max&auto=format&n=L22mbBMLs80H8_c8&q=85&s=bfeb272f42640f20c393dda187f3f817" alt="Describing what to build in the main thread, with Agent proposing and running tasks" width="3430" height="1986" data-path="images/replitai/task-describe-idea.png" />
+    </Frame>
+  </Step>
+
+  <Step title="Review and accept">
+    Agent proposes a set of tasks, each with a title, description, and a detailed plan you can inspect with **View plan**. Review the full list, then choose:
+
+    * **Accept tasks**: start all tasks and send them to the background
+    * **Revise plan**: ask Agent to adjust the tasks before starting
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/L22mbBMLs80H8_c8/images/replitai/task-accept-plans.png?fit=max&auto=format&n=L22mbBMLs80H8_c8&q=85&s=e788fc99c5fce2644d144f88419ba00c" alt="Task plans created dialog showing four proposed tasks with Accept tasks and Revise plan options" width="3430" height="1986" data-path="images/replitai/task-accept-plans.png" />
+    </Frame>
+  </Step>
+
+  <Step title="Tasks start running">
+    Once accepted, tasks start running in isolated copies of your project. Core runs 1 background task at a time, while Pro supports up to 10 concurrent background tasks. Your main version stays untouched until you choose to apply changes. You can track progress in two ways:
+
+    * **Thread view**: each task runs in its own thread with a live status indicator, so you can follow along or jump into any task's conversation
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/L22mbBMLs80H8_c8/images/replitai/task-plan-sidebar.png?fit=max&auto=format&n=L22mbBMLs80H8_c8&q=85&s=46aa76922ec245592fba29347bebc5c7" alt="Thread view showing multiple tasks running in parallel with status indicators" width="3430" height="1986" data-path="images/replitai/task-plan-sidebar.png" />
+    </Frame>
+
+    * **Board view**: a column-based board showing all tasks organized by status: **Drafts**, **Active**, **Ready**, and **Done**
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/L22mbBMLs80H8_c8/images/replitai/task-board-active.png?fit=max&auto=format&n=L22mbBMLs80H8_c8&q=85&s=601835c79a1f6f89abdafcfa0fbe577c" alt="Board view showing tasks organized in Drafts, Active, Ready, and Done columns" width="3430" height="1986" data-path="images/replitai/task-board-active.png" />
+    </Frame>
+  </Step>
+
+  <Step title="Review and apply">
+    When a task finishes, Agent shows you what it did: the work log, test results, and a live preview of the changes. You decide what happens next:
+
+    * **Apply changes to main version**: merge the task's work into your project
+    * **Dismiss**: discard the changes if they're not what you wanted
+
+    Agent handles conflict resolution automatically when applying changes from multiple tasks.
+
+    <Frame>
+      <img src="https://mintcdn.com/replit/L22mbBMLs80H8_c8/images/replitai/task-review-apply.png?fit=max&auto=format&n=L22mbBMLs80H8_c8&q=85&s=4801afb66f05f46e919c8900c2963735" alt="Task review screen showing Agent's work log, test results, and Apply changes button" width="3456" height="1984" data-path="images/replitai/task-review-apply.png" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Learn more about tasks
+
+<CardGroup cols={3}>
+  <Card title="Task board" icon="table-columns" href="/references/agent/task-board">
+    Review Drafts, Active, Ready, and Done tasks from the board.
+  </Card>
+
+  <Card title="Task lifecycle" icon="rotate" href="/references/agent/task-lifecycle">
+    Understand task states, queued work, applying changes, archiving, and cancelling.
+  </Card>
+
+  <Card title="Follow-up tasks" icon="list-check" href="/references/agent/follow-up-tasks">
+    Start suggested next tasks and manage many follow-ups at once.
+  </Card>
+</CardGroup>
+
+## What you can build
+
+The task system works for any project. Here are a few patterns where it shines:
+
+* **Ship large features in smaller pieces**: split authentication, a dashboard, and an API layer into separate tasks so Agent can work through them cleanly
+* **Plan complex projects**: break a large feature into well-scoped tasks with dependencies, then execute with confidence
+* **Compare different design directions**: use separate tasks to try multiple UI approaches, then pick the best result
+
+## Frequently asked questions
+
+<Accordion title="Do I need to change how I build?">
+  No. The main thread works exactly the same. Agent automatically creates tasks behind the scenes when it helps. You can also use [Plan mode](/references/agent/plan-mode) to see and manage tasks explicitly.
+</Accordion>
+
+<Accordion title="Why are my tasks running one at a time?">
+  Core runs 1 background task at a time. Pro supports up to 10 concurrent background tasks. Once you hit your plan's limit, additional tasks queue and start as slots open up.
+</Accordion>
+
+<Accordion title="How does Agent handle conflicts when applying background tasks?">
+  Agent uses AI-assisted conflict resolution. It understands what each task was trying to accomplish and applies the changes intelligently. If something looks off, you can ask Agent to fix it in the thread.
+</Accordion>
+
+<Accordion title="Can tasks depend on each other?">
+  Yes. Agent automatically detects dependencies. For example, a task that builds a dashboard depends on the task that creates the database schema. Dependent tasks wait until their prerequisites complete.
+</Accordion>
+
+<Accordion title="What's the difference between archiving and cancelling a task?">
+  **Archive** applies to planning sessions: drafts that haven't started building yet. Archived planning sessions are preserved and can be restored from the **Done** column.
+
+  **Cancel** applies to tasks that have already moved from planning into building. Cancelling stops the task and discards its work, and cancelled tasks can't be restored. Start a new task instead.
+</Accordion>
+
+## Availability
+
+| Capability              | Core | Pro |
+| ----------------------- | ---- | --- |
+| Task planning           | ✅    | ✅   |
+| Background tasks        | ✅    | ✅   |
+| Active background tasks | 1    | 10  |

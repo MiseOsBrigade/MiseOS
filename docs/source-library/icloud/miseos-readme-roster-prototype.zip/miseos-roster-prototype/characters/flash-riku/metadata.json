@@ -1,0 +1,78 @@
+{
+  "id": "flash-riku",
+  "slug": "flash-riku",
+  "number": 82,
+  "name": "Flash Riku",
+  "miseName": "Mise Deploy",
+  "codename": "chef.pipeline.deploy",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "epic",
+  "roleCategory": "deploy",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Runner",
+    "signaturePhrase": "Flash Riku keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Moves code at lightning speed through the pipeline."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen Blue Lightning aura",
+    "silhouette": "chibi DevOps chef carrying Blue Lightning",
+    "tool": "Blue Lightning",
+    "spritePath": "/assets/characters/flash-riku/full-body.png",
+    "cardPath": "/assets/characters/flash-riku/card.png"
+  },
+  "workflow": {
+    "jobName": "Deploy",
+    "roleName": "Runner microagent",
+    "summary": "Moves code at lightning speed through the pipeline.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Yume",
+      "Build-Kun"
+    ]
+  },
+  "stats": {
+    "power": 96,
+    "precision": 86,
+    "speed": 79,
+    "resilience": 97,
+    "intelligence": 82,
+    "teamwork": 76
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "9",
+    "role": "Runner",
+    "department": "Pipeline",
+    "function": "Deploy",
+    "rarity": "Epic",
+    "tier": "Delivery Line",
+    "element": "Blue Lightning",
+    "ability": "Lightning Delivery",
+    "lore": "Moves code at lightning speed through the pipeline.",
+    "image_file": "cards/png/009-flash-riku.png",
+    "metadata_file": "metadata/erc721/009-flash-riku.json"
+  },
+  "displayNumber": 82,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/flash-riku",
+  "avatarSvg": "assets/characters/flash-riku/avatar.svg",
+  "cardSvg": "assets/characters/flash-riku/card.svg"
+}

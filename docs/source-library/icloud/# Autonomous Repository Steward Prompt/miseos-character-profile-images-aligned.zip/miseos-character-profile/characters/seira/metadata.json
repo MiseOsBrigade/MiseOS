@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.083",
+  "number": 83,
+  "slug": "seira",
+  "name": "Seira",
+  "mise_name": "Seira",
+  "codename": "SEIRA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Secure",
+  "job_name": "Secure",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Secure",
+    "avatar_path": "assets/characters/seira/avatar.png",
+    "card_path": "assets/characters/seira/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Seira performs secure within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Kuro Guard",
+      "Orchestra Core",
+      "Template Tanaka"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 68,
+    "precision": 86,
+    "speed": 81,
+    "resilience": 83,
+    "intelligence": 83,
+    "teamwork": 70
+  },
+  "paths": {
+    "readme": "characters/seira/README.md",
+    "metadata": "characters/seira/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

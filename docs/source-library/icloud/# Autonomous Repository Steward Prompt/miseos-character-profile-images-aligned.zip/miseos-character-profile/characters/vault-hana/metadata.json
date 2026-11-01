@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.021",
+  "number": 21,
+  "slug": "vault-hana",
+  "name": "Vault Hana",
+  "mise_name": "Vault Hana",
+  "codename": "VAULT_HANA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Secrets & Config Broker",
+  "job_name": "Secrets & Config Broker",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Secrets & Config Broker",
+    "avatar_path": "assets/characters/vault-hana/avatar.png",
+    "card_path": "assets/characters/vault-hana/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Vault Hana performs secrets & config broker within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Policy Kenji",
+      "Grafana Mei",
+      "Umami Code"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 67,
+    "precision": 65,
+    "speed": 69,
+    "resilience": 72,
+    "intelligence": 70,
+    "teamwork": 82
+  },
+  "paths": {
+    "readme": "characters/vault-hana/README.md",
+    "metadata": "characters/vault-hana/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

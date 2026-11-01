@@ -1,0 +1,230 @@
+{
+  "schema": "miseos.character-image-alignment.v1",
+  "source": "miseos_full_roster_taxonomy/photo-alignment/photo-alignment.json",
+  "policy": "Only high-confidence matched character_card records are applied automatically. Unmapped or visual-reference-only images are not assigned.",
+  "matched_unique_characters": 37,
+  "mappings": [
+    {
+      "character_id": "miseos.character.093",
+      "slug": "velvet-vesper",
+      "source_page": 9,
+      "image_path": "assets/characters/velvet-vesper/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.094",
+      "slug": "flavor-forager",
+      "source_page": 10,
+      "image_path": "assets/characters/flavor-forager/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.095",
+      "slug": "crate-courier",
+      "source_page": 11,
+      "image_path": "assets/characters/crate-courier/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.096",
+      "slug": "ledger-ladle",
+      "source_page": 12,
+      "image_path": "assets/characters/ledger-ladle/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.097",
+      "slug": "beacon-broil",
+      "source_page": 13,
+      "image_path": "assets/characters/beacon-broil/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.098",
+      "slug": "ladle-lumen",
+      "source_page": 14,
+      "image_path": "assets/characters/ladle-lumen/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.099",
+      "slug": "reserve-rune",
+      "source_page": 15,
+      "image_path": "assets/characters/reserve-rune/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.100",
+      "slug": "vacuum-vesper",
+      "source_page": 16,
+      "image_path": "assets/characters/vacuum-vesper/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.101",
+      "slug": "flavor-scribe",
+      "source_page": 17,
+      "image_path": "assets/characters/flavor-scribe/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.102",
+      "slug": "prep-pulse",
+      "source_page": 18,
+      "image_path": "assets/characters/prep-pulse/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.103",
+      "slug": "queue-quartz",
+      "source_page": 19,
+      "image_path": "assets/characters/queue-quartz/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.104",
+      "slug": "harvest-hex",
+      "source_page": 20,
+      "image_path": "assets/characters/harvest-hex/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.105",
+      "slug": "garnish-ghost",
+      "source_page": 21,
+      "image_path": "assets/characters/garnish-ghost/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.106",
+      "slug": "pantry-paladin",
+      "source_page": 22,
+      "image_path": "assets/characters/pantry-paladin/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.107",
+      "slug": "ticket-tactician",
+      "source_page": 23,
+      "image_path": "assets/characters/ticket-tactician/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.108",
+      "slug": "plate-inspector",
+      "source_page": 24,
+      "image_path": "assets/characters/plate-inspector/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.109",
+      "slug": "timer-tactician",
+      "source_page": 25,
+      "image_path": "assets/characters/timer-tactician/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.110",
+      "slug": "recipe-ranger",
+      "source_page": 26,
+      "image_path": "assets/characters/recipe-ranger/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.111",
+      "slug": "portion-paladin",
+      "source_page": 27,
+      "image_path": "assets/characters/portion-paladin/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.112",
+      "slug": "allergen-oracle",
+      "source_page": 28,
+      "image_path": "assets/characters/allergen-oracle/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.065",
+      "slug": "dora-daichi",
+      "source_page": 75,
+      "image_path": "assets/characters/dora-daichi/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.067",
+      "slug": "cost-kaito",
+      "source_page": 76,
+      "image_path": "assets/characters/cost-kaito/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.072",
+      "slug": "anomaly-aki",
+      "source_page": 77,
+      "image_path": "assets/characters/anomaly-aki/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.048",
+      "slug": "token-toshi",
+      "source_page": 78,
+      "image_path": "assets/characters/token-toshi/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.059",
+      "slug": "scorecard-shin",
+      "source_page": 79,
+      "image_path": "assets/characters/scorecard-shin/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.058",
+      "slug": "nudge-neko",
+      "source_page": 80,
+      "image_path": "assets/characters/nudge-neko/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.053",
+      "slug": "merge-sentinel",
+      "source_page": 81,
+      "image_path": "assets/characters/merge-sentinel/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.056",
+      "slug": "incident-kitsune",
+      "source_page": 82,
+      "image_path": "assets/characters/incident-kitsune/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.057",
+      "slug": "evidence-scribe",
+      "source_page": 83,
+      "image_path": "assets/characters/evidence-scribe/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.049",
+      "slug": "cve-kumo",
+      "source_page": 90,
+      "image_path": "assets/characters/cve-kumo/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.019",
+      "slug": "schema-sora",
+      "source_page": 92,
+      "image_path": "assets/characters/schema-sora/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.020",
+      "slug": "runtime-riku",
+      "source_page": 93,
+      "image_path": "assets/characters/runtime-riku/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.027",
+      "slug": "preview-yuki",
+      "source_page": 94,
+      "image_path": "assets/characters/preview-yuki/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.028",
+      "slug": "portal-rei",
+      "source_page": 95,
+      "image_path": "assets/characters/portal-rei/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.029",
+      "slug": "guardrail-goro",
+      "source_page": 96,
+      "image_path": "assets/characters/guardrail-goro/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.023",
+      "slug": "grafana-mei",
+      "source_page": 97,
+      "image_path": "assets/characters/grafana-mei/card.jpg"
+    },
+    {
+      "character_id": "miseos.character.012",
+      "slug": "tariq-notesmith",
+      "source_page": 104,
+      "image_path": "assets/characters/tariq-notesmith/card.jpg"
+    }
+  ]
+}

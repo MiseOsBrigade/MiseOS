@@ -1,0 +1,68 @@
+{
+  "id": "seira-scan",
+  "number": 6,
+  "name": "Seira Scan",
+  "miseName": "Mise SecurityScanStage",
+  "codename": "chef.pipeline.security-scan-stage",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "rare",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Security Scan Stage",
+    "signaturePhrase": "Security Scan Stage done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in security scan stage so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen security scan stage aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/seira-scan/full-body.png",
+    "cardPath": "/assets/characters/seira-scan/card.png"
+  },
+  "workflow": {
+    "jobName": "Security Scan Stage",
+    "roleName": "Security Scan Stage microagent",
+    "summary": "Runs security scan stage for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Hugo Matrix",
+      "Yume Builder",
+      "Vault Hana",
+      "Alert Akira"
+    ]
+  },
+  "stats": {
+    "power": 97,
+    "precision": 84,
+    "speed": 91,
+    "resilience": 89,
+    "intelligence": 86,
+    "teamwork": 91
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "seira-scan",
+  "seasonOneCard": null,
+  "displayNumber": 6,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/seira-scan",
+  "avatarSvg": "assets/characters/seira-scan/avatar.svg",
+  "cardSvg": "assets/characters/seira-scan/card.svg"
+}

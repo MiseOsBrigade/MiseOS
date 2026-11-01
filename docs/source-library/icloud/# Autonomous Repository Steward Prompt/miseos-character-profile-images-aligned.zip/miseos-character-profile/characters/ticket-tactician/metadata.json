@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.107",
+  "number": 107,
+  "slug": "ticket-tactician",
+  "name": "Ticket Tactician",
+  "mise_name": "Ticket Tactician",
+  "codename": "TICKET_TACTICIAN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Order Strategist",
+  "job_name": "Order Strategist",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "uploaded_pdf_page_23",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Order Strategist",
+    "avatar_path": "assets/characters/ticket-tactician/card.jpg",
+    "card_path": "assets/characters/ticket-tactician/card.jpg",
+    "primary_photo_page": 23,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-023.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Ticket Tactician performs order strategist within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Plate Inspector",
+      "Timer Tactician",
+      "Recipe Ranger"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 66,
+    "precision": 82,
+    "speed": 77,
+    "resilience": 84,
+    "intelligence": 79,
+    "teamwork": 70
+  },
+  "paths": {
+    "readme": "characters/ticket-tactician/README.md",
+    "metadata": "characters/ticket-tactician/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

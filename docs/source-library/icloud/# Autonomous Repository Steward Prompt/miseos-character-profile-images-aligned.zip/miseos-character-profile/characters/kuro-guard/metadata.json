@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.084",
+  "number": 84,
+  "slug": "kuro-guard",
+  "name": "Kuro Guard",
+  "mise_name": "Kuro Guard",
+  "codename": "KURO_GUARD",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Protect",
+  "job_name": "Protect",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Protect",
+    "avatar_path": "assets/characters/kuro-guard/avatar.png",
+    "card_path": "assets/characters/kuro-guard/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Kuro Guard performs protect within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Orchestra Core",
+      "Template Tanaka",
+      "Bootstrap Aiko"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 82,
+    "precision": 79,
+    "speed": 78,
+    "resilience": 78,
+    "intelligence": 67,
+    "teamwork": 88
+  },
+  "paths": {
+    "readme": "characters/kuro-guard/README.md",
+    "metadata": "characters/kuro-guard/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

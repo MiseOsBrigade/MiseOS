@@ -1,0 +1,68 @@
+{
+  "id": "guardrail-goro",
+  "number": 29,
+  "name": "Guardrail Goro",
+  "miseName": "Mise GoldenPathGuardrails",
+  "codename": "chef.platform.golden-path-guardrails",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Golden Path Guardrails",
+    "signaturePhrase": "Golden Path Guardrails done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in golden path guardrails so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen golden path guardrails aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/guardrail-goro/full-body.png",
+    "cardPath": "/assets/characters/guardrail-goro/card.png"
+  },
+  "workflow": {
+    "jobName": "Golden Path Guardrails",
+    "roleName": "Golden Path Guardrails microagent",
+    "summary": "Runs golden path guardrails for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Portal Rei",
+      "Platform Sensei",
+      "Canary Taster",
+      "Impact Ichi"
+    ]
+  },
+  "stats": {
+    "power": 84,
+    "precision": 93,
+    "speed": 86,
+    "resilience": 92,
+    "intelligence": 87,
+    "teamwork": 76
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "guardrail-goro",
+  "seasonOneCard": null,
+  "displayNumber": 29,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/guardrail-goro",
+  "avatarSvg": "assets/characters/guardrail-goro/avatar.svg",
+  "cardSvg": "assets/characters/guardrail-goro/card.svg"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "data-chan",
+  "slug": "data-chan",
+  "number": 88,
+  "name": "Data-chan",
+  "miseName": "Mise Collect",
+  "codename": "chef.data-insight.collect",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "rare",
+  "roleCategory": "collect",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Guest Chef",
+    "signaturePhrase": "Data-chan keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Collects and organizes data. Knowledge is the secret ingredient."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen Archive Light aura",
+    "silhouette": "chibi DevOps chef carrying Archive Light",
+    "tool": "Archive Light",
+    "spritePath": "/assets/characters/data-chan/full-body.png",
+    "cardPath": "/assets/characters/data-chan/card.png"
+  },
+  "workflow": {
+    "jobName": "Collect",
+    "roleName": "Guest Chef microagent",
+    "summary": "Collects and organizes data. Knowledge is the secret ingredient.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Roadmap Sensei",
+      "Insight Sensei"
+    ]
+  },
+  "stats": {
+    "power": 98,
+    "precision": 81,
+    "speed": 85,
+    "resilience": 70,
+    "intelligence": 80,
+    "teamwork": 74
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "19",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "function": "Collect",
+    "rarity": "Rare",
+    "tier": "Knowledge Line",
+    "element": "Archive Light",
+    "ability": "Knowledge Pantry",
+    "lore": "Collects and organizes data. Knowledge is the secret ingredient.",
+    "image_file": "cards/png/019-data-chan.png",
+    "metadata_file": "metadata/erc721/019-data-chan.json"
+  },
+  "displayNumber": 88,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/data-chan",
+  "avatarSvg": "assets/characters/data-chan/avatar.svg",
+  "cardSvg": "assets/characters/data-chan/card.svg"
+}

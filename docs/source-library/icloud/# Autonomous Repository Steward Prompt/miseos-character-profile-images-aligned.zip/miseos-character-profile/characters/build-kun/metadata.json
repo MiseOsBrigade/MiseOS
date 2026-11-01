@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.086",
+  "number": 86,
+  "slug": "build-kun",
+  "name": "Build-Kun",
+  "mise_name": "Build-Kun",
+  "codename": "BUILD_KUN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Build",
+  "job_name": "Build",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Build",
+    "avatar_path": "assets/characters/build-kun/avatar.png",
+    "card_path": "assets/characters/build-kun/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Alko Commit Chef",
+      "Bruno Blast-Radius",
+      "Lila Branchkeeper"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 75,
+    "precision": 73,
+    "speed": 70,
+    "resilience": 81,
+    "intelligence": 62,
+    "teamwork": 82
+  },
+  "paths": {
+    "readme": "characters/build-kun/README.md",
+    "metadata": "characters/build-kun/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "lake-haru",
+  "number": 62,
+  "name": "Lake Haru",
+  "miseName": "Mise TelemetryIngestionPipeline",
+  "codename": "chef.data-insight.telemetry-ingestion-pipeline",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Telemetry Ingestion Pipeline",
+    "signaturePhrase": "Telemetry Ingestion Pipeline done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in telemetry ingestion pipeline so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen telemetry ingestion pipeline aura",
+    "silhouette": "multinational chibi DevOps chef carrying a bowl",
+    "tool": "bowl",
+    "spritePath": "/assets/characters/lake-haru/full-body.png",
+    "cardPath": "/assets/characters/lake-haru/card.png"
+  },
+  "workflow": {
+    "jobName": "Telemetry Ingestion Pipeline",
+    "roleName": "Telemetry Ingestion Pipeline microagent",
+    "summary": "Runs telemetry ingestion pipeline for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Taxonomy Taka",
+      "Lattice",
+      "Bruno Blast-Radius",
+      "Bootstrap Aiko"
+    ]
+  },
+  "stats": {
+    "power": 74,
+    "precision": 72,
+    "speed": 68,
+    "resilience": 94,
+    "intelligence": 94,
+    "teamwork": 88
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "lake-haru",
+  "seasonOneCard": null,
+  "displayNumber": 62,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/lake-haru",
+  "avatarSvg": "assets/characters/lake-haru/avatar.svg",
+  "cardSvg": "assets/characters/lake-haru/card.svg"
+}

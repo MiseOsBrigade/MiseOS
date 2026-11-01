@@ -1,0 +1,12 @@
+{
+  "id": "catalog-harvest-report",
+  "category": "catalog",
+  "title": "Harvest Audit Report",
+  "description": "Source-derived audit findings and recommended MiseOS CI/CD + DevOps catalog.",
+  "dependencies": [],
+  "files": [
+    "catalog/HARVEST_REPORT.md",
+    "catalog/RECOMMENDED_TOOL_CATALOG.md"
+  ],
+  "notes": []
+}

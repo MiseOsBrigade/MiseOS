@@ -1,0 +1,40 @@
+{
+  "capabilityLevels": [
+    "ANI",
+    "AGI-theoretical",
+    "ASI-hypothetical"
+  ],
+  "functionalDepth": [
+    "reactive",
+    "limited-memory",
+    "theory-of-mind-experimental",
+    "self-aware-conceptual"
+  ],
+  "businessParadigms": [
+    "predictive",
+    "generative",
+    "agentic",
+    "multimodal",
+    "causal",
+    "neurosymbolic"
+  ],
+  "architectures": [
+    "transformer",
+    "cnn",
+    "diffusion",
+    "gan",
+    "reinforcement-learning",
+    "small-language-model",
+    "vision-language-model",
+    "mixture-of-experts",
+    "reasoning-model"
+  ],
+  "routingRules": {
+    "write-docs": "generative",
+    "forecast-metrics": "predictive",
+    "execute-workflow": "agentic",
+    "analyze-image": "multimodal",
+    "explain-cause": "causal",
+    "regulated-decision": "neurosymbolic"
+  }
+}

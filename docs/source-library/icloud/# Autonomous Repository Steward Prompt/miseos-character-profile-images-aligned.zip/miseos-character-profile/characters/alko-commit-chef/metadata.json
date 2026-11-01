@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.001",
+  "number": 1,
+  "slug": "alko-commit-chef",
+  "name": "Alko Commit Chef",
+  "mise_name": "Alko Commit Chef",
+  "codename": "ALKO_COMMIT_CHEF",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Commit Intake",
+  "job_name": "Commit Intake",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Commit Intake",
+    "avatar_path": "assets/characters/alko-commit-chef/avatar.png",
+    "card_path": "assets/characters/alko-commit-chef/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Alko Commit Chef performs commit intake within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Bruno Blast-Radius",
+      "Lila Branchkeeper",
+      "Omar Reviewer"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 66,
+    "precision": 69,
+    "speed": 72,
+    "resilience": 84,
+    "intelligence": 68,
+    "teamwork": 84
+  },
+  "paths": {
+    "readme": "characters/alko-commit-chef/README.md",
+    "metadata": "characters/alko-commit-chef/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

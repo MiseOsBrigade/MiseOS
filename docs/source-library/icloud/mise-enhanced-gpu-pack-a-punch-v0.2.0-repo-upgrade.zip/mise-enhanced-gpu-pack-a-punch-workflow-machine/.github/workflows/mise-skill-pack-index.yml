@@ -1,0 +1,52 @@
+name: Mise Skill Pack Index
+
+on:
+  pull_request:
+    paths:
+      - "vendor/nv-skills/**"
+      - "scripts/mise/skill_pack_index.py"
+      - "scripts/mise/validate_skill_pack.py"
+      - "scripts/mise-skill-router.mjs"
+      - ".github/workflows/mise-skill-pack-index.yml"
+  push:
+    branches: [main]
+    paths:
+      - "vendor/nv-skills/**"
+      - "scripts/mise/skill_pack_index.py"
+      - "scripts/mise/validate_skill_pack.py"
+      - "scripts/mise-skill-router.mjs"
+      - ".github/workflows/mise-skill-pack-index.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mise-skill-pack-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  index:
+    name: Index and validate vendored skill pack
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build skill-pack index
+        run: python scripts/mise/skill_pack_index.py --root vendor/nv-skills --out-dir .mise_out --fail-on-empty
+      - name: Validate skill-pack trust boundary
+        run: python scripts/mise/validate_skill_pack.py --root vendor/nv-skills --out .mise_out/skill-pack-validation.json
+      - name: Smoke-test skill router
+        run: node scripts/mise-skill-router.mjs .mise_out/skill-pack-index.json cuda gpu
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mise-skill-pack-evidence
+          path: |
+            .mise_out/skill-pack-index.json
+            .mise_out/skill-pack-index.md
+            .mise_out/skill-pack-validation.json

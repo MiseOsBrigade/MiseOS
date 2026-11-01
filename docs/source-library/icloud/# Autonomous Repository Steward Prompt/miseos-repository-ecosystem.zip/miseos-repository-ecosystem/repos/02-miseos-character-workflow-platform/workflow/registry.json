@@ -1,0 +1,11 @@
+{
+  "inspect": {
+    "handler": "inspect"
+  },
+  "attest_asset": {
+    "handler": "attest_asset"
+  },
+  "launch_workflow": {
+    "handler": "launch_workflow"
+  }
+}

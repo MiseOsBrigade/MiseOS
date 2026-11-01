@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.016",
+  "number": 16,
+  "slug": "template-tanaka",
+  "name": "Template Tanaka",
+  "mise_name": "Template Tanaka",
+  "codename": "TEMPLATE_TANAKA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Service Template Catalog",
+  "job_name": "Service Template Catalog",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Service Template Catalog",
+    "avatar_path": "assets/characters/template-tanaka/avatar.png",
+    "card_path": "assets/characters/template-tanaka/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Template Tanaka performs service template catalog within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Bootstrap Aiko",
+      "Terra Forge",
+      "Schema Sora"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 79,
+    "precision": 67,
+    "speed": 55,
+    "resilience": 73,
+    "intelligence": 77,
+    "teamwork": 84
+  },
+  "paths": {
+    "readme": "characters/template-tanaka/README.md",
+    "metadata": "characters/template-tanaka/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

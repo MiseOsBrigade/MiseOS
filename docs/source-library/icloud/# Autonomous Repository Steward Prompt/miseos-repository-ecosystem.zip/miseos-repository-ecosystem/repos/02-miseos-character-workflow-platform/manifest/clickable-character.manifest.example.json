@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "asset": {
+    "pngPath": "/assets/character.png",
+    "sha256": "2498ef1cee3a4b62376fcd3bcec377613703b7714d26f12ceb3f989bda8f7876"
+  },
+  "signature": {
+    "alg": "dev-static",
+    "keyId": "dev-key-1",
+    "value": "dev-signature-placeholder"
+  },
+  "hotspots": [
+    {
+      "id": "inspect-core",
+      "name": "Inspect Core",
+      "shape": {
+        "type": "rect",
+        "x": 110,
+        "y": 110,
+        "w": 220,
+        "h": 180
+      },
+      "actionId": "inspect",
+      "requiresNft": false
+    },
+    {
+      "id": "attest-gate",
+      "name": "Attestation Gate",
+      "shape": {
+        "type": "circle",
+        "x": 480,
+        "y": 480,
+        "r": 140
+      },
+      "actionId": "attest_asset",
+      "requiresNft": false
+    },
+    {
+      "id": "launch-button",
+      "name": "Launch Button",
+      "shape": {
+        "type": "rect",
+        "x": 610,
+        "y": 690,
+        "w": 240,
+        "h": 120
+      },
+      "actionId": "launch_workflow",
+      "requiresNft": true,
+      "nftPolicyId": "premium"
+    }
+  ],
+  "policies": {
+    "clickConsent": "User must explicitly confirm before execution.",
+    "noEmbeddedCode": true,
+    "allowlistOnly": true,
+    "csp": "default-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none';"
+  }
+}

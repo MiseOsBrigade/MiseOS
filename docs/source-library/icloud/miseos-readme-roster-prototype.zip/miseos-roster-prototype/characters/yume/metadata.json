@@ -1,0 +1,78 @@
+{
+  "id": "yume",
+  "slug": "yume",
+  "number": 80,
+  "name": "Yume",
+  "miseName": "Mise Build",
+  "codename": "chef.pipeline.build",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "rare",
+  "roleCategory": "build",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Pastry Chef",
+    "signaturePhrase": "Yume keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Turns code into beautiful artifacts. Perfection is her recipe."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen Dream Sugar aura",
+    "silhouette": "chibi DevOps chef carrying Dream Sugar",
+    "tool": "Dream Sugar",
+    "spritePath": "/assets/characters/yume/full-body.png",
+    "cardPath": "/assets/characters/yume/card.png"
+  },
+  "workflow": {
+    "jobName": "Build",
+    "roleName": "Pastry Chef microagent",
+    "summary": "Turns code into beautiful artifacts. Perfection is her recipe.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Tensho",
+      "Flash Riku"
+    ]
+  },
+  "stats": {
+    "power": 81,
+    "precision": 98,
+    "speed": 75,
+    "resilience": 90,
+    "intelligence": 70,
+    "teamwork": 75
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "6",
+    "role": "Pastry Chef",
+    "department": "Pipeline",
+    "function": "Build",
+    "rarity": "Rare",
+    "tier": "Build Line",
+    "element": "Dream Sugar",
+    "ability": "Artifact Polish",
+    "lore": "Turns code into beautiful artifacts. Perfection is her recipe.",
+    "image_file": "cards/png/006-yume.png",
+    "metadata_file": "metadata/erc721/006-yume.json"
+  },
+  "displayNumber": 80,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/yume",
+  "avatarSvg": "assets/characters/yume/avatar.svg",
+  "cardSvg": "assets/characters/yume/card.svg"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "null-chan",
+  "slug": "null-chan",
+  "number": 81,
+  "name": "Null-chan",
+  "miseName": "Mise Cleanse",
+  "codename": "chef.reliability.cleanse",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "rare",
+  "roleCategory": "cleanse",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Plongeur",
+    "signaturePhrase": "Null-chan keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Cleans up what is not needed. Keeps the kitchen light."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen Void Soap aura",
+    "silhouette": "chibi DevOps chef carrying Void Soap",
+    "tool": "Void Soap",
+    "spritePath": "/assets/characters/null-chan/full-body.png",
+    "cardPath": "/assets/characters/null-chan/card.png"
+  },
+  "workflow": {
+    "jobName": "Cleanse",
+    "roleName": "Plongeur microagent",
+    "summary": "Cleans up what is not needed. Keeps the kitchen light.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Reliability Sensei",
+      "SLO Sage"
+    ]
+  },
+  "stats": {
+    "power": 91,
+    "precision": 94,
+    "speed": 96,
+    "resilience": 70,
+    "intelligence": 88,
+    "teamwork": 70
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "8",
+    "role": "Plongeur",
+    "department": "Reliability",
+    "function": "Cleanse",
+    "rarity": "Rare",
+    "tier": "Maintenance Line",
+    "element": "Void Soap",
+    "ability": "Null Sweep",
+    "lore": "Cleans up what is not needed. Keeps the kitchen light.",
+    "image_file": "cards/png/008-null-chan.png",
+    "metadata_file": "metadata/erc721/008-null-chan.json"
+  },
+  "displayNumber": 81,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/null-chan",
+  "avatarSvg": "assets/characters/null-chan/avatar.svg",
+  "cardSvg": "assets/characters/null-chan/card.svg"
+}

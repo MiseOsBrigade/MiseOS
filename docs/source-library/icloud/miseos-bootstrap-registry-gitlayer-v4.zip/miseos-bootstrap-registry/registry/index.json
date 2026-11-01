@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.bootstrap-registry",
+  "name": "MiseOS Bootstrap Registry",
+  "version": "0.2.1",
+  "description": "Analytics-ready bootstrap registry for MiseOS packages, containers, agents, workflows, policies, Git command wrappers, templates, and release metadata.",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization",
+    "github": "Mise-OS"
+  },
+  "publishingModel": {
+    "defaultGithubOwner": "Mise-OS",
+    "recommendedNpmScope": "@mise-os",
+    "legacyNpmScope": "@miseos",
+    "scopePolicy": "Prefer @mise-os when publishing from the Mise-OS GitHub organization. Keep @miseos only if that owner/scope actually exists and owns the packages.",
+    "strongestPermissionLanes": [
+      "container",
+      "npm",
+      "nuget",
+      "rubygems"
+    ],
+    "repositoryScopedLanes": [
+      "maven",
+      "gradle"
+    ]
+  },
+  "registries": {
+    "container": "https://ghcr.io",
+    "npm": "https://npm.pkg.github.com",
+    "rubygems": "https://rubygems.pkg.github.com",
+    "maven": "https://maven.pkg.github.com",
+    "gradle": "https://maven.pkg.github.com",
+    "nuget": "https://nuget.pkg.github.com"
+  },
+  "namespaces": {
+    "container": "ghcr.io/mise-os",
+    "npm": "@mise-os",
+    "rubygems": "miseos",
+    "maven": "dev.miseos",
+    "gradle": "dev.miseos",
+    "nuget": "MiseOS"
+  },
+  "bootSequence": [
+    "registry",
+    "runtime",
+    "cli",
+    "policy-engine",
+    "release-sentinel",
+    "analytics",
+    "git-command-layer",
+    "autonomous-updates"
+  ],
+  "registryQuestions": [
+    "What is this?",
+    "What does it do?",
+    "Who owns it?",
+    "What permissions does it need?",
+    "What package registry hosts it?",
+    "What changed since the last version?",
+    "Is it safe to use?",
+    "Can an agent execute it without guessing?"
+  ],
+  "coreArtifacts": [
+    "miseos.cli",
+    "miseos.agent-sdk",
+    "miseos.policy-engine",
+    "miseos.release-sentinel",
+    "miseos.repo-steward",
+    "miseos.runner",
+    "miseos.policy-checker",
+    "miseos.docs-builder",
+    "miseos.registry-schema",
+    "miseos.analytics-engine",
+    "miseos.trust-graph",
+    "miseos.sbom-indexer",
+    "miseos.attestation-gate",
+    "miseos.workflow-pack",
+    "miseos.docs-hub-template",
+    "miseos.nuget-client",
+    "miseos.ruby-steward",
+    "miseos.maven-policy-adapter",
+    "miseos.gradle-plugin",
+    "miseos.workflow-linter",
+    "miseos.git-command-layer"
+  ],
+  "trustDefaults": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "artifactAttestationRequired": true,
+    "scorecardRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade",
+      "security_policy_change",
+      "dependency_source_change",
+      "network_surface_change",
+      "autonomous_execution_change"
+    ]
+  },
+  "analyticsDefaults": {
+    "riskThresholds": {
+      "lowMax": 29,
+      "mediumMax": 59,
+      "highMin": 60
+    },
+    "qualityGates": {
+      "minManifestCompleteness": 0.95,
+      "maxHighRiskRatio": 0.2,
+      "requireOwnerForEveryArtifact": true
+    },
+    "outputs": [
+      "reports/registry-analytics.json",
+      "reports/registry-analytics.md",
+      "reports/registry-risk-matrix.csv",
+      "docs/registry-dashboard.md"
+    ]
+  },
+  "gitCommandLayer": {
+    "map": "registry/git-command-map.json",
+    "docs": "docs/miseos-git-command-guide.md",
+    "script": "scripts/mise-git.mjs",
+    "safeDefaults": [
+      "pull uses --ff-only",
+      "hard reset requires --confirm-hard",
+      "force push uses --force-with-lease and requires --confirm-force"
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+```react
+import React, { useState, useEffect, useRef } from 'react';
+import { 
+  Terminal, ShieldAlert, GitPullRequest, Database, Activity, 
+  Settings, CheckCircle2, XCircle, Clock, ChefHat, Play, Square,
+  ChevronRight, Lock
+} from 'lucide-react';
+
+// --- MOCK DATA & LORE ---
+const DEPARTMENTS = [
+  { id: 'pipeline', name: 'Pipeline Kitchen', color: 'text-blue-400', bg: 'bg-blue-400/10', border: 'border-blue-400/50', icon: GitPullRequest },
+  { id: 'platform', name: 'Platform Kitchen', color: 'text-teal-400', bg: 'bg-teal-400/10', border: 'border-teal-400/50', icon: Database },
+  { id: 'reliability', name: 'Reliability Kitchen', color: 'text-amber-400', bg: 'bg-amber-400/10', border: 'border-amber-400/50', icon: Activity },
+  { id: 'security', name: 'Security Kitchen', color: 'text-red-400', bg: 'bg-red-400/10', border: 'border-red-400/50', icon: ShieldAlert },
+  { id: 'data', name: 'Data Kitchen', color: 'text-purple-400', bg: 'bg-purple-400/10', border: 'border-purple-400/50', icon: Terminal },
+];
+
+const INITIAL_LOGS = [
+  { id: 1, char: 'Alko Commit Chef', dept: 'pipeline', time: '07:10:02', msg: 'Validating inbound payload from GitHub PR #402...' },
+  { id: 2, char: 'Omar Reviewer', dept: 'pipeline', time: '07:10:05', msg: 'Performing PR Hygiene Check. Code style adheres to strict TS config.' },
+  { id: 3, char: 'Seira Scan', dept: 'security', time: '07:10:08', msg: 'Scanning dependencies. Zero critical CVEs detected.' },
+  { id: 4, char: 'Schema Sora', dept: 'platform', time: '07:10:12', msg: 'Detected Prisma schema drift. Preparing migration script.' },
+];
+
+export default function MiseOrchestraDashboard() {
+  const [activeDept, setActiveDept] = useState('pipeline');
+  const [logs, setLogs] = useState(INITIAL_LOGS);
+  const [approvalPending, setApprovalPending] = useState(true);
+  const logsEndRef = useRef(null);
+
+  // Auto-scroll logs
+  useEffect(() => {
+    logsEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [logs]);
+
+  // Simulate streaming background telemetry
+  useEffect(() => {
+    if (!approvalPending) {
+      const interval = setInterval(() => {
+        const char = ['Yume Builder', 'Canary Taster', 'Vault Hana'][Math.floor(Math.random() * 3)];
+        const dept = char === 'Vault Hana' ? 'platform' : 'pipeline';
+        const actions = ['Building artifact container...', 'Verifying cryptographic signatures...', 'Tasting traffic distribution...'];
+        const msg = actions[Math.floor(Math.random() * actions.length)];
+        
+        const now = new Date();
+        const time = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
+        
+        setLogs(prev => [...prev, { id: Date.now(), char, dept, time, msg }]);
+      }, 3500);
+      return () => clearInterval(interval);
+    }
+  }, [approvalPending]);
+
+  const handleApprove = () => {
+    setApprovalPending(false);
+    const now = new Date();
+    const time = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
+    
+    setLogs(prev => [...prev, 
+      { id: Date.now(), char: 'SYSTEM', dept: 'security', time, msg: 'Expediter authorization received. Vault AppRole unlocked.' },
+      { id: Date.now()+1, char: 'Schema Sora', dept: 'platform', time, msg: 'JIT Database token acquired. Executing migration...' }
+    ]);
+  };
+
+  const activeColorStr = DEPARTMENTS.find(d => d.id === activeDept)?.color || 'text-gray-400';
+
+  return (
+    <div className="flex h-screen bg-gray-950 text-gray-300 font-sans overflow-hidden selection:bg-teal-500/30">
+      
+      {/* --- SIDEBAR NAVIGATION (The Kitchen Selector) --- */}
+      <aside className="w-64 border-r border-gray-800 bg-gray-900/50 flex flex-col backdrop-blur-md">
+        <div className="p-6 border-b border-gray-800">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-md bg-gray-800 flex items-center justify-center border border-gray-700 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+              <ChefHat size={20} className="text-gray-100" />
+            </div>
+            <div>
+              <h1 className="text-sm font-bold text-white tracking-widest uppercase">Mise Orchestra</h1>
+              <p className="text-xs text-gray-500 uppercase tracking-wider mt-0.5">Control Plane v1.4</p>
+            </div>
+          </div>
+        </div>
+
+        <nav className="flex-1 py-6 px-4 space-y-2">
+          <p className="text-xs font-semibold tracking-widest text-gray-600 mb-4 px-2">KITCHENS</p>
+          {DEPARTMENTS.map((dept) => {
+            const isActive = activeDept === dept.id;
+            const Icon = dept.icon;
+            return (
+              <button
+                key={dept.id}
+                onClick={() => setActiveDept(dept.id)}
+                className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-all duration-200
+                  ${isActive 
+                    ? `${dept.bg} ${dept.border} border text-white shadow-[0_0_10px_currentColor] shadow-${dept.color.split('-')[1]}-500/20` 
+                    : 'text-gray-400 hover:bg-gray-800/50 hover:text-gray-200 border border-transparent'
+                  }`}
+              >
+                <Icon size={18} className={isActive ? dept.color : 'text-gray-500'} />
+                <span className="font-medium tracking-wide">{dept.name}</span>
+                {isActive && <ChevronRight size={14} className={`ml-auto ${dept.color}`} />}
+              </button>
+            );
+          })}
+        </nav>
+
+        <div className="p-4 border-t border-gray-800">
+          <div className="flex items-center gap-3 text-xs text-gray-500 bg-gray-950 p-3 rounded border border-gray-800">
+            <Lock size={14} className="text-teal-500" />
+            <span>Vault Agent: Connected</span>
+          </div>
+        </div>
+      </aside>
+
+      {/* --- MAIN CONTENT AREA --- */}
+      <main className="flex-1 flex flex-col relative">
+        
+        {/* Top Header */}
+        <header className="h-16 border-b border-gray-800 bg-gray-950/80 backdrop-blur flex items-center justify-between px-8 z-10">
+          <div className="flex items-center gap-4">
+            <span className="text-gray-500 text-sm font-mono border border-gray-800 px-2 py-1 rounded bg-gray-900">
+              workspace: tenant-a-prod
+            </span>
+            <div className="h-4 w-px bg-gray-800"></div>
+            <span className="flex items-center gap-2 text-sm text-gray-400">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              System Optimal
+            </span>
+          </div>
+          <Settings size={18} className="text-gray-500 hover:text-gray-300 cursor-pointer" />
+        </header>
+
+        {/* Content Body */}
+        <div className="flex-1 p-8 overflow-y-auto space-y-6">
+          
+          {/* HEADER: The Line */}
+          <div className="flex justify-between items-end mb-4">
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-1">Active Orchestration</h2>
+              <p className="text-sm text-gray-400">Tracking execution payload across 75 available variants.</p>
+            </div>
+            <div className="flex gap-2">
+              <div className="px-3 py-1.5 border border-gray-700 rounded text-xs bg-gray-800 text-gray-300 font-mono">
+                Commit: 8f72a9b
+              </div>
+            </div>
+          </div>
+
+          {/* THE EXPEDITER'S PASS (HITL APPROVAL ENGINE) */}
+          {approvalPending && (
+            <div className="border border-red-500/50 bg-red-950/20 rounded-xl p-1 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-1 h-full bg-red-500 shadow-[0_0_15px_rgba(239,68,68,0.8)]"></div>
+              <div className="bg-gray-950/80 backdrop-blur rounded-lg p-6">
+                <div className="flex items-start justify-between">
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 rounded-lg border-2 border-red-500/50 bg-gray-900 flex items-center justify-center relative shadow-[0_0_15px_rgba(239,68,68,0.3)]">
+                      <ShieldAlert size={24} className="text-red-400" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 uppercase tracking-wider">High Risk Action</span>
+                        <h3 className="text-lg font-bold text-white">Expediter Authorization Required</h3>
+                      </div>
+                      <p className="text-sm text-gray-400 mt-2 max-w-2xl">
+                        <strong className="text-teal-400">Schema Sora (Role 19)</strong> is requesting to apply a schema migration to the production database. 
+                        Vault token generation is suspended pending your approval.
+                      </p>
+                      
+                      <div className="mt-4 bg-gray-900 border border-gray-800 rounded p-4 font-mono text-sm">
+                        <p className="text-gray-500 mb-2"># Proposed SQL Execution (Preview)</p>
+                        <p className="text-blue-400">ALTER TABLE <span className="text-white">tenant_auth.users</span></p>
+                        <p className="text-blue-400">ADD COLUMN <span className="text-emerald-400">mfa_enabled</span> BOOLEAN DEFAULT FALSE;</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-3 min-w-[160px]">
+                    <button 
+                      onClick={handleApprove}
+                      className="w-full py-2.5 bg-red-500 hover:bg-red-600 text-white font-semibold text-sm rounded transition-colors shadow-[0_0_10px_rgba(239,68,68,0.4)] flex items-center justify-center gap-2"
+                    >
+                      <CheckCircle2 size={16} /> Order Up (Approve)
+                    </button>
+                    <button className="w-full py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-300 font-semibold text-sm border border-gray-700 rounded transition-colors flex items-center justify-center gap-2">
+                      <XCircle size={16} /> Spike (Deny)
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* TELEMETRY TERMINAL (The Purple/Black Logs) */}
+          <div className="border border-gray-800 rounded-xl overflow-hidden bg-gray-950 shadow-2xl flex flex-col h-96">
+            <div className="bg-gray-900 border-b border-gray-800 px-4 py-3 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Terminal size={16} className="text-gray-500" />
+                <span className="text-sm font-semibold tracking-wide text-gray-300">Live Telemetry Ledger</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="flex items-center gap-1.5 text-xs font-mono text-gray-500">
+                  <Play size={12} className={approvalPending ? 'text-gray-600' : 'text-emerald-500'} />
+                  {approvalPending ? 'PAUSED' : 'STREAMING'}
+                </span>
+              </div>
+            </div>
+            
+            <div className="flex-1 p-4 overflow-y-auto font-mono text-sm space-y-2 relative scroll-smooth">
+              <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-gray-950 to-transparent pointer-events-none"></div>
+              
+              {logs.map((log) => {
+                const deptData = DEPARTMENTS.find(d => d.id === log.dept) || DEPARTMENTS[0];
+                return (
+                  <div key={log.id} className="flex gap-4 group hover:bg-gray-900/50 p-1 -mx-1 rounded transition-colors">
+                    <div className="text-gray-600 shrink-0 w-20 text-right">{log.time}</div>
+                    <div className="flex-1 flex gap-3">
+                      <span className={`font-semibold shrink-0 w-36 ${deptData.color}`}>
+                        [{log.char}]
+                      </span>
+                      <span className="text-gray-300 group-hover:text-white transition-colors">{log.msg}</span>
+                    </div>
+                  </div>
+                );
+              })}
+              {/* Blinking Cursor */}
+              {!approvalPending && (
+                <div className="flex gap-4 p-1 -mx-1 mt-2">
+                   <div className="w-20"></div>
+                   <div className="w-2 h-4 bg-gray-500 animate-pulse"></div>
+                </div>
+              )}
+              <div ref={logsEndRef} />
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+  );
+}
+
+```

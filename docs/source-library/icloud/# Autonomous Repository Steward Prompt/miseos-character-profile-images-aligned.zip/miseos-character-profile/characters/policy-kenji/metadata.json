@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.022",
+  "number": 22,
+  "slug": "policy-kenji",
+  "name": "Policy Kenji",
+  "mise_name": "Policy Kenji",
+  "codename": "POLICY_KENJI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Policy Packs",
+  "job_name": "Policy Packs",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Policy Packs",
+    "avatar_path": "assets/characters/policy-kenji/avatar.png",
+    "card_path": "assets/characters/policy-kenji/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Policy Kenji performs policy packs within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Grafana Mei",
+      "Umami Code",
+      "Queue Mizu"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 69,
+    "precision": 72,
+    "speed": 77,
+    "resilience": 80,
+    "intelligence": 72,
+    "teamwork": 68
+  },
+  "paths": {
+    "readme": "characters/policy-kenji/README.md",
+    "metadata": "characters/policy-kenji/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

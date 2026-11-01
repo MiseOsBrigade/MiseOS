@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.007",
+  "number": 7,
+  "slug": "yume-builder",
+  "name": "Yume Builder",
+  "mise_name": "Yume Builder",
+  "codename": "YUME_BUILDER",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Artifact Builder",
+  "job_name": "Artifact Builder",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Artifact Builder",
+    "avatar_path": "assets/characters/yume-builder/avatar.png",
+    "card_path": "assets/characters/yume-builder/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Yume Builder performs artifact builder within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Iron Hashi",
+      "Nina Promoter",
+      "Release Conductor"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 85,
+    "precision": 85,
+    "speed": 73,
+    "resilience": 90,
+    "intelligence": 84,
+    "teamwork": 80
+  },
+  "paths": {
+    "readme": "characters/yume-builder/README.md",
+    "metadata": "characters/yume-builder/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

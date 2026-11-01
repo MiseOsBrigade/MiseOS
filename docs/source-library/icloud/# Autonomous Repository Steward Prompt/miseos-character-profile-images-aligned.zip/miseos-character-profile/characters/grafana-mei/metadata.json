@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.023",
+  "number": 23,
+  "slug": "grafana-mei",
+  "name": "Grafana Mei",
+  "mise_name": "Grafana Mei",
+  "codename": "GRAFANA_MEI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Shared Observability Pack",
+  "job_name": "Shared Observability Pack",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Shared Observability Pack",
+    "avatar_path": "assets/characters/grafana-mei/card.jpg",
+    "card_path": "assets/characters/grafana-mei/card.jpg",
+    "primary_photo_page": 97,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-097.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Grafana Mei performs shared observability pack within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Umami Code",
+      "Queue Mizu",
+      "Streama"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 75,
+    "precision": 77,
+    "speed": 68,
+    "resilience": 72,
+    "intelligence": 67,
+    "teamwork": 66
+  },
+  "paths": {
+    "readme": "characters/grafana-mei/README.md",
+    "metadata": "characters/grafana-mei/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

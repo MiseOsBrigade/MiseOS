@@ -1,0 +1,13 @@
+{
+  "name": "@mise-os/orchestra-registry",
+  "version": "0.1.0",
+  "description": "Mise Orchestra role, department, and DevOps metaphor data for the MiseOS Bootstrap Registry.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "summary": "node src/index.js"
+  },
+  "keywords": ["miseos", "registry", "orchestra", "devops", "metadata"],
+  "license": "MIT",
+  "engines": {"node": ">=20"}
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.policy-engine",
+  "name": "MiseOS Policy Engine",
+  "type": "policy",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "Governance layer for safety, permissions, provenance, package drift, repository policy, and release gates.",
+  "artifacts": {
+    "npm": "@miseos/policy-engine",
+    "container": "ghcr.io/mise-os/miseos-policy-checker",
+    "source": "packages/policy-engine"
+  },
+  "capabilities": [
+    "validate_permissions",
+    "validate_trust",
+    "score_release_risk",
+    "enforce_registry_policy"
+  ],
+  "permissions": {
+    "github": {
+      "contents": "read",
+      "packages": "read"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade",
+      "security_policy_change",
+      "network_surface_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Maintainer review required",
+    "patch": "Automated validation allowed"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "policy_report",
+      "risk_score"
+    ]
+  }
+}

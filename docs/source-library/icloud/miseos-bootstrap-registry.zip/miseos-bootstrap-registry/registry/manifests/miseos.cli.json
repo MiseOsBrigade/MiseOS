@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.cli",
+  "name": "MiseOS CLI",
+  "type": "package",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "Command-line interface for validating, inspecting, syncing, and bootstrapping MiseOS registry entries.",
+  "artifacts": {
+    "npm": "@miseos/cli",
+    "source": "packages/cli"
+  },
+  "capabilities": [
+    "registry_validate",
+    "registry_inspect",
+    "doctor",
+    "package_inspect"
+  ],
+  "permissions": {
+    "github": {
+      "contents": "read",
+      "packages": "read"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade",
+      "dependency_source_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Maintainer review required",
+    "patch": "Automated validation allowed"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_only",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "validation_report",
+      "doctor_report"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "mizu",
+  "slug": "mizu",
+  "number": 78,
+  "name": "Mizu",
+  "miseName": "Mise Prepare",
+  "codename": "chef.operations.prepare",
+  "department": "operations",
+  "departmentLabel": "Operations Kitchen",
+  "departmentTagline": "Keep the kitchen running smoothly.",
+  "rarity": "rare",
+  "roleCategory": "prepare",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Prep Chef",
+    "signaturePhrase": "Mizu keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Prepares everything in advance. Organization is the recipe."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#D4AF37",
+    "aura": "Operations Kitchen Blue Water aura",
+    "silhouette": "chibi DevOps chef carrying Blue Water",
+    "tool": "Blue Water",
+    "spritePath": "/assets/characters/mizu/full-body.png",
+    "cardPath": "/assets/characters/mizu/card.png"
+  },
+  "workflow": {
+    "jobName": "Prepare",
+    "roleName": "Prep Chef microagent",
+    "summary": "Prepares everything in advance. Organization is the recipe.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Kurogami Senpai",
+      "Kaji"
+    ]
+  },
+  "stats": {
+    "power": 86,
+    "precision": 74,
+    "speed": 80,
+    "resilience": 83,
+    "intelligence": 93,
+    "teamwork": 73
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "3",
+    "role": "Prep Chef",
+    "department": "Operations",
+    "function": "Prepare",
+    "rarity": "Rare",
+    "tier": "Service Line",
+    "element": "Blue Water",
+    "ability": "Prep Ledger",
+    "lore": "Prepares everything in advance. Organization is the recipe.",
+    "image_file": "cards/png/003-mizu.png",
+    "metadata_file": "metadata/erc721/003-mizu.json"
+  },
+  "displayNumber": 78,
+  "departmentColor": "#D4AF37",
+  "departmentShort": "Operations",
+  "assetBase": "assets/characters/mizu",
+  "avatarSvg": "assets/characters/mizu/avatar.svg",
+  "cardSvg": "assets/characters/mizu/card.svg"
+}

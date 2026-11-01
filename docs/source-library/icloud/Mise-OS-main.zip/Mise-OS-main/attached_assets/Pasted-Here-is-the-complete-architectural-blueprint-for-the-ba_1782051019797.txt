@@ -1,0 +1,136 @@
+Here is the complete architectural blueprint for the backend PostgreSQL database schema.
+To support a multi-tenant SaaS where 75 distinct AI agents (the Characters) interact with real infrastructure, we need a schema that handles **static lore/definitions**, **strict Role-Based Access Control (RBAC)**, and **dynamic runtime states**.
+### The Core Design Philosophy
+We are splitting the schema into three distinct schemas/zones:
+ 1. **sys_core**: The static definitions of the 5 Departments, 15 Roles, and 75 Characters. This is global and shared across all tenants.
+ 2. **tenant_auth**: The multi-tenant isolation layer (Workspaces, Users, API Keys).
+ 3. **runtime**: The dynamic execution layer where character agents "cook" (execute tasks) and log their telemetry.
+### Phase 1: Global System Definitions (The Lore & Engine)
+This layer defines the immutable truths of the Mise Orchestra universe.
+```sql
+-- Create schemas for logical separation
+CREATE SCHEMA sys_core;
+CREATE SCHEMA tenant_auth;
+CREATE SCHEMA runtime;
+
+-- 1. DEPARTMENTS (The 5 DevOps Styles)
+CREATE TABLE sys_core.departments (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name VARCHAR(50) UNIQUE NOT NULL, -- e.g., 'Pipeline Kitchen', 'Platform Kitchen'
+    cyber_surgical_color VARCHAR(20) NOT NULL, -- e.g., 'Neon Blue', 'Neon Teal'
+    core_focus VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 2. ROLES (The 15 Functional Archetypes)
+CREATE TABLE sys_core.roles (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    role_number INT UNIQUE NOT NULL, -- 1 through 15
+    title VARCHAR(100) NOT NULL, -- e.g., 'Commit Intake', 'Test Matrix Runner'
+    base_capability_description TEXT
+);
+
+-- 3. CHARACTERS (The 75 Variants)
+CREATE TABLE sys_core.characters (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    department_id UUID REFERENCES sys_core.departments(id),
+    role_id UUID REFERENCES sys_core.roles(id),
+    name VARCHAR(100) NOT NULL, -- e.g., 'Alko Commit Chef', 'Template Tanaka'
+    rarity_tier VARCHAR(50) DEFAULT 'Common', -- Common, Rare, Epic, Legendary, Mythic
+    system_prompt TEXT NOT NULL, -- The base LLM prompt that gives the agent its personality
+    avatar_url VARCHAR(255),
+    CONSTRAINT unique_dept_role UNIQUE(department_id, role_id) -- Enforces the 5x15 = 75 rule
+);
+
+-- 4. CAPABILITIES (Granular API Permissions)
+CREATE TABLE sys_core.capabilities (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    action_key VARCHAR(100) UNIQUE NOT NULL, -- e.g., 'github:pr:merge', 'k8s:pod:delete'
+    risk_level VARCHAR(20) DEFAULT 'Low' -- Low, Medium, High, Critical
+);
+
+-- Mapping what each character is inherently allowed to do
+CREATE TABLE sys_core.character_capabilities (
+    character_id UUID REFERENCES sys_core.characters(id),
+    capability_id UUID REFERENCES sys_core.capabilities(id),
+    PRIMARY KEY (character_id, capability_id)
+);
+
+```
+### Phase 2: Multi-Tenant Workspace (The Kitchens)
+This ensures that "Company A" and "Company B" have completely isolated environments, API keys, and workflow configurations.
+```sql
+-- 1. WORKSPACES (Tenants)
+CREATE TABLE tenant_auth.workspaces (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name VARCHAR(100) NOT NULL,
+    subscription_tier VARCHAR(50) DEFAULT 'Starter',
+    mise_yaml_config JSONB, -- The central control plane blueprint configuration
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 2. SECRETS VAULT MAPPING (Connects to HashiCorp Vault)
+-- We never store actual secrets in Postgres, only the reference paths to the Vault.
+CREATE TABLE tenant_auth.workspace_secrets (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    workspace_id UUID REFERENCES tenant_auth.workspaces(id) ON DELETE CASCADE,
+    secret_name VARCHAR(100) NOT NULL, -- e.g., 'GITHUB_PROD_TOKEN'
+    vault_reference_path VARCHAR(255) NOT NULL, 
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 3. HUMAN USERS
+CREATE TABLE tenant_auth.users (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    workspace_id UUID REFERENCES tenant_auth.workspaces(id) ON DELETE CASCADE,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    role VARCHAR(50) DEFAULT 'Developer' -- Admin, Expediter, Developer
+);
+
+```
+### Phase 3: Runtime & Telemetry (The Execution Engine)
+When an event happens (like a PR being opened), a Character is summoned as an "Agent Instance" to perform a job. We track its state exactly like a state machine.
+```sql
+-- 1. ACTIVE ORCHESTRATIONS (The "Ticket" on the Kitchen Line)
+CREATE TABLE runtime.orchestration_jobs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    workspace_id UUID REFERENCES tenant_auth.workspaces(id) ON DELETE CASCADE,
+    trigger_event VARCHAR(100) NOT NULL, -- e.g., 'pull_request.opened'
+    status VARCHAR(50) DEFAULT 'Queued', -- Queued, In_Progress, Completed, Failed, Needs_Approval
+    started_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    completed_at TIMESTAMP WITH TIME ZONE
+);
+
+-- 2. AGENT INSTANCES (The Character executing the job)
+CREATE TABLE runtime.agent_instances (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    job_id UUID REFERENCES runtime.orchestration_jobs(id) ON DELETE CASCADE,
+    character_id UUID REFERENCES sys_core.characters(id),
+    state VARCHAR(50) DEFAULT 'Idle', -- Idle, Analyzing, Executing, Waiting_on_Human, Done
+    memory_context JSONB, -- Short-term agent memory for this specific run
+    token_usage INT DEFAULT 0
+);
+
+-- 3. EXECUTION LOGS (Centralized Observability / The Telemetry Violet Network)
+-- Highly optimized for write-heavy operations and time-series querying
+CREATE TABLE runtime.execution_logs (
+    id BIGSERIAL PRIMARY KEY,
+    instance_id UUID REFERENCES runtime.agent_instances(id) ON DELETE CASCADE,
+    workspace_id UUID REFERENCES tenant_auth.workspaces(id) ON DELETE CASCADE,
+    log_level VARCHAR(20) DEFAULT 'INFO',
+    message TEXT NOT NULL,
+    action_taken VARCHAR(255), -- e.g., 'Merged PR #402'
+    timestamp TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Create an index for fast time-series dashboard rendering
+CREATE INDEX idx_execution_logs_workspace_time ON runtime.execution_logs(workspace_id, timestamp DESC);
+
+```
+### How the State Machine Flows in Production
+ 1. **Trigger Event:** A webhook from GitHub hits your API router.
+ 2. **Lookup:** The backend queries tenant_auth.workspaces to find the mise.yaml for that tenant.
+ 3. **Summoning:** The config says "Summon *Omar Reviewer*". The system creates a row in runtime.orchestration_jobs and a child row in runtime.agent_instances linking to Character ID 04 (Omar).
+ 4. **Validation:** Before Omar can act, the backend checks sys_core.character_capabilities to ensure Omar actually has the github:pr:review permission.
+ 5. **Execution & Logging:** Omar streams his output to your UI via WebSockets, simultaneously writing to runtime.execution_logs. Because the log is tied to the Character ID, the UI knows to render the logs in the "Pipeline Kitchen" Cyber-Surgical color of **Neon Blue**.
+Would you like to explore the **Human-in-the-Loop Approval Engine** next (how a Human overrides an agent or approves a high-risk deployment), or focus on how the **HashiCorp Vault / Secret Management** securely hands ephemeral tokens to these agents?

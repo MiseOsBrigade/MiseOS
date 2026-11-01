@@ -1,0 +1,3 @@
+[
+  "tests/observability/test_langsmith_pipeline.py::test_missing_credentials_fail_closed"
+]

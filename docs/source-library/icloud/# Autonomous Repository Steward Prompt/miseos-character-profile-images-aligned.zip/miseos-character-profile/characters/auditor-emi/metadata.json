@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.055",
+  "number": 55,
+  "slug": "auditor-emi",
+  "name": "Auditor Emi",
+  "mise_name": "Auditor Emi",
+  "codename": "AUDITOR_EMI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Access Review Workflow",
+  "job_name": "Access Review Workflow",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Access Review Workflow",
+    "avatar_path": "assets/characters/auditor-emi/avatar.png",
+    "card_path": "assets/characters/auditor-emi/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Auditor Emi performs access review workflow within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Incident Kitsune",
+      "Evidence Scribe",
+      "Nudge Neko"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 72,
+    "precision": 82,
+    "speed": 58,
+    "resilience": 64,
+    "intelligence": 80,
+    "teamwork": 83
+  },
+  "paths": {
+    "readme": "characters/auditor-emi/README.md",
+    "metadata": "characters/auditor-emi/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.003",
+  "number": 3,
+  "slug": "lila-branchkeeper",
+  "name": "Lila Branchkeeper",
+  "mise_name": "Lila Branchkeeper",
+  "codename": "LILA_BRANCHKEEPER",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Branch Policy Gate",
+  "job_name": "Branch Policy Gate",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Branch Policy Gate",
+    "avatar_path": "assets/characters/lila-branchkeeper/avatar.png",
+    "card_path": "assets/characters/lila-branchkeeper/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Lila Branchkeeper performs branch policy gate within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Omar Reviewer",
+      "Hugo Matrix",
+      "Seira Scan"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 84,
+    "precision": 79,
+    "speed": 55,
+    "resilience": 64,
+    "intelligence": 74,
+    "teamwork": 76
+  },
+  "paths": {
+    "readme": "characters/lila-branchkeeper/README.md",
+    "metadata": "characters/lila-branchkeeper/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

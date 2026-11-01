@@ -1,0 +1,68 @@
+{
+  "id": "nina-promoter",
+  "number": 9,
+  "name": "Nina Promoter",
+  "miseName": "Mise EnvironmentPromotionGate",
+  "codename": "chef.pipeline.environment-promotion-gate",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Nigerian",
+    "title": "Environment Promotion Gate",
+    "signaturePhrase": "Environment Promotion Gate done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in environment promotion gate so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen environment promotion gate aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/nina-promoter/full-body.png",
+    "cardPath": "/assets/characters/nina-promoter/card.png"
+  },
+  "workflow": {
+    "jobName": "Environment Promotion Gate",
+    "roleName": "Environment Promotion Gate microagent",
+    "summary": "Runs environment promotion gate for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Iron Hashi",
+      "Release Conductor",
+      "Umami Code",
+      "Review Ren"
+    ]
+  },
+  "stats": {
+    "power": 83,
+    "precision": 77,
+    "speed": 89,
+    "resilience": 71,
+    "intelligence": 80,
+    "teamwork": 99
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "nina-promoter",
+  "seasonOneCard": null,
+  "displayNumber": 9,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/nina-promoter",
+  "avatarSvg": "assets/characters/nina-promoter/avatar.svg",
+  "cardSvg": "assets/characters/nina-promoter/card.svg"
+}

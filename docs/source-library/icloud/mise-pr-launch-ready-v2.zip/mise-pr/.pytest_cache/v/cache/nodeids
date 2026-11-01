@@ -1,0 +1,4 @@
+[
+  "tests/test_analyzer.py::test_green_docs_change",
+  "tests/test_analyzer.py::test_large_source_change_without_tests_warns"
+]

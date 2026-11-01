@@ -1,0 +1,151 @@
+[
+  {
+    "id": "model_reasoning_premium",
+    "label": "Premium Reasoning Model",
+    "type": "reasoning",
+    "bestFor": [
+      "complex debugging",
+      "architecture review",
+      "root-cause analysis",
+      "dependency conflict reasoning"
+    ],
+    "costClass": "premium",
+    "latencyClass": "slow",
+    "requiresEvidence": true,
+    "fallback": "model_coding_standard"
+  },
+  {
+    "id": "model_coding_standard",
+    "label": "Standard Coding Model",
+    "type": "coding_llm",
+    "bestFor": [
+      "patch generation",
+      "test generation",
+      "GitHub Actions YAML repair",
+      "TypeScript/Python fixes"
+    ],
+    "costClass": "standard",
+    "latencyClass": "medium",
+    "requiresEvidence": true,
+    "fallback": "model_slm_triage"
+  },
+  {
+    "id": "model_slm_triage",
+    "label": "Small Triage Model",
+    "type": "small_language_model",
+    "bestFor": [
+      "labeling",
+      "summaries",
+      "cheap first-pass triage",
+      "routing"
+    ],
+    "costClass": "cheap",
+    "latencyClass": "fast",
+    "requiresEvidence": false,
+    "fallback": null
+  },
+  {
+    "id": "model_embedding",
+    "label": "Embedding Model",
+    "type": "embedding",
+    "bestFor": [
+      "repo search",
+      "row search",
+      "issue similarity",
+      "memory retrieval"
+    ],
+    "costClass": "cheap",
+    "latencyClass": "fast",
+    "requiresEvidence": false,
+    "fallback": null
+  },
+  {
+    "id": "model_reranker",
+    "label": "Reranker Model",
+    "type": "reranker",
+    "bestFor": [
+      "ranking retrieved evidence",
+      "source selection",
+      "finding strongest support"
+    ],
+    "costClass": "standard",
+    "latencyClass": "fast",
+    "requiresEvidence": false,
+    "fallback": null
+  },
+  {
+    "id": "model_classifier",
+    "label": "Risk Classifier",
+    "type": "classifier",
+    "bestFor": [
+      "risk labels",
+      "task labels",
+      "prompt-injection detection",
+      "permission decisions"
+    ],
+    "costClass": "cheap",
+    "latencyClass": "fast",
+    "requiresEvidence": false,
+    "fallback": null
+  },
+  {
+    "id": "model_vision_language",
+    "label": "Vision-Language Model",
+    "type": "vlm",
+    "bestFor": [
+      "screenshots",
+      "diagrams",
+      "UI bugs",
+      "visual dashboards"
+    ],
+    "costClass": "premium",
+    "latencyClass": "medium",
+    "requiresEvidence": true,
+    "fallback": "model_reasoning_premium"
+  },
+  {
+    "id": "model_graph",
+    "label": "Graph Model",
+    "type": "graph",
+    "bestFor": [
+      "dependency graph",
+      "blast radius",
+      "ownership map",
+      "package relationships"
+    ],
+    "costClass": "standard",
+    "latencyClass": "medium",
+    "requiresEvidence": true,
+    "fallback": "model_reasoning_premium"
+  },
+  {
+    "id": "model_time_series",
+    "label": "Time-Series Model",
+    "type": "time_series",
+    "bestFor": [
+      "CI trend prediction",
+      "build duration",
+      "release cadence",
+      "incident aging"
+    ],
+    "costClass": "standard",
+    "latencyClass": "medium",
+    "requiresEvidence": true,
+    "fallback": "model_classifier"
+  },
+  {
+    "id": "model_diffusion_assets",
+    "label": "Visual Asset Generator",
+    "type": "diffusion",
+    "bestFor": [
+      "agent cards",
+      "product art",
+      "brand visuals",
+      "demo assets"
+    ],
+    "costClass": "premium",
+    "latencyClass": "slow",
+    "requiresEvidence": false,
+    "fallback": null
+  }
+]

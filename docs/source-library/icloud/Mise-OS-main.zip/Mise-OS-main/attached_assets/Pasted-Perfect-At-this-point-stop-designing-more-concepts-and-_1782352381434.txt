@@ -1,0 +1,246 @@
+Perfect. At this point, stop designing more concepts and start building the actual product assets.
+
+MiseOS v1 Launch Checklist
+
+Week 1 Goal
+
+Launch:
+
+miseos.dev
+
+With:
+
+* Brand system
+* Homepage
+* Brigade page
+* Agent gallery
+* Documentation shell
+* Waitlist
+* Social presence
+
+⸻
+
+Priority 1 — Logo Lock
+
+Choose one final mark.
+
+Recommended
+
+Ladle Baton Circuit
+
+The symbol already appearing in your boards.
+
+Why:
+
+* Unique
+* Scalable
+* Memorable
+* Works at favicon size
+* Connects kitchen + orchestration + technology
+
+Final deliverables:
+
+Primary Logo
+Horizontal Logo
+Stacked Logo
+Icon Only
+Favicon
+SVG
+PNG
+
+⸻
+
+Priority 2 — Kurogami
+
+Kurogami becomes the face of MiseOS.
+
+Character Profile
+
+Name:
+Kurogami
+
+Title:
+Agent Director
+
+Role:
+Conductor of the Brigade
+
+Element:
+Order
+
+Rarity:
+Legendary
+
+Catchphrase:
+
+Every agent has a role.
+
+Visual rules:
+
+* Black robes
+* Gold accents
+* Baton-ladle staff
+* Floating orchestration sigils
+* Premium appearance
+
+No redesigns after this point.
+
+Lock the character.
+
+⸻
+
+Priority 3 — Executive Chef Founders
+
+These become your first official release.
+
+Agent	Function
+Orchestra Core	System Consciousness
+Kurogami	Agent Director
+Kuro Guard	Security
+Seira	Vault
+Human Liaison	Approval
+Audit Sensei	Governance
+Root Chef	Administration
+Steward Prime	Operations
+Policy Monk	Rules
+Conductor	Workflow
+
+These ten become:
+
+Series 001
+Executive Chefs
+
+⸻
+
+Priority 4 — Website
+
+Homepage structure:
+
+Hero
+
+Build Software Like A World-Class Kitchen
+75 Specialized Agents.
+One Operating System.
+Cook.
+Orchestrate.
+Deploy.
+Observe.
+
+Buttons:
+
+* Explore Platform
+* Meet Brigade
+
+⸻
+
+Platform Section
+
+Show:
+
+* Core
+* Brigade
+* Kitchen
+* Orchestra
+* Vault
+* Observatory
+
+Use the architecture board you’ve already created.
+
+⸻
+
+Brigade Section
+
+Interactive cards.
+
+Filter:
+
+* Executive
+* Operations
+* Service
+* Engineering
+* Security
+* Infrastructure
+* Ecosystem
+
+⸻
+
+Priority 5 — Docs
+
+Create:
+
+docs.miseos.dev
+
+Initial pages:
+
+Getting Started
+Agents
+Brigade
+Vault
+Observatory
+SDK
+API
+Roadmap
+
+Even placeholders help credibility.
+
+⸻
+
+Priority 6 — Social Launch
+
+Reserve:
+
+X
+
+@MiseOS
+
+GitHub
+
+github.com/miseos
+
+Discord
+
+discord.gg/miseos
+
+Website
+
+miseos.dev
+
+⸻
+
+Priority 7 — DevNFT Framework
+
+Do not launch NFTs yet.
+
+Build metadata first.
+
+Structure:
+
+Series 001
+Executive Chefs
+10 Cards
+
+Then:
+
+Series 002
+Kitchen Operations
+
+Then:
+
+Series 003
+Service Layer
+
+Treat NFTs as collectibles around the ecosystem, not the main product.
+
+⸻
+
+Success Metric
+
+If someone lands on the homepage, they should understand within 10 seconds:
+
+MiseOS is an operating system that coordinates AI agents.
+Brigade is the workforce.
+Kurogami is the guide.
+
+Everything else supports that message.
+
+That’s the clearest path from your current concept boards to a real, launchable product.

@@ -1,0 +1,68 @@
+{
+  "id": "evidence-scribe",
+  "number": 57,
+  "name": "Evidence Scribe",
+  "miseName": "Mise ComplianceEvidenceCollector",
+  "codename": "chef.security.compliance-evidence-collector",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "rare",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Kenyan",
+    "title": "Compliance Evidence Collector",
+    "signaturePhrase": "Compliance Evidence Collector done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in compliance evidence collector so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen compliance evidence collector aura",
+    "silhouette": "multinational chibi DevOps chef carrying a scroll",
+    "tool": "scroll",
+    "spritePath": "/assets/characters/evidence-scribe/full-body.png",
+    "cardPath": "/assets/characters/evidence-scribe/card.png"
+  },
+  "workflow": {
+    "jobName": "Compliance Evidence Collector",
+    "roleName": "Compliance Evidence Collector microagent",
+    "summary": "Runs compliance evidence collector for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Incident Kitsune",
+      "Nudge Neko",
+      "Tariq Notesmith",
+      "Preview Yuki"
+    ]
+  },
+  "stats": {
+    "power": 73,
+    "precision": 87,
+    "speed": 75,
+    "resilience": 81,
+    "intelligence": 90,
+    "teamwork": 85
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "evidence-scribe",
+  "seasonOneCard": null,
+  "displayNumber": 57,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/evidence-scribe",
+  "avatarSvg": "assets/characters/evidence-scribe/avatar.svg",
+  "cardSvg": "assets/characters/evidence-scribe/card.svg"
+}

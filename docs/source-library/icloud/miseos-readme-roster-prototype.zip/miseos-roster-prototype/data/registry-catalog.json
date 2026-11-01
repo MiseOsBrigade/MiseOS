@@ -1,0 +1,222 @@
+[
+  {
+    "id": "miseos.agent-sdk",
+    "name": "MiseOS Agent SDK",
+    "type": "sdk",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "developer-tooling",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/agent-sdk"
+  },
+  {
+    "id": "miseos.analytics-engine",
+    "name": "MiseOS Analytics Engine",
+    "type": "analytics",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "autonomy",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/analytics-engine"
+  },
+  {
+    "id": "miseos.attestation-gate",
+    "name": "MiseOS Attestation Gate",
+    "type": "policy",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "critical",
+    "registries": "npm",
+    "artifacts": "@mise-os/attestation-gate"
+  },
+  {
+    "id": "miseos.cli",
+    "name": "MiseOS CLI",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "developer-tooling",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/cli"
+  },
+  {
+    "id": "miseos.docs-builder",
+    "name": "MiseOS Docs Builder",
+    "type": "container",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "developer-tooling",
+    "criticality": "medium",
+    "registries": "container",
+    "artifacts": "ghcr.io/mise-os/miseos-docs-builder"
+  },
+  {
+    "id": "miseos.docs-hub-template",
+    "name": "MiseOS Docs Hub Template",
+    "type": "template",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "npm; repo",
+    "artifacts": "@mise-os/docs-hub-template; templates/docs-hub"
+  },
+  {
+    "id": "miseos.gradle-plugin",
+    "name": "MiseOS Gradle Plugin",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "gradle",
+    "artifacts": "dev.miseos.registry-plugin"
+  },
+  {
+    "id": "miseos.maven-policy-adapter",
+    "name": "MiseOS Maven Policy Adapter",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "maven",
+    "artifacts": "dev.miseos:policy-adapter"
+  },
+  {
+    "id": "miseos.nuget-client",
+    "name": "MiseOS NuGet Client",
+    "type": "sdk",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "nuget",
+    "artifacts": "MiseOS.Registry.Client"
+  },
+  {
+    "id": "miseos.policy-checker",
+    "name": "MiseOS Policy Checker",
+    "type": "container",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "critical",
+    "registries": "container",
+    "artifacts": "ghcr.io/mise-os/miseos-policy-checker"
+  },
+  {
+    "id": "miseos.policy-engine",
+    "name": "MiseOS Policy Engine",
+    "type": "policy",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "critical",
+    "registries": "npm; container",
+    "artifacts": "@mise-os/policy-engine; ghcr.io/mise-os/miseos-policy-checker"
+  },
+  {
+    "id": "miseos.registry-schema",
+    "name": "MiseOS Registry Schema",
+    "type": "schema",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "bootstrap",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/registry-schema"
+  },
+  {
+    "id": "miseos.release-sentinel",
+    "name": "MiseOS Release Sentinel",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "autonomy",
+    "criticality": "critical",
+    "registries": "npm",
+    "artifacts": "@mise-os/release-sentinel"
+  },
+  {
+    "id": "miseos.repo-steward",
+    "name": "MiseOS Repo Steward",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/repo-steward"
+  },
+  {
+    "id": "miseos.ruby-steward",
+    "name": "MiseOS Ruby Steward",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "rubygems",
+    "artifacts": "miseos-steward"
+  },
+  {
+    "id": "miseos.runner",
+    "name": "MiseOS Runner",
+    "type": "container",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "runtime",
+    "criticality": "critical",
+    "registries": "container",
+    "artifacts": "ghcr.io/mise-os/miseos-runner"
+  },
+  {
+    "id": "miseos.sbom-indexer",
+    "name": "MiseOS SBOM Indexer",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "critical",
+    "registries": "npm",
+    "artifacts": "@mise-os/sbom-indexer"
+  },
+  {
+    "id": "miseos.trust-graph",
+    "name": "MiseOS Trust Graph",
+    "type": "analytics",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/trust-graph"
+  },
+  {
+    "id": "miseos.workflow-linter",
+    "name": "MiseOS Workflow Linter",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/workflow-linter"
+  },
+  {
+    "id": "miseos.workflow-pack",
+    "name": "MiseOS Workflow Pack",
+    "type": "workflow",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "bootstrap",
+    "criticality": "critical",
+    "registries": "repo",
+    "artifacts": ".github/workflows"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "id": "grafana-mei",
+  "number": 23,
+  "name": "Grafana Mei",
+  "miseName": "Mise SharedObservabilityPack",
+  "codename": "chef.platform.shared-observability-pack",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Chinese",
+    "title": "Shared Observability Pack",
+    "signaturePhrase": "Shared Observability Pack done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in shared observability pack so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen shared observability pack aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/grafana-mei/full-body.png",
+    "cardPath": "/assets/characters/grafana-mei/card.png"
+  },
+  "workflow": {
+    "jobName": "Shared Observability Pack",
+    "roleName": "Shared Observability Pack microagent",
+    "summary": "Runs shared observability pack for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Policy Kenji",
+      "Umami Code",
+      "Iron Hashi",
+      "OnCall Naomi"
+    ]
+  },
+  "stats": {
+    "power": 87,
+    "precision": 83,
+    "speed": 93,
+    "resilience": 75,
+    "intelligence": 77,
+    "teamwork": 87
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "grafana-mei",
+  "seasonOneCard": null,
+  "displayNumber": 23,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/grafana-mei",
+  "avatarSvg": "assets/characters/grafana-mei/avatar.svg",
+  "cardSvg": "assets/characters/grafana-mei/card.svg"
+}

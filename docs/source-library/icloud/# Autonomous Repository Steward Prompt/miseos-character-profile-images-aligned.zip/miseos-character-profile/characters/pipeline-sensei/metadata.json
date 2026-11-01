@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.015",
+  "number": 15,
+  "slug": "pipeline-sensei",
+  "name": "Pipeline Sensei",
+  "mise_name": "Pipeline Sensei",
+  "codename": "PIPELINE_SENSEI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Pipeline Tuner Agent",
+  "job_name": "Pipeline Tuner Agent",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Pipeline Tuner Agent",
+    "avatar_path": "assets/characters/pipeline-sensei/avatar.png",
+    "card_path": "assets/characters/pipeline-sensei/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Pipeline Sensei performs pipeline tuner agent within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Tensho",
+      "Yume",
+      "Flash Riku"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 75,
+    "precision": 72,
+    "speed": 60,
+    "resilience": 76,
+    "intelligence": 66,
+    "teamwork": 87
+  },
+  "paths": {
+    "readme": "characters/pipeline-sensei/README.md",
+    "metadata": "characters/pipeline-sensei/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

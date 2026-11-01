@@ -1,0 +1,697 @@
+uploads = []
+
+[[generated]]
+id = "SViWPFGRnH6jUu2wotNJz"
+uri = "file://artifacts/mise-orchestra/public/images/baton.png"
+type = "image"
+title = "Glowing holographic conductor baton"
+
+[[generated]]
+id = "3aJlwyOvKu-ysAEmuLbJ0"
+uri = "file://artifacts/mise-orchestra/public/images/portals.png"
+type = "image"
+title = "Neon tech portals"
+
+[[generated]]
+id = "q8RSZDmNSCr8-2LVIo7Vf"
+uri = "file://artifacts/mise-orchestra/public/images/data_streams.png"
+type = "image"
+title = "Data streams as ingredients"
+
+[[generated]]
+id = "Ejc13KGZ_QFbxsNZvsuRy"
+uri = "file://artifacts/mise-orchestra/public/images/avatars.png"
+type = "image"
+title = "DevOps avatars working"
+
+[[generated]]
+id = "5EpydhJJ7oJ-Ev94SY_X2"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Orchestra-Core.png"
+type = "image"
+title = "MiseOS Orchestra-Core"
+
+[[generated]]
+id = "EOlbc8zTWeOFfA1HSSoDA"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Kurogami.png"
+type = "image"
+title = "MiseOS Kurogami"
+
+[[generated]]
+id = "kt72jpWrvqbMgNEZp5LoD"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Kuro-Guard.png"
+type = "image"
+title = "MiseOS Kuro-Guard"
+
+[[generated]]
+id = "1OiJmMrSnkUN_U-14fz-D"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Seira.png"
+type = "image"
+title = "MiseOS Seira"
+
+[[generated]]
+id = "lgb_y-3xrLCK5qw7QOkrF"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Conductor.png"
+type = "image"
+title = "MiseOS Conductor"
+
+[[generated]]
+id = "QGvzYXU__--XXoEvwJC29"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Steward-Prime.png"
+type = "image"
+title = "MiseOS Steward-Prime"
+
+[[generated]]
+id = "08GfFSOhFF_oL8ah_Wm_0"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Root-Chef.png"
+type = "image"
+title = "MiseOS Root-Chef"
+
+[[generated]]
+id = "--n9arR_2WuSbxilW5iIr"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Policy-Monk.png"
+type = "image"
+title = "MiseOS Policy-Monk"
+
+[[generated]]
+id = "J033IEh2j38Lun3p-cpKI"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Audit-Sensei.png"
+type = "image"
+title = "MiseOS Audit-Sensei"
+
+[[generated]]
+id = "mwugLVwMYkYN_TrLsZs0J"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Human-Liaison.png"
+type = "image"
+title = "MiseOS Human-Liaison"
+
+[[generated]]
+id = "Ye7OvILgjI9PVwcGYqQtx"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Tensho.png"
+type = "image"
+title = "MiseOS Tensho"
+
+[[generated]]
+id = "iQxHgIa45GUnS8ndeUy0L"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Mizu.png"
+type = "image"
+title = "MiseOS Mizu"
+
+[[generated]]
+id = "E68Klp5Vzl6bNJ3j6O1au"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Kaji.png"
+type = "image"
+title = "MiseOS Kaji"
+
+[[generated]]
+id = "C3ZFu7k5tFHq4kiwJtK73"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Build-Kun.png"
+type = "image"
+title = "MiseOS Build-Kun"
+
+[[generated]]
+id = "P3KT4pD9N5DmrVOyjypF9"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Scale-Oni.png"
+type = "image"
+title = "Scale-Oni"
+
+[[generated]]
+id = "493uai27fcE0VwvPmC3PG"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Dispatcher.png"
+type = "image"
+title = "MiseOS Dispatcher"
+
+[[generated]]
+id = "xa3o7uitsqqbLoniFSwvz"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Scheduler.png"
+type = "image"
+title = "Scheduler"
+
+[[generated]]
+id = "BzNIMybbRbiwsaGP5RaW1"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Swarmar.png"
+type = "image"
+title = "MiseOS Swarmar"
+
+[[generated]]
+id = "l7vugs8Gx5ZmqyyrCxQPx"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/Gatekeeper.png"
+type = "image"
+title = "MiseOS Gatekeeper"
+
+[[generated]]
+id = "LJwCegU6kNu1hWXWrvzlL"
+uri = "file://attached_assets/miseos_agents/02_kitchen_operations/PrepBot.png"
+type = "image"
+title = "MiseOS PrepBot"
+
+[[generated]]
+id = "3lIXSYpX9uLCJaDA13oCQ"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Flash-Riku.png"
+type = "image"
+title = "MiseOS Flash-Riku"
+
+[[generated]]
+id = "APFnY47y-BFR0E-JaFASL"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Iron-Hashi.png"
+type = "image"
+title = "MiseOS Iron-Hashi"
+
+[[generated]]
+id = "eBOhKOwEjSb1ZWLvEoILR"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Null-Chan.png"
+type = "image"
+title = "MiseOS Null-Chan"
+
+[[generated]]
+id = "pO2U2X-Oh_KIDSuw0sXdA"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Streama.png"
+type = "image"
+title = "MiseOS Streama"
+
+[[generated]]
+id = "sHfAImanVkFkerE_brsQS"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Umami-Code.png"
+type = "image"
+title = "MiseOS Umami-Code"
+
+[[generated]]
+id = "ZJsMjLFvTM-jBqqLDBbIq"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Yume.png"
+type = "image"
+title = "MiseOS Yume"
+
+[[generated]]
+id = "r6HSoxXfk_PjQP1BGylEI"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Relay-Fox.png"
+type = "image"
+title = "MiseOS Relay-Fox"
+
+[[generated]]
+id = "OQpQvzePNP2rQz6d2-hWO"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Cache-Cat.png"
+type = "image"
+title = "Cache-Cat"
+
+[[generated]]
+id = "JN1-31cOH1eS32lwsUdpU"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Patch-Panda.png"
+type = "image"
+title = "MiseOS Patch-Panda"
+
+[[generated]]
+id = "X_QZHhA4ITI85FmV3uI_W"
+uri = "file://attached_assets/miseos_agents/03_service_layer/Ticket-Tengu.png"
+type = "image"
+title = "Ticket-Tengu"
+
+[[generated]]
+id = "N5ka31pZKTXBKzZuP_HFr"
+uri = "file://attached_assets/miseos_agents/04_engineering/Architect.png"
+type = "image"
+title = "Architect"
+
+[[generated]]
+id = "Tgvl1GLK06srwcoK43Ukp"
+uri = "file://attached_assets/miseos_agents/04_engineering/Coder.png"
+type = "image"
+title = "Coder"
+
+[[generated]]
+id = "8XN3iAGN_TCGroLEE2hlt"
+uri = "file://attached_assets/miseos_agents/04_engineering/Reviewer.png"
+type = "image"
+title = "Reviewer"
+
+[[generated]]
+id = "957QW0_yke1o7VXCFEOLt"
+uri = "file://attached_assets/miseos_agents/04_engineering/Tester.png"
+type = "image"
+title = "Tester"
+
+[[generated]]
+id = "9jrMhdqoYT4U48Ysqg7zP"
+uri = "file://attached_assets/miseos_agents/04_engineering/Debugger.png"
+type = "image"
+title = "Debugger"
+
+[[generated]]
+id = "UUS0W8eIL1vQ0frr2Qche"
+uri = "file://attached_assets/miseos_agents/04_engineering/Doc-Writer.png"
+type = "image"
+title = "Doc-Writer"
+
+[[generated]]
+id = "XPLmfnX5loa_1jRwHJkAd"
+uri = "file://attached_assets/miseos_agents/04_engineering/DevRel.png"
+type = "image"
+title = "DevRel"
+
+[[generated]]
+id = "xhwfr6CiC7IOIxBd_tSA3"
+uri = "file://attached_assets/miseos_agents/04_engineering/UX-Chef.png"
+type = "image"
+title = "UX-Chef"
+
+[[generated]]
+id = "L0xMAWJF5bGQmrdJ2tTIU"
+uri = "file://attached_assets/miseos_agents/04_engineering/SRE-Chef.png"
+type = "image"
+title = "SRE-Chef"
+
+[[generated]]
+id = "olEwfQG_8DJaMlAy4Pib_"
+uri = "file://attached_assets/miseos_agents/04_engineering/Perf-Chef.png"
+type = "image"
+title = "Perf-Chef"
+
+[[generated]]
+id = "6QHJLmQwd8pjoc8uvKind"
+uri = "file://attached_assets/miseos_agents/05_security/Security-Auditor.png"
+type = "image"
+title = "Security-Auditor"
+
+[[generated]]
+id = "PSomUdqoXJLIeWPPo1C6D"
+uri = "file://attached_assets/miseos_agents/05_security/Pen-Tester.png"
+type = "image"
+title = "Pen-Tester"
+
+[[generated]]
+id = "o8grbWtUYclQKfcuVKZPC"
+uri = "file://attached_assets/miseos_agents/05_security/Compliance.png"
+type = "image"
+title = "Compliance"
+
+[[generated]]
+id = "f5XstsVi94lc6GYWErKuF"
+uri = "file://attached_assets/miseos_agents/05_security/Encryptor.png"
+type = "image"
+title = "Encryptor"
+
+[[generated]]
+id = "XnrmWErB4Yr9HhyxpR2yD"
+uri = "file://attached_assets/miseos_agents/05_security/Firewall.png"
+type = "image"
+title = "Firewall"
+
+[[generated]]
+id = "RP4sRbE8v0ZNxNHt7rYzU"
+uri = "file://attached_assets/miseos_agents/05_security/Scanner.png"
+type = "image"
+title = "Scanner"
+
+[[generated]]
+id = "3zjCyc2rmUnM-q4Ja1piY"
+uri = "file://attached_assets/miseos_agents/05_security/Quality-Guard.png"
+type = "image"
+title = "Quality-Guard"
+
+[[generated]]
+id = "6OXl9Dufw5ABAQvXAY6Uo"
+uri = "file://attached_assets/miseos_agents/05_security/Token-Monk.png"
+type = "image"
+title = "Token-Monk"
+
+[[generated]]
+id = "SO6PwD5fAHTUMqXunwp72"
+uri = "file://attached_assets/miseos_agents/05_security/Vault-Link.png"
+type = "image"
+title = "Vault-Link"
+
+[[generated]]
+id = "cI4FcE88OmFWTptWgPCcJ"
+uri = "file://attached_assets/miseos_agents/05_security/Risk-Oracle.png"
+type = "image"
+title = "Risk-Oracle"
+
+[[generated]]
+id = "5YaFAIblqFOEyVk0G1Ion"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Cloud-Chef.png"
+type = "image"
+title = "Cloud-Chef"
+
+[[generated]]
+id = "uHJzxZn6Ka2owCb5WMwVc"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Networker.png"
+type = "image"
+title = "Networker"
+
+[[generated]]
+id = "MVXTJXf1EdnxUCH-wS4nw"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Database.png"
+type = "image"
+title = "Database"
+
+[[generated]]
+id = "kHJIh6sR3cBc94U077vS6"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Cache.png"
+type = "image"
+title = "Cache"
+
+[[generated]]
+id = "hKNsLn5teLE6nRFdwYDr5"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Storage.png"
+type = "image"
+title = "Storage"
+
+[[generated]]
+id = "IEJxM6m_GrpQIvrHIm1WR"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Load-Balancer.png"
+type = "image"
+title = "Load-Balancer"
+
+[[generated]]
+id = "NPhsi4ie3lGvX-M23B0_E"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Observatory.png"
+type = "image"
+title = "Observatory"
+
+[[generated]]
+id = "9WHoSRf6LJvlQioDjQ_Kb"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Logger.png"
+type = "image"
+title = "Logger"
+
+[[generated]]
+id = "y_Kw5boV8M0JlPLmiEFOm"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Alarmer.png"
+type = "image"
+title = "Alarmer"
+
+[[generated]]
+id = "TXYssKA79OGMY12kZC3es"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Backup.png"
+type = "image"
+title = "Backup"
+
+[[generated]]
+id = "5BSGsfRt1UaJcsfb8M4aQ"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/DR-Builder.png"
+type = "image"
+title = "DR-Builder"
+
+[[generated]]
+id = "GZDgmkRnxZd2qZ-Xk7w1y"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Cost-Guard.png"
+type = "image"
+title = "Cost-Guard"
+
+[[generated]]
+id = "1_3pZpmVNTEwXBE49qVAt"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Capacity.png"
+type = "image"
+title = "Capacity"
+
+[[generated]]
+id = "mOB_SwcAkgcUG3Oov_OxY"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Automator.png"
+type = "image"
+title = "Automator"
+
+[[generated]]
+id = "eVlBhwHlc_kXWsTLmT66l"
+uri = "file://attached_assets/miseos_agents/06_platform_infra/Pipeline.png"
+type = "image"
+title = "Pipeline"
+
+[[generated]]
+id = "r-hw8wvT38mPxSegrVKLS"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/GitHub-Chef.png"
+type = "image"
+title = "GitHub-Chef"
+
+[[generated]]
+id = "49wZBK6StJql6Np7IeBbQ"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/GitLab-Chef.png"
+type = "image"
+title = "GitLab-Chef"
+
+[[generated]]
+id = "90HQEF5A2nkBnmXWLQWYU"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Jenkins-Chef.png"
+type = "image"
+title = "Jenkins-Chef"
+
+[[generated]]
+id = "bvG7aF8GwXsYTbRP5tjnV"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Argo-Chef.png"
+type = "image"
+title = "Argo-Chef"
+
+[[generated]]
+id = "F8nMt4E4efcs4IzsQoqNK"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Kubernetes.png"
+type = "image"
+title = "Kubernetes"
+
+[[generated]]
+id = "xa5FgByCOdzZdct2pOtsn"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Docker.png"
+type = "image"
+title = "Docker"
+
+[[generated]]
+id = "bjNdNnwmftB7jp7LCn9TY"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Terraformer.png"
+type = "image"
+title = "Terraformer"
+
+[[generated]]
+id = "u_Bd3g2s7xCxJiRCyIF-x"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Datadog.png"
+type = "image"
+title = "Datadog"
+
+[[generated]]
+id = "0YPRwwzI9PpLHnAt2jiQl"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Prometheus.png"
+type = "image"
+title = "Prometheus"
+
+[[generated]]
+id = "ic2A50kqzqD038F10NMK1"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Slack-Bot.png"
+type = "image"
+title = "Slack-Bot"
+
+[[generated]]
+id = "NtxKPWAZFnD41hqrFnLLS"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/API-Gateway.png"
+type = "image"
+title = "API-Gateway"
+
+[[generated]]
+id = "wZ_pd-Av8GLhpaJ3uithe"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Teacher.png"
+type = "image"
+title = "Teacher"
+
+[[generated]]
+id = "5jsPd4PKVjyOdnZbZuWwi"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Documentor.png"
+type = "image"
+title = "Documentor"
+
+[[generated]]
+id = "nXnhOABBET04FkdVyWUxQ"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Community-Rep.png"
+type = "image"
+title = "Community-Rep"
+
+[[generated]]
+id = "-iWQDMHZ7EbzvhR_S9Fj5"
+uri = "file://attached_assets/miseos_agents/07_ecosystem/Ambassador.png"
+type = "image"
+title = "Ambassador"
+
+[[outputs]]
+id = "pmNeEH6UCF03OmlmCr8oo"
+uri = "file://attached_assets/generated_audio/mise_orchestra_theme.mp3"
+type = "audio"
+title = "Mise Orchestra — Theme v2 (Funky Hip-Hop)"
+
+[[outputs]]
+id = "qzmH1ZD_hmcTswSrs0Oh9"
+uri = "file://attached_assets/generated_audio/mise_theme_v3.mp3"
+type = "audio"
+title = "V3 — Pure Anime OP: Gurenge + taiko drums + power guitar"
+
+[[outputs]]
+id = "CgXiR4K1xOuB-0sqFaJtB"
+uri = "file://attached_assets/generated_audio/mise_theme_v4.mp3"
+type = "audio"
+title = "V4 — Anime Hip-Hop: Koto + 808 boom bap + string swell"
+
+[[outputs]]
+id = "8b4dtcu-vOAnJrLWMxx0R"
+uri = "file://attached_assets/generated_audio/mise_theme_v5.mp3"
+type = "audio"
+title = "V5 — Boondocks × Anime: Jazz hip-hop + trumpet melody + shamisen hook"
+
+[[outputs]]
+id = "GcPdrxM7SUkrqasd-4-2c"
+uri = "file://attached_assets/generated_audio/mise_theme_v9.mp3"
+type = "audio"
+title = "V9 — Rhodes piano hook + slow boom bap + trumpet echo"
+
+[[outputs]]
+id = "W3WsWXeVEb_BV8l7lbT8f"
+uri = "file://attached_assets/generated_audio/mise_theme_v10.mp3"
+type = "audio"
+title = "V10 — Flute melody + upright bass + soulful hip-hop groove"
+
+[[outputs]]
+id = "tLwSTg4G34U5G2H352jSN"
+uri = "file://attached_assets/generated_audio/mise_theme_v11.mp3"
+type = "audio"
+title = "V11 — Trumpet melody + brushed snare + Samurai Champloo feel"
+
+[[outputs]]
+id = "mH6sTO62YHZcRitq04CPL"
+uri = "file://attached_assets/generated_audio/mise_theme_v12.mp3"
+type = "audio"
+title = "V12 — Acoustic guitar loop + Rhodes piano + koto accent (22s)"
+
+[[outputs]]
+id = "EUCy6RrJcZ50fRqh51df3"
+uri = "file://attached_assets/generated_audio/mise_theme_v13.mp3"
+type = "audio"
+title = "V13 — Trumpet 6-note hook + upright bass + vinyl warmth (30s)"
+
+[[outputs]]
+id = "KzKuXMcy2FXK2RlBIlzxp"
+uri = "file://attached_assets/generated_audio/mise_theme_v14.mp3"
+type = "audio"
+title = "V14 — Flute drifting over 3 piano chords + deep bass (30s)"
+
+[[outputs]]
+id = "ri6SFWlWi91funDjIBb5m"
+uri = "file://attached_assets/generated_audio/mise_theme_v15.mp3"
+type = "audio"
+title = "V15 — Guitar intro → boom bap → trumpet melody (30s)"
+
+[[outputs]]
+id = "t6bkthEPwyG4hX1F24OSg"
+uri = "file://attached_assets/generated_audio/mise_theme_v16.mp3"
+type = "audio"
+title = "V16 — Rhodes 4-note riff + 808 kick + Nujabes groove (30s)"
+
+[[outputs]]
+id = "2UAY9bMx79z-EjB6aloR-"
+uri = "file://attached_assets/generated_audio/mise_theme_v17.mp3"
+type = "audio"
+title = "V17 — Finger-picked guitar → alto sax melody + boom bap (30s)"
+
+[[outputs]]
+id = "A66UBPd3HN9GlHZmTGfKj"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Orchestra-Core.png"
+type = "image"
+title = "Orchestra Core — System Consciousness (Legendary)"
+
+[[outputs]]
+id = "SBdKXtx91AsT_ggOhvtHN"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Kurogami.png"
+type = "image"
+title = "Kurogami — Agent Director (Legendary)"
+
+[[outputs]]
+id = "bzYiuoL-0qX8d9rJR2Z1M"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Kuro-Guard.png"
+type = "image"
+title = "Kuro Guard — Security Guardian (Epic)"
+
+[[outputs]]
+id = "8bmlZMyj7Tn7SsTSn7VK9"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Seira.png"
+type = "image"
+title = "Seira — Secrets Sommelier (Epic)"
+
+[[outputs]]
+id = "7sGO_1Tktusn2OvhS9Zqd"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Conductor.png"
+type = "image"
+title = "Conductor — Flow Director"
+
+[[outputs]]
+id = "cU5yXqUILTYDpiNXj8j9F"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Steward-Prime.png"
+type = "image"
+title = "Steward Prime — Governance Keeper"
+
+[[outputs]]
+id = "7BPneocWRZKor4wxK7axx"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Root-Chef.png"
+type = "image"
+title = "Root Chef — System Administrator"
+
+[[outputs]]
+id = "eZfbZCS3ByUroaxQof796"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Policy-Monk.png"
+type = "image"
+title = "Policy Monk — Rules Engine"
+
+[[outputs]]
+id = "1gQOC-LxUSIEsgRdTe41m"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Audit-Sensei.png"
+type = "image"
+title = "Audit Sensei — Trace Reviewer"
+
+[[outputs]]
+id = "BJijRrxR3NpyY-mz0MQVB"
+uri = "file://attached_assets/miseos_agents/01_executive_chefs/Human-Liaison.png"
+type = "image"
+title = "Human Liaison — Approval Bridge (Rare)"
+
+[[outputs]]
+id = "VHdVWAaiMOsuhlUd26mrO"
+uri = "file://attached_assets/dist/sheets/1_executive_chefs.png"
+type = "image"
+title = "Group 1 — Executive Chefs (10)"
+
+[[outputs]]
+id = "YjaCGBIWci4fOqeGRnsZ5"
+uri = "file://attached_assets/dist/sheets/2_kitchen_operations.png"
+type = "image"
+title = "Group 2 — Kitchen Operations (10)"
+
+[[outputs]]
+id = "Rtl5FaMVonFtEvQfHRkQq"
+uri = "file://attached_assets/dist/sheets/3_service_layer.png"
+type = "image"
+title = "Group 3 — Service Layer (10)"
+
+[[outputs]]
+id = "xLhoAKDUK9b9sXK-e4tiR"
+uri = "file://attached_assets/dist/sheets/4_engineering.png"
+type = "image"
+title = "Group 4 — Engineering (10)"
+
+[[outputs]]
+id = "xvcXI4jy5A5UI8Im3kGAY"
+uri = "file://attached_assets/dist/sheets/5_security.png"
+type = "image"
+title = "Group 5 — Security (10)"
+
+[[outputs]]
+id = "5tFFrREU5PTwScwD0DC-z"
+uri = "file://attached_assets/dist/sheets/6_platform_infra.png"
+type = "image"
+title = "Group 6 — Platform & Infrastructure (15)"
+
+[[outputs]]
+id = "tJk2N-pkOfOdM-sCjYoiT"
+uri = "file://attached_assets/dist/sheets/7_ecosystem.png"
+type = "image"
+title = "Group 7 — Integrations & Ecosystem (15)"
+
+[[outputs]]
+id = "YWi6BPMm5Ycir7iy1jIEf"
+uri = "file://attached_assets/dist/MiseOS_Agent_Brigade.zip"
+type = "unspecified"
+title = "Full Brigade — 80 transparent PNGs (ZIP)"
+
+[[outputs]]
+id = "O2agTtc587C7cCP5dQ63B"
+uri = "file://artifacts/launch-film/public/audio/bg_music.mp3"
+type = "audio"
+title = "launch film background music"

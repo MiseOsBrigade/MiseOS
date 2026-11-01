@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.079",
+  "number": 79,
+  "slug": "kaji",
+  "name": "Kaji",
+  "mise_name": "Kaji",
+  "codename": "KAJI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Compute",
+  "job_name": "Compute",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Compute",
+    "avatar_path": "assets/characters/kaji/avatar.png",
+    "card_path": "assets/characters/kaji/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Kaji performs compute within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Scale Oni",
+      "Velvet Vesper",
+      "Flavor Forager"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 71,
+    "precision": 81,
+    "speed": 82,
+    "resilience": 68,
+    "intelligence": 66,
+    "teamwork": 76
+  },
+  "paths": {
+    "readme": "characters/kaji/README.md",
+    "metadata": "characters/kaji/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

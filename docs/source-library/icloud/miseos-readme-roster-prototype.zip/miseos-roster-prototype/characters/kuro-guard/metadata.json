@@ -1,0 +1,78 @@
+{
+  "id": "kuro-guard",
+  "slug": "kuro-guard",
+  "number": 84,
+  "name": "Kuro Guard",
+  "miseName": "Mise Protect",
+  "codename": "chef.platform.protect",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "epic",
+  "roleCategory": "protect",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Steward",
+    "signaturePhrase": "Kuro Guard keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Defends the platform with unwavering protection."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen Black Shield aura",
+    "silhouette": "chibi DevOps chef carrying Black Shield",
+    "tool": "Black Shield",
+    "spritePath": "/assets/characters/kuro-guard/full-body.png",
+    "cardPath": "/assets/characters/kuro-guard/card.png"
+  },
+  "workflow": {
+    "jobName": "Protect",
+    "roleName": "Steward microagent",
+    "summary": "Defends the platform with unwavering protection.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Seira",
+      "Orchestra Core"
+    ]
+  },
+  "stats": {
+    "power": 99,
+    "precision": 84,
+    "speed": 82,
+    "resilience": 97,
+    "intelligence": 86,
+    "teamwork": 81
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "11",
+    "role": "Steward",
+    "department": "Platform",
+    "function": "Protect",
+    "rarity": "Epic",
+    "tier": "Security Gate",
+    "element": "Black Shield",
+    "ability": "Platform Ward",
+    "lore": "Defends the platform with unwavering protection.",
+    "image_file": "cards/png/011-kuro-guard.png",
+    "metadata_file": "metadata/erc721/011-kuro-guard.json"
+  },
+  "displayNumber": 84,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/kuro-guard",
+  "avatarSvg": "assets/characters/kuro-guard/avatar.svg",
+  "cardSvg": "assets/characters/kuro-guard/card.svg"
+}

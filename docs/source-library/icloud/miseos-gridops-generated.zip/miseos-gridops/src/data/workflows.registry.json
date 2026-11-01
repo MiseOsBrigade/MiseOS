@@ -1,0 +1,193 @@
+[
+  {
+    "id": "workflow_ci_repair",
+    "name": "CI Repair",
+    "trigger": [
+      "workflow_dispatch",
+      "pull_request",
+      "failed_ci"
+    ],
+    "assignedAgent": "agent_mise_garde",
+    "riskTier": "tier_1_to_2",
+    "approvalRequired": true,
+    "steps": [
+      "read_failed_workflow_run",
+      "summarize_logs",
+      "classify_failure",
+      "retrieve_similar_failures",
+      "propose_patch",
+      "create_branch",
+      "apply_small_patch",
+      "run_available_checks",
+      "open_pr",
+      "write_evidence"
+    ],
+    "outputs": [
+      "pull_request",
+      "evidence_card",
+      "validation_report"
+    ]
+  },
+  {
+    "id": "workflow_secret_hygiene",
+    "name": "Secret Hygiene",
+    "trigger": [
+      "workflow_dispatch",
+      "schedule",
+      "pull_request"
+    ],
+    "assignedAgent": "agent_mise_sentinel",
+    "riskTier": "tier_3_if_history_rewrite_needed",
+    "approvalRequired": true,
+    "steps": [
+      "scan_tracked_files",
+      "detect_secret_patterns",
+      "redact_values",
+      "add_gitignore_patterns",
+      "create_env_example",
+      "open_pr_for_working_tree_cleanup",
+      "recommend_rotation",
+      "write_evidence"
+    ],
+    "outputs": [
+      "security_report",
+      "pull_request",
+      "rotation_recommendation"
+    ]
+  },
+  {
+    "id": "workflow_package_registry_sentinel",
+    "name": "Package Registry Sentinel",
+    "trigger": [
+      "schedule_weekly",
+      "workflow_dispatch",
+      "release_event"
+    ],
+    "assignedAgent": "agent_mise_forge",
+    "riskTier": "tier_2",
+    "approvalRequired": true,
+    "ecosystems": [
+      "npm",
+      "ghcr",
+      "docker",
+      "maven",
+      "gradle",
+      "nuget",
+      "rubygems"
+    ],
+    "steps": [
+      "detect_package_manifests",
+      "read_local_versions",
+      "fetch_registry_versions",
+      "compare_semver",
+      "classify_drift",
+      "prepare_release_checklist",
+      "open_issue_or_pr",
+      "write_evidence"
+    ],
+    "outputs": [
+      "registry_report",
+      "release_readiness_card"
+    ]
+  },
+  {
+    "id": "workflow_release_readiness",
+    "name": "Release Readiness",
+    "trigger": [
+      "workflow_dispatch",
+      "tag_push",
+      "release_candidate"
+    ],
+    "assignedAgent": "agent_mise_forge",
+    "riskTier": "tier_2_to_3",
+    "approvalRequired": true,
+    "steps": [
+      "run_lint_if_present",
+      "run_typecheck_if_present",
+      "run_tests_if_present",
+      "run_build_if_present",
+      "check_changelog",
+      "check_version_bump",
+      "check_package_registry",
+      "check_secret_diff",
+      "write_release_gate_report"
+    ],
+    "outputs": [
+      "release_gate_report",
+      "evidence_bundle"
+    ]
+  },
+  {
+    "id": "workflow_docs_refresh",
+    "name": "Docs Refresh",
+    "trigger": [
+      "workflow_dispatch",
+      "package_change",
+      "api_change"
+    ],
+    "assignedAgent": "agent_mise_scribe",
+    "riskTier": "tier_1",
+    "approvalRequired": false,
+    "steps": [
+      "read_changed_files",
+      "retrieve_related_docs",
+      "draft_readme_updates",
+      "draft_changelog",
+      "open_pr",
+      "write_evidence"
+    ],
+    "outputs": [
+      "docs_pr",
+      "changelog_draft"
+    ]
+  },
+  {
+    "id": "workflow_rag_index_refresh",
+    "name": "RAG Index Refresh",
+    "trigger": [
+      "schedule_daily",
+      "repo_import",
+      "docs_change"
+    ],
+    "assignedAgent": "agent_mise_librarian",
+    "riskTier": "tier_1",
+    "approvalRequired": false,
+    "steps": [
+      "read_repo_file_list",
+      "chunk_files",
+      "chunk_docs",
+      "chunk_issues",
+      "embed_chunks",
+      "write_vectors",
+      "score_staleness",
+      "write_index_report"
+    ],
+    "outputs": [
+      "rag_index_report"
+    ]
+  },
+  {
+    "id": "workflow_task_routing",
+    "name": "Task Routing",
+    "trigger": [
+      "new_task",
+      "workflow_dispatch"
+    ],
+    "assignedAgent": "agent_mise_router",
+    "riskTier": "tier_1",
+    "approvalRequired": false,
+    "steps": [
+      "classify_task",
+      "score_risk",
+      "select_agent",
+      "select_model",
+      "check_permission_tier",
+      "assign_task",
+      "write_route_evidence"
+    ],
+    "outputs": [
+      "task_assignment",
+      "model_route"
+    ]
+  }
+]

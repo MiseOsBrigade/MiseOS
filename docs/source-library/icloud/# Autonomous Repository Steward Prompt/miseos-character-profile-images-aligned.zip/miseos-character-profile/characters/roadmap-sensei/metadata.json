@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.075",
+  "number": 75,
+  "slug": "roadmap-sensei",
+  "name": "Roadmap Sensei",
+  "mise_name": "Roadmap Sensei",
+  "codename": "ROADMAP_SENSEI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Strategic Roadmap Recommender",
+  "job_name": "Strategic Roadmap Recommender",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Strategic Roadmap Recommender",
+    "avatar_path": "assets/characters/roadmap-sensei/avatar.png",
+    "card_path": "assets/characters/roadmap-sensei/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Roadmap Sensei performs strategic roadmap recommender within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Data-chan",
+      "Insight Sensei",
+      "Chaos Analyst"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 90,
+    "precision": 92,
+    "speed": 62,
+    "resilience": 71,
+    "intelligence": 68,
+    "teamwork": 73
+  },
+  "paths": {
+    "readme": "characters/roadmap-sensei/README.md",
+    "metadata": "characters/roadmap-sensei/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

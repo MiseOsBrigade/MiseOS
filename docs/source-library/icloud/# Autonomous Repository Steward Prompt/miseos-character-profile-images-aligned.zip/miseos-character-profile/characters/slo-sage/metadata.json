@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.031",
+  "number": 31,
+  "slug": "slo-sage",
+  "name": "SLO Sage",
+  "mise_name": "SLO Sage",
+  "codename": "SLO_SAGE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "SLO Definition Workflow",
+  "job_name": "SLO Definition Workflow",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "SLO Definition Workflow",
+    "avatar_path": "assets/characters/slo-sage/avatar.png",
+    "card_path": "assets/characters/slo-sage/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "SLO Sage performs slo definition workflow within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Trace Sensei",
+      "Chaos Kaito",
+      "Capacity Kanna"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 83,
+    "precision": 68,
+    "speed": 82,
+    "resilience": 87,
+    "intelligence": 87,
+    "teamwork": 73
+  },
+  "paths": {
+    "readme": "characters/slo-sage/README.md",
+    "metadata": "characters/slo-sage/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

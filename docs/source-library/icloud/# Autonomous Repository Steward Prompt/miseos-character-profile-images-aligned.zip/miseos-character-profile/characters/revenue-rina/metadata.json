@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.069",
+  "number": 69,
+  "slug": "revenue-rina",
+  "name": "Revenue Rina",
+  "mise_name": "Revenue Rina",
+  "codename": "REVENUE_RINA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Customer Behavior \u2192 Incident Linker",
+  "job_name": "Customer Behavior \u2192 Incident Linker",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Customer Behavior \u2192 Incident Linker",
+    "avatar_path": "assets/characters/revenue-rina/avatar.png",
+    "card_path": "assets/characters/revenue-rina/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Revenue Rina performs customer behavior \u2192 incident linker within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Risk Ryota",
+      "Apprentice Kai",
+      "Anomaly Aki"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 67,
+    "precision": 62,
+    "speed": 57,
+    "resilience": 70,
+    "intelligence": 66,
+    "teamwork": 72
+  },
+  "paths": {
+    "readme": "characters/revenue-rina/README.md",
+    "metadata": "characters/revenue-rina/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

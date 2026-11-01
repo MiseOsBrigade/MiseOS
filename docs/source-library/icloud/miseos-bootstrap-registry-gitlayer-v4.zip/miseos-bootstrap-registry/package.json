@@ -1,0 +1,30 @@
+{
+  "name": "miseos-bootstrap-registry",
+  "version": "0.2.1",
+  "private": true,
+  "description": "Analytics-ready bootstrap registry for MiseOS packages, containers, agents, workflows, policies, Git command wrappers, templates, and release metadata.",
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "validate": "node scripts/validate-registry.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "test": "node scripts/test.mjs",
+    "analytics": "node scripts/analyze-registry.mjs",
+    "dashboard": "node scripts/generate-dashboard.mjs",
+    "export": "node scripts/export-registry.mjs",
+    "snapshot": "node scripts/create-snapshot.mjs",
+    "diff": "node scripts/diff-registry.mjs",
+    "scope:check": "node scripts/scope-check.mjs",
+    "sentinel:dry-run": "node packages/release-sentinel/src/index.js --dry-run",
+    "policy:check": "node packages/policy-engine/src/index.js registry/index.json",
+    "verify": "pnpm validate && pnpm analytics && pnpm dashboard && pnpm export && pnpm scope:check && pnpm test && pnpm git:help",
+    "git:help": "node scripts/mise-git.mjs --help",
+    "git:map": "node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync('registry/git-command-map.json','utf8')).commands,null,2))\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
