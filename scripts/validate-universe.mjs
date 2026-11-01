@@ -31,3 +31,8 @@ for (const r of src.files) {
 if (added !== src.summary.added) errors.push('source-files summary.added mismatch');
 if (errors.length) { console.error(errors.slice(0, 50).join('\n')); console.error(`${errors.length} errors`); process.exit(1); }
 console.log(`Validated ${pets.pets.length} repo pets, ${agents.agents.length} agents, ${src.files.length} source-file entries (${added} added).`);
+// Image sharpness: every card is stored at its original's native size and its thumbnail is >= 2x the 240px display width (or the original's width).
+const cardIdx = JSON.parse(fs.readFileSync('data/player-cards.json', 'utf8'));
+const blurry = cardIdx.cards.filter((c) => !c.best_original_size || c.full_size?.[0] !== c.best_original_size[0] || c.thumb_size?.[0] < Math.min(480, c.best_original_size[0]));
+if (blurry.length) { console.error(`${blurry.length} cards not built from their best original: ${blurry.slice(0, 5).map((c) => c.file).join(', ')}`); process.exit(1); }
+console.log(`Validated ${cardIdx.cards.length} card images at native resolution with 2x thumbnails.`);

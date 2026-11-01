@@ -1,0 +1,181 @@
+{
+  "height": 256,
+  "cutouts": {
+    "build-kun": {
+      "card": "apps/registry-atrium/cards/png/013-build-kun.png",
+      "box": [
+        276,
+        204,
+        495,
+        604
+      ],
+      "match_error": 1355.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "canary-taster": {
+      "card": "apps/registry-atrium/cards/png/016-canary-taster.png",
+      "box": [
+        251,
+        200,
+        520,
+        600
+      ],
+      "match_error": 1030.0,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "data-chan": {
+      "card": "apps/registry-atrium/cards/png/019-data-chan.png",
+      "box": [
+        155,
+        204,
+        604,
+        600
+      ],
+      "match_error": 695.8,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "insight-sensei": {
+      "card": "apps/registry-atrium/cards/png/020-insight-sensei.png",
+      "box": [
+        276,
+        200,
+        491,
+        600
+      ],
+      "match_error": 754.7,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "iron-hashi": {
+      "card": "apps/registry-atrium/cards/png/007-iron-hashi.png",
+      "box": [
+        262,
+        200,
+        509,
+        600
+      ],
+      "match_error": 1622.9,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "kaji": {
+      "card": "apps/registry-atrium/cards/png/005-kaji.png",
+      "box": [
+        276,
+        204,
+        491,
+        604
+      ],
+      "match_error": 1221.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "kuro-guard": {
+      "card": "apps/registry-atrium/cards/png/011-kuro-guard.png",
+      "box": [
+        262,
+        200,
+        509,
+        600
+      ],
+      "match_error": 1297.1,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "kurogami-senpai": {
+      "card": "apps/registry-atrium/cards/png/001-kurogami-senpai.png",
+      "box": [
+        222,
+        196,
+        548,
+        604
+      ],
+      "match_error": 514.8,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "mizu": {
+      "card": "apps/registry-atrium/cards/png/003-mizu.png",
+      "box": [
+        236,
+        204,
+        527,
+        604
+      ],
+      "match_error": 1410.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "null-chan": {
+      "card": "apps/registry-atrium/cards/png/008-null-chan.png",
+      "box": [
+        229,
+        200,
+        538,
+        600
+      ],
+      "match_error": 789.0,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "orchestra-core": {
+      "card": "apps/registry-atrium/cards/png/015-orchestra-core.png",
+      "box": [
+        149,
+        200,
+        617,
+        600
+      ],
+      "match_error": 677.9,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "slo-sage": {
+      "card": "apps/registry-atrium/cards/png/018-slo-sage.png",
+      "box": [
+        244,
+        200,
+        533,
+        607
+      ],
+      "match_error": 768.2,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "streama": {
+      "card": "apps/registry-atrium/cards/png/014-streama.png",
+      "box": [
+        244,
+        200,
+        524,
+        600
+      ],
+      "match_error": 772.6,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "tensho": {
+      "card": "apps/registry-atrium/cards/png/002-tensho.png",
+      "box": [
+        185,
+        204,
+        585,
+        600
+      ],
+      "match_error": 825.0,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "umami-code": {
+      "card": "apps/registry-atrium/cards/png/004-umami-code.png",
+      "box": [
+        229,
+        204,
+        542,
+        604
+      ],
+      "match_error": 986.4,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    },
+    "yume": {
+      "card": "apps/registry-atrium/cards/png/006-yume.png",
+      "box": [
+        255,
+        200,
+        516,
+        600
+      ],
+      "match_error": 953.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card"
+    }
+  }
+}

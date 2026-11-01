@@ -21,7 +21,20 @@
       "roster_name": "Plate Inspector",
       "entity_slug": "plate-inspector",
       "match_method": "existing-index",
-      "page": "docs/characters/plate-inspector.md"
+      "page": "docs/characters/plate-inspector.md",
+      "best_original": "extract/img-long-cards/Long cards /063F0BCB-DC40-4DBB-8EFB-F198E9F459F7.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "long-cards",
@@ -40,7 +53,20 @@
       ],
       "entity_slug": "miseos-repo-steward",
       "match_method": "ocr-line",
-      "page": "docs/characters/miseos-repo-steward.md"
+      "page": "docs/characters/miseos-repo-steward.md",
+      "best_original": "extract/img-long-cards/Long cards /0ACE220D-32A1-49F3-A00C-69E4A6197ACC.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -59,7 +85,20 @@
       ],
       "entity_slug": "miseos-release-sentinel",
       "match_method": "title",
-      "page": "docs/characters/miseos-release-sentinel.md"
+      "page": "docs/characters/miseos-release-sentinel.md",
+      "best_original": "extract/img-long-cards/Long cards /0CC93597-6FFA-4CB7-A484-88987E860B5B.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -74,7 +113,20 @@
       ],
       "entity_slug": "miseos-docs-builder",
       "match_method": "title",
-      "page": "docs/characters/miseos-docs-builder.md"
+      "page": "docs/characters/miseos-docs-builder.md",
+      "best_original": "extract/img-long-cards/Long cards /1533F9DD-DF9F-4710-996C-AC593F00FC2A.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -92,7 +144,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/long-cards--miseos-conductor-prime.md"
+      "page": "docs/cards/long-cards--miseos-conductor-prime.md",
+      "best_original": "extract/img-long-cards/Long cards /21761157-FDF5-4FD7-BB8A-82A656F1A91D.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -111,7 +176,20 @@
       ],
       "entity_slug": "cold-zero",
       "match_method": "title",
-      "page": "docs/characters/cold-zero.md"
+      "page": "docs/characters/cold-zero.md",
+      "best_original": "extract/img-long-cards/Long cards /282A44F8-2716-470C-884E-B3EA2FB3FD74.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -126,7 +204,20 @@
       ],
       "entity_slug": "miseos-trust-graph",
       "match_method": "ocr-line",
-      "page": "docs/characters/miseos-trust-graph.md"
+      "page": "docs/characters/miseos-trust-graph.md",
+      "best_original": "extract/img-long-cards/Long cards /2AE8A745-501A-4AA4-A5C6-F63DE7E942F1.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -143,7 +234,20 @@
       "roster_name": "Resilience Ryu",
       "entity_slug": "resilience-ryu",
       "match_method": "existing-index",
-      "page": "docs/characters/resilience-ryu.md"
+      "page": "docs/characters/resilience-ryu.md",
+      "best_original": "extract/img-long-cards/Long cards /2BF5AC9A-87C9-478C-83AC-5647A6B3278E.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -158,7 +262,20 @@
       ],
       "entity_slug": "miseos-maven-policy-adapter",
       "match_method": "title",
-      "page": "docs/characters/miseos-maven-policy-adapter.md"
+      "page": "docs/characters/miseos-maven-policy-adapter.md",
+      "best_original": "extract/img-long-cards/Long cards /2E00E52A-79EE-45B7-944D-9CE59E1FCE0B.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -173,7 +290,20 @@
       ],
       "entity_slug": "miseos-repo-pet",
       "match_method": "title",
-      "page": "docs/characters/miseos-repo-pet.md"
+      "page": "docs/characters/miseos-repo-pet.md",
+      "best_original": "extract/img-long-cards/Long cards /2EA9FFC5-F93B-4B16-8D23-8C7D1B065F58.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -188,7 +318,20 @@
       ],
       "entity_slug": "miseos-attestation-gate",
       "match_method": "title",
-      "page": "docs/characters/miseos-attestation-gate.md"
+      "page": "docs/characters/miseos-attestation-gate.md",
+      "best_original": "extract/img-long-cards/Long cards /34ABD4F9-245A-46A1-B930-A3897627C059.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -203,7 +346,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/long-cards--thunder-surge.md"
+      "page": "docs/cards/long-cards--thunder-surge.md",
+      "best_original": "extract/img-long-cards/Long cards /40790C36-50E3-4C9B-BE9D-AC0CB078E843.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -218,7 +374,20 @@
       ],
       "entity_slug": "miseos-nuget-client",
       "match_method": "title",
-      "page": "docs/characters/miseos-nuget-client.md"
+      "page": "docs/characters/miseos-nuget-client.md",
+      "best_original": "extract/img-long-cards/Long cards /43DBA924-502E-41B1-906C-4DEADE1CF901.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -233,7 +402,20 @@
       ],
       "entity_slug": "miseos-registry-schema",
       "match_method": "ocr-text",
-      "page": "docs/characters/miseos-registry-schema.md"
+      "page": "docs/characters/miseos-registry-schema.md",
+      "best_original": "extract/img-long-cards/Long cards /4BB0E4B9-0379-4DA5-A85F-91B35D0D17B8.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -252,7 +434,20 @@
       ],
       "entity_slug": "steam-whisper",
       "match_method": "title",
-      "page": "docs/characters/steam-whisper.md"
+      "page": "docs/characters/steam-whisper.md",
+      "best_original": "extract/img-long-cards/Long cards /51A17D09-BB78-46AF-86BD-1F4DA72E52FF.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -271,7 +466,20 @@
       ],
       "entity_slug": "miseos-sbom-indexer",
       "match_method": "ocr-line",
-      "page": "docs/characters/miseos-sbom-indexer.md"
+      "page": "docs/characters/miseos-sbom-indexer.md",
+      "best_original": "extract/img-long-cards/Long cards /58FDA01D-108F-42B2-8476-90C41874F90D.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -290,7 +498,20 @@
       ],
       "entity_slug": "miseos-registry-schema",
       "match_method": "ocr-text",
-      "page": "docs/characters/miseos-registry-schema.md"
+      "page": "docs/characters/miseos-registry-schema.md",
+      "best_original": "extract/img-long-cards/Long cards /595B448B-9C13-4035-A4BB-EFC00F66837F.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -309,7 +530,20 @@
       ],
       "entity_slug": "miseos-workflow-linter",
       "match_method": "title",
-      "page": "docs/characters/miseos-workflow-linter.md"
+      "page": "docs/characters/miseos-workflow-linter.md",
+      "best_original": "extract/img-long-cards/Long cards /63C1AAF2-1820-403E-B0BD-B8AAA782B383.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -324,7 +558,20 @@
       ],
       "entity_slug": "miseos-orchestra-theme",
       "match_method": "title",
-      "page": "docs/characters/miseos-orchestra-theme.md"
+      "page": "docs/characters/miseos-orchestra-theme.md",
+      "best_original": "extract/img-long-cards/Long cards /698A798E-B355-4B12-A722-CB92C48736F1.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -339,7 +586,20 @@
       ],
       "entity_slug": "miseos-runner",
       "match_method": "ocr-line-pair",
-      "page": "docs/characters/miseos-runner.md"
+      "page": "docs/characters/miseos-runner.md",
+      "best_original": "extract/img-long-cards/Long cards /6E36E95D-E38A-4C86-AEBB-38B87C568F5D.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -358,7 +618,20 @@
       ],
       "entity_slug": "miseos-ruby-steward",
       "match_method": "ocr-line",
-      "page": "docs/characters/miseos-ruby-steward.md"
+      "page": "docs/characters/miseos-ruby-steward.md",
+      "best_original": "extract/img-long-cards/Long cards /8207C116-BC43-4133-95B1-B00BCB705FFC.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -377,7 +650,20 @@
       ],
       "entity_slug": "sauce-sage",
       "match_method": "title",
-      "page": "docs/characters/sauce-sage.md"
+      "page": "docs/characters/sauce-sage.md",
+      "best_original": "extract/img-long-cards/Long cards /8B7948F3-F339-4096-98E6-031287021618.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -395,7 +681,20 @@
       ],
       "entity_slug": "miseos-agent-sdk",
       "match_method": "ocr-text",
-      "page": "docs/characters/miseos-agent-sdk.md"
+      "page": "docs/characters/miseos-agent-sdk.md",
+      "best_original": "extract/img-long-cards/Long cards /8DAEEB87-A9A6-4B6E-B979-7B7BD81780C3 2.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -414,7 +713,20 @@
       ],
       "entity_slug": "miseos-policy-engine",
       "match_method": "ocr-line",
-      "page": "docs/characters/miseos-policy-engine.md"
+      "page": "docs/characters/miseos-policy-engine.md",
+      "best_original": "extract/img-long-cards/Long cards /8EE62691-3B20-4200-A599-02E8C47EFBC2.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -429,7 +741,20 @@
       ],
       "entity_slug": "miseos-docs-hub-template",
       "match_method": "title",
-      "page": "docs/characters/miseos-docs-hub-template.md"
+      "page": "docs/characters/miseos-docs-hub-template.md",
+      "best_original": "extract/img-long-cards/Long cards /A0DE9D87-E7B2-4769-826A-4C80E0D9D546.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -447,7 +772,20 @@
       ],
       "entity_slug": "miseos-maven-policy-adapter",
       "match_method": "title",
-      "page": "docs/characters/miseos-maven-policy-adapter.md"
+      "page": "docs/characters/miseos-maven-policy-adapter.md",
+      "best_original": "extract/img-long-cards/Long cards /A214018F-ECF8-4936-81AC-EB3AF4F1802E.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -465,7 +803,20 @@
       ],
       "entity_slug": "miseos-policy-checker",
       "match_method": "title",
-      "page": "docs/characters/miseos-policy-checker.md"
+      "page": "docs/characters/miseos-policy-checker.md",
+      "best_original": "extract/img-long-cards/Long cards /A691A767-4606-4201-A841-D2DAF6A8442B 2.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -484,7 +835,20 @@
       ],
       "entity_slug": "pan-phantom",
       "match_method": "title",
-      "page": "docs/characters/pan-phantom.md"
+      "page": "docs/characters/pan-phantom.md",
+      "best_original": "extract/img-long-cards/Long cards /A75DA27C-137D-4B5D-8CA5-0A93AF44D01D.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -503,7 +867,20 @@
       ],
       "entity_slug": "butcher-blade",
       "match_method": "title",
-      "page": "docs/characters/butcher-blade.md"
+      "page": "docs/characters/butcher-blade.md",
+      "best_original": "extract/img-long-cards/Long cards /AD70B310-09B6-41CB-9426-01780F1FF67A.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -522,7 +899,20 @@
       ],
       "entity_slug": "miseos-workflow-pack",
       "match_method": "ocr-line",
-      "page": "docs/characters/miseos-workflow-pack.md"
+      "page": "docs/characters/miseos-workflow-pack.md",
+      "best_original": "extract/img-long-cards/Long cards /B28B66E8-6A34-43FE-B19C-3975041F5BA7.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -541,7 +931,20 @@
       ],
       "entity_slug": "zen-plater",
       "match_method": "title",
-      "page": "docs/characters/zen-plater.md"
+      "page": "docs/characters/zen-plater.md",
+      "best_original": "extract/img-long-cards/Long cards /B5E35C1C-0AB2-49C1-B1FE-63FDE3668E41.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -556,7 +959,20 @@
       ],
       "entity_slug": "miseos-repo-steward",
       "match_method": "ocr-line",
-      "page": "docs/characters/miseos-repo-steward.md"
+      "page": "docs/characters/miseos-repo-steward.md",
+      "best_original": "extract/img-long-cards/Long cards /B8BD4BFB-2B49-4965-BF11-D36AF89A76CA.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -571,7 +987,20 @@
       ],
       "entity_slug": "miseos-orchestra-theme",
       "match_method": "title",
-      "page": "docs/characters/miseos-orchestra-theme.md"
+      "page": "docs/characters/miseos-orchestra-theme.md",
+      "best_original": "extract/img-long-cards/Long cards /BA8CBE2C-B14A-4A2E-BC5D-10C8BC3C2D77.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -590,7 +1019,20 @@
       ],
       "entity_slug": "spice-alchemist",
       "match_method": "title",
-      "page": "docs/characters/spice-alchemist.md"
+      "page": "docs/characters/spice-alchemist.md",
+      "best_original": "extract/img-long-cards/Long cards /BCC15E0D-BDEE-44F4-98ED-694498D17562.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -605,7 +1047,20 @@
       ],
       "entity_slug": "miseos-release-sentinel",
       "match_method": "title",
-      "page": "docs/characters/miseos-release-sentinel.md"
+      "page": "docs/characters/miseos-release-sentinel.md",
+      "best_original": "extract/img-long-cards/Long cards /C96B7E8C-AF78-4A44-B630-F23267BAF57A.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "long-cards",
@@ -620,7 +1075,20 @@
       ],
       "entity_slug": "miseos-gradle-plugin",
       "match_method": "title",
-      "page": "docs/characters/miseos-gradle-plugin.md"
+      "page": "docs/characters/miseos-gradle-plugin.md",
+      "best_original": "extract/img-long-cards/Long cards /CDABF552-3327-44C3-AC70-766E3FE2356C.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -635,7 +1103,20 @@
       ],
       "entity_slug": "miseos-repo-pet",
       "match_method": "title",
-      "page": "docs/characters/miseos-repo-pet.md"
+      "page": "docs/characters/miseos-repo-pet.md",
+      "best_original": "extract/img-long-cards/Long cards /CFE8C72D-C380-4BEB-9233-2DA3A2F86FCD.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -654,7 +1135,20 @@
       ],
       "entity_slug": "knead-guardian",
       "match_method": "title",
-      "page": "docs/characters/knead-guardian.md"
+      "page": "docs/characters/knead-guardian.md",
+      "best_original": "extract/img-long-cards/Long cards /D18FED73-22ED-4AD5-9A46-D653F25B82DB.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -669,7 +1163,20 @@
       ],
       "entity_slug": "miseos-cli",
       "match_method": "title",
-      "page": "docs/characters/miseos-cli.md"
+      "page": "docs/characters/miseos-cli.md",
+      "best_original": "extract/img-long-cards/Long cards /D311F331-40B5-4771-8C6B-842A27D7D0A6.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "long-cards",
@@ -688,7 +1195,20 @@
       ],
       "entity_slug": "byte",
       "match_method": "title",
-      "page": "docs/characters/byte.md"
+      "page": "docs/characters/byte.md",
+      "best_original": "extract/img-long-cards/Long cards /D34D2C03-C2BC-4D0A-A016-D63BF5D712C7.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -703,7 +1223,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/long-cards--d446f048-3fbc-41b8-ada0-a36127e03f15.md"
+      "page": "docs/cards/long-cards--d446f048-3fbc-41b8-ada0-a36127e03f15.md",
+      "best_original": "extract/img-long-cards/Long cards /D446F048-3FBC-41B8-ADA0-A36127E03F15.PNG",
+      "best_original_size": [
+        1122,
+        1402
+      ],
+      "full_size": [
+        1122,
+        1402
+      ],
+      "thumb_size": [
+        480,
+        600
+      ]
     },
     {
       "collection": "long-cards",
@@ -722,7 +1255,20 @@
       ],
       "entity_slug": "char-coach",
       "match_method": "title",
-      "page": "docs/characters/char-coach.md"
+      "page": "docs/characters/char-coach.md",
+      "best_original": "extract/img-long-cards/Long cards /DFCD3982-3C1F-4415-9679-B3AE63FC3D0E.PNG",
+      "best_original_size": [
+        1086,
+        1448
+      ],
+      "full_size": [
+        1086,
+        1448
+      ],
+      "thumb_size": [
+        480,
+        640
+      ]
     },
     {
       "collection": "long-cards",
@@ -737,7 +1283,20 @@
       ],
       "entity_slug": "miseos-analytics-engine",
       "match_method": "title",
-      "page": "docs/characters/miseos-analytics-engine.md"
+      "page": "docs/characters/miseos-analytics-engine.md",
+      "best_original": "extract/img-long-cards/Long cards /E22A6CAE-5471-4163-90F2-9AB097775A61.PNG",
+      "best_original_size": [
+        977,
+        1610
+      ],
+      "full_size": [
+        977,
+        1610
+      ],
+      "thumb_size": [
+        480,
+        791
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -754,7 +1313,20 @@
       "roster_name": "Felix Rollback",
       "entity_slug": "felix-rollback",
       "match_method": "existing-index",
-      "page": "docs/characters/felix-rollback.md"
+      "page": "docs/characters/felix-rollback.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /04B938E9-853C-4CCB-AAD9-199D69576325.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -773,7 +1345,20 @@
       ],
       "entity_slug": "plating-poet",
       "match_method": "title",
-      "page": "docs/characters/plating-poet.md"
+      "page": "docs/characters/plating-poet.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /08AE899B-8947-4FB1-B4ED-26684AA1781D.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -788,7 +1373,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--gatekeeper.md"
+      "page": "docs/cards/1by1-chefs--gatekeeper.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /0A62F4EE-68DE-4F88-996A-1E14B8C4F3A2.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -810,7 +1408,20 @@
       "roster_name": "Flavor Forager",
       "entity_slug": "flavor-forager",
       "match_method": "existing-index",
-      "page": "docs/characters/flavor-forager.md"
+      "page": "docs/characters/flavor-forager.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /11851B35-69C9-4013-98BE-071E5DEE2193.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -825,7 +1436,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--sre-chef.md"
+      "page": "docs/cards/1by1-chefs--sre-chef.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /11B77CE8-97D7-4998-9C2F-4C86DF72DD64.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -847,7 +1471,20 @@
       "roster_name": "Ladle Lumen",
       "entity_slug": "ladle-lumen",
       "match_method": "existing-index",
-      "page": "docs/characters/ladle-lumen.md"
+      "page": "docs/characters/ladle-lumen.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /1357321B-8220-41CA-8923-F82F05B784EE.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -869,7 +1506,20 @@
       "roster_name": "Cost Kaito",
       "entity_slug": "cost-kaito",
       "match_method": "existing-index",
-      "page": "docs/characters/cost-kaito.md"
+      "page": "docs/characters/cost-kaito.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /14A3D7D7-93F2-4625-B97E-EB1B2D2729BF.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -886,7 +1536,20 @@
       "roster_name": "Streama",
       "entity_slug": "streama",
       "match_method": "existing-index",
-      "page": "docs/characters/streama.md"
+      "page": "docs/characters/streama.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /177699AF-06A7-4C90-AA3A-D365BCA7E873.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -901,7 +1564,20 @@
       ],
       "entity_slug": "orchestra-core",
       "match_method": "title",
-      "page": "docs/characters/orchestra-core.md"
+      "page": "docs/characters/orchestra-core.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /17EF67BE-7A8B-44DC-9170-B8C12435BF6A.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -918,7 +1594,20 @@
       "roster_name": "Flash Riku",
       "entity_slug": "flash-riku",
       "match_method": "existing-index",
-      "page": "docs/characters/flash-riku.md"
+      "page": "docs/characters/flash-riku.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /1E3334AB-3111-4E81-AECF-71CB094259F8.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -937,7 +1626,20 @@
       ],
       "entity_slug": "energy-keeper",
       "match_method": "title",
-      "page": "docs/characters/energy-keeper.md"
+      "page": "docs/characters/energy-keeper.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /1E9F406F-5BFC-4EDD-AE24-8997309F4253.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -952,7 +1654,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--dispatcher.md"
+      "page": "docs/cards/1by1-chefs--dispatcher.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /1F715020-F12D-47C9-AC1D-EB85F67C8A16.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -971,7 +1686,20 @@
       ],
       "entity_slug": "orderly-owl",
       "match_method": "title",
-      "page": "docs/characters/orderly-owl.md"
+      "page": "docs/characters/orderly-owl.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /22EAD4C7-0BA0-47EF-93D3-898068882827.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -986,7 +1714,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--reviewer.md"
+      "page": "docs/cards/1by1-chefs--reviewer.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /261F5B1A-4C3C-4242-982A-78885D6437DC.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1010,7 +1751,20 @@
       "roster_name": "Schema Sora",
       "entity_slug": "schema-sora",
       "match_method": "existing-index",
-      "page": "docs/characters/schema-sora.md"
+      "page": "docs/characters/schema-sora.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /2973F58E-562D-450A-B261-90794FBD2864.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1029,7 +1783,20 @@
       ],
       "entity_slug": "sanitation-star",
       "match_method": "title",
-      "page": "docs/characters/sanitation-star.md"
+      "page": "docs/characters/sanitation-star.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /2F69DD7B-7832-4C62-8451-0D9CBA4B9983.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1044,7 +1811,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--doc-writer.md"
+      "page": "docs/cards/1by1-chefs--doc-writer.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /2F7CED4F-ADA2-4473-9038-1F8280839D1A.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1066,7 +1846,20 @@
       "roster_name": "Ledger Ladle",
       "entity_slug": "ledger-ladle",
       "match_method": "existing-index",
-      "page": "docs/characters/ledger-ladle.md"
+      "page": "docs/characters/ledger-ladle.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /2FBCD8A9-4E23-416E-AF4B-299279AB2BA0.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1083,7 +1876,20 @@
       "roster_name": "Iron Hashi",
       "entity_slug": "iron-hashi",
       "match_method": "existing-index",
-      "page": "docs/characters/iron-hashi.md"
+      "page": "docs/characters/iron-hashi.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /329EE8CE-7024-4145-9D2F-589FEF86F08E.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1102,7 +1908,20 @@
       ],
       "entity_slug": "pickle-doc",
       "match_method": "title",
-      "page": "docs/characters/pickle-doc.md"
+      "page": "docs/characters/pickle-doc.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /39DE5447-D919-447E-823F-6B38601790FC.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1117,7 +1936,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--compliance.md"
+      "page": "docs/cards/1by1-chefs--compliance.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /3C08EDF1-AF16-412A-B410-6C46C9BED90C.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1139,7 +1971,20 @@
       "roster_name": "Ticket Tactician",
       "entity_slug": "ticket-tactician",
       "match_method": "existing-index",
-      "page": "docs/characters/ticket-tactician.md"
+      "page": "docs/characters/ticket-tactician.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /3E6C663E-8106-4964-BA2B-F8CB44F85485.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1163,7 +2008,20 @@
       "roster_name": "Merge Sentinel",
       "entity_slug": "merge-sentinel",
       "match_method": "existing-index",
-      "page": "docs/characters/merge-sentinel.md"
+      "page": "docs/characters/merge-sentinel.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /3EE036B3-CF0D-435B-A8CD-8EE41FFF851E.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1182,7 +2040,20 @@
       ],
       "entity_slug": "citrus-zest",
       "match_method": "title",
-      "page": "docs/characters/citrus-zest.md"
+      "page": "docs/characters/citrus-zest.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /3F3F78EF-D440-40C0-915A-EB8F03894C8B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1201,7 +2072,20 @@
       ],
       "entity_slug": "cacao-alchemist",
       "match_method": "title",
-      "page": "docs/characters/cacao-alchemist.md"
+      "page": "docs/characters/cacao-alchemist.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /419E99E2-EBB4-4E49-B389-D8027330D945.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1223,7 +2107,20 @@
       "roster_name": "Velvet Vesper",
       "entity_slug": "velvet-vesper",
       "match_method": "existing-index",
-      "page": "docs/characters/velvet-vesper.md"
+      "page": "docs/characters/velvet-vesper.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /422F6103-C1C5-4BB9-BDC8-6205C353E1AE.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1247,7 +2144,20 @@
       "roster_name": "Tariq Notesmith",
       "entity_slug": "tariq-notesmith",
       "match_method": "existing-index",
-      "page": "docs/characters/tariq-notesmith.md"
+      "page": "docs/characters/tariq-notesmith.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /447FE47E-BE24-453B-933F-2055ECF6A8EA.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1266,7 +2176,20 @@
       ],
       "entity_slug": "umami-seeker",
       "match_method": "title",
-      "page": "docs/characters/umami-seeker.md"
+      "page": "docs/characters/umami-seeker.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /4590DEA1-CCE6-4EF5-80F5-562A9FD4CA12.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1283,7 +2206,20 @@
       "roster_name": "Release Conductor",
       "entity_slug": "release-conductor",
       "match_method": "existing-index",
-      "page": "docs/characters/release-conductor.md"
+      "page": "docs/characters/release-conductor.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /4B979786-2A0D-4B70-A593-A202FCCCE8F9.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1300,7 +2236,20 @@
       "roster_name": "Hugo Matrix",
       "entity_slug": "hugo-matrix",
       "match_method": "existing-index",
-      "page": "docs/characters/hugo-matrix.md"
+      "page": "docs/characters/hugo-matrix.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /4CFD605A-E57E-4A1C-9B7D-8AA5B14AB364.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1315,7 +2264,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--conductor.md"
+      "page": "docs/cards/1by1-chefs--conductor.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /50B45F35-A621-4C7C-9264-78A1E0BB425A.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1330,7 +2292,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--ux-chef.md"
+      "page": "docs/cards/1by1-chefs--ux-chef.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /518946C4-0623-4E81-91C6-4BCEA5A67262.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1351,7 +2326,20 @@
       "roster_name": "Allergen Oracle",
       "entity_slug": "allergen-oracle",
       "match_method": "existing-index",
-      "page": "docs/characters/allergen-oracle.md"
+      "page": "docs/characters/allergen-oracle.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /51940809-9473-43C6-9E3C-315638CDAE25.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1375,7 +2363,20 @@
       "roster_name": "Scorecard Shin",
       "entity_slug": "scorecard-shin",
       "match_method": "existing-index",
-      "page": "docs/characters/scorecard-shin.md"
+      "page": "docs/characters/scorecard-shin.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /53DF43B3-9A1B-45E8-BF7D-72D4628FF432.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1397,7 +2398,20 @@
       "roster_name": "Pantry Paladin",
       "entity_slug": "pantry-paladin",
       "match_method": "existing-index",
-      "page": "docs/characters/pantry-paladin.md"
+      "page": "docs/characters/pantry-paladin.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /5608534C-58BC-40C3-BFB0-83DEBEEEC8A8.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1416,7 +2430,20 @@
       ],
       "entity_slug": "ashen-one",
       "match_method": "title",
-      "page": "docs/characters/ashen-one.md"
+      "page": "docs/characters/ashen-one.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /5829DB98-598C-4E87-A36F-48244AA4B3D9.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1438,7 +2465,20 @@
       "roster_name": "Nudge Neko",
       "entity_slug": "nudge-neko",
       "match_method": "existing-index",
-      "page": "docs/characters/nudge-neko.md"
+      "page": "docs/characters/nudge-neko.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /590274E5-9D6E-4C76-878C-04BF3790CA21.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1455,7 +2495,20 @@
       "roster_name": "Mizu",
       "entity_slug": "mizu",
       "match_method": "existing-index",
-      "page": "docs/characters/mizu.md"
+      "page": "docs/characters/mizu.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /5F291142-6DE2-41EB-AE15-AED90DD44C86.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1472,7 +2525,20 @@
       "roster_name": "Garnish Ghost",
       "entity_slug": "garnish-ghost",
       "match_method": "existing-index",
-      "page": "docs/characters/garnish-ghost.md"
+      "page": "docs/characters/garnish-ghost.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /5FB31D8A-07F1-4884-9D09-431625815E09.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1492,7 +2558,20 @@
       ],
       "entity_slug": "reserve-rune",
       "match_method": "title",
-      "page": "docs/characters/reserve-rune.md"
+      "page": "docs/characters/reserve-rune.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /6468EF3B-5D5F-452E-90D1-BCA64BBF4A7B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1507,7 +2586,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--security-auditor.md"
+      "page": "docs/cards/1by1-chefs--security-auditor.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /64D17467-6CCD-4F63-B5A7-5E904BFE949B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1526,7 +2618,20 @@
       ],
       "entity_slug": "roast-commander",
       "match_method": "title",
-      "page": "docs/characters/roast-commander.md"
+      "page": "docs/characters/roast-commander.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /68444176-F71E-4627-A770-A756382C3E7B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1543,7 +2648,20 @@
       "roster_name": "Scale Oni",
       "entity_slug": "scale-oni",
       "match_method": "existing-index",
-      "page": "docs/characters/scale-oni.md"
+      "page": "docs/characters/scale-oni.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /695A3D27-E413-4F32-ACE6-78AADA50CF5A.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1560,7 +2678,20 @@
       "roster_name": "Ivun Cache",
       "entity_slug": "ivun-cache",
       "match_method": "existing-index",
-      "page": "docs/characters/ivun-cache.md"
+      "page": "docs/characters/ivun-cache.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /6A80B77E-42D0-422A-9AFD-731C4B177D8D.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1575,7 +2706,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--coder.md"
+      "page": "docs/cards/1by1-chefs--coder.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /6C53B580-0E36-4D18-BB4E-BD53D8E03FEF.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1590,7 +2734,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--encryptor.md"
+      "page": "docs/cards/1by1-chefs--encryptor.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /6FBF863C-F017-434B-9A1D-A962BC28794F.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1610,7 +2767,20 @@
       ],
       "entity_slug": "vacuum-vesper",
       "match_method": "title",
-      "page": "docs/characters/vacuum-vesper.md"
+      "page": "docs/characters/vacuum-vesper.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /7013C380-C840-4A4E-A48E-AB113653A8DF.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1634,7 +2804,20 @@
       "roster_name": "Evidence Scribe",
       "entity_slug": "evidence-scribe",
       "match_method": "existing-index",
-      "page": "docs/characters/evidence-scribe.md"
+      "page": "docs/characters/evidence-scribe.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /703BAA9A-0F04-4680-8331-95A66CA3F1CA.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1653,7 +2836,20 @@
       ],
       "entity_slug": "brine-baron",
       "match_method": "title",
-      "page": "docs/characters/brine-baron.md"
+      "page": "docs/characters/brine-baron.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /74EB2724-0ED5-4AE3-91C0-C6DDB8C5FE57.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1677,7 +2873,20 @@
       "roster_name": "Guardrail Goro",
       "entity_slug": "guardrail-goro",
       "match_method": "existing-index",
-      "page": "docs/characters/guardrail-goro.md"
+      "page": "docs/characters/guardrail-goro.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /7669290D-4621-42C2-B688-14D4ADAF6EDB.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1696,7 +2905,20 @@
       ],
       "entity_slug": "shift-sentinel",
       "match_method": "title",
-      "page": "docs/characters/shift-sentinel.md"
+      "page": "docs/characters/shift-sentinel.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /76C0449F-CDB4-456A-BF8E-D3405C0B97C3.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1715,7 +2937,20 @@
       ],
       "entity_slug": "sweet-architect",
       "match_method": "title",
-      "page": "docs/characters/sweet-architect.md"
+      "page": "docs/characters/sweet-architect.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /77638374-1D82-4900-9F20-4C7CB6795F0C.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1732,7 +2967,20 @@
       "roster_name": "Umami Code",
       "entity_slug": "umami-code",
       "match_method": "existing-index",
-      "page": "docs/characters/umami-code.md"
+      "page": "docs/characters/umami-code.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /78237645-77F0-4522-A46F-9A8A0D9EBCD0.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1749,7 +2997,20 @@
       "roster_name": "Yume",
       "entity_slug": "yume",
       "match_method": "existing-index",
-      "page": "docs/characters/yume.md"
+      "page": "docs/characters/yume.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /787D91DF-2EDF-49A6-99E7-88CBE92D1362.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1766,7 +3027,20 @@
       "roster_name": "Kaji",
       "entity_slug": "kaji",
       "match_method": "existing-index",
-      "page": "docs/characters/kaji.md"
+      "page": "docs/characters/kaji.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /78C9A9DB-EC84-46D5-B289-70852AABD7F9.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1788,7 +3062,20 @@
       "roster_name": "Crate Courier",
       "entity_slug": "crate-courier",
       "match_method": "existing-index",
-      "page": "docs/characters/crate-courier.md"
+      "page": "docs/characters/crate-courier.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /7CD38DC9-BBC5-4E1A-9CDC-0DC863C0C3C1.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1807,7 +3094,20 @@
       ],
       "entity_slug": "broth-scholar",
       "match_method": "title",
-      "page": "docs/characters/broth-scholar.md"
+      "page": "docs/characters/broth-scholar.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /83792A7C-8F31-4B28-B225-6B6809625DFD.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1829,7 +3129,20 @@
       ],
       "entity_slug": "preview-yuki",
       "match_method": "title",
-      "page": "docs/characters/preview-yuki.md"
+      "page": "docs/characters/preview-yuki.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /84E546DA-0CD2-42C5-B2E2-A8B25CA596F8.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1844,7 +3157,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--swarmer.md"
+      "page": "docs/cards/1by1-chefs--swarmer.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /8577DB5B-8C6C-41C7-967B-5A3AAA716C1D.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1866,7 +3192,20 @@
       "roster_name": "Anomaly Aki",
       "entity_slug": "anomaly-aki",
       "match_method": "existing-index",
-      "page": "docs/characters/anomaly-aki.md"
+      "page": "docs/characters/anomaly-aki.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /8585DB12-CC85-45AD-B91A-1781C3310303.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1885,7 +3224,20 @@
       ],
       "entity_slug": "legacy-keeper",
       "match_method": "title",
-      "page": "docs/characters/legacy-keeper.md"
+      "page": "docs/characters/legacy-keeper.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /8DDDA867-E999-4128-9347-3F10E882A1DF.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1907,7 +3259,20 @@
       "roster_name": "DORA Daichi",
       "entity_slug": "dora-daichi",
       "match_method": "existing-index",
-      "page": "docs/characters/dora-daichi.md"
+      "page": "docs/characters/dora-daichi.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /8ECC30D0-FBF6-41A7-862A-3CADC41D7022.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1922,7 +3287,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--tester.md"
+      "page": "docs/cards/1by1-chefs--tester.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /9037BD91-2783-4C83-8C6C-106D95C5D45D.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1941,7 +3319,20 @@
       ],
       "entity_slug": "miso-maven",
       "match_method": "title",
-      "page": "docs/characters/miso-maven.md"
+      "page": "docs/characters/miso-maven.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /920A2780-9C89-47A0-B533-9BE38CD447BA.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1960,7 +3351,20 @@
       ],
       "entity_slug": "slicer-swift",
       "match_method": "title",
-      "page": "docs/characters/slicer-swift.md"
+      "page": "docs/characters/slicer-swift.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /921FACD7-DA51-4E31-81AD-96201A35AED6.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1978,7 +3382,20 @@
       ],
       "entity_slug": "sear-samurai",
       "match_method": "title",
-      "page": "docs/characters/sear-samurai.md"
+      "page": "docs/characters/sear-samurai.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /92E421B5-CA72-42DF-940D-833B45E26E27.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -1997,7 +3414,20 @@
       ],
       "entity_slug": "pulse-captain",
       "match_method": "title",
-      "page": "docs/characters/pulse-captain.md"
+      "page": "docs/characters/pulse-captain.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /987E4396-A061-4503-AC4D-2BC2D5552CAE.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2017,7 +3447,20 @@
       ],
       "entity_slug": "queue-quartz",
       "match_method": "title",
-      "page": "docs/characters/queue-quartz.md"
+      "page": "docs/characters/queue-quartz.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /9B009DB4-BA4B-4233-9129-EF42337FF1FB.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2032,7 +3475,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--devrel.md"
+      "page": "docs/cards/1by1-chefs--devrel.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /9BB16D37-6E38-4EB7-A93A-F4E525B2988A.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2056,7 +3512,20 @@
       "roster_name": "Runtime Riku",
       "entity_slug": "runtime-riku",
       "match_method": "existing-index",
-      "page": "docs/characters/runtime-riku.md"
+      "page": "docs/characters/runtime-riku.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /9D8BB1B5-577E-462E-88DF-EE6FA9FF793E.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2080,7 +3549,20 @@
       "roster_name": "Incident Kitsune",
       "entity_slug": "incident-kitsune",
       "match_method": "existing-index",
-      "page": "docs/characters/incident-kitsune.md"
+      "page": "docs/characters/incident-kitsune.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /A0BE0138-2069-4552-A29A-47AE92C48F09.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2104,7 +3586,20 @@
       "roster_name": "Grafana Mei",
       "entity_slug": "grafana-mei",
       "match_method": "existing-index",
-      "page": "docs/characters/grafana-mei.md"
+      "page": "docs/characters/grafana-mei.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /A61052D5-7C07-4FF4-AE15-BEF6A2314940.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2119,7 +3614,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--human-liaison.md"
+      "page": "docs/cards/1by1-chefs--human-liaison.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /A8EC46EF-BCA1-4336-B489-83F60342F145.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2134,7 +3642,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--scheduler.md"
+      "page": "docs/cards/1by1-chefs--scheduler.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /A9D046B7-0CA1-4E2E-8D92-BE22E4368C59.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2156,7 +3677,20 @@
       "roster_name": "Garnish Ghost",
       "entity_slug": "garnish-ghost",
       "match_method": "existing-index",
-      "page": "docs/characters/garnish-ghost.md"
+      "page": "docs/characters/garnish-ghost.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /AB796F7C-3475-4DDA-8D1F-D4FA8591264B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2175,7 +3709,20 @@
       ],
       "entity_slug": "glaze-whisperer",
       "match_method": "title",
-      "page": "docs/characters/glaze-whisperer.md"
+      "page": "docs/characters/glaze-whisperer.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /AD384130-2853-432C-BF1F-0A0A63ED76C6.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2197,7 +3744,20 @@
       "roster_name": "Recipe Ranger",
       "entity_slug": "recipe-ranger",
       "match_method": "existing-index",
-      "page": "docs/characters/recipe-ranger.md"
+      "page": "docs/characters/recipe-ranger.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /B30B2A7B-D9C3-4A6E-A712-503D2C3C925C.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2221,7 +3781,20 @@
       "roster_name": "Portal Rei",
       "entity_slug": "portal-rei",
       "match_method": "existing-index",
-      "page": "docs/characters/portal-rei.md"
+      "page": "docs/characters/portal-rei.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /B465D447-293E-4F25-BD85-FC3D83ED53FD.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2236,7 +3809,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--pen-tester.md"
+      "page": "docs/cards/1by1-chefs--pen-tester.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /B5B0C182-1BCF-496A-A57C-38847039B832.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2255,7 +3841,20 @@
       ],
       "entity_slug": "no-waste-ninja",
       "match_method": "title",
-      "page": "docs/characters/no-waste-ninja.md"
+      "page": "docs/characters/no-waste-ninja.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /B8DB86C0-9896-4FA1-B33B-4A6A7E0E6D40.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2274,7 +3873,20 @@
       ],
       "entity_slug": "kitchen-conductor",
       "match_method": "title",
-      "page": "docs/characters/kitchen-conductor.md"
+      "page": "docs/characters/kitchen-conductor.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /B9A2E3B0-F439-4288-A0E0-6CFECD37563B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2291,7 +3903,20 @@
       "roster_name": "Build-Kun",
       "entity_slug": "build-kun",
       "match_method": "existing-index",
-      "page": "docs/characters/build-kun.md"
+      "page": "docs/characters/build-kun.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /BA23CD63-A0BF-4AC0-96F5-A4A2322703A9.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2306,7 +3931,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--architect.md"
+      "page": "docs/cards/1by1-chefs--architect.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /BA45E8F8-F35E-4D59-87EB-0816218676F1.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2328,7 +3966,20 @@
       "roster_name": "Harvest Hex",
       "entity_slug": "harvest-hex",
       "match_method": "existing-index",
-      "page": "docs/characters/harvest-hex.md"
+      "page": "docs/characters/harvest-hex.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /BAE65207-EF89-4433-8CBE-4F44A711DE0D.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2347,7 +3998,20 @@
       ],
       "entity_slug": "stock-sage",
       "match_method": "title",
-      "page": "docs/characters/stock-sage.md"
+      "page": "docs/characters/stock-sage.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /BBA46940-395D-4BAD-9B1B-0DB7CE40B7E4.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2366,7 +4030,20 @@
       ],
       "entity_slug": "oil-oracle",
       "match_method": "title",
-      "page": "docs/characters/oil-oracle.md"
+      "page": "docs/characters/oil-oracle.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /BBA5DCE4-97B1-430C-8EBB-31296715677B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2383,7 +4060,20 @@
       "roster_name": "Nina Promoter",
       "entity_slug": "nina-promoter",
       "match_method": "existing-index",
-      "page": "docs/characters/nina-promoter.md"
+      "page": "docs/characters/nina-promoter.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /BE0F15C1-9D36-4745-802B-A74967B03EEB.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2407,7 +4097,20 @@
       "roster_name": "Token Toshi",
       "entity_slug": "token-toshi",
       "match_method": "existing-index",
-      "page": "docs/characters/token-toshi.md"
+      "page": "docs/characters/token-toshi.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /C03CB19E-DA8C-415D-B90D-493248849535.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2424,7 +4127,20 @@
       "roster_name": "Kuro Guard",
       "entity_slug": "kuro-guard",
       "match_method": "existing-index",
-      "page": "docs/characters/kuro-guard.md"
+      "page": "docs/characters/kuro-guard.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /C06C1189-DD7E-48EE-AF9E-E47FA25147C5.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2439,7 +4155,20 @@
       ],
       "entity_slug": "shift-sentinel",
       "match_method": "title",
-      "page": "docs/characters/shift-sentinel.md"
+      "page": "docs/characters/shift-sentinel.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /C098BF91-5EA2-4E59-B531-B4021C3734A2.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2458,7 +4187,20 @@
       ],
       "entity_slug": "temp-tamer",
       "match_method": "title",
-      "page": "docs/characters/temp-tamer.md"
+      "page": "docs/characters/temp-tamer.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /C0B43357-11D6-4331-B3F1-0A5152E2801A.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2482,7 +4224,20 @@
       "roster_name": "CVE Kumo",
       "entity_slug": "cve-kumo",
       "match_method": "existing-index",
-      "page": "docs/characters/cve-kumo.md"
+      "page": "docs/characters/cve-kumo.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /C8AAFAD4-3D29-4D92-A98B-6E6D0C8678D2.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2499,7 +4254,20 @@
       "roster_name": "Scale Oni",
       "entity_slug": "scale-oni",
       "match_method": "existing-index",
-      "page": "docs/characters/scale-oni.md"
+      "page": "docs/characters/scale-oni.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /C8CD7701-4E04-4B8B-BC5B-0914FAFE3326.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2521,7 +4289,20 @@
       "roster_name": "Prep Pulse",
       "entity_slug": "prep-pulse",
       "match_method": "existing-index",
-      "page": "docs/characters/prep-pulse.md"
+      "page": "docs/characters/prep-pulse.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /CB64207A-8001-458A-AAB9-0EFF5E1AB84F.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2540,7 +4321,20 @@
       ],
       "entity_slug": "herb-whisperer",
       "match_method": "title",
-      "page": "docs/characters/herb-whisperer.md"
+      "page": "docs/characters/herb-whisperer.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /CBFF2D7C-D05D-4F75-BE84-9FC8875306D4.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2557,7 +4351,20 @@
       "roster_name": "Kurogami Senpai",
       "entity_slug": "kurogami-senpai",
       "match_method": "existing-index",
-      "page": "docs/characters/kurogami-senpai.md"
+      "page": "docs/characters/kurogami-senpai.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /CD48D6E1-AECA-4328-930A-1D07FC67B69F.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2576,7 +4383,20 @@
       ],
       "entity_slug": "fermenta",
       "match_method": "title",
-      "page": "docs/characters/fermenta.md"
+      "page": "docs/characters/fermenta.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /CD529C93-3FF6-4554-82E9-062A9E190245.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2595,7 +4415,20 @@
       ],
       "entity_slug": "crisp-master",
       "match_method": "title",
-      "page": "docs/characters/crisp-master.md"
+      "page": "docs/characters/crisp-master.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /CE09653F-7629-419F-9F98-58F8B0ACD8C5.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2617,7 +4450,20 @@
       "roster_name": "Beacon Broil",
       "entity_slug": "beacon-broil",
       "match_method": "existing-index",
-      "page": "docs/characters/beacon-broil.md"
+      "page": "docs/characters/beacon-broil.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /D10E9BA0-85C1-4982-AABC-56724981190C.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2639,7 +4485,20 @@
       "roster_name": "Timer Tactician",
       "entity_slug": "timer-tactician",
       "match_method": "existing-index",
-      "page": "docs/characters/timer-tactician.md"
+      "page": "docs/characters/timer-tactician.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /D948816A-26E5-48DB-A7AA-162B3D01BC16.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2661,7 +4520,20 @@
       "roster_name": "Plate Inspector",
       "entity_slug": "plate-inspector",
       "match_method": "existing-index",
-      "page": "docs/characters/plate-inspector.md"
+      "page": "docs/characters/plate-inspector.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /DCCA545E-1F74-4FF0-B046-5AF7860EA220.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2676,7 +4548,20 @@
       ],
       "entity_slug": "sear-samurai",
       "match_method": "title",
-      "page": "docs/characters/sear-samurai.md"
+      "page": "docs/characters/sear-samurai.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /DD0D9D4F-2683-4E0B-AF40-F70DE786EB59.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2695,7 +4580,20 @@
       ],
       "entity_slug": "grain-guardian",
       "match_method": "title",
-      "page": "docs/characters/grain-guardian.md"
+      "page": "docs/characters/grain-guardian.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /E10ED51D-41FA-4068-8EC0-C34243848751.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2717,7 +4615,20 @@
       "roster_name": "Flavor Scribe",
       "entity_slug": "flavor-scribe",
       "match_method": "existing-index",
-      "page": "docs/characters/flavor-scribe.md"
+      "page": "docs/characters/flavor-scribe.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /E12585D2-64A1-498D-9D48-EBB756C643A3.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2736,7 +4647,20 @@
       ],
       "entity_slug": "menu-maestro",
       "match_method": "title",
-      "page": "docs/characters/menu-maestro.md"
+      "page": "docs/characters/menu-maestro.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /E974A8E8-3BFD-4B64-9410-3417C03205F2.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2753,7 +4677,20 @@
       "roster_name": "Null-chan",
       "entity_slug": "null-chan",
       "match_method": "existing-index",
-      "page": "docs/characters/null-chan.md"
+      "page": "docs/characters/null-chan.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /ED785C2E-4ACD-4FB5-86BA-51BAA7D72A46.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2768,7 +4705,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/1by1-chefs--firewall.md"
+      "page": "docs/cards/1by1-chefs--firewall.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /EF8F4F01-38AA-4806-87EE-F69A36F167CF.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2787,7 +4737,20 @@
       ],
       "entity_slug": "smoke-monk",
       "match_method": "title",
-      "page": "docs/characters/smoke-monk.md"
+      "page": "docs/characters/smoke-monk.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /F128DDB8-B8F3-41AE-AFBC-7E9B720EB77B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2806,7 +4769,20 @@
       ],
       "entity_slug": "supply-scout",
       "match_method": "title",
-      "page": "docs/characters/supply-scout.md"
+      "page": "docs/characters/supply-scout.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /F55F87B1-9135-4281-9177-D973B5FAB350.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2823,7 +4799,20 @@
       "roster_name": "Seira",
       "entity_slug": "seira",
       "match_method": "existing-index",
-      "page": "docs/characters/seira.md"
+      "page": "docs/characters/seira.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /F8682FEC-712C-458C-91D0-DB251E4B8260.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2842,7 +4831,20 @@
       ],
       "entity_slug": "kombu-keeper",
       "match_method": "title",
-      "page": "docs/characters/kombu-keeper.md"
+      "page": "docs/characters/kombu-keeper.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /F9921BA7-58AA-4B68-8E4E-C975DEEF72E7.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2861,7 +4863,20 @@
       ],
       "entity_slug": "veg-virtuoso",
       "match_method": "title",
-      "page": "docs/characters/veg-virtuoso.md"
+      "page": "docs/characters/veg-virtuoso.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /F9EA0DF7-40AD-46F8-9949-FE2D21DC98C3.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "1by1-chefs",
@@ -2883,7 +4898,20 @@
       "roster_name": "Portion Paladin",
       "entity_slug": "portion-paladin",
       "match_method": "existing-index",
-      "page": "docs/characters/portion-paladin.md"
+      "page": "docs/characters/portion-paladin.md",
+      "best_original": "extract/img-1by1-chefs/1by1 chefs /FA719DEA-5C6E-4C1C-BCD3-6F72546CC741.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -2898,7 +4926,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5929.md"
+      "page": "docs/cards/cartoon-chefs--img_5929.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5929.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -2913,7 +4954,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5930.md"
+      "page": "docs/cards/cartoon-chefs--img_5930.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5930.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -2928,7 +4982,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5931.md"
+      "page": "docs/cards/cartoon-chefs--img_5931.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5931.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -2943,7 +5010,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5932.md"
+      "page": "docs/cards/cartoon-chefs--img_5932.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5932.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -2958,7 +5038,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5933.md"
+      "page": "docs/cards/cartoon-chefs--img_5933.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5933.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -2973,7 +5066,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5934.md"
+      "page": "docs/cards/cartoon-chefs--img_5934.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5934.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -2988,7 +5094,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5935.md"
+      "page": "docs/cards/cartoon-chefs--img_5935.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5935.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3003,7 +5122,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5936.md"
+      "page": "docs/cards/cartoon-chefs--img_5936.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5936.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3018,7 +5150,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5937.md"
+      "page": "docs/cards/cartoon-chefs--img_5937.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5937.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3033,7 +5178,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5938.md"
+      "page": "docs/cards/cartoon-chefs--img_5938.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5938.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3048,7 +5206,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5939.md"
+      "page": "docs/cards/cartoon-chefs--img_5939.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5939.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3065,7 +5236,20 @@
       "roster_name": "Kaji",
       "entity_slug": "kaji",
       "match_method": "existing-index",
-      "page": "docs/characters/kaji.md"
+      "page": "docs/characters/kaji.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5940.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3080,7 +5264,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5942.md"
+      "page": "docs/cards/cartoon-chefs--img_5942.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5942.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3095,7 +5292,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5943.md"
+      "page": "docs/cards/cartoon-chefs--img_5943.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5943.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3113,7 +5323,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5944-2.md"
+      "page": "docs/cards/cartoon-chefs--img_5944-2.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5944 2.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3128,7 +5351,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5945.md"
+      "page": "docs/cards/cartoon-chefs--img_5945.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5945.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3143,7 +5379,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5946.md"
+      "page": "docs/cards/cartoon-chefs--img_5946.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5946.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3158,7 +5407,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5947.md"
+      "page": "docs/cards/cartoon-chefs--img_5947.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5947.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3173,7 +5435,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5948.md"
+      "page": "docs/cards/cartoon-chefs--img_5948.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5948.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3188,7 +5463,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5949.md"
+      "page": "docs/cards/cartoon-chefs--img_5949.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5949.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3203,7 +5491,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5950.md"
+      "page": "docs/cards/cartoon-chefs--img_5950.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5950.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3218,7 +5519,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5951.md"
+      "page": "docs/cards/cartoon-chefs--img_5951.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5951.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3233,7 +5547,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5952.md"
+      "page": "docs/cards/cartoon-chefs--img_5952.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5952.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3248,7 +5575,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5953.md"
+      "page": "docs/cards/cartoon-chefs--img_5953.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5953.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3263,7 +5603,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5954.md"
+      "page": "docs/cards/cartoon-chefs--img_5954.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5954.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3278,7 +5631,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5955.md"
+      "page": "docs/cards/cartoon-chefs--img_5955.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5955.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3293,7 +5659,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5956.md"
+      "page": "docs/cards/cartoon-chefs--img_5956.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5956.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3308,7 +5687,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5957.md"
+      "page": "docs/cards/cartoon-chefs--img_5957.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5957.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3323,7 +5715,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5958.md"
+      "page": "docs/cards/cartoon-chefs--img_5958.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5958.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3338,7 +5743,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5959.md"
+      "page": "docs/cards/cartoon-chefs--img_5959.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5959.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3353,7 +5771,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5960.md"
+      "page": "docs/cards/cartoon-chefs--img_5960.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5960.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3368,7 +5799,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5961.md"
+      "page": "docs/cards/cartoon-chefs--img_5961.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5961.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3383,7 +5827,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5962.md"
+      "page": "docs/cards/cartoon-chefs--img_5962.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5962.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3398,7 +5855,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5963.md"
+      "page": "docs/cards/cartoon-chefs--img_5963.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5963.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3413,7 +5883,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5964.md"
+      "page": "docs/cards/cartoon-chefs--img_5964.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5964.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3428,7 +5911,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5965.md"
+      "page": "docs/cards/cartoon-chefs--img_5965.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5965.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3443,7 +5939,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5966.md"
+      "page": "docs/cards/cartoon-chefs--img_5966.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5966.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3458,7 +5967,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5967.md"
+      "page": "docs/cards/cartoon-chefs--img_5967.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5967.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3473,7 +5995,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5968.md"
+      "page": "docs/cards/cartoon-chefs--img_5968.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5968.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3488,7 +6023,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5969.md"
+      "page": "docs/cards/cartoon-chefs--img_5969.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5969.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3503,7 +6051,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5970.md"
+      "page": "docs/cards/cartoon-chefs--img_5970.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5970.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3518,7 +6079,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5971.md"
+      "page": "docs/cards/cartoon-chefs--img_5971.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5971.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3533,7 +6107,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5972.md"
+      "page": "docs/cards/cartoon-chefs--img_5972.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5972.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3548,7 +6135,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5973.md"
+      "page": "docs/cards/cartoon-chefs--img_5973.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5973.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3563,7 +6163,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5974.md"
+      "page": "docs/cards/cartoon-chefs--img_5974.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5974.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3578,7 +6191,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5975.md"
+      "page": "docs/cards/cartoon-chefs--img_5975.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5975.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3593,7 +6219,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5976.md"
+      "page": "docs/cards/cartoon-chefs--img_5976.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5976.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3608,7 +6247,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5977.md"
+      "page": "docs/cards/cartoon-chefs--img_5977.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5977.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3623,7 +6275,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5978.md"
+      "page": "docs/cards/cartoon-chefs--img_5978.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5978.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3638,7 +6303,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5979.md"
+      "page": "docs/cards/cartoon-chefs--img_5979.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5979.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3653,7 +6331,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5980.md"
+      "page": "docs/cards/cartoon-chefs--img_5980.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5980.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3668,7 +6359,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5981.md"
+      "page": "docs/cards/cartoon-chefs--img_5981.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5981.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3683,7 +6387,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5982.md"
+      "page": "docs/cards/cartoon-chefs--img_5982.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5982.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3698,7 +6415,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5983.md"
+      "page": "docs/cards/cartoon-chefs--img_5983.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5983.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3713,7 +6443,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5984.md"
+      "page": "docs/cards/cartoon-chefs--img_5984.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5984.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3728,7 +6471,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5985.md"
+      "page": "docs/cards/cartoon-chefs--img_5985.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5985.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3743,7 +6499,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5986.md"
+      "page": "docs/cards/cartoon-chefs--img_5986.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5986.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3758,7 +6527,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5987.md"
+      "page": "docs/cards/cartoon-chefs--img_5987.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5987.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3773,7 +6555,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5988.md"
+      "page": "docs/cards/cartoon-chefs--img_5988.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5988.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3788,7 +6583,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5989.md"
+      "page": "docs/cards/cartoon-chefs--img_5989.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5989.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3803,7 +6611,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5990.md"
+      "page": "docs/cards/cartoon-chefs--img_5990.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5990.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3818,7 +6639,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5991.md"
+      "page": "docs/cards/cartoon-chefs--img_5991.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5991.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3833,7 +6667,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5992.md"
+      "page": "docs/cards/cartoon-chefs--img_5992.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5992.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3848,7 +6695,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5993.md"
+      "page": "docs/cards/cartoon-chefs--img_5993.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5993.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3863,7 +6723,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5994.md"
+      "page": "docs/cards/cartoon-chefs--img_5994.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5994.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3878,7 +6751,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5995.md"
+      "page": "docs/cards/cartoon-chefs--img_5995.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5995.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3893,7 +6779,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5996.md"
+      "page": "docs/cards/cartoon-chefs--img_5996.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5996.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3908,7 +6807,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5997.md"
+      "page": "docs/cards/cartoon-chefs--img_5997.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5997.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3923,7 +6835,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5998.md"
+      "page": "docs/cards/cartoon-chefs--img_5998.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5998.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3938,7 +6863,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_5999.md"
+      "page": "docs/cards/cartoon-chefs--img_5999.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_5999.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3953,7 +6891,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_6001.md"
+      "page": "docs/cards/cartoon-chefs--img_6001.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_6001.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3968,7 +6919,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_6002.md"
+      "page": "docs/cards/cartoon-chefs--img_6002.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_6002.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3983,7 +6947,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_6003.md"
+      "page": "docs/cards/cartoon-chefs--img_6003.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_6003.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -3998,7 +6975,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_6004.md"
+      "page": "docs/cards/cartoon-chefs--img_6004.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_6004.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "cartoon-chefs",
@@ -4013,7 +7003,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/cartoon-chefs--img_6005.md"
+      "page": "docs/cards/cartoon-chefs--img_6005.md",
+      "best_original": "extract/img-cartoon-chefs/Cartoon chefs /IMG_6005.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4030,7 +7033,20 @@
       "roster_name": "Canary Taster",
       "entity_slug": "canary-taster",
       "match_method": "existing-index",
-      "page": "docs/characters/canary-taster.md"
+      "page": "docs/characters/canary-taster.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /450291C9-FD96-4D89-8F93-BA0CE2EAE8BF.PNG",
+      "best_original_size": [
+        1536,
+        1024
+      ],
+      "full_size": [
+        1536,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        320
+      ]
     },
     {
       "collection": "character-building",
@@ -4047,7 +7063,20 @@
       "roster_name": "Build-Kun",
       "entity_slug": "build-kun",
       "match_method": "existing-index",
-      "page": "docs/characters/build-kun.md"
+      "page": "docs/characters/build-kun.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /718B9A23-C293-4811-B71B-FE5E2DC12C10.PNG",
+      "best_original_size": [
+        1536,
+        1024
+      ],
+      "full_size": [
+        1536,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        320
+      ]
     },
     {
       "collection": "character-building",
@@ -4064,7 +7093,20 @@
       "roster_name": "Orchestra Core",
       "entity_slug": "orchestra-core",
       "match_method": "existing-index",
-      "page": "docs/characters/orchestra-core.md"
+      "page": "docs/characters/orchestra-core.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /BA9CD27E-612C-4FC6-A310-7B85CC853DD3.PNG",
+      "best_original_size": [
+        1536,
+        1024
+      ],
+      "full_size": [
+        1536,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        320
+      ]
     },
     {
       "collection": "character-building",
@@ -4081,7 +7123,20 @@
       "roster_name": "Seira",
       "entity_slug": "seira",
       "match_method": "existing-index",
-      "page": "docs/characters/seira.md"
+      "page": "docs/characters/seira.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /C2622D93-3D8B-4D6D-82D7-C5E4A6904649.PNG",
+      "best_original_size": [
+        1536,
+        1024
+      ],
+      "full_size": [
+        1536,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        320
+      ]
     },
     {
       "collection": "character-building",
@@ -4096,7 +7151,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--harmonyvs-entropy.md"
+      "page": "docs/cards/character-building--harmonyvs-entropy.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /DevOps Kitchen Engineering Operating Model.PNG",
+      "best_original_size": [
+        1536,
+        2752
+      ],
+      "full_size": [
+        1536,
+        2752
+      ],
+      "thumb_size": [
+        480,
+        860
+      ]
     },
     {
       "collection": "character-building",
@@ -4111,7 +7179,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--miseos.md"
+      "page": "docs/cards/character-building--miseos.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /E3E28BB7-7D2A-480B-AF44-2D5C0B7DEBBA.PNG",
+      "best_original_size": [
+        1536,
+        1024
+      ],
+      "full_size": [
+        1536,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        320
+      ]
     },
     {
       "collection": "character-building",
@@ -4126,7 +7207,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--miseos-2.md"
+      "page": "docs/cards/character-building--miseos-2.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /EB1E716A-17D2-4B28-9052-B40270C29633.PNG",
+      "best_original_size": [
+        1536,
+        1024
+      ],
+      "full_size": [
+        1536,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        320
+      ]
     },
     {
       "collection": "character-building",
@@ -4141,7 +7235,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--italiay.md"
+      "page": "docs/cards/character-building--italiay.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4549.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4158,7 +7265,20 @@
       "roster_name": "Lattice",
       "entity_slug": "lattice",
       "match_method": "existing-index",
-      "page": "docs/characters/lattice.md"
+      "page": "docs/characters/lattice.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4550.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4173,7 +7293,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--mise.md"
+      "page": "docs/cards/character-building--mise.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4551.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4190,7 +7323,20 @@
       "roster_name": "Lattice",
       "entity_slug": "lattice",
       "match_method": "existing-index",
-      "page": "docs/characters/lattice.md"
+      "page": "docs/characters/lattice.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4552.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4205,7 +7351,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--specialist-tier.md"
+      "page": "docs/cards/character-building--specialist-tier.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4553.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4222,7 +7381,20 @@
       "roster_name": "Mizu",
       "entity_slug": "mizu",
       "match_method": "existing-index",
-      "page": "docs/characters/mizu.md"
+      "page": "docs/characters/mizu.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4554.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4237,7 +7409,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--img_4556.md"
+      "page": "docs/cards/character-building--img_4556.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4556.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4254,7 +7439,20 @@
       "roster_name": "Orchestra Core",
       "entity_slug": "orchestra-core",
       "match_method": "existing-index",
-      "page": "docs/characters/orchestra-core.md"
+      "page": "docs/characters/orchestra-core.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4557.PNG",
+      "best_original_size": [
+        1448,
+        1086
+      ],
+      "full_size": [
+        1448,
+        1086
+      ],
+      "thumb_size": [
+        480,
+        360
+      ]
     },
     {
       "collection": "character-building",
@@ -4269,7 +7467,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--data-lnsights.md"
+      "page": "docs/cards/character-building--data-lnsights.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4562.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4286,7 +7497,20 @@
       "roster_name": "Release Conductor",
       "entity_slug": "release-conductor",
       "match_method": "existing-index",
-      "page": "docs/characters/release-conductor.md"
+      "page": "docs/characters/release-conductor.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /IMG_4563.PNG",
+      "best_original_size": [
+        1024,
+        1024
+      ],
+      "full_size": [
+        1024,
+        1024
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "character-building",
@@ -4305,7 +7529,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/character-building--focus.md"
+      "page": "docs/cards/character-building--focus.md",
+      "best_original": "extract/img-character-building-theme/Character building theme /Mise Orchestra DevOps Mythology 2.PNG",
+      "best_original_size": [
+        1536,
+        2752
+      ],
+      "full_size": [
+        1536,
+        2752
+      ],
+      "thumb_size": [
+        480,
+        860
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4322,7 +7559,20 @@
       "roster_name": "Kurogami Senpai",
       "entity_slug": "kurogami-senpai",
       "match_method": "existing-index",
-      "page": "docs/characters/kurogami-senpai.md"
+      "page": "docs/characters/kurogami-senpai.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/001-kurogami-senpai.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4339,7 +7589,20 @@
       "roster_name": "Tensho",
       "entity_slug": "tensho",
       "match_method": "existing-index",
-      "page": "docs/characters/tensho.md"
+      "page": "docs/characters/tensho.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/002-tensho.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4356,7 +7619,20 @@
       "roster_name": "Mizu",
       "entity_slug": "mizu",
       "match_method": "existing-index",
-      "page": "docs/characters/mizu.md"
+      "page": "docs/characters/mizu.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/003-mizu.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4373,7 +7649,20 @@
       "roster_name": "Umami Code",
       "entity_slug": "umami-code",
       "match_method": "existing-index",
-      "page": "docs/characters/umami-code.md"
+      "page": "docs/characters/umami-code.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/004-umami-code.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4390,7 +7679,20 @@
       "roster_name": "Kaji",
       "entity_slug": "kaji",
       "match_method": "existing-index",
-      "page": "docs/characters/kaji.md"
+      "page": "docs/characters/kaji.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/005-kaji.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4407,7 +7709,20 @@
       "roster_name": "Yume",
       "entity_slug": "yume",
       "match_method": "existing-index",
-      "page": "docs/characters/yume.md"
+      "page": "docs/characters/yume.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/006-yume.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4424,7 +7739,20 @@
       "roster_name": "Iron Hashi",
       "entity_slug": "iron-hashi",
       "match_method": "existing-index",
-      "page": "docs/characters/iron-hashi.md"
+      "page": "docs/characters/iron-hashi.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/007-iron-hashi.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4441,7 +7769,20 @@
       "roster_name": "Null-chan",
       "entity_slug": "null-chan",
       "match_method": "existing-index",
-      "page": "docs/characters/null-chan.md"
+      "page": "docs/characters/null-chan.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/008-null-chan.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4458,7 +7799,20 @@
       "roster_name": "Flash Riku",
       "entity_slug": "flash-riku",
       "match_method": "existing-index",
-      "page": "docs/characters/flash-riku.md"
+      "page": "docs/characters/flash-riku.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/009-flash-riku.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4475,7 +7829,20 @@
       "roster_name": "Seira",
       "entity_slug": "seira",
       "match_method": "existing-index",
-      "page": "docs/characters/seira.md"
+      "page": "docs/characters/seira.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/010-seira.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4492,7 +7859,20 @@
       "roster_name": "Kuro Guard",
       "entity_slug": "kuro-guard",
       "match_method": "existing-index",
-      "page": "docs/characters/kuro-guard.md"
+      "page": "docs/characters/kuro-guard.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/011-kuro-guard.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4509,7 +7889,20 @@
       "roster_name": "Scale Oni",
       "entity_slug": "scale-oni",
       "match_method": "existing-index",
-      "page": "docs/characters/scale-oni.md"
+      "page": "docs/characters/scale-oni.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/012-scale-oni.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4526,7 +7919,20 @@
       "roster_name": "Build-Kun",
       "entity_slug": "build-kun",
       "match_method": "existing-index",
-      "page": "docs/characters/build-kun.md"
+      "page": "docs/characters/build-kun.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/013-build-kun.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4543,7 +7949,20 @@
       "roster_name": "Streama",
       "entity_slug": "streama",
       "match_method": "existing-index",
-      "page": "docs/characters/streama.md"
+      "page": "docs/characters/streama.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/014-streama.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4560,7 +7979,20 @@
       "roster_name": "Orchestra Core",
       "entity_slug": "orchestra-core",
       "match_method": "existing-index",
-      "page": "docs/characters/orchestra-core.md"
+      "page": "docs/characters/orchestra-core.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/015-orchestra-core.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4577,7 +8009,20 @@
       "roster_name": "Canary Taster",
       "entity_slug": "canary-taster",
       "match_method": "existing-index",
-      "page": "docs/characters/canary-taster.md"
+      "page": "docs/characters/canary-taster.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/016-canary-taster.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4594,7 +8039,20 @@
       "roster_name": "Metrics Miko",
       "entity_slug": "metrics-miko",
       "match_method": "existing-index",
-      "page": "docs/characters/metrics-miko.md"
+      "page": "docs/characters/metrics-miko.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/017-metrics-miko.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4611,7 +8069,20 @@
       "roster_name": "SLO Sage",
       "entity_slug": "slo-sage",
       "match_method": "existing-index",
-      "page": "docs/characters/slo-sage.md"
+      "page": "docs/characters/slo-sage.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/018-slo-sage.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4628,7 +8099,20 @@
       "roster_name": "Data-chan",
       "entity_slug": "data-chan",
       "match_method": "existing-index",
-      "page": "docs/characters/data-chan.md"
+      "page": "docs/characters/data-chan.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/019-data-chan.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4645,7 +8129,20 @@
       "roster_name": "Insight Sensei",
       "entity_slug": "insight-sensei",
       "match_method": "existing-index",
-      "page": "docs/characters/insight-sensei.md"
+      "page": "docs/characters/insight-sensei.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/020-insight-sensei.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4662,7 +8159,20 @@
       "roster_name": "Chaos Analyst",
       "entity_slug": "chaos-analyst",
       "match_method": "existing-index",
-      "page": "docs/characters/chaos-analyst.md"
+      "page": "docs/characters/chaos-analyst.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/021-chaos-analyst.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4679,7 +8189,20 @@
       "roster_name": "Growth Guru",
       "entity_slug": "growth-guru",
       "match_method": "existing-index",
-      "page": "docs/characters/growth-guru.md"
+      "page": "docs/characters/growth-guru.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/022-growth-guru.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "orchestra-trading-cards",
@@ -4696,7 +8219,20 @@
       "roster_name": "Culture Chef",
       "entity_slug": "culture-chef",
       "match_method": "existing-index",
-      "page": "docs/characters/culture-chef.md"
+      "page": "docs/characters/culture-chef.md",
+      "best_original": "extract/tcards/mise_orchestra_trading_cards/cards/png/023-culture-chef.png",
+      "best_original_size": [
+        768,
+        1075
+      ],
+      "full_size": [
+        768,
+        1075
+      ],
+      "thumb_size": [
+        480,
+        672
+      ]
     },
     {
       "collection": "final-roster",
@@ -4714,7 +8250,20 @@
       ],
       "entity_slug": "flavor-hacker",
       "match_method": "title",
-      "page": "docs/characters/flavor-hacker.md"
+      "page": "docs/characters/flavor-hacker.md",
+      "best_original": "icloud/129 characters/Final pdf/37E8B114-8C3F-4DAD-8B54-9F695F434768.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "registry-pages",
@@ -4731,7 +8280,20 @@
       "roster_name": "Allergen Oracle",
       "entity_slug": "allergen-oracle",
       "match_method": "existing-index",
-      "page": "docs/characters/allergen-oracle.md"
+      "page": "docs/characters/allergen-oracle.md",
+      "best_original": "extract/spatial/miseos_cards_catalog_spatial/assets/reference/page-028.jpg",
+      "best_original_size": [
+        1200,
+        1200
+      ],
+      "full_size": [
+        1200,
+        1200
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "registry-pages",
@@ -4746,7 +8308,20 @@
       ],
       "entity_slug": "sear-samurai",
       "match_method": "title",
-      "page": "docs/characters/sear-samurai.md"
+      "page": "docs/characters/sear-samurai.md",
+      "best_original": "extract/spatial/miseos_cards_catalog_spatial/assets/reference/page-038.jpg",
+      "best_original_size": [
+        1200,
+        1200
+      ],
+      "full_size": [
+        1200,
+        1200
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "registry-pages",
@@ -4766,7 +8341,20 @@
       "roster_name": "Nudge Neko",
       "entity_slug": "nudge-neko",
       "match_method": "existing-index",
-      "page": "docs/characters/nudge-neko.md"
+      "page": "docs/characters/nudge-neko.md",
+      "best_original": "extract/spatial/miseos_cards_catalog_spatial/assets/reference/page-080.jpg",
+      "best_original_size": [
+        1200,
+        1200
+      ],
+      "full_size": [
+        1200,
+        1200
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4783,7 +8371,20 @@
       "roster_name": "Tensho",
       "entity_slug": "tensho",
       "match_method": "existing-index",
-      "page": "docs/characters/tensho.md"
+      "page": "docs/characters/tensho.md",
+      "best_original": "icloud/2CCD885B-9C64-4FF4-B331-481AF171988B.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4798,7 +8399,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--fork-fable.md"
+      "page": "docs/cards/icloud-screens--fork-fable.md",
+      "best_original": "icloud/63BCE2E9-BF9A-4965-92A0-841D2D207479.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4815,7 +8429,20 @@
       "roster_name": "Iron Hashi",
       "entity_slug": "iron-hashi",
       "match_method": "existing-index",
-      "page": "docs/characters/iron-hashi.md"
+      "page": "docs/characters/iron-hashi.md",
+      "best_original": "icloud/68B60478-E073-45CF-9C46-92098C2AC4D0.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4833,7 +8460,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--mise.md"
+      "page": "docs/cards/icloud-screens--mise.md",
+      "best_original": "icloud/69DAC21C-A040-41A0-9E8E-4F96A8E76899 2.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4848,7 +8488,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--8309bbe1-e173-43bc-9cbb-bb510b648f67.md"
+      "page": "docs/cards/icloud-screens--8309bbe1-e173-43bc-9cbb-bb510b648f67.md",
+      "best_original": "icloud/8309BBE1-E173-43BC-9CBB-BB510B648F67.PNG",
+      "best_original_size": [
+        1672,
+        941
+      ],
+      "full_size": [
+        1672,
+        941
+      ],
+      "thumb_size": [
+        480,
+        270
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4863,7 +8516,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--miseos.md"
+      "page": "docs/cards/icloud-screens--miseos.md",
+      "best_original": "icloud/89A4F10D-D729-4240-A83B-E09295E9DD95.PNG",
+      "best_original_size": [
+        2172,
+        724
+      ],
+      "full_size": [
+        2172,
+        724
+      ],
+      "thumb_size": [
+        480,
+        160
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4880,7 +8546,20 @@
       "roster_name": "Kuro Guard",
       "entity_slug": "kuro-guard",
       "match_method": "existing-index",
-      "page": "docs/characters/kuro-guard.md"
+      "page": "docs/characters/kuro-guard.md",
+      "best_original": "icloud/9E4884D6-5E98-4CAA-A536-186A9DA632CC.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4895,7 +8574,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--miseorchestra.md"
+      "page": "docs/cards/icloud-screens--miseorchestra.md",
+      "best_original": "icloud/9E957657-540C-4B45-B98E-2F17BFD5768A.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4910,7 +8602,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--v1-0-0.md"
+      "page": "docs/cards/icloud-screens--v1-0-0.md",
+      "best_original": "icloud/A04E1E0C-833B-448C-9054-2CAEEB629151.PNG",
+      "best_original_size": [
+        941,
+        1672
+      ],
+      "full_size": [
+        941,
+        1672
+      ],
+      "thumb_size": [
+        480,
+        853
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4925,7 +8630,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--token-taro.md"
+      "page": "docs/cards/icloud-screens--token-taro.md",
+      "best_original": "icloud/A829FEB6-1923-4CCD-A9DB-CFA95806FD6A.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4942,7 +8660,20 @@
       "roster_name": "Kaji",
       "entity_slug": "kaji",
       "match_method": "existing-index",
-      "page": "docs/characters/kaji.md"
+      "page": "docs/characters/kaji.md",
+      "best_original": "icloud/CF19FE42-95B3-4710-A7F8-3921ACDF4224.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4957,7 +8688,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--frostbyte.md"
+      "page": "docs/cards/icloud-screens--frostbyte.md",
+      "best_original": "icloud/Catalogue/All images/729526CC-E810-49F7-972E-B801FB9F9B78.PNG",
+      "best_original_size": [
+        1635,
+        962
+      ],
+      "full_size": [
+        1635,
+        962
+      ],
+      "thumb_size": [
+        480,
+        282
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4974,7 +8718,20 @@
       "roster_name": "Kurogami Senpai",
       "entity_slug": "kurogami-senpai",
       "match_method": "existing-index",
-      "page": "docs/characters/kurogami-senpai.md"
+      "page": "docs/characters/kurogami-senpai.md",
+      "best_original": "icloud/Catalogue/All images/Mise/IMG_4461.PNG",
+      "best_original_size": [
+        1408,
+        768
+      ],
+      "full_size": [
+        1408,
+        768
+      ],
+      "thumb_size": [
+        480,
+        262
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -4989,7 +8746,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--one-kitchen-many-spirits.md"
+      "page": "docs/cards/icloud-screens--one-kitchen-many-spirits.md",
+      "best_original": "icloud/Catalogue/All images/Mise/IMG_4679.JPG",
+      "best_original_size": [
+        1536,
+        2752
+      ],
+      "full_size": [
+        1536,
+        2752
+      ],
+      "thumb_size": [
+        480,
+        860
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5006,7 +8776,20 @@
       "roster_name": "Tensho",
       "entity_slug": "tensho",
       "match_method": "existing-index",
-      "page": "docs/characters/tensho.md"
+      "page": "docs/characters/tensho.md",
+      "best_original": "icloud/Catalogue/All images/Mise/IMG_4719.PNG",
+      "best_original_size": [
+        2048,
+        2048
+      ],
+      "full_size": [
+        2048,
+        2048
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5021,7 +8804,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--enter-the-kitohen-table.md"
+      "page": "docs/cards/icloud-screens--enter-the-kitohen-table.md",
+      "best_original": "icloud/Catalogue/All images/Mise/IMG_5820.JPG",
+      "best_original_size": [
+        1280,
+        720
+      ],
+      "full_size": [
+        1280,
+        720
+      ],
+      "thumb_size": [
+        480,
+        270
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5038,7 +8834,20 @@
       "roster_name": "Kuro Guard",
       "entity_slug": "kuro-guard",
       "match_method": "existing-index",
-      "page": "docs/characters/kuro-guard.md"
+      "page": "docs/characters/kuro-guard.md",
+      "best_original": "icloud/Catalogue/All images/Mise/IMG_5821.JPG",
+      "best_original_size": [
+        1280,
+        720
+      ],
+      "full_size": [
+        1280,
+        720
+      ],
+      "thumb_size": [
+        480,
+        270
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5053,7 +8862,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--a10-layerdefensibilitymoatprotects-thegr.md"
+      "page": "docs/cards/icloud-screens--a10-layerdefensibilitymoatprotects-thegr.md",
+      "best_original": "icloud/Catalogue/All images/Mise/IMG_7370.PNG",
+      "best_original_size": [
+        1206,
+        2622
+      ],
+      "full_size": [
+        1206,
+        2622
+      ],
+      "thumb_size": [
+        480,
+        1044
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5068,7 +8890,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.md"
+      "page": "docs/cards/icloud-screens--pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.md",
+      "best_original": "icloud/Catalogue/All images/Mise/pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.JPG",
+      "best_original_size": [
+        856,
+        1169
+      ],
+      "full_size": [
+        856,
+        1169
+      ],
+      "thumb_size": [
+        480,
+        656
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5083,7 +8918,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--create-image.md"
+      "page": "docs/cards/icloud-screens--create-image.md",
+      "best_original": "icloud/D533B19E-712A-4EF3-BE8B-A59513731480.PNG",
+      "best_original_size": [
+        1672,
+        941
+      ],
+      "full_size": [
+        1672,
+        941
+      ],
+      "thumb_size": [
+        480,
+        270
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5098,7 +8946,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--orion-arkforge.md"
+      "page": "docs/cards/icloud-screens--orion-arkforge.md",
+      "best_original": "icloud/DBF7B13D-4688-43F3-8F7A-7A2E02F19F29.PNG",
+      "best_original_size": [
+        1024,
+        1536
+      ],
+      "full_size": [
+        1024,
+        1536
+      ],
+      "thumb_size": [
+        480,
+        720
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5113,7 +8974,20 @@
       ],
       "entity_slug": null,
       "match_method": null,
-      "page": "docs/cards/icloud-screens--v1-0-0-2.md"
+      "page": "docs/cards/icloud-screens--v1-0-0-2.md",
+      "best_original": "icloud/E649C10A-B03A-4BDE-B910-6D0389BE72F7.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5130,7 +9004,20 @@
       "roster_name": "Null-chan",
       "entity_slug": "null-chan",
       "match_method": "existing-index",
-      "page": "docs/characters/null-chan.md"
+      "page": "docs/characters/null-chan.md",
+      "best_original": "icloud/F4C8F7DC-031D-42AB-9417-B048C6057BC3.PNG",
+      "best_original_size": [
+        1254,
+        1254
+      ],
+      "full_size": [
+        1254,
+        1254
+      ],
+      "thumb_size": [
+        480,
+        480
+      ]
     },
     {
       "collection": "icloud-screens",
@@ -5147,7 +9034,20 @@
       "roster_name": "Canary Taster",
       "entity_slug": "canary-taster",
       "match_method": "existing-index",
-      "page": "docs/characters/canary-taster.md"
+      "page": "docs/characters/canary-taster.md",
+      "best_original": "icloud/mise_orchestra_card_contact_sheet.png",
+      "best_original_size": [
+        790,
+        1635
+      ],
+      "full_size": [
+        790,
+        1635
+      ],
+      "thumb_size": [
+        480,
+        993
+      ]
     }
   ],
   "matched_character_slugs": [

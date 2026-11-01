@@ -110,7 +110,7 @@ for m in mascots:
     if not sp: continue
     slug = slugify(m['name']); d = f'assets/repo-pets/{slug}'
     art = put(f"{MASCOT_DIR}/{m['folder']}/{m['file']}", f'{d}/{m["file"]}')
-    im = Image.open(art).convert('RGBA'); bb = im.getbbox(); im = im.crop(bb); im.thumbnail((180, 180))
+    im = Image.open(art).convert('RGBA'); bb = im.getbbox(); im = im.crop(bb); im.thumbnail((256, 256), Image.LANCZOS)
     co = f'assets/repo-pets/cutouts/{slug}.png'; im.save(co, optimize=True)
     pets.append({'slug': slug, 'name': m['name'], 'kind': 'brigade_mascot', 'species': sp, 'species_source': 'animal word in the name',
                  'role': m['role'], 'department': m['group'], 'sprites': [art, co], 'cutout': co, 'behaviors': {'walks_in_readme_strip': True},
@@ -144,7 +144,7 @@ for m in mascots:
     a = agent(slug, name=m['name'], kind='brigade_mascot_agent', role=m['role'], group=m['group'], group_tagline=m['tagline'],
               source=f"{orig(BRIGADE_TS)}:{m['line']}")
     a['files'].append(put(art, f"{d}/{m['file']}"))
-    im = Image.open(art).convert('RGBA'); bb = im.getbbox(); im = im.crop(bb); im.thumbnail((256, 256)); im.save(f'{d}/thumb.png', optimize=True)
+    im = Image.open(art).convert('RGBA'); bb = im.getbbox(); im = im.crop(bb); im.thumbnail((400, 400), Image.LANCZOS); im.save(f'{d}/thumb.png', optimize=True)
     a['thumbnail'] = f'{d}/thumb.png'
 CAT = f'{SRC}/unpacked/icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog'
 for it in json.load(open(f'{CAT}/catalog-items.json'))['items']:
