@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/canon-entity-v1.schema.json",
+  "title": "MiseOS Canon Entity",
+  "type": "object",
+  "required": [
+    "schema",
+    "schema_version",
+    "entity_id",
+    "record_kind",
+    "name",
+    "canon"
+  ],
+  "properties": {
+    "schema": {
+      "const": "miseos.canon-entity"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "record_kind": {
+      "enum": [
+        "character_agent",
+        "generation_one_guide",
+        "registry_manifest",
+        "district",
+        "world_object",
+        "content_record",
+        "media_asset"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "object",
+      "required": [
+        "status",
+        "generation",
+        "confidence"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "draft",
+            "provisional",
+            "canonical",
+            "deprecated"
+          ]
+        },
+        "generation": {
+          "enum": [
+            "Generation One",
+            "Mise Orchestra Generation Two",
+            "Registry",
+            "GridOps",
+            "Cross-surface"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "approved_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approved_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "identity": {
+      "type": "object"
+    },
+    "design": {
+      "type": "object"
+    },
+    "workflow": {
+      "type": "object"
+    },
+    "runtime": {
+      "type": "object"
+    },
+    "media": {
+      "type": "object"
+    },
+    "rights": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "analytics": {
+      "type": "object"
+    },
+    "publishing": {
+      "type": "object"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

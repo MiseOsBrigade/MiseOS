@@ -1,0 +1,40 @@
+{
+  "canon_version": "1.0.0",
+  "sources": [
+    {
+      "file": "IMG_5931.pdf",
+      "sha256": "63f667b2c832e92457e3a54eb712834dd02e4a0ae2c8438a39d3dbf429e68b51",
+      "bytes": 9549586
+    },
+    {
+      "file": "1E3334AB-3111-4E81-AECF-71CB094259F8.pdf",
+      "sha256": "f34ec86302886fad17f3d063c62270318e7c7d4b6d453a5b462b12bdeb784426",
+      "bytes": 86838702
+    },
+    {
+      "file": "0CC93597-6FFA-4CB7-A484-88987E860B5B.pdf",
+      "sha256": "9ed4ea57c0eed0d0ca2433190e8d5c9f677c05c5533bb550202e67d588b49498",
+      "bytes": 31173297
+    },
+    {
+      "file": "miseos_character_master_inventory_001_300.csv",
+      "sha256": "fa52081ab6bb77ec4715ec0a3ea8673592110cf4822cbcab2d7b75bcaa052eeb",
+      "bytes": 503873
+    },
+    {
+      "file": "miseos-registry-catalog.csv",
+      "sha256": "ab95fb3d67f18b0fef8f659a194727d8557e20b36cf57ba4679c1153a569b01b",
+      "bytes": 3099
+    },
+    {
+      "file": "mise_orchestra_trading_cards_pack.zip",
+      "sha256": "7c7317d998e406b6d6f993dfd87798b1b9824438e4842668f23bc5cb7ee05f51",
+      "bytes": 6861755
+    },
+    {
+      "file": "miseos_full_roster_taxonomy.zip",
+      "sha256": "d2c1b91cfd319dcdaeed2a63c5a546bdd4e5bb966a69c13d50ec5aacffa87bd9",
+      "bytes": 34493114
+    }
+  ]
+}
