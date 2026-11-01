@@ -19,12 +19,10 @@ SECRET_NAME = re.compile(r'(^\.env(\..*)?$|\.pem$|\.key$|\.p12$|\.pfx$|^id_(rsa|
 SECRET_TXT = re.compile(rb'(AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{36}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za-z0-9]{32,}|sk_live_[A-Za-z0-9]{16,}|xox[bpas]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY-----|AIza[0-9A-Za-z_-]{35}|(?i:(?:api[_-]?key|secret|password|token)\s*[:=]\s*[\'"][A-Za-z0-9_\-]{20,}[\'"]))')
 RENAME = {'.gitignore': 'dot-gitignore', '.gitattributes': 'dot-gitattributes', '.gitmodules': 'dot-gitmodules'}
 
-repo = {}
-for dp, ds, fs in os.walk('.'):
-    ds[:] = [d for d in ds if d not in ('.git', 'node_modules') and not os.path.join(dp, d).startswith('./' + LIB)]
-    for f in fs:
-        p = os.path.join(dp, f)[2:]
-        if os.path.isfile(p) and not os.path.islink(p): repo.setdefault(sha(p), p)
+import subprocess
+repo = {}  # only git-tracked files outside the source library count as existing copies
+for p in subprocess.run(['git', 'ls-files', '-z'], capture_output=True, text=True).stdout.split('\0'):
+    if p and not p.startswith(LIB + '/') and os.path.isfile(p) and not os.path.islink(p): repo.setdefault(sha(p), p)
 if os.path.isdir(LIB): shutil.rmtree(LIB)
 unpack_ok = set(json.load(open('/tmp/unpack_ok.json'))) if os.path.exists('/tmp/unpack_ok.json') else None
 files = []
