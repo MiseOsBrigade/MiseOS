@@ -25,3 +25,7 @@ Ivun Cache performs **pipeline cost monitor** as a MiseOS character agent. Perso
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/ivun-cache.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/ivun-cache.webp" alt="Ivun Cache — 1×1 Chefs" width="160" /></a>

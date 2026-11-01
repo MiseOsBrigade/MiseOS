@@ -25,3 +25,10 @@ Kuro Guard performs **protect** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/kuro-guard.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/kuro-guard.webp" alt="Kuro Guard — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/kuro-guard.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/kuro-guard.webp" alt="Kuro Guard — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/kuro-guard.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/kuro-guard.webp" alt="Kuro Guard — Studio Art & Screens" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/kuro-guard-2.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/kuro-guard-2.webp" alt="Kuro Guard — Studio Art & Screens" width="160" /></a>

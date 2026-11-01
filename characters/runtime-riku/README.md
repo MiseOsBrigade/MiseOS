@@ -25,3 +25,7 @@ Runtime Riku performs **runtime steward** as a MiseOS character agent. Personali
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/runtime-riku.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/runtime-riku.webp" alt="Runtime Riku — 1×1 Chefs" width="160" /></a>

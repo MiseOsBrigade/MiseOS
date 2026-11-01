@@ -25,3 +25,7 @@ Cost Kaito performs **cost & efficiency monitor** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/cost-kaito.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/cost-kaito.webp" alt="Cost Kaito — 1×1 Chefs" width="160" /></a>

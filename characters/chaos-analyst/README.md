@@ -25,3 +25,7 @@ Chaos Analyst performs **learn** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/orchestra-trading-cards/chaos-analyst.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/chaos-analyst.webp" alt="Chaos Analyst — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

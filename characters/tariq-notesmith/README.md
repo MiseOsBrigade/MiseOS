@@ -25,3 +25,7 @@ Tariq Notesmith performs **release notes generator** as a MiseOS character agent
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/tariq-notesmith.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/tariq-notesmith.webp" alt="Tariq Notesmith — 1×1 Chefs" width="160" /></a>

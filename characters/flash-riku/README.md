@@ -25,3 +25,8 @@ Flash Riku performs **deploy** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/flash-riku.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/flash-riku.webp" alt="Flash Riku — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/flash-riku.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/flash-riku.webp" alt="Flash Riku — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

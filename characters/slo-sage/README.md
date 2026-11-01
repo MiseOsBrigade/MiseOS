@@ -25,3 +25,7 @@ SLO Sage performs **slo definition workflow** as a MiseOS character agent. Perso
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/orchestra-trading-cards/slo-sage.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/slo-sage.webp" alt="SLO Sage — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

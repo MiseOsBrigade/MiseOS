@@ -25,3 +25,7 @@ Merge Sentinel performs **pre-merge security gate** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/merge-sentinel.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/merge-sentinel.webp" alt="Merge Sentinel — 1×1 Chefs" width="160" /></a>

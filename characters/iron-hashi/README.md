@@ -25,3 +25,9 @@ Iron Hashi performs **artifact validator** as a MiseOS character agent. Personal
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/iron-hashi.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/iron-hashi.webp" alt="Iron Hashi — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/iron-hashi.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/iron-hashi.webp" alt="Iron Hashi — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/iron-hashi.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/iron-hashi.webp" alt="Iron Hashi — Studio Art & Screens" width="160" /></a>

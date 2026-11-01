@@ -25,3 +25,7 @@ Schema Sora performs **schema steward** as a MiseOS character agent. Personality
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/schema-sora.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/schema-sora.webp" alt="Schema Sora — 1×1 Chefs" width="160" /></a>

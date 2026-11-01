@@ -25,3 +25,7 @@ Incident Kitsune performs **security incident playbooks** as a MiseOS character 
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/incident-kitsune.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/incident-kitsune.webp" alt="Incident Kitsune — 1×1 Chefs" width="160" /></a>

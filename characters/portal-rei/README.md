@@ -25,3 +25,7 @@ Portal Rei performs **self-service portal ui** as a MiseOS character agent. Pers
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/portal-rei.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/portal-rei.webp" alt="Portal Rei — 1×1 Chefs" width="160" /></a>

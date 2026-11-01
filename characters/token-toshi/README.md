@@ -25,3 +25,7 @@ Token Toshi performs **credential hygiene scanner** as a MiseOS character agent.
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/token-toshi.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/token-toshi.webp" alt="Token Toshi — 1×1 Chefs" width="160" /></a>

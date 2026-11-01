@@ -25,3 +25,10 @@ Kaji performs **compute** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/kaji.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/kaji.webp" alt="Kaji — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/cartoon-chefs/kaji.webp"><img src="../../assets/player-cards/cartoon-chefs/thumbs/kaji.webp" alt="Kaji — Cartoon Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/kaji.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/kaji.webp" alt="Kaji — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/kaji.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/kaji.webp" alt="Kaji — Studio Art & Screens" width="160" /></a>

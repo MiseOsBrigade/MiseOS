@@ -25,3 +25,7 @@ Beacon Broil performs **alert dispatcher** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/beacon-broil.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/beacon-broil.webp" alt="Beacon Broil — 1×1 Chefs" width="160" /></a>

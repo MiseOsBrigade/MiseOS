@@ -15,3 +15,7 @@ Harvest Hex performs **produce alchemist** as a MiseOS character agent.
 
 ## Trust model
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/harvest-hex.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/harvest-hex.webp" alt="Harvest Hex — 1×1 Chefs" width="160" /></a>

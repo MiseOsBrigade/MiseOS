@@ -25,3 +25,7 @@ Resilience Ryu performs **resilience testing loop** as a MiseOS character agent.
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/long-cards/resilience-ryu.webp"><img src="../../assets/player-cards/long-cards/thumbs/resilience-ryu.webp" alt="Resilience Ryu — Long Cards" width="160" /></a>

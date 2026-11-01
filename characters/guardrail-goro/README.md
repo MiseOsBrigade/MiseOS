@@ -25,3 +25,7 @@ Guardrail Goro performs **golden path guardrails** as a MiseOS character agent. 
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/guardrail-goro.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/guardrail-goro.webp" alt="Guardrail Goro — 1×1 Chefs" width="160" /></a>

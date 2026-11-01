@@ -25,3 +25,7 @@ Culture Chef performs **grow** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/orchestra-trading-cards/culture-chef.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/culture-chef.webp" alt="Culture Chef — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

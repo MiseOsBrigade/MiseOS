@@ -15,3 +15,7 @@ Pantry Paladin performs **provision steward** as a MiseOS character agent.
 
 ## Trust model
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/pantry-paladin.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/pantry-paladin.webp" alt="Pantry Paladin — 1×1 Chefs" width="160" /></a>

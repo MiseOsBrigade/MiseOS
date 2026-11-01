@@ -25,3 +25,7 @@ Flavor Forager performs **ingredient scout** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/flavor-forager.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/flavor-forager.webp" alt="Flavor Forager — 1×1 Chefs" width="160" /></a>

@@ -25,3 +25,7 @@ Nina Promoter performs **environment promotion gate** as a MiseOS character agen
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/nina-promoter.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/nina-promoter.webp" alt="Nina Promoter — 1×1 Chefs" width="160" /></a>

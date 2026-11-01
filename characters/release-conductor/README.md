@@ -25,3 +25,8 @@ Release Conductor performs **deployment orchestrator** as a MiseOS character age
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/release-conductor.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/release-conductor.webp" alt="Release Conductor — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/character-building/release-conductor.webp"><img src="../../assets/player-cards/character-building/thumbs/release-conductor.webp" alt="Release Conductor — Character Building Theme" width="160" /></a>

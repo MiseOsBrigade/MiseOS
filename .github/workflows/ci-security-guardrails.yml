@@ -1,0 +1,26 @@
+name: "ci / tools/security-guardrails"
+
+on:
+  push:
+    branches: [main]
+    paths: ["tools/security-guardrails/**", ".github/workflows/ci-security-guardrails.yml"]
+  pull_request:
+    paths: ["tools/security-guardrails/**", ".github/workflows/ci-security-guardrails.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/security-guardrails
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run test

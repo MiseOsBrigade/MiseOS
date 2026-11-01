@@ -25,3 +25,7 @@ Insight Sensei performs **analyze** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/orchestra-trading-cards/insight-sensei.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/insight-sensei.webp" alt="Insight Sensei — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

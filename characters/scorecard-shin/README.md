@@ -25,3 +25,7 @@ Scorecard Shin performs **security scorecard** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/scorecard-shin.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/scorecard-shin.webp" alt="Scorecard Shin — 1×1 Chefs" width="160" /></a>

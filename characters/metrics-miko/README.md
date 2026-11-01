@@ -25,3 +25,7 @@ Metrics Miko performs **slo dashboards** as a MiseOS character agent. Personalit
 ## Trust model
 
 Default to read-only. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/orchestra-trading-cards/metrics-miko.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/metrics-miko.webp" alt="Metrics Miko — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>

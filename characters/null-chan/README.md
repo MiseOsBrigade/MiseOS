@@ -25,3 +25,9 @@ Null-chan performs **cleanse** as a MiseOS character agent.
 ## Trust model
 
 Character identity and personality never grant authority. Privileged actions require explicit policy authorization and auditable evidence.
+
+## Player cards
+
+<a href="../../assets/player-cards/1by1-chefs/null-chan.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/null-chan.webp" alt="Null-chan — 1×1 Chefs" width="160" /></a>
+<a href="../../assets/player-cards/orchestra-trading-cards/null-chan.webp"><img src="../../assets/player-cards/orchestra-trading-cards/thumbs/null-chan.webp" alt="Null-chan — Mise Orchestra Trading Cards (Season 1)" width="160" /></a>
+<a href="../../assets/player-cards/icloud-screens/null-chan.webp"><img src="../../assets/player-cards/icloud-screens/thumbs/null-chan.webp" alt="Null-chan — Studio Art & Screens" width="160" /></a>
