@@ -1,0 +1,306 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-analytics-engine",
+  "name": "MiseOS Analytics Engine",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-analytics-engine.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-analytics-engine.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Analytics Engine",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-analytics-engine.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "REAL-TIME INSIGHTS",
+        "UNIFIED INTELLIGENCE",
+        "PREDICTIVEMODEL",
+        "PERFORMANCEMATRIX",
+        "98.7%",
+        "MiseOS Analytics Engine",
+        "Analytics",
+        "INSIGHT",
+        "100",
+        "INTELLIGENCE",
+        "100",
+        "100",
+        "CLARITY",
+        "PREDICTION",
+        "100",
+        "100",
+        "ACCURACY",
+        "FORESIGHT",
+        "100",
+        "100",
+        "VISUALIZATION",
+        "INTEGRATION",
+        "100",
+        "ISEEPATTERNS.",
+        "IREVEALTRUTH.",
+        "IEMPOWEREVOLUTION.",
+        "THEORCHESTRATEDINTELLIGENCEOFMISEOS"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "98.7%"
+  ],
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "analyticsEngine"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "analytics",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 8,
+        "term": "analyticsEngine"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 8,
+        "term": "analyticsEngine"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 5,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 8,
+        "term": "analyticsEngine"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.analytics-engine"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 243,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 176,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 3,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 176,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 76,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.analytics-engine.json",
+        "line": 4,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 76,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.analytics-engine.json",
+        "line": 4,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 148,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 176,
+        "term": "MiseOS Analytics Engine"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 57,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 34,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/README.md",
+        "line": 34,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 6,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 127,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/analytics-engine.md",
+        "line": 1,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 20,
+        "term": "MiseOS Analytics Engine"
+      },
+      {
+        "path": "apps/registry-platform/README.md",
+        "line": 34,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 6,
+        "term": "miseos.analytics-engine"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 79,
+        "term": "miseos.analytics-engine"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 8,
+      "name": "analyticsEngine"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 8,
+        "term": "analyticsEngine"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 8,
+        "term": "analyticsEngine"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 8,
+        "term": "analyticsEngine"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.analytics-engine"
+  },
+  "role": "Analytics",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Analytics Engine.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "analyticsEngine",
+      "handler": "analyticsEngine",
+      "source": "apps/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (analytics)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Analytics Engine.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

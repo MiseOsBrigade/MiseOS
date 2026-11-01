@@ -1,0 +1,208 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "queue-quartz",
+  "name": "Queue Quartz",
+  "kind": "registry_character",
+  "aliases": [
+    "Queue"
+  ],
+  "sources": {
+    "name": "data/characters.json",
+    "aliases": "card titles / OCR in data/player-cards-ocr.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/queue-quartz/metadata.json",
+    "role": "characters/queue-quartz/metadata.json",
+    "department": "characters/queue-quartz/metadata.json",
+    "rarity": "characters/queue-quartz/metadata.json",
+    "workflow.summary": "characters/queue-quartz/metadata.json",
+    "workflow.inputs": "characters/queue-quartz/metadata.json",
+    "workflow.outputs": "characters/queue-quartz/metadata.json",
+    "workflow.proof_gate": "characters/queue-quartz/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/queue-quartz/metadata.json"
+  },
+  "registry": {
+    "number": 17,
+    "profile": "characters/queue-quartz/README.md",
+    "metadata": "characters/queue-quartz/metadata.json",
+    "avatar": "assets/characters/queue-quartz/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/queue.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/queue.webp",
+      "collection": "1by1-chefs",
+      "title": "Queue",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/queue.webp",
+      "printed_text": [
+        "FLOWEFFICIENCY",
+        "100%",
+        "MISE",
+        "ORCHESTRA",
+        "OPTIMAL",
+        "QUEUESTATUS",
+        "RHYTHM SYNC",
+        "LANE1",
+        "LANE2",
+        "LANE3",
+        "LANE4",
+        "LANE5",
+        "120 BPM",
+        "SLA MONITOR",
+        "SERVICETIMING",
+        "PREPARE:",
+        "COOK",
+        "98.6%",
+        "PLATE",
+        "ONTIME",
+        "SERVE",
+        "CLEAN",
+        "EST.WAITTIME",
+        "01:32",
+        "NEXT SERVICE",
+        "00:00:47",
+        "MIN",
+        "Queue",
+        "Quartz",
+        "Service Timer"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "100%",
+    "98.6%"
+  ],
+  "level": 20,
+  "profile_doc": "characters/queue-quartz/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 515,
+        "text": "MISE-G2-P024 Queue Quartz Mise Orchestra canonical-candidate 1E3334AB-3111- 24"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6190,
+        "term": "Queue Quartz"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6190,
+        "term": "Queue Quartz"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.csv",
+        "line": 41,
+        "term": "queue-quartz"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.json",
+        "line": 619,
+        "term": "queue-quartz"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/unique-assets.json",
+        "line": 619,
+        "term": "queue-quartz"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Queue Quartz"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-103",
+    "character_id": "miseos.character.103",
+    "card_id": "MISE-103",
+    "codename": "QUEUE_QUARTZ"
+  },
+  "role": "Service Timer",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Queue Quartz performs service timer within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE SERVICE TIMER",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 83,
+    "precision": 86,
+    "speed": 56,
+    "resilience": 76,
+    "intelligence": 80,
+    "teamwork": 83
+  },
+  "related": [
+    {
+      "name": "Harvest Hex",
+      "slug": "harvest-hex"
+    },
+    {
+      "name": "Garnish Ghost",
+      "slug": "garnish-ghost"
+    },
+    {
+      "name": "Pantry Paladin",
+      "slug": "pantry-paladin"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Queue Quartz performs service timer within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "umami-code",
+  "name": "Umami Code",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/umami-code/metadata.json",
+    "role": "characters/umami-code/metadata.json",
+    "department": "characters/umami-code/metadata.json",
+    "rarity": "characters/umami-code/metadata.json",
+    "workflow.summary": "characters/umami-code/metadata.json",
+    "workflow.inputs": "characters/umami-code/metadata.json",
+    "workflow.outputs": "characters/umami-code/metadata.json",
+    "workflow.proof_gate": "characters/umami-code/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "lore": "data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/umami-code/metadata.json"
+  },
+  "registry": {
+    "number": 111,
+    "profile": "characters/umami-code/README.md",
+    "metadata": "characters/umami-code/metadata.json",
+    "avatar": "assets/characters/umami-code/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/umami-code.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/umami-code.webp",
+      "collection": "1by1-chefs",
+      "title": "Umami Code",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/umami-code.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/umami-code.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Umami Code",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/umami-code.webp",
+      "printed_text": [
+        "FLAVOR_API",
+        "INGREDIENTS=［",
+        "\"depth\",",
+        "\"balance\"",
+        "\"harmony\"",
+        "\"umami\"",
+        "REDUCE()",
+        "GLAZE()",
+        "SERVE_PERFECT(）",
+        "Done.",
+        "API",
+        "Umami Code",
+        "Saucier"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/umami-code.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.004",
+        "UmamiCode",
+        "MO",
+        "EPIC-PlatformCore",
+        "Saucier|Platform",
+        "ABILITY:PerfectIntegration",
+        "Creates the perfect sauce that connects every service.",
+        "Element:API Sauce Function:Connect",
+        "CONNECT",
+        "96",
+        "SECURE",
+        "79",
+        "SCALE",
+        "80",
+        "ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "OBSERVE"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Epic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 30,
+  "unique_trait": "Specializes in traffic & ingress manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "platform",
+  "orchestra_card": {
+    "role": "Saucier",
+    "department": "Platform",
+    "function": "Connect",
+    "rarity": "Epic",
+    "tier": "Platform Core",
+    "element": "API Sauce",
+    "ability": "Perfect Integration",
+    "lore": "Creates the perfect sauce that connects every service."
+  },
+  "abilities": [
+    "Perfect Integration"
+  ],
+  "profile_doc": "characters/umami-code/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 619,
+        "text": "MISE-G2-P070 Umami Code Mise Orchestra canonical-candidate 1E3334AB-3111- 70"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 379,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 332,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 106,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 135,
+        "term": "Umami Code"
+      }
+    ],
+    "code_ref_count": 4,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 331,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1292,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 39,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/004-umami-code.json",
+        "line": 2,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1292,
+        "term": "Umami Code"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 510,
+        "term": "Umami Code"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 5,
+        "term": "Umami Code"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 39,
+        "term": "Umami Code"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 75,
+        "term": "Umami Code"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 75,
+        "term": "Umami Code"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 59,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 17,
+        "term": "Umami Code"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Umami Code"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 135,
+        "term": "Umami Code"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-023",
+    "character_id": "miseos.character.024",
+    "card_id": "MISE-024",
+    "codename": "UMAMI_CODE"
+  },
+  "role": "Developer Workflow Profiles",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Genesis",
+  "lore": "Umami Code belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Traffic and Ingress Manager done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Umami Code performs developer workflow profiles within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE TRAFFIC INGRESS MANAGER",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Traffic & Ingress Manager",
+      "mise_name": "Mise TrafficIngressManager",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 86,
+    "precision": 87,
+    "speed": 69,
+    "resilience": 85,
+    "intelligence": 73,
+    "teamwork": 86
+  },
+  "related": [
+    {
+      "name": "Queue Mizu",
+      "slug": "queue-mizu"
+    },
+    {
+      "name": "Streama",
+      "slug": "streama"
+    },
+    {
+      "name": "Preview Yuki",
+      "slug": "preview-yuki"
+    },
+    {
+      "name": "Grafana Mei",
+      "slug": "grafana-mei"
+    },
+    {
+      "name": "Nina Promoter",
+      "slug": "nina-promoter"
+    },
+    {
+      "name": "Review Ren",
+      "slug": "review-ren"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Umami Code performs developer workflow profiles within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "scale-oni",
+  "name": "Scale Oni",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/scale-oni/metadata.json",
+    "role": "characters/scale-oni/metadata.json",
+    "department": "characters/scale-oni/metadata.json",
+    "rarity": "characters/scale-oni/metadata.json",
+    "workflow.summary": "characters/scale-oni/metadata.json",
+    "workflow.inputs": "characters/scale-oni/metadata.json",
+    "workflow.outputs": "characters/scale-oni/metadata.json",
+    "workflow.proof_gate": "characters/scale-oni/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/scale-oni/metadata.json"
+  },
+  "registry": {
+    "number": 18,
+    "profile": "characters/scale-oni/README.md",
+    "metadata": "characters/scale-oni/metadata.json",
+    "avatar": "assets/characters/scale-oni/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/scale-oni.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/scale-oni.webp",
+      "collection": "1by1-chefs",
+      "title": "Scale Oni",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/scale-oni-2.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/scale-oni-2.webp",
+      "collection": "1by1-chefs",
+      "title": "Scale Oni",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/scale-oni.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/scale-oni.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Scale Oni",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/scale-oni.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "ROTISSERIE",
+        "SCALE ENGAGE",
+        "HEAT",
+        "FLAVOR",
+        "TIME",
+        "GROWTH",
+        "MAXIMUMYIELD",
+        "MAXIMUM GLORY",
+        "Scale Oni",
+        "Rotisseur"
+      ]
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/scale-oni-2.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "ROTISSERIE",
+        "SCALE ENGAGE",
+        "HEAT",
+        "FLAVOR",
+        "TIME",
+        "GROWTH",
+        "MAXIMUM YIELD",
+        "MAXIMUMGLORY",
+        "Scale Oni",
+        "Rotisseur"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/scale-oni.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.012",
+        "Scale_Oni",
+        "MO",
+        "LEGENDARY-Scale Core",
+        "Rotisseur|Operations",
+        "ABILITY:ElasticFlame",
+        "Scales up when things get hot. The bigger the load, the",
+        "stronger he gets.",
+        "Element:RedHeatFunction:Scale",
+        "SCALE",
+        "99",
+        "COMPUTE",
+        "92",
+        "STRESS",
+        "95",
+        "ORCHESTRATE·DEPLOY",
+        "PROVENANCE-READY",
+        "CONROL"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Legendary",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 26,
+  "orchestra_card": {
+    "role": "Rotisseur",
+    "department": "Operations",
+    "function": "Scale",
+    "rarity": "Legendary",
+    "tier": "Scale Core",
+    "element": "Red Heat",
+    "ability": "Elastic Flame",
+    "lore": "Scales up when things get hot. The bigger the load, the stronger he gets."
+  },
+  "abilities": [
+    "Elastic Flame"
+  ],
+  "profile_doc": "characters/scale-oni/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 559,
+        "text": "MISE-G2-P045 Scale Oni Mise Orchestra canonical-candidate 1E3334AB-3111- 45"
+      },
+      {
+        "line": 671,
+        "text": "MISE-G2-P092 Scale Oni Mise Orchestra canonical-candidate 1E3334AB-3111- 92"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 200,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 96,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/brigade-gallery/src/types/master-roster.ts",
+        "line": 80,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 343,
+        "term": "Scale Oni"
+      }
+    ],
+    "code_ref_count": 4,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 4702,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/miseos-platform/config/3d-card-showcase.json",
+        "line": 108,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 111,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/012-scale-oni.json",
+        "line": 2,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 4702,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 13,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 111,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 117,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 117,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1160,
+        "term": "Scale Oni"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 111,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 67,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 25,
+        "term": "Scale Oni"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Scale Oni"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 343,
+        "term": "Scale Oni"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-085",
+    "character_id": "miseos.character.085",
+    "card_id": "MISE-085",
+    "codename": "SCALE_ONI"
+  },
+  "role": "Scale",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Legendary",
+  "lore": "Scale Oni belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Scale Oni performs scale within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE SCALE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 81,
+    "precision": 67,
+    "speed": 68,
+    "resilience": 80,
+    "intelligence": 68,
+    "teamwork": 90
+  },
+  "related": [
+    {
+      "name": "Velvet Vesper",
+      "slug": "velvet-vesper"
+    },
+    {
+      "name": "Flavor Forager",
+      "slug": "flavor-forager"
+    },
+    {
+      "name": "Crate Courier",
+      "slug": "crate-courier"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Scale Oni performs scale within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

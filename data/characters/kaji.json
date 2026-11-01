@@ -1,0 +1,331 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "kaji",
+  "name": "Kaji",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/kaji/metadata.json",
+    "role": "characters/kaji/metadata.json",
+    "department": "characters/kaji/metadata.json",
+    "rarity": "characters/kaji/metadata.json",
+    "workflow.summary": "characters/kaji/metadata.json",
+    "workflow.inputs": "characters/kaji/metadata.json",
+    "workflow.outputs": "characters/kaji/metadata.json",
+    "workflow.proof_gate": "characters/kaji/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/kaji/metadata.json"
+  },
+  "registry": {
+    "number": 8,
+    "profile": "characters/kaji/README.md",
+    "metadata": "characters/kaji/metadata.json",
+    "avatar": "assets/characters/kaji/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/kaji.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/kaji.webp",
+      "collection": "1by1-chefs",
+      "title": "Kaji",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/cartoon-chefs/kaji.webp",
+      "thumbnail": "assets/player-cards/cartoon-chefs/thumbs/kaji.webp",
+      "collection": "cartoon-chefs",
+      "title": "KAJI",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/kaji.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/kaji.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Kaji",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kaji.webp",
+      "thumbnail": "assets/player-cards/icloud-screens/thumbs/kaji.webp",
+      "collection": "icloud-screens",
+      "title": "KAJI",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "cartoon-chefs",
+    "icloud-screens",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/kaji.webp",
+      "printed_text": [
+        "COMPUTE HEAT",
+        "ENGIANGINE",
+        "CTERP",
+        "1210rc",
+        "Kaji",
+        "Grillardin"
+      ]
+    },
+    {
+      "file": "assets/player-cards/cartoon-chefs/kaji.webp",
+      "printed_text": [
+        "KAJI"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/kaji.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "NO.005",
+        "Kaji",
+        "MO",
+        "EPIC-ComputeCore",
+        "Grillardin|Operations",
+        "ABILITY:BlazingCompute",
+        "Handles the heat and powers the compute line with blazing",
+        "passion.",
+        "Element:Fire.Function:Compute",
+        "COMPUTE",
+        "97",
+        "SPEED",
+        "84",
+        "STRESS",
+        "91",
+        "ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "CONIIROL"
+      ]
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kaji.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "SET B - COMIC BOOK INTRO",
+        "Cook.Orchestrate.Deploy.",
+        "TENSHO",
+        "MIZU",
+        "CELESTIALSTRATEGIST",
+        "FLOWENGINEER",
+        "UMAMICODE",
+        "KUROGAMISENPAI",
+        "KAJI",
+        "DATAALCHEMIST",
+        "MASTERORCHESTRATOR",
+        "KITCHEN TECH",
+        "01",
+        "EVERYAGENTHASAROLE.EVERYROLEHASPURPOSE"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Epic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 26,
+  "orchestra_card": {
+    "role": "Grillardin",
+    "department": "Operations",
+    "function": "Compute",
+    "rarity": "Epic",
+    "tier": "Compute Core",
+    "element": "Fire",
+    "ability": "Blazing Compute",
+    "lore": "Handles the heat and powers the compute line with blazing passion."
+  },
+  "abilities": [
+    "Blazing Compute"
+  ],
+  "profile_doc": "characters/kaji/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 539,
+        "text": "MISE-G2-P037 Kaji Mise Orchestra canonical-candidate 1E3334AB-3111- 37"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 167,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 161,
+        "term": "Kaji"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 4701,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 48,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/005-kaji.json",
+        "line": 2,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 4701,
+        "term": "Kaji"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 6,
+        "term": "Kaji"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 48,
+        "term": "Kaji"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 135,
+        "term": "Kaji"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 135,
+        "term": "Kaji"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1250,
+        "term": "Kaji"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 60,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 18,
+        "term": "Kaji"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Kaji"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 161,
+        "term": "Kaji"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-079",
+    "character_id": "miseos.character.079",
+    "card_id": "MISE-079",
+    "codename": "KAJI"
+  },
+  "role": "Compute",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Kaji belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Kaji performs compute within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE COMPUTE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 71,
+    "precision": 81,
+    "speed": 82,
+    "resilience": 68,
+    "intelligence": 66,
+    "teamwork": 76
+  },
+  "related": [
+    {
+      "name": "Scale Oni",
+      "slug": "scale-oni"
+    },
+    {
+      "name": "Velvet Vesper",
+      "slug": "velvet-vesper"
+    },
+    {
+      "name": "Flavor Forager",
+      "slug": "flavor-forager"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Kaji performs compute within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

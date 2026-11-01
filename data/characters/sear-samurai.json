@@ -1,0 +1,204 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "sear-samurai",
+  "name": "Sear Samurai",
+  "kind": "card_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/imports/photo-alignment.csv",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "role": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "catalogue_status": "data/imports/photo-alignment.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+  },
+  "photo_alignment": [
+    {
+      "page": "38",
+      "status": "visual_reference_only",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf"
+    }
+  ],
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/sear-samurai.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/sear-samurai.webp",
+      "collection": "1by1-chefs",
+      "title": "Sear Samurai",
+      "match_method": "title"
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/sear-samurai-2.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/sear-samurai-2.webp",
+      "collection": "1by1-chefs",
+      "title": "Sear Samurai",
+      "match_method": "title"
+    },
+    {
+      "file": "assets/player-cards/registry-pages/sear-samurai.webp",
+      "thumbnail": "assets/player-cards/registry-pages/thumbs/sear-samurai.webp",
+      "collection": "registry-pages",
+      "title": "Sear Samurai",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "registry-pages"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/sear-samurai.webp",
+      "printed_text": [
+        "HEAT CONTROL",
+        "MAX",
+        "MISE",
+        "100%",
+        "ORCHESTRA",
+        "SEAR MASTERY",
+        "TIMING",
+        "CHAR ARTISTRY",
+        "PRESSURE",
+        "ANGLE",
+        "FOCUS",
+        "DISCIPLINE",
+        "DEEP CHAR",
+        "RICHFLAVOR",
+        "MASTERED",
+        "UNFORGETTABLE",
+        "★★★★★",
+        "CRUSTPERFECTION",
+        "BLADEOFFLAVOR",
+        "CARAMELIZE",
+        "SEAL",
+        "SEAR · STRIKE",
+        "ENHANCE",
+        "SAVOR·REPEAT",
+        "ELEVATE",
+        "燒極意",
+        "Sear",
+        " Samurai",
+        "Grillardin"
+      ]
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/sear-samurai-2.webp",
+      "printed_text": [
+        "HEAT CONTROL",
+        "MISE",
+        "MAX",
+        "ORCHESTRA",
+        "100%",
+        "SEAR MASTERY",
+        "TIMING",
+        "PRESSURE",
+        "CHARARTISTRY",
+        "ANGLE",
+        "FOCUS",
+        "DISCIPLINE",
+        "DEEPCHAR",
+        "RICH FLAVOR",
+        "MASTERED",
+        "UNFORGETTABLE",
+        "★★★★★",
+        "CRUST PERFECTION",
+        "BLADEOFFLAVOR",
+        "CARAMELIZE",
+        "SEAL",
+        "SEAR·STRIKE",
+        "SAVOR·REPEAT",
+        "ENHANCE",
+        "燒極意",
+        "ELEVATE",
+        "Sear Samurai",
+        "Grillardin"
+      ]
+    },
+    {
+      "file": "assets/player-cards/registry-pages/sear-samurai.webp",
+      "printed_text": [
+        "HEAT CONTROL",
+        "MISE",
+        "MAX",
+        "100%",
+        "ORCHESTRA",
+        "SEARMASTERY",
+        "TIMING",
+        "CHARARTISTRY",
+        "PRESSURE",
+        "ANGLE",
+        "FOCUS",
+        "DISCIPLINE",
+        "DEEPCHAR",
+        "RICHFLAVOR",
+        "MASTERED",
+        "UNFORGETTABLE",
+        "★★★★★",
+        "CRUSTPERFECTION",
+        "BLADEOFFLAVOR",
+        "CARAMELIZE",
+        "SEAL",
+        "SEAR·STRIKE",
+        "ENHANCE",
+        "SAVOR·REPEAT",
+        "ELEVATE",
+        "燒極意",
+        "Sear",
+        " Samurai",
+        "Grillardin"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%"
+  ],
+  "catalogue_status": "visual_reference_only",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/miseos-platform/config/3d-card-showcase.json",
+        "line": 100,
+        "term": "Sear Samurai"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 104,
+        "term": "Sear Samurai"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {},
+  "role": "Grillardin",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Not yet defined in the source material",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": "Not yet defined in the source material",
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Grillardin",
+    "mission": "Not yet defined in the source material",
+    "problem": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

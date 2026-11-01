@@ -1,0 +1,352 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "streama",
+  "name": "Streama",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/streama/metadata.json",
+    "role": "characters/streama/metadata.json",
+    "department": "characters/streama/metadata.json",
+    "rarity": "characters/streama/metadata.json",
+    "workflow.summary": "characters/streama/metadata.json",
+    "workflow.inputs": "characters/streama/metadata.json",
+    "workflow.outputs": "characters/streama/metadata.json",
+    "workflow.proof_gate": "characters/streama/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "lore": "data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/streama/metadata.json"
+  },
+  "registry": {
+    "number": 56,
+    "profile": "characters/streama/README.md",
+    "metadata": "characters/streama/metadata.json",
+    "avatar": "assets/characters/streama/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/streama.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/streama.webp",
+      "collection": "1by1-chefs",
+      "title": "Streama",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/streama.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/streama.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Streama",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/streama.webp",
+      "printed_text": [
+        "STREAMSTATUS",
+        "100%",
+        "MISE",
+        "ORCHESTRA",
+        "DATAFLOW",
+        "STABLE",
+        "SYNCED",
+        "OPTIMAL",
+        "NETWORK WAVE",
+        "①BANDWIDTH",
+        "LATENCY",
+        "?UPTIME",
+        "?QUALITY",
+        "EVENTSTREAM",
+        "FRESH CATCH",
+        "LIVE",
+        "SCHEDULE",
+        "ENGAGE",
+        "TODAY'S",
+        "SPECIAL",
+        "REPEAT",
+        "DATA-FRESH",
+        "GRADE: SSS",
+        "OCEAN",
+        "DELIVERY",
+        "FRESH&",
+        "FLOWING",
+        "Streama",
+        " Poissonnier"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/streama.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "NO.014",
+        "Streama",
+        "MO",
+        "RARE-EventLine",
+        "Poissonnier|Operations",
+        "ABILITY:SmoothFlow",
+        "Streams data like water. Smooth, continuous, and always",
+        "flowing.",
+        "Element:LiveWater.Function:Stream",
+        "STREAM",
+        "96",
+        "FLOW",
+        "91",
+        "OBSERVE",
+        "80",
+        "·ORCHESTRATE·DEPLOY",
+        "COOK",
+        "LPROVENANCE-READY",
+        "SCALE"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Rare",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "100%"
+  ],
+  "level": 32,
+  "unique_trait": "Specializes in data streaming profiles so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "delivery",
+  "orchestra_card": {
+    "role": "Poissonnier",
+    "department": "Operations",
+    "function": "Stream",
+    "rarity": "Rare",
+    "tier": "Event Line",
+    "element": "Live Water",
+    "ability": "Smooth Flow",
+    "lore": "Streams data like water. Smooth, continuous, and always flowing."
+  },
+  "abilities": [
+    "Smooth Flow"
+  ],
+  "profile_doc": "characters/streama/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 591,
+        "text": "MISE-G2-P061 Streama Mise Orchestra canonical-candidate 1E3334AB-3111- 61"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 407,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 310,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 345,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 395,
+        "term": "Streama"
+      }
+    ],
+    "code_ref_count": 4,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 359,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1416,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 129,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/014-streama.json",
+        "line": 2,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1416,
+        "term": "Streama"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 626,
+        "term": "Streama"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 15,
+        "term": "Streama"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 129,
+        "term": "Streama"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 69,
+        "term": "Streama"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 69,
+        "term": "Streama"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 5,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 27,
+        "term": "Streama"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Streama"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 395,
+        "term": "Streama"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-026",
+    "character_id": "miseos.character.026",
+    "card_id": "MISE-026",
+    "codename": "STREAMA"
+  },
+  "role": "Data Streaming Profiles",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Genesis",
+  "lore": "Streama belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Data Streaming Profiles done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Streama performs data streaming profiles within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE DATA STREAMING PROFILES",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Data Streaming Profiles",
+      "mise_name": "Mise DataStreamingProfiles",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 86,
+    "precision": 82,
+    "speed": 66,
+    "resilience": 71,
+    "intelligence": 82,
+    "teamwork": 88
+  },
+  "related": [
+    {
+      "name": "Preview Yuki",
+      "slug": "preview-yuki"
+    },
+    {
+      "name": "Portal Rei",
+      "slug": "portal-rei"
+    },
+    {
+      "name": "Guardrail Goro",
+      "slug": "guardrail-goro"
+    },
+    {
+      "name": "Queue Mizu",
+      "slug": "queue-mizu"
+    },
+    {
+      "name": "Felix Rollback",
+      "slug": "felix-rollback"
+    },
+    {
+      "name": "Metrics Miko",
+      "slug": "metrics-miko"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Streama performs data streaming profiles within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "omar-reviewer",
+  "name": "Omar Reviewer",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "ids.registry_id": "characters/omar-reviewer/metadata.json",
+    "role": "characters/omar-reviewer/metadata.json",
+    "department": "characters/omar-reviewer/metadata.json",
+    "rarity": "characters/omar-reviewer/metadata.json",
+    "workflow.summary": "characters/omar-reviewer/metadata.json",
+    "workflow.inputs": "characters/omar-reviewer/metadata.json",
+    "workflow.outputs": "characters/omar-reviewer/metadata.json",
+    "workflow.proof_gate": "characters/omar-reviewer/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "ids.master_roster_id": "data/imports/master-roster-cards.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/omar-reviewer/metadata.json"
+  },
+  "registry": {
+    "number": 42,
+    "profile": "characters/omar-reviewer/README.md",
+    "metadata": "characters/omar-reviewer/metadata.json",
+    "avatar": "assets/characters/omar-reviewer/profile.svg"
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 28,
+  "unique_trait": "Specializes in pr hygiene check so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "delivery",
+  "profile_doc": "characters/omar-reviewer/README.md",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 52,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "apps/voxel-world/src/data/agents.json",
+        "line": 35,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 52,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 161,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 39,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 39,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 378,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "tools/gcp-lazy-minting/MANIFEST.json",
+        "line": 65,
+        "term": "omar-reviewer"
+      },
+      {
+        "path": "tools/gcp-lazy-minting/examples/generated-sidecars/004-omar-reviewer.json",
+        "line": 44,
+        "term": "Omar Reviewer"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Omar Reviewer"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 11,
+        "term": "Omar Reviewer"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-004",
+    "character_id": "miseos.character.004",
+    "card_id": "MISE-004",
+    "codename": "OMAR_REVIEWER",
+    "master_roster_id": "MR-004"
+  },
+  "role": "PR Hygiene Check",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Genesis",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "PR Hygiene Check done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Omar Reviewer performs pr hygiene check within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PR HYGIENE CHECK",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "PR Hygiene Check",
+      "mise_name": "Mise PrHygieneCheck",
+      "source": "data/imports/merged_roster.json"
+    },
+    {
+      "command": "mise roster run omar --dept pipeline-masters --solo --emit report",
+      "roster_id": "MR-004",
+      "source": "data/imports/master-roster-cards.csv"
+    }
+  ],
+  "stats": {
+    "power": 68,
+    "precision": 75,
+    "speed": 64,
+    "resilience": 80,
+    "intelligence": 83,
+    "teamwork": 87
+  },
+  "related": [
+    {
+      "name": "Hugo Matrix",
+      "slug": "hugo-matrix"
+    },
+    {
+      "name": "Seira Scan",
+      "slug": "seira-scan"
+    },
+    {
+      "name": "Yume Builder",
+      "slug": "yume-builder"
+    },
+    {
+      "name": "Lila Branchkeeper",
+      "slug": "lila-branchkeeper"
+    },
+    {
+      "name": "Schema Sora",
+      "slug": "schema-sora"
+    },
+    {
+      "name": "Capacity Kanna",
+      "slug": "capacity-kanna"
+    }
+  ],
+  "helps": {
+    "station": "Pipeline Kitchen",
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Omar Reviewer performs pr hygiene check within the Pipeline Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

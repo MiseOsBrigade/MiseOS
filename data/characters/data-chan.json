@@ -1,0 +1,226 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "data-chan",
+  "name": "Data Chan",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/data-chan/metadata.json",
+    "role": "characters/data-chan/metadata.json",
+    "department": "characters/data-chan/metadata.json",
+    "rarity": "characters/data-chan/metadata.json",
+    "workflow.summary": "characters/data-chan/metadata.json",
+    "workflow.inputs": "characters/data-chan/metadata.json",
+    "workflow.outputs": "characters/data-chan/metadata.json",
+    "workflow.proof_gate": "characters/data-chan/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/data-chan/metadata.json"
+  },
+  "registry": {
+    "number": 3,
+    "profile": "characters/data-chan/README.md",
+    "metadata": "characters/data-chan/metadata.json",
+    "avatar": "assets/characters/data-chan/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/data-chan.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/data-chan.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Data-chan",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/data-chan.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO. 019",
+        "Data-chan",
+        "MO",
+        "RARE-KnowledgeLine",
+        "GuestChefInsights&Growth",
+        "ABILITY:KnowledgePantry",
+        "Collects and organizes data. Knowledge is the secret ingredient.",
+        "Element:ArchiveLight·Function:Collect",
+        "COLLECT",
+        "98",
+        "ORGANIZE",
+        "94",
+        "ANALYZE",
+        "77",
+        "COOK·ORCHESTRATE·DEPLOY",
+        "LPROVENANCE-READY",
+        "GROW"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Rare",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 24,
+  "orchestra_card": {
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "function": "Collect",
+    "rarity": "Rare",
+    "tier": "Knowledge Line",
+    "element": "Archive Light",
+    "ability": "Knowledge Pantry",
+    "lore": "Collects and organizes data. Knowledge is the secret ingredient."
+  },
+  "abilities": [
+    "Knowledge Pantry"
+  ],
+  "profile_doc": "characters/data-chan/README.md",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 5406,
+        "term": "data-chan"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 178,
+        "term": "data-chan"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/019-data-chan.json",
+        "line": 4,
+        "term": "data-chan"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 5406,
+        "term": "data-chan"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 20,
+        "term": "data-chan"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 178,
+        "term": "data-chan"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 190,
+        "term": "data-chan"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 190,
+        "term": "data-chan"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1709,
+        "term": "data-chan"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "data-chan"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "data-chan"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "data-chan"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-088",
+    "character_id": "miseos.character.088",
+    "card_id": "MISE-088",
+    "codename": "DATA_CHAN"
+  },
+  "role": "Collect",
+  "department": "Data & Insight Kitchen",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "rarity": "Rare",
+  "lore": "Data-chan belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Data-chan performs collect within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE COLLECT",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 81,
+    "precision": 78,
+    "speed": 63,
+    "resilience": 73,
+    "intelligence": 68,
+    "teamwork": 73
+  },
+  "related": [
+    {
+      "name": "Insight Sensei",
+      "slug": "insight-sensei"
+    },
+    {
+      "name": "Chaos Analyst",
+      "slug": "chaos-analyst"
+    },
+    {
+      "name": "Growth Guru",
+      "slug": "growth-guru"
+    }
+  ],
+  "helps": {
+    "station": "Data & Insight Kitchen",
+    "mission": "Learn. Optimize. Evolve.",
+    "problem": "Data-chan performs collect within the Data & Insight Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

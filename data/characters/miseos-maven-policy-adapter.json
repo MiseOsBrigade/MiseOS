@@ -1,0 +1,351 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-maven-policy-adapter",
+  "name": "MiseOS Maven Policy Adapter",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-maven-policy-adapter.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-maven-policy-adapter.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Maven Policy Adapter",
+      "match_method": "title"
+    },
+    {
+      "file": "assets/player-cards/long-cards/miseos-maven-policy-adapter-2.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-maven-policy-adapter-2.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Maven Policy Adapter",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-maven-policy-adapter.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "POLICY",
+        "REPOSITORY",
+        "ENGINE",
+        "RUNE",
+        "COMPLIANCE",
+        "FLOW",
+        "ARTIFACT",
+        "SEAL",
+        "ACCESS",
+        "CONTROL",
+        "AUDIT",
+        "TRUST",
+        "MiseOS Maven Policy Adapter",
+        "Package",
+        "100",
+        "POLICYMAPPING",
+        "REGISTRYHARMONY",
+        "100",
+        "100",
+        "RULESYNTHESIS",
+        "ARTIFACTINTEGRITY",
+        "100",
+        "ADAPTIVEGOVERNANCE",
+        "100",
+        "COMPLIANCEORCHESTRATION1OO",
+        "ADAPTPOLICIES.IUNIFYINTENT",
+        "AM THE BRIDGE BETWEEN CODE AND COMPLIANCE.",
+        "MISEOSECOSYSTEM"
+      ]
+    },
+    {
+      "file": "assets/player-cards/long-cards/miseos-maven-policy-adapter-2.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "POLICY",
+        "REPOSITORY",
+        "ENGINE",
+        "RUNE",
+        "COMPLIANCE",
+        "FLOW",
+        "ARTIFACT",
+        "SEAL",
+        "ACCESS",
+        "CONTROL",
+        "AUDIT",
+        "TRUST",
+        "MiseOS Maven Policy Adapter",
+        "Package",
+        "100",
+        "POLICYMAPPING",
+        "REGISTRY HARMONY",
+        "100",
+        "100",
+        "ARTIFACTINTEGRITY",
+        "RULE SYNTHESIS",
+        "100",
+        "100",
+        "ADAPTIVEGOVERNANCE",
+        "COMPLIANCEORCHESTRATION",
+        "100",
+        "ADAPT",
+        "POLICIES.",
+        "AMTHEBRIDGE BETWEEN CODE AND",
+        "COMPLIANCE",
+        "MISE OS ECOSYSTEM"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "mavenPolicyAdapter"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "package",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 17,
+        "term": "mavenPolicyAdapter"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 17,
+        "term": "mavenPolicyAdapter"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 17,
+        "term": "mavenPolicyAdapter"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.maven-policy-adapter"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 315,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 292,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 11,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 292,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 84,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.maven-policy-adapter.json",
+        "line": 4,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 84,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.maven-policy-adapter.json",
+        "line": 4,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 232,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 292,
+        "term": "MiseOS Maven Policy Adapter"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 62,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 42,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 12,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 61,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/maven-policy-adapter.md",
+        "line": 1,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 62,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 26,
+        "term": "MiseOS Maven Policy Adapter"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 12,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 85,
+        "term": "miseos.maven-policy-adapter"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 16,
+        "term": "miseos.maven-policy-adapter"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 17,
+      "name": "mavenPolicyAdapter"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 17,
+        "term": "mavenPolicyAdapter"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 17,
+        "term": "mavenPolicyAdapter"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 17,
+        "term": "mavenPolicyAdapter"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.maven-policy-adapter"
+  },
+  "role": "Package",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Maven Policy Adapter.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "mavenPolicyAdapter",
+      "handler": "mavenPolicyAdapter",
+      "source": "apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (package)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Maven Policy Adapter.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

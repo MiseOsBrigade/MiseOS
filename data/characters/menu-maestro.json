@@ -1,0 +1,110 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "menu-maestro",
+  "name": "Menu Maestro",
+  "kind": "card_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/imports/photo-alignment.csv",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "role": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "catalogue_status": "data/imports/photo-alignment.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+  },
+  "photo_alignment": [
+    {
+      "page": "30",
+      "status": "visual_reference_only",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf"
+    }
+  ],
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/menu-maestro.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/menu-maestro.webp",
+      "collection": "1by1-chefs",
+      "title": "Menu Maestro",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/menu-maestro.webp",
+      "printed_text": [
+        "SEASONAL LINEUP",
+        "MISE",
+        "ORCHESTRA",
+        "MENU MAP",
+        "BALANCE",
+        "STRATEGY CORE",
+        "FLAVOR",
+        "SIGNATURE",
+        "TEXTURE",
+        "INSPIRE",
+        "AROMA",
+        "SELECTION",
+        "COMPOSE",
+        "VISUAL",
+        "REFINE",
+        "HARMONY",
+        "ELEVATE",
+        "DELIGHT",
+        "PAIRINGS",
+        "KITCHEN INTEL",
+        "WINE",
+        "EDITION",
+        "0007",
+        "HERB",
+        "RATING",
+        "SPICE",
+        "★★★★★",
+        "TECHNIQUE",
+        "MAESTRO LV.",
+        "STORY",
+        "Menu Maestro",
+        "Culinary Strategist"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": "Not yet defined in the source material",
+  "catalogue_status": "visual_reference_only",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [],
+    "doc_refs": [],
+    "app_code_refs": [],
+    "status": "not_defined",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {},
+  "role": "Culinary Strategist",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Not yet defined in the source material",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": "Not yet defined in the source material",
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Culinary Strategist",
+    "mission": "Not yet defined in the source material",
+    "problem": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

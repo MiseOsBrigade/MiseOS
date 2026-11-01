@@ -1,0 +1,220 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "plate-inspector",
+  "name": "Plate Inspector",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/plate-inspector/metadata.json",
+    "role": "characters/plate-inspector/metadata.json",
+    "department": "characters/plate-inspector/metadata.json",
+    "rarity": "characters/plate-inspector/metadata.json",
+    "workflow.summary": "characters/plate-inspector/metadata.json",
+    "workflow.inputs": "characters/plate-inspector/metadata.json",
+    "workflow.outputs": "characters/plate-inspector/metadata.json",
+    "workflow.proof_gate": "characters/plate-inspector/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/plate-inspector/metadata.json"
+  },
+  "registry": {
+    "number": 27,
+    "profile": "characters/plate-inspector/README.md",
+    "metadata": "characters/plate-inspector/metadata.json",
+    "avatar": "assets/characters/plate-inspector/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/plate-inspector.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/plate-inspector.webp",
+      "collection": "long-cards",
+      "title": "Plate Inspector",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/plate-inspector.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/plate-inspector.webp",
+      "collection": "1by1-chefs",
+      "title": "Plate Inspector",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/plate-inspector.webp",
+      "printed_text": [
+        "PLATINGPROTOCOL",
+        "OBSERVE",
+        "ANALYZE",
+        "MISE",
+        "MEASURE",
+        "ORCHESTRA",
+        "REFINE",
+        "APPROVE",
+        "PRESENTATIONMETRICS",
+        "COLOR HARMONY",
+        "SYMMETRY",
+        "HEIGHT BALANCE",
+        "TEXTURECONTRAST",
+        "SAUCEPRECISION",
+        "99.2%",
+        "GARNISHINDEX",
+        "PLATINGSCORE",
+        "98.7%",
+        "APPROVED",
+        "★★★★★",
+        "ORCHE",
+        "Plate Inspector",
+        "Inspecteur d'Assiette"
+      ]
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/plate-inspector.webp",
+      "printed_text": [
+        "PRESENTATION SCORE",
+        "100%",
+        "MISE",
+        "★★★★★",
+        "ORCHESTRA",
+        "PLATINGPROTOCOL",
+        " BALANCE",
+        "VISUAL HIERARCHY",
+        " HARMONY",
+        "FOCAL",
+        "POINT",
+        " FOCUS",
+        "SECONDARY",
+        " CONTRAST",
+        "ELEGANCE",
+        "ACCENT",
+        "BASE",
+        "SYMMETRY ANALYSIS",
+        "COLOR HARMONY",
+        "CREAM",
+        "GOLD",
+        "SAPPHIRE",
+        "DEVIATION",
+        "±0.02mm",
+        "GOLDENRATIO",
+        "1 : 1.618",
+        "EXEMPLARY",
+        "PRESENTATION",
+        "CERTIFIED",
+        "Plate Inspector",
+        "AssietteAuditor"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Rare",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%",
+    "98.7%",
+    "99.2%"
+  ],
+  "level": 25,
+  "profile_doc": "characters/plate-inspector/README.md",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6500,
+        "term": "Plate Inspector"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6500,
+        "term": "Plate Inspector"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Plate Inspector"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-108",
+    "character_id": "miseos.character.108",
+    "card_id": "MISE-108",
+    "codename": "PLATE_INSPECTOR"
+  },
+  "role": "Asset Auditor",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Plate Inspector performs asset auditor within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE ASSET AUDITOR",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 63,
+    "precision": 73,
+    "speed": 82,
+    "resilience": 75,
+    "intelligence": 72,
+    "teamwork": 86
+  },
+  "related": [
+    {
+      "name": "Timer Tactician",
+      "slug": "timer-tactician"
+    },
+    {
+      "name": "Recipe Ranger",
+      "slug": "recipe-ranger"
+    },
+    {
+      "name": "Portion Paladin",
+      "slug": "portion-paladin"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Plate Inspector performs asset auditor within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

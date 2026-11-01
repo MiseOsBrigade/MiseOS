@@ -1,0 +1,255 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "token-toshi",
+  "name": "Token Toshi",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "ids.registry_id": "characters/token-toshi/metadata.json",
+    "role": "characters/token-toshi/metadata.json",
+    "department": "characters/token-toshi/metadata.json",
+    "rarity": "characters/token-toshi/metadata.json",
+    "workflow.summary": "characters/token-toshi/metadata.json",
+    "workflow.inputs": "characters/token-toshi/metadata.json",
+    "workflow.outputs": "characters/token-toshi/metadata.json",
+    "workflow.proof_gate": "characters/token-toshi/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/token-toshi/metadata.json"
+  },
+  "registry": {
+    "number": 110,
+    "profile": "characters/token-toshi/README.md",
+    "metadata": "characters/token-toshi/metadata.json",
+    "avatar": "assets/characters/token-toshi/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/token-toshi.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/token-toshi.webp",
+      "collection": "1by1-chefs",
+      "title": "Token Toshi",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/token-toshi.webp",
+      "printed_text": [
+        "SECURITY",
+        "MISE",
+        "KITCHEN",
+        "ORCHESTRA",
+        "SERVICE",
+        "KEY",
+        "OAUTH",
+        "TOKEN",
+        "HYGIENE SCORE",
+        "ROTATION STATUS",
+        "98",
+        "/100",
+        "API",
+        "DB",
+        "EXCELLENT",
+        "TOKEN",
+        "CREDENTIAL",
+        "ACTIVE",
+        "NOEXPOSEDSECRETS",
+        "NO HARD-CODEDKEYS",
+        "NEXT ROTATION",
+        "LEASTPRIVILEGE",
+        "7 DAYS",
+        "TIMELYROTATION",
+        "CLEAN AUDITTRAIL",
+        "TOKENAGE",
+        "EXPOSURECHECK",
+        "MISEOS",
+        "SEOURE BY DEFAULT",
+        "14 DAYS",
+        "LEAKS",
+        "DETECTED",
+        "SINCE ISSUED",
+        "SCAN·VALIDATE·SANITIZE",
+        "Token Toshi",
+        "Credential Hygiene Scanner"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 27,
+  "unique_trait": "Specializes in credential hygiene scanner so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "security",
+  "profile_doc": "characters/token-toshi/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 655,
+        "text": "MISE-G2-P089 Token Toshi Mise Orchestra canonical-candidate 1E3334AB-3111- 89"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 715,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 543,
+        "term": "Token Toshi"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 667,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 2841,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 2841,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 2713,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 315,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 315,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 2545,
+        "term": "Token Toshi"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Token Toshi"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 23,
+        "term": "Token Toshi"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-048",
+    "character_id": "miseos.character.048",
+    "card_id": "MISE-048",
+    "codename": "TOKEN_TOSHI"
+  },
+  "role": "Credential Hygiene Scanner",
+  "department": "Security Kitchen",
+  "department_mission": "Guard. Audit. Comply.",
+  "rarity": "Rare",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Credential Hygiene Scanner done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Token Toshi performs credential hygiene scanner within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE CREDENTIAL HYGIENE SCANNER",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Credential Hygiene Scanner",
+      "mise_name": "Mise CredentialHygieneScanner",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 84,
+    "precision": 69,
+    "speed": 65,
+    "resilience": 80,
+    "intelligence": 61,
+    "teamwork": 67
+  },
+  "related": [
+    {
+      "name": "CVE Kumo",
+      "slug": "cve-kumo"
+    },
+    {
+      "name": "Container Kage",
+      "slug": "container-kage"
+    },
+    {
+      "name": "Seira Vaultkeeper",
+      "slug": "seira-vaultkeeper"
+    },
+    {
+      "name": "Secure Sakura",
+      "slug": "secure-sakura"
+    },
+    {
+      "name": "Lila Branchkeeper",
+      "slug": "lila-branchkeeper"
+    },
+    {
+      "name": "Terra Forge",
+      "slug": "terra-forge"
+    }
+  ],
+  "helps": {
+    "station": "Security Kitchen",
+    "mission": "Guard. Audit. Comply.",
+    "problem": "Token Toshi performs credential hygiene scanner within the Security Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

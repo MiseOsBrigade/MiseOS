@@ -1,0 +1,399 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "build-kun",
+  "name": "Build-Kun",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/build-kun/metadata.json",
+    "role": "characters/build-kun/metadata.json",
+    "department": "characters/build-kun/metadata.json",
+    "rarity": "characters/build-kun/metadata.json",
+    "workflow.summary": "characters/build-kun/metadata.json",
+    "workflow.inputs": "characters/build-kun/metadata.json",
+    "workflow.outputs": "characters/build-kun/metadata.json",
+    "workflow.proof_gate": "characters/build-kun/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/build-kun/metadata.json"
+  },
+  "registry": {
+    "number": 1,
+    "profile": "characters/build-kun/README.md",
+    "metadata": "characters/build-kun/metadata.json",
+    "avatar": "assets/characters/build-kun/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/build-kun.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/build-kun.webp",
+      "collection": "1by1-chefs",
+      "title": "Build-Kun",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/character-building/build-kun.webp",
+      "thumbnail": "assets/player-cards/character-building/thumbs/build-kun.webp",
+      "collection": "character-building",
+      "title": "3 Build-Kun",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/build-kun.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/build-kun.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Build-Kun",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "character-building",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/build-kun.webp",
+      "printed_text": [
+        "CONTAINER BUILD",
+        "MISE",
+        "100%",
+        "ORCHESTRA",
+        "BUILDMODULES",
+        "源·MIX",
+        "BLUEPRINT",
+        "·FERMENT",
+        "·BAKE",
+        "·ASSEMBLE",
+        ".wow!",
+        "EFFICIENCY",
+        "LEVEL",
+        "QUALITY FIRST",
+        "MAX",
+        "★★★★★",
+        "PERFECT",
+        "INVENTOR'SSPIRIT",
+        "IMAGINE",
+        "INVENT",
+        "IMPROVE",
+        "INSPIRE",
+        "Build-Kun",
+        "Boulanger"
+      ]
+    },
+    {
+      "file": "assets/player-cards/character-building/build-kun.webp",
+      "printed_text": [
+        "6.SECURITY DEPARTMENT /七≠↓亍↑部",
+        "Weprotect the kitchen. Wekeep chaos out.",
+        "INVALID",
+        "AINVALIDA",
+        "INPUT",
+        "SEIRA",
+        "AINPUT",
+        "SCHEMA",
+        "ERROR",
+        "ERROR",
+        "Iron Hashi",
+        "8Null-chan",
+        "11KuroGuard",
+        "10 Seira",
+        "FlashRiku",
+        "Steward",
+        "Sommelier",
+        "Boucher",
+        "Plongeur",
+        "Runner",
+        "The shield that stands",
+        "Keeper of secrets and",
+        "No mistakes allowed.",
+        "Cleans up what's not",
+        "Fastest chef in the kitchen.",
+        "between threats and",
+        "sensitive ingredients.",
+        "Validates everything",
+        "needed. Keeps the kitchen",
+        "Delivers with speed,",
+        "the kitchen. Unwavering",
+        "Nothing gets in. Nothing",
+        "with brutal precision.",
+        "light, fast, and efficient.",
+        "defender.",
+        "accuracy, and zero delays.",
+        "gets out.",
+        "GARBAGECOLLECTION",
+        "FIREWALL&ACCESSCONTROL",
+        "SECRETS MANAGEMENT",
+        "VALIDATION&COMPLIANCE",
+        "CI/CDDELIVERY",
+        "7.INFRASTRUCTUREDEPARTMENT/17部",
+        "We build. We scale. We keep everything running.",
+        "12 Scale Oni",
+        "3Build-Kun",
+        "5Kaji",
+        "14Streama",
+        "5Orchestra Core",
+        "Rotisseur",
+        "Grillardin",
+        "Boulanger",
+        "Poissonier",
+        "Chef Spirit",
+        "Handles the heat and",
+        "When demand rises,",
+        "Bakes fresh images",
+        "Streams data like water.",
+        "The soul of the kitchen.",
+        "hegrows.Scalesup,",
+        "keeps the engines",
+        "from clean recipes.",
+        "Flowneverstops.",
+        "Sees everything.",
+        "burning.Power is",
+        "handles more,never",
+        "Everybuild isa new",
+        "Always in motion.",
+        "backs down.",
+        "his passion.",
+        "creation.",
+        "Coordinates all.",
+        "COMPUTE ENGINE",
+        "AUTOSCALING",
+        "CONTAINER BUILD",
+        "DATA STREAMING",
+        "ORCHESTRATIONCORE"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/build-kun.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.013",
+        "Build-Kun",
+        "RARE-BuildLine",
+        "Boulanger|Pipeline",
+        "ABILITY:ImageBake",
+        "Bakes container images fresh and fully. Always experimenting",
+        "Element:Container Dough · Function:Build",
+        "BUILD",
+        "96",
+        "TEST",
+        "82",
+        "DEPLOY",
+        "80",
+        "·ORCHESTRATE·DEPLOY",
+        "COOK",
+        "LPROVENANCE-READY",
+        "SPEED"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Rare",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%"
+  ],
+  "level": 21,
+  "orchestra_card": {
+    "role": "Boulanger",
+    "department": "Pipeline",
+    "function": "Build",
+    "rarity": "Rare",
+    "tier": "Build Line",
+    "element": "Container Dough",
+    "ability": "Image Bake",
+    "lore": "Bakes container images fresh and fully. Always experimenting."
+  },
+  "abilities": [
+    "Image Bake"
+  ],
+  "profile_doc": "characters/build-kun/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 643,
+        "text": "MISE-G2-P082 Build-Kun Mise Orchestra canonical-candidate 1E3334AB-3111- 82"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 139,
+        "term": "build-kun"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 369,
+        "term": "Build-Kun"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 4764,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 120,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/013-build-kun.json",
+        "line": 2,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 4764,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 14,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 120,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 207,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 207,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1838,
+        "term": "Build-Kun"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 11,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 5,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 26,
+        "term": "Build-Kun"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Build-Kun"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 369,
+        "term": "Build-Kun"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-086",
+    "character_id": "miseos.character.086",
+    "card_id": "MISE-086",
+    "codename": "BUILD_KUN"
+  },
+  "role": "Build",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Rare",
+  "lore": "Build-Kun belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Build-Kun performs build within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE BUILD",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 75,
+    "precision": 73,
+    "speed": 70,
+    "resilience": 81,
+    "intelligence": 62,
+    "teamwork": 82
+  },
+  "related": [
+    {
+      "name": "Alko Commit Chef",
+      "slug": "alko-commit-chef"
+    },
+    {
+      "name": "Bruno Blast-Radius",
+      "slug": "bruno-blast-radius"
+    },
+    {
+      "name": "Lila Branchkeeper",
+      "slug": "lila-branchkeeper"
+    }
+  ],
+  "helps": {
+    "station": "Pipeline Kitchen",
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Build-Kun performs build within the Pipeline Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

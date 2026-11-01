@@ -1,0 +1,273 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-docs-hub-template",
+  "name": "MiseOS Docs Hub Template",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-docs-hub-template.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-docs-hub-template.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Docs Hub Template",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-docs-hub-template.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "ULTRMYTHIC",
+        "OVERVIEW",
+        "ARCHITECTURE",
+        "QUICKSTART",
+        "API REFERENCE",
+        "GUIDES",
+        "TUTORIALS",
+        "MiseOS Docs Hub Template",
+        "Template",
+        "NAVIGATE",
+        "CONNECT",
+        "REGISTER",
+        "DOCUMENT",
+        "ORGANIZE",
+        "EVOLVE",
+        "KNOWLEDGECONNECTS.DOCUMENTSEMPOWER.ECOSYSTEMSEVOLVE.",
+        "+MISEOS",
+        "REGISTRY+·"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "docsHubTemplate"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "template",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 15,
+        "term": "docsHubTemplate"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 15,
+        "term": "docsHubTemplate"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 15,
+        "term": "docsHubTemplate"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 43,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 230,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 7,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 230,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 81,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.docs-hub-template.json",
+        "line": 4,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 81,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.docs-hub-template.json",
+        "line": 4,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 202,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 230,
+        "term": "MiseOS Docs Hub Template"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 46,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 38,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 10,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 24,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 10,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 83,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 14,
+        "term": "miseos.docs-hub-template"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Docs Hub Template"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+        "line": 10,
+        "term": "miseos.docs-hub-template"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 15,
+      "name": "docsHubTemplate"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 15,
+        "term": "docsHubTemplate"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 15,
+        "term": "docsHubTemplate"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 15,
+        "term": "docsHubTemplate"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.docs-hub-template"
+  },
+  "role": "Template",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Docs Hub Template.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "docsHubTemplate",
+      "handler": "docsHubTemplate",
+      "source": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (template)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Docs Hub Template.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

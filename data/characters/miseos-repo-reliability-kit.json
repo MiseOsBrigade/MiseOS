@@ -1,0 +1,255 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-repo-reliability-kit",
+  "name": "MiseOS Repo Reliability Kit",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "repoReliabilityKit"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "workflow",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 53,
+        "term": "repoReliabilityKit"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 53,
+        "term": "repoReliabilityKit"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 53,
+        "term": "repoReliabilityKit"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.repo-reliability-kit"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 7357,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+        "line": 5,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/registry-catalog.manifest.json",
+        "line": 1017,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/registry_catalog_manifest.json",
+        "line": 44,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/miseos-platform/registry/registry-catalog.manifest.json",
+        "line": 138,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
+        "line": 5,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/registry-platform/registry/registry-catalog.manifest.json",
+        "line": 1017,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 7357,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.csv",
+        "line": 109,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.json",
+        "line": 1636,
+        "term": "MiseOS Repo Reliability Kit"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/README.md",
+        "line": 45,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 26,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "apps/miseos-platform/docs/BRAND_MARKETING_STRATEGY.md",
+        "line": 61,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 40,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "apps/registry-platform/README.md",
+        "line": 45,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 26,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 93,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 30,
+        "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Repo Reliability Kit"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+        "line": 26,
+        "term": "miseos.repo-reliability-kit"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 53,
+      "name": "repoReliabilityKit"
+    },
+    "tool_dir": "tools/repo-reliability-kit",
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 53,
+        "term": "repoReliabilityKit"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 53,
+        "term": "repoReliabilityKit"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 53,
+        "term": "repoReliabilityKit"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.repo-reliability-kit"
+  },
+  "role": "Workflow",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Repo Reliability Kit.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "repoReliabilityKit",
+      "handler": "repoReliabilityKit",
+      "source": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (workflow)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Repo Reliability Kit.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

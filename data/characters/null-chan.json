@@ -1,0 +1,334 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "null-chan",
+  "name": "Null-chan",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/null-chan/metadata.json",
+    "role": "characters/null-chan/metadata.json",
+    "department": "characters/null-chan/metadata.json",
+    "rarity": "characters/null-chan/metadata.json",
+    "workflow.summary": "characters/null-chan/metadata.json",
+    "workflow.inputs": "characters/null-chan/metadata.json",
+    "workflow.outputs": "characters/null-chan/metadata.json",
+    "workflow.proof_gate": "characters/null-chan/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/null-chan/metadata.json"
+  },
+  "registry": {
+    "number": 13,
+    "profile": "characters/null-chan/README.md",
+    "metadata": "characters/null-chan/metadata.json",
+    "avatar": "assets/characters/null-chan/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/null-chan.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/null-chan.webp",
+      "collection": "1by1-chefs",
+      "title": "Null-chan",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/null-chan.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/null-chan.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Nul-chan",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/null-chan.webp",
+      "thumbnail": "assets/player-cards/icloud-screens/thumbs/null-chan.webp",
+      "collection": "icloud-screens",
+      "title": "NULL-CHANL",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "icloud-screens",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/null-chan.webp",
+      "printed_text": [
+        "AQUASYNC",
+        "MISE",
+        "100%",
+        "ORCHESTRA",
+        "NULLPROTOCOL",
+        "NULL",
+        "DISHSECURED",
+        "ZESTREMOVED",
+        "GREASEERASED",
+        "SANITYCLEANSED",
+        "COMPLETE",
+        "Null-chan",
+        "Plongeur"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/null-chan.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "NO.008",
+        "Null-chan",
+        "MO",
+        "..",
+        "RARE-MaintenanceLine",
+        "Plongeur|Reliability",
+        "ABILITY: NullSweep",
+        "Cleans up what is not needed.Keeps the kitchen light.",
+        "Element:VoidSoap.Function:Cleanse",
+        "CLEANSE",
+        "98",
+        "OBSERVE",
+        "78",
+        "GUARD",
+        "71",
+        "COOK·ORCHESTRATE·DEPLOY",
+        "LPROVENANCE-READY",
+        "FLOW"
+      ]
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/null-chan.webp",
+      "printed_text": [
+        "ORCHESTRATED",
+        "DEVOPS KITCHEN",
+        "SYSTEMSTATUS",
+        "PIPELINES ACTIVE",
+        "12",
+        "AGENTS ONLINE",
+        "06",
+        "SUCCESS RATE",
+        "98.7%",
+        "MTTR",
+        "CODE",
+        "BUILD",
+        "DEPLOY",
+        "MONITOR",
+        "12m",
+        "CODE QUALITY",
+        "A+",
+        "Every agent",
+        "pipelin",
+        "agent",
+        "stages",
+        "stage('orchestrate')",
+        "steps",
+        "has a role.",
+        "is orchestrated.",
+        "Every role",
+        "NULL-CHANL",
+        "NULL-CHAN",
+        "has purpose.",
+        "Every action",
+        "is orchestrated",
+        "MISEORCHESTRA"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Rare",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "100%",
+    "98.7%"
+  ],
+  "level": 19,
+  "orchestra_card": {
+    "role": "Plongeur",
+    "department": "Reliability",
+    "function": "Cleanse",
+    "rarity": "Rare",
+    "tier": "Maintenance Line",
+    "element": "Void Soap",
+    "ability": "Null Sweep",
+    "lore": "Cleans up what is not needed. Keeps the kitchen light."
+  },
+  "abilities": [
+    "Null Sweep"
+  ],
+  "profile_doc": "characters/null-chan/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 282,
+        "term": "null-chan"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 239,
+        "term": "Null-chan"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 2656,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 75,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/008-null-chan.json",
+        "line": 2,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 2656,
+        "term": "Null-chan"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 9,
+        "term": "Null-chan"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 75,
+        "term": "Null-chan"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 261,
+        "term": "Null-chan"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 261,
+        "term": "Null-chan"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 2339,
+        "term": "Null-chan"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 19,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 63,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 21,
+        "term": "Null-chan"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Null-chan"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 239,
+        "term": "Null-chan"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-081",
+    "character_id": "miseos.character.081",
+    "card_id": "MISE-081",
+    "codename": "NULL_CHAN"
+  },
+  "role": "Cleanse",
+  "department": "Reliability Kitchen",
+  "department_mission": "Observe. Measure. Improve.",
+  "rarity": "Rare",
+  "lore": "Null-chan belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Null-chan performs cleanse within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE CLEANSE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 60,
+    "precision": 77,
+    "speed": 62,
+    "resilience": 66,
+    "intelligence": 70,
+    "teamwork": 70
+  },
+  "related": [
+    {
+      "name": "SLO Sage",
+      "slug": "slo-sage"
+    },
+    {
+      "name": "Trace Sensei",
+      "slug": "trace-sensei"
+    },
+    {
+      "name": "Chaos Kaito",
+      "slug": "chaos-kaito"
+    }
+  ],
+  "helps": {
+    "station": "Reliability Kitchen",
+    "mission": "Observe. Measure. Improve.",
+    "problem": "Null-chan performs cleanse within the Reliability Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

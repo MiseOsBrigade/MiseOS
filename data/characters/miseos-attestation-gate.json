@@ -1,0 +1,310 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-attestation-gate",
+  "name": "MiseOS Attestation Gate",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-attestation-gate.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-attestation-gate.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Attestation Gate",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-attestation-gate.webp",
+      "printed_text": [
+        "MISE",
+        "MISE",
+        "ORCHESTRA",
+        "ORCHESTRA",
+        "ULTRMYTHIC",
+        "DENY",
+        "MO771",
+        "MiseOS Attestation Gate",
+        "TRUST",
+        "VERIFIED",
+        "Policy",
+        "SEAL",
+        "SEAL",
+        "IVERIFY.IENFORCE.IPRESERVETRUST",
+        "IAMTHEGATEBETWEENINTENTANDACCESS.",
+        "VERIFY",
+        "ENFORCE",
+        "AUTHENTICATE",
+        "AUTHORIZE",
+        "AUDIT",
+        "SOVEREIGNTY",
+        "100",
+        "100",
+        "100",
+        "100",
+        "100",
+        "100",
+        "SIGNED&ATTESTEDBY",
+        "EVERYACCESS.EVERYACTION.",
+        "MISEORCHESTRA",
+        "EVERY ENTITY.",
+        "ATTESTED.APPROVED.RECORDED.",
+        "THISIS MISEOS.",
+        "MiseConductorPrime",
+        "MO-GATE-ATTEST-001",
+        "MISEOS",
+        "REGISTRY"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "attestationGate"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "policy",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 9,
+        "term": "attestationGate"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 9,
+        "term": "attestationGate"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 9,
+        "term": "attestationGate"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.attestation-gate"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 153,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 187,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 4,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 187,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 79,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.attestation-gate.json",
+        "line": 4,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 79,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.attestation-gate.json",
+        "line": 4,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 159,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 187,
+        "term": "MiseOS Attestation Gate"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 52,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 35,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 7,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 53,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/attestation-gate.md",
+        "line": 1,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 21,
+        "term": "MiseOS Attestation Gate"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 7,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 80,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 11,
+        "term": "miseos.attestation-gate"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Attestation Gate"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 9,
+      "name": "attestationGate"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 9,
+        "term": "attestationGate"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 9,
+        "term": "attestationGate"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 9,
+        "term": "attestationGate"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.attestation-gate"
+  },
+  "role": "Policy",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Attestation Gate.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "attestationGate",
+      "handler": "attestationGate",
+      "source": "apps/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (policy)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Attestation Gate.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

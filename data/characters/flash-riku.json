@@ -1,0 +1,307 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "flash-riku",
+  "name": "Flash Riku",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/flash-riku/metadata.json",
+    "role": "characters/flash-riku/metadata.json",
+    "department": "characters/flash-riku/metadata.json",
+    "rarity": "characters/flash-riku/metadata.json",
+    "workflow.summary": "characters/flash-riku/metadata.json",
+    "workflow.inputs": "characters/flash-riku/metadata.json",
+    "workflow.outputs": "characters/flash-riku/metadata.json",
+    "workflow.proof_gate": "characters/flash-riku/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/flash-riku/metadata.json"
+  },
+  "registry": {
+    "number": 4,
+    "profile": "characters/flash-riku/README.md",
+    "metadata": "characters/flash-riku/metadata.json",
+    "avatar": "assets/characters/flash-riku/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/flash-riku.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/flash-riku.webp",
+      "collection": "1by1-chefs",
+      "title": "Flash Riku",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/flash-riku.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/flash-riku.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "ElashRiku",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/flash-riku.webp",
+      "printed_text": [
+        "MISEOS",
+        "MISE",
+        "DELIVER",
+        "EXPEDITER",
+        "ORCHESTRA",
+        "DELIVER",
+        "EXPRESS",
+        "DELIVER",
+        "Flash Riku",
+        "Runner"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/flash-riku.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "NO.009",
+        "FlashRiku",
+        "MO",
+        "EPIC-DeliveryLine",
+        "Runner | Pipeline",
+        "ABILITY:Lightning Delivery",
+        "Moves code at lightning speed through the pipeline.",
+        "Element: Blue Lightning Function: Deploy",
+        "SPEED",
+        "98",
+        "DEPLOY",
+        "94",
+        "FLOW",
+        "86",
+        "·ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "MONIOR"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Epic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 20,
+  "orchestra_card": {
+    "role": "Runner",
+    "department": "Pipeline",
+    "function": "Deploy",
+    "rarity": "Epic",
+    "tier": "Delivery Line",
+    "element": "Blue Lightning",
+    "ability": "Lightning Delivery",
+    "lore": "Moves code at lightning speed through the pipeline."
+  },
+  "abilities": [
+    "Lightning Delivery"
+  ],
+  "profile_doc": "characters/flash-riku/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 467,
+        "text": "MISE-G2-P001 Flash Riku Mise Orchestra canonical-candidate 1E3334AB-3111- 1"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 255,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 42,
+        "term": "flash-riku"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 265,
+        "term": "Flash Riku"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 920,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 84,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/009-flash-riku.json",
+        "line": 2,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/voxel-world/src/data/agents.json",
+        "line": 567,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 920,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 10,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 84,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 141,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 141,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1280,
+        "term": "Flash Riku"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 11,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 64,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 22,
+        "term": "Flash Riku"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Flash Riku"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 42,
+        "term": "flash-riku"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 265,
+        "term": "Flash Riku"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-082",
+    "character_id": "miseos.character.082",
+    "card_id": "MISE-082",
+    "codename": "FLASH_RIKU"
+  },
+  "role": "Deploy",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Epic",
+  "lore": "Flash Riku belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Flash Riku performs deploy within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE DEPLOY",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 64,
+    "precision": 76,
+    "speed": 68,
+    "resilience": 67,
+    "intelligence": 71,
+    "teamwork": 68
+  },
+  "related": [
+    {
+      "name": "Build-Kun",
+      "slug": "build-kun"
+    },
+    {
+      "name": "Alko Commit Chef",
+      "slug": "alko-commit-chef"
+    },
+    {
+      "name": "Bruno Blast-Radius",
+      "slug": "bruno-blast-radius"
+    }
+  ],
+  "helps": {
+    "station": "Pipeline Kitchen",
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Flash Riku performs deploy within the Pipeline Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

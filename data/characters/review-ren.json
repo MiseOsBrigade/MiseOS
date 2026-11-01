@@ -1,0 +1,191 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "review-ren",
+  "name": "Review Ren",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "ids.registry_id": "characters/review-ren/metadata.json",
+    "role": "characters/review-ren/metadata.json",
+    "department": "characters/review-ren/metadata.json",
+    "rarity": "characters/review-ren/metadata.json",
+    "workflow.summary": "characters/review-ren/metadata.json",
+    "workflow.inputs": "characters/review-ren/metadata.json",
+    "workflow.outputs": "characters/review-ren/metadata.json",
+    "workflow.proof_gate": "characters/review-ren/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/review-ren/metadata.json"
+  },
+  "registry": {
+    "number": 100,
+    "profile": "characters/review-ren/README.md",
+    "metadata": "characters/review-ren/metadata.json",
+    "avatar": "assets/characters/review-ren/profile.svg"
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 24,
+  "unique_trait": "Specializes in post-incident review so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "reliability",
+  "profile_doc": "characters/review-ren/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 589,
+        "term": "Review Ren"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 462,
+        "term": "Review Ren"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 541,
+        "term": "Review Ren"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 2222,
+        "term": "Review Ren"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 2222,
+        "term": "Review Ren"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 511,
+        "term": "Review Ren"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 519,
+        "term": "Review Ren"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 519,
+        "term": "Review Ren"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 794,
+        "term": "Review Ren"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Review Ren"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 19,
+        "term": "Review Ren"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-039",
+    "character_id": "miseos.character.039",
+    "card_id": "MISE-039",
+    "codename": "REVIEW_REN"
+  },
+  "role": "Post-Incident Review",
+  "department": "Reliability Kitchen",
+  "department_mission": "Observe. Measure. Improve.",
+  "rarity": "Common",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Post-Incident Review done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Review Ren performs post-incident review within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE POST INCIDENT REVIEW",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Post-Incident Review",
+      "mise_name": "Mise PostIncidentReview",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 67,
+    "precision": 78,
+    "speed": 73,
+    "resilience": 79,
+    "intelligence": 79,
+    "teamwork": 79
+  },
+  "related": [
+    {
+      "name": "Backlog Benji",
+      "slug": "backlog-benji"
+    },
+    {
+      "name": "Metrics Miko",
+      "slug": "metrics-miko"
+    },
+    {
+      "name": "Forecast Fuji",
+      "slug": "forecast-fuji"
+    },
+    {
+      "name": "OnCall Naomi",
+      "slug": "oncall-naomi"
+    },
+    {
+      "name": "Nina Promoter",
+      "slug": "nina-promoter"
+    },
+    {
+      "name": "Umami Code",
+      "slug": "umami-code"
+    }
+  ],
+  "helps": {
+    "station": "Reliability Kitchen",
+    "mission": "Observe. Measure. Improve.",
+    "problem": "Review Ren performs post-incident review within the Reliability Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

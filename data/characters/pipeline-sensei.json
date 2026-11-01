@@ -1,0 +1,200 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "pipeline-sensei",
+  "name": "Pipeline Sensei",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "ids.registry_id": "characters/pipeline-sensei/metadata.json",
+    "role": "characters/pipeline-sensei/metadata.json",
+    "department": "characters/pipeline-sensei/metadata.json",
+    "rarity": "characters/pipeline-sensei/metadata.json",
+    "workflow.summary": "characters/pipeline-sensei/metadata.json",
+    "workflow.inputs": "characters/pipeline-sensei/metadata.json",
+    "workflow.outputs": "characters/pipeline-sensei/metadata.json",
+    "workflow.proof_gate": "characters/pipeline-sensei/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/pipeline-sensei/metadata.json"
+  },
+  "registry": {
+    "number": 49,
+    "profile": "characters/pipeline-sensei/README.md",
+    "metadata": "characters/pipeline-sensei/metadata.json",
+    "avatar": "assets/characters/pipeline-sensei/profile.svg"
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 23,
+  "unique_trait": "Specializes in pipeline tuner agent so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "delivery",
+  "profile_doc": "characters/pipeline-sensei/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 253,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 246,
+        "term": "Pipeline Sensei"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 205,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 734,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "apps/voxel-world/src/data/agents.json",
+        "line": 453,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 734,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 799,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 147,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 147,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 182,
+        "term": "Pipeline Sensei"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 32,
+        "term": "Pipeline Sensei"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 11,
+        "term": "Pipeline Sensei"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-015",
+    "character_id": "miseos.character.015",
+    "card_id": "MISE-015",
+    "codename": "PIPELINE_SENSEI"
+  },
+  "role": "Pipeline Tuner Agent",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Pipeline Tuner Agent done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Pipeline Sensei performs pipeline tuner agent within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PIPELINE TUNER AGENT",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Pipeline Tuner Agent",
+      "mise_name": "Mise PipelineTunerAgent",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 75,
+    "precision": 72,
+    "speed": 60,
+    "resilience": 76,
+    "intelligence": 66,
+    "teamwork": 87
+  },
+  "related": [
+    {
+      "name": "Tensho",
+      "slug": "tensho"
+    },
+    {
+      "name": "Yume",
+      "slug": "yume"
+    },
+    {
+      "name": "Flash Riku",
+      "slug": "flash-riku"
+    },
+    {
+      "name": "Canary Taster",
+      "slug": "canary-taster"
+    },
+    {
+      "name": "Platform Sensei",
+      "slug": "platform-sensei"
+    },
+    {
+      "name": "Reliability Sensei",
+      "slug": "reliability-sensei"
+    },
+    {
+      "name": "Red Oni",
+      "slug": "red-oni"
+    }
+  ],
+  "helps": {
+    "station": "Pipeline Kitchen",
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Pipeline Sensei performs pipeline tuner agent within the Pipeline Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-orchestra-theme",
+  "name": "Mise Orchestra Theme",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/mise-orchestra-theme.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/mise-orchestra-theme.webp",
+      "collection": "long-cards",
+      "title": "Mise Orchestra Theme",
+      "match_method": "title"
+    },
+    {
+      "file": "assets/player-cards/long-cards/mise-orchestra-theme-2.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/mise-orchestra-theme-2.webp",
+      "collection": "long-cards",
+      "title": "Mise Orchestra Theme",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/mise-orchestra-theme.webp",
+      "printed_text": [
+        "11",
+        "Aa",
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "TYPOGRAPHY",
+        "COLOR",
+        "HARMONY",
+        "LAYOUT",
+        "上：8000011",
+        "STYLE",
+        "VOICE",
+        "IDENTITY",
+        "EXPERIENCE",
+        "Mise Orchestra Theme",
+        ".Aesthetic Sovereign",
+        "STYLE",
+        "100",
+        "HARMONY",
+        "100",
+        "IDENTITY",
+        "100",
+        "ELEGANCE",
+        "100",
+        "POLISH",
+        "100",
+        "ONE THEME.ONE LANGUAGE.ONE ORCHESTRA.",
+        "THISIS MISE"
+      ]
+    },
+    {
+      "file": "assets/player-cards/long-cards/mise-orchestra-theme-2.webp",
+      "printed_text": [
+        "11",
+        "MISE",
+        "Aa",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "TYPOGRAPHY",
+        "COLOR",
+        "HARMONY",
+        "LAYOUT",
+        "STYLE",
+        "VOICE",
+        "IDENTITY",
+        "EXPERIENCE",
+        "Mise Orchestra",
+        "Theme",
+        "Aesthetic Sovereign",
+        "STYLE",
+        "100",
+        "HARMONY",
+        "100",
+        "IDENTITY",
+        "100",
+        "ELEGANCE",
+        "100",
+        "POLISH",
+        "100",
+        "ONETHEME.ONE LANGUAGE.ONE ORCHESTRA",
+        "THISISMISE."
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "orchestraTheme"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "theme",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 54,
+        "term": "orchestraTheme"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 54,
+        "term": "orchestraTheme"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 54,
+        "term": "orchestraTheme"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 7376,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+        "line": 5,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/registry-catalog.manifest.json",
+        "line": 1064,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/miseos-platform/config/3d-card-showcase.json",
+        "line": 80,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/registry_catalog_manifest.json",
+        "line": 45,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/miseos-platform/registry/registry-catalog.manifest.json",
+        "line": 144,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+        "line": 5,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/registry-platform/registry/registry-catalog.manifest.json",
+        "line": 1064,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 7376,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.csv",
+        "line": 103,
+        "term": "Mise Orchestra Theme"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 27,
+        "term": "miseos.orchestra-theme"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 31,
+        "term": "miseos.orchestra-theme"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/conductor-prime.md",
+        "line": 3,
+        "term": "miseos.orchestra-theme"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 76,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 41,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 27,
+        "term": "miseos.orchestra-theme"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 87,
+        "term": "miseos.orchestra-theme"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 31,
+        "term": "miseos.orchestra-theme"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "Mise Orchestra Theme"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+        "line": 27,
+        "term": "miseos.orchestra-theme"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 54,
+      "name": "orchestraTheme"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 54,
+        "term": "orchestraTheme"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 54,
+        "term": "orchestraTheme"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 54,
+        "term": "orchestraTheme"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.orchestra-theme"
+  },
+  "role": "Theme",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for Mise Orchestra Theme.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "orchestraTheme",
+      "handler": "orchestraTheme",
+      "source": "apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (theme)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for Mise Orchestra Theme.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

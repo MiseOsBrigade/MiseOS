@@ -1,0 +1,189 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "pantry-paladin",
+  "name": "Pantry Paladin",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/pantry-paladin/metadata.json",
+    "role": "characters/pantry-paladin/metadata.json",
+    "department": "characters/pantry-paladin/metadata.json",
+    "rarity": "characters/pantry-paladin/metadata.json",
+    "workflow.summary": "characters/pantry-paladin/metadata.json",
+    "workflow.inputs": "characters/pantry-paladin/metadata.json",
+    "workflow.outputs": "characters/pantry-paladin/metadata.json",
+    "workflow.proof_gate": "characters/pantry-paladin/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/pantry-paladin/metadata.json"
+  },
+  "registry": {
+    "number": 90,
+    "profile": "characters/pantry-paladin/README.md",
+    "metadata": "characters/pantry-paladin/metadata.json",
+    "avatar": "assets/characters/pantry-paladin/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/pantry-paladin.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/pantry-paladin.webp",
+      "collection": "1by1-chefs",
+      "title": "Pantry Paladin",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/pantry-paladin.webp",
+      "printed_text": [
+        "MISE",
+        "SUPPLYINTEGRITY",
+        "ORCHESTRA",
+        "100%",
+        "INVENTORY STATUS",
+        "★★★★★",
+        "GRAINS",
+        "SPICES",
+        "QUALITYASSURED",
+        "OILS",
+        "CURED",
+        "SWEETS",
+        "PROVISION",
+        "LEDGER",
+        "CERTIFIED",
+        "DRY GOODS",
+        "STORAGE SECURITY",
+        "STOCK LEVEL",
+        "LOCKED&SEALED",
+        "PROVISION LEDGER",
+        "100%0PTIMAL",
+        "★★★★★",
+        "RECEIVED",
+        "INSPECTED",
+        "RECORDED",
+        " STORED",
+        "MPROTECTED",
+        "Pantry Paladin",
+        "Provision Steward"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%"
+  ],
+  "level": 23,
+  "profile_doc": "characters/pantry-paladin/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 607,
+        "text": "MISE-G2-P065 Pantry Paladin Mise Orchestra canonical-candidate 1E3334AB-3111- 65"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6376,
+        "term": "Pantry Paladin"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6376,
+        "term": "Pantry Paladin"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Pantry Paladin"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-106",
+    "character_id": "miseos.character.106",
+    "card_id": "MISE-106",
+    "codename": "PANTRY_PALADIN"
+  },
+  "role": "Provision Steward",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Pantry Paladin performs provision steward within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PROVISION STEWARD",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 68,
+    "precision": 78,
+    "speed": 82,
+    "resilience": 86,
+    "intelligence": 78,
+    "teamwork": 76
+  },
+  "related": [
+    {
+      "name": "Ticket Tactician",
+      "slug": "ticket-tactician"
+    },
+    {
+      "name": "Plate Inspector",
+      "slug": "plate-inspector"
+    },
+    {
+      "name": "Timer Tactician",
+      "slug": "timer-tactician"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Pantry Paladin performs provision steward within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "harvest-hex",
+  "name": "Harvest Hex",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/harvest-hex/metadata.json",
+    "role": "characters/harvest-hex/metadata.json",
+    "department": "characters/harvest-hex/metadata.json",
+    "rarity": "characters/harvest-hex/metadata.json",
+    "workflow.summary": "characters/harvest-hex/metadata.json",
+    "workflow.inputs": "characters/harvest-hex/metadata.json",
+    "workflow.outputs": "characters/harvest-hex/metadata.json",
+    "workflow.proof_gate": "characters/harvest-hex/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/harvest-hex/metadata.json"
+  },
+  "registry": {
+    "number": 80,
+    "profile": "characters/harvest-hex/README.md",
+    "metadata": "characters/harvest-hex/metadata.json",
+    "avatar": "assets/characters/harvest-hex/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/harvest-hex.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/harvest-hex.webp",
+      "collection": "1by1-chefs",
+      "title": "Harvest Hex",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/harvest-hex.webp",
+      "printed_text": [
+        "ALCHEMISTGRADE",
+        "SSS",
+        "MISE",
+        "★★★★★",
+        "ORCHESTRA",
+        "POTENCY",
+        "FLAVOR",
+        "FRESHNESSINDEX",
+        "FRESHNESS",
+        "NUTRITION",
+        "100%",
+        "AROMA",
+        "MAGIC",
+        "PRISTINE",
+        "HARVEST SIGILS",
+        "GARDENENERGY",
+        "ROOT",
+        "LEAF",
+        "FRUIT",
+        "100%",
+        "BLOOM",
+        "SEED",
+        "RECIPEUNLOCKED",
+        "BATCHBREW",
+        "ABUNDANTFEAST",
+        "PERFECT",
+        "Harvest",
+        " Hex",
+        "Produce Alchemist →"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%"
+  ],
+  "level": 25,
+  "profile_doc": "characters/harvest-hex/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 647,
+        "text": "MISE-G2-P084 Harvest Hex Mise Orchestra canonical-candidate 1E3334AB-3111- 84"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6252,
+        "term": "Harvest Hex"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6252,
+        "term": "Harvest Hex"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Harvest Hex"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-104",
+    "character_id": "miseos.character.104",
+    "card_id": "MISE-104",
+    "codename": "HARVEST_HEX"
+  },
+  "role": "Produce Alchemist",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Legendary",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Harvest Hex performs produce alchemist within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PRODUCE ALCHEMIST",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 87,
+    "precision": 81,
+    "speed": 57,
+    "resilience": 71,
+    "intelligence": 68,
+    "teamwork": 88
+  },
+  "related": [
+    {
+      "name": "Garnish Ghost",
+      "slug": "garnish-ghost"
+    },
+    {
+      "name": "Pantry Paladin",
+      "slug": "pantry-paladin"
+    },
+    {
+      "name": "Ticket Tactician",
+      "slug": "ticket-tactician"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Harvest Hex performs produce alchemist within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

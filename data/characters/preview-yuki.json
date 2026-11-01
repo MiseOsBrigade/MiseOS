@@ -1,0 +1,251 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "preview-yuki",
+  "name": "Preview Yuki",
+  "kind": "registry_character",
+  "aliases": [
+    "Preview"
+  ],
+  "sources": {
+    "name": "data/characters.json",
+    "aliases": "card titles / OCR in data/player-cards-ocr.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "ids.registry_id": "characters/preview-yuki/metadata.json",
+    "role": "characters/preview-yuki/metadata.json",
+    "department": "characters/preview-yuki/metadata.json",
+    "rarity": "characters/preview-yuki/metadata.json",
+    "workflow.summary": "characters/preview-yuki/metadata.json",
+    "workflow.inputs": "characters/preview-yuki/metadata.json",
+    "workflow.outputs": "characters/preview-yuki/metadata.json",
+    "workflow.proof_gate": "characters/preview-yuki/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/preview-yuki/metadata.json"
+  },
+  "registry": {
+    "number": 57,
+    "profile": "characters/preview-yuki/README.md",
+    "metadata": "characters/preview-yuki/metadata.json",
+    "avatar": "assets/characters/preview-yuki/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/preview.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/preview.webp",
+      "collection": "1by1-chefs",
+      "title": "Preview",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/preview.webp",
+      "printed_text": [
+        "PREVIEWSTATUS",
+        "MISE",
+        "ALLSYSTEMS",
+        "ORCHESTRA",
+        "ONLINE",
+        "ENVIRONMENTSPAWN",
+        "ALLOCATE",
+        "CONFIGURE",
+        "DEPLOY",
+        "PREVIEW",
+        "DISMISS",
+        "ENVIRONMENTSANDBOX",
+        "TESTINGPROTOCOL",
+        "TERRAIN",
+        "COLLISIONTEST",
+        "WEATHER",
+        "PATHFINDTEST",
+        "LIGHTING",
+        "LIGHT PROBE",
+        "TIMEOFDAY",
+        "PERFORMANCE",
+        "NPCSPAWN",
+        "VISUAL CHECK",
+        "PASSED",
+        "SANDBOX MODE",
+        "ACTIVE",
+        "Preview",
+        "Yuki",
+        "→ Preview Environment Spawner"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 21,
+  "unique_trait": "Specializes in preview environment spawner so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "delivery",
+  "profile_doc": "characters/preview-yuki/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 543,
+        "text": "MISE-G2-P038 Preview Yuki Mise Orchestra canonical-candidate 1E3334AB-3111- 38"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 421,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 354,
+        "term": "Preview Yuki"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 373,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1478,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1478,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 684,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 441,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 441,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 721,
+        "term": "Preview Yuki"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Preview Yuki"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Preview Yuki"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-027",
+    "character_id": "miseos.character.027",
+    "card_id": "MISE-027",
+    "codename": "PREVIEW_YUKI"
+  },
+  "role": "Preview Environment Spawner",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Common",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Preview Environment Spawner done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Preview Yuki performs preview environment spawner within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PREVIEW ENVIRONMENT SPAWNER",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Preview Environment Spawner",
+      "mise_name": "Mise PreviewEnvironmentSpawner",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 62,
+    "precision": 78,
+    "speed": 62,
+    "resilience": 63,
+    "intelligence": 70,
+    "teamwork": 68
+  },
+  "related": [
+    {
+      "name": "Portal Rei",
+      "slug": "portal-rei"
+    },
+    {
+      "name": "Guardrail Goro",
+      "slug": "guardrail-goro"
+    },
+    {
+      "name": "Platform Sensei",
+      "slug": "platform-sensei"
+    },
+    {
+      "name": "Streama",
+      "slug": "streama"
+    },
+    {
+      "name": "Tariq Notesmith",
+      "slug": "tariq-notesmith"
+    },
+    {
+      "name": "Forecast Fuji",
+      "slug": "forecast-fuji"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Preview Yuki performs preview environment spawner within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

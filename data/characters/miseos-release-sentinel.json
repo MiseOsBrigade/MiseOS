@@ -1,0 +1,376 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-release-sentinel",
+  "name": "MiseOS Release Sentinel",
+  "kind": "registry_manifest",
+  "aliases": [
+    "MISEOSRELEASESENTINEL",
+    "MISEOS RELEASE SENTINEL"
+  ],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "aliases": "card titles / OCR in data/player-cards-ocr.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseosreleasesentinel.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseosreleasesentinel.webp",
+      "collection": "long-cards",
+      "title": "MISEOSRELEASESENTINEL",
+      "match_method": "title"
+    },
+    {
+      "file": "assets/player-cards/long-cards/miseos-release-sentinel.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-release-sentinel.webp",
+      "collection": "long-cards",
+      "title": "MISEOS RELEASE SENTINEL",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseosreleasesentinel.webp",
+      "printed_text": [
+        "MISEOS REGISTRY·..",
+        "13",
+        "ULTRA",
+        "MYTHIC",
+        "MISEOS'",
+        "RELEASE",
+        "SAFE",
+        "RELEASE",
+        "GATE",
+        "LANCH",
+        "GATE",
+        "ALPHA",
+        "GUCARGEDY",
+        "OMEGA",
+        "LOCK",
+        "SYSTEM",
+        "VERIFIED",
+        "READY",
+        "MISEOSRELEASESENTINEL",
+        "TYPE:AGENT",
+        "CELESTIALGUARDIANOFDEPLOYMENT.",
+        "SAFE LAUNCH",
+        "DEPLOYMENT",
+        "ISTANDBETWEENRISKANDRELEASE",
+        "PROTOCOL",
+        "BEACON",
+        "IVERIFY.IPROTECT.ILAUNCHWITHPURPOSE.",
+        "RELEASEGATES",
+        "RISKVERIFIED",
+        "CONTROL",
+        "SYSTEMREADY",
+        "WARNINGSTARS",
+        "MONITOR"
+      ]
+    },
+    {
+      "file": "assets/player-cards/long-cards/miseos-release-sentinel.webp",
+      "printed_text": [
+        "+MISEOS-REGISTRY",
+        "13",
+        "ULTRA",
+        "MISEOS",
+        "MYTHIC",
+        "SAFE",
+        "LAUNCH",
+        "RELEASE",
+        "GUARBEED",
+        "RELEASE",
+        "GATE",
+        "GATE",
+        "ALPHA",
+        "OMEGA",
+        "LOCK",
+        "SYSTEM",
+        "VERIFIED",
+        "READY",
+        "MISEOSRELEASE SENTINEL",
+        "TYPE: AGENT",
+        "CELESTIALGUARDIAN OFDEPLOYMENT.",
+        "SAFE LAUNCH",
+        "DEPLOYMENT",
+        "ISTANDBETWEENRISKAND RELEASE.",
+        "BEACON",
+        "PROTOCOL",
+        "I VERIFY.I PROTECT.I LAUNCH WITH PURPOSE",
+        "RELEASEGATES",
+        "RISKVERIFIED",
+        "CONTROL",
+        "WARNING STARS",
+        "SYSTEM READY",
+        "MONITOR"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Ultra Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "releaseSentinel"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "agent",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/.github/workflows/release-sentinel.yml",
+        "line": 1,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 25,
+        "term": "releaseSentinel"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 25,
+        "term": "releaseSentinel"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "tools/devops-foundry/actions/release-sentinel/action.yml",
+        "line": 1,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 25,
+        "term": "releaseSentinel"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.release-sentinel"
+      }
+    ],
+    "code_ref_count": 8,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 25,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 364,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 16,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 364,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 70,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.release-sentinel.json",
+        "line": 4,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/packages/release-sentinel/package.json",
+        "line": 8,
+        "term": "miseos-release-sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 70,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.release-sentinel.json",
+        "line": 4,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 304,
+        "term": "MiseOS Release Sentinel"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/naming-conventions.md",
+        "line": 33,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 44,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 47,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 17,
+        "term": "miseos.release-sentinel"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 144,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/release-sentinel.md",
+        "line": 1,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 39,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/miseos-platform/docs/AVAL_ANIMATED_COLLECTIBLES.md",
+        "line": 59,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/miseos-platform/examples/aval-collectible-player/index.html",
+        "line": 79,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 31,
+        "term": "MiseOS Release Sentinel"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 25,
+      "name": "releaseSentinel"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/bootstrap-registry/.github/workflows/release-sentinel.yml",
+        "line": 1,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 25,
+        "term": "releaseSentinel"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 25,
+        "term": "releaseSentinel"
+      },
+      {
+        "path": "tools/devops-foundry/actions/release-sentinel/action.yml",
+        "line": 1,
+        "term": "MiseOS Release Sentinel"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 25,
+        "term": "releaseSentinel"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.release-sentinel"
+  },
+  "role": "Agent",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Release Sentinel.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "releaseSentinel",
+      "handler": "releaseSentinel",
+      "source": "apps/registry-platform/registry/manifests/miseos.release-sentinel.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (agent)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Release Sentinel.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

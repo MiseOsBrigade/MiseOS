@@ -1,0 +1,317 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-docs-builder",
+  "name": "MiseOS Docs Builder",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-docs-builder.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-docs-builder.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Docs Builder",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-docs-builder.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "MiseOs",
+        "Architecture",
+        "今Modules",
+        "+Interfaces",
+        "Protocols",
+        "4Data Models",
+        "Permissions",
+        "专Events",
+        "4Schemas",
+        "4Flows",
+        "DOCUMENT",
+        "BLUEPRINT",
+        "Security",
+        "Governance",
+        "CROSS",
+        "REFERENCE",
+        "INDEX",
+        "ECOSYSTEM",
+        "LINKS",
+        "MiseOS Docs Builder",
+        "Container",
+        "100",
+        "STRUCTURE",
+        "ORGANIZATION",
+        "100",
+        "100",
+        "CLARITY",
+        "INDEX",
+        "100",
+        "100",
+        "INTEGRITY",
+        "COMPATIBILITY",
+        "100",
+        "100",
+        "LINKAGE",
+        "DOCUMENTATION一",
+        "100",
+        "RELIABILITY",
+        "100",
+        "SUSTAINABILITY",
+        "100",
+        "IBUILDSTRUCTURE.",
+        "ICONTAINKNOWLEDGE",
+        "I PRESERVE TRUTH.",
+        "IAMTHEREGISTRYOFMISEOS"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "docsBuilder"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "container",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/.github/workflows/publish-container.yml",
+        "line": 25,
+        "term": "miseos-docs-builder"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 11,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 11,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 11,
+        "term": "MiseOS Docs Builder"
+      }
+    ],
+    "code_ref_count": 4,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 62,
+        "term": "miseos.docs-builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 213,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 6,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 213,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 74,
+        "term": "miseos.docs-builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.docs-builder.json",
+        "line": 4,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 74,
+        "term": "miseos.docs-builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.docs-builder.json",
+        "line": 4,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 185,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 213,
+        "term": "MiseOS Docs Builder"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/naming-conventions.md",
+        "line": 24,
+        "term": "miseos-docs-builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/publishing-playbook.md",
+        "line": 8,
+        "term": "miseos-docs-builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 47,
+        "term": "miseos.docs-builder"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 37,
+        "term": "miseos.docs-builder"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 9,
+        "term": "miseos.docs-builder"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 119,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/docs-builder.md",
+        "line": 1,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 23,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 9,
+        "term": "miseos.docs-builder"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 82,
+        "term": "miseos.docs-builder"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 11,
+      "name": "docsBuilder"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/bootstrap-registry/.github/workflows/publish-container.yml",
+        "line": 25,
+        "term": "miseos-docs-builder"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 11,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 11,
+        "term": "MiseOS Docs Builder"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 11,
+        "term": "MiseOS Docs Builder"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.docs-builder"
+  },
+  "role": "Container",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Docs Builder.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "docsBuilder",
+      "handler": "docsBuilder",
+      "source": "apps/registry-platform/registry/manifests/miseos.docs-builder.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (container)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Docs Builder.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

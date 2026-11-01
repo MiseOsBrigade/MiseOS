@@ -1,0 +1,191 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "leaderboard-leo",
+  "name": "Leaderboard Leo",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "ids.registry_id": "characters/leaderboard-leo/metadata.json",
+    "role": "characters/leaderboard-leo/metadata.json",
+    "department": "characters/leaderboard-leo/metadata.json",
+    "rarity": "characters/leaderboard-leo/metadata.json",
+    "workflow.summary": "characters/leaderboard-leo/metadata.json",
+    "workflow.inputs": "characters/leaderboard-leo/metadata.json",
+    "workflow.outputs": "characters/leaderboard-leo/metadata.json",
+    "workflow.proof_gate": "characters/leaderboard-leo/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/leaderboard-leo/metadata.json"
+  },
+  "registry": {
+    "number": 85,
+    "profile": "characters/leaderboard-leo/README.md",
+    "metadata": "characters/leaderboard-leo/metadata.json",
+    "avatar": "assets/characters/leaderboard-leo/profile.svg"
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 16,
+  "unique_trait": "Specializes in scorecards & leaderboards so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "analytics",
+  "profile_doc": "characters/leaderboard-leo/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 1065,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 768,
+        "term": "Leaderboard Leo"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 1017,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 4330,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 4330,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 4163,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 357,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 357,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 3022,
+        "term": "Leaderboard Leo"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Leaderboard Leo"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 27,
+        "term": "Leaderboard Leo"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-073",
+    "character_id": "miseos.character.073",
+    "card_id": "MISE-073",
+    "codename": "LEADERBOARD_LEO"
+  },
+  "role": "Scorecards & Leaderboards",
+  "department": "Data & Insight Kitchen",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "rarity": "Common",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Scorecards and Leaderboards done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Leaderboard Leo performs scorecards & leaderboards within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE SCORECARDS LEADERBOARDS",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Scorecards & Leaderboards",
+      "mise_name": "Mise ScorecardsLeaderboards",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 76,
+    "precision": 81,
+    "speed": 71,
+    "resilience": 67,
+    "intelligence": 78,
+    "teamwork": 75
+  },
+  "related": [
+    {
+      "name": "Storyteller Sumi",
+      "slug": "storyteller-sumi"
+    },
+    {
+      "name": "Roadmap Sensei",
+      "slug": "roadmap-sensei"
+    },
+    {
+      "name": "Data-chan",
+      "slug": "data-chan"
+    },
+    {
+      "name": "Anomaly Aki",
+      "slug": "anomaly-aki"
+    },
+    {
+      "name": "Ivun Cache",
+      "slug": "ivun-cache"
+    },
+    {
+      "name": "Portal Rei",
+      "slug": "portal-rei"
+    }
+  ],
+  "helps": {
+    "station": "Data & Insight Kitchen",
+    "mission": "Learn. Optimize. Evolve.",
+    "problem": "Leaderboard Leo performs scorecards & leaderboards within the Data & Insight Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

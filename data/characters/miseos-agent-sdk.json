@@ -1,0 +1,313 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-agent-sdk",
+  "name": "MiseOS Agent SDK",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/agent-sdk.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/agent-sdk.webp",
+      "collection": "long-cards",
+      "title": "Agent SDK",
+      "match_method": "ocr-text"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/agent-sdk.webp",
+      "printed_text": [
+        "SDK",
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "IIMISE OS AGENT SDK",
+        "[Initialze_Architect ",
+        "REGISTRY://MISEOS",
+        "ENTITY: AGENT.SDK",
+        "scope",
+        "TYPE: SDK",
+        "\"ecosysten",
+        "CLASS:ARCHITECT",
+        "'status\"\"online'",
+        "DOMAIN:ALL REALMS",
+        "bless - true",
+        "AUTH:ETERNAL",
+        "execute():",
+        "SIGN:00",
+        "IIBUILD.CONNECT.ELEVATE.",
+        "IIMISEOS",
+        "VERIFIED:TRUE",
+        "COMMANO.SIGIL",
+        ">BUILD",
+        "<AGENT.SDK>",
+        ">CONNECT",
+        ">AUTOMATE",
+        ">ORCHESTRATE",
+        ">ELEVATE",
+        "MiseOs",
+        "Agent",
+        "SDK",
+        "SDK",
+        "100",
+        "BUILD",
+        "ARCHITECTURE",
+        "100",
+        "100",
+        "SCALABILITY",
+        "CONNECT",
+        "100",
+        "100",
+        "INTEGRATE",
+        "SECURITY",
+        "100",
+        "100",
+        "AUTOMATE",
+        "INTELLIGENCE",
+        "100",
+        "100",
+        "RELIABILITY",
+        "ORCHESTRATE",
+        "100",
+        "IDESIGN.IBUILD.IORCHESTRATE.",
+        "IAMMISEOS."
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "agentSdk"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "sdk",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 7,
+        "term": "agentSdk"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 7,
+        "term": "agentSdk"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 7,
+        "term": "agentSdk"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 351,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 165,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 2,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 165,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 68,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.agent-sdk.json",
+        "line": 4,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 68,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.agent-sdk.json",
+        "line": 4,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 137,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 165,
+        "term": "MiseOS Agent SDK"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/naming-conventions.md",
+        "line": 31,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 65,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 33,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 5,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 102,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/agent-sdk.md",
+        "line": 1,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/miseos-platform/docs/GITHUB_ACCOUNT_SETUP.md",
+        "line": 14,
+        "term": "miseos-agent-sdk"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 19,
+        "term": "MiseOS Agent SDK"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 5,
+        "term": "miseos.agent-sdk"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 78,
+        "term": "miseos.agent-sdk"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 7,
+      "name": "agentSdk"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 7,
+        "term": "agentSdk"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 7,
+        "term": "agentSdk"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 7,
+        "term": "agentSdk"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.agent-sdk"
+  },
+  "role": "SDK",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Agent SDK.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "agentSdk",
+      "handler": "agentSdk",
+      "source": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (sdk)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Agent SDK.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

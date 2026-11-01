@@ -1,0 +1,786 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "orchestra-core",
+  "name": "Orchestra Core",
+  "kind": "registry_character",
+  "aliases": [
+    "aCore"
+  ],
+  "sources": {
+    "name": "data/characters.json",
+    "aliases": "card titles / OCR in data/player-cards-ocr.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/orchestra-core/metadata.json",
+    "role": "characters/orchestra-core/metadata.json",
+    "department": "characters/orchestra-core/metadata.json",
+    "rarity": "characters/orchestra-core/metadata.json",
+    "workflow.summary": "characters/orchestra-core/metadata.json",
+    "workflow.inputs": "characters/orchestra-core/metadata.json",
+    "workflow.outputs": "characters/orchestra-core/metadata.json",
+    "workflow.proof_gate": "characters/orchestra-core/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/orchestra-core/metadata.json"
+  },
+  "registry": {
+    "number": 14,
+    "profile": "characters/orchestra-core/README.md",
+    "metadata": "characters/orchestra-core/metadata.json",
+    "avatar": "assets/characters/orchestra-core/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/acore.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/acore.webp",
+      "collection": "1by1-chefs",
+      "title": "aCore",
+      "match_method": "title"
+    },
+    {
+      "file": "assets/player-cards/character-building/orchestra-core.webp",
+      "thumbnail": "assets/player-cards/character-building/thumbs/orchestra-core.webp",
+      "collection": "character-building",
+      "title": "ORCHESTRA CORE",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/character-building/orchestra-core-2.webp",
+      "thumbnail": "assets/player-cards/character-building/thumbs/orchestra-core-2.webp",
+      "collection": "character-building",
+      "title": "Orchestra Core",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/orchestra-core.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/orchestra-core.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Orchestra_Core",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "character-building",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/acore.webp",
+      "printed_text": [
+        "MISE",
+        "COREPROTOCOL",
+        "ORCHESTRA",
+        "ALL SYSTEMS",
+        "SYSTEM",
+        "HARMONIZED",
+        "COORDINATION",
+        " SYNC",
+        " HARMONY",
+        "BALANCE",
+        " CONTROL",
+        "SIGNATURE",
+        "ORCHESTRATE",
+        "GASTRONOMIC",
+        "ORCHESTRATION",
+        "CORE STATUS",
+        "100%",
+        "ENERGYOUTPUT",
+        "STABLE",
+        "INFINITE",
+        "CREATIVITY",
+        "Orchestra",
+        "Core",
+        "Chef Spirit"
+      ]
+    },
+    {
+      "file": "assets/player-cards/character-building/orchestra-core.webp",
+      "printed_text": [
+        "MiseOS",
+        "THEKITCHENOSTHATTURNS",
+        "75",
+        "AICHAOSINTOCOORDINATEDSERVICE.",
+        "AGENTS",
+        "THE OPERATING SYSTEM FOR",
+        "GROUPS",
+        "POSSIBILITIES",
+        "ONE ORCHESTRA",
+        "COOK",
+        "ORCHESTRATE",
+        "DEPLOY",
+        "AUTONOMOUS DEVELOPMENT",
+        "OBSERVE",
+        "Overview",
+        "MISEOS AGENT GALLERY",
+        "MISEOS LOGO MARK",
+        "Platform",
+        "75 AGENTS · 7 GROUPS - ONE ORCHESTRA",
+        "TIER1-EXECUTIVECHEFS",
+        "Orchestra",
+        "TIER2-KITCHENOPERATIONS",
+        "Brigade",
+        "Kitchen",
+        "Vault",
+        "LADLE·BATONCIRCUIT·STAFF",
+        "Observatory",
+        "ORCHESTRATINGINTELLIGENCE",
+        "Mascots",
+        "Docs",
+        "MIZU",
+        "KAJI",
+        "BUILD-KUN",
+        "SCALEONI",
+        "ORCHESTRA CORE",
+        "KUROGAMI",
+        "KURO GUARD",
+        "SEIRA",
+        "COLOR PALETTE",
+        "Routing Matter",
+        "Oueue Master",
+        "Compute Chef",
+        "Container Beker",
+        "Agent Director",
+        "Security Guardian",
+        "Secrets Sommelier",
+        "Saling Ow",
+        "Pricing",
+        "PRIMARY",
+        "Community",
+        "TIER3-SERVICELAYER",
+        "TIER4-ORCHESTRATIONLAYER",
+        "Black",
+        "srott",
+        "wOOEF10",
+        "D4AF37",
+        "MISEOSCORE",
+        "SECONDARY",
+        "The platform.",
+        "The operating system.",
+        "Irk Sfue",
+        "ES7822",
+        "Matche Green",
+        "FLASH RIKU",
+        "IRON HASHI",
+        "NULL-CHAN",
+        "CONDUCTOR",
+        "DISPATCHER",
+        "GATEKEEPER",
+        "HUMAN LIAISON",
+        "8182A41",
+        "STREAMA",
+        "UMAMICODE",
+        "SWARMER",
+        "TUME",
+        "A2E684E",
+        "ds drureo",
+        "Stream Master",
+        "AP1 Saucer",
+        "Swarm Coord",
+        "Access Control",
+        "FlowConductor",
+        "Aoprevr Bridpe",
+        "TIER5-ENGINEERING&DEVELOPMENT",
+        "SECURITY&QUALITY",
+        "TIER6",
+        "WEBSITESTRUCTURE",
+        "miseos.dev",
+        "Platform",
+        "TAGLINEOPTIONS",
+        " Orchestra",
+        "DEVELOPERFOCUSED",
+        "曲Brigade",
+        "白Kitchen",
+        "+Eve",
+        "verything InItsPlace",
+        "QUALJITY GUARD",
+        "DOC WRITER",
+        "Orchestrate Everything",
+        "ARCHITECT",
+        "CODER",
+        "REVIEWER",
+        "TESTER",
+        "DESUGGER",
+        "DEVREL",
+        "SRE CHEF",
+        "PERFCHEF",
+        "PENTESTER",
+        "ENCRYPTOR",
+        "FREWAL",
+        "UXCHEF",
+        "@Vault",
+        "Qualty Chef",
+        "Dox Sorbe",
+        "Polky Guwdian",
+        "Teet Scarre",
+        "Code Rlevieaer",
+        "SugHunte",
+        "WherabinyHurter",
+        "GuainyEroce",
+        "The Operating System For",
+        "Mascots",
+        "Cook, Orchestrate.Deploy",
+        "PLATORIM&INFRASTRUCTURE",
+        "• Every Role, One Symphony.",
+        "Pricing",
+        "AIAGENT FOCUSED",
+        "The OS For Muti-Agent Teams",
+        "ELEVATORPITCH",
+        "DATABASE",
+        "LOAD BALANCER",
+        "CBSERVATOR",
+        "NETWORKER",
+        "BACKUP",
+        "CAPACITY",
+        "Properly Organized.",
+        "Nietnodk Chef",
+        "Speed Chuf",
+        "Log Onuf",
+        "Alent Ouf",
+        "FeOp Ouf",
+        "mtien Chef",
+        "Ppeine Chet",
+        "Ciouf wegler",
+        "rege Seeper",
+        "Tieik Balascer",
+        "Metie Wther",
+        "RANtet",
+        "Capeily Raw",
+        "MiseOS is the operating system",
+        "Bachip Guedian",
+        " Where Human Intent Meets",
+        "for autonomous software",
+        "Agent Execution.",
+        "principles of mise en place,",
+        "development, Bollt around the",
+        "TIER8-INTEGRATIONS&ECOSYSTEM",
+        "TIER9",
+        "COMMUNITY&GROWTH",
+        "ENTERPRISEFOCUSED",
+        "it transforms Al agents,",
+        "repositofres, workflows, and",
+        "Perfectly Placed.",
+        "infrastructure into a coordinated",
+        "kitchen where every role has a",
+        ": Systems Thinking For",
+        "purpose, every action is",
+        "Autonomous Teams.",
+        "ARGO CHEF",
+        "SACX BOT",
+        "API GATEWAY",
+        "observable, and every",
+        "GITHUDCHEF",
+        "DOCXE",
+        "DATADOG",
+        "Argo Pier",
+        "Meistik",
+        "AnManuger",
+        "ring Unk",
+        "DiowrdCemet",
+        "deployment is orchestrated",
+        "with precision.",
+        "EVERYAGENT HASAROLE.EVERYROLEHASPURPOSE.EVERYACTION ISORCHESTRATED.",
+        "ORCHESTRATE.",
+        "COOK.",
+        "DEPLOY,OBSERVE.",
+        "@ 2024 MISEOS - ALL RIGHTS RESERVED"
+      ]
+    },
+    {
+      "file": "assets/player-cards/character-building/orchestra-core-2.webp",
+      "printed_text": [
+        "MISESHIMEJIORCHESTRA·15CHEFCHARACTERASSETSHEET(CLEANBACKGROUND)",
+        "ASPECT RATIO4:3",
+        "1.COREVISION",
+        "味の才",
+        "MISE",
+        "Mise Orchestra reimagines critical DevOps infrastructure",
+        "Suads joapeypsuederSuegeaqtegsesale",
+        "oeratingwinhighelocly.chaoticitchnune",
+        "quesmatigod",
+        "woushsaeutububetusue",
+        "onal logs become",
+        "ORCHESTRA",
+        "KITCHEN CHAOS DEVOPS UNIVERSE",
+        "Kurogami Senpai",
+        "Mizu",
+        "Tenshe",
+        "Umami Code",
+        "Chef de Cuisine",
+        "Prep Chef",
+        "Kaji",
+        "xpediter",
+        "Saucier",
+        "Grillardin",
+        "BRANDGUIDELINES",
+        "&MASCOTSYSTEMMANUAL",
+        "2.COLORPALETTE",
+        "3. TYPOGRAPHY",
+        "4. CHARACTER SYSTEM OVERVIEW",
+        "Null-chan",
+        "Yume",
+        "Iron Hashi",
+        "Flash Riku",
+        "Seira",
+        "10",
+        "Umami Black",
+        "HEADING FONT",
+        "Pastry Chef",
+        "Plongeur",
+        "Runner",
+        "mmelier",
+        "WOEOF10",
+        "Aa",
+        "Flame Orange",
+        "Sora Bold",
+        "WE97822",
+        "Matcha Green",
+        "R2E684E",
+        "BODY FONT",
+        "Nunito Sans Regular",
+        "Aa",
+        "Ink Blue",
+        "1B2A41",
+        "SD4AF37",
+        "Gold Ladle",
+        "ACCENT FONT (COMICS)",
+        "15 unique chefspirits. Each represents actitical",
+        "M+ Rounded e Bold",
+        "Broth Cream",
+        "Dsfuctionbingingnyhmot",
+        "WF6F1E7",
+        "story to complex intrastructure systems.",
+        "Kuro Guard",
+        "Scale Oni",
+        "Bulld-Kun",
+        "Streama",
+        "12",
+        "Boulanger",
+        "Orchestra Core",
+        "Rotisseur",
+        "Poissonier",
+        "Chef Spirit",
+        "5.TONE&VOICE",
+        "6. BRAND ELEMENTS",
+        "7, LOGO VARIATIONS",
+        "ical but Playlul",
+        "MISE",
+        "MISE",
+        "3O-DAYSOCIALMEDIACONTENTCALENDAR",
+        "veStyie",
+        "MISE",
+        "Mise Orchestra Dashboard",
+        "LAEKTOENOIS",
+        "ORCHESTRA",
+        "ORCHESTRA",
+        "ORCHESTRA",
+        "MON",
+        "TUE",
+        "WED",
+        "FRI",
+        "SAT",
+        "LORE OROR",
+        "SUN",
+        "OMOS CONeC",
+        "SISTEKEPAN",
+        "AIUS JX0GONE",
+        "SISTIE SARUS",
+        "INCODIT LEVEL",
+        "DEROMENT OS",
+        "84%",
+        "READYTOSERVE",
+        "HIGH",
+        "WEEX1",
+        "4-WEEKCOMICSTORYARC:“THEFIRSTDEPLOYMENT\"",
+        "ARASIENG",
+        "Cuchen",
+        "WEEK1",
+        "WEEK2",
+        "WEEK3",
+        "Urhene Opets",
+        "t a Xthen?",
+        "Goes Dosn",
+        "WEEK4",
+        "AWAKENING",
+        "CHAOS SPREADS",
+        "SCALEEVENT",
+        "ORCHESTRAFORMATION",
+        "DHEF ORCESTRASTATU",
+        "WEEX2",
+        "UNE INCOEXT FEEO",
+        "CVCObrokon",
+        "Fix The",
+        "DeleeyLoup",
+        "KitcenPol",
+        "WEEX3",
+        "SCALE",
+        "Eohes",
+        "LooET",
+        "Landh",
+        "Pou",
+        "Starts",
+        "WEEX",
+        "AOSTR",
+        "Peflec",
+        "FralBots",
+        "Indet",
+        "Drployrert Dia",
+        "Wote",
+        "XITCHEN METRICS",
+        "SYSTEN HAP",
+        "APIgateway overload",
+        " Fieingrstation",
+        "· Autoscaling triggers",
+        "Chets intro",
+        "DCSRA DEAS",
+        "· System self-heals",
+        "- Missing ingredients bug",
+        "68%",
+        "- Perfect deployment dish",
+        "• Delivery failures",
+        "DenOgTp",
+        "he!",
+        "Odengt",
+        "QUBLE BUFRER",
+        "• Partial stabilitation",
+        "Seenes",
+        "Simletion",
+        "THEME:CHAOS",
+        "THEME:BEGINNINGS",
+        "THEME:GROWTH",
+        "METAORK SAUCERON",
+        "81%",
+        "THEME:HARMONY",
+        "POST DAILY.ENGAGE DEEPLY,BUILD THEUNIVERSE.",
+        "TOBECONTINUED.."
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/orchestra-core.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.015",
+        "OrchestraCore",
+        "MO",
+        "MYTHIC-Soul ofPlatform",
+        "Chef Spirit|Platform",
+        "ABILITY:OneSymphony",
+        "The soul of the platform. Sees everything and coordinates all",
+        "Element:GoldenGate.Function:Coordinate",
+        "COORDINATE",
+        "100",
+        "OBSERVE",
+        "95",
+        "SECURE",
+        "86",
+        "ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "LEARN"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "100%",
+    "68%",
+    "81%",
+    "84%"
+  ],
+  "level": 36,
+  "orchestra_card": {
+    "role": "Chef Spirit",
+    "department": "Platform",
+    "function": "Coordinate",
+    "rarity": "Mythic",
+    "tier": "Soul of Platform",
+    "element": "Golden Gate",
+    "ability": "One Symphony",
+    "lore": "The soul of the platform. Sees everything and coordinates all."
+  },
+  "abilities": [
+    "One Symphony"
+  ],
+  "profile_doc": "characters/orchestra-core/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 531,
+        "text": "MISE-G2-P029 Orchestra Core Mise Orchestra canonical-candidate 1E3334AB-3111- 29"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/components/MasterRosterGallery.tsx",
+        "line": 94,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 24,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 79,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/brigade-gallery/src/types/master-roster.ts",
+        "line": 66,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 11,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 47,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/repo-roamer.js",
+        "line": 43,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/test/smoke.mjs",
+        "line": 10,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "tools/repo-pet/bin/mise-roam.mjs",
+        "line": 10,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 145,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/repo-pet/src/repo-roamer.js",
+        "line": 87,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "tools/repo-pet/test/smoke.mjs",
+        "line": 6,
+        "term": "orchestra-core"
+      }
+    ],
+    "code_ref_count": 12,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1850,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/package.json",
+        "line": 11,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 138,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/015-orchestra-core.json",
+        "line": 2,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1850,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 16,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 138,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 57,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 57,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 582,
+        "term": "Orchestra Core"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 5,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 28,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/repo-pet/README.md",
+        "line": 129,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 23,
+        "term": "Orchestra Core"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/components/MasterRosterGallery.tsx",
+        "line": 94,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 11,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 47,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/repo-roamer.js",
+        "line": 43,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "tools/repo-pet/bin/mise-roam.mjs",
+        "line": 10,
+        "term": "orchestra-core"
+      },
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 145,
+        "term": "Orchestra Core"
+      },
+      {
+        "path": "tools/repo-pet/src/repo-roamer.js",
+        "line": 87,
+        "term": "orchestra-core"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-087",
+    "character_id": "miseos.character.087",
+    "card_id": "MISE-087",
+    "codename": "ORCHESTRA_CORE"
+  },
+  "role": "Coordinate",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Mythic",
+  "lore": "Orchestra Core belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Orchestra Core performs coordinate within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE COORDINATE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 73,
+    "precision": 92,
+    "speed": 75,
+    "resilience": 79,
+    "intelligence": 76,
+    "teamwork": 90
+  },
+  "related": [
+    {
+      "name": "Template Tanaka",
+      "slug": "template-tanaka"
+    },
+    {
+      "name": "Bootstrap Aiko",
+      "slug": "bootstrap-aiko"
+    },
+    {
+      "name": "Terra Forge",
+      "slug": "terra-forge"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Orchestra Core performs coordinate within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

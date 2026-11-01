@@ -1,0 +1,303 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-policy-engine",
+  "name": "MiseOS Policy Engine",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/i-am-the-will-that-governs-all-action.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/i-am-the-will-that-governs-all-action.webp",
+      "collection": "long-cards",
+      "title": "I AM THE WILL THAT GOVERNS ALL ACTION",
+      "match_method": "ocr-line"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/i-am-the-will-that-governs-all-action.webp",
+      "printed_text": [
+        "11",
+        "ULTRA MYTHIC",
+        "MISEOSREGISTRY",
+        "MISEOS",
+        "MiseOS Policy Engine",
+        "TYPE: POLICY",
+        "POLICY",
+        "COMMAND",
+        "GOVERNANCE",
+        "TABLET",
+        "PRINCIPLES",
+        "FAIRNESS",
+        "EVALUATE",
+        "SAFETY",
+        "ENFORCE",
+        "PRIVACY",
+        "ORCHESTRATE",
+        "COMPLIANCE",
+        "GOVERN",
+        "TRANSPARENCY",
+        "ACCOUNTABILITY",
+        "JUDGMENT",
+        "SEAL",
+        "POLICY",
+        "ORCHESTRATION",
+        "EXECUTION",
+        "AUTHORITY",
+        "IEVALUATE.TENFORCE.ORCHESTRATE",
+        "IAMTHEWILLTHATGOVERNSALLACTION.",
+        "MISEOSCOREENTITY"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Ultra Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "policyEngine"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "policy",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 22,
+        "term": "policyEngine"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 22,
+        "term": "policyEngine"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 22,
+        "term": "policyEngine"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.policy-engine"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 80,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 332,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 14,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 332,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 69,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.policy-engine.json",
+        "line": 4,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 69,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.policy-engine.json",
+        "line": 4,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 272,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 332,
+        "term": "MiseOS Policy Engine"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/naming-conventions.md",
+        "line": 32,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 48,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 45,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 15,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 29,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 15,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 89,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 19,
+        "term": "miseos.policy-engine"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Policy Engine"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+        "line": 15,
+        "term": "miseos.policy-engine"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 22,
+      "name": "policyEngine"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 22,
+        "term": "policyEngine"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 22,
+        "term": "policyEngine"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 22,
+        "term": "policyEngine"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.policy-engine"
+  },
+  "role": "Policy",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Policy Engine.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "policyEngine",
+      "handler": "policyEngine",
+      "source": "apps/registry-platform/registry/manifests/miseos.policy-engine.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (policy)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Policy Engine.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

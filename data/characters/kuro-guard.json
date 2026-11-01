@@ -1,0 +1,407 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "kuro-guard",
+  "name": "Kuro Guard",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/kuro-guard/metadata.json",
+    "role": "characters/kuro-guard/metadata.json",
+    "department": "characters/kuro-guard/metadata.json",
+    "rarity": "characters/kuro-guard/metadata.json",
+    "workflow.summary": "characters/kuro-guard/metadata.json",
+    "workflow.inputs": "characters/kuro-guard/metadata.json",
+    "workflow.outputs": "characters/kuro-guard/metadata.json",
+    "workflow.proof_gate": "characters/kuro-guard/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/kuro-guard/metadata.json"
+  },
+  "registry": {
+    "number": 9,
+    "profile": "characters/kuro-guard/README.md",
+    "metadata": "characters/kuro-guard/metadata.json",
+    "avatar": "assets/characters/kuro-guard/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/kuro-guard.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/kuro-guard.webp",
+      "collection": "1by1-chefs",
+      "title": "Kuro Guard",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/kuro-guard.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/kuro-guard.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Kuro Guard",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kuro-guard.webp",
+      "thumbnail": "assets/player-cards/icloud-screens/thumbs/kuro-guard.webp",
+      "collection": "icloud-screens",
+      "title": "KURO GUARD",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kuro-guard-2.webp",
+      "thumbnail": "assets/player-cards/icloud-screens/thumbs/kuro-guard-2.webp",
+      "collection": "icloud-screens",
+      "title": "Kuro Guard",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "icloud-screens",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/kuro-guard.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "GUARDIAN",
+        "OFFLAVOR",
+        "KITCHEN DEFENSE",
+        "PROTECT",
+        "PROTOCOL",
+        "PRESERVE",
+        "ACTIVE",
+        "PERFECT",
+        "KITCHEN",
+        "INTEGRITY",
+        "100%",
+        "Kuro Guard",
+        "Steward"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/kuro-guard.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.011",
+        "KuroGuard",
+        "MO",
+        "EPIC-SecurityGate",
+        "Steward|Platform",
+        "ABILITY:Platform Ward",
+        "Defends the platform with unwavering protection.",
+        "Element: Black Shield :Function: Protect",
+        "PROTECT",
+        "98",
+        "SECURE",
+        "93",
+        "OBSERVE",
+        "80",
+        "ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "VALIDATE"
+      ]
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kuro-guard.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "SET B",
+        "THE ORCHESTRA",
+        "EXPANDS",
+        "v1.1.0",
+        "AGENTREGISTRY(V1.0.0)",
+        "2025.08.xX",
+        "07",
+        "IRON HASHI",
+        "•New Agents",
+        "80",
+        "NULL-CHAN",
+        "·NewWorkflows",
+        "09",
+        "FLASH RIKU",
+        "·New Packages",
+        "10 SEIRA",
+        "MoreOrchestration",
+        "11元",
+        "KURO GUARD",
+        "12SCALEONI",
+        "NEWPACKAGES",
+        "TENSHO",
+        "MIZU",
+        "CELESTIALSTRATEGIST",
+        "FLOWENGINEER",
+        "WORKFLOW:EXPAND",
+        "PREPARE",
+        "COOK",
+        "ORCHESTRATE",
+        "METRICS:GROWTH",
+        "UMAMICODE",
+        "KUROGAMISENPAI",
+        "KAJI",
+        "DATAALCHEMIST",
+        "MASTERORCHESTRATOR",
+        "KITCHENTECH",
+        "STAY TUNED",
+        "04",
+        "EVERYAGENTHASAROLE",
+        "EVERYROLEHASPURPOSE"
+      ]
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kuro-guard-2.webp",
+      "printed_text": [
+        "Miseos",
+        "BRIGADE",
+        "CONTROL PLANE",
+        "OP",
+        "Home",
+        "THE AGENT BRIGADE",
+        "75agents.7groups.Oneorchestra.",
+        "NAVIGATION",
+        "Overview",
+        "Everyagenthasa role.Everyrole has a purpose.Everyaction is orchestrated.Browsethefull",
+        "Miseosbrigadebystation.",
+        "Kitchen",
+        "Q Search the brigade.",
+        "Ecosystem",
+        "ALL",
+        "EXECUTIVE CHEFS",
+        "KITCHEN OPERATIONS",
+        "ENGINEERING &DEVELOPMENT",
+        "SERVICE LAYER",
+        "Jobs",
+        "SECURITY&QUALITY",
+        "PLATFORM& INFRASTRUCTURE",
+        "INTEGRATIONSECOSYSTEM",
+        "Approvals",
+        "75 shown",
+        "Stations",
+        "ExecutiveChefs",
+        "Characters",
+        "10 agents",
+        "LEADERSHIP &ORCHESTRATION",
+        "Brigade",
+        "Kurogami",
+        "KuroGuard",
+        "Seira",
+        "OrchestraCore",
+        "Conductor",
+        "Master Strategist",
+        "Chief Orchestrator",
+        "Signal Conductor",
+        "Chief Sentinel",
+        "Workflow Conductor"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Epic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "100%"
+  ],
+  "level": 24,
+  "orchestra_card": {
+    "role": "Steward",
+    "department": "Platform",
+    "function": "Protect",
+    "rarity": "Epic",
+    "tier": "Security Gate",
+    "element": "Black Shield",
+    "ability": "Platform Ward",
+    "lore": "Defends the platform with unwavering protection."
+  },
+  "abilities": [
+    "Platform Ward"
+  ],
+  "profile_doc": "characters/kuro-guard/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 659,
+        "text": "MISE-G2-P090 Kuro Guard Mise Orchestra canonical-candidate 1E3334AB-3111- 90"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 46,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 317,
+        "term": "Kuro Guard"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1788,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 102,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/011-kuro-guard.json",
+        "line": 2,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1788,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 12,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 102,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 153,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 153,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1378,
+        "term": "Kuro Guard"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 66,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 24,
+        "term": "Kuro Guard"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Kuro Guard"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 317,
+        "term": "Kuro Guard"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-084",
+    "character_id": "miseos.character.084",
+    "card_id": "MISE-084",
+    "codename": "KURO_GUARD"
+  },
+  "role": "Protect",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Epic",
+  "lore": "Kuro Guard belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Kuro Guard performs protect within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PROTECT",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 82,
+    "precision": 79,
+    "speed": 78,
+    "resilience": 78,
+    "intelligence": 67,
+    "teamwork": 88
+  },
+  "related": [
+    {
+      "name": "Orchestra Core",
+      "slug": "orchestra-core"
+    },
+    {
+      "name": "Template Tanaka",
+      "slug": "template-tanaka"
+    },
+    {
+      "name": "Bootstrap Aiko",
+      "slug": "bootstrap-aiko"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Kuro Guard performs protect within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

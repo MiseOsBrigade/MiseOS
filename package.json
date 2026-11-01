@@ -15,9 +15,12 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "validate:cards": "node scripts/validate-player-cards.mjs",
-    "test": "npm run validate && npm run validate:cards",
+    "test": "npm run validate && npm run validate:cards && npm run validate:pages",
     "test:workspaces": "npm test --workspaces --if-present",
-    "build:workspaces": "npm run build --workspaces --if-present"
+    "build:workspaces": "npm run build --workspaces --if-present",
+    "cards:pages": "node tools/player-cards/scripts/build-character-pages.mjs",
+    "cards:align": "python3 tools/player-cards/scripts/align-characters.py && npm run cards:pages",
+    "validate:pages": "node scripts/validate-character-pages.mjs && node tools/player-cards/scripts/build-character-pages.mjs --check"
   },
   "engines": {
     "node": ">=20"

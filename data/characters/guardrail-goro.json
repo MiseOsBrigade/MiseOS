@@ -1,0 +1,244 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "guardrail-goro",
+  "name": "Guardrail Goro",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "ids.registry_id": "characters/guardrail-goro/metadata.json",
+    "role": "characters/guardrail-goro/metadata.json",
+    "department": "characters/guardrail-goro/metadata.json",
+    "rarity": "characters/guardrail-goro/metadata.json",
+    "workflow.summary": "characters/guardrail-goro/metadata.json",
+    "workflow.inputs": "characters/guardrail-goro/metadata.json",
+    "workflow.outputs": "characters/guardrail-goro/metadata.json",
+    "workflow.proof_gate": "characters/guardrail-goro/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/guardrail-goro/metadata.json"
+  },
+  "registry": {
+    "number": 59,
+    "profile": "characters/guardrail-goro/README.md",
+    "metadata": "characters/guardrail-goro/metadata.json",
+    "avatar": "assets/characters/guardrail-goro/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/guardrail-goro.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/guardrail-goro.webp",
+      "collection": "1by1-chefs",
+      "title": "Guardrail Goro",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/guardrail-goro.webp",
+      "printed_text": [
+        "PLATFORMSTANDARDS",
+        "MISE",
+        "CONSISTENT",
+        "RELIABLE",
+        "ORCHESTRA",
+        "SCALABLE",
+        "TRUSTED",
+        "SAFEDEFAULTS",
+        "SECURE BYDEFAULT",
+        "LEASTPRIVILEGE",
+        "POLICY LANES",
+        "PRIVACY FIRST",
+        "FAILSAFE",
+        "GUARDRAILSACTIVE",
+        "GUIDE·ENFORCE·EVOLVE",
+        "PROTECT",
+        "DETECT",
+        "PREVENTO",
+        "GOLDEN PATH",
+        "证济",
+        "VALIDATED",
+        "THE RIGHT PATH.",
+        "EVERY TIME.",
+        "Guardrail Goro",
+        "Golden Path Guardrails"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 23,
+  "unique_trait": "Specializes in golden path guardrails so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "automation",
+  "profile_doc": "characters/guardrail-goro/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 611,
+        "text": "MISE-G2-P066 Guardrail Goro Mise Orchestra canonical-candidate 1E3334AB-3111- 66"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 449,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 372,
+        "term": "Guardrail Goro"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 401,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1602,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1602,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 800,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 429,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 429,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1448,
+        "term": "Guardrail Goro"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Guardrail Goro"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Guardrail Goro"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-029",
+    "character_id": "miseos.character.029",
+    "card_id": "MISE-029",
+    "codename": "GUARDRAIL_GORO"
+  },
+  "role": "Golden Path Guardrails",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Common",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Golden Path Guardrails done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Guardrail Goro performs golden path guardrails within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE GOLDEN PATH GUARDRAILS",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Golden Path Guardrails",
+      "mise_name": "Mise GoldenPathGuardrails",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 73,
+    "precision": 73,
+    "speed": 59,
+    "resilience": 68,
+    "intelligence": 59,
+    "teamwork": 79
+  },
+  "related": [
+    {
+      "name": "Platform Sensei",
+      "slug": "platform-sensei"
+    },
+    {
+      "name": "Seira",
+      "slug": "seira"
+    },
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Portal Rei",
+      "slug": "portal-rei"
+    },
+    {
+      "name": "Canary Taster",
+      "slug": "canary-taster"
+    },
+    {
+      "name": "Impact Ichi",
+      "slug": "impact-ichi"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Guardrail Goro performs golden path guardrails within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

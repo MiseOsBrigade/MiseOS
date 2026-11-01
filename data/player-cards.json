@@ -18,7 +18,10 @@
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-034.jpg"
       ],
       "roster_card_id": "MISE-108",
-      "roster_name": "Plate Inspector"
+      "roster_name": "Plate Inspector",
+      "entity_slug": "plate-inspector",
+      "match_method": "existing-index",
+      "page": "docs/characters/plate-inspector.md"
     },
     {
       "collection": "long-cards",
@@ -34,7 +37,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/0ACE220D-32A1-49F3-A00C-69E4A6197ACC.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-001.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-repo-steward",
+      "match_method": "ocr-line",
+      "page": "docs/characters/miseos-repo-steward.md"
     },
     {
       "collection": "long-cards",
@@ -50,7 +56,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/0CC93597-6FFA-4CB7-A484-88987E860B5B.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-008.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-release-sentinel",
+      "match_method": "title",
+      "page": "docs/characters/miseos-release-sentinel.md"
     },
     {
       "collection": "long-cards",
@@ -62,7 +71,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-docs-builder",
+      "match_method": "title",
+      "page": "docs/characters/miseos-docs-builder.md"
     },
     {
       "collection": "long-cards",
@@ -77,7 +89,10 @@
       ],
       "duplicates": [
         "extract:img-long-cards/Long cards /8D5638AD-B1A8-42AA-B49A-C5710631CEE6.PNG"
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/long-cards--miseos-conductor-prime.md"
     },
     {
       "collection": "long-cards",
@@ -93,7 +108,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/282A44F8-2716-470C-884E-B3EA2FB3FD74.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-065.jpg"
-      ]
+      ],
+      "entity_slug": "cold-zero",
+      "match_method": "title",
+      "page": "docs/characters/cold-zero.md"
     },
     {
       "collection": "long-cards",
@@ -105,7 +123,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-trust-graph",
+      "match_method": "ocr-line",
+      "page": "docs/characters/miseos-trust-graph.md"
     },
     {
       "collection": "long-cards",
@@ -119,7 +140,10 @@
         1610
       ],
       "roster_card_id": "MISE-043",
-      "roster_name": "Resilience Ryu"
+      "roster_name": "Resilience Ryu",
+      "entity_slug": "resilience-ryu",
+      "match_method": "existing-index",
+      "page": "docs/characters/resilience-ryu.md"
     },
     {
       "collection": "long-cards",
@@ -131,7 +155,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-maven-policy-adapter",
+      "match_method": "title",
+      "page": "docs/characters/miseos-maven-policy-adapter.md"
     },
     {
       "collection": "long-cards",
@@ -143,7 +170,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": "miseos-repo-pet",
+      "match_method": "title",
+      "page": "docs/characters/miseos-repo-pet.md"
     },
     {
       "collection": "long-cards",
@@ -155,7 +185,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-attestation-gate",
+      "match_method": "title",
+      "page": "docs/characters/miseos-attestation-gate.md"
     },
     {
       "collection": "long-cards",
@@ -167,7 +200,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/long-cards--thunder-surge.md"
     },
     {
       "collection": "long-cards",
@@ -179,7 +215,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-nuget-client",
+      "match_method": "title",
+      "page": "docs/characters/miseos-nuget-client.md"
     },
     {
       "collection": "long-cards",
@@ -191,7 +230,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": "miseos-registry-schema",
+      "match_method": "ocr-text",
+      "page": "docs/characters/miseos-registry-schema.md"
     },
     {
       "collection": "long-cards",
@@ -207,7 +249,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/51A17D09-BB78-46AF-86BD-1F4DA72E52FF.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-070.jpg"
-      ]
+      ],
+      "entity_slug": "steam-whisper",
+      "match_method": "title",
+      "page": "docs/characters/steam-whisper.md"
     },
     {
       "collection": "long-cards",
@@ -223,7 +268,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/58FDA01D-108F-42B2-8476-90C41874F90D.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-004.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-sbom-indexer",
+      "match_method": "ocr-line",
+      "page": "docs/characters/miseos-sbom-indexer.md"
     },
     {
       "collection": "long-cards",
@@ -239,7 +287,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/595B448B-9C13-4035-A4BB-EFC00F66837F.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-007.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-registry-schema",
+      "match_method": "ocr-text",
+      "page": "docs/characters/miseos-registry-schema.md"
     },
     {
       "collection": "long-cards",
@@ -255,7 +306,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/63C1AAF2-1820-403E-B0BD-B8AAA782B383.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-002.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-workflow-linter",
+      "match_method": "title",
+      "page": "docs/characters/miseos-workflow-linter.md"
     },
     {
       "collection": "long-cards",
@@ -267,7 +321,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": "miseos-orchestra-theme",
+      "match_method": "title",
+      "page": "docs/characters/miseos-orchestra-theme.md"
     },
     {
       "collection": "long-cards",
@@ -279,7 +336,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-runner",
+      "match_method": "ocr-line-pair",
+      "page": "docs/characters/miseos-runner.md"
     },
     {
       "collection": "long-cards",
@@ -295,7 +355,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/8207C116-BC43-4133-95B1-B00BCB705FFC.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-003.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-ruby-steward",
+      "match_method": "ocr-line",
+      "page": "docs/characters/miseos-ruby-steward.md"
     },
     {
       "collection": "long-cards",
@@ -311,7 +374,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/8B7948F3-F339-4096-98E6-031287021618.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-069.jpg"
-      ]
+      ],
+      "entity_slug": "sauce-sage",
+      "match_method": "title",
+      "page": "docs/characters/sauce-sage.md"
     },
     {
       "collection": "long-cards",
@@ -326,7 +392,10 @@
       ],
       "duplicates": [
         "extract:img-long-cards/Long cards /8DAEEB87-A9A6-4B6E-B979-7B7BD81780C3.PNG"
-      ]
+      ],
+      "entity_slug": "miseos-agent-sdk",
+      "match_method": "ocr-text",
+      "page": "docs/characters/miseos-agent-sdk.md"
     },
     {
       "collection": "long-cards",
@@ -342,7 +411,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/8EE62691-3B20-4200-A599-02E8C47EFBC2.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-006.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-policy-engine",
+      "match_method": "ocr-line",
+      "page": "docs/characters/miseos-policy-engine.md"
     },
     {
       "collection": "long-cards",
@@ -354,7 +426,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-docs-hub-template",
+      "match_method": "title",
+      "page": "docs/characters/miseos-docs-hub-template.md"
     },
     {
       "collection": "long-cards",
@@ -369,7 +444,10 @@
       ],
       "duplicates": [
         "extract:img-long-cards/Long cards /C5A6CDB6-6747-4EB0-A276-0E401BAF8443.PNG"
-      ]
+      ],
+      "entity_slug": "miseos-maven-policy-adapter",
+      "match_method": "title",
+      "page": "docs/characters/miseos-maven-policy-adapter.md"
     },
     {
       "collection": "long-cards",
@@ -384,7 +462,10 @@
       ],
       "duplicates": [
         "extract:img-long-cards/Long cards /A691A767-4606-4201-A841-D2DAF6A8442B.PNG"
-      ]
+      ],
+      "entity_slug": "miseos-policy-checker",
+      "match_method": "title",
+      "page": "docs/characters/miseos-policy-checker.md"
     },
     {
       "collection": "long-cards",
@@ -400,7 +481,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/A75DA27C-137D-4B5D-8CA5-0A93AF44D01D.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-068.jpg"
-      ]
+      ],
+      "entity_slug": "pan-phantom",
+      "match_method": "title",
+      "page": "docs/characters/pan-phantom.md"
     },
     {
       "collection": "long-cards",
@@ -416,7 +500,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/AD70B310-09B6-41CB-9426-01780F1FF67A.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-066.jpg"
-      ]
+      ],
+      "entity_slug": "butcher-blade",
+      "match_method": "title",
+      "page": "docs/characters/butcher-blade.md"
     },
     {
       "collection": "long-cards",
@@ -432,7 +519,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/B28B66E8-6A34-43FE-B19C-3975041F5BA7.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-005.jpg"
-      ]
+      ],
+      "entity_slug": "miseos-workflow-pack",
+      "match_method": "ocr-line",
+      "page": "docs/characters/miseos-workflow-pack.md"
     },
     {
       "collection": "long-cards",
@@ -448,7 +538,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/B5E35C1C-0AB2-49C1-B1FE-63FDE3668E41.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-067.jpg"
-      ]
+      ],
+      "entity_slug": "zen-plater",
+      "match_method": "title",
+      "page": "docs/characters/zen-plater.md"
     },
     {
       "collection": "long-cards",
@@ -460,7 +553,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": "miseos-repo-steward",
+      "match_method": "ocr-line",
+      "page": "docs/characters/miseos-repo-steward.md"
     },
     {
       "collection": "long-cards",
@@ -472,7 +568,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-orchestra-theme",
+      "match_method": "title",
+      "page": "docs/characters/miseos-orchestra-theme.md"
     },
     {
       "collection": "long-cards",
@@ -488,7 +587,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/BCC15E0D-BDEE-44F4-98ED-694498D17562.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-072.jpg"
-      ]
+      ],
+      "entity_slug": "spice-alchemist",
+      "match_method": "title",
+      "page": "docs/characters/spice-alchemist.md"
     },
     {
       "collection": "long-cards",
@@ -500,7 +602,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": "miseos-release-sentinel",
+      "match_method": "title",
+      "page": "docs/characters/miseos-release-sentinel.md"
     },
     {
       "collection": "long-cards",
@@ -512,7 +617,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-gradle-plugin",
+      "match_method": "title",
+      "page": "docs/characters/miseos-gradle-plugin.md"
     },
     {
       "collection": "long-cards",
@@ -524,7 +632,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-repo-pet",
+      "match_method": "title",
+      "page": "docs/characters/miseos-repo-pet.md"
     },
     {
       "collection": "long-cards",
@@ -540,7 +651,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/D18FED73-22ED-4AD5-9A46-D653F25B82DB.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-071.jpg"
-      ]
+      ],
+      "entity_slug": "knead-guardian",
+      "match_method": "title",
+      "page": "docs/characters/knead-guardian.md"
     },
     {
       "collection": "long-cards",
@@ -552,7 +666,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-cli",
+      "match_method": "title",
+      "page": "docs/characters/miseos-cli.md"
     },
     {
       "collection": "long-cards",
@@ -568,7 +685,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/D34D2C03-C2BC-4D0A-A016-D63BF5D712C7.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-073.jpg"
-      ]
+      ],
+      "entity_slug": "byte",
+      "match_method": "title",
+      "page": "docs/characters/byte.md"
     },
     {
       "collection": "long-cards",
@@ -580,7 +700,10 @@
       "original_size": [
         1122,
         1402
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/long-cards--d446f048-3fbc-41b8-ada0-a36127e03f15.md"
     },
     {
       "collection": "long-cards",
@@ -596,7 +719,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/DFCD3982-3C1F-4415-9679-B3AE63FC3D0E.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-074.jpg"
-      ]
+      ],
+      "entity_slug": "char-coach",
+      "match_method": "title",
+      "page": "docs/characters/char-coach.md"
     },
     {
       "collection": "long-cards",
@@ -608,7 +734,10 @@
       "original_size": [
         977,
         1610
-      ]
+      ],
+      "entity_slug": "miseos-analytics-engine",
+      "match_method": "title",
+      "page": "docs/characters/miseos-analytics-engine.md"
     },
     {
       "collection": "1by1-chefs",
@@ -622,7 +751,10 @@
         1254
       ],
       "roster_card_id": "MISE-011",
-      "roster_name": "Felix Rollback"
+      "roster_name": "Felix Rollback",
+      "entity_slug": "felix-rollback",
+      "match_method": "existing-index",
+      "page": "docs/characters/felix-rollback.md"
     },
     {
       "collection": "1by1-chefs",
@@ -638,7 +770,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/08AE899B-8947-4FB1-B4ED-26684AA1781D.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-060.jpg"
-      ]
+      ],
+      "entity_slug": "plating-poet",
+      "match_method": "title",
+      "page": "docs/characters/plating-poet.md"
     },
     {
       "collection": "1by1-chefs",
@@ -650,7 +785,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--gatekeeper.md"
     },
     {
       "collection": "1by1-chefs",
@@ -669,7 +807,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/flavor-forager/card.jpg"
       ],
       "roster_card_id": "MISE-094",
-      "roster_name": "Flavor Forager"
+      "roster_name": "Flavor Forager",
+      "entity_slug": "flavor-forager",
+      "match_method": "existing-index",
+      "page": "docs/characters/flavor-forager.md"
     },
     {
       "collection": "1by1-chefs",
@@ -681,7 +822,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--sre-chef.md"
     },
     {
       "collection": "1by1-chefs",
@@ -700,7 +844,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/ladle-lumen/card.jpg"
       ],
       "roster_card_id": "MISE-098",
-      "roster_name": "Ladle Lumen"
+      "roster_name": "Ladle Lumen",
+      "entity_slug": "ladle-lumen",
+      "match_method": "existing-index",
+      "page": "docs/characters/ladle-lumen.md"
     },
     {
       "collection": "1by1-chefs",
@@ -719,7 +866,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/cost-kaito/card.jpg"
       ],
       "roster_card_id": "MISE-067",
-      "roster_name": "Cost Kaito"
+      "roster_name": "Cost Kaito",
+      "entity_slug": "cost-kaito",
+      "match_method": "existing-index",
+      "page": "docs/characters/cost-kaito.md"
     },
     {
       "collection": "1by1-chefs",
@@ -733,19 +883,25 @@
         1254
       ],
       "roster_card_id": "MISE-026",
-      "roster_name": "Streama"
+      "roster_name": "Streama",
+      "entity_slug": "streama",
+      "match_method": "existing-index",
+      "page": "docs/characters/streama.md"
     },
     {
       "collection": "1by1-chefs",
       "file": "assets/player-cards/1by1-chefs/acore.webp",
       "thumbnail": "assets/player-cards/1by1-chefs/thumbs/acore.webp",
       "title": "aCore",
-      "character_slug": null,
+      "character_slug": "orchestra-core",
       "source": "extract:img-1by1-chefs/1by1 chefs /17EF67BE-7A8B-44DC-9170-B8C12435BF6A.PNG",
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": "orchestra-core",
+      "match_method": "title",
+      "page": "docs/characters/orchestra-core.md"
     },
     {
       "collection": "1by1-chefs",
@@ -759,7 +915,10 @@
         1254
       ],
       "roster_card_id": "MISE-082",
-      "roster_name": "Flash Riku"
+      "roster_name": "Flash Riku",
+      "entity_slug": "flash-riku",
+      "match_method": "existing-index",
+      "page": "docs/characters/flash-riku.md"
     },
     {
       "collection": "1by1-chefs",
@@ -775,7 +934,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/1E9F406F-5BFC-4EDD-AE24-8997309F4253.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-032.jpg"
-      ]
+      ],
+      "entity_slug": "energy-keeper",
+      "match_method": "title",
+      "page": "docs/characters/energy-keeper.md"
     },
     {
       "collection": "1by1-chefs",
@@ -787,7 +949,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--dispatcher.md"
     },
     {
       "collection": "1by1-chefs",
@@ -803,7 +968,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/22EAD4C7-0BA0-47EF-93D3-898068882827.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-035.jpg"
-      ]
+      ],
+      "entity_slug": "orderly-owl",
+      "match_method": "title",
+      "page": "docs/characters/orderly-owl.md"
     },
     {
       "collection": "1by1-chefs",
@@ -815,7 +983,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--reviewer.md"
     },
     {
       "collection": "1by1-chefs",
@@ -836,7 +1007,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/schema-sora/card.jpg"
       ],
       "roster_card_id": "MISE-019",
-      "roster_name": "Schema Sora"
+      "roster_name": "Schema Sora",
+      "entity_slug": "schema-sora",
+      "match_method": "existing-index",
+      "page": "docs/characters/schema-sora.md"
     },
     {
       "collection": "1by1-chefs",
@@ -852,7 +1026,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/2F69DD7B-7832-4C62-8451-0D9CBA4B9983.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-033.jpg"
-      ]
+      ],
+      "entity_slug": "sanitation-star",
+      "match_method": "title",
+      "page": "docs/characters/sanitation-star.md"
     },
     {
       "collection": "1by1-chefs",
@@ -864,7 +1041,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--doc-writer.md"
     },
     {
       "collection": "1by1-chefs",
@@ -883,7 +1063,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/ledger-ladle/card.jpg"
       ],
       "roster_card_id": "MISE-096",
-      "roster_name": "Ledger Ladle"
+      "roster_name": "Ledger Ladle",
+      "entity_slug": "ledger-ladle",
+      "match_method": "existing-index",
+      "page": "docs/characters/ledger-ladle.md"
     },
     {
       "collection": "1by1-chefs",
@@ -897,7 +1080,10 @@
         1254
       ],
       "roster_card_id": "MISE-008",
-      "roster_name": "Iron Hashi"
+      "roster_name": "Iron Hashi",
+      "entity_slug": "iron-hashi",
+      "match_method": "existing-index",
+      "page": "docs/characters/iron-hashi.md"
     },
     {
       "collection": "1by1-chefs",
@@ -913,7 +1099,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/39DE5447-D919-447E-823F-6B38601790FC.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-063.jpg"
-      ]
+      ],
+      "entity_slug": "pickle-doc",
+      "match_method": "title",
+      "page": "docs/characters/pickle-doc.md"
     },
     {
       "collection": "1by1-chefs",
@@ -925,7 +1114,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--compliance.md"
     },
     {
       "collection": "1by1-chefs",
@@ -944,7 +1136,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/ticket-tactician/card.jpg"
       ],
       "roster_card_id": "MISE-107",
-      "roster_name": "Ticket Tactician"
+      "roster_name": "Ticket Tactician",
+      "entity_slug": "ticket-tactician",
+      "match_method": "existing-index",
+      "page": "docs/characters/ticket-tactician.md"
     },
     {
       "collection": "1by1-chefs",
@@ -965,7 +1160,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/merge-sentinel/card.jpg"
       ],
       "roster_card_id": "MISE-053",
-      "roster_name": "Merge Sentinel"
+      "roster_name": "Merge Sentinel",
+      "entity_slug": "merge-sentinel",
+      "match_method": "existing-index",
+      "page": "docs/characters/merge-sentinel.md"
     },
     {
       "collection": "1by1-chefs",
@@ -981,7 +1179,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/3F3F78EF-D440-40C0-915A-EB8F03894C8B.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-054.jpg"
-      ]
+      ],
+      "entity_slug": "citrus-zest",
+      "match_method": "title",
+      "page": "docs/characters/citrus-zest.md"
     },
     {
       "collection": "1by1-chefs",
@@ -997,7 +1198,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/419E99E2-EBB4-4E49-B389-D8027330D945.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-049.jpg"
-      ]
+      ],
+      "entity_slug": "cacao-alchemist",
+      "match_method": "title",
+      "page": "docs/characters/cacao-alchemist.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1016,7 +1220,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/velvet-vesper/card.jpg"
       ],
       "roster_card_id": "MISE-093",
-      "roster_name": "Velvet Vesper"
+      "roster_name": "Velvet Vesper",
+      "entity_slug": "velvet-vesper",
+      "match_method": "existing-index",
+      "page": "docs/characters/velvet-vesper.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1037,7 +1244,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/tariq-notesmith/card.jpg"
       ],
       "roster_card_id": "MISE-012",
-      "roster_name": "Tariq Notesmith"
+      "roster_name": "Tariq Notesmith",
+      "entity_slug": "tariq-notesmith",
+      "match_method": "existing-index",
+      "page": "docs/characters/tariq-notesmith.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1053,7 +1263,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/4590DEA1-CCE6-4EF5-80F5-562A9FD4CA12.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-056.jpg"
-      ]
+      ],
+      "entity_slug": "umami-seeker",
+      "match_method": "title",
+      "page": "docs/characters/umami-seeker.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1067,7 +1280,10 @@
         1254
       ],
       "roster_card_id": "MISE-010",
-      "roster_name": "Release Conductor"
+      "roster_name": "Release Conductor",
+      "entity_slug": "release-conductor",
+      "match_method": "existing-index",
+      "page": "docs/characters/release-conductor.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1081,7 +1297,10 @@
         1254
       ],
       "roster_card_id": "MISE-005",
-      "roster_name": "Hugo Matrix"
+      "roster_name": "Hugo Matrix",
+      "entity_slug": "hugo-matrix",
+      "match_method": "existing-index",
+      "page": "docs/characters/hugo-matrix.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1093,7 +1312,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--conductor.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1105,7 +1327,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--ux-chef.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1123,7 +1348,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/allergen-oracle/card.jpg"
       ],
       "roster_card_id": "MISE-112",
-      "roster_name": "Allergen Oracle"
+      "roster_name": "Allergen Oracle",
+      "entity_slug": "allergen-oracle",
+      "match_method": "existing-index",
+      "page": "docs/characters/allergen-oracle.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1144,7 +1372,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/scorecard-shin/card.jpg"
       ],
       "roster_card_id": "MISE-059",
-      "roster_name": "Scorecard Shin"
+      "roster_name": "Scorecard Shin",
+      "entity_slug": "scorecard-shin",
+      "match_method": "existing-index",
+      "page": "docs/characters/scorecard-shin.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1163,7 +1394,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/pantry-paladin/card.jpg"
       ],
       "roster_card_id": "MISE-106",
-      "roster_name": "Pantry Paladin"
+      "roster_name": "Pantry Paladin",
+      "entity_slug": "pantry-paladin",
+      "match_method": "existing-index",
+      "page": "docs/characters/pantry-paladin.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1179,7 +1413,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/5829DB98-598C-4E87-A36F-48244AA4B3D9.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-045.jpg"
-      ]
+      ],
+      "entity_slug": "ashen-one",
+      "match_method": "title",
+      "page": "docs/characters/ashen-one.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1198,7 +1435,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/nudge-neko/card.jpg"
       ],
       "roster_card_id": "MISE-058",
-      "roster_name": "Nudge Neko"
+      "roster_name": "Nudge Neko",
+      "entity_slug": "nudge-neko",
+      "match_method": "existing-index",
+      "page": "docs/characters/nudge-neko.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1212,7 +1452,10 @@
         1254
       ],
       "roster_card_id": "MISE-078",
-      "roster_name": "Mizu"
+      "roster_name": "Mizu",
+      "entity_slug": "mizu",
+      "match_method": "existing-index",
+      "page": "docs/characters/mizu.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1226,14 +1469,17 @@
         1254
       ],
       "roster_card_id": "MISE-105",
-      "roster_name": "Garnish Ghost"
+      "roster_name": "Garnish Ghost",
+      "entity_slug": "garnish-ghost",
+      "match_method": "existing-index",
+      "page": "docs/characters/garnish-ghost.md"
     },
     {
       "collection": "1by1-chefs",
       "file": "assets/player-cards/1by1-chefs/reserve.webp",
       "thumbnail": "assets/player-cards/1by1-chefs/thumbs/reserve.webp",
       "title": "Reserve",
-      "character_slug": null,
+      "character_slug": "reserve-rune",
       "source": "extract:img-1by1-chefs/1by1 chefs /6468EF3B-5D5F-452E-90D1-BCA64BBF4A7B.PNG",
       "original_size": [
         1254,
@@ -1243,7 +1489,10 @@
         "icloud:129 characters/Final pdf/6468EF3B-5D5F-452E-90D1-BCA64BBF4A7B.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-015.jpg",
         "extract:aligned/miseos-character-profile/assets/characters/reserve-rune/card.jpg"
-      ]
+      ],
+      "entity_slug": "reserve-rune",
+      "match_method": "title",
+      "page": "docs/characters/reserve-rune.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1255,7 +1504,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--security-auditor.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1271,7 +1523,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/68444176-F71E-4627-A770-A756382C3E7B.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-046.jpg"
-      ]
+      ],
+      "entity_slug": "roast-commander",
+      "match_method": "title",
+      "page": "docs/characters/roast-commander.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1285,7 +1540,10 @@
         1254
       ],
       "roster_card_id": "MISE-085",
-      "roster_name": "Scale Oni"
+      "roster_name": "Scale Oni",
+      "entity_slug": "scale-oni",
+      "match_method": "existing-index",
+      "page": "docs/characters/scale-oni.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1299,7 +1557,10 @@
         1254
       ],
       "roster_card_id": "MISE-013",
-      "roster_name": "Ivun Cache"
+      "roster_name": "Ivun Cache",
+      "entity_slug": "ivun-cache",
+      "match_method": "existing-index",
+      "page": "docs/characters/ivun-cache.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1311,7 +1572,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--coder.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1323,14 +1587,17 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--encryptor.md"
     },
     {
       "collection": "1by1-chefs",
       "file": "assets/player-cards/1by1-chefs/vesper.webp",
       "thumbnail": "assets/player-cards/1by1-chefs/thumbs/vesper.webp",
       "title": "Vesper",
-      "character_slug": null,
+      "character_slug": "vacuum-vesper",
       "source": "extract:img-1by1-chefs/1by1 chefs /7013C380-C840-4A4E-A48E-AB113653A8DF.PNG",
       "original_size": [
         1254,
@@ -1340,7 +1607,10 @@
         "icloud:129 characters/Final pdf/7013C380-C840-4A4E-A48E-AB113653A8DF.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-016.jpg",
         "extract:aligned/miseos-character-profile/assets/characters/vacuum-vesper/card.jpg"
-      ]
+      ],
+      "entity_slug": "vacuum-vesper",
+      "match_method": "title",
+      "page": "docs/characters/vacuum-vesper.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1361,7 +1631,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/evidence-scribe/card.jpg"
       ],
       "roster_card_id": "MISE-057",
-      "roster_name": "Evidence Scribe"
+      "roster_name": "Evidence Scribe",
+      "entity_slug": "evidence-scribe",
+      "match_method": "existing-index",
+      "page": "docs/characters/evidence-scribe.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1377,7 +1650,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/74EB2724-0ED5-4AE3-91C0-C6DDB8C5FE57.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-047.jpg"
-      ]
+      ],
+      "entity_slug": "brine-baron",
+      "match_method": "title",
+      "page": "docs/characters/brine-baron.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1398,7 +1674,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/guardrail-goro/card.jpg"
       ],
       "roster_card_id": "MISE-029",
-      "roster_name": "Guardrail Goro"
+      "roster_name": "Guardrail Goro",
+      "entity_slug": "guardrail-goro",
+      "match_method": "existing-index",
+      "page": "docs/characters/guardrail-goro.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1414,7 +1693,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/76C0449F-CDB4-456A-BF8E-D3405C0B97C3.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-036.jpg"
-      ]
+      ],
+      "entity_slug": "shift-sentinel",
+      "match_method": "title",
+      "page": "docs/characters/shift-sentinel.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1430,7 +1712,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/77638374-1D82-4900-9F20-4C7CB6795F0C.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-048.jpg"
-      ]
+      ],
+      "entity_slug": "sweet-architect",
+      "match_method": "title",
+      "page": "docs/characters/sweet-architect.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1444,7 +1729,10 @@
         1254
       ],
       "roster_card_id": "MISE-024",
-      "roster_name": "Umami Code"
+      "roster_name": "Umami Code",
+      "entity_slug": "umami-code",
+      "match_method": "existing-index",
+      "page": "docs/characters/umami-code.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1458,7 +1746,10 @@
         1254
       ],
       "roster_card_id": "MISE-080",
-      "roster_name": "Yume"
+      "roster_name": "Yume",
+      "entity_slug": "yume",
+      "match_method": "existing-index",
+      "page": "docs/characters/yume.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1472,7 +1763,10 @@
         1254
       ],
       "roster_card_id": "MISE-079",
-      "roster_name": "Kaji"
+      "roster_name": "Kaji",
+      "entity_slug": "kaji",
+      "match_method": "existing-index",
+      "page": "docs/characters/kaji.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1491,7 +1785,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/crate-courier/card.jpg"
       ],
       "roster_card_id": "MISE-095",
-      "roster_name": "Crate Courier"
+      "roster_name": "Crate Courier",
+      "entity_slug": "crate-courier",
+      "match_method": "existing-index",
+      "page": "docs/characters/crate-courier.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1507,14 +1804,17 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/83792A7C-8F31-4B28-B225-6B6809625DFD.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-053.jpg"
-      ]
+      ],
+      "entity_slug": "broth-scholar",
+      "match_method": "title",
+      "page": "docs/characters/broth-scholar.md"
     },
     {
       "collection": "1by1-chefs",
       "file": "assets/player-cards/1by1-chefs/preview.webp",
       "thumbnail": "assets/player-cards/1by1-chefs/thumbs/preview.webp",
       "title": "Preview",
-      "character_slug": null,
+      "character_slug": "preview-yuki",
       "source": "extract:img-1by1-chefs/1by1 chefs /84E546DA-0CD2-42C5-B2E2-A8B25CA596F8.PNG",
       "original_size": [
         1254,
@@ -1526,7 +1826,10 @@
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-094.jpg",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-099.jpg",
         "extract:aligned/miseos-character-profile/assets/characters/preview-yuki/card.jpg"
-      ]
+      ],
+      "entity_slug": "preview-yuki",
+      "match_method": "title",
+      "page": "docs/characters/preview-yuki.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1538,7 +1841,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--swarmer.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1557,7 +1863,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/anomaly-aki/card.jpg"
       ],
       "roster_card_id": "MISE-072",
-      "roster_name": "Anomaly Aki"
+      "roster_name": "Anomaly Aki",
+      "entity_slug": "anomaly-aki",
+      "match_method": "existing-index",
+      "page": "docs/characters/anomaly-aki.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1573,7 +1882,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/8DDDA867-E999-4128-9347-3F10E882A1DF.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-029.jpg"
-      ]
+      ],
+      "entity_slug": "legacy-keeper",
+      "match_method": "title",
+      "page": "docs/characters/legacy-keeper.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1592,7 +1904,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/dora-daichi/card.jpg"
       ],
       "roster_card_id": "MISE-065",
-      "roster_name": "DORA Daichi"
+      "roster_name": "DORA Daichi",
+      "entity_slug": "dora-daichi",
+      "match_method": "existing-index",
+      "page": "docs/characters/dora-daichi.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1604,7 +1919,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--tester.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1620,7 +1938,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/920A2780-9C89-47A0-B533-9BE38CD447BA.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-055.jpg"
-      ]
+      ],
+      "entity_slug": "miso-maven",
+      "match_method": "title",
+      "page": "docs/characters/miso-maven.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1636,7 +1957,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/921FACD7-DA51-4E31-81AD-96201A35AED6.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-044.jpg"
-      ]
+      ],
+      "entity_slug": "slicer-swift",
+      "match_method": "title",
+      "page": "docs/characters/slicer-swift.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1651,7 +1975,10 @@
       ],
       "duplicates": [
         "icloud:129 characters/Final pdf/92E421B5-CA72-42DF-940D-833B45E26E27.PNG"
-      ]
+      ],
+      "entity_slug": "sear-samurai",
+      "match_method": "title",
+      "page": "docs/characters/sear-samurai.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1667,14 +1994,17 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/987E4396-A061-4503-AC4D-2BC2D5552CAE.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-042.jpg"
-      ]
+      ],
+      "entity_slug": "pulse-captain",
+      "match_method": "title",
+      "page": "docs/characters/pulse-captain.md"
     },
     {
       "collection": "1by1-chefs",
       "file": "assets/player-cards/1by1-chefs/queue.webp",
       "thumbnail": "assets/player-cards/1by1-chefs/thumbs/queue.webp",
       "title": "Queue",
-      "character_slug": null,
+      "character_slug": "queue-quartz",
       "source": "extract:img-1by1-chefs/1by1 chefs /9B009DB4-BA4B-4233-9129-EF42337FF1FB.PNG",
       "original_size": [
         1254,
@@ -1684,7 +2014,10 @@
         "icloud:129 characters/Final pdf/9B009DB4-BA4B-4233-9129-EF42337FF1FB.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-019.jpg",
         "extract:aligned/miseos-character-profile/assets/characters/queue-quartz/card.jpg"
-      ]
+      ],
+      "entity_slug": "queue-quartz",
+      "match_method": "title",
+      "page": "docs/characters/queue-quartz.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1696,7 +2029,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--devrel.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1717,7 +2053,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/runtime-riku/card.jpg"
       ],
       "roster_card_id": "MISE-020",
-      "roster_name": "Runtime Riku"
+      "roster_name": "Runtime Riku",
+      "entity_slug": "runtime-riku",
+      "match_method": "existing-index",
+      "page": "docs/characters/runtime-riku.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1738,7 +2077,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/incident-kitsune/card.jpg"
       ],
       "roster_card_id": "MISE-056",
-      "roster_name": "Incident Kitsune"
+      "roster_name": "Incident Kitsune",
+      "entity_slug": "incident-kitsune",
+      "match_method": "existing-index",
+      "page": "docs/characters/incident-kitsune.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1759,7 +2101,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/grafana-mei/card.jpg"
       ],
       "roster_card_id": "MISE-023",
-      "roster_name": "Grafana Mei"
+      "roster_name": "Grafana Mei",
+      "entity_slug": "grafana-mei",
+      "match_method": "existing-index",
+      "page": "docs/characters/grafana-mei.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1771,7 +2116,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--human-liaison.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1783,7 +2131,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--scheduler.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1802,7 +2153,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/garnish-ghost/card.jpg"
       ],
       "roster_card_id": "MISE-105",
-      "roster_name": "Garnish Ghost"
+      "roster_name": "Garnish Ghost",
+      "entity_slug": "garnish-ghost",
+      "match_method": "existing-index",
+      "page": "docs/characters/garnish-ghost.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1818,7 +2172,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/AD384130-2853-432C-BF1F-0A0A63ED76C6.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-057.jpg"
-      ]
+      ],
+      "entity_slug": "glaze-whisperer",
+      "match_method": "title",
+      "page": "docs/characters/glaze-whisperer.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1837,7 +2194,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/recipe-ranger/card.jpg"
       ],
       "roster_card_id": "MISE-110",
-      "roster_name": "Recipe Ranger"
+      "roster_name": "Recipe Ranger",
+      "entity_slug": "recipe-ranger",
+      "match_method": "existing-index",
+      "page": "docs/characters/recipe-ranger.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1858,7 +2218,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/portal-rei/card.jpg"
       ],
       "roster_card_id": "MISE-028",
-      "roster_name": "Portal Rei"
+      "roster_name": "Portal Rei",
+      "entity_slug": "portal-rei",
+      "match_method": "existing-index",
+      "page": "docs/characters/portal-rei.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1870,7 +2233,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--pen-tester.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1886,7 +2252,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/B8DB86C0-9896-4FA1-B33B-4A6A7E0E6D40.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-061.jpg"
-      ]
+      ],
+      "entity_slug": "no-waste-ninja",
+      "match_method": "title",
+      "page": "docs/characters/no-waste-ninja.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1902,7 +2271,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/B9A2E3B0-F439-4288-A0E0-6CFECD37563B.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-037.jpg"
-      ]
+      ],
+      "entity_slug": "kitchen-conductor",
+      "match_method": "title",
+      "page": "docs/characters/kitchen-conductor.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1916,7 +2288,10 @@
         1254
       ],
       "roster_card_id": "MISE-086",
-      "roster_name": "Build-Kun"
+      "roster_name": "Build-Kun",
+      "entity_slug": "build-kun",
+      "match_method": "existing-index",
+      "page": "docs/characters/build-kun.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1928,7 +2303,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--architect.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1947,7 +2325,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/harvest-hex/card.jpg"
       ],
       "roster_card_id": "MISE-104",
-      "roster_name": "Harvest Hex"
+      "roster_name": "Harvest Hex",
+      "entity_slug": "harvest-hex",
+      "match_method": "existing-index",
+      "page": "docs/characters/harvest-hex.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1963,7 +2344,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/BBA46940-395D-4BAD-9B1B-0DB7CE40B7E4.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-059.jpg"
-      ]
+      ],
+      "entity_slug": "stock-sage",
+      "match_method": "title",
+      "page": "docs/characters/stock-sage.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1979,7 +2363,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/BBA5DCE4-97B1-430C-8EBB-31296715677B.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-039.jpg"
-      ]
+      ],
+      "entity_slug": "oil-oracle",
+      "match_method": "title",
+      "page": "docs/characters/oil-oracle.md"
     },
     {
       "collection": "1by1-chefs",
@@ -1993,7 +2380,10 @@
         1254
       ],
       "roster_card_id": "MISE-009",
-      "roster_name": "Nina Promoter"
+      "roster_name": "Nina Promoter",
+      "entity_slug": "nina-promoter",
+      "match_method": "existing-index",
+      "page": "docs/characters/nina-promoter.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2014,7 +2404,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/token-toshi/card.jpg"
       ],
       "roster_card_id": "MISE-048",
-      "roster_name": "Token Toshi"
+      "roster_name": "Token Toshi",
+      "entity_slug": "token-toshi",
+      "match_method": "existing-index",
+      "page": "docs/characters/token-toshi.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2028,7 +2421,10 @@
         1254
       ],
       "roster_card_id": "MISE-084",
-      "roster_name": "Kuro Guard"
+      "roster_name": "Kuro Guard",
+      "entity_slug": "kuro-guard",
+      "match_method": "existing-index",
+      "page": "docs/characters/kuro-guard.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2040,7 +2436,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": "shift-sentinel",
+      "match_method": "title",
+      "page": "docs/characters/shift-sentinel.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2056,7 +2455,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/C0B43357-11D6-4331-B3F1-0A5152E2801A.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-052.jpg"
-      ]
+      ],
+      "entity_slug": "temp-tamer",
+      "match_method": "title",
+      "page": "docs/characters/temp-tamer.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2077,7 +2479,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/cve-kumo/card.jpg"
       ],
       "roster_card_id": "MISE-049",
-      "roster_name": "CVE Kumo"
+      "roster_name": "CVE Kumo",
+      "entity_slug": "cve-kumo",
+      "match_method": "existing-index",
+      "page": "docs/characters/cve-kumo.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2091,7 +2496,10 @@
         1254
       ],
       "roster_card_id": "MISE-085",
-      "roster_name": "Scale Oni"
+      "roster_name": "Scale Oni",
+      "entity_slug": "scale-oni",
+      "match_method": "existing-index",
+      "page": "docs/characters/scale-oni.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2110,7 +2518,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/prep-pulse/card.jpg"
       ],
       "roster_card_id": "MISE-102",
-      "roster_name": "Prep Pulse"
+      "roster_name": "Prep Pulse",
+      "entity_slug": "prep-pulse",
+      "match_method": "existing-index",
+      "page": "docs/characters/prep-pulse.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2126,7 +2537,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/CBFF2D7C-D05D-4F75-BE84-9FC8875306D4.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-040.jpg"
-      ]
+      ],
+      "entity_slug": "herb-whisperer",
+      "match_method": "title",
+      "page": "docs/characters/herb-whisperer.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2140,7 +2554,10 @@
         1254
       ],
       "roster_card_id": "MISE-076",
-      "roster_name": "Kurogami Senpai"
+      "roster_name": "Kurogami Senpai",
+      "entity_slug": "kurogami-senpai",
+      "match_method": "existing-index",
+      "page": "docs/characters/kurogami-senpai.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2156,7 +2573,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/CD529C93-3FF6-4554-82E9-062A9E190245.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-062.jpg"
-      ]
+      ],
+      "entity_slug": "fermenta",
+      "match_method": "title",
+      "page": "docs/characters/fermenta.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2172,7 +2592,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/CE09653F-7629-419F-9F98-58F8B0ACD8C5.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-058.jpg"
-      ]
+      ],
+      "entity_slug": "crisp-master",
+      "match_method": "title",
+      "page": "docs/characters/crisp-master.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2191,7 +2614,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/beacon-broil/card.jpg"
       ],
       "roster_card_id": "MISE-097",
-      "roster_name": "Beacon Broil"
+      "roster_name": "Beacon Broil",
+      "entity_slug": "beacon-broil",
+      "match_method": "existing-index",
+      "page": "docs/characters/beacon-broil.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2210,7 +2636,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/timer-tactician/card.jpg"
       ],
       "roster_card_id": "MISE-109",
-      "roster_name": "Timer Tactician"
+      "roster_name": "Timer Tactician",
+      "entity_slug": "timer-tactician",
+      "match_method": "existing-index",
+      "page": "docs/characters/timer-tactician.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2229,7 +2658,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/plate-inspector/card.jpg"
       ],
       "roster_card_id": "MISE-108",
-      "roster_name": "Plate Inspector"
+      "roster_name": "Plate Inspector",
+      "entity_slug": "plate-inspector",
+      "match_method": "existing-index",
+      "page": "docs/characters/plate-inspector.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2241,7 +2673,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": "sear-samurai",
+      "match_method": "title",
+      "page": "docs/characters/sear-samurai.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2257,7 +2692,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/E10ED51D-41FA-4068-8EC0-C34243848751.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-043.jpg"
-      ]
+      ],
+      "entity_slug": "grain-guardian",
+      "match_method": "title",
+      "page": "docs/characters/grain-guardian.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2276,7 +2714,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/flavor-scribe/card.jpg"
       ],
       "roster_card_id": "MISE-101",
-      "roster_name": "Flavor Scribe"
+      "roster_name": "Flavor Scribe",
+      "entity_slug": "flavor-scribe",
+      "match_method": "existing-index",
+      "page": "docs/characters/flavor-scribe.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2292,7 +2733,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/E974A8E8-3BFD-4B64-9410-3417C03205F2.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-030.jpg"
-      ]
+      ],
+      "entity_slug": "menu-maestro",
+      "match_method": "title",
+      "page": "docs/characters/menu-maestro.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2306,7 +2750,10 @@
         1254
       ],
       "roster_card_id": "MISE-081",
-      "roster_name": "Null-chan"
+      "roster_name": "Null-chan",
+      "entity_slug": "null-chan",
+      "match_method": "existing-index",
+      "page": "docs/characters/null-chan.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2318,7 +2765,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/1by1-chefs--firewall.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2334,7 +2784,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/F128DDB8-B8F3-41AE-AFBC-7E9B720EB77B.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-064.jpg"
-      ]
+      ],
+      "entity_slug": "smoke-monk",
+      "match_method": "title",
+      "page": "docs/characters/smoke-monk.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2350,7 +2803,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/F55F87B1-9135-4281-9177-D973B5FAB350.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-031.jpg"
-      ]
+      ],
+      "entity_slug": "supply-scout",
+      "match_method": "title",
+      "page": "docs/characters/supply-scout.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2364,7 +2820,10 @@
         1254
       ],
       "roster_card_id": "MISE-083",
-      "roster_name": "Seira"
+      "roster_name": "Seira",
+      "entity_slug": "seira",
+      "match_method": "existing-index",
+      "page": "docs/characters/seira.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2380,7 +2839,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/F9921BA7-58AA-4B68-8E4E-C975DEEF72E7.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-050.jpg"
-      ]
+      ],
+      "entity_slug": "kombu-keeper",
+      "match_method": "title",
+      "page": "docs/characters/kombu-keeper.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2396,7 +2858,10 @@
       "duplicates": [
         "icloud:129 characters/Final pdf/F9EA0DF7-40AD-46F8-9949-FE2D21DC98C3.PNG",
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-041.jpg"
-      ]
+      ],
+      "entity_slug": "veg-virtuoso",
+      "match_method": "title",
+      "page": "docs/characters/veg-virtuoso.md"
     },
     {
       "collection": "1by1-chefs",
@@ -2415,7 +2880,10 @@
         "extract:aligned/miseos-character-profile/assets/characters/portion-paladin/card.jpg"
       ],
       "roster_card_id": "MISE-111",
-      "roster_name": "Portion Paladin"
+      "roster_name": "Portion Paladin",
+      "entity_slug": "portion-paladin",
+      "match_method": "existing-index",
+      "page": "docs/characters/portion-paladin.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2427,7 +2895,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5929.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2439,7 +2910,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5930.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2451,7 +2925,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5931.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2463,7 +2940,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5932.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2475,7 +2955,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5933.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2487,7 +2970,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5934.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2499,7 +2985,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5935.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2511,7 +3000,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5936.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2523,7 +3015,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5937.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2535,7 +3030,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5938.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2547,7 +3045,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5939.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2561,7 +3062,10 @@
         1024
       ],
       "roster_card_id": "MISE-079",
-      "roster_name": "Kaji"
+      "roster_name": "Kaji",
+      "entity_slug": "kaji",
+      "match_method": "existing-index",
+      "page": "docs/characters/kaji.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2573,7 +3077,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5942.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2585,7 +3092,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5943.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2600,7 +3110,10 @@
       ],
       "duplicates": [
         "extract:img-cartoon-chefs/Cartoon chefs /IMG_5944.PNG"
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5944-2.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2612,7 +3125,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5945.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2624,7 +3140,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5946.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2636,7 +3155,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5947.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2648,7 +3170,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5948.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2660,7 +3185,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5949.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2672,7 +3200,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5950.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2684,7 +3215,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5951.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2696,7 +3230,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5952.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2708,7 +3245,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5953.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2720,7 +3260,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5954.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2732,7 +3275,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5955.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2744,7 +3290,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5956.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2756,7 +3305,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5957.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2768,7 +3320,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5958.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2780,7 +3335,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5959.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2792,7 +3350,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5960.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2804,7 +3365,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5961.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2816,7 +3380,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5962.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2828,7 +3395,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5963.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2840,7 +3410,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5964.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2852,7 +3425,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5965.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2864,7 +3440,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5966.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2876,7 +3455,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5967.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2888,7 +3470,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5968.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2900,7 +3485,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5969.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2912,7 +3500,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5970.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2924,7 +3515,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5971.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2936,7 +3530,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5972.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2948,7 +3545,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5973.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2960,7 +3560,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5974.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2972,7 +3575,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5975.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2984,7 +3590,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5976.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -2996,7 +3605,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5977.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3008,7 +3620,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5978.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3020,7 +3635,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5979.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3032,7 +3650,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5980.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3044,7 +3665,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5981.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3056,7 +3680,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5982.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3068,7 +3695,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5983.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3080,7 +3710,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5984.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3092,7 +3725,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5985.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3104,7 +3740,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5986.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3116,7 +3755,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5987.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3128,7 +3770,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5988.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3140,7 +3785,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5989.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3152,7 +3800,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5990.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3164,7 +3815,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5991.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3176,7 +3830,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5992.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3188,7 +3845,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5993.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3200,7 +3860,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5994.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3212,7 +3875,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5995.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3224,7 +3890,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5996.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3236,7 +3905,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5997.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3248,7 +3920,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5998.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3260,7 +3935,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_5999.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3272,7 +3950,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_6001.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3284,7 +3965,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_6002.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3296,7 +3980,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_6003.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3308,7 +3995,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_6004.md"
     },
     {
       "collection": "cartoon-chefs",
@@ -3320,7 +4010,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/cartoon-chefs--img_6005.md"
     },
     {
       "collection": "character-building",
@@ -3334,7 +4027,10 @@
         1024
       ],
       "roster_card_id": "MISE-014",
-      "roster_name": "Canary Taster"
+      "roster_name": "Canary Taster",
+      "entity_slug": "canary-taster",
+      "match_method": "existing-index",
+      "page": "docs/characters/canary-taster.md"
     },
     {
       "collection": "character-building",
@@ -3348,7 +4044,10 @@
         1024
       ],
       "roster_card_id": "MISE-086",
-      "roster_name": "Build-Kun"
+      "roster_name": "Build-Kun",
+      "entity_slug": "build-kun",
+      "match_method": "existing-index",
+      "page": "docs/characters/build-kun.md"
     },
     {
       "collection": "character-building",
@@ -3362,7 +4061,10 @@
         1024
       ],
       "roster_card_id": "MISE-087",
-      "roster_name": "Orchestra Core"
+      "roster_name": "Orchestra Core",
+      "entity_slug": "orchestra-core",
+      "match_method": "existing-index",
+      "page": "docs/characters/orchestra-core.md"
     },
     {
       "collection": "character-building",
@@ -3376,7 +4078,10 @@
         1024
       ],
       "roster_card_id": "MISE-083",
-      "roster_name": "Seira"
+      "roster_name": "Seira",
+      "entity_slug": "seira",
+      "match_method": "existing-index",
+      "page": "docs/characters/seira.md"
     },
     {
       "collection": "character-building",
@@ -3388,7 +4093,10 @@
       "original_size": [
         1536,
         2752
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--harmonyvs-entropy.md"
     },
     {
       "collection": "character-building",
@@ -3400,7 +4108,10 @@
       "original_size": [
         1536,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--miseos.md"
     },
     {
       "collection": "character-building",
@@ -3412,7 +4123,10 @@
       "original_size": [
         1536,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--miseos-2.md"
     },
     {
       "collection": "character-building",
@@ -3424,7 +4138,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--italiay.md"
     },
     {
       "collection": "character-building",
@@ -3438,7 +4155,10 @@
         1024
       ],
       "roster_card_id": "MISE-063",
-      "roster_name": "Lattice"
+      "roster_name": "Lattice",
+      "entity_slug": "lattice",
+      "match_method": "existing-index",
+      "page": "docs/characters/lattice.md"
     },
     {
       "collection": "character-building",
@@ -3450,7 +4170,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--mise.md"
     },
     {
       "collection": "character-building",
@@ -3464,7 +4187,10 @@
         1024
       ],
       "roster_card_id": "MISE-063",
-      "roster_name": "Lattice"
+      "roster_name": "Lattice",
+      "entity_slug": "lattice",
+      "match_method": "existing-index",
+      "page": "docs/characters/lattice.md"
     },
     {
       "collection": "character-building",
@@ -3476,7 +4202,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--specialist-tier.md"
     },
     {
       "collection": "character-building",
@@ -3490,7 +4219,10 @@
         1024
       ],
       "roster_card_id": "MISE-078",
-      "roster_name": "Mizu"
+      "roster_name": "Mizu",
+      "entity_slug": "mizu",
+      "match_method": "existing-index",
+      "page": "docs/characters/mizu.md"
     },
     {
       "collection": "character-building",
@@ -3502,7 +4234,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--img_4556.md"
     },
     {
       "collection": "character-building",
@@ -3516,7 +4251,10 @@
         1086
       ],
       "roster_card_id": "MISE-087",
-      "roster_name": "Orchestra Core"
+      "roster_name": "Orchestra Core",
+      "entity_slug": "orchestra-core",
+      "match_method": "existing-index",
+      "page": "docs/characters/orchestra-core.md"
     },
     {
       "collection": "character-building",
@@ -3528,7 +4266,10 @@
       "original_size": [
         1024,
         1024
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--data-lnsights.md"
     },
     {
       "collection": "character-building",
@@ -3542,7 +4283,10 @@
         1024
       ],
       "roster_card_id": "MISE-010",
-      "roster_name": "Release Conductor"
+      "roster_name": "Release Conductor",
+      "entity_slug": "release-conductor",
+      "match_method": "existing-index",
+      "page": "docs/characters/release-conductor.md"
     },
     {
       "collection": "character-building",
@@ -3558,7 +4302,10 @@
       "duplicates": [
         "extract:img-character-building-theme/Character building theme /Mise Orchestra DevOps Mythology.PNG",
         "icloud:Mise_Orchestra_DevOps_Mythology.png"
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/character-building--focus.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3572,7 +4319,10 @@
         1075
       ],
       "roster_card_id": "MISE-076",
-      "roster_name": "Kurogami Senpai"
+      "roster_name": "Kurogami Senpai",
+      "entity_slug": "kurogami-senpai",
+      "match_method": "existing-index",
+      "page": "docs/characters/kurogami-senpai.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3586,7 +4336,10 @@
         1075
       ],
       "roster_card_id": "MISE-077",
-      "roster_name": "Tensho"
+      "roster_name": "Tensho",
+      "entity_slug": "tensho",
+      "match_method": "existing-index",
+      "page": "docs/characters/tensho.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3600,7 +4353,10 @@
         1075
       ],
       "roster_card_id": "MISE-078",
-      "roster_name": "Mizu"
+      "roster_name": "Mizu",
+      "entity_slug": "mizu",
+      "match_method": "existing-index",
+      "page": "docs/characters/mizu.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3614,7 +4370,10 @@
         1075
       ],
       "roster_card_id": "MISE-024",
-      "roster_name": "Umami Code"
+      "roster_name": "Umami Code",
+      "entity_slug": "umami-code",
+      "match_method": "existing-index",
+      "page": "docs/characters/umami-code.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3628,7 +4387,10 @@
         1075
       ],
       "roster_card_id": "MISE-079",
-      "roster_name": "Kaji"
+      "roster_name": "Kaji",
+      "entity_slug": "kaji",
+      "match_method": "existing-index",
+      "page": "docs/characters/kaji.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3642,7 +4404,10 @@
         1075
       ],
       "roster_card_id": "MISE-080",
-      "roster_name": "Yume"
+      "roster_name": "Yume",
+      "entity_slug": "yume",
+      "match_method": "existing-index",
+      "page": "docs/characters/yume.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3656,7 +4421,10 @@
         1075
       ],
       "roster_card_id": "MISE-008",
-      "roster_name": "Iron Hashi"
+      "roster_name": "Iron Hashi",
+      "entity_slug": "iron-hashi",
+      "match_method": "existing-index",
+      "page": "docs/characters/iron-hashi.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3670,7 +4438,10 @@
         1075
       ],
       "roster_card_id": "MISE-081",
-      "roster_name": "Null-chan"
+      "roster_name": "Null-chan",
+      "entity_slug": "null-chan",
+      "match_method": "existing-index",
+      "page": "docs/characters/null-chan.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3684,7 +4455,10 @@
         1075
       ],
       "roster_card_id": "MISE-082",
-      "roster_name": "Flash Riku"
+      "roster_name": "Flash Riku",
+      "entity_slug": "flash-riku",
+      "match_method": "existing-index",
+      "page": "docs/characters/flash-riku.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3698,7 +4472,10 @@
         1075
       ],
       "roster_card_id": "MISE-083",
-      "roster_name": "Seira"
+      "roster_name": "Seira",
+      "entity_slug": "seira",
+      "match_method": "existing-index",
+      "page": "docs/characters/seira.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3712,7 +4489,10 @@
         1075
       ],
       "roster_card_id": "MISE-084",
-      "roster_name": "Kuro Guard"
+      "roster_name": "Kuro Guard",
+      "entity_slug": "kuro-guard",
+      "match_method": "existing-index",
+      "page": "docs/characters/kuro-guard.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3726,7 +4506,10 @@
         1075
       ],
       "roster_card_id": "MISE-085",
-      "roster_name": "Scale Oni"
+      "roster_name": "Scale Oni",
+      "entity_slug": "scale-oni",
+      "match_method": "existing-index",
+      "page": "docs/characters/scale-oni.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3740,7 +4523,10 @@
         1075
       ],
       "roster_card_id": "MISE-086",
-      "roster_name": "Build-Kun"
+      "roster_name": "Build-Kun",
+      "entity_slug": "build-kun",
+      "match_method": "existing-index",
+      "page": "docs/characters/build-kun.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3754,7 +4540,10 @@
         1075
       ],
       "roster_card_id": "MISE-026",
-      "roster_name": "Streama"
+      "roster_name": "Streama",
+      "entity_slug": "streama",
+      "match_method": "existing-index",
+      "page": "docs/characters/streama.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3768,7 +4557,10 @@
         1075
       ],
       "roster_card_id": "MISE-087",
-      "roster_name": "Orchestra Core"
+      "roster_name": "Orchestra Core",
+      "entity_slug": "orchestra-core",
+      "match_method": "existing-index",
+      "page": "docs/characters/orchestra-core.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3782,7 +4574,10 @@
         1075
       ],
       "roster_card_id": "MISE-014",
-      "roster_name": "Canary Taster"
+      "roster_name": "Canary Taster",
+      "entity_slug": "canary-taster",
+      "match_method": "existing-index",
+      "page": "docs/characters/canary-taster.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3796,7 +4591,10 @@
         1075
       ],
       "roster_card_id": "MISE-041",
-      "roster_name": "Metrics Miko"
+      "roster_name": "Metrics Miko",
+      "entity_slug": "metrics-miko",
+      "match_method": "existing-index",
+      "page": "docs/characters/metrics-miko.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3810,7 +4608,10 @@
         1075
       ],
       "roster_card_id": "MISE-031",
-      "roster_name": "SLO Sage"
+      "roster_name": "SLO Sage",
+      "entity_slug": "slo-sage",
+      "match_method": "existing-index",
+      "page": "docs/characters/slo-sage.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3824,7 +4625,10 @@
         1075
       ],
       "roster_card_id": "MISE-088",
-      "roster_name": "Data-chan"
+      "roster_name": "Data-chan",
+      "entity_slug": "data-chan",
+      "match_method": "existing-index",
+      "page": "docs/characters/data-chan.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3838,7 +4642,10 @@
         1075
       ],
       "roster_card_id": "MISE-089",
-      "roster_name": "Insight Sensei"
+      "roster_name": "Insight Sensei",
+      "entity_slug": "insight-sensei",
+      "match_method": "existing-index",
+      "page": "docs/characters/insight-sensei.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3852,7 +4659,10 @@
         1075
       ],
       "roster_card_id": "MISE-090",
-      "roster_name": "Chaos Analyst"
+      "roster_name": "Chaos Analyst",
+      "entity_slug": "chaos-analyst",
+      "match_method": "existing-index",
+      "page": "docs/characters/chaos-analyst.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3866,7 +4676,10 @@
         1075
       ],
       "roster_card_id": "MISE-091",
-      "roster_name": "Growth Guru"
+      "roster_name": "Growth Guru",
+      "entity_slug": "growth-guru",
+      "match_method": "existing-index",
+      "page": "docs/characters/growth-guru.md"
     },
     {
       "collection": "orchestra-trading-cards",
@@ -3880,7 +4693,10 @@
         1075
       ],
       "roster_card_id": "MISE-092",
-      "roster_name": "Culture Chef"
+      "roster_name": "Culture Chef",
+      "entity_slug": "culture-chef",
+      "match_method": "existing-index",
+      "page": "docs/characters/culture-chef.md"
     },
     {
       "collection": "final-roster",
@@ -3895,7 +4711,10 @@
       ],
       "duplicates": [
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-051.jpg"
-      ]
+      ],
+      "entity_slug": "flavor-hacker",
+      "match_method": "title",
+      "page": "docs/characters/flavor-hacker.md"
     },
     {
       "collection": "registry-pages",
@@ -3909,7 +4728,10 @@
         1200
       ],
       "roster_card_id": "MISE-112",
-      "roster_name": "Allergen Oracle"
+      "roster_name": "Allergen Oracle",
+      "entity_slug": "allergen-oracle",
+      "match_method": "existing-index",
+      "page": "docs/characters/allergen-oracle.md"
     },
     {
       "collection": "registry-pages",
@@ -3921,7 +4743,10 @@
       "original_size": [
         1200,
         1200
-      ]
+      ],
+      "entity_slug": "sear-samurai",
+      "match_method": "title",
+      "page": "docs/characters/sear-samurai.md"
     },
     {
       "collection": "registry-pages",
@@ -3938,7 +4763,10 @@
         "extract:spatial/miseos_cards_catalog_spatial/assets/reference/page-087.jpg"
       ],
       "roster_card_id": "MISE-058",
-      "roster_name": "Nudge Neko"
+      "roster_name": "Nudge Neko",
+      "entity_slug": "nudge-neko",
+      "match_method": "existing-index",
+      "page": "docs/characters/nudge-neko.md"
     },
     {
       "collection": "icloud-screens",
@@ -3952,7 +4780,10 @@
         1254
       ],
       "roster_card_id": "MISE-077",
-      "roster_name": "Tensho"
+      "roster_name": "Tensho",
+      "entity_slug": "tensho",
+      "match_method": "existing-index",
+      "page": "docs/characters/tensho.md"
     },
     {
       "collection": "icloud-screens",
@@ -3964,7 +4795,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--fork-fable.md"
     },
     {
       "collection": "icloud-screens",
@@ -3978,7 +4812,10 @@
         1254
       ],
       "roster_card_id": "MISE-008",
-      "roster_name": "Iron Hashi"
+      "roster_name": "Iron Hashi",
+      "entity_slug": "iron-hashi",
+      "match_method": "existing-index",
+      "page": "docs/characters/iron-hashi.md"
     },
     {
       "collection": "icloud-screens",
@@ -3993,7 +4830,10 @@
       ],
       "duplicates": [
         "icloud:69DAC21C-A040-41A0-9E8E-4F96A8E76899.PNG"
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--mise.md"
     },
     {
       "collection": "icloud-screens",
@@ -4005,7 +4845,10 @@
       "original_size": [
         1672,
         941
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--8309bbe1-e173-43bc-9cbb-bb510b648f67.md"
     },
     {
       "collection": "icloud-screens",
@@ -4017,7 +4860,10 @@
       "original_size": [
         2172,
         724
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--miseos.md"
     },
     {
       "collection": "icloud-screens",
@@ -4031,7 +4877,10 @@
         1254
       ],
       "roster_card_id": "MISE-084",
-      "roster_name": "Kuro Guard"
+      "roster_name": "Kuro Guard",
+      "entity_slug": "kuro-guard",
+      "match_method": "existing-index",
+      "page": "docs/characters/kuro-guard.md"
     },
     {
       "collection": "icloud-screens",
@@ -4043,7 +4892,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--miseorchestra.md"
     },
     {
       "collection": "icloud-screens",
@@ -4055,7 +4907,10 @@
       "original_size": [
         941,
         1672
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--v1-0-0.md"
     },
     {
       "collection": "icloud-screens",
@@ -4067,7 +4922,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--token-taro.md"
     },
     {
       "collection": "icloud-screens",
@@ -4081,7 +4939,10 @@
         1254
       ],
       "roster_card_id": "MISE-079",
-      "roster_name": "Kaji"
+      "roster_name": "Kaji",
+      "entity_slug": "kaji",
+      "match_method": "existing-index",
+      "page": "docs/characters/kaji.md"
     },
     {
       "collection": "icloud-screens",
@@ -4093,7 +4954,10 @@
       "original_size": [
         1635,
         962
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--frostbyte.md"
     },
     {
       "collection": "icloud-screens",
@@ -4107,7 +4971,10 @@
         768
       ],
       "roster_card_id": "MISE-076",
-      "roster_name": "Kurogami Senpai"
+      "roster_name": "Kurogami Senpai",
+      "entity_slug": "kurogami-senpai",
+      "match_method": "existing-index",
+      "page": "docs/characters/kurogami-senpai.md"
     },
     {
       "collection": "icloud-screens",
@@ -4119,7 +4986,10 @@
       "original_size": [
         1536,
         2752
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--one-kitchen-many-spirits.md"
     },
     {
       "collection": "icloud-screens",
@@ -4133,19 +5003,25 @@
         2048
       ],
       "roster_card_id": "MISE-077",
-      "roster_name": "Tensho"
+      "roster_name": "Tensho",
+      "entity_slug": "tensho",
+      "match_method": "existing-index",
+      "page": "docs/characters/tensho.md"
     },
     {
       "collection": "icloud-screens",
       "file": "assets/player-cards/icloud-screens/enter-the-kitohen-table.webp",
       "thumbnail": "assets/player-cards/icloud-screens/thumbs/enter-the-kitohen-table.webp",
-      "title": "Enter The-Kitohen Table \u2192",
+      "title": "Enter The-Kitohen Table →",
       "character_slug": null,
       "source": "icloud:Catalogue/All images/Mise/IMG_5820.JPG",
       "original_size": [
         1280,
         720
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--enter-the-kitohen-table.md"
     },
     {
       "collection": "icloud-screens",
@@ -4159,7 +5035,10 @@
         720
       ],
       "roster_card_id": "MISE-084",
-      "roster_name": "Kuro Guard"
+      "roster_name": "Kuro Guard",
+      "entity_slug": "kuro-guard",
+      "match_method": "existing-index",
+      "page": "docs/characters/kuro-guard.md"
     },
     {
       "collection": "icloud-screens",
@@ -4171,19 +5050,25 @@
       "original_size": [
         1206,
         2622
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--a10-layerdefensibilitymoatprotects-thegr.md"
     },
     {
       "collection": "icloud-screens",
       "file": "assets/player-cards/icloud-screens/pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.webp",
       "thumbnail": "assets/player-cards/icloud-screens/thumbs/pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.webp",
-      "title": "\u9ed1\u795e\u5148\u8f88",
+      "title": "黑神先辈",
       "character_slug": null,
       "source": "icloud:Catalogue/All images/Mise/pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.JPG",
       "original_size": [
         856,
         1169
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.md"
     },
     {
       "collection": "icloud-screens",
@@ -4195,7 +5080,10 @@
       "original_size": [
         1672,
         941
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--create-image.md"
     },
     {
       "collection": "icloud-screens",
@@ -4207,7 +5095,10 @@
       "original_size": [
         1024,
         1536
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--orion-arkforge.md"
     },
     {
       "collection": "icloud-screens",
@@ -4219,7 +5110,10 @@
       "original_size": [
         1254,
         1254
-      ]
+      ],
+      "entity_slug": null,
+      "match_method": null,
+      "page": "docs/cards/icloud-screens--v1-0-0-2.md"
     },
     {
       "collection": "icloud-screens",
@@ -4233,7 +5127,10 @@
         1254
       ],
       "roster_card_id": "MISE-081",
-      "roster_name": "Null-chan"
+      "roster_name": "Null-chan",
+      "entity_slug": "null-chan",
+      "match_method": "existing-index",
+      "page": "docs/characters/null-chan.md"
     },
     {
       "collection": "icloud-screens",
@@ -4247,10 +5144,223 @@
         1635
       ],
       "roster_card_id": "MISE-014",
-      "roster_name": "Canary Taster"
+      "roster_name": "Canary Taster",
+      "entity_slug": "canary-taster",
+      "match_method": "existing-index",
+      "page": "docs/characters/canary-taster.md"
     }
   ],
-  "matched_character_slugs": 63,
+  "matched_character_slugs": [
+    "allergen-oracle",
+    "anomaly-aki",
+    "beacon-broil",
+    "build-kun",
+    "canary-taster",
+    "chaos-analyst",
+    "cost-kaito",
+    "crate-courier",
+    "culture-chef",
+    "cve-kumo",
+    "data-chan",
+    "dora-daichi",
+    "evidence-scribe",
+    "felix-rollback",
+    "flash-riku",
+    "flavor-forager",
+    "flavor-scribe",
+    "garnish-ghost",
+    "grafana-mei",
+    "growth-guru",
+    "guardrail-goro",
+    "harvest-hex",
+    "hugo-matrix",
+    "incident-kitsune",
+    "insight-sensei",
+    "iron-hashi",
+    "ivun-cache",
+    "kaji",
+    "kuro-guard",
+    "kurogami-senpai",
+    "ladle-lumen",
+    "lattice",
+    "ledger-ladle",
+    "merge-sentinel",
+    "metrics-miko",
+    "mizu",
+    "nina-promoter",
+    "nudge-neko",
+    "null-chan",
+    "orchestra-core",
+    "pantry-paladin",
+    "plate-inspector",
+    "portal-rei",
+    "portion-paladin",
+    "prep-pulse",
+    "preview-yuki",
+    "queue-quartz",
+    "recipe-ranger",
+    "release-conductor",
+    "reserve-rune",
+    "resilience-ryu",
+    "runtime-riku",
+    "scale-oni",
+    "schema-sora",
+    "scorecard-shin",
+    "seira",
+    "slo-sage",
+    "streama",
+    "tariq-notesmith",
+    "tensho",
+    "ticket-tactician",
+    "timer-tactician",
+    "token-toshi",
+    "umami-code",
+    "vacuum-vesper",
+    "velvet-vesper",
+    "yume"
+  ],
   "generated": "2026-11-01",
-  "notes": "Cards are web-optimized copies (WebP, max 1200x1600) of original artwork. character_slug links to characters/<slug>; roster_card_id links to data/imports/miseos_character_master_inventory_001_300.csv. duplicates lists other source files with the same artwork."
+  "notes": "Cards are web-optimized copies (WebP, max 1200x1600) of original artwork. character_slug links to characters/<slug>; roster_card_id links to data/imports/miseos_character_master_inventory_001_300.csv. duplicates lists other source files with the same artwork.",
+  "matched_entity_slugs": [
+    "allergen-oracle",
+    "anomaly-aki",
+    "ashen-one",
+    "beacon-broil",
+    "brine-baron",
+    "broth-scholar",
+    "build-kun",
+    "butcher-blade",
+    "byte",
+    "cacao-alchemist",
+    "canary-taster",
+    "chaos-analyst",
+    "char-coach",
+    "citrus-zest",
+    "cold-zero",
+    "cost-kaito",
+    "crate-courier",
+    "crisp-master",
+    "culture-chef",
+    "cve-kumo",
+    "data-chan",
+    "dora-daichi",
+    "energy-keeper",
+    "evidence-scribe",
+    "felix-rollback",
+    "fermenta",
+    "flash-riku",
+    "flavor-forager",
+    "flavor-hacker",
+    "flavor-scribe",
+    "garnish-ghost",
+    "glaze-whisperer",
+    "grafana-mei",
+    "grain-guardian",
+    "growth-guru",
+    "guardrail-goro",
+    "harvest-hex",
+    "herb-whisperer",
+    "hugo-matrix",
+    "incident-kitsune",
+    "insight-sensei",
+    "iron-hashi",
+    "ivun-cache",
+    "kaji",
+    "kitchen-conductor",
+    "knead-guardian",
+    "kombu-keeper",
+    "kuro-guard",
+    "kurogami-senpai",
+    "ladle-lumen",
+    "lattice",
+    "ledger-ladle",
+    "legacy-keeper",
+    "menu-maestro",
+    "merge-sentinel",
+    "metrics-miko",
+    "miseos-agent-sdk",
+    "miseos-analytics-engine",
+    "miseos-attestation-gate",
+    "miseos-cli",
+    "miseos-docs-builder",
+    "miseos-docs-hub-template",
+    "miseos-gradle-plugin",
+    "miseos-maven-policy-adapter",
+    "miseos-nuget-client",
+    "miseos-orchestra-theme",
+    "miseos-policy-checker",
+    "miseos-policy-engine",
+    "miseos-registry-schema",
+    "miseos-release-sentinel",
+    "miseos-repo-pet",
+    "miseos-repo-steward",
+    "miseos-ruby-steward",
+    "miseos-runner",
+    "miseos-sbom-indexer",
+    "miseos-trust-graph",
+    "miseos-workflow-linter",
+    "miseos-workflow-pack",
+    "miso-maven",
+    "mizu",
+    "nina-promoter",
+    "no-waste-ninja",
+    "nudge-neko",
+    "null-chan",
+    "oil-oracle",
+    "orchestra-core",
+    "orderly-owl",
+    "pan-phantom",
+    "pantry-paladin",
+    "pickle-doc",
+    "plate-inspector",
+    "plating-poet",
+    "portal-rei",
+    "portion-paladin",
+    "prep-pulse",
+    "preview-yuki",
+    "pulse-captain",
+    "queue-quartz",
+    "recipe-ranger",
+    "release-conductor",
+    "reserve-rune",
+    "resilience-ryu",
+    "roast-commander",
+    "runtime-riku",
+    "sanitation-star",
+    "sauce-sage",
+    "scale-oni",
+    "schema-sora",
+    "scorecard-shin",
+    "sear-samurai",
+    "seira",
+    "shift-sentinel",
+    "slicer-swift",
+    "slo-sage",
+    "smoke-monk",
+    "spice-alchemist",
+    "steam-whisper",
+    "stock-sage",
+    "streama",
+    "supply-scout",
+    "sweet-architect",
+    "tariq-notesmith",
+    "temp-tamer",
+    "tensho",
+    "ticket-tactician",
+    "timer-tactician",
+    "token-toshi",
+    "umami-code",
+    "umami-seeker",
+    "vacuum-vesper",
+    "veg-virtuoso",
+    "velvet-vesper",
+    "yume",
+    "zen-plater"
+  ],
+  "alignment": {
+    "cards_matched_before": 99,
+    "cards_matched_after": 180,
+    "script": "tools/player-cards/scripts/align-characters.py",
+    "ocr": "data/player-cards-ocr.json"
+  }
 }

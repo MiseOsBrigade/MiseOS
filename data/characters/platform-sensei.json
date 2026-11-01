@@ -1,0 +1,195 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "platform-sensei",
+  "name": "Platform Sensei",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "ids.registry_id": "characters/platform-sensei/metadata.json",
+    "role": "characters/platform-sensei/metadata.json",
+    "department": "characters/platform-sensei/metadata.json",
+    "rarity": "characters/platform-sensei/metadata.json",
+    "workflow.summary": "characters/platform-sensei/metadata.json",
+    "workflow.inputs": "characters/platform-sensei/metadata.json",
+    "workflow.outputs": "characters/platform-sensei/metadata.json",
+    "workflow.proof_gate": "characters/platform-sensei/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/platform-sensei/metadata.json"
+  },
+  "registry": {
+    "number": 60,
+    "profile": "characters/platform-sensei/README.md",
+    "metadata": "characters/platform-sensei/metadata.json",
+    "avatar": "assets/characters/platform-sensei/profile.svg"
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 20,
+  "unique_trait": "Specializes in platform health board so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "platform",
+  "profile_doc": "characters/platform-sensei/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 463,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 381,
+        "term": "Platform Sensei"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 415,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1664,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1664,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 857,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 159,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 159,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 183,
+        "term": "Platform Sensei"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Platform Sensei"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Platform Sensei"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-030",
+    "character_id": "miseos.character.030",
+    "card_id": "MISE-030",
+    "codename": "PLATFORM_SENSEI"
+  },
+  "role": "Platform Health Board",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Platform Health Board done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Platform Sensei performs platform health board within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PLATFORM HEALTH BOARD",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Platform Health Board",
+      "mise_name": "Mise PlatformHealthBoard",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 69,
+    "precision": 78,
+    "speed": 75,
+    "resilience": 71,
+    "intelligence": 70,
+    "teamwork": 84
+  },
+  "related": [
+    {
+      "name": "Seira",
+      "slug": "seira"
+    },
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Orchestra Core",
+      "slug": "orchestra-core"
+    },
+    {
+      "name": "Guardrail Goro",
+      "slug": "guardrail-goro"
+    },
+    {
+      "name": "Pipeline Sensei",
+      "slug": "pipeline-sensei"
+    },
+    {
+      "name": "Reliability Sensei",
+      "slug": "reliability-sensei"
+    },
+    {
+      "name": "Red Oni",
+      "slug": "red-oni"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Platform Sensei performs platform health board within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

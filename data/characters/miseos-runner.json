@@ -1,0 +1,389 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-runner",
+  "name": "MiseOS Runner",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/runner.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/runner.webp",
+      "collection": "long-cards",
+      "title": "RUNNER",
+      "match_method": "ocr-line-pair"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/runner.webp",
+      "printed_text": [
+        "MISEOSREGISTRY",
+        "16",
+        "ULTRA",
+        "MYTHIC",
+        "un.",
+        "MISEOS",
+        "RUNNER",
+        "TYPE: CONTAINER",
+        "IRUN.IEXECUTE.IDELIVER",
+        "AUTONOMYISMYSPEED.COMPUTEISMYPATH",
+        "SPEED",
+        "EXECUTION",
+        "AUTONOMY",
+        "COMPUTE",
+        "MISEOSENTITY·GOD-LIKE·AUTONOMOUS"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Ultra Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "runner"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "container",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": ".github/workflows/blank.yml",
+        "line": 20,
+        "term": "runner"
+      },
+      {
+        "path": ".github/workflows/runner-canary.yml",
+        "line": 16,
+        "term": "runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/.github/workflows/publish-container.yml",
+        "line": 21,
+        "term": "miseos-runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/containers/runner/entrypoint.sh",
+        "line": 4,
+        "term": "MiseOS Runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/scripts/generate-dashboard.mjs",
+        "line": 9,
+        "term": "runner"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 138,
+        "term": "runner"
+      },
+      {
+        "path": "apps/brigade-steward/.github/workflows/blank.yml",
+        "line": 20,
+        "term": "runner"
+      },
+      {
+        "path": "apps/brigade-steward/.github/workflows/mise-test-gate.yml",
+        "line": 98,
+        "term": "runner"
+      },
+      {
+        "path": "apps/devops-orchestra/pnpm-lock.yaml",
+        "line": 1830,
+        "term": "runner"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "runner"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "apps/mint-playground/experiences/mint-hoops/src/game/ThreeModelLayer.js",
+        "line": 1370,
+        "term": "runner"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "runner"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "tools/devops-foundry/scripts/harvest_miseos_devops.py",
+        "line": 24,
+        "term": "runner"
+      }
+    ],
+    "code_ref_count": 18,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 189,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 407,
+        "term": "MiseOS Runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 19,
+        "term": "MiseOS Runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 407,
+        "term": "MiseOS Runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 72,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.master-roster-gallery.json",
+        "line": 76,
+        "term": "runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.runner.json",
+        "line": 4,
+        "term": "MiseOS Runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.vite-registry-console.json",
+        "line": 72,
+        "term": "runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 72,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.master-roster-gallery.json",
+        "line": 76,
+        "term": "runner"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/README.md",
+        "line": 17,
+        "term": "miseos-runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/launch-plan.md",
+        "line": 12,
+        "term": "miseos-runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/naming-conventions.md",
+        "line": 22,
+        "term": "miseos-runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/publishing-playbook.md",
+        "line": 6,
+        "term": "miseos-runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 54,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 50,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "runner"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/OPERATIONS.md",
+        "line": 6,
+        "term": "runner"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 20,
+        "term": "miseos.runner"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 173,
+        "term": "runner"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 28,
+      "name": "runner"
+    },
+    "app_code_refs": [
+      {
+        "path": ".github/workflows/blank.yml",
+        "line": 20,
+        "term": "runner"
+      },
+      {
+        "path": ".github/workflows/runner-canary.yml",
+        "line": 16,
+        "term": "runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/.github/workflows/publish-container.yml",
+        "line": 21,
+        "term": "miseos-runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/containers/runner/entrypoint.sh",
+        "line": 4,
+        "term": "MiseOS Runner"
+      },
+      {
+        "path": "apps/bootstrap-registry/scripts/generate-dashboard.mjs",
+        "line": 9,
+        "term": "runner"
+      },
+      {
+        "path": "apps/brigade-steward/.github/workflows/blank.yml",
+        "line": 20,
+        "term": "runner"
+      },
+      {
+        "path": "apps/brigade-steward/.github/workflows/mise-test-gate.yml",
+        "line": 98,
+        "term": "runner"
+      },
+      {
+        "path": "apps/devops-orchestra/pnpm-lock.yaml",
+        "line": 1830,
+        "term": "runner"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "runner"
+      },
+      {
+        "path": "apps/mint-playground/experiences/mint-hoops/src/game/ThreeModelLayer.js",
+        "line": 1370,
+        "term": "runner"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "runner"
+      },
+      {
+        "path": "tools/devops-foundry/scripts/harvest_miseos_devops.py",
+        "line": 24,
+        "term": "runner"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "runner"
+      },
+      {
+        "path": "tools/repo-reliability-kit/.github/workflows/ci-rust.yml",
+        "line": 27,
+        "term": "runner"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.runner"
+  },
+  "role": "Container",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Runner.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "runner",
+      "handler": "runner",
+      "source": "apps/registry-platform/registry/manifests/miseos.runner.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (container)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Runner.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

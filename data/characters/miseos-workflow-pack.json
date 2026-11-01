@@ -1,0 +1,288 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-workflow-pack",
+  "name": "MiseOS Workflow Pack",
+  "kind": "registry_manifest",
+  "aliases": [
+    "MiseOsWorkflowPack"
+  ],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "aliases": "card titles / OCR in data/player-cards-ocr.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/packaged-for-infinity-built-for-synergy.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/packaged-for-infinity-built-for-synergy.webp",
+      "collection": "long-cards",
+      "title": "Packaged for infinity.Built for synergy.",
+      "match_method": "ocr-line"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/packaged-for-infinity-built-for-synergy.webp",
+      "printed_text": [
+        "20",
+        "Miseos",
+        "ULTRA",
+        "MYTHIC",
+        "REGISTRY",
+        "MiseOsWorkflowPack",
+        "ITEM",
+        "TYPE:WORKFLOW",
+        "ACTIONS",
+        "DATA FLOW",
+        "TRANSFORMS",
+        "CONDITIONS",
+        "NOTIFY",
+        "TRIGGER",
+        "ACTION",
+        "CONDITION",
+        "INTEGRATE",
+        "TRANSFORM",
+        "NOTIFICATIONS",
+        "INTEGRATIONS",
+        "BUNDLE-MASTER",
+        "The divine orchestration of reusable actions,",
+        "coordinated systems, and intelligent flows.",
+        "Packaged for infinity. Built for synergy.",
+        "REUSABLE",
+        "MODULAR",
+        "SCALABLE",
+        "ORCHESTRATED",
+        "SYNCHRONIZED",
+        "ETERNAL",
+        "MISEOSDIVINEREGISTRY",
+        "EDITION"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Ultra Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "workflowPack"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "workflow",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 32,
+        "term": "workflowPack"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 32,
+        "term": "workflowPack"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 32,
+        "term": "workflowPack"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 7,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 472,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 24,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 472,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 80,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.workflow-pack.json",
+        "line": 4,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 80,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.workflow-pack.json",
+        "line": 4,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 400,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 472,
+        "term": "MiseOS Workflow Pack"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 43,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 55,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 24,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 38,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 24,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 100,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 28,
+        "term": "miseos.workflow-pack"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Workflow Pack"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+        "line": 24,
+        "term": "miseos.workflow-pack"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 32,
+      "name": "workflowPack"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 32,
+        "term": "workflowPack"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 32,
+        "term": "workflowPack"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 32,
+        "term": "workflowPack"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.workflow-pack"
+  },
+  "role": "Workflow",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Workflow Pack.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "workflowPack",
+      "handler": "workflowPack",
+      "source": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (workflow)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Workflow Pack.",
+    "proof_gate": "Not yet defined in the source material"
+  }
+}

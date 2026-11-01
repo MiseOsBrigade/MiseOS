@@ -1,0 +1,295 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "evidence-scribe",
+  "name": "Evidence Scribe",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/evidence-scribe/metadata.json",
+    "role": "characters/evidence-scribe/metadata.json",
+    "department": "characters/evidence-scribe/metadata.json",
+    "rarity": "characters/evidence-scribe/metadata.json",
+    "workflow.summary": "characters/evidence-scribe/metadata.json",
+    "workflow.inputs": "characters/evidence-scribe/metadata.json",
+    "workflow.outputs": "characters/evidence-scribe/metadata.json",
+    "workflow.proof_gate": "characters/evidence-scribe/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/evidence-scribe/metadata.json"
+  },
+  "registry": {
+    "number": 76,
+    "profile": "characters/evidence-scribe/README.md",
+    "metadata": "characters/evidence-scribe/metadata.json",
+    "avatar": "assets/characters/evidence-scribe/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/evidence-scribe.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/evidence-scribe.webp",
+      "collection": "1by1-chefs",
+      "title": "EvidenceScribe",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/evidence-scribe.webp",
+      "printed_text": [
+        "AUDIT REPORT",
+        "COMPLIANCETRAIL",
+        "RECEIVED",
+        "08:12",
+        "MISE",
+        "REVIEWED",
+        "08:27",
+        "ORCHESTRA",
+        "VALIDATED",
+        "08.45",
+        "APPROVED",
+        "EVIDENCELOG",
+        "09:03",
+        "ARCHIVED",
+        "DOCUMENTED",
+        "09:12",
+        "VERIFIED",
+        "SEALED",
+        "ARCHIVED",
+        "TRACEABLE",
+        "EVIDENCE",
+        "PACKET",
+        "LOG-MSO-7E",
+        "APPROVED",
+        "COLLECTIONPROGRESS",
+        "EVIDENCE RATING",
+        "★★★★★",
+        "98.7%",
+        "INTEGRITY",
+        "100%",
+        "ACCURACY",
+        "100%",
+        "EVIDENCECOMPLETE",
+        "COMPLETENESS",
+        "100%",
+        "TRUST SCORE",
+        "SSS",
+        "HACCP RECORDS",
+        "TRAININGLOGS",
+        "COMPLIANCE",
+        "DOSSIER",
+        "AUDIT",
+        "TEMPER",
+        "Evidence Scribe",
+        "Compliance Evidence Collector"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%",
+    "98.7%"
+  ],
+  "level": 26,
+  "unique_trait": "Specializes in compliance evidence collector so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "security",
+  "profile_doc": "characters/evidence-scribe/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 563,
+        "text": "MISE-G2-P046 Evidence Scribe Mise Orchestra canonical-candidate 1E3334AB-3111- 46"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 841,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 624,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "tools/microlink-a2a/examples/demo.py",
+        "line": 25,
+        "term": "Evidence Scribe"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 793,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 3338,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 3338,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 3235,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 285,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 285,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 2573,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.csv",
+        "line": 40,
+        "term": "evidence-scribe"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.json",
+        "line": 606,
+        "term": "evidence-scribe"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/unique-assets.json",
+        "line": 606,
+        "term": "evidence-scribe"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Evidence Scribe"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 23,
+        "term": "Evidence Scribe"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "tools/microlink-a2a/examples/demo.py",
+        "line": 25,
+        "term": "Evidence Scribe"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-057",
+    "character_id": "miseos.character.057",
+    "card_id": "MISE-057",
+    "codename": "EVIDENCE_SCRIBE"
+  },
+  "role": "Compliance Evidence Collector",
+  "department": "Security Kitchen",
+  "department_mission": "Guard. Audit. Comply.",
+  "rarity": "Rare",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Compliance Evidence Collector done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Evidence Scribe performs compliance evidence collector within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE COMPLIANCE EVIDENCE COLLECTOR",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Compliance Evidence Collector",
+      "mise_name": "Mise ComplianceEvidenceCollector",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 75,
+    "precision": 70,
+    "speed": 64,
+    "resilience": 84,
+    "intelligence": 80,
+    "teamwork": 70
+  },
+  "related": [
+    {
+      "name": "Nudge Neko",
+      "slug": "nudge-neko"
+    },
+    {
+      "name": "Scorecard Shin",
+      "slug": "scorecard-shin"
+    },
+    {
+      "name": "Red Oni",
+      "slug": "red-oni"
+    },
+    {
+      "name": "Incident Kitsune",
+      "slug": "incident-kitsune"
+    },
+    {
+      "name": "Tariq Notesmith",
+      "slug": "tariq-notesmith"
+    },
+    {
+      "name": "Preview Yuki",
+      "slug": "preview-yuki"
+    }
+  ],
+  "helps": {
+    "station": "Security Kitchen",
+    "mission": "Guard. Audit. Comply.",
+    "problem": "Evidence Scribe performs compliance evidence collector within the Security Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

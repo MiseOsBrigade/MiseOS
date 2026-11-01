@@ -1,0 +1,176 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "portion-paladin",
+  "name": "Portion Paladin",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/portion-paladin/metadata.json",
+    "role": "characters/portion-paladin/metadata.json",
+    "department": "characters/portion-paladin/metadata.json",
+    "rarity": "characters/portion-paladin/metadata.json",
+    "workflow.summary": "characters/portion-paladin/metadata.json",
+    "workflow.inputs": "characters/portion-paladin/metadata.json",
+    "workflow.outputs": "characters/portion-paladin/metadata.json",
+    "workflow.proof_gate": "characters/portion-paladin/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/portion-paladin/metadata.json"
+  },
+  "registry": {
+    "number": 92,
+    "profile": "characters/portion-paladin/README.md",
+    "metadata": "characters/portion-paladin/metadata.json",
+    "avatar": "assets/characters/portion-paladin/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/portion-paladin.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/portion-paladin.webp",
+      "collection": "1by1-chefs",
+      "title": "Portion Paladin",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/portion-paladin.webp",
+      "printed_text": [
+        "BALANCEINDEX",
+        "MISE",
+        "ORCHESTRA",
+        "100%",
+        "PORTION CONTROL",
+        "★★★★★",
+        "MEASURE",
+        " MANAGE",
+        "SERVING STANDARD",
+        "MODERATE",
+        "WEIGHT",
+        "MASTER",
+        "NUTRITION",
+        "PRESENTATION",
+        "CONSISTENCY",
+        "YIELD OPTIMIZATION",
+        "PLATEEQUILIBRIUM",
+        "PROTEIN",
+        "100%",
+        "VEGGIES",
+        "GRAINS",
+        "MAXIMUMEFFICIENCY",
+        "SAUCE",
+        "2010.g",
+        "Portion Paladin",
+        "Balance Steward"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%"
+  ],
+  "level": 18,
+  "profile_doc": "characters/portion-paladin/README.md",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6686,
+        "term": "Portion Paladin"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6686,
+        "term": "Portion Paladin"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Portion Paladin"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-111",
+    "character_id": "miseos.character.111",
+    "card_id": "MISE-111",
+    "codename": "PORTION_PALADIN"
+  },
+  "role": "Balance Steward",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Portion Paladin performs balance steward within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE BALANCE STEWARD",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 72,
+    "precision": 86,
+    "speed": 80,
+    "resilience": 78,
+    "intelligence": 74,
+    "teamwork": 68
+  },
+  "related": [
+    {
+      "name": "Allergen Oracle",
+      "slug": "allergen-oracle"
+    },
+    {
+      "name": "Kurogami Senpai",
+      "slug": "kurogami-senpai"
+    },
+    {
+      "name": "Mizu",
+      "slug": "mizu"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Portion Paladin performs balance steward within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "garnish-ghost",
+  "name": "Garnish Ghost",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/garnish-ghost/metadata.json",
+    "role": "characters/garnish-ghost/metadata.json",
+    "department": "characters/garnish-ghost/metadata.json",
+    "rarity": "characters/garnish-ghost/metadata.json",
+    "workflow.summary": "characters/garnish-ghost/metadata.json",
+    "workflow.inputs": "characters/garnish-ghost/metadata.json",
+    "workflow.outputs": "characters/garnish-ghost/metadata.json",
+    "workflow.proof_gate": "characters/garnish-ghost/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/garnish-ghost/metadata.json"
+  },
+  "registry": {
+    "number": 6,
+    "profile": "characters/garnish-ghost/README.md",
+    "metadata": "characters/garnish-ghost/metadata.json",
+    "avatar": "assets/characters/garnish-ghost/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/garnish-ghost.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/garnish-ghost.webp",
+      "collection": "1by1-chefs",
+      "title": "Garnish Ghost",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/garnish-ghost-2.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/garnish-ghost-2.webp",
+      "collection": "1by1-chefs",
+      "title": "Garnish Ghost",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/garnish-ghost.webp",
+      "printed_text": [
+        "FINISHING INDEX",
+        "100%",
+        "MISE",
+        "ORCHESTRA",
+        "★★★★★",
+        "FINAL TOUCH",
+        "FINALTOUCHES",
+        "BALANCE",
+        " COLOR",
+        "HARMONY",
+        " TEXTURE",
+        "PRESENTATION",
+        " HEIGHT",
+        "CONTRAST",
+        "PERFECTION",
+        " STORY",
+        "PLATINGARTISTRY",
+        "GARNISH MASTERY",
+        "PRESENTATIONSCORE",
+        "SSS",
+        "★★★★★",
+        "Garnish Ghost",
+        "Finisher"
+      ]
+    },
+    {
+      "file": "assets/player-cards/1by1-chefs/garnish-ghost-2.webp",
+      "printed_text": [
+        "FINISHING INDEX",
+        "MISE",
+        "100%",
+        "ORCHESTRA",
+        "★★★★★",
+        "FINAL TOUCH",
+        "BALANCE",
+        "FINALTOUCHES",
+        "HARMONY",
+        "图 COLOR",
+        "PRESENTATION",
+        " TEXTURE",
+        "HEIGHT",
+        "PERFECTION",
+        " CONTRAST",
+        " STORY",
+        "PLATINGARTISTRY",
+        "GARNISHMASTERY",
+        "PRESENTATION SCORE",
+        "SSS",
+        "★★★★★",
+        "Garnish Ghost",
+        "Finisher"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "100%"
+  ],
+  "level": 26,
+  "profile_doc": "characters/garnish-ghost/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 499,
+        "text": "MISE-G2-P016 Garnish Ghost Mise Orchestra canonical-candidate 1E3334AB-3111- 16"
+      },
+      {
+        "line": 631,
+        "text": "MISE-G2-P075 Garnish Ghost Mise Orchestra canonical-candidate 1E3334AB-3111- 75"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6314,
+        "term": "Garnish Ghost"
+      },
+      {
+        "path": "apps/miseos-platform/config/3d-card-showcase.json",
+        "line": 116,
+        "term": "Garnish Ghost"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6314,
+        "term": "Garnish Ghost"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Garnish Ghost"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 118,
+        "term": "Garnish Ghost"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-105",
+    "character_id": "miseos.character.105",
+    "card_id": "MISE-105",
+    "codename": "GARNISH_GHOST"
+  },
+  "role": "Finisher",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Legendary",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Garnish Ghost performs finisher within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE FINISHER",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 73,
+    "precision": 66,
+    "speed": 60,
+    "resilience": 79,
+    "intelligence": 73,
+    "teamwork": 80
+  },
+  "related": [
+    {
+      "name": "Pantry Paladin",
+      "slug": "pantry-paladin"
+    },
+    {
+      "name": "Ticket Tactician",
+      "slug": "ticket-tactician"
+    },
+    {
+      "name": "Plate Inspector",
+      "slug": "plate-inspector"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Garnish Ghost performs finisher within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  }
+}
