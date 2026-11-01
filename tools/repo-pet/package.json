@@ -15,7 +15,8 @@
     "roam:container": "node bin/mise-roam.mjs / --character=orchestra-core --max-depth=4 --tick=800",
     "roam:shemi": "node shemi-roamer.mjs . --max-depth=6 --tick=650",
     "list:characters": "node bin/mise-roam.mjs --list-characters",
-    "test": "node --check shemi-roamer.mjs && node test/smoke.mjs"
+    "test": "node --check shemi-roamer.mjs && node test/smoke.mjs && node test/readme-pets.mjs",
+    "pets:readme": "node scripts/build-readme-pets.mjs"
   },
   "keywords": [
     "miseos",

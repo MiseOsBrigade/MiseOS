@@ -8,6 +8,8 @@
 
 </div>
 
+<p align="center"><img src="./assets/repo-pets/walk-header.svg" alt="MiseOS brigade walking across the repository" width="100%" /></p>
+
 MiseOS models software delivery as a kitchen brigade. Every character is a player card with an identity, a profile, machine-readable metadata, an operational workflow and a proof gate. This repository is the MiseOS Universe: the character registry, every player card, and the apps, tools and packages that run the brigade, in one place.
 
 > No merge, deployment, publication, billing action, or mint without evidence.
@@ -15,6 +17,7 @@ MiseOS models software delivery as a kitchen brigade. Every character is a playe
 ## Contents
 
 - [Universe map](#universe-map)
+- [Repo pets](#repo-pets)
 - [Player cards](#player-cards)
 - [Characters](#characters)
 - [Getting started](#getting-started)
@@ -51,7 +54,7 @@ MiseOS models software delivery as a kitchen brigade. Every character is a playe
 |---|---|---|
 | **[Mise PR](./tools/mise-pr)** | `tools/mise-pr` | GitHub Action that checks review readiness before code review (Python). |
 | **[Salt Shakers](./tools/salt-shakers)** | `tools/salt-shakers` | Universal, language-aware Actions workflow (Python). |
-| **[Repo Pet](./tools/repo-pet)** | `tools/repo-pet` | Repository mascot that roams repos and containers. |
+| **[Repo Pet](./tools/repo-pet)** | `tools/repo-pet` | Shimeji-style repo pets: terminal roamer and the walking README strips. |
 | **[Commis System](./tools/commis-system)** | `tools/commis-system` | Secure intake for zipped project bundles. |
 | **[Mise-en-Preplist](./tools/preplist)** | `tools/preplist` | Branded repository template and prep-list kit. |
 | **[GPU Pack-a-Punch](./tools/gpu-pack-a-punch)** | `tools/gpu-pack-a-punch` | Reusable Actions stack: risk gates, supply chain, optional GPU lanes. |
@@ -85,6 +88,18 @@ MiseOS models software delivery as a kitchen brigade. Every character is a playe
 | [`integrations/stripe-app`](./integrations/stripe-app) | Commerce dashboard integration |
 | [`standards/aid1`](./standards/aid1) | AID-1 standard |
 | [`docs/`](./docs) | Commerce, Canon Bible v1.0, recipe knowledge sheet |
+
+## Repo pets
+
+<p align="center"><img src="./assets/repo-pets/walk-kitchen.svg" alt="MiseOS repo pets on patrol" width="100%" /></p>
+
+The brigade roams this repository as Shimeji-style repo pets. The strips above and below are self-contained animated SVGs built from the characters' card art and the Shimeji Brigade sprite packs (Kurogami and Mizu walk, perch and climb frame by frame). They pause when your system asks for reduced motion.
+
+- [`tools/repo-pet`](./tools/repo-pet) — the terminal Repo Pet that walks a repository or container safely, read-only (`npm run roam:repo`), plus the strip generator `npm run pets:readme`.
+- [`assets/repo-pets/`](./assets/repo-pets) — character cutouts, sprite frames and the generated `walk-*.svg` strips.
+- Shimeji Brigade sprite packs: [`apps/developer-platform/packages/shimeji-brigade`](./apps/developer-platform/packages/shimeji-brigade), [`apps/miseos-platform/apps/shimeji-brigade`](./apps/miseos-platform/apps/shimeji-brigade); minting starter in [`tools/shimeji-mint`](./tools/shimeji-mint).
+
+The **Repo Pets** workflow can reshuffle which characters walk (run it manually, or let it run weekly).
 
 ## Player cards
 
@@ -595,6 +610,8 @@ MiseOS defaults agents to least privilege and read-only operation. Shell, reposi
 ## Mise Orchestra
 
 The roster includes established Orchestra characters such as Kurogami Senpai, Tensho, Mizu, Kaji, Yume, Null-chan, Flash Riku, Seira, Kuro Guard, Scale Oni, Build-Kun, Orchestra Core, Data-chan, Insight Sensei, Chaos Analyst, Growth Guru, Culture Chef, Canary Taster, Metrics Miko, SLO Sage, Streama, Umami Code, and other MiseOS specialists.
+
+<p align="center"><img src="./assets/repo-pets/walk-footer.svg" alt="MiseOS repo pets climbing and walking" width="100%" /></p>
 
 ## License
 
