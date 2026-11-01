@@ -1,0 +1,18 @@
+{
+  "schema": "miseos.repository-import.v1",
+  "project": "MiseOS ChainGate",
+  "sourceArchive": "miseos-chaingate-documentation-complete.zip",
+  "sourceArchiveSha256": "cffdabe0ed82bdc01806a8c3dce96f68275f1d8f44a15f243ca472dcba3f2a0e",
+  "sourceFileCount": 102,
+  "importRoot": "projects/chaingate",
+  "repository": "MiseOsBrigade/MiseOS",
+  "branch": "main",
+  "importedAt": "2026-07-21",
+  "status": "complete",
+  "notes": [
+    "The complete source package was imported as an isolated MiseOS project subtree.",
+    "Existing top-level MiseOS files were preserved.",
+    "Nested .github workflows are reference workflows and do not execute until promoted to the repository root or moved into a dedicated ChainGate repository.",
+    "The source archive checksum authenticates the validated 102-file release package."
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schema": "miseos.gcp.lazy-mint.package.v1",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 272,
+      "sha256": "69590bf15e87a69d5f8f10b8ab7dc6b70878119871fa3b9fedac7ed7c1155e1b"
+    },
+    {
+      "path": ".github/workflows/deploy-gcp-lazy-mint.yml",
+      "bytes": 1528,
+      "sha256": "ff8aca40b6253b4ee70735b199280d1cd1220d6ec42a09034763cab3289ba2b4"
+    },
+    {
+      "path": ".github/workflows/gcp-lazy-mint-ci.yml",
+      "bytes": 908,
+      "sha256": "3117f49ce1e62d03ac098b225e188af1e37a6c06cd6f5502284ee238340d7d2d"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 141,
+      "sha256": "4cf8191952b4e5071236b76c4e28bbe3316667abb1ff36670367cf05df9a2762"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5978,
+      "sha256": "0d08d3dd225db2ff902f0fc56a4eb6c456e5d4df82f3398f973c563b25936f3c"
+    },
+    {
+      "path": "config/collection.json",
+      "bytes": 676,
+      "sha256": "b37329899fb954c81ae2e4ffe04eea18f7348ca59dcf2cdc28ddc8cf0275c236"
+    },
+    {
+      "path": "docs/OPERATIONS.md",
+      "bytes": 1069,
+      "sha256": "ed8d37974524f047232d46806845b1ea388404c0045b7d7bef6b9aa3829f9228"
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "bytes": 1462,
+      "sha256": "c5af9f4d585f056ebe56a26c11fd34a29f23a4295c7ba776476a2c3c34636f0d"
+    },
+    {
+      "path": "examples/001-tariq-notesmith.metadata.json",
+      "bytes": 518,
+      "sha256": "6ca6032bf3b3e1d33eb48a4928d8ddafb7793804daafb878ea3b0ae85bd90d78"
+    },
+    {
+      "path": "examples/generated-sidecars/001-alko-commit-chef.json",
+      "bytes": 964,
+      "sha256": "e73f82f5927f4ada967bf73df47f22a3b170f1033885ab80cf1ed6d8ab57e564"
+    },
+    {
+      "path": "examples/generated-sidecars/002-bruno-blast-radius.json",
+      "bytes": 983,
+      "sha256": "59a9a43720d508d2f05b8ca4d7c89129d022c610528786cc45e5e010f91f5eb7"
+    },
+    {
+      "path": "examples/generated-sidecars/003-lila-branchkeeper.json",
+      "bytes": 974,
+      "sha256": "d8e5be33fbda2672e302e16dc5647826294d18e8569b2ea481fd643c061430bf"
+    },
+    {
+      "path": "examples/generated-sidecars/004-omar-reviewer.json",
+      "bytes": 961,
+      "sha256": "6ebf128226a3be3d4ea17b423951be38d9957ea8ba1ac0a815059630a2c0154a"
+    },
+    {
+      "path": "examples/generated-sidecars/005-hugo-matrix.json",
+      "bytes": 958,
+      "sha256": "70ef234ec3ff3cfbbe03df21dd947d8db7df023dd16b910063e1f9180dc3f770"
+    },
+    {
+      "path": "infra/terraform/main.tf",
+      "bytes": 7077,
+      "sha256": "bc6a6d78b92164ce768cb3d08f834509297d6e80fe2e891713d511d12a7a278a"
+    },
+    {
+      "path": "infra/terraform/outputs.tf",
+      "bytes": 598,
+      "sha256": "154d4e49b0fef0e764ea19875ef2de22ce16955a6091315d2f719d5edce235c1"
+    },
+    {
+      "path": "infra/terraform/terraform.tfvars.example",
+      "bytes": 353,
+      "sha256": "183cb45f4b7493d1d496a8747dd341ed293ca7f62e76ca43316962cc6dc0b36d"
+    },
+    {
+      "path": "infra/terraform/variables.tf",
+      "bytes": 744,
+      "sha256": "a244fdd244bddc467863950a2abeac601754765f72efb6ca6c49b3f149c71129"
+    },
+    {
+      "path": "infra/terraform/versions.tf",
+      "bytes": 237,
+      "sha256": "e61e09a9015a4d7f9a695d4164af1057af65f8fe19dddcdc4a024407de56556e"
+    },
+    {
+      "path": "infra/terraform/workload-identity.tf",
+      "bytes": 1962,
+      "sha256": "62dd7ed924cd605b22b67bbb3a417cde153cb5515743b4bf5fedf6121f3444cc"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 115,
+      "sha256": "886d316b3c85fbc9f1cfd58503a29b875edb1a2bdff056bba1067bb8f983bda6"
+    },
+    {
+      "path": "schemas/nft-metadata.schema.json",
+      "bytes": 1486,
+      "sha256": "dfeb9e58b7edcc23614dc528a31432c99c115b0ba6c7a057535e68ea5fd90994"
+    },
+    {
+      "path": "schemas/voucher.schema.json",
+      "bytes": 602,
+      "sha256": "3ae90c429167264729a7911fcb56f88f0559dd175d8a4ce1209511ca075edc55"
+    },
+    {
+      "path": "scripts/checksums.py",
+      "bytes": 798,
+      "sha256": "2674ac40561c4c773191819f587a68ae3979011cbab4f704f8d3db3f76a70a8a"
+    },
+    {
+      "path": "scripts/import_miseos_catalog.py",
+      "bytes": 2061,
+      "sha256": "9503eb67fb92205ecea8763118ddc02b42a6a7d4c4d9f1920eb5398e24a08b01"
+    },
+    {
+      "path": "scripts/validate_catalog.py",
+      "bytes": 1221,
+      "sha256": "46652b5bc48ecfa3f4f65ca322d44314082718ce9eb5dd9be749e634ada46be7"
+    },
+    {
+      "path": "services/metadata-api/Dockerfile",
+      "bytes": 235,
+      "sha256": "a0b73f118e19206674a3294c15b98b80f137640f880a77fd6ae36ba459662867"
+    },
+    {
+      "path": "services/metadata-api/main.py",
+      "bytes": 4850,
+      "sha256": "a818a41c3ef7a2d6de5241976c267f67f31f3c5fc2a6e44e449841b0d3bea5bf"
+    },
+    {
+      "path": "services/metadata-api/requirements.txt",
+      "bytes": 105,
+      "sha256": "e5137b2bfc6aeb2753f58c8f0ad9994bfc20e998ce63ff9e8e85596c6918a2ec"
+    },
+    {
+      "path": "services/metadata-worker/Dockerfile",
+      "bytes": 255,
+      "sha256": "52888876c4097b6d6ac2ae8a3e459bead3daffe0dfb663f679bd3a6a8e00f48e"
+    },
+    {
+      "path": "services/metadata-worker/main.py",
+      "bytes": 7991,
+      "sha256": "327f0a8510339d85fde343caecd0e18a5c1fd84f19d23e208f8101cfee1040e0"
+    },
+    {
+      "path": "services/metadata-worker/requirements.txt",
+      "bytes": 93,
+      "sha256": "53106786643f9eef31d4725c8477be932ba4d0ef5f3eb28ce20335e541348ffe"
+    },
+    {
+      "path": "tests/test_metadata_helpers.py",
+      "bytes": 938,
+      "sha256": "9bb39d7abf5cbda668965a10c102fb904019f017f07163496e007168e31a7696"
+    }
+  ]
+}

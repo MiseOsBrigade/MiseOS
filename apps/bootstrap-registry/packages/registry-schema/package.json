@@ -1,0 +1,17 @@
+{
+  "name": "@mise-os/registry-schema",
+  "version": "0.2.0",
+  "description": "Published JSON Schema contract for MiseOS registry manifests.",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

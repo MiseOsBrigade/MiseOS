@@ -1,0 +1,1 @@
+{"name":"@miseos/proof-registry","version":"0.1.0","private":true,"scripts":{"build":"echo Use Foundry or Hardhat to compile src/ProofRegistry.sol","typecheck":"echo Solidity typecheck handled by compiler","test":"echo Add Foundry tests before deployment","lint":"echo Add solhint before production"}}

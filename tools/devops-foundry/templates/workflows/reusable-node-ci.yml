@@ -1,0 +1,35 @@
+name: MiseOS Reusable Node CI
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        description: Node.js major version.
+        required: false
+        default: "24"
+        type: string
+      working-directory:
+        description: Package working directory.
+        required: false
+        default: "."
+        type: string
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: npm
+          cache-dependency-path: ${{ inputs.working-directory }}/package-lock.json
+      - run: npm ci
+      - run: npm test --if-present
+      - run: npm run lint --if-present
+      - run: npm run typecheck --if-present
+      - run: npm run build --if-present

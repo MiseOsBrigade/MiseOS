@@ -1,0 +1,18 @@
+apiVersion: policies.miseos.dev/v1
+kind: Policy
+metadata: {id: miseos.policy.production-recovery, version: 1.0.0}
+spec:
+  defaultEffect: deny
+  rules:
+    - id: forbid-self-promotion
+      assert: requestedRiskTier <= actor.maximumRiskTier
+    - id: require-production-proof
+      when: requestedRiskTier == 4
+      requireEvidence: [simulation_pass, tests_pass, rollback_plan, policy_pass]
+    - id: require-dual-approval
+      when: requestedRiskTier >= 3
+      requireApprovers: [service_owner, security_reviewer]
+      threshold: all
+    - id: block-unknown-certainty
+      when: certainty in [UNKNOWN, CONTRADICTED]
+      effect: deny

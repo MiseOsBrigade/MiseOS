@@ -1,0 +1,1 @@
+import fs from "node:fs";import { verifySignedManifest } from "../api/src/manifestVerifier.js";const [input,keyFile]=process.argv.slice(2);if(!verifySignedManifest(JSON.parse(fs.readFileSync(input)),fs.readFileSync(keyFile,"utf8")))process.exit(1);console.log("Manifest signature valid.");

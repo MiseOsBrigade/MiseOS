@@ -1,0 +1,30 @@
+name: ChainGate Contracts
+
+on:
+  pull_request:
+    paths:
+      - "projects/chaingate/contracts/**"
+      - ".github/workflows/chaingate-contracts.yml"
+  push:
+    branches: [main]
+    paths:
+      - "projects/chaingate/contracts/**"
+      - ".github/workflows/chaingate-contracts.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  foundry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: projects/chaingate/contracts/proof-registry
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+      - run: forge fmt --check
+      - run: forge build
+      - run: forge test -vvv

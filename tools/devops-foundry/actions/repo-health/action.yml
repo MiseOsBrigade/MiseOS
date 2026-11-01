@@ -1,0 +1,25 @@
+name: MiseOS Repo Health
+description: Score baseline repository governance files without network access.
+author: MiseOS
+branding:
+  icon: activity
+  color: green
+inputs:
+  expected-files:
+    description: Comma-separated files that should exist.
+    required: false
+    default: README.md,LICENSE,SECURITY.md,CONTRIBUTING.md,.gitignore
+  fail-below:
+    description: Fail when the score is below this integer from 0 to 100.
+    required: false
+    default: "0"
+outputs:
+  score:
+    description: Repository health score from 0 to 100.
+  grade:
+    description: Letter grade A-F.
+  missing-files:
+    description: Comma-separated missing files.
+runs:
+  using: node24
+  main: dist/index.js

@@ -1,0 +1,12 @@
+{
+  "currency": "usd",
+  "billing_interval": "month",
+  "provider_mode": "provider-neutral-catalog",
+  "packages": [
+    { "id": "miseos.fileops.starter", "name": "MiseOS FileOps Starter", "price_cents": 1900, "audience": "solo builders", "features": ["interactive console", "local registry simulator", "file payload builder"] },
+    { "id": "miseos.fileops.builder", "name": "MiseOS FileOps Builder", "price_cents": 4900, "audience": "repo builders", "features": ["repo-manager workflow", "policy stations", "chat-with-files payloads"] },
+    { "id": "miseos.fileops.pro", "name": "MiseOS FileOps Pro", "price_cents": 14900, "audience": "multi-provider AI workflows", "features": ["xAI routing", "Collections/Fal/Catalyst seams", "audit-grid events"] },
+    { "id": "miseos.fileops.team", "name": "MiseOS FileOps Team", "price_cents": 39900, "audience": "teams", "features": ["GitHub Actions proof", "payment catalog validation", "deployment-ready docs"] },
+    { "id": "miseos.fileops.enterprise", "name": "MiseOS FileOps Enterprise", "price_cents": null, "audience": "private deployment", "features": ["custom provider mapping", "governance review", "custom retention policy"] }
+  ]
+}

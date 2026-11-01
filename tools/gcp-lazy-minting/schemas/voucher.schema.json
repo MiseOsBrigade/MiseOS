@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.example/schemas/voucher.schema.json",
+  "title": "MiseOS Lazy Mint Voucher Request",
+  "type": "object",
+  "required": ["tokenId", "recipient", "priceWei", "expiresAt"],
+  "properties": {
+    "tokenId": {"type": "integer", "minimum": 0},
+    "recipient": {"type": "string", "pattern": "^0x[a-fA-F0-9]{40}$"},
+    "priceWei": {"type": "string", "pattern": "^[0-9]+$"},
+    "expiresAt": {"type": "integer", "minimum": 1},
+    "nonce": {"type": "string", "pattern": "^[0-9]+$"}
+  },
+  "additionalProperties": false
+}

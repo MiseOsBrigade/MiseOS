@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070706" />
+  <meta name="description" content="MiseOS Registry Atrium — an interactive 3D exhibition of the Mise Orchestra agent roster." />
+  <title>MiseOS Registry Atrium</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <style>
+    :root {
+      --ink: #f6f0dd;
+      --muted: #a7a192;
+      --gold: #f0c96b;
+      --gold-soft: rgba(240, 201, 107, .18);
+      --surface: rgba(13, 13, 12, .72);
+      --surface-strong: rgba(18, 18, 16, .94);
+      --border: rgba(240, 201, 107, .22);
+      --shadow: 0 26px 80px rgba(0,0,0,.56);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; }
+    body {
+      margin: 0;
+      overflow: hidden;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 50% 42%, rgba(240, 201, 107, .08), transparent 28%),
+        radial-gradient(circle at 16% 18%, rgba(64, 123, 255, .08), transparent 26%),
+        radial-gradient(circle at 84% 74%, rgba(150, 66, 255, .08), transparent 28%),
+        #070706;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: -.01em;
+    }
+    button, input { font: inherit; }
+    button { color: inherit; }
+    canvas { display: block; }
+    ::selection { background: var(--gold); color: #12100a; }
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: rgba(255,255,255,.04); }
+    ::-webkit-scrollbar-thumb { background: rgba(240,201,107,.25); border-radius: 999px; }
+
+    .glass {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 42px rgba(0,0,0,.32);
+      backdrop-filter: blur(18px) saturate(130%);
+      -webkit-backdrop-filter: blur(18px) saturate(130%);
+    }
+
+    .loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      background: #070706;
+      transition: opacity .9s ease, visibility .9s ease;
+    }
+    .loading-screen.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .loader-wrap { display: grid; justify-items: center; gap: 18px; }
+    .loader-mark {
+      width: 72px; height: 72px; position: relative;
+      display: grid; place-items: center;
+    }
+    .loader-mark::before, .loader-mark::after {
+      content: ""; position: absolute; inset: 0; border-radius: 50%;
+      border: 1px solid rgba(240,201,107,.2);
+      border-top-color: var(--gold);
+      animation: spin 1.2s linear infinite;
+    }
+    .loader-mark::after { inset: 12px; animation-direction: reverse; animation-duration: .9s; }
+    .loader-core { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 24px var(--gold); }
+    .loading-title { font-size: 13px; letter-spacing: .28em; text-transform: uppercase; color: var(--muted); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    #canvas-container { position: fixed; inset: 0; }
+
+    .ui-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .8s ease;
+    }
+    .ui-layer.is-ready { opacity: 1; }
+
+    .topbar {
+      position: absolute; inset: 0 0 auto 0;
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 24px; padding: 26px 28px;
+    }
+    .brand { display: flex; align-items: center; gap: 13px; pointer-events: auto; }
+    .brand-mark {
+      width: 42px; height: 42px; border: 1px solid var(--border); border-radius: 13px;
+      display: grid; place-items: center; background: rgba(7,7,6,.72);
+      box-shadow: inset 0 0 24px rgba(240,201,107,.06), 0 0 30px rgba(240,201,107,.06);
+    }
+    .brand-mark svg { width: 23px; height: 23px; }
+    .brand h1 { margin: 0; font-size: clamp(20px, 2.5vw, 31px); line-height: .9; letter-spacing: -.055em; }
+    .brand p { margin: 7px 0 0; font-size: 10px; letter-spacing: .23em; text-transform: uppercase; color: var(--muted); }
+
+    .system-readout { display: flex; align-items: stretch; gap: 8px; pointer-events: auto; }
+    .readout-cell { min-width: 92px; padding: 10px 12px; border-radius: 12px; }
+    .readout-label { display: block; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #8f897b; }
+    .readout-value { display: block; margin-top: 4px; font-size: 12px; font-weight: 700; }
+    .status-dot { display:inline-block; width: 7px; height:7px; border-radius:50%; margin-right:6px; background:#7ae6a4; box-shadow:0 0 12px rgba(122,230,164,.6); }
+
+    .filter-rail {
+      position: absolute; left: 28px; top: 50%; transform: translateY(-50%);
+      display: grid; gap: 8px; pointer-events: auto;
+    }
+    .filter-button {
+      width: 168px; border: 1px solid rgba(240,201,107,.14); border-radius: 13px;
+      padding: 11px 13px; text-align: left; background: rgba(8,8,7,.62); cursor: pointer;
+      transition: border-color .25s ease, background .25s ease, transform .25s ease, color .25s ease;
+    }
+    .filter-button:hover, .filter-button:focus-visible { transform: translateX(4px); border-color: rgba(240,201,107,.48); outline: none; }
+    .filter-button.is-active { background: rgba(240,201,107,.12); border-color: rgba(240,201,107,.55); }
+    .filter-button strong { display:block; font-size: 12px; }
+    .filter-button span { display:block; margin-top: 3px; color: #8d8779; font-size: 10px; }
+
+    .bottom-controls {
+      position: absolute; inset: auto 28px 25px 28px;
+      display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 18px;
+    }
+    .instruction {
+      justify-self: center; pointer-events: auto; border-radius: 999px; padding: 11px 17px;
+      font-size: 11px; letter-spacing: .03em; color: #cbc4b3; white-space: nowrap;
+    }
+    .instruction b { color: var(--ink); font-weight: 650; }
+    .control-cluster { justify-self: end; display: flex; gap: 8px; pointer-events: auto; }
+    .icon-button {
+      min-height: 42px; border: 1px solid var(--border); border-radius: 12px; padding: 0 14px;
+      display: inline-flex; align-items: center; gap: 9px; background: rgba(13,13,12,.72); cursor: pointer;
+      transition: background .2s ease, transform .2s ease, border-color .2s ease;
+    }
+    .icon-button:hover, .icon-button:focus-visible { background: rgba(240,201,107,.1); border-color: rgba(240,201,107,.5); outline:none; }
+    .icon-button:active { transform: scale(.97); }
+    .icon-button svg { width: 16px; height:16px; }
+    .icon-button span { font-size: 11px; font-weight: 650; }
+    .indicator { width: 7px; height:7px; border-radius:50%; background:#7ae6a4; box-shadow:0 0 12px rgba(122,230,164,.6); }
+    .indicator.off { background:#817c72; box-shadow:none; }
+
+    .roster-panel {
+      position: fixed; z-index: 30; top: 16px; right: 16px; bottom: 16px;
+      width: min(390px, calc(100vw - 32px)); padding: 18px; border-radius: 20px;
+      transform: translateX(calc(100% + 32px)); transition: transform .45s cubic-bezier(.2,.8,.2,1);
+      pointer-events: auto; display: flex; flex-direction: column;
+    }
+    .roster-panel.is-open { transform: translateX(0); }
+    .panel-head { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+    .panel-head h2 { margin:0; font-size:22px; letter-spacing:-.04em; }
+    .panel-head p { margin:6px 0 0; color:var(--muted); font-size:12px; }
+    .close-button { width:38px; height:38px; padding:0; justify-content:center; }
+    .search-wrap { margin-top:16px; position:relative; }
+    .search-wrap svg { position:absolute; left:13px; top:50%; transform:translateY(-50%); width:15px; color:#827c6f; }
+    #roster-search { width:100%; border:1px solid rgba(240,201,107,.17); border-radius:12px; background:rgba(255,255,255,.035); color:var(--ink); padding:12px 13px 12px 39px; outline:none; }
+    #roster-search:focus { border-color:rgba(240,201,107,.55); box-shadow:0 0 0 3px rgba(240,201,107,.08); }
+    .roster-list { margin-top:14px; overflow:auto; display:grid; gap:7px; padding-right:4px; }
+    .roster-item { border:1px solid rgba(255,255,255,.07); border-radius:13px; background:rgba(255,255,255,.025); padding:11px; cursor:pointer; text-align:left; display:grid; grid-template-columns:38px 1fr auto; gap:10px; align-items:center; }
+    .roster-item:hover, .roster-item:focus-visible { border-color:rgba(240,201,107,.4); background:rgba(240,201,107,.07); outline:none; }
+    .roster-number { width:38px; height:38px; border-radius:10px; display:grid; place-items:center; background:rgba(240,201,107,.08); color:var(--gold); font-size:10px; font-weight:800; }
+    .roster-item strong { display:block; font-size:12px; }
+    .roster-item small { display:block; margin-top:3px; color:#8f897c; font-size:10px; }
+    .rarity-mini { font-size:9px; letter-spacing:.09em; text-transform:uppercase; color:#b8b09f; }
+
+    .modal {
+      position: fixed; inset: 0; z-index: 50; display: grid; place-items: center;
+      padding: 20px; background: rgba(4,4,4,.72); backdrop-filter: blur(10px);
+      opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s ease;
+    }
+    .modal.is-open { opacity: 1; visibility: visible; }
+    .modal-card {
+      width: min(1040px, 100%); max-height: min(760px, calc(100vh - 40px)); overflow: hidden;
+      display: grid; grid-template-columns: minmax(320px, .9fr) minmax(390px, 1.1fr);
+      border-radius: 24px; background: var(--surface-strong); border: 1px solid rgba(240,201,107,.25);
+      box-shadow: var(--shadow); transform: translateY(18px) scale(.975); transition: transform .4s cubic-bezier(.2,.8,.2,1);
+    }
+    .modal.is-open .modal-card { transform: translateY(0) scale(1); }
+    .modal-media { min-height: 570px; position:relative; background:#080807; display:grid; place-items:center; overflow:hidden; }
+    .modal-media::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, transparent 65%, rgba(18,18,16,.95)); pointer-events:none; }
+    .modal-media img { width:100%; height:100%; object-fit:cover; }
+    .modal-copy { position:relative; min-width:0; overflow:auto; padding:38px 38px 30px; }
+    .modal-close { position:absolute; top:16px; right:16px; z-index:2; }
+    .eyeline { display:flex; flex-wrap:wrap; align-items:center; gap:8px; padding-right:48px; }
+    .chip { border:1px solid rgba(240,201,107,.23); border-radius:999px; padding:6px 9px; font-size:9px; font-weight:750; letter-spacing:.11em; text-transform:uppercase; color:#d7cfbb; }
+    .chip.rarity { color:var(--gold); background:rgba(240,201,107,.08); }
+    .modal-title { margin:18px 0 0; font-size:clamp(34px,5vw,58px); line-height:.91; letter-spacing:-.065em; }
+    .modal-role { margin:12px 0 0; color:var(--gold); font-size:14px; font-weight:700; }
+    .modal-desc { margin:18px 0 0; color:#b6af9f; font-size:14px; line-height:1.7; }
+    .command { margin-top:20px; border-left:2px solid var(--gold); padding:10px 13px; background:rgba(240,201,107,.055); font:700 11px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:.08em; color:#e7dcbf; }
+    .traits { margin-top:22px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .trait { border-top:1px solid rgba(255,255,255,.08); padding-top:10px; }
+    .trait-label { display:block; font-size:9px; text-transform:uppercase; letter-spacing:.13em; color:#7f796e; }
+    .trait-value { display:block; margin-top:5px; font-size:12px; font-weight:700; }
+    .stats-title { margin:24px 0 12px; font-size:10px; text-transform:uppercase; letter-spacing:.16em; color:#8c867a; }
+    .stats { display:grid; gap:10px; }
+    .stat-row { display:grid; grid-template-columns:82px 1fr 28px; gap:10px; align-items:center; }
+    .stat-name { font-size:10px; color:#aaa394; }
+    .stat-track { height:5px; border-radius:999px; overflow:hidden; background:rgba(255,255,255,.07); }
+    .stat-fill { height:100%; width:0; border-radius:inherit; background:linear-gradient(90deg,#b58a36,var(--gold)); box-shadow:0 0 14px rgba(240,201,107,.25); transition:width .7s .15s ease; }
+    .stat-value { font:700 10px ui-monospace, SFMono-Regular, Menlo, monospace; color:#d9d1bf; text-align:right; }
+
+    .screenreader-status { position:fixed; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
+
+    @media (max-width: 900px) {
+      .filter-rail { display:none; }
+      .system-readout .readout-cell:first-child { display:none; }
+      .bottom-controls { grid-template-columns: 1fr auto; }
+      .instruction { display:none; }
+      .modal-card { grid-template-columns: 1fr; max-height:calc(100vh - 24px); overflow:auto; }
+      .modal-media { min-height:0; aspect-ratio: 768 / 850; }
+      .modal-media::after { background:linear-gradient(0deg,rgba(18,18,16,.96),transparent 30%); }
+      .modal-copy { overflow:visible; padding:28px 24px 26px; }
+    }
+    @media (max-width: 600px) {
+      .topbar { padding:18px; }
+      .brand-mark { width:38px; height:38px; }
+      .brand p { display:none; }
+      .system-readout .readout-cell { min-width:auto; }
+      .readout-label { display:none; }
+      .bottom-controls { inset:auto 16px 16px 16px; }
+      .control-cluster { gap:6px; }
+      .icon-button { padding:0 12px; }
+      .icon-button .button-label { display:none; }
+      .modal { padding:12px; }
+      .modal-title { font-size:38px; }
+      .traits { grid-template-columns:1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-screen" class="loading-screen" aria-live="polite">
+    <div class="loader-wrap">
+      <div class="loader-mark"><span class="loader-core"></span></div>
+      <div class="loading-title">Calibrating Mise Orchestra</div>
+    </div>
+  </div>
+
+  <div id="canvas-container" aria-label="Interactive 3D MiseOS agent registry"></div>
+
+  <div id="ui-layer" class="ui-layer">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4 17.5V6.5L9.2 12 12 8.6 14.8 12 20 6.5v11" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M4 17.5h16" stroke="#f0c96b" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1>MISEOS</h1>
+          <p>Registry Atrium · Season 1</p>
+        </div>
+      </div>
+
+      <div class="system-readout">
+        <div class="readout-cell glass">
+          <span class="readout-label">Registry</span>
+          <span class="readout-value"><span class="status-dot"></span>Canonical</span>
+        </div>
+        <div class="readout-cell glass">
+          <span class="readout-label">Agents</span>
+          <span class="readout-value" id="agent-count">23 active</span>
+        </div>
+      </div>
+    </header>
+
+    <nav id="filter-rail" class="filter-rail" aria-label="Filter agents by department"></nav>
+
+    <div class="bottom-controls">
+      <div></div>
+      <div class="instruction glass"><b>Drag</b> orbit · <b>Scroll</b> zoom · <b>Click</b> inspect agent</div>
+      <div class="control-cluster">
+        <button id="roster-button" class="icon-button" type="button" aria-expanded="false" aria-controls="roster-panel">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 7h10M7 12h10M7 17h10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="4" cy="7" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="17" r="1" fill="currentColor"/></svg>
+          <span class="button-label">Roster</span>
+        </button>
+        <button id="auto-rotate-button" class="icon-button" type="button" aria-pressed="true">
+          <span id="rotate-indicator" class="indicator" aria-hidden="true"></span>
+          <span class="button-label">Orbit</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <aside id="roster-panel" class="roster-panel glass" aria-hidden="true">
+    <div class="panel-head">
+      <div><h2>Agent Registry</h2><p>Search and focus any Season 1 operative.</p></div>
+      <button id="roster-close" class="icon-button close-button" type="button" aria-label="Close roster">
+        <svg viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input id="roster-search" type="search" placeholder="Search name, role, department…" autocomplete="off" />
+    </div>
+    <div id="roster-list" class="roster-list"></div>
+  </aside>
+
+  <div id="detail-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <article class="modal-card">
+      <div class="modal-media"><img id="modal-image" alt="" /></div>
+      <div class="modal-copy">
+        <button id="modal-close" class="icon-button close-button modal-close" type="button" aria-label="Close agent details">
+          <svg viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="eyeline">
+          <span id="modal-number" class="chip"></span>
+          <span id="modal-department" class="chip"></span>
+          <span id="modal-rarity" class="chip rarity"></span>
+        </div>
+        <h2 id="modal-title" class="modal-title"></h2>
+        <p id="modal-role" class="modal-role"></p>
+        <p id="modal-description" class="modal-desc"></p>
+        <div id="modal-command" class="command"></div>
+        <div class="traits">
+          <div class="trait"><span class="trait-label">Function</span><span id="modal-function" class="trait-value"></span></div>
+          <div class="trait"><span class="trait-label">Ability</span><span id="modal-ability" class="trait-value"></span></div>
+          <div class="trait"><span class="trait-label">Element</span><span id="modal-element" class="trait-value"></span></div>
+          <div class="trait"><span class="trait-label">Tier</span><span id="modal-tier" class="trait-value"></span></div>
+        </div>
+        <h3 class="stats-title">Operational telemetry</h3>
+        <div id="modal-stats" class="stats"></div>
+      </div>
+    </article>
+  </div>
+
+  <div id="screenreader-status" class="screenreader-status" aria-live="polite"></div>
+
+  <script>
+    const agents = [{"id":1,"cardNumber":"001","name":"Kurogami Senpai","role":"Chef de Cuisine","department":"Operations","rarity":"Mythic","function":"Orchestrate","tier":"Season 1 Core","element":"Gold Flame","ability":"Master Orchestrator","description":"Kurogami Senpai is the Chef de Cuisine of the Mise Orchestra Operations Department. Plans every move with perfect precision before the kitchen heats up.","image":"cards/png/001-kurogami-senpai.png","metadata":"metadata/erc721/001-kurogami-senpai.json","stats":[{"label":"Orchestrate","value":98},{"label":"Secure","value":88},{"label":"Deploy","value":92},{"label":"Learn","value":84}],"command":"MISE ORCHESTRATE"},{"id":2,"cardNumber":"002","name":"Tensho","role":"Expediter","department":"Pipeline","rarity":"Rare","function":"Task Flow","tier":"Service Line","element":"Rush Ticket","ability":"Order Synchronizer","description":"Tensho is the Expediter of the Mise Orchestra Pipeline Department. Keeps the orders flowing. Chaos cannot stop the rush.","image":"cards/png/002-tensho.png","metadata":"metadata/erc721/002-tensho.json","stats":[{"label":"Flow","value":94},{"label":"Speed","value":89},{"label":"Deploy","value":81},{"label":"Monitor","value":76}],"command":"MISE TASK FLOW"},{"id":3,"cardNumber":"003","name":"Mizu","role":"Prep Chef","department":"Operations","rarity":"Rare","function":"Prepare","tier":"Service Line","element":"Blue Water","ability":"Prep Ledger","description":"Mizu is the Prep Chef of the Mise Orchestra Operations Department. Prepares everything in advance. Organization is the recipe.","image":"cards/png/003-mizu.png","metadata":"metadata/erc721/003-mizu.json","stats":[{"label":"Prepare","value":95},{"label":"Clean","value":82},{"label":"Flow","value":84},{"label":"Test","value":79}],"command":"MISE PREPARE"},{"id":4,"cardNumber":"004","name":"Umami Code","role":"Saucier","department":"Platform","rarity":"Epic","function":"Connect","tier":"Platform Core","element":"API Sauce","ability":"Perfect Integration","description":"Umami Code is the Saucier of the Mise Orchestra Platform Department. Creates the perfect sauce that connects every service.","image":"cards/png/004-umami-code.png","metadata":"metadata/erc721/004-umami-code.json","stats":[{"label":"Connect","value":96},{"label":"Secure","value":79},{"label":"Scale","value":80},{"label":"Observe","value":74}],"command":"MISE CONNECT"},{"id":5,"cardNumber":"005","name":"Kaji","role":"Grillardin","department":"Operations","rarity":"Epic","function":"Compute","tier":"Compute Core","element":"Fire","ability":"Blazing Compute","description":"Kaji is the Grillardin of the Mise Orchestra Operations Department. Handles the heat and powers the compute line with blazing passion.","image":"cards/png/005-kaji.png","metadata":"metadata/erc721/005-kaji.json","stats":[{"label":"Compute","value":97},{"label":"Speed","value":84},{"label":"Stress","value":91},{"label":"Control","value":76}],"command":"MISE COMPUTE"},{"id":6,"cardNumber":"006","name":"Yume","role":"Pastry Chef","department":"Pipeline","rarity":"Rare","function":"Build","tier":"Build Line","element":"Dream Sugar","ability":"Artifact Polish","description":"Yume is the Pastry Chef of the Mise Orchestra Pipeline Department. Turns code into beautiful artifacts. Perfection is her recipe.","image":"cards/png/006-yume.png","metadata":"metadata/erc721/006-yume.json","stats":[{"label":"Build","value":92},{"label":"Polish","value":95},{"label":"Test","value":72},{"label":"Deploy","value":78}],"command":"MISE BUILD"},{"id":7,"cardNumber":"007","name":"Iron Hashi","role":"Boucher","department":"Reliability","rarity":"Rare","function":"Validate","tier":"Quality Gate","element":"Iron Standard","ability":"Strict Validation","description":"Iron Hashi is the Boucher of the Mise Orchestra Reliability Department. Validates everything with strict standards. No errors on his watch.","image":"cards/png/007-iron-hashi.png","metadata":"metadata/erc721/007-iron-hashi.json","stats":[{"label":"Validate","value":97},{"label":"Protect","value":82},{"label":"Test","value":89},{"label":"Measure","value":75}],"command":"MISE VALIDATE"},{"id":8,"cardNumber":"008","name":"Null-chan","role":"Plongeur","department":"Reliability","rarity":"Rare","function":"Cleanse","tier":"Maintenance Line","element":"Void Soap","ability":"Null Sweep","description":"Null-chan is the Plongeur of the Mise Orchestra Reliability Department. Cleans up what is not needed. Keeps the kitchen light.","image":"cards/png/008-null-chan.png","metadata":"metadata/erc721/008-null-chan.json","stats":[{"label":"Cleanse","value":98},{"label":"Observe","value":78},{"label":"Guard","value":71},{"label":"Flow","value":83}],"command":"MISE CLEANSE"},{"id":9,"cardNumber":"009","name":"Flash Riku","role":"Runner","department":"Pipeline","rarity":"Epic","function":"Deploy","tier":"Delivery Line","element":"Blue Lightning","ability":"Lightning Delivery","description":"Flash Riku is the Runner of the Mise Orchestra Pipeline Department. Moves code at lightning speed through the pipeline.","image":"cards/png/009-flash-riku.png","metadata":"metadata/erc721/009-flash-riku.json","stats":[{"label":"Speed","value":98},{"label":"Deploy","value":94},{"label":"Flow","value":86},{"label":"Monitor","value":77}],"command":"MISE DEPLOY"},{"id":10,"cardNumber":"010","name":"Seira","role":"Sommelier","department":"Platform","rarity":"Epic","function":"Secure","tier":"Security Line","element":"Secret Wine","ability":"Vault Pairing","description":"Seira is the Sommelier of the Mise Orchestra Platform Department. Protects secrets like fine wine. Security is her specialty.","image":"cards/png/010-seira.png","metadata":"metadata/erc721/010-seira.json","stats":[{"label":"Secure","value":97},{"label":"Observe","value":85},{"label":"Connect","value":78},{"label":"Taste","value":90}],"command":"MISE SECURE"},{"id":11,"cardNumber":"011","name":"Kuro Guard","role":"Steward","department":"Platform","rarity":"Epic","function":"Protect","tier":"Security Gate","element":"Black Shield","ability":"Platform Ward","description":"Kuro Guard is the Steward of the Mise Orchestra Platform Department. Defends the platform with unwavering protection.","image":"cards/png/011-kuro-guard.png","metadata":"metadata/erc721/011-kuro-guard.json","stats":[{"label":"Protect","value":98},{"label":"Secure","value":93},{"label":"Observe","value":80},{"label":"Validate","value":82}],"command":"MISE PROTECT"},{"id":12,"cardNumber":"012","name":"Scale Oni","role":"Rotisseur","department":"Operations","rarity":"Legendary","function":"Scale","tier":"Scale Core","element":"Red Heat","ability":"Elastic Flame","description":"Scale Oni is the Rotisseur of the Mise Orchestra Operations Department. Scales up when things get hot. The bigger the load, the stronger he gets.","image":"cards/png/012-scale-oni.png","metadata":"metadata/erc721/012-scale-oni.json","stats":[{"label":"Scale","value":99},{"label":"Compute","value":92},{"label":"Stress","value":95},{"label":"Control","value":72}],"command":"MISE SCALE"},{"id":13,"cardNumber":"013","name":"Build-Kun","role":"Boulanger","department":"Pipeline","rarity":"Rare","function":"Build","tier":"Build Line","element":"Container Dough","ability":"Image Bake","description":"Build-Kun is the Boulanger of the Mise Orchestra Pipeline Department. Bakes container images fresh and fully. Always experimenting.","image":"cards/png/013-build-kun.png","metadata":"metadata/erc721/013-build-kun.json","stats":[{"label":"Build","value":96},{"label":"Test","value":82},{"label":"Deploy","value":80},{"label":"Speed","value":72}],"command":"MISE BUILD"},{"id":14,"cardNumber":"014","name":"Streama","role":"Poissonnier","department":"Operations","rarity":"Rare","function":"Stream","tier":"Event Line","element":"Live Water","ability":"Smooth Flow","description":"Streama is the Poissonnier of the Mise Orchestra Operations Department. Streams data like water. Smooth, continuous, and always flowing.","image":"cards/png/014-streama.png","metadata":"metadata/erc721/014-streama.json","stats":[{"label":"Stream","value":96},{"label":"Flow","value":91},{"label":"Observe","value":80},{"label":"Scale","value":77}],"command":"MISE STREAM"},{"id":15,"cardNumber":"015","name":"Orchestra Core","role":"Chef Spirit","department":"Platform","rarity":"Mythic","function":"Coordinate","tier":"Soul of Platform","element":"Golden Gate","ability":"One Symphony","description":"Orchestra Core is the Chef Spirit of the Mise Orchestra Platform Department. The soul of the platform. Sees everything and coordinates all.","image":"cards/png/015-orchestra-core.png","metadata":"metadata/erc721/015-orchestra-core.json","stats":[{"label":"Coordinate","value":100},{"label":"Observe","value":95},{"label":"Secure","value":86},{"label":"Learn","value":92}],"command":"MISE COORDINATE"},{"id":16,"cardNumber":"016","name":"Canary Taster","role":"Guest Chef","department":"Reliability","rarity":"Rare","function":"Test","tier":"Release Safety","element":"Canary Signal","ability":"First Bite Test","description":"Canary Taster is the Guest Chef of the Mise Orchestra Reliability Department. Tests the waters first. Ensures safe rollouts with canary releases.","image":"cards/png/016-canary-taster.png","metadata":"metadata/erc721/016-canary-taster.json","stats":[{"label":"Test","value":96},{"label":"Measure","value":84},{"label":"Validate","value":87},{"label":"Warn","value":93}],"command":"MISE TEST"},{"id":17,"cardNumber":"017","name":"Metrics Miko","role":"Guest Chef","department":"Reliability","rarity":"Epic","function":"Measure","tier":"Observability Line","element":"Signal Clock","ability":"Metric Reading","description":"Metrics Miko is the Guest Chef of the Mise Orchestra Reliability Department. Reads the numbers. Metrics guide every decision.","image":"cards/png/017-metrics-miko.png","metadata":"metadata/erc721/017-metrics-miko.json","stats":[{"label":"Measure","value":98},{"label":"Observe","value":94},{"label":"Analyze","value":86},{"label":"Guarantee","value":80}],"command":"MISE MEASURE"},{"id":18,"cardNumber":"018","name":"SLO Sage","role":"Guest Chef","department":"Reliability","rarity":"Epic","function":"Guarantee","tier":"Promise Keeper","element":"Error Budget","ability":"SLO Ward","description":"SLO Sage is the Guest Chef of the Mise Orchestra Reliability Department. Protects the promises. Maintains SLOs and error budgets.","image":"cards/png/018-slo-sage.png","metadata":"metadata/erc721/018-slo-sage.json","stats":[{"label":"Guarantee","value":97},{"label":"Measure","value":91},{"label":"Protect","value":85},{"label":"Learn","value":76}],"command":"MISE GUARANTEE"},{"id":19,"cardNumber":"019","name":"Data-chan","role":"Guest Chef","department":"Insights & Growth","rarity":"Rare","function":"Collect","tier":"Knowledge Line","element":"Archive Light","ability":"Knowledge Pantry","description":"Data-chan is the Guest Chef of the Mise Orchestra Insights & Growth Department. Collects and organizes data. Knowledge is the secret ingredient.","image":"cards/png/019-data-chan.png","metadata":"metadata/erc721/019-data-chan.json","stats":[{"label":"Collect","value":98},{"label":"Organize","value":94},{"label":"Analyze","value":77},{"label":"Grow","value":72}],"command":"MISE COLLECT"},{"id":20,"cardNumber":"020","name":"Insight Sensei","role":"Guest Chef","department":"Insights & Growth","rarity":"Epic","function":"Analyze","tier":"Learning Line","element":"Pattern Crystal","ability":"Pattern Sight","description":"Insight Sensei is the Guest Chef of the Mise Orchestra Insights & Growth Department. Finds patterns in chaos and turns data into understanding.","image":"cards/png/020-insight-sensei.png","metadata":"metadata/erc721/020-insight-sensei.json","stats":[{"label":"Analyze","value":99},{"label":"Learn","value":91},{"label":"Collect","value":78},{"label":"Optimize","value":84}],"command":"MISE ANALYZE"},{"id":21,"cardNumber":"021","name":"Chaos Analyst","role":"Guest Chef","department":"Insights & Growth","rarity":"Legendary","function":"Learn","tier":"Incident Wisdom","element":"Kitsune Chaos","ability":"Postmortem Bloom","description":"Chaos Analyst is the Guest Chef of the Mise Orchestra Insights & Growth Department. Embraces the chaos. Turns incidents into opportunities.","image":"cards/png/021-chaos-analyst.png","metadata":"metadata/erc721/021-chaos-analyst.json","stats":[{"label":"Learn","value":98},{"label":"Analyze","value":92},{"label":"Recover","value":88},{"label":"Optimize","value":82}],"command":"MISE LEARN"},{"id":22,"cardNumber":"022","name":"Growth Guru","role":"Guest Chef","department":"Insights & Growth","rarity":"Epic","function":"Optimize","tier":"Growth Line","element":"Pink Bloom","ability":"Scale Wisdom","description":"Growth Guru is the Guest Chef of the Mise Orchestra Insights & Growth Department. Always innovating. Seeks better ways to scale.","image":"cards/png/022-growth-guru.png","metadata":"metadata/erc721/022-growth-guru.json","stats":[{"label":"Optimize","value":97},{"label":"Grow","value":94},{"label":"Learn","value":86},{"label":"Culture","value":80}],"command":"MISE OPTIMIZE"},{"id":23,"cardNumber":"023","name":"Culture Chef","role":"Guest Chef","department":"Insights & Growth","rarity":"Legendary","function":"Grow","tier":"Human Systems","element":"Living Root","ability":"Team Bloom","description":"Culture Chef is the Guest Chef of the Mise Orchestra Insights & Growth Department. Nurtures the team and culture. Happy chefs cook best.","image":"cards/png/023-culture-chef.png","metadata":"metadata/erc721/023-culture-chef.json","stats":[{"label":"Culture","value":100},{"label":"Grow","value":91},{"label":"Learn","value":85},{"label":"Protect","value":77}],"command":"MISE GROW"}];
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const departmentPalette = {
+      'Operations': 0xe97822,
+      'Pipeline': 0x4e87ff,
+      'Platform': 0xb56cff,
+      'Reliability': 0x58d7aa,
+      'Insights & Growth': 0xf05c8d
+    };
+
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x070706, 0.028);
+
+    const camera = new THREE.PerspectiveCamera(54, innerWidth / innerHeight, 0.1, 120);
+    camera.position.set(0, 1.1, 16.5);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    container.appendChild(renderer.domElement);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.055;
+    controls.enablePan = false;
+    controls.minDistance = 6;
+    controls.maxDistance = 26;
+    controls.maxPolarAngle = Math.PI * .72;
+    controls.minPolarAngle = Math.PI * .23;
+    controls.autoRotate = !reducedMotion;
+    controls.autoRotateSpeed = .72;
+
+    scene.add(new THREE.HemisphereLight(0xf6e9c9, 0x16161c, .72));
+    const keyLight = new THREE.SpotLight(0xffe8ad, 1.25, 55, Math.PI / 4.2, .72, 1.4);
+    keyLight.position.set(0, 18, 8);
+    keyLight.castShadow = true;
+    scene.add(keyLight);
+    const blueLight = new THREE.PointLight(0x3979ff, .82, 28); blueLight.position.set(-10, 3, 6); scene.add(blueLight);
+    const violetLight = new THREE.PointLight(0xaa61ff, .72, 28); violetLight.position.set(10, -1, -3); scene.add(violetLight);
+    const goldLight = new THREE.PointLight(0xf0c96b, .95, 24); goldLight.position.set(0, 3, 0); scene.add(goldLight);
+
+    const galleryGroup = new THREE.Group();
+    scene.add(galleryGroup);
+
+    // Central orchestration core
+    const coreGroup = new THREE.Group();
+    galleryGroup.add(coreGroup);
+    const core = new THREE.Mesh(
+      new THREE.IcosahedronGeometry(1.05, 2),
+      new THREE.MeshStandardMaterial({ color: 0x171610, emissive: 0x8a651d, emissiveIntensity: .45, metalness: .85, roughness: .22, wireframe: true })
+    );
+    coreGroup.add(core);
+    [1.65, 2.1, 2.55].forEach((radius, index) => {
+      const ring = new THREE.Mesh(
+        new THREE.TorusGeometry(radius, .012 + index * .005, 8, 120),
+        new THREE.MeshBasicMaterial({ color: index === 1 ? 0xf0c96b : 0x806b3a, transparent: true, opacity: .42 - index * .07 })
+      );
+      ring.rotation.x = Math.PI / 2 + index * .48;
+      ring.rotation.y = index * .72;
+      coreGroup.add(ring);
+    });
+
+    // Floor grid and concentric operational rings
+    const floor = new THREE.Mesh(
+      new THREE.CircleGeometry(17, 96),
+      new THREE.MeshStandardMaterial({ color: 0x090908, metalness: .55, roughness: .38, transparent: true, opacity: .86 })
+    );
+    floor.rotation.x = -Math.PI / 2;
+    floor.position.y = -3.35;
+    floor.receiveShadow = true;
+    scene.add(floor);
+
+    [4.7, 7.1, 9.5, 12.2].forEach((r, i) => {
+      const ring = new THREE.Mesh(
+        new THREE.RingGeometry(r - .012, r + .012, 128),
+        new THREE.MeshBasicMaterial({ color: i === 2 ? 0x8f7637 : 0x3a3629, transparent: true, opacity: i === 2 ? .36 : .18, side: THREE.DoubleSide })
+      );
+      ring.rotation.x = -Math.PI / 2;
+      ring.position.y = -3.32;
+      scene.add(ring);
+    });
+
+    const manager = new THREE.LoadingManager();
+    const textureLoader = new THREE.TextureLoader(manager);
+    const frameGeometry = new THREE.BoxGeometry(2.5, 3.58, .16);
+    const imageGeometry = new THREE.PlaneGeometry(2.34, 3.28);
+    const selectable = [];
+    const agentObjects = new Map();
+
+    agents.forEach((agent, index) => {
+      const inner = index >= 12;
+      const localIndex = inner ? index - 12 : index;
+      const count = inner ? 11 : 12;
+      const radius = inner ? 6.55 : 9.35;
+      const angle = (localIndex / count) * Math.PI * 2 + (inner ? Math.PI / 11 : 0);
+      const y = inner ? -1.25 + Math.sin(angle * 2) * .35 : 1.22 + Math.sin(angle * 3) * .28;
+      const x = Math.cos(angle) * radius;
+      const z = Math.sin(angle) * radius;
+
+      const group = new THREE.Group();
+      group.position.set(x, y, z);
+      group.lookAt(0, y * .22, 0);
+      group.rotateY(Math.PI); // card faces outward toward orbiting camera
+      group.userData.agentId = agent.id;
+      group.userData.department = agent.department;
+
+      const accent = departmentPalette[agent.department] || 0xf0c96b;
+      const frame = new THREE.Mesh(frameGeometry, new THREE.MeshStandardMaterial({
+        color: 0x12110e, roughness: .24, metalness: .9, emissive: accent, emissiveIntensity: .035
+      }));
+      frame.castShadow = true;
+      frame.receiveShadow = true;
+      group.add(frame);
+
+      const texture = textureLoader.load(agent.image);
+      texture.encoding = THREE.sRGBEncoding;
+      texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+      const image = new THREE.Mesh(imageGeometry, new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide }));
+      image.position.z = .088;
+      image.userData.agentId = agent.id;
+      image.userData.department = agent.department;
+      group.add(image);
+      selectable.push(image);
+
+      const halo = new THREE.Mesh(
+        new THREE.PlaneGeometry(2.74, 3.86),
+        new THREE.MeshBasicMaterial({ color: accent, transparent: true, opacity: .075, side: THREE.DoubleSide, blending: THREE.AdditiveBlending, depthWrite: false })
+      );
+      halo.position.z = -.11;
+      group.add(halo);
+
+      galleryGroup.add(group);
+      agentObjects.set(agent.id, { group, image, frame, halo });
+    });
+
+    // Ambient signal particles
+    const particleCount = 950;
+    const particleGeometry = new THREE.BufferGeometry();
+    const particlePositions = new Float32Array(particleCount * 3);
+    for (let i = 0; i < particlePositions.length; i += 3) {
+      const radius = 4 + Math.random() * 18;
+      const angle = Math.random() * Math.PI * 2;
+      particlePositions[i] = Math.cos(angle) * radius;
+      particlePositions[i + 1] = (Math.random() - .5) * 15;
+      particlePositions[i + 2] = Math.sin(angle) * radius;
+    }
+    particleGeometry.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
+    const particles = new THREE.Points(particleGeometry, new THREE.PointsMaterial({ size: .025, color: 0xe8dcc0, transparent: true, opacity: .42, depthWrite: false }));
+    scene.add(particles);
+
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2(99, 99);
+    let hoveredObject = null;
+    let activeFilter = 'All';
+    let modalOpen = false;
+    let rosterOpen = false;
+    let orbitEnabled = controls.autoRotate;
+
+    function setPointer(event) {
+      pointer.x = (event.clientX / innerWidth) * 2 - 1;
+      pointer.y = -(event.clientY / innerHeight) * 2 + 1;
+    }
+
+    function hitTest() {
+      raycaster.setFromCamera(pointer, camera);
+      return raycaster.intersectObjects(selectable, false).find(hit => {
+        const agent = agents.find(item => item.id === hit.object.userData.agentId);
+        return activeFilter === 'All' || agent?.department === activeFilter;
+      });
+    }
+
+    renderer.domElement.addEventListener('pointermove', event => {
+      setPointer(event);
+      if (!modalOpen && !rosterOpen) {
+        gsap.to(galleryGroup.rotation, { x: pointer.y * .02, z: -pointer.x * .012, duration: .9, overwrite: true });
+      }
+      const hit = hitTest();
+      const next = hit?.object || null;
+      if (next !== hoveredObject) {
+        if (hoveredObject) {
+          const old = agentObjects.get(hoveredObject.userData.agentId)?.group;
+          if (old) gsap.to(old.scale, { x:1, y:1, z:1, duration:.25, overwrite:true });
+        }
+        hoveredObject = next;
+        renderer.domElement.style.cursor = next ? 'pointer' : 'grab';
+        if (next) {
+          const group = agentObjects.get(next.userData.agentId)?.group;
+          if (group) gsap.to(group.scale, { x:1.055, y:1.055, z:1.055, duration:.25, overwrite:true });
+        }
+      }
+    });
+
+    renderer.domElement.addEventListener('pointerdown', () => { renderer.domElement.style.cursor = 'grabbing'; });
+    renderer.domElement.addEventListener('pointerup', event => {
+      renderer.domElement.style.cursor = hoveredObject ? 'pointer' : 'grab';
+      setPointer(event);
+      const hit = hitTest();
+      if (hit && !modalOpen && !rosterOpen) {
+        const agent = agents.find(item => item.id === hit.object.userData.agentId);
+        if (agent) focusAgent(agent, true);
+      }
+    });
+
+    function focusAgent(agent, showModal = true) {
+      const object = agentObjects.get(agent.id);
+      if (!object) return;
+      orbitEnabled = controls.autoRotate;
+      controls.autoRotate = false;
+      updateOrbitUI();
+
+      const target = new THREE.Vector3();
+      object.group.getWorldPosition(target);
+      const outward = target.clone(); outward.y = 0; outward.normalize();
+      const destination = target.clone().add(outward.multiplyScalar(4.1));
+      destination.y += .18;
+
+      gsap.to(controls.target, { x:target.x, y:target.y, z:target.z, duration:1.15, ease:'power2.inOut', overwrite:true });
+      gsap.to(camera.position, {
+        x:destination.x, y:destination.y, z:destination.z,
+        duration:1.15, ease:'power2.inOut', overwrite:true,
+        onUpdate:() => controls.update(),
+        onComplete:() => { if (showModal) openModal(agent); }
+      });
+    }
+
+    function resetView() {
+      gsap.to(controls.target, { x:0, y:0, z:0, duration:.85, ease:'power2.inOut' });
+      const length = Math.max(13.5, camera.position.length());
+      const destination = camera.position.clone().normalize().multiplyScalar(Math.min(length, 17));
+      destination.y = Math.max(.8, destination.y);
+      gsap.to(camera.position, { x:destination.x, y:destination.y, z:destination.z, duration:.85, ease:'power2.inOut', onUpdate:() => controls.update() });
+      controls.autoRotate = orbitEnabled && !reducedMotion;
+      updateOrbitUI();
+    }
+
+    // Modal
+    const modal = document.getElementById('detail-modal');
+    const modalClose = document.getElementById('modal-close');
+    let lastFocusedElement = null;
+
+    function openModal(agent) {
+      modalOpen = true;
+      lastFocusedElement = document.activeElement;
+      document.getElementById('modal-image').src = agent.image;
+      document.getElementById('modal-image').alt = `${agent.name} trading card`;
+      document.getElementById('modal-number').textContent = `MISE-${agent.cardNumber}`;
+      document.getElementById('modal-department').textContent = agent.department;
+      document.getElementById('modal-rarity').textContent = agent.rarity;
+      document.getElementById('modal-title').textContent = agent.name;
+      document.getElementById('modal-role').textContent = agent.role;
+      document.getElementById('modal-description').textContent = agent.description;
+      document.getElementById('modal-command').textContent = `> ${agent.command}`;
+      document.getElementById('modal-function').textContent = agent.function;
+      document.getElementById('modal-ability').textContent = agent.ability;
+      document.getElementById('modal-element').textContent = agent.element;
+      document.getElementById('modal-tier').textContent = agent.tier;
+      const stats = document.getElementById('modal-stats');
+      stats.innerHTML = agent.stats.map(stat => `
+        <div class="stat-row">
+          <span class="stat-name">${stat.label}</span>
+          <div class="stat-track"><div class="stat-fill" data-value="${stat.value}"></div></div>
+          <span class="stat-value">${stat.value}</span>
+        </div>`).join('');
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden','false');
+      requestAnimationFrame(() => {
+        modal.querySelectorAll('.stat-fill').forEach(el => el.style.width = `${Math.min(100, Number(el.dataset.value))}%`);
+        modalClose.focus();
+      });
+      document.getElementById('screenreader-status').textContent = `Opened ${agent.name}, ${agent.role}.`;
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden','true');
+      modalOpen = false;
+      resetView();
+      if (lastFocusedElement && lastFocusedElement.focus) lastFocusedElement.focus();
+    }
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+
+    // Department filters
+    const filterRail = document.getElementById('filter-rail');
+    const departments = ['All', ...new Set(agents.map(agent => agent.department))];
+    const counts = Object.fromEntries(departments.map(dep => [dep, dep === 'All' ? agents.length : agents.filter(agent => agent.department === dep).length]));
+    filterRail.innerHTML = departments.map(dep => `<button class="filter-button ${dep === 'All' ? 'is-active' : ''}" type="button" data-department="${dep}"><strong>${dep}</strong><span>${counts[dep]} registered</span></button>`).join('');
+    filterRail.addEventListener('click', event => {
+      const button = event.target.closest('button[data-department]');
+      if (!button) return;
+      activeFilter = button.dataset.department;
+      filterRail.querySelectorAll('.filter-button').forEach(item => item.classList.toggle('is-active', item === button));
+      agentObjects.forEach((object, id) => {
+        const agent = agents.find(item => item.id === id);
+        const match = activeFilter === 'All' || agent.department === activeFilter;
+        object.image.material.opacity = match ? 1 : .18;
+        object.image.material.transparent = !match;
+        object.frame.material.opacity = match ? 1 : .22;
+        object.frame.material.transparent = !match;
+        object.halo.material.opacity = match ? .075 : .01;
+        gsap.to(object.group.scale, { x:match ? 1 : .92, y:match ? 1 : .92, z:match ? 1 : .92, duration:.4 });
+      });
+      document.getElementById('agent-count').textContent = `${counts[activeFilter]} active`;
+      document.getElementById('screenreader-status').textContent = `Showing ${counts[activeFilter]} ${activeFilter} agents.`;
+    });
+
+    // Roster panel and search
+    const rosterPanel = document.getElementById('roster-panel');
+    const rosterButton = document.getElementById('roster-button');
+    const rosterClose = document.getElementById('roster-close');
+    const rosterSearch = document.getElementById('roster-search');
+    const rosterList = document.getElementById('roster-list');
+
+    function renderRoster(query='') {
+      const q = query.trim().toLowerCase();
+      const filtered = agents.filter(agent => !q || [agent.name,agent.role,agent.department,agent.rarity,agent.function,agent.ability].join(' ').toLowerCase().includes(q));
+      rosterList.innerHTML = filtered.map(agent => `
+        <button class="roster-item" type="button" data-agent-id="${agent.id}">
+          <span class="roster-number">${agent.cardNumber}</span>
+          <span><strong>${agent.name}</strong><small>${agent.role} · ${agent.department}</small></span>
+          <span class="rarity-mini">${agent.rarity}</span>
+        </button>`).join('');
+      if (!filtered.length) rosterList.innerHTML = '<p style="color:#8f897c;font-size:12px;padding:12px">No registry entries match that search.</p>';
+    }
+    renderRoster();
+
+    function setRoster(open) {
+      rosterOpen = open;
+      rosterPanel.classList.toggle('is-open', open);
+      rosterPanel.setAttribute('aria-hidden', String(!open));
+      rosterButton.setAttribute('aria-expanded', String(open));
+      if (open) { controls.autoRotate = false; updateOrbitUI(); setTimeout(() => rosterSearch.focus(), 100); }
+      else { rosterButton.focus(); controls.autoRotate = orbitEnabled && !reducedMotion; updateOrbitUI(); }
+    }
+    rosterButton.addEventListener('click', () => setRoster(true));
+    rosterClose.addEventListener('click', () => setRoster(false));
+    rosterSearch.addEventListener('input', () => renderRoster(rosterSearch.value));
+    rosterList.addEventListener('click', event => {
+      const button = event.target.closest('[data-agent-id]');
+      if (!button) return;
+      const agent = agents.find(item => item.id === Number(button.dataset.agentId));
+      if (!agent) return;
+      setRoster(false);
+      focusAgent(agent, true);
+    });
+
+    // Orbit control
+    const orbitButton = document.getElementById('auto-rotate-button');
+    const orbitIndicator = document.getElementById('rotate-indicator');
+    function updateOrbitUI() {
+      const active = controls.autoRotate;
+      orbitButton.setAttribute('aria-pressed', String(active));
+      orbitIndicator.classList.toggle('off', !active);
+    }
+    orbitButton.addEventListener('click', () => {
+      controls.autoRotate = !controls.autoRotate;
+      orbitEnabled = controls.autoRotate;
+      updateOrbitUI();
+    });
+    updateOrbitUI();
+
+    window.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        if (modalOpen) closeModal();
+        else if (rosterOpen) setRoster(false);
+      }
+      if (event.key.toLowerCase() === 'r' && !modalOpen && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) setRoster(!rosterOpen);
+    });
+
+    // Loading
+    const loadingScreen = document.getElementById('loading-screen');
+    const uiLayer = document.getElementById('ui-layer');
+    let revealed = false;
+    function reveal() {
+      if (revealed) return;
+      revealed = true;
+      loadingScreen.classList.add('is-hidden');
+      uiLayer.classList.add('is-ready');
+    }
+    manager.onLoad = reveal;
+    manager.onError = url => console.warn('Texture failed to load:', url);
+    setTimeout(reveal, 4500);
+
+    const clock = new THREE.Clock();
+    function animate() {
+      requestAnimationFrame(animate);
+      const t = clock.getElapsedTime();
+      if (!reducedMotion) {
+        core.rotation.x = t * .15; core.rotation.y = t * .24;
+        coreGroup.children.slice(1).forEach((ring,index) => { ring.rotation.z = t * (.08 + index * .025) * (index % 2 ? -1 : 1); });
+        particles.rotation.y = t * .018;
+        galleryGroup.position.y = Math.sin(t * .4) * .08;
+      }
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = innerWidth / innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+      renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    });
+  </script>
+</body>
+</html>

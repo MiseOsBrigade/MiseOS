@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "currency": "usd",
+  "billing_provider": "unconfigured",
+  "mode": "catalog_only",
+  "products": [
+    {
+      "key": "miseos_community",
+      "name": "MiseOS Community",
+      "billing_model": "free",
+      "price_cents": 0,
+      "entitlements": [
+        "public_docs",
+        "character_gallery",
+        "starter_cli",
+        "basic_registry",
+        "demo_workflows"
+      ]
+    },
+    {
+      "key": "miseos_pro_monthly",
+      "name": "MiseOS Pro",
+      "billing_model": "subscription",
+      "interval": "month",
+      "price_cents": null,
+      "provider_price_id_env": "MISEOS_PRO_MONTHLY_PRICE_ID",
+      "entitlements": [
+        "hosted_dashboard",
+        "repo_manager",
+        "workflow_linter",
+        "release_risk_reports"
+      ]
+    },
+    {
+      "key": "miseos_team_monthly",
+      "name": "MiseOS Team",
+      "billing_model": "subscription",
+      "interval": "month",
+      "price_cents": null,
+      "provider_price_id_env": "MISEOS_TEAM_MONTHLY_PRICE_ID",
+      "entitlements": [
+        "github_app",
+        "mcp_connectors",
+        "policy_packs",
+        "audit_logs",
+        "team_shifts"
+      ]
+    },
+    {
+      "key": "miseos_enterprise",
+      "name": "MiseOS Enterprise",
+      "billing_model": "contact_sales",
+      "price_cents": null,
+      "entitlements": [
+        "self_hosted_runtime",
+        "sso",
+        "compliance_controls",
+        "private_deployment",
+        "custom_agents"
+      ]
+    }
+  ],
+  "required_environment": [
+    "BILLING_PROVIDER_SECRET_KEY",
+    "BILLING_WEBHOOK_SECRET",
+    "MISEOS_PRO_MONTHLY_PRICE_ID",
+    "MISEOS_TEAM_MONTHLY_PRICE_ID"
+  ],
+  "activation_requirements": [
+    "sandbox checkout passes",
+    "webhook signature verification passes",
+    "idempotent fulfillment passes",
+    "refund and cancellation policy is published",
+    "tax and merchant account configuration is reviewed",
+    "production secrets are stored outside Git"
+  ]
+}

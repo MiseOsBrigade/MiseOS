@@ -1,0 +1,13 @@
+{
+  "schema": "miseos.metadata.override.v1",
+  "name": "Tariq Notesmith",
+  "description": "Tariq Notesmith is a MiseOS knowledge-capture and documentation agent.",
+  "external_url": "https://miseos.example/characters/tariq-notesmith",
+  "record_kind": "character_card",
+  "attributes": [
+    {"trait_type": "Department", "value": "Documentation"},
+    {"trait_type": "Role", "value": "Knowledge Capture"},
+    {"trait_type": "Rarity", "value": "Genesis"},
+    {"trait_type": "Network", "value": "Base Sepolia"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@mise-os/analytics-engine",
+  "version": "0.2.0",
+  "description": "Analytics engine for registry metrics, risk matrices, and graph exports.",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

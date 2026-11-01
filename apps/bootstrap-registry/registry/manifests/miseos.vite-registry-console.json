@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.vite-registry-console",
+  "name": "MiseOS Vite Registry Console",
+  "type": "package",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization",
+    "github": "Mise-OS"
+  },
+  "description": "Vite-powered read-only registry console for manifest browsing, risk summaries, publishing sequence visibility, and HMR-fast local development.",
+  "artifacts": {
+    "workspace": "apps/registry-console",
+    "npm": "@mise-os/registry-console"
+  },
+  "capabilities": [
+    "vite_dev_server",
+    "registry_dashboard",
+    "manifest_glob_import",
+    "worker_risk_scoring",
+    "static_console_build"
+  ],
+  "permissions": {
+    "filesystem": [
+      "read"
+    ],
+    "github": [],
+    "network": [
+      "local_dev_server"
+    ]
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "artifactAttestationRequired": true,
+    "scorecardRequired": true,
+    "humanReviewRequiredFor": [
+      "browser_write_capability",
+      "network_surface_change",
+      "dependency_major_upgrade",
+      "csp_policy_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required for dependency major upgrades, browser write capability, CSP policy changes, or external network expansion.",
+    "minor": "Maintainer review required for dashboard features, new imports, or worker behavior.",
+    "patch": "Automated validation allowed for docs, styles, and read-only rendering fixes."
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "static_dashboard",
+      "vite_build_artifact",
+      "registry_console_report"
+    ],
+    "executionMode": "read_only"
+  },
+  "analytics": {
+    "criticality": "medium",
+    "maturity": "alpha",
+    "riskWeight": 0.24,
+    "operationalTier": "developer-tooling"
+  },
+  "release": {
+    "channel": "alpha",
+    "cadence": "manual until GHCR runner and primary packages are published",
+    "currentStrategy": "Keep browser console read-only and validate with tsc plus Vite build in CI.",
+    "nextMilestone": "Deploy static dashboard after registry publishing sequence stabilizes."
+  },
+  "answers": {
+    "what": "A read-only Vite dashboard for the MiseOS Bootstrap Registry.",
+    "does": "Loads generated registry data, discovers manifests with import.meta.glob, runs risk scoring in a worker, and displays package lane analytics.",
+    "owner": "MiseOS / Mise-OS organization.",
+    "permissions": "Local read-only data access and local dev server network surface only.",
+    "registry": "Workspace package now; optional npm package @mise-os/registry-console later.",
+    "changed": "Added Vite app, config, TypeScript settings, generated registry data, worker analytics, docs, and CI workflow.",
+    "safe": "Safe by default because it is read-only and browser writes are review-gated.",
+    "agentExecutable": "Yes, agents may build or preview the console after running registry validation."
+  }
+}

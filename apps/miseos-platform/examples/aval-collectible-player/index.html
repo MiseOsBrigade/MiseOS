@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiseOS AVAL Collectible Player</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, system-ui, sans-serif;
+        background: #07130f;
+        color: #f6f1e7;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 20% 10%, #1e9bb833, transparent 28%),
+          radial-gradient(circle at 80% 15%, #e97b2233, transparent 24%),
+          linear-gradient(135deg, #07130f, #0f2f25);
+      }
+      main {
+        width: min(960px, calc(100% - 32px));
+        display: grid;
+        gap: 20px;
+        justify-items: center;
+      }
+      .player-shell {
+        padding: 18px;
+        border: 1px solid #f2c94c88;
+        border-radius: 24px;
+        background: #0b1d17dd;
+        box-shadow: 0 24px 80px #0009;
+      }
+      aval-player,
+      aval-player img {
+        display: block;
+        width: min(540px, 82vw);
+        height: auto;
+        border-radius: 16px;
+      }
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      button {
+        border: 1px solid #f2c94c66;
+        border-radius: 999px;
+        padding: 10px 16px;
+        background: #124734;
+        color: #f6f1e7;
+        cursor: pointer;
+      }
+      button:focus-visible {
+        outline: 3px solid #1e9bb8;
+        outline-offset: 2px;
+      }
+      p {
+        max-width: 720px;
+        color: #f6f1e7bb;
+        line-height: 1.6;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>MiseOS Animated Collectible</h1>
+      <div class="player-shell">
+        <aval-player
+          id="collectible"
+          src="/media/animations/aval/agents/release-sentinel/release-sentinel.avl"
+          width="720"
+          height="1080"
+          aria-label="MiseOS Release Sentinel animated collectible"
+        >
+          <img
+            slot="fallback"
+            src="/media/animations/aval/agents/release-sentinel/fallback.webp"
+            alt="MiseOS Release Sentinel collectible card"
+          />
+        </aval-player>
+      </div>
+      <div class="controls" aria-label="Collectible animation states">
+        <button type="button" data-state="idle">Idle</button>
+        <button type="button" data-state="inspect">Inspect</button>
+        <button type="button" data-state="warning">Warning</button>
+        <button type="button" data-state="release-ready">Release ready</button>
+      </div>
+      <p>
+        This example deliberately retains host-owned fallback markup. The animation source remains staged until the referenced .avl and fallback assets exist and pass validation.
+      </p>
+      <script type="module" src="/src/main.js"></script>
+    </main>
+  </body>
+</html>

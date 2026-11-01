@@ -1,0 +1,95 @@
+name: miseos
+services:
+  core:
+    build: ./mise-core
+    restart: unless-stopped
+    environment:
+      MISEOS_REPO_ROOT: /srv/miseos-repo
+      MISEOS_INTERNAL_TOKEN: ${MISEOS_INTERNAL_TOKEN:?required}
+    volumes: [/opt/miseos/repo:/srv/miseos-repo:ro]
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      minio: {condition: service_healthy}
+    networks: [edge, data]
+    read_only: true
+    tmpfs: [/tmp:size=128m,mode=1777]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+  caddy:
+    image: caddy:2.10-alpine
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    environment: {MISEOS_PUBLIC_HOST: "${MISEOS_PUBLIC_HOST:-:80}"}
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - /opt/miseos/repo:/srv/miseos-repo:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [core]
+    networks: [edge]
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    networks: [data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  redis:
+    image: redis:8-alpine
+    restart: unless-stopped
+    command: ["redis-server","--appendonly","yes","--save","60","1000"]
+    ports: ["127.0.0.1:6379:6379"]
+    volumes: [redis_data:/data]
+    networks: [data]
+    healthcheck:
+      test: ["CMD","redis-cli","ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+  qdrant:
+    image: qdrant/qdrant:v1.15.4
+    restart: unless-stopped
+    ports: ["127.0.0.1:6333:6333"]
+    volumes: [qdrant_data:/qdrant/storage]
+    networks: [data]
+  minio:
+    image: minio/minio:RELEASE.2025-07-23T15-54-02Z
+    restart: unless-stopped
+    command: ["server","/data","--console-address",":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    ports: ["127.0.0.1:9000:9000", "127.0.0.1:9001:9001"]
+    volumes: [minio_data:/data]
+    networks: [data]
+    healthcheck:
+      test: ["CMD","curl","-f","http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  node-exporter:
+    image: prom/node-exporter:v1.9.1
+    restart: unless-stopped
+    command: [--path.rootfs=/host]
+    network_mode: host
+    pid: host
+    volumes: [/:/host:ro,rslave]
+networks:
+  edge: {}
+  data: {internal: true}
+volumes:
+  postgres_data: {}
+  redis_data: {}
+  qdrant_data: {}
+  minio_data: {}
+  caddy_data: {}
+  caddy_config: {}

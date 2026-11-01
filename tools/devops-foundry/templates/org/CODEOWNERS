@@ -1,0 +1,6 @@
+# Replace placeholder teams with your organization teams.
+* @YOUR-ORG/maintainers
+/.github/ @YOUR-ORG/platform @YOUR-ORG/security
+/actions/ @YOUR-ORG/platform @YOUR-ORG/security
+/templates/workflows/ @YOUR-ORG/platform @YOUR-ORG/security
+/SECURITY.md @YOUR-ORG/security

@@ -1,0 +1,59 @@
+{
+  "name": "MiseOS GridOps Playground",
+  "version": "0.1.0",
+  "mode": "static-simulation",
+  "principle": "Everything in its place before it ships.",
+  "dimensions": [
+    "repositories",
+    "tasks",
+    "agents",
+    "tools",
+    "workflows",
+    "evidence",
+    "packages",
+    "risk",
+    "time",
+    "memory"
+  ],
+  "views": [
+    "atrium",
+    "mise-grid",
+    "repo-city",
+    "agent-hangar",
+    "evidence-vault",
+    "ci-dojo",
+    "package-forge",
+    "simulation-lab"
+  ],
+  "agentContract": [
+    "inspect",
+    "plan",
+    "execute",
+    "validate",
+    "report",
+    "archive-evidence"
+  ],
+  "certainty": [
+    "CONFIRMED",
+    "INFERRED",
+    "UNKNOWN"
+  ],
+  "blockedActions": [
+    "print-raw-secrets",
+    "force-push-protected-branches",
+    "disable-ci-to-pass",
+    "rewrite-history-without-approval",
+    "change-production-without-approval",
+    "merge-with-unknown-validation"
+  ],
+  "ecosystem": {
+    "characterCards": 112,
+    "registryManifests": 23,
+    "totalItems": 135
+  },
+  "deployment": {
+    "target": "github-pages",
+    "entrypoint": "index.html",
+    "workflow": ".github/workflows/pages.yml"
+  }
+}

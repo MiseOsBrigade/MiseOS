@@ -1,0 +1,9 @@
+project_id         = "your-google-cloud-project"
+region             = "us-central1"
+environment        = "dev"
+public_base_url    = "https://metadata.example.com"
+contract_address   = "0x0000000000000000000000000000000000000000"
+chain_id           = 84532
+allow_public_api   = false
+enable_vision      = true
+github_repository  = "MiseOsBrigade/MiseOS"

@@ -1,0 +1,17 @@
+@import "./variables.css";
+
+.shell {
+  color: var(--shimeji-text);
+  background: radial-gradient(circle at 18% 0, #174735 0, transparent 34%), var(--shimeji-bg);
+  font-family: var(--shimeji-body);
+}
+
+.display { font-family: var(--shimeji-display); letter-spacing: -0.03em; }
+.panel { background: var(--shimeji-panel); border: 1px solid var(--shimeji-line); border-radius: var(--shimeji-radius-md); }
+.button { border: 0; border-radius: var(--shimeji-radius-pill); background: var(--shimeji-gold); color: var(--shimeji-bg); font-weight: 800; }
+.button:hover { background: var(--shimeji-orange); }
+.badge { border: 1px solid currentColor; border-radius: var(--shimeji-radius-pill); padding: 0.25rem 0.6rem; font-size: 0.75rem; font-weight: 800; }
+.badgeAgent { color: var(--shimeji-purple); }
+.badgeSuccess { color: var(--shimeji-green); }
+.badgeRisk { color: var(--shimeji-red); }
+.mono { font-family: var(--shimeji-mono); }

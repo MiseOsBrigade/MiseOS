@@ -1,0 +1,72 @@
+{
+  "name": "Mise Orchestra #007 - Iron Hashi",
+  "description": "Iron Hashi is the Boucher of the Mise Orchestra Reliability Department. Validates everything with strict standards. No errors on his watch. This creator collectible is designed for lore, access, provenance, and community engagement.",
+  "image": "ipfs://REPLACE_WITH_COLLECTION_CID/cards/png/007-iron-hashi.png",
+  "external_url": "https://github.com/MiseOsBrigade/Mise-OS",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Mise Orchestra"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Season 1"
+    },
+    {
+      "trait_type": "Card Number",
+      "value": "007"
+    },
+    {
+      "trait_type": "Character",
+      "value": "Iron Hashi"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Boucher"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Reliability"
+    },
+    {
+      "trait_type": "Function",
+      "value": "Validate"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Quality Gate"
+    },
+    {
+      "trait_type": "Element",
+      "value": "Iron Standard"
+    },
+    {
+      "trait_type": "Ability",
+      "value": "Strict Validation"
+    },
+    {
+      "trait_type": "Stat: Validate",
+      "value": 97,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Protect",
+      "value": 82,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Test",
+      "value": 89,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Measure",
+      "value": 75,
+      "display_type": "boost_number"
+    }
+  ]
+}

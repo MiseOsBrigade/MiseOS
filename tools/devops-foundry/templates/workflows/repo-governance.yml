@@ -1,0 +1,16 @@
+name: MiseOS Repository Governance
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  repo-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./actions/repo-health
+        with:
+          fail-below: "80"

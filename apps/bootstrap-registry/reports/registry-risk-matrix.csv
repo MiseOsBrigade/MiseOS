@@ -1,0 +1,24 @@
+id,name,type,risk_score,risk_level,permissions,reasons
+miseos.agent-sdk,MiseOS Agent SDK,sdk,6,low,github.contents:read,
+miseos.analytics-engine,MiseOS Analytics Engine,analytics,8,low,github.contents:read,
+miseos.attestation-gate,MiseOS Attestation Gate,policy,29,low,github.attestations:read; github.contents:read,network access required
+miseos.cli,MiseOS CLI,package,8,low,github.contents:read; github.packages:read,
+miseos.docs-builder,MiseOS Docs Builder,container,63,high,github.contents:write; github.pages:write,write permission requested; GitHub Pages write access; not autonomous-safe; approved write execution mode
+miseos.docs-hub-template,MiseOS Docs Hub Template,template,70,high,github.contents:write; github.pages:write,write permission requested; GitHub Pages write access; not autonomous-safe; approved write execution mode; mutating capability present
+miseos.git-command-layer,MiseOS Git Command Layer,package,71,high,filesystem.0:read; filesystem.1:write_via_git; github.0:repository_access_via_user_git_credentials; network.0:git_remote_when_pull_or_push,write permission requested; network access required; not autonomous-safe; approved write execution mode
+miseos.gradle-plugin,MiseOS Gradle Plugin,package,7,low,github.contents:read; github.packages:read,
+miseos.master-roster-gallery,MiseOS Master Roster Gallery,package,7,low,filesystem.0:read; github.contents:read; network.0:local_dev_server,
+miseos.maven-policy-adapter,MiseOS Maven Policy Adapter,package,7,low,github.contents:read; github.packages:read,
+miseos.nuget-client,MiseOS NuGet Client,sdk,7,low,github.contents:read; github.packages:read,
+miseos.policy-checker,MiseOS Policy Checker,container,56,medium,github.contents:read; github.security-events:write,write permission requested; security events write access; not autonomous-safe
+miseos.policy-engine,MiseOS Policy Engine,policy,58,medium,github.contents:read; github.security-events:write,write permission requested; security events write access; not autonomous-safe
+miseos.registry-schema,MiseOS Registry Schema,schema,50,medium,github.contents:read; github.packages:write,write permission requested; not autonomous-safe; mutating capability present
+miseos.release-sentinel,MiseOS Release Sentinel,agent,87,high,github.contents:write; github.packages:read; github.pull-requests:write,write permission requested; network access required; not autonomous-safe; approved write execution mode; mutating capability present
+miseos.repo-steward,MiseOS Repo Steward,agent,11,low,github.contents:read; github.metadata:read,
+miseos.ruby-steward,MiseOS Ruby Steward,package,8,low,github.contents:read; github.packages:read,
+miseos.runner,MiseOS Runner,container,14,low,github.contents:read; github.packages:read,
+miseos.sbom-indexer,MiseOS SBOM Indexer,agent,26,low,github.contents:read; github.packages:read,network access required
+miseos.trust-graph,MiseOS Trust Graph,analytics,10,low,github.contents:read,
+miseos.vite-registry-console,MiseOS Vite Registry Console,package,7,low,filesystem.0:read; network.0:local_dev_server,
+miseos.workflow-linter,MiseOS Workflow Linter,agent,57,medium,github.contents:read; github.security-events:write,write permission requested; security events write access; not autonomous-safe
+miseos.workflow-pack,MiseOS Workflow Pack,workflow,100,high,github.attestations:write; github.contents:write; github.id-token:write; github.packages:write; github.security-events:write,write permission requested; OIDC token minting allowed; artifact attestation writes allowed; security events write access; network access required; not autonomous-safe; approved write execution mode; mutating capability present

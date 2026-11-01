@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.sbom-indexer",
+  "name": "MiseOS SBOM Indexer",
+  "type": "agent",
+  "version": "0.2.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization",
+    "github": "Mise-OS"
+  },
+  "description": "Indexes SBOM references, dependency graph exports, and package composition evidence for registry entries.",
+  "artifacts": {
+    "npm": "@mise-os/sbom-indexer"
+  },
+  "capabilities": [
+    "index_sbom",
+    "verify_dependency_snapshot",
+    "emit_sbom_report"
+  ],
+  "permissions": {
+    "github": {
+      "contents": "read",
+      "packages": "read"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "artifactAttestationRequired": true,
+    "scorecardRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade",
+      "security_policy_change",
+      "dependency_source_change",
+      "network_surface_change",
+      "autonomous_execution_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+    "minor": "Requires changelog, analytics diff, and policy dry run.",
+    "patch": "May be merged after validation if permissions and trust metadata do not expand."
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": true,
+    "outputs": [
+      "json_report",
+      "markdown_report",
+      "csv_metrics"
+    ],
+    "executionMode": "read_only"
+  },
+  "analytics": {
+    "criticality": "critical",
+    "maturity": "alpha",
+    "riskWeight": 0.48,
+    "operationalTier": "governance"
+  },
+  "release": {
+    "channel": "alpha",
+    "cadence": "advisory-first until three clean releases",
+    "currentStrategy": "validate, analyze, publish only through signed workflows",
+    "nextMilestone": "0.3.0 governance hardening"
+  },
+  "answers": {
+    "what": "MiseOS SBOM Indexer",
+    "does": "Indexes SBOM references, dependency graph exports, and package composition evidence for registry entries.",
+    "owner": "MiseOS / Mise-OS organization",
+    "permissions": "{\"github\": {\"contents\": \"read\", \"packages\": \"read\"}}",
+    "registry": "npm: @mise-os/sbom-indexer",
+    "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+    "safe": "Safe only within declared executionMode and permission gates.",
+    "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Mise Orchestra #008 - Null-chan",
+  "description": "Null-chan is the Plongeur of the Mise Orchestra Reliability Department. Cleans up what is not needed. Keeps the kitchen light. This creator collectible is designed for lore, access, provenance, and community engagement.",
+  "image": "ipfs://REPLACE_WITH_COLLECTION_CID/cards/png/008-null-chan.png",
+  "external_url": "https://github.com/MiseOsBrigade/Mise-OS",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Mise Orchestra"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Season 1"
+    },
+    {
+      "trait_type": "Card Number",
+      "value": "008"
+    },
+    {
+      "trait_type": "Character",
+      "value": "Null-chan"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Plongeur"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Reliability"
+    },
+    {
+      "trait_type": "Function",
+      "value": "Cleanse"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Maintenance Line"
+    },
+    {
+      "trait_type": "Element",
+      "value": "Void Soap"
+    },
+    {
+      "trait_type": "Ability",
+      "value": "Null Sweep"
+    },
+    {
+      "trait_type": "Stat: Cleanse",
+      "value": 98,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Observe",
+      "value": 78,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Guard",
+      "value": 71,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Flow",
+      "value": 83,
+      "display_type": "boost_number"
+    }
+  ]
+}

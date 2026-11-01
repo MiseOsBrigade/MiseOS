@@ -1,0 +1,4 @@
+-r services/metadata-worker/requirements.txt
+-r services/metadata-api/requirements.txt
+pytest==8.*
+jsonschema==4.*

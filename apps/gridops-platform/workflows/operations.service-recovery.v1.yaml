@@ -1,0 +1,31 @@
+apiVersion: workflows.miseos.dev/v1
+kind: Workflow
+metadata:
+  id: operations.service-recovery
+  version: 1.0.0
+  department: operations
+  owner: miseos.character.076
+spec:
+  trigger:
+    events: [service.health.degraded, deployment.failed, queue.sla.breached, customer.impact.detected]
+  steps:
+    - {id: dispatch, agent: miseos.character.097, action: alert.dispatch}
+    - {id: prioritize, agent: miseos.character.107, dependsOn: [dispatch], action: incident.prioritize}
+    - {id: inspect, agent: miseos.character.106, dependsOn: [prioritize], action: readiness.inspect}
+    - {id: discover, agent: miseos.character.110, dependsOn: [inspect], action: knowledge.retrieve}
+    - {id: timebox, agent: miseos.character.109, dependsOn: [discover], action: sla.calculate}
+    - {id: orchestrate, agent: miseos.character.076, dependsOn: [timebox], action: recovery.plan}
+    - {id: simulate, agent: miseos.core.simulation, dependsOn: [orchestrate], action: recovery.simulate}
+    - {id: approve, type: human_approval, dependsOn: [simulate]}
+    - {id: execute, agentSelector: {capability: service.recovery}, dependsOn: [approve], action: recovery.execute}
+    - {id: validate, agent: miseos.character.108, dependsOn: [execute], action: recovery.validate}
+    - {id: safety, agent: miseos.character.112, dependsOn: [validate], action: safety.verify}
+    - {id: archive, agent: miseos.character.099, dependsOn: [safety], action: evidence.archive}
+    - {id: cost, agent: miseos.character.098, dependsOn: [archive], action: cost.record}
+    - {id: communicate, agent: miseos.character.077, dependsOn: [cost], action: stakeholder.update}
+  proofGate:
+    required: [simulation_report, execution_trace, validation_report, evidence_card]
+  failurePolicy:
+    retry: {maximumAttempts: 3}
+    rollbackWorkflow: operations.service-recovery-rollback
+  telemetry: {enabled: true}

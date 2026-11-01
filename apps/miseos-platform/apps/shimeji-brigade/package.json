@@ -1,0 +1,11 @@
+{
+  "name": "@miseos/shimeji-brigade",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static Shimeji Brigade sprite-pack runtime and spinor roamer scene.",
+  "scripts": {
+    "placeholders": "node scripts/generate-placeholder-frames.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

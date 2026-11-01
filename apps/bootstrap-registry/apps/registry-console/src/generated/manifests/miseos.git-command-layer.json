@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.git-command-layer",
+  "name": "MiseOS Git Command Layer",
+  "type": "package",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization",
+    "github": "Mise-OS"
+  },
+  "description": "A safe MiseOS command wrapper that maps common Git workflows into operational commands while keeping Git as the execution engine.",
+  "artifacts": {
+    "script": "scripts/mise-git.mjs",
+    "docs": "docs/miseos-git-command-guide.md",
+    "data": "registry/git-command-map.json",
+    "npm": "@mise-os/cli"
+  },
+  "capabilities": [
+    "git_status",
+    "git_stage",
+    "git_commit",
+    "git_pull_ff_only",
+    "git_push",
+    "git_stash",
+    "git_revert",
+    "git_reset_guarded",
+    "git_rebase_guarded",
+    "git_tag_release"
+  ],
+  "permissions": {
+    "filesystem": [
+      "read",
+      "write_via_git"
+    ],
+    "network": [
+      "git_remote_when_pull_or_push"
+    ],
+    "github": [
+      "repository_access_via_user_git_credentials"
+    ]
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "artifactAttestationRequired": true,
+    "scorecardRequired": true,
+    "humanReviewRequiredFor": [
+      "destructive_command_change",
+      "force_push_policy_change",
+      "protected_branch_policy_change",
+      "network_behavior_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required for command grammar, destructive behavior, or protected branch policy changes.",
+    "minor": "Maintainer review required for new command wrappers and safety gates.",
+    "patch": "Allowed for docs, examples, and non-behavioral fixes after validation."
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": false,
+    "requiresNetwork": true,
+    "outputs": [
+      "git_stdout",
+      "git_stderr",
+      "exit_code"
+    ],
+    "executionMode": "approved_write"
+  },
+  "analytics": {
+    "criticality": "high",
+    "maturity": "alpha",
+    "riskWeight": 0.52,
+    "operationalTier": "developer-tooling"
+  },
+  "release": {
+    "channel": "alpha",
+    "cadence": "manual until branch policy integration is stable",
+    "currentStrategy": "Ship as part of @mise-os/cli, with destructive commands blocked unless explicit confirmation flags are provided.",
+    "nextMilestone": "Add branch policy awareness and registry-backed command telemetry."
+  },
+  "answers": {
+    "what": "A MiseOS command wrapper for Git.",
+    "does": "Turns basic and advanced Git commands into MiseOS operating commands with safer defaults and explicit confirmation flags.",
+    "owner": "MiseOS / Mise-OS organization.",
+    "permissions": "Uses local Git credentials and filesystem access only through Git commands.",
+    "registry": "Included in @mise-os/cli and documented through registry/git-command-map.json.",
+    "changed": "Added MiseOS command grammar, safety wrappers, docs, aliases, and CLI delegation for Git workflows.",
+    "safe": "Safe when used through its default commands; destructive commands require confirmation flags and force push is guarded.",
+    "agentExecutable": "Agents may run read-only commands automatically; mutating commands require explicit user approval."
+  }
+}

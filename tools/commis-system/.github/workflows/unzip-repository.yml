@@ -1,0 +1,66 @@
+name: Import Uploaded Zip
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "How should files be imported?"
+        required: false
+        default: "preserve"
+        type: choice
+        options:
+          - preserve
+          - category
+      dry_run:
+        description: "Preview only. Do not write or commit files."
+        required: false
+        default: false
+        type: boolean
+
+  push:
+    branches:
+      - main
+    paths:
+      - "incoming/*.zip"
+      - "scripts/unzipandorganize.py"
+      - ".github/workflows/unzip-repository.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-zip-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  import-zip:
+    runs-on: ubuntu-latest
+
+    env:
+      MODE: ${{ inputs.mode || 'preserve' }}
+      DRYRUN: ${{ inputs.dry_run && 'true' || 'false' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate and import zip files
+        run: python scripts/unzipandorganize.py
+
+      - name: Remove processed zip files
+        if: ${{ success() && env.DRYRUN != 'true' }}
+        run: rm -f incoming/*.zip
+
+      - name: Commit imported files
+        if: ${{ success() && env.DRYRUN != 'true' }}
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "Import uploaded zip [skip ci]"
+          branch: ${{ github.ref_name }}

@@ -1,0 +1,125 @@
+{
+  "version": "1.1.0",
+  "status": "staged",
+  "proof_rule": "No image, GLB, AVAL animation, metadata, mint, sale, or deployment claim is complete until the referenced asset exists and validates.",
+  "asset_contract": {
+    "image": "media/images/3d/{group}/{slug}/hero.webp",
+    "model": "media/models/3d/{group}/{slug}/{slug}.glb",
+    "animation": "media/animations/aval/{group}/{slug}/{slug}.avl",
+    "animation_fallback": "media/animations/aval/{group}/{slug}/fallback.webp",
+    "card": "cards/3d/{group}/{slug}.md",
+    "metadata": "metadata/3d/{group}/{slug}.json"
+  },
+  "motion_runtime": {
+    "name": "AVAL",
+    "role": "Web-native deterministic animation layer for collectible previews and interactive card states",
+    "packages": {
+      "element": "@pixel-point/aval-element@1.0.0",
+      "compiler": "@pixel-point/aval-compiler@1.0.0"
+    },
+    "source_license": "MIT",
+    "source_notice": "AVAL contributors, 2026",
+    "requirements": {
+      "node": ">=22.12.0",
+      "compiler_native_tools": [
+        "FFmpeg",
+        "FFprobe",
+        "libx264"
+      ]
+    },
+    "boundaries": [
+      "GLB remains the canonical 3D model asset.",
+      "AVAL supplies prerendered interactive motion previews, not editable 3D geometry.",
+      "Every AVAL player must include host-owned fallback markup.",
+      "Unsupported WebCodecs, WebGL, or AVC environments must retain the fallback image.",
+      "No .avl asset is marked ready until its source, fallback, integrity value, and validation evidence exist."
+    ]
+  },
+  "groups": {
+    "agents": [
+      {
+        "name": "Shift Sentinel",
+        "slug": "shift-sentinel",
+        "tagline": "We watch. We protect. We prepare. We pass it on.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      },
+      {
+        "name": "MiseOS Release Sentinel",
+        "slug": "release-sentinel",
+        "tagline": "I verify. I protect. I launch with purpose.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      },
+      {
+        "name": "MiseOS Repo Steward",
+        "slug": "repo-steward",
+        "tagline": "Keeper of history. Guardian of integrity. Steward of every commit.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      }
+    ],
+    "registry": [
+      {
+        "name": "MiseOS Maven Policy Adapter",
+        "slug": "maven-policy-adapter",
+        "type": "package",
+        "tagline": "I adapt policies. I unify intent.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      },
+      {
+        "name": "MiseOS Registry Schema",
+        "slug": "registry-schema",
+        "type": "schema",
+        "tagline": "Defines all that exists. Connects all that relates.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      },
+      {
+        "name": "Mise Orchestra Theme",
+        "slug": "orchestra-theme",
+        "type": "theme",
+        "tagline": "One theme. One language. One orchestra.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      }
+    ],
+    "companions": [
+      {
+        "name": "MiseOS Repo Pet",
+        "slug": "repo-pet",
+        "type": "repository-familiar",
+        "tagline": "I guard the code. I nurture the source. I am always here.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      }
+    ],
+    "culinary": [
+      {
+        "name": "Sear Samurai",
+        "slug": "sear-samurai",
+        "class": "Grillardin",
+        "tagline": "Sear. Strike. Savor. Repeat.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      },
+      {
+        "name": "Scale Oni",
+        "slug": "scale-oni",
+        "class": "Rotisseur",
+        "tagline": "Maximum yield. Maximum glory.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      },
+      {
+        "name": "Garnish Ghost",
+        "slug": "garnish-ghost",
+        "class": "Finisher",
+        "tagline": "The final touch turns preparation into presentation.",
+        "status": "pending-assets",
+        "motion_status": "pending-aval"
+      }
+    ]
+  }
+}

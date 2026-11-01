@@ -1,0 +1,20 @@
+{
+  "name": "@mise-os/release-sentinel",
+  "version": "0.2.0",
+  "description": "Scheduled release watcher for MiseOS registry drift detection and update PR planning.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "miseos-release-sentinel": "src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

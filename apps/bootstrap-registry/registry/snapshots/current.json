@@ -1,0 +1,1327 @@
+{
+  "createdAt": "2026-07-02T19:25:56.560Z",
+  "summary": {
+    "generatedAt": "2026-07-02T19:25:56.564Z",
+    "registry": {
+      "id": "miseos.bootstrap-registry",
+      "version": "0.2.0",
+      "name": "MiseOS Bootstrap Registry"
+    },
+    "counts": {
+      "manifests": 20,
+      "coreArtifacts": 20,
+      "highRisk": 4,
+      "mediumRisk": 4,
+      "lowRisk": 12
+    },
+    "byType": {
+      "sdk": 2,
+      "analytics": 2,
+      "policy": 2,
+      "package": 4,
+      "container": 3,
+      "template": 1,
+      "schema": 1,
+      "agent": 4,
+      "workflow": 1
+    },
+    "byTier": {
+      "developer-tooling": 3,
+      "autonomy": 2,
+      "governance": 7,
+      "expansion": 5,
+      "bootstrap": 2,
+      "runtime": 1
+    },
+    "byCriticality": {
+      "high": 7,
+      "critical": 7,
+      "medium": 6
+    },
+    "registries": {
+      "npm": 12,
+      "container": 4,
+      "repo": 2,
+      "gradle": 1,
+      "maven": 1,
+      "nuget": 1,
+      "rubygems": 1
+    },
+    "permissions": {
+      "github.contents:read": 16,
+      "github.attestations:read": 1,
+      "github.packages:read": 8,
+      "github.contents:write": 4,
+      "github.pages:write": 2,
+      "github.security-events:write": 4,
+      "github.packages:write": 2,
+      "github.pull-requests:write": 1,
+      "github.metadata:read": 1,
+      "github.attestations:write": 1,
+      "github.id-token:write": 1
+    },
+    "capabilities": {
+      "define_agent": 1,
+      "validate_capability_contract": 1,
+      "emit_evidence": 1,
+      "compute_metrics": 1,
+      "risk_distribution": 1,
+      "capability_map": 1,
+      "graph_export": 1,
+      "csv_export": 1,
+      "verify_attestation": 1,
+      "check_provenance": 1,
+      "block_unsigned_artifact": 1,
+      "registry_validate": 1,
+      "registry_analyze": 1,
+      "registry_export": 1,
+      "scope_check": 1,
+      "doctor": 1,
+      "build_docs": 1,
+      "generate_dashboard": 1,
+      "export_markdown": 1,
+      "scaffold_docs": 1,
+      "publish_pages": 1,
+      "generate_nav": 1,
+      "gradle_policy_check": 1,
+      "validate_dependencies": 1,
+      "emit_gradle_report": 1,
+      "load_policy": 1,
+      "jvm_build_gate": 1,
+      "emit_build_report": 1,
+      "read_registry": 1,
+      "query_manifest": 1,
+      "parse_policy_report": 1,
+      "policy_gate": 1,
+      "sarif_output": 1,
+      "risk_matrix": 1,
+      "score_risk": 1,
+      "validate_permissions": 1,
+      "enforce_trust_gates": 1,
+      "generate_policy_report": 1,
+      "validate_schema": 1,
+      "publish_schema": 1,
+      "contract_versioning": 1,
+      "detect_drift": 1,
+      "compare_versions": 1,
+      "create_update_plan": 1,
+      "open_pull_request": 1,
+      "scan_repo_health": 1,
+      "check_workflows": 1,
+      "check_docs": 1,
+      "recommend_branch_protection": 1,
+      "audit_registry": 1,
+      "generate_release_notes": 1,
+      "repo_hygiene_check": 1,
+      "run_validation": 1,
+      "run_analytics": 1,
+      "run_policy_checks": 1,
+      "execute_agent_task": 1,
+      "index_sbom": 1,
+      "verify_dependency_snapshot": 1,
+      "emit_sbom_report": 1,
+      "build_trust_graph": 1,
+      "detect_permission_hotspots": 1,
+      "map_agent_dependencies": 1,
+      "lint_actions_permissions": 1,
+      "detect_overprivilege": 1,
+      "recommend_least_privilege": 1,
+      "validate_workflow": 1,
+      "publish_workflow": 1,
+      "attest_workflow": 1,
+      "scorecard_workflow": 1
+    },
+    "risks": [
+      {
+        "id": "miseos.agent-sdk",
+        "name": "MiseOS Agent SDK",
+        "type": "sdk",
+        "score": 6,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read"
+        ]
+      },
+      {
+        "id": "miseos.analytics-engine",
+        "name": "MiseOS Analytics Engine",
+        "type": "analytics",
+        "score": 8,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read"
+        ]
+      },
+      {
+        "id": "miseos.attestation-gate",
+        "name": "MiseOS Attestation Gate",
+        "type": "policy",
+        "score": 29,
+        "level": "low",
+        "reasons": [
+          "network access required"
+        ],
+        "permissions": [
+          "github.attestations:read",
+          "github.contents:read"
+        ]
+      },
+      {
+        "id": "miseos.cli",
+        "name": "MiseOS CLI",
+        "type": "package",
+        "score": 8,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:read"
+        ]
+      },
+      {
+        "id": "miseos.docs-builder",
+        "name": "MiseOS Docs Builder",
+        "type": "container",
+        "score": 63,
+        "level": "high",
+        "reasons": [
+          "write permission requested",
+          "GitHub Pages write access",
+          "not autonomous-safe",
+          "approved write execution mode"
+        ],
+        "permissions": [
+          "github.contents:write",
+          "github.pages:write"
+        ]
+      },
+      {
+        "id": "miseos.docs-hub-template",
+        "name": "MiseOS Docs Hub Template",
+        "type": "template",
+        "score": 70,
+        "level": "high",
+        "reasons": [
+          "write permission requested",
+          "GitHub Pages write access",
+          "not autonomous-safe",
+          "approved write execution mode",
+          "mutating capability present"
+        ],
+        "permissions": [
+          "github.contents:write",
+          "github.pages:write"
+        ]
+      },
+      {
+        "id": "miseos.gradle-plugin",
+        "name": "MiseOS Gradle Plugin",
+        "type": "package",
+        "score": 7,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:read"
+        ]
+      },
+      {
+        "id": "miseos.maven-policy-adapter",
+        "name": "MiseOS Maven Policy Adapter",
+        "type": "package",
+        "score": 7,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:read"
+        ]
+      },
+      {
+        "id": "miseos.nuget-client",
+        "name": "MiseOS NuGet Client",
+        "type": "sdk",
+        "score": 7,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:read"
+        ]
+      },
+      {
+        "id": "miseos.policy-checker",
+        "name": "MiseOS Policy Checker",
+        "type": "container",
+        "score": 56,
+        "level": "medium",
+        "reasons": [
+          "write permission requested",
+          "security events write access",
+          "not autonomous-safe"
+        ],
+        "permissions": [
+          "github.contents:read",
+          "github.security-events:write"
+        ]
+      },
+      {
+        "id": "miseos.policy-engine",
+        "name": "MiseOS Policy Engine",
+        "type": "policy",
+        "score": 58,
+        "level": "medium",
+        "reasons": [
+          "write permission requested",
+          "security events write access",
+          "not autonomous-safe"
+        ],
+        "permissions": [
+          "github.contents:read",
+          "github.security-events:write"
+        ]
+      },
+      {
+        "id": "miseos.registry-schema",
+        "name": "MiseOS Registry Schema",
+        "type": "schema",
+        "score": 50,
+        "level": "medium",
+        "reasons": [
+          "write permission requested",
+          "not autonomous-safe",
+          "mutating capability present"
+        ],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:write"
+        ]
+      },
+      {
+        "id": "miseos.release-sentinel",
+        "name": "MiseOS Release Sentinel",
+        "type": "agent",
+        "score": 87,
+        "level": "high",
+        "reasons": [
+          "write permission requested",
+          "network access required",
+          "not autonomous-safe",
+          "approved write execution mode",
+          "mutating capability present"
+        ],
+        "permissions": [
+          "github.contents:write",
+          "github.packages:read",
+          "github.pull-requests:write"
+        ]
+      },
+      {
+        "id": "miseos.repo-steward",
+        "name": "MiseOS Repo Steward",
+        "type": "agent",
+        "score": 11,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read",
+          "github.metadata:read"
+        ]
+      },
+      {
+        "id": "miseos.ruby-steward",
+        "name": "MiseOS Ruby Steward",
+        "type": "package",
+        "score": 8,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:read"
+        ]
+      },
+      {
+        "id": "miseos.runner",
+        "name": "MiseOS Runner",
+        "type": "container",
+        "score": 14,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:read"
+        ]
+      },
+      {
+        "id": "miseos.sbom-indexer",
+        "name": "MiseOS SBOM Indexer",
+        "type": "agent",
+        "score": 26,
+        "level": "low",
+        "reasons": [
+          "network access required"
+        ],
+        "permissions": [
+          "github.contents:read",
+          "github.packages:read"
+        ]
+      },
+      {
+        "id": "miseos.trust-graph",
+        "name": "MiseOS Trust Graph",
+        "type": "analytics",
+        "score": 10,
+        "level": "low",
+        "reasons": [],
+        "permissions": [
+          "github.contents:read"
+        ]
+      },
+      {
+        "id": "miseos.workflow-linter",
+        "name": "MiseOS Workflow Linter",
+        "type": "agent",
+        "score": 57,
+        "level": "medium",
+        "reasons": [
+          "write permission requested",
+          "security events write access",
+          "not autonomous-safe"
+        ],
+        "permissions": [
+          "github.contents:read",
+          "github.security-events:write"
+        ]
+      },
+      {
+        "id": "miseos.workflow-pack",
+        "name": "MiseOS Workflow Pack",
+        "type": "workflow",
+        "score": 100,
+        "level": "high",
+        "reasons": [
+          "write permission requested",
+          "OIDC token minting allowed",
+          "artifact attestation writes allowed",
+          "security events write access",
+          "network access required",
+          "not autonomous-safe",
+          "approved write execution mode",
+          "mutating capability present"
+        ],
+        "permissions": [
+          "github.attestations:write",
+          "github.contents:write",
+          "github.id-token:write",
+          "github.packages:write",
+          "github.security-events:write"
+        ]
+      }
+    ],
+    "completeness": [
+      {
+        "id": "miseos.agent-sdk",
+        "score": 1
+      },
+      {
+        "id": "miseos.analytics-engine",
+        "score": 1
+      },
+      {
+        "id": "miseos.attestation-gate",
+        "score": 1
+      },
+      {
+        "id": "miseos.cli",
+        "score": 1
+      },
+      {
+        "id": "miseos.docs-builder",
+        "score": 1
+      },
+      {
+        "id": "miseos.docs-hub-template",
+        "score": 1
+      },
+      {
+        "id": "miseos.gradle-plugin",
+        "score": 1
+      },
+      {
+        "id": "miseos.maven-policy-adapter",
+        "score": 1
+      },
+      {
+        "id": "miseos.nuget-client",
+        "score": 1
+      },
+      {
+        "id": "miseos.policy-checker",
+        "score": 1
+      },
+      {
+        "id": "miseos.policy-engine",
+        "score": 1
+      },
+      {
+        "id": "miseos.registry-schema",
+        "score": 1
+      },
+      {
+        "id": "miseos.release-sentinel",
+        "score": 1
+      },
+      {
+        "id": "miseos.repo-steward",
+        "score": 1
+      },
+      {
+        "id": "miseos.ruby-steward",
+        "score": 1
+      },
+      {
+        "id": "miseos.runner",
+        "score": 1
+      },
+      {
+        "id": "miseos.sbom-indexer",
+        "score": 1
+      },
+      {
+        "id": "miseos.trust-graph",
+        "score": 1
+      },
+      {
+        "id": "miseos.workflow-linter",
+        "score": 1
+      },
+      {
+        "id": "miseos.workflow-pack",
+        "score": 1
+      }
+    ],
+    "trustCompliance": [
+      {
+        "id": "miseos.agent-sdk",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.analytics-engine",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.attestation-gate",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.cli",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.docs-builder",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.docs-hub-template",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.gradle-plugin",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.maven-policy-adapter",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.nuget-client",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.policy-checker",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.policy-engine",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.registry-schema",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.release-sentinel",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.repo-steward",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.ruby-steward",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.runner",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.sbom-indexer",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.trust-graph",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.workflow-linter",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      },
+      {
+        "id": "miseos.workflow-pack",
+        "passed": 6,
+        "total": 6,
+        "ratio": 1
+      }
+    ],
+    "gates": {
+      "allManifestsComplete": true,
+      "allTrustEnabled": true,
+      "highRiskRatio": 0.2
+    }
+  },
+  "manifests": [
+    {
+      "id": "miseos.agent-sdk",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/agent-sdk"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "define_agent",
+        "validate_capability_contract",
+        "emit_evidence"
+      ]
+    },
+    {
+      "id": "miseos.analytics-engine",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/analytics-engine"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "compute_metrics",
+        "risk_distribution",
+        "capability_map",
+        "graph_export",
+        "csv_export"
+      ]
+    },
+    {
+      "id": "miseos.attestation-gate",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/attestation-gate"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "attestations": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "verify_attestation",
+        "check_provenance",
+        "block_unsigned_artifact"
+      ]
+    },
+    {
+      "id": "miseos.cli",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/cli"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "registry_validate",
+        "registry_analyze",
+        "registry_export",
+        "scope_check",
+        "doctor"
+      ]
+    },
+    {
+      "id": "miseos.docs-builder",
+      "version": "0.2.0",
+      "artifacts": {
+        "container": "ghcr.io/mise-os/miseos-docs-builder"
+      },
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "pages": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "build_docs",
+        "generate_dashboard",
+        "export_markdown"
+      ]
+    },
+    {
+      "id": "miseos.docs-hub-template",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/docs-hub-template",
+        "repo": "templates/docs-hub"
+      },
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "pages": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "scaffold_docs",
+        "publish_pages",
+        "generate_nav"
+      ]
+    },
+    {
+      "id": "miseos.gradle-plugin",
+      "version": "0.2.0",
+      "artifacts": {
+        "gradle": "dev.miseos.registry-plugin"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "gradle_policy_check",
+        "validate_dependencies",
+        "emit_gradle_report"
+      ]
+    },
+    {
+      "id": "miseos.maven-policy-adapter",
+      "version": "0.2.0",
+      "artifacts": {
+        "maven": "dev.miseos:policy-adapter"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "load_policy",
+        "jvm_build_gate",
+        "emit_build_report"
+      ]
+    },
+    {
+      "id": "miseos.nuget-client",
+      "version": "0.2.0",
+      "artifacts": {
+        "nuget": "MiseOS.Registry.Client"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "read_registry",
+        "query_manifest",
+        "parse_policy_report"
+      ]
+    },
+    {
+      "id": "miseos.policy-checker",
+      "version": "0.2.0",
+      "artifacts": {
+        "container": "ghcr.io/mise-os/miseos-policy-checker"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "policy_gate",
+        "sarif_output",
+        "risk_matrix"
+      ]
+    },
+    {
+      "id": "miseos.policy-engine",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/policy-engine",
+        "container": "ghcr.io/mise-os/miseos-policy-checker"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "score_risk",
+        "validate_permissions",
+        "enforce_trust_gates",
+        "generate_policy_report"
+      ]
+    },
+    {
+      "id": "miseos.registry-schema",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/registry-schema"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "validate_schema",
+        "publish_schema",
+        "contract_versioning"
+      ]
+    },
+    {
+      "id": "miseos.release-sentinel",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/release-sentinel"
+      },
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "pull-requests": "write",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "detect_drift",
+        "compare_versions",
+        "create_update_plan",
+        "open_pull_request"
+      ]
+    },
+    {
+      "id": "miseos.repo-steward",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/repo-steward"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "metadata": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "scan_repo_health",
+        "check_workflows",
+        "check_docs",
+        "recommend_branch_protection"
+      ]
+    },
+    {
+      "id": "miseos.ruby-steward",
+      "version": "0.2.0",
+      "artifacts": {
+        "rubygems": "miseos-steward"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "audit_registry",
+        "generate_release_notes",
+        "repo_hygiene_check"
+      ]
+    },
+    {
+      "id": "miseos.runner",
+      "version": "0.2.0",
+      "artifacts": {
+        "container": "ghcr.io/mise-os/miseos-runner"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "run_validation",
+        "run_analytics",
+        "run_policy_checks",
+        "execute_agent_task"
+      ]
+    },
+    {
+      "id": "miseos.sbom-indexer",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/sbom-indexer"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "packages": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "index_sbom",
+        "verify_dependency_snapshot",
+        "emit_sbom_report"
+      ]
+    },
+    {
+      "id": "miseos.trust-graph",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/trust-graph"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "build_trust_graph",
+        "detect_permission_hotspots",
+        "map_agent_dependencies"
+      ]
+    },
+    {
+      "id": "miseos.workflow-linter",
+      "version": "0.2.0",
+      "artifacts": {
+        "npm": "@mise-os/workflow-linter"
+      },
+      "permissions": {
+        "github": {
+          "contents": "read",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "lint_actions_permissions",
+        "detect_overprivilege",
+        "recommend_least_privilege"
+      ]
+    },
+    {
+      "id": "miseos.workflow-pack",
+      "version": "0.2.0",
+      "artifacts": {
+        "repo": ".github/workflows"
+      },
+      "permissions": {
+        "github": {
+          "contents": "write",
+          "packages": "write",
+          "id-token": "write",
+          "attestations": "write",
+          "security-events": "write"
+        }
+      },
+      "trust": {
+        "licenseRequired": true,
+        "sbomRequired": true,
+        "provenanceRequired": true,
+        "signedReleaseRequired": true,
+        "artifactAttestationRequired": true,
+        "scorecardRequired": true,
+        "humanReviewRequiredFor": [
+          "permission_change",
+          "major_version_upgrade",
+          "security_policy_change",
+          "dependency_source_change",
+          "network_surface_change",
+          "autonomous_execution_change"
+        ]
+      },
+      "capabilities": [
+        "validate_workflow",
+        "publish_workflow",
+        "attest_workflow",
+        "scorecard_workflow"
+      ]
+    }
+  ]
+}

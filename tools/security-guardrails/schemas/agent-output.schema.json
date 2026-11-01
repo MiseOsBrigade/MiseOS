@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentOutput",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "action",
+    "payload",
+    "confidence"
+  ],
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": [
+        "respond",
+        "call_tool",
+        "request_confirmation",
+        "refuse"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "description": "Structured content only — never raw free-text instructions from untrusted sources."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "source_flags": {
+      "type": "object",
+      "properties": {
+        "contains_untrusted_content": {
+          "type": "boolean"
+        },
+        "instruction_override_detected": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

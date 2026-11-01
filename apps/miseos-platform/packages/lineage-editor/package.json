@@ -1,0 +1,15 @@
+{
+  "name": "@miseos/lineage-editor",
+  "version": "0.2.0",
+  "private": false,
+  "description": "Trust-native outline word processor for traceable ideas, sources, rights, evidence, and publishing decisions.",
+  "type": "module",
+  "files": ["../../apps/lineage-editor/index.html", "README.md"],
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs"
+  },
+  "keywords": ["miseos", "outliner", "provenance", "misinformation", "copyright", "ethical-ai"],
+  "license": "MIT",
+  "engines": {"node": ">=20"}
+}

@@ -1,0 +1,17 @@
+{
+  "name": "miseos-token-permission-rpc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MiseOS TOKEN/NFT wallet_requestExecutionPermissions reference scaffold",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "build:native": "c++ -std=c++20 -O2 -Wall -Wextra native/mise_permission_metric.cpp -o native/mise_permission_metric"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.10.0"
+  }
+}

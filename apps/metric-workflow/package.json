@@ -1,0 +1,21 @@
+{
+  "name": "miseos-metric-workflow-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch api/src/server.js",
+    "start": "node api/src/server.js",
+    "test": "node --test api/test/*.test.js",
+    "validate:registry": "node scripts/validate-registry.mjs",
+    "sign:manifest": "node scripts/sign-manifest.mjs",
+    "verify:manifest": "node scripts/verify-manifest.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "miseos-bootstrap-registry",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Analytics-ready bootstrap registry for MiseOS packages, containers, agents, workflows, Git command wrappers, Vite registry console, and 75-card Master Roster gallery.",
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "validate": "node scripts/validate-registry.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "test": "node scripts/test.mjs",
+    "analytics": "node scripts/analyze-registry.mjs",
+    "dashboard": "node scripts/generate-dashboard.mjs",
+    "export": "node scripts/export-registry.mjs",
+    "snapshot": "node scripts/create-snapshot.mjs",
+    "diff": "node scripts/diff-registry.mjs",
+    "scope:check": "node scripts/scope-check.mjs",
+    "sentinel:dry-run": "node packages/release-sentinel/src/index.js --dry-run",
+    "policy:check": "node packages/policy-engine/src/index.js registry/index.json",
+    "verify": "pnpm validate && pnpm analytics && pnpm dashboard && pnpm export && pnpm scope:check && pnpm test && pnpm git:help && pnpm vite:prepare && pnpm vite:validate && pnpm cards:validate && pnpm cards:export",
+    "git:help": "node scripts/mise-git.mjs --help",
+    "git:map": "node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync('registry/git-command-map.json','utf8')).commands,null,2))\"",
+    "vite:prepare": "node scripts/generate-vite-registry-data.mjs",
+    "vite:validate": "node scripts/validate-vite-config.mjs",
+    "vite:dev": "pnpm vite:prepare && pnpm --filter @mise-os/registry-console dev",
+    "vite:build": "pnpm vite:prepare && pnpm --filter @mise-os/registry-console build",
+    "vite:preview": "pnpm --filter @mise-os/registry-console preview",
+    "console:dev": "pnpm vite:dev",
+    "console:build": "pnpm vite:build",
+    "cards:validate": "node scripts/validate-master-roster.mjs",
+    "cards:export": "node scripts/export-master-roster.mjs",
+    "gallery:dev": "pnpm vite:prepare && pnpm cards:export && pnpm --filter @mise-os/registry-console dev",
+    "gallery:build": "pnpm vite:prepare && pnpm cards:export && pnpm --filter @mise-os/registry-console build"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

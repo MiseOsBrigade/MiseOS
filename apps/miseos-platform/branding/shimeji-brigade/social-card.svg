@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+  <title id="title">Shimeji Brigade social card</title>
+  <defs><radialGradient id="bg"><stop stop-color="#174735"/><stop offset="1" stop-color="#07130f"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 540C220 410 350 650 560 510s390-85 640 35v85H0z" fill="#0f2f25"/>
+  <g transform="translate(78 120) scale(1.65)"><circle cx="80" cy="80" r="72" fill="#07130f" stroke="#1e9bb8" stroke-width="5"/><path d="M41 73c-8-17 8-29 22-22 5-22 39-22 44 0 16-7 30 8 21 23v16H41z" fill="#f2c94c" stroke="#f6f1e7" stroke-width="5"/><path d="M48 88h64v35H48z" fill="#f6f1e7" stroke="#0f2f25" stroke-width="5"/></g>
+  <text x="380" y="265" fill="#f2c94c" font-family="ui-rounded, sans-serif" font-size="82" font-weight="900">SHIMEJI</text>
+  <text x="385" y="340" fill="#f6f1e7" font-family="ui-monospace, monospace" font-size="38" letter-spacing="12">BRIGADE</text>
+  <text x="390" y="420" fill="#a8c2b6" font-family="ui-sans-serif, sans-serif" font-size="26">Tiny agents. Big kitchen energy. Proof-first roaming.</text>
+</svg>

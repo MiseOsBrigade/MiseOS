@@ -1,0 +1,25 @@
+{
+  "schema": "miseos.collection.config.v1",
+  "name": "MiseOS Brigade",
+  "symbol": "MISE",
+  "description": "MiseOS character agents, registry manifests, and digital utility artifacts.",
+  "external_url_base": "https://miseos.example/characters",
+  "metadata_version": "v1",
+  "image_version": "v1",
+  "default_royalty_bps": 500,
+  "chain": {
+    "name": "base-sepolia",
+    "chain_id": 84532,
+    "rpc_url": "https://sepolia.base.org"
+  },
+  "contract": {
+    "address": "TODO_DEPLOY_CONTRACT",
+    "voucher_domain_name": "MiseOS Lazy Mint",
+    "voucher_domain_version": "1"
+  },
+  "vision": {
+    "enabled": true,
+    "maximum_labels": 8,
+    "minimum_score": 0.75
+  }
+}

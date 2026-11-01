@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-label="Shimeji Brigade studio badge">
+  <rect width="360" height="120" rx="24" fill="#0f2f25" stroke="#f2c94c" stroke-width="4"/>
+  <circle cx="60" cy="60" r="30" fill="#07130f" stroke="#1e9bb8" stroke-width="4"/>
+  <path d="M43 58c-5-12 7-19 15-14 4-15 22-15 26 0 9-5 17 5 12 14v8H43z" fill="#f2c94c"/>
+  <text x="108" y="55" fill="#f6f1e7" font-family="ui-rounded, sans-serif" font-size="22" font-weight="800">MISEOS STUDIO</text>
+  <text x="108" y="82" fill="#1e9bb8" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2">SHIMEJI BRIGADE</text>
+</svg>

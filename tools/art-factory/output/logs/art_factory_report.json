@@ -1,0 +1,38 @@
+{
+  "schema": "miseos.artfactory.report.v2",
+  "created_at": "2026-07-07T03:31:20Z",
+  "version": "2.0.0-option-b-single-file",
+  "total_agents": 92,
+  "department_counts": {
+    "Data & Insight Kitchen": 15,
+    "Operations": 4,
+    "Pipeline": 19,
+    "Platform": 18,
+    "Reliability": 16,
+    "Security Kitchen": 15,
+    "Insights & Growth": 5
+  },
+  "rarity_counts": {
+    "Mythic": 17,
+    "Legendary": 3,
+    "Epic": 10,
+    "Rare": 23,
+    "Common": 39
+  },
+  "mint_eligible": 53,
+  "strict_refine_only": 20,
+  "fal_models": {
+    "generate": "fal-ai/flux-2/klein/9b",
+    "refine": "fal-ai/nano-banana-2",
+    "card": "openai/gpt-image-2",
+    "background_remove": "pixelcut/background-removal"
+  },
+  "outputs": {
+    "roster": "output/merged_roster.json",
+    "jobs": "output/jobs",
+    "cards": "output/cards",
+    "sprites": "output/sprites",
+    "manifests": "output/manifests",
+    "preview": "output/preview/index.html"
+  }
+}

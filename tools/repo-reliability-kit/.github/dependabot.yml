@@ -1,0 +1,112 @@
+# Dependabot configuration — grouped, weekly, low-noise.
+# Delete the ecosystems you don't use. Uncomment the ones you do.
+# Docs: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+updates:
+
+  # --- npm (JavaScript/TypeScript) ---
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    groups:
+      npm-minor-and-patch:
+        update-types: ["minor", "patch"]
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "npm"]
+    ignore:
+      # Example: hold major version bumps for manual review
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  # --- pip (Python) ---
+  # - package-ecosystem: "pip"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   groups:
+  #     pip-minor-and-patch:
+  #       update-types: ["minor", "patch"]
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "python"]
+
+  # --- Go modules ---
+  # - package-ecosystem: "gomod"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   groups:
+  #     go-minor-and-patch:
+  #       update-types: ["minor", "patch"]
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "go"]
+
+  # --- Cargo (Rust) ---
+  # - package-ecosystem: "cargo"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   groups:
+  #     cargo-minor-and-patch:
+  #       update-types: ["minor", "patch"]
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "rust"]
+
+  # --- Maven (Java) ---
+  # - package-ecosystem: "maven"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "java"]
+
+  # --- NuGet (.NET) ---
+  # - package-ecosystem: "nuget"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "dotnet"]
+
+  # --- Composer (PHP) ---
+  # - package-ecosystem: "composer"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "php"]
+
+  # --- Bundler (RubyGems) ---
+  # - package-ecosystem: "bundler"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "ruby"]
+
+  # --- Pub (Dart/Flutter) ---
+  # - package-ecosystem: "pub"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "monday"
+  #   open-pull-requests-limit: 5
+  #   labels: ["dependencies", "dart"]
+
+  # --- GitHub Actions (always keep this one on) ---
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "github-actions"]

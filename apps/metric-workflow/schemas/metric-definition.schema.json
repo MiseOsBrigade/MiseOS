@@ -1,0 +1,363 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/metric-definition.schema.json",
+  "title": "MiseOS Metric Definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metric_id",
+    "name",
+    "domain",
+    "description",
+    "kind",
+    "unit",
+    "calculation",
+    "direction",
+    "thresholds",
+    "confidence_policy",
+    "sources",
+    "refresh",
+    "owner",
+    "governance",
+    "version"
+  ],
+  "properties": {
+    "metric_id": {
+      "type": "string",
+      "pattern": "^miseos\\.metric\\.[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "delivery",
+        "cost",
+        "quality",
+        "workforce",
+        "risk",
+        "governance",
+        "knowledge",
+        "registry",
+        "character",
+        "commercial",
+        "stakeholder",
+        "composite"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "counter",
+        "gauge",
+        "ratio",
+        "duration",
+        "currency",
+        "score",
+        "composite"
+      ]
+    },
+    "unit": {
+      "type": "string"
+    },
+    "calculation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "expression",
+        "inputs"
+      ],
+      "properties": {
+        "expression": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "window": {
+          "type": "string"
+        },
+        "aggregation": {
+          "type": "string",
+          "enum": [
+            "sum",
+            "avg",
+            "median",
+            "p90",
+            "p95",
+            "p99",
+            "min",
+            "max",
+            "latest",
+            "weighted_sum",
+            "custom"
+          ]
+        },
+        "zero_denominator_policy": {
+          "type": "string",
+          "enum": [
+            "null",
+            "zero",
+            "one",
+            "error",
+            "not_applicable"
+          ]
+        }
+      }
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "higher_is_better",
+        "lower_is_better",
+        "target_band",
+        "neutral"
+      ]
+    },
+    "thresholds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "green",
+        "amber",
+        "red"
+      ],
+      "properties": {
+        "green": {
+          "$ref": "#/$defs/threshold"
+        },
+        "amber": {
+          "$ref": "#/$defs/threshold"
+        },
+        "red": {
+          "$ref": "#/$defs/threshold"
+        }
+      }
+    },
+    "confidence_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimum_for_display",
+        "minimum_for_automation",
+        "factors"
+      ],
+      "properties": {
+        "minimum_for_display": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "minimum_for_automation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "factors": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "freshness",
+            "completeness",
+            "source_reliability",
+            "calculation_reliability",
+            "historical_stability",
+            "independent_verification",
+            "provenance_completeness"
+          ],
+          "properties": {
+            "freshness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "completeness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "source_reliability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "calculation_reliability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "historical_stability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "independent_verification": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "provenance_completeness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "gridops",
+          "github",
+          "github_actions",
+          "logfire",
+          "opentelemetry",
+          "digitalocean",
+          "quicknode",
+          "stripe",
+          "registry_platform",
+          "supermemory",
+          "policy_engine",
+          "incident_system",
+          "survey_system",
+          "manual_attestation"
+        ]
+      }
+    },
+    "refresh": {
+      "type": "string",
+      "enum": [
+        "near_real_time",
+        "per_event",
+        "hourly",
+        "daily",
+        "weekly",
+        "monthly",
+        "quarterly"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "severity",
+        "requires_provenance",
+        "human_review_on_red",
+        "automation_allowed"
+      ],
+      "properties": {
+        "severity": {
+          "type": "string",
+          "enum": [
+            "informational",
+            "operational",
+            "material",
+            "critical"
+          ]
+        },
+        "requires_provenance": {
+          "type": "boolean"
+        },
+        "human_review_on_red": {
+          "type": "boolean"
+        },
+        "automation_allowed": {
+          "type": "boolean"
+        },
+        "red_action": {
+          "type": "string"
+        },
+        "policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "active",
+        "deprecated"
+      ],
+      "default": "active"
+    }
+  },
+  "$defs": {
+    "threshold": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operator",
+        "value"
+      ],
+      "properties": {
+        "operator": {
+          "type": "string",
+          "enum": [
+            ">",
+            ">=",
+            "<",
+            "<=",
+            "==",
+            "between",
+            "outside"
+          ]
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          ]
+        }
+      }
+    }
+  }
+}

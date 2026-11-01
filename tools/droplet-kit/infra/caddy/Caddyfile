@@ -1,0 +1,21 @@
+{$MISEOS_PUBLIC_HOST}
+encode zstd gzip
+@api path /api/*
+handle @api {
+  uri strip_prefix /api
+  reverse_proxy core:8000
+}
+@catalog path /catalog* /assets/* /metadata/* /media/*
+handle @catalog {
+  root * /srv/miseos-repo
+  file_server
+}
+handle {
+  respond "MiseOS Character Intelligence Core is running. API: /api/docs" 200
+}
+header {
+  X-Content-Type-Options "nosniff"
+  X-Frame-Options "DENY"
+  Referrer-Policy "strict-origin-when-cross-origin"
+  Permissions-Policy "camera=(), microphone=(), geolocation=()"
+}

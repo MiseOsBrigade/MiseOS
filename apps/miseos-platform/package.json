@@ -1,0 +1,32 @@
+{
+  "name": "miseos",
+  "private": true,
+  "version": "0.2.0",
+  "description": "MiseOS GridOps, Lineage Editor, NFT minting, package catalog, and payment-ready infrastructure.",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "metadata:generate": "node scripts/generate-metadata.mjs",
+    "lineage:check": "node packages/lineage-editor/scripts/check.mjs",
+    "billing:check": "node services/billing/scripts/check-config.mjs",
+    "validate:static": "npm run lineage:check && npm run billing:check",
+    "validate": "npm run validate:static && npm run compile && npm test && npm run metadata:generate",
+    "fileops:verify": "npm --workspace @miseosbrigade/miseos-fileops run verify",
+    "fileops:build": "npm --workspace @miseosbrigade/miseos-fileops run build",
+    "fileops:start": "npm --workspace @miseosbrigade/miseos-fileops run start",
+    "fileops:payments:check": "node scripts/check-fileops-payments-config.mjs",
+    "fileops:proof": "npm run fileops:verify && npm run fileops:build && npm run fileops:payments:check"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@openzeppelin/contracts": "^5.3.0",
+    "hardhat": "^2.26.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

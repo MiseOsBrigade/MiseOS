@@ -1,0 +1,49 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Commit Intake"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Level",
+      "value": 25
+    },
+    {
+      "trait_type": "Power",
+      "value": 66
+    },
+    {
+      "trait_type": "Precision",
+      "value": 69
+    },
+    {
+      "trait_type": "Speed",
+      "value": 72
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 84
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 68
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 84
+    }
+  ],
+  "description": "Alko Commit Chef is a MiseOS Commit Intake in the Pipeline Kitchen department.",
+  "external_url": "https://miseos.example/characters/alko-commit-chef",
+  "name": "Alko Commit Chef",
+  "record_kind": "character_card",
+  "schema": "miseos.metadata.override.v1"
+}

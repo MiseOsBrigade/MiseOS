@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MiseOS Artifact Manifest",
+  "type": "object",
+  "required": ["schema", "artifactId", "artifactSha256", "metadataSha256", "storageUri", "issuerAccount", "issuedAt"],
+  "properties": {
+    "schema": { "const": "miseos.provenance.v1" },
+    "artifactSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "metadataSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "multi-agent-security-guardrails",
+  "version": "0.1.0",
+  "description": "Layered defense scaffold (schema validation, content filtering, prompt segregation, confirmation gates, monitoring) for feedback-driven multi-agent systems.",
+  "main": "src/validators/output-validator.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "validate-schema": "ajv validate -s schemas/agent-output.schema.json -d \"examples/*.json\"",
+    "test": "npm run validate-schema"
+  },
+  "keywords": [
+    "prompt-injection",
+    "llm-security",
+    "multi-agent",
+    "guardrails"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-cli": "^5.0.0",
+    "eslint": "^9.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

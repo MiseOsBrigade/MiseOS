@@ -1,0 +1,45 @@
+name: MiseOS Repo Pet
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - 'miseos-*'
+      - 'v*'
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kitchen-service:
+    name: Cook · Orchestrate · Deploy · Observe
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify MiseOS Repo Pet package
+        run: node --check bin/mise-roam.mjs
+
+      - name: Run smoke test
+        run: npm test
+
+      - name: Signature
+        run: |
+          echo "MiseOS Repo Pet"
+          echo "Every agent has a role. Every role has purpose. Every action is orchestrated."
+          echo "Cook · Orchestrate · Deploy · Observe"

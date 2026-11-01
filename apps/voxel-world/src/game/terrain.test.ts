@@ -1,0 +1,1 @@
+import{describe,it,expect}from"vitest";import{generateTerrain}from"./terrain";describe("terrain",()=>{it("is deterministic",()=>expect(generateTerrain(8,45)).toEqual(generateTerrain(8,45)));it("changes with seed",()=>expect(generateTerrain(8,45)).not.toEqual(generateTerrain(8,46)));});

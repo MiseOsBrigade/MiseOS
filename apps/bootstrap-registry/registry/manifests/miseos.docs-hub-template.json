@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.docs-hub-template",
+  "name": "MiseOS Docs Hub Template",
+  "type": "template",
+  "version": "0.2.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization",
+    "github": "Mise-OS"
+  },
+  "description": "GitHub Pages-ready documentation hub template for registry dashboards, package lifecycle, trust model, and launch plans.",
+  "artifacts": {
+    "npm": "@mise-os/docs-hub-template",
+    "repo": "templates/docs-hub"
+  },
+  "capabilities": [
+    "scaffold_docs",
+    "publish_pages",
+    "generate_nav"
+  ],
+  "permissions": {
+    "github": {
+      "contents": "write",
+      "pages": "write"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "artifactAttestationRequired": true,
+    "scorecardRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade",
+      "security_policy_change",
+      "dependency_source_change",
+      "network_surface_change",
+      "autonomous_execution_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Requires maintainer approval, migration notes, and compatibility audit.",
+    "minor": "Requires changelog, analytics diff, and policy dry run.",
+    "patch": "May be merged after validation if permissions and trust metadata do not expand."
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": false,
+    "requiresNetwork": false,
+    "outputs": [
+      "json_report",
+      "markdown_report",
+      "csv_metrics"
+    ],
+    "executionMode": "approved_write"
+  },
+  "analytics": {
+    "criticality": "medium",
+    "maturity": "alpha",
+    "riskWeight": 0.38,
+    "operationalTier": "expansion"
+  },
+  "release": {
+    "channel": "alpha",
+    "cadence": "advisory-first until three clean releases",
+    "currentStrategy": "validate, analyze, publish only through signed workflows",
+    "nextMilestone": "0.3.0 governance hardening"
+  },
+  "answers": {
+    "what": "MiseOS Docs Hub Template",
+    "does": "GitHub Pages-ready documentation hub template for registry dashboards, package lifecycle, trust model, and launch plans.",
+    "owner": "MiseOS / Mise-OS organization",
+    "permissions": "{\"github\": {\"contents\": \"write\", \"pages\": \"write\"}}",
+    "registry": "npm: @mise-os/docs-hub-template, repo: templates/docs-hub",
+    "changed": "Expanded v0.2 manifest with analytics, trust, release, and agent execution metadata.",
+    "safe": "Safe only within declared executionMode and permission gates.",
+    "agentExecutable": "Yes, if manifest validation passes and requested permissions match the registry contract."
+  }
+}

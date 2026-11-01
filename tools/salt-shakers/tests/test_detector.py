@@ -84,7 +84,7 @@ class TestDetectProjectType:
     def test_defaults_to_current_directory(self):
         """Test that current directory is used when no path is provided."""
         original_cwd = os.getcwd()
-        os.chdir("/workspace/project/mise-salt-shakers")
+        os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         try:
             result = detect_project_type()
             assert result in ["python", "node", "unknown"]
@@ -122,7 +122,7 @@ class TestVerifyFileExists:
     def test_defaults_to_current_directory(self):
         """Test that current directory is used when no path is provided."""
         original_cwd = os.getcwd()
-        os.chdir("/workspace/project/mise-salt-shakers")
+        os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         try:
             result = verify_file_exists("pyproject.toml")
             assert result is True
@@ -168,7 +168,7 @@ class TestGetProjectFiles:
     def test_defaults_to_current_directory(self):
         """Test that current directory is used when no path is provided."""
         original_cwd = os.getcwd()
-        os.chdir("/workspace/project/mise-salt-shakers")
+        os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         try:
             result = get_project_files()
             assert isinstance(result, list)

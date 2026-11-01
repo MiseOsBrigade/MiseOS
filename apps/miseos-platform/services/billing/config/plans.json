@@ -1,0 +1,50 @@
+{
+  "currency": "usd",
+  "billingProvider": "stripe",
+  "checkoutMode": "subscription",
+  "plans": [
+    {
+      "id": "community",
+      "name": "Community",
+      "monthlyUsd": 0,
+      "stripePriceEnv": null,
+      "features": ["Static playground", "Lineage Editor local mode", "Basic registry", "Community workflows"]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "monthlyUsd": 29,
+      "stripePriceEnv": "STRIPE_PRICE_PRO_MONTHLY",
+      "features": ["Hosted dashboard", "Repo manager", "Workflow linter", "Publishing risk reports"]
+    },
+    {
+      "id": "team",
+      "name": "Team",
+      "monthlyUsd": 99,
+      "stripePriceEnv": "STRIPE_PRICE_TEAM_MONTHLY",
+      "features": ["GitHub App", "MCP connectors", "Policy packs", "Audit logs", "Team review shifts"]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "monthlyUsd": null,
+      "stripePriceEnv": null,
+      "contactSales": true,
+      "features": ["Self-hosted runtime", "SSO", "Compliance", "Private deployment", "Custom agents"]
+    }
+  ],
+  "requiredProductionSecrets": [
+    "STRIPE_SECRET_KEY",
+    "STRIPE_WEBHOOK_SECRET",
+    "STRIPE_PRICE_PRO_MONTHLY",
+    "STRIPE_PRICE_TEAM_MONTHLY"
+  ],
+  "webhookEvents": [
+    "checkout.session.completed",
+    "customer.subscription.created",
+    "customer.subscription.updated",
+    "customer.subscription.deleted",
+    "invoice.paid",
+    "invoice.payment_failed"
+  ]
+}

@@ -1,0 +1,99 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+title MiseOS APIs and Control Apps Architecture
+
+Person(repo_operator, "Repository Operator", "Reviews GridOps, lineage, FileOps, minting, registry, and evidence before release.")
+Person(agent_author, "Agent / Workflow Author", "Defines brigade roles, workflows, package manifests, and validation gates.")
+
+System_Ext(github, "GitHub", "Repository, branches, pull requests, checks, Pages, and Actions.")
+System_Ext(ci, "CI Providers", "Validation status, logs, artifacts, and deployment proofs.")
+System_Ext(packages, "Package Registries", "npm, Maven, NuGet, Gradle, containers, templates, and SDK distribution.")
+System_Ext(blockchain, "EVM Network", "MiseOSBrigade ERC-721 minting and token metadata references.")
+System_Ext(billing_provider, "Billing Provider", "Checkout, webhook, subscription, and entitlement events configured outside Git.")
+System_Ext(ai_providers, "AI / Media Providers", "Model, file, image, video, 3D, and retrieval provider calls guarded by policy.")
+
+System_Boundary(miseos, "MiseOS Repository Operating System") {
+  Container_Boundary(static_apps, "Implemented Static Control Apps") {
+    Container(gridops, "GridOps Playground", "HTML/CSS/JS", "Static repository control board with Atrium, Mise Grid, Repo City, Agent Hangar, Evidence Vault, CI Dojo, Package Forge, and Simulation Lab views.")
+    Container(characters, "Character Gallery", "HTML/CSS/JS", "Interactive proof for the 112 collectible brigade operators.")
+    Container(lineage, "Lineage Editor", "HTML/CSS/JS", "Standalone writing lineage app with local autosave, Markdown/JSON export, source metadata, rights notes, and risk/readiness scoring.")
+    Container(fileops_console, "FileOps Console", "HTML/CSS/JS", "Prepare -> Cook -> Orchestrate -> Deploy -> Observe control app for file routing, policy checks, payload previews, and audit simulation.")
+    Container(mint_ui, "Minting UI", "HTML/CSS/JS", "Collectible minting interface driven by config/mint.json.")
+    Container(shimeji_app, "Shimeji Brigade Scene", "HTML + p5.js WEBGL", "Autonomous chibi roamers with validated 128x128 sprite packs, spinor visuals, and safe procedural fallback; no wallet or minting logic.")
+    Container(repo_pet, "Repo Pet Roamer", "Node.js CLI", "Read-only Shimeji-style terminal mascot that roams the repository with secret-path masking.")
+    ContainerDb(browser_storage, "Browser localStorage", "Web Storage", "Current prototype state for GridOps and Lineage Editor.")
+  }
+
+  Container_Boundary(fileops_package, "Implemented FileOps Package") {
+    Container(fileops_server, "FileOps HTTP Server", "Node.js http + TypeScript", "Serves the FileOps static console on FILEOPS_PORT; currently no mutating API routes.")
+    Component(fileops_pipeline, "FileOps Station Pipeline", "TypeScript", "Provider descriptors, MIME/TTL/size checks, secret-pattern linting, route selection, and Responses-style payload construction.")
+    Component(fileops_policy, "Policy and Payment Validators", "Node scripts", "Validates FileOps payment catalog and prevents secret-pattern leakage.")
+  }
+
+  Container_Boundary(registry_layer, "Repository Data and Registry Layer") {
+    Container(registry_catalog, "Registry Catalog", "JSON + Markdown", "23 product/tool manifests kept separate from the 112 character-card roster.")
+    Container(config_catalogs, "Configuration Catalogs", "JSON", "Commerce plans, mint settings, seed data, package catalog, and generated registry manifests.")
+    Container(metadata_generator, "Metadata Generator", "Node.js", "Builds collectible metadata outputs under cards/metadata.")
+    Container(art_factory, "Art Factory", "Python", "Local artifact and roster generation utility used by repository validation.")
+  }
+
+  Container_Boundary(planned_control_plane, "Planned Production Control Plane APIs") {
+    Container(web_app, "Web Dashboard", "Next.js", "Production GridOps, graph, world, and timeline views.")
+    Container(worker, "Workflow Worker", "Node/Python", "Executes Inspect -> Plan -> Authorize -> Execute -> Validate -> Report -> Archive Evidence missions.")
+    Container(agent_core, "Agent Core", "Package", "Task-scoped capability tokens, permission tiers, blocked actions, budgets, and runtime limits.")
+    Container(evidence_engine, "Evidence Engine", "Package/API", "Certainty protocol, immutable claims, validation outputs, and audit records.")
+    Container(rag_engine, "RAG Engine", "Package/API", "Structured chunking, authorization filters, lexical/vector retrieval, reranking, and citations.")
+    Container(model_router, "Model Router", "Package/API", "Task-to-model routing, fallbacks, cost ceilings, and citation requirements.")
+    Container(billing_service, "Billing Service", "Service", "Provider-neutral checkout, webhook verification, idempotent fulfillment, entitlements, and cancellation.")
+  }
+
+  ContainerDb(postgres, "PostgreSQL", "Relational DB", "Canonical repos, agents, tasks, tools, workflows, runs, evidence, packages, secret events, chunks, and model routes.")
+  ContainerDb(vector_store, "Vector Store", "pgvector/Qdrant", "Semantic retrieval indexes for authorized evidence and source chunks.")
+  ContainerDb(object_store, "Object Storage", "S3-compatible", "Logs, artifacts, snapshots, media, proofs, and release evidence.")
+  ContainerDb(ledger, "Evidence / Action Ledger", "Append-only records", "Tamper-evident mission, validation, approval, and release history.")
+}
+
+Rel(repo_operator, gridops, "Opens and reviews", "Browser")
+Rel(repo_operator, lineage, "Authors and exports lineage", "Browser")
+Rel(repo_operator, fileops_console, "Previews file workflows", "Browser")
+Rel(repo_operator, mint_ui, "Reviews minting flow", "Browser")
+Rel(repo_operator, shimeji_app, "Watches autonomous roamers", "Browser")
+Rel(repo_operator, repo_pet, "Runs safe repo roaming", "Terminal")
+Rel(agent_author, registry_catalog, "Maintains manifests and roster contracts", "Git")
+
+Rel(gridops, browser_storage, "Stores simulation state in")
+Rel(lineage, browser_storage, "Autosaves documents in")
+Rel(fileops_console, fileops_server, "Can be served by", "HTTP")
+Rel(fileops_server, fileops_pipeline, "Uses")
+Rel(fileops_pipeline, fileops_policy, "Validated by")
+Rel(fileops_pipeline, ai_providers, "Builds guarded payloads for", "future provider APIs")
+
+Rel(metadata_generator, registry_catalog, "Reads canonical registry separation")
+Rel(metadata_generator, blockchain, "Publishes metadata references for", "future mint flow")
+Rel(art_factory, registry_catalog, "Generates roster/asset proofs from")
+Rel(config_catalogs, billing_service, "Supplies product and entitlement definitions")
+Rel(billing_service, billing_provider, "Verifies checkout/webhook events with", "future API")
+
+Rel(web_app, worker, "Starts controlled missions through", "API")
+Rel(worker, agent_core, "Requests scoped capabilities from")
+Rel(worker, evidence_engine, "Writes validation claims to")
+Rel(worker, github, "Reads repos, creates branches/PRs, posts checks", "GitHub App")
+Rel(worker, ci, "Reads statuses, logs, and artifacts")
+Rel(worker, packages, "Checks and prepares releases")
+Rel(worker, model_router, "Requests model execution through")
+Rel(model_router, ai_providers, "Routes provider calls")
+Rel(rag_engine, postgres, "Reads structured filters from")
+Rel(rag_engine, vector_store, "Reads semantic matches from")
+Rel(evidence_engine, postgres, "Stores canonical claims in")
+Rel(evidence_engine, object_store, "Archives proofs in")
+Rel(evidence_engine, ledger, "Appends tamper-evident events to")
+Rel(agent_core, postgres, "Persists permissions and runtime state in")
+Rel(billing_service, postgres, "Persists subscriptions and entitlements in")
+
+Rel(github, gridops, "Publishes static proof through GitHub Pages")
+Rel(ci, evidence_engine, "Feeds validation status into", "planned ingestion")
+
+@enduml

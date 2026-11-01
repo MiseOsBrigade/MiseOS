@@ -1,0 +1,5630 @@
+[
+  {
+    "id": "71",
+    "slug": "apprentice-kai",
+    "name": "Apprentice Kai",
+    "role": "Self-Improvement Agent",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Mythic",
+    "role_category": "delivery",
+    "codename": "chef.data-insight.self-improvement-agent",
+    "mise_name": "Mise SelfImprovementAgent",
+    "command": "Self-Improvement Agent",
+    "summary": "Runs self-improvement agent for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "New Zealander",
+    "signature_phrase": "Self-Improvement Agent done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in self-improvement agent so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen self-improvement agent aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/apprentice-kai/full-body.png",
+      "cardPath": "/assets/characters/apprentice-kai/card.png"
+    },
+    "workflow": {
+      "jobName": "Self-Improvement Agent",
+      "roleName": "Self-Improvement Agent microagent",
+      "summary": "Runs self-improvement agent for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Risk Ryota",
+        "Anomaly Aki",
+        "Felix Rollback",
+        "Streama"
+      ]
+    },
+    "stats": {
+      "power": 72,
+      "precision": 89,
+      "speed": 74,
+      "resilience": 80,
+      "intelligence": 85,
+      "teamwork": 96
+    },
+    "synced_agents": [
+      "Risk Ryota",
+      "Anomaly Aki",
+      "Felix Rollback",
+      "Streama"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "63",
+    "slug": "lattice",
+    "name": "Lattice",
+    "role": "Trace Correlator",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Mythic",
+    "role_category": "automation",
+    "codename": "chef.data-insight.trace-correlator",
+    "mise_name": "Mise TraceCorrelator",
+    "command": "Trace Correlator",
+    "summary": "Runs trace correlator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Pan-Orchestral",
+    "signature_phrase": "Trace Correlator done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in trace correlator so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen trace correlator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/lattice/full-body.png",
+      "cardPath": "/assets/characters/lattice/card.png"
+    },
+    "workflow": {
+      "jobName": "Trace Correlator",
+      "roleName": "Trace Correlator microagent",
+      "summary": "Runs trace correlator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Lake Haru",
+        "Repo Ranger",
+        "Lila Branchkeeper",
+        "Terra Forge"
+      ]
+    },
+    "stats": {
+      "power": 92,
+      "precision": 91,
+      "speed": 90,
+      "resilience": 92,
+      "intelligence": 94,
+      "teamwork": 92
+    },
+    "synced_agents": [
+      "Lake Haru",
+      "Repo Ranger",
+      "Lila Branchkeeper",
+      "Terra Forge"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "75",
+    "slug": "roadmap-sensei",
+    "name": "Roadmap Sensei",
+    "role": "Strategic Roadmap Recommender",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Mythic",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.strategic-roadmap-recommender",
+    "mise_name": "Mise StrategicRoadmapRecommender",
+    "command": "Strategic Roadmap Recommender",
+    "summary": "Runs strategic roadmap recommender for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Strategic Roadmap Recommender done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in strategic roadmap recommender so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen strategic roadmap recommender aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/roadmap-sensei/full-body.png",
+      "cardPath": "/assets/characters/roadmap-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Strategic Roadmap Recommender",
+      "roleName": "Strategic Roadmap Recommender microagent",
+      "summary": "Runs strategic roadmap recommender for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Storyteller Sumi",
+        "Pipeline Sensei",
+        "Platform Sensei",
+        "Reliability Sensei"
+      ]
+    },
+    "stats": {
+      "power": 85,
+      "precision": 83,
+      "speed": 75,
+      "resilience": 97,
+      "intelligence": 88,
+      "teamwork": 93
+    },
+    "synced_agents": [
+      "Storyteller Sumi",
+      "Pipeline Sensei",
+      "Platform Sensei",
+      "Reliability Sensei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "1",
+    "slug": "kurogami-senpai",
+    "name": "Kurogami Senpai",
+    "role": "Chef de Cuisine",
+    "department": "Operations",
+    "department_label": "Operations",
+    "department_tagline": "",
+    "rarity": "Mythic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "OPERATIONS::CHEF DE CUISINE",
+    "summary": "Kurogami Senpai is a Mythic Mise Orchestra collectible agent serving as Chef de Cuisine.",
+    "lore": "Kurogami Senpai belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "1",
+    "slug": "alko-commit-chef",
+    "name": "Alko Commit Chef",
+    "role": "Commit Intake",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Mythic",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.commit-intake",
+    "mise_name": "Mise CommitIntake",
+    "command": "Commit Intake",
+    "summary": "Runs commit intake for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Commit Intake done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in commit intake so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen commit intake aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/alko-commit-chef/full-body.png",
+      "cardPath": "/assets/characters/alko-commit-chef/card.png"
+    },
+    "workflow": {
+      "jobName": "Commit Intake",
+      "roleName": "Commit Intake microagent",
+      "summary": "Runs commit intake for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Bruno Blast-Radius",
+        "Template Tanaka",
+        "SLO Sage",
+        "Threat Taro"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 87,
+      "speed": 85,
+      "resilience": 91,
+      "intelligence": 97,
+      "teamwork": 79
+    },
+    "synced_agents": [
+      "Bruno Blast-Radius",
+      "Template Tanaka",
+      "SLO Sage",
+      "Threat Taro"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "8",
+    "slug": "iron-hashi",
+    "name": "Iron Hashi",
+    "role": "Artifact Validator",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Mythic",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.artifact-validator",
+    "mise_name": "Mise ArtifactValidator",
+    "command": "Artifact Validator",
+    "summary": "Runs artifact validator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "Iron Hashi belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "Japanese",
+    "signature_phrase": "Artifact Validator done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in artifact validator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen artifact validator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a crate",
+      "tool": "crate",
+      "spritePath": "/assets/characters/iron-hashi/full-body.png",
+      "cardPath": "/assets/characters/iron-hashi/card.png"
+    },
+    "workflow": {
+      "jobName": "Artifact Validator",
+      "roleName": "Artifact Validator microagent",
+      "summary": "Runs artifact validator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Yume Builder",
+        "Nina Promoter",
+        "Grafana Mei",
+        "OnCall Naomi"
+      ]
+    },
+    "stats": {
+      "power": 97,
+      "precision": 88,
+      "speed": 71,
+      "resilience": 77,
+      "intelligence": 81,
+      "teamwork": 95
+    },
+    "synced_agents": [
+      "Yume Builder",
+      "Nina Promoter",
+      "Grafana Mei",
+      "OnCall Naomi"
+    ],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "4",
+    "slug": "omar-reviewer",
+    "name": "Omar Reviewer",
+    "role": "PR Hygiene Check",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Mythic",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.pr-hygiene-check",
+    "mise_name": "Mise PrHygieneCheck",
+    "command": "PR Hygiene Check",
+    "summary": "Runs pr hygiene check for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Egyptian",
+    "signature_phrase": "PR Hygiene Check done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in pr hygiene check so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen pr hygiene check aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/omar-reviewer/full-body.png",
+      "cardPath": "/assets/characters/omar-reviewer/card.png"
+    },
+    "workflow": {
+      "jobName": "PR Hygiene Check",
+      "roleName": "PR Hygiene Check microagent",
+      "summary": "Runs pr hygiene check for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Lila Branchkeeper",
+        "Hugo Matrix",
+        "Schema Sora",
+        "Capacity Kanna"
+      ]
+    },
+    "stats": {
+      "power": 86,
+      "precision": 96,
+      "speed": 72,
+      "resilience": 90,
+      "intelligence": 80,
+      "teamwork": 76
+    },
+    "synced_agents": [
+      "Lila Branchkeeper",
+      "Hugo Matrix",
+      "Schema Sora",
+      "Capacity Kanna"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "7",
+    "slug": "yume-builder",
+    "name": "Yume Builder",
+    "role": "Artifact Builder",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Mythic",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.artifact-builder",
+    "mise_name": "Mise ArtifactBuilder",
+    "command": "Artifact Builder",
+    "summary": "Runs artifact builder for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Korean",
+    "signature_phrase": "Artifact Builder done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in artifact builder so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen artifact builder aura",
+      "silhouette": "multinational chibi DevOps chef carrying a crate",
+      "tool": "crate",
+      "spritePath": "/assets/characters/yume-builder/full-body.png",
+      "cardPath": "/assets/characters/yume-builder/card.png"
+    },
+    "workflow": {
+      "jobName": "Artifact Builder",
+      "roleName": "Artifact Builder microagent",
+      "summary": "Runs artifact builder for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Seira Scan",
+        "Iron Hashi",
+        "Policy Kenji",
+        "Pager Hiro"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 87,
+      "speed": 68,
+      "resilience": 70,
+      "intelligence": 97,
+      "teamwork": 82
+    },
+    "synced_agents": [
+      "Seira Scan",
+      "Iron Hashi",
+      "Policy Kenji",
+      "Pager Hiro"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "17",
+    "slug": "bootstrap-aiko",
+    "name": "Bootstrap Aiko",
+    "role": "New Service Wizard",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Mythic",
+    "role_category": "platform",
+    "codename": "chef.platform.new-service-wizard",
+    "mise_name": "Mise NewServiceWizard",
+    "command": "New Service Wizard",
+    "summary": "Runs new service wizard for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "New Service Wizard done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in new service wizard so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen new service wizard aura",
+      "silhouette": "multinational chibi DevOps chef carrying a tablet",
+      "tool": "tablet",
+      "spritePath": "/assets/characters/bootstrap-aiko/full-body.png",
+      "cardPath": "/assets/characters/bootstrap-aiko/card.png"
+    },
+    "workflow": {
+      "jobName": "New Service Wizard",
+      "roleName": "New Service Wizard microagent",
+      "summary": "Runs new service wizard for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Template Tanaka",
+        "Terra Forge",
+        "Bruno Blast-Radius",
+        "Trace Sensei"
+      ]
+    },
+    "stats": {
+      "power": 95,
+      "precision": 78,
+      "speed": 77,
+      "resilience": 91,
+      "intelligence": 97,
+      "teamwork": 79
+    },
+    "synced_agents": [
+      "Template Tanaka",
+      "Terra Forge",
+      "Bruno Blast-Radius",
+      "Trace Sensei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "15",
+    "slug": "orchestra-core",
+    "name": "Orchestra Core",
+    "role": "Chef Spirit",
+    "department": "Platform",
+    "department_label": "Platform",
+    "department_tagline": "",
+    "rarity": "Mythic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "PLATFORM::CHEF SPIRIT",
+    "summary": "Orchestra Core is a Mythic Mise Orchestra collectible agent serving as Chef Spirit.",
+    "lore": "Orchestra Core belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "25",
+    "slug": "queue-mizu",
+    "name": "Queue Mizu",
+    "role": "Job & Queue Templates",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Mythic",
+    "role_category": "platform",
+    "codename": "chef.platform.job-queue-templates",
+    "mise_name": "Mise JobQueueTemplates",
+    "command": "Job & Queue Templates",
+    "summary": "Runs job & queue templates for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Job and Queue Templates done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in job & queue templates so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen job & queue templates aura",
+      "silhouette": "multinational chibi DevOps chef carrying a bowl",
+      "tool": "bowl",
+      "spritePath": "/assets/characters/queue-mizu/full-body.png",
+      "cardPath": "/assets/characters/queue-mizu/card.png"
+    },
+    "workflow": {
+      "jobName": "Job & Queue Templates",
+      "roleName": "Job & Queue Templates microagent",
+      "summary": "Runs job & queue templates for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Umami Code",
+        "Streama",
+        "Release Conductor",
+        "Backlog Benji"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 98,
+      "speed": 84,
+      "resilience": 74,
+      "intelligence": 83,
+      "teamwork": 78
+    },
+    "synced_agents": [
+      "Umami Code",
+      "Streama",
+      "Release Conductor",
+      "Backlog Benji"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "26",
+    "slug": "streama",
+    "name": "Streama",
+    "role": "Data Streaming Profiles",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Mythic",
+    "role_category": "delivery",
+    "codename": "chef.platform.data-streaming-profiles",
+    "mise_name": "Mise DataStreamingProfiles",
+    "command": "Data Streaming Profiles",
+    "summary": "Runs data streaming profiles for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "Streama belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "Norwegian",
+    "signature_phrase": "Data Streaming Profiles done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in data streaming profiles so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen data streaming profiles aura",
+      "silhouette": "multinational chibi DevOps chef carrying a bowl",
+      "tool": "bowl",
+      "spritePath": "/assets/characters/streama/full-body.png",
+      "cardPath": "/assets/characters/streama/card.png"
+    },
+    "workflow": {
+      "jobName": "Data Streaming Profiles",
+      "roleName": "Data Streaming Profiles microagent",
+      "summary": "Runs data streaming profiles for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Queue Mizu",
+        "Preview Yuki",
+        "Felix Rollback",
+        "Metrics Miko"
+      ]
+    },
+    "stats": {
+      "power": 71,
+      "precision": 74,
+      "speed": 89,
+      "resilience": 83,
+      "intelligence": 94,
+      "teamwork": 93
+    },
+    "synced_agents": [
+      "Queue Mizu",
+      "Preview Yuki",
+      "Felix Rollback",
+      "Metrics Miko"
+    ],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "24",
+    "slug": "umami-code",
+    "name": "Umami Code",
+    "role": "Traffic & Ingress Manager",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Mythic",
+    "role_category": "platform",
+    "codename": "chef.platform.traffic-ingress-manager",
+    "mise_name": "Mise TrafficIngressManager",
+    "command": "Traffic & Ingress Manager",
+    "summary": "Runs traffic & ingress manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "Umami Code belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "Japanese",
+    "signature_phrase": "Traffic and Ingress Manager done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in traffic & ingress manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen traffic & ingress manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a ladle",
+      "tool": "ladle",
+      "spritePath": "/assets/characters/umami-code/full-body.png",
+      "cardPath": "/assets/characters/umami-code/card.png"
+    },
+    "workflow": {
+      "jobName": "Traffic & Ingress Manager",
+      "roleName": "Traffic & Ingress Manager microagent",
+      "summary": "Runs traffic & ingress manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Grafana Mei",
+        "Queue Mizu",
+        "Nina Promoter",
+        "Review Ren"
+      ]
+    },
+    "stats": {
+      "power": 71,
+      "precision": 97,
+      "speed": 81,
+      "resilience": 95,
+      "intelligence": 74,
+      "teamwork": 89
+    },
+    "synced_agents": [
+      "Grafana Mei",
+      "Queue Mizu",
+      "Nina Promoter",
+      "Review Ren"
+    ],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "41",
+    "slug": "metrics-miko",
+    "name": "Metrics Miko",
+    "role": "SLO Dashboards",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Mythic",
+    "role_category": "reliability",
+    "codename": "chef.reliability.slo-dashboards",
+    "mise_name": "Mise SloDashboards",
+    "command": "SLO Dashboards",
+    "summary": "Runs slo dashboards for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "Metrics Miko belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "Japanese",
+    "signature_phrase": "SLO Dashboards done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in slo dashboards so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen slo dashboards aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/metrics-miko/full-body.png",
+      "cardPath": "/assets/characters/metrics-miko/card.png"
+    },
+    "workflow": {
+      "jobName": "SLO Dashboards",
+      "roleName": "SLO Dashboards microagent",
+      "summary": "Runs slo dashboards for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Backlog Benji",
+        "Forecast Fuji",
+        "Felix Rollback",
+        "Streama"
+      ]
+    },
+    "stats": {
+      "power": 88,
+      "precision": 95,
+      "speed": 82,
+      "resilience": 80,
+      "intelligence": 89,
+      "teamwork": 84
+    },
+    "synced_agents": [
+      "Backlog Benji",
+      "Forecast Fuji",
+      "Felix Rollback",
+      "Streama"
+    ],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "31",
+    "slug": "slo-sage",
+    "name": "SLO Sage",
+    "role": "SLO Definition Workflow",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Mythic",
+    "role_category": "reliability",
+    "codename": "chef.reliability.slo-definition-workflow",
+    "mise_name": "Mise SloDefinitionWorkflow",
+    "command": "SLO Definition Workflow",
+    "summary": "Runs slo definition workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "SLO Sage belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "Indian",
+    "signature_phrase": "SLO Definition Workflow done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in slo definition workflow so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen slo definition workflow aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/slo-sage/full-body.png",
+      "cardPath": "/assets/characters/slo-sage/card.png"
+    },
+    "workflow": {
+      "jobName": "SLO Definition Workflow",
+      "roleName": "SLO Definition Workflow microagent",
+      "summary": "Runs slo definition workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Trace Sensei",
+        "Alko Commit Chef",
+        "Template Tanaka",
+        "Threat Taro"
+      ]
+    },
+    "stats": {
+      "power": 85,
+      "precision": 98,
+      "speed": 95,
+      "resilience": 81,
+      "intelligence": 83,
+      "teamwork": 81
+    },
+    "synced_agents": [
+      "Trace Sensei",
+      "Alko Commit Chef",
+      "Template Tanaka",
+      "Threat Taro"
+    ],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "52",
+    "slug": "policy-ronin",
+    "name": "Policy Ronin",
+    "role": "Policy-as-Code Engine",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Mythic",
+    "role_category": "security",
+    "codename": "chef.security.policy-as-code-engine",
+    "mise_name": "Mise PolicyAsCodeEngine",
+    "command": "Policy-as-Code Engine",
+    "summary": "Runs policy-as-code engine for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Policy-as-Code Engine done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in policy-as-code engine so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen policy-as-code engine aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/policy-ronin/full-body.png",
+      "cardPath": "/assets/characters/policy-ronin/card.png"
+    },
+    "workflow": {
+      "jobName": "Policy-as-Code Engine",
+      "roleName": "Policy-as-Code Engine microagent",
+      "summary": "Runs policy-as-code engine for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Seira Vaultkeeper",
+        "Merge Sentinel",
+        "Yume Builder",
+        "Policy Kenji"
+      ]
+    },
+    "stats": {
+      "power": 95,
+      "precision": 98,
+      "speed": 77,
+      "resilience": 91,
+      "intelligence": 84,
+      "teamwork": 81
+    },
+    "synced_agents": [
+      "Seira Vaultkeeper",
+      "Merge Sentinel",
+      "Yume Builder",
+      "Policy Kenji"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "51",
+    "slug": "seira-vaultkeeper",
+    "name": "Seira Vaultkeeper",
+    "role": "Secrets Lifecycle Manager",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Mythic",
+    "role_category": "security",
+    "codename": "chef.security.secrets-lifecycle-manager",
+    "mise_name": "Mise SecretsLifecycleManager",
+    "command": "Secrets Lifecycle Manager",
+    "summary": "Runs secrets lifecycle manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Secrets Lifecycle Manager done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in secrets lifecycle manager so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen secrets lifecycle manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a key",
+      "tool": "key",
+      "spritePath": "/assets/characters/seira-vaultkeeper/full-body.png",
+      "cardPath": "/assets/characters/seira-vaultkeeper/card.png"
+    },
+    "workflow": {
+      "jobName": "Secrets Lifecycle Manager",
+      "roleName": "Secrets Lifecycle Manager microagent",
+      "summary": "Runs secrets lifecycle manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Container Kage",
+        "Policy Ronin",
+        "Seira Scan",
+        "Vault Hana"
+      ]
+    },
+    "stats": {
+      "power": 96,
+      "precision": 97,
+      "speed": 74,
+      "resilience": 84,
+      "intelligence": 75,
+      "teamwork": 92
+    },
+    "synced_agents": [
+      "Container Kage",
+      "Policy Ronin",
+      "Seira Scan",
+      "Vault Hana"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "21",
+    "slug": "chaos-analyst",
+    "name": "Chaos Analyst",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "department_label": "Insights & Growth",
+    "department_tagline": "",
+    "rarity": "Legendary",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "INSIGHTS & GROWTH::GUEST CHEF",
+    "summary": "Chaos Analyst is a Legendary Mise Orchestra collectible agent serving as Guest Chef.",
+    "lore": "Chaos Analyst belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "23",
+    "slug": "culture-chef",
+    "name": "Culture Chef",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "department_label": "Insights & Growth",
+    "department_tagline": "",
+    "rarity": "Legendary",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "INSIGHTS & GROWTH::GUEST CHEF",
+    "summary": "Culture Chef is a Legendary Mise Orchestra collectible agent serving as Guest Chef.",
+    "lore": "Culture Chef belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "12",
+    "slug": "scale-oni",
+    "name": "Scale Oni",
+    "role": "Rotisseur",
+    "department": "Operations",
+    "department_label": "Operations",
+    "department_tagline": "",
+    "rarity": "Legendary",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "OPERATIONS::ROTISSEUR",
+    "summary": "Scale Oni is a Legendary Mise Orchestra collectible agent serving as Rotisseur.",
+    "lore": "Scale Oni belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": true
+  },
+  {
+    "id": "22",
+    "slug": "growth-guru",
+    "name": "Growth Guru",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "department_label": "Insights & Growth",
+    "department_tagline": "",
+    "rarity": "Epic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "INSIGHTS & GROWTH::GUEST CHEF",
+    "summary": "Growth Guru is a Epic Mise Orchestra collectible agent serving as Guest Chef.",
+    "lore": "Growth Guru belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "20",
+    "slug": "insight-sensei",
+    "name": "Insight Sensei",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "department_label": "Insights & Growth",
+    "department_tagline": "",
+    "rarity": "Epic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "INSIGHTS & GROWTH::GUEST CHEF",
+    "summary": "Insight Sensei is a Epic Mise Orchestra collectible agent serving as Guest Chef.",
+    "lore": "Insight Sensei belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "5",
+    "slug": "kaji",
+    "name": "Kaji",
+    "role": "Grillardin",
+    "department": "Operations",
+    "department_label": "Operations",
+    "department_tagline": "",
+    "rarity": "Epic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "OPERATIONS::GRILLARDIN",
+    "summary": "Kaji is a Epic Mise Orchestra collectible agent serving as Grillardin.",
+    "lore": "Kaji belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "9",
+    "slug": "flash-riku",
+    "name": "Flash Riku",
+    "role": "Runner",
+    "department": "Pipeline",
+    "department_label": "Pipeline",
+    "department_tagline": "",
+    "rarity": "Epic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "PIPELINE::RUNNER",
+    "summary": "Flash Riku is a Epic Mise Orchestra collectible agent serving as Runner.",
+    "lore": "Flash Riku belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "15",
+    "slug": "pipeline-sensei",
+    "name": "Pipeline Sensei",
+    "role": "Pipeline Tuner Agent",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Epic",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.pipeline-tuner-agent",
+    "mise_name": "Mise PipelineTunerAgent",
+    "command": "Pipeline Tuner Agent",
+    "summary": "Runs pipeline tuner agent for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Pipeline Tuner Agent done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in pipeline tuner agent so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen pipeline tuner agent aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/pipeline-sensei/full-body.png",
+      "cardPath": "/assets/characters/pipeline-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Pipeline Tuner Agent",
+      "roleName": "Pipeline Tuner Agent microagent",
+      "summary": "Runs pipeline tuner agent for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Canary Taster",
+        "Platform Sensei",
+        "Reliability Sensei",
+        "Red Oni"
+      ]
+    },
+    "stats": {
+      "power": 94,
+      "precision": 73,
+      "speed": 68,
+      "resilience": 74,
+      "intelligence": 76,
+      "teamwork": 98
+    },
+    "synced_agents": [
+      "Canary Taster",
+      "Platform Sensei",
+      "Reliability Sensei",
+      "Red Oni"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "11",
+    "slug": "kuro-guard",
+    "name": "Kuro Guard",
+    "role": "Steward",
+    "department": "Platform",
+    "department_label": "Platform",
+    "department_tagline": "",
+    "rarity": "Epic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "PLATFORM::STEWARD",
+    "summary": "Kuro Guard is a Epic Mise Orchestra collectible agent serving as Steward.",
+    "lore": "Kuro Guard belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "30",
+    "slug": "platform-sensei",
+    "name": "Platform Sensei",
+    "role": "Platform Health Board",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Epic",
+    "role_category": "platform",
+    "codename": "chef.platform.platform-health-board",
+    "mise_name": "Mise PlatformHealthBoard",
+    "command": "Platform Health Board",
+    "summary": "Runs platform health board for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Platform Health Board done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in platform health board so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen platform health board aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/platform-sensei/full-body.png",
+      "cardPath": "/assets/characters/platform-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Platform Health Board",
+      "roleName": "Platform Health Board microagent",
+      "summary": "Runs platform health board for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Guardrail Goro",
+        "Pipeline Sensei",
+        "Reliability Sensei",
+        "Red Oni"
+      ]
+    },
+    "stats": {
+      "power": 76,
+      "precision": 87,
+      "speed": 82,
+      "resilience": 92,
+      "intelligence": 89,
+      "teamwork": 82
+    },
+    "synced_agents": [
+      "Guardrail Goro",
+      "Pipeline Sensei",
+      "Reliability Sensei",
+      "Red Oni"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "10",
+    "slug": "seira",
+    "name": "Seira",
+    "role": "Sommelier",
+    "department": "Platform",
+    "department_label": "Platform",
+    "department_tagline": "",
+    "rarity": "Epic",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "PLATFORM::SOMMELIER",
+    "summary": "Seira is a Epic Mise Orchestra collectible agent serving as Sommelier.",
+    "lore": "Seira belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "45",
+    "slug": "reliability-sensei",
+    "name": "Reliability Sensei",
+    "role": "Reliability Advisor Agent",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Epic",
+    "role_category": "reliability",
+    "codename": "chef.reliability.reliability-advisor-agent",
+    "mise_name": "Mise ReliabilityAdvisorAgent",
+    "command": "Reliability Advisor Agent",
+    "summary": "Runs reliability advisor agent for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Reliability Advisor Agent done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in reliability advisor agent so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen reliability advisor agent aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/reliability-sensei/full-body.png",
+      "cardPath": "/assets/characters/reliability-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Reliability Advisor Agent",
+      "roleName": "Reliability Advisor Agent microagent",
+      "summary": "Runs reliability advisor agent for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Impact Ichi",
+        "Pipeline Sensei",
+        "Platform Sensei",
+        "Red Oni"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 86,
+      "speed": 80,
+      "resilience": 94,
+      "intelligence": 89,
+      "teamwork": 78
+    },
+    "synced_agents": [
+      "Impact Ichi",
+      "Pipeline Sensei",
+      "Platform Sensei",
+      "Red Oni"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "60",
+    "slug": "red-oni",
+    "name": "Red Oni",
+    "role": "Red Team / Chaos Security Mode",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Epic",
+    "role_category": "security",
+    "codename": "chef.security.red-team-chaos-security-mode",
+    "mise_name": "Mise RedTeam",
+    "command": "Red Team / Chaos Security Mode",
+    "summary": "Runs red team / chaos security mode for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Red Team / Chaos Security Mode done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in red team / chaos security mode so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen red team / chaos security mode aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/red-oni/full-body.png",
+      "cardPath": "/assets/characters/red-oni/card.png"
+    },
+    "workflow": {
+      "jobName": "Red Team / Chaos Security Mode",
+      "roleName": "Red Team / Chaos Security Mode microagent",
+      "summary": "Runs red team / chaos security mode for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Scorecard Shin",
+        "Pipeline Sensei",
+        "Platform Sensei",
+        "Reliability Sensei"
+      ]
+    },
+    "stats": {
+      "power": 91,
+      "precision": 84,
+      "speed": 77,
+      "resilience": 95,
+      "intelligence": 88,
+      "teamwork": 97
+    },
+    "synced_agents": [
+      "Scorecard Shin",
+      "Pipeline Sensei",
+      "Platform Sensei",
+      "Reliability Sensei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "70",
+    "slug": "risk-ryota",
+    "name": "Risk Ryota",
+    "role": "Risk Scoring Model",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Rare",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.risk-scoring-model",
+    "mise_name": "Mise RiskScoringModel",
+    "command": "Risk Scoring Model",
+    "summary": "Runs risk scoring model for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Risk Scoring Model done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in risk scoring model so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen risk scoring model aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/risk-ryota/full-body.png",
+      "cardPath": "/assets/characters/risk-ryota/card.png"
+    },
+    "workflow": {
+      "jobName": "Risk Scoring Model",
+      "roleName": "Risk Scoring Model microagent",
+      "summary": "Runs risk scoring model for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Revenue Rina",
+        "Apprentice Kai",
+        "Release Conductor",
+        "Queue Mizu"
+      ]
+    },
+    "stats": {
+      "power": 96,
+      "precision": 83,
+      "speed": 94,
+      "resilience": 96,
+      "intelligence": 96,
+      "teamwork": 78
+    },
+    "synced_agents": [
+      "Revenue Rina",
+      "Apprentice Kai",
+      "Release Conductor",
+      "Queue Mizu"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "19",
+    "slug": "data-chan",
+    "name": "Data-chan",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "department_label": "Insights & Growth",
+    "department_tagline": "",
+    "rarity": "Rare",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "INSIGHTS & GROWTH::GUEST CHEF",
+    "summary": "Data-chan is a Rare Mise Orchestra collectible agent serving as Guest Chef.",
+    "lore": "Data-chan belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "3",
+    "slug": "mizu",
+    "name": "Mizu",
+    "role": "Prep Chef",
+    "department": "Operations",
+    "department_label": "Operations",
+    "department_tagline": "",
+    "rarity": "Rare",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "OPERATIONS::PREP CHEF",
+    "summary": "Mizu is a Rare Mise Orchestra collectible agent serving as Prep Chef.",
+    "lore": "Mizu belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "2",
+    "slug": "bruno-blast-radius",
+    "name": "Bruno Blast-Radius",
+    "role": "Change Impact Scanner",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Rare",
+    "role_category": "automation",
+    "codename": "chef.pipeline.change-impact-scanner",
+    "mise_name": "Mise ChangeImpactScanner",
+    "command": "Change Impact Scanner",
+    "summary": "Runs change impact scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Brazilian",
+    "signature_phrase": "Change Impact Scanner done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in change impact scanner so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen change impact scanner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/bruno-blast-radius/full-body.png",
+      "cardPath": "/assets/characters/bruno-blast-radius/card.png"
+    },
+    "workflow": {
+      "jobName": "Change Impact Scanner",
+      "roleName": "Change Impact Scanner microagent",
+      "summary": "Runs change impact scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Alko Commit Chef",
+        "Lila Branchkeeper",
+        "Bootstrap Aiko",
+        "Trace Sensei"
+      ]
+    },
+    "stats": {
+      "power": 89,
+      "precision": 95,
+      "speed": 95,
+      "resilience": 77,
+      "intelligence": 88,
+      "teamwork": 99
+    },
+    "synced_agents": [
+      "Alko Commit Chef",
+      "Lila Branchkeeper",
+      "Bootstrap Aiko",
+      "Trace Sensei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "13",
+    "slug": "build-kun",
+    "name": "Build-Kun",
+    "role": "Boulanger",
+    "department": "Pipeline",
+    "department_label": "Pipeline",
+    "department_tagline": "",
+    "rarity": "Rare",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "PIPELINE::BOULANGER",
+    "summary": "Build-Kun is a Rare Mise Orchestra collectible agent serving as Boulanger.",
+    "lore": "Build-Kun belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "14",
+    "slug": "canary-taster",
+    "name": "Canary Taster",
+    "role": "Pipeline Observability",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Rare",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.pipeline-observability",
+    "mise_name": "Mise PipelineObservability",
+    "command": "Pipeline Observability",
+    "summary": "Runs pipeline observability for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "Canary Taster belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "Peruvian",
+    "signature_phrase": "Pipeline Observability done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in pipeline observability so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen pipeline observability aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/canary-taster/full-body.png",
+      "cardPath": "/assets/characters/canary-taster/card.png"
+    },
+    "workflow": {
+      "jobName": "Pipeline Observability",
+      "roleName": "Pipeline Observability microagent",
+      "summary": "Runs pipeline observability for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Ivun Cache",
+        "Pipeline Sensei",
+        "Guardrail Goro",
+        "Impact Ichi"
+      ]
+    },
+    "stats": {
+      "power": 92,
+      "precision": 96,
+      "speed": 90,
+      "resilience": 92,
+      "intelligence": 89,
+      "teamwork": 82
+    },
+    "synced_agents": [
+      "Ivun Cache",
+      "Pipeline Sensei",
+      "Guardrail Goro",
+      "Impact Ichi"
+    ],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "3",
+    "slug": "lila-branchkeeper",
+    "name": "Lila Branchkeeper",
+    "role": "Branch Policy Gate",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Rare",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.branch-policy-gate",
+    "mise_name": "Mise BranchPolicyGate",
+    "command": "Branch Policy Gate",
+    "summary": "Runs branch policy gate for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "French",
+    "signature_phrase": "Branch Policy Gate done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in branch policy gate so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen branch policy gate aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/lila-branchkeeper/full-body.png",
+      "cardPath": "/assets/characters/lila-branchkeeper/card.png"
+    },
+    "workflow": {
+      "jobName": "Branch Policy Gate",
+      "roleName": "Branch Policy Gate microagent",
+      "summary": "Runs branch policy gate for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Bruno Blast-Radius",
+        "Omar Reviewer",
+        "Terra Forge",
+        "Chaos Kaito"
+      ]
+    },
+    "stats": {
+      "power": 92,
+      "precision": 73,
+      "speed": 74,
+      "resilience": 88,
+      "intelligence": 76,
+      "teamwork": 92
+    },
+    "synced_agents": [
+      "Bruno Blast-Radius",
+      "Omar Reviewer",
+      "Terra Forge",
+      "Chaos Kaito"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "6",
+    "slug": "seira-scan",
+    "name": "Seira Scan",
+    "role": "Security Scan Stage",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.pipeline.security-scan-stage",
+    "mise_name": "Mise SecurityScanStage",
+    "command": "Security Scan Stage",
+    "summary": "Runs security scan stage for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Security Scan Stage done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in security scan stage so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen security scan stage aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/seira-scan/full-body.png",
+      "cardPath": "/assets/characters/seira-scan/card.png"
+    },
+    "workflow": {
+      "jobName": "Security Scan Stage",
+      "roleName": "Security Scan Stage microagent",
+      "summary": "Runs security scan stage for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Hugo Matrix",
+        "Yume Builder",
+        "Vault Hana",
+        "Alert Akira"
+      ]
+    },
+    "stats": {
+      "power": 97,
+      "precision": 84,
+      "speed": 91,
+      "resilience": 89,
+      "intelligence": 86,
+      "teamwork": 91
+    },
+    "synced_agents": [
+      "Hugo Matrix",
+      "Yume Builder",
+      "Vault Hana",
+      "Alert Akira"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "2",
+    "slug": "tensho",
+    "name": "Tensho",
+    "role": "Expediter",
+    "department": "Pipeline",
+    "department_label": "Pipeline",
+    "department_tagline": "",
+    "rarity": "Rare",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "PIPELINE::EXPEDITER",
+    "summary": "Tensho is a Rare Mise Orchestra collectible agent serving as Expediter.",
+    "lore": "Tensho belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "6",
+    "slug": "yume",
+    "name": "Yume",
+    "role": "Pastry Chef",
+    "department": "Pipeline",
+    "department_label": "Pipeline",
+    "department_tagline": "",
+    "rarity": "Rare",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "PIPELINE::PASTRY CHEF",
+    "summary": "Yume is a Rare Mise Orchestra collectible agent serving as Pastry Chef.",
+    "lore": "Yume belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "22",
+    "slug": "policy-kenji",
+    "name": "Policy Kenji",
+    "role": "Policy Packs",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Rare",
+    "role_category": "automation",
+    "codename": "chef.platform.policy-packs",
+    "mise_name": "Mise PolicyPacks",
+    "command": "Policy Packs",
+    "summary": "Runs policy packs for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Policy Packs done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in policy packs so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen policy packs aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/policy-kenji/full-body.png",
+      "cardPath": "/assets/characters/policy-kenji/card.png"
+    },
+    "workflow": {
+      "jobName": "Policy Packs",
+      "roleName": "Policy Packs microagent",
+      "summary": "Runs policy packs for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Vault Hana",
+        "Grafana Mei",
+        "Yume Builder",
+        "Pager Hiro"
+      ]
+    },
+    "stats": {
+      "power": 94,
+      "precision": 88,
+      "speed": 68,
+      "resilience": 74,
+      "intelligence": 74,
+      "teamwork": 80
+    },
+    "synced_agents": [
+      "Vault Hana",
+      "Grafana Mei",
+      "Yume Builder",
+      "Pager Hiro"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "21",
+    "slug": "vault-hana",
+    "name": "Vault Hana",
+    "role": "Secrets & Config Broker",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.platform.secrets-config-broker",
+    "mise_name": "Mise SecretsConfigBroker",
+    "command": "Secrets & Config Broker",
+    "summary": "Runs secrets & config broker for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Secrets and Config Broker done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in secrets & config broker so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen secrets & config broker aura",
+      "silhouette": "multinational chibi DevOps chef carrying a key",
+      "tool": "key",
+      "spritePath": "/assets/characters/vault-hana/full-body.png",
+      "cardPath": "/assets/characters/vault-hana/card.png"
+    },
+    "workflow": {
+      "jobName": "Secrets & Config Broker",
+      "roleName": "Secrets & Config Broker microagent",
+      "summary": "Runs secrets & config broker for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Runtime Riku",
+        "Policy Kenji",
+        "Seira Scan",
+        "Alert Akira"
+      ]
+    },
+    "stats": {
+      "power": 91,
+      "precision": 83,
+      "speed": 89,
+      "resilience": 91,
+      "intelligence": 86,
+      "teamwork": 87
+    },
+    "synced_agents": [
+      "Runtime Riku",
+      "Policy Kenji",
+      "Seira Scan",
+      "Alert Akira"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "35",
+    "slug": "canary-judge",
+    "name": "Canary Judge",
+    "role": "Canary Judge",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Rare",
+    "role_category": "reliability",
+    "codename": "chef.reliability.canary-judge",
+    "mise_name": "Mise CanaryJudge",
+    "command": "Canary Judge",
+    "summary": "Runs canary judge for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Chilean",
+    "signature_phrase": "Canary Judge done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in canary judge so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen canary judge aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/canary-judge/full-body.png",
+      "cardPath": "/assets/characters/canary-judge/card.png"
+    },
+    "workflow": {
+      "jobName": "Canary Judge",
+      "roleName": "Canary Judge microagent",
+      "summary": "Runs canary judge for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Capacity Kanna",
+        "Alert Akira",
+        "Hugo Matrix",
+        "Runtime Riku"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 95,
+      "speed": 71,
+      "resilience": 73,
+      "intelligence": 89,
+      "teamwork": 81
+    },
+    "synced_agents": [
+      "Capacity Kanna",
+      "Alert Akira",
+      "Hugo Matrix",
+      "Runtime Riku"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "8",
+    "slug": "null-chan",
+    "name": "Null-chan",
+    "role": "Plongeur",
+    "department": "Reliability",
+    "department_label": "Reliability",
+    "department_tagline": "",
+    "rarity": "Rare",
+    "role_category": "",
+    "codename": "",
+    "mise_name": "",
+    "command": "RELIABILITY::PLONGEUR",
+    "summary": "Null-chan is a Rare Mise Orchestra collectible agent serving as Plongeur.",
+    "lore": "Null-chan belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+    "nationality": "",
+    "signature_phrase": "",
+    "unique_trait": "",
+    "visual": {},
+    "workflow": {},
+    "stats": {},
+    "synced_agents": [],
+    "tags": [
+      "collection-manifest",
+      "mint-card"
+    ],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "43",
+    "slug": "resilience-ryu",
+    "name": "Resilience Ryu",
+    "role": "Resilience Testing Loop",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Rare",
+    "role_category": "reliability",
+    "codename": "chef.reliability.resilience-testing-loop",
+    "mise_name": "Mise ResilienceTestingLoop",
+    "command": "Resilience Testing Loop",
+    "summary": "Runs resilience testing loop for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Resilience Testing Loop done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in resilience testing loop so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen resilience testing loop aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/resilience-ryu/full-body.png",
+      "cardPath": "/assets/characters/resilience-ryu/card.png"
+    },
+    "workflow": {
+      "jobName": "Resilience Testing Loop",
+      "roleName": "Resilience Testing Loop microagent",
+      "summary": "Runs resilience testing loop for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Forecast Fuji",
+        "Impact Ichi",
+        "Ivun Cache",
+        "Portal Rei"
+      ]
+    },
+    "stats": {
+      "power": 92,
+      "precision": 76,
+      "speed": 94,
+      "resilience": 72,
+      "intelligence": 88,
+      "teamwork": 92
+    },
+    "synced_agents": [
+      "Forecast Fuji",
+      "Impact Ichi",
+      "Ivun Cache",
+      "Portal Rei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "32",
+    "slug": "trace-sensei",
+    "name": "Trace Sensei",
+    "role": "Instrumentation Booster",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Rare",
+    "role_category": "automation",
+    "codename": "chef.reliability.instrumentation-booster",
+    "mise_name": "Mise InstrumentationBooster",
+    "command": "Instrumentation Booster",
+    "summary": "Runs instrumentation booster for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Instrumentation Booster done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in instrumentation booster so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen instrumentation booster aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/trace-sensei/full-body.png",
+      "cardPath": "/assets/characters/trace-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Instrumentation Booster",
+      "roleName": "Instrumentation Booster microagent",
+      "summary": "Runs instrumentation booster for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "SLO Sage",
+        "Chaos Kaito",
+        "Bruno Blast-Radius",
+        "Bootstrap Aiko"
+      ]
+    },
+    "stats": {
+      "power": 90,
+      "precision": 78,
+      "speed": 76,
+      "resilience": 94,
+      "intelligence": 98,
+      "teamwork": 76
+    },
+    "synced_agents": [
+      "SLO Sage",
+      "Chaos Kaito",
+      "Bruno Blast-Radius",
+      "Bootstrap Aiko"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "49",
+    "slug": "cve-kumo",
+    "name": "CVE Kumo",
+    "role": "Dependency Risk Monitor",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Rare",
+    "role_category": "analytics",
+    "codename": "chef.security.dependency-risk-monitor",
+    "mise_name": "Mise DependencyRiskMonitor",
+    "command": "Dependency Risk Monitor",
+    "summary": "Runs dependency risk monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Dependency Risk Monitor done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in dependency risk monitor so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen dependency risk monitor aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/cve-kumo/full-body.png",
+      "cardPath": "/assets/characters/cve-kumo/card.png"
+    },
+    "workflow": {
+      "jobName": "Dependency Risk Monitor",
+      "roleName": "Dependency Risk Monitor microagent",
+      "summary": "Runs dependency risk monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Token Toshi",
+        "Container Kage",
+        "Omar Reviewer",
+        "Schema Sora"
+      ]
+    },
+    "stats": {
+      "power": 81,
+      "precision": 78,
+      "speed": 79,
+      "resilience": 81,
+      "intelligence": 90,
+      "teamwork": 97
+    },
+    "synced_agents": [
+      "Token Toshi",
+      "Container Kage",
+      "Omar Reviewer",
+      "Schema Sora"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "57",
+    "slug": "evidence-scribe",
+    "name": "Evidence Scribe",
+    "role": "Compliance Evidence Collector",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.security.compliance-evidence-collector",
+    "mise_name": "Mise ComplianceEvidenceCollector",
+    "command": "Compliance Evidence Collector",
+    "summary": "Runs compliance evidence collector for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Kenyan",
+    "signature_phrase": "Compliance Evidence Collector done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in compliance evidence collector so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen compliance evidence collector aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/evidence-scribe/full-body.png",
+      "cardPath": "/assets/characters/evidence-scribe/card.png"
+    },
+    "workflow": {
+      "jobName": "Compliance Evidence Collector",
+      "roleName": "Compliance Evidence Collector microagent",
+      "summary": "Runs compliance evidence collector for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Incident Kitsune",
+        "Nudge Neko",
+        "Tariq Notesmith",
+        "Preview Yuki"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 87,
+      "speed": 75,
+      "resilience": 81,
+      "intelligence": 90,
+      "teamwork": 85
+    },
+    "synced_agents": [
+      "Incident Kitsune",
+      "Nudge Neko",
+      "Tariq Notesmith",
+      "Preview Yuki"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "56",
+    "slug": "incident-kitsune",
+    "name": "Incident Kitsune",
+    "role": "Security Incident Playbooks",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.security.security-incident-playbooks",
+    "mise_name": "Mise SecurityIncidentPlaybooks",
+    "command": "Security Incident Playbooks",
+    "summary": "Runs security incident playbooks for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Security Incident Playbooks done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in security incident playbooks so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen security incident playbooks aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/incident-kitsune/full-body.png",
+      "cardPath": "/assets/characters/incident-kitsune/card.png"
+    },
+    "workflow": {
+      "jobName": "Security Incident Playbooks",
+      "roleName": "Security Incident Playbooks microagent",
+      "summary": "Runs security incident playbooks for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Auditor Emi",
+        "Evidence Scribe",
+        "Felix Rollback",
+        "Streama"
+      ]
+    },
+    "stats": {
+      "power": 86,
+      "precision": 98,
+      "speed": 84,
+      "resilience": 86,
+      "intelligence": 93,
+      "teamwork": 84
+    },
+    "synced_agents": [
+      "Auditor Emi",
+      "Evidence Scribe",
+      "Felix Rollback",
+      "Streama"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "53",
+    "slug": "merge-sentinel",
+    "name": "Merge Sentinel",
+    "role": "Pre-Merge Security Gate",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.security.pre-merge-security-gate",
+    "mise_name": "Mise PreMergeSecurityGate",
+    "command": "Pre-Merge Security Gate",
+    "summary": "Runs pre-merge security gate for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "South African",
+    "signature_phrase": "Pre-Merge Security Gate done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in pre-merge security gate so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen pre-merge security gate aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/merge-sentinel/full-body.png",
+      "cardPath": "/assets/characters/merge-sentinel/card.png"
+    },
+    "workflow": {
+      "jobName": "Pre-Merge Security Gate",
+      "roleName": "Pre-Merge Security Gate microagent",
+      "summary": "Runs pre-merge security gate for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Policy Ronin",
+        "Watchtower Yoru",
+        "Iron Hashi",
+        "Grafana Mei"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 76,
+      "speed": 84,
+      "resilience": 74,
+      "intelligence": 97,
+      "teamwork": 98
+    },
+    "synced_agents": [
+      "Policy Ronin",
+      "Watchtower Yoru",
+      "Iron Hashi",
+      "Grafana Mei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "58",
+    "slug": "nudge-neko",
+    "name": "Nudge Neko",
+    "role": "Security Training Nudges",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.security.security-training-nudges",
+    "mise_name": "Mise SecurityTrainingNudges",
+    "command": "Security Training Nudges",
+    "summary": "Runs security training nudges for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Security Training Nudges done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in security training nudges so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen security training nudges aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/nudge-neko/full-body.png",
+      "cardPath": "/assets/characters/nudge-neko/card.png"
+    },
+    "workflow": {
+      "jobName": "Security Training Nudges",
+      "roleName": "Security Training Nudges microagent",
+      "summary": "Runs security training nudges for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Evidence Scribe",
+        "Scorecard Shin",
+        "Ivun Cache",
+        "Portal Rei"
+      ]
+    },
+    "stats": {
+      "power": 78,
+      "precision": 94,
+      "speed": 84,
+      "resilience": 94,
+      "intelligence": 80,
+      "teamwork": 80
+    },
+    "synced_agents": [
+      "Evidence Scribe",
+      "Scorecard Shin",
+      "Ivun Cache",
+      "Portal Rei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "59",
+    "slug": "scorecard-shin",
+    "name": "Scorecard Shin",
+    "role": "Security Scorecard",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.security.security-scorecard",
+    "mise_name": "Mise SecurityScorecard",
+    "command": "Security Scorecard",
+    "summary": "Runs security scorecard for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Security Scorecard done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in security scorecard so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen security scorecard aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/scorecard-shin/full-body.png",
+      "cardPath": "/assets/characters/scorecard-shin/card.png"
+    },
+    "workflow": {
+      "jobName": "Security Scorecard",
+      "roleName": "Security Scorecard microagent",
+      "summary": "Runs security scorecard for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Nudge Neko",
+        "Red Oni",
+        "Canary Taster",
+        "Guardrail Goro"
+      ]
+    },
+    "stats": {
+      "power": 93,
+      "precision": 84,
+      "speed": 75,
+      "resilience": 89,
+      "intelligence": 80,
+      "teamwork": 85
+    },
+    "synced_agents": [
+      "Nudge Neko",
+      "Red Oni",
+      "Canary Taster",
+      "Guardrail Goro"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "48",
+    "slug": "token-toshi",
+    "name": "Token Toshi",
+    "role": "Credential Hygiene Scanner",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Rare",
+    "role_category": "security",
+    "codename": "chef.security.credential-hygiene-scanner",
+    "mise_name": "Mise CredentialHygieneScanner",
+    "command": "Credential Hygiene Scanner",
+    "summary": "Runs credential hygiene scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Credential Hygiene Scanner done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in credential hygiene scanner so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen credential hygiene scanner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a key",
+      "tool": "key",
+      "spritePath": "/assets/characters/token-toshi/full-body.png",
+      "cardPath": "/assets/characters/token-toshi/card.png"
+    },
+    "workflow": {
+      "jobName": "Credential Hygiene Scanner",
+      "roleName": "Credential Hygiene Scanner microagent",
+      "summary": "Runs credential hygiene scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Secure Sakura",
+        "CVE Kumo",
+        "Lila Branchkeeper",
+        "Terra Forge"
+      ]
+    },
+    "stats": {
+      "power": 77,
+      "precision": 72,
+      "speed": 71,
+      "resilience": 97,
+      "intelligence": 76,
+      "teamwork": 79
+    },
+    "synced_agents": [
+      "Secure Sakura",
+      "CVE Kumo",
+      "Lila Branchkeeper",
+      "Terra Forge"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": true,
+    "refine_only": false
+  },
+  {
+    "id": "72",
+    "slug": "anomaly-aki",
+    "name": "Anomaly Aki",
+    "role": "Anomaly Detection Studio",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "automation",
+    "codename": "chef.data-insight.anomaly-detection-studio",
+    "mise_name": "Mise AnomalyDetectionStudio",
+    "command": "Anomaly Detection Studio",
+    "summary": "Runs anomaly detection studio for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Anomaly Detection Studio done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in anomaly detection studio so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen anomaly detection studio aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/anomaly-aki/full-body.png",
+      "cardPath": "/assets/characters/anomaly-aki/card.png"
+    },
+    "workflow": {
+      "jobName": "Anomaly Detection Studio",
+      "roleName": "Anomaly Detection Studio microagent",
+      "summary": "Runs anomaly detection studio for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Apprentice Kai",
+        "Leaderboard Leo",
+        "Tariq Notesmith",
+        "Preview Yuki"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 89,
+      "speed": 76,
+      "resilience": 86,
+      "intelligence": 93,
+      "teamwork": 84
+    },
+    "synced_agents": [
+      "Apprentice Kai",
+      "Leaderboard Leo",
+      "Tariq Notesmith",
+      "Preview Yuki"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "67",
+    "slug": "cost-kaito",
+    "name": "Cost Kaito",
+    "role": "Cost & Efficiency Monitor",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.cost-efficiency-monitor",
+    "mise_name": "Mise CostEfficiencyMonitor",
+    "command": "Cost & Efficiency Monitor",
+    "summary": "Runs cost & efficiency monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Cost and Efficiency Monitor done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in cost & efficiency monitor so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen cost & efficiency monitor aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/cost-kaito/full-body.png",
+      "cardPath": "/assets/characters/cost-kaito/card.png"
+    },
+    "workflow": {
+      "jobName": "Cost & Efficiency Monitor",
+      "roleName": "Cost & Efficiency Monitor microagent",
+      "summary": "Runs cost & efficiency monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Flag Fox",
+        "DX Mei",
+        "Yume Builder",
+        "Policy Kenji"
+      ]
+    },
+    "stats": {
+      "power": 75,
+      "precision": 83,
+      "speed": 89,
+      "resilience": 79,
+      "intelligence": 95,
+      "teamwork": 87
+    },
+    "synced_agents": [
+      "Flag Fox",
+      "DX Mei",
+      "Yume Builder",
+      "Policy Kenji"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "65",
+    "slug": "dora-daichi",
+    "name": "DORA Daichi",
+    "role": "Pipeline Analytics Engine",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.pipeline-analytics-engine",
+    "mise_name": "Mise PipelineAnalyticsEngine",
+    "command": "Pipeline Analytics Engine",
+    "summary": "Runs pipeline analytics engine for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Pipeline Analytics Engine done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in pipeline analytics engine so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen pipeline analytics engine aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/dora-daichi/full-body.png",
+      "cardPath": "/assets/characters/dora-daichi/card.png"
+    },
+    "workflow": {
+      "jobName": "Pipeline Analytics Engine",
+      "roleName": "Pipeline Analytics Engine microagent",
+      "summary": "Runs pipeline analytics engine for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Repo Ranger",
+        "Flag Fox",
+        "Hugo Matrix",
+        "Runtime Riku"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 87,
+      "speed": 89,
+      "resilience": 71,
+      "intelligence": 83,
+      "teamwork": 91
+    },
+    "synced_agents": [
+      "Repo Ranger",
+      "Flag Fox",
+      "Hugo Matrix",
+      "Runtime Riku"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "68",
+    "slug": "dx-mei",
+    "name": "DX Mei",
+    "role": "Developer Experience Survey Loop",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.developer-experience-survey-loop",
+    "mise_name": "Mise DeveloperExperienceSurveyLoop",
+    "command": "Developer Experience Survey Loop",
+    "summary": "Runs developer experience survey loop for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Chinese",
+    "signature_phrase": "Developer Experience Survey Loop done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in developer experience survey loop so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen developer experience survey loop aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/dx-mei/full-body.png",
+      "cardPath": "/assets/characters/dx-mei/card.png"
+    },
+    "workflow": {
+      "jobName": "Developer Experience Survey Loop",
+      "roleName": "Developer Experience Survey Loop microagent",
+      "summary": "Runs developer experience survey loop for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Cost Kaito",
+        "Revenue Rina",
+        "Iron Hashi",
+        "Grafana Mei"
+      ]
+    },
+    "stats": {
+      "power": 94,
+      "precision": 77,
+      "speed": 84,
+      "resilience": 78,
+      "intelligence": 74,
+      "teamwork": 96
+    },
+    "synced_agents": [
+      "Cost Kaito",
+      "Revenue Rina",
+      "Iron Hashi",
+      "Grafana Mei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "66",
+    "slug": "flag-fox",
+    "name": "Flag Fox",
+    "role": "Feature Flag Analytics",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.feature-flag-analytics",
+    "mise_name": "Mise FeatureFlagAnalytics",
+    "command": "Feature Flag Analytics",
+    "summary": "Runs feature flag analytics for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Finnish",
+    "signature_phrase": "Feature Flag Analytics done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in feature flag analytics so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen feature flag analytics aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/flag-fox/full-body.png",
+      "cardPath": "/assets/characters/flag-fox/card.png"
+    },
+    "workflow": {
+      "jobName": "Feature Flag Analytics",
+      "roleName": "Feature Flag Analytics microagent",
+      "summary": "Runs feature flag analytics for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "DORA Daichi",
+        "Cost Kaito",
+        "Seira Scan",
+        "Vault Hana"
+      ]
+    },
+    "stats": {
+      "power": 82,
+      "precision": 88,
+      "speed": 92,
+      "resilience": 78,
+      "intelligence": 92,
+      "teamwork": 80
+    },
+    "synced_agents": [
+      "DORA Daichi",
+      "Cost Kaito",
+      "Seira Scan",
+      "Vault Hana"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "62",
+    "slug": "lake-haru",
+    "name": "Lake Haru",
+    "role": "Telemetry Ingestion Pipeline",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.telemetry-ingestion-pipeline",
+    "mise_name": "Mise TelemetryIngestionPipeline",
+    "command": "Telemetry Ingestion Pipeline",
+    "summary": "Runs telemetry ingestion pipeline for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Telemetry Ingestion Pipeline done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in telemetry ingestion pipeline so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen telemetry ingestion pipeline aura",
+      "silhouette": "multinational chibi DevOps chef carrying a bowl",
+      "tool": "bowl",
+      "spritePath": "/assets/characters/lake-haru/full-body.png",
+      "cardPath": "/assets/characters/lake-haru/card.png"
+    },
+    "workflow": {
+      "jobName": "Telemetry Ingestion Pipeline",
+      "roleName": "Telemetry Ingestion Pipeline microagent",
+      "summary": "Runs telemetry ingestion pipeline for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Taxonomy Taka",
+        "Lattice",
+        "Bruno Blast-Radius",
+        "Bootstrap Aiko"
+      ]
+    },
+    "stats": {
+      "power": 74,
+      "precision": 72,
+      "speed": 68,
+      "resilience": 94,
+      "intelligence": 94,
+      "teamwork": 88
+    },
+    "synced_agents": [
+      "Taxonomy Taka",
+      "Lattice",
+      "Bruno Blast-Radius",
+      "Bootstrap Aiko"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "73",
+    "slug": "leaderboard-leo",
+    "name": "Leaderboard Leo",
+    "role": "Scorecards & Leaderboards",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.scorecards-leaderboards",
+    "mise_name": "Mise ScorecardsLeaderboards",
+    "command": "Scorecards & Leaderboards",
+    "summary": "Runs scorecards & leaderboards for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Spanish",
+    "signature_phrase": "Scorecards and Leaderboards done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in scorecards & leaderboards so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen scorecards & leaderboards aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/leaderboard-leo/full-body.png",
+      "cardPath": "/assets/characters/leaderboard-leo/card.png"
+    },
+    "workflow": {
+      "jobName": "Scorecards & Leaderboards",
+      "roleName": "Scorecards & Leaderboards microagent",
+      "summary": "Runs scorecards & leaderboards for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Anomaly Aki",
+        "Storyteller Sumi",
+        "Ivun Cache",
+        "Portal Rei"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 94,
+      "speed": 83,
+      "resilience": 97,
+      "intelligence": 81,
+      "teamwork": 77
+    },
+    "synced_agents": [
+      "Anomaly Aki",
+      "Storyteller Sumi",
+      "Ivun Cache",
+      "Portal Rei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "64",
+    "slug": "repo-ranger",
+    "name": "Repo Ranger",
+    "role": "Repo Health Analyzer",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.repo-health-analyzer",
+    "mise_name": "Mise RepoHealthAnalyzer",
+    "command": "Repo Health Analyzer",
+    "summary": "Runs repo health analyzer for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Australian",
+    "signature_phrase": "Repo Health Analyzer done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in repo health analyzer so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen repo health analyzer aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/repo-ranger/full-body.png",
+      "cardPath": "/assets/characters/repo-ranger/card.png"
+    },
+    "workflow": {
+      "jobName": "Repo Health Analyzer",
+      "roleName": "Repo Health Analyzer microagent",
+      "summary": "Runs repo health analyzer for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Lattice",
+        "DORA Daichi",
+        "Omar Reviewer",
+        "Schema Sora"
+      ]
+    },
+    "stats": {
+      "power": 72,
+      "precision": 74,
+      "speed": 74,
+      "resilience": 80,
+      "intelligence": 87,
+      "teamwork": 90
+    },
+    "synced_agents": [
+      "Lattice",
+      "DORA Daichi",
+      "Omar Reviewer",
+      "Schema Sora"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "69",
+    "slug": "revenue-rina",
+    "name": "Revenue Rina",
+    "role": "Customer Behavior → Incident Linker",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.data-insight.customer-behavior-incident-linker",
+    "mise_name": "Mise CustomerBehaviorToIncidentLinker",
+    "command": "Customer Behavior → Incident Linker",
+    "summary": "Runs customer behavior → incident linker for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Filipino",
+    "signature_phrase": "Customer Behavior to Incident Linker done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in customer behavior → incident linker so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen customer behavior → incident linker aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/revenue-rina/full-body.png",
+      "cardPath": "/assets/characters/revenue-rina/card.png"
+    },
+    "workflow": {
+      "jobName": "Customer Behavior → Incident Linker",
+      "roleName": "Customer Behavior → Incident Linker microagent",
+      "summary": "Runs customer behavior → incident linker for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "DX Mei",
+        "Risk Ryota",
+        "Nina Promoter",
+        "Umami Code"
+      ]
+    },
+    "stats": {
+      "power": 91,
+      "precision": 76,
+      "speed": 85,
+      "resilience": 83,
+      "intelligence": 81,
+      "teamwork": 83
+    },
+    "synced_agents": [
+      "DX Mei",
+      "Risk Ryota",
+      "Nina Promoter",
+      "Umami Code"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "74",
+    "slug": "storyteller-sumi",
+    "name": "Storyteller Sumi",
+    "role": "Narrative Report Generator",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.narrative-report-generator",
+    "mise_name": "Mise NarrativeReportGenerator",
+    "command": "Narrative Report Generator",
+    "summary": "Runs narrative report generator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Narrative Report Generator done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in narrative report generator so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen narrative report generator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/storyteller-sumi/full-body.png",
+      "cardPath": "/assets/characters/storyteller-sumi/card.png"
+    },
+    "workflow": {
+      "jobName": "Narrative Report Generator",
+      "roleName": "Narrative Report Generator microagent",
+      "summary": "Runs narrative report generator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Leaderboard Leo",
+        "Roadmap Sensei",
+        "Canary Taster",
+        "Guardrail Goro"
+      ]
+    },
+    "stats": {
+      "power": 80,
+      "precision": 76,
+      "speed": 94,
+      "resilience": 84,
+      "intelligence": 98,
+      "teamwork": 98
+    },
+    "synced_agents": [
+      "Leaderboard Leo",
+      "Roadmap Sensei",
+      "Canary Taster",
+      "Guardrail Goro"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "61",
+    "slug": "taxonomy-taka",
+    "name": "Taxonomy Taka",
+    "role": "Event Taxonomy Manager",
+    "department": "Data & Insight Kitchen",
+    "department_label": "Data & Insight Kitchen",
+    "department_tagline": "Learn. Optimize. Evolve.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.data-insight.event-taxonomy-manager",
+    "mise_name": "Mise EventTaxonomyManager",
+    "command": "Event Taxonomy Manager",
+    "summary": "Runs event taxonomy manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Event Taxonomy Manager done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in event taxonomy manager so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen event taxonomy manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/taxonomy-taka/full-body.png",
+      "cardPath": "/assets/characters/taxonomy-taka/card.png"
+    },
+    "workflow": {
+      "jobName": "Event Taxonomy Manager",
+      "roleName": "Event Taxonomy Manager microagent",
+      "summary": "Runs event taxonomy manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Lake Haru",
+        "Alko Commit Chef",
+        "Template Tanaka",
+        "SLO Sage"
+      ]
+    },
+    "stats": {
+      "power": 94,
+      "precision": 89,
+      "speed": 84,
+      "resilience": 78,
+      "intelligence": 76,
+      "teamwork": 90
+    },
+    "synced_agents": [
+      "Lake Haru",
+      "Alko Commit Chef",
+      "Template Tanaka",
+      "SLO Sage"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "11",
+    "slug": "felix-rollback",
+    "name": "Felix Rollback",
+    "role": "Rollback & Fix-Forward",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.pipeline.rollback-fix-forward",
+    "mise_name": "Mise RollbackFixForward",
+    "command": "Rollback & Fix-Forward",
+    "summary": "Runs rollback & fix-forward for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Argentinian",
+    "signature_phrase": "Rollback and Fix-Forward done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in rollback & fix-forward so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen rollback & fix-forward aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/felix-rollback/full-body.png",
+      "cardPath": "/assets/characters/felix-rollback/card.png"
+    },
+    "workflow": {
+      "jobName": "Rollback & Fix-Forward",
+      "roleName": "Rollback & Fix-Forward microagent",
+      "summary": "Runs rollback & fix-forward for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Release Conductor",
+        "Tariq Notesmith",
+        "Streama",
+        "Metrics Miko"
+      ]
+    },
+    "stats": {
+      "power": 90,
+      "precision": 88,
+      "speed": 76,
+      "resilience": 94,
+      "intelligence": 82,
+      "teamwork": 86
+    },
+    "synced_agents": [
+      "Release Conductor",
+      "Tariq Notesmith",
+      "Streama",
+      "Metrics Miko"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "5",
+    "slug": "hugo-matrix",
+    "name": "Hugo Matrix",
+    "role": "Test Matrix Runner",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.test-matrix-runner",
+    "mise_name": "Mise TestMatrixRunner",
+    "command": "Test Matrix Runner",
+    "summary": "Runs test matrix runner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "German",
+    "signature_phrase": "Test Matrix Runner done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in test matrix runner so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen test matrix runner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/hugo-matrix/full-body.png",
+      "cardPath": "/assets/characters/hugo-matrix/card.png"
+    },
+    "workflow": {
+      "jobName": "Test Matrix Runner",
+      "roleName": "Test Matrix Runner microagent",
+      "summary": "Runs test matrix runner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Omar Reviewer",
+        "Seira Scan",
+        "Runtime Riku",
+        "Canary Judge"
+      ]
+    },
+    "stats": {
+      "power": 86,
+      "precision": 98,
+      "speed": 76,
+      "resilience": 70,
+      "intelligence": 90,
+      "teamwork": 90
+    },
+    "synced_agents": [
+      "Omar Reviewer",
+      "Seira Scan",
+      "Runtime Riku",
+      "Canary Judge"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "13",
+    "slug": "ivun-cache",
+    "name": "Ivun Cache",
+    "role": "Pipeline Cost Monitor",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Common",
+    "role_category": "analytics",
+    "codename": "chef.pipeline.pipeline-cost-monitor",
+    "mise_name": "Mise PipelineCostMonitor",
+    "command": "Pipeline Cost Monitor",
+    "summary": "Runs pipeline cost monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Ukrainian",
+    "signature_phrase": "Pipeline Cost Monitor done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in pipeline cost monitor so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen pipeline cost monitor aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/ivun-cache/full-body.png",
+      "cardPath": "/assets/characters/ivun-cache/card.png"
+    },
+    "workflow": {
+      "jobName": "Pipeline Cost Monitor",
+      "roleName": "Pipeline Cost Monitor microagent",
+      "summary": "Runs pipeline cost monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Tariq Notesmith",
+        "Canary Taster",
+        "Portal Rei",
+        "Resilience Ryu"
+      ]
+    },
+    "stats": {
+      "power": 84,
+      "precision": 86,
+      "speed": 78,
+      "resilience": 76,
+      "intelligence": 96,
+      "teamwork": 84
+    },
+    "synced_agents": [
+      "Tariq Notesmith",
+      "Canary Taster",
+      "Portal Rei",
+      "Resilience Ryu"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "9",
+    "slug": "nina-promoter",
+    "name": "Nina Promoter",
+    "role": "Environment Promotion Gate",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.environment-promotion-gate",
+    "mise_name": "Mise EnvironmentPromotionGate",
+    "command": "Environment Promotion Gate",
+    "summary": "Runs environment promotion gate for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Nigerian",
+    "signature_phrase": "Environment Promotion Gate done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in environment promotion gate so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen environment promotion gate aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/nina-promoter/full-body.png",
+      "cardPath": "/assets/characters/nina-promoter/card.png"
+    },
+    "workflow": {
+      "jobName": "Environment Promotion Gate",
+      "roleName": "Environment Promotion Gate microagent",
+      "summary": "Runs environment promotion gate for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Iron Hashi",
+        "Release Conductor",
+        "Umami Code",
+        "Review Ren"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 77,
+      "speed": 89,
+      "resilience": 71,
+      "intelligence": 80,
+      "teamwork": 99
+    },
+    "synced_agents": [
+      "Iron Hashi",
+      "Release Conductor",
+      "Umami Code",
+      "Review Ren"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "10",
+    "slug": "release-conductor",
+    "name": "Release Conductor",
+    "role": "Deployment Orchestrator",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.deployment-orchestrator",
+    "mise_name": "Mise DeploymentOrchestrator",
+    "command": "Deployment Orchestrator",
+    "summary": "Runs deployment orchestrator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Italian",
+    "signature_phrase": "Deployment Orchestrator done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in deployment orchestrator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen deployment orchestrator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a ladle",
+      "tool": "ladle",
+      "spritePath": "/assets/characters/release-conductor/full-body.png",
+      "cardPath": "/assets/characters/release-conductor/card.png"
+    },
+    "workflow": {
+      "jobName": "Deployment Orchestrator",
+      "roleName": "Deployment Orchestrator microagent",
+      "summary": "Runs deployment orchestrator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Nina Promoter",
+        "Felix Rollback",
+        "Queue Mizu",
+        "Backlog Benji"
+      ]
+    },
+    "stats": {
+      "power": 88,
+      "precision": 84,
+      "speed": 70,
+      "resilience": 84,
+      "intelligence": 95,
+      "teamwork": 94
+    },
+    "synced_agents": [
+      "Nina Promoter",
+      "Felix Rollback",
+      "Queue Mizu",
+      "Backlog Benji"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "12",
+    "slug": "tariq-notesmith",
+    "name": "Tariq Notesmith",
+    "role": "Release Notes Generator",
+    "department": "Pipeline",
+    "department_label": "Pipeline Kitchen",
+    "department_tagline": "Build. Test. Deploy. Repeat.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.pipeline.release-notes-generator",
+    "mise_name": "Mise ReleaseNotesGenerator",
+    "command": "Release Notes Generator",
+    "summary": "Runs release notes generator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Moroccan",
+    "signature_phrase": "Release Notes Generator done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in release notes generator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#F97316",
+      "aura": "Pipeline Kitchen release notes generator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/tariq-notesmith/full-body.png",
+      "cardPath": "/assets/characters/tariq-notesmith/card.png"
+    },
+    "workflow": {
+      "jobName": "Release Notes Generator",
+      "roleName": "Release Notes Generator microagent",
+      "summary": "Runs release notes generator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Felix Rollback",
+        "Ivun Cache",
+        "Preview Yuki",
+        "Forecast Fuji"
+      ]
+    },
+    "stats": {
+      "power": 80,
+      "precision": 80,
+      "speed": 70,
+      "resilience": 92,
+      "intelligence": 82,
+      "teamwork": 90
+    },
+    "synced_agents": [
+      "Felix Rollback",
+      "Ivun Cache",
+      "Preview Yuki",
+      "Forecast Fuji"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "23",
+    "slug": "grafana-mei",
+    "name": "Grafana Mei",
+    "role": "Shared Observability Pack",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "automation",
+    "codename": "chef.platform.shared-observability-pack",
+    "mise_name": "Mise SharedObservabilityPack",
+    "command": "Shared Observability Pack",
+    "summary": "Runs shared observability pack for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Chinese",
+    "signature_phrase": "Shared Observability Pack done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in shared observability pack so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen shared observability pack aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/grafana-mei/full-body.png",
+      "cardPath": "/assets/characters/grafana-mei/card.png"
+    },
+    "workflow": {
+      "jobName": "Shared Observability Pack",
+      "roleName": "Shared Observability Pack microagent",
+      "summary": "Runs shared observability pack for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Policy Kenji",
+        "Umami Code",
+        "Iron Hashi",
+        "OnCall Naomi"
+      ]
+    },
+    "stats": {
+      "power": 87,
+      "precision": 83,
+      "speed": 93,
+      "resilience": 75,
+      "intelligence": 77,
+      "teamwork": 87
+    },
+    "synced_agents": [
+      "Policy Kenji",
+      "Umami Code",
+      "Iron Hashi",
+      "OnCall Naomi"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "29",
+    "slug": "guardrail-goro",
+    "name": "Guardrail Goro",
+    "role": "Golden Path Guardrails",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "automation",
+    "codename": "chef.platform.golden-path-guardrails",
+    "mise_name": "Mise GoldenPathGuardrails",
+    "command": "Golden Path Guardrails",
+    "summary": "Runs golden path guardrails for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Golden Path Guardrails done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in golden path guardrails so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen golden path guardrails aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/guardrail-goro/full-body.png",
+      "cardPath": "/assets/characters/guardrail-goro/card.png"
+    },
+    "workflow": {
+      "jobName": "Golden Path Guardrails",
+      "roleName": "Golden Path Guardrails microagent",
+      "summary": "Runs golden path guardrails for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Portal Rei",
+        "Platform Sensei",
+        "Canary Taster",
+        "Impact Ichi"
+      ]
+    },
+    "stats": {
+      "power": 84,
+      "precision": 93,
+      "speed": 86,
+      "resilience": 92,
+      "intelligence": 87,
+      "teamwork": 76
+    },
+    "synced_agents": [
+      "Portal Rei",
+      "Platform Sensei",
+      "Canary Taster",
+      "Impact Ichi"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "28",
+    "slug": "portal-rei",
+    "name": "Portal Rei",
+    "role": "Self-Service Portal UI",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "platform",
+    "codename": "chef.platform.self-service-portal-ui",
+    "mise_name": "Mise SelfServicePortalUi",
+    "command": "Self-Service Portal UI",
+    "summary": "Runs self-service portal ui for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Self-Service Portal UI done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in self-service portal ui so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen self-service portal ui aura",
+      "silhouette": "multinational chibi DevOps chef carrying a tablet",
+      "tool": "tablet",
+      "spritePath": "/assets/characters/portal-rei/full-body.png",
+      "cardPath": "/assets/characters/portal-rei/card.png"
+    },
+    "workflow": {
+      "jobName": "Self-Service Portal UI",
+      "roleName": "Self-Service Portal UI microagent",
+      "summary": "Runs self-service portal ui for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Preview Yuki",
+        "Guardrail Goro",
+        "Ivun Cache",
+        "Resilience Ryu"
+      ]
+    },
+    "stats": {
+      "power": 84,
+      "precision": 91,
+      "speed": 82,
+      "resilience": 84,
+      "intelligence": 77,
+      "teamwork": 86
+    },
+    "synced_agents": [
+      "Preview Yuki",
+      "Guardrail Goro",
+      "Ivun Cache",
+      "Resilience Ryu"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "27",
+    "slug": "preview-yuki",
+    "name": "Preview Yuki",
+    "role": "Preview Environment Spawner",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.platform.preview-environment-spawner",
+    "mise_name": "Mise PreviewEnvironmentSpawner",
+    "command": "Preview Environment Spawner",
+    "summary": "Runs preview environment spawner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Canadian",
+    "signature_phrase": "Preview Environment Spawner done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in preview environment spawner so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen preview environment spawner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/preview-yuki/full-body.png",
+      "cardPath": "/assets/characters/preview-yuki/card.png"
+    },
+    "workflow": {
+      "jobName": "Preview Environment Spawner",
+      "roleName": "Preview Environment Spawner microagent",
+      "summary": "Runs preview environment spawner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Streama",
+        "Portal Rei",
+        "Tariq Notesmith",
+        "Forecast Fuji"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 88,
+      "speed": 77,
+      "resilience": 75,
+      "intelligence": 91,
+      "teamwork": 95
+    },
+    "synced_agents": [
+      "Streama",
+      "Portal Rei",
+      "Tariq Notesmith",
+      "Forecast Fuji"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "20",
+    "slug": "runtime-riku",
+    "name": "Runtime Riku",
+    "role": "Runtime Profile Manager",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.platform.runtime-profile-manager",
+    "mise_name": "Mise RuntimeProfileManager",
+    "command": "Runtime Profile Manager",
+    "summary": "Runs runtime profile manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "American",
+    "signature_phrase": "Runtime Profile Manager done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in runtime profile manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen runtime profile manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a tablet",
+      "tool": "tablet",
+      "spritePath": "/assets/characters/runtime-riku/full-body.png",
+      "cardPath": "/assets/characters/runtime-riku/card.png"
+    },
+    "workflow": {
+      "jobName": "Runtime Profile Manager",
+      "roleName": "Runtime Profile Manager microagent",
+      "summary": "Runs runtime profile manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Schema Sora",
+        "Vault Hana",
+        "Hugo Matrix",
+        "Canary Judge"
+      ]
+    },
+    "stats": {
+      "power": 89,
+      "precision": 79,
+      "speed": 83,
+      "resilience": 81,
+      "intelligence": 74,
+      "teamwork": 95
+    },
+    "synced_agents": [
+      "Schema Sora",
+      "Vault Hana",
+      "Hugo Matrix",
+      "Canary Judge"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "19",
+    "slug": "schema-sora",
+    "name": "Schema Sora",
+    "role": "Database Blueprint Manager",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.platform.database-blueprint-manager",
+    "mise_name": "Mise DatabaseBlueprintManager",
+    "command": "Database Blueprint Manager",
+    "summary": "Runs database blueprint manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Singaporean",
+    "signature_phrase": "Database Blueprint Manager done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in database blueprint manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen database blueprint manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+      "tool": "blueprint",
+      "spritePath": "/assets/characters/schema-sora/full-body.png",
+      "cardPath": "/assets/characters/schema-sora/card.png"
+    },
+    "workflow": {
+      "jobName": "Database Blueprint Manager",
+      "roleName": "Database Blueprint Manager microagent",
+      "summary": "Runs database blueprint manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Terra Forge",
+        "Runtime Riku",
+        "Omar Reviewer",
+        "Capacity Kanna"
+      ]
+    },
+    "stats": {
+      "power": 87,
+      "precision": 75,
+      "speed": 77,
+      "resilience": 71,
+      "intelligence": 87,
+      "teamwork": 79
+    },
+    "synced_agents": [
+      "Terra Forge",
+      "Runtime Riku",
+      "Omar Reviewer",
+      "Capacity Kanna"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "16",
+    "slug": "template-tanaka",
+    "name": "Template Tanaka",
+    "role": "Service Template Catalog",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "platform",
+    "codename": "chef.platform.service-template-catalog",
+    "mise_name": "Mise ServiceTemplateCatalog",
+    "command": "Service Template Catalog",
+    "summary": "Runs service template catalog for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Service Template Catalog done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in service template catalog so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen service template catalog aura",
+      "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+      "tool": "blueprint",
+      "spritePath": "/assets/characters/template-tanaka/full-body.png",
+      "cardPath": "/assets/characters/template-tanaka/card.png"
+    },
+    "workflow": {
+      "jobName": "Service Template Catalog",
+      "roleName": "Service Template Catalog microagent",
+      "summary": "Runs service template catalog for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Bootstrap Aiko",
+        "Alko Commit Chef",
+        "SLO Sage",
+        "Threat Taro"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 82,
+      "speed": 79,
+      "resilience": 89,
+      "intelligence": 93,
+      "teamwork": 95
+    },
+    "synced_agents": [
+      "Bootstrap Aiko",
+      "Alko Commit Chef",
+      "SLO Sage",
+      "Threat Taro"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "18",
+    "slug": "terra-forge",
+    "name": "Terra Forge",
+    "role": "Environment Provisioner",
+    "department": "Platform",
+    "department_label": "Platform Kitchen",
+    "department_tagline": "The stage where services live.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.platform.environment-provisioner",
+    "mise_name": "Mise EnvironmentProvisioner",
+    "command": "Environment Provisioner",
+    "summary": "Runs environment provisioner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Mexican",
+    "signature_phrase": "Environment Provisioner done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in environment provisioner so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#22C55E",
+      "aura": "Platform Kitchen environment provisioner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/terra-forge/full-body.png",
+      "cardPath": "/assets/characters/terra-forge/card.png"
+    },
+    "workflow": {
+      "jobName": "Environment Provisioner",
+      "roleName": "Environment Provisioner microagent",
+      "summary": "Runs environment provisioner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Bootstrap Aiko",
+        "Schema Sora",
+        "Lila Branchkeeper",
+        "Chaos Kaito"
+      ]
+    },
+    "stats": {
+      "power": 71,
+      "precision": 84,
+      "speed": 85,
+      "resilience": 75,
+      "intelligence": 86,
+      "teamwork": 97
+    },
+    "synced_agents": [
+      "Bootstrap Aiko",
+      "Schema Sora",
+      "Lila Branchkeeper",
+      "Chaos Kaito"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "36",
+    "slug": "alert-akira",
+    "name": "Alert Akira",
+    "role": "Incident Detection Rules",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.reliability.incident-detection-rules",
+    "mise_name": "Mise IncidentDetectionRules",
+    "command": "Incident Detection Rules",
+    "summary": "Runs incident detection rules for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Incident Detection Rules done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in incident detection rules so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen incident detection rules aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/alert-akira/full-body.png",
+      "cardPath": "/assets/characters/alert-akira/card.png"
+    },
+    "workflow": {
+      "jobName": "Incident Detection Rules",
+      "roleName": "Incident Detection Rules microagent",
+      "summary": "Runs incident detection rules for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Canary Judge",
+        "Pager Hiro",
+        "Seira Scan",
+        "Vault Hana"
+      ]
+    },
+    "stats": {
+      "power": 71,
+      "precision": 95,
+      "speed": 73,
+      "resilience": 79,
+      "intelligence": 97,
+      "teamwork": 93
+    },
+    "synced_agents": [
+      "Canary Judge",
+      "Pager Hiro",
+      "Seira Scan",
+      "Vault Hana"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "40",
+    "slug": "backlog-benji",
+    "name": "Backlog Benji",
+    "role": "Reliability Backlog Builder",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.reliability.reliability-backlog-builder",
+    "mise_name": "Mise ReliabilityBacklogBuilder",
+    "command": "Reliability Backlog Builder",
+    "summary": "Runs reliability backlog builder for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "British",
+    "signature_phrase": "Reliability Backlog Builder done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in reliability backlog builder so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen reliability backlog builder aura",
+      "silhouette": "multinational chibi DevOps chef carrying a crate",
+      "tool": "crate",
+      "spritePath": "/assets/characters/backlog-benji/full-body.png",
+      "cardPath": "/assets/characters/backlog-benji/card.png"
+    },
+    "workflow": {
+      "jobName": "Reliability Backlog Builder",
+      "roleName": "Reliability Backlog Builder microagent",
+      "summary": "Runs reliability backlog builder for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Review Ren",
+        "Metrics Miko",
+        "Release Conductor",
+        "Queue Mizu"
+      ]
+    },
+    "stats": {
+      "power": 78,
+      "precision": 83,
+      "speed": 68,
+      "resilience": 90,
+      "intelligence": 94,
+      "teamwork": 84
+    },
+    "synced_agents": [
+      "Review Ren",
+      "Metrics Miko",
+      "Release Conductor",
+      "Queue Mizu"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "34",
+    "slug": "capacity-kanna",
+    "name": "Capacity Kanna",
+    "role": "Pre-Deployment Reliability Check",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.reliability.pre-deployment-reliability-check",
+    "mise_name": "Mise PreDeploymentReliabilityCheck",
+    "command": "Pre-Deployment Reliability Check",
+    "summary": "Runs pre-deployment reliability check for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Pre-Deployment Reliability Check done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in pre-deployment reliability check so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen pre-deployment reliability check aura",
+      "silhouette": "multinational chibi DevOps chef carrying a ladle",
+      "tool": "ladle",
+      "spritePath": "/assets/characters/capacity-kanna/full-body.png",
+      "cardPath": "/assets/characters/capacity-kanna/card.png"
+    },
+    "workflow": {
+      "jobName": "Pre-Deployment Reliability Check",
+      "roleName": "Pre-Deployment Reliability Check microagent",
+      "summary": "Runs pre-deployment reliability check for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Chaos Kaito",
+        "Canary Judge",
+        "Omar Reviewer",
+        "Schema Sora"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 93,
+      "speed": 95,
+      "resilience": 93,
+      "intelligence": 79,
+      "teamwork": 91
+    },
+    "synced_agents": [
+      "Chaos Kaito",
+      "Canary Judge",
+      "Omar Reviewer",
+      "Schema Sora"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "33",
+    "slug": "chaos-kaito",
+    "name": "Chaos Kaito",
+    "role": "Load & Chaos Profiles",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "delivery",
+    "codename": "chef.reliability.load-chaos-profiles",
+    "mise_name": "Mise LoadChaosProfiles",
+    "command": "Load & Chaos Profiles",
+    "summary": "Runs load & chaos profiles for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Load and Chaos Profiles done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in load & chaos profiles so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen load & chaos profiles aura",
+      "silhouette": "multinational chibi DevOps chef carrying a flame",
+      "tool": "flame",
+      "spritePath": "/assets/characters/chaos-kaito/full-body.png",
+      "cardPath": "/assets/characters/chaos-kaito/card.png"
+    },
+    "workflow": {
+      "jobName": "Load & Chaos Profiles",
+      "roleName": "Load & Chaos Profiles microagent",
+      "summary": "Runs load & chaos profiles for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Trace Sensei",
+        "Capacity Kanna",
+        "Lila Branchkeeper",
+        "Terra Forge"
+      ]
+    },
+    "stats": {
+      "power": 93,
+      "precision": 83,
+      "speed": 83,
+      "resilience": 77,
+      "intelligence": 86,
+      "teamwork": 93
+    },
+    "synced_agents": [
+      "Trace Sensei",
+      "Capacity Kanna",
+      "Lila Branchkeeper",
+      "Terra Forge"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "42",
+    "slug": "forecast-fuji",
+    "name": "Forecast Fuji",
+    "role": "Capacity Planner",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.reliability.capacity-planner",
+    "mise_name": "Mise CapacityPlanner",
+    "command": "Capacity Planner",
+    "summary": "Runs capacity planner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Capacity Planner done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in capacity planner so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen capacity planner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/forecast-fuji/full-body.png",
+      "cardPath": "/assets/characters/forecast-fuji/card.png"
+    },
+    "workflow": {
+      "jobName": "Capacity Planner",
+      "roleName": "Capacity Planner microagent",
+      "summary": "Runs capacity planner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Metrics Miko",
+        "Resilience Ryu",
+        "Tariq Notesmith",
+        "Preview Yuki"
+      ]
+    },
+    "stats": {
+      "power": 90,
+      "precision": 72,
+      "speed": 88,
+      "resilience": 90,
+      "intelligence": 76,
+      "teamwork": 76
+    },
+    "synced_agents": [
+      "Metrics Miko",
+      "Resilience Ryu",
+      "Tariq Notesmith",
+      "Preview Yuki"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "44",
+    "slug": "impact-ichi",
+    "name": "Impact Ichi",
+    "role": "Customer Impact Simulator",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "automation",
+    "codename": "chef.reliability.customer-impact-simulator",
+    "mise_name": "Mise CustomerImpactSimulator",
+    "command": "Customer Impact Simulator",
+    "summary": "Runs customer impact simulator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Customer Impact Simulator done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in customer impact simulator so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen customer impact simulator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/impact-ichi/full-body.png",
+      "cardPath": "/assets/characters/impact-ichi/card.png"
+    },
+    "workflow": {
+      "jobName": "Customer Impact Simulator",
+      "roleName": "Customer Impact Simulator microagent",
+      "summary": "Runs customer impact simulator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Resilience Ryu",
+        "Reliability Sensei",
+        "Canary Taster",
+        "Guardrail Goro"
+      ]
+    },
+    "stats": {
+      "power": 97,
+      "precision": 83,
+      "speed": 75,
+      "resilience": 85,
+      "intelligence": 78,
+      "teamwork": 87
+    },
+    "synced_agents": [
+      "Resilience Ryu",
+      "Reliability Sensei",
+      "Canary Taster",
+      "Guardrail Goro"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "38",
+    "slug": "oncall-naomi",
+    "name": "OnCall Naomi",
+    "role": "On-Call Rotation Manager",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.reliability.on-call-rotation-manager",
+    "mise_name": "Mise OnCallRotationManager",
+    "command": "On-Call Rotation Manager",
+    "summary": "Runs on-call rotation manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "On-Call Rotation Manager done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in on-call rotation manager so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen on-call rotation manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/oncall-naomi/full-body.png",
+      "cardPath": "/assets/characters/oncall-naomi/card.png"
+    },
+    "workflow": {
+      "jobName": "On-Call Rotation Manager",
+      "roleName": "On-Call Rotation Manager microagent",
+      "summary": "Runs on-call rotation manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Pager Hiro",
+        "Review Ren",
+        "Iron Hashi",
+        "Grafana Mei"
+      ]
+    },
+    "stats": {
+      "power": 74,
+      "precision": 75,
+      "speed": 84,
+      "resilience": 70,
+      "intelligence": 95,
+      "teamwork": 76
+    },
+    "synced_agents": [
+      "Pager Hiro",
+      "Review Ren",
+      "Iron Hashi",
+      "Grafana Mei"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "37",
+    "slug": "pager-hiro",
+    "name": "Pager Hiro",
+    "role": "Incident Triage Runbook",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.reliability.incident-triage-runbook",
+    "mise_name": "Mise IncidentTriageRunbook",
+    "command": "Incident Triage Runbook",
+    "summary": "Runs incident triage runbook for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Incident Triage Runbook done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in incident triage runbook so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen incident triage runbook aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/pager-hiro/full-body.png",
+      "cardPath": "/assets/characters/pager-hiro/card.png"
+    },
+    "workflow": {
+      "jobName": "Incident Triage Runbook",
+      "roleName": "Incident Triage Runbook microagent",
+      "summary": "Runs incident triage runbook for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Alert Akira",
+        "OnCall Naomi",
+        "Yume Builder",
+        "Policy Kenji"
+      ]
+    },
+    "stats": {
+      "power": 80,
+      "precision": 79,
+      "speed": 86,
+      "resilience": 96,
+      "intelligence": 91,
+      "teamwork": 92
+    },
+    "synced_agents": [
+      "Alert Akira",
+      "OnCall Naomi",
+      "Yume Builder",
+      "Policy Kenji"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "39",
+    "slug": "review-ren",
+    "name": "Review Ren",
+    "role": "Post-Incident Review",
+    "department": "Reliability",
+    "department_label": "Reliability Kitchen",
+    "department_tagline": "Observe. Measure. Improve.",
+    "rarity": "Common",
+    "role_category": "reliability",
+    "codename": "chef.reliability.post-incident-review",
+    "mise_name": "Mise PostIncidentReview",
+    "command": "Post-Incident Review",
+    "summary": "Runs post-incident review for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Post-Incident Review done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in post-incident review so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen post-incident review aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/review-ren/full-body.png",
+      "cardPath": "/assets/characters/review-ren/card.png"
+    },
+    "workflow": {
+      "jobName": "Post-Incident Review",
+      "roleName": "Post-Incident Review microagent",
+      "summary": "Runs post-incident review for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "OnCall Naomi",
+        "Backlog Benji",
+        "Nina Promoter",
+        "Umami Code"
+      ]
+    },
+    "stats": {
+      "power": 77,
+      "precision": 80,
+      "speed": 91,
+      "resilience": 81,
+      "intelligence": 83,
+      "teamwork": 93
+    },
+    "synced_agents": [
+      "OnCall Naomi",
+      "Backlog Benji",
+      "Nina Promoter",
+      "Umami Code"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "55",
+    "slug": "auditor-emi",
+    "name": "Auditor Emi",
+    "role": "Access Review Workflow",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Common",
+    "role_category": "security",
+    "codename": "chef.security.access-review-workflow",
+    "mise_name": "Mise AccessReviewWorkflow",
+    "command": "Access Review Workflow",
+    "summary": "Runs access review workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Access Review Workflow done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in access review workflow so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen access review workflow aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/auditor-emi/full-body.png",
+      "cardPath": "/assets/characters/auditor-emi/card.png"
+    },
+    "workflow": {
+      "jobName": "Access Review Workflow",
+      "roleName": "Access Review Workflow microagent",
+      "summary": "Runs access review workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Watchtower Yoru",
+        "Incident Kitsune",
+        "Release Conductor",
+        "Queue Mizu"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 93,
+      "speed": 77,
+      "resilience": 75,
+      "intelligence": 80,
+      "teamwork": 91
+    },
+    "synced_agents": [
+      "Watchtower Yoru",
+      "Incident Kitsune",
+      "Release Conductor",
+      "Queue Mizu"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "50",
+    "slug": "container-kage",
+    "name": "Container Kage",
+    "role": "Container Hardening Workflow",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Common",
+    "role_category": "automation",
+    "codename": "chef.security.container-hardening-workflow",
+    "mise_name": "Mise ContainerHardeningWorkflow",
+    "command": "Container Hardening Workflow",
+    "summary": "Runs container hardening workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Container Hardening Workflow done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in container hardening workflow so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen container hardening workflow aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/container-kage/full-body.png",
+      "cardPath": "/assets/characters/container-kage/card.png"
+    },
+    "workflow": {
+      "jobName": "Container Hardening Workflow",
+      "roleName": "Container Hardening Workflow microagent",
+      "summary": "Runs container hardening workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "CVE Kumo",
+        "Seira Vaultkeeper",
+        "Hugo Matrix",
+        "Runtime Riku"
+      ]
+    },
+    "stats": {
+      "power": 93,
+      "precision": 92,
+      "speed": 95,
+      "resilience": 73,
+      "intelligence": 87,
+      "teamwork": 99
+    },
+    "synced_agents": [
+      "CVE Kumo",
+      "Seira Vaultkeeper",
+      "Hugo Matrix",
+      "Runtime Riku"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "47",
+    "slug": "secure-sakura",
+    "name": "Secure Sakura",
+    "role": "Secure Template Library",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Common",
+    "role_category": "platform",
+    "codename": "chef.security.secure-template-library",
+    "mise_name": "Mise SecureTemplateLibrary",
+    "command": "Secure Template Library",
+    "summary": "Runs secure template library for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Secure Template Library done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in secure template library so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen secure template library aura",
+      "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+      "tool": "blueprint",
+      "spritePath": "/assets/characters/secure-sakura/full-body.png",
+      "cardPath": "/assets/characters/secure-sakura/card.png"
+    },
+    "workflow": {
+      "jobName": "Secure Template Library",
+      "roleName": "Secure Template Library microagent",
+      "summary": "Runs secure template library for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Threat Taro",
+        "Token Toshi",
+        "Bruno Blast-Radius",
+        "Bootstrap Aiko"
+      ]
+    },
+    "stats": {
+      "power": 81,
+      "precision": 74,
+      "speed": 71,
+      "resilience": 93,
+      "intelligence": 95,
+      "teamwork": 93
+    },
+    "synced_agents": [
+      "Threat Taro",
+      "Token Toshi",
+      "Bruno Blast-Radius",
+      "Bootstrap Aiko"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "46",
+    "slug": "threat-taro",
+    "name": "Threat Taro",
+    "role": "Threat Modeling Starter",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Common",
+    "role_category": "security",
+    "codename": "chef.security.threat-modeling-starter",
+    "mise_name": "Mise ThreatModelingStarter",
+    "command": "Threat Modeling Starter",
+    "summary": "Runs threat modeling starter for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Threat Modeling Starter done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in threat modeling starter so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen threat modeling starter aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/threat-taro/full-body.png",
+      "cardPath": "/assets/characters/threat-taro/card.png"
+    },
+    "workflow": {
+      "jobName": "Threat Modeling Starter",
+      "roleName": "Threat Modeling Starter microagent",
+      "summary": "Runs threat modeling starter for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Secure Sakura",
+        "Alko Commit Chef",
+        "Template Tanaka",
+        "SLO Sage"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 74,
+      "speed": 69,
+      "resilience": 87,
+      "intelligence": 87,
+      "teamwork": 81
+    },
+    "synced_agents": [
+      "Secure Sakura",
+      "Alko Commit Chef",
+      "Template Tanaka",
+      "SLO Sage"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  },
+  {
+    "id": "54",
+    "slug": "watchtower-yoru",
+    "name": "Watchtower Yoru",
+    "role": "Runtime Threat Detector",
+    "department": "Security Kitchen",
+    "department_label": "Security Kitchen",
+    "department_tagline": "Protect the kitchen.",
+    "rarity": "Common",
+    "role_category": "security",
+    "codename": "chef.security.runtime-threat-detector",
+    "mise_name": "Mise RuntimeThreatDetector",
+    "command": "Runtime Threat Detector",
+    "summary": "Runs runtime threat detector for repository operations, producing evidence-first results before any risky change is allowed.",
+    "lore": "",
+    "nationality": "Japanese",
+    "signature_phrase": "Runtime Threat Detector done cleanly, safely, and in rhythm.",
+    "unique_trait": "Specializes in runtime threat detector so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen runtime threat detector aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/watchtower-yoru/full-body.png",
+      "cardPath": "/assets/characters/watchtower-yoru/card.png"
+    },
+    "workflow": {
+      "jobName": "Runtime Threat Detector",
+      "roleName": "Runtime Threat Detector microagent",
+      "summary": "Runs runtime threat detector for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Merge Sentinel",
+        "Auditor Emi",
+        "Nina Promoter",
+        "Umami Code"
+      ]
+    },
+    "stats": {
+      "power": 77,
+      "precision": 85,
+      "speed": 95,
+      "resilience": 89,
+      "intelligence": 89,
+      "teamwork": 95
+    },
+    "synced_agents": [
+      "Merge Sentinel",
+      "Auditor Emi",
+      "Nina Promoter",
+      "Umami Code"
+    ],
+    "tags": [],
+    "source_image": "",
+    "mint_eligible": false,
+    "refine_only": false
+  }
+]

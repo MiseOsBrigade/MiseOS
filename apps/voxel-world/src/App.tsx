@@ -1,0 +1,1 @@
+import{World}from"./components/World";import{HUD}from"./components/HUD";export default function App(){return <main><World/><HUD/></main>}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://localhost:3000; img-src 'self' data: blob:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'">
+  <title>MiseOS Clickable Character</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">MiseOS Character Runtime</p>
+        <h1>Signed Hotspot Console</h1>
+      </div>
+      <button id="connect-wallet">Connect wallet</button>
+    </header>
+
+    <p id="status">Starting…</p>
+    <div class="stage-shell">
+      <canvas id="stage" width="1024" height="1536"></canvas>
+    </div>
+    <section id="output" aria-live="polite"></section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

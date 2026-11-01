@@ -1,0 +1,98 @@
+{
+  "$schema": "./three-layer-ecosystem.schema.json",
+  "schema": "miseos.ecosystem.three-layer.v1",
+  "category": "Character-Native Agent Operations",
+  "positioning": "MiseOS turns character intellectual property into a governed workforce of useful digital agents and gives communities and organizations a platform for building with them.",
+  "strategic_principle": {
+    "identity": "Who the character is",
+    "capability": "What the agent can do",
+    "authority": "What the agent is allowed to do",
+    "evidence": "How its work and performance are verified"
+  },
+  "canonical_counts": {
+    "character_agents": 112,
+    "registry_manifests": 23,
+    "total_ecosystem_items": 135
+  },
+  "layers": [
+    {
+      "id": "character-ip",
+      "order": 1,
+      "name": "Character IP",
+      "surface": "Approachable and emotional",
+      "question": "Who are these characters, and why should people care?",
+      "strategic_role": "Attention and emotional attachment",
+      "items": [
+        "Character cards",
+        "Comics and animation",
+        "Character lore and worldbuilding",
+        "Games and interactive experiences",
+        "Digital and physical collectibles",
+        "Educational content",
+        "Social media storytelling",
+        "Community-facing entertainment"
+      ]
+    },
+    {
+      "id": "agent-utility",
+      "order": 2,
+      "name": "Agent Utility",
+      "surface": "Operational and defensible",
+      "question": "What can this agent do, what is it permitted to do and how can its work be trusted?",
+      "strategic_role": "Practical value and software defensibility",
+      "items": [
+        "Defined capabilities",
+        "Executable commands",
+        "Connected tools",
+        "Contextual memory",
+        "Workflow responsibilities",
+        "Agent-to-agent handoffs",
+        "Permission boundaries",
+        "Performance metrics",
+        "Approval requirements",
+        "Proof and verification gates",
+        "Audit trails",
+        "Governance policies"
+      ]
+    },
+    {
+      "id": "participation-economy",
+      "order": 3,
+      "name": "Participation Economy",
+      "surface": "Ecosystem and value creation",
+      "question": "How can people participate, contribute and create value within the ecosystem?",
+      "strategic_role": "Distribution, contribution and economic expansion",
+      "items": [
+        "Brigade marketplace",
+        "Agent publishing",
+        "Workflow publishing",
+        "Tool and skill distribution",
+        "Contributor reputation",
+        "Usage-based rewards",
+        "Community development quests",
+        "Character and workflow licensing",
+        "Software subscriptions",
+        "Enterprise deployments",
+        "Customer-configurable Brigades",
+        "Revenue sharing",
+        "Certification and verification programs"
+      ]
+    }
+  ],
+  "activation_loop": [
+    "Discover a character",
+    "Understand its role",
+    "Deploy its capabilities",
+    "Verify its work",
+    "Improve its performance",
+    "Publish or combine workflows",
+    "Participate in the resulting ecosystem"
+  ],
+  "market_entry": [
+    "Meet the agent",
+    "Watch the agent work",
+    "Inspect the proof",
+    "Assemble a Brigade",
+    "Join the ecosystem"
+  ]
+}

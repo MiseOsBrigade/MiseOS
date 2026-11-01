@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Shimeji Brigade palette sheet">
+  <rect width="900" height="360" fill="#07130f"/>
+  <text x="40" y="48" fill="#f6f1e7" font-family="ui-rounded, sans-serif" font-weight="800" font-size="28">SHIMEJI BRIGADE / PALETTE</text>
+  <g font-family="ui-monospace, monospace" font-size="16">
+    <g><rect x="40" y="80" width="145" height="190" fill="#07130f"/><text x="52" y="300" fill="#f6f1e7">BG #07130F</text></g>
+    <g><rect x="200" y="80" width="145" height="190" fill="#0f2f25"/><text x="212" y="300" fill="#f6f1e7">PANEL #0F2F25</text></g>
+    <g><rect x="360" y="80" width="145" height="190" fill="#f2c94c"/><text x="372" y="300" fill="#f6f1e7">GOLD #F2C94C</text></g>
+    <g><rect x="520" y="80" width="145" height="190" fill="#e97b22"/><text x="532" y="300" fill="#f6f1e7">ORANGE #E97B22</text></g>
+    <g><rect x="680" y="80" width="145" height="190" fill="#1e9bb8"/><text x="692" y="300" fill="#f6f1e7">TEAL #1E9BB8</text></g>
+  </g>
+</svg>

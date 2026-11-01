@@ -1,0 +1,218 @@
+{
+  "collection": "Mise Orchestra: Kitchen Chaos DevOps Universe",
+  "season": "Season 1 - The Kitchen Is Open",
+  "total_characters": 23,
+  "chain_recommendation": "Polygon",
+  "token_standard": "ERC-721",
+  "royalty_interface": "ERC-2981",
+  "note": "Creator collectible metadata. No investment, resale, or profit language is included.",
+  "cards": [
+    {
+      "id": 1,
+      "name": "Kurogami Senpai",
+      "role": "Chef de Cuisine",
+      "department": "Operations",
+      "rarity": "Mythic",
+      "card_png": "cards/png/001-kurogami-senpai.png",
+      "metadata_json": "metadata/erc721/001-kurogami-senpai.json"
+    },
+    {
+      "id": 2,
+      "name": "Tensho",
+      "role": "Expediter",
+      "department": "Pipeline",
+      "rarity": "Rare",
+      "card_png": "cards/png/002-tensho.png",
+      "metadata_json": "metadata/erc721/002-tensho.json"
+    },
+    {
+      "id": 3,
+      "name": "Mizu",
+      "role": "Prep Chef",
+      "department": "Operations",
+      "rarity": "Rare",
+      "card_png": "cards/png/003-mizu.png",
+      "metadata_json": "metadata/erc721/003-mizu.json"
+    },
+    {
+      "id": 4,
+      "name": "Umami Code",
+      "role": "Saucier",
+      "department": "Platform",
+      "rarity": "Epic",
+      "card_png": "cards/png/004-umami-code.png",
+      "metadata_json": "metadata/erc721/004-umami-code.json"
+    },
+    {
+      "id": 5,
+      "name": "Kaji",
+      "role": "Grillardin",
+      "department": "Operations",
+      "rarity": "Epic",
+      "card_png": "cards/png/005-kaji.png",
+      "metadata_json": "metadata/erc721/005-kaji.json"
+    },
+    {
+      "id": 6,
+      "name": "Yume",
+      "role": "Pastry Chef",
+      "department": "Pipeline",
+      "rarity": "Rare",
+      "card_png": "cards/png/006-yume.png",
+      "metadata_json": "metadata/erc721/006-yume.json"
+    },
+    {
+      "id": 7,
+      "name": "Iron Hashi",
+      "role": "Boucher",
+      "department": "Reliability",
+      "rarity": "Rare",
+      "card_png": "cards/png/007-iron-hashi.png",
+      "metadata_json": "metadata/erc721/007-iron-hashi.json"
+    },
+    {
+      "id": 8,
+      "name": "Null-chan",
+      "role": "Plongeur",
+      "department": "Reliability",
+      "rarity": "Rare",
+      "card_png": "cards/png/008-null-chan.png",
+      "metadata_json": "metadata/erc721/008-null-chan.json"
+    },
+    {
+      "id": 9,
+      "name": "Flash Riku",
+      "role": "Runner",
+      "department": "Pipeline",
+      "rarity": "Epic",
+      "card_png": "cards/png/009-flash-riku.png",
+      "metadata_json": "metadata/erc721/009-flash-riku.json"
+    },
+    {
+      "id": 10,
+      "name": "Seira",
+      "role": "Sommelier",
+      "department": "Platform",
+      "rarity": "Epic",
+      "card_png": "cards/png/010-seira.png",
+      "metadata_json": "metadata/erc721/010-seira.json"
+    },
+    {
+      "id": 11,
+      "name": "Kuro Guard",
+      "role": "Steward",
+      "department": "Platform",
+      "rarity": "Epic",
+      "card_png": "cards/png/011-kuro-guard.png",
+      "metadata_json": "metadata/erc721/011-kuro-guard.json"
+    },
+    {
+      "id": 12,
+      "name": "Scale Oni",
+      "role": "Rotisseur",
+      "department": "Operations",
+      "rarity": "Legendary",
+      "card_png": "cards/png/012-scale-oni.png",
+      "metadata_json": "metadata/erc721/012-scale-oni.json"
+    },
+    {
+      "id": 13,
+      "name": "Build-Kun",
+      "role": "Boulanger",
+      "department": "Pipeline",
+      "rarity": "Rare",
+      "card_png": "cards/png/013-build-kun.png",
+      "metadata_json": "metadata/erc721/013-build-kun.json"
+    },
+    {
+      "id": 14,
+      "name": "Streama",
+      "role": "Poissonnier",
+      "department": "Operations",
+      "rarity": "Rare",
+      "card_png": "cards/png/014-streama.png",
+      "metadata_json": "metadata/erc721/014-streama.json"
+    },
+    {
+      "id": 15,
+      "name": "Orchestra Core",
+      "role": "Chef Spirit",
+      "department": "Platform",
+      "rarity": "Mythic",
+      "card_png": "cards/png/015-orchestra-core.png",
+      "metadata_json": "metadata/erc721/015-orchestra-core.json"
+    },
+    {
+      "id": 16,
+      "name": "Canary Taster",
+      "role": "Guest Chef",
+      "department": "Reliability",
+      "rarity": "Rare",
+      "card_png": "cards/png/016-canary-taster.png",
+      "metadata_json": "metadata/erc721/016-canary-taster.json"
+    },
+    {
+      "id": 17,
+      "name": "Metrics Miko",
+      "role": "Guest Chef",
+      "department": "Reliability",
+      "rarity": "Epic",
+      "card_png": "cards/png/017-metrics-miko.png",
+      "metadata_json": "metadata/erc721/017-metrics-miko.json"
+    },
+    {
+      "id": 18,
+      "name": "SLO Sage",
+      "role": "Guest Chef",
+      "department": "Reliability",
+      "rarity": "Epic",
+      "card_png": "cards/png/018-slo-sage.png",
+      "metadata_json": "metadata/erc721/018-slo-sage.json"
+    },
+    {
+      "id": 19,
+      "name": "Data-chan",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "rarity": "Rare",
+      "card_png": "cards/png/019-data-chan.png",
+      "metadata_json": "metadata/erc721/019-data-chan.json"
+    },
+    {
+      "id": 20,
+      "name": "Insight Sensei",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "rarity": "Epic",
+      "card_png": "cards/png/020-insight-sensei.png",
+      "metadata_json": "metadata/erc721/020-insight-sensei.json"
+    },
+    {
+      "id": 21,
+      "name": "Chaos Analyst",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "rarity": "Legendary",
+      "card_png": "cards/png/021-chaos-analyst.png",
+      "metadata_json": "metadata/erc721/021-chaos-analyst.json"
+    },
+    {
+      "id": 22,
+      "name": "Growth Guru",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "rarity": "Epic",
+      "card_png": "cards/png/022-growth-guru.png",
+      "metadata_json": "metadata/erc721/022-growth-guru.json"
+    },
+    {
+      "id": 23,
+      "name": "Culture Chef",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "rarity": "Legendary",
+      "card_png": "cards/png/023-culture-chef.png",
+      "metadata_json": "metadata/erc721/023-culture-chef.json"
+    }
+  ]
+}

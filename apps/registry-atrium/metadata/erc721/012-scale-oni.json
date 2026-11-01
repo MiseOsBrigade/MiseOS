@@ -1,0 +1,72 @@
+{
+  "name": "Mise Orchestra #012 - Scale Oni",
+  "description": "Scale Oni is the Rotisseur of the Mise Orchestra Operations Department. Scales up when things get hot. The bigger the load, the stronger he gets. This creator collectible is designed for lore, access, provenance, and community engagement.",
+  "image": "ipfs://REPLACE_WITH_COLLECTION_CID/cards/png/012-scale-oni.png",
+  "external_url": "https://github.com/MiseOsBrigade/Mise-OS",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Mise Orchestra"
+    },
+    {
+      "trait_type": "Season",
+      "value": "Season 1"
+    },
+    {
+      "trait_type": "Card Number",
+      "value": "012"
+    },
+    {
+      "trait_type": "Character",
+      "value": "Scale Oni"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Rotisseur"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations"
+    },
+    {
+      "trait_type": "Function",
+      "value": "Scale"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Scale Core"
+    },
+    {
+      "trait_type": "Element",
+      "value": "Red Heat"
+    },
+    {
+      "trait_type": "Ability",
+      "value": "Elastic Flame"
+    },
+    {
+      "trait_type": "Stat: Scale",
+      "value": 99,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Compute",
+      "value": 92,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Stress",
+      "value": 95,
+      "display_type": "boost_number"
+    },
+    {
+      "trait_type": "Stat: Control",
+      "value": 72,
+      "display_type": "boost_number"
+    }
+  ]
+}
