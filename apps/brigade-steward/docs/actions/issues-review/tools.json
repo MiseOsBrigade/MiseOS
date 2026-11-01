@@ -1,0 +1,1 @@
+{"mode":"issues-review","title":"Issues & Review","station":"Saucier Triage Station","trusted_comment_command":"/mise issue-review","manual_cli_trigger":"gh workflow run \"Mise Repo Steward\" -f mode=issues-review -f target_number=12","logo":"review ladle + checklist","safety":["GITHUB_TOKEN","scoped permissions","trusted collaborator routing"]}

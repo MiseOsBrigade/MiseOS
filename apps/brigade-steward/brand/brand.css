@@ -1,0 +1,19 @@
+:root {
+  --mise-stockpot-black: #0B0F14;
+  --mise-cast-iron: #111827;
+  --mise-flour: #F8F3E8;
+  --mise-sauce-gold: #F6C453;
+  --mise-flame-orange: #FF7A1A;
+  --mise-garnish-green: #22C55E;
+  --mise-blue-flame: #38BDF8;
+  --mise-font-display: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial;
+  --mise-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.mise-card {
+  background: var(--mise-cast-iron);
+  color: var(--mise-flour);
+  border: 1px solid rgba(248, 243, 232, 0.16);
+  border-radius: 18px;
+  padding: 1rem;
+}
