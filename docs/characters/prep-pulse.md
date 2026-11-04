@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/prep-pulse.json`](../../data/characters/prep-pulse.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Prep Pulse <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Mise Monitor <sub>source: `characters/prep-pulse/metadata.json`</sub> |
 | Kitchen / department | Operations Kitchen <sub>source: `characters/prep-pulse/metadata.json`</sub> |
 | Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -37,13 +37,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 98.7% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 72 · precision 86 · speed 77 · resilience 78 · intelligence 67 · teamwork 68 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Abilities | Speed Index, Peak Efficiency, Prep Checklist, Chop Rhythm, Wash, Trim <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a freshly honed edge and a cutting board ruled in centimetres: that is where Prep Pulse is happiest. As Operations Kitchen's Mise Monitor, Prep Pulse breaks large work down into clean, consistent portions so every downstream station gets exactly what it needs. The card calls out Speed Index, Peak Efficiency, Prep Checklist: the checks Prep Pulse runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Measure, then cut. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -90,7 +90,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Dispatcher](../agents/dispatcher.md) · [Automator](../agents/automator.md) · [Iron Hashi](../agents/iron-hashi.md) <sub>source: `authored: card design (closest agents for theme "blade")`</sub>
+
+Repo pets: [Iron Hashi](../repo-pets/iron-hashi.md) · [Flash Riku](../repo-pets/flash-riku.md) <sub>source: `authored: card design (closest repo pets for theme "blade")`</sub>
 
 ## Related characters
 
@@ -129,5 +131,13 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/prep-pulse/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "blade")` |
+| repo_pets | `authored: card design (closest repo pets for theme "blade")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

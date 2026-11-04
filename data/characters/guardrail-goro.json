@@ -3,7 +3,9 @@
   "slug": "guardrail-goro",
   "name": "Guardrail Goro",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -28,7 +30,16 @@
     "role_category": "data/imports/merged_roster.json",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/guardrail-goro/metadata.json"
+    "helps.station": "characters/guardrail-goro/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 59,
@@ -80,9 +91,9 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "level": 23,
   "unique_trait": "Specializes in golden path guardrails so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
   "role_category": "automation",
@@ -173,7 +184,7 @@
   "department": "Platform Kitchen",
   "department_mission": "Provide golden paths and stable service foundations.",
   "rarity": "Common",
-  "lore": "Not yet defined in the source material",
+  "lore": "Picture the locked dry store and the keyring that never leaves the belt: that is where Guardrail Goro is happiest. As Platform Kitchen's specialist for golden path guardrails, Guardrail Goro guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. The card calls out Platform Standards, Consistent, Reliable: the checks Guardrail Goro runs before calling anything ready.",
   "signature_phrase": "Golden Path Guardrails done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Guardrail Goro performs golden path guardrails within the Platform Kitchen.",
@@ -241,6 +252,37 @@
     "problem": "Guardrail Goro performs golden path guardrails within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "abilities": [
+    "Platform Standards",
+    "Consistent",
+    "Reliable",
+    "Scalable",
+    "Trusted",
+    "Safe Defaults"
+  ],
+  "theme": "security"
 }

@@ -5,18 +5,18 @@
 
 **Registry manifest (product / tool)** · Implementation: **Implemented in code** · Detail record: [`data/characters/miseos-maven-policy-adapter.json`](../../data/characters/miseos-maven-policy-adapter.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | MiseOS Maven Policy Adapter <sub>source: `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Package <sub>source: `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (type)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Security Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "security")`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Registry rarity | Mythic <sub>source: `data/player-cards-ocr.json (printed rarity)`</sub> |
 | ID: registry_id | miseos.maven-policy-adapter <sub>source: `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 2 <sub>source: `data/player-cards.json`</sub> |
@@ -36,12 +36,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
+| Roster stats | power 80 · precision 75 · speed 70 · resilience 79 · intelligence 69 · teamwork 72 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "security")`</sub> |
+| Abilities | Policy, Repository, Engine, Rune, Compliance, Flow <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the locked dry store and the keyring that never leaves the belt: that is where MiseOS Maven Policy Adapter is happiest. As Security Kitchen's specialist for package, MiseOS Maven Policy Adapter guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. The card calls out Policy, Repository, Engine: the checks MiseOS Maven Policy Adapter runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Guard. Audit. Comply. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -56,9 +56,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Step | Value |
 |---|---|
 | Summary | Executable baseline capability for MiseOS Maven Policy Adapter. <sub>source: `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (capability.description)`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | access requests, policy set, scan findings, secret inventory <sub>source: `authored: card design (theme "security")`</sub> |
+| Outputs | allow / deny decision, audit record, remediation ticket <sub>source: `authored: card design (theme "security")`</sub> |
+| Proof gate | Policy gate: no access or release without a policy match and a recorded approver. <sub>source: `authored: card design (theme "security")`</sub> |
 
 ## Actions / commands
 
@@ -115,17 +115,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Registry (package) <sub>source: `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (marketplace.category)`</sub> |
-| Mission | Not yet defined in the source material |
+| Mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
 | Problem it addresses | Executable baseline capability for MiseOS Maven Policy Adapter. <sub>source: `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (capability.description)`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Policy gate: no access or release without a policy match and a recorded approver. <sub>source: `authored: card design (theme "security")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Kuro Guard](../agents/kuro-guard.md) · [Firewall](../agents/firewall.md) · [Security Auditor](../agents/security-auditor.md) <sub>source: `authored: card design (closest agents for theme "security")`</sub>
+
+Repo pets: [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[MiseOS Policy Engine](./miseos-policy-engine.md) · [MiseOS Agent SDK](./miseos-agent-sdk.md) · [MiseOS Repo Pet](./miseos-repo-pet.md) · [Red Oni](./red-oni.md) · [Auditor Emi](./auditor-emi.md) · [Secure Sakura](./secure-sakura.md) <sub>source: `authored: card design (same theme "security" / same department)`</sub>
 
 ## Sources
 
@@ -148,5 +150,24 @@ _Not yet defined in the source material_
 | pricing | `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json` |
 | implementation | `git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts` |
 | helps.station | `apps/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json (marketplace.category)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "security")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| rarity | `data/player-cards-ocr.json (printed rarity)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "security")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "security")` |
+| workflow.outputs | `authored: card design (theme "security")` |
+| workflow.proof_gate | `authored: card design (theme "security")` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "security")` |
+| agents | `authored: card design (closest agents for theme "security")` |
+| repo_pets | `authored: card design (closest repo pets for theme "security")` |
+| related | `authored: card design (same theme "security" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

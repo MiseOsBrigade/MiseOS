@@ -3,45 +3,45 @@
 
 **Individual catalogue item (action / workflow / primitive)** · Implementation: **Implemented in code** · Detail record: [`data/characters/catalog-primitive-observability.json`](../../data/characters/catalog-primitive-observability.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | OpenTelemetry + Logfire Collector <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | platform <sub>source: `data/imports/miseos-individual-catalog-items.json (category)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
-| Collections | Not yet defined in the source material |
+| Kitchen / department | Data & Insight Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "data")`</sub> |
+| Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Roster stats | power 80 · precision 73 · speed 71 · resilience 81 · intelligence 83 · teamwork 80 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "data")`</sub> |
+| Abilities | platform, Measure, Analyze, Recommend <sub>source: `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "data")`</sub> |
+| Lore | Ask the brigade about OpenTelemetry + Logfire Collector and they describe a clipboard of tally marks that becomes a chart by morning. As Data & Insight Kitchen's specialist for platform, OpenTelemetry + Logfire Collector reads the numbers behind service (covers, waste, timings) and turns them into the next improvement, and the rest of the kitchen plans service around that rhythm. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every trend alert accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 ## Workflow
 
 | Step | Value |
 |---|---|
 | Summary | OpenTelemetry host metrics collector configuration relocated out of .github/workflows. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | service metrics, logs, historic baselines <sub>source: `authored: card design (theme "data")`</sub> |
+| Outputs | insight report, trend alert, recommended change <sub>source: `authored: card design (theme "data")`</sub> |
+| Proof gate | Evidence gate: every recommendation cites the metric and time window it came from. <sub>source: `authored: card design (theme "data")`</sub> |
 
 ## Actions / commands
 
@@ -51,11 +51,11 @@ _Not yet defined in the source material (no player card art is linked to this en
 
 **Status:** Implemented in code
 
-- Tool directory: [`tools/devops-foundry/templates/observability`](../../tools/devops-foundry/templates/observability) (implemented in code)
+- Tool directory: [`apps/miseos-platform/.github/workflows`](../../apps/miseos-platform/.github/workflows) (implemented in code)
 
 Payload files (installed by this catalogue item):
+- [`apps/miseos-platform/.github/workflows/otel-collector-config.yaml`](../../apps/miseos-platform/.github/workflows/otel-collector-config.yaml)
 - [`tools/devops-foundry/templates/observability/README.md`](../../tools/devops-foundry/templates/observability/README.md)
-- [`tools/devops-foundry/templates/observability/otel-collector-logfire.yaml`](../../tools/devops-foundry/templates/observability/otel-collector-logfire.yaml)
 
 Dependencies: LOGFIRE_TOKEN environment secret <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub>
 
@@ -67,18 +67,20 @@ Notes: This is collector configuration, not a GitHub Actions workflow. <sub>sour
 
 | Aspect | Value |
 |---|---|
-| Station / stage | Not yet defined in the source material |
-| Mission | Not yet defined in the source material |
+| Station / stage | platform <sub>source: `role`</sub> |
+| Mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
 | Problem it addresses | OpenTelemetry host metrics collector configuration relocated out of .github/workflows. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Evidence gate: every recommendation cites the metric and time window it came from. <sub>source: `authored: card design (theme "data")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `authored: card design (closest agents for theme "data")`</sub>
+
+Repo pets: [Flag Fox](../repo-pets/flag-fox.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "data")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Apprentice Kai](./apprentice-kai.md) · [Flag Fox](./flag-fox.md) · [Roadmap Sensei](./roadmap-sensei.md) <sub>source: `authored: card design (same theme "data" / same department)`</sub>
 
 ## Sources
 
@@ -90,5 +92,26 @@ _Not yet defined in the source material_
 | dependencies | `data/imports/miseos-individual-catalog-items.json` |
 | notes | `data/imports/miseos-individual-catalog-items.json` |
 | implementation | `git ls-files grep + repo` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "data")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "data")` |
+| abilities | `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "data")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "data")` |
+| workflow.outputs | `authored: card design (theme "data")` |
+| workflow.proof_gate | `authored: card design (theme "data")` |
+| helps.station | `role` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "data")` |
+| agents | `authored: card design (closest agents for theme "data")` |
+| repo_pets | `authored: card design (closest repo pets for theme "data")` |
+| related | `authored: card design (same theme "data" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

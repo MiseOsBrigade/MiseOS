@@ -5,18 +5,18 @@
 
 **Card-defined chef (catalogue: visual reference only)** · Implementation: **Described in docs only** · Detail record: [`data/characters/byte.json`](../../data/characters/byte.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Byte <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Data Chef <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Security Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "clean")`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 99.9% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 66 · precision 76 · speed 75 · resilience 83 · intelligence 73 · teamwork 76 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "clean")`</sub> |
+| Abilities | Algorithm, Accuracy, Data Analysis, Ingest, Ingrdient, Cleanse Iii <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Byte when something is missing, which is exactly the point. Byte keeps the kitchen clean and the waste stream honest: sanitising surfaces, logging waste and closing contamination risks; the image the crew uses for it is a steel counter wiped until it reflects the ceiling lights. The card calls out Algorithm, Accuracy, Data Analysis: the checks Byte runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Sanitize first, then service. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,14 +51,17 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Byte keeps the kitchen clean and the waste stream honest: sanitising surfaces, logging waste and closing contamination risks. <sub>source: `authored: card design (theme "clean")`</sub> |
+| Inputs | station checklist, waste log, sanitiser concentration readings, incident reports <sub>source: `authored: card design (theme "clean")`</sub> |
+| Outputs | sanitation sign-off, waste report, contamination alert <sub>source: `authored: card design (theme "clean")`</sub> |
+| Proof gate | Sanitation sign-off: a station reopens only after its checklist is complete and readings are in range; any contamination opens an incident. <sub>source: `authored: card design (theme "clean")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run byte --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise byte sanitize` · reads: `station checklist` · emits: `sanitation sign-off` · status: `proposed` <sub>source: `authored: card design (theme "clean")`</sub>
+- command: `mise byte audit-waste` · reads: `waste log` · emits: `waste report` · status: `proposed` <sub>source: `authored: card design (theme "clean")`</sub>
+- command: `mise byte sign-off` · reads: `sanitiser concentration readings` · emits: `contamination alert` · status: `proposed` <sub>source: `authored: card design (theme "clean")`</sub>
 
 ## Implementation
 
@@ -75,17 +78,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Data Chef <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Problem it addresses | Residue (stale secrets, dead code, waste) quietly contaminates everything it touches. <sub>source: `authored: card design (theme "clean")`</sub> |
+| Safety gate | Sanitation sign-off: a station reopens only after its checklist is complete and readings are in range; any contamination opens an incident. <sub>source: `authored: card design (theme "clean")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Compliance](../agents/compliance.md) · [Scanner](../agents/scanner.md) · [Token Monk](../agents/token-monk.md) <sub>source: `authored: card design (closest agents for theme "clean")`</sub>
+
+Repo pets: [Mise Locker](../repo-pets/mise-locker.md) · [Kuro Guard](../repo-pets/kuro-guard.md) <sub>source: `authored: card design (closest repo pets for theme "clean")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Sanitation Star](./sanitation-star.md) · [No-Waste Ninja](./no-waste-ninja.md) · [Seira Vaultkeeper](./seira-vaultkeeper.md) · [Merge Sentinel](./merge-sentinel.md) · [Container Kage](./container-kage.md) <sub>source: `authored: card design (same theme "clean" / same department)`</sub>
 
 ## Sources
 
@@ -99,5 +104,27 @@ _Not yet defined in the source material_
 | catalogue_status | `data/imports/photo-alignment.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "clean")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "clean")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "clean")` |
+| workflow.inputs | `authored: card design (theme "clean")` |
+| workflow.outputs | `authored: card design (theme "clean")` |
+| workflow.proof_gate | `authored: card design (theme "clean")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| helps.problem | `authored: card design (theme "clean")` |
+| helps.proof_gate | `authored: card design (theme "clean")` |
+| agents | `authored: card design (closest agents for theme "clean")` |
+| repo_pets | `authored: card design (closest repo pets for theme "clean")` |
+| related | `authored: card design (same theme "clean" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

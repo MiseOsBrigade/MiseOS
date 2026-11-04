@@ -3,13 +3,36 @@
   "slug": "catalog-workflow-release-preflight",
   "name": "Release Preflight",
   "kind": "catalog_item",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/imports/miseos-individual-catalog-items.json",
     "role": "data/imports/miseos-individual-catalog-items.json (category)",
     "workflow.summary": "data/imports/miseos-individual-catalog-items.json",
     "dependencies": "data/imports/miseos-individual-catalog-items.json",
-    "implementation": "git ls-files grep + repo"
+    "implementation": "git ls-files grep + repo",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"pipeline\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "card_rarity_printed": "data/player-cards.json (no card for this entry)",
+    "card_stars_printed": "data/player-cards.json (no card for this entry)",
+    "card_meters_printed": "data/player-cards.json (no card for this entry)",
+    "rarity": "authored: card design (default tier; no stars printed)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"pipeline\")",
+    "abilities": "role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme \"pipeline\")",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"pipeline\")",
+    "workflow.outputs": "authored: card design (theme \"pipeline\")",
+    "workflow.proof_gate": "authored: card design (theme \"pipeline\")",
+    "helps.station": "role",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"pipeline\")",
+    "agents": "authored: card design (closest agents for theme \"pipeline\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"pipeline\")",
+    "related": "authored: card design (same theme \"pipeline\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "catalog_item": {
     "id": "workflow-release-preflight",
@@ -30,9 +53,9 @@
   "cards": [],
   "collections": [],
   "card_text": [],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "No card art linked, so nothing printed",
+  "card_stars_printed": "No card art linked",
+  "card_meters_printed": "No card art linked",
   "dependencies": [
     "CHANGELOG.md",
     "LICENSE"
@@ -54,16 +77,24 @@
   },
   "ids": {},
   "role": "workflow",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Common",
+  "lore": "Picture a conveyor of tickets moving through the pass: that is where Release Preflight is happiest. As Pipeline Kitchen's specialist for workflow, Release Preflight runs an automated gate in the delivery pipeline.",
+  "signature_phrase": "The gate never sleeps.",
   "workflow": {
     "summary": "Release readiness workflow with its required local release-sentinel Action.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "pull request or tag",
+      "workflow configuration",
+      "repository state"
+    ],
+    "outputs": [
+      "check run / status",
+      "annotations",
+      "release artefact or block"
+    ],
+    "proof_gate": "Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail."
   },
   "actions": [
     {
@@ -71,14 +102,75 @@
       "source": "data/imports/miseos-individual-catalog-items.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
-  "helps": {
-    "station": "Not yet defined in the source material",
-    "mission": "Not yet defined in the source material",
-    "problem": "Release readiness workflow with its required local release-sentinel Action.",
-    "proof_gate": "Not yet defined in the source material"
+  "stats": {
+    "power": 71,
+    "precision": 76,
+    "speed": 77,
+    "resilience": 68,
+    "intelligence": 67,
+    "teamwork": 78
   },
-  "agents": [],
-  "repo_pets": []
+  "related": [
+    {
+      "name": "npm GitHub Packages",
+      "slug": "catalog-workflow-npm-github-package"
+    },
+    {
+      "name": "Polyrepo Manifest Validation",
+      "slug": "catalog-workflow-polyrepo-manifest"
+    },
+    {
+      "name": "GitHub Pages",
+      "slug": "catalog-workflow-pages-static"
+    },
+    {
+      "name": "Yume Builder",
+      "slug": "yume-builder"
+    },
+    {
+      "name": "Felix Rollback",
+      "slug": "felix-rollback"
+    },
+    {
+      "name": "Nina Promoter",
+      "slug": "nina-promoter"
+    }
+  ],
+  "helps": {
+    "station": "workflow",
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Release readiness workflow with its required local release-sentinel Action.",
+    "proof_gate": "Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail."
+  },
+  "agents": [
+    {
+      "name": "Pipeline",
+      "slug": "pipeline"
+    },
+    {
+      "name": "GitHub Chef",
+      "slug": "github-chef"
+    },
+    {
+      "name": "Argo Chef",
+      "slug": "argo-chef"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Tensho",
+      "slug": "tensho"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "workflow",
+    "Check",
+    "Gate",
+    "Publish"
+  ],
+  "theme": "pipeline"
 }

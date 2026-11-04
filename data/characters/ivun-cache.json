@@ -3,7 +3,9 @@
   "slug": "ivun-cache",
   "name": "Ivun Cache",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -29,7 +31,15 @@
     "role_category": "data/imports/merged_roster.json",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/ivun-cache/metadata.json"
+    "helps.station": "characters/ivun-cache/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"clean\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"clean\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 47,
@@ -90,8 +100,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%",
     "94.7%",
@@ -192,7 +202,7 @@
   "department": "Pipeline Kitchen",
   "department_mission": "Build. Test. Deploy. Repeat.",
   "rarity": "Common",
-  "lore": "Not yet defined in the source material",
+  "lore": "Most of the brigade only notices Ivun Cache when something is missing, which is exactly the point. Ivun Cache keeps the kitchen clean and the waste stream honest: sanitising surfaces, logging waste and closing contamination risks; the image the crew uses for it is a steel counter wiped until it reflects the ceiling lights. The card calls out Pipeline Budget, Cost Efficiency, Optimization Level: the checks Ivun Cache runs before calling anything ready.",
   "signature_phrase": "Pipeline Cost Monitor done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Ivun Cache performs pipeline cost monitor within the Pipeline Kitchen.",
@@ -260,6 +270,37 @@
     "problem": "Ivun Cache performs pipeline cost monitor within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Compliance",
+      "slug": "compliance"
+    },
+    {
+      "name": "Scanner",
+      "slug": "scanner"
+    },
+    {
+      "name": "Token Monk",
+      "slug": "token-monk"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    },
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    }
+  ],
+  "abilities": [
+    "Pipeline Budget",
+    "Cost Efficiency",
+    "Optimization Level",
+    "Excellent",
+    "Cost Control Console",
+    "Cachehit Rate"
+  ],
+  "theme": "clean"
 }

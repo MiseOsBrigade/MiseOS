@@ -5,7 +5,7 @@
 
 **Registry character agent** · Implementation: **Referenced in app code (no dedicated handler)** · Detail record: [`data/characters/orchestra-core.json`](../../data/characters/orchestra-core.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
@@ -44,13 +44,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100%, 68%, 81%, 84% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 73 · precision 92 · speed 75 · resilience 79 · intelligence 76 · teamwork 90 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
 | Abilities | One Symphony <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Mise Orchestra card | role: Chef Spirit · department: Platform · function: Coordinate · rarity: Mythic · tier: Soul of Platform · element: Golden Gate · ability: One Symphony · lore: The soul of the platform. Sees everything and coordinates all. <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Lore | Orchestra Core belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station. <sub>source: `data/imports/merged_roster.json`</sub> |
-| Signature phrase | Not yet defined in the source material |
+| Signature phrase | No srott left to chance. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -181,5 +181,8 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | helps.station | `characters/orchestra-core/metadata.json` |
 | agents | `data/agents.json` |
 | repo_pets | `data/repo-pets.json` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

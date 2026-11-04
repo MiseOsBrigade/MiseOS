@@ -28,7 +28,16 @@
     "related": "data/imports/miseos_character_master_inventory_001_300.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/reserve-rune/metadata.json"
+    "helps.station": "characters/reserve-rune/metadata.json",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 28,
@@ -81,9 +90,9 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "level": 26,
   "profile_doc": "characters/reserve-rune/README.md",
   "canon_bible": {
@@ -131,8 +140,8 @@
   "department": "Operations Kitchen",
   "department_mission": "Keep the kitchen running smoothly.",
   "rarity": "Epic",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "lore": "Picture the locked dry store and the keyring that never leaves the belt: that is where Reserve Rune is happiest. As Operations Kitchen's Backup Archivist, Reserve Rune guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. The card calls out Memory Lock, Archive Safe, Encrypted: the checks Reserve Rune runs before calling anything ready.",
+  "signature_phrase": "Scan first, then service.",
   "workflow": {
     "summary": "Reserve Rune performs backup archivist within the Operations Kitchen.",
     "inputs": [
@@ -182,6 +191,37 @@
     "problem": "Reserve Rune performs backup archivist within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "abilities": [
+    "Memory Lock",
+    "Archive Safe",
+    "Encrypted",
+    "Immutable",
+    "Eternal",
+    "Data Intact"
+  ],
+  "theme": "security"
 }

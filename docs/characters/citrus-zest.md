@@ -3,9 +3,9 @@
 
 <a href="../../assets/player-cards/1by1-chefs/zest.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/zest.webp" alt="Citrus Zest" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/citrus-zest.json`](../../data/characters/citrus-zest.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/citrus-zest.json`](../../data/characters/citrus-zest.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
@@ -14,9 +14,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Name | Citrus Zest <sub>source: `data/imports/photo-alignment.csv`</sub> |
 | Aliases / printed variants | Zest <sub>source: `card titles / OCR in data/player-cards-ocr.json`</sub> |
 | Role / title | Agrumiste <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Operations Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flavor-forager.json`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Registry rarity | Rare <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flavor-forager.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 76 · precision 70 · speed 88 · resilience 74 · intelligence 72 · teamwork 69 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "veg")`</sub> |
+| Abilities | Zest Sync, Zest Mastery, Peel Control, Aroma Boost, Flavor Elevate, Flavor Profile <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Citrus Zest and they describe crates of produce under cold running water. As Operations Kitchen's specialist for agrumiste, Citrus Zest works through the produce: washing, prepping and seasoning vegetables at peak freshness, and the rest of the kitchen plans service around that rhythm. The card calls out Zest Sync, Zest Mastery, Peel Control: the checks Citrus Zest runs before calling anything ready. In the canon crosswalk this card is a provisional match for Flavor Forager. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Peak freshness, every plate. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Citrus Zest works through the produce: washing, prepping and seasoning vegetables at peak freshness. <sub>source: `authored: card design (theme "veg")`</sub> |
+| Inputs | produce delivery, prep list, freshness grades <sub>source: `authored: card design (theme "veg")`</sub> |
+| Outputs | prepped produce, prep-list completion, freshness discard log <sub>source: `authored: card design (theme "veg")`</sub> |
+| Proof gate | Freshness gate: produce below grade is composted, not prepped; prep list items are ticked only when done. <sub>source: `authored: card design (theme "veg")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run citrus-zest --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise citrus-zest prep` · reads: `produce delivery` · emits: `prepped produce` · status: `proposed` <sub>source: `authored: card design (theme "veg")`</sub>
+- command: `mise citrus-zest grade` · reads: `prep list` · emits: `prep-list completion` · status: `proposed` <sub>source: `authored: card design (theme "veg")`</sub>
+- command: `mise citrus-zest season` · reads: `freshness grades` · emits: `freshness discard log` · status: `proposed` <sub>source: `authored: card design (theme "veg")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `citrusZest` (not written yet)
+- Proposed command: `mise roster run citrus-zest --dept operations-kitchen --solo --emit report`
+- Contract: inputs: produce delivery, prep list, freshness grades → outputs: prepped produce, prep-list completion, freshness discard log; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Agrumiste <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Problem it addresses | Prep falls behind and stale produce sneaks onto plates. <sub>source: `authored: card design (theme "veg")`</sub> |
+| Safety gate | Freshness gate: produce below grade is composted, not prepped; prep list items are ticked only when done. <sub>source: `authored: card design (theme "veg")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [PrepBot](../agents/prepbot.md) · [Mizu](../agents/mizu.md) · [Steward Prime](../agents/steward-prime.md) <sub>source: `authored: card design (closest agents for theme "veg")`</sub>
+
+Repo pets: [Mizu](../repo-pets/mizu.md) · [Mise Apprentice](../repo-pets/mise-apprentice.md) <sub>source: `authored: card design (closest repo pets for theme "veg")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Flavor Forager](./flavor-forager.md) · [Flavor Hacker](./flavor-hacker.md) · [Veg Virtuoso](./veg-virtuoso.md) · [Oil Oracle](./oil-oracle.md) · [Harvest Hex](./harvest-hex.md) · [Ladle Lumen](./ladle-lumen.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "veg" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flavor-forager.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flavor-forager.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "veg")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "veg")` |
+| workflow.inputs | `authored: card design (theme "veg")` |
+| workflow.outputs | `authored: card design (theme "veg")` |
+| workflow.proof_gate | `authored: card design (theme "veg")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| helps.problem | `authored: card design (theme "veg")` |
+| helps.proof_gate | `authored: card design (theme "veg")` |
+| agents | `authored: card design (closest agents for theme "veg")` |
+| repo_pets | `authored: card design (closest repo pets for theme "veg")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "veg" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

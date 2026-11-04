@@ -3,7 +3,9 @@
   "slug": "slicer-swift",
   "name": "Slicer Swift",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "Flash Riku (canon crosswalk, provisional)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -12,8 +14,29 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv",
+    "department": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "rarity": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"blade\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"blade\")",
+    "workflow.inputs": "authored: card design (theme \"blade\")",
+    "workflow.outputs": "authored: card design (theme \"blade\")",
+    "workflow.proof_gate": "authored: card design (theme \"blade\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "helps.problem": "authored: card design (theme \"blade\")",
+    "helps.proof_gate": "authored: card design (theme \"blade\")",
+    "agents": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json",
+    "repo_pets": "authored: card design (closest repo pets for theme \"blade\")",
+    "related": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme \"blade\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -59,7 +82,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%"
@@ -71,31 +94,123 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "slicerSwift",
+      "command": "mise roster run slicer-swift --dept pipeline-kitchen --solo --emit report",
+      "contract": "inputs: whole product / large task, portion spec, yield target → outputs: portioned units, yield report, trim / waste count; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Trancheur",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Epic",
+  "lore": "Ask the brigade about Slicer Swift and they describe a freshly honed edge and a cutting board ruled in centimetres. As Pipeline Kitchen's specialist for trancheur, Slicer Swift breaks large work down into clean, consistent portions so every downstream station gets exactly what it needs, and the rest of the kitchen plans service around that rhythm. The card calls out Swift Cut, Lv. Max, Slice Protocol: the checks Slicer Swift runs before calling anything ready. In the canon crosswalk this card is a provisional match for Flash Riku.",
+  "signature_phrase": "Lv. Max: checked, not assumed.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Slicer Swift breaks large work down into clean, consistent portions so every downstream station gets exactly what it needs.",
+    "inputs": [
+      "whole product / large task",
+      "portion spec",
+      "yield target"
+    ],
+    "outputs": [
+      "portioned units",
+      "yield report",
+      "trim / waste count"
+    ],
+    "proof_gate": "Yield gate: portions are weighed against spec; out-of-tolerance cuts are re-trimmed or logged as waste before they reach a station."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run slicer-swift --dept pipeline-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise slicer-swift portion",
+      "reads": "whole product / large task",
+      "emits": "portioned units",
+      "status": "proposed",
+      "source": "authored: card design (theme \"blade\")"
+    },
+    {
+      "command": "mise slicer-swift weigh",
+      "reads": "portion spec",
+      "emits": "yield report",
+      "status": "proposed",
+      "source": "authored: card design (theme \"blade\")"
+    },
+    {
+      "command": "mise slicer-swift yield",
+      "reads": "yield target",
+      "emits": "trim / waste count",
+      "status": "proposed",
+      "source": "authored: card design (theme \"blade\")"
+    }
+  ],
+  "stats": {
+    "power": 81,
+    "precision": 87,
+    "speed": 99,
+    "resilience": 85,
+    "intelligence": 85,
+    "teamwork": 79
+  },
+  "related": [
+    {
+      "name": "Flash Riku",
+      "slug": "flash-riku"
+    },
+    {
+      "name": "Butcher Blade",
+      "slug": "butcher-blade"
+    },
+    {
+      "name": "Yume Builder",
+      "slug": "yume-builder"
+    },
+    {
+      "name": "Felix Rollback",
+      "slug": "felix-rollback"
+    },
+    {
+      "name": "Lila Branchkeeper",
+      "slug": "lila-branchkeeper"
+    }
+  ],
   "helps": {
     "station": "Trancheur",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Oversized, uneven work items jam the line and waste effort.",
+    "proof_gate": "Yield gate: portions are weighed against spec; out-of-tolerance cuts are re-trimmed or logged as waste before they reach a station."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "slug": "flash-riku",
+      "name": "Flash Riku",
+      "page": "docs/agents/flash-riku.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Iron Hashi",
+      "slug": "iron-hashi"
+    },
+    {
+      "name": "Flash Riku",
+      "slug": "flash-riku"
+    }
+  ],
+  "abilities": [
+    "Swift Cut",
+    "Lv. Max",
+    "Slice Protocol",
+    "Precision",
+    "Speed",
+    "Technique"
+  ],
+  "theme": "blade"
 }

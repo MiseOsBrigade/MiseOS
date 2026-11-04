@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/icloud-screens/orion-arkforge.webp"><img src="../../assets/player-cards/icloud-screens/orion-arkforge.webp" alt="Orion Arkforge" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1024×1536 |
 | Original source | `icloud:DBF7B13D-4688-43F3-8F7A-7A2E02F19F29.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | Not yet defined in the source material |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | Line runner (pipeline) <sub>source: `authored: card design (brigade station for theme "pipeline")`</sub> |
+| Kitchen / department | Pipeline Kitchen <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 74 · precision 70 · speed 89 · resilience 71 · intelligence 68 · teamwork 67 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "pipeline")`</sub> |
+| Abilities | Release, Build, Registry 23 Space, Orbital Map, Workflow, Status:Active <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Space Registry Orbital Relay Marshal · "I carry trusted signals across the farthest frontier." <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | Status:Stable: checked, not assumed. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Pipeline](../agents/pipeline.md) · [GitHub Chef](../agents/github-chef.md) · [Argo Chef](../agents/argo-chef.md) <sub>source: `authored: card design (closest agents for theme "pipeline")`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "pipeline")`</sub> |
+| Related characters | [Alko Commit Chef](../characters/alko-commit-chef.md) · [Yume](../characters/yume.md) · [Bruno Blast Radius](../characters/bruno-blast-radius.md) · [Tariq Notesmith](../characters/tariq-notesmith.md) · [Pipeline Sensei](../characters/pipeline-sensei.md) <sub>source: `authored: card design (same theme "pipeline")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Orion Arkforge runs an automated gate in the delivery pipeline. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Inputs | pull request or tag, workflow configuration, repository state |
+| Outputs | check run / status, annotations, release artefact or block |
+| Proof gate | Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail. |
+| Problem it addresses | Manual release steps are skipped under pressure. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run orion-arkforge --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise orion-arkforge check` · reads: `pull request or tag` · emits: `check run / status` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise orion-arkforge gate` · reads: `workflow configuration` · emits: `annotations` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise orion-arkforge publish` · reads: `repository state` · emits: `release artefact or block` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `orionArkforge` (not written yet)
+- Proposed command: `mise roster run orion-arkforge --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: pull request or tag, workflow configuration, repository state → outputs: check run / status, annotations, release artefact or block; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

@@ -3,14 +3,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/pipeline-sensei.json`](../../data/characters/pipeline-sensei.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Pipeline Sensei <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Pipeline <sub>source: `data/agents.json`</sub> |
 | Role / title | Pipeline Tuner Agent <sub>source: `characters/pipeline-sensei/metadata.json`</sub> |
 | Kitchen / department | Pipeline Kitchen <sub>source: `characters/pipeline-sensei/metadata.json`</sub> |
 | Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -20,24 +20,24 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | ID: character_id | miseos.character.015 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: card_id | MISE-015 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: codename | PIPELINE_SENSEI <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
-| Collections | Not yet defined in the source material |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 | Role category | delivery <sub>source: `data/imports/merged_roster.json`</sub> |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
 | Roster stats | power 75 · precision 72 · speed 60 · resilience 76 · intelligence 66 · teamwork 87 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Pipeline Tuner Agent, Check, Gate, Publish <sub>source: `role from characters/pipeline-sensei/metadata.json + authored: card design (workflow steps for theme "pipeline")`</sub> |
+| Lore | Most of the brigade only notices Pipeline Sensei when something is missing, which is exactly the point. Pipeline Sensei runs an automated gate in the delivery pipeline; the image the crew uses for it is a conveyor of tickets moving through the pass. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Pipeline Tuner Agent done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in pipeline tuner agent so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -94,6 +94,8 @@ Docs that describe it (docs only, not code):
 
 Agents: [Pipeline](../agents/pipeline.md) <sub>source: `data/agents.json`</sub>
 
+Repo pets: [Tensho](../repo-pets/tensho.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "pipeline")`</sub>
+
 ## Related characters
 
 [Tensho](./tensho.md) · [Yume](./yume.md) · [Flash Riku](./flash-riku.md) · [Canary Taster](./canary-taster.md) · [Platform Sensei](./platform-sensei.md) · [Reliability Sensei](./reliability-sensei.md) · [Red Oni](./red-oni.md) <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json`</sub>
@@ -124,5 +126,13 @@ Agents: [Pipeline](../agents/pipeline.md) <sub>source: `data/agents.json`</sub>
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/pipeline-sensei/metadata.json` |
 | agents | `data/agents.json` |
+| aliases | `data/agents.json` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| abilities | `role from characters/pipeline-sensei/metadata.json + authored: card design (workflow steps for theme "pipeline")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| repo_pets | `authored: card design (closest repo pets for theme "pipeline")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

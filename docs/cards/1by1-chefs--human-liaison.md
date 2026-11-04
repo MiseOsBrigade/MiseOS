@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/human-liaison.webp"><img src="../../assets/player-cards/1by1-chefs/human-liaison.webp" alt="Human Liaison" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /A8EC46EF-BCA1-4336-B489-83F60342F145.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Human Liaison](../agents/human-liaison.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Apprentice Kai](../characters/apprentice-kai.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Human-in-the-Loop <sub>source: `data/agents.json`</sub> |
+| Kitchen / department | Data & Insight Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/apprentice-kai.json`</sub> |
+| Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Legendary <sub>source: `authored: card design (from printed stars 5)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 85 · precision 91 · speed 80 · resilience 89 · intelligence 95 · teamwork 91 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "data")`</sub> |
+| Abilities | Liaison Index, Human-System, Trust Level, Human Insight, Maximum, Approval <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Human Liaison when something is missing, which is exactly the point. Human Liaison reads the numbers behind service (covers, waste, timings) and turns them into the next improvement; the image the crew uses for it is a clipboard of tally marks that becomes a chart by morning. The card calls out Liaison Index, Human-System, Trust Level: the checks Human Liaison runs before calling anything ready. In the canon crosswalk this card is a provisional match for Apprentice Kai. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every trend alert accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Human Liaison](../agents/human-liaison.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Flag Fox](../repo-pets/flag-fox.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "data")`</sub> |
+| Related characters | [Apprentice Kai](../characters/apprentice-kai.md) · [Culture Chef](../characters/culture-chef.md) · [Cost Kaito](../characters/cost-kaito.md) · [Iron Hashi](../characters/iron-hashi.md) · [Chaos Analyst](../characters/chaos-analyst.md) · [Risk Ryota](../characters/risk-ryota.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "data")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Human Liaison reads the numbers behind service (covers, waste, timings) and turns them into the next improvement. <sub>source: `authored: card design (theme "data")`</sub> |
+| Inputs | service metrics, logs, historic baselines |
+| Outputs | insight report, trend alert, recommended change |
+| Proof gate | Evidence gate: every recommendation cites the metric and time window it came from. |
+| Problem it addresses | Kitchens repeat the same mistakes when nobody reads the data. <sub>source: `authored: card design (theme "data")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run human-liaison --dept data-insight-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise human-liaison measure` · reads: `service metrics` · emits: `insight report` · status: `proposed` <sub>source: `authored: card design (theme "data")`</sub>
+- command: `mise human-liaison analyze` · reads: `logs` · emits: `trend alert` · status: `proposed` <sub>source: `authored: card design (theme "data")`</sub>
+- command: `mise human-liaison recommend` · reads: `historic baselines` · emits: `recommended change` · status: `proposed` <sub>source: `authored: card design (theme "data")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `humanLiaison` (not written yet)
+- Proposed command: `mise roster run human-liaison --dept data-insight-kitchen --solo --emit report`
+- Contract: inputs: service metrics, logs, historic baselines → outputs: insight report, trend alert, recommended change; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

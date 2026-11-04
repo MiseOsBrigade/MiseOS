@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/dora-daichi.json`](../../data/characters/dora-daichi.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | DORA Daichi <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Pipeline Analytics Engine <sub>source: `characters/dora-daichi/metadata.json`</sub> |
 | Kitchen / department | Data & Insight Kitchen <sub>source: `characters/dora-daichi/metadata.json`</sub> |
 | Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -38,12 +38,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 1.6%, 100% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 72 · precision 68 · speed 55 · resilience 72 · intelligence 65 · teamwork 80 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Data&Insight, Kitchen, Dora Metrics, Performance Trend, Lead Time, For Changes <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a clipboard of tally marks that becomes a chart by morning: that is where DORA Daichi is happiest. As Data & Insight Kitchen's specialist for pipeline analytics engine, DORA Daichi reads the numbers behind service (covers, waste, timings) and turns them into the next improvement. The card calls out Data&Insight, Kitchen, Dora Metrics: the checks DORA Daichi runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Pipeline Analytics Engine done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in pipeline analytics engine so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -103,7 +103,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `authored: card design (closest agents for theme "data")`</sub>
+
+Repo pets: [Flag Fox](../repo-pets/flag-fox.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "data")`</sub>
 
 ## Related characters
 
@@ -144,5 +146,13 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/dora-daichi/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "data")` |
+| repo_pets | `authored: card design (closest repo pets for theme "data")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

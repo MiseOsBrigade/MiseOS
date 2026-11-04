@@ -3,14 +3,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/trace-sensei.json`](../../data/characters/trace-sensei.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Trace Sensei <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Instrumentation Booster <sub>source: `characters/trace-sensei/metadata.json`</sub> |
 | Kitchen / department | Reliability Kitchen <sub>source: `characters/trace-sensei/metadata.json`</sub> |
 | Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -20,24 +20,24 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | ID: character_id | miseos.character.032 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: card_id | MISE-032 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: codename | TRACE_SENSEI <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
-| Collections | Not yet defined in the source material |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 | Role category | automation <sub>source: `data/imports/merged_roster.json`</sub> |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
 | Roster stats | power 66 · precision 66 · speed 58 · resilience 66 · intelligence 84 · teamwork 70 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Instrumentation Booster, Taste, Review, Verdict <sub>source: `role from characters/trace-sensei/metadata.json + authored: card design (workflow steps for theme "quality")`</sub> |
+| Lore | Picture a spoon in every pot: that is where Trace Sensei is happiest. As Reliability Kitchen's Instrumentation Booster, Trace Sensei tastes and tests before anything is served: reviews, checks and canaries against the spec. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Instrumentation Booster done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in instrumentation booster so the Reliability Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -91,7 +91,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Reviewer](../agents/reviewer.md) · [Tester](../agents/tester.md) · [Quality Guard](../agents/quality-guard.md) <sub>source: `authored: card design (closest agents for theme "quality")`</sub>
+
+Repo pets: [Mise Garde](../repo-pets/mise-garde.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "quality")`</sub>
 
 ## Related characters
 
@@ -122,5 +124,14 @@ _Not yet defined in the source material_
 | role_category | `data/imports/merged_roster.json` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/trace-sensei/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| abilities | `role from characters/trace-sensei/metadata.json + authored: card design (workflow steps for theme "quality")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "quality")` |
+| repo_pets | `authored: card design (closest repo pets for theme "quality")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

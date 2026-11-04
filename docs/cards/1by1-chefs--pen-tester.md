@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/pen-tester.webp"><img src="../../assets/player-cards/1by1-chefs/pen-tester.webp" alt="Pen Tester" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /B5B0C182-1BCF-496A-A57C-38847039B832.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Pen Tester](../agents/pen-tester.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Threat Taro](../characters/threat-taro.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Penetration Tester <sub>source: `data/agents.json`</sub> |
+| Kitchen / department | Security Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/threat-taro.json`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Legendary <sub>source: `authored: card design (from printed stars 5)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 86 · precision 92 · speed 86 · resilience 82 · intelligence 94 · teamwork 91 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "quality")`</sub> |
+| Abilities | Target Acquired, Level 5, Authorized, Openports, Mission Status, Pen Test Tools <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a spoon in every pot: that is where Pen Tester is happiest. As Security Kitchen's Penetration Tester, Pen Tester tastes and tests before anything is served: reviews, checks and canaries against the spec. The card calls out Target Acquired, Level 5, Authorized: the checks Pen Tester runs before calling anything ready. In the canon crosswalk this card is a provisional match for Threat Taro. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Taste first, then service. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Pen Tester](../agents/pen-tester.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Mise Garde](../repo-pets/mise-garde.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "quality")`</sub> |
+| Related characters | [Threat Taro](../characters/threat-taro.md) · [Preview Yuki](../characters/preview-yuki.md) · [Nina Promoter](../characters/nina-promoter.md) · [Canary Judge](../characters/canary-judge.md) · [Release Conductor](../characters/release-conductor.md) · [OnCall Naomi](../characters/oncall-naomi.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "quality")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Pen Tester tastes and tests before anything is served: reviews, checks and canaries against the spec. <sub>source: `authored: card design (theme "quality")`</sub> |
+| Inputs | candidate change / dish, spec / acceptance tests, previous results |
+| Outputs | pass / send-back verdict, review notes, test evidence |
+| Proof gate | Taste gate: a change ships only with recorded evidence that it meets the spec. |
+| Problem it addresses | Defects reach the guest when nobody tastes before serving. <sub>source: `authored: card design (theme "quality")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run pen-tester --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise pen-tester taste` · reads: `candidate change / dish` · emits: `pass / send-back verdict` · status: `proposed` <sub>source: `authored: card design (theme "quality")`</sub>
+- command: `mise pen-tester review` · reads: `spec / acceptance tests` · emits: `review notes` · status: `proposed` <sub>source: `authored: card design (theme "quality")`</sub>
+- command: `mise pen-tester verdict` · reads: `previous results` · emits: `test evidence` · status: `proposed` <sub>source: `authored: card design (theme "quality")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `penTester` (not written yet)
+- Proposed command: `mise roster run pen-tester --dept security-kitchen --solo --emit report`
+- Contract: inputs: candidate change / dish, spec / acceptance tests, previous results → outputs: pass / send-back verdict, review notes, test evidence; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

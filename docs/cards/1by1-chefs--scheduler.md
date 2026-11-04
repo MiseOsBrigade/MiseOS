@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/scheduler.webp"><img src="../../assets/player-cards/1by1-chefs/scheduler.webp" alt="Scheduler" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /A9D046B7-0CA1-4E2E-8D92-BE22E4368C59.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Scheduler](../agents/scheduler.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Timer Tactician](../characters/timer-tactician.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Time Keeper <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Operations Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/timer-tactician.json`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Legendary <sub>source: `authored: card design (from printed stars 5)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 92 · precision 89 · speed 88 · resilience 90 · intelligence 87 · teamwork 91 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "time")`</sub> |
+| Abilities | Schedule, Accuracy, Master Plan, Prepare, Organize, Timeline Control <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Scheduler and they describe the ticket rail at full stretch, every slip in order. As Operations Kitchen's Time Keeper, Scheduler holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment, and the rest of the kitchen plans service around that rhythm. The card calls out Schedule, Accuracy, Master Plan: the checks Scheduler runs before calling anything ready. In the canon crosswalk this card is a provisional match for Timer Tactician. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Rhythm before speed. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Scheduler](../agents/scheduler.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Maestro](../repo-pets/mise-maestro.md) <sub>source: `authored: card design (closest repo pets for theme "time")`</sub> |
+| Related characters | [Timer Tactician](../characters/timer-tactician.md) · [Energy Keeper](../characters/energy-keeper.md) · [Queue Quartz](../characters/queue-quartz.md) · [Orderly Owl](../characters/orderly-owl.md) · [Pulse Captain](../characters/pulse-captain.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "time")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Scheduler holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. <sub>source: `authored: card design (theme "time")`</sub> |
+| Inputs | open tickets, station capacity, shift roster, service timeline |
+| Outputs | fire order / run sheet, shift handoff note, bottleneck alert |
+| Proof gate | Expo check: a course is fired only when every component reports ready; handoffs require a written note. |
+| Problem it addresses | Without a conductor, stations fire out of sequence and work arrives cold or late. <sub>source: `authored: card design (theme "time")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run scheduler --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise scheduler fire` · reads: `open tickets` · emits: `fire order / run sheet` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise scheduler handoff` · reads: `station capacity` · emits: `shift handoff note` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise scheduler rebalance` · reads: `shift roster` · emits: `bottleneck alert` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `scheduler` (not written yet)
+- Proposed command: `mise roster run scheduler --dept operations-kitchen --solo --emit report`
+- Contract: inputs: open tickets, station capacity, shift roster, service timeline → outputs: fire order / run sheet, shift handoff note, bottleneck alert; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

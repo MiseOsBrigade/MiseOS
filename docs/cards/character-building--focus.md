@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/character-building/focus.webp"><img src="../../assets/player-cards/character-building/focus.webp" alt="Focus:" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,44 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1536×2752 |
 | Original source | `extract:img-character-building-theme/Character building theme /Mise Orchestra DevOps Mythology 2.PNG` |
 | Duplicates | `extract:img-character-building-theme/Character building theme /Mise Orchestra DevOps Mythology.PNG`<br>`icloud:Mise_Orchestra_DevOps_Mythology.png` |
-| Character | Not yet defined in the source material |
-| Agent | Not yet defined in the source material |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | Poster / reference sheet <sub>source: `authored: card design (poster / reference sheet; topics from printed text)`</sub> |
+| Kitchen / department | All kitchens (universe-level reference) <sub>source: `authored: card design (poster / reference sheet; topics from printed text)`</sub> |
+| Department mission | n/a (spans every kitchen) |
+| Rarity | Not applicable (reference artwork) <sub>source: `authored: card design (poster / reference sheet; topics from printed text)`</sub> |
+| Printed rarity | Legendary <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | Not applicable (reference artwork, not a playable character) <sub>source: `authored: card design (poster / reference sheet; topics from printed text)`</sub> |
+| Abilities | Pipeline, Platform, Security, Reliability, Data, Focus, Foundations, Protection <sub>source: `data/player-cards-ocr.json (topics printed on the sheet)`</sub> |
+| Lore | A mythology where every technical workflow is a kitchen and fifteen Mise vs. Entropy: Order vs. Chaos <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | A mythology where every technical workflow is a kitchen and fifteen <sub>source: `data/player-cards-ocr.json (tagline printed on the sheet)`</sub> |
+| Agents | [Orchestra Core](../agents/orchestra-core.md) <sub>source: `authored: card design (universe-level sheet → Orchestra Core)`</sub> |
+| Repo pets | [Orchestra Core](../repo-pets/orchestra-core.md) <sub>source: `authored: card design (universe-level sheet → Orchestra Core)`</sub> |
+| Related characters | [Guardrail Goro](../characters/guardrail-goro.md) · [Seira](../characters/seira.md) · [Secure Sakura](../characters/secure-sakura.md) · [Orchestra Core](../characters/orchestra-core.md) · [Vault Hana](../characters/vault-hana.md) <sub>source: `authored: card design (same theme "security")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Reference sheet for the MiseOS universe: shows Pipeline, Platform, Security, Reliability. Used as visual canon when designing or checking characters, stations and brand assets. <sub>source: `authored: card design (poster / reference sheet; topics from printed text)`</sub> |
+| Inputs | n/a (static artwork) |
+| Outputs | visual canon reference for character and brand work |
+| Proof gate | Canon check: any name, colour, tier or role read off this sheet is cross-checked against data/characters/*.json before reuse. |
+| Problem it addresses | Keeps designers and agents working from one shared picture of the universe instead of drifting copies. <sub>source: `authored: card design (poster / reference sheet; topics from printed text)`</sub> |
+
+## Actions / commands
+
+- command: `none` · does: `reference artwork, not a runnable character` <sub>source: `authored: card design (poster / sheet)`</sub>
+
+## Implementation
+
+**Status:** Reference artwork (no code applies)
+
+Static artwork; no handler or command applies.
+
+<sub>source: `authored: card design (poster / reference sheet; topics from printed text)`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

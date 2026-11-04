@@ -24,7 +24,25 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json (marketplace.category)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"clean\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "rarity": "data/player-cards-ocr.json (printed rarity)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"clean\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "data/player-cards-ocr.json (text printed on the card)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"clean\")",
+    "workflow.outputs": "authored: card design (theme \"clean\")",
+    "workflow.proof_gate": "authored: card design (theme \"clean\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"clean\")",
+    "agents": "authored: card design (closest agents for theme \"clean\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"clean\")",
+    "related": "authored: card design (same theme \"clean\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
   "registry_catalog": {
@@ -109,8 +127,8 @@
     }
   ],
   "card_rarity_printed": "Ultra Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -307,16 +325,25 @@
     "registry_id": "miseos.workflow-linter"
   },
   "role": "Agent",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Security Kitchen",
+  "department_mission": "Guard. Audit. Comply.",
+  "rarity": "Ultra Mythic",
+  "lore": "He inspects. He validates. He corrects. He ensures every workflow is worthy.",
+  "signature_phrase": "Every sanitation sign-off accounted for.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Workflow Linter.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "station checklist",
+      "waste log",
+      "sanitiser concentration readings",
+      "incident reports"
+    ],
+    "outputs": [
+      "sanitation sign-off",
+      "waste report",
+      "contamination alert"
+    ],
+    "proof_gate": "Sanitation sign-off: a station reopens only after its checklist is complete and readings are in range; any contamination opens an incident."
   },
   "actions": [
     {
@@ -325,14 +352,65 @@
       "source": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 75,
+    "precision": 74,
+    "speed": 70,
+    "resilience": 78,
+    "intelligence": 66,
+    "teamwork": 69
+  },
+  "related": [
+    {
+      "name": "Container Kage",
+      "slug": "container-kage"
+    },
+    {
+      "name": "Token Toshi",
+      "slug": "token-toshi"
+    },
+    {
+      "name": "Red Oni",
+      "slug": "red-oni"
+    }
+  ],
   "helps": {
     "station": "Registry (agent)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Guard. Audit. Comply.",
     "problem": "Executable baseline capability for MiseOS Workflow Linter.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Sanitation sign-off: a station reopens only after its checklist is complete and readings are in range; any contamination opens an incident."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Compliance",
+      "slug": "compliance"
+    },
+    {
+      "name": "Scanner",
+      "slug": "scanner"
+    },
+    {
+      "name": "Token Monk",
+      "slug": "token-monk"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    },
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    }
+  ],
+  "abilities": [
+    "Egistry",
+    "Workflow.Yml",
+    "Parse",
+    "Vsyntax:Valid",
+    "Inspect",
+    "Steps:Valid"
+  ],
+  "theme": "clean"
 }

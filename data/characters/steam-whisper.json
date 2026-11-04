@@ -15,8 +15,29 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"cold\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "rarity": "authored: card design (default tier; no stars printed)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"cold\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"cold\")",
+    "workflow.inputs": "authored: card design (theme \"cold\")",
+    "workflow.outputs": "authored: card design (theme \"cold\")",
+    "workflow.proof_gate": "authored: card design (theme \"cold\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)",
+    "helps.problem": "authored: card design (theme \"cold\")",
+    "helps.proof_gate": "authored: card design (theme \"cold\")",
+    "agents": "authored: card design (closest agents for theme \"cold\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"cold\")",
+    "related": "authored: card design (same theme \"cold\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -62,8 +83,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -74,31 +95,131 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "steamWhisper",
+      "command": "mise roster run steam-whisper --dept reliability-kitchen --solo --emit report",
+      "contract": "inputs: probe / sensor readings, storage map, HACCP limits, hold times → outputs: temperature log, drift alert, discard / re-chill decision; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Steam",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Reliability Kitchen",
+  "department_mission": "Observe. Measure. Improve.",
+  "rarity": "Common",
+  "lore": "Ask the brigade about Steam Whisper and they describe the walk-in, humming at three degrees. As Reliability Kitchen's specialist for steam, Steam Whisper keeps every item inside its safe temperature band and flags drift before it becomes spoilage, and the rest of the kitchen plans service around that rhythm. The card calls out Total, Critical, Perfect Steam: the checks Steam Whisper runs before calling anything ready.",
+  "signature_phrase": "Cold logic, safe food.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Steam Whisper keeps every item inside its safe temperature band and flags drift before it becomes spoilage.",
+    "inputs": [
+      "probe / sensor readings",
+      "storage map",
+      "HACCP limits",
+      "hold times"
+    ],
+    "outputs": [
+      "temperature log",
+      "drift alert",
+      "discard / re-chill decision"
+    ],
+    "proof_gate": "Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run steam-whisper --dept reliability-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise steam-whisper probe",
+      "reads": "probe / sensor readings",
+      "emits": "temperature log",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    },
+    {
+      "command": "mise steam-whisper chill",
+      "reads": "storage map",
+      "emits": "drift alert",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    },
+    {
+      "command": "mise steam-whisper log-temp",
+      "reads": "HACCP limits",
+      "emits": "discard / re-chill decision",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    }
+  ],
+  "stats": {
+    "power": 77,
+    "precision": 66,
+    "speed": 68,
+    "resilience": 77,
+    "intelligence": 66,
+    "teamwork": 80
+  },
+  "related": [
+    {
+      "name": "Cold Zero",
+      "slug": "cold-zero"
+    },
+    {
+      "name": "Temp Tamer",
+      "slug": "temp-tamer"
+    },
+    {
+      "name": "Canary Judge",
+      "slug": "canary-judge"
+    },
+    {
+      "name": "Pager Hiro",
+      "slug": "pager-hiro"
+    },
+    {
+      "name": "OnCall Naomi",
+      "slug": "oncall-naomi"
+    }
+  ],
   "helps": {
     "station": "Steam",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Observe. Measure. Improve.",
+    "problem": "Silent drift (heat, latency, resource pressure) spoils work long before anyone notices.",
+    "proof_gate": "Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Alarmer",
+      "slug": "alarmer"
+    },
+    {
+      "name": "SRE Chef",
+      "slug": "sre-chef"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Runtime",
+      "slug": "mise-runtime"
+    },
+    {
+      "name": "Null-chan",
+      "slug": "null-chan"
+    }
+  ],
+  "abilities": [
+    "Total",
+    "Critical",
+    "Perfect Steam",
+    "Steam Sync",
+    "Temperature",
+    "Mastery"
+  ],
+  "theme": "cold"
 }

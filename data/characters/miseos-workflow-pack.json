@@ -24,7 +24,25 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json (marketplace.category)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"pipeline\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "rarity": "data/player-cards-ocr.json (printed rarity)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"pipeline\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "data/player-cards-ocr.json (text printed on the card)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"pipeline\")",
+    "workflow.outputs": "authored: card design (theme \"pipeline\")",
+    "workflow.proof_gate": "authored: card design (theme \"pipeline\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"pipeline\")",
+    "agents": "authored: card design (closest agents for theme \"pipeline\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"pipeline\")",
+    "related": "authored: card design (same theme \"pipeline\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json",
   "registry_catalog": {
@@ -107,8 +125,8 @@
     }
   ],
   "card_rarity_printed": "Ultra Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -289,16 +307,24 @@
     "registry_id": "miseos.workflow-pack"
   },
   "role": "Workflow",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Ultra Mythic",
+  "lore": "The divine orchestration of reusable actions, coordinated systems, and intelligent flows.",
+  "signature_phrase": "Every release artefact or block accounted for.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Workflow Pack.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "pull request or tag",
+      "workflow configuration",
+      "repository state"
+    ],
+    "outputs": [
+      "check run / status",
+      "annotations",
+      "release artefact or block"
+    ],
+    "proof_gate": "Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail."
   },
   "actions": [
     {
@@ -307,14 +333,73 @@
       "source": "apps/registry-platform/registry/manifests/miseos.workflow-pack.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 66,
+    "precision": 70,
+    "speed": 82,
+    "resilience": 70,
+    "intelligence": 71,
+    "teamwork": 74
+  },
+  "related": [
+    {
+      "name": "MiseOS Repo Reliability Kit",
+      "slug": "miseos-repo-reliability-kit"
+    },
+    {
+      "name": "MiseOS Release Sentinel",
+      "slug": "miseos-release-sentinel"
+    },
+    {
+      "name": "Flash Riku",
+      "slug": "flash-riku"
+    },
+    {
+      "name": "Nina Promoter",
+      "slug": "nina-promoter"
+    },
+    {
+      "name": "Iron Hashi",
+      "slug": "iron-hashi"
+    }
+  ],
   "helps": {
     "station": "Registry (workflow)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Executable baseline capability for MiseOS Workflow Pack.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Pipeline",
+      "slug": "pipeline"
+    },
+    {
+      "name": "GitHub Chef",
+      "slug": "github-chef"
+    },
+    {
+      "name": "Argo Chef",
+      "slug": "argo-chef"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Tensho",
+      "slug": "tensho"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Registry",
+    "Miseos Workflowpack",
+    "Item",
+    "Type:Workflow",
+    "Actions",
+    "Data Flow"
+  ],
+  "theme": "pipeline"
 }

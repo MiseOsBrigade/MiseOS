@@ -3,7 +3,9 @@
   "slug": "reliability-sensei",
   "name": "Reliability Sensei",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "ids.registry_id": "characters/reliability-sensei/metadata.json",
@@ -25,7 +27,16 @@
     "unique_trait": "data/imports/merged_roster.json",
     "role_category": "data/imports/merged_roster.json",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/reliability-sensei/metadata.json"
+    "helps.station": "characters/reliability-sensei/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards.json (no card for this entry)",
+    "card_stars_printed": "data/player-cards.json (no card for this entry)",
+    "card_meters_printed": "data/player-cards.json (no card for this entry)",
+    "abilities": "role from characters/reliability-sensei/metadata.json + authored: card design (workflow steps for theme \"quality\")",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"quality\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"quality\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 96,
@@ -36,9 +47,9 @@
   "cards": [],
   "collections": [],
   "card_text": [],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "No card art linked, so nothing printed",
+  "card_stars_printed": "No card art linked",
+  "card_meters_printed": "No card art linked",
   "level": 26,
   "unique_trait": "Specializes in reliability advisor agent so the Reliability Kitchen can operate as a precise, repo-safe DevOps station.",
   "role_category": "reliability",
@@ -135,7 +146,7 @@
   "department": "Reliability Kitchen",
   "department_mission": "Observe. Measure. Improve.",
   "rarity": "Epic",
-  "lore": "Not yet defined in the source material",
+  "lore": "Ask the brigade about Reliability Sensei and they describe a spoon in every pot. As Reliability Kitchen's specialist for reliability advisor agent, Reliability Sensei tastes and tests before anything is served: reviews, checks and canaries against the spec, and the rest of the kitchen plans service around that rhythm.",
   "signature_phrase": "Reliability Advisor Agent done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Reliability Sensei performs reliability advisor agent within the Reliability Kitchen.",
@@ -207,6 +218,35 @@
     "problem": "Reliability Sensei performs reliability advisor agent within the Reliability Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Reviewer",
+      "slug": "reviewer"
+    },
+    {
+      "name": "Tester",
+      "slug": "tester"
+    },
+    {
+      "name": "Quality Guard",
+      "slug": "quality-guard"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Garde",
+      "slug": "mise-garde"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Reliability Advisor Agent",
+    "Taste",
+    "Review",
+    "Verdict"
+  ],
+  "theme": "quality"
 }

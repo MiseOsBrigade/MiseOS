@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/incident-kitsune.json`](../../data/characters/incident-kitsune.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Incident Kitsune <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Security Incident Playbooks <sub>source: `characters/incident-kitsune/metadata.json`</sub> |
 | Kitchen / department | Security Kitchen <sub>source: `characters/incident-kitsune/metadata.json`</sub> |
 | Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -38,12 +38,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
 | Roster stats | power 67 · precision 75 · speed 59 · resilience 75 · intelligence 65 · teamwork 82 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Incident Responseflow, Detect, Analyze, Contain, Eradicate, Incident Status <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Incident Kitsune and they describe a clipboard of tally marks that becomes a chart by morning. As Security Kitchen's specialist for security incident playbooks, Incident Kitsune reads the numbers behind service (covers, waste, timings) and turns them into the next improvement, and the rest of the kitchen plans service around that rhythm. The card calls out Incident Responseflow, Detect, Analyze: the checks Incident Kitsune runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Security Incident Playbooks done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in security incident playbooks so the Security Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -106,6 +106,7 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `authored: card design (closest agents for theme "data")`</sub>
 
 Repo pets: [Incident Kitsune](../repo-pets/incident-kitsune.md) <sub>source: `data/repo-pets.json`</sub>
 
@@ -148,5 +149,13 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/incident-kitsune/metadata.json` |
 | repo_pets | `data/repo-pets.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "data")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

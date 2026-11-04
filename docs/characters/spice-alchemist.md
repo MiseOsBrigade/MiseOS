@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/long-cards/spice-alchemist.webp"><img src="../../assets/player-cards/long-cards/thumbs/spice-alchemist.webp" alt="Spice Alchemist" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/spice-alchemist.json`](../../data/characters/spice-alchemist.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/spice-alchemist.json`](../../data/characters/spice-alchemist.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Spice Alchemist <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Epicier <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Operations Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "supply")`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (from printed star count 1)`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -36,10 +36,10 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Printed rarity | Epic <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed stars | 1 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 55 · precision 64 · speed 61 · resilience 60 · intelligence 58 · teamwork 75 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "supply")`</sub> |
+| Abilities | Signature, Blend, Blend Craft, Aromaii, Balance Ii Ii, Flavor <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Spice Alchemist and they describe the loading dock before dawn. As Operations Kitchen's Epicier, Spice Alchemist scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on, and the rest of the kitchen plans service around that rhythm. The card calls out Signature, Blend, Blend Craft: the checks Spice Alchemist runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | If it is on the line, I know where it came from. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Spice Alchemist scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on. <sub>source: `authored: card design (theme "supply")`</sub> |
+| Inputs | stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades <sub>source: `authored: card design (theme "supply")`</sub> |
+| Outputs | scout report, reserve status (ready / low / out), reorder list, traceability record <sub>source: `authored: card design (theme "supply")`</sub> |
+| Proof gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run spice-alchemist --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise spice-alchemist scout` · reads: `stock levels vs. par` · emits: `scout report` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
+- command: `mise spice-alchemist reserve` · reads: `supplier routes` · emits: `reserve status (ready / low / out)` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
+- command: `mise spice-alchemist trace` · reads: `delivery manifests` · emits: `traceability record` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `spiceAlchemist` (not written yet)
+- Proposed command: `mise roster run spice-alchemist --dept operations-kitchen --solo --emit report`
+- Contract: inputs: stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades → outputs: scout report, reserve status (ready / low / out), reorder list, traceability record; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Epicier <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Problem it addresses | Stations stall mid-service when an ingredient (or dependency) runs out or arrives without provenance. <sub>source: `authored: card design (theme "supply")`</sub> |
+| Safety gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Steward Prime](../agents/steward-prime.md) · [PrepBot](../agents/prepbot.md) · [Storage](../agents/storage.md) <sub>source: `authored: card design (closest agents for theme "supply")`</sub>
+
+Repo pets: [Mise Sommelier](../repo-pets/mise-sommelier.md) · [Mizu](../repo-pets/mizu.md) <sub>source: `authored: card design (closest repo pets for theme "supply")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Grain Guardian](./grain-guardian.md) · [Supply Scout](./supply-scout.md) · [Herb Whisperer](./herb-whisperer.md) · [Kurogami Senpai](./kurogami-senpai.md) · [Harvest Hex](./harvest-hex.md) · [Beacon Broil](./beacon-broil.md) <sub>source: `authored: card design (same theme "supply" / same department)`</sub>
 
 ## Sources
 
@@ -97,7 +106,27 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "supply")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| rarity | `authored: card design (from printed star count 1)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "supply")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "supply")` |
+| workflow.inputs | `authored: card design (theme "supply")` |
+| workflow.outputs | `authored: card design (theme "supply")` |
+| workflow.proof_gate | `authored: card design (theme "supply")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| helps.problem | `authored: card design (theme "supply")` |
+| helps.proof_gate | `authored: card design (theme "supply")` |
+| agents | `authored: card design (closest agents for theme "supply")` |
+| repo_pets | `authored: card design (closest repo pets for theme "supply")` |
+| related | `authored: card design (same theme "supply" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

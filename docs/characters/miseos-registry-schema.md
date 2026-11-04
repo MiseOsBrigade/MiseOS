@@ -5,18 +5,18 @@
 
 **Registry manifest (product / tool)** · Implementation: **Implemented in code** · Detail record: [`data/characters/miseos-registry-schema.json`](../../data/characters/miseos-registry-schema.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | MiseOS Registry Schema <sub>source: `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Schema <sub>source: `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (type)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Data & Insight Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "data")`</sub> |
+| Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
+| Registry rarity | Ultra Mythic <sub>source: `data/player-cards-ocr.json (printed rarity)`</sub> |
 | ID: registry_id | miseos.registry-schema <sub>source: `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 2 <sub>source: `data/player-cards.json`</sub> |
@@ -36,12 +36,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Ultra Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
+| Roster stats | power 70 · precision 73 · speed 81 · resilience 81 · intelligence 85 · teamwork 72 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "data")`</sub> |
+| Abilities | Registry, Type: Schema, Entity, Structure, Attribute, Data Type <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | The divine architecture of MiseOS knowledge. Defines all that exists. Connects all that relates. <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | Registry, then everything else. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -56,9 +56,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Step | Value |
 |---|---|
 | Summary | Executable baseline capability for MiseOS Registry Schema. <sub>source: `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (capability.description)`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | service metrics, logs, historic baselines <sub>source: `authored: card design (theme "data")`</sub> |
+| Outputs | insight report, trend alert, recommended change <sub>source: `authored: card design (theme "data")`</sub> |
+| Proof gate | Evidence gate: every recommendation cites the metric and time window it came from. <sub>source: `authored: card design (theme "data")`</sub> |
 
 ## Actions / commands
 
@@ -115,17 +115,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Registry (schema) <sub>source: `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (marketplace.category)`</sub> |
-| Mission | Not yet defined in the source material |
+| Mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
 | Problem it addresses | Executable baseline capability for MiseOS Registry Schema. <sub>source: `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (capability.description)`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Evidence gate: every recommendation cites the metric and time window it came from. <sub>source: `authored: card design (theme "data")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `authored: card design (closest agents for theme "data")`</sub>
+
+Repo pets: [Flag Fox](../repo-pets/flag-fox.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "data")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[MiseOS Trust Graph](./miseos-trust-graph.md) · [MiseOS Analytics Engine](./miseos-analytics-engine.md) · [Insight Sensei](./insight-sensei.md) · [Storyteller Sumi](./storyteller-sumi.md) · [Lake Haru](./lake-haru.md) <sub>source: `authored: card design (same theme "data" / same department)`</sub>
 
 ## Sources
 
@@ -148,5 +150,24 @@ _Not yet defined in the source material_
 | pricing | `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json` |
 | implementation | `git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts` |
 | helps.station | `apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (marketplace.category)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "data")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| rarity | `data/player-cards-ocr.json (printed rarity)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "data")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `data/player-cards-ocr.json (text printed on the card)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "data")` |
+| workflow.outputs | `authored: card design (theme "data")` |
+| workflow.proof_gate | `authored: card design (theme "data")` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "data")` |
+| agents | `authored: card design (closest agents for theme "data")` |
+| repo_pets | `authored: card design (closest repo pets for theme "data")` |
+| related | `authored: card design (same theme "data" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

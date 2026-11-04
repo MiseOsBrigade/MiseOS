@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/resilience-ryu.json`](../../data/characters/resilience-ryu.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Resilience Ryu <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Resilience Testing Loop <sub>source: `characters/resilience-ryu/metadata.json`</sub> |
 | Kitchen / department | Reliability Kitchen <sub>source: `characters/resilience-ryu/metadata.json`</sub> |
 | Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -39,11 +39,11 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 61 · precision 77 · speed 61 · resilience 65 · intelligence 77 · teamwork 86 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Incident Recovery, Uptime, Always On, Slo Monitor, System Repair, Recovery <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Resilience Ryu and they describe a spoon in every pot. As Reliability Kitchen's specialist for resilience testing loop, Resilience Ryu tastes and tests before anything is served: reviews, checks and canaries against the spec, and the rest of the kitchen plans service around that rhythm. The card calls out Incident Recovery, Uptime, Always On: the checks Resilience Ryu runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Resilience Testing Loop done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in resilience testing loop so the Reliability Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -103,7 +103,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Reviewer](../agents/reviewer.md) · [Tester](../agents/tester.md) · [Quality Guard](../agents/quality-guard.md) <sub>source: `authored: card design (closest agents for theme "quality")`</sub>
+
+Repo pets: [Mise Garde](../repo-pets/mise-garde.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "quality")`</sub>
 
 ## Related characters
 
@@ -138,5 +140,12 @@ _Not yet defined in the source material_
 | role_category | `data/imports/merged_roster.json` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/resilience-ryu/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "quality")` |
+| repo_pets | `authored: card design (closest repo pets for theme "quality")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

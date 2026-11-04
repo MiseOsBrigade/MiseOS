@@ -3,7 +3,9 @@
   "slug": "miseos-docs-hub-template",
   "name": "MiseOS Docs Hub Template",
   "kind": "registry_manifest",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
     "registry_catalog": "data/imports/miseos-registry-catalog.csv",
@@ -21,7 +23,26 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json (marketplace.category)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"platform\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "rarity": "authored: card design (default tier; no stars printed)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"platform\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"platform\")",
+    "workflow.outputs": "authored: card design (theme \"platform\")",
+    "workflow.proof_gate": "authored: card design (theme \"platform\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"platform\")",
+    "agents": "authored: card design (closest agents for theme \"platform\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"platform\")",
+    "related": "authored: card design (same theme \"platform\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
   "registry_catalog": {
@@ -92,8 +113,8 @@
     }
   ],
   "card_rarity_printed": "Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -274,16 +295,24 @@
     "registry_id": "miseos.docs-hub-template"
   },
   "role": "Template",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Rare",
+  "lore": "Most of the brigade only notices MiseOS Docs Hub Template when something is missing, which is exactly the point. MiseOS Docs Hub Template provides a shared platform building block other kitchens install and build on; the image the crew uses for it is the stainless steel shelving every station is bolted to. The card calls out Overview, Architecture, Quickstart: the checks MiseOS Docs Hub Template runs before calling anything ready.",
+  "signature_phrase": "Every compatibility report accounted for.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Docs Hub Template.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "consumer repository",
+      "manifest / configuration",
+      "version pin"
+    ],
+    "outputs": [
+      "installed capability",
+      "version record",
+      "compatibility report"
+    ],
+    "proof_gate": "Golden-path gate: consumers install only pinned, signed versions that pass the registry schema."
   },
   "actions": [
     {
@@ -292,14 +321,77 @@
       "source": "apps/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 80,
+    "precision": 75,
+    "speed": 74,
+    "resilience": 89,
+    "intelligence": 76,
+    "teamwork": 73
+  },
+  "related": [
+    {
+      "name": "MiseOS NuGet Client",
+      "slug": "miseos-nuget-client"
+    },
+    {
+      "name": "MiseOS Runner",
+      "slug": "miseos-runner"
+    },
+    {
+      "name": "MiseOS CLI",
+      "slug": "miseos-cli"
+    },
+    {
+      "name": "Orchestra Core",
+      "slug": "orchestra-core"
+    },
+    {
+      "name": "Platform Sensei",
+      "slug": "platform-sensei"
+    },
+    {
+      "name": "Vault Hana",
+      "slug": "vault-hana"
+    }
+  ],
   "helps": {
     "station": "Registry (template)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Provide golden paths and stable service foundations.",
     "problem": "Executable baseline capability for MiseOS Docs Hub Template.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Golden-path gate: consumers install only pinned, signed versions that pass the registry schema."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Architect",
+      "slug": "architect"
+    },
+    {
+      "name": "Terraformer",
+      "slug": "terraformer"
+    },
+    {
+      "name": "Docker",
+      "slug": "docker"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Bootstrap",
+      "slug": "mise-bootstrap"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Overview",
+    "Architecture",
+    "Quickstart",
+    "Api Reference",
+    "Guides",
+    "Tutorials"
+  ],
+  "theme": "platform"
 }

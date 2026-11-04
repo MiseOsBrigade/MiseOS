@@ -5,18 +5,18 @@
 
 **Registry manifest (product / tool)** · Implementation: **Implemented in code** · Detail record: [`data/characters/miseos-repo-steward.json`](../../data/characters/miseos-repo-steward.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | MiseOS Repo Steward <sub>source: `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Agent <sub>source: `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (type)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Security Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "security")`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Registry rarity | Ultra Mythic <sub>source: `data/player-cards-ocr.json (printed rarity)`</sub> |
 | ID: registry_id | miseos.repo-steward <sub>source: `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 2 <sub>source: `data/player-cards.json`</sub> |
@@ -36,12 +36,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Ultra Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
+| Roster stats | power 72 · precision 80 · speed 75 · resilience 73 · intelligence 67 · teamwork 67 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "security")`</sub> |
+| Abilities | Type: Agent, Branch, Guardian Ship, Merge, History, Discipline <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Oversees all repositories with divine clarity Brings harmony to changes. Enforces sacred order. <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | Trust, then verify. Every time. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -56,9 +56,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Step | Value |
 |---|---|
 | Summary | Executable baseline capability for MiseOS Repo Steward. <sub>source: `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (capability.description)`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | access requests, policy set, scan findings, secret inventory <sub>source: `authored: card design (theme "security")`</sub> |
+| Outputs | allow / deny decision, audit record, remediation ticket <sub>source: `authored: card design (theme "security")`</sub> |
+| Proof gate | Policy gate: no access or release without a policy match and a recorded approver. <sub>source: `authored: card design (theme "security")`</sub> |
 
 ## Actions / commands
 
@@ -78,6 +78,7 @@ Application code that uses this entry:
 - [`apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts:26`](../../apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts#L26)
 - [`apps/registry-platform/packages/core/src/handlers.ts:26`](../../apps/registry-platform/packages/core/src/handlers.ts#L26)
 - [`tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts:26`](../../tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts#L26)
+- [`tools/universe/scripts/import-universe.py:161`](../../tools/universe/scripts/import-universe.py#L161)
 
 Data files that reference it:
 - [`apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json:207`](../../apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json#L207)
@@ -110,17 +111,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Registry (agent) <sub>source: `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (marketplace.category)`</sub> |
-| Mission | Not yet defined in the source material |
+| Mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
 | Problem it addresses | Executable baseline capability for MiseOS Repo Steward. <sub>source: `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (capability.description)`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Policy gate: no access or release without a policy match and a recorded approver. <sub>source: `authored: card design (theme "security")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Kuro Guard](../agents/kuro-guard.md) · [Firewall](../agents/firewall.md) · [Security Auditor](../agents/security-auditor.md) <sub>source: `authored: card design (closest agents for theme "security")`</sub>
+
+Repo pets: [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[MiseOS Maven Policy Adapter](./miseos-maven-policy-adapter.md) · [MiseOS Policy Engine](./miseos-policy-engine.md) · [MiseOS Repo Pet](./miseos-repo-pet.md) · [Container Kage](./container-kage.md) · [Merge Sentinel](./merge-sentinel.md) · [Policy Ronin](./policy-ronin.md) <sub>source: `authored: card design (same theme "security" / same department)`</sub>
 
 ## Sources
 
@@ -143,5 +146,24 @@ _Not yet defined in the source material_
 | pricing | `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json` |
 | implementation | `git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts` |
 | helps.station | `apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (marketplace.category)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "security")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| rarity | `data/player-cards-ocr.json (printed rarity)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "security")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `data/player-cards-ocr.json (text printed on the card)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "security")` |
+| workflow.outputs | `authored: card design (theme "security")` |
+| workflow.proof_gate | `authored: card design (theme "security")` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "security")` |
+| agents | `authored: card design (closest agents for theme "security")` |
+| repo_pets | `authored: card design (closest repo pets for theme "security")` |
+| related | `authored: card design (same theme "security" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

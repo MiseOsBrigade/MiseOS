@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Referenced in app code (no dedicated handler)** · Detail record: [`data/characters/build-kun.json`](../../data/characters/build-kun.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Build-Kun <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Build Kun <sub>source: `data/agents.json`</sub> |
 | Role / title | Build <sub>source: `characters/build-kun/metadata.json`</sub> |
 | Kitchen / department | Pipeline Kitchen <sub>source: `characters/build-kun/metadata.json`</sub> |
 | Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -48,7 +48,7 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Abilities | Image Bake <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Mise Orchestra card | role: Boulanger · department: Pipeline · function: Build · rarity: Rare · tier: Build Line · element: Container Dough · ability: Image Bake · lore: Bakes container images fresh and fully. Always experimenting. <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Lore | Build-Kun belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station. <sub>source: `data/imports/merged_roster.json`</sub> |
-| Signature phrase | Not yet defined in the source material |
+| Signature phrase | Sear first, then service. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -164,5 +164,8 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | helps.station | `characters/build-kun/metadata.json` |
 | agents | `data/agents.json` |
 | repo_pets | `data/repo-pets.json` |
+| aliases | `data/agents.json` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

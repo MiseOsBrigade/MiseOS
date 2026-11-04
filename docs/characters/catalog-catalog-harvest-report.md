@@ -3,45 +3,45 @@
 
 **Individual catalogue item (action / workflow / primitive)** · Implementation: **Implemented in code** · Detail record: [`data/characters/catalog-catalog-harvest-report.json`](../../data/characters/catalog-catalog-harvest-report.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Harvest Audit Report <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | catalog <sub>source: `data/imports/miseos-individual-catalog-items.json (category)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
-| Collections | Not yet defined in the source material |
+| Kitchen / department | Operations Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "supply")`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Roster stats | power 76 · precision 79 · speed 77 · resilience 70 · intelligence 78 · teamwork 89 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "supply")`</sub> |
+| Abilities | catalog, Scout, Reserve, Trace <sub>source: `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "supply")`</sub> |
+| Lore | Most of the brigade only notices Harvest Audit Report when something is missing, which is exactly the point. Harvest Audit Report scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on; the image the crew uses for it is the loading dock before dawn. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every reorder list accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 ## Workflow
 
 | Step | Value |
 |---|---|
 | Summary | Source-derived audit findings and recommended MiseOS CI/CD + DevOps catalog. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades <sub>source: `authored: card design (theme "supply")`</sub> |
+| Outputs | scout report, reserve status (ready / low / out), reorder list, traceability record <sub>source: `authored: card design (theme "supply")`</sub> |
+| Proof gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Actions / commands
 
@@ -63,18 +63,20 @@ Payload files (installed by this catalogue item):
 
 | Aspect | Value |
 |---|---|
-| Station / stage | Not yet defined in the source material |
-| Mission | Not yet defined in the source material |
+| Station / stage | catalog <sub>source: `role`</sub> |
+| Mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
 | Problem it addresses | Source-derived audit findings and recommended MiseOS CI/CD + DevOps catalog. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Steward Prime](../agents/steward-prime.md) · [PrepBot](../agents/prepbot.md) · [Storage](../agents/storage.md) <sub>source: `authored: card design (closest agents for theme "supply")`</sub>
+
+Repo pets: [Mise Sommelier](../repo-pets/mise-sommelier.md) · [Mizu](../repo-pets/mizu.md) <sub>source: `authored: card design (closest repo pets for theme "supply")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[MiseOS DevOps Project Harvester](./catalog-tool-project-harvester.md) · [Machine-Readable DevOps Inventory](./catalog-catalog-machine-inventory.md) · [Portion Paladin](./portion-paladin.md) · [Prep Pulse](./prep-pulse.md) · [Reserve Rune](./reserve-rune.md) <sub>source: `authored: card design (same theme "supply" / same department)`</sub>
 
 ## Sources
 
@@ -84,5 +86,26 @@ _Not yet defined in the source material_
 | role | `data/imports/miseos-individual-catalog-items.json (category)` |
 | workflow.summary | `data/imports/miseos-individual-catalog-items.json` |
 | implementation | `git ls-files grep + repo` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "supply")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "supply")` |
+| abilities | `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "supply")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "supply")` |
+| workflow.outputs | `authored: card design (theme "supply")` |
+| workflow.proof_gate | `authored: card design (theme "supply")` |
+| helps.station | `role` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "supply")` |
+| agents | `authored: card design (closest agents for theme "supply")` |
+| repo_pets | `authored: card design (closest repo pets for theme "supply")` |
+| related | `authored: card design (same theme "supply" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

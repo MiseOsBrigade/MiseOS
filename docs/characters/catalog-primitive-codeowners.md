@@ -3,45 +3,45 @@
 
 **Individual catalogue item (action / workflow / primitive)** · Implementation: **Implemented in code** · Detail record: [`data/characters/catalog-primitive-codeowners.json`](../../data/characters/catalog-primitive-codeowners.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | CODEOWNERS <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | platform <sub>source: `data/imports/miseos-individual-catalog-items.json (category)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
-| Collections | Not yet defined in the source material |
+| Kitchen / department | Pipeline Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "code")`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Roster stats | power 81 · precision 75 · speed 82 · resilience 81 · intelligence 75 · teamwork 76 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "code")`</sub> |
+| Abilities | platform, Plan, Build, Ship <sub>source: `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "code")`</sub> |
+| Lore | Picture a terminal glowing beside the prep list: that is where CODEOWNERS is happiest. As Pipeline Kitchen's specialist for platform, CODEOWNERS turns a plan into working code through a plan, code, test, deploy loop. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Plan it, prove it, ship it. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 ## Workflow
 
 | Step | Value |
 |---|---|
 | Summary | Organization ownership baseline. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | task / issue, repository context, acceptance criteria <sub>source: `authored: card design (theme "code")`</sub> |
+| Outputs | commit / pull request, test results, deploy status <sub>source: `authored: card design (theme "code")`</sub> |
+| Proof gate | CI gate: no merge without green tests and a reviewed diff. <sub>source: `authored: card design (theme "code")`</sub> |
 
 ## Actions / commands
 
@@ -64,18 +64,20 @@ Notes: Replace YOUR-ORG placeholder teams before merge. <sub>source: `data/impor
 
 | Aspect | Value |
 |---|---|
-| Station / stage | Not yet defined in the source material |
-| Mission | Not yet defined in the source material |
+| Station / stage | platform <sub>source: `role`</sub> |
+| Mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
 | Problem it addresses | Organization ownership baseline. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | CI gate: no merge without green tests and a reviewed diff. <sub>source: `authored: card design (theme "code")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Coder](../agents/coder.md) · [Build Kun](../agents/build-kun.md) · [Debugger](../agents/debugger.md) <sub>source: `authored: card design (closest agents for theme "code")`</sub>
+
+Repo pets: [Build-Kun](../repo-pets/build-kun.md) · [Mise Bootstrap](../repo-pets/mise-bootstrap.md) <sub>source: `authored: card design (closest repo pets for theme "code")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[DevOps Adoption Roadmap](./catalog-primitive-adoption-roadmap.md) · [Dev Container / Codespaces](./catalog-primitive-devcontainer.md) · [Iron Hashi](./iron-hashi.md) · [Nina Promoter](./nina-promoter.md) · [Yume](./yume.md) <sub>source: `authored: card design (same theme "code" / same department)`</sub>
 
 ## Sources
 
@@ -86,5 +88,26 @@ _Not yet defined in the source material_
 | workflow.summary | `data/imports/miseos-individual-catalog-items.json` |
 | notes | `data/imports/miseos-individual-catalog-items.json` |
 | implementation | `git ls-files grep + repo` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "code")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "code")` |
+| abilities | `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "code")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "code")` |
+| workflow.outputs | `authored: card design (theme "code")` |
+| workflow.proof_gate | `authored: card design (theme "code")` |
+| helps.station | `role` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "code")` |
+| agents | `authored: card design (closest agents for theme "code")` |
+| repo_pets | `authored: card design (closest repo pets for theme "code")` |
+| related | `authored: card design (same theme "code" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

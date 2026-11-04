@@ -3,7 +3,9 @@
   "slug": "plate-inspector",
   "name": "Plate Inspector",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -27,7 +29,14 @@
     "level": "data/imports/miseos_character_master_inventory_001_300.csv",
     "related": "data/imports/miseos_character_master_inventory_001_300.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/plate-inspector/metadata.json"
+    "helps.station": "characters/plate-inspector/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"plate\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"plate\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 27,
@@ -166,8 +175,8 @@
   "department": "Operations Kitchen",
   "department_mission": "Keep the kitchen running smoothly.",
   "rarity": "Epic",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "lore": "Ask the brigade about Plate Inspector and they describe the pass under warm lights, tweezers in hand. As Operations Kitchen's Asset Auditor, Plate Inspector finishes and presents the work: composition, garnish and a final visual check at the pass, and the rest of the kitchen plans service around that rhythm. The card calls out Plating Protocol, Observe, Analyze: the checks Plate Inspector runs before calling anything ready.",
+  "signature_phrase": "Every plated dish accounted for.",
   "workflow": {
     "summary": "Plate Inspector performs asset auditor within the Operations Kitchen.",
     "inputs": [
@@ -217,6 +226,37 @@
     "problem": "Plate Inspector performs asset auditor within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "UX Chef",
+      "slug": "ux-chef"
+    },
+    {
+      "name": "DevRel",
+      "slug": "devrel"
+    },
+    {
+      "name": "Doc Writer",
+      "slug": "doc-writer"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Yume",
+      "slug": "yume"
+    },
+    {
+      "name": "Mise Garde",
+      "slug": "mise-garde"
+    }
+  ],
+  "abilities": [
+    "Plating Protocol",
+    "Observe",
+    "Analyze",
+    "Measure",
+    "Refine",
+    "Approve"
+  ],
+  "theme": "plate"
 }

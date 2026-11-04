@@ -3,7 +3,9 @@
   "slug": "temp-tamer",
   "name": "Temp Tamer",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "Timer Tactician (canon crosswalk, provisional)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -11,8 +13,30 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv",
+    "department": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/timer-tactician.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "rarity": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/timer-tactician.json",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"cold\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"cold\")",
+    "workflow.inputs": "authored: card design (theme \"cold\")",
+    "workflow.outputs": "authored: card design (theme \"cold\")",
+    "workflow.proof_gate": "authored: card design (theme \"cold\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "helps.problem": "authored: card design (theme \"cold\")",
+    "helps.proof_gate": "authored: card design (theme \"cold\")",
+    "agents": "authored: card design (closest agents for theme \"cold\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"cold\")",
+    "related": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme \"cold\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -63,8 +87,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -75,31 +99,135 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "tempTamer",
+      "command": "mise roster run temp-tamer --dept operations-kitchen --solo --emit report",
+      "contract": "inputs: probe / sensor readings, storage map, HACCP limits, hold times → outputs: temperature log, drift alert, discard / re-chill decision; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Thermicien",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Picture the walk-in, humming at three degrees: that is where Temp Tamer is happiest. As Operations Kitchen's specialist for thermicien, Temp Tamer keeps every item inside its safe temperature band and flags drift before it becomes spoilage. The card calls out Thermo Balance, Heat Control, Frost Control: the checks Temp Tamer runs before calling anything ready. In the canon crosswalk this card is a provisional match for Timer Tactician.",
+  "signature_phrase": "Drift is caught, never discovered.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Temp Tamer keeps every item inside its safe temperature band and flags drift before it becomes spoilage.",
+    "inputs": [
+      "probe / sensor readings",
+      "storage map",
+      "HACCP limits",
+      "hold times"
+    ],
+    "outputs": [
+      "temperature log",
+      "drift alert",
+      "discard / re-chill decision"
+    ],
+    "proof_gate": "Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run temp-tamer --dept operations-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise temp-tamer probe",
+      "reads": "probe / sensor readings",
+      "emits": "temperature log",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    },
+    {
+      "command": "mise temp-tamer chill",
+      "reads": "storage map",
+      "emits": "drift alert",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    },
+    {
+      "command": "mise temp-tamer log-temp",
+      "reads": "HACCP limits",
+      "emits": "discard / re-chill decision",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    }
+  ],
+  "stats": {
+    "power": 72,
+    "precision": 78,
+    "speed": 71,
+    "resilience": 81,
+    "intelligence": 75,
+    "teamwork": 78
+  },
+  "related": [
+    {
+      "name": "Timer Tactician",
+      "slug": "timer-tactician"
+    },
+    {
+      "name": "Cold Zero",
+      "slug": "cold-zero"
+    },
+    {
+      "name": "Steam Whisper",
+      "slug": "steam-whisper"
+    },
+    {
+      "name": "Plate Inspector",
+      "slug": "plate-inspector"
+    },
+    {
+      "name": "Portion Paladin",
+      "slug": "portion-paladin"
+    },
+    {
+      "name": "Allergen Oracle",
+      "slug": "allergen-oracle"
+    }
+  ],
   "helps": {
     "station": "Thermicien",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Silent drift (heat, latency, resource pressure) spoils work long before anyone notices.",
+    "proof_gate": "Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Alarmer",
+      "slug": "alarmer"
+    },
+    {
+      "name": "SRE Chef",
+      "slug": "sre-chef"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Runtime",
+      "slug": "mise-runtime"
+    },
+    {
+      "name": "Null-chan",
+      "slug": "null-chan"
+    }
+  ],
+  "abilities": [
+    "Thermo Balance",
+    "Heat Control",
+    "Frost Control",
+    "Max Heat",
+    "Max Cold",
+    "Precision Mode"
+  ],
+  "theme": "cold"
 }

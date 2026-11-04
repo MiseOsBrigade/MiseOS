@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/temp-tamer.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/temp-tamer.webp" alt="Temp Tamer" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/temp-tamer.json`](../../data/characters/temp-tamer.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/temp-tamer.json`](../../data/characters/temp-tamer.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Temp Tamer <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Timer Tactician (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Thermicien <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Operations Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/timer-tactician.json`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Registry rarity | Epic <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/timer-tactician.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 72 · precision 78 · speed 71 · resilience 81 · intelligence 75 · teamwork 78 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "cold")`</sub> |
+| Abilities | Thermo Balance, Heat Control, Frost Control, Max Heat, Max Cold, Precision Mode <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the walk-in, humming at three degrees: that is where Temp Tamer is happiest. As Operations Kitchen's specialist for thermicien, Temp Tamer keeps every item inside its safe temperature band and flags drift before it becomes spoilage. The card calls out Thermo Balance, Heat Control, Frost Control: the checks Temp Tamer runs before calling anything ready. In the canon crosswalk this card is a provisional match for Timer Tactician. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Drift is caught, never discovered. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Temp Tamer keeps every item inside its safe temperature band and flags drift before it becomes spoilage. <sub>source: `authored: card design (theme "cold")`</sub> |
+| Inputs | probe / sensor readings, storage map, HACCP limits, hold times <sub>source: `authored: card design (theme "cold")`</sub> |
+| Outputs | temperature log, drift alert, discard / re-chill decision <sub>source: `authored: card design (theme "cold")`</sub> |
+| Proof gate | Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason. <sub>source: `authored: card design (theme "cold")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run temp-tamer --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise temp-tamer probe` · reads: `probe / sensor readings` · emits: `temperature log` · status: `proposed` <sub>source: `authored: card design (theme "cold")`</sub>
+- command: `mise temp-tamer chill` · reads: `storage map` · emits: `drift alert` · status: `proposed` <sub>source: `authored: card design (theme "cold")`</sub>
+- command: `mise temp-tamer log-temp` · reads: `HACCP limits` · emits: `discard / re-chill decision` · status: `proposed` <sub>source: `authored: card design (theme "cold")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `tempTamer` (not written yet)
+- Proposed command: `mise roster run temp-tamer --dept operations-kitchen --solo --emit report`
+- Contract: inputs: probe / sensor readings, storage map, HACCP limits, hold times → outputs: temperature log, drift alert, discard / re-chill decision; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Thermicien <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Problem it addresses | Silent drift (heat, latency, resource pressure) spoils work long before anyone notices. <sub>source: `authored: card design (theme "cold")`</sub> |
+| Safety gate | Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason. <sub>source: `authored: card design (theme "cold")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Alarmer](../agents/alarmer.md) · [SRE Chef](../agents/sre-chef.md) <sub>source: `authored: card design (closest agents for theme "cold")`</sub>
+
+Repo pets: [Mise Runtime](../repo-pets/mise-runtime.md) · [Null-chan](../repo-pets/null-chan.md) <sub>source: `authored: card design (closest repo pets for theme "cold")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Timer Tactician](./timer-tactician.md) · [Cold Zero](./cold-zero.md) · [Steam Whisper](./steam-whisper.md) · [Plate Inspector](./plate-inspector.md) · [Portion Paladin](./portion-paladin.md) · [Allergen Oracle](./allergen-oracle.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "cold" / same department)`</sub>
 
 ## Sources
 
@@ -95,7 +104,29 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/timer-tactician.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/timer-tactician.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "cold")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "cold")` |
+| workflow.inputs | `authored: card design (theme "cold")` |
+| workflow.outputs | `authored: card design (theme "cold")` |
+| workflow.proof_gate | `authored: card design (theme "cold")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| helps.problem | `authored: card design (theme "cold")` |
+| helps.proof_gate | `authored: card design (theme "cold")` |
+| agents | `authored: card design (closest agents for theme "cold")` |
+| repo_pets | `authored: card design (closest repo pets for theme "cold")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "cold" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

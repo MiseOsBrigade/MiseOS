@@ -3,14 +3,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/taxonomy-taka.json`](../../data/characters/taxonomy-taka.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Taxonomy Taka <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Event Taxonomy Manager <sub>source: `characters/taxonomy-taka/metadata.json`</sub> |
 | Kitchen / department | Data & Insight Kitchen <sub>source: `characters/taxonomy-taka/metadata.json`</sub> |
 | Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -20,24 +20,24 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | ID: character_id | miseos.character.061 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: card_id | MISE-061 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: codename | TAXONOMY_TAKA <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
-| Collections | Not yet defined in the source material |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 | Role category | analytics <sub>source: `data/imports/merged_roster.json`</sub> |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
 | Roster stats | power 57 · precision 80 · speed 63 · resilience 83 · intelligence 66 · teamwork 69 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Event Taxonomy Manager, Measure, Analyze, Recommend <sub>source: `role from characters/taxonomy-taka/metadata.json + authored: card design (workflow steps for theme "data")`</sub> |
+| Lore | Most of the brigade only notices Taxonomy Taka when something is missing, which is exactly the point. Taxonomy Taka reads the numbers behind service (covers, waste, timings) and turns them into the next improvement; the image the crew uses for it is a clipboard of tally marks that becomes a chart by morning. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Event Taxonomy Manager done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in event taxonomy manager so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -91,7 +91,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `authored: card design (closest agents for theme "data")`</sub>
+
+Repo pets: [Flag Fox](../repo-pets/flag-fox.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "data")`</sub>
 
 ## Related characters
 
@@ -122,5 +124,14 @@ _Not yet defined in the source material_
 | role_category | `data/imports/merged_roster.json` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/taxonomy-taka/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| abilities | `role from characters/taxonomy-taka/metadata.json + authored: card design (workflow steps for theme "data")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "data")` |
+| repo_pets | `authored: card design (closest repo pets for theme "data")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

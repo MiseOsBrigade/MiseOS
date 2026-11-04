@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/icloud-screens/pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.webp"><img src="../../assets/player-cards/icloud-screens/pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.webp" alt="黑神先辈" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 856×1169 |
 | Original source | `icloud:Catalogue/All images/Mise/pokeframe-019f3676-d05f-76c1-bcfb-a3851bb189e3.JPG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | Not yet defined in the source material |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | Aboyeur (expediter) <sub>source: `authored: card design (brigade station for theme "time")`</sub> |
+| Kitchen / department | Operations Kitchen <sub>source: `authored: card design (theme "time")`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 65 · precision 79 · speed 78 · resilience 68 · intelligence 66 · teamwork 84 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "time")`</sub> |
+| Abilities | Fire, Handoff, Rebalance, Fire Order / Run Sheet <sub>source: `authored: card design (no text printed; from role and theme "time")`</sub> |
+| Lore | Picture the ticket rail at full stretch, every slip in order: that is where 黑神先辈 is happiest. As Operations Kitchen's Aboyeur (expediter), 黑神先辈 holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | On my count. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Conductor](../agents/conductor.md) · [Scheduler](../agents/scheduler.md) · [Tensho](../agents/tensho.md) <sub>source: `authored: card design (closest agents for theme "time")`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Maestro](../repo-pets/mise-maestro.md) <sub>source: `authored: card design (closest repo pets for theme "time")`</sub> |
+| Related characters | [Kitchen Conductor](../characters/kitchen-conductor.md) · [Orderly Owl](../characters/orderly-owl.md) · [Energy Keeper](../characters/energy-keeper.md) · [Pulse Captain](../characters/pulse-captain.md) · [Queue Quartz](../characters/queue-quartz.md) <sub>source: `authored: card design (same theme "time")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | 黑神先辈 holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. <sub>source: `authored: card design (theme "time")`</sub> |
+| Inputs | open tickets, station capacity, shift roster, service timeline |
+| Outputs | fire order / run sheet, shift handoff note, bottleneck alert |
+| Proof gate | Expo check: a course is fired only when every component reports ready; handoffs require a written note. |
+| Problem it addresses | Without a conductor, stations fire out of sequence and work arrives cold or late. <sub>source: `authored: card design (theme "time")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run  --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise  fire` · reads: `open tickets` · emits: `fire order / run sheet` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise  handoff` · reads: `station capacity` · emits: `shift handoff note` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise  rebalance` · reads: `shift roster` · emits: `bottleneck alert` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `handler` (not written yet)
+- Proposed command: `mise roster run  --dept operations-kitchen --solo --emit report`
+- Contract: inputs: open tickets, station capacity, shift roster, service timeline → outputs: fire order / run sheet, shift handoff note, bottleneck alert; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

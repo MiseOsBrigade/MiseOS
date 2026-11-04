@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/security-auditor.webp"><img src="../../assets/player-cards/1by1-chefs/security-auditor.webp" alt="Security Auditor" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /64D17467-6CCD-4F63-B5A7-5E904BFE949B.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Security Auditor](../agents/security-auditor.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Auditor Emi](../characters/auditor-emi.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Vulnerability Hunter <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Security Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/auditor-emi.json`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 70 · precision 67 · speed 69 · resilience 99 · intelligence 80 · teamwork 80 <sub>source: `authored: card design (6-axis roster scale; printed meters mapped: resilience←Where Vulnerability 99%)`</sub> |
+| Abilities | 0 Critical, Medium, Audit Protocol, Identify, Risk Index, Vuoit Loex <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Security Auditor and they describe the locked dry store and the keyring that never leaves the belt. As Security Kitchen's Vulnerability Hunter, Security Auditor guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception, and the rest of the kitchen plans service around that rhythm. The card calls out 0 Critical, Medium, Audit Protocol: the checks Security Auditor runs before calling anything ready. In the canon crosswalk this card is a provisional match for Auditor Emi. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Guard. Audit. Comply. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Security Auditor](../agents/security-auditor.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub> |
+| Related characters | [Auditor Emi](../characters/auditor-emi.md) · [Evidence Scribe](../characters/evidence-scribe.md) · [Merge Sentinel](../characters/merge-sentinel.md) · [Seira Vaultkeeper](../characters/seira-vaultkeeper.md) · [CVE Kumo](../characters/cve-kumo.md) · [Seira Scan](../characters/seira-scan.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "security")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Security Auditor guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. <sub>source: `authored: card design (theme "security")`</sub> |
+| Inputs | access requests, policy set, scan findings, secret inventory |
+| Outputs | allow / deny decision, audit record, remediation ticket |
+| Proof gate | Policy gate: no access or release without a policy match and a recorded approver. |
+| Problem it addresses | Unchecked access and leaked secrets turn one mistake into an incident. <sub>source: `authored: card design (theme "security")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run security-auditor --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise security-auditor scan` · reads: `access requests` · emits: `allow / deny decision` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise security-auditor enforce` · reads: `policy set` · emits: `audit record` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise security-auditor audit` · reads: `scan findings` · emits: `remediation ticket` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `securityAuditor` (not written yet)
+- Proposed command: `mise roster run security-auditor --dept security-kitchen --solo --emit report`
+- Contract: inputs: access requests, policy set, scan findings, secret inventory → outputs: allow / deny decision, audit record, remediation ticket; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

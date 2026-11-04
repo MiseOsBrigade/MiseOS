@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/long-cards/thunder-surge.webp"><img src="../../assets/player-cards/long-cards/thunder-surge.webp" alt="Thunder Surge" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1024×1536 |
 | Original source | `extract:img-long-cards/Long cards /40790C36-50E3-4C9B-BE9D-AC0CB078E843.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | Not yet defined in the source material |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | Aboyeur (expediter) <sub>source: `authored: card design (brigade station for theme "time")`</sub> |
+| Kitchen / department | Operations Kitchen <sub>source: `authored: card design (theme "time")`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Legendary <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed rarity | Legendary <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | 3 <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 76 · precision 79 · speed 72 · resilience 78 · intelligence 74 · teamwork 79 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "time")`</sub> |
+| Abilities | Golden Ladle, Weakness, Resistance, Retreat, Illus.Miseos <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Channel radiant energy. Restore 30 HP to.this unit and boost all allies' Energy by 1. <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | Rhythm before speed. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Conductor](../agents/conductor.md) · [Scheduler](../agents/scheduler.md) · [Tensho](../agents/tensho.md) <sub>source: `authored: card design (closest agents for theme "time")`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Maestro](../repo-pets/mise-maestro.md) <sub>source: `authored: card design (closest repo pets for theme "time")`</sub> |
+| Related characters | [Energy Keeper](../characters/energy-keeper.md) · [Kitchen Conductor](../characters/kitchen-conductor.md) · [Orderly Owl](../characters/orderly-owl.md) · [Pulse Captain](../characters/pulse-captain.md) · [Queue Quartz](../characters/queue-quartz.md) <sub>source: `authored: card design (same theme "time")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Thunder Surge holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. <sub>source: `authored: card design (theme "time")`</sub> |
+| Inputs | open tickets, station capacity, shift roster, service timeline |
+| Outputs | fire order / run sheet, shift handoff note, bottleneck alert |
+| Proof gate | Expo check: a course is fired only when every component reports ready; handoffs require a written note. |
+| Problem it addresses | Without a conductor, stations fire out of sequence and work arrives cold or late. <sub>source: `authored: card design (theme "time")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run thunder-surge --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise thunder-surge fire` · reads: `open tickets` · emits: `fire order / run sheet` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise thunder-surge handoff` · reads: `station capacity` · emits: `shift handoff note` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise thunder-surge rebalance` · reads: `shift roster` · emits: `bottleneck alert` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `thunderSurge` (not written yet)
+- Proposed command: `mise roster run thunder-surge --dept operations-kitchen --solo --emit report`
+- Contract: inputs: open tickets, station capacity, shift roster, service timeline → outputs: fire order / run sheet, shift handoff note, bottleneck alert; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

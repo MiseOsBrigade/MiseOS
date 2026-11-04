@@ -3,12 +3,35 @@
   "slug": "catalog-catalog-machine-inventory",
   "name": "Machine-Readable DevOps Inventory",
   "kind": "catalog_item",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/imports/miseos-individual-catalog-items.json",
     "role": "data/imports/miseos-individual-catalog-items.json (category)",
     "workflow.summary": "data/imports/miseos-individual-catalog-items.json",
-    "implementation": "git ls-files grep + repo"
+    "implementation": "git ls-files grep + repo",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"supply\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "card_rarity_printed": "data/player-cards.json (no card for this entry)",
+    "card_stars_printed": "data/player-cards.json (no card for this entry)",
+    "card_meters_printed": "data/player-cards.json (no card for this entry)",
+    "rarity": "authored: card design (default tier; no stars printed)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"supply\")",
+    "abilities": "role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme \"supply\")",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"supply\")",
+    "workflow.outputs": "authored: card design (theme \"supply\")",
+    "workflow.proof_gate": "authored: card design (theme \"supply\")",
+    "helps.station": "role",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"supply\")",
+    "agents": "authored: card design (closest agents for theme \"supply\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"supply\")",
+    "related": "authored: card design (same theme \"supply\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "catalog_item": {
     "id": "catalog-machine-inventory",
@@ -27,9 +50,9 @@
   "cards": [],
   "collections": [],
   "card_text": [],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "No card art linked, so nothing printed",
+  "card_stars_printed": "No card art linked",
+  "card_meters_printed": "No card art linked",
   "implementation": {
     "code_refs": [],
     "code_ref_count": 0,
@@ -48,16 +71,26 @@
   },
   "ids": {},
   "role": "catalog",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Common",
+  "lore": "Most of the brigade only notices Machine-Readable DevOps Inventory when something is missing, which is exactly the point. Machine-Readable DevOps Inventory scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on; the image the crew uses for it is the loading dock before dawn.",
+  "signature_phrase": "Par is a promise. I keep it.",
   "workflow": {
     "summary": "Machine-readable harvested inventory and de-duplication data.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "stock levels vs. par",
+      "supplier routes",
+      "delivery manifests",
+      "freshness / quality grades"
+    ],
+    "outputs": [
+      "scout report",
+      "reserve status (ready / low / out)",
+      "reorder list",
+      "traceability record"
+    ],
+    "proof_gate": "Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both."
   },
   "actions": [
     {
@@ -65,14 +98,71 @@
       "source": "data/imports/miseos-individual-catalog-items.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
-  "helps": {
-    "station": "Not yet defined in the source material",
-    "mission": "Not yet defined in the source material",
-    "problem": "Machine-readable harvested inventory and de-duplication data.",
-    "proof_gate": "Not yet defined in the source material"
+  "stats": {
+    "power": 73,
+    "precision": 81,
+    "speed": 70,
+    "resilience": 72,
+    "intelligence": 76,
+    "teamwork": 82
   },
-  "agents": [],
-  "repo_pets": []
+  "related": [
+    {
+      "name": "MiseOS DevOps Project Harvester",
+      "slug": "catalog-tool-project-harvester"
+    },
+    {
+      "name": "Harvest Audit Report",
+      "slug": "catalog-catalog-harvest-report"
+    },
+    {
+      "name": "Pantry Paladin",
+      "slug": "pantry-paladin"
+    },
+    {
+      "name": "Portion Paladin",
+      "slug": "portion-paladin"
+    },
+    {
+      "name": "Prep Pulse",
+      "slug": "prep-pulse"
+    }
+  ],
+  "helps": {
+    "station": "catalog",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Machine-readable harvested inventory and de-duplication data.",
+    "proof_gate": "Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both."
+  },
+  "agents": [
+    {
+      "name": "Steward Prime",
+      "slug": "steward-prime"
+    },
+    {
+      "name": "PrepBot",
+      "slug": "prepbot"
+    },
+    {
+      "name": "Storage",
+      "slug": "storage"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Sommelier",
+      "slug": "mise-sommelier"
+    },
+    {
+      "name": "Mizu",
+      "slug": "mizu"
+    }
+  ],
+  "abilities": [
+    "catalog",
+    "Scout",
+    "Reserve",
+    "Trace"
+  ],
+  "theme": "supply"
 }

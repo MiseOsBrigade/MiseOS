@@ -3,9 +3,9 @@
 
 <a href="../../assets/player-cards/1by1-chefs/legacy.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/legacy.webp" alt="Legacy Keeper" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/legacy-keeper.json`](../../data/characters/legacy-keeper.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/legacy-keeper.json`](../../data/characters/legacy-keeper.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
@@ -14,9 +14,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Name | Legacy Keeper <sub>source: `data/imports/photo-alignment.csv`</sub> |
 | Aliases / printed variants | Legacy <sub>source: `card titles / OCR in data/player-cards-ocr.json`</sub> |
 | Role / title | Keeper <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Security Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/seira-vaultkeeper.json`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Registry rarity | Genesis <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/seira-vaultkeeper.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 81 · precision 71 · speed 74 · resilience 80 · intelligence 77 · teamwork 81 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "security")`</sub> |
+| Abilities | Memory Seal, Sealed, Archive Vault, Lineage, Preserved Lore, Protected <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the locked dry store and the keyring that never leaves the belt: that is where Legacy Keeper is happiest. As Security Kitchen's Keeper, Legacy Keeper guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. The card calls out Memory Seal, Sealed, Archive Vault: the checks Legacy Keeper runs before calling anything ready. In the canon crosswalk this card is a provisional match for Seira Vaultkeeper. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Bloodline·True, then everything else. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Legacy Keeper guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. <sub>source: `authored: card design (theme "security")`</sub> |
+| Inputs | access requests, policy set, scan findings, secret inventory <sub>source: `authored: card design (theme "security")`</sub> |
+| Outputs | allow / deny decision, audit record, remediation ticket <sub>source: `authored: card design (theme "security")`</sub> |
+| Proof gate | Policy gate: no access or release without a policy match and a recorded approver. <sub>source: `authored: card design (theme "security")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run legacy-keeper --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise legacy-keeper scan` · reads: `access requests` · emits: `allow / deny decision` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise legacy-keeper enforce` · reads: `policy set` · emits: `audit record` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise legacy-keeper audit` · reads: `scan findings` · emits: `remediation ticket` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `legacyKeeper` (not written yet)
+- Proposed command: `mise roster run legacy-keeper --dept security-kitchen --solo --emit report`
+- Contract: inputs: access requests, policy set, scan findings, secret inventory → outputs: allow / deny decision, audit record, remediation ticket; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Keeper <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Problem it addresses | Unchecked access and leaked secrets turn one mistake into an incident. <sub>source: `authored: card design (theme "security")`</sub> |
+| Safety gate | Policy gate: no access or release without a policy match and a recorded approver. <sub>source: `authored: card design (theme "security")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Kuro Guard](../agents/kuro-guard.md) · [Firewall](../agents/firewall.md) · [Security Auditor](../agents/security-auditor.md) <sub>source: `authored: card design (closest agents for theme "security")`</sub>
+
+Repo pets: [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Seira Vaultkeeper](./seira-vaultkeeper.md) · [Shift Sentinel](./shift-sentinel.md) · [Policy Ronin](./policy-ronin.md) · [Token Toshi](./token-toshi.md) · [Threat Taro](./threat-taro.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "security" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/seira-vaultkeeper.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/seira-vaultkeeper.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "security")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "security")` |
+| workflow.inputs | `authored: card design (theme "security")` |
+| workflow.outputs | `authored: card design (theme "security")` |
+| workflow.proof_gate | `authored: card design (theme "security")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| helps.problem | `authored: card design (theme "security")` |
+| helps.proof_gate | `authored: card design (theme "security")` |
+| agents | `authored: card design (closest agents for theme "security")` |
+| repo_pets | `authored: card design (closest repo pets for theme "security")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "security" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

@@ -3,7 +3,9 @@
   "slug": "portal-rei",
   "name": "Portal Rei",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -30,7 +32,14 @@
     "role_category": "data/imports/merged_roster.json",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/portal-rei/metadata.json"
+    "helps.station": "characters/portal-rei/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 58,
@@ -112,7 +121,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "78%"
@@ -207,7 +216,7 @@
   "department": "Platform Kitchen",
   "department_mission": "Provide golden paths and stable service foundations.",
   "rarity": "Common",
-  "lore": "Not yet defined in the source material",
+  "lore": "Ask the brigade about Portal Rei and they describe the locked dry store and the keyring that never leaves the belt. As Platform Kitchen's specialist for self-service portal ui, Portal Rei guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception, and the rest of the kitchen plans service around that rhythm. The card calls out Portal Status, 24/7Access, Welcome, Chef: the checks Portal Rei runs before calling anything ready.",
   "signature_phrase": "Self-Service Portal UI done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Portal Rei performs self-service portal ui within the Platform Kitchen.",
@@ -275,6 +284,37 @@
     "problem": "Portal Rei performs self-service portal ui within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "abilities": [
+    "Portal Status",
+    "24/7Access",
+    "Welcome, Chef",
+    "Portal Access",
+    "Service Catalog",
+    "Browse"
+  ],
+  "theme": "security"
 }

@@ -3,7 +3,9 @@
   "slug": "null-chan",
   "name": "Null-chan",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "Null Chan"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -31,7 +33,11 @@
     "implementation": "git ls-files grep + repo",
     "helps.station": "characters/null-chan/metadata.json",
     "agents": "data/agents.json",
-    "repo_pets": "data/repo-pets.json"
+    "repo_pets": "data/repo-pets.json",
+    "aliases": "data/agents.json",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 13,
@@ -149,7 +155,7 @@
     }
   ],
   "card_rarity_printed": "Rare",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%",
     "98.7%"
@@ -283,7 +289,7 @@
   "department_mission": "Observe. Measure. Improve.",
   "rarity": "Rare",
   "lore": "Null-chan belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
-  "signature_phrase": "Not yet defined in the source material",
+  "signature_phrase": "Every Action, then everything else.",
   "workflow": {
     "summary": "Null-chan performs cleanse within the Reliability Kitchen.",
     "inputs": [
@@ -346,5 +352,6 @@
       "name": "Null-chan",
       "page": "docs/repo-pets/null-chan.md"
     }
-  ]
+  ],
+  "theme": "code"
 }

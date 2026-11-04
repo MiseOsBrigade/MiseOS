@@ -10,18 +10,18 @@
 | [Allergen Oracle](./allergen-oracle.md) | registry character | Safety Seer | 1×1 Chefs, Registry Catalogue Pages | no | Described in docs only | 2 |
 | [Anomaly Aki](./anomaly-aki.md) | registry character | Anomaly Detection Studio | 1×1 Chefs | no | Described in docs only | 1 |
 | [Apprentice Kai](./apprentice-kai.md) | registry character | Self-Improvement Agent | — | no | Described in docs only | 0 |
-| [Ashen One](./ashen-one.md) | card character | Ember Chef | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Ashen One](./ashen-one.md) | card character | Ember Chef | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Auditor Emi](./auditor-emi.md) | registry character | Access Review Workflow | — | no | Described in docs only | 0 |
 | [Backlog Benji](./backlog-benji.md) | registry character | Reliability Backlog Builder | — | no | Described in docs only | 0 |
 | [Beacon Broil](./beacon-broil.md) | registry character | Alert Dispatcher | 1×1 Chefs | no | Described in docs only | 1 |
 | [Bootstrap Aiko](./bootstrap-aiko.md) | registry character | Bootstrap Automation | — | no | Described in docs only | 0 |
-| [Brine Baron](./brine-baron.md) | card character | Saumurier | 1×1 Chefs | no | Not yet defined in the source material | 1 |
-| [Broth Scholar](./broth-scholar.md) | card character | Potagier | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Brine Baron](./brine-baron.md) | card character | Saumurier | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
+| [Broth Scholar](./broth-scholar.md) | card character | Potagier | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Bruno Blast Radius](./bruno-blast-radius.md) | registry character | Change Impact Scanner | — | no | Described in docs only | 0 |
 | [Build-Kun](./build-kun.md) | registry character | Build | 1×1 Chefs, Character Building Theme, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
-| [Butcher Blade](./butcher-blade.md) | card character | Boucher | Long Cards | no | Not yet defined in the source material | 1 |
+| [Butcher Blade](./butcher-blade.md) | card character | Boucher | Long Cards | no | Designed (not yet implemented in code) | 1 |
 | [Byte](./byte.md) | card character | Data Chef | Long Cards | no | Described in docs only | 1 |
-| [Cacao Alchemist](./cacao-alchemist.md) | card character | Chocolatier | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Cacao Alchemist](./cacao-alchemist.md) | card character | Chocolatier | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Canary Judge](./canary-judge.md) | registry character | Canary Judge | — | no | Described in docs only | 0 |
 | [Canary Taster](./canary-taster.md) | registry character | Pipeline Observability | Character Building Theme, Studio Art & Screens, Mise Orchestra Trading Cards (Season 1) | no | Described in docs only | 3 |
 | [Capacity Kanna](./capacity-kanna.md) | registry character | Pre-Deployment Reliability Check | — | no | Described in docs only | 0 |
@@ -56,36 +56,36 @@
 | [Reusable Node CI](./catalog-workflow-reusable-node-ci.md) | catalog item | workflow | — | yes | Implemented in code | 0 |
 | [Chaos Analyst](./chaos-analyst.md) | registry character | Learn | Mise Orchestra Trading Cards (Season 1) | no | Described in docs only | 1 |
 | [Chaos Kaito](./chaos-kaito.md) | registry character | Load & Chaos Profiles | — | no | Described in docs only | 0 |
-| [Char Coach](./char-coach.md) | card character | Grillardin | Long Cards | no | Not yet defined in the source material | 1 |
-| [Citrus Zest](./citrus-zest.md) | card character | Agrumiste | 1×1 Chefs | no | Not yet defined in the source material | 1 |
-| [Cold Zero](./cold-zero.md) | card character | Garde Glace | Long Cards | no | Not yet defined in the source material | 1 |
+| [Char Coach](./char-coach.md) | card character | Grillardin | Long Cards | no | Designed (not yet implemented in code) | 1 |
+| [Citrus Zest](./citrus-zest.md) | card character | Agrumiste | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
+| [Cold Zero](./cold-zero.md) | card character | Garde Glace | Long Cards | no | Designed (not yet implemented in code) | 1 |
 | [Container Kage](./container-kage.md) | registry character | Container Hardening Workflow | — | no | Described in docs only | 0 |
 | [Cost Kaito](./cost-kaito.md) | registry character | Cost & Efficiency Monitor | 1×1 Chefs | no | Described in docs only | 1 |
 | [Crate Courier](./crate-courier.md) | registry character | Provision Scout | 1×1 Chefs | no | Described in docs only | 1 |
-| [Crisp Master](./crisp-master.md) | card character | Friturier | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Crisp Master](./crisp-master.md) | card character | Friturier | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Culture Chef](./culture-chef.md) | registry character | Grow | Mise Orchestra Trading Cards (Season 1) | no | Described in docs only | 1 |
 | [CVE Kumo](./cve-kumo.md) | registry character | Dependency Risk Monitor | 1×1 Chefs | no | Described in docs only | 1 |
 | [Data Chan](./data-chan.md) | registry character | Collect | Mise Orchestra Trading Cards (Season 1) | no | Described in docs only | 1 |
 | [DORA Daichi](./dora-daichi.md) | registry character | Pipeline Analytics Engine | 1×1 Chefs | no | Described in docs only | 1 |
 | [DX Mei](./dx-mei.md) | registry character | Developer Experience Survey Loop | — | no | Described in docs only | 0 |
-| [Energy Keeper](./energy-keeper.md) | card character | Power Steward | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Energy Keeper](./energy-keeper.md) | card character | Power Steward | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Evidence Scribe](./evidence-scribe.md) | registry character | Compliance Evidence Collector | 1×1 Chefs | no | Referenced in app code (no dedicated handler) | 1 |
 | [Felix Rollback](./felix-rollback.md) | registry character | Rollback & Fix-Forward | 1×1 Chefs | no | Described in docs only | 1 |
-| [Fermenta](./fermenta.md) | card character | Fermenter | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Fermenta](./fermenta.md) | card character | Fermenter | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Flag Fox](./flag-fox.md) | registry character | Feature Flag Analytics | — | no | Described in docs only | 0 |
 | [Flash Riku](./flash-riku.md) | registry character | Deploy | 1×1 Chefs, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 2 |
 | [Flavor Forager](./flavor-forager.md) | registry character | Ingredient Scout | 1×1 Chefs | no | Described in docs only | 1 |
-| [Flavor Hacker](./flavor-hacker.md) | card character | Flavor Engineer | Final Roster | no | Not yet defined in the source material | 1 |
+| [Flavor Hacker](./flavor-hacker.md) | card character | Flavor Engineer | Final Roster | no | Designed (not yet implemented in code) | 1 |
 | [Flavor Scribe](./flavor-scribe.md) | registry character | Menu Curator | 1×1 Chefs | no | Described in docs only | 1 |
 | [Forecast Fuji](./forecast-fuji.md) | registry character | Capacity Planner | — | no | Described in docs only | 0 |
 | [Garnish Ghost](./garnish-ghost.md) | registry character | Finisher | 1×1 Chefs | no | Described in docs only | 2 |
-| [Glaze Whisperer](./glaze-whisperer.md) | card character | Glaceur | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Glaze Whisperer](./glaze-whisperer.md) | card character | Glaceur | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Grafana Mei](./grafana-mei.md) | registry character | Observability Dashboard Templates | 1×1 Chefs | no | Described in docs only | 1 |
-| [Grain Guardian](./grain-guardian.md) | card character | Céréalier | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Grain Guardian](./grain-guardian.md) | card character | Céréalier | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Growth Guru](./growth-guru.md) | registry character | Optimize | Mise Orchestra Trading Cards (Season 1) | no | Described in docs only | 1 |
 | [Guardrail Goro](./guardrail-goro.md) | registry character | Golden Path Guardrails | 1×1 Chefs | no | Described in docs only | 1 |
 | [Harvest Hex](./harvest-hex.md) | registry character | Produce Alchemist | 1×1 Chefs | no | Described in docs only | 1 |
-| [Herb Whisperer](./herb-whisperer.md) | card character | Herboriste | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Herb Whisperer](./herb-whisperer.md) | card character | Herboriste | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Hugo Matrix](./hugo-matrix.md) | registry character | Test Matrix Runner | 1×1 Chefs | no | Described in docs only | 1 |
 | [Impact Ichi](./impact-ichi.md) | registry character | Customer Impact Simulator | — | no | Described in docs only | 0 |
 | [Incident Kitsune](./incident-kitsune.md) | registry character | Security Incident Playbooks | 1×1 Chefs | no | Described in docs only | 1 |
@@ -93,9 +93,9 @@
 | [Iron Hashi](./iron-hashi.md) | registry character | Artifact Validator | 1×1 Chefs, Studio Art & Screens, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
 | [Ivun Cache](./ivun-cache.md) | registry character | Pipeline Cost Monitor | 1×1 Chefs | no | Described in docs only | 1 |
 | [Kaji](./kaji.md) | registry character | Compute | 1×1 Chefs, Cartoon Chefs, Studio Art & Screens, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 4 |
-| [Kitchen Conductor](./kitchen-conductor.md) | card character | Chef d'Orchestre | 1×1 Chefs | no | Not yet defined in the source material | 1 |
-| [Knead Guardian](./knead-guardian.md) | card character | Patissier | Long Cards | no | Not yet defined in the source material | 1 |
-| [Kombu Keeper](./kombu-keeper.md) | card character | Umami Warden | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Kitchen Conductor](./kitchen-conductor.md) | card character | Chef d'Orchestre | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
+| [Knead Guardian](./knead-guardian.md) | card character | Patissier | Long Cards | no | Designed (not yet implemented in code) | 1 |
+| [Kombu Keeper](./kombu-keeper.md) | card character | Umami Warden | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Kuro Guard](./kuro-guard.md) | registry character | Protect | 1×1 Chefs, Studio Art & Screens, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 4 |
 | [Kurogami Senpai](./kurogami-senpai.md) | registry character | Orchestrate | 1×1 Chefs, Studio Art & Screens, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
 | [Ladle Lumen](./ladle-lumen.md) | registry character | Broth Beacon | 1×1 Chefs | no | Described in docs only | 1 |
@@ -103,9 +103,9 @@
 | [Lattice](./lattice.md) | registry character | Trace Correlator | Character Building Theme | no | Referenced in app code (no dedicated handler) | 2 |
 | [Leaderboard Leo](./leaderboard-leo.md) | registry character | Scorecards & Leaderboards | — | no | Described in docs only | 0 |
 | [Ledger Ladle](./ledger-ladle.md) | registry character | Cost Steward | 1×1 Chefs | no | Described in docs only | 1 |
-| [Legacy Keeper](./legacy-keeper.md) | card character | Keeper | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Legacy Keeper](./legacy-keeper.md) | card character | Keeper | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Lila Branchkeeper](./lila-branchkeeper.md) | registry character | Branch Policy Gate | — | no | Described in docs only | 0 |
-| [Menu Maestro](./menu-maestro.md) | card character | Culinary Strategist | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Menu Maestro](./menu-maestro.md) | card character | Culinary Strategist | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Merge Sentinel](./merge-sentinel.md) | registry character | Pre-Merge Security Gate | 1×1 Chefs | no | Described in docs only | 1 |
 | [Metrics Miko](./metrics-miko.md) | registry character | SLO Dashboards | Mise Orchestra Trading Cards (Season 1) | no | Described in docs only | 1 |
 | [MiseOS Agent SDK](./miseos-agent-sdk.md) | registry manifest | SDK | Long Cards | yes | Implemented in code | 1 |
@@ -131,32 +131,32 @@
 | [MiseOS Trust Graph](./miseos-trust-graph.md) | registry manifest | Analytics | Long Cards | yes | Implemented in code | 1 |
 | [MiseOS Workflow Linter](./miseos-workflow-linter.md) | registry manifest | Agent | Long Cards | yes | Implemented in code | 1 |
 | [MiseOS Workflow Pack](./miseos-workflow-pack.md) | registry manifest | Workflow | Long Cards | yes | Implemented in code | 1 |
-| [Miso Maven](./miso-maven.md) | card character | Fermenter | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Miso Maven](./miso-maven.md) | card character | Fermenter | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Mizu](./mizu.md) | registry character | Prepare | 1×1 Chefs, Character Building Theme, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
 | [Nina Promoter](./nina-promoter.md) | registry character | Environment Promotion Gate | 1×1 Chefs | no | Described in docs only | 1 |
-| [No-Waste Ninja](./no-waste-ninja.md) | card character | Recycler | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [No-Waste Ninja](./no-waste-ninja.md) | card character | Recycler | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Nudge Neko](./nudge-neko.md) | registry character | Security Training Nudges | 1×1 Chefs, Registry Catalogue Pages | no | Described in docs only | 2 |
 | [Null-chan](./null-chan.md) | registry character | Cleanse | 1×1 Chefs, Studio Art & Screens, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
-| [Oil Oracle](./oil-oracle.md) | card character | Huilier | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Oil Oracle](./oil-oracle.md) | card character | Huilier | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Omar Reviewer](./omar-reviewer.md) | registry character | PR Hygiene Check | — | no | Described in docs only | 0 |
 | [OnCall Naomi](./oncall-naomi.md) | registry character | On-Call Rotation Manager | — | no | Described in docs only | 0 |
 | [Orchestra Core](./orchestra-core.md) | registry character | Coordinate | 1×1 Chefs, Character Building Theme, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 4 |
-| [Orderly Owl](./orderly-owl.md) | card character | Controleur | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Orderly Owl](./orderly-owl.md) | card character | Controleur | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Pager Hiro](./pager-hiro.md) | registry character | Incident Triage Runbook | — | no | Described in docs only | 0 |
-| [Pan Phantom](./pan-phantom.md) | card character | Sauté | Long Cards | no | Not yet defined in the source material | 1 |
+| [Pan Phantom](./pan-phantom.md) | card character | Sauté | Long Cards | no | Designed (not yet implemented in code) | 1 |
 | [Pantry Paladin](./pantry-paladin.md) | registry character | Provision Steward | 1×1 Chefs | no | Described in docs only | 1 |
-| [Pickle Doc](./pickle-doc.md) | card character | Pickler | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Pickle Doc](./pickle-doc.md) | card character | Pickler | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Pipeline Sensei](./pipeline-sensei.md) | registry character | Pipeline Tuner Agent | — | no | Described in docs only | 0 |
 | [Plate Inspector](./plate-inspector.md) | registry character | Asset Auditor | 1×1 Chefs, Long Cards | no | Described in docs only | 2 |
 | [Platform Sensei](./platform-sensei.md) | registry character | Platform Health Board | — | no | Described in docs only | 0 |
-| [Plating Poet](./plating-poet.md) | card character | Dresseur | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Plating Poet](./plating-poet.md) | card character | Dresseur | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Policy Kenji](./policy-kenji.md) | registry character | Policy Packs | — | no | Described in docs only | 0 |
 | [Policy Ronin](./policy-ronin.md) | registry character | Policy-as-Code Engine | — | no | Described in docs only | 0 |
 | [Portal Rei](./portal-rei.md) | registry character | Self-Service Portal UI | 1×1 Chefs | no | Described in docs only | 1 |
 | [Portion Paladin](./portion-paladin.md) | registry character | Balance Steward | 1×1 Chefs | no | Described in docs only | 1 |
 | [Prep Pulse](./prep-pulse.md) | registry character | Mise Monitor | 1×1 Chefs | no | Described in docs only | 1 |
 | [Preview Yuki](./preview-yuki.md) | registry character | Preview Environment Spawner | 1×1 Chefs | no | Described in docs only | 1 |
-| [Pulse Captain](./pulse-captain.md) | card character | Impulsion | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Pulse Captain](./pulse-captain.md) | card character | Impulsion | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Queue Mizu](./queue-mizu.md) | registry character | Job & Queue Templates | — | no | Described in docs only | 0 |
 | [Queue Quartz](./queue-quartz.md) | registry character | Service Timer | 1×1 Chefs | no | Described in docs only | 1 |
 | [Recipe Ranger](./recipe-ranger.md) | registry character | Knowledge Pathfinder | 1×1 Chefs | no | Described in docs only | 1 |
@@ -170,10 +170,10 @@
 | [Review Ren](./review-ren.md) | registry character | Post-Incident Review | — | no | Described in docs only | 0 |
 | [Risk Ryota](./risk-ryota.md) | registry character | Risk Scoring Model | — | no | Described in docs only | 0 |
 | [Roadmap Sensei](./roadmap-sensei.md) | registry character | Strategic Roadmap Recommender | — | no | Described in docs only | 0 |
-| [Roast Commander](./roast-commander.md) | card character | Rotisseur | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Roast Commander](./roast-commander.md) | card character | Rotisseur | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Runtime Riku](./runtime-riku.md) | registry character | Runtime Steward | 1×1 Chefs | no | Described in docs only | 1 |
-| [Sanitation Star](./sanitation-star.md) | card character | Hygiene Guardian | 1×1 Chefs | no | Not yet defined in the source material | 1 |
-| [Sauce Sage](./sauce-sage.md) | card character | Saucier | Long Cards | no | Not yet defined in the source material | 1 |
+| [Sanitation Star](./sanitation-star.md) | card character | Hygiene Guardian | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
+| [Sauce Sage](./sauce-sage.md) | card character | Saucier | Long Cards | no | Designed (not yet implemented in code) | 1 |
 | [Scale Oni](./scale-oni.md) | registry character | Scale | 1×1 Chefs, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
 | [Schema Sora](./schema-sora.md) | registry character | Schema Steward | 1×1 Chefs | no | Described in docs only | 1 |
 | [Scorecard Shin](./scorecard-shin.md) | registry character | Security Scorecard | 1×1 Chefs | no | Described in docs only | 1 |
@@ -183,19 +183,19 @@
 | [Seira Vaultkeeper](./seira-vaultkeeper.md) | registry character | Secrets Lifecycle Manager | — | no | Described in docs only | 0 |
 | [Seira](./seira.md) | registry character | Secure | 1×1 Chefs, Character Building Theme, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
 | [Shift Sentinel](./shift-sentinel.md) | card character | Veilleur | 1×1 Chefs | no | Described in docs only | 2 |
-| [Slicer Swift](./slicer-swift.md) | card character | Trancheur | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Slicer Swift](./slicer-swift.md) | card character | Trancheur | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [SLO Sage](./slo-sage.md) | registry character | SLO Definition Workflow | Mise Orchestra Trading Cards (Season 1) | no | Described in docs only | 1 |
-| [Smoke Monk](./smoke-monk.md) | card character | Fumoir | 1×1 Chefs | no | Not yet defined in the source material | 1 |
-| [Spice Alchemist](./spice-alchemist.md) | card character | Epicier | Long Cards | no | Not yet defined in the source material | 1 |
-| [Steam Whisper](./steam-whisper.md) | card character | Steam | Long Cards | no | Not yet defined in the source material | 1 |
-| [Stock Sage](./stock-sage.md) | card character | Stockier | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Smoke Monk](./smoke-monk.md) | card character | Fumoir | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
+| [Spice Alchemist](./spice-alchemist.md) | card character | Epicier | Long Cards | no | Designed (not yet implemented in code) | 1 |
+| [Steam Whisper](./steam-whisper.md) | card character | Steam | Long Cards | no | Designed (not yet implemented in code) | 1 |
+| [Stock Sage](./stock-sage.md) | card character | Stockier | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Storyteller Sumi](./storyteller-sumi.md) | registry character | Narrative Report Generator | — | no | Described in docs only | 0 |
 | [Streama](./streama.md) | registry character | Data Streaming Profiles | 1×1 Chefs, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 2 |
-| [Supply Scout](./supply-scout.md) | card character | Provisioner | 1×1 Chefs | no | Not yet defined in the source material | 1 |
-| [Sweet Architect](./sweet-architect.md) | card character | Dessert Designer | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Supply Scout](./supply-scout.md) | card character | Provisioner | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
+| [Sweet Architect](./sweet-architect.md) | card character | Dessert Designer | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Tariq Notesmith](./tariq-notesmith.md) | registry character | Release Notes Generator | 1×1 Chefs | no | Described in docs only | 1 |
 | [Taxonomy Taka](./taxonomy-taka.md) | registry character | Event Taxonomy Manager | — | no | Described in docs only | 0 |
-| [Temp Tamer](./temp-tamer.md) | card character | Thermicien | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Temp Tamer](./temp-tamer.md) | card character | Thermicien | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Template Tanaka](./template-tanaka.md) | registry character | Service Template Curator | — | no | Described in docs only | 0 |
 | [Tensho](./tensho.md) | registry character | Task Flow | Studio Art & Screens, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 3 |
 | [Terra Forge](./terra-forge.md) | registry character | Infrastructure Forge | — | no | Described in docs only | 0 |
@@ -205,15 +205,15 @@
 | [Token Toshi](./token-toshi.md) | registry character | Credential Hygiene Scanner | 1×1 Chefs | no | Described in docs only | 1 |
 | [Trace Sensei](./trace-sensei.md) | registry character | Instrumentation Booster | — | no | Described in docs only | 0 |
 | [Umami Code](./umami-code.md) | registry character | Developer Workflow Profiles | 1×1 Chefs, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 2 |
-| [Umami Seeker](./umami-seeker.md) | card character | Umamiste | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Umami Seeker](./umami-seeker.md) | card character | Umamiste | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Vacuum Vesper](./vacuum-vesper.md) | registry character | Seal Keeper | 1×1 Chefs | no | Described in docs only | 1 |
 | [Vault Hana](./vault-hana.md) | registry character | Secrets & Vault Integration | — | no | Described in docs only | 0 |
-| [Veg Virtuoso](./veg-virtuoso.md) | card character | Primeur | 1×1 Chefs | no | Not yet defined in the source material | 1 |
+| [Veg Virtuoso](./veg-virtuoso.md) | card character | Primeur | 1×1 Chefs | no | Designed (not yet implemented in code) | 1 |
 | [Velvet Vesper](./velvet-vesper.md) | registry character | Guest Concierge | 1×1 Chefs | no | Described in docs only | 1 |
 | [Watchtower Yoru](./watchtower-yoru.md) | registry character | Runtime Threat Detector | — | no | Described in docs only | 0 |
 | [Yume Builder](./yume-builder.md) | registry character | Artifact Builder | — | no | Described in docs only | 0 |
 | [Yume](./yume.md) | registry character | Build | 1×1 Chefs, Mise Orchestra Trading Cards (Season 1) | no | Referenced in app code (no dedicated handler) | 2 |
-| [Zen Plater](./zen-plater.md) | card character | Dresseur | Long Cards | no | Not yet defined in the source material | 1 |
+| [Zen Plater](./zen-plater.md) | card character | Dresseur | Long Cards | no | Designed (not yet implemented in code) | 1 |
 
 ## Unmatched cards (120)
 

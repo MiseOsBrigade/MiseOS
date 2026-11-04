@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/firewall.webp"><img src="../../assets/player-cards/1by1-chefs/firewall.webp" alt="Firewall" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /EF8F4F01-38AA-4806-87EE-F69A36F167CF.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Firewall](../agents/firewall.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | Network Guardian <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Security Kitchen <sub>source: `authored: card design (theme "security")`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 65 · precision 77 · speed 76 · resilience 86 · intelligence 65 · teamwork 73 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "security")`</sub> |
+| Abilities | Network Defense, Vintrusion Blocked, Traffic Filtered, Vports Secured, Secure, Firewall Status <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the locked dry store and the keyring that never leaves the belt: that is where Firewall is happiest. As Security Kitchen's Network Guardian, Firewall guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. The card calls out Network Defense, Vintrusion Blocked, Traffic Filtered: the checks Firewall runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every allow / deny decision accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Firewall](../agents/firewall.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub> |
+| Related characters | [Policy Kenji](../characters/policy-kenji.md) · [Ledger Ladle](../characters/ledger-ladle.md) · [Container Kage](../characters/container-kage.md) · [Legacy Keeper](../characters/legacy-keeper.md) · [Evidence Scribe](../characters/evidence-scribe.md) <sub>source: `authored: card design (same theme "security")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Firewall guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. <sub>source: `authored: card design (theme "security")`</sub> |
+| Inputs | access requests, policy set, scan findings, secret inventory |
+| Outputs | allow / deny decision, audit record, remediation ticket |
+| Proof gate | Policy gate: no access or release without a policy match and a recorded approver. |
+| Problem it addresses | Unchecked access and leaked secrets turn one mistake into an incident. <sub>source: `authored: card design (theme "security")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run firewall --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise firewall scan` · reads: `access requests` · emits: `allow / deny decision` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise firewall enforce` · reads: `policy set` · emits: `audit record` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise firewall audit` · reads: `scan findings` · emits: `remediation ticket` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `firewall` (not written yet)
+- Proposed command: `mise roster run firewall --dept security-kitchen --solo --emit report`
+- Contract: inputs: access requests, policy set, scan findings, secret inventory → outputs: allow / deny decision, audit record, remediation ticket; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

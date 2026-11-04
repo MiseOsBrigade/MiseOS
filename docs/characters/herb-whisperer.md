@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/herb-whisperer.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/herb-whisperer.webp" alt="Herb Whisperer" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/herb-whisperer.json`](../../data/characters/herb-whisperer.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/herb-whisperer.json`](../../data/characters/herb-whisperer.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Herb Whisperer <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Harvest Hex (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Herboriste <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Operations Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/harvest-hex.json`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Registry rarity | Legendary <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/harvest-hex.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 91 · precision 94 · speed 84 · resilience 79 · intelligence 92 · teamwork 94 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "supply")`</sub> |
+| Abilities | Freshness, Grade, Aroma Index, Infusion, Mastery, Extract <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Herb Whisperer and they describe the loading dock before dawn. As Operations Kitchen's specialist for herboriste, Herb Whisperer scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on, and the rest of the kitchen plans service around that rhythm. The card calls out Freshness, Grade, Aroma Index: the checks Herb Whisperer runs before calling anything ready. In the canon crosswalk this card is a provisional match for Harvest Hex. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Scout first, then service. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Herb Whisperer scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on. <sub>source: `authored: card design (theme "supply")`</sub> |
+| Inputs | stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades <sub>source: `authored: card design (theme "supply")`</sub> |
+| Outputs | scout report, reserve status (ready / low / out), reorder list, traceability record <sub>source: `authored: card design (theme "supply")`</sub> |
+| Proof gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run herb-whisperer --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise herb-whisperer scout` · reads: `stock levels vs. par` · emits: `scout report` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
+- command: `mise herb-whisperer reserve` · reads: `supplier routes` · emits: `reserve status (ready / low / out)` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
+- command: `mise herb-whisperer trace` · reads: `delivery manifests` · emits: `traceability record` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `herbWhisperer` (not written yet)
+- Proposed command: `mise roster run herb-whisperer --dept operations-kitchen --solo --emit report`
+- Contract: inputs: stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades → outputs: scout report, reserve status (ready / low / out), reorder list, traceability record; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Herboriste <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Problem it addresses | Stations stall mid-service when an ingredient (or dependency) runs out or arrives without provenance. <sub>source: `authored: card design (theme "supply")`</sub> |
+| Safety gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [PrepBot](../agents/prepbot.md) · [Mizu](../agents/mizu.md) · [Steward Prime](../agents/steward-prime.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/harvest-hex.json`</sub>
+
+Repo pets: [Mise Sommelier](../repo-pets/mise-sommelier.md) · [Mizu](../repo-pets/mizu.md) <sub>source: `authored: card design (closest repo pets for theme "supply")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Harvest Hex](./harvest-hex.md) · [Menu Maestro](./menu-maestro.md) · [Supply Scout](./supply-scout.md) · [Spice Alchemist](./spice-alchemist.md) · [Ticket Tactician](./ticket-tactician.md) · [Kurogami Senpai](./kurogami-senpai.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "supply" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/harvest-hex.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/harvest-hex.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "supply")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "supply")` |
+| workflow.inputs | `authored: card design (theme "supply")` |
+| workflow.outputs | `authored: card design (theme "supply")` |
+| workflow.proof_gate | `authored: card design (theme "supply")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| helps.problem | `authored: card design (theme "supply")` |
+| helps.proof_gate | `authored: card design (theme "supply")` |
+| agents | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/harvest-hex.json` |
+| repo_pets | `authored: card design (closest repo pets for theme "supply")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "supply" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

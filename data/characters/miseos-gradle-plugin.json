@@ -3,7 +3,9 @@
   "slug": "miseos-gradle-plugin",
   "name": "MiseOS Gradle Plugin",
   "kind": "registry_manifest",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
     "registry_catalog": "data/imports/miseos-registry-catalog.csv",
@@ -22,7 +24,25 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (marketplace.category)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"code\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "rarity": "data/player-cards-ocr.json (printed rarity)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"code\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"code\")",
+    "workflow.outputs": "authored: card design (theme \"code\")",
+    "workflow.proof_gate": "authored: card design (theme \"code\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"code\")",
+    "agents": "authored: card design (closest agents for theme \"code\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"code\")",
+    "related": "authored: card design (same theme \"code\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
   "registry_catalog": {
@@ -110,7 +130,7 @@
     }
   ],
   "card_rarity_printed": "Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -300,16 +320,24 @@
     "registry_id": "miseos.gradle-plugin"
   },
   "role": "Package",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Mythic",
+  "lore": "Most of the brigade only notices MiseOS Gradle Plugin when something is missing, which is exactly the point. MiseOS Gradle Plugin turns a plan into working code through a plan, code, test, deploy loop; the image the crew uses for it is a terminal glowing beside the prep list. The card calls out Build Successful, Dependencies, Time: 0.42S: the checks MiseOS Gradle Plugin runs before calling anything ready.",
+  "signature_phrase": "Clean code, perfect dish.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Gradle Plugin.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "task / issue",
+      "repository context",
+      "acceptance criteria"
+    ],
+    "outputs": [
+      "commit / pull request",
+      "test results",
+      "deploy status"
+    ],
+    "proof_gate": "CI gate: no merge without green tests and a reviewed diff."
   },
   "actions": [
     {
@@ -318,14 +346,65 @@
       "source": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 71,
+    "precision": 78,
+    "speed": 84,
+    "resilience": 80,
+    "intelligence": 70,
+    "teamwork": 67
+  },
+  "related": [
+    {
+      "name": "Canary Taster",
+      "slug": "canary-taster"
+    },
+    {
+      "name": "Nina Promoter",
+      "slug": "nina-promoter"
+    },
+    {
+      "name": "Yume",
+      "slug": "yume"
+    }
+  ],
   "helps": {
     "station": "Registry (package)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Executable baseline capability for MiseOS Gradle Plugin.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "CI gate: no merge without green tests and a reviewed diff."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Coder",
+      "slug": "coder"
+    },
+    {
+      "name": "Build Kun",
+      "slug": "build-kun"
+    },
+    {
+      "name": "Debugger",
+      "slug": "debugger"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Build-Kun",
+      "slug": "build-kun"
+    },
+    {
+      "name": "Mise Bootstrap",
+      "slug": "mise-bootstrap"
+    }
+  ],
+  "abilities": [
+    "Build Successful",
+    "Dependencies",
+    "Time: 0.42S",
+    "Implementation",
+    "Miseos.Core",
+    "Miseos.Plugin"
+  ],
+  "theme": "code"
 }

@@ -5,18 +5,18 @@
 
 **Registry manifest (product / tool)** · Implementation: **Implemented in code** · Detail record: [`data/characters/miseos-gradle-plugin.json`](../../data/characters/miseos-gradle-plugin.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | MiseOS Gradle Plugin <sub>source: `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Package <sub>source: `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (type)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Pipeline Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "code")`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Registry rarity | Mythic <sub>source: `data/player-cards-ocr.json (printed rarity)`</sub> |
 | ID: registry_id | miseos.gradle-plugin <sub>source: `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
@@ -34,12 +34,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 71 · precision 78 · speed 84 · resilience 80 · intelligence 70 · teamwork 67 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "code")`</sub> |
+| Abilities | Build Successful, Dependencies, Time: 0.42S, Implementation, Miseos.Core, Miseos.Plugin <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices MiseOS Gradle Plugin when something is missing, which is exactly the point. MiseOS Gradle Plugin turns a plan into working code through a plan, code, test, deploy loop; the image the crew uses for it is a terminal glowing beside the prep list. The card calls out Build Successful, Dependencies, Time: 0.42S: the checks MiseOS Gradle Plugin runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Clean code, perfect dish. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -52,9 +52,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Step | Value |
 |---|---|
 | Summary | Executable baseline capability for MiseOS Gradle Plugin. <sub>source: `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (capability.description)`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | task / issue, repository context, acceptance criteria <sub>source: `authored: card design (theme "code")`</sub> |
+| Outputs | commit / pull request, test results, deploy status <sub>source: `authored: card design (theme "code")`</sub> |
+| Proof gate | CI gate: no merge without green tests and a reviewed diff. <sub>source: `authored: card design (theme "code")`</sub> |
 
 ## Actions / commands
 
@@ -106,17 +106,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Registry (package) <sub>source: `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (marketplace.category)`</sub> |
-| Mission | Not yet defined in the source material |
+| Mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
 | Problem it addresses | Executable baseline capability for MiseOS Gradle Plugin. <sub>source: `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (capability.description)`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | CI gate: no merge without green tests and a reviewed diff. <sub>source: `authored: card design (theme "code")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Coder](../agents/coder.md) · [Build Kun](../agents/build-kun.md) · [Debugger](../agents/debugger.md) <sub>source: `authored: card design (closest agents for theme "code")`</sub>
+
+Repo pets: [Build-Kun](../repo-pets/build-kun.md) · [Mise Bootstrap](../repo-pets/mise-bootstrap.md) <sub>source: `authored: card design (closest repo pets for theme "code")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Canary Taster](./canary-taster.md) · [Nina Promoter](./nina-promoter.md) · [Yume](./yume.md) <sub>source: `authored: card design (same theme "code" / same department)`</sub>
 
 ## Sources
 
@@ -140,5 +142,23 @@ _Not yet defined in the source material_
 | pricing | `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json` |
 | implementation | `git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts` |
 | helps.station | `apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (marketplace.category)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "code")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `data/player-cards-ocr.json (printed rarity)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "code")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "code")` |
+| workflow.outputs | `authored: card design (theme "code")` |
+| workflow.proof_gate | `authored: card design (theme "code")` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "code")` |
+| agents | `authored: card design (closest agents for theme "code")` |
+| repo_pets | `authored: card design (closest repo pets for theme "code")` |
+| related | `authored: card design (same theme "code" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/miso-maven.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/miso-maven.webp" alt="Miso Maven" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/miso-maven.json`](../../data/characters/miso-maven.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/miso-maven.json`](../../data/characters/miso-maven.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Miso Maven <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Culture Chef (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Fermenter <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Data & Insight Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/culture-chef.json`</sub> |
+| Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
+| Registry rarity | Legendary <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/culture-chef.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 70 · precision 72 · speed 75 · resilience 65 · intelligence 84 · teamwork 68 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "ferment")`</sub> |
+| Abilities | Umami Flow, Culture, Balance, Fermentation, Ritual, Cleanse <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a shelf of labelled jars that each tell a story: that is where Miso Maven is happiest. As Data & Insight Kitchen's Fermenter, Miso Maven manages slow processes (ferments, cures, brines) by tracking time, salinity and cultures until they are proven ready. The card calls out Umami Flow, Culture, Balance: the checks Miso Maven runs before calling anything ready. In the canon crosswalk this card is a provisional match for Culture Chef. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Time is an ingredient. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Miso Maven manages slow processes (ferments, cures, brines) by tracking time, salinity and cultures until they are proven ready. <sub>source: `authored: card design (theme "ferment")`</sub> |
+| Inputs | batch start date, salinity / pH readings, culture lineage, target profile <sub>source: `authored: card design (theme "ferment")`</sub> |
+| Outputs | batch readiness verdict, culture log, shelf-life label <sub>source: `authored: card design (theme "ferment")`</sub> |
+| Proof gate | Readiness gate: a batch is released only when pH/salinity readings and elapsed time both meet the recipe; lineage must be recorded. <sub>source: `authored: card design (theme "ferment")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run miso-maven --dept data-insight-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise miso-maven start-batch` · reads: `batch start date` · emits: `batch readiness verdict` · status: `proposed` <sub>source: `authored: card design (theme "ferment")`</sub>
+- command: `mise miso-maven measure` · reads: `salinity / pH readings` · emits: `culture log` · status: `proposed` <sub>source: `authored: card design (theme "ferment")`</sub>
+- command: `mise miso-maven release-batch` · reads: `culture lineage` · emits: `shelf-life label` · status: `proposed` <sub>source: `authored: card design (theme "ferment")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `misoMaven` (not written yet)
+- Proposed command: `mise roster run miso-maven --dept data-insight-kitchen --solo --emit report`
+- Contract: inputs: batch start date, salinity / pH readings, culture lineage, target profile → outputs: batch readiness verdict, culture log, shelf-life label; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Fermenter <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
+| Problem it addresses | Long-running work (experiments, data jobs) gets released before it has actually finished maturing. <sub>source: `authored: card design (theme "ferment")`</sub> |
+| Safety gate | Readiness gate: a batch is released only when pH/salinity readings and elapsed time both meet the recipe; lineage must be recorded. <sub>source: `authored: card design (theme "ferment")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/culture-chef.json`</sub>
+
+Repo pets: [Mise Apprentice](../repo-pets/mise-apprentice.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "ferment")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Culture Chef](./culture-chef.md) · [Pickle Doc](./pickle-doc.md) · [Brine Baron](./brine-baron.md) · [Fermenta](./fermenta.md) · [Taxonomy Taka](./taxonomy-taka.md) · [Roadmap Sensei](./roadmap-sensei.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "ferment" / same department)`</sub>
 
 ## Sources
 
@@ -95,7 +104,29 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/culture-chef.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/culture-chef.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "ferment")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "ferment")` |
+| workflow.inputs | `authored: card design (theme "ferment")` |
+| workflow.outputs | `authored: card design (theme "ferment")` |
+| workflow.proof_gate | `authored: card design (theme "ferment")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| helps.problem | `authored: card design (theme "ferment")` |
+| helps.proof_gate | `authored: card design (theme "ferment")` |
+| agents | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/culture-chef.json` |
+| repo_pets | `authored: card design (closest repo pets for theme "ferment")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "ferment" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

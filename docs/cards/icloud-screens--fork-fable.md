@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/icloud-screens/fork-fable.webp"><img src="../../assets/player-cards/icloud-screens/fork-fable.webp" alt="Fork Fable" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1024×1536 |
 | Original source | `icloud:63BCE2E9-BF9A-4965-92A0-841D2D207479.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | Not yet defined in the source material |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | Branch Cartographer <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Pipeline Kitchen <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 71 · precision 74 · speed 73 · resilience 71 · intelligence 74 · teamwork 73 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "pipeline")`</sub> |
+| Abilities | Release, Build, Git Flow, Workflow, Branch, Branch Graph <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | “Every path should know where it returns." <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | No seorchest left to chance. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Pipeline](../agents/pipeline.md) · [GitHub Chef](../agents/github-chef.md) · [Argo Chef](../agents/argo-chef.md) <sub>source: `authored: card design (closest agents for theme "pipeline")`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "pipeline")`</sub> |
+| Related characters | [Tensho](../characters/tensho.md) · [Alko Commit Chef](../characters/alko-commit-chef.md) · [Capacity Kanna](../characters/capacity-kanna.md) · [Pipeline Sensei](../characters/pipeline-sensei.md) · [Bruno Blast Radius](../characters/bruno-blast-radius.md) <sub>source: `authored: card design (same theme "pipeline")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Fork Fable runs an automated gate in the delivery pipeline. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Inputs | pull request or tag, workflow configuration, repository state |
+| Outputs | check run / status, annotations, release artefact or block |
+| Proof gate | Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail. |
+| Problem it addresses | Manual release steps are skipped under pressure. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run fork-fable --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise fork-fable check` · reads: `pull request or tag` · emits: `check run / status` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise fork-fable gate` · reads: `workflow configuration` · emits: `annotations` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise fork-fable publish` · reads: `repository state` · emits: `release artefact or block` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `forkFable` (not written yet)
+- Proposed command: `mise roster run fork-fable --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: pull request or tag, workflow configuration, repository state → outputs: check run / status, annotations, release artefact or block; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

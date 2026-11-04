@@ -3,7 +3,9 @@
   "slug": "miseos-agent-sdk",
   "name": "MiseOS Agent SDK",
   "kind": "registry_manifest",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
     "registry_catalog": "data/imports/miseos-registry-catalog.csv",
@@ -21,7 +23,26 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json (marketplace.category)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"security\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "rarity": "data/player-cards-ocr.json (printed rarity)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"security\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"security\")",
+    "workflow.outputs": "authored: card design (theme \"security\")",
+    "workflow.proof_gate": "authored: card design (theme \"security\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"security\")",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "related": "authored: card design (same theme \"security\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
   "registry_catalog": {
@@ -126,8 +147,8 @@
     }
   ],
   "card_rarity_printed": "Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -314,16 +335,25 @@
     "registry_id": "miseos.agent-sdk"
   },
   "role": "SDK",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Security Kitchen",
+  "department_mission": "Guard. Audit. Comply.",
+  "rarity": "Mythic",
+  "lore": "Ask the brigade about MiseOS Agent SDK and they describe the locked dry store and the keyring that never leaves the belt. As Security Kitchen's specialist for sdk, MiseOS Agent SDK guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception, and the rest of the kitchen plans service around that rhythm. The card calls out Iimise Os Agent Sdk, Entity: Agent.Sdk, Scope: the checks MiseOS Agent SDK runs before calling anything ready.",
+  "signature_phrase": "Sign:00: checked, not assumed.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Agent SDK.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "access requests",
+      "policy set",
+      "scan findings",
+      "secret inventory"
+    ],
+    "outputs": [
+      "allow / deny decision",
+      "audit record",
+      "remediation ticket"
+    ],
+    "proof_gate": "Policy gate: no access or release without a policy match and a recorded approver."
   },
   "actions": [
     {
@@ -332,14 +362,77 @@
       "source": "apps/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 71,
+    "precision": 66,
+    "speed": 77,
+    "resilience": 76,
+    "intelligence": 71,
+    "teamwork": 74
+  },
+  "related": [
+    {
+      "name": "MiseOS Attestation Gate",
+      "slug": "miseos-attestation-gate"
+    },
+    {
+      "name": "MiseOS Policy Checker",
+      "slug": "miseos-policy-checker"
+    },
+    {
+      "name": "MiseOS Repo Steward",
+      "slug": "miseos-repo-steward"
+    },
+    {
+      "name": "Evidence Scribe",
+      "slug": "evidence-scribe"
+    },
+    {
+      "name": "Token Toshi",
+      "slug": "token-toshi"
+    },
+    {
+      "name": "Scorecard Shin",
+      "slug": "scorecard-shin"
+    }
+  ],
   "helps": {
     "station": "Registry (sdk)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Guard. Audit. Comply.",
     "problem": "Executable baseline capability for MiseOS Agent SDK.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Policy gate: no access or release without a policy match and a recorded approver."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "abilities": [
+    "Iimise Os Agent Sdk",
+    "Entity: Agent.Sdk",
+    "Scope",
+    "Type: Sdk",
+    "Eco Systen",
+    "Status\"\"Online"
+  ],
+  "theme": "security"
 }

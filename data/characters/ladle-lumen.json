@@ -3,7 +3,9 @@
   "slug": "ladle-lumen",
   "name": "Ladle Lumen",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -26,7 +28,16 @@
     "related": "data/imports/miseos_character_master_inventory_001_300.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/ladle-lumen/metadata.json"
+    "helps.station": "characters/ladle-lumen/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"sauce\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"sauce\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 10,
@@ -82,8 +93,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -134,8 +145,8 @@
   "department": "Operations Kitchen",
   "department_mission": "Keep the kitchen running smoothly.",
   "rarity": "Rare",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "lore": "Most of the brigade only notices Ladle Lumen when something is missing, which is exactly the point. Ladle Lumen builds the base flavours other stations depend on: reductions, stocks and mother sauces that must taste the same every time; the image the crew uses for it is the back burner where the stockpots never go cold. The card calls out Broth Clarity, Broth Mastery, Aroma Resonance: the checks Ladle Lumen runs before calling anything ready.",
+  "signature_phrase": "Low and slow, never sloppy.",
   "workflow": {
     "summary": "Ladle Lumen performs broth beacon within the Operations Kitchen.",
     "inputs": [
@@ -185,6 +196,37 @@
     "problem": "Ladle Lumen performs broth beacon within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Umami Code",
+      "slug": "umami-code"
+    },
+    {
+      "name": "API Gateway",
+      "slug": "api-gateway"
+    },
+    {
+      "name": "Architect",
+      "slug": "architect"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Umami Code",
+      "slug": "umami-code"
+    },
+    {
+      "name": "Mise Sauce",
+      "slug": "mise-sauce"
+    }
+  ],
+  "abilities": [
+    "Broth Clarity",
+    "Broth Mastery",
+    "Aroma Resonance",
+    "Clarity",
+    "Umami",
+    "Depth"
+  ],
+  "theme": "sauce"
 }

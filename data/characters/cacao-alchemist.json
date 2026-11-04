@@ -3,7 +3,9 @@
   "slug": "cacao-alchemist",
   "name": "Cacao Alchemist",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -12,8 +14,29 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"plate\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "rarity": "authored: card design (from printed star count 5)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"plate\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"plate\")",
+    "workflow.inputs": "authored: card design (theme \"plate\")",
+    "workflow.outputs": "authored: card design (theme \"plate\")",
+    "workflow.proof_gate": "authored: card design (theme \"plate\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)",
+    "helps.problem": "authored: card design (theme \"plate\")",
+    "helps.proof_gate": "authored: card design (theme \"plate\")",
+    "agents": "authored: card design (closest agents for theme \"plate\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"plate\")",
+    "related": "authored: card design (same theme \"plate\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -64,7 +87,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "99.9%"
@@ -76,31 +99,134 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "cacaoAlchemist",
+      "command": "mise roster run cacao-alchemist --dept platform-kitchen --solo --emit report",
+      "contract": "inputs: cooked components, plating spec / style guide, ticket → outputs: plated dish, pass photo / visual check, send-back note when something is off; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Chocolatier",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Legendary",
+  "lore": "Ask the brigade about Cacao Alchemist and they describe the pass under warm lights, tweezers in hand. As Platform Kitchen's Chocolatier, Cacao Alchemist finishes and presents the work: composition, garnish and a final visual check at the pass, and the rest of the kitchen plans service around that rhythm. The card calls out Alchemical Grade, Chocolate Arts, Sweet Balance: the checks Cacao Alchemist runs before calling anything ready.",
+  "signature_phrase": "If it is not right, it goes back.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Cacao Alchemist finishes and presents the work: composition, garnish and a final visual check at the pass.",
+    "inputs": [
+      "cooked components",
+      "plating spec / style guide",
+      "ticket"
+    ],
+    "outputs": [
+      "plated dish",
+      "pass photo / visual check",
+      "send-back note when something is off"
+    ],
+    "proof_gate": "Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run cacao-alchemist --dept platform-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise cacao-alchemist plate",
+      "reads": "cooked components",
+      "emits": "plated dish",
+      "status": "proposed",
+      "source": "authored: card design (theme \"plate\")"
+    },
+    {
+      "command": "mise cacao-alchemist inspect",
+      "reads": "plating spec / style guide",
+      "emits": "pass photo / visual check",
+      "status": "proposed",
+      "source": "authored: card design (theme \"plate\")"
+    },
+    {
+      "command": "mise cacao-alchemist send",
+      "reads": "ticket",
+      "emits": "send-back note when something is off",
+      "status": "proposed",
+      "source": "authored: card design (theme \"plate\")"
+    }
+  ],
+  "stats": {
+    "power": 91,
+    "precision": 98,
+    "speed": 87,
+    "resilience": 79,
+    "intelligence": 81,
+    "teamwork": 86
+  },
+  "related": [
+    {
+      "name": "Sweet Architect",
+      "slug": "sweet-architect"
+    },
+    {
+      "name": "Plating Poet",
+      "slug": "plating-poet"
+    },
+    {
+      "name": "Zen Plater",
+      "slug": "zen-plater"
+    },
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Bootstrap Aiko",
+      "slug": "bootstrap-aiko"
+    },
+    {
+      "name": "Portal Rei",
+      "slug": "portal-rei"
+    }
+  ],
   "helps": {
     "station": "Chocolatier",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Good work loses its value when the last step (UI, docs, release notes) is sloppy.",
+    "proof_gate": "Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "UX Chef",
+      "slug": "ux-chef"
+    },
+    {
+      "name": "DevRel",
+      "slug": "devrel"
+    },
+    {
+      "name": "Doc Writer",
+      "slug": "doc-writer"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Yume",
+      "slug": "yume"
+    },
+    {
+      "name": "Mise Garde",
+      "slug": "mise-garde"
+    }
+  ],
+  "abilities": [
+    "Alchemical Grade",
+    "Chocolate Arts",
+    "Sweet Balance",
+    "Blend",
+    "Aroma",
+    "Temper"
+  ],
+  "theme": "plate"
 }

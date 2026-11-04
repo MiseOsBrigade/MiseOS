@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/nudge-neko.json`](../../data/characters/nudge-neko.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Nudge Neko <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Security Training Nudges <sub>source: `characters/nudge-neko/metadata.json`</sub> |
 | Kitchen / department | Security Kitchen <sub>source: `characters/nudge-neko/metadata.json`</sub> |
 | Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -40,12 +40,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 65 · precision 84 · speed 73 · resilience 65 · intelligence 64 · teamwork 74 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Security, Kitchen, Gentle Nudge, Activated, Reminderstatus, Lock It <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a steel counter wiped until it reflects the ceiling lights: that is where Nudge Neko is happiest. As Security Kitchen's specialist for security training nudges, Nudge Neko keeps the kitchen clean and the waste stream honest: sanitising surfaces, logging waste and closing contamination risks. The card calls out Security, Kitchen, Gentle Nudge: the checks Nudge Neko runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Security Training Nudges done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in security training nudges so the Security Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -107,6 +107,7 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
+Agents: [Compliance](../agents/compliance.md) · [Scanner](../agents/scanner.md) · [Token Monk](../agents/token-monk.md) <sub>source: `authored: card design (closest agents for theme "clean")`</sub>
 
 Repo pets: [Nudge Neko](../repo-pets/nudge-neko.md) <sub>source: `data/repo-pets.json`</sub>
 
@@ -151,5 +152,11 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/nudge-neko/metadata.json` |
 | repo_pets | `data/repo-pets.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "clean")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

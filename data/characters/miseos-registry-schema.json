@@ -3,7 +3,9 @@
   "slug": "miseos-registry-schema",
   "name": "MiseOS Registry Schema",
   "kind": "registry_manifest",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
     "registry_catalog": "data/imports/miseos-registry-catalog.csv",
@@ -21,7 +23,26 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (marketplace.category)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"data\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "rarity": "data/player-cards-ocr.json (printed rarity)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"data\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "data/player-cards-ocr.json (text printed on the card)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"data\")",
+    "workflow.outputs": "authored: card design (theme \"data\")",
+    "workflow.proof_gate": "authored: card design (theme \"data\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"data\")",
+    "agents": "authored: card design (closest agents for theme \"data\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"data\")",
+    "related": "authored: card design (same theme \"data\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
   "registry_catalog": {
@@ -122,8 +143,8 @@
     }
   ],
   "card_rarity_printed": "Ultra Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -324,16 +345,24 @@
     "registry_id": "miseos.registry-schema"
   },
   "role": "Schema",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Data & Insight Kitchen",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "rarity": "Ultra Mythic",
+  "lore": "The divine architecture of MiseOS knowledge. Defines all that exists. Connects all that relates.",
+  "signature_phrase": "Registry, then everything else.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Registry Schema.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "service metrics",
+      "logs",
+      "historic baselines"
+    ],
+    "outputs": [
+      "insight report",
+      "trend alert",
+      "recommended change"
+    ],
+    "proof_gate": "Evidence gate: every recommendation cites the metric and time window it came from."
   },
   "actions": [
     {
@@ -342,14 +371,73 @@
       "source": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 70,
+    "precision": 73,
+    "speed": 81,
+    "resilience": 81,
+    "intelligence": 85,
+    "teamwork": 72
+  },
+  "related": [
+    {
+      "name": "MiseOS Trust Graph",
+      "slug": "miseos-trust-graph"
+    },
+    {
+      "name": "MiseOS Analytics Engine",
+      "slug": "miseos-analytics-engine"
+    },
+    {
+      "name": "Insight Sensei",
+      "slug": "insight-sensei"
+    },
+    {
+      "name": "Storyteller Sumi",
+      "slug": "storyteller-sumi"
+    },
+    {
+      "name": "Lake Haru",
+      "slug": "lake-haru"
+    }
+  ],
   "helps": {
     "station": "Registry (schema)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Learn. Optimize. Evolve.",
     "problem": "Executable baseline capability for MiseOS Registry Schema.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Evidence gate: every recommendation cites the metric and time window it came from."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Prometheus",
+      "slug": "prometheus"
+    },
+    {
+      "name": "Risk Oracle",
+      "slug": "risk-oracle"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Flag Fox",
+      "slug": "flag-fox"
+    },
+    {
+      "name": "Mise Lattice",
+      "slug": "mise-lattice"
+    }
+  ],
+  "abilities": [
+    "Registry",
+    "Type: Schema",
+    "Entity",
+    "Structure",
+    "Attribute",
+    "Data Type"
+  ],
+  "theme": "data"
 }

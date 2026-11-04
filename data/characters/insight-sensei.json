@@ -3,7 +3,9 @@
   "slug": "insight-sensei",
   "name": "Insight Sensei",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -28,7 +30,14 @@
     "orchestra_card": "data/imports/mise_orchestra_cards.csv",
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/insight-sensei/metadata.json"
+    "helps.station": "characters/insight-sensei/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"data\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"data\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 33,
@@ -76,8 +85,8 @@
     }
   ],
   "card_rarity_printed": "Epic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "level": 28,
   "orchestra_card": {
     "role": "Guest Chef",
@@ -180,7 +189,7 @@
   "department_mission": "Learn. Optimize. Evolve.",
   "rarity": "Epic",
   "lore": "Insight Sensei belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
-  "signature_phrase": "Not yet defined in the source material",
+  "signature_phrase": "Mise Orchestra, then everything else.",
   "workflow": {
     "summary": "Insight Sensei performs analyze within the Data & Insight Kitchen.",
     "inputs": [
@@ -230,6 +239,29 @@
     "problem": "Insight Sensei performs analyze within the Data & Insight Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Prometheus",
+      "slug": "prometheus"
+    },
+    {
+      "name": "Risk Oracle",
+      "slug": "risk-oracle"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Flag Fox",
+      "slug": "flag-fox"
+    },
+    {
+      "name": "Mise Lattice",
+      "slug": "mise-lattice"
+    }
+  ],
+  "theme": "data"
 }

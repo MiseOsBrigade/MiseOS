@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/conductor.webp"><img src="../../assets/player-cards/1by1-chefs/conductor.webp" alt="Conductor" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /50B45F35-A621-4C7C-9264-78A1E0BB425A.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Conductor](../agents/conductor.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Pipeline Sensei](../characters/pipeline-sensei.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Flow Conductor <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Pipeline Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/pipeline-sensei.json`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 67 · precision 89 · speed 68 · resilience 66 · intelligence 65 · teamwork 81 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "plate")`</sub> |
+| Abilities | Flow Control, Orchestration, Layers, Planning, Task Routing, Prep <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the pass under warm lights, tweezers in hand: that is where Conductor is happiest. As Pipeline Kitchen's Flow Conductor, Conductor finishes and presents the work: composition, garnish and a final visual check at the pass. The card calls out Flow Control, Orchestration, Layers: the checks Conductor runs before calling anything ready. In the canon crosswalk this card is a provisional match for Pipeline Sensei. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Calm hands, clean plate. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Conductor](../agents/conductor.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Yume](../repo-pets/yume.md) · [Mise Garde](../repo-pets/mise-garde.md) <sub>source: `authored: card design (closest repo pets for theme "plate")`</sub> |
+| Related characters | [Pipeline Sensei](../characters/pipeline-sensei.md) · [Garnish Ghost](../characters/garnish-ghost.md) · [Velvet Vesper](../characters/velvet-vesper.md) · [Zen Plater](../characters/zen-plater.md) · [Plate Inspector](../characters/plate-inspector.md) · [Plating Poet](../characters/plating-poet.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "plate")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Conductor finishes and presents the work: composition, garnish and a final visual check at the pass. <sub>source: `authored: card design (theme "plate")`</sub> |
+| Inputs | cooked components, plating spec / style guide, ticket |
+| Outputs | plated dish, pass photo / visual check, send-back note when something is off |
+| Proof gate | Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out. |
+| Problem it addresses | Good work loses its value when the last step (UI, docs, release notes) is sloppy. <sub>source: `authored: card design (theme "plate")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run conductor --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise conductor plate` · reads: `cooked components` · emits: `plated dish` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
+- command: `mise conductor inspect` · reads: `plating spec / style guide` · emits: `pass photo / visual check` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
+- command: `mise conductor send` · reads: `ticket` · emits: `send-back note when something is off` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `conductor` (not written yet)
+- Proposed command: `mise roster run conductor --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: cooked components, plating spec / style guide, ticket → outputs: plated dish, pass photo / visual check, send-back note when something is off; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

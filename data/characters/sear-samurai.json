@@ -3,7 +3,9 @@
   "slug": "sear-samurai",
   "name": "Sear Samurai",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "Red Oni (canon crosswalk, provisional)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -13,7 +15,28 @@
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv",
+    "department": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "rarity": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"heat\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"heat\")",
+    "workflow.inputs": "authored: card design (theme \"heat\")",
+    "workflow.outputs": "authored: card design (theme \"heat\")",
+    "workflow.proof_gate": "authored: card design (theme \"heat\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "helps.problem": "authored: card design (theme \"heat\")",
+    "helps.proof_gate": "authored: card design (theme \"heat\")",
+    "agents": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json",
+    "repo_pets": "authored: card design (closest repo pets for theme \"heat\")",
+    "related": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme \"heat\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -152,7 +175,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%"
@@ -181,26 +204,126 @@
   },
   "ids": {},
   "role": "Grillardin",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Security Kitchen",
+  "department_mission": "Guard. Audit. Comply.",
+  "rarity": "Epic",
+  "lore": "Most of the brigade only notices Sear Samurai when something is missing, which is exactly the point. Sear Samurai runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn; the image the crew uses for it is the flat-top at the peak of Friday service. The card calls out Heat Control, Sear Mastery, Timing: the checks Sear Samurai runs before calling anything ready. In the canon crosswalk this card is a provisional match for Red Oni.",
+  "signature_phrase": "Sear·Strike, then everything else.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Sear Samurai runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn.",
+    "inputs": [
+      "ticket with doneness target",
+      "heat / load reading",
+      "timer",
+      "protein or batch on the pass"
+    ],
+    "outputs": [
+      "cooked-to-spec item",
+      "doneness check",
+      "heat log",
+      "escalation if the line runs hot"
+    ],
+    "proof_gate": "Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run sear-samurai --dept security-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise sear-samurai sear",
+      "reads": "ticket with doneness target",
+      "emits": "cooked-to-spec item",
+      "status": "proposed",
+      "source": "authored: card design (theme \"heat\")"
+    },
+    {
+      "command": "mise sear-samurai probe",
+      "reads": "heat / load reading",
+      "emits": "doneness check",
+      "status": "proposed",
+      "source": "authored: card design (theme \"heat\")"
+    },
+    {
+      "command": "mise sear-samurai cool-down",
+      "reads": "timer",
+      "emits": "escalation if the line runs hot",
+      "status": "proposed",
+      "source": "authored: card design (theme \"heat\")"
+    }
+  ],
+  "stats": {
+    "power": 90,
+    "precision": 90,
+    "speed": 88,
+    "resilience": 80,
+    "intelligence": 85,
+    "teamwork": 95
+  },
+  "related": [
+    {
+      "name": "Red Oni",
+      "slug": "red-oni"
+    },
+    {
+      "name": "Char Coach",
+      "slug": "char-coach"
+    },
+    {
+      "name": "Pan Phantom",
+      "slug": "pan-phantom"
+    },
+    {
+      "name": "Ashen One",
+      "slug": "ashen-one"
+    },
+    {
+      "name": "Evidence Scribe",
+      "slug": "evidence-scribe"
+    },
+    {
+      "name": "Token Toshi",
+      "slug": "token-toshi"
+    }
+  ],
   "helps": {
     "station": "Grillardin",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Guard. Audit. Comply.",
+    "problem": "Under load, the hottest station is where quality collapses first (outages, burnt releases).",
+    "proof_gate": "Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kaji",
+      "slug": "kaji"
+    },
+    {
+      "name": "Scale Oni",
+      "slug": "scale-oni"
+    }
+  ],
+  "abilities": [
+    "Heat Control",
+    "Sear Mastery",
+    "Timing",
+    "Char Artistry",
+    "Pressure",
+    "Angle"
+  ],
+  "theme": "heat"
 }

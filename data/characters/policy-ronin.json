@@ -3,7 +3,9 @@
   "slug": "policy-ronin",
   "name": "Policy Ronin",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "ids.registry_id": "characters/policy-ronin/metadata.json",
@@ -25,7 +27,16 @@
     "unique_trait": "data/imports/merged_roster.json",
     "role_category": "data/imports/merged_roster.json",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/policy-ronin/metadata.json"
+    "helps.station": "characters/policy-ronin/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards.json (no card for this entry)",
+    "card_stars_printed": "data/player-cards.json (no card for this entry)",
+    "card_meters_printed": "data/player-cards.json (no card for this entry)",
+    "abilities": "role from characters/policy-ronin/metadata.json + authored: card design (workflow steps for theme \"security\")",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 91,
@@ -36,9 +47,9 @@
   "cards": [],
   "collections": [],
   "card_text": [],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "No card art linked, so nothing printed",
+  "card_stars_printed": "No card art linked",
+  "card_meters_printed": "No card art linked",
   "level": 30,
   "unique_trait": "Specializes in policy-as-code engine so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
   "role_category": "security",
@@ -135,7 +146,7 @@
   "department": "Security Kitchen",
   "department_mission": "Guard. Audit. Comply.",
   "rarity": "Genesis",
-  "lore": "Not yet defined in the source material",
+  "lore": "Picture the locked dry store and the keyring that never leaves the belt: that is where Policy Ronin is happiest. As Security Kitchen's specialist for policy-as-code engine, Policy Ronin guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception.",
   "signature_phrase": "Policy-as-Code Engine done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Policy Ronin performs policy-as-code engine within the Security Kitchen.",
@@ -203,6 +214,35 @@
     "problem": "Policy Ronin performs policy-as-code engine within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "abilities": [
+    "Policy-as-Code Engine",
+    "Scan",
+    "Enforce",
+    "Audit"
+  ],
+  "theme": "security"
 }

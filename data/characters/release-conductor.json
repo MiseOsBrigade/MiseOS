@@ -3,7 +3,9 @@
   "slug": "release-conductor",
   "name": "Release Conductor",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -30,7 +32,14 @@
     "role_category": "data/imports/merged_roster.json",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/release-conductor/metadata.json"
+    "helps.station": "characters/release-conductor/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "data/player-cards-ocr.json (text printed on the card)",
+    "agents": "authored: card design (closest agents for theme \"quality\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"quality\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 44,
@@ -158,7 +167,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%",
@@ -274,7 +283,7 @@
   "department": "Pipeline Kitchen",
   "department_mission": "Build. Test. Deploy. Repeat.",
   "rarity": "Common",
-  "lore": "Not yet defined in the source material",
+  "lore": "Pinelane Department-kegz1 every change moving safely from commit to production.",
   "signature_phrase": "Deployment Orchestrator done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Release Conductor performs deployment orchestrator within the Pipeline Kitchen.",
@@ -342,6 +351,37 @@
     "problem": "Release Conductor performs deployment orchestrator within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Reviewer",
+      "slug": "reviewer"
+    },
+    {
+      "name": "Tester",
+      "slug": "tester"
+    },
+    {
+      "name": "Quality Guard",
+      "slug": "quality-guard"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Garde",
+      "slug": "mise-garde"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Release",
+    "Orchestration",
+    "Plan",
+    "Build",
+    "Deploy",
+    "Test"
+  ],
+  "theme": "quality"
 }

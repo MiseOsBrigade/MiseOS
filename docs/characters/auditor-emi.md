@@ -3,14 +3,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/auditor-emi.json`](../../data/characters/auditor-emi.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Auditor Emi <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Access Review Workflow <sub>source: `characters/auditor-emi/metadata.json`</sub> |
 | Kitchen / department | Security Kitchen <sub>source: `characters/auditor-emi/metadata.json`</sub> |
 | Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -20,24 +20,24 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | ID: character_id | miseos.character.055 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: card_id | MISE-055 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
 | ID: codename | AUDITOR_EMI <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
-| Collections | Not yet defined in the source material |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 | Role category | security <sub>source: `data/imports/merged_roster.json`</sub> |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
 | Roster stats | power 72 · precision 82 · speed 58 · resilience 64 · intelligence 80 · teamwork 83 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Access Review Workflow, Scan, Enforce, Audit <sub>source: `role from characters/auditor-emi/metadata.json + authored: card design (workflow steps for theme "security")`</sub> |
+| Lore | Picture the locked dry store and the keyring that never leaves the belt: that is where Auditor Emi is happiest. As Security Kitchen's specialist for access review workflow, Auditor Emi guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Access Review Workflow done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in access review workflow so the Security Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -91,7 +91,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Kuro Guard](../agents/kuro-guard.md) · [Firewall](../agents/firewall.md) · [Security Auditor](../agents/security-auditor.md) <sub>source: `authored: card design (closest agents for theme "security")`</sub>
+
+Repo pets: [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub>
 
 ## Related characters
 
@@ -122,5 +124,14 @@ _Not yet defined in the source material_
 | role_category | `data/imports/merged_roster.json` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/auditor-emi/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| abilities | `role from characters/auditor-emi/metadata.json + authored: card design (workflow steps for theme "security")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "security")` |
+| repo_pets | `authored: card design (closest repo pets for theme "security")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

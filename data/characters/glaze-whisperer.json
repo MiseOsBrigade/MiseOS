@@ -3,7 +3,9 @@
   "slug": "glaze-whisperer",
   "name": "Glaze Whisperer",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "Garnish Ghost (canon crosswalk, provisional)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -12,8 +14,29 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv",
+    "department": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/garnish-ghost.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "rarity": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/garnish-ghost.json",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"sauce\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"sauce\")",
+    "workflow.inputs": "authored: card design (theme \"sauce\")",
+    "workflow.outputs": "authored: card design (theme \"sauce\")",
+    "workflow.proof_gate": "authored: card design (theme \"sauce\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "helps.problem": "authored: card design (theme \"sauce\")",
+    "helps.proof_gate": "authored: card design (theme \"sauce\")",
+    "agents": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/garnish-ghost.json",
+    "repo_pets": "authored: card design (closest repo pets for theme \"sauce\")",
+    "related": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme \"sauce\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -65,7 +88,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%"
@@ -77,31 +100,135 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "glazeWhisperer",
+      "command": "mise roster run glaze-whisperer --dept operations-kitchen --solo --emit report",
+      "contract": "inputs: base recipe / spec, ingredient batch, taste targets (salt, acid, umami), station order → outputs: finished base batch, tasting note, batch label with date and allergens; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Glaceur",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Legendary",
+  "lore": "Most of the brigade only notices Glaze Whisperer when something is missing, which is exactly the point. Glaze Whisperer builds the base flavours other stations depend on: reductions, stocks and mother sauces that must taste the same every time; the image the crew uses for it is the back burner where the stockpots never go cold. The card calls out Glaze Control, Glaze Perfection, Shine Harmony: the checks Glaze Whisperer runs before calling anything ready. In the canon crosswalk this card is a provisional match for Garnish Ghost.",
+  "signature_phrase": "Low and slow, never sloppy.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Glaze Whisperer builds the base flavours other stations depend on: reductions, stocks and mother sauces that must taste the same every time.",
+    "inputs": [
+      "base recipe / spec",
+      "ingredient batch",
+      "taste targets (salt, acid, umami)",
+      "station order"
+    ],
+    "outputs": [
+      "finished base batch",
+      "tasting note",
+      "batch label with date and allergens"
+    ],
+    "proof_gate": "Taste-and-label check: a batch only ships to stations after it matches the spec on taste and carries a dated allergen label."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run glaze-whisperer --dept operations-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise glaze-whisperer reduce",
+      "reads": "base recipe / spec",
+      "emits": "finished base batch",
+      "status": "proposed",
+      "source": "authored: card design (theme \"sauce\")"
+    },
+    {
+      "command": "mise glaze-whisperer taste",
+      "reads": "ingredient batch",
+      "emits": "tasting note",
+      "status": "proposed",
+      "source": "authored: card design (theme \"sauce\")"
+    },
+    {
+      "command": "mise glaze-whisperer label",
+      "reads": "taste targets (salt, acid, umami)",
+      "emits": "batch label with date and allergens",
+      "status": "proposed",
+      "source": "authored: card design (theme \"sauce\")"
+    }
+  ],
+  "stats": {
+    "power": 91,
+    "precision": 93,
+    "speed": 90,
+    "resilience": 88,
+    "intelligence": 85,
+    "teamwork": 79
+  },
+  "related": [
+    {
+      "name": "Garnish Ghost",
+      "slug": "garnish-ghost"
+    },
+    {
+      "name": "Broth Scholar",
+      "slug": "broth-scholar"
+    },
+    {
+      "name": "Kombu Keeper",
+      "slug": "kombu-keeper"
+    },
+    {
+      "name": "Umami Seeker",
+      "slug": "umami-seeker"
+    },
+    {
+      "name": "Vacuum Vesper",
+      "slug": "vacuum-vesper"
+    },
+    {
+      "name": "Reserve Rune",
+      "slug": "reserve-rune"
+    }
+  ],
   "helps": {
     "station": "Glaceur",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Every dish downstream drifts when the shared base (or shared library) changes without anyone tasting it.",
+    "proof_gate": "Taste-and-label check: a batch only ships to stations after it matches the spec on taste and carries a dated allergen label."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "UX Chef",
+      "slug": "ux-chef"
+    },
+    {
+      "name": "DevRel",
+      "slug": "devrel"
+    },
+    {
+      "name": "Doc Writer",
+      "slug": "doc-writer"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Umami Code",
+      "slug": "umami-code"
+    },
+    {
+      "name": "Mise Sauce",
+      "slug": "mise-sauce"
+    }
+  ],
+  "abilities": [
+    "Glaze Control",
+    "Glaze Perfection",
+    "Shine Harmony",
+    "Mirror Finish",
+    "Maximum Luster",
+    "Texture Index"
+  ],
+  "theme": "sauce"
 }
