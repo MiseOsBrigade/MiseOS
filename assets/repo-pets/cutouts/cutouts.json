@@ -1,0 +1,246 @@
+{
+  "cutouts": {
+    "build-kun": {
+      "card": "apps/registry-atrium/cards/png/013-build-kun.png",
+      "box": [
+        276,
+        204,
+        495,
+        604
+      ],
+      "match_error": 1355.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        216,
+        398
+      ]
+    },
+    "canary-taster": {
+      "card": "apps/registry-atrium/cards/png/016-canary-taster.png",
+      "box": [
+        251,
+        200,
+        520,
+        600
+      ],
+      "match_error": 1030.0,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        239,
+        398
+      ]
+    },
+    "data-chan": {
+      "card": "apps/registry-atrium/cards/png/019-data-chan.png",
+      "box": [
+        155,
+        204,
+        604,
+        600
+      ],
+      "match_error": 695.8,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        184,
+        396
+      ]
+    },
+    "insight-sensei": {
+      "card": "apps/registry-atrium/cards/png/020-insight-sensei.png",
+      "box": [
+        276,
+        200,
+        491,
+        600
+      ],
+      "match_error": 754.7,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        212,
+        397
+      ]
+    },
+    "iron-hashi": {
+      "card": "apps/registry-atrium/cards/png/007-iron-hashi.png",
+      "box": [
+        262,
+        200,
+        509,
+        600
+      ],
+      "match_error": 1622.9,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        232,
+        399
+      ]
+    },
+    "kaji": {
+      "card": "apps/registry-atrium/cards/png/005-kaji.png",
+      "box": [
+        276,
+        204,
+        491,
+        604
+      ],
+      "match_error": 1221.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        215,
+        393
+      ]
+    },
+    "kuro-guard": {
+      "card": "apps/registry-atrium/cards/png/011-kuro-guard.png",
+      "box": [
+        262,
+        200,
+        509,
+        600
+      ],
+      "match_error": 1297.1,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        244,
+        397
+      ]
+    },
+    "kurogami-senpai": {
+      "card": "apps/registry-atrium/cards/png/001-kurogami-senpai.png",
+      "box": [
+        222,
+        196,
+        548,
+        604
+      ],
+      "match_error": 514.8,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        242,
+        400
+      ]
+    },
+    "mizu": {
+      "card": "apps/registry-atrium/cards/png/003-mizu.png",
+      "box": [
+        236,
+        204,
+        527,
+        604
+      ],
+      "match_error": 1410.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        262,
+        388
+      ]
+    },
+    "null-chan": {
+      "card": "apps/registry-atrium/cards/png/008-null-chan.png",
+      "box": [
+        229,
+        200,
+        538,
+        600
+      ],
+      "match_error": 789.0,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        242,
+        397
+      ]
+    },
+    "orchestra-core": {
+      "card": "apps/registry-atrium/cards/png/015-orchestra-core.png",
+      "box": [
+        149,
+        200,
+        617,
+        600
+      ],
+      "match_error": 677.9,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        468,
+        399
+      ]
+    },
+    "slo-sage": {
+      "card": "apps/registry-atrium/cards/png/018-slo-sage.png",
+      "box": [
+        244,
+        200,
+        533,
+        607
+      ],
+      "match_error": 768.2,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        281,
+        400
+      ]
+    },
+    "streama": {
+      "card": "apps/registry-atrium/cards/png/014-streama.png",
+      "box": [
+        244,
+        200,
+        524,
+        600
+      ],
+      "match_error": 772.6,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        280,
+        398
+      ]
+    },
+    "tensho": {
+      "card": "apps/registry-atrium/cards/png/002-tensho.png",
+      "box": [
+        185,
+        204,
+        585,
+        600
+      ],
+      "match_error": 825.0,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        400,
+        396
+      ]
+    },
+    "umami-code": {
+      "card": "apps/registry-atrium/cards/png/004-umami-code.png",
+      "box": [
+        229,
+        204,
+        542,
+        604
+      ],
+      "match_error": 986.4,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        265,
+        398
+      ]
+    },
+    "yume": {
+      "card": "apps/registry-atrium/cards/png/006-yume.png",
+      "box": [
+        255,
+        200,
+        516,
+        600
+      ],
+      "match_error": 953.5,
+      "note": "box located by masked template matching of the earlier 110px cutout against the native-resolution card",
+      "output_size": [
+        226,
+        397
+      ]
+    }
+  },
+  "matting_model": "isnet-anime",
+  "note": "Native-resolution crops from the trading cards; alpha from rembg isnet-anime at full resolution."
+}

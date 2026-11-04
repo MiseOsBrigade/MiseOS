@@ -1,0 +1,23 @@
+{
+  "slug": "mise-runtime",
+  "name": "Mise Runtime",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Timing Chef",
+  "department": "Runtime",
+  "glyph": "⏱️",
+  "catchphrase": "Keeps the service clock honest.",
+  "behaviors": {
+    "preferred_paths": [
+      "src",
+      "runtime",
+      "bin"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-runtime.md",
+  "dir": "assets/repo-pets/mise-runtime"
+}

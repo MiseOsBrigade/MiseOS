@@ -1,0 +1,41 @@
+{
+  "slug": "iron-hashi",
+  "name": "Iron Hashi",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Boucher",
+  "department": "Reliability Department",
+  "glyph": "⚖️",
+  "catchphrase": "No mistakes allowed. Validates everything with brutal precision.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 4,
+      "files": 4,
+      "parent": 2,
+      "tests": 9,
+      "schemas": 8,
+      "config": 4
+    },
+    "verbs": {
+      "enterDirectory": "cuts into the validation station",
+      "inspectFile": "slices through edge cases in",
+      "inspectConfig": "checks the schema knife line in",
+      "inspectDocs": "audits the rules written in",
+      "inspectTests": "sharpens the test blade on",
+      "retreat": "steps back with clean cuts"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/iron-hashi.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/iron-hashi.png",
+  "character": "iron-hashi",
+  "cards": [
+    "docs/characters/iron-hashi.md",
+    "docs/characters/iron-hashi.md",
+    "docs/characters/iron-hashi.md"
+  ],
+  "page": "docs/repo-pets/iron-hashi.md",
+  "dir": "assets/repo-pets/iron-hashi"
+}

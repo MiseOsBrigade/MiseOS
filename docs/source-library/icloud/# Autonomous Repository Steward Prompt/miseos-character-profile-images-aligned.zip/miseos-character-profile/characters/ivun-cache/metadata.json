@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.013",
+  "number": 13,
+  "slug": "ivun-cache",
+  "name": "Ivun Cache",
+  "mise_name": "Ivun Cache",
+  "codename": "IVUN_CACHE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Pipeline Cost Monitor",
+  "job_name": "Pipeline Cost Monitor",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Pipeline Cost Monitor",
+    "avatar_path": "assets/characters/ivun-cache/avatar.png",
+    "card_path": "assets/characters/ivun-cache/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Ivun Cache performs pipeline cost monitor within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Canary Taster",
+      "Pipeline Sensei",
+      "Tensho"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 57,
+    "precision": 74,
+    "speed": 65,
+    "resilience": 76,
+    "intelligence": 83,
+    "teamwork": 83
+  },
+  "paths": {
+    "readme": "characters/ivun-cache/README.md",
+    "metadata": "characters/ivun-cache/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

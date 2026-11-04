@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.004",
+  "number": 4,
+  "slug": "omar-reviewer",
+  "name": "Omar Reviewer",
+  "mise_name": "Omar Reviewer",
+  "codename": "OMAR_REVIEWER",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "PR Hygiene Check",
+  "job_name": "PR Hygiene Check",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "PR Hygiene Check",
+    "avatar_path": "assets/characters/omar-reviewer/avatar.png",
+    "card_path": "assets/characters/omar-reviewer/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Omar Reviewer performs pr hygiene check within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Hugo Matrix",
+      "Seira Scan",
+      "Yume Builder"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 68,
+    "precision": 75,
+    "speed": 64,
+    "resilience": 80,
+    "intelligence": 83,
+    "teamwork": 87
+  },
+  "paths": {
+    "readme": "characters/omar-reviewer/README.md",
+    "metadata": "characters/omar-reviewer/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "workflow-release-preflight",
+  "category": "workflow",
+  "title": "Release Preflight",
+  "description": "Release readiness workflow with its required local release-sentinel Action.",
+  "dependencies": [
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "files": [
+    ".github/workflows/release-preflight.yml",
+    "actions/release-sentinel/action.yml",
+    "actions/release-sentinel/dist/index.js"
+  ],
+  "notes": []
+}

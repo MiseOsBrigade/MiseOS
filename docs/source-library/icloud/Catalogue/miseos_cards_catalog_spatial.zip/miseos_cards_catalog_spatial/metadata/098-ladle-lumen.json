@@ -1,0 +1,196 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #098 — Ladle Lumen",
+  "description": "Ladle Lumen serves the Operations Kitchen as the brigade's broth beacon. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/098-ladle-lumen.jpg",
+  "animation_url": "media/animation/098-ladle-lumen.mp4",
+  "external_url": "https://miseos.dev/agents/ladle-lumen",
+  "background_color": "D4AF37",
+  "spatial_screen": {
+    "card_id": "MISE-098",
+    "level": 22,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 14,
+      "aligned_pages": [
+        14
+      ],
+      "reference_image": "assets/reference/page-014.jpg",
+      "thumbnail": "assets/thumbnails/page-014.jpg",
+      "alignment_confidence": "medium",
+      "provenance": "photo_aligned_completion"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.098",
+    "number": 98,
+    "slug": "ladle-lumen",
+    "codename": "LADLE_LUMEN",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Operations Kitchen",
+    "department_code": "operations",
+    "role": "Broth Beacon",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 22
+  },
+  "lore": {
+    "summary": "Ladle Lumen serves the Operations Kitchen as the brigade's broth beacon. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Ladle Lumen performs broth beacon within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Reserve Rune",
+      "Vacuum Vesper",
+      "Flavor Scribe"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE BROTH BEACON",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Broth Beacon Protocol",
+      "type": "active",
+      "effect": "Executes the core broth beacon workflow with evidence capture.",
+      "command": "MISE BROTH BEACON"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next operations station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 80,
+    "precision": 76,
+    "speed": 67,
+    "resilience": 66,
+    "intelligence": 81,
+    "teamwork": 86
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Broth Beacon"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 22,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "photo_aligned_completion"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "medium"
+    },
+    {
+      "trait_type": "Power",
+      "value": 80,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 66,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 81,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 86,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/098-ladle-lumen.jpg",
+    "reference_art": "assets/reference/page-014.jpg",
+    "thumbnail": "assets/thumbnails/page-014.jpg",
+    "animation": {
+      "uri": "media/animation/098-ladle-lumen.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/098-ladle-lumen.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/098-ladle-lumen.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/098-ladle-lumen.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/098-ladle-lumen.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

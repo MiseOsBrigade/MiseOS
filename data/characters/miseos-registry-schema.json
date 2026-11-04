@@ -1,0 +1,355 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-registry-schema",
+  "name": "MiseOS Registry Schema",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.registry-schema",
+    "name": "MiseOS Registry Schema",
+    "type": "schema",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "bootstrap",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/registry-schema"
+  },
+  "catalog_item": {
+    "id": "registry-registry-schema",
+    "category": "registry-capability",
+    "title": "MiseOS Registry Schema",
+    "description": "Executable baseline capability for MiseOS Registry Schema.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.registry-schema.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: registrySchema",
+      "Source status: active"
+    ]
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/ultra-mythic.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/ultra-mythic.webp",
+      "collection": "long-cards",
+      "title": "ULTRA MYTHIC",
+      "match_method": "ocr-text"
+    },
+    {
+      "file": "assets/player-cards/long-cards/ultramythic.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/ultramythic.webp",
+      "collection": "long-cards",
+      "title": "ULTRAMYTHIC",
+      "match_method": "ocr-text"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/ultra-mythic.webp",
+      "printed_text": [
+        "12",
+        "Miseos",
+        "Miseos",
+        "REGISTRY",
+        "SCHEMA",
+        "TYPE: SCHEMA",
+        "Entity",
+        "Structure",
+        "Attribute",
+        "Datatype",
+        "Relation",
+        "Index",
+        "Constraint",
+        "Rule",
+        "ULTRA MYTHIC",
+        "The divine architecture of MiseOS knowledge.",
+        "Defines all that exists. Connects all that relates.",
+        "Informs all that becomes.",
+        "MISEOS CORE REGISTRY"
+      ]
+    },
+    {
+      "file": "assets/player-cards/long-cards/ultramythic.webp",
+      "printed_text": [
+        "Miseos",
+        "12",
+        "MiseOs",
+        "REGISTRY",
+        "SCHEMA",
+        "TYPE:SCHEMA",
+        "Entity",
+        "Structure",
+        "Attribute",
+        "Datatype",
+        "Relation",
+        "Index",
+        "Constraint",
+        "Rule",
+        "ULTRAMYTHIC",
+        "The divinearchitecture of MiseOsknowledge.",
+        "Defines all that exists. Connects all that relates.",
+        "Informsallthatbecomes.",
+        "MISEOSCOREREGISTRY"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Ultra Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "registrySchema"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "marketplace",
+      "registry"
+    ]
+  },
+  "marketplace": {
+    "category": "schema",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 24,
+        "term": "registrySchema"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 24,
+        "term": "registrySchema"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 24,
+        "term": "registrySchema"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.registry-schema"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 135,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 348,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 15,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 348,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 75,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.registry-schema.json",
+        "line": 4,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 75,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.registry-schema.json",
+        "line": 4,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 288,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 348,
+        "term": "MiseOS Registry Schema"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 51,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 46,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 16,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 69,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 30,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 16,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 90,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 20,
+        "term": "miseos.registry-schema"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Registry Schema"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+        "line": 16,
+        "term": "miseos.registry-schema"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 24,
+      "name": "registrySchema"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 24,
+        "term": "registrySchema"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 24,
+        "term": "registrySchema"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 24,
+        "term": "registrySchema"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.registry-schema"
+  },
+  "role": "Schema",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Registry Schema.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "registrySchema",
+      "handler": "registrySchema",
+      "source": "apps/registry-platform/registry/manifests/miseos.registry-schema.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (schema)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Registry Schema.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

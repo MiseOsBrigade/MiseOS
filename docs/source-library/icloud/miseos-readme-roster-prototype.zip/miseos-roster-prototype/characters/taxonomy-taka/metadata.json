@@ -1,0 +1,68 @@
+{
+  "id": "taxonomy-taka",
+  "number": 61,
+  "name": "Taxonomy Taka",
+  "miseName": "Mise EventTaxonomyManager",
+  "codename": "chef.data-insight.event-taxonomy-manager",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Event Taxonomy Manager",
+    "signaturePhrase": "Event Taxonomy Manager done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in event taxonomy manager so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen event taxonomy manager aura",
+    "silhouette": "multinational chibi DevOps chef carrying a scroll",
+    "tool": "scroll",
+    "spritePath": "/assets/characters/taxonomy-taka/full-body.png",
+    "cardPath": "/assets/characters/taxonomy-taka/card.png"
+  },
+  "workflow": {
+    "jobName": "Event Taxonomy Manager",
+    "roleName": "Event Taxonomy Manager microagent",
+    "summary": "Runs event taxonomy manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Lake Haru",
+      "Alko Commit Chef",
+      "Template Tanaka",
+      "SLO Sage"
+    ]
+  },
+  "stats": {
+    "power": 94,
+    "precision": 89,
+    "speed": 84,
+    "resilience": 78,
+    "intelligence": 76,
+    "teamwork": 90
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "taxonomy-taka",
+  "seasonOneCard": null,
+  "displayNumber": 61,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/taxonomy-taka",
+  "avatarSvg": "assets/characters/taxonomy-taka/avatar.svg",
+  "cardSvg": "assets/characters/taxonomy-taka/card.svg"
+}

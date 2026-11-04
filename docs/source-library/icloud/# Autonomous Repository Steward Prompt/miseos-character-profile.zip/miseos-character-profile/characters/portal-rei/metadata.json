@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.028",
+  "number": 28,
+  "slug": "portal-rei",
+  "name": "Portal Rei",
+  "mise_name": "Portal Rei",
+  "codename": "PORTAL_REI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Self-Service Portal UI",
+  "job_name": "Self-Service Portal UI",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Self-Service Portal UI",
+    "avatar_path": "assets/characters/portal-rei/avatar.png",
+    "card_path": "assets/characters/portal-rei/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Portal Rei performs self-service portal ui within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Guardrail Goro",
+      "Platform Sensei",
+      "Seira"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 70,
+    "precision": 71,
+    "speed": 78,
+    "resilience": 75,
+    "intelligence": 59,
+    "teamwork": 73
+  },
+  "paths": {
+    "readme": "characters/portal-rei/README.md",
+    "metadata": "characters/portal-rei/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "build-kun",
+  "slug": "build-kun",
+  "number": 86,
+  "name": "Build-Kun",
+  "miseName": "Mise Build",
+  "codename": "chef.pipeline.build",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "rare",
+  "roleCategory": "build",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Boulanger",
+    "signaturePhrase": "Build-Kun keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Bakes container images fresh and fully. Always experimenting."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen Container Dough aura",
+    "silhouette": "chibi DevOps chef carrying Container Dough",
+    "tool": "Container Dough",
+    "spritePath": "/assets/characters/build-kun/full-body.png",
+    "cardPath": "/assets/characters/build-kun/card.png"
+  },
+  "workflow": {
+    "jobName": "Build",
+    "roleName": "Boulanger microagent",
+    "summary": "Bakes container images fresh and fully. Always experimenting.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Flash Riku",
+      "Alko Commit Chef"
+    ]
+  },
+  "stats": {
+    "power": 80,
+    "precision": 95,
+    "speed": 77,
+    "resilience": 93,
+    "intelligence": 78,
+    "teamwork": 72
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "13",
+    "role": "Boulanger",
+    "department": "Pipeline",
+    "function": "Build",
+    "rarity": "Rare",
+    "tier": "Build Line",
+    "element": "Container Dough",
+    "ability": "Image Bake",
+    "lore": "Bakes container images fresh and fully. Always experimenting.",
+    "image_file": "cards/png/013-build-kun.png",
+    "metadata_file": "metadata/erc721/013-build-kun.json"
+  },
+  "displayNumber": 86,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/build-kun",
+  "avatarSvg": "assets/characters/build-kun/avatar.svg",
+  "cardSvg": "assets/characters/build-kun/card.svg"
+}

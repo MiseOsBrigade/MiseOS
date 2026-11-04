@@ -1,0 +1,18 @@
+{
+  "slug": "audit-sensei",
+  "name": "Audit Sensei",
+  "kind": "brigade_mascot_agent",
+  "role": "Audit Master",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:61",
+  "thumbnail": "agents/audit-sensei/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/audit-sensei.md",
+  "dir": "agents/audit-sensei",
+  "files": [
+    "agents/audit-sensei/Audit-Sensei.png"
+  ]
+}

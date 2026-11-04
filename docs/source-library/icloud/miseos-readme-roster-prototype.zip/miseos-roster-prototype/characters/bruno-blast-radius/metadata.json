@@ -1,0 +1,68 @@
+{
+  "id": "bruno-blast-radius",
+  "number": 2,
+  "name": "Bruno Blast-Radius",
+  "miseName": "Mise ChangeImpactScanner",
+  "codename": "chef.pipeline.change-impact-scanner",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "rare",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Brazilian",
+    "title": "Change Impact Scanner",
+    "signaturePhrase": "Change Impact Scanner done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in change impact scanner so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen change impact scanner aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/bruno-blast-radius/full-body.png",
+    "cardPath": "/assets/characters/bruno-blast-radius/card.png"
+  },
+  "workflow": {
+    "jobName": "Change Impact Scanner",
+    "roleName": "Change Impact Scanner microagent",
+    "summary": "Runs change impact scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Alko Commit Chef",
+      "Lila Branchkeeper",
+      "Bootstrap Aiko",
+      "Trace Sensei"
+    ]
+  },
+  "stats": {
+    "power": 89,
+    "precision": 95,
+    "speed": 95,
+    "resilience": 77,
+    "intelligence": 88,
+    "teamwork": 99
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "bruno-blast-radius",
+  "seasonOneCard": null,
+  "displayNumber": 2,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/bruno-blast-radius",
+  "avatarSvg": "assets/characters/bruno-blast-radius/avatar.svg",
+  "cardSvg": "assets/characters/bruno-blast-radius/card.svg"
+}

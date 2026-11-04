@@ -1,0 +1,196 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #095 — Crate Courier",
+  "description": "Crate Courier serves the Operations Kitchen as the brigade's provision scout. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/095-crate-courier.jpg",
+  "animation_url": "media/animation/095-crate-courier.mp4",
+  "external_url": "https://miseos.dev/agents/crate-courier",
+  "background_color": "D4AF37",
+  "spatial_screen": {
+    "card_id": "MISE-095",
+    "level": 16,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 11,
+      "aligned_pages": [
+        11
+      ],
+      "reference_image": "assets/reference/page-011.jpg",
+      "thumbnail": "assets/thumbnails/page-011.jpg",
+      "alignment_confidence": "medium",
+      "provenance": "photo_aligned_completion"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.095",
+    "number": 95,
+    "slug": "crate-courier",
+    "codename": "CRATE_COURIER",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Operations Kitchen",
+    "department_code": "operations",
+    "role": "Provision Scout",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 16
+  },
+  "lore": {
+    "summary": "Crate Courier serves the Operations Kitchen as the brigade's provision scout. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Crate Courier performs provision scout within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Ledger Ladle",
+      "Beacon Broil",
+      "Ladle Lumen"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE PROVISION SCOUT",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Provision Scout Protocol",
+      "type": "active",
+      "effect": "Executes the core provision scout workflow with evidence capture.",
+      "command": "MISE PROVISION SCOUT"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next operations station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 61,
+    "precision": 80,
+    "speed": 53,
+    "resilience": 80,
+    "intelligence": 66,
+    "teamwork": 64
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Provision Scout"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 16,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "photo_aligned_completion"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "medium"
+    },
+    {
+      "trait_type": "Power",
+      "value": 61,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 80,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 53,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 80,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 66,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 64,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/095-crate-courier.jpg",
+    "reference_art": "assets/reference/page-011.jpg",
+    "thumbnail": "assets/thumbnails/page-011.jpg",
+    "animation": {
+      "uri": "media/animation/095-crate-courier.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/095-crate-courier.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/095-crate-courier.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/095-crate-courier.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/095-crate-courier.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

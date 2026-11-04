@@ -1,0 +1,80 @@
+{
+  "id": "iron-hashi",
+  "number": 8,
+  "name": "Iron Hashi",
+  "miseName": "Mise ArtifactValidator",
+  "codename": "chef.pipeline.artifact-validator",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "genesis",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Artifact Validator",
+    "signaturePhrase": "Artifact Validator done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in artifact validator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen artifact validator aura",
+    "silhouette": "multinational chibi DevOps chef carrying a crate",
+    "tool": "crate",
+    "spritePath": "/assets/characters/iron-hashi/full-body.png",
+    "cardPath": "/assets/characters/iron-hashi/card.png"
+  },
+  "workflow": {
+    "jobName": "Artifact Validator",
+    "roleName": "Artifact Validator microagent",
+    "summary": "Runs artifact validator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Yume Builder",
+      "Nina Promoter",
+      "Grafana Mei",
+      "OnCall Naomi"
+    ]
+  },
+  "stats": {
+    "power": 97,
+    "precision": 88,
+    "speed": 71,
+    "resilience": 77,
+    "intelligence": 81,
+    "teamwork": 95
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "iron-hashi",
+  "seasonOneCard": {
+    "id": "7",
+    "role": "Boucher",
+    "department": "Reliability",
+    "function": "Validate",
+    "rarity": "Rare",
+    "tier": "Quality Gate",
+    "element": "Iron Standard",
+    "ability": "Strict Validation",
+    "lore": "Validates everything with strict standards. No errors on his watch.",
+    "image_file": "cards/png/007-iron-hashi.png",
+    "metadata_file": "metadata/erc721/007-iron-hashi.json"
+  },
+  "displayNumber": 8,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/iron-hashi",
+  "avatarSvg": "assets/characters/iron-hashi/avatar.svg",
+  "cardSvg": "assets/characters/iron-hashi/card.svg"
+}

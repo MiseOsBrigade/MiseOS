@@ -1,0 +1,18 @@
+{
+  "slug": "kubernetes",
+  "name": "Kubernetes",
+  "kind": "brigade_mascot_agent",
+  "role": "Cluster Connector",
+  "group": "Integrations & Ecosystem",
+  "group_tagline": "Connect · Deploy · Extend",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:177",
+  "thumbnail": "agents/kubernetes/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/kubernetes.md",
+  "dir": "agents/kubernetes",
+  "files": [
+    "agents/kubernetes/Kubernetes.png"
+  ]
+}

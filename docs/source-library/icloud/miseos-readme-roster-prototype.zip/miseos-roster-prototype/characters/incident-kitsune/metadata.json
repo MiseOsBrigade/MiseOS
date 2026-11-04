@@ -1,0 +1,68 @@
+{
+  "id": "incident-kitsune",
+  "number": 56,
+  "name": "Incident Kitsune",
+  "miseName": "Mise SecurityIncidentPlaybooks",
+  "codename": "chef.security.security-incident-playbooks",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "rare",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Security Incident Playbooks",
+    "signaturePhrase": "Security Incident Playbooks done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in security incident playbooks so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen security incident playbooks aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/incident-kitsune/full-body.png",
+    "cardPath": "/assets/characters/incident-kitsune/card.png"
+  },
+  "workflow": {
+    "jobName": "Security Incident Playbooks",
+    "roleName": "Security Incident Playbooks microagent",
+    "summary": "Runs security incident playbooks for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Auditor Emi",
+      "Evidence Scribe",
+      "Felix Rollback",
+      "Streama"
+    ]
+  },
+  "stats": {
+    "power": 86,
+    "precision": 98,
+    "speed": 84,
+    "resilience": 86,
+    "intelligence": 93,
+    "teamwork": 84
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "incident-kitsune",
+  "seasonOneCard": null,
+  "displayNumber": 56,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/incident-kitsune",
+  "avatarSvg": "assets/characters/incident-kitsune/avatar.svg",
+  "cardSvg": "assets/characters/incident-kitsune/card.svg"
+}

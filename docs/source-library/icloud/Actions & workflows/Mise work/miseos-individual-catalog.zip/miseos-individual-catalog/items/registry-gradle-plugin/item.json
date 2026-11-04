@@ -1,0 +1,17 @@
+{
+  "id": "registry-gradle-plugin",
+  "category": "registry-capability",
+  "title": "MiseOS Gradle Plugin",
+  "description": "Executable baseline capability for MiseOS Gradle Plugin.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.gradle-plugin.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: gradlePlugin",
+    "Source status: active"
+  ]
+}

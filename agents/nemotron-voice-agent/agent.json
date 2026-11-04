@@ -1,0 +1,15 @@
+{
+  "slug": "nemotron-voice-agent",
+  "name": "Nemotron Voice Agent",
+  "kind": "agent_config",
+  "role": null,
+  "source": "extract/code/gpu2/mise-enhanced-gpu-pack-a-punch-workflow-machine/vendor/nv-skills/components.d/nemotron-voice-agent.yml",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/nemotron-voice-agent.md",
+  "dir": "agents/nemotron-voice-agent",
+  "files": [
+    "agents/nemotron-voice-agent/nemotron-voice-agent.yml"
+  ]
+}

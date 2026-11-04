@@ -1,0 +1,68 @@
+{
+  "id": "felix-rollback",
+  "number": 11,
+  "name": "Felix Rollback",
+  "miseName": "Mise RollbackFixForward",
+  "codename": "chef.pipeline.rollback-fix-forward",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "common",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Argentinian",
+    "title": "Rollback & Fix-Forward",
+    "signaturePhrase": "Rollback and Fix-Forward done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in rollback & fix-forward so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen rollback & fix-forward aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/felix-rollback/full-body.png",
+    "cardPath": "/assets/characters/felix-rollback/card.png"
+  },
+  "workflow": {
+    "jobName": "Rollback & Fix-Forward",
+    "roleName": "Rollback & Fix-Forward microagent",
+    "summary": "Runs rollback & fix-forward for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Release Conductor",
+      "Tariq Notesmith",
+      "Streama",
+      "Metrics Miko"
+    ]
+  },
+  "stats": {
+    "power": 90,
+    "precision": 88,
+    "speed": 76,
+    "resilience": 94,
+    "intelligence": 82,
+    "teamwork": 86
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "felix-rollback",
+  "seasonOneCard": null,
+  "displayNumber": 11,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/felix-rollback",
+  "avatarSvg": "assets/characters/felix-rollback/avatar.svg",
+  "cardSvg": "assets/characters/felix-rollback/card.svg"
+}

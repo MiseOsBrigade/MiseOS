@@ -1,0 +1,68 @@
+{
+  "id": "release-conductor",
+  "number": 10,
+  "name": "Release Conductor",
+  "miseName": "Mise DeploymentOrchestrator",
+  "codename": "chef.pipeline.deployment-orchestrator",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Italian",
+    "title": "Deployment Orchestrator",
+    "signaturePhrase": "Deployment Orchestrator done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in deployment orchestrator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen deployment orchestrator aura",
+    "silhouette": "multinational chibi DevOps chef carrying a ladle",
+    "tool": "ladle",
+    "spritePath": "/assets/characters/release-conductor/full-body.png",
+    "cardPath": "/assets/characters/release-conductor/card.png"
+  },
+  "workflow": {
+    "jobName": "Deployment Orchestrator",
+    "roleName": "Deployment Orchestrator microagent",
+    "summary": "Runs deployment orchestrator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Nina Promoter",
+      "Felix Rollback",
+      "Queue Mizu",
+      "Backlog Benji"
+    ]
+  },
+  "stats": {
+    "power": 88,
+    "precision": 84,
+    "speed": 70,
+    "resilience": 84,
+    "intelligence": 95,
+    "teamwork": 94
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "release-conductor",
+  "seasonOneCard": null,
+  "displayNumber": 10,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/release-conductor",
+  "avatarSvg": "assets/characters/release-conductor/avatar.svg",
+  "cardSvg": "assets/characters/release-conductor/card.svg"
+}

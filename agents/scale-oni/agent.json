@@ -1,0 +1,22 @@
+{
+  "slug": "scale-oni",
+  "name": "Scale Oni",
+  "kind": "brigade_mascot_agent",
+  "role": "Autoscaler",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:78",
+  "thumbnail": "agents/scale-oni/thumb.png",
+  "character": "scale-oni",
+  "cards": [
+    "docs/characters/scale-oni.md",
+    "docs/characters/scale-oni.md",
+    "docs/characters/scale-oni.md"
+  ],
+  "pet": "scale-oni",
+  "page": "docs/agents/scale-oni.md",
+  "dir": "agents/scale-oni",
+  "files": [
+    "agents/scale-oni/Scale-Oni.png"
+  ]
+}

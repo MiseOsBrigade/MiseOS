@@ -1,0 +1,49 @@
+{
+  "gate": "B1 risk-gate",
+  "level": "pass",
+  "score": 37,
+  "failOnHighRisk": true,
+  "isFork": false,
+  "stats": {
+    "added": 0,
+    "deleted": 0,
+    "changed": 0
+  },
+  "changedFiles": [
+    ".github/mise/mise-policy.json",
+    ".github/workflows/mise-pack-a-punch.yml",
+    ".github/workflows/mise-stack-consumer.example.yml",
+    "README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/EPHEMERAL-RUNNERS.md",
+    "package.json",
+    "scripts/mise-branch-advisor.mjs",
+    "scripts/mise-context.mjs",
+    "scripts/mise-quality-runner.mjs",
+    "scripts/mise-report.mjs",
+    "scripts/mise-risk-gate.mjs",
+    "scripts/mise-stack-graph.mjs",
+    "scripts/mise-supply-chain.mjs",
+    "scripts/mise-utils.mjs"
+  ],
+  "criticalFiles": [
+    ".github/workflows/mise-pack-a-punch.yml",
+    ".github/workflows/mise-stack-consumer.example.yml",
+    "package.json",
+    "scripts/mise-branch-advisor.mjs",
+    "scripts/mise-context.mjs",
+    "scripts/mise-quality-runner.mjs",
+    "scripts/mise-report.mjs",
+    "scripts/mise-risk-gate.mjs",
+    "scripts/mise-stack-graph.mjs",
+    "scripts/mise-supply-chain.mjs",
+    "scripts/mise-utils.mjs"
+  ],
+  "workflowFiles": [
+    ".github/workflows/mise-pack-a-punch.yml",
+    ".github/workflows/mise-stack-consumer.example.yml"
+  ],
+  "secretFindings": [],
+  "dangerousFindings": [],
+  "blocks": []
+}

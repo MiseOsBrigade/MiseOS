@@ -1,0 +1,18 @@
+{
+  "slug": "steward-prime",
+  "name": "Steward Prime",
+  "kind": "brigade_mascot_agent",
+  "role": "Resource Steward",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:58",
+  "thumbnail": "agents/steward-prime/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/steward-prime.md",
+  "dir": "agents/steward-prime",
+  "files": [
+    "agents/steward-prime/Steward-Prime.png"
+  ]
+}

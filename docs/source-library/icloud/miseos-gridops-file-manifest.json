@@ -1,0 +1,122 @@
+[
+  {
+    "path": ".env.example",
+    "size_bytes": 496
+  },
+  {
+    "path": ".github/workflows/gridops-ci.yml",
+    "size_bytes": 1225
+  },
+  {
+    "path": ".github/workflows/package-registry-sentinel.yml",
+    "size_bytes": 992
+  },
+  {
+    "path": ".github/workflows/release-readiness.yml",
+    "size_bytes": 1176
+  },
+  {
+    "path": ".github/workflows/repo-steward.yml",
+    "size_bytes": 1651
+  },
+  {
+    "path": ".github/workflows/secret-hygiene.yml",
+    "size_bytes": 722
+  },
+  {
+    "path": ".gitignore",
+    "size_bytes": 438
+  },
+  {
+    "path": "README.md",
+    "size_bytes": 1329
+  },
+  {
+    "path": "db/schema.sql",
+    "size_bytes": 3708
+  },
+  {
+    "path": "docs/AGENT_CONTRACT.md",
+    "size_bytes": 843
+  },
+  {
+    "path": "docs/CUSTOMER_PACKAGES.md",
+    "size_bytes": 1350
+  },
+  {
+    "path": "docs/PLAYGROUND.md",
+    "size_bytes": 1519
+  },
+  {
+    "path": "docs/PRICING.md",
+    "size_bytes": 1475
+  },
+  {
+    "path": "docs/PRODUCT.md",
+    "size_bytes": 915
+  },
+  {
+    "path": "package.json",
+    "size_bytes": 686
+  },
+  {
+    "path": "src/data/agents.registry.json",
+    "size_bytes": 4602
+  },
+  {
+    "path": "src/data/demo.seed.json",
+    "size_bytes": 2905
+  },
+  {
+    "path": "src/data/models.registry.json",
+    "size_bytes": 3412
+  },
+  {
+    "path": "src/data/packages.registry.json",
+    "size_bytes": 2407
+  },
+  {
+    "path": "src/data/purchase-packages.json",
+    "size_bytes": 3443
+  },
+  {
+    "path": "src/data/tools.registry.json",
+    "size_bytes": 3364
+  },
+  {
+    "path": "src/data/workflows.registry.json",
+    "size_bytes": 4227
+  },
+  {
+    "path": "src/demo/gridops-demo.ts",
+    "size_bytes": 1420
+  },
+  {
+    "path": "src/engines/evidence-engine.ts",
+    "size_bytes": 1012
+  },
+  {
+    "path": "src/engines/model-router.ts",
+    "size_bytes": 837
+  },
+  {
+    "path": "src/engines/risk-engine.ts",
+    "size_bytes": 1411
+  },
+  {
+    "path": "src/engines/workflow-runner.ts",
+    "size_bytes": 1511
+  },
+  {
+    "path": "src/index.ts",
+    "size_bytes": 205
+  },
+  {
+    "path": "src/types.ts",
+    "size_bytes": 2347
+  },
+  {
+    "path": "tsconfig.json",
+    "size_bytes": 292
+  }
+]

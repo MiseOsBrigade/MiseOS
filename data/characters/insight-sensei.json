@@ -1,0 +1,235 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "insight-sensei",
+  "name": "Insight Sensei",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/insight-sensei/metadata.json",
+    "role": "characters/insight-sensei/metadata.json",
+    "department": "characters/insight-sensei/metadata.json",
+    "rarity": "characters/insight-sensei/metadata.json",
+    "workflow.summary": "characters/insight-sensei/metadata.json",
+    "workflow.inputs": "characters/insight-sensei/metadata.json",
+    "workflow.outputs": "characters/insight-sensei/metadata.json",
+    "workflow.proof_gate": "characters/insight-sensei/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/insight-sensei/metadata.json"
+  },
+  "registry": {
+    "number": 33,
+    "profile": "characters/insight-sensei/README.md",
+    "metadata": "characters/insight-sensei/metadata.json",
+    "avatar": "assets/characters/insight-sensei/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/insight-sensei.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/insight-sensei.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Insight Sensei",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/insight-sensei.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.020",
+        "Insight Sensei",
+        "MO",
+        "EPIC-Learning Line",
+        "Guest ChefInsights &Growth",
+        "ABILITY: Pattern Sight",
+        "Finds patterns in chaos and turns data into understanding.",
+        "Element:PatternCrystal.Function:Analyze",
+        "ANALYZE",
+        "99",
+        "LEARN",
+        "91",
+        "COLLECT",
+        "78",
+        "ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "OPIIMIZE",
+        "84"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Epic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 28,
+  "orchestra_card": {
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "function": "Analyze",
+    "rarity": "Epic",
+    "tier": "Learning Line",
+    "element": "Pattern Crystal",
+    "ability": "Pattern Sight",
+    "lore": "Finds patterns in chaos and turns data into understanding."
+  },
+  "abilities": [
+    "Pattern Sight"
+  ],
+  "profile_doc": "characters/insight-sensei/README.md",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 4578,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 183,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/020-insight-sensei.json",
+        "line": 2,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 4578,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 21,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 183,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 129,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 129,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 1220,
+        "term": "Insight Sensei"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 27,
+        "term": "Insight Sensei"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Insight Sensei"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-089",
+    "character_id": "miseos.character.089",
+    "card_id": "MISE-089",
+    "codename": "INSIGHT_SENSEI"
+  },
+  "role": "Analyze",
+  "department": "Data & Insight Kitchen",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "rarity": "Epic",
+  "lore": "Insight Sensei belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Insight Sensei performs analyze within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE ANALYZE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 84,
+    "precision": 68,
+    "speed": 72,
+    "resilience": 70,
+    "intelligence": 70,
+    "teamwork": 73
+  },
+  "related": [
+    {
+      "name": "Chaos Analyst",
+      "slug": "chaos-analyst"
+    },
+    {
+      "name": "Growth Guru",
+      "slug": "growth-guru"
+    },
+    {
+      "name": "Culture Chef",
+      "slug": "culture-chef"
+    }
+  ],
+  "helps": {
+    "station": "Data & Insight Kitchen",
+    "mission": "Learn. Optimize. Evolve.",
+    "problem": "Insight Sensei performs analyze within the Data & Insight Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [],
+  "repo_pets": []
+}

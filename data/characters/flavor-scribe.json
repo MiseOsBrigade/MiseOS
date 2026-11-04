@@ -1,0 +1,193 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "flavor-scribe",
+  "name": "Flavor Scribe",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_stars_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/flavor-scribe/metadata.json",
+    "role": "characters/flavor-scribe/metadata.json",
+    "department": "characters/flavor-scribe/metadata.json",
+    "rarity": "characters/flavor-scribe/metadata.json",
+    "workflow.summary": "characters/flavor-scribe/metadata.json",
+    "workflow.inputs": "characters/flavor-scribe/metadata.json",
+    "workflow.outputs": "characters/flavor-scribe/metadata.json",
+    "workflow.proof_gate": "characters/flavor-scribe/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/flavor-scribe/metadata.json"
+  },
+  "registry": {
+    "number": 5,
+    "profile": "characters/flavor-scribe/README.md",
+    "metadata": "characters/flavor-scribe/metadata.json",
+    "avatar": "assets/characters/flavor-scribe/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/flavor-scribe.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/flavor-scribe.webp",
+      "collection": "1by1-chefs",
+      "title": "Flavor Scribe",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/flavor-scribe.webp",
+      "printed_text": [
+        "SIGNATURE DISH",
+        "ECHOES OF",
+        "MENU BLUEPRINT",
+        "UMAMI",
+        "APPETIZER",
+        "MAIN",
+        "MISE",
+        "-PALETTE",
+        "ORCHESTRA",
+        "FINALE",
+        "FLAVOR MAP",
+        "SWEET",
+        "TASTING NOTES",
+        "BITTER",
+        "UMAMI",
+        "Layer with intention.",
+        "Elwate the",
+        "ACID",
+        "BITTER",
+        "SALTY",
+        "experience",
+        "HARMONY INDEX",
+        "98.7%",
+        "★★★★★",
+        "PALATEPROFILE",
+        "AROMA",
+        "PAIRING INSIGHT",
+        "TEXTURE",
+        "·BALANCE",
+        "FLAVOR",
+        "·CONTRAST",
+        "FINESSE",
+        "·SYNERGY",
+        "MEMORY",
+        "·SEQUENCE",
+        "MEMORY",
+        "L'ART CULINAIRE",
+        "FLAVORALCHEMY",
+        "THEORYOFTASTE",
+        "Flavor Scribe",
+        "Menu Curator"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": 5,
+  "card_meters_printed": [
+    "98.7%"
+  ],
+  "level": 18,
+  "profile_doc": "characters/flavor-scribe/README.md",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6066,
+        "term": "Flavor Scribe"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6066,
+        "term": "Flavor Scribe"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Flavor Scribe"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-101",
+    "character_id": "miseos.character.101",
+    "card_id": "MISE-101",
+    "codename": "FLAVOR_SCRIBE"
+  },
+  "role": "Menu Curator",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Flavor Scribe performs menu curator within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE MENU CURATOR",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 70,
+    "precision": 72,
+    "speed": 64,
+    "resilience": 74,
+    "intelligence": 74,
+    "teamwork": 81
+  },
+  "related": [
+    {
+      "name": "Prep Pulse",
+      "slug": "prep-pulse"
+    },
+    {
+      "name": "Queue Quartz",
+      "slug": "queue-quartz"
+    },
+    {
+      "name": "Harvest Hex",
+      "slug": "harvest-hex"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Flavor Scribe performs menu curator within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [],
+  "repo_pets": []
+}

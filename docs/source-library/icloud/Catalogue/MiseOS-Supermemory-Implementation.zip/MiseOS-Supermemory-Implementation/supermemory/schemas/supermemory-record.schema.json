@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MiseOS Supermemory Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "customId",
+    "content",
+    "containerTag",
+    "entityContext",
+    "metadata"
+  ],
+  "properties": {
+    "customId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]{1,100}$"
+    },
+    "content": {
+      "type": "string",
+      "minLength": 1
+    },
+    "containerTag": {
+      "const": "miseos-character-core"
+    },
+    "entityContext": {
+      "type": "string",
+      "maxLength": 1500
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean"
+        ]
+      },
+      "required": [
+        "ecosystem",
+        "project_id",
+        "record_kind",
+        "record_id",
+        "canon_status",
+        "version",
+        "approval_status",
+        "source_type"
+      ],
+      "properties": {
+        "ecosystem": {
+          "const": "miseos"
+        },
+        "project_id": {
+          "const": "miseos-character-core"
+        },
+        "record_kind": {
+          "type": "string"
+        },
+        "record_id": {
+          "type": "string"
+        },
+        "canon_status": {
+          "enum": [
+            "CANON",
+            "INFERRED",
+            "PROPOSED",
+            "CONFLICT",
+            "UNKNOWN"
+          ]
+        },
+        "version": {
+          "type": "string"
+        },
+        "approval_status": {
+          "enum": [
+            "approved",
+            "working",
+            "pending",
+            "rejected",
+            "archived",
+            "superseded"
+          ]
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "archived": {
+          "type": "boolean"
+        },
+        "character_count_included": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

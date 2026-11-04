@@ -1,0 +1,18 @@
+{
+  "slug": "docker",
+  "name": "Docker",
+  "kind": "brigade_mascot_agent",
+  "role": "Container Builder",
+  "group": "Integrations & Ecosystem",
+  "group_tagline": "Connect · Deploy · Extend",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:173",
+  "thumbnail": "agents/docker/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/docker.md",
+  "dir": "agents/docker",
+  "files": [
+    "agents/docker/Docker.png"
+  ]
+}

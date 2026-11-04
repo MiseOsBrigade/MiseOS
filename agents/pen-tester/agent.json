@@ -1,0 +1,20 @@
+{
+  "slug": "pen-tester",
+  "name": "Pen Tester",
+  "kind": "brigade_mascot_agent",
+  "role": "Penetration Tester",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:132",
+  "thumbnail": "agents/pen-tester/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--pen-tester.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/pen-tester.md",
+  "dir": "agents/pen-tester",
+  "files": [
+    "agents/pen-tester/Pen-Tester.png"
+  ]
+}

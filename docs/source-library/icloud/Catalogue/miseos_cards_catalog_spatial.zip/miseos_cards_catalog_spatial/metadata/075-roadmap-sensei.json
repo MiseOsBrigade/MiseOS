@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #075 — Roadmap Sensei",
+  "description": "Roadmap Sensei serves the Data & Insight Kitchen as the brigade's strategic roadmap recommender. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/075-roadmap-sensei.svg",
+  "animation_url": "media/animation/075-roadmap-sensei.mp4",
+  "external_url": "https://miseos.dev/agents/roadmap-sensei",
+  "background_color": "17A2A4",
+  "spatial_screen": {
+    "card_id": "MISE-075",
+    "level": 30,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.075",
+    "number": 75,
+    "slug": "roadmap-sensei",
+    "codename": "ROADMAP_SENSEI",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Data & Insight Kitchen",
+    "department_code": "data-insight",
+    "role": "Strategic Roadmap Recommender",
+    "rarity": "Genesis",
+    "rarity_tier": 5,
+    "level": 30
+  },
+  "lore": {
+    "summary": "Roadmap Sensei serves the Data & Insight Kitchen as the brigade's strategic roadmap recommender. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Roadmap Sensei performs strategic roadmap recommender within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Data-chan",
+      "Insight Sensei",
+      "Chaos Analyst"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE STRATEGIC ROADMAP RECOMMENDER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Strategic Roadmap Recommender Protocol",
+      "type": "active",
+      "effect": "Executes the core strategic roadmap recommender workflow with evidence capture.",
+      "command": "MISE STRATEGIC ROADMAP RECOMMENDER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next data-insight station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 90,
+    "precision": 92,
+    "speed": 62,
+    "resilience": 71,
+    "intelligence": 68,
+    "teamwork": 73
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Data & Insight Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Strategic Roadmap Recommender"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Level",
+      "value": 30,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 90,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 92,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 62,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 71,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 68,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 73,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/075-roadmap-sensei.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/075-roadmap-sensei.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/075-roadmap-sensei.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/075-roadmap-sensei.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/075-roadmap-sensei.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/075-roadmap-sensei.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

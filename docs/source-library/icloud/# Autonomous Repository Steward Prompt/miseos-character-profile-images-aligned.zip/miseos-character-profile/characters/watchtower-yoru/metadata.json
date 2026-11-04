@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.054",
+  "number": 54,
+  "slug": "watchtower-yoru",
+  "name": "Watchtower Yoru",
+  "mise_name": "Watchtower Yoru",
+  "codename": "WATCHTOWER_YORU",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Runtime Threat Detector",
+  "job_name": "Runtime Threat Detector",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Runtime Threat Detector",
+    "avatar_path": "assets/characters/watchtower-yoru/avatar.png",
+    "card_path": "assets/characters/watchtower-yoru/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Watchtower Yoru performs runtime threat detector within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Auditor Emi",
+      "Incident Kitsune",
+      "Evidence Scribe"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 65,
+    "precision": 67,
+    "speed": 68,
+    "resilience": 67,
+    "intelligence": 72,
+    "teamwork": 78
+  },
+  "paths": {
+    "readme": "characters/watchtower-yoru/README.md",
+    "metadata": "characters/watchtower-yoru/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

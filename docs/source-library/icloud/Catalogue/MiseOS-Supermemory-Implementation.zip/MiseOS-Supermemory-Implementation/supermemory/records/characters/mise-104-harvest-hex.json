@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-104",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-104\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-104\",\n    \"number\": 104,\n    \"name\": \"Harvest Hex\",\n    \"slug\": \"harvest-hex\"\n  },\n  \"classification\": {\n    \"department\": \"Operations Kitchen\",\n    \"department_code\": \"operations\",\n    \"role\": \"Produce Alchemist\",\n    \"rarity\": \"Legendary\",\n    \"level\": 25\n  },\n  \"command\": \"MISE PRODUCE ALCHEMIST\",\n  \"stats\": {\n    \"power\": 87,\n    \"precision\": 81,\n    \"speed\": 57,\n    \"resilience\": 71,\n    \"intelligence\": 68,\n    \"teamwork\": 88\n  },\n  \"media\": {\n    \"image\": \"assets/images/104-harvest-hex.jpg\",\n    \"metadata\": \"metadata/104-harvest-hex.json\",\n    \"animation\": \"media/animation/104-harvest-hex.mp4\",\n    \"model_3d\": \"media/models/104-harvest-hex.glb\",\n    \"audio\": \"media/audio/104-harvest-hex.mp3\",\n    \"ar\": \"media/ar/104-harvest-hex.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"photo_aligned_completion\",\n    \"confidence\": \"medium\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-104",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-104",
+    "character_slug": "harvest-hex",
+    "department_code": "operations",
+    "rarity": "Legendary",
+    "level": 25,
+    "source_file": "cards-catalog.json"
+  }
+}

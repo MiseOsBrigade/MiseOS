@@ -1,0 +1,17 @@
+{
+  "id": "registry-release-sentinel",
+  "category": "registry-capability",
+  "title": "MiseOS Release Sentinel",
+  "description": "Executable baseline capability for MiseOS Release Sentinel.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.release-sentinel.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: releaseSentinel",
+    "Source status: active"
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #102 — Prep Pulse",
+  "description": "Prep Pulse serves the Operations Kitchen as the brigade's mise monitor. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/102-prep-pulse.jpg",
+  "animation_url": "media/animation/102-prep-pulse.mp4",
+  "external_url": "https://miseos.dev/agents/prep-pulse",
+  "background_color": "D4AF37",
+  "spatial_screen": {
+    "card_id": "MISE-102",
+    "level": 16,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 18,
+      "aligned_pages": [
+        18
+      ],
+      "reference_image": "assets/reference/page-018.jpg",
+      "thumbnail": "assets/thumbnails/page-018.jpg",
+      "alignment_confidence": "medium",
+      "provenance": "photo_aligned_completion"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.102",
+    "number": 102,
+    "slug": "prep-pulse",
+    "codename": "PREP_PULSE",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Operations Kitchen",
+    "department_code": "operations",
+    "role": "Mise Monitor",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 16
+  },
+  "lore": {
+    "summary": "Prep Pulse serves the Operations Kitchen as the brigade's mise monitor. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Prep Pulse performs mise monitor within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Queue Quartz",
+      "Harvest Hex",
+      "Garnish Ghost"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE MISE MONITOR",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Mise Monitor Protocol",
+      "type": "active",
+      "effect": "Executes the core mise monitor workflow with evidence capture.",
+      "command": "MISE MISE MONITOR"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next operations station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 72,
+    "precision": 86,
+    "speed": 77,
+    "resilience": 78,
+    "intelligence": 67,
+    "teamwork": 68
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Mise Monitor"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 16,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "photo_aligned_completion"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "medium"
+    },
+    {
+      "trait_type": "Power",
+      "value": 72,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 86,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 77,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 68,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/102-prep-pulse.jpg",
+    "reference_art": "assets/reference/page-018.jpg",
+    "thumbnail": "assets/thumbnails/page-018.jpg",
+    "animation": {
+      "uri": "media/animation/102-prep-pulse.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/102-prep-pulse.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/102-prep-pulse.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/102-prep-pulse.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/102-prep-pulse.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

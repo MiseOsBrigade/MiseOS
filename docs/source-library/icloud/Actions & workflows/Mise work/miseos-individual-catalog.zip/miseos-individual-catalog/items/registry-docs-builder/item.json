@@ -1,0 +1,17 @@
+{
+  "id": "registry-docs-builder",
+  "category": "registry-capability",
+  "title": "MiseOS Docs Builder",
+  "description": "Executable baseline capability for MiseOS Docs Builder.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.docs-builder.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: docsBuilder",
+    "Source status: active"
+  ]
+}

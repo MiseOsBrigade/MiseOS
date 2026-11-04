@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#06141c">
+  <meta name="description" content="A full-screen procedural WebGPU open-sea experience built with Three.js and TSL.">
+  <title>Procedural Open Sea — WebGPU + TSL</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --panel: color-mix(in srgb, #07151d 78%, transparent);
+      --panel-border: rgba(185, 224, 238, 0.18);
+      --text: #edfaff;
+      --muted: #a9c3cd;
+      --accent: #8ddcf2;
+      --focus: #ffe6a7;
+      --danger: #ffc7c7;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #06141c;
+    }
+
+    body {
+      min-height: 100svh;
+      color: var(--text);
+      overscroll-behavior: none;
+    }
+
+    #app,
+    #viewport {
+      position: fixed;
+      inset: 0;
+    }
+
+    #viewport {
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    #viewport canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      outline: none;
+    }
+
+    #viewport canvas:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .hud {
+      position: fixed;
+      z-index: 10;
+      top: max(16px, env(safe-area-inset-top));
+      left: max(16px, env(safe-area-inset-left));
+      width: min(340px, calc(100vw - 32px));
+      padding: 16px;
+      border: 1px solid var(--panel-border);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.24);
+      backdrop-filter: blur(18px) saturate(120%);
+      -webkit-backdrop-filter: blur(18px) saturate(120%);
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .hud[data-collapsed="true"] {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-8px);
+    }
+
+    .hud__header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .hud h1 {
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.2;
+      letter-spacing: 0.015em;
+      font-weight: 680;
+    }
+
+    .hud__subtitle {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.45;
+    }
+
+    .fps {
+      flex: 0 0 auto;
+      min-width: 66px;
+      padding: 7px 9px;
+      border: 1px solid rgba(170, 222, 238, 0.14);
+      border-radius: 11px;
+      background: rgba(3, 17, 24, 0.42);
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .fps strong {
+      display: block;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .fps span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .controls {
+      display: grid;
+      gap: 13px;
+    }
+
+    .control {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 5px 12px;
+    }
+
+    .control label {
+      color: var(--text);
+      font-size: 0.78rem;
+      font-weight: 590;
+    }
+
+    .control output {
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .control input[type="range"] {
+      grid-column: 1 / -1;
+      width: 100%;
+      height: 26px;
+      margin: -2px 0 0;
+      appearance: none;
+      -webkit-appearance: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .control input[type="range"]::-webkit-slider-runnable-track {
+      height: 4px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(128, 216, 242, 0.9), rgba(128, 216, 242, 0.18));
+    }
+
+    .control input[type="range"]::-webkit-slider-thumb {
+      width: 16px;
+      height: 16px;
+      margin-top: -6px;
+      border: 2px solid rgba(255, 255, 255, 0.88);
+      border-radius: 50%;
+      appearance: none;
+      -webkit-appearance: none;
+      background: #3a91ac;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.36);
+    }
+
+    .control input[type="range"]::-moz-range-track {
+      height: 4px;
+      border-radius: 999px;
+      background: rgba(128, 216, 242, 0.3);
+    }
+
+    .control input[type="range"]::-moz-range-progress {
+      height: 4px;
+      border-radius: 999px;
+      background: rgba(128, 216, 242, 0.92);
+    }
+
+    .control input[type="range"]::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      border: 2px solid rgba(255, 255, 255, 0.88);
+      border-radius: 50%;
+      background: #3a91ac;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.36);
+    }
+
+    .hud__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 15px;
+      padding-top: 13px;
+      border-top: 1px solid rgba(190, 225, 237, 0.12);
+    }
+
+    .hud__footer p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.68rem;
+      line-height: 1.4;
+    }
+
+    button {
+      min-height: 36px;
+      padding: 8px 12px;
+      border: 1px solid rgba(178, 225, 239, 0.2);
+      border-radius: 11px;
+      color: var(--text);
+      background: rgba(7, 30, 40, 0.7);
+      font: inherit;
+      font-size: 0.72rem;
+      font-weight: 630;
+      cursor: pointer;
+    }
+
+    button:hover { background: rgba(19, 58, 72, 0.78); }
+
+    .utility-button {
+      position: fixed;
+      z-index: 11;
+      right: max(16px, env(safe-area-inset-right));
+      top: max(16px, env(safe-area-inset-top));
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms ease;
+    }
+
+    .utility-button[data-visible="true"] {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .state {
+      position: fixed;
+      z-index: 30;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(34, 100, 125, 0.22), transparent 38%),
+        linear-gradient(180deg, #071923, #041017);
+      transition: opacity 400ms ease, visibility 400ms ease;
+    }
+
+    .state[hidden] {
+      display: none;
+    }
+
+    .state[data-ready="true"] {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .state__card {
+      width: min(520px, 100%);
+      text-align: center;
+    }
+
+    .state__mark {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 18px;
+      border: 2px solid rgba(154, 224, 245, 0.22);
+      border-top-color: rgba(154, 224, 245, 0.95);
+      border-radius: 50%;
+      animation: spin 900ms linear infinite;
+    }
+
+    .state[data-kind="failure"] .state__mark {
+      display: grid;
+      place-items: center;
+      border-color: rgba(255, 179, 179, 0.36);
+      animation: none;
+    }
+
+    .state[data-kind="failure"] .state__mark::before {
+      content: "!";
+      color: var(--danger);
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .state h2 {
+      margin: 0;
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      font-weight: 650;
+    }
+
+    .state p {
+      max-width: 46ch;
+      margin: 10px auto 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .state[data-kind="failure"] p { color: #d7c8c8; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 600px) {
+      .hud {
+        top: auto;
+        bottom: max(12px, env(safe-area-inset-bottom));
+        padding: 13px;
+        border-radius: 16px;
+      }
+
+      .hud__header { margin-bottom: 10px; }
+      .controls { gap: 9px; }
+      .hud__footer { margin-top: 11px; padding-top: 10px; }
+      .hud__footer p { display: none; }
+      .hud__footer button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+      }
+    }
+  </style>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.webgpu.js",
+        "three/webgpu": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.webgpu.js",
+        "three/tsl": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.tsl.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <main id="app">
+    <div id="viewport" aria-describedby="canvas-help"></div>
+
+    <section id="hud" class="hud" aria-label="Ocean controls">
+      <div class="hud__header">
+        <div>
+          <h1>Procedural Open Sea</h1>
+          <p class="hud__subtitle">WebGPU · five Gerstner swells · analytic sky</p>
+        </div>
+        <div class="fps" aria-label="Live frame rate">
+          <strong id="fps-value">—</strong>
+          <span>FPS</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="control">
+          <label for="sea-state">Sea state</label>
+          <output id="sea-state-value" for="sea-state">Moderate</output>
+          <input id="sea-state" type="range" min="0.15" max="1" step="0.01" value="0.58">
+        </div>
+
+        <div class="control">
+          <label for="time-of-day">Time of day</label>
+          <output id="time-of-day-value" for="time-of-day">16:30</output>
+          <input id="time-of-day" type="range" min="0" max="24" step="0.05" value="16.5">
+        </div>
+
+        <div class="control">
+          <label for="drift">Camera drift</label>
+          <output id="drift-value" for="drift">24%</output>
+          <input id="drift" type="range" min="0" max="1" step="0.01" value="0.24">
+        </div>
+      </div>
+
+      <div class="hud__footer">
+        <p>Drag to look · pinch or wheel to zoom · H hides controls</p>
+        <button id="pause-button" type="button" aria-pressed="false">Pause</button>
+      </div>
+    </section>
+
+    <button id="show-controls" class="utility-button" type="button" data-visible="false">Show controls</button>
+
+    <div id="canvas-help" class="sr-only">
+      Interactive open-sea scene. Drag or swipe to orbit, use a wheel or pinch to zoom, and use arrow keys when the canvas is focused.
+    </div>
+
+    <div id="state" class="state" data-kind="loading" role="status" aria-live="polite">
+      <div class="state__card">
+        <div class="state__mark" aria-hidden="true"></div>
+        <h2 id="state-title">Starting WebGPU</h2>
+        <p id="state-message">Checking the graphics adapter and compiling the procedural ocean.</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

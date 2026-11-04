@@ -1,0 +1,23 @@
+{
+  "slug": "mise-sommelier",
+  "name": "Mise Sommelier",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Traceability Steward",
+  "department": "Evidence",
+  "glyph": "🍷",
+  "catchphrase": "Pairs claims with proof.",
+  "behaviors": {
+    "preferred_paths": [
+      "docs",
+      "reports",
+      "trace"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-sommelier.md",
+  "dir": "assets/repo-pets/mise-sommelier"
+}

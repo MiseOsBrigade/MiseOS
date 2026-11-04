@@ -1,0 +1,33 @@
+{
+  "name": "@miseos/roamer",
+  "version": "0.2.0",
+  "type": "module",
+  "private": false,
+  "description": "Mise OS Shimeji-style repository mascot and folder-branding toolkit.",
+  "bin": {
+    "mise-roam": "./scripts/mise-roamer.mjs"
+  },
+  "scripts": {
+    "start": "node scripts/mise-roamer.mjs .",
+    "roam": "node scripts/mise-roamer.mjs . --max-depth=6 --tick=650",
+    "roam:repo": "node scripts/mise-roamer.mjs . --max-depth=6 --tick=650",
+    "roam:peek": "node scripts/mise-roamer.mjs . --max-depth=6 --tick=650 --peek",
+    "roam:container": "node scripts/mise-roamer.mjs / --max-depth=4 --tick=800 --chef=seira",
+    "brand:folders": "node scripts/brand-folders.mjs .",
+    "brand:check": "node scripts/brand-folders.mjs . --check",
+    "doctor": "node scripts/mise-doctor.mjs",
+    "test": "node scripts/mise-doctor.mjs --ci"
+  },
+  "engines": {
+    "node": ">=24.18.0"
+  },
+  "keywords": [
+    "miseos",
+    "repo-mascot",
+    "shimeji",
+    "devops",
+    "terminal",
+    "repository-branding"
+  ],
+  "license": "MIT"
+}

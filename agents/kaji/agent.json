@@ -1,0 +1,23 @@
+{
+  "slug": "kaji",
+  "name": "Kaji",
+  "kind": "brigade_mascot_agent",
+  "role": "Incident Firefighter",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:75",
+  "thumbnail": "agents/kaji/thumb.png",
+  "character": "kaji",
+  "cards": [
+    "docs/characters/kaji.md",
+    "docs/characters/kaji.md",
+    "docs/characters/kaji.md",
+    "docs/characters/kaji.md"
+  ],
+  "pet": "kaji",
+  "page": "docs/agents/kaji.md",
+  "dir": "agents/kaji",
+  "files": [
+    "agents/kaji/Kaji.png"
+  ]
+}

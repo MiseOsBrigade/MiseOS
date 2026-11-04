@@ -1,0 +1,186 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "timer-tactician",
+  "name": "Timer Tactician",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/timer-tactician/metadata.json",
+    "role": "characters/timer-tactician/metadata.json",
+    "department": "characters/timer-tactician/metadata.json",
+    "rarity": "characters/timer-tactician/metadata.json",
+    "workflow.summary": "characters/timer-tactician/metadata.json",
+    "workflow.inputs": "characters/timer-tactician/metadata.json",
+    "workflow.outputs": "characters/timer-tactician/metadata.json",
+    "workflow.proof_gate": "characters/timer-tactician/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/timer-tactician/metadata.json"
+  },
+  "registry": {
+    "number": 21,
+    "profile": "characters/timer-tactician/README.md",
+    "metadata": "characters/timer-tactician/metadata.json",
+    "avatar": "assets/characters/timer-tactician/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/timer-tactician.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/timer-tactician.webp",
+      "collection": "1by1-chefs",
+      "title": "Timer Tactician.",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/timer-tactician.webp",
+      "printed_text": [
+        "MISE",
+        "TIMINGWINDOW",
+        "ORCHESTRA",
+        "±0.01s",
+        "SYNC POINT",
+        "100.0%",
+        "CHRONO",
+        "PROTOCOL",
+        "PREPARE",
+        "READYON CUE",
+        "MEASURE",
+        "SEASON",
+        "SYNC",
+        "CONFIRMED",
+        "EXECUTE",
+        "PERFECT CADENCE",
+        "AAA+",
+        "Timer",
+        "Tactician",
+        "Chrono Chef"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "100.0%"
+  ],
+  "level": 26,
+  "profile_doc": "characters/timer-tactician/README.md",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 6562,
+        "term": "Timer Tactician"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 6562,
+        "term": "Timer Tactician"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.csv",
+        "line": 43,
+        "term": "timer-tactician"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/devops-assets.json",
+        "line": 645,
+        "term": "timer-tactician"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/unique-assets.json",
+        "line": 645,
+        "term": "timer-tactician"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Timer Tactician"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-109",
+    "character_id": "miseos.character.109",
+    "card_id": "MISE-109",
+    "codename": "TIMER_TACTICIAN"
+  },
+  "role": "Chrono Chef",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Timer Tactician performs chrono chef within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE CHRONO CHEF",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 77,
+    "precision": 66,
+    "speed": 81,
+    "resilience": 82,
+    "intelligence": 75,
+    "teamwork": 86
+  },
+  "related": [
+    {
+      "name": "Recipe Ranger",
+      "slug": "recipe-ranger"
+    },
+    {
+      "name": "Portion Paladin",
+      "slug": "portion-paladin"
+    },
+    {
+      "name": "Allergen Oracle",
+      "slug": "allergen-oracle"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Timer Tactician performs chrono chef within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [],
+  "repo_pets": []
+}

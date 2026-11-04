@@ -1,0 +1,68 @@
+{
+  "id": "yume-builder",
+  "number": 7,
+  "name": "Yume Builder",
+  "miseName": "Mise ArtifactBuilder",
+  "codename": "chef.pipeline.artifact-builder",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "genesis",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Korean",
+    "title": "Artifact Builder",
+    "signaturePhrase": "Artifact Builder done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in artifact builder so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen artifact builder aura",
+    "silhouette": "multinational chibi DevOps chef carrying a crate",
+    "tool": "crate",
+    "spritePath": "/assets/characters/yume-builder/full-body.png",
+    "cardPath": "/assets/characters/yume-builder/card.png"
+  },
+  "workflow": {
+    "jobName": "Artifact Builder",
+    "roleName": "Artifact Builder microagent",
+    "summary": "Runs artifact builder for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Seira Scan",
+      "Iron Hashi",
+      "Policy Kenji",
+      "Pager Hiro"
+    ]
+  },
+  "stats": {
+    "power": 70,
+    "precision": 87,
+    "speed": 68,
+    "resilience": 70,
+    "intelligence": 97,
+    "teamwork": 82
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "yume-builder",
+  "seasonOneCard": null,
+  "displayNumber": 7,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/yume-builder",
+  "avatarSvg": "assets/characters/yume-builder/avatar.svg",
+  "cardSvg": "assets/characters/yume-builder/card.svg"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.026",
+  "number": 26,
+  "slug": "streama",
+  "name": "Streama",
+  "mise_name": "Streama",
+  "codename": "STREAMA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Data Streaming Profiles",
+  "job_name": "Data Streaming Profiles",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Data Streaming Profiles",
+    "avatar_path": "assets/characters/streama/avatar.png",
+    "card_path": "assets/characters/streama/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Streama performs data streaming profiles within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Preview Yuki",
+      "Portal Rei",
+      "Guardrail Goro"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 86,
+    "precision": 82,
+    "speed": 66,
+    "resilience": 71,
+    "intelligence": 82,
+    "teamwork": 88
+  },
+  "paths": {
+    "readme": "characters/streama/README.md",
+    "metadata": "characters/streama/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

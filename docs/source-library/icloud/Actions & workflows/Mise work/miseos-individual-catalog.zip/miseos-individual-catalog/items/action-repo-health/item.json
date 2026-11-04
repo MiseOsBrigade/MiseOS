@@ -1,0 +1,12 @@
+{
+  "id": "action-repo-health",
+  "category": "action",
+  "title": "Repo Health Action",
+  "description": "Zero-dependency Node 24 Action that deterministically scores baseline repository governance files.",
+  "dependencies": [],
+  "files": [
+    "actions/repo-health/action.yml",
+    "actions/repo-health/dist/index.js"
+  ],
+  "notes": []
+}

@@ -34,6 +34,12 @@ const names = new Map();
 const charactersFile = path.join(root, 'data', 'characters.json');
 if (fs.existsSync(charactersFile)) for (const c of JSON.parse(fs.readFileSync(charactersFile, 'utf8'))) names.set(c.slug, c.name);
 
+const petsFile = path.join(root, 'data', 'repo-pets.json');
+const animalSlugs = new Set();
+if (fs.existsSync(petsFile)) for (const p of JSON.parse(fs.readFileSync(petsFile, 'utf8')).pets) {
+  if (!names.has(p.slug)) names.set(p.slug, p.name);
+  if (p.species && p.cutout) animalSlugs.add(p.slug);
+}
 const cutoutDir = path.join(petsDir, 'cutouts');
 const cutouts = fs.readdirSync(cutoutDir).filter((f) => f.endsWith('.png')).sort().map((f) => {
   const slug = f.slice(0, -4);
@@ -51,6 +57,8 @@ const sprites = fs.existsSync(spriteDir) ? fs.readdirSync(spriteDir).sort().map(
 if (cutouts.length < 3) throw new Error('need at least 3 character cutouts in assets/repo-pets/cutouts');
 
 const W = 960;
+// Shimeji frames are 128px pixel art: draw them at native size with pixelated rendering (no resampling blur).
+const SPRITE = 128;
 let uid = 0;
 const css = [];
 
@@ -58,7 +66,7 @@ function framesGroup(frames, size, fps) {
   const id = `f${uid++}`;
   const dur = frames.length / fps;
   css.push(`@keyframes ${id}{0%,${(100 / frames.length).toFixed(3)}%{opacity:1}${(100 / frames.length + 0.001).toFixed(3)}%,100%{opacity:0}}`);
-  return frames.map((href, i) => `<image href="${href}" width="${size}" height="${size}" style="opacity:0;animation:${id} ${dur}s ${(-(frames.length - i) * dur / frames.length).toFixed(3)}s infinite"/>`).join('');
+  return frames.map((href, i) => `<image href="${href}" width="${size}" height="${size}" style="image-rendering:pixelated;image-rendering:crisp-edges;opacity:0;animation:${id} ${dur}s ${(-(frames.length - i) * dur / frames.length).toFixed(3)}s infinite"/>`).join('');
 }
 
 // One walker: walks the floor left<->right, flips to face its direction, and bobs.
@@ -105,32 +113,41 @@ const floor = (h, size) => h - 6 - size + 2;
 // Header: a parade of the brigade.
 {
   css.length = 0;
-  const h = 130, size = 96;
+  const h = 150, size = 96;
   const ws = pick(6).map((c, i) => walker({ body: cutoutBody(c, size), size, y: floor(h, size), speed: 38 + rand() * 30, offset: i / 6 + rand() * 0.05, label: c.name }));
-  for (const s of sprites.filter((s) => s.states.walk)) ws.push(walker({ body: framesGroup(s.states.walk, 96, 10), size: 96, y: floor(h, 96) + 6, speed: 45 + rand() * 20, offset: rand(), label: `${s.id} (shimeji sprite)` }));
+  for (const s of sprites.filter((s) => s.states.walk)) ws.push(walker({ body: framesGroup(s.states.walk, SPRITE, 10), size: SPRITE, y: floor(h, SPRITE) + 6, speed: 45 + rand() * 20, offset: rand(), label: `${s.id} (shimeji sprite)` }));
   results.push(strip({ file: 'walk-header.svg', title: 'MiseOS brigade walking across the repository', height: h, walkers: ws }));
 }
 // Middle: walkers plus a shimeji perched on the section edge.
 {
   css.length = 0;
-  const h = 120, size = 84;
+  const h = 140, size = 84;
   const ws = pick(5).map((c, i) => walker({ body: cutoutBody(c, size), size, y: floor(h, size), speed: 30 + rand() * 30, offset: i / 5 + rand() * 0.1, label: c.name }));
   const perch = sprites.find((s) => s.states.perch);
-  const extras = perch ? `<g transform="translate(${W - 120} ${h - 6 - 92})"><title>${esc(perch.id)} perched on the edge</title>${framesGroup(perch.states.perch, 96, 4)}</g>` : '';
+  const extras = perch ? `<g transform="translate(${W - SPRITE - 24} ${h - 6 - SPRITE})"><title>${esc(perch.id)} perched on the edge</title>${framesGroup(perch.states.perch, SPRITE, 4)}</g>` : '';
   results.push(strip({ file: 'walk-kitchen.svg', title: 'MiseOS repo pets on patrol', height: h, walkers: ws, extras }));
 }
 // Footer: remaining characters plus a shimeji climbing the wall.
 {
   css.length = 0;
-  const h = 150, size = 88;
+  const h = 170, size = 88;
   const ws = pick(6).map((c, i) => walker({ body: cutoutBody(c, size), size, y: floor(h, size), speed: 34 + rand() * 30, offset: i / 6 + rand() * 0.1, label: c.name }));
   const climber = sprites.find((s) => s.states.climb && s.id !== 'kurogami') ?? sprites.find((s) => s.states.climb);
   let extras = '';
   if (climber) {
-    css.push(`@keyframes climbup{0%{transform:translateY(${h - 100}px)}45%,55%{transform:translateY(-10px)}100%{transform:translateY(${h - 100}px)}}`);
-    extras = `<rect x="${W - 14}" y="0" width="6" height="${h}" rx="3" fill="#D4AF37" opacity=".35"/><g transform="translate(${W - 92} 0)"><g style="animation:climbup 9s ease-in-out infinite"><title>${esc(climber.id)} climbing the repository wall</title>${framesGroup(climber.states.climb, 84, 8)}</g></g>`;
+    css.push(`@keyframes climbup{0%{transform:translateY(${h - SPRITE - 6}px)}45%,55%{transform:translateY(-10px)}100%{transform:translateY(${h - SPRITE - 6}px)}}`);
+    extras = `<rect x="${W - 14}" y="0" width="6" height="${h}" rx="3" fill="#D4AF37" opacity=".35"/><g transform="translate(${W - SPRITE - 20} 0)"><g style="animation:climbup 9s ease-in-out infinite"><title>${esc(climber.id)} climbing the repository wall</title>${framesGroup(climber.states.climb, SPRITE, 8)}</g></g>`;
   }
   results.push(strip({ file: 'walk-footer.svg', title: 'MiseOS repo pets climbing and walking', height: h, walkers: ws, extras }));
+}
+
+// Animal pets: every repo pet with an animal species and a usable cutout (data/repo-pets.json).
+if (animalSlugs.size) {
+  css.length = 0;
+  const h = 120, size = 84;
+  const animals = shuffle(cutouts.filter((c) => animalSlugs.has(c.slug)));
+  const ws = animals.map((c, i) => walker({ body: cutoutBody(c, size), size, y: floor(h, size), speed: 30 + rand() * 30, offset: i / animals.length + rand() * 0.1, label: c.name }));
+  results.push(strip({ file: 'walk-animals.svg', title: 'MiseOS animal repo pets', height: h, walkers: ws }));
 }
 
 fs.writeFileSync(path.join(petsDir, 'roster.json'), `${JSON.stringify({ seed: seedText, strips: results }, null, 2)}\n`);

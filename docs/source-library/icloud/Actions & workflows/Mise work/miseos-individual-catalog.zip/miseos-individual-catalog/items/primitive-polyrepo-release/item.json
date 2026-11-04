@@ -1,0 +1,13 @@
+{
+  "id": "primitive-polyrepo-release",
+  "category": "platform",
+  "title": "Polyrepo Release Manifest",
+  "description": "System-release manifest convention for independently versioned component repositories.",
+  "dependencies": [],
+  "files": [
+    "release.yaml"
+  ],
+  "notes": [
+    "Replace YOUR-ORG placeholders before validation."
+  ]
+}

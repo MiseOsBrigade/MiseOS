@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.110",
+  "number": 110,
+  "slug": "recipe-ranger",
+  "name": "Recipe Ranger",
+  "mise_name": "Recipe Ranger",
+  "codename": "RECIPE_RANGER",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Knowledge Pathfinder",
+  "job_name": "Knowledge Pathfinder",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "uploaded_pdf_page_26",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Knowledge Pathfinder",
+    "avatar_path": "assets/characters/recipe-ranger/card.jpg",
+    "card_path": "assets/characters/recipe-ranger/card.jpg",
+    "primary_photo_page": 26,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-026.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Recipe Ranger performs knowledge pathfinder within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Portion Paladin",
+      "Allergen Oracle",
+      "Kurogami Senpai"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 68,
+    "precision": 63,
+    "speed": 58,
+    "resilience": 64,
+    "intelligence": 62,
+    "teamwork": 76
+  },
+  "paths": {
+    "readme": "characters/recipe-ranger/README.md",
+    "metadata": "characters/recipe-ranger/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

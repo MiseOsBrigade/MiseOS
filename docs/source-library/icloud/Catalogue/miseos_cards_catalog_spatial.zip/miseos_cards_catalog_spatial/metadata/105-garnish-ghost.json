@@ -1,0 +1,196 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #105 — Garnish Ghost",
+  "description": "Garnish Ghost serves the Operations Kitchen as the brigade's finisher. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/105-garnish-ghost.jpg",
+  "animation_url": "media/animation/105-garnish-ghost.mp4",
+  "external_url": "https://miseos.dev/agents/garnish-ghost",
+  "background_color": "D4AF37",
+  "spatial_screen": {
+    "card_id": "MISE-105",
+    "level": 26,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 21,
+      "aligned_pages": [
+        21
+      ],
+      "reference_image": "assets/reference/page-021.jpg",
+      "thumbnail": "assets/thumbnails/page-021.jpg",
+      "alignment_confidence": "medium",
+      "provenance": "photo_aligned_completion"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.105",
+    "number": 105,
+    "slug": "garnish-ghost",
+    "codename": "GARNISH_GHOST",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Operations Kitchen",
+    "department_code": "operations",
+    "role": "Finisher",
+    "rarity": "Legendary",
+    "rarity_tier": 4,
+    "level": 26
+  },
+  "lore": {
+    "summary": "Garnish Ghost serves the Operations Kitchen as the brigade's finisher. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Garnish Ghost performs finisher within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Pantry Paladin",
+      "Ticket Tactician",
+      "Plate Inspector"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE FINISHER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Finisher Protocol",
+      "type": "active",
+      "effect": "Executes the core finisher workflow with evidence capture.",
+      "command": "MISE FINISHER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next operations station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 73,
+    "precision": 66,
+    "speed": 60,
+    "resilience": 79,
+    "intelligence": 73,
+    "teamwork": 80
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Finisher"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Level",
+      "value": 26,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "photo_aligned_completion"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "medium"
+    },
+    {
+      "trait_type": "Power",
+      "value": 73,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 66,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 60,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 79,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 73,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 80,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/105-garnish-ghost.jpg",
+    "reference_art": "assets/reference/page-021.jpg",
+    "thumbnail": "assets/thumbnails/page-021.jpg",
+    "animation": {
+      "uri": "media/animation/105-garnish-ghost.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/105-garnish-ghost.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/105-garnish-ghost.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/105-garnish-ghost.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/105-garnish-ghost.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

@@ -1,0 +1,32 @@
+miseos-canon/
+├── canon-bible/
+│   ├── MiseOS-Canon-Bible-v1.0.docx
+│   └── MiseOS-Canon-Bible-v1.0.pdf
+├── entities/
+│   ├── characters/001-300/
+│   ├── generation-one/
+│   ├── registry/
+│   ├── districts/
+│   └── world-objects/
+├── assets/
+│   ├── source/
+│   ├── approved/
+│   ├── deprecated/
+│   ├── derivatives/
+│   └── checksums/
+├── schemas/
+├── gridops/
+│   ├── atlas/
+│   ├── singularity-core/
+│   ├── captures/
+│   └── unity/
+├── chronicles/
+│   ├── story-bible/
+│   ├── seasons/
+│   ├── scripts/
+│   └── exports/
+├── nft/
+├── api/
+├── analytics/
+├── publishing/
+└── .github/workflows/

@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.101",
+  "number": 101,
+  "slug": "flavor-scribe",
+  "name": "Flavor Scribe",
+  "mise_name": "Flavor Scribe",
+  "codename": "FLAVOR_SCRIBE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Menu Curator",
+  "job_name": "Menu Curator",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "uploaded_pdf_page_17",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Menu Curator",
+    "avatar_path": "assets/characters/flavor-scribe/card.jpg",
+    "card_path": "assets/characters/flavor-scribe/card.jpg",
+    "primary_photo_page": 17,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-017.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Flavor Scribe performs menu curator within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Prep Pulse",
+      "Queue Quartz",
+      "Harvest Hex"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 70,
+    "precision": 72,
+    "speed": 64,
+    "resilience": 74,
+    "intelligence": 74,
+    "teamwork": 81
+  },
+  "paths": {
+    "readme": "characters/flavor-scribe/README.md",
+    "metadata": "characters/flavor-scribe/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

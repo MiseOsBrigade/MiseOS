@@ -1,0 +1,331 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-gradle-plugin",
+  "name": "MiseOS Gradle Plugin",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "card_meters_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.gradle-plugin",
+    "name": "MiseOS Gradle Plugin",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "expansion",
+    "criticality": "medium",
+    "registries": "gradle",
+    "artifacts": "dev.miseos.registry-plugin"
+  },
+  "catalog_item": {
+    "id": "registry-gradle-plugin",
+    "category": "registry-capability",
+    "title": "MiseOS Gradle Plugin",
+    "description": "Executable baseline capability for MiseOS Gradle Plugin.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.gradle-plugin.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: gradlePlugin",
+      "Source status: active"
+    ]
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-gradle-plugin.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-gradle-plugin.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Gradle Plugin",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-gradle-plugin.webp",
+      "printed_text": [
+        "MISE",
+        "PACKAGE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "BUILD SUCCESSFUL",
+        "dependencies ",
+        "TIME: 0.42S",
+        "implementation",
+        "miseos.core",
+        "miseos.plugin",
+        "miseos.gradle",
+        "TASK :COMPILE",
+        "TASK :PACKAGE",
+        "TASK :PUBLISH",
+        "REPOSITORY",
+        "V Maven Central",
+        "COMPILING..",
+        "100%",
+        "V MiseOS Registry",
+        "V Gradle Plugin Portal",
+        "GRADLE",
+        "MiseOS Gradle Plugin",
+        "Package",
+        "100",
+        "BUILD",
+        "INTEGRATION",
+        "100",
+        "100",
+        "PUBLISH",
+        "COMPILE",
+        "100",
+        "100",
+        "REPOSITORY",
+        "DEPENDENCY",
+        "100",
+        "I FORGE BUILD.I RESOLVE DEPENDENCIES",
+        "IDELIVERRELIABILITY."
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": [
+    "100%"
+  ],
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "gradlePlugin"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "package",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 16,
+        "term": "gradlePlugin"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 16,
+        "term": "gradlePlugin"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 16,
+        "term": "gradlePlugin"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 297,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 267,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 9,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 267,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 85,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.gradle-plugin.json",
+        "line": 4,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 85,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.gradle-plugin.json",
+        "line": 4,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 220,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 267,
+        "term": "MiseOS Gradle Plugin"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 60,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 40,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 11,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 86,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/gradle-plugin.md",
+        "line": 1,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 25,
+        "term": "MiseOS Gradle Plugin"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 11,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 84,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 15,
+        "term": "miseos.gradle-plugin"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Gradle Plugin"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 16,
+      "name": "gradlePlugin"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 16,
+        "term": "gradlePlugin"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 16,
+        "term": "gradlePlugin"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 16,
+        "term": "gradlePlugin"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.gradle-plugin"
+  },
+  "role": "Package",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Gradle Plugin.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "gradlePlugin",
+      "handler": "gradlePlugin",
+      "source": "apps/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (package)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Gradle Plugin.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

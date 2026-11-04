@@ -1,0 +1,21 @@
+{
+  "slug": "build-kun",
+  "name": "Build Kun",
+  "kind": "brigade_mascot_agent",
+  "role": "Build Runner",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:72",
+  "thumbnail": "agents/build-kun/thumb.png",
+  "character": "build-kun",
+  "cards": [
+    "docs/characters/build-kun.md",
+    "docs/characters/build-kun.md"
+  ],
+  "pet": "build-kun",
+  "page": "docs/agents/build-kun.md",
+  "dir": "agents/build-kun",
+  "files": [
+    "agents/build-kun/Build-Kun.png"
+  ]
+}

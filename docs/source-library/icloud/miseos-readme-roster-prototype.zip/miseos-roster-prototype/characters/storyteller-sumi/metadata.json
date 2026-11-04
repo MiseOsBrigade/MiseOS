@@ -1,0 +1,68 @@
+{
+  "id": "storyteller-sumi",
+  "number": 74,
+  "name": "Storyteller Sumi",
+  "miseName": "Mise NarrativeReportGenerator",
+  "codename": "chef.data-insight.narrative-report-generator",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Narrative Report Generator",
+    "signaturePhrase": "Narrative Report Generator done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in narrative report generator so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen narrative report generator aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/storyteller-sumi/full-body.png",
+    "cardPath": "/assets/characters/storyteller-sumi/card.png"
+  },
+  "workflow": {
+    "jobName": "Narrative Report Generator",
+    "roleName": "Narrative Report Generator microagent",
+    "summary": "Runs narrative report generator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Leaderboard Leo",
+      "Roadmap Sensei",
+      "Canary Taster",
+      "Guardrail Goro"
+    ]
+  },
+  "stats": {
+    "power": 80,
+    "precision": 76,
+    "speed": 94,
+    "resilience": 84,
+    "intelligence": 98,
+    "teamwork": 98
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "storyteller-sumi",
+  "seasonOneCard": null,
+  "displayNumber": 74,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/storyteller-sumi",
+  "avatarSvg": "assets/characters/storyteller-sumi/avatar.svg",
+  "cardSvg": "assets/characters/storyteller-sumi/card.svg"
+}

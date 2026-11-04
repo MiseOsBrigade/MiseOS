@@ -1,0 +1,18 @@
+{
+  "slug": "community-rep",
+  "name": "Community Rep",
+  "kind": "brigade_mascot_agent",
+  "role": "Community Liaison",
+  "group": "Integrations & Ecosystem",
+  "group_tagline": "Connect · Deploy · Extend",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:171",
+  "thumbnail": "agents/community-rep/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/community-rep.md",
+  "dir": "agents/community-rep",
+  "files": [
+    "agents/community-rep/Community-Rep.png"
+  ]
+}

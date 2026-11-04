@@ -1,0 +1,13 @@
+{
+  "id": "quality-polyrepo-validator",
+  "category": "quality",
+  "title": "Polyrepo Validator",
+  "description": "Deterministic polyrepo release manifest validator.",
+  "dependencies": [
+    "PyYAML>=6,<7"
+  ],
+  "files": [
+    "scripts/validate_polyrepo_manifest.py"
+  ],
+  "notes": []
+}

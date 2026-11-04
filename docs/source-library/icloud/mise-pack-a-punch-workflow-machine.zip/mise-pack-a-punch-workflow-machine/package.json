@@ -1,0 +1,16 @@
+{
+  "name": "mise-pack-a-punch-workflow-machine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A reusable GitHub Actions workflow stacker for risk-gated quality, branch advice, and auditable repository enhancement.",
+  "scripts": {
+    "mise:risk": "node scripts/mise-risk-gate.mjs",
+    "mise:graph": "node scripts/mise-stack-graph.mjs",
+    "mise:branch": "node scripts/mise-branch-advisor.mjs",
+    "mise:context": "node scripts/mise-context.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

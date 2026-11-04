@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.009",
+  "number": 9,
+  "slug": "nina-promoter",
+  "name": "Nina Promoter",
+  "mise_name": "Nina Promoter",
+  "codename": "NINA_PROMOTER",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Environment Promotion Gate",
+  "job_name": "Environment Promotion Gate",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Environment Promotion Gate",
+    "avatar_path": "assets/characters/nina-promoter/avatar.png",
+    "card_path": "assets/characters/nina-promoter/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Nina Promoter performs environment promotion gate within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Release Conductor",
+      "Felix Rollback",
+      "Tariq Notesmith"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 79,
+    "precision": 79,
+    "speed": 76,
+    "resilience": 71,
+    "intelligence": 73,
+    "teamwork": 82
+  },
+  "paths": {
+    "readme": "characters/nina-promoter/README.md",
+    "metadata": "characters/nina-promoter/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

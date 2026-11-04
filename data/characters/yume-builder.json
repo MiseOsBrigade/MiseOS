@@ -1,0 +1,198 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "yume-builder",
+  "name": "Yume Builder",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "ids.registry_id": "characters/yume-builder/metadata.json",
+    "role": "characters/yume-builder/metadata.json",
+    "department": "characters/yume-builder/metadata.json",
+    "rarity": "characters/yume-builder/metadata.json",
+    "workflow.summary": "characters/yume-builder/metadata.json",
+    "workflow.inputs": "characters/yume-builder/metadata.json",
+    "workflow.outputs": "characters/yume-builder/metadata.json",
+    "workflow.proof_gate": "characters/yume-builder/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/yume-builder/metadata.json"
+  },
+  "registry": {
+    "number": 35,
+    "profile": "characters/yume-builder/README.md",
+    "metadata": "characters/yume-builder/metadata.json",
+    "avatar": "assets/characters/yume-builder/profile.svg"
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 31,
+  "unique_trait": "Specializes in artifact builder so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "delivery",
+  "profile_doc": "characters/yume-builder/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 141,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 174,
+        "term": "Yume Builder"
+      }
+    ],
+    "code_ref_count": 2,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 93,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 238,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "apps/voxel-world/src/data/agents.json",
+        "line": 149,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 238,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 335,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 45,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 45,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 347,
+        "term": "Yume Builder"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Yume Builder"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 11,
+        "term": "Yume Builder"
+      }
+    ],
+    "app_code_refs": [],
+    "status": "described_in_docs_only",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-007",
+    "character_id": "miseos.character.007",
+    "card_id": "MISE-007",
+    "codename": "YUME_BUILDER"
+  },
+  "role": "Artifact Builder",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Genesis",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Artifact Builder done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Yume Builder performs artifact builder within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE ARTIFACT BUILDER",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Artifact Builder",
+      "mise_name": "Mise ArtifactBuilder",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 85,
+    "precision": 85,
+    "speed": 73,
+    "resilience": 90,
+    "intelligence": 84,
+    "teamwork": 80
+  },
+  "related": [
+    {
+      "name": "Iron Hashi",
+      "slug": "iron-hashi"
+    },
+    {
+      "name": "Nina Promoter",
+      "slug": "nina-promoter"
+    },
+    {
+      "name": "Release Conductor",
+      "slug": "release-conductor"
+    },
+    {
+      "name": "Seira Scan",
+      "slug": "seira-scan"
+    },
+    {
+      "name": "Policy Kenji",
+      "slug": "policy-kenji"
+    },
+    {
+      "name": "Pager Hiro",
+      "slug": "pager-hiro"
+    }
+  ],
+  "helps": {
+    "station": "Pipeline Kitchen",
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Yume Builder performs artifact builder within the Pipeline Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [],
+  "repo_pets": []
+}

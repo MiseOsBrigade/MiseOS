@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.runner",
+  "name": "MiseOS Runner",
+  "type": "container",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "Stable container runtime for registry validation, policy checks, docs generation, and agent workflow execution.",
+  "artifacts": {
+    "container": "ghcr.io/mise-os/miseos-runner",
+    "source": "containers/runner"
+  },
+  "capabilities": [
+    "run_validation",
+    "run_policy_checks",
+    "build_docs",
+    "execute_agent_task"
+  ],
+  "permissions": {
+    "runtime": {
+      "filesystem": "read_write_workspace",
+      "network": "optional"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "base_image_change",
+      "network_surface_change",
+      "permission_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Maintainer review required",
+    "patch": "Automated validation allowed"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_only",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "runtime_report"
+    ]
+  }
+}

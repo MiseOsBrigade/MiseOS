@@ -1,0 +1,20 @@
+{
+  "slug": "null-chan",
+  "name": "Null Chan",
+  "kind": "brigade_mascot_agent",
+  "role": "Fallback Handler",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:94",
+  "thumbnail": "agents/null-chan/thumb.png",
+  "character": "null-chan",
+  "cards": [
+    "docs/characters/null-chan.md"
+  ],
+  "pet": "null-chan",
+  "page": "docs/agents/null-chan.md",
+  "dir": "agents/null-chan",
+  "files": [
+    "agents/null-chan/Null-Chan.png"
+  ]
+}

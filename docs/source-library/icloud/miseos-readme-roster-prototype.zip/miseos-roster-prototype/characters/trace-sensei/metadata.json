@@ -1,0 +1,68 @@
+{
+  "id": "trace-sensei",
+  "number": 32,
+  "name": "Trace Sensei",
+  "miseName": "Mise InstrumentationBooster",
+  "codename": "chef.reliability.instrumentation-booster",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "rare",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Instrumentation Booster",
+    "signaturePhrase": "Instrumentation Booster done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in instrumentation booster so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen instrumentation booster aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/trace-sensei/full-body.png",
+    "cardPath": "/assets/characters/trace-sensei/card.png"
+  },
+  "workflow": {
+    "jobName": "Instrumentation Booster",
+    "roleName": "Instrumentation Booster microagent",
+    "summary": "Runs instrumentation booster for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "SLO Sage",
+      "Chaos Kaito",
+      "Bruno Blast-Radius",
+      "Bootstrap Aiko"
+    ]
+  },
+  "stats": {
+    "power": 90,
+    "precision": 78,
+    "speed": 76,
+    "resilience": 94,
+    "intelligence": 98,
+    "teamwork": 76
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "trace-sensei",
+  "seasonOneCard": null,
+  "displayNumber": 32,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/trace-sensei",
+  "avatarSvg": "assets/characters/trace-sensei/avatar.svg",
+  "cardSvg": "assets/characters/trace-sensei/card.svg"
+}

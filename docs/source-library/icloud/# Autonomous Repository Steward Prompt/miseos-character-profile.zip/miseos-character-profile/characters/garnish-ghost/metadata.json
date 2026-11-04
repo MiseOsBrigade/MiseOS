@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.105",
+  "number": 105,
+  "slug": "garnish-ghost",
+  "name": "Garnish Ghost",
+  "mise_name": "Garnish Ghost",
+  "codename": "GARNISH_GHOST",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Finisher",
+  "job_name": "Finisher",
+  "rarity": "Legendary",
+  "rarity_tier": 4,
+  "source": "uploaded_pdf_page_21",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Finisher",
+    "avatar_path": "assets/characters/garnish-ghost/avatar.png",
+    "card_path": "assets/characters/garnish-ghost/card.png",
+    "primary_photo_page": 21
+  },
+  "workflow": {
+    "summary": "Garnish Ghost performs finisher within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Pantry Paladin",
+      "Ticket Tactician",
+      "Plate Inspector"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 73,
+    "precision": 66,
+    "speed": 60,
+    "resilience": 79,
+    "intelligence": 73,
+    "teamwork": 80
+  },
+  "paths": {
+    "readme": "characters/garnish-ghost/README.md",
+    "metadata": "characters/garnish-ghost/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

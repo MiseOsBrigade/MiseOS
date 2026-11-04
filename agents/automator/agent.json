@@ -1,0 +1,18 @@
+{
+  "slug": "automator",
+  "name": "Automator",
+  "kind": "brigade_mascot_agent",
+  "role": "Automation Engine",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:149",
+  "thumbnail": "agents/automator/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/automator.md",
+  "dir": "agents/automator",
+  "files": [
+    "agents/automator/Automator.png"
+  ]
+}

@@ -1,0 +1,54 @@
+name: GridOps CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  security-events: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Enable Corepack
+        if: hashFiles('package.json') != ''
+        run: corepack enable || true
+
+      - name: Install dependencies
+        if: hashFiles('pnpm-lock.yaml') != ''
+        run: pnpm install --frozen-lockfile || pnpm install
+
+      - name: Install npm dependencies
+        if: hashFiles('package-lock.json') != ''
+        run: npm ci || npm install
+
+      - name: Typecheck
+        if: hashFiles('package.json') != ''
+        run: npm run typecheck --if-present
+
+      - name: Lint
+        if: hashFiles('package.json') != ''
+        run: npm run lint --if-present
+
+      - name: Test
+        if: hashFiles('package.json') != ''
+        run: npm test --if-present
+
+      - name: Build
+        if: hashFiles('package.json') != ''
+        run: npm run build --if-present

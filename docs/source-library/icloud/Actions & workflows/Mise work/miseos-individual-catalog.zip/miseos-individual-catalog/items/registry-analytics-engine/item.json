@@ -1,0 +1,17 @@
+{
+  "id": "registry-analytics-engine",
+  "category": "registry-capability",
+  "title": "MiseOS Analytics Engine",
+  "description": "Executable baseline capability for MiseOS Analytics Engine.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.analytics-engine.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: analyticsEngine",
+    "Source status: active"
+  ]
+}

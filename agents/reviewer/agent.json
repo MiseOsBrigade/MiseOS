@@ -1,0 +1,20 @@
+{
+  "slug": "reviewer",
+  "name": "Reviewer",
+  "kind": "brigade_mascot_agent",
+  "role": "Code Reviewer",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:116",
+  "thumbnail": "agents/reviewer/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--reviewer.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/reviewer.md",
+  "dir": "agents/reviewer",
+  "files": [
+    "agents/reviewer/Reviewer.png"
+  ]
+}

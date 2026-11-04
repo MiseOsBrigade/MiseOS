@@ -1,0 +1,68 @@
+{
+  "id": "impact-ichi",
+  "number": 44,
+  "name": "Impact Ichi",
+  "miseName": "Mise CustomerImpactSimulator",
+  "codename": "chef.reliability.customer-impact-simulator",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "common",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Customer Impact Simulator",
+    "signaturePhrase": "Customer Impact Simulator done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in customer impact simulator so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen customer impact simulator aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/impact-ichi/full-body.png",
+    "cardPath": "/assets/characters/impact-ichi/card.png"
+  },
+  "workflow": {
+    "jobName": "Customer Impact Simulator",
+    "roleName": "Customer Impact Simulator microagent",
+    "summary": "Runs customer impact simulator for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Resilience Ryu",
+      "Reliability Sensei",
+      "Canary Taster",
+      "Guardrail Goro"
+    ]
+  },
+  "stats": {
+    "power": 97,
+    "precision": 83,
+    "speed": 75,
+    "resilience": 85,
+    "intelligence": 78,
+    "teamwork": 87
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "impact-ichi",
+  "seasonOneCard": null,
+  "displayNumber": 44,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/impact-ichi",
+  "avatarSvg": "assets/characters/impact-ichi/avatar.svg",
+  "cardSvg": "assets/characters/impact-ichi/card.svg"
+}

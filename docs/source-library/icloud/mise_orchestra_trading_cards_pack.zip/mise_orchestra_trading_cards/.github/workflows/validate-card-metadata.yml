@@ -1,0 +1,26 @@
+name: Validate Mise Orchestra Card Metadata
+on:
+  pull_request:
+  push:
+    paths:
+      - "metadata/erc721/**.json"
+      - "data/mise_orchestra_collection_manifest.json"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON files
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          files = sorted(pathlib.Path("metadata/erc721").glob("*.json"))
+          assert files, "No metadata JSON files found"
+          for path in files:
+              data = json.loads(path.read_text())
+              for key in ["name", "description", "image", "attributes"]:
+                  assert key in data, f"{path}: missing {key}"
+          manifest = json.loads(pathlib.Path("data/mise_orchestra_collection_manifest.json").read_text())
+          assert manifest["total_characters"] == len(files), "Manifest count mismatch"
+          print(f"Validated {len(files)} metadata files.")
+          PY

@@ -1,0 +1,68 @@
+{
+  "id": "token-toshi",
+  "number": 48,
+  "name": "Token Toshi",
+  "miseName": "Mise CredentialHygieneScanner",
+  "codename": "chef.security.credential-hygiene-scanner",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "rare",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Credential Hygiene Scanner",
+    "signaturePhrase": "Credential Hygiene Scanner done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in credential hygiene scanner so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen credential hygiene scanner aura",
+    "silhouette": "multinational chibi DevOps chef carrying a key",
+    "tool": "key",
+    "spritePath": "/assets/characters/token-toshi/full-body.png",
+    "cardPath": "/assets/characters/token-toshi/card.png"
+  },
+  "workflow": {
+    "jobName": "Credential Hygiene Scanner",
+    "roleName": "Credential Hygiene Scanner microagent",
+    "summary": "Runs credential hygiene scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Secure Sakura",
+      "CVE Kumo",
+      "Lila Branchkeeper",
+      "Terra Forge"
+    ]
+  },
+  "stats": {
+    "power": 77,
+    "precision": 72,
+    "speed": 71,
+    "resilience": 97,
+    "intelligence": 76,
+    "teamwork": 79
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "token-toshi",
+  "seasonOneCard": null,
+  "displayNumber": 48,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/token-toshi",
+  "avatarSvg": "assets/characters/token-toshi/avatar.svg",
+  "cardSvg": "assets/characters/token-toshi/card.svg"
+}

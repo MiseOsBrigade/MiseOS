@@ -1,0 +1,68 @@
+{
+  "id": "terra-forge",
+  "number": 18,
+  "name": "Terra Forge",
+  "miseName": "Mise EnvironmentProvisioner",
+  "codename": "chef.platform.environment-provisioner",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Mexican",
+    "title": "Environment Provisioner",
+    "signaturePhrase": "Environment Provisioner done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in environment provisioner so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen environment provisioner aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/terra-forge/full-body.png",
+    "cardPath": "/assets/characters/terra-forge/card.png"
+  },
+  "workflow": {
+    "jobName": "Environment Provisioner",
+    "roleName": "Environment Provisioner microagent",
+    "summary": "Runs environment provisioner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Bootstrap Aiko",
+      "Schema Sora",
+      "Lila Branchkeeper",
+      "Chaos Kaito"
+    ]
+  },
+  "stats": {
+    "power": 71,
+    "precision": 84,
+    "speed": 85,
+    "resilience": 75,
+    "intelligence": 86,
+    "teamwork": 97
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "terra-forge",
+  "seasonOneCard": null,
+  "displayNumber": 18,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/terra-forge",
+  "avatarSvg": "assets/characters/terra-forge/avatar.svg",
+  "cardSvg": "assets/characters/terra-forge/card.svg"
+}

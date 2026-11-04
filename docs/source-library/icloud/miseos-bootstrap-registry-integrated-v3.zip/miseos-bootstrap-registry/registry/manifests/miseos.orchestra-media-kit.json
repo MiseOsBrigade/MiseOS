@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.orchestra-media-kit",
+  "name": "MiseOS Orchestra Media Kit",
+  "type": "template",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {"name": "MiseOS", "kind": "organization", "github": "Mise-OS"},
+  "description": "Metadata and publishing policy for Mise Orchestra media assets such as theme audio, launch visuals, and future docs-hub motion assets.",
+  "artifacts": {"metadata": "registry/orchestra/media.json", "docs": "docs/media-assets.md"},
+  "capabilities": ["track_media_metadata", "define_asset_storage_policy", "support_docs_hub_media_planning"],
+  "permissions": {"filesystem": ["read"], "network": [], "github": []},
+  "trust": {"licenseRequired": true, "sbomRequired": true, "provenanceRequired": true, "signedReleaseRequired": true, "artifactAttestationRequired": true, "scorecardRequired": true, "humanReviewRequiredFor": ["binary_asset_commit", "license_change", "cdn_publish", "release_asset_publish"]},
+  "changePolicy": {"major": "Human review required for committing binaries, changing asset rights, or publishing media externally.", "minor": "Allowed for adding metadata entries and publishing destinations.", "patch": "Allowed for metadata corrections and docs cleanup."},
+  "agentContract": {"loadStrategy": "manifest_plus_docs", "safeToRunWithoutHuman": true, "requiresNetwork": false, "outputs": ["media_metadata", "asset_policy"], "executionMode": "read_only"},
+  "analytics": {"criticality": "low", "maturity": "seed", "riskWeight": 0.16, "operationalTier": "expansion"},
+  "release": {"channel": "dev", "cadence": "manual", "currentStrategy": "Keep media metadata in registry; store binaries outside the bootstrap repo unless explicitly approved.", "nextMilestone": "Move theme and visual assets to a dedicated media-kit or GitHub Release asset lane."},
+  "answers": {"what": "A metadata and policy layer for Mise Orchestra media assets.", "does": "Tracks media assets without bloating the bootstrap repository with binaries.", "owner": "MiseOS / Mise-OS organization.", "permissions": "Read-only local metadata access.", "registry": "Repository metadata artifact; future media package or release asset lane.", "changed": "Added metadata for the uploaded Mise Orchestra theme audio while keeping the binary out of the repo.", "safe": "Safe because it stores metadata only and requires review for binary publishing.", "agentExecutable": "Yes, agents can read the media metadata and recommend publishing destinations."}
+}

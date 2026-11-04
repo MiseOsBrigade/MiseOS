@@ -1,0 +1,23 @@
+{
+  "slug": "kuro-guard",
+  "name": "Kuro Guard",
+  "kind": "brigade_mascot_agent",
+  "role": "Chief Sentinel",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:55",
+  "thumbnail": "agents/kuro-guard/thumb.png",
+  "character": "kuro-guard",
+  "cards": [
+    "docs/characters/kuro-guard.md",
+    "docs/characters/kuro-guard.md",
+    "docs/characters/kuro-guard.md",
+    "docs/characters/kuro-guard.md"
+  ],
+  "pet": "kuro-guard",
+  "page": "docs/agents/kuro-guard.md",
+  "dir": "agents/kuro-guard",
+  "files": [
+    "agents/kuro-guard/Kuro-Guard.png"
+  ]
+}

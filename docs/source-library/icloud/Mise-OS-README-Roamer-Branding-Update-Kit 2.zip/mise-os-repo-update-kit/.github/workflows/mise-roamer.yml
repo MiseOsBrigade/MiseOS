@@ -1,0 +1,36 @@
+name: Mise OS Roamer
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  mise-roamer:
+    name: Mise OS repo mascot check
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [24.x, 26.x]
+
+    steps:
+      - name: Checkout kitchen
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install pantry
+        run: npm install
+
+      - name: Run Mise doctor
+        run: npm run doctor
+
+      - name: Test one safe mascot step
+        run: node scripts/mise-roamer.mjs . --once --json --chef=orchestra-core
+
+      - name: Check folder branding
+        run: npm run brand:check

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.089",
+  "number": 89,
+  "slug": "insight-sensei",
+  "name": "Insight Sensei",
+  "mise_name": "Insight Sensei",
+  "codename": "INSIGHT_SENSEI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Analyze",
+  "job_name": "Analyze",
+  "rarity": "Epic",
+  "rarity_tier": 3,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Analyze",
+    "avatar_path": "assets/characters/insight-sensei/avatar.png",
+    "card_path": "assets/characters/insight-sensei/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Insight Sensei performs analyze within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Chaos Analyst",
+      "Growth Guru",
+      "Culture Chef"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 84,
+    "precision": 68,
+    "speed": 72,
+    "resilience": 70,
+    "intelligence": 70,
+    "teamwork": 73
+  },
+  "paths": {
+    "readme": "characters/insight-sensei/README.md",
+    "metadata": "characters/insight-sensei/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

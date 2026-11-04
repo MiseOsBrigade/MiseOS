@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.081",
+  "number": 81,
+  "slug": "null-chan",
+  "name": "Null-chan",
+  "mise_name": "Null-chan",
+  "codename": "NULL_CHAN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "Cleanse",
+  "job_name": "Cleanse",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "Cleanse",
+    "avatar_path": "assets/characters/null-chan/avatar.png",
+    "card_path": "assets/characters/null-chan/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Null-chan performs cleanse within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "SLO Sage",
+      "Trace Sensei",
+      "Chaos Kaito"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 60,
+    "precision": 77,
+    "speed": 62,
+    "resilience": 66,
+    "intelligence": 70,
+    "teamwork": 70
+  },
+  "paths": {
+    "readme": "characters/null-chan/README.md",
+    "metadata": "characters/null-chan/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.3.0",
+  "assets": [
+    {
+      "id": "mise-orchestra-theme",
+      "uploadedName": "mise_orchestra_theme.mp3",
+      "type": "audio/mpeg",
+      "durationSeconds": 22.0,
+      "channels": 2,
+      "sampleRateHz": 44100,
+      "observedAverageDbfs": -11.71,
+      "usage": "Brand/source theme reference for future launch videos, docs hub intros, and animated registry dashboards.",
+      "repositoryPolicy": "Do not embed binary audio in the bootstrap registry by default. Store metadata and keep heavy media in release assets or a separate media repository."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Mise OS safe defaults
+.env
+.env.*
+!.env.example
+
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.turbo/
+.next/
+
+.DS_Store
+Thumbs.db
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_dsa

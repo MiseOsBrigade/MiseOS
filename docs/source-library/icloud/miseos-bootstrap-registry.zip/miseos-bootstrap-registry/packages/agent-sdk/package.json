@@ -1,0 +1,11 @@
+{
+  "name": "@miseos/agent-sdk",
+  "version": "0.1.0",
+  "description": "SDK for MiseOS agents, capabilities, permissions, and evidence contracts.",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": ["src", "README.md"],
+  "publishConfig": {"registry": "https://npm.pkg.github.com"},
+  "engines": {"node": ">=20"}
+}

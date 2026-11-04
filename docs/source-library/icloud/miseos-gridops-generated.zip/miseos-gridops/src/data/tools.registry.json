@@ -1,0 +1,168 @@
+[
+  {
+    "id": "tool_github",
+    "name": "GitHub",
+    "category": "repository",
+    "authType": "github_app",
+    "readAllowed": true,
+    "writeAllowed": true,
+    "riskLevel": "high",
+    "envVars": [
+      "GITHUB_APP_ID",
+      "GITHUB_PRIVATE_KEY",
+      "GITHUB_INSTALLATION_ID"
+    ],
+    "safeActions": [
+      "read_repo",
+      "read_files",
+      "create_branch",
+      "open_pr",
+      "comment_pr"
+    ],
+    "blockedActions": [
+      "force_push",
+      "delete_repo",
+      "disable_branch_protection"
+    ]
+  },
+  {
+    "id": "tool_github_actions",
+    "name": "GitHub Actions",
+    "category": "ci",
+    "authType": "github_token",
+    "readAllowed": true,
+    "writeAllowed": false,
+    "riskLevel": "medium",
+    "envVars": [
+      "GITHUB_TOKEN"
+    ],
+    "safeActions": [
+      "read_logs",
+      "read_workflow_runs",
+      "download_artifacts"
+    ],
+    "blockedActions": [
+      "disable_workflow",
+      "delete_runs"
+    ]
+  },
+  {
+    "id": "tool_registry",
+    "name": "Package Registries",
+    "category": "package",
+    "authType": "mixed",
+    "readAllowed": true,
+    "writeAllowed": false,
+    "riskLevel": "medium",
+    "ecosystems": [
+      "npm",
+      "ghcr",
+      "docker",
+      "maven",
+      "gradle",
+      "nuget",
+      "rubygems"
+    ],
+    "safeActions": [
+      "read_package_versions",
+      "compare_versions",
+      "check_publish_status"
+    ],
+    "blockedActions": [
+      "publish_without_approval",
+      "delete_package"
+    ]
+  },
+  {
+    "id": "tool_terminal_safe",
+    "name": "Safe Terminal",
+    "category": "runtime",
+    "authType": "local",
+    "readAllowed": true,
+    "writeAllowed": true,
+    "riskLevel": "high",
+    "safeActions": [
+      "npm_test",
+      "npm_lint",
+      "npm_build",
+      "pnpm_test",
+      "pytest",
+      "go_test",
+      "cargo_test"
+    ],
+    "blockedActions": [
+      "rm_rf",
+      "curl_pipe_shell",
+      "print_env",
+      "cat_env",
+      "deploy_prod"
+    ]
+  },
+  {
+    "id": "tool_rag",
+    "name": "RAG Memory",
+    "category": "memory",
+    "authType": "service",
+    "readAllowed": true,
+    "writeAllowed": true,
+    "riskLevel": "medium",
+    "envVars": [
+      "DATABASE_URL",
+      "VECTOR_DATABASE_URL"
+    ],
+    "safeActions": [
+      "index_repo",
+      "search_chunks",
+      "write_chunk",
+      "staleness_score"
+    ],
+    "blockedActions": [
+      "cross_tenant_search",
+      "return_unredacted_secret"
+    ]
+  },
+  {
+    "id": "tool_linear",
+    "name": "Linear",
+    "category": "project_management",
+    "authType": "oauth_or_api_key",
+    "readAllowed": true,
+    "writeAllowed": true,
+    "riskLevel": "medium",
+    "envVars": [
+      "LINEAR_API_KEY"
+    ],
+    "safeActions": [
+      "read_issues",
+      "create_issue",
+      "update_issue",
+      "comment_issue"
+    ],
+    "blockedActions": [
+      "delete_issue",
+      "change_team_settings"
+    ]
+  },
+  {
+    "id": "tool_stripe",
+    "name": "Stripe",
+    "category": "billing",
+    "authType": "api_key",
+    "readAllowed": true,
+    "writeAllowed": true,
+    "riskLevel": "high",
+    "envVars": [
+      "STRIPE_SECRET_KEY",
+      "STRIPE_WEBHOOK_SECRET"
+    ],
+    "safeActions": [
+      "create_checkout_session",
+      "read_subscription"
+    ],
+    "blockedActions": [
+      "refund_without_approval",
+      "delete_customer",
+      "change_tax_settings"
+    ]
+  }
+]

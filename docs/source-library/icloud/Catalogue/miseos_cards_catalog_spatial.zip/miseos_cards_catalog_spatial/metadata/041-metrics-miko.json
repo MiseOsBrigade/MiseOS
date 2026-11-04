@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #041 — Metrics Miko",
+  "description": "Metrics Miko serves the Reliability Kitchen as the brigade's slo dashboards. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/041-metrics-miko.svg",
+  "animation_url": "media/animation/041-metrics-miko.mp4",
+  "external_url": "https://miseos.dev/agents/metrics-miko",
+  "background_color": "2E6B4E",
+  "spatial_screen": {
+    "card_id": "MISE-041",
+    "level": 28,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.041",
+    "number": 41,
+    "slug": "metrics-miko",
+    "codename": "METRICS_MIKO",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Reliability Kitchen",
+    "department_code": "reliability",
+    "role": "SLO Dashboards",
+    "rarity": "Genesis",
+    "rarity_tier": 5,
+    "level": 28
+  },
+  "lore": {
+    "summary": "Metrics Miko serves the Reliability Kitchen as the brigade's slo dashboards. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Metrics Miko performs slo dashboards within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Forecast Fuji",
+      "Resilience Ryu",
+      "Impact Ichi"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE SLO DASHBOARDS",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "SLO Dashboards Protocol",
+      "type": "active",
+      "effect": "Executes the core slo dashboards workflow with evidence capture.",
+      "command": "MISE SLO DASHBOARDS"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next reliability station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 67,
+    "precision": 82,
+    "speed": 61,
+    "resilience": 72,
+    "intelligence": 90,
+    "teamwork": 87
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Reliability Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "SLO Dashboards"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Level",
+      "value": 28,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 61,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 72,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 90,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 87,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/041-metrics-miko.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/041-metrics-miko.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/041-metrics-miko.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/041-metrics-miko.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/041-metrics-miko.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/041-metrics-miko.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

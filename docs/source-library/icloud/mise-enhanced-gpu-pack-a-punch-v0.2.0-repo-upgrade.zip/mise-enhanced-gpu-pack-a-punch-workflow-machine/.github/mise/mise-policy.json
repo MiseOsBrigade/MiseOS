@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "name": "mise-pack-a-punch-policy",
+  "mission": "Stack workflow signals into one auditable quality, risk, and branch-readiness processor.",
+  "weights": {
+    "security": 0.35,
+    "quality": 0.25,
+    "changeRisk": 0.25,
+    "branchFitness": 0.15
+  },
+  "risk": {
+    "failOnSecretFindings": true,
+    "failOnWorkflowChangesFromForks": true,
+    "highRiskThreshold": 75,
+    "reviewThreshold": 45,
+    "maxFilesForLowRisk": 30,
+    "maxLinesForLowRisk": 1200,
+    "criticalPaths": [
+      ".github/workflows/",
+      ".github/actions/",
+      ".github/dependabot.yml",
+      "Dockerfile",
+      "docker-compose",
+      "package.json",
+      "package-lock.json",
+      "pnpm-lock.yaml",
+      "yarn.lock",
+      "pyproject.toml",
+      "requirements.txt",
+      "poetry.lock",
+      "Pipfile.lock",
+      "scripts/",
+      "infra/",
+      "terraform/",
+      "k8s/",
+      "helm/"
+    ],
+    "dangerousWorkflowPatterns": [
+      "curl\\s+[^|\n]+\\|\\s*(sudo\\s+)?(bash|sh)",
+      "wget\\s+[^|\n]+\\|\\s*(sudo\\s+)?(bash|sh)",
+      "pull_request_target",
+      "chmod\\s+777",
+      "rm\\s+-rf\\s+/(\\s|$)",
+      "secrets\\.GITHUB_TOKEN"
+    ],
+    "secretPatterns": [
+      "ghp_[A-Za-z0-9_]{30,}",
+      "github_pat_[A-Za-z0-9_]{30,}",
+      "AKIA[0-9A-Z]{16}",
+      "-----BEGIN (RSA |OPENSSH |EC |DSA |PRIVATE )?PRIVATE KEY-----",
+      "xox[baprs]-[A-Za-z0-9-]{10,}",
+      "sk-[A-Za-z0-9]{20,}"
+    ]
+  },
+  "quality": {
+    "node": {
+      "enabled": "auto",
+      "install": "npm ci",
+      "commands": [
+        "npm run lint --if-present",
+        "npm test --if-present",
+        "npm run build --if-present"
+      ]
+    },
+    "python": {
+      "enabled": "auto",
+      "commands": [
+        "python -m compileall ."
+      ]
+    },
+    "generic": {
+      "commands": [
+        "git diff --check"
+      ]
+    }
+  },
+  "stackCoordinates": [
+    { "id": "A0", "name": "measurement-context", "purpose": "Capture event, actor, branch, and file-change context before running any enhancement." },
+    { "id": "B1", "name": "risk-gate", "purpose": "Block secrets, risky workflow edits, and destructive shell patterns." },
+    { "id": "C2", "name": "quality-stack", "purpose": "Run native lint, test, build, and syntax checks only when matching project files exist." },
+    { "id": "D3", "name": "supply-chain-scan", "purpose": "Surface dependency and lockfile risk without creating recursive commits." },
+    { "id": "E4", "name": "branch-advisor", "purpose": "Recommend the next branch/PR path without auto-merging." },
+    { "id": "F5", "name": "evidence-report", "purpose": "Emit a single Markdown/JSON report artifact and optional PR comment." }
+  ],
+  "branchAdvisor": {
+    "protectedBranches": ["main", "master", "production", "release"],
+    "preferBranchPrefixes": ["fix/", "ci/", "test/", "docs/", "feat/", "chore/"],
+    "penalizeBranchPrefixes": ["wip/", "spike/", "experiment/"],
+    "maxCandidates": 8
+  }
+}

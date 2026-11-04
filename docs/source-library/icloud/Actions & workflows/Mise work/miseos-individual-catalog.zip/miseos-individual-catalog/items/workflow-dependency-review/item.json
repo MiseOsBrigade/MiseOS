@@ -1,0 +1,11 @@
+{
+  "id": "workflow-dependency-review",
+  "category": "workflow",
+  "title": "Dependency Review",
+  "description": "Pull-request dependency review gate.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/dependency-review.yml"
+  ],
+  "notes": []
+}

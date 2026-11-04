@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #039 — Review Ren",
+  "description": "Review Ren serves the Reliability Kitchen as the brigade's post-incident review. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/039-review-ren.svg",
+  "animation_url": "media/animation/039-review-ren.mp4",
+  "external_url": "https://miseos.dev/agents/review-ren",
+  "background_color": "2E6B4E",
+  "spatial_screen": {
+    "card_id": "MISE-039",
+    "level": 24,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.039",
+    "number": 39,
+    "slug": "review-ren",
+    "codename": "REVIEW_REN",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Reliability Kitchen",
+    "department_code": "reliability",
+    "role": "Post-Incident Review",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 24
+  },
+  "lore": {
+    "summary": "Review Ren serves the Reliability Kitchen as the brigade's post-incident review. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Review Ren performs post-incident review within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Backlog Benji",
+      "Metrics Miko",
+      "Forecast Fuji"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE POST INCIDENT REVIEW",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Post-Incident Review Protocol",
+      "type": "active",
+      "effect": "Executes the core post-incident review workflow with evidence capture.",
+      "command": "MISE POST INCIDENT REVIEW"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next reliability station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 67,
+    "precision": 78,
+    "speed": 73,
+    "resilience": 79,
+    "intelligence": 79,
+    "teamwork": 79
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Reliability Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Post-Incident Review"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 24,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 73,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 79,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 79,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 79,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/039-review-ren.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/039-review-ren.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/039-review-ren.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/039-review-ren.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/039-review-ren.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/039-review-ren.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

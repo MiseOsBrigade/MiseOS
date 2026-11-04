@@ -1,0 +1,26 @@
+id,name,type,status,version,tier,criticality,maturity,artifact_registries,capabilities,safe_to_run_without_human,requires_network,execution_mode
+miseos.agent-sdk,MiseOS Agent SDK,sdk,experimental,0.2.0,developer-tooling,high,alpha,npm,3,true,false,read_only
+miseos.analytics-engine,MiseOS Analytics Engine,analytics,experimental,0.2.0,autonomy,high,alpha,npm,5,true,false,read_only
+miseos.attestation-gate,MiseOS Attestation Gate,policy,experimental,0.2.0,governance,critical,alpha,npm,3,true,true,read_only
+miseos.cli,MiseOS CLI,package,experimental,0.2.0,developer-tooling,high,alpha,npm,5,true,false,read_only
+miseos.docs-builder,MiseOS Docs Builder,container,experimental,0.2.0,developer-tooling,medium,alpha,container,3,false,false,approved_write
+miseos.docs-hub-template,MiseOS Docs Hub Template,template,experimental,0.2.0,expansion,medium,alpha,npm; repo,3,false,false,approved_write
+miseos.ghcr-runner-publish-plan,MiseOS GHCR Runner Publish Plan,workflow,active,0.1.0,runtime,critical,beta,workflow; container; docs,4,false,true,approved_write
+miseos.gradle-plugin,MiseOS Gradle Plugin,package,experimental,0.2.0,expansion,medium,seed,gradle,3,true,false,read_only
+miseos.maven-policy-adapter,MiseOS Maven Policy Adapter,package,experimental,0.2.0,expansion,medium,seed,maven,3,true,false,read_only
+miseos.nuget-client,MiseOS NuGet Client,sdk,experimental,0.2.0,expansion,medium,seed,nuget,3,true,false,read_only
+miseos.orchestra-media-kit,MiseOS Orchestra Media Kit,template,experimental,0.1.0,expansion,low,seed,metadata; docs,3,true,false,read_only
+miseos.orchestra-role-registry,MiseOS Orchestra Role Registry,package,experimental,0.1.0,bootstrap,medium,alpha,npm; data,4,true,false,read_only
+miseos.policy-checker,MiseOS Policy Checker,container,experimental,0.2.0,governance,critical,alpha,container,3,false,false,advisory_write
+miseos.policy-engine,MiseOS Policy Engine,policy,experimental,0.2.0,governance,critical,alpha,npm; container,4,false,false,advisory_write
+miseos.registry-schema,MiseOS Registry Schema,schema,experimental,0.2.0,bootstrap,high,alpha,npm,3,false,false,advisory_write
+miseos.release-sentinel,MiseOS Release Sentinel,agent,experimental,0.2.0,autonomy,critical,alpha,npm,4,false,true,approved_write
+miseos.reliability-kit,MiseOS Repository Reliability Kit,template,active,0.1.0,governance,high,beta,template; docs; workflows,5,false,false,advisory_write
+miseos.repo-pet,MiseOS Repo Pet,package,experimental,0.1.0,developer-tooling,low,alpha,npm; source,4,true,false,read_only
+miseos.repo-steward,MiseOS Repo Steward,agent,experimental,0.2.0,governance,high,alpha,npm,4,true,false,read_only
+miseos.ruby-steward,MiseOS Ruby Steward,package,experimental,0.2.0,expansion,medium,seed,rubygems,3,true,false,read_only
+miseos.runner,MiseOS Runner,container,experimental,0.2.0,runtime,critical,alpha,container,4,true,false,read_only
+miseos.sbom-indexer,MiseOS SBOM Indexer,agent,experimental,0.2.0,governance,critical,alpha,npm,3,true,true,read_only
+miseos.trust-graph,MiseOS Trust Graph,analytics,experimental,0.2.0,governance,high,alpha,npm,3,true,false,read_only
+miseos.workflow-linter,MiseOS Workflow Linter,agent,experimental,0.2.0,governance,high,alpha,npm,3,false,false,advisory_write
+miseos.workflow-pack,MiseOS Workflow Pack,workflow,experimental,0.2.0,bootstrap,critical,alpha,repo,4,false,true,approved_write

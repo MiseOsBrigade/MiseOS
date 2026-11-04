@@ -1,0 +1,68 @@
+{
+  "id": "repo-ranger",
+  "number": 64,
+  "name": "Repo Ranger",
+  "miseName": "Mise RepoHealthAnalyzer",
+  "codename": "chef.data-insight.repo-health-analyzer",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Australian",
+    "title": "Repo Health Analyzer",
+    "signaturePhrase": "Repo Health Analyzer done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in repo health analyzer so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen repo health analyzer aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/repo-ranger/full-body.png",
+    "cardPath": "/assets/characters/repo-ranger/card.png"
+  },
+  "workflow": {
+    "jobName": "Repo Health Analyzer",
+    "roleName": "Repo Health Analyzer microagent",
+    "summary": "Runs repo health analyzer for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Lattice",
+      "DORA Daichi",
+      "Omar Reviewer",
+      "Schema Sora"
+    ]
+  },
+  "stats": {
+    "power": 72,
+    "precision": 74,
+    "speed": 74,
+    "resilience": 80,
+    "intelligence": 87,
+    "teamwork": 90
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "repo-ranger",
+  "seasonOneCard": null,
+  "displayNumber": 64,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/repo-ranger",
+  "avatarSvg": "assets/characters/repo-ranger/avatar.svg",
+  "cardSvg": "assets/characters/repo-ranger/card.svg"
+}

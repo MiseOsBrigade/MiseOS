@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.reliability-kit",
+  "name": "MiseOS Repository Reliability Kit",
+  "type": "template",
+  "version": "0.1.0",
+  "status": "active",
+  "owner": {"name": "MiseOS", "kind": "organization", "github": "Mise-OS"},
+  "description": "Repository reliability templates, issue templates, Dependabot configuration, CI starters, incident docs, and release checklists for MiseOS repositories.",
+  "artifacts": {"template": "templates/", "docs": "docs/reliability/", "workflows": ".github/workflows/reliability-*.yml"},
+  "capabilities": ["repo_health_check", "issue_intake_standardization", "dependabot_bootstrap", "multi_language_ci_bootstrap", "incident_template_support"],
+  "permissions": {"filesystem": ["read"], "github": ["contents:write via human-approved PR only"], "network": []},
+  "trust": {"licenseRequired": true, "sbomRequired": true, "provenanceRequired": true, "signedReleaseRequired": true, "artifactAttestationRequired": true, "scorecardRequired": true, "humanReviewRequiredFor": ["workflow_permission_change", "template_policy_change", "ci_language_expansion"]},
+  "changePolicy": {"major": "Human review required for policy defaults, workflow permissions, or branch protection expectations.", "minor": "Allowed for new templates and checklists.", "patch": "Allowed for wording, docs, and minor workflow fixes."},
+  "agentContract": {"loadStrategy": "manifest_plus_docs", "safeToRunWithoutHuman": false, "requiresNetwork": false, "outputs": ["repo_template_files", "checklists", "workflow_starters"], "executionMode": "advisory_write"},
+  "analytics": {"criticality": "high", "maturity": "beta", "riskWeight": 0.42, "operationalTier": "governance"},
+  "release": {"channel": "beta", "cadence": "updated with repository governance changes", "currentStrategy": "Apply through pull requests and keep CI workflows advisory until reviewed.", "nextMilestone": "Connect templates to repo-steward checks."},
+  "answers": {"what": "A repository reliability and governance starter kit.", "does": "Adds issue templates, PR templates, security docs, incident docs, CI starters, and Dependabot configuration.", "owner": "MiseOS / Mise-OS organization.", "permissions": "Advisory file changes only through reviewed pull requests.", "registry": "Repository template artifact inside miseos-bootstrap-registry.", "changed": "Integrated uploaded reliability kit into root templates, docs, and workflows.", "safe": "Safe when applied through PR review; workflow permission changes are human-gated.", "agentExecutable": "Agents may recommend or stage changes, but human review is required before writes."}
+}

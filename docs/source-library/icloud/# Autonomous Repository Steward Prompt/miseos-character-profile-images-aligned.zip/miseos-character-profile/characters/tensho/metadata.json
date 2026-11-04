@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.077",
+  "number": 77,
+  "slug": "tensho",
+  "name": "Tensho",
+  "mise_name": "Tensho",
+  "codename": "TENSHO",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Task Flow",
+  "job_name": "Task Flow",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Task Flow",
+    "avatar_path": "assets/characters/tensho/avatar.png",
+    "card_path": "assets/characters/tensho/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Tensho performs task flow within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Yume",
+      "Flash Riku",
+      "Build-Kun"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 68,
+    "precision": 83,
+    "speed": 71,
+    "resilience": 72,
+    "intelligence": 71,
+    "teamwork": 71
+  },
+  "paths": {
+    "readme": "characters/tensho/README.md",
+    "metadata": "characters/tensho/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

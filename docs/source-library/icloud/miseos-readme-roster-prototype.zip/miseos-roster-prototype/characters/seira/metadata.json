@@ -1,0 +1,78 @@
+{
+  "id": "seira",
+  "slug": "seira",
+  "number": 83,
+  "name": "Seira",
+  "miseName": "Mise Secure",
+  "codename": "chef.platform.secure",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "epic",
+  "roleCategory": "secure",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Sommelier",
+    "signaturePhrase": "Seira keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Protects secrets like fine wine. Security is her specialty."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen Secret Wine aura",
+    "silhouette": "chibi DevOps chef carrying Secret Wine",
+    "tool": "Secret Wine",
+    "spritePath": "/assets/characters/seira/full-body.png",
+    "cardPath": "/assets/characters/seira/card.png"
+  },
+  "workflow": {
+    "jobName": "Secure",
+    "roleName": "Sommelier microagent",
+    "summary": "Protects secrets like fine wine. Security is her specialty.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Platform Sensei",
+      "Kuro Guard"
+    ]
+  },
+  "stats": {
+    "power": 95,
+    "precision": 87,
+    "speed": 84,
+    "resilience": 99,
+    "intelligence": 81,
+    "teamwork": 95
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "10",
+    "role": "Sommelier",
+    "department": "Platform",
+    "function": "Secure",
+    "rarity": "Epic",
+    "tier": "Security Line",
+    "element": "Secret Wine",
+    "ability": "Vault Pairing",
+    "lore": "Protects secrets like fine wine. Security is her specialty.",
+    "image_file": "cards/png/010-seira.png",
+    "metadata_file": "metadata/erc721/010-seira.json"
+  },
+  "displayNumber": 83,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/seira",
+  "avatarSvg": "assets/characters/seira/avatar.svg",
+  "cardSvg": "assets/characters/seira/card.svg"
+}

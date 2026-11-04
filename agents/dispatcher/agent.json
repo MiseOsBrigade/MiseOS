@@ -1,0 +1,20 @@
+{
+  "slug": "dispatcher",
+  "name": "Dispatcher",
+  "kind": "brigade_mascot_agent",
+  "role": "Task Dispatcher",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:73",
+  "thumbnail": "agents/dispatcher/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--dispatcher.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/dispatcher.md",
+  "dir": "agents/dispatcher",
+  "files": [
+    "agents/dispatcher/Dispatcher.png"
+  ]
+}

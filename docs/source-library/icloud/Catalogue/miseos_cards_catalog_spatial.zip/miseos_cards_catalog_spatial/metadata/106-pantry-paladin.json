@@ -1,0 +1,196 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #106 — Pantry Paladin",
+  "description": "Pantry Paladin serves the Operations Kitchen as the brigade's provision steward. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/106-pantry-paladin.jpg",
+  "animation_url": "media/animation/106-pantry-paladin.mp4",
+  "external_url": "https://miseos.dev/agents/pantry-paladin",
+  "background_color": "D4AF37",
+  "spatial_screen": {
+    "card_id": "MISE-106",
+    "level": 23,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 22,
+      "aligned_pages": [
+        22
+      ],
+      "reference_image": "assets/reference/page-022.jpg",
+      "thumbnail": "assets/thumbnails/page-022.jpg",
+      "alignment_confidence": "medium",
+      "provenance": "photo_aligned_completion"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.106",
+    "number": 106,
+    "slug": "pantry-paladin",
+    "codename": "PANTRY_PALADIN",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Operations Kitchen",
+    "department_code": "operations",
+    "role": "Provision Steward",
+    "rarity": "Epic",
+    "rarity_tier": 3,
+    "level": 23
+  },
+  "lore": {
+    "summary": "Pantry Paladin serves the Operations Kitchen as the brigade's provision steward. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Pantry Paladin performs provision steward within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Ticket Tactician",
+      "Plate Inspector",
+      "Timer Tactician"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE PROVISION STEWARD",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Provision Steward Protocol",
+      "type": "active",
+      "effect": "Executes the core provision steward workflow with evidence capture.",
+      "command": "MISE PROVISION STEWARD"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next operations station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 68,
+    "precision": 78,
+    "speed": 82,
+    "resilience": 86,
+    "intelligence": 78,
+    "teamwork": 76
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Provision Steward"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Level",
+      "value": 23,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "photo_aligned_completion"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "medium"
+    },
+    {
+      "trait_type": "Power",
+      "value": 68,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 86,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 76,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/106-pantry-paladin.jpg",
+    "reference_art": "assets/reference/page-022.jpg",
+    "thumbnail": "assets/thumbnails/page-022.jpg",
+    "animation": {
+      "uri": "media/animation/106-pantry-paladin.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/106-pantry-paladin.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/106-pantry-paladin.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/106-pantry-paladin.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/106-pantry-paladin.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

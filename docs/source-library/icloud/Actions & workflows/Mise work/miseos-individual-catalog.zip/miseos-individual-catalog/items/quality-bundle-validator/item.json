@@ -1,0 +1,13 @@
+{
+  "id": "quality-bundle-validator",
+  "category": "quality",
+  "title": "Foundry Bundle Validator",
+  "description": "Validation script for the normalized Foundry source layout. Useful when keeping the Foundry layout intact.",
+  "dependencies": [
+    "PyYAML>=6,<7"
+  ],
+  "files": [
+    "scripts/validate_bundle.py"
+  ],
+  "notes": []
+}

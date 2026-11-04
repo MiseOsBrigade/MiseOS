@@ -1,0 +1,18 @@
+{
+  "slug": "agent-docs-updater",
+  "name": "Documentation Updater gh-aw Source",
+  "kind": "agentic_workflow",
+  "role": "Bounded documentation drift updater with pull-request safe output.",
+  "source": "icloud/Actions & workflows/Mise work/miseos-individual-catalog.zip/miseos-individual-catalog/items/agent-docs-updater/item.json",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/agent-docs-updater.md",
+  "dir": "agents/agent-docs-updater",
+  "files": [
+    "agents/agent-docs-updater/README.md",
+    "agents/agent-docs-updater/item.json",
+    "agents/agent-docs-updater/install.sh",
+    "agents/agent-docs-updater/payload/.github/workflows/docs-updater.md"
+  ]
+}

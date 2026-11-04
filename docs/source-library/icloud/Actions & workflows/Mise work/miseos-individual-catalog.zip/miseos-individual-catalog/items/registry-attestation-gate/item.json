@@ -1,0 +1,17 @@
+{
+  "id": "registry-attestation-gate",
+  "category": "registry-capability",
+  "title": "MiseOS Attestation Gate",
+  "description": "Executable baseline capability for MiseOS Attestation Gate.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.attestation-gate.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: attestationGate",
+    "Source status: active"
+  ]
+}

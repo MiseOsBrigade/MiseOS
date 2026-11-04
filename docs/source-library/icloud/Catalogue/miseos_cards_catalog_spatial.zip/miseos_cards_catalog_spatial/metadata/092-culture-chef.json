@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #092 — Culture Chef",
+  "description": "Culture Chef serves the Data & Insight Kitchen as the brigade's grow. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/092-culture-chef.svg",
+  "animation_url": "media/animation/092-culture-chef.mp4",
+  "external_url": "https://miseos.dev/agents/culture-chef",
+  "background_color": "17A2A4",
+  "spatial_screen": {
+    "card_id": "MISE-092",
+    "level": 25,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.092",
+    "number": 92,
+    "slug": "culture-chef",
+    "codename": "CULTURE_CHEF",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Data & Insight Kitchen",
+    "department_code": "data-insight",
+    "role": "Grow",
+    "rarity": "Legendary",
+    "rarity_tier": 4,
+    "level": 25
+  },
+  "lore": {
+    "summary": "Culture Chef serves the Data & Insight Kitchen as the brigade's grow. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Culture Chef performs grow within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Taxonomy Taka",
+      "Lake Haru",
+      "Lattice"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE GROW",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Grow Protocol",
+      "type": "active",
+      "effect": "Executes the core grow workflow with evidence capture.",
+      "command": "MISE GROW"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next data-insight station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 86,
+    "precision": 76,
+    "speed": 60,
+    "resilience": 89,
+    "intelligence": 82,
+    "teamwork": 82
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Data & Insight Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Grow"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Level",
+      "value": 25,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 86,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 60,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 89,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 82,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/092-culture-chef.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/092-culture-chef.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/092-culture-chef.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/092-culture-chef.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/092-culture-chef.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/092-culture-chef.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

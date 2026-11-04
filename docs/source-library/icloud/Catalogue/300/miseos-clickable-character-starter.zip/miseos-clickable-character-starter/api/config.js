@@ -1,0 +1,7 @@
+function requireEnv(name){const v=process.env[name];if(!v||!v.trim())throw new Error(`Missing required environment variable: ${name}`);return v.trim();}
+function optionalEnv(name,fallback=''){const v=process.env[name];return v&&v.trim()?v.trim():fallback;}
+function parsePort(v){const p=Number.parseInt(v,10);if(!Number.isInteger(p)||p<1||p>65535)throw new Error('Invalid PORT');return p;}
+function validateUrl(name,v){try{return new URL(v).toString();}catch{throw new Error(`Invalid ${name}`);}}
+function validateOptionalEvmAddress(v){if(!v)return '';if(!/^0x[a-fA-F0-9]{40}$/.test(v))throw new Error('Invalid NFT_CONTRACT_ADDRESS');return v.toLowerCase();}
+export function validateEnv(){const walletMode=optionalEnv('WALLET_MODE','none');if(!['none','evm','neo-onegate'].includes(walletMode))throw new Error('WALLET_MODE must be none, evm, or neo-onegate');const rpcUrl=optionalEnv('RPC_URL','');const nft=optionalEnv('NFT_CONTRACT_ADDRESS','');if(walletMode==='evm'){requireEnv('RPC_URL');requireEnv('NFT_CONTRACT_ADDRESS');}
+return Object.freeze({nodeEnv:optionalEnv('NODE_ENV','development'),port:parsePort(optionalEnv('PORT','3000')),frontendUrl:validateUrl('FRONTEND_URL',optionalEnv('FRONTEND_URL','http://localhost:3000')),registrySha256:optionalEnv('REGISTRY_SHA256',''),walletMode,rpcUrl:rpcUrl?validateUrl('RPC_URL',rpcUrl):'',nftContractAddress:validateOptionalEvmAddress(nft),amplitudeApiKey:optionalEnv('AMPLITUDE_API_KEY',''),oneGateNetwork:optionalEnv('ONEGATE_NETWORK','testnet')});}

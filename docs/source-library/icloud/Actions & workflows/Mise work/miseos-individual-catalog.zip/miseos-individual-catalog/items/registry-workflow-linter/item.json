@@ -1,0 +1,17 @@
+{
+  "id": "registry-workflow-linter",
+  "category": "registry-capability",
+  "title": "MiseOS Workflow Linter",
+  "description": "Executable baseline capability for MiseOS Workflow Linter.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.workflow-linter.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: workflowLinter",
+    "Source status: active"
+  ]
+}

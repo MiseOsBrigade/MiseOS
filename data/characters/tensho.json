@@ -1,0 +1,437 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "tensho",
+  "name": "Tensho",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/tensho/metadata.json",
+    "role": "characters/tensho/metadata.json",
+    "department": "characters/tensho/metadata.json",
+    "rarity": "characters/tensho/metadata.json",
+    "workflow.summary": "characters/tensho/metadata.json",
+    "workflow.inputs": "characters/tensho/metadata.json",
+    "workflow.outputs": "characters/tensho/metadata.json",
+    "workflow.proof_gate": "characters/tensho/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/tensho/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
+  },
+  "registry": {
+    "number": 20,
+    "profile": "characters/tensho/README.md",
+    "metadata": "characters/tensho/metadata.json",
+    "avatar": "assets/characters/tensho/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/tensho.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/tensho.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Tensho",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/tensho.webp",
+      "thumbnail": "assets/player-cards/icloud-screens/thumbs/tensho.webp",
+      "collection": "icloud-screens",
+      "title": "TENSHO",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/tensho-2.webp",
+      "thumbnail": "assets/player-cards/icloud-screens/thumbs/tensho-2.webp",
+      "collection": "icloud-screens",
+      "title": "Tensho",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "icloud-screens",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/tensho.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "NO.002",
+        "Tensho",
+        "MO",
+        "RARE-Service Line",
+        "Expediter|Pipeline",
+        "ABILITY:OrderSynchronizer",
+        "Keeps the orders flowing. Chaos cannot stop the rush.",
+        "Element:Rush Ticket·Function:TaskFlow",
+        "FLOW",
+        "SPEED",
+        "89",
+        "DEPLOY",
+        "81",
+        "·ORCHESTRATE·DEPLOY",
+        "PROVENANCE-READY",
+        "MONIOR"
+      ]
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/tensho.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "Cook. Orchestrate. Deploy.",
+        "OFFICIALAGENT LINEUP",
+        "TENSHO",
+        "MIZU",
+        "UMAMICODE",
+        "KAJI",
+        "CELESTIALSTRATEGIST",
+        "DATAALCHEMIST",
+        "FLOW ENGINEER",
+        "KUROGAMISENPAI",
+        "KITCHENTECH",
+        "MASTERORCHESTRATOR",
+        "02",
+        "ONE KITCHEN. ONE ORCHESTRA."
+      ]
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/tensho-2.webp",
+      "printed_text": [
+        "MISE ORCHESTRA:",
+        "The Cognitive Operating System of the Great Kitchen",
+        "The Pipeline Faction",
+        "The PlatformFaction",
+        "(Delivery)",
+        "PublicFaxing",
+        "Projection",
+        "(Foundations)",
+        "Tensho",
+        "Narrative",
+        "Umami Code",
+        "\"Sumire\"",
+        "(Expediter)",
+        "System",
+        "(Saucier)",
+        "Ouspets&",
+        "(Resl-World",
+        "Signals",
+        "Operations)",
+        "Tier3:The Interface Layer",
+        "(TheArchitect'sSignal)",
+        "Operational",
+        "Bachbone",
+        "High-speed CVCD",
+        "Artifact",
+        "Connect API",
+        "Procision the'stage\"",
+        "\"RushCycles”",
+        "creation",
+        "streams",
+        "Tier2:TheExecutionLayer",
+        "where services like",
+        "\"Chost",
+        "(Mize Ecosystem)",
+        "Commits",
+        "The Security Faction",
+        "Bug Eaters",
+        "The ReliabilityFaction",
+        "(Protection)",
+        "\"Wize'Urchesciaters",
+        "(Uptiine)",
+        "&Autonomous Agents",
+        "Seira",
+        "Kuro Guard",
+        "Noll-Chan",
+        "(Sommolier)",
+        "(Plungeur)",
+        "Mise",
+        "Entropy",
+        "(Ordes)",
+        "(Chaos)",
+        "Task",
+        "Compute",
+        "Performance",
+        "Acceleration",
+        "Tier 1:The Principles Layer",
+        "(ETHOS-AEGIS)",
+        "Managing the",
+        "Defending",
+        "Cloen the\"void'of",
+        "Maintain",
+        "againstentrepy",
+        "forgotion things",
+        "Vault\"of secrets",
+        "FLIs/ELOs",
+        "Constraint System",
+        "Logic Lattice",
+        "defining allowed",
+        "informing all",
+        "behaviors",
+        "lower systems",
+        "The Engine of Order",
+        "The Data Faction",
+        "(TechnicalArchitecture)",
+        "(Insight)",
+        "Ethical",
+        "NowE reody",
+        "Governance",
+        "The Governed Task Lifecycle",
+        "graph",
+        "architecture",
+        "Streama",
+        "(Poizsonier)",
+        "Queued",
+        "Chaneling the",
+        "Planned",
+        "infirtiteRows",
+        "\"Ethical Gete\"",
+        "of information",
+        "(ETHOS-AEGIS)",
+        "Assignedto",
+        "a specialist",
+        "Planned",
+        "agent",
+        "75Specialized Agent Roles",
+        "The Mythic\"Orchestra Core\"",
+        "SecretManagement&RBAC",
+        "(ORC-000)",
+        "\"Data Koi\"",
+        "Scales fromGenesis 12\"founders",
+        "•HacllCarp Msult ferepkemacal tokens",
+        "to 75unique character variants",
+        "·Strict\"Human-in the leonapproval",
+        "Mythiccenltalisencclecaness",
+        "UHimate\"sprik\"andcreate",
+        "-Frve distinct engineering catlures",
+        "workflowforhigh-criticality(PS)actions",
+        "Universal synchronization",
+        "NotebookLM"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 22,
+  "orchestra_card": {
+    "role": "Expediter",
+    "department": "Pipeline",
+    "function": "Task Flow",
+    "rarity": "Rare",
+    "tier": "Service Line",
+    "element": "Rush Ticket",
+    "ability": "Order Synchronizer",
+    "lore": "Keeps the orders flowing. Chaos cannot stop the rush."
+  },
+  "abilities": [
+    "Order Synchronizer"
+  ],
+  "profile_doc": "characters/tensho/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 233,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 91,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/brigade-gallery/src/types/master-roster.ts",
+        "line": 80,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 83,
+        "term": "Tensho"
+      }
+    ],
+    "code_ref_count": 4,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 796,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 21,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/002-tensho.json",
+        "line": 2,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/voxel-world/src/data/agents.json",
+        "line": 491,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 796,
+        "term": "Tensho"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 3,
+        "term": "Tensho"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 21,
+        "term": "Tensho"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 231,
+        "term": "Tensho"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 231,
+        "term": "Tensho"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 2075,
+        "term": "Tensho"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 11,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 5,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 15,
+        "term": "Tensho"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Tensho"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 83,
+        "term": "Tensho"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-077",
+    "character_id": "miseos.character.077",
+    "card_id": "MISE-077",
+    "codename": "TENSHO"
+  },
+  "role": "Task Flow",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Rare",
+  "lore": "Tensho belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Tensho performs task flow within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE TASK FLOW",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 68,
+    "precision": 83,
+    "speed": 71,
+    "resilience": 72,
+    "intelligence": 71,
+    "teamwork": 71
+  },
+  "related": [
+    {
+      "name": "Yume",
+      "slug": "yume"
+    },
+    {
+      "name": "Flash Riku",
+      "slug": "flash-riku"
+    },
+    {
+      "name": "Build-Kun",
+      "slug": "build-kun"
+    }
+  ],
+  "helps": {
+    "station": "Pipeline Kitchen",
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Tensho performs task flow within the Pipeline Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [
+    {
+      "slug": "tensho",
+      "name": "Tensho",
+      "page": "docs/agents/tensho.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "tensho",
+      "name": "Tensho",
+      "page": "docs/repo-pets/tensho.md"
+    }
+  ]
+}

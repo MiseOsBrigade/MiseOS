@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.orchestra-role-registry",
+  "name": "MiseOS Orchestra Role Registry",
+  "type": "package",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {"name": "MiseOS", "kind": "organization", "github": "Mise-OS"},
+  "description": "Structured Mise Orchestra role, department, metaphor, and registry-binding metadata for the MiseOS Bootstrap Registry.",
+  "artifacts": {"npm": "@mise-os/orchestra-registry", "data": "registry/orchestra/roles.json"},
+  "capabilities": ["load_orchestra_roles", "map_devops_metaphors", "summarize_departments", "bind_roles_to_registry_lanes"],
+  "permissions": {"filesystem": ["read"], "network": [], "github": []},
+  "trust": {"licenseRequired": true, "sbomRequired": true, "provenanceRequired": true, "signedReleaseRequired": true, "artifactAttestationRequired": true, "scorecardRequired": true, "humanReviewRequiredFor": ["role_meaning_change", "department_mapping_change", "registry_binding_change"]},
+  "changePolicy": {"major": "Human review required for ontology changes, department restructuring, or registry binding changes.", "minor": "Allowed for adding roles, mappings, and analytics fields.", "patch": "Allowed for wording, typo, and metadata corrections."},
+  "agentContract": {"loadStrategy": "manifest_plus_docs", "safeToRunWithoutHuman": true, "requiresNetwork": false, "outputs": ["json_summary", "role_map"], "executionMode": "read_only"},
+  "analytics": {"criticality": "medium", "maturity": "alpha", "riskWeight": 0.22, "operationalTier": "bootstrap"},
+  "release": {"channel": "alpha", "cadence": "manual with source-material review", "currentStrategy": "Keep as internal registry data until MiseOS taxonomy stabilizes.", "nextMilestone": "Generate role cards and registry-lane dashboards."},
+  "answers": {"what": "A structured role and metaphor data package for Mise Orchestra.", "does": "Maps departments, characters, and culinary DevOps metaphors into machine-readable registry data.", "owner": "MiseOS / Mise-OS organization.", "permissions": "Read-only local data access.", "registry": "GitHub npm registry under @mise-os after taxonomy review.", "changed": "Added orchestra role/departments JSON and a package wrapper for programmatic loading.", "safe": "Safe because it exposes static metadata only and requires review for taxonomy changes.", "agentExecutable": "Yes, agents can load it to classify registry lanes and explain MiseOS roles."}
+}

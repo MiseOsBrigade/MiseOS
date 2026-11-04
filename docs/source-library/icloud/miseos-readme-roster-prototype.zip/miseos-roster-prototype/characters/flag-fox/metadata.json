@@ -1,0 +1,68 @@
+{
+  "id": "flag-fox",
+  "number": 66,
+  "name": "Flag Fox",
+  "miseName": "Mise FeatureFlagAnalytics",
+  "codename": "chef.data-insight.feature-flag-analytics",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Finnish",
+    "title": "Feature Flag Analytics",
+    "signaturePhrase": "Feature Flag Analytics done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in feature flag analytics so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen feature flag analytics aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/flag-fox/full-body.png",
+    "cardPath": "/assets/characters/flag-fox/card.png"
+  },
+  "workflow": {
+    "jobName": "Feature Flag Analytics",
+    "roleName": "Feature Flag Analytics microagent",
+    "summary": "Runs feature flag analytics for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "DORA Daichi",
+      "Cost Kaito",
+      "Seira Scan",
+      "Vault Hana"
+    ]
+  },
+  "stats": {
+    "power": 82,
+    "precision": 88,
+    "speed": 92,
+    "resilience": 78,
+    "intelligence": 92,
+    "teamwork": 80
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "flag-fox",
+  "seasonOneCard": null,
+  "displayNumber": 66,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/flag-fox",
+  "avatarSvg": "assets/characters/flag-fox/avatar.svg",
+  "cardSvg": "assets/characters/flag-fox/card.svg"
+}

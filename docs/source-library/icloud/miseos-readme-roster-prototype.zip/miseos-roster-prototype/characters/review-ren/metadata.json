@@ -1,0 +1,68 @@
+{
+  "id": "review-ren",
+  "number": 39,
+  "name": "Review Ren",
+  "miseName": "Mise PostIncidentReview",
+  "codename": "chef.reliability.post-incident-review",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "common",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Post-Incident Review",
+    "signaturePhrase": "Post-Incident Review done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in post-incident review so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen post-incident review aura",
+    "silhouette": "multinational chibi DevOps chef carrying a scroll",
+    "tool": "scroll",
+    "spritePath": "/assets/characters/review-ren/full-body.png",
+    "cardPath": "/assets/characters/review-ren/card.png"
+  },
+  "workflow": {
+    "jobName": "Post-Incident Review",
+    "roleName": "Post-Incident Review microagent",
+    "summary": "Runs post-incident review for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "OnCall Naomi",
+      "Backlog Benji",
+      "Nina Promoter",
+      "Umami Code"
+    ]
+  },
+  "stats": {
+    "power": 77,
+    "precision": 80,
+    "speed": 91,
+    "resilience": 81,
+    "intelligence": 83,
+    "teamwork": 93
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "review-ren",
+  "seasonOneCard": null,
+  "displayNumber": 39,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/review-ren",
+  "avatarSvg": "assets/characters/review-ren/avatar.svg",
+  "cardSvg": "assets/characters/review-ren/card.svg"
+}

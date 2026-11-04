@@ -1,0 +1,18 @@
+{
+  "slug": "flag-fox",
+  "name": "Flag Fox",
+  "kind": "animal_character",
+  "species": "fox",
+  "species_source": "animal word in the name",
+  "role": "Feature Flag Analytics",
+  "department": "Data & Insight Kitchen",
+  "sprites": [
+    "assets/characters/flag-fox/profile.svg"
+  ],
+  "behaviors": {},
+  "source": "data/characters/flag-fox.json",
+  "character": "flag-fox",
+  "cards": [],
+  "page": "docs/repo-pets/flag-fox.md",
+  "dir": "assets/repo-pets/flag-fox"
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #044 — Impact Ichi",
+  "description": "Impact Ichi serves the Reliability Kitchen as the brigade's customer impact simulator. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/044-impact-ichi.svg",
+  "animation_url": "media/animation/044-impact-ichi.mp4",
+  "external_url": "https://miseos.dev/agents/impact-ichi",
+  "background_color": "2E6B4E",
+  "spatial_screen": {
+    "card_id": "MISE-044",
+    "level": 19,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.044",
+    "number": 44,
+    "slug": "impact-ichi",
+    "codename": "IMPACT_ICHI",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Reliability Kitchen",
+    "department_code": "reliability",
+    "role": "Customer Impact Simulator",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 19
+  },
+  "lore": {
+    "summary": "Impact Ichi serves the Reliability Kitchen as the brigade's customer impact simulator. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Impact Ichi performs customer impact simulator within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Reliability Sensei",
+      "Null-chan",
+      "SLO Sage"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE CUSTOMER IMPACT SIMULATOR",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Customer Impact Simulator Protocol",
+      "type": "active",
+      "effect": "Executes the core customer impact simulator workflow with evidence capture.",
+      "command": "MISE CUSTOMER IMPACT SIMULATOR"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next reliability station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 60,
+    "precision": 76,
+    "speed": 72,
+    "resilience": 77,
+    "intelligence": 79,
+    "teamwork": 78
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Reliability Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Customer Impact Simulator"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 19,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 60,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 72,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 77,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 79,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 78,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/044-impact-ichi.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/044-impact-ichi.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/044-impact-ichi.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/044-impact-ichi.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/044-impact-ichi.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/044-impact-ichi.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "lattice",
+  "name": "Lattice",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "ids.registry_id": "characters/lattice/metadata.json",
+    "role": "characters/lattice/metadata.json",
+    "department": "characters/lattice/metadata.json",
+    "rarity": "characters/lattice/metadata.json",
+    "workflow.summary": "characters/lattice/metadata.json",
+    "workflow.inputs": "characters/lattice/metadata.json",
+    "workflow.outputs": "characters/lattice/metadata.json",
+    "workflow.proof_gate": "characters/lattice/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv data/imports/merged_roster.json data/imports/merged_roster.json data/imports/merged_roster.json",
+    "signature_phrase": "data/imports/merged_roster.json",
+    "unique_trait": "data/imports/merged_roster.json",
+    "role_category": "data/imports/merged_roster.json",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/lattice/metadata.json"
+  },
+  "registry": {
+    "number": 84,
+    "profile": "characters/lattice/README.md",
+    "metadata": "characters/lattice/metadata.json",
+    "avatar": "assets/characters/lattice/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/character-building/lattice.webp",
+      "thumbnail": "assets/player-cards/character-building/thumbs/lattice.webp",
+      "collection": "character-building",
+      "title": "Lattience",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/character-building/lattice-2.webp",
+      "thumbnail": "assets/player-cards/character-building/thumbs/lattice-2.webp",
+      "collection": "character-building",
+      "title": "LATTICE",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "character-building"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/character-building/lattice.webp",
+      "printed_text": [
+        "MiseOrchestra",
+        "Everythinginitsplace,foreveryrepo.",
+        "Mise-Maestro",
+        "Mise-Conductor",
+        "Italy",
+        "Japan",
+        "Mise-Somelleir",
+        "PRhygiene",
+        "UK",
+        "Mise-Brigiadier",
+        "Mise-Sauce",
+        "India",
+        "Steward",
+        "Repo-Brooestap",
+        "France",
+        "GPU",
+        "China",
+        "Mise-Runtime",
+        "Mise-Locker",
+        "Repo-Runtime",
+        "Mise-Soul",
+        "Lattience",
+        "Mise-Architect",
+        "Telemescery",
+        "Apprenice",
+        "Kenya",
+        "Kerela",
+        "USA"
+      ]
+    },
+    {
+      "file": "assets/player-cards/character-building/lattice-2.webp",
+      "printed_text": [
+        "Mise",
+        "Orchestra",
+        "Everything in its place,",
+        "foreveryrepo.",
+        "MISE-MAEETRO",
+        "MISE-BRIEADIER",
+        "MISE-BRIGADIER",
+        "MISE-SEARCE",
+        "-USA",
+        "-France",
+        "-Japan",
+        "-USA",
+        "MISE-GARDE",
+        "MISE-SAUCE",
+        "MISE-BOOSTIAP",
+        "MISE-LOCKER",
+        "MISE-GPU",
+        "-India",
+        "Brazil",
+        "Brazil",
+        "-China",
+        "-UK",
+        "MISE-RUNTIME",
+        "MISE-AONETT",
+        "MISE-RUNTIME",
+        "MISE-CONDCTOR",
+        "MISE-RUNTIME",
+        "-China",
+        "-GK",
+        "- Italy",
+        "-UK",
+        "-China",
+        "MISE-TRACE",
+        "LATTICE",
+        "SOUTHKOREA",
+        "SOUL",
+        "APPRENICE",
+        "-Kenya",
+        "Genda",
+        "SouthKorea",
+        "Mexico",
+        "-Australia"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 28,
+  "unique_trait": "Specializes in trace correlator so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
+  "role_category": "automation",
+  "profile_doc": "characters/lattice/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/4d-playground/src/data/assets.ts",
+        "line": 7,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 925,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 678,
+        "term": "Lattice"
+      },
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 95,
+        "term": "Lattice"
+      }
+    ],
+    "code_ref_count": 4,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 877,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 3771,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 3771,
+        "term": "Lattice"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 3583,
+        "term": "Lattice"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 9,
+        "term": "Lattice"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 9,
+        "term": "Lattice"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 73,
+        "term": "Lattice"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/4d-playground/README.md",
+        "line": 64,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 27,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/miseos-platform/README_3D_CHARACTER_CAROUSEL.md",
+        "line": 167,
+        "term": "Lattice"
+      },
+      {
+        "path": "apps/miseos-platform/characters.html",
+        "line": 1,
+        "term": "Lattice"
+      },
+      {
+        "path": "tools/repo-pet/README.md",
+        "line": 124,
+        "term": "Lattice"
+      },
+      {
+        "path": "tools/repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 18,
+        "term": "Lattice"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 95,
+        "term": "Lattice"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-063",
+    "character_id": "miseos.character.063",
+    "card_id": "MISE-063",
+    "codename": "LATTICE"
+  },
+  "role": "Trace Correlator",
+  "department": "Data & Insight Kitchen",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "rarity": "Genesis",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Trace Correlator done cleanly, safely, and in rhythm.",
+  "workflow": {
+    "summary": "Lattice performs trace correlator within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE TRACE CORRELATOR",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    },
+    {
+      "command": "Trace Correlator",
+      "mise_name": "Mise TraceCorrelator",
+      "source": "data/imports/merged_roster.json"
+    }
+  ],
+  "stats": {
+    "power": 74,
+    "precision": 92,
+    "speed": 58,
+    "resilience": 74,
+    "intelligence": 67,
+    "teamwork": 83
+  },
+  "related": [
+    {
+      "name": "Repo Ranger",
+      "slug": "repo-ranger"
+    },
+    {
+      "name": "DORA Daichi",
+      "slug": "dora-daichi"
+    },
+    {
+      "name": "Flag Fox",
+      "slug": "flag-fox"
+    },
+    {
+      "name": "Lake Haru",
+      "slug": "lake-haru"
+    },
+    {
+      "name": "Lila Branchkeeper",
+      "slug": "lila-branchkeeper"
+    },
+    {
+      "name": "Terra Forge",
+      "slug": "terra-forge"
+    }
+  ],
+  "helps": {
+    "station": "Data & Insight Kitchen",
+    "mission": "Learn. Optimize. Evolve.",
+    "problem": "Lattice performs trace correlator within the Data & Insight Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [],
+  "repo_pets": []
+}

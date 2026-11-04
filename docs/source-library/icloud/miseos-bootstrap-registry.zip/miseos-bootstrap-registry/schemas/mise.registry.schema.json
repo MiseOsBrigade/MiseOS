@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/mise.registry.schema.json",
+  "title": "MiseOS Registry Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "type",
+    "version",
+    "status",
+    "owner",
+    "description",
+    "artifacts",
+    "capabilities",
+    "permissions",
+    "trust",
+    "changePolicy",
+    "agentContract"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^miseos\\.[a-z0-9][a-z0-9.-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "package",
+        "container",
+        "agent",
+        "policy",
+        "workflow",
+        "template",
+        "sdk"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(-[A-Za-z0-9.-]+)?$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "experimental",
+        "active",
+        "deprecated",
+        "archived"
+      ]
+    },
+    "owner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "kind"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "person",
+            "team",
+            "organization"
+          ]
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "minProperties": 1
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "permissions": {
+      "type": "object"
+    },
+    "trust": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "licenseRequired",
+        "sbomRequired",
+        "provenanceRequired",
+        "signedReleaseRequired",
+        "humanReviewRequiredFor"
+      ],
+      "properties": {
+        "licenseRequired": {
+          "type": "boolean"
+        },
+        "sbomRequired": {
+          "type": "boolean"
+        },
+        "provenanceRequired": {
+          "type": "boolean"
+        },
+        "signedReleaseRequired": {
+          "type": "boolean"
+        },
+        "humanReviewRequiredFor": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "changePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "properties": {
+        "major": {
+          "type": "string"
+        },
+        "minor": {
+          "type": "string"
+        },
+        "patch": {
+          "type": "string"
+        }
+      }
+    },
+    "agentContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "loadStrategy",
+        "safeToRunWithoutHuman",
+        "requiresNetwork",
+        "outputs"
+      ],
+      "properties": {
+        "loadStrategy": {
+          "type": "string",
+          "enum": [
+            "manifest_only",
+            "manifest_plus_docs",
+            "full_context"
+          ]
+        },
+        "safeToRunWithoutHuman": {
+          "type": "boolean"
+        },
+        "requiresNetwork": {
+          "type": "boolean"
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

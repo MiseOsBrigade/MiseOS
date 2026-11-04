@@ -1,0 +1,106 @@
+{
+  "workspace": {
+    "id": "workspace_demo",
+    "name": "MiseOS GridOps Demo Workspace",
+    "owner": "The Daily Dig"
+  },
+  "repos": [
+    {
+      "id": "repo_mise_os",
+      "owner": "MiseOsBrigade",
+      "name": "Mise-OS",
+      "url": "https://github.com/MiseOsBrigade/Mise-OS",
+      "primaryLanguage": "TypeScript",
+      "framework": "Node",
+      "packageManager": "pnpm",
+      "ciProvider": "GitHub Actions",
+      "healthScore": 71,
+      "riskLevel": "medium",
+      "status": "active"
+    },
+    {
+      "id": "repo_shimeji_mint",
+      "owner": "MiseOsBrigade",
+      "name": "MiseOS-shimeji-mint",
+      "url": "https://github.com/MiseOsBrigade/MiseOS-shimeji-mint",
+      "primaryLanguage": "JavaScript",
+      "framework": "Web",
+      "packageManager": "npm",
+      "ciProvider": "GitHub Actions",
+      "healthScore": 64,
+      "riskLevel": "medium",
+      "status": "active"
+    },
+    {
+      "id": "repo_recipe_sheet",
+      "owner": "MiseOsBrigade",
+      "name": "Mise-en-recipe-Knowledge-Sheet",
+      "url": "https://github.com/MiseOsBrigade/Mise-en-recipe-Knowledge-Sheet",
+      "primaryLanguage": "Markdown",
+      "framework": "Docs",
+      "packageManager": "none",
+      "ciProvider": "GitHub Actions",
+      "healthScore": 82,
+      "riskLevel": "low",
+      "status": "active"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_ci_repair_001",
+      "repoId": "repo_mise_os",
+      "title": "Repair failing Node setup in CI",
+      "taskType": "ci",
+      "priority": "P1",
+      "status": "ready",
+      "assignedAgentId": "agent_mise_garde",
+      "approvalRequired": true,
+      "validationRequired": [
+        "lint",
+        "test",
+        "build"
+      ]
+    },
+    {
+      "id": "task_registry_001",
+      "repoId": "repo_mise_os",
+      "title": "Check package registry drift for @miseos/gridops",
+      "taskType": "package",
+      "priority": "P2",
+      "status": "backlog",
+      "assignedAgentId": "agent_mise_forge",
+      "approvalRequired": true,
+      "validationRequired": [
+        "version",
+        "changelog",
+        "build"
+      ]
+    },
+    {
+      "id": "task_secret_001",
+      "repoId": "repo_shimeji_mint",
+      "title": "Harden .gitignore and scan for sensitive files",
+      "taskType": "security",
+      "priority": "P1",
+      "status": "ready",
+      "assignedAgentId": "agent_mise_sentinel",
+      "approvalRequired": true,
+      "validationRequired": [
+        "secret_scan"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence_demo_001",
+      "taskId": "task_ci_repair_001",
+      "repoId": "repo_mise_os",
+      "sourceType": "log",
+      "sourcePath": "github-actions/run/demo",
+      "claim": "CI failure appears related to package manager setup.",
+      "certainty": "INFERRED",
+      "observedOutput": "Demo log: pnpm command unavailable during install step.",
+      "validator": "agent_mise_auditor"
+    }
+  ]
+}

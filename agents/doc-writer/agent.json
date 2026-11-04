@@ -1,0 +1,20 @@
+{
+  "slug": "doc-writer",
+  "name": "Doc Writer",
+  "kind": "brigade_mascot_agent",
+  "role": "Documentation Scribe",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:114",
+  "thumbnail": "agents/doc-writer/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--doc-writer.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/doc-writer.md",
+  "dir": "agents/doc-writer",
+  "files": [
+    "agents/doc-writer/Doc-Writer.png"
+  ]
+}

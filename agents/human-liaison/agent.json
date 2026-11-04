@@ -1,0 +1,20 @@
+{
+  "slug": "human-liaison",
+  "name": "Human Liaison",
+  "kind": "brigade_mascot_agent",
+  "role": "Human-in-the-Loop",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:62",
+  "thumbnail": "agents/human-liaison/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--human-liaison.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/human-liaison.md",
+  "dir": "agents/human-liaison",
+  "files": [
+    "agents/human-liaison/Human-Liaison.png"
+  ]
+}

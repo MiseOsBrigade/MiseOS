@@ -1,0 +1,141 @@
+All
+Dify 101
+Customer Service & Operations
+Knowledge Retrieval
+Data Analysis
+Marketing
+AI Coding
+Research
+Utilities
+📂
+File Translation
+CHATFLOW
+Upload PDFs or documents and get high-quality translations in seconds.
+💼
+Workflow Basic: Business Card Reader
+WORKFLOW
+Convert business cards into structured digital data with a basic workflow.
+🔥
+Text Polishing · Translation Tool
+WORKFLOW
+This is an intelligent assistant powered by a large language model, specializing in rewriting English technical articles (in fields such as AI, programming, product development, and business) into high-quality Chinese.
+📝
+Personalized Memory Assistant
+CHATFLOW
+An AI that actually gets to know you. This template uses memory logic to extract and store facts, preferences, and details from your conversation in real-time.
+🎯
+Lead Qualifier Automation
+WORKFLOW
+Enter a name, email, and company, this workflow researches the company online, scores and labels it based on your ideal. Wait for your approval before any action is taken.
+📝
+Multi-Channel Content Generation
+WORKFLOW
+Turn one product description into ready-to-publish content for three channels with final human approval before anything is online.
+🗃️
+Batch Resume Screener
+WORKFLOW
+Upload a batch of resumes plus a job description. Get every candidate scored by must-have skills and ranked.
+💬
+Chatflow Basic: Chatbot
+CHATFLOW
+Smart chatbot with built-in memory for long conversations.
+🔍
+DeepResearch
+CHATFLOW
+input what you want to search for, and it will repeatedly execute searches to create a report
+📝
+Doc Extractor: AI Summarizer
+WORKFLOW
+Upload a file and get a clean and organized summary.
+🏥
+Patient Intake Chatbot
+CHATFLOW
+This assistant uses multi-turn logic to collect patient's information like age, symptoms, and gender, while identifies missing information and asks follow-up questions.
+🤖
+Knowledge Retrieval: A Smart Chatbot
+CHATFLOW
+Build a smart chatbot that answers questions based on your own knowledge base.
+🧑‍🤝‍🧑
+Meeting Minutes and Summary
+CHATBOT
+Transform messy meeting transcripts into structured notes instantly.
+🔀
+Question Classifier: Front Desk Receptionist
+WORKFLOW
+Digital receptionist that sorts and routes users inquiries to specialized AI agents based on their intent.
+🧐
+If/Else: Mythbuster
+WORKFLOW
+Find out if your statement is a fact or a myth.
+🔢
+YouTube Channel Data Analysis
+AGENT
+I am a YouTube Channel Data Analysis Copilot, I am here to provide expert data analysis tailored to your needs.
+📰
+Tool: Daily News Digest
+CHATFLOW
+Stay on top of any topic with real-time news summaries.
+🤖
+Customer Review Analysis Workflow
+WORKFLOW
+Utilize LLM (Large Language Models) to classify customer reviews and forward them to the internal system.
+📑
+Agent & Template: Market Research Agent
+WORKFLOW
+Paste a company website URL and this workflow will generate a basic structured market research report.
+💫
+research agent process flow
+CHATFLOW
+Deep Research workflow built with iteration, reasons, and sources until the answer is complete.
+🔗
+Code: UTM Link Builder
+WORKFLOW
+Automatic UTM link generation with Code node.
+🤖
+Sentiment Analysis
+WORKFLOW
+Batch sentiment analysis of text, followed by JSON output of sentiment classification along with scores.
+🗞️
+HTTP Request: NYT Tech News Digest
+CHATFLOW
+Get a clean, AI-powered summary of the latest technology stories from The New York Times.
+💽
+SQL Creator
+COMPLETION
+Write SQL from natural language by pasting in your schema with the request.Please describe your query requirements in natural language and select the target database type.
+🧑‍💻
+Human Input: Writing Assistant
+WORKFLOW
+Send your creative brief, get a high-quality draft, and review before publishing.
+🤑
+Investment Analysis Report Copilot
+AGENT
+Welcome to your personalized Investment Analysis Copilot service, where we delve into the depths of stock analysis to provide you with comprehensive insights.
+🔬
+Strategic Consulting Expert
+CHATBOT
+I can answer your questions related to strategic marketing.
+🌐
+Trigger: Website Health Guard
+WORKFLOW
+24/7 digital security for your website.
+👨‍💻
+Code Interpreter
+CHATBOT
+Code interpreter, clarifying the syntax and semantics of the code.
+🔄
+Code Converter
+COMPLETION
+This is an application that provides the ability to convert code snippets in multiple programming languages. You can input the code you wish to convert, select the target programming language, and get the desired output.
+🔍
+Web Content Search and Summarization Workflow
+WORKFLOW
+Through this workflow, the user can start by entering a question, use Tavily Search to search, Jina Reader to crawl web content, and generate summaries, ultimately obtaining a structured table of results.
+🧐
+Question Classifier + Knowledge + Chatbot
+CHATFLOW
+Basic Workflow Template, a chatbot capable of identifying intents alongside with a knowledge base.
+📑
+Knowledge Retrieval + Chatbot
+CHATFLOW
+Basic Workflow Template, A chatbot with a knowledge base.

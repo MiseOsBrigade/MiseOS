@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.056",
+  "number": 56,
+  "slug": "incident-kitsune",
+  "name": "Incident Kitsune",
+  "mise_name": "Incident Kitsune",
+  "codename": "INCIDENT_KITSUNE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Security Incident Playbooks",
+  "job_name": "Security Incident Playbooks",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Security Incident Playbooks",
+    "avatar_path": "assets/characters/incident-kitsune/card.jpg",
+    "card_path": "assets/characters/incident-kitsune/card.jpg",
+    "primary_photo_page": 82,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-082.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Incident Kitsune performs security incident playbooks within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Evidence Scribe",
+      "Nudge Neko",
+      "Scorecard Shin"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 67,
+    "precision": 75,
+    "speed": 59,
+    "resilience": 75,
+    "intelligence": 65,
+    "teamwork": 82
+  },
+  "paths": {
+    "readme": "characters/incident-kitsune/README.md",
+    "metadata": "characters/incident-kitsune/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,517 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "seira",
+  "name": "Seira",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/seira/metadata.json",
+    "role": "characters/seira/metadata.json",
+    "department": "characters/seira/metadata.json",
+    "rarity": "characters/seira/metadata.json",
+    "workflow.summary": "characters/seira/metadata.json",
+    "workflow.inputs": "characters/seira/metadata.json",
+    "workflow.outputs": "characters/seira/metadata.json",
+    "workflow.proof_gate": "characters/seira/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/seira/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
+  },
+  "registry": {
+    "number": 19,
+    "profile": "characters/seira/README.md",
+    "metadata": "characters/seira/metadata.json",
+    "avatar": "assets/characters/seira/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/seira.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/seira.webp",
+      "collection": "1by1-chefs",
+      "title": "Seira",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/character-building/seira.webp",
+      "thumbnail": "assets/player-cards/character-building/thumbs/seira.webp",
+      "collection": "character-building",
+      "title": "SEIRA",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/seira.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/seira.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Seira",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "character-building",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/seira.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "SECRETS",
+        "ARCHIVE",
+        "AGEDTO",
+        "PERFECTION.",
+        "VINTAGEMEMORIES",
+        "LOCKED&SEALED",
+        "UNTIL THE RIGHT",
+        "PALATE APPEARS.",
+        "SOMMELIER'SART",
+        "PALATE INSIGHT",
+        "AROMA",
+        "·OBSERVE",
+        "·DECANT",
+        "BODY",
+        "BALANCE",
+        "·HARMONIZE",
+        "FINESSE",
+        "+REVEAL",
+        "SECRETS",
+        "Seira",
+        "Sommelier"
+      ]
+    },
+    {
+      "file": "assets/player-cards/character-building/seira.webp",
+      "printed_text": [
+        "TAGLINEOPTIONS",
+        "BRIGADE",
+        "THEKITCHENOSTHATTURNS",
+        "DEVELOPERFOCUSED",
+        "AICHAOSINTOCOORDINATEDSERVICE",
+        "Everything In Its Place.",
+        "SYSTEMS",
+        "Orchestrate Everything.",
+        "The Operating SystemFor",
+        "Every agent becomes a chef.",
+        "Autonomous Development.",
+        "Cook, Orchestrate. Deploy.",
+        "Every Role. One Symphony.",
+        ".Infrastructure",
+        "MISEOS",
+        "Every repository becomes a kitchen.",
+        "AI AGENTFOCUSED",
+        "Military organization",
+        "The Kitchen Where Agents Work.",
+        "·Operations consulting",
+        "Every deployment becomes a service.",
+        "The OS For Multi-Agent Teams.",
+        "Enterprise tooling",
+        "Autonomous Development,",
+        "THEOPERATINGSYSTEMFOR",
+        "Properly Organized.",
+        "Where Human Intent Meets",
+        "Every workflow becomes an orchestra.",
+        "AUTONOMOUSDEVELOPMENT",
+        "Agent Execution.",
+        "ENTERPRISEFOCUSED",
+        "COOK",
+        "DEPLOY",
+        "ORCHESTRATE",
+        "Operational Iintelligence,",
+        "Perfectly Placed.",
+        "Infrastructure With Discipline,",
+        "MISEOSPLATFORMARCHITECTURE",
+        "Systems Thinking For",
+        "AutonomousTeams.",
+        "MISEOS",
+        "MISEOS",
+        "MISEOS",
+        "MISEOS",
+        "MISEOS",
+        "MISEOS",
+        "CORE",
+        "BRIGADE",
+        "KITCHEN",
+        "ORCHESTRA",
+        "VAULT",
+        "OBSERVATORY",
+        "MISEOSLOGOMARK",
+        "Multi-agent coordination",
+        "The platform.",
+        "Agent workforce",
+        "Developer",
+        "Observability layer.",
+        "The operating",
+        "layer,",
+        "- Repositories",
+        "system.",
+        "- HashiCorp Vault",
+        "- Tasks",
+        "• Agent Delegation",
+        "- Ephemeral Tokens",
+        "·Performance",
+        "- Actions",
+        "m Execution",
+        "- Knov",
+        "-Credential Isolation",
+        "- MCP Connections",
+        "•Costs",
+        "- Deployments",
+        "• Tester",
+        "- Token Usage",
+        "• Security",
+        "MASCOT:SEIRA",
+        "MASCOT: STREAMA",
+        "LADLE.BATONCIRCUIT.STAFF",
+        "MISEOSMASCOTHIERARCHY",
+        "ORCHESTRATING INTELLIGENCE",
+        "COLORPALETTE",
+        "TIER1-EXECUTIVECHEFS",
+        "TIER 2  KITCHEN OPERATIONS",
+        "TIER3-SERVICE LAYER",
+        "PRIMARY",
+        "Umami Black",
+        "Geld Ladie",
+        "B060F10",
+        "D4AF37",
+        "Broth Cream",
+        "WF6F1E7",
+        "SECONDARY",
+        "ORCHESTRA",
+        "KUROGAMI",
+        "KURO GUARD",
+        "TENSHO",
+        "BUILD-KUN",
+        "SCALEONI",
+        "FLASH RIKU",
+        "IRON HASHI",
+        "NULL-CHAN",
+        "SEIRA",
+        "MIZU",
+        "STREAMA",
+        "UMAMICODE",
+        "KAJI",
+        "Flame Orarnge",
+        "Matcha Green",
+        "(cleanup)",
+        "Ink Blue",
+        "(deployment)",
+        "YUME",
+        "(agent dinector)",
+        "(becrets)",
+        "(scaling)",
+        "(validation)",
+        "(streams)",
+        "(APis)",
+        "CORE",
+        "(security)",
+        "(containers)",
+        "(routing)",
+        "(queueing)",
+        "(compute)",
+        "1824",
+        "897822",
+        "925684E",
+        "(artifacts)",
+        "ELEVATORPITCH",
+        "WEBSITE STRUCTURE",
+        "BUILTFORDEVELOPERS.DESIGNEDFORAGENTS.DRIVENBYORCHESTRATION.",
+        "MiseOS is the operating system for autonomous software development, Built around the principles",
+        "miseos.dev",
+        "of mise en place, it transforms Al agents, repositories, worklows, and infrastructure into a",
+        "883",
+        "coordinated kitchen where every role has a purpose, every action is observable, and every",
+        "AI-NATIVE",
+        "OPEN ECOSYSTEM",
+        "SECURE BY DESIGN",
+        "FULLY OBSERVABLE",
+        "Kitchen",
+        "Vault",
+        "Observatory",
+        "Docs",
+        "deployment is orchestrated with precision.",
+        "Platfor",
+        "Orchestra",
+        "Brigade",
+        "Mascots",
+        "Pricing"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/seira.webp",
+      "printed_text": [
+        "MISEORCHESTRA",
+        "NO.010",
+        "Seira",
+        "MO",
+        "EPIC-Security Line",
+        "Sommelier|Platform",
+        "ABILITY: Vault Pairing",
+        "Protects secrets like fine wine. Security is her specialty.",
+        "Element:SecretWineFunction:Secure",
+        "SECURE",
+        "97",
+        "OBSERVE",
+        "85",
+        "CONNECT",
+        "78",
+        "ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "ASE",
+        "90"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Epic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 23,
+  "orchestra_card": {
+    "role": "Sommelier",
+    "department": "Platform",
+    "function": "Secure",
+    "rarity": "Epic",
+    "tier": "Security Line",
+    "element": "Secret Wine",
+    "ability": "Vault Pairing",
+    "lore": "Protects secrets like fine wine. Security is her specialty."
+  },
+  "abilities": [
+    "Vault Pairing"
+  ],
+  "profile_doc": "characters/seira/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 127,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 57,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 59,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 291,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 15,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/repo-pet/test/smoke.mjs",
+        "line": 19,
+        "term": "Seira"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 79,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 176,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 93,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/010-seira.json",
+        "line": 2,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/voxel-world/src/data/agents.json",
+        "line": 111,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 176,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 277,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 11,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 93,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 99,
+        "term": "Seira"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 11,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 5,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 23,
+        "term": "Seira"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/repo-pet/README.md",
+        "line": 116,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 10,
+        "term": "Seira"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 291,
+        "term": "Seira"
+      },
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 15,
+        "term": "Seira"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-083",
+    "character_id": "miseos.character.083",
+    "card_id": "MISE-083",
+    "codename": "SEIRA"
+  },
+  "role": "Secure",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Epic",
+  "lore": "Seira belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Seira performs secure within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE SECURE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 68,
+    "precision": 86,
+    "speed": 81,
+    "resilience": 83,
+    "intelligence": 83,
+    "teamwork": 70
+  },
+  "related": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Orchestra Core",
+      "slug": "orchestra-core"
+    },
+    {
+      "name": "Template Tanaka",
+      "slug": "template-tanaka"
+    }
+  ],
+  "helps": {
+    "station": "Platform Kitchen",
+    "mission": "Provide golden paths and stable service foundations.",
+    "problem": "Seira performs secure within the Platform Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [
+    {
+      "slug": "seira",
+      "name": "Seira",
+      "page": "docs/agents/seira.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "seira",
+      "name": "Seira",
+      "page": "docs/repo-pets/seira.md"
+    }
+  ]
+}

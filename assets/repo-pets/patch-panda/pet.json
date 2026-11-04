@@ -1,0 +1,23 @@
+{
+  "slug": "patch-panda",
+  "name": "Patch Panda",
+  "kind": "brigade_mascot",
+  "species": "panda",
+  "species_source": "animal word in the name",
+  "role": "Hotfix Patcher",
+  "department": "Service Layer",
+  "sprites": [
+    "assets/repo-pets/patch-panda/Patch-Panda.png",
+    "assets/repo-pets/cutouts/patch-panda.png"
+  ],
+  "cutout": "assets/repo-pets/cutouts/patch-panda.png",
+  "behaviors": {
+    "walks_in_readme_strip": true
+  },
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:95",
+  "art_source": "icloud/Mise-OS-main.zip/Mise-OS-main/attached_assets/miseos_agents/03_service_layer/Patch-Panda.png",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/patch-panda.md",
+  "dir": "assets/repo-pets/patch-panda"
+}

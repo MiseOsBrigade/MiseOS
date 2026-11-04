@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.policy-checker",
+  "name": "MiseOS Policy Checker",
+  "type": "container",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "Containerized policy checker for CI validation of registry entries and release gates.",
+  "artifacts": {
+    "container": "ghcr.io/mise-os/miseos-policy-checker",
+    "source": "containers/policy-checker"
+  },
+  "capabilities": [
+    "validate_policy",
+    "score_release_risk",
+    "emit_ci_report"
+  ],
+  "permissions": {
+    "runtime": {
+      "filesystem": "read_workspace",
+      "network": "none"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "base_image_change",
+      "permission_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Maintainer review required",
+    "patch": "Automated validation allowed"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_only",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "policy_report"
+    ]
+  }
+}

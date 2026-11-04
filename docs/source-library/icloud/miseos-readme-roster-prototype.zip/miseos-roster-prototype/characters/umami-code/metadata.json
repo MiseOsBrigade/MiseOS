@@ -1,0 +1,80 @@
+{
+  "id": "umami-code",
+  "number": 24,
+  "name": "Umami Code",
+  "miseName": "Mise TrafficIngressManager",
+  "codename": "chef.platform.traffic-ingress-manager",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "genesis",
+  "roleCategory": "platform",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Traffic & Ingress Manager",
+    "signaturePhrase": "Traffic and Ingress Manager done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in traffic & ingress manager so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen traffic & ingress manager aura",
+    "silhouette": "multinational chibi DevOps chef carrying a ladle",
+    "tool": "ladle",
+    "spritePath": "/assets/characters/umami-code/full-body.png",
+    "cardPath": "/assets/characters/umami-code/card.png"
+  },
+  "workflow": {
+    "jobName": "Traffic & Ingress Manager",
+    "roleName": "Traffic & Ingress Manager microagent",
+    "summary": "Runs traffic & ingress manager for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Grafana Mei",
+      "Queue Mizu",
+      "Nina Promoter",
+      "Review Ren"
+    ]
+  },
+  "stats": {
+    "power": 71,
+    "precision": 97,
+    "speed": 81,
+    "resilience": 95,
+    "intelligence": 74,
+    "teamwork": 89
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "umami-code",
+  "seasonOneCard": {
+    "id": "4",
+    "role": "Saucier",
+    "department": "Platform",
+    "function": "Connect",
+    "rarity": "Epic",
+    "tier": "Platform Core",
+    "element": "API Sauce",
+    "ability": "Perfect Integration",
+    "lore": "Creates the perfect sauce that connects every service.",
+    "image_file": "cards/png/004-umami-code.png",
+    "metadata_file": "metadata/erc721/004-umami-code.json"
+  },
+  "displayNumber": 24,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/umami-code",
+  "avatarSvg": "assets/characters/umami-code/avatar.svg",
+  "cardSvg": "assets/characters/umami-code/card.svg"
+}

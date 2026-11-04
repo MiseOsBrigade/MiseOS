@@ -1,0 +1,68 @@
+{
+  "engine": "mise-pack-a-punch-workflow-machine",
+  "policyVersion": "1.0.0",
+  "run": {
+    "event": "local",
+    "actor": "local",
+    "ref": "master",
+    "sha": "1adc58498c55043fc9a28a2c62119ce931b85eff",
+    "baseSha": "HEAD~1",
+    "headSha": "HEAD",
+    "repository": "local"
+  },
+  "measurement": {
+    "changedFileCount": 15,
+    "changedLineCount": 0,
+    "additions": 0,
+    "deletions": 0,
+    "files": [
+      ".github/mise/mise-policy.json",
+      ".github/workflows/mise-pack-a-punch.yml",
+      ".github/workflows/mise-stack-consumer.example.yml",
+      "README.md",
+      "docs/ARCHITECTURE.md",
+      "docs/EPHEMERAL-RUNNERS.md",
+      "package.json",
+      "scripts/mise-branch-advisor.mjs",
+      "scripts/mise-context.mjs",
+      "scripts/mise-quality-runner.mjs",
+      "scripts/mise-report.mjs",
+      "scripts/mise-risk-gate.mjs",
+      "scripts/mise-stack-graph.mjs",
+      "scripts/mise-supply-chain.mjs",
+      "scripts/mise-utils.mjs"
+    ]
+  },
+  "coordinates": [
+    {
+      "id": "A0",
+      "name": "measurement-context",
+      "purpose": "Capture event, actor, branch, and file-change context before running any enhancement."
+    },
+    {
+      "id": "B1",
+      "name": "risk-gate",
+      "purpose": "Block secrets, risky workflow edits, and destructive shell patterns."
+    },
+    {
+      "id": "C2",
+      "name": "quality-stack",
+      "purpose": "Run native lint, test, build, and syntax checks only when matching project files exist."
+    },
+    {
+      "id": "D3",
+      "name": "supply-chain-scan",
+      "purpose": "Surface dependency and lockfile risk without creating recursive commits."
+    },
+    {
+      "id": "E4",
+      "name": "branch-advisor",
+      "purpose": "Recommend the next branch/PR path without auto-merging."
+    },
+    {
+      "id": "F5",
+      "name": "evidence-report",
+      "purpose": "Emit a single Markdown/JSON report artifact and optional PR comment."
+    }
+  ]
+}

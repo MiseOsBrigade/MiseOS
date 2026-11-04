@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.062",
+  "number": 62,
+  "slug": "lake-haru",
+  "name": "Lake Haru",
+  "mise_name": "Lake Haru",
+  "codename": "LAKE_HARU",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Telemetry Ingestion Pipeline",
+  "job_name": "Telemetry Ingestion Pipeline",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Telemetry Ingestion Pipeline",
+    "avatar_path": "assets/characters/lake-haru/avatar.png",
+    "card_path": "assets/characters/lake-haru/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Lake Haru performs telemetry ingestion pipeline within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Lattice",
+      "Repo Ranger",
+      "DORA Daichi"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 82,
+    "precision": 60,
+    "speed": 79,
+    "resilience": 73,
+    "intelligence": 62,
+    "teamwork": 78
+  },
+  "paths": {
+    "readme": "characters/lake-haru/README.md",
+    "metadata": "characters/lake-haru/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

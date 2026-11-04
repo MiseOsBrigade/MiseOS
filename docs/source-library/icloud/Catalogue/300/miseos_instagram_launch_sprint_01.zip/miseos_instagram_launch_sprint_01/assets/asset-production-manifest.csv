@@ -1,0 +1,9 @@
+asset_id,content_id,asset_type,description,source_status,required_output,owner_status
+MS-001-COVER,MS-001,brand visual,Obsidian Singularity Core with gold MiseOS mark,new design required,1080x1350 PNG,unassigned
+MS-001-NODES,MS-001,diagram,Disconnected agents converging around core,new design required,1080x1350 PNG,unassigned
+MC-001-ALKO,MC-001,character art,Canonical Alko Commit Chef,catalog match required,transparent PNG + model sheet,unassigned
+MC-001-BRUNO,MC-001,character art,Canonical Bruno Blast-Radius,catalog match required,transparent PNG + model sheet,unassigned
+MC-001-REPO,MC-001,environment,Repository district in GridOps,voxel prototype adaptation,1080x1350 PNG,unassigned
+MC-001-EVIDENCE,MC-001,prop,Transparent evidence capsule,new design required,transparent PNG/GLB,unassigned
+MB-001-MAP,MB-001,environment map,Eleven-district GridOps map,voxel prototype adaptation,1080x1350 PNG + 4K master,unassigned
+MB-001-CORE,MB-001,hero object,Obsidian-brain Singularity Core,new design required,PNG + GLB concept,unassigned

@@ -1,0 +1,42 @@
+{
+  "slug": "kaji",
+  "name": "Kaji",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Grillardin",
+  "department": "Infrastructure Department",
+  "glyph": "🔥",
+  "catchphrase": "Handles the heat and keeps the engines burning.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 4,
+      "files": 4,
+      "parent": 2,
+      "infra": 7,
+      "docker": 8,
+      "config": 3
+    },
+    "verbs": {
+      "enterDirectory": "fires up the station inside",
+      "inspectFile": "sears through the compute logic in",
+      "inspectConfig": "adjusts the flame control in",
+      "inspectDocs": "checks the heat manual",
+      "inspectTests": "stress-tests the grill marks in",
+      "retreat": "backs away from the flames"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/kaji.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/kaji.png",
+  "character": "kaji",
+  "cards": [
+    "docs/characters/kaji.md",
+    "docs/characters/kaji.md",
+    "docs/characters/kaji.md",
+    "docs/characters/kaji.md"
+  ],
+  "page": "docs/repo-pets/kaji.md",
+  "dir": "assets/repo-pets/kaji"
+}

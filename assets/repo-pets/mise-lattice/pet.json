@@ -1,0 +1,23 @@
+{
+  "slug": "mise-lattice",
+  "name": "Mise Lattice",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Integrity Graph",
+  "department": "Governance",
+  "glyph": "🕸️",
+  "catchphrase": "Connects purpose, policy, and proof.",
+  "behaviors": {
+    "preferred_paths": [
+      "governance",
+      "docs",
+      "policies"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-lattice.md",
+  "dir": "assets/repo-pets/mise-lattice"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.017",
+  "number": 17,
+  "slug": "bootstrap-aiko",
+  "name": "Bootstrap Aiko",
+  "mise_name": "Bootstrap Aiko",
+  "codename": "BOOTSTRAP_AIKO",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "New Service Wizard",
+  "job_name": "New Service Wizard",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "New Service Wizard",
+    "avatar_path": "assets/characters/bootstrap-aiko/avatar.png",
+    "card_path": "assets/characters/bootstrap-aiko/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Bootstrap Aiko performs new service wizard within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Terra Forge",
+      "Schema Sora",
+      "Runtime Riku"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 81,
+    "precision": 73,
+    "speed": 70,
+    "resilience": 83,
+    "intelligence": 82,
+    "teamwork": 88
+  },
+  "paths": {
+    "readme": "characters/bootstrap-aiko/README.md",
+    "metadata": "characters/bootstrap-aiko/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

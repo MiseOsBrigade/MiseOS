@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.061",
+  "number": 61,
+  "slug": "taxonomy-taka",
+  "name": "Taxonomy Taka",
+  "mise_name": "Taxonomy Taka",
+  "codename": "TAXONOMY_TAKA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Event Taxonomy Manager",
+  "job_name": "Event Taxonomy Manager",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Event Taxonomy Manager",
+    "avatar_path": "assets/characters/taxonomy-taka/avatar.png",
+    "card_path": "assets/characters/taxonomy-taka/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Taxonomy Taka performs event taxonomy manager within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Lake Haru",
+      "Lattice",
+      "Repo Ranger"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 57,
+    "precision": 80,
+    "speed": 63,
+    "resilience": 83,
+    "intelligence": 66,
+    "teamwork": 69
+  },
+  "paths": {
+    "readme": "characters/taxonomy-taka/README.md",
+    "metadata": "characters/taxonomy-taka/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

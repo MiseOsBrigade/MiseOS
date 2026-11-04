@@ -1,0 +1,1072 @@
+[
+  {
+    "id": "lattice",
+    "number": 63,
+    "name": "Lattice",
+    "miseName": "Mise TraceCorrelator",
+    "codename": "chef.data-insight.trace-correlator",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "genesis",
+    "roleCategory": "automation",
+    "identity": {
+      "nationality": "Pan-Orchestral",
+      "title": "Trace Correlator",
+      "signaturePhrase": "Trace Correlator done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in trace correlator so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen trace correlator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/lattice/full-body.png",
+      "cardPath": "/assets/characters/lattice/card.png"
+    },
+    "workflow": {
+      "jobName": "Trace Correlator",
+      "roleName": "Trace Correlator microagent",
+      "summary": "Runs trace correlator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Lake Haru",
+        "Repo Ranger",
+        "Lila Branchkeeper",
+        "Terra Forge"
+      ]
+    },
+    "stats": {
+      "power": 92,
+      "precision": 91,
+      "speed": 90,
+      "resilience": 92,
+      "intelligence": 94,
+      "teamwork": 92
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "lattice",
+    "seasonOneCard": null,
+    "displayNumber": 63,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/lattice",
+    "avatarSvg": "assets/characters/lattice/avatar.svg",
+    "cardSvg": "assets/characters/lattice/card.svg"
+  },
+  {
+    "id": "roadmap-sensei",
+    "number": 75,
+    "name": "Roadmap Sensei",
+    "miseName": "Mise StrategicRoadmapRecommender",
+    "codename": "chef.data-insight.strategic-roadmap-recommender",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "genesis",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Strategic Roadmap Recommender",
+      "signaturePhrase": "Strategic Roadmap Recommender done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in strategic roadmap recommender so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen strategic roadmap recommender aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/roadmap-sensei/full-body.png",
+      "cardPath": "/assets/characters/roadmap-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Strategic Roadmap Recommender",
+      "roleName": "Strategic Roadmap Recommender microagent",
+      "summary": "Runs strategic roadmap recommender for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Storyteller Sumi",
+        "Pipeline Sensei",
+        "Platform Sensei",
+        "Reliability Sensei"
+      ]
+    },
+    "stats": {
+      "power": 85,
+      "precision": 83,
+      "speed": 75,
+      "resilience": 97,
+      "intelligence": 88,
+      "teamwork": 93
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "roadmap-sensei",
+    "seasonOneCard": null,
+    "displayNumber": 75,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/roadmap-sensei",
+    "avatarSvg": "assets/characters/roadmap-sensei/avatar.svg",
+    "cardSvg": "assets/characters/roadmap-sensei/card.svg"
+  },
+  {
+    "id": "apprentice-kai",
+    "number": 71,
+    "name": "Apprentice Kai",
+    "miseName": "Mise SelfImprovementAgent",
+    "codename": "chef.data-insight.self-improvement-agent",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "genesis",
+    "roleCategory": "delivery",
+    "identity": {
+      "nationality": "New Zealander",
+      "title": "Self-Improvement Agent",
+      "signaturePhrase": "Self-Improvement Agent done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in self-improvement agent so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen self-improvement agent aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/apprentice-kai/full-body.png",
+      "cardPath": "/assets/characters/apprentice-kai/card.png"
+    },
+    "workflow": {
+      "jobName": "Self-Improvement Agent",
+      "roleName": "Self-Improvement Agent microagent",
+      "summary": "Runs self-improvement agent for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Risk Ryota",
+        "Anomaly Aki",
+        "Felix Rollback",
+        "Streama"
+      ]
+    },
+    "stats": {
+      "power": 72,
+      "precision": 89,
+      "speed": 74,
+      "resilience": 80,
+      "intelligence": 85,
+      "teamwork": 96
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "apprentice-kai",
+    "seasonOneCard": null,
+    "displayNumber": 71,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/apprentice-kai",
+    "avatarSvg": "assets/characters/apprentice-kai/avatar.svg",
+    "cardSvg": "assets/characters/apprentice-kai/card.svg"
+  },
+  {
+    "id": "culture-chef",
+    "slug": "culture-chef",
+    "number": 92,
+    "name": "Culture Chef",
+    "miseName": "Mise Grow",
+    "codename": "chef.data-insight.grow",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "legendary",
+    "roleCategory": "grow",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Guest Chef",
+      "signaturePhrase": "Culture Chef keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Nurtures the team and culture. Happy chefs cook best."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen Living Root aura",
+      "silhouette": "chibi DevOps chef carrying Living Root",
+      "tool": "Living Root",
+      "spritePath": "/assets/characters/culture-chef/full-body.png",
+      "cardPath": "/assets/characters/culture-chef/card.png"
+    },
+    "workflow": {
+      "jobName": "Grow",
+      "roleName": "Guest Chef microagent",
+      "summary": "Nurtures the team and culture. Happy chefs cook best.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Growth Guru",
+        "Taxonomy Taka"
+      ]
+    },
+    "stats": {
+      "power": 88,
+      "precision": 76,
+      "speed": 98,
+      "resilience": 82,
+      "intelligence": 91,
+      "teamwork": 98
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "23",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "function": "Grow",
+      "rarity": "Legendary",
+      "tier": "Human Systems",
+      "element": "Living Root",
+      "ability": "Team Bloom",
+      "lore": "Nurtures the team and culture. Happy chefs cook best.",
+      "image_file": "cards/png/023-culture-chef.png",
+      "metadata_file": "metadata/erc721/023-culture-chef.json"
+    },
+    "displayNumber": 92,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/culture-chef",
+    "avatarSvg": "assets/characters/culture-chef/avatar.svg",
+    "cardSvg": "assets/characters/culture-chef/card.svg"
+  },
+  {
+    "id": "chaos-analyst",
+    "slug": "chaos-analyst",
+    "number": 90,
+    "name": "Chaos Analyst",
+    "miseName": "Mise Learn",
+    "codename": "chef.data-insight.learn",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "legendary",
+    "roleCategory": "learn",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Guest Chef",
+      "signaturePhrase": "Chaos Analyst keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Embraces the chaos. Turns incidents into opportunities."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen Kitsune Chaos aura",
+      "silhouette": "chibi DevOps chef carrying Kitsune Chaos",
+      "tool": "Kitsune Chaos",
+      "spritePath": "/assets/characters/chaos-analyst/full-body.png",
+      "cardPath": "/assets/characters/chaos-analyst/card.png"
+    },
+    "workflow": {
+      "jobName": "Learn",
+      "roleName": "Guest Chef microagent",
+      "summary": "Embraces the chaos. Turns incidents into opportunities.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Insight Sensei",
+        "Growth Guru"
+      ]
+    },
+    "stats": {
+      "power": 78,
+      "precision": 86,
+      "speed": 70,
+      "resilience": 96,
+      "intelligence": 70,
+      "teamwork": 91
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "21",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "function": "Learn",
+      "rarity": "Legendary",
+      "tier": "Incident Wisdom",
+      "element": "Kitsune Chaos",
+      "ability": "Postmortem Bloom",
+      "lore": "Embraces the chaos. Turns incidents into opportunities.",
+      "image_file": "cards/png/021-chaos-analyst.png",
+      "metadata_file": "metadata/erc721/021-chaos-analyst.json"
+    },
+    "displayNumber": 90,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/chaos-analyst",
+    "avatarSvg": "assets/characters/chaos-analyst/avatar.svg",
+    "cardSvg": "assets/characters/chaos-analyst/card.svg"
+  },
+  {
+    "id": "insight-sensei",
+    "slug": "insight-sensei",
+    "number": 89,
+    "name": "Insight Sensei",
+    "miseName": "Mise Analyze",
+    "codename": "chef.data-insight.analyze",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "epic",
+    "roleCategory": "analyze",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Guest Chef",
+      "signaturePhrase": "Insight Sensei keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Finds patterns in chaos and turns data into understanding."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen Pattern Crystal aura",
+      "silhouette": "chibi DevOps chef carrying Pattern Crystal",
+      "tool": "Pattern Crystal",
+      "spritePath": "/assets/characters/insight-sensei/full-body.png",
+      "cardPath": "/assets/characters/insight-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Analyze",
+      "roleName": "Guest Chef microagent",
+      "summary": "Finds patterns in chaos and turns data into understanding.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Data-chan",
+        "Chaos Analyst"
+      ]
+    },
+    "stats": {
+      "power": 90,
+      "precision": 97,
+      "speed": 80,
+      "resilience": 98,
+      "intelligence": 97,
+      "teamwork": 77
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "20",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "function": "Analyze",
+      "rarity": "Epic",
+      "tier": "Learning Line",
+      "element": "Pattern Crystal",
+      "ability": "Pattern Sight",
+      "lore": "Finds patterns in chaos and turns data into understanding.",
+      "image_file": "cards/png/020-insight-sensei.png",
+      "metadata_file": "metadata/erc721/020-insight-sensei.json"
+    },
+    "displayNumber": 89,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/insight-sensei",
+    "avatarSvg": "assets/characters/insight-sensei/avatar.svg",
+    "cardSvg": "assets/characters/insight-sensei/card.svg"
+  },
+  {
+    "id": "growth-guru",
+    "slug": "growth-guru",
+    "number": 91,
+    "name": "Growth Guru",
+    "miseName": "Mise Optimize",
+    "codename": "chef.data-insight.optimize",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "epic",
+    "roleCategory": "optimize",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Guest Chef",
+      "signaturePhrase": "Growth Guru keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Always innovating. Seeks better ways to scale."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen Pink Bloom aura",
+      "silhouette": "chibi DevOps chef carrying Pink Bloom",
+      "tool": "Pink Bloom",
+      "spritePath": "/assets/characters/growth-guru/full-body.png",
+      "cardPath": "/assets/characters/growth-guru/card.png"
+    },
+    "workflow": {
+      "jobName": "Optimize",
+      "roleName": "Guest Chef microagent",
+      "summary": "Always innovating. Seeks better ways to scale.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Chaos Analyst",
+        "Culture Chef"
+      ]
+    },
+    "stats": {
+      "power": 79,
+      "precision": 80,
+      "speed": 87,
+      "resilience": 82,
+      "intelligence": 72,
+      "teamwork": 87
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "22",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "function": "Optimize",
+      "rarity": "Epic",
+      "tier": "Growth Line",
+      "element": "Pink Bloom",
+      "ability": "Scale Wisdom",
+      "lore": "Always innovating. Seeks better ways to scale.",
+      "image_file": "cards/png/022-growth-guru.png",
+      "metadata_file": "metadata/erc721/022-growth-guru.json"
+    },
+    "displayNumber": 91,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/growth-guru",
+    "avatarSvg": "assets/characters/growth-guru/avatar.svg",
+    "cardSvg": "assets/characters/growth-guru/card.svg"
+  },
+  {
+    "id": "risk-ryota",
+    "number": 70,
+    "name": "Risk Ryota",
+    "miseName": "Mise RiskScoringModel",
+    "codename": "chef.data-insight.risk-scoring-model",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "rare",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Risk Scoring Model",
+      "signaturePhrase": "Risk Scoring Model done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in risk scoring model so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen risk scoring model aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/risk-ryota/full-body.png",
+      "cardPath": "/assets/characters/risk-ryota/card.png"
+    },
+    "workflow": {
+      "jobName": "Risk Scoring Model",
+      "roleName": "Risk Scoring Model microagent",
+      "summary": "Runs risk scoring model for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Revenue Rina",
+        "Apprentice Kai",
+        "Release Conductor",
+        "Queue Mizu"
+      ]
+    },
+    "stats": {
+      "power": 96,
+      "precision": 83,
+      "speed": 94,
+      "resilience": 96,
+      "intelligence": 96,
+      "teamwork": 78
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "risk-ryota",
+    "seasonOneCard": null,
+    "displayNumber": 70,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/risk-ryota",
+    "avatarSvg": "assets/characters/risk-ryota/avatar.svg",
+    "cardSvg": "assets/characters/risk-ryota/card.svg"
+  },
+  {
+    "id": "data-chan",
+    "slug": "data-chan",
+    "number": 88,
+    "name": "Data-chan",
+    "miseName": "Mise Collect",
+    "codename": "chef.data-insight.collect",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "rare",
+    "roleCategory": "collect",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Guest Chef",
+      "signaturePhrase": "Data-chan keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Collects and organizes data. Knowledge is the secret ingredient."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen Archive Light aura",
+      "silhouette": "chibi DevOps chef carrying Archive Light",
+      "tool": "Archive Light",
+      "spritePath": "/assets/characters/data-chan/full-body.png",
+      "cardPath": "/assets/characters/data-chan/card.png"
+    },
+    "workflow": {
+      "jobName": "Collect",
+      "roleName": "Guest Chef microagent",
+      "summary": "Collects and organizes data. Knowledge is the secret ingredient.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Roadmap Sensei",
+        "Insight Sensei"
+      ]
+    },
+    "stats": {
+      "power": 98,
+      "precision": 81,
+      "speed": 85,
+      "resilience": 70,
+      "intelligence": 80,
+      "teamwork": 74
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "19",
+      "role": "Guest Chef",
+      "department": "Insights & Growth",
+      "function": "Collect",
+      "rarity": "Rare",
+      "tier": "Knowledge Line",
+      "element": "Archive Light",
+      "ability": "Knowledge Pantry",
+      "lore": "Collects and organizes data. Knowledge is the secret ingredient.",
+      "image_file": "cards/png/019-data-chan.png",
+      "metadata_file": "metadata/erc721/019-data-chan.json"
+    },
+    "displayNumber": 88,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/data-chan",
+    "avatarSvg": "assets/characters/data-chan/avatar.svg",
+    "cardSvg": "assets/characters/data-chan/card.svg"
+  },
+  {
+    "id": "storyteller-sumi",
+    "number": 74,
+    "name": "Storyteller Sumi",
+    "miseName": "Mise NarrativeReportGenerator",
+    "codename": "chef.data-insight.narrative-report-generator",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "common",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Narrative Report Generator",
+      "signaturePhrase": "Narrative Report Generator done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in narrative report generator so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen narrative report generator aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/storyteller-sumi/full-body.png",
+      "cardPath": "/assets/characters/storyteller-sumi/card.png"
+    },
+    "workflow": {
+      "jobName": "Narrative Report Generator",
+      "roleName": "Narrative Report Generator microagent",
+      "summary": "Runs narrative report generator for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Leaderboard Leo",
+        "Roadmap Sensei",
+        "Canary Taster",
+        "Guardrail Goro"
+      ]
+    },
+    "stats": {
+      "power": 80,
+      "precision": 76,
+      "speed": 94,
+      "resilience": 84,
+      "intelligence": 98,
+      "teamwork": 98
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "storyteller-sumi",
+    "seasonOneCard": null,
+    "displayNumber": 74,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/storyteller-sumi",
+    "avatarSvg": "assets/characters/storyteller-sumi/avatar.svg",
+    "cardSvg": "assets/characters/storyteller-sumi/card.svg"
+  },
+  {
+    "id": "flag-fox",
+    "number": 66,
+    "name": "Flag Fox",
+    "miseName": "Mise FeatureFlagAnalytics",
+    "codename": "chef.data-insight.feature-flag-analytics",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "common",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Finnish",
+      "title": "Feature Flag Analytics",
+      "signaturePhrase": "Feature Flag Analytics done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in feature flag analytics so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen feature flag analytics aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/flag-fox/full-body.png",
+      "cardPath": "/assets/characters/flag-fox/card.png"
+    },
+    "workflow": {
+      "jobName": "Feature Flag Analytics",
+      "roleName": "Feature Flag Analytics microagent",
+      "summary": "Runs feature flag analytics for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "DORA Daichi",
+        "Cost Kaito",
+        "Seira Scan",
+        "Vault Hana"
+      ]
+    },
+    "stats": {
+      "power": 82,
+      "precision": 88,
+      "speed": 92,
+      "resilience": 78,
+      "intelligence": 92,
+      "teamwork": 80
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "flag-fox",
+    "seasonOneCard": null,
+    "displayNumber": 66,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/flag-fox",
+    "avatarSvg": "assets/characters/flag-fox/avatar.svg",
+    "cardSvg": "assets/characters/flag-fox/card.svg"
+  },
+  {
+    "id": "taxonomy-taka",
+    "number": 61,
+    "name": "Taxonomy Taka",
+    "miseName": "Mise EventTaxonomyManager",
+    "codename": "chef.data-insight.event-taxonomy-manager",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "common",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Event Taxonomy Manager",
+      "signaturePhrase": "Event Taxonomy Manager done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in event taxonomy manager so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen event taxonomy manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/taxonomy-taka/full-body.png",
+      "cardPath": "/assets/characters/taxonomy-taka/card.png"
+    },
+    "workflow": {
+      "jobName": "Event Taxonomy Manager",
+      "roleName": "Event Taxonomy Manager microagent",
+      "summary": "Runs event taxonomy manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Lake Haru",
+        "Alko Commit Chef",
+        "Template Tanaka",
+        "SLO Sage"
+      ]
+    },
+    "stats": {
+      "power": 94,
+      "precision": 89,
+      "speed": 84,
+      "resilience": 78,
+      "intelligence": 76,
+      "teamwork": 90
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "taxonomy-taka",
+    "seasonOneCard": null,
+    "displayNumber": 61,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/taxonomy-taka",
+    "avatarSvg": "assets/characters/taxonomy-taka/avatar.svg",
+    "cardSvg": "assets/characters/taxonomy-taka/card.svg"
+  },
+  {
+    "id": "cost-kaito",
+    "number": 67,
+    "name": "Cost Kaito",
+    "miseName": "Mise CostEfficiencyMonitor",
+    "codename": "chef.data-insight.cost-efficiency-monitor",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "common",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Cost & Efficiency Monitor",
+      "signaturePhrase": "Cost and Efficiency Monitor done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in cost & efficiency monitor so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen cost & efficiency monitor aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/cost-kaito/full-body.png",
+      "cardPath": "/assets/characters/cost-kaito/card.png"
+    },
+    "workflow": {
+      "jobName": "Cost & Efficiency Monitor",
+      "roleName": "Cost & Efficiency Monitor microagent",
+      "summary": "Runs cost & efficiency monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Flag Fox",
+        "DX Mei",
+        "Yume Builder",
+        "Policy Kenji"
+      ]
+    },
+    "stats": {
+      "power": 75,
+      "precision": 83,
+      "speed": 89,
+      "resilience": 79,
+      "intelligence": 95,
+      "teamwork": 87
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "cost-kaito",
+    "seasonOneCard": null,
+    "displayNumber": 67,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/cost-kaito",
+    "avatarSvg": "assets/characters/cost-kaito/avatar.svg",
+    "cardSvg": "assets/characters/cost-kaito/card.svg"
+  },
+  {
+    "id": "leaderboard-leo",
+    "number": 73,
+    "name": "Leaderboard Leo",
+    "miseName": "Mise ScorecardsLeaderboards",
+    "codename": "chef.data-insight.scorecards-leaderboards",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "common",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Spanish",
+      "title": "Scorecards & Leaderboards",
+      "signaturePhrase": "Scorecards and Leaderboards done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in scorecards & leaderboards so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen scorecards & leaderboards aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/leaderboard-leo/full-body.png",
+      "cardPath": "/assets/characters/leaderboard-leo/card.png"
+    },
+    "workflow": {
+      "jobName": "Scorecards & Leaderboards",
+      "roleName": "Scorecards & Leaderboards microagent",
+      "summary": "Runs scorecards & leaderboards for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Anomaly Aki",
+        "Storyteller Sumi",
+        "Ivun Cache",
+        "Portal Rei"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 94,
+      "speed": 83,
+      "resilience": 97,
+      "intelligence": 81,
+      "teamwork": 77
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "leaderboard-leo",
+    "seasonOneCard": null,
+    "displayNumber": 73,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/leaderboard-leo",
+    "avatarSvg": "assets/characters/leaderboard-leo/avatar.svg",
+    "cardSvg": "assets/characters/leaderboard-leo/card.svg"
+  },
+  {
+    "id": "dora-daichi",
+    "number": 65,
+    "name": "DORA Daichi",
+    "miseName": "Mise PipelineAnalyticsEngine",
+    "codename": "chef.data-insight.pipeline-analytics-engine",
+    "department": "data-insight",
+    "departmentLabel": "Data & Insight Kitchen",
+    "departmentTagline": "Learn. Optimize. Evolve.",
+    "rarity": "common",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Pipeline Analytics Engine",
+      "signaturePhrase": "Pipeline Analytics Engine done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in pipeline analytics engine so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#A855F7",
+      "aura": "Data & Insight Kitchen pipeline analytics engine aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/dora-daichi/full-body.png",
+      "cardPath": "/assets/characters/dora-daichi/card.png"
+    },
+    "workflow": {
+      "jobName": "Pipeline Analytics Engine",
+      "roleName": "Pipeline Analytics Engine microagent",
+      "summary": "Runs pipeline analytics engine for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Repo Ranger",
+        "Flag Fox",
+        "Hugo Matrix",
+        "Runtime Riku"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 87,
+      "speed": 89,
+      "resilience": 71,
+      "intelligence": 83,
+      "teamwork": 91
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "dora-daichi",
+    "seasonOneCard": null,
+    "displayNumber": 65,
+    "departmentColor": "#A855F7",
+    "departmentShort": "Data & Insight",
+    "assetBase": "assets/characters/dora-daichi",
+    "avatarSvg": "assets/characters/dora-daichi/avatar.svg",
+    "cardSvg": "assets/characters/dora-daichi/card.svg"
+  }
+]

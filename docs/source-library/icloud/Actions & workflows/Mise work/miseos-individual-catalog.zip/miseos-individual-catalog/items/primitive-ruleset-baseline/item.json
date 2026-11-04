@@ -1,0 +1,11 @@
+{
+  "id": "primitive-ruleset-baseline",
+  "category": "platform",
+  "title": "Ruleset Baseline",
+  "description": "Human-readable repository/organization ruleset baseline.",
+  "dependencies": [],
+  "files": [
+    "docs/GITHUB_RULESET_BASELINE.md"
+  ],
+  "notes": []
+}

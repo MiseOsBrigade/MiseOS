@@ -1,0 +1,136 @@
+{
+  "version": "1.0.0",
+  "policies": [
+    {
+      "policy_id": "miseos.alert.proof_coverage_critical",
+      "metric_id": "miseos.metric.proof_coverage",
+      "condition": {
+        "operator": "<",
+        "value": 0.9,
+        "for": "5m"
+      },
+      "minimum_confidence": 0.9,
+      "severity": "critical",
+      "actions": [
+        {
+          "type": "pause_workflow",
+          "target": "affected_workflow_class"
+        },
+        {
+          "type": "require_approval",
+          "target": "governance_operator"
+        },
+        {
+          "type": "create_incident",
+          "target": "governance"
+        }
+      ],
+      "cooldown": "30m",
+      "enabled": true
+    },
+    {
+      "policy_id": "miseos.alert.deployment_reliability",
+      "metric_id": "miseos.metric.deployment_success_rate",
+      "condition": {
+        "operator": "<",
+        "value": 0.95,
+        "for": "15m"
+      },
+      "minimum_confidence": 0.9,
+      "severity": "critical",
+      "actions": [
+        {
+          "type": "pause_workflow",
+          "target": "production_deployments"
+        },
+        {
+          "type": "run_playbook",
+          "playbook_uri": "miseos://playbooks/deployment-recovery"
+        }
+      ],
+      "cooldown": "60m",
+      "enabled": true
+    },
+    {
+      "policy_id": "miseos.alert.memory_contamination",
+      "metric_id": "miseos.metric.memory_contamination_rate",
+      "condition": {
+        "operator": ">",
+        "value": 0.01,
+        "for": "1m"
+      },
+      "minimum_confidence": 0.85,
+      "severity": "critical",
+      "actions": [
+        {
+          "type": "quarantine",
+          "target": "affected_memory_namespace"
+        },
+        {
+          "type": "create_incident",
+          "target": "knowledge-governance"
+        },
+        {
+          "type": "require_approval",
+          "target": "knowledge-governance-lead"
+        }
+      ],
+      "cooldown": "60m",
+      "enabled": true
+    },
+    {
+      "policy_id": "miseos.alert.registry_integrity",
+      "metric_id": "miseos.metric.registry_integrity",
+      "condition": {
+        "operator": "<",
+        "value": 1.0,
+        "for": "1m"
+      },
+      "minimum_confidence": 0.95,
+      "severity": "critical",
+      "actions": [
+        {
+          "type": "pause_workflow",
+          "target": "registry_publication"
+        },
+        {
+          "type": "quarantine",
+          "target": "invalid_registry_record"
+        },
+        {
+          "type": "create_incident",
+          "target": "registry-platform"
+        }
+      ],
+      "cooldown": "30m",
+      "enabled": true
+    },
+    {
+      "policy_id": "miseos.alert.entitlement_accuracy",
+      "metric_id": "miseos.metric.entitlement_accuracy",
+      "condition": {
+        "operator": "<",
+        "value": 1.0,
+        "for": "1m"
+      },
+      "minimum_confidence": 0.95,
+      "severity": "critical",
+      "actions": [
+        {
+          "type": "pause_workflow",
+          "target": "entitlement_changes"
+        },
+        {
+          "type": "run_playbook",
+          "playbook_uri": "miseos://playbooks/billing-reconciliation"
+        },
+        {
+          "type": "create_incident",
+          "target": "commercial-operations"
+        }
+      ],
+      "cooldown": "30m",
+      "enabled": true
+    }
+  ]
+}

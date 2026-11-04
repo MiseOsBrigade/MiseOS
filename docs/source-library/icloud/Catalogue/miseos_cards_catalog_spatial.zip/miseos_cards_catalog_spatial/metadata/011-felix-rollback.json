@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #011 — Felix Rollback",
+  "description": "Felix Rollback serves the Pipeline Kitchen as the brigade's rollback & fix-forward. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/011-felix-rollback.svg",
+  "animation_url": "media/animation/011-felix-rollback.mp4",
+  "external_url": "https://miseos.dev/agents/felix-rollback",
+  "background_color": "E97822",
+  "spatial_screen": {
+    "card_id": "MISE-011",
+    "level": 13,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.011",
+    "number": 11,
+    "slug": "felix-rollback",
+    "codename": "FELIX_ROLLBACK",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Pipeline Kitchen",
+    "department_code": "pipeline",
+    "role": "Rollback & Fix-Forward",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 13
+  },
+  "lore": {
+    "summary": "Felix Rollback serves the Pipeline Kitchen as the brigade's rollback & fix-forward. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Felix Rollback performs rollback & fix-forward within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Tariq Notesmith",
+      "Ivun Cache",
+      "Canary Taster"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE ROLLBACK FIX FORWARD",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Rollback & Fix-Forward Protocol",
+      "type": "active",
+      "effect": "Executes the core rollback & fix-forward workflow with evidence capture.",
+      "command": "MISE ROLLBACK FIX FORWARD"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next pipeline station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 81,
+    "precision": 80,
+    "speed": 65,
+    "resilience": 77,
+    "intelligence": 63,
+    "teamwork": 79
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Rollback & Fix-Forward"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 13,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 81,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 80,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 65,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 77,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 63,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 79,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/011-felix-rollback.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/011-felix-rollback.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/011-felix-rollback.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/011-felix-rollback.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/011-felix-rollback.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/011-felix-rollback.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

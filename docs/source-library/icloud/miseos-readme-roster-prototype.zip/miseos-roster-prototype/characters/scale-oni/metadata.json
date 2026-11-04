@@ -1,0 +1,78 @@
+{
+  "id": "scale-oni",
+  "slug": "scale-oni",
+  "number": 85,
+  "name": "Scale Oni",
+  "miseName": "Mise Scale",
+  "codename": "chef.operations.scale",
+  "department": "operations",
+  "departmentLabel": "Operations Kitchen",
+  "departmentTagline": "Keep the kitchen running smoothly.",
+  "rarity": "legendary",
+  "roleCategory": "scale",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Rotisseur",
+    "signaturePhrase": "Scale Oni keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Scales up when things get hot. The bigger the load, the stronger he gets."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#D4AF37",
+    "aura": "Operations Kitchen Red Heat aura",
+    "silhouette": "chibi DevOps chef carrying Red Heat",
+    "tool": "Red Heat",
+    "spritePath": "/assets/characters/scale-oni/full-body.png",
+    "cardPath": "/assets/characters/scale-oni/card.png"
+  },
+  "workflow": {
+    "jobName": "Scale",
+    "roleName": "Rotisseur microagent",
+    "summary": "Scales up when things get hot. The bigger the load, the stronger he gets.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Kaji",
+      "Kurogami Senpai"
+    ]
+  },
+  "stats": {
+    "power": 99,
+    "precision": 77,
+    "speed": 71,
+    "resilience": 94,
+    "intelligence": 88,
+    "teamwork": 74
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "12",
+    "role": "Rotisseur",
+    "department": "Operations",
+    "function": "Scale",
+    "rarity": "Legendary",
+    "tier": "Scale Core",
+    "element": "Red Heat",
+    "ability": "Elastic Flame",
+    "lore": "Scales up when things get hot. The bigger the load, the stronger he gets.",
+    "image_file": "cards/png/012-scale-oni.png",
+    "metadata_file": "metadata/erc721/012-scale-oni.json"
+  },
+  "displayNumber": 85,
+  "departmentColor": "#D4AF37",
+  "departmentShort": "Operations",
+  "assetBase": "assets/characters/scale-oni",
+  "avatarSvg": "assets/characters/scale-oni/avatar.svg",
+  "cardSvg": "assets/characters/scale-oni/card.svg"
+}

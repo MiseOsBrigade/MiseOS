@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.bootstrap-registry",
+  "name": "MiseOS Bootstrap Registry",
+  "version": "0.1.0",
+  "description": "Bootstrap registry for MiseOS packages, containers, agents, workflows, policies, templates, and release metadata.",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "registries": {
+    "container": "https://ghcr.io",
+    "npm": "https://npm.pkg.github.com",
+    "rubygems": "https://rubygems.pkg.github.com",
+    "maven": "https://maven.pkg.github.com",
+    "gradle": "https://maven.pkg.github.com",
+    "nuget": "https://nuget.pkg.github.com"
+  },
+  "namespaces": {
+    "container": "ghcr.io/mise-os",
+    "npm": "@miseos",
+    "maven": "dev.miseos",
+    "gradle": "dev.miseos",
+    "nuget": "MiseOS"
+  },
+  "bootSequence": [
+    "registry",
+    "runtime",
+    "cli",
+    "policy-engine",
+    "release-sentinel",
+    "autonomous-updates"
+  ],
+  "coreArtifacts": [
+    "miseos.cli",
+    "miseos.agent-sdk",
+    "miseos.policy-engine",
+    "miseos.release-sentinel",
+    "miseos.repo-steward",
+    "miseos.runner",
+    "miseos.policy-checker",
+    "miseos.docs-builder"
+  ],
+  "trustDefaults": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade",
+      "security_policy_change",
+      "dependency_source_change",
+      "network_surface_change"
+    ]
+  }
+}

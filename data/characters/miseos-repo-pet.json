@@ -1,0 +1,395 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-repo-pet",
+  "name": "MiseOS Repo Pet",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+  "catalog_item": {
+    "id": "registry-repo-pet",
+    "category": "registry-capability",
+    "title": "MiseOS Repo Pet",
+    "description": "Executable baseline capability for MiseOS Repo Pet.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.repo-pet.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: repoPet",
+      "Source status: active"
+    ]
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-repo-pet.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-repo-pet.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Repo Pet",
+      "match_method": "title"
+    },
+    {
+      "file": "assets/player-cards/long-cards/miseos-repo-pet-2.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-repo-pet-2.webp",
+      "collection": "long-cards",
+      "title": "MiseOS Repo Pet",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-repo-pet.webp",
+      "printed_text": [
+        "11",
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "REKITEER",
+        "Erepository)",
+        "Esource:true.purpose:.",
+        "(nurture:on)",
+        "MiseOSRepoPet",
+        "Repository Familiar",
+        "LOYALTY",
+        "100",
+        "WATCHFULNESS",
+        "100",
+        "SYNC",
+        "100",
+        "HEALING",
+        "100",
+        "COMPANIONSHIP",
+        "100",
+        "IGUARDTHE CODE",
+        "I NURTURE THE SOURCE.",
+        "IAMALWAYS HERE."
+      ]
+    },
+    {
+      "file": "assets/player-cards/long-cards/miseos-repo-pet-2.webp",
+      "printed_text": [
+        "11",
+        "MISE",
+        "ORCHESTRA",
+        "ULTR MYTHIC",
+        "tsettinctriepte..",
+        "MiseOS Repo Pet",
+        "Repository Familiar",
+        "LOYALTY",
+        "100",
+        "WATCHFULNESS",
+        "100",
+        "SYNC",
+        "100",
+        "HEALING",
+        "100",
+        "COMPANIONSHIP",
+        "100",
+        "I GUARD THE CODE.",
+        "INURTURETHE SOURCE.",
+        "IAMALWAYSHERE."
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "repoPet"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "agent",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 52,
+        "term": "repoPet"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 42,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/terminal-renderer.js",
+        "line": 25,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/test/smoke.mjs",
+        "line": 17,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 52,
+        "term": "repoPet"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 52,
+        "term": "repoPet"
+      },
+      {
+        "path": "tools/repo-pet/.github/workflows/miseos-repo-pet.yml",
+        "line": 1,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "tools/repo-pet/bin/mise-roam.mjs",
+        "line": 64,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "tools/repo-pet/src/terminal-renderer.js",
+        "line": 40,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "tools/repo-pet/test/smoke.mjs",
+        "line": 21,
+        "term": "MiseOS Repo Pet"
+      }
+    ],
+    "code_ref_count": 10,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 7338,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+        "line": 5,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/registry-catalog.manifest.json",
+        "line": 969,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/config/3d-card-showcase.json",
+        "line": 90,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/registry_catalog_manifest.json",
+        "line": 43,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/package.json",
+        "line": 4,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/registry/registry-catalog.manifest.json",
+        "line": 132,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json",
+        "line": 5,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/registry-platform/registry/registry-catalog.manifest.json",
+        "line": 969,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 7338,
+        "term": "MiseOS Repo Pet"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 25,
+        "term": "miseos.repo-pet"
+      },
+      {
+        "path": "apps/miseos-platform/README.md",
+        "line": 363,
+        "term": "miseos-repo-pet"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 160,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/repo-pet.md",
+        "line": 1,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 90,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 39,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 1,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 25,
+        "term": "miseos.repo-pet"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 124,
+        "term": "miseos-repo-pet"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 29,
+        "term": "miseos.repo-pet"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 52,
+      "name": "repoPet"
+    },
+    "tool_dir": "tools/repo-pet",
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 52,
+        "term": "repoPet"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 42,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/terminal-renderer.js",
+        "line": 25,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 52,
+        "term": "repoPet"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 52,
+        "term": "repoPet"
+      },
+      {
+        "path": "tools/repo-pet/.github/workflows/miseos-repo-pet.yml",
+        "line": 1,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "tools/repo-pet/bin/mise-roam.mjs",
+        "line": 64,
+        "term": "MiseOS Repo Pet"
+      },
+      {
+        "path": "tools/repo-pet/src/terminal-renderer.js",
+        "line": 40,
+        "term": "MiseOS Repo Pet"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.repo-pet"
+  },
+  "role": "Agent",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Repo Pet.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "repoPet",
+      "handler": "repoPet",
+      "source": "apps/registry-platform/registry/manifests/miseos.repo-pet.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (agent)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Repo Pet.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

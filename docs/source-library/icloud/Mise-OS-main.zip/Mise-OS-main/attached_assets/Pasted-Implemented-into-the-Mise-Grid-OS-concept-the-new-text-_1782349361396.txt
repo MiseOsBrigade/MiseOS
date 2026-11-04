@@ -1,0 +1,448 @@
+Implemented into the Mise Grid OS concept, the new text adds one major upgrade:
+
+The grid should not just store workflows. It should behave like a Git-aware, agentic repository operating system where every table, source, task, claim, workflow, and file can be inspected, staged, versioned, audited, indexed, and recovered.
+
+The uploaded material maps Git plumbing commands into semantic agents, where commands like cat-file, hash-object, mktree, commit-tree, update-index, reflog, fsck, and gc become specialized agents for decoding, hashing, staging, snapshotting, provenance tracking, integrity checks, and cleanup  . It also provides a GitHub/GitHub Actions reference map covering repo structure, workflows, CI/CD, security files, dependency automation, and automation patterns  .
+
+Mise Grid OS — upgraded architecture
+
+flowchart TD
+    A[Raw Inputs] --> B[Mise Grid Tables]
+    B --> C[Git-Like Object Layer]
+    C --> D[Agentic Plumbing Layer]
+    D --> E[RAG / Retrieval Layer]
+    E --> F[Dashboards / Reports / Automations]
+    B --> B1[Projects]
+    B --> B2[Tasks]
+    B --> B3[Sources]
+    B --> B4[Claims]
+    B --> B5[Tools]
+    B --> B6[Workflows]
+    C --> C1[Blob Objects]
+    C --> C2[Tree Objects]
+    C --> C3[Commit Snapshots]
+    C --> C4[Refs]
+    C --> C5[Reflog]
+    D --> D1[Inspector Agents]
+    D --> D2[Hasher Agents]
+    D --> D3[Indexer Agents]
+    D --> D4[Verifier Agents]
+    D --> D5[Cleanup Agents]
+    D --> D6[Workflow Agents]
+    E --> E1[Metadata]
+    E --> E2[Embeddings]
+    E --> E3[Source IDs]
+    E --> E4[Confidence]
+    E --> E5[Citations]
+    F --> F1[Project Boards]
+    F --> F2[Evidence Boards]
+    F --> F3[CI/CD Workflows]
+    F --> F4[Audit Reports]
+    F --> F5[AI Answers]
+
+New operating model
+
+The system now has three brains:
+
+Brain	Purpose
+Grid Brain	Organizes projects, tasks, claims, sources, tools, workflows
+Git Brain	Tracks versions, snapshots, references, history, recovery
+Agent Brain	Inspects, validates, indexes, cleans, summarizes, automates
+
+This is stronger than a normal spreadsheet because it creates traceable state.
+
+A normal row says:
+
+“This task exists.”
+
+A Mise Grid OS row says:
+
+“This task exists, belongs to this project, came from this source, was last verified on this date, has this confidence level, was changed in this snapshot, and can be retrieved by AI with citation.”
+
+New tables to add
+
+Keep the original tables, but add these.
+
+1. Object Registry
+
+Tracks every file, note, source, claim, dataset, prompt, or output as a content-addressed object.
+
+Field	Type
+Object ID	Unique hash
+Object Type	Blob, Tree, Commit, Tag, Source, Claim, Prompt, Output
+Object Name	Text
+Raw Content Link	URL/file
+Canonical Summary	Text
+Hash Algorithm	SHA-256 recommended
+Created Date	Date
+Last Verified	Date
+Status	Active, deprecated, archived
+Related Table	Linked record
+Related Record ID	Text
+
+2. Snapshot Log
+
+Works like commits for your grid.
+
+Field	Type
+Snapshot ID	Unique ID
+Snapshot Name	Text
+Parent Snapshot	Linked record
+Changed Records	Linked records
+Change Summary	Long text
+Author/Agent	Text
+Timestamp	Date/time
+Reason	Text
+Status	Draft, accepted, reverted
+Verification Result	Pass, warning, fail
+
+3. Reference Map
+
+Tracks named pointers like “current active version,” “approved workflow,” or “latest verified evidence.”
+
+Field	Type
+Ref ID	Unique ID
+Ref Name	Text
+Ref Type	Project, workflow, claim set, source set
+Points To	Snapshot/Object ID
+Previous Ref	Snapshot/Object ID
+Updated By	Person/Agent
+Updated At	Date
+Notes	Text
+
+4. Agent Registry
+
+Turns Git-style functions into named operating agents.
+
+Agent	Inspired by	Role
+Blob Inspector	git cat-file	Reads and explains source objects
+Noise Filter	git check-ignore	Excludes junk, duplicates, unsupported items
+Identity Resolver	git check-mailmap	Maps aliases/entities to canonical names
+Syntax Arbiter	git check-ref-format	Validates names, IDs, schemas
+Object Hasher	git hash-object	Creates stable fingerprints for records/files
+Corpus Indexer	git index-pack	Builds lookup indexes for sources and records
+Lexeme Register	git ls-files	Lists all known records/files in scope
+Tree Builder	git mktree	Builds project/workflow/source hierarchies
+Staging Registrar	git update-index	Marks records ready for snapshot/review
+Snapshot Synthesizer	git commit-tree	Creates versioned state snapshots
+Reference Updater	git update-ref	Moves “current version” pointers
+Provenance Recorder	git reflog	Tracks history of reference changes
+Integrity Guardian	git fsck	Finds broken links, missing sources, stale claims
+Garbage Collector	git gc	Archives/de-duplicates stale objects
+Packager	git pack-objects	Bundles records for export or backup
+
+5. Automation / GitHub Actions Table
+
+From the GitHub Actions notes, add a table that tracks workflow automation files.
+
+Field	Type
+Workflow ID	Unique ID
+Workflow Name	Text
+File Path	.github/workflows/*.yml
+Trigger	push, pull_request, schedule, manual
+Purpose	CI, deploy, audit, release, docs
+Required Secrets	Text
+Permissions	Text
+Status	Planned, active, failing, disabled
+Last Run	Date
+Related Project	Linked record
+Owner	Person/Agent
+
+New GitHub repo scaffold
+
+For a real repository, use this structure:
+
+mise-grid-os/
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── CODE_OF_CONDUCT.md
+├── .gitignore
+├── .gitattributes
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml
+│   │   ├── grid-integrity-audit.yml
+│   │   ├── rag-index-refresh.yml
+│   │   └── release.yml
+│   ├── ISSUE_TEMPLATE/
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── CODEOWNERS
+│   └── dependabot.yml
+├── docs/
+│   ├── architecture.md
+│   ├── schema.md
+│   ├── agent-map.md
+│   ├── rag-policy.md
+│   └── operating-rules.md
+├── schemas/
+│   ├── projects.schema.json
+│   ├── tasks.schema.json
+│   ├── sources.schema.json
+│   ├── claims.schema.json
+│   ├── objects.schema.json
+│   └── snapshots.schema.json
+├── templates/
+│   ├── grid-template.csv
+│   ├── source-intake.csv
+│   ├── claim-review.csv
+│   └── workflow-map.csv
+├── agents/
+│   ├── inspector/
+│   ├── hasher/
+│   ├── indexer/
+│   ├── verifier/
+│   ├── snapshotter/
+│   └── cleaner/
+├── scripts/
+│   ├── validate-grid.ts
+│   ├── hash-records.ts
+│   ├── build-rag-index.ts
+│   ├── audit-claims.ts
+│   └── export-grid.ts
+└── examples/
+    ├── goodshyt-community-drive/
+    ├── research-manuscript/
+    └── agent-workflow/
+
+Repository files to add
+
+CLAUDE.md
+
+# Mise Grid OS Agent Instructions
+This repository is an agent-native knowledge/workflow grid.
+## Operating Rules
+1. Treat rows as atomic records.
+2. Never invent facts not present in Sources or Claims.
+3. Every factual output must reference a Source ID when possible.
+4. Preserve IDs, timestamps, confidence levels, and verification status.
+5. Prefer small composable changes over broad rewrites.
+6. Before editing schemas, update docs/schema.md.
+7. Before changing workflows, update docs/operating-rules.md.
+8. Run validation before committing.
+## Agent Roles
+- Inspector Agent: reads objects and records.
+- Hasher Agent: creates stable object IDs.
+- Indexer Agent: builds retrieval indexes.
+- Verifier Agent: checks claims and sources.
+- Snapshotter Agent: creates versioned snapshots.
+- Cleaner Agent: archives stale or duplicate records.
+## Safety
+Do not remove source records unless they are archived first.
+Do not mark claims verified without evidence.
+Do not expose secrets, API keys, or private credentials.
+
+.github/workflows/grid-integrity-audit.yml
+
+name: Grid Integrity Audit
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Validate schemas
+        run: npm run validate:schemas
+      - name: Audit source links
+        run: npm run audit:sources
+      - name: Audit claims
+        run: npm run audit:claims
+
+.github/workflows/rag-index-refresh.yml
+
+name: RAG Index Refresh
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1"
+permissions:
+  contents: read
+jobs:
+  refresh-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Build retrieval index
+        run: npm run rag:build
+      - name: Validate retrieval metadata
+        run: npm run rag:validate
+
+New scripts to implement
+
+scripts/hash-records.ts
+
+Purpose: create stable IDs for rows.
+
+import { createHash } from "node:crypto";
+export function hashRecord(record: unknown): string {
+  const canonical = JSON.stringify(record, Object.keys(record as object).sort());
+  return createHash("sha256").update(canonical).digest("hex");
+}
+
+scripts/audit-claims.ts
+
+Purpose: catch unsupported facts.
+
+type Claim = {
+  claim_id: string;
+  claim: string;
+  source_id?: string;
+  confidence?: "high" | "medium" | "low" | "unknown";
+  status?: "draft" | "verified" | "deprecated" | "archived";
+};
+export function auditClaim(claim: Claim): string[] {
+  const issues: string[] = [];
+  if (!claim.source_id) {
+    issues.push(`Claim ${claim.claim_id} has no source_id.`);
+  }
+  if (claim.status === "verified" && !claim.source_id) {
+    issues.push(`Claim ${claim.claim_id} cannot be verified without a source.`);
+  }
+  if (!claim.confidence) {
+    issues.push(`Claim ${claim.claim_id} is missing confidence.`);
+  }
+  return issues;
+}
+
+scripts/validate-grid.ts
+
+Purpose: enforce “everything in its place.”
+
+type GridRecord = {
+  id?: string;
+  type?: string;
+  status?: string;
+  created_date?: string;
+  canonical_summary?: string;
+};
+export function validateGridRecord(record: GridRecord): string[] {
+  const errors: string[] = [];
+  if (!record.id) errors.push("Missing id.");
+  if (!record.type) errors.push("Missing type.");
+  if (!record.status) errors.push("Missing status.");
+  if (!record.created_date) errors.push("Missing created_date.");
+  if (!record.canonical_summary) errors.push("Missing canonical_summary.");
+  return errors;
+}
+
+New automation logic
+
+Add this lifecycle:
+
+Inbox item created
+    ↓
+Inspector Agent reads it
+    ↓
+Noise Filter decides keep/archive
+    ↓
+Hasher Agent creates Object ID
+    ↓
+Source/Claim/Task record is created
+    ↓
+Verifier Agent checks evidence
+    ↓
+Indexer Agent prepares RAG text
+    ↓
+Snapshotter Agent commits grid state
+    ↓
+Dashboard updates
+
+Updated MVP build order
+
+Phase 1 — Grid Core
+
+Build:
+
+* Projects
+* Tasks
+* Sources
+* Claims
+* Tools
+
+Phase 2 — Git Memory
+
+Add:
+
+* Object Registry
+* Snapshot Log
+* Reference Map
+* Audit Log
+
+Phase 3 — Agent Layer
+
+Add:
+
+* Inspector Agent
+* Hasher Agent
+* Verifier Agent
+* Indexer Agent
+* Cleaner Agent
+* Snapshotter Agent
+
+Phase 4 — GitHub Repo
+
+Add:
+
+* README
+* docs
+* schemas
+* scripts
+* GitHub Actions
+* issue templates
+* PR template
+* CODEOWNERS
+* SECURITY.md
+* dependabot.yml
+
+Phase 5 — RAG Layer
+
+Add:
+
+* Embedding text fields
+* Chunk IDs
+* Source IDs
+* Confidence levels
+* Retrieval tests
+* Citation-required answer policy
+
+Best final version
+
+The upgraded system is:
+
+Mise Grid OS: a Git-aware, RAG-ready, agentic spreadsheet-database operating system for organizing work, evidence, tools, workflows, sources, and decisions with version control and auditability.
+
+Best positioning sentence:
+
+Mise Grid OS turns spreadsheets into an evidence-backed operating layer where every row has a role, every claim has a source, every workflow has a path, and every change can be inspected, versioned, retrieved, and trusted.
+
+Final rule:
+
+A spreadsheet stores information.
+A database structures information.
+Git remembers information.
+RAG retrieves information.
+Agents operate on information.
+Mise Grid OS combines all five.

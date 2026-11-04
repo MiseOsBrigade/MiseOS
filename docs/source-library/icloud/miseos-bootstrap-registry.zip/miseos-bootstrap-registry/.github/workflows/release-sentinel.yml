@@ -1,0 +1,46 @@
+name: Release Sentinel
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  packages: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Validate registry
+        run: pnpm validate
+
+      - name: Run Release Sentinel dry-run
+        run: pnpm sentinel:dry-run
+
+      - name: Create update PR if report changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: update release sentinel report"
+          title: "chore: release sentinel registry drift report"
+          body: |
+            Automated MiseOS Release Sentinel report.
+
+            This PR is intentionally review-first. It does not silently upgrade packages.
+          branch: automation/release-sentinel-report
+          add-paths: |
+            .miseos/sentinel/release-sentinel-report.json

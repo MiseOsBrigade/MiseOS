@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.051",
+  "number": 51,
+  "slug": "seira-vaultkeeper",
+  "name": "Seira Vaultkeeper",
+  "mise_name": "Seira Vaultkeeper",
+  "codename": "SEIRA_VAULTKEEPER",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Secrets Lifecycle Manager",
+  "job_name": "Secrets Lifecycle Manager",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Secrets Lifecycle Manager",
+    "avatar_path": "assets/characters/seira-vaultkeeper/avatar.png",
+    "card_path": "assets/characters/seira-vaultkeeper/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Seira Vaultkeeper performs secrets lifecycle manager within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Policy Ronin",
+      "Merge Sentinel",
+      "Watchtower Yoru"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 81,
+    "precision": 71,
+    "speed": 78,
+    "resilience": 90,
+    "intelligence": 68,
+    "teamwork": 91
+  },
+  "paths": {
+    "readme": "characters/seira-vaultkeeper/README.md",
+    "metadata": "characters/seira-vaultkeeper/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

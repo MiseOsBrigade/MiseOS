@@ -1,0 +1,38 @@
+{
+  "slug": "scale-oni",
+  "name": "Scale Oni",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Rotisseur",
+  "department": "Infrastructure Department",
+  "glyph": "📈",
+  "catchphrase": "When demand rises, he grows. Handles more and never backs down.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 5,
+      "files": 3,
+      "parent": 2,
+      "infra": 8,
+      "deploy": 6,
+      "performance": 8
+    },
+    "verbs": {
+      "enterDirectory": "expands into",
+      "inspectFile": "checks load capacity in",
+      "inspectConfig": "tunes autoscaling heat in",
+      "inspectDocs": "reads the capacity map in",
+      "inspectTests": "runs load rituals over",
+      "retreat": "shrinks back to standby"
+    }
+  },
+  "sprites": [],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "character": "scale-oni",
+  "cards": [
+    "docs/characters/scale-oni.md",
+    "docs/characters/scale-oni.md",
+    "docs/characters/scale-oni.md"
+  ],
+  "page": "docs/repo-pets/scale-oni.md",
+  "dir": "assets/repo-pets/scale-oni"
+}

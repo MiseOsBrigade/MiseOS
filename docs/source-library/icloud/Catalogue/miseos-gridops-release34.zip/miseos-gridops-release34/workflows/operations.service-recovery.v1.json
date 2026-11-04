@@ -1,0 +1,13 @@
+{
+  "id": "operations.service-recovery",
+  "version": "1.0.0",
+  "department": "Operations Kitchen",
+  "owner_agent": "miseos.character.076",
+  "steps": [
+    {"id": "dispatch", "action": "alert.normalize", "agent": "Beacon Broil", "depends_on": []},
+    {"id": "prioritize", "action": "incident.prioritize", "agent": "Ticket Tactician", "depends_on": ["dispatch"]},
+    {"id": "retrieve_runbook", "action": "knowledge.retrieve", "agent": "Recipe Ranger", "depends_on": ["prioritize"]},
+    {"id": "propose_change", "action": "recovery.propose", "agent": "Kurogami Senpai", "depends_on": ["retrieve_runbook"]},
+    {"id": "validate", "action": "recovery.validate", "agent": "Plate Inspector", "depends_on": ["propose_change"]}
+  ]
+}

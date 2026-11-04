@@ -1,0 +1,51 @@
+{
+  "manifest_id": "miseos.character.aloko-commit-chef.v1",
+  "version": "1.0.0",
+  "asset": {
+    "uri": "/character.png",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "hotspots": [
+    {
+      "id": "inspect",
+      "shape": {
+        "type": "circle",
+        "x": 0.5,
+        "y": 0.35,
+        "r": 0.12
+      },
+      "actionId": "inspect_character",
+      "metricGate": {
+        "metricId": "miseos.metric.character_roster_integrity",
+        "minimumConfidence": 0.95,
+        "blockOnStatus": "red"
+      }
+    },
+    {
+      "id": "gridops",
+      "shape": {
+        "type": "rect",
+        "x": 0.3,
+        "y": 0.65,
+        "w": 0.4,
+        "h": 0.2
+      },
+      "actionId": "open_gridops",
+      "metricGate": {
+        "metricId": "miseos.metric.governance_compliance",
+        "minimumConfidence": 0.99,
+        "blockOnStatus": "red"
+      }
+    }
+  ],
+  "policies": {
+    "explicitConsent": true,
+    "noEmbeddedCode": true,
+    "allowlistOnly": true
+  },
+  "signature": {
+    "alg": "ed25519",
+    "keyId": "dev-key-1",
+    "value": "Pfqpo78dAwDrE+lskN40pWjmiltX37d5tBVSH+/8UZVcQY59Ki0/b09P0SjOd5qsn4M0HdKVz0LRl4T0iFwlDw=="
+  }
+}

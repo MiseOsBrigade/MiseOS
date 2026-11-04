@@ -1,0 +1,20 @@
+{
+  "slug": "flash-riku",
+  "name": "Flash Riku",
+  "kind": "brigade_mascot_agent",
+  "role": "Edge Accelerator",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:92",
+  "thumbnail": "agents/flash-riku/thumb.png",
+  "character": "flash-riku",
+  "cards": [
+    "docs/characters/flash-riku.md"
+  ],
+  "pet": "flash-riku",
+  "page": "docs/agents/flash-riku.md",
+  "dir": "agents/flash-riku",
+  "files": [
+    "agents/flash-riku/Flash-Riku.png"
+  ]
+}

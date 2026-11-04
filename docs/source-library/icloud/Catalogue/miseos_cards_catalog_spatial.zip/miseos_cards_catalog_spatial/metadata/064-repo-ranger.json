@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #064 — Repo Ranger",
+  "description": "Repo Ranger serves the Data & Insight Kitchen as the brigade's repo health analyzer. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/064-repo-ranger.svg",
+  "animation_url": "media/animation/064-repo-ranger.mp4",
+  "external_url": "https://miseos.dev/agents/repo-ranger",
+  "background_color": "17A2A4",
+  "spatial_screen": {
+    "card_id": "MISE-064",
+    "level": 17,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.064",
+    "number": 64,
+    "slug": "repo-ranger",
+    "codename": "REPO_RANGER",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Data & Insight Kitchen",
+    "department_code": "data-insight",
+    "role": "Repo Health Analyzer",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 17
+  },
+  "lore": {
+    "summary": "Repo Ranger serves the Data & Insight Kitchen as the brigade's repo health analyzer. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Repo Ranger performs repo health analyzer within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "DORA Daichi",
+      "Flag Fox",
+      "Cost Kaito"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE REPO HEALTH ANALYZER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Repo Health Analyzer Protocol",
+      "type": "active",
+      "effect": "Executes the core repo health analyzer workflow with evidence capture.",
+      "command": "MISE REPO HEALTH ANALYZER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next data-insight station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 60,
+    "precision": 76,
+    "speed": 69,
+    "resilience": 72,
+    "intelligence": 64,
+    "teamwork": 83
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Data & Insight Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Repo Health Analyzer"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 17,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 60,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 69,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 72,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 64,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 83,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/064-repo-ranger.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/064-repo-ranger.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/064-repo-ranger.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/064-repo-ranger.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/064-repo-ranger.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/064-repo-ranger.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

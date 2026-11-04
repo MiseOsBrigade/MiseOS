@@ -1,0 +1,7 @@
+{
+  "gate": "E4 branch-advisor",
+  "defaultBranch": "main",
+  "current": "master",
+  "top": null,
+  "candidates": []
+}

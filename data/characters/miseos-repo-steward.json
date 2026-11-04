@@ -1,0 +1,357 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-repo-steward",
+  "name": "MiseOS Repo Steward",
+  "kind": "registry_manifest",
+  "aliases": [],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.repo-steward",
+    "name": "MiseOS Repo Steward",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/repo-steward"
+  },
+  "catalog_item": {
+    "id": "registry-repo-steward",
+    "category": "registry-capability",
+    "title": "MiseOS Repo Steward",
+    "description": "Executable baseline capability for MiseOS Repo Steward.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.repo-steward.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: repoSteward",
+      "Source status: active"
+    ]
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/keeperofhistory-guardianofintegrity.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/keeperofhistory-guardianofintegrity.webp",
+      "collection": "long-cards",
+      "title": "KEEPEROFHISTORY.GUARDIANOFINTEGRITY",
+      "match_method": "ocr-line"
+    },
+    {
+      "file": "assets/player-cards/long-cards/keeperofhistory-guardian-ofintegrity.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/keeperofhistory-guardian-ofintegrity.webp",
+      "collection": "long-cards",
+      "title": "KEEPEROFHISTORY.GUARDIAN OFINTEGRITY.",
+      "match_method": "ocr-line"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/keeperofhistory-guardianofintegrity.webp",
+      "printed_text": [
+        "MiseOs",
+        "14",
+        "ULTRA",
+        "MYTHIC",
+        "MiseOS Repo Steward",
+        "TYPE: AGENT",
+        "BRANCH",
+        "GUARDIANSHIP",
+        "MERGE",
+        "HISTORY",
+        "DISCIPLINE",
+        "SANCTITY",
+        "CONFLICT",
+        "REPO",
+        "RESOLUTION",
+        "INTEGRITY",
+        "KEEPEROFHISTORY.GUARDIANOFINTEGRITY",
+        "STEWARDOFEVERYCOMMIT",
+        "REPOSITORYSOVEREIGN",
+        "Overseesall repositorieswithdivineclarity",
+        "BRANCHPROTECTOR",
+        "Guardseverybranch.Preserveseverypath.",
+        "MERGEDISCIPLINARIAN",
+        "Bringsharmonytochanges.Enforcessacredorder.",
+        "CODEVAULTKEEPER",
+        "Locks history.Protectstruth.Ensures eternity",
+        "miseos://registry/14/miseos.repo-steward"
+      ]
+    },
+    {
+      "file": "assets/player-cards/long-cards/keeperofhistory-guardian-ofintegrity.webp",
+      "printed_text": [
+        "MiseOs",
+        "14",
+        "ULTRA",
+        "MYTHIC",
+        "MiseOS Repo Steward",
+        "TYPE: AGENT",
+        "BRANCH",
+        "GUARDIANSHIP",
+        "MERGE",
+        "HISTORY",
+        "DISCIPLINE",
+        "SANCTITY",
+        "CONFLICT",
+        "REPO",
+        "RESOLUTION",
+        "INTEGRITY",
+        "KEEPER OFHISTORY.GUARDIANOFINTEGRITY.",
+        "STEWARDOF EVERYCOMMIT",
+        "REPOSITORYSOVEREIGN",
+        "Oversees all repositories with divine clarity",
+        "BRANCHPROTECTOR",
+        "Guards everybranch.Preserves everypath.",
+        "MERGEDISCIPLINARIAN",
+        "Brings harmony to changes. Enforces sacred order.",
+        "CODEVAULT KEEPER",
+        "Locks history.Protects truth.Ensures eternity",
+        "miseos://registry/14/miseos.repo-steward"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Ultra Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "repoSteward"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "agent",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 26,
+        "term": "repoSteward"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 26,
+        "term": "repoSteward"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 26,
+        "term": "repoSteward"
+      }
+    ],
+    "code_ref_count": 3,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 207,
+        "term": "miseos.repo-steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 383,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 17,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 383,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 71,
+        "term": "miseos.repo-steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.repo-steward.json",
+        "line": 4,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 71,
+        "term": "miseos.repo-steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.repo-steward.json",
+        "line": 4,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 323,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 383,
+        "term": "MiseOS Repo Steward"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/naming-conventions.md",
+        "line": 34,
+        "term": "miseos.repo-steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 55,
+        "term": "miseos.repo-steward"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 48,
+        "term": "miseos.repo-steward"
+      },
+      {
+        "path": "apps/developer-platform/products/repo-steward/README.md",
+        "line": 1,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/developer-platform/products/repo-steward/docs/architecture.md",
+        "line": 3,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 18,
+        "term": "miseos.repo-steward"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 152,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/miseos-platform/cards/registry/repo-steward.md",
+        "line": 1,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/miseos-platform/docs/3D_CHARACTER_COLLECTIBLE_CAROUSEL.md",
+        "line": 46,
+        "term": "MiseOS Repo Steward"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 32,
+        "term": "MiseOS Repo Steward"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 26,
+      "name": "repoSteward"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 26,
+        "term": "repoSteward"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 26,
+        "term": "repoSteward"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 26,
+        "term": "repoSteward"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.repo-steward"
+  },
+  "role": "Agent",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Repo Steward.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "repoSteward",
+      "handler": "repoSteward",
+      "source": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (agent)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Repo Steward.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

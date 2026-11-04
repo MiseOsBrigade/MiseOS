@@ -1,0 +1,23 @@
+{
+  "slug": "mise-maestro",
+  "name": "Mise Maestro",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Control Plane Conductor",
+  "department": "Orchestration",
+  "glyph": "🎼",
+  "catchphrase": "Conducts the whole service.",
+  "behaviors": {
+    "preferred_paths": [
+      "orchestra",
+      "src",
+      "docs"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-maestro.md",
+  "dir": "assets/repo-pets/mise-maestro"
+}

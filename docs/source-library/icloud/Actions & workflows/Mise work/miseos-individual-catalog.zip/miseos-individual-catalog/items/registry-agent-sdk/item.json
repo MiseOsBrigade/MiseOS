@@ -1,0 +1,17 @@
+{
+  "id": "registry-agent-sdk",
+  "category": "registry-capability",
+  "title": "MiseOS Agent SDK",
+  "description": "Executable baseline capability for MiseOS Agent SDK.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.agent-sdk.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: agentSdk",
+    "Source status: active"
+  ]
+}

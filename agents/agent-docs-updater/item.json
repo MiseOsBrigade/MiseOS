@@ -1,0 +1,15 @@
+{
+  "id": "agent-docs-updater",
+  "category": "agentic",
+  "title": "Documentation Updater gh-aw Source",
+  "description": "Bounded documentation drift updater with pull-request safe output.",
+  "dependencies": [
+    "gh-aw CLI initialization and compilation"
+  ],
+  "files": [
+    ".github/workflows/docs-updater.md"
+  ],
+  "notes": [
+    "Compile and review generated lock workflow before enabling."
+  ]
+}

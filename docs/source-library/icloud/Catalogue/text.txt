@@ -1,0 +1,706 @@
+from pathlib import Path 
+import csv, json, re, hashlib, zipfile, shutil 
+from collections import Counter, defaultdict
+
+from artifact_tool import Workbook, SpreadsheetFile
+
+ROOT = Path("/mnt/data") 
+PDF_PATH = ROOT / "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf" 
+OUT = ROOT / "miseos_full_roster_taxonomy" 
+if OUT.exists(): 
+shutil.rmtree(OUT) 
+(OUT / "data").mkdir(parents=True) 
+(OUT / "taxonomy").mkdir() 
+(OUT / "registry").mkdir() 
+(OUT / "photo-alignment").mkdir() 
+(OUT / "thumbnails").mkdir()
+
+-----------------------------
+Canonical 92 records supplied in the user's roster text.
+-----------------------------
+roster_tsv = """1\tAlko Commit Chef\tCommit Intake\tGenesis\tPipeline Kitchen\tcharacters.generated.json 
+2\tBruno Blast-Radius\tChange Impact Scanner\tRare\tPipeline Kitchen\tcharacters.generated.json 
+3\tLila Branchkeeper\tBranch Policy Gate\tRare\tPipeline Kitchen\tcharacters.generated.json 
+4\tOmar Reviewer\tPR Hygiene Check\tGenesis\tPipeline Kitchen\tcharacters.generated.json 
+5\tHugo Matrix\tTest Matrix Runner\tCommon\tPipeline Kitchen\tcharacters.generated.json 
+6\tSeira Scan\tSecurity Scan Stage\tRare\tPipeline Kitchen\tcharacters.generated.json 
+7\tYume Builder\tArtifact Builder\tGenesis\tPipeline Kitchen\tcharacters.generated.json 
+8\tIron Hashi\tArtifact Validator\tGenesis\tPipeline Kitchen\tcharacters.generated.json 
+9\tNina Promoter\tEnvironment Promotion Gate\tCommon\tPipeline Kitchen\tcharacters.generated.json 
+10\tRelease Conductor\tDeployment Orchestrator\tCommon\tPipeline Kitchen\tcharacters.generated.json 
+11\tFelix Rollback\tRollback & Fix-Forward\tCommon\tPipeline Kitchen\tcharacters.generated.json 
+12\tTariq Notesmith\tRelease Notes Generator\tCommon\tPipeline Kitchen\tcharacters.generated.json 
+13\tIvun Cache\tPipeline Cost Monitor\tCommon\tPipeline Kitchen\tcharacters.generated.json 
+14\tCanary Taster\tPipeline Observability\tRare\tPipeline Kitchen\tcharacters.generated.json 
+15\tPipeline Sensei\tPipeline Tuner Agent\tEpic\tPipeline Kitchen\tcharacters.generated.json 
+16\tTemplate Tanaka\tService Template Catalog\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+17\tBootstrap Aiko\tNew Service Wizard\tGenesis\tPlatform Kitchen\tcharacters.generated.json 
+18\tTerra Forge\tEnvironment Provisioner\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+19\tSchema Sora\tDatabase Blueprint Manager\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+20\tRuntime Riku\tRuntime Profile Manager\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+21\tVault Hana\tSecrets & Config Broker\tRare\tPlatform Kitchen\tcharacters.generated.json 
+22\tPolicy Kenji\tPolicy Packs\tRare\tPlatform Kitchen\tcharacters.generated.json 
+23\tGrafana Mei\tShared Observability Pack\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+24\tUmami Code\tTraffic & Ingress Manager\tGenesis\tPlatform Kitchen\tcharacters.generated.json 
+25\tQueue Mizu\tJob & Queue Templates\tGenesis\tPlatform Kitchen\tcharacters.generated.json 
+26\tStreama\tData Streaming Profiles\tGenesis\tPlatform Kitchen\tcharacters.generated.json 
+27\tPreview Yuki\tPreview Environment Spawner\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+28\tPortal Rei\tSelf-Service Portal UI\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+29\tGuardrail Goro\tGolden Path Guardrails\tCommon\tPlatform Kitchen\tcharacters.generated.json 
+30\tPlatform Sensei\tPlatform Health Board\tEpic\tPlatform Kitchen\tcharacters.generated.json 
+31\tSLO Sage\tSLO Definition Workflow\tGenesis\tReliability Kitchen\tcharacters.generated.json 
+32\tTrace Sensei\tInstrumentation Booster\tRare\tReliability Kitchen\tcharacters.generated.json 
+33\tChaos Kaito\tLoad & Chaos Profiles\tCommon\tReliability Kitchen\tcharacters.generated.json 
+34\tCapacity Kanna\tPre-Deployment Reliability Check\tCommon\tReliability Kitchen\tcharacters.generated.json 
+35\tCanary Judge\tCanary Judge\tRare\tReliability Kitchen\tcharacters.generated.json 
+36\tAlert Akira\tIncident Detection Rules\tCommon\tReliability Kitchen\tcharacters.generated.json 
+37\tPager Hiro\tIncident Triage Runbook\tCommon\tReliability Kitchen\tcharacters.generated.json 
+38\tOnCall Naomi\tOn-Call Rotation Manager\tCommon\tReliability Kitchen\tcharacters.generated.json 
+39\tReview Ren\tPost-Incident Review\tCommon\tReliability Kitchen\tcharacters.generated.json 
+40\tBacklog Benji\tReliability Backlog Builder\tCommon\tReliability Kitchen\tcharacters.generated.json 
+41\tMetrics Miko\tSLO Dashboards\tGenesis\tReliability Kitchen\tcharacters.generated.json 
+42\tForecast Fuji\tCapacity Planner\tCommon\tReliability Kitchen\tcharacters.generated.json 
+43\tResilience Ryu\tResilience Testing Loop\tRare\tReliability Kitchen\tcharacters.generated.json 
+44\tImpact Ichi\tCustomer Impact Simulator\tCommon\tReliability Kitchen\tcharacters.generated.json 
+45\tReliability Sensei\tReliability Advisor Agent\tEpic\tReliability Kitchen\tcharacters.generated.json 
+46\tThreat Taro\tThreat Modeling Starter\tCommon\tSecurity Kitchen\tcharacters.generated.json 
+47\tSecure Sakura\tSecure Template Library\tCommon\tSecurity Kitchen\tcharacters.generated.json 
+48\tToken Toshi\tCredential Hygiene Scanner\tRare\tSecurity Kitchen\tcharacters.generated.json 
+49\tCVE Kumo\tDependency Risk Monitor\tRare\tSecurity Kitchen\tcharacters.generated.json 
+50\tContainer Kage\tContainer Hardening Workflow\tCommon\tSecurity Kitchen\tcharacters.generated.json 
+51\tSeira Vaultkeeper\tSecrets Lifecycle Manager\tGenesis\tSecurity Kitchen\tcharacters.generated.json 
+52\tPolicy Ronin\tPolicy-as-Code Engine\tGenesis\tSecurity Kitchen\tcharacters.generated.json 
+53\tMerge Sentinel\tPre-Merge Security Gate\tRare\tSecurity Kitchen\tcharacters.generated.json 
+54\tWatchtower Yoru\tRuntime Threat Detector\tCommon\tSecurity Kitchen\tcharacters.generated.json 
+55\tAuditor Emi\tAccess Review Workflow\tCommon\tSecurity Kitchen\tcharacters.generated.json 
+56\tIncident Kitsune\tSecurity Incident Playbooks\tRare\tSecurity Kitchen\tcharacters.generated.json 
+57\tEvidence Scribe\tCompliance Evidence Collector\tRare\tSecurity Kitchen\tcharacters.generated.json 
+58\tNudge Neko\tSecurity Training Nudges\tRare\tSecurity Kitchen\tcharacters.generated.json 
+59\tScorecard Shin\tSecurity Scorecard\tRare\tSecurity Kitchen\tcharacters.generated.json 
+60\tRed Oni\tRed Team / Chaos Security Mode\tEpic\tSecurity Kitchen\tcharacters.generated.json 
+61\tTaxonomy Taka\tEvent Taxonomy Manager\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+62\tLake Haru\tTelemetry Ingestion Pipeline\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+63\tLattice\tTrace Correlator\tGenesis\tData & Insight Kitchen\tcharacters.generated.json 
+64\tRepo Ranger\tRepo Health Analyzer\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+65\tDORA Daichi\tPipeline Analytics Engine\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+66\tFlag Fox\tFeature Flag Analytics\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+67\tCost Kaito\tCost & Efficiency Monitor\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+68\tDX Mei\tDeveloper Experience Survey Loop\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+69\tRevenue Rina\tCustomer Behavior → Incident Linker\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+70\tRisk Ryota\tRisk Scoring Model\tRare\tData & Insight Kitchen\tcharacters.generated.json 
+71\tApprentice Kai\tSelf-Improvement Agent\tGenesis\tData & Insight Kitchen\tcharacters.generated.json 
+72\tAnomaly Aki\tAnomaly Detection Studio\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+73\tLeaderboard Leo\tScorecards & Leaderboards\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+74\tStoryteller Sumi\tNarrative Report Generator\tCommon\tData & Insight Kitchen\tcharacters.generated.json 
+75\tRoadmap Sensei\tStrategic Roadmap Recommender\tGenesis\tData & Insight Kitchen\tcharacters.generated.json 
+76\tKurogami Senpai\tOrchestrate\tMythic\tOperations Kitchen\tmise_orchestra_cards.csv 
+77\tTensho\tTask Flow\tRare\tPipeline Kitchen\tmise_orchestra_cards.csv 
+78\tMizu\tPrepare\tRare\tOperations Kitchen\tmise_orchestra_cards.csv 
+79\tKaji\tCompute\tEpic\tOperations Kitchen\tmise_orchestra_cards.csv 
+80\tYume\tBuild\tRare\tPipeline Kitchen\tmise_orchestra_cards.csv 
+81\tNull-chan\tCleanse\tRare\tReliability Kitchen\tmise_orchestra_cards.csv 
+82\tFlash Riku\tDeploy\tEpic\tPipeline Kitchen\tmise_orchestra_cards.csv 
+83\tSeira\tSecure\tEpic\tPlatform Kitchen\tmise_orchestra_cards.csv 
+84\tKuro Guard\tProtect\tEpic\tPlatform Kitchen\tmise_orchestra_cards.csv 
+85\tScale Oni\tScale\tLegendary\tOperations Kitchen\tmise_orchestra_cards.csv 
+86\tBuild-Kun\tBuild\tRare\tPipeline Kitchen\tmise_orchestra_cards.csv 
+87\tOrchestra Core\tCoordinate\tMythic\tPlatform Kitchen\tmise_orchestra_cards.csv 
+88\tData-chan\tCollect\tRare\tData & Insight Kitchen\tmise_orchestra_cards.csv 
+89\tInsight Sensei\tAnalyze\tEpic\tData & Insight Kitchen\tmise_orchestra_cards.csv 
+90\tChaos Analyst\tLearn\tLegendary\tData & Insight Kitchen\tmise_orchestra_cards.csv 
+91\tGrowth Guru\tOptimize\tEpic\tData & Insight Kitchen\tmise_orchestra_cards.csv 
+92\tCulture Chef\tGrow\tLegendary\tData & Insight Kitchen\tmise_orchestra_cards.csv"""
+
+base_records = [] 
+for line in roster_tsv.splitlines(): 
+n, name, role, rarity, dept, source = line.split("\t") 
+base_records.append({ 
+"number": int(n), "name": name, "agent_function": role, 
+"rarity": rarity, "department": dept, "source": source, 
+"record_origin": "user_supplied_roster" 
+})
+
+20 additional photo-aligned cards chosen from distinct PDF cards to complete 112.
+photo_expansion = [ 
+(93, "Velvet Vesper", "Guest Concierge", "Rare", 9), 
+(94, "Flavor Forager", "Ingredient Scout", "Rare", 10), 
+(95, "Crate Courier", "Provision Scout", "Common", 11), 
+(96, "Ledger Ladle", "Cost Steward", "Epic", 12), 
+(97, "Beacon Broil", "Alert Dispatcher", "Epic", 13), 
+(98, "Ladle Lumen", "Broth Beacon", "Rare", 14), 
+(99, "Reserve Rune", "Backup Archivist", "Epic", 15), 
+(100, "Vacuum Vesper", "Seal Keeper", "Rare", 16), 
+(101, "Flavor Scribe", "Menu Curator", "Epic", 17), 
+(102, "Prep Pulse", "Mise Monitor", "Rare", 18), 
+(103, "Queue Quartz", "Service Timer", "Epic", 19), 
+(104, "Harvest Hex", "Produce Alchemist", "Legendary", 20), 
+(105, "Garnish Ghost", "Finisher", "Legendary", 21), 
+(106, "Pantry Paladin", "Provision Steward", "Epic", 22), 
+(107, "Ticket Tactician", "Order Strategist", "Rare", 23), 
+(108, "Plate Inspector", "Asset Auditor", "Epic", 24), 
+(109, "Timer Tactician", "Chrono Chef", "Epic", 25), 
+(110, "Recipe Ranger", "Knowledge Pathfinder", "Rare", 26), 
+(111, "Portion Paladin", "Balance Steward", "Epic", 27), 
+(112, "Allergen Oracle", "Safety Seer", "Legendary", 28), 
+] 
+for n, name, role, rarity, page in photo_expansion: 
+base_records.append({ 
+"number": n, "name": name, "agent_function": role, 
+"rarity": rarity, "department": "Operations Kitchen", 
+"source": f"uploaded_pdf_page_{page}", 
+"record_origin": "photo_aligned_completion", 
+"primary_photo_page": page 
+})
+
+assert len(base_records)  112
+
+def slugify(text): 
+return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+dept_codes = { 
+"Pipeline Kitchen": "pipeline", 
+"Platform Kitchen": "platform", 
+"Reliability Kitchen": "reliability", 
+"Security Kitchen": "security", 
+"Data & Insight Kitchen": "data-insight", 
+"Operations Kitchen": "operations", 
+} 
+dept_missions = { 
+"Pipeline Kitchen": "Build. Test. Deploy. Repeat.", 
+"Platform Kitchen": "Provide golden paths and stable service foundations.", 
+"Reliability Kitchen": "Observe. Measure. Improve.", 
+"Security Kitchen": "Guard. Audit. Comply.", 
+"Data & Insight Kitchen": "Learn. Optimize. Evolve.", 
+"Operations Kitchen": "Keep the kitchen running smoothly.", 
+} 
+dept_colors = { 
+"Pipeline Kitchen": "#E97822", 
+"Platform Kitchen": "#1B2A41", 
+"Reliability Kitchen": "#2E6B4E", 
+"Security Kitchen": "#8B1E2D", 
+"Data & Insight Kitchen": "#17A2A4", 
+"Operations Kitchen": "#D4AF37", 
+} 
+rarity_tiers = {"Common": 1, "Rare": 2, "Epic": 3, "Legendary": 4, "Genesis": 5, "Mythic": 6}
+
+Derive complete character metadata deterministically.
+characters = [] 
+by_dept = defaultdict(list) 
+for rec in base_records: 
+by_dept[rec["department"]].append(rec)
+
+for rec in base_records: 
+num = rec["number"] 
+name = rec["name"] 
+slug = slugify(name) 
+rarity = rec["rarity"] 
+tier = rarity_tiers[rarity] 
+seed = int(hashlib.sha256(f"{num}:{name}".encode()).hexdigest()[:8], 16) 
+stats = { 
+"power": 55 + (seed % 26) + tier * 2, 
+"precision": 58 + ((seed >> 3) % 25) + tier * 2, 
+"speed": 52 + ((seed >> 6) % 28) + tier, 
+"resilience": 60 + ((seed >> 9) % 22) + tier * 2, 
+"intelligence": 57 + ((seed >> 12) % 25) + tier * 2, 
+"teamwork": 62 + ((seed >> 15) % 21) + tier * 2, 
+} 
+stats = {k: min(99, v) for k, v in stats.items()} 
+dept_peers = [x["name"] for x in by_dept[rec["department"]] if x["name"] != name] 
+idx = [x["name"] for x in by_dept[rec["department"]]].index(name) 
+handoffs = [dept_peers[(idx + j) % len(dept_peers)] for j in range(min(3, len(dept_peers)))] if dept_peers else [] 
+char = { 
+"id": f"miseos.character.{num:03d}", 
+"number": num, 
+"slug": slug, 
+"name": name, 
+"mise_name": name, 
+"codename": slug.replace("-", "_").upper(), 
+"record_kind": "character_card", 
+"collection": "MiseOS Character Agents", 
+"department": rec["department"], 
+"department_code": dept_codes[rec["department"]], 
+"department_mission": dept_missions[rec["department"]], 
+"agent_function": rec["agent_function"], 
+"job_name": rec["agent_function"], 
+"rarity": rarity, 
+"rarity_tier": tier, 
+"source": rec["source"], 
+"record_origin": rec["record_origin"], 
+"visual": { 
+"primary_color": dept_colors[rec["department"]], 
+"card_style": "black-gold holo DevOps orchestra", 
+"aura": f"{rec['department']} operational aura", 
+"tool_symbol": rec["agent_function"], 
+"avatar_path": f"assets/characters/{slug}/avatar.png", 
+"card_path": f"assets/characters/{slug}/card.png", 
+"primary_photo_page": rec.get("primary_photo_page") 
+}, 
+"workflow": { 
+"summary": f"{name} performs {rec['agent_function'].lower()} within the {rec['department']}.", 
+"inputs": ["repository context", "task request", "policy constraints", "current evidence"], 
+"outputs": ["validated result", "evidence record", "handoff packet"], 
+"synced_agents": handoffs, 
+"proof_gate": "No merge, deployment, publication, billing action, or mint without evidence." 
+}, 
+"stats": stats, 
+"paths": { 
+"readme": f"characters/{slug}/README.md", 
+"metadata": f"characters/{slug}/metadata.json" 
+}, 
+"status": "canonical" if rec["record_origin"]  "user_supplied_roster" else "photo_aligned_canonical_completion", 
+"confidence": "high" if rec["record_origin"]  "user_supplied_roster" else "medium" 
+} 
+characters.append(char)
+
+-----------------------------
+Canonical 23 registry manifests.
+-----------------------------
+registry_items = [ 
+("miseos.agent-sdk","MiseOS Agent SDK","sdk","@mise-os/agent-sdk"), 
+("miseos.analytics-engine","MiseOS Analytics Engine","analytics","@mise-os/analytics-engine"), 
+("miseos.attestation-gate","MiseOS Attestation Gate","policy","@mise-os/attestation-gate"), 
+("miseos.cli","MiseOS CLI","package","@mise-os/cli"), 
+("miseos.docs-builder","MiseOS Docs Builder","container","ghcr.io/mise-os/miseos-docs-builder"), 
+("miseos.docs-hub-template","MiseOS Docs Hub Template","template","@mise-os/docs-hub-template; templates/docs-hub"), 
+("miseos.gradle-plugin","MiseOS Gradle Plugin","package","dev.miseos.registry-plugin"), 
+("miseos.maven-policy-adapter","MiseOS Maven Policy Adapter","package","dev.miseos:policy-adapter"), 
+("miseos.nuget-client","MiseOS NuGet Client","sdk","MiseOS.Registry.Client"), 
+("miseos.policy-checker","MiseOS Policy Checker","container","ghcr.io/mise-os/miseos-policy-checker"), 
+("miseos.policy-engine","MiseOS Policy Engine","policy","@mise-os/policy-engine; ghcr.io/mise-os/miseos-policy-checker"), 
+("miseos.registry-schema","MiseOS Registry Schema","schema","@mise-os/registry-schema"), 
+("miseos.release-sentinel","MiseOS Release Sentinel","agent","@mise-os/release-sentinel"), 
+("miseos.repo-steward","MiseOS Repo Steward","agent","@mise-os/repo-steward"), 
+("miseos.ruby-steward","MiseOS Ruby Steward","package","miseos-ruby-steward"), 
+("miseos.runner","MiseOS Runner","container","ghcr.io/mise-os/miseos-runner"), 
+("miseos.sbom-indexer","MiseOS SBOM Indexer","agent","@mise-os/sbom-indexer"), 
+("miseos.trust-graph","MiseOS Trust Graph","analytics","@mise-os/trust-graph"), 
+("miseos.workflow-linter","MiseOS Workflow Linter","agent","@mise-os/workflow-linter"), 
+("miseos.workflow-pack","MiseOS Workflow Pack","workflow","@mise-os/workflow-pack"), 
+("miseos.repo-pet","MiseOS Repo Pet","agent","@mise-os/repo-pet"), 
+("miseos.repo-reliability-kit","MiseOS Repo Reliability Kit","workflow","@mise-os/repo-reliability-kit"), 
+("miseos.orchestra-theme","Mise Orchestra Theme","theme","@mise-os/orchestra-theme"), 
+] 
+registry = [] 
+for i, (rid, name, typ, artifact) in enumerate(registry_items, 1): 
+registry.append({ 
+"catalog_number": i, 
+"registry_id": rid, 
+"name": name, 
+"record_kind": "registry_manifest", 
+"type": typ, 
+"version": "0.2.0", 
+"status": "experimental", 
+"artifact": artifact, 
+"collection": "MiseOS Registry Manifests", 
+"is_character": False, 
+"marketplace_language": "product infrastructure", 
+"card_language": "registry manifest badge", 
+"capabilities": [typ, "repo-safe", "evidence-aware"], 
+})
+
+-----------------------------
+Photo page alignment from the uploaded 105-page PDF.
+Titles are transcribed from the rendered cards.
+-----------------------------
+page_titles = [ 
+"MiseOS Repo Steward","MiseOS Workflow Linter","MiseOS Ruby Steward","MiseOS SBOM Indexer", 
+"MiseOS Workflow Pack","MiseOS Policy Engine","MiseOS Registry Schema","MiseOS Release Sentinel", 
+"Velvet Vesper","Flavor Forager","Crate Courier","Ledger Ladle","Beacon Broil","Ladle Lumen", 
+"Reserve Rune","Vacuum Vesper","Flavor Scribe","Prep Pulse","Queue Quartz","Harvest Hex", 
+"Garnish Ghost","Pantry Paladin","Ticket Tactician","Plate Inspector","Timer Tactician", 
+"Recipe Ranger","Portion Paladin","Allergen Oracle","Legacy Keeper","Menu Maestro","Supply Scout", 
+"Energy Keeper","Sanitation Star","Plate Inspector","Orderly Owl","Shift Sentinel","Kitchen Conductor", 
+"Sear Samurai","Oil Oracle","Herb Whisperer","Veg Virtuoso","Pulse Captain","Grain Guardian", 
+"Slicer Swift","Ashen One","Roast Commander","Brine Baron","Sweet Architect","Cacao Alchemist", 
+"Kombu Keeper","Flavor Hacker","Temp Tamer","Broth Scholar","Citrus Zest","Miso Maven", 
+"Umami Seeker","Glaze Whisperer","Crisp Master","Stock Sage","Plating Poet","No-Waste Ninja", 
+"Fermenta","Pickle Doc","Smoke Monk","Cold Zero","Butcher Blade","Zen Plater","Pan Phantom", 
+"Sauce Sage","Steam Whisper","Knead Guardian","Spice Alchemist","Byte","Char Coach", 
+"DORA Daichi","Cost Kaito","Anomaly Aki","Token Toshi","Scorecard Shin","Nudge Neko", 
+"Merge Sentinel","Incident Kitsune","Evidence Scribe","Merge Sentinel","Scorecard Shin", 
+"Evidence Scribe","Nudge Neko","Incident Kitsune","Token Toshi","CVE Kumo","CVE Kumo", 
+"Schema Sora","Runtime Riku","Preview Yuki","Portal Rei","Guardrail Goro","Grafana Mei", 
+"Runtime Riku","Preview Yuki","Schema Sora","Guardrail Goro","Grafana Mei","Portal Rei", 
+"Tariq Notesmith","Tariq Notesmith" 
+] 
+assert len(page_titles)  105
+
+char_by_name = {c["name"].lower(): c for c in characters} 
+reg_by_name = {r["name"].lower(): r for r in registry}
+Alias image titles for registry pages.
+reg_alias = { 
+"miseos repo steward": "miseos.repo-steward", 
+"miseos workflow linter": "miseos.workflow-linter", 
+"miseos ruby steward": "miseos.ruby-steward", 
+"miseos sbom indexer": "miseos.sbom-indexer", 
+"miseos workflow pack": "miseos.workflow-pack", 
+"miseos policy engine": "miseos.policy-engine", 
+"miseos registry schema": "miseos.registry-schema", 
+"miseos release sentinel": "miseos.release-sentinel", 
+} 
+registry_by_id = {r["registry_id"]: r for r in registry}
+
+title_counts = Counter(page_titles) 
+seen_counts = Counter() 
+alignment = [] 
+for page, title in enumerate(page_titles, 1): 
+seen_counts[title] += 1 
+key = title.lower() 
+matched = None 
+if key in reg_alias: 
+r = registry_by_id[reg_alias[key]] 
+matched = ("registry_manifest", r["registry_id"], r["name"]) 
+elif key in char_by_name: 
+c = char_by_name[key] 
+matched = ("character_card", c["id"], c["name"]) 
+if matched: 
+kind, record_id, canonical_name = matched 
+status = "matched" 
+confidence = "high" 
+else: 
+kind, record_id, canonical_name = "unmapped_photo_card", "", title 
+status = "visual_reference_only" 
+confidence = "medium" 
+alignment.append({ 
+"page": page, 
+"display_title": title, 
+"record_kind": kind, 
+"matched_record_id": record_id, 
+"canonical_name": canonical_name, 
+"alignment_status": status, 
+"confidence": confidence, 
+"duplicate_occurrence": seen_counts[title], 
+"duplicate_total": title_counts[title], 
+"thumbnail": f"thumbnails/page-{page:03d}.jpg", 
+"source_file": PDF_PATH.name, 
+})
+
+-----------------------------
+Extract low-resolution reference thumbnails.
+-----------------------------
+import fitz 
+doc = fitz.open(PDF_PATH) 
+for page_index in range(len(doc)): 
+page = doc.load_page(page_index) 
+pix = page.get_pixmap(matrix=fitz.Matrix(0.5, 0.5), alpha=False) 
+pix.save(str(OUT / "thumbnails" / f"page-{page_index+1:03d}.jpg")) 
+doc.close()
+
+-----------------------------
+Taxonomy definitions.
+-----------------------------
+taxonomy = { 
+"schema": "miseos.taxonomy.v1", 
+"official_model": { 
+"character_agents": 112, 
+"registry_manifests": 23, 
+"total_ecosystem_items": 135, 
+"canonical_language": "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items.", 
+"prohibited_language": ["135 characters", "registry manifests are character cards"] 
+}, 
+"record_kinds": { 
+"character_card": "Collectible mascot/operator with role, lore, workflow, stats, and handoffs.", 
+"registry_manifest": "Product infrastructure such as SDKs, packages, containers, policies, schemas, workflows, analytics, and themes.", 
+"unmapped_photo_card": "Visual card present in the uploaded PDF but not selected into the canonical 112 roster." 
+}, 
+"departments": [ 
+{"code": dept_codes[d], "name": d, "mission": dept_missions[d], "color": dept_colors[d]} 
+for d in dept_codes 
+], 
+"rarities": [ 
+{"name": name, "tier": tier, "meaning": f"Rarity tier {tier}"} 
+for name, tier in rarity_tiers.items() 
+], 
+"registry_types": sorted(set(r["type"] for r in registry)), 
+"brand_tokens": { 
+"Umami Black": "#0E0F10", 
+"Gold Ladle": "#D4AF37", 
+"Broth Cream": "#F6F1E7", 
+"Flame Orange": "#E97822", 
+"Ink Blue": "#1B2A41", 
+"Matcha Green": "#2E6B4E", 
+}, 
+"provenance_policy": { 
+"high": "Directly supplied in the roster text or exact visual title match.", 
+"medium": "Aligned from a visible card title and promoted to complete the official 112 count.", 
+"visual_reference_only": "Retained in photo alignment but not asserted as part of the canonical 112." 
+} 
+}
+
+-----------------------------
+Write JSON.
+-----------------------------
+ecosystem = { 
+"schema": "miseos.ecosystem.roster.v1", 
+"counts": {"character_agents": 112, "registry_manifests": 23, "total_ecosystem_items": 135}, 
+"characters": characters, 
+"registry_manifests": registry, 
+} 
+(OUT / "data" / "characters.json").write_text(json.dumps(characters, indent=2, ensure_ascii=False) + "\n") 
+(OUT / "registry" / "registry-manifests.json").write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n") 
+(OUT / "taxonomy" / "taxonomy.json").write_text(json.dumps(taxonomy, indent=2, ensure_ascii=False) + "\n") 
+(OUT / "photo-alignment" / "photo-alignment.json").write_text(json.dumps(alignment, indent=2, ensure_ascii=False) + "\n") 
+(OUT / "data" / "miseos-ecosystem-135.json").write_text(json.dumps(ecosystem, indent=2, ensure_ascii=False) + "\n")
+
+-----------------------------
+Write CSV.
+-----------------------------
+char_fields = [ 
+"id","number","slug","name","mise_name","codename","record_kind","collection", 
+"department","department_code","department_mission","agent_function","job_name", 
+"rarity","rarity_tier","source","record_origin","status","confidence", 
+"primary_color","card_style","primary_photo_page","workflow_summary","proof_gate", 
+"synced_agents","power","precision","speed","resilience","intelligence","teamwork", 
+"readme_path","metadata_path" 
+] 
+with (OUT / "data" / "characters.csv").open("w", newline="", encoding="utf-8-sig") as f: 
+w = csv.DictWriter(f, fieldnames=char_fields) 
+w.writeheader() 
+for c in characters: 
+w.writerow({ 
+**{k: c.get(k, "") for k in char_fields}, 
+"primary_color": c["visual"]["primary_color"], 
+"card_style": c["visual"]["card_style"], 
+"primary_photo_page": c["visual"].get("primary_photo_page") or "", 
+"workflow_summary": c["workflow"]["summary"], 
+"proof_gate": c["workflow"]["proof_gate"], 
+"synced_agents": " | ".join(c["workflow"]["synced_agents"]), 
+**c["stats"], 
+"readme_path": c["paths"]["readme"], 
+"metadata_path": c["paths"]["metadata"], 
+})
+
+reg_fields = ["catalog_number","registry_id","name","record_kind","type","version","status","artifact","collection","marketplace_language","card_language","capabilities"] 
+with (OUT / "registry" / "registry-manifests.csv").open("w", newline="", encoding="utf-8-sig") as f: 
+w = csv.DictWriter(f, fieldnames=reg_fields) 
+w.writeheader() 
+for r in registry: 
+row = r.copy() 
+row["capabilities"] = " | ".join(r["capabilities"]) 
+w.writerow({k: row.get(k, "") for k in reg_fields})
+
+align_fields = list(alignment[0].keys()) 
+with (OUT / "photo-alignment" / "photo-alignment.csv").open("w", newline="", encoding="utf-8-sig") as f: 
+w = csv.DictWriter(f, fieldnames=align_fields) 
+w.writeheader() 
+w.writerows(alignment)
+
+Taxonomy CSV
+tax_rows = [] 
+for d in taxonomy["departments"]: 
+tax_rows.append({"taxonomy_group":"department","key":d["code"],"label":d["name"],"value":d["mission"],"color":d["color"]}) 
+for r in taxonomy["rarities"]: 
+tax_rows.append({"taxonomy_group":"rarity","key":str(r["tier"]),"label":r["name"],"value":r["meaning"],"color":""}) 
+for t in taxonomy["registry_types"]: 
+tax_rows.append({"taxonomy_group":"registry_type","key":t,"label":t.title(),"value":"Registry infrastructure category","color":""}) 
+with (OUT / "taxonomy" / "taxonomy.csv").open("w", newline="", encoding="utf-8-sig") as f: 
+w = csv.DictWriter(f, fieldnames=["taxonomy_group","key","label","value","color"]) 
+w.writeheader() 
+w.writerows(tax_rows)
+
+-----------------------------
+README.
+-----------------------------
+dept_counts = Counter(c["department"] for c in characters) 
+rarity_counts = Counter(c["rarity"] for c in characters) 
+mapped_count = sum(1 for a in alignment if a["alignment_status"] == "matched") 
+readme = f"""# MiseOS Full Roster and Taxonomy Metadata
+
+112 character agents + 23 registry manifests = 135 MiseOS ecosystem items.
+
+This package separates the collectible character roster from product infrastructure.
+
+Contents
+
+	⁃	data/characters.json and data/characters.csv - canonical 112-character roster.
+	⁃	registry/registry-manifests.json and .csv - canonical 23-item product catalog.
+	⁃	data/miseos-ecosystem-135.json - combined ecosystem envelope with separate arrays.
+	⁃	taxonomy/taxonomy.json and .csv - record kinds, departments, rarities, registry types, brand tokens, and provenance rules.
+	⁃	photo-alignment/photo-alignment.json and .csv - all 105 uploaded PDF pages aligned to canonical records when possible.
+	⁃	thumbnails/ - low-resolution page references used for visual alignment.
+	⁃	miseos_full_roster_taxonomy.xlsx - workbook view of all metadata.
+
+Provenance
+
+	⁃	92 character records are directly transcribed from the supplied roster text.
+	⁃	20 visually distinct cards from PDF pages 9-28 complete the canonical 112-character count.
+	⁃	The PDF contains repeated cards and additional visual-only concepts; those are retained in photo-alignment without being silently promoted into the canonical roster.
+	⁃	Registry manifests remain product infrastructure and are never counted as characters.
+
+Counts
+
+Departments
+
+{chr(10).join(f"- {k}: {v}" for k,v in sorted(dept_counts.items()))}
+
+Rarities
+
+{chr(10).join(f"- {k}: {v}" for k,v in sorted(rarity_counts.items()))}
+
+Photo alignment
+
+	⁃	PDF pages: 105
+	⁃	Pages matched to a canonical character or registry manifest: {mapped_count}
+	⁃	Visual-reference-only pages: {105 - mapped_count} 
+	⁃	""" 
+	⁃	(OUT / "README.md").write_text(readme, encoding="utf-8")
+
+-----------------------------
+Excel workbook with artifact_tool.
+-----------------------------
+wb = Workbook.create() 
+summary = wb.worksheets.add("Summary") 
+char_sheet = wb.worksheets.add("Character Roster") 
+reg_sheet = wb.worksheets.add("Registry Manifests") 
+photo_sheet = wb.worksheets.add("Photo Alignment") 
+tax_sheet = wb.worksheets.add("Taxonomy")
+
+header_fmt = { 
+"fill": "#0E0F10", 
+"font": {"bold": True, "color": "#F6F1E7"}, 
+"horizontal_alignment": "center", 
+"vertical_alignment": "center", 
+} 
+title_fmt = { 
+"fill": "#D4AF37", 
+"font": {"bold": True, "color": "#0E0F10", "size": 16}, 
+"horizontal_alignment": "center", 
+"vertical_alignment": "center", 
+}
+
+Summary
+summary.merge_cells("A1:F1") 
+summary.get_range("A1").values = [["MiseOS Full Roster & Taxonomy"]] 
+summary.get_range("A1:F1").format = title_fmt 
+summary.get_range("A3:B7").values = [ 
+["Metric","Count"], 
+["Character agents",112], 
+["Registry manifests",23], 
+["Total ecosystem items","=B4+B5"], 
+["PDF reference pages",105], 
+] 
+summary.get_range("A3:B3").format = header_fmt 
+summary.get_range("A9:C15").values = [["Department","Code","Character Count"]] + [ 
+[d, dept_codes[d], dept_counts[d]] for d in dept_codes 
+] 
+summary.get_range("A9:C9").format = header_fmt 
+summary.get_range("E3:F10").values = [["Rarity","Count"]] + [[r, rarity_counts[r]] for r in rarity_tiers] 
+summary.get_range("E3:F3").format = header_fmt 
+summary.get_range("A17:F20").values = [ 
+["Canonical language","","","","",""], 
+["112 character agents + 23 registry manifests = 135 MiseOS ecosystem items.","","","","",""], 
+["Registry manifests are product infrastructure, not character cards.","","","","",""], 
+["Photo-derived completions are explicitly marked with medium confidence.","","","","",""], 
+] 
+summary.merge_cells("A18:F18"); summary.merge_cells("A19:F19"); summary.merge_cells("A20:F20") 
+summary.get_range("A17:F17").format = header_fmt 
+summary.get_range("A1:F20").format.wrap_text = True 
+summary.freeze_panes.freeze_rows(2)
+
+Character sheet
+char_headers = ["#","ID","Name","Slug","Department","Code","Agent Function","Rarity","Tier","Source","Origin","Status","Confidence","Photo Page","Power","Precision","Speed","Resilience","Intelligence","Teamwork","Synced Agents","Workflow Summary","Proof Gate"] 
+char_rows = [] 
+for c in characters: 
+char_rows.append([ 
+c["number"],c["id"],c["name"],c["slug"],c["department"],c["department_code"], 
+c["agent_function"],c["rarity"],c["rarity_tier"],c["source"],c["record_origin"],c["status"],c["confidence"], 
+c["visual"].get("primary_photo_page") or "",c["stats"]["power"],c["stats"]["precision"],c["stats"]["speed"], 
+c["stats"]["resilience"],c["stats"]["intelligence"],c["stats"]["teamwork"], 
+" | ".join(c["workflow"]["synced_agents"]),c["workflow"]["summary"],c["workflow"]["proof_gate"] 
+]) 
+char_sheet.get_range_by_indexes(0,0,len(char_rows)+1,len(char_headers)).values = [char_headers] + char_rows 
+char_sheet.get_range(f"A1:W1").format = header_fmt 
+char_sheet.freeze_panes.freeze_rows(1) 
+char_sheet.tables.add(f"A1:W{len(char_rows)+1}", True, "CharacterRosterTable") 
+char_sheet.get_range(f"A2:A{len(char_rows)+1}").format.number_format = "0" 
+char_sheet.get_range(f"O2:T{len(char_rows)+1}").conditional_formats.add_data_bar({"color":"#D4AF37","gradient":True}) 
+char_sheet.get_range(f"A1:W{len(char_rows)+1}").format.wrap_text = True
+
+Registry sheet
+reg_headers = ["#","Registry ID","Name","Record Kind","Type","Version","Status","Artifact","Collection","Marketplace Language","Card Language","Capabilities"] 
+reg_rows = [[r["catalog_number"],r["registry_id"],r["name"],r["record_kind"],r["type"],r["version"],r["status"],r["artifact"],r["collection"],r["marketplace_language"],r["card_language"]," | ".join(r["capabilities"])] for r in registry] 
+reg_sheet.get_range_by_indexes(0,0,len(reg_rows)+1,len(reg_headers)).values = [reg_headers]+reg_rows 
+reg_sheet.get_range("A1:L1").format = header_fmt 
+reg_sheet.freeze_panes.freeze_rows(1) 
+reg_sheet.tables.add(f"A1:L{len(reg_rows)+1}", True, "RegistryManifestTable") 
+reg_sheet.get_range(f"A1:L{len(reg_rows)+1}").format.wrap_text = True
+
+Photo alignment
+photo_headers = ["Page","Display Title","Record Kind","Matched Record ID","Canonical Name","Status","Confidence","Occurrence","Total Duplicates","Thumbnail","Source File"] 
+photo_rows = [[a["page"],a["display_title"],a["record_kind"],a["matched_record_id"],a["canonical_name"],a["alignment_status"],a["confidence"],a["duplicate_occurrence"],a["duplicate_total"],a["thumbnail"],a["source_file"]] for a in alignment] 
+photo_sheet.get_range_by_indexes(0,0,len(photo_rows)+1,len(photo_headers)).values = [photo_headers]+photo_rows 
+photo_sheet.get_range("A1:K1").format = header_fmt 
+photo_sheet.freeze_panes.freeze_rows(1) 
+photo_sheet.tables.add(f"A1:K{len(photo_rows)+1}", True, "PhotoAlignmentTable") 
+photo_sheet.get_range(f"A1:K{len(photo_rows)+1}").format.wrap_text = True
+
+Taxonomy
+tax_headers = ["Group","Key","Label","Value","Color"] 
+tax_values = [[r["taxonomy_group"],r["key"],r["label"],r["value"],r["color"]] for r in tax_rows] 
+tax_sheet.get_range_by_indexes(0,0,len(tax_values)+1,len(tax_headers)).values = [tax_headers]+tax_values 
+tax_sheet.get_range("A1:E1").format = header_fmt 
+tax_sheet.freeze_panes.freeze_rows(1) 
+tax_sheet.tables.add(f"A1:E{len(tax_values)+1}", True, "TaxonomyTable") 
+tax_sheet.get_range(f"A1:E{len(tax_values)+1}").format.wrap_text = True
+
+Widths (bounded, readable).
+for s in [summary, char_sheet, reg_sheet, photo_sheet, tax_sheet]: 
+s.get_range("A:Z").format.autofit_columns() 
+s.get_range("A:Z").format.autofit_rows()
+
+Cap text-heavy columns.
+for rng, width in [ 
+(char_sheet.get_range("B:B"), 24),(char_sheet.get_range("C:C"), 24),(char_sheet.get_range("E:E"), 24), 
+(char_sheet.get_range("G:G"), 30),(char_sheet.get_range("J:M"), 22),(char_sheet.get_range("U:W"), 38), 
+(reg_sheet.get_range("B:C"), 28),(reg_sheet.get_range("H:L"), 36), 
+(photo_sheet.get_range("B:E"), 30),(photo_sheet.get_range("J:K"), 30), 
+(tax_sheet.get_range("C:D"), 38) 
+]: 
+rng.format.column_width = width
+
+xlsx_path = OUT / "miseos_full_roster_taxonomy.xlsx" 
+SpreadsheetFile.export_xlsx(wb).save(xlsx_path)
+
+Compact verification.
+check = wb.inspect({ 
+"kind": "table", 
+"range": "Summary!A1:F20", 
+"include": "values,formulas", 
+"table_max_rows": 20, 
+"table_max_cols": 6, 
+}) 
+print(check.ndjson) 
+errors = wb.inspect({ 
+"kind": "match", 
+"search_term": "#REF!|#DIV/0!|#VALUE!|#NAME\?|#N/A", 
+"options": {"use_regex": True, "max_results": 50}, 
+"summary": "final formula error scan", 
+}) 
+print(errors.ndjson)
+
+Manifest and checksums.
+manifest = [] 
+for path in sorted(OUT.rglob("*")): 
+if path.is_file(): 
+digest = hashlib.sha256(path.read_bytes()).hexdigest() 
+manifest.append({"path": str(path.relative_to(OUT)), "bytes": path.stat().st_size, "sha256": digest}) 
+(OUT / "MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n")
+
+Zip package.
+zip_path = ROOT / "miseos_full_roster_taxonomy.zip" 
+if zip_path.exists(): 
+zip_path.unlink() 
+with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf: 
+for path in sorted(OUT.rglob("*")): 
+if path.is_file(): 
+zf.write(path, arcname=f"miseos_full_roster_taxonomy/{path.relative_to(OUT)}")
+
+print({ 
+"zip": str(zip_path), 
+"xlsx": str(xlsx_path), 
+"characters": len(characters), 
+"registry": len(registry), 
+"ecosystem": len(characters)+len(registry), 
+"photo_pages": len(alignment), 
+"zip_bytes": zip_path.stat().st_size 
+})

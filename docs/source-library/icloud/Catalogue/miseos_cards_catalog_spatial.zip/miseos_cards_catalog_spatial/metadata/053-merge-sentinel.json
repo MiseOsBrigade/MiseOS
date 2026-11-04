@@ -1,0 +1,197 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #053 — Merge Sentinel",
+  "description": "Merge Sentinel serves the Security Kitchen as the brigade's pre-merge security gate. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/053-merge-sentinel.jpg",
+  "animation_url": "media/animation/053-merge-sentinel.mp4",
+  "external_url": "https://miseos.dev/agents/merge-sentinel",
+  "background_color": "8B1E2D",
+  "spatial_screen": {
+    "card_id": "MISE-053",
+    "level": 22,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 81,
+      "aligned_pages": [
+        81,
+        84
+      ],
+      "reference_image": "assets/reference/page-081.jpg",
+      "thumbnail": "assets/thumbnails/page-081.jpg",
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.053",
+    "number": 53,
+    "slug": "merge-sentinel",
+    "codename": "MERGE_SENTINEL",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Security Kitchen",
+    "department_code": "security",
+    "role": "Pre-Merge Security Gate",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 22
+  },
+  "lore": {
+    "summary": "Merge Sentinel serves the Security Kitchen as the brigade's pre-merge security gate. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Merge Sentinel performs pre-merge security gate within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Watchtower Yoru",
+      "Auditor Emi",
+      "Incident Kitsune"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE PRE MERGE SECURITY GATE",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Pre-Merge Security Gate Protocol",
+      "type": "active",
+      "effect": "Executes the core pre-merge security gate workflow with evidence capture.",
+      "command": "MISE PRE MERGE SECURITY GATE"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next security station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 63,
+    "precision": 63,
+    "speed": 78,
+    "resilience": 85,
+    "intelligence": 61,
+    "teamwork": 78
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Security Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Pre-Merge Security Gate"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 22,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 63,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 63,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 85,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 61,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 78,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/053-merge-sentinel.jpg",
+    "reference_art": "assets/reference/page-081.jpg",
+    "thumbnail": "assets/thumbnails/page-081.jpg",
+    "animation": {
+      "uri": "media/animation/053-merge-sentinel.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/053-merge-sentinel.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/053-merge-sentinel.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/053-merge-sentinel.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/053-merge-sentinel.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

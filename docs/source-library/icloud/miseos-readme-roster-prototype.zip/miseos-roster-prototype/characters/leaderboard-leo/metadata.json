@@ -1,0 +1,68 @@
+{
+  "id": "leaderboard-leo",
+  "number": 73,
+  "name": "Leaderboard Leo",
+  "miseName": "Mise ScorecardsLeaderboards",
+  "codename": "chef.data-insight.scorecards-leaderboards",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Spanish",
+    "title": "Scorecards & Leaderboards",
+    "signaturePhrase": "Scorecards and Leaderboards done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in scorecards & leaderboards so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen scorecards & leaderboards aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/leaderboard-leo/full-body.png",
+    "cardPath": "/assets/characters/leaderboard-leo/card.png"
+  },
+  "workflow": {
+    "jobName": "Scorecards & Leaderboards",
+    "roleName": "Scorecards & Leaderboards microagent",
+    "summary": "Runs scorecards & leaderboards for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Anomaly Aki",
+      "Storyteller Sumi",
+      "Ivun Cache",
+      "Portal Rei"
+    ]
+  },
+  "stats": {
+    "power": 73,
+    "precision": 94,
+    "speed": 83,
+    "resilience": 97,
+    "intelligence": 81,
+    "teamwork": 77
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "leaderboard-leo",
+  "seasonOneCard": null,
+  "displayNumber": 73,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/leaderboard-leo",
+  "avatarSvg": "assets/characters/leaderboard-leo/avatar.svg",
+  "cardSvg": "assets/characters/leaderboard-leo/card.svg"
+}

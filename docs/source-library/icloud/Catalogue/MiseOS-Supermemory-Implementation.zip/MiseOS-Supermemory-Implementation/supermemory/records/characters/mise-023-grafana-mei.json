@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-023",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-023\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-023\",\n    \"number\": 23,\n    \"name\": \"Grafana Mei\",\n    \"slug\": \"grafana-mei\"\n  },\n  \"classification\": {\n    \"department\": \"Platform Kitchen\",\n    \"department_code\": \"platform\",\n    \"role\": \"Shared Observability Pack\",\n    \"rarity\": \"Common\",\n    \"level\": 17\n  },\n  \"command\": \"MISE SHARED OBSERVABILITY PACK\",\n  \"stats\": {\n    \"power\": 75,\n    \"precision\": 77,\n    \"speed\": 68,\n    \"resilience\": 72,\n    \"intelligence\": 67,\n    \"teamwork\": 66\n  },\n  \"media\": {\n    \"image\": \"assets/images/023-grafana-mei.jpg\",\n    \"metadata\": \"metadata/023-grafana-mei.json\",\n    \"animation\": \"media/animation/023-grafana-mei.mp4\",\n    \"model_3d\": \"media/models/023-grafana-mei.glb\",\n    \"audio\": \"media/audio/023-grafana-mei.mp3\",\n    \"ar\": \"media/ar/023-grafana-mei.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"user_supplied_roster\",\n    \"confidence\": \"high\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-023",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-023",
+    "character_slug": "grafana-mei",
+    "department_code": "platform",
+    "rarity": "Common",
+    "level": 17,
+    "source_file": "cards-catalog.json"
+  }
+}

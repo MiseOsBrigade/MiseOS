@@ -1,0 +1,68 @@
+{
+  "id": "anomaly-aki",
+  "number": 72,
+  "name": "Anomaly Aki",
+  "miseName": "Mise AnomalyDetectionStudio",
+  "codename": "chef.data-insight.anomaly-detection-studio",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "automation",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Anomaly Detection Studio",
+    "signaturePhrase": "Anomaly Detection Studio done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in anomaly detection studio so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen anomaly detection studio aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/anomaly-aki/full-body.png",
+    "cardPath": "/assets/characters/anomaly-aki/card.png"
+  },
+  "workflow": {
+    "jobName": "Anomaly Detection Studio",
+    "roleName": "Anomaly Detection Studio microagent",
+    "summary": "Runs anomaly detection studio for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Apprentice Kai",
+      "Leaderboard Leo",
+      "Tariq Notesmith",
+      "Preview Yuki"
+    ]
+  },
+  "stats": {
+    "power": 70,
+    "precision": 89,
+    "speed": 76,
+    "resilience": 86,
+    "intelligence": 93,
+    "teamwork": 84
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "anomaly-aki",
+  "seasonOneCard": null,
+  "displayNumber": 72,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/anomaly-aki",
+  "avatarSvg": "assets/characters/anomaly-aki/avatar.svg",
+  "cardSvg": "assets/characters/anomaly-aki/card.svg"
+}

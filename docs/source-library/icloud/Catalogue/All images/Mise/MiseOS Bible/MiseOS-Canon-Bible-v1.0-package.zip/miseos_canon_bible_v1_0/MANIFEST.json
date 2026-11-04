@@ -1,0 +1,271 @@
+{
+  "name": "MiseOS Canon Bible",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "MiseOS-Canon-Bible-v1.0.docx",
+      "sha256": "772741bf918b30024a67a669a4bbbc7846d09a6d02c118d71354f52bb413159f",
+      "bytes": 1716459
+    },
+    {
+      "path": "metadata/gridops-district-atlas.csv",
+      "sha256": "41b2302ce3c72b7bfa596f45a264c13956829c4846d3d91d3e1322b948668b52",
+      "bytes": 1676
+    },
+    {
+      "path": "registry/asset-registry.csv",
+      "sha256": "076589f79e8b2e9a17dfbbd42c7473ae68b9cacc5db8208ec7657b6a51b6d873",
+      "bytes": 74733
+    },
+    {
+      "path": "registry/asset-registry.json",
+      "sha256": "a7c47e1dfa948692c99b3a239bef5e02720a69f43531f596bcbb08e33628fe55",
+      "bytes": 149863
+    },
+    {
+      "path": "registry/generation-crosswalk.csv",
+      "sha256": "d07a1b8b794d9d4d8696ac2433cae834fb12aac0e25a2e9a61a5028cf2208864",
+      "bytes": 20379
+    },
+    {
+      "path": "registry/generation-crosswalk.json",
+      "sha256": "962d126acab905a8dbbf8ccd9caba85d913756b6d206ff0650094bf3b29e4ca9",
+      "bytes": 53699
+    },
+    {
+      "path": "schemas/canon-entity-v1.schema.json",
+      "sha256": "661f019e36556803696ad2cf28501257af2bd5c695db602e30329dc931ec8553",
+      "bytes": 2226
+    },
+    {
+      "path": "publishing/publishing-pipeline.json",
+      "sha256": "56014312ca3f8d8dba8e2cde8092f6627beea5cfab1b91b35eec78a24e205c71",
+      "bytes": 1008
+    },
+    {
+      "path": "repository/repository-tree.txt",
+      "sha256": "dd7cf01f8300cf5cab6cb3bc334f18c6d45797f05d544154134ee81c20f58611",
+      "bytes": 822
+    },
+    {
+      "path": "source/source-manifest.json",
+      "sha256": "2dd1b19e23b77ca237f91e1f23c60368fda9653a734a8bd521204fa4d8d856f7",
+      "bytes": 1246
+    },
+    {
+      "path": "assets/reference/gen1-product-guide.jpg",
+      "sha256": "c3d0e4c9c66dccb5d136018bee0c219754fb7fb1a6479692a1f8a853e6abba23",
+      "bytes": 64027
+    },
+    {
+      "path": "assets/reference/gen1-system-architect.jpg",
+      "sha256": "0a1fae763c2402714b7ca4b3d7759b9b07a6036e79ac69867c2e879a13733dee",
+      "bytes": 64320
+    },
+    {
+      "path": "assets/reference/gen1-observability.jpg",
+      "sha256": "297ccb4af1051caa7cd46d90b75c7266a171b2c776d6cfbb1aee87ee78f3cef6",
+      "bytes": 64211
+    },
+    {
+      "path": "assets/reference/gen1-network.jpg",
+      "sha256": "813102df69d5f448f5745965997bbaa2fcd11eb13167db27a5079aa954de28ea",
+      "bytes": 68514
+    },
+    {
+      "path": "assets/reference/orchestra-flash-riku.jpg",
+      "sha256": "3fc8761ebc6789390089a734adc56e1c50e60be4c7cb4c808e6e40ca8ad2f3ba",
+      "bytes": 229116
+    },
+    {
+      "path": "assets/reference/orchestra-gatekeeper.jpg",
+      "sha256": "1dffab27c61da4cfdab472840d58b6eeecb2e52423d07ac260bed93e313e065e",
+      "bytes": 245108
+    },
+    {
+      "path": "assets/reference/orchestra-release-conductor.jpg",
+      "sha256": "00c95a55a726e916b31a5e95c2ff401428b2fc230aa7835493352bdee6e55db8",
+      "bytes": 260195
+    },
+    {
+      "path": "assets/reference/orchestra-dora-daichi.jpg",
+      "sha256": "2f4f6f0e091bb2c08cabdc118de72aba70bb96d08267a3de63216085796c2259",
+      "bytes": 248013
+    },
+    {
+      "path": "assets/reference/orchestra-grafana-mei.jpg",
+      "sha256": "07c26c96e46bab2a615d92b30127ad14b6c753b0572a232fcd584e1846df8b07",
+      "bytes": 242550
+    },
+    {
+      "path": "assets/reference/registry-release-sentinel.jpg",
+      "sha256": "da6b7025b66e7fe5badceadb04b366495b248c13ef798bdd1531c22d962d1e80",
+      "bytes": 162426
+    },
+    {
+      "path": "assets/reference/registry-trust-graph.jpg",
+      "sha256": "4f1ab91f35fe533d23741af7131b9d1621547ce360206f509581655190821965",
+      "bytes": 171170
+    },
+    {
+      "path": "assets/reference/registry-agent-sdk.jpg",
+      "sha256": "cc5de6488dfb97263a565478fdec7297d5378e2bb39798723c29d76e435cb8b1",
+      "bytes": 170777
+    },
+    {
+      "path": "assets/reference/registry-policy-engine.jpg",
+      "sha256": "5a3ad89a31888125e3b2021e0801d821d148799ba36a574df673efb9a33f1906",
+      "bytes": 170868
+    },
+    {
+      "path": "assets/reference/registry-workflow-linter.jpg",
+      "sha256": "274b5fc85a621a89ed265ce71c0e18e08c3548333ed17da4c6e9d93cb5373711",
+      "bytes": 171244
+    },
+    {
+      "path": "assets/reference/mise-orchestra-asset-sheet.jpeg",
+      "sha256": "762d46639114a6ea86d831b3741be307c068f1ac69f2ca70697a74fa4d5aed37",
+      "bytes": 815990
+    },
+    {
+      "path": "assets/reference/mise-orchestra-logo-guide.jpeg",
+      "sha256": "ab83e78ed6b97124bb128ba9d1f81de511477ba2fa3ba671f1cb2fdb2a426eae",
+      "bytes": 387221
+    },
+    {
+      "path": "assets/reference/miseos-brand-system-01.jpeg",
+      "sha256": "d86cd08d6218d8e941a28b9d868f0680e7bc011ae4ce10602cb46941fc24d39c",
+      "bytes": 593014
+    },
+    {
+      "path": "assets/reference/miseos-brand-system-02.jpeg",
+      "sha256": "4ed96fa9bcc9411f1f157ba104a0459ba7905dd6d4007dfd75b6a07c660abca2",
+      "bytes": 640270
+    },
+    {
+      "path": "assets/reference/miseos-intro-poster.jpeg",
+      "sha256": "db84cf016f86de1350fb29b0fb83ad11902ad269302d055b1810a56a99e7c889",
+      "bytes": 196760
+    },
+    {
+      "path": "assets/reference/miseos-platform-architecture.jpeg",
+      "sha256": "241b3552457109c766d47a3843849f8c066dadeffb1a57f933832889d86fb76a",
+      "bytes": 624865
+    },
+    {
+      "path": "assets/reference/001-kurogami-senpai.png",
+      "sha256": "f570da8cb01f1052e1001f9d01d860f79a57cb4b3644eecce6d8fef35b2ea01a",
+      "bytes": 243407
+    },
+    {
+      "path": "assets/reference/002-tensho.png",
+      "sha256": "20ded759e175fb3846474c2c7b17696e92577d3465c4c953e1d19053b5593d72",
+      "bytes": 192935
+    },
+    {
+      "path": "assets/reference/003-mizu.png",
+      "sha256": "f1f0a04053ce7db26bb8c5b3d5dc90a607ade044ceb4b175f2400379a344c456",
+      "bytes": 210700
+    },
+    {
+      "path": "assets/reference/004-umami-code.png",
+      "sha256": "0d6057972a69811e0ca7e44f1bc11ffa8088fd83bb0e27590e20e5691b860812",
+      "bytes": 206719
+    },
+    {
+      "path": "assets/reference/005-kaji.png",
+      "sha256": "1a858a67cc339afc43f8640e9b2caf214fb0b536224ff8817bcdebf98303a79b",
+      "bytes": 188371
+    },
+    {
+      "path": "assets/reference/006-yume.png",
+      "sha256": "1c13a8a6e32556afaaae55a68066c8f30637e757e0a65f27d8702496344252e1",
+      "bytes": 191615
+    },
+    {
+      "path": "assets/reference/007-iron-hashi.png",
+      "sha256": "65e1f6d4a279c174e3d1443eeb40eec49f4ff4ac78498f00829301d78ba64c24",
+      "bytes": 177864
+    },
+    {
+      "path": "assets/reference/008-null-chan.png",
+      "sha256": "569e579b186e46ded1c23ecb49234df64a57c3c0f6e59d409ca5df9bcb1ff885",
+      "bytes": 200962
+    },
+    {
+      "path": "assets/reference/009-flash-riku.png",
+      "sha256": "4a60ec8879004c1e10bb2296ef2668ac1f84d9737559c81554f869fd08e0bc65",
+      "bytes": 149964
+    },
+    {
+      "path": "assets/reference/010-seira.png",
+      "sha256": "23780901117ec5ed386a7b36bb2dc35d0f44e725b792f608ef7fac9731ec057d",
+      "bytes": 153508
+    },
+    {
+      "path": "assets/reference/011-kuro-guard.png",
+      "sha256": "70f82d05a7878c541b348f45e7e49228ce07c4bcfca5915605dffa1216210197",
+      "bytes": 215742
+    },
+    {
+      "path": "assets/reference/012-scale-oni.png",
+      "sha256": "83961c082b968d1809593f317f47371adcfb64fc0cbf7601466b5e1d78348224",
+      "bytes": 149034
+    },
+    {
+      "path": "assets/reference/013-build-kun.png",
+      "sha256": "c8851a4d1b093985194f4aafbbead79f173f574eb7c0c28bc7608aa606ec3f9a",
+      "bytes": 192213
+    },
+    {
+      "path": "assets/reference/014-streama.png",
+      "sha256": "907481c07db59d304022ccbea5012561524e82c880473a2e73d1a13e3fa9072d",
+      "bytes": 234620
+    },
+    {
+      "path": "assets/reference/015-orchestra-core.png",
+      "sha256": "0d59f3326b69a9ab1eab805d36287781cad223fe5fe7e9d5f6b9799ae6978b98",
+      "bytes": 198986
+    },
+    {
+      "path": "assets/reference/016-canary-taster.png",
+      "sha256": "7a85b4e84c643ddd9f15a0933832ba857e60377ce173b1436c5ae2ff4295a107",
+      "bytes": 204915
+    },
+    {
+      "path": "assets/reference/017-metrics-miko.png",
+      "sha256": "334f1e7c36069806b5d8fbf2c6a2a37db6a74db12f44f40e5d5962b2d7e38a20",
+      "bytes": 200593
+    },
+    {
+      "path": "assets/reference/018-slo-sage.png",
+      "sha256": "60d336a33370d4b3507f7bc219196316be1d3ce6ed0038f8600716c6fe960a54",
+      "bytes": 196881
+    },
+    {
+      "path": "assets/reference/019-data-chan.png",
+      "sha256": "c52004ef2d70c4fab54cf8881a4d92944d1505b8f745dd54df3c81a66d5240db",
+      "bytes": 270976
+    },
+    {
+      "path": "assets/reference/020-insight-sensei.png",
+      "sha256": "184669836a171b60cef87d3fb7d6a5acb559e6b555f6c122adfecc7eb894ab97",
+      "bytes": 190568
+    },
+    {
+      "path": "assets/reference/021-chaos-analyst.png",
+      "sha256": "7fe38ffc95f48831e2a1aa0ba8f687ebf9289dd8e7e0b041f4c3d0e848f04300",
+      "bytes": 176647
+    },
+    {
+      "path": "assets/reference/022-growth-guru.png",
+      "sha256": "a4fddf5c1dee2ae185bd25c0a247f666f2421027d59d3a12aad225571fa297c3",
+      "bytes": 174197
+    },
+    {
+      "path": "assets/reference/023-culture-chef.png",
+      "sha256": "3c6d9355ee6857f514fc110d679992f707bbd1e812fef65068af35ceb2329e32",
+      "bytes": 168306
+    }
+  ]
+}

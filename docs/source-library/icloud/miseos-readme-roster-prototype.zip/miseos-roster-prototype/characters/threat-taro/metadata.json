@@ -1,0 +1,68 @@
+{
+  "id": "threat-taro",
+  "number": 46,
+  "name": "Threat Taro",
+  "miseName": "Mise ThreatModelingStarter",
+  "codename": "chef.security.threat-modeling-starter",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "common",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Threat Modeling Starter",
+    "signaturePhrase": "Threat Modeling Starter done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in threat modeling starter so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen threat modeling starter aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/threat-taro/full-body.png",
+    "cardPath": "/assets/characters/threat-taro/card.png"
+  },
+  "workflow": {
+    "jobName": "Threat Modeling Starter",
+    "roleName": "Threat Modeling Starter microagent",
+    "summary": "Runs threat modeling starter for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Secure Sakura",
+      "Alko Commit Chef",
+      "Template Tanaka",
+      "SLO Sage"
+    ]
+  },
+  "stats": {
+    "power": 83,
+    "precision": 74,
+    "speed": 69,
+    "resilience": 87,
+    "intelligence": 87,
+    "teamwork": 81
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "threat-taro",
+  "seasonOneCard": null,
+  "displayNumber": 46,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/threat-taro",
+  "avatarSvg": "assets/characters/threat-taro/avatar.svg",
+  "cardSvg": "assets/characters/threat-taro/card.svg"
+}

@@ -1,0 +1,383 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "kurogami-senpai",
+  "name": "Kurogami Senpai",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/kurogami-senpai/metadata.json",
+    "role": "characters/kurogami-senpai/metadata.json",
+    "department": "characters/kurogami-senpai/metadata.json",
+    "rarity": "characters/kurogami-senpai/metadata.json",
+    "workflow.summary": "characters/kurogami-senpai/metadata.json",
+    "workflow.inputs": "characters/kurogami-senpai/metadata.json",
+    "workflow.outputs": "characters/kurogami-senpai/metadata.json",
+    "workflow.proof_gate": "characters/kurogami-senpai/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/kurogami-senpai/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
+  },
+  "registry": {
+    "number": 26,
+    "profile": "characters/kurogami-senpai/README.md",
+    "metadata": "characters/kurogami-senpai/metadata.json",
+    "avatar": "assets/characters/kurogami-senpai/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/kurogami-senpai.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/kurogami-senpai.webp",
+      "collection": "1by1-chefs",
+      "title": "Kurogami Senpai",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/kurogami-senpai.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/kurogami-senpai.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Kurogami Senpai",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kurogami-senpai.webp",
+      "thumbnail": "assets/player-cards/icloud-screens/thumbs/kurogami-senpai.webp",
+      "collection": "icloud-screens",
+      "title": "Kurogami Senpai",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "icloud-screens",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/kurogami-senpai.webp",
+      "printed_text": [
+        "Kurogami Senpai",
+        "Chef de Cuisine"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/kurogami-senpai.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.001",
+        "KurogamiSenpai",
+        "MO",
+        "50im",
+        "MYTHIC-Season1Core",
+        "Chef de Cuisine|Operations",
+        "ABILITY:MasterOrchestrator",
+        "Plans every move withperfectprecision before thekitchen",
+        "heats up.",
+        "Element:GoldFlame·Function:Orchestrate",
+        "ORCHESTRATE",
+        "98",
+        "SECURE",
+        "88",
+        "DEPLOY",
+        "92",
+        "ORCHESTRATE·DEPLOY",
+        "COOK",
+        "PROVENANCE-READY",
+        "LEARN",
+        "84"
+      ]
+    },
+    {
+      "file": "assets/player-cards/icloud-screens/kurogami-senpai.webp",
+      "printed_text": [
+        "APIGateway",
+        "Expediter Tensho",
+        "Kurogami Senpai",
+        "011103",
+        "01011",
+        "Grillardin (Kaji)",
+        "CPUGrill"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 32,
+  "orchestra_card": {
+    "role": "Chef de Cuisine",
+    "department": "Operations",
+    "function": "Orchestrate",
+    "rarity": "Mythic",
+    "tier": "Season 1 Core",
+    "element": "Gold Flame",
+    "ability": "Master Orchestrator",
+    "lore": "Plans every move with perfect precision before the kitchen heats up."
+  },
+  "abilities": [
+    "Master Orchestrator"
+  ],
+  "profile_doc": "characters/kurogami-senpai/README.md",
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 85,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/brigade-gallery/src/types/master-roster.ts",
+        "line": 66,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 42,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/examples/demo-roam.mjs",
+        "line": 3,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 57,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/test/smoke.mjs",
+        "line": 5,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "tools/repo-pet/examples/demo-roam.mjs",
+        "line": 5,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 5,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/repo-pet/test/smoke.mjs",
+        "line": 5,
+        "term": "Kurogami Senpai"
+      }
+    ],
+    "code_ref_count": 9,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 4663,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/package.json",
+        "line": 13,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 12,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/001-kurogami-senpai.json",
+        "line": 2,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 4663,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_cards.csv",
+        "line": 2,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/art-factory/input/mise_orchestra_collection_manifest.json",
+        "line": 12,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/krikey_animation_prompts.json",
+        "line": 21,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/art-factory/output/manifests/mangaboom_comic_prompts.json",
+        "line": 21,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/art-factory/output/merged_roster.json",
+        "line": 209,
+        "term": "Kurogami Senpai"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 31,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/README.md",
+        "line": 5,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 14,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "apps/registry-atrium/index.html",
+        "line": 342,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/repo-pet/README.md",
+        "line": 104,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/repo-pet/docs/MASCOT_REFERENCE.md",
+        "line": 9,
+        "term": "Kurogami Senpai"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/bin/mise-roam.mjs",
+        "line": 42,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/examples/demo-roam.mjs",
+        "line": 3,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 57,
+        "term": "Kurogami Senpai"
+      },
+      {
+        "path": "tools/repo-pet/examples/demo-roam.mjs",
+        "line": 5,
+        "term": "kurogami-senpai"
+      },
+      {
+        "path": "tools/repo-pet/src/characters.js",
+        "line": 5,
+        "term": "Kurogami Senpai"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-076",
+    "character_id": "miseos.character.076",
+    "card_id": "MISE-076",
+    "codename": "KUROGAMI_SENPAI"
+  },
+  "role": "Orchestrate",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Mythic",
+  "lore": "Kurogami Senpai belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Kurogami Senpai performs orchestrate within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE ORCHESTRATE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 74,
+    "precision": 91,
+    "speed": 67,
+    "resilience": 92,
+    "intelligence": 85,
+    "teamwork": 75
+  },
+  "related": [
+    {
+      "name": "Mizu",
+      "slug": "mizu"
+    },
+    {
+      "name": "Kaji",
+      "slug": "kaji"
+    },
+    {
+      "name": "Scale Oni",
+      "slug": "scale-oni"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Kurogami Senpai performs orchestrate within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [
+    {
+      "slug": "kurogami",
+      "name": "Kurogami",
+      "page": "docs/agents/kurogami.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "kurogami-senpai",
+      "name": "Kurogami Senpai",
+      "page": "docs/repo-pets/kurogami-senpai.md"
+    }
+  ]
+}

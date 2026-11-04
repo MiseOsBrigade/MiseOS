@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.034",
+  "number": 34,
+  "slug": "capacity-kanna",
+  "name": "Capacity Kanna",
+  "mise_name": "Capacity Kanna",
+  "codename": "CAPACITY_KANNA",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Reliability Kitchen",
+  "department_code": "reliability",
+  "department_mission": "Observe. Measure. Improve.",
+  "agent_function": "Pre-Deployment Reliability Check",
+  "job_name": "Pre-Deployment Reliability Check",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#2E6B4E",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Reliability Kitchen operational aura",
+    "tool_symbol": "Pre-Deployment Reliability Check",
+    "avatar_path": "assets/characters/capacity-kanna/avatar.png",
+    "card_path": "assets/characters/capacity-kanna/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Capacity Kanna performs pre-deployment reliability check within the Reliability Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Canary Judge",
+      "Alert Akira",
+      "Pager Hiro"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 80,
+    "precision": 65,
+    "speed": 71,
+    "resilience": 80,
+    "intelligence": 78,
+    "teamwork": 68
+  },
+  "paths": {
+    "readme": "characters/capacity-kanna/README.md",
+    "metadata": "characters/capacity-kanna/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

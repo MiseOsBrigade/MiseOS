@@ -1,0 +1,34 @@
+name: Package Registry Sentinel
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 10 * * 1"
+
+permissions:
+  contents: read
+  packages: read
+  issues: write
+
+jobs:
+  package-registry-sentinel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect package ecosystems
+        shell: bash
+        run: |
+          echo "Package ecosystem scan"
+          test -f package.json && echo "npm ecosystem detected"
+          test -f Dockerfile && echo "container ecosystem detected"
+          test -f pom.xml && echo "maven ecosystem detected"
+          ls *.csproj 2>/dev/null && echo "nuget ecosystem detected" || true
+          ls *.gemspec 2>/dev/null && echo "rubygems ecosystem detected" || true
+
+      - name: Release readiness placeholder
+        shell: bash
+        run: |
+          echo "CONFIRMED: registry sentinel workflow executed"
+          echo "UNKNOWN: external registry comparisons require configured registry client"

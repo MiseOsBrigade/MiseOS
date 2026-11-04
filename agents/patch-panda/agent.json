@@ -1,0 +1,18 @@
+{
+  "slug": "patch-panda",
+  "name": "Patch Panda",
+  "kind": "brigade_mascot_agent",
+  "role": "Hotfix Patcher",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:95",
+  "thumbnail": "agents/patch-panda/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": "patch-panda",
+  "page": "docs/agents/patch-panda.md",
+  "dir": "agents/patch-panda",
+  "files": [
+    "agents/patch-panda/Patch-Panda.png"
+  ]
+}

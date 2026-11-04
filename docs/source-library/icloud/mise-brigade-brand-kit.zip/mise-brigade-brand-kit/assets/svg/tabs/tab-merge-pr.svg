@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">02 Merge &amp; PR tab graphic</title>
+<desc id="desc">Chef-code inspired repository brand asset</desc>
+<defs>
+  <linearGradient id="miseFlame" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#F6C453"/>
+    <stop offset="52%" stop-color="#FF7A1A"/>
+    <stop offset="100%" stop-color="#EF4444"/>
+  </linearGradient>
+  <linearGradient id="miseSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1F2937"/>
+    <stop offset="100%" stop-color="#111827"/>
+  </linearGradient>
+  <linearGradient id="miseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#38BDF8"/>
+    <stop offset="100%" stop-color="#7CFFB2"/>
+  </linearGradient>
+  <radialGradient id="ember" cx="50%" cy="46%" r="70%">
+    <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0.32"/>
+    <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#0B0F14" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <pattern id="prepGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#94A3B8" stroke-opacity="0.12" stroke-width="1"/>
+  </pattern>
+  <style>
+    .title { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 72px; font-weight: 800; letter-spacing: -2px; fill: #F8F3E8; }
+    .subtitle { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 25px; font-weight: 600; fill: #94A3B8; letter-spacing: .5px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 22px; font-weight: 700; fill: #7CFFB2; }
+    .micro { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 17px; font-weight: 700; fill: #94A3B8; }
+    .label { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 34px; font-weight: 800; fill: #F8F3E8; }
+    .small { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 18px; font-weight: 650; fill: #94A3B8; }
+  </style>
+</defs>
+<rect width="1200" height="300" rx="34" fill="#0B0F14"/>
+<rect width="1200" height="300" rx="34" fill="url(#prepGrid)"/>
+<rect x="35" y="36" width="1128" height="228" rx="28" fill="#111827" stroke="#22C55E" stroke-opacity=".62" stroke-width="3"/>
+<path d="M74 214h280c46 0 69-23 69-69V86h130" stroke="#22C55E" stroke-width="5" fill="none" stroke-linecap="round" opacity=".70"/>
+<circle cx="74" cy="214" r="9" fill="#22C55E"/>
+<circle cx="553" cy="86" r="9" fill="#22C55E"/>
+<text x="92" y="122" class="label">02 Merge &amp; PR</text>
+<text x="94" y="164" class="small">plate branches only after gates pass</text>
+<g transform="translate(792 102)">
+  <rect width="316" height="72" rx="24" fill="#0B0F14" stroke="#94A3B8" stroke-opacity=".25"/>
+  <text x="29" y="46" class="mono">/mise merge-pr apply</text>
+</g>
+<g transform="translate(1010 42) scale(.32)">
+  <path d="M-94 30c-25-16-30-51-7-73 15-15 36-18 55-9 9-24 31-41 58-41s49 17 58 41c19-9 40-6 55 9 23 22 18 57-7 73v60H-94Z"
+        fill="#0B0F14" stroke="#22C55E" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M-58 88h116" stroke="#F8F3E8" stroke-width="11" stroke-linecap="round"/>
+</g>
+</svg>

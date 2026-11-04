@@ -1,0 +1,20 @@
+# Rename this file to mise-stack-consumer.yml only if you want a small caller workflow
+# that invokes the reusable Pack-a-Punch engine. Do not enable this example together
+# with another pull_request trigger unless you intentionally want both to run.
+
+name: Example Caller | Mise Stack Consumer
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pack-a-punch:
+    uses: ./.github/workflows/mise-pack-a-punch.yml
+    with:
+      stack_profile: balanced
+      runner: ubuntu-latest
+      fail_on_high_risk: true
+      comment_on_pr: false

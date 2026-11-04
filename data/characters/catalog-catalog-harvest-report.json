@@ -1,0 +1,74 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "catalog-catalog-harvest-report",
+  "name": "Harvest Audit Report",
+  "kind": "catalog_item",
+  "aliases": [],
+  "sources": {
+    "name": "data/imports/miseos-individual-catalog-items.json",
+    "role": "data/imports/miseos-individual-catalog-items.json (category)",
+    "workflow.summary": "data/imports/miseos-individual-catalog-items.json",
+    "implementation": "git ls-files grep + repo"
+  },
+  "catalog_item": {
+    "id": "catalog-harvest-report",
+    "category": "catalog",
+    "title": "Harvest Audit Report",
+    "description": "Source-derived audit findings and recommended MiseOS CI/CD + DevOps catalog.",
+    "dependencies": [],
+    "files": [
+      "catalog/HARVEST_REPORT.md",
+      "catalog/RECOMMENDED_TOOL_CATALOG.md"
+    ],
+    "notes": []
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [],
+    "doc_refs": [],
+    "payload_files": [
+      "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+      "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md"
+    ],
+    "tool_dir": "tools/devops-foundry/catalog",
+    "app_code_refs": [],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {},
+  "role": "catalog",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Source-derived audit findings and recommended MiseOS CI/CD + DevOps catalog.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "installs_files": "catalog/HARVEST_REPORT.md, catalog/RECOMMENDED_TOOL_CATALOG.md",
+      "source": "data/imports/miseos-individual-catalog-items.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Not yet defined in the source material",
+    "mission": "Not yet defined in the source material",
+    "problem": "Source-derived audit findings and recommended MiseOS CI/CD + DevOps catalog.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

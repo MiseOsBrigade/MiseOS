@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.005",
+  "number": 5,
+  "slug": "hugo-matrix",
+  "name": "Hugo Matrix",
+  "mise_name": "Hugo Matrix",
+  "codename": "HUGO_MATRIX",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Test Matrix Runner",
+  "job_name": "Test Matrix Runner",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Test Matrix Runner",
+    "avatar_path": "assets/characters/hugo-matrix/avatar.png",
+    "card_path": "assets/characters/hugo-matrix/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Hugo Matrix performs test matrix runner within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Seira Scan",
+      "Yume Builder",
+      "Iron Hashi"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 57,
+    "precision": 61,
+    "speed": 68,
+    "resilience": 81,
+    "intelligence": 76,
+    "teamwork": 78
+  },
+  "paths": {
+    "readme": "characters/hugo-matrix/README.md",
+    "metadata": "characters/hugo-matrix/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "cloud-chef",
+  "name": "Cloud Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "Cloud Provisioner",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:150",
+  "thumbnail": "agents/cloud-chef/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/cloud-chef.md",
+  "dir": "agents/cloud-chef",
+  "files": [
+    "agents/cloud-chef/Cloud-Chef.png"
+  ]
+}

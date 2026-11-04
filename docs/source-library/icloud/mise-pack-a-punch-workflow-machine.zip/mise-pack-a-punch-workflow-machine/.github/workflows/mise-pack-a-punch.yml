@@ -1,0 +1,310 @@
+name: Mise Pack-a-Punch Workflow Machine
+
+on:
+  workflow_call:
+    inputs:
+      stack_profile:
+        description: "quality profile: fast, balanced, strict"
+        required: false
+        type: string
+        default: "balanced"
+      runner:
+        description: "runner label; use ubuntu-latest or a trusted ephemeral self-hosted label"
+        required: false
+        type: string
+        default: "ubuntu-latest"
+      fail_on_high_risk:
+        description: "fail when the risk gate detects high-risk changes"
+        required: false
+        type: boolean
+        default: true
+      comment_on_pr:
+        description: "write or update a Pack-a-Punch PR report comment"
+        required: false
+        type: boolean
+        default: true
+  workflow_dispatch:
+    inputs:
+      stack_profile:
+        description: "quality profile"
+        required: true
+        type: choice
+        options: [fast, balanced, strict]
+        default: balanced
+      runner:
+        description: "runner label"
+        required: true
+        type: choice
+        options: [ubuntu-latest, self-hosted]
+        default: ubuntu-latest
+      fail_on_high_risk:
+        description: "fail when the risk gate detects high-risk changes"
+        required: true
+        type: boolean
+        default: true
+      comment_on_pr:
+        description: "write/update PR report comment when event is a PR"
+        required: true
+        type: boolean
+        default: true
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [main, master, develop]
+  schedule:
+    - cron: "17 9 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mise-pack-a-punch-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  STACK_PROFILE: ${{ inputs.stack_profile || github.event.inputs.stack_profile || 'balanced' }}
+  FAIL_ON_HIGH_RISK: ${{ (inputs.fail_on_high_risk == false || github.event.inputs.fail_on_high_risk == 'false') && 'false' || 'true' }}
+  COMMENT_ON_PR: ${{ (inputs.comment_on_pr == false || github.event.inputs.comment_on_pr == 'false') && 'false' || 'true' }}
+  DEFAULT_BRANCH: ${{ github.event.repository.default_branch || 'main' }}
+  BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
+  HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+  IS_FORK: ${{ github.event.pull_request.head.repo.fork || 'false' }}
+
+jobs:
+  measurement-context:
+    name: A0 Measurement Context
+    runs-on: ${{ inputs.runner || github.event.inputs.runner || 'ubuntu-latest' }}
+    permissions:
+      contents: read
+    outputs:
+      changed_file_count: ${{ steps.context.outputs.changed_file_count }}
+      changed_line_count: ${{ steps.context.outputs.changed_line_count }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Configure measurement context
+        id: context
+        run: node scripts/mise-context.mjs
+      - name: Upload measurement context
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-measurement-context
+          path: mise-measurement-context.json
+          if-no-files-found: error
+
+  risk-gate:
+    name: B1 Risk Gate
+    runs-on: ${{ inputs.runner || github.event.inputs.runner || 'ubuntu-latest' }}
+    needs: [measurement-context]
+    permissions:
+      contents: read
+    outputs:
+      risk_level: ${{ steps.risk.outputs.risk_level }}
+      risk_score: ${{ steps.risk.outputs.risk_score }}
+      blocked: ${{ steps.risk.outputs.blocked }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Execute risk gate
+        id: risk
+        run: node scripts/mise-risk-gate.mjs
+      - name: Upload risk report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-risk-report
+          path: mise-risk-report.json
+          if-no-files-found: error
+
+  stack-graph:
+    name: Stack Coordinate Graph
+    runs-on: ${{ inputs.runner || github.event.inputs.runner || 'ubuntu-latest' }}
+    needs: [measurement-context]
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Generate coordinate graph
+        run: node scripts/mise-stack-graph.mjs
+      - name: Upload stack graph
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-stack-graph
+          path: mise-stack-graph.json
+          if-no-files-found: error
+
+  quality-stack:
+    name: C2 Quality Stack
+    runs-on: ${{ inputs.runner || github.event.inputs.runner || 'ubuntu-latest' }}
+    needs: [risk-gate]
+    if: ${{ needs.risk-gate.outputs.blocked != 'true' }}
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Setup Node with npm cache
+        if: ${{ hashFiles('package.json') != '' && hashFiles('package-lock.json') != '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Setup Node without npm cache
+        if: ${{ hashFiles('package.json') != '' && hashFiles('package-lock.json') == '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Setup Python when Python project exists
+        if: ${{ hashFiles('pyproject.toml', 'requirements.txt', 'setup.py') != '' }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run native quality stack
+        run: node scripts/mise-quality-runner.mjs
+      - name: Upload quality reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-quality-report
+          path: |
+            mise-quality-report.json
+            mise-quality-log.md
+          if-no-files-found: warn
+
+  supply-chain-scan:
+    name: D3 Supply Chain Scan
+    runs-on: ${{ inputs.runner || github.event.inputs.runner || 'ubuntu-latest' }}
+    needs: [risk-gate]
+    if: ${{ needs.risk-gate.outputs.blocked != 'true' }}
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup Node with npm cache
+        if: ${{ hashFiles('package.json') != '' && hashFiles('package-lock.json') != '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Setup Node without npm cache
+        if: ${{ hashFiles('package.json') != '' && hashFiles('package-lock.json') == '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run supply-chain scan
+        run: node scripts/mise-supply-chain.mjs
+      - name: Upload supply-chain report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-supply-chain-report
+          path: mise-supply-chain-report.json
+          if-no-files-found: warn
+
+  branch-advisor:
+    name: E4 Branch Advisor
+    runs-on: ${{ inputs.runner || github.event.inputs.runner || 'ubuntu-latest' }}
+    needs: [risk-gate]
+    permissions:
+      contents: read
+    outputs:
+      recommended_branch: ${{ steps.branch.outputs.recommended_branch }}
+      recommended_score: ${{ steps.branch.outputs.recommended_score }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Recommend next branch path
+        id: branch
+        run: node scripts/mise-branch-advisor.mjs
+      - name: Upload branch advisor report
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-branch-advisor-report
+          path: mise-branch-advisor-report.json
+          if-no-files-found: warn
+
+  evidence-report:
+    name: F5 Evidence Report
+    runs-on: ${{ inputs.runner || github.event.inputs.runner || 'ubuntu-latest' }}
+    needs: [measurement-context, risk-gate, stack-graph, quality-stack, supply-chain-scan, branch-advisor]
+    if: always()
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Download evidence artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: mise-artifacts
+          merge-multiple: true
+      - name: Normalize downloaded evidence
+        run: |
+          cp mise-artifacts/*.json . 2>/dev/null || true
+      - name: Build final report
+        run: node scripts/mise-report.mjs
+      - name: Upload final evidence report
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-pack-a-punch-final-report
+          path: |
+            mise-pack-a-punch-report.md
+            mise-*.json
+          if-no-files-found: warn
+      - name: Comment report on PR
+        if: ${{ github.event_name == 'pull_request' && env.COMMENT_ON_PR == 'true' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('mise-pack-a-punch-report.md', 'utf8');
+            const marker = '<!-- mise-pack-a-punch-report -->';
+            const issue_number = context.payload.pull_request.number;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number,
+              per_page: 100
+            });
+            const prior = comments.find((comment) => comment.user.type === 'Bot' && comment.body.includes(marker));
+            if (prior) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: prior.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body
+              });
+            }

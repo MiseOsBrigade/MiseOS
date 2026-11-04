@@ -1,0 +1,18 @@
+{
+  "slug": "pipeline",
+  "name": "Pipeline",
+  "kind": "brigade_mascot_agent",
+  "role": "CI/CD Pipeline",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:158",
+  "thumbnail": "agents/pipeline/thumb.png",
+  "character": "pipeline-sensei",
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/pipeline.md",
+  "dir": "agents/pipeline",
+  "files": [
+    "agents/pipeline/Pipeline.png"
+  ]
+}

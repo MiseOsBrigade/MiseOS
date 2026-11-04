@@ -1,0 +1,68 @@
+{
+  "id": "bootstrap-aiko",
+  "number": 17,
+  "name": "Bootstrap Aiko",
+  "miseName": "Mise NewServiceWizard",
+  "codename": "chef.platform.new-service-wizard",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "genesis",
+  "roleCategory": "platform",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "New Service Wizard",
+    "signaturePhrase": "New Service Wizard done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in new service wizard so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen new service wizard aura",
+    "silhouette": "multinational chibi DevOps chef carrying a tablet",
+    "tool": "tablet",
+    "spritePath": "/assets/characters/bootstrap-aiko/full-body.png",
+    "cardPath": "/assets/characters/bootstrap-aiko/card.png"
+  },
+  "workflow": {
+    "jobName": "New Service Wizard",
+    "roleName": "New Service Wizard microagent",
+    "summary": "Runs new service wizard for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Template Tanaka",
+      "Terra Forge",
+      "Bruno Blast-Radius",
+      "Trace Sensei"
+    ]
+  },
+  "stats": {
+    "power": 95,
+    "precision": 78,
+    "speed": 77,
+    "resilience": 91,
+    "intelligence": 97,
+    "teamwork": 79
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "bootstrap-aiko",
+  "seasonOneCard": null,
+  "displayNumber": 17,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/bootstrap-aiko",
+  "avatarSvg": "assets/characters/bootstrap-aiko/avatar.svg",
+  "cardSvg": "assets/characters/bootstrap-aiko/card.svg"
+}

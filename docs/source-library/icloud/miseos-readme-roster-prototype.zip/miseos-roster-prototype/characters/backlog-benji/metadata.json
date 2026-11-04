@@ -1,0 +1,68 @@
+{
+  "id": "backlog-benji",
+  "number": 40,
+  "name": "Backlog Benji",
+  "miseName": "Mise ReliabilityBacklogBuilder",
+  "codename": "chef.reliability.reliability-backlog-builder",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "common",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "British",
+    "title": "Reliability Backlog Builder",
+    "signaturePhrase": "Reliability Backlog Builder done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in reliability backlog builder so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen reliability backlog builder aura",
+    "silhouette": "multinational chibi DevOps chef carrying a crate",
+    "tool": "crate",
+    "spritePath": "/assets/characters/backlog-benji/full-body.png",
+    "cardPath": "/assets/characters/backlog-benji/card.png"
+  },
+  "workflow": {
+    "jobName": "Reliability Backlog Builder",
+    "roleName": "Reliability Backlog Builder microagent",
+    "summary": "Runs reliability backlog builder for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Review Ren",
+      "Metrics Miko",
+      "Release Conductor",
+      "Queue Mizu"
+    ]
+  },
+  "stats": {
+    "power": 78,
+    "precision": 83,
+    "speed": 68,
+    "resilience": 90,
+    "intelligence": 94,
+    "teamwork": 84
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "backlog-benji",
+  "seasonOneCard": null,
+  "displayNumber": 40,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/backlog-benji",
+  "avatarSvg": "assets/characters/backlog-benji/avatar.svg",
+  "cardSvg": "assets/characters/backlog-benji/card.svg"
+}

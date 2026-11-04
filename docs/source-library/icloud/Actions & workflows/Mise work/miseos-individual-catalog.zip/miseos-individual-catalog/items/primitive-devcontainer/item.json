@@ -1,0 +1,11 @@
+{
+  "id": "primitive-devcontainer",
+  "category": "platform",
+  "title": "Dev Container / Codespaces",
+  "description": "Node 24 Dev Container with GitHub CLI, Docker-in-Docker, and VS Code extensions.",
+  "dependencies": [],
+  "files": [
+    ".devcontainer/devcontainer.json"
+  ],
+  "notes": []
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="190" viewBox="0 0 1100 190" role="img" aria-labelledby="title desc">
+<title id="title">Safety Gates section header</title>
+<desc id="desc">Chef-code inspired repository brand asset</desc>
+<defs>
+  <linearGradient id="miseFlame" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#F6C453"/>
+    <stop offset="52%" stop-color="#FF7A1A"/>
+    <stop offset="100%" stop-color="#EF4444"/>
+  </linearGradient>
+  <linearGradient id="miseSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1F2937"/>
+    <stop offset="100%" stop-color="#111827"/>
+  </linearGradient>
+  <linearGradient id="miseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#38BDF8"/>
+    <stop offset="100%" stop-color="#7CFFB2"/>
+  </linearGradient>
+  <radialGradient id="ember" cx="50%" cy="46%" r="70%">
+    <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0.32"/>
+    <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#0B0F14" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <pattern id="prepGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#94A3B8" stroke-opacity="0.12" stroke-width="1"/>
+  </pattern>
+  <style>
+    .title { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 72px; font-weight: 800; letter-spacing: -2px; fill: #F8F3E8; }
+    .subtitle { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 25px; font-weight: 600; fill: #94A3B8; letter-spacing: .5px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 22px; font-weight: 700; fill: #7CFFB2; }
+    .micro { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 17px; font-weight: 700; fill: #94A3B8; }
+    .label { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 34px; font-weight: 800; fill: #F8F3E8; }
+    .small { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 18px; font-weight: 650; fill: #94A3B8; }
+  </style>
+</defs>
+<rect width="1100" height="190" rx="30" fill="#0B0F14"/>
+<rect width="1100" height="190" rx="30" fill="url(#prepGrid)"/>
+<path d="M52 98H1048" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+<circle cx="92" cy="98" r="28" fill="#111827" stroke="#EF4444" stroke-width="4"/>
+<path d="M80 99l9 9 19-27" fill="none" stroke="#F8F3E8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="148" y="83" class="label">Safety Gates</text>
+<text x="150" y="125" class="small">scoped permissions, no privileged fork risk</text>
+</svg>

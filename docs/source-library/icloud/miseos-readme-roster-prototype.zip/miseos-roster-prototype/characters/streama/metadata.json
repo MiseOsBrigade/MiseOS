@@ -1,0 +1,80 @@
+{
+  "id": "streama",
+  "number": 26,
+  "name": "Streama",
+  "miseName": "Mise DataStreamingProfiles",
+  "codename": "chef.platform.data-streaming-profiles",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "genesis",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Norwegian",
+    "title": "Data Streaming Profiles",
+    "signaturePhrase": "Data Streaming Profiles done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in data streaming profiles so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen data streaming profiles aura",
+    "silhouette": "multinational chibi DevOps chef carrying a bowl",
+    "tool": "bowl",
+    "spritePath": "/assets/characters/streama/full-body.png",
+    "cardPath": "/assets/characters/streama/card.png"
+  },
+  "workflow": {
+    "jobName": "Data Streaming Profiles",
+    "roleName": "Data Streaming Profiles microagent",
+    "summary": "Runs data streaming profiles for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Queue Mizu",
+      "Preview Yuki",
+      "Felix Rollback",
+      "Metrics Miko"
+    ]
+  },
+  "stats": {
+    "power": 71,
+    "precision": 74,
+    "speed": 89,
+    "resilience": 83,
+    "intelligence": 94,
+    "teamwork": 93
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "streama",
+  "seasonOneCard": {
+    "id": "14",
+    "role": "Poissonnier",
+    "department": "Operations",
+    "function": "Stream",
+    "rarity": "Rare",
+    "tier": "Event Line",
+    "element": "Live Water",
+    "ability": "Smooth Flow",
+    "lore": "Streams data like water. Smooth, continuous, and always flowing.",
+    "image_file": "cards/png/014-streama.png",
+    "metadata_file": "metadata/erc721/014-streama.json"
+  },
+  "displayNumber": 26,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/streama",
+  "avatarSvg": "assets/characters/streama/avatar.svg",
+  "cardSvg": "assets/characters/streama/card.svg"
+}

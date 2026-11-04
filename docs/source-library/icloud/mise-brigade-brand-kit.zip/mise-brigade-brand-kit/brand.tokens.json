@@ -1,0 +1,62 @@
+{
+  "name": "Mise Brigade de Repo",
+  "system": "Mise en Place Hub",
+  "theme": "Code Chef / Repository Stewardship",
+  "tagline": "Chef-coded stewardship for clean repositories.",
+  "voice": {
+    "attributes": [
+      "precise",
+      "operational",
+      "chef-inspired",
+      "developer-safe",
+      "no drift"
+    ],
+    "avoid": [
+      "automation hype",
+      "unsafe auto-merge promises",
+      "vague AI language",
+      "unreviewed writes"
+    ]
+  },
+  "colors": {
+    "stockpot_black": "#0B0F14",
+    "cast_iron": "#111827",
+    "steel_pan": "#1F2937",
+    "knife_steel": "#94A3B8",
+    "flour": "#F8F3E8",
+    "sauce_gold": "#F6C453",
+    "flame_orange": "#FF7A1A",
+    "garnish_green": "#22C55E",
+    "terminal_green": "#7CFFB2",
+    "blue_flame": "#38BDF8",
+    "tomato": "#EF4444",
+    "violet_apron": "#8B5CF6"
+  },
+  "type": {
+    "display": "ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+  },
+  "asset_paths": {
+    "logo_mark": "brand/assets/svg/logos/mise-brigade-logo-mark.svg",
+    "horizontal_logo": "brand/assets/svg/logos/mise-brigade-horizontal.svg",
+    "readme_banner": "brand/assets/svg/banners/readme-hero-banner.svg",
+    "social_card": "brand/assets/svg/banners/social-card.svg",
+    "terminal_hero": "brand/assets/svg/banners/terminal-hero.svg"
+  },
+  "workflow_modes": [
+    "issues-review",
+    "merge-pr",
+    "branch-corrections",
+    "comments-commits",
+    "repo-clean"
+  ],
+  "safety_language": [
+    "GITHUB_TOKEN",
+    "scoped job-level permissions",
+    "no pull_request_target",
+    "no PAT recursion",
+    "[skip ci] generated commits",
+    "trusted collaborator command routing",
+    "write actions only when apply is explicitly requested"
+  ]
+}

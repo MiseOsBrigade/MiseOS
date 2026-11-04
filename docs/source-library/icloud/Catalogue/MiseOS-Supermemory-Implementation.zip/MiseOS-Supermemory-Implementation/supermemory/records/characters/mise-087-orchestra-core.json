@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-087",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-087\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-087\",\n    \"number\": 87,\n    \"name\": \"Orchestra Core\",\n    \"slug\": \"orchestra-core\"\n  },\n  \"classification\": {\n    \"department\": \"Platform Kitchen\",\n    \"department_code\": \"platform\",\n    \"role\": \"Coordinate\",\n    \"rarity\": \"Mythic\",\n    \"level\": 36\n  },\n  \"command\": \"MISE COORDINATE\",\n  \"stats\": {\n    \"power\": 73,\n    \"precision\": 92,\n    \"speed\": 75,\n    \"resilience\": 79,\n    \"intelligence\": 76,\n    \"teamwork\": 90\n  },\n  \"media\": {\n    \"image\": \"assets/images/087-orchestra-core.svg\",\n    \"metadata\": \"metadata/087-orchestra-core.json\",\n    \"animation\": \"media/animation/087-orchestra-core.mp4\",\n    \"model_3d\": \"media/models/087-orchestra-core.glb\",\n    \"audio\": \"media/audio/087-orchestra-core.mp3\",\n    \"ar\": \"media/ar/087-orchestra-core.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"user_supplied_roster\",\n    \"confidence\": \"high\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-087",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-087",
+    "character_slug": "orchestra-core",
+    "department_code": "platform",
+    "rarity": "Mythic",
+    "level": 36,
+    "source_file": "cards-catalog.json"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miseos.dev/schemas/alert-policy.schema.json",
+  "title": "MiseOS Metric Alert Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "policy_id",
+    "metric_id",
+    "condition",
+    "severity",
+    "actions",
+    "cooldown",
+    "enabled"
+  ],
+  "properties": {
+    "policy_id": {
+      "type": "string",
+      "pattern": "^miseos\\.alert\\.[a-z0-9_]+$"
+    },
+    "metric_id": {
+      "type": "string",
+      "pattern": "^miseos\\.metric\\.[a-z0-9_]+$"
+    },
+    "condition": {
+      "type": "object",
+      "required": [
+        "operator",
+        "value",
+        "for"
+      ],
+      "properties": {
+        "operator": {
+          "type": "string",
+          "enum": [
+            ">",
+            ">=",
+            "<",
+            "<=",
+            "==",
+            "outside"
+          ]
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          ]
+        },
+        "for": {
+          "type": "string"
+        }
+      }
+    },
+    "minimum_confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.85
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "info",
+        "warning",
+        "material",
+        "critical"
+      ]
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "notify",
+              "create_incident",
+              "pause_workflow",
+              "require_approval",
+              "rollback",
+              "quarantine",
+              "revoke_permission",
+              "run_playbook"
+            ]
+          },
+          "target": {
+            "type": "string"
+          },
+          "playbook_uri": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "cooldown": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  }
+}

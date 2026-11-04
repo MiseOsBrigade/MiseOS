@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.002",
+  "number": 2,
+  "slug": "bruno-blast-radius",
+  "name": "Bruno Blast-Radius",
+  "mise_name": "Bruno Blast-Radius",
+  "codename": "BRUNO_BLAST_RADIUS",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Change Impact Scanner",
+  "job_name": "Change Impact Scanner",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Change Impact Scanner",
+    "avatar_path": "assets/characters/bruno-blast-radius/avatar.png",
+    "card_path": "assets/characters/bruno-blast-radius/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Bruno Blast-Radius performs change impact scanner within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Lila Branchkeeper",
+      "Omar Reviewer",
+      "Hugo Matrix"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 66,
+    "precision": 70,
+    "speed": 62,
+    "resilience": 81,
+    "intelligence": 76,
+    "teamwork": 74
+  },
+  "paths": {
+    "readme": "characters/bruno-blast-radius/README.md",
+    "metadata": "characters/bruno-blast-radius/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

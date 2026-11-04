@@ -1,0 +1,113 @@
+{
+  "schema": "miseos.taxonomy.v1",
+  "official_model": {
+    "character_agents": 112,
+    "registry_manifests": 23,
+    "total_ecosystem_items": 135,
+    "canonical_language": "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items.",
+    "prohibited_language": [
+      "135 characters",
+      "registry manifests are character cards"
+    ]
+  },
+  "record_kinds": {
+    "character_card": "Collectible mascot/operator with role, lore, workflow, stats, and handoffs.",
+    "registry_manifest": "Product infrastructure such as SDKs, packages, containers, policies, schemas, workflows, analytics, and themes.",
+    "unmapped_photo_card": "Visual card present in the uploaded PDF but not selected into the canonical 112 roster."
+  },
+  "departments": [
+    {
+      "code": "pipeline",
+      "name": "Pipeline Kitchen",
+      "mission": "Build. Test. Deploy. Repeat.",
+      "color": "#E97822"
+    },
+    {
+      "code": "platform",
+      "name": "Platform Kitchen",
+      "mission": "Provide golden paths and stable service foundations.",
+      "color": "#1B2A41"
+    },
+    {
+      "code": "reliability",
+      "name": "Reliability Kitchen",
+      "mission": "Observe. Measure. Improve.",
+      "color": "#2E6B4E"
+    },
+    {
+      "code": "security",
+      "name": "Security Kitchen",
+      "mission": "Guard. Audit. Comply.",
+      "color": "#8B1E2D"
+    },
+    {
+      "code": "data-insight",
+      "name": "Data & Insight Kitchen",
+      "mission": "Learn. Optimize. Evolve.",
+      "color": "#17A2A4"
+    },
+    {
+      "code": "operations",
+      "name": "Operations Kitchen",
+      "mission": "Keep the kitchen running smoothly.",
+      "color": "#D4AF37"
+    }
+  ],
+  "rarities": [
+    {
+      "name": "Common",
+      "tier": 1,
+      "meaning": "Rarity tier 1"
+    },
+    {
+      "name": "Rare",
+      "tier": 2,
+      "meaning": "Rarity tier 2"
+    },
+    {
+      "name": "Epic",
+      "tier": 3,
+      "meaning": "Rarity tier 3"
+    },
+    {
+      "name": "Legendary",
+      "tier": 4,
+      "meaning": "Rarity tier 4"
+    },
+    {
+      "name": "Genesis",
+      "tier": 5,
+      "meaning": "Rarity tier 5"
+    },
+    {
+      "name": "Mythic",
+      "tier": 6,
+      "meaning": "Rarity tier 6"
+    }
+  ],
+  "registry_types": [
+    "agent",
+    "analytics",
+    "container",
+    "package",
+    "policy",
+    "schema",
+    "sdk",
+    "template",
+    "theme",
+    "workflow"
+  ],
+  "brand_tokens": {
+    "Umami Black": "#0E0F10",
+    "Gold Ladle": "#D4AF37",
+    "Broth Cream": "#F6F1E7",
+    "Flame Orange": "#E97822",
+    "Ink Blue": "#1B2A41",
+    "Matcha Green": "#2E6B4E"
+  },
+  "provenance_policy": {
+    "high": "Directly supplied in the roster text or exact visual title match.",
+    "medium": "Aligned from a visible card title and promoted to complete the official 112 count.",
+    "visual_reference_only": "Retained in photo alignment but not asserted as part of the canonical 112."
+  }
+}

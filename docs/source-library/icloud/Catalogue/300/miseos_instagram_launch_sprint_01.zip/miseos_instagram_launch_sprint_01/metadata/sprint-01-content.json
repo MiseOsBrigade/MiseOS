@@ -1,0 +1,126 @@
+[
+  {
+    "content_id": "MS-001",
+    "title": "The Workforce Is Coming Online",
+    "series": "Mise Signals",
+    "season": null,
+    "episode": null,
+    "status": "planned",
+    "production_status": "script-approved",
+    "public_claim_level": "designed",
+    "featured_agents": [],
+    "featured_products": [
+      "MiseOS",
+      "Chef Brigade 300"
+    ],
+    "technical_concepts": [
+      "agent coordination",
+      "governance",
+      "observability",
+      "evidence"
+    ],
+    "formats": {
+      "instagram_feed": "carousel",
+      "slides": 4,
+      "instagram_story": true,
+      "reel_adaptation": true,
+      "website_archive": true
+    },
+    "analytics": {
+      "primary_goal": "profile_discovery",
+      "secondary_goal": "brand_understanding",
+      "amplitude_event": "miseos_content_viewed"
+    },
+    "rights": {
+      "owner": "MiseOS",
+      "nft_eligible": false,
+      "comic_canon": true,
+      "commercial_use": "approved"
+    }
+  },
+  {
+    "content_id": "MC-001",
+    "title": "The Commit",
+    "series": "Mise Chronicles",
+    "season": 1,
+    "episode": 1,
+    "status": "planned",
+    "production_status": "script-approved",
+    "public_claim_level": "designed",
+    "featured_agents": [
+      "Alko Commit Chef",
+      "Bruno Blast-Radius"
+    ],
+    "featured_products": [
+      "GridOps",
+      "Repository Intelligence",
+      "Evidence Store"
+    ],
+    "technical_concepts": [
+      "repository context",
+      "commit provenance",
+      "evidence creation",
+      "agent handoff"
+    ],
+    "formats": {
+      "instagram_feed": "carousel",
+      "slides": 6,
+      "instagram_story": true,
+      "reel_adaptation": true,
+      "website_archive": true
+    },
+    "analytics": {
+      "primary_goal": "concept_understanding",
+      "secondary_goal": "series_follow",
+      "amplitude_event": "chronicles_episode_viewed"
+    },
+    "rights": {
+      "owner": "MiseOS",
+      "nft_eligible": false,
+      "comic_canon": true,
+      "commercial_use": "approved"
+    }
+  },
+  {
+    "content_id": "MB-001",
+    "title": "Welcome to GridOps",
+    "series": "Mise Briefs",
+    "season": null,
+    "episode": null,
+    "status": "planned",
+    "production_status": "script-approved",
+    "public_claim_level": "scaffolded",
+    "featured_agents": [],
+    "featured_products": [
+      "GridOps",
+      "Registry",
+      "Memory",
+      "Evidence Store"
+    ],
+    "technical_concepts": [
+      "spatial operations",
+      "agent graph",
+      "workflow visualization",
+      "evidence lineage",
+      "4D timeline"
+    ],
+    "formats": {
+      "instagram_feed": "carousel",
+      "slides": 5,
+      "instagram_story": true,
+      "reel_adaptation": true,
+      "website_archive": true
+    },
+    "analytics": {
+      "primary_goal": "product_understanding",
+      "secondary_goal": "early_access_interest",
+      "amplitude_event": "gridops_brief_viewed"
+    },
+    "rights": {
+      "owner": "MiseOS",
+      "nft_eligible": false,
+      "comic_canon": true,
+      "commercial_use": "approved"
+    }
+  }
+]

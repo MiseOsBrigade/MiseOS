@@ -1,0 +1,18 @@
+{
+  "slug": "scanner",
+  "name": "Scanner",
+  "kind": "brigade_mascot_agent",
+  "role": "Vulnerability Scanner",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:135",
+  "thumbnail": "agents/scanner/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/scanner.md",
+  "dir": "agents/scanner",
+  "files": [
+    "agents/scanner/Scanner.png"
+  ]
+}

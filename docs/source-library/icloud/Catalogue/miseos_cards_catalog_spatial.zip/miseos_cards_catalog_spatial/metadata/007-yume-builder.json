@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #007 — Yume Builder",
+  "description": "Yume Builder serves the Pipeline Kitchen as the brigade's artifact builder. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/007-yume-builder.svg",
+  "animation_url": "media/animation/007-yume-builder.mp4",
+  "external_url": "https://miseos.dev/agents/yume-builder",
+  "background_color": "E97822",
+  "spatial_screen": {
+    "card_id": "MISE-007",
+    "level": 31,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.007",
+    "number": 7,
+    "slug": "yume-builder",
+    "codename": "YUME_BUILDER",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Pipeline Kitchen",
+    "department_code": "pipeline",
+    "role": "Artifact Builder",
+    "rarity": "Genesis",
+    "rarity_tier": 5,
+    "level": 31
+  },
+  "lore": {
+    "summary": "Yume Builder serves the Pipeline Kitchen as the brigade's artifact builder. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Yume Builder performs artifact builder within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Iron Hashi",
+      "Nina Promoter",
+      "Release Conductor"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE ARTIFACT BUILDER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Artifact Builder Protocol",
+      "type": "active",
+      "effect": "Executes the core artifact builder workflow with evidence capture.",
+      "command": "MISE ARTIFACT BUILDER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next pipeline station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 85,
+    "precision": 85,
+    "speed": 73,
+    "resilience": 90,
+    "intelligence": 84,
+    "teamwork": 80
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Artifact Builder"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Level",
+      "value": 31,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 85,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 85,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 73,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 90,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 84,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 80,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/007-yume-builder.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/007-yume-builder.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/007-yume-builder.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/007-yume-builder.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/007-yume-builder.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/007-yume-builder.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

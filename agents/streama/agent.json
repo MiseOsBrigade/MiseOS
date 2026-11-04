@@ -1,0 +1,21 @@
+{
+  "slug": "streama",
+  "name": "Streama",
+  "kind": "brigade_mascot_agent",
+  "role": "Stream Processor",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:97",
+  "thumbnail": "agents/streama/thumb.png",
+  "character": "streama",
+  "cards": [
+    "docs/characters/streama.md",
+    "docs/characters/streama.md"
+  ],
+  "pet": "streama",
+  "page": "docs/agents/streama.md",
+  "dir": "agents/streama",
+  "files": [
+    "agents/streama/Streama.png"
+  ]
+}

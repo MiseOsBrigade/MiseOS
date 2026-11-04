@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.006",
+  "number": 6,
+  "slug": "seira-scan",
+  "name": "Seira Scan",
+  "mise_name": "Seira Scan",
+  "codename": "SEIRA_SCAN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Security Scan Stage",
+  "job_name": "Security Scan Stage",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Security Scan Stage",
+    "avatar_path": "assets/characters/seira-scan/avatar.png",
+    "card_path": "assets/characters/seira-scan/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Seira Scan performs security scan stage within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Yume Builder",
+      "Iron Hashi",
+      "Nina Promoter"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 60,
+    "precision": 72,
+    "speed": 59,
+    "resilience": 82,
+    "intelligence": 75,
+    "teamwork": 79
+  },
+  "paths": {
+    "readme": "characters/seira-scan/README.md",
+    "metadata": "characters/seira-scan/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "registry-runner",
+  "category": "registry-capability",
+  "title": "MiseOS Runner",
+  "description": "Executable baseline capability for MiseOS Runner.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.runner.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: runner",
+    "Source status: active"
+  ]
+}

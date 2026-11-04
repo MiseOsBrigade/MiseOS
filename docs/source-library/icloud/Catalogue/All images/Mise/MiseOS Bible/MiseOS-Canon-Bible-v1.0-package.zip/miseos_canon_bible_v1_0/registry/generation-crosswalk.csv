@@ -1,0 +1,113 @@
+character_id,number,canonical_name,department,role,generation_one_asset,orchestra_asset_id,orchestra_match_status,registry_relationship,canon_status,confidence,next_action
+miseos.character.001,1,Alko Commit Chef,Pipeline Kitchen,Commit Intake,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.002,2,Bruno Blast-Radius,Pipeline Kitchen,Change Impact Scanner,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.003,3,Lila Branchkeeper,Pipeline Kitchen,Branch Policy Gate,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.004,4,Omar Reviewer,Pipeline Kitchen,PR Hygiene Check,unassigned,MISE-G2-P040,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.005,5,Hugo Matrix,Pipeline Kitchen,Test Matrix Runner,unassigned,MISE-G2-P013,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.006,6,Seira Scan,Pipeline Kitchen,Security Scan Stage,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.007,7,Yume Builder,Pipeline Kitchen,Artifact Builder,unassigned,MISE-G2-P017,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.008,8,Iron Hashi,Pipeline Kitchen,Artifact Validator,unassigned,MISE-PACK-007,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.009,9,Nina Promoter,Pipeline Kitchen,Environment Promotion Gate,unassigned,MISE-G2-P087,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.010,10,Release Conductor,Pipeline Kitchen,Deployment Orchestrator,unassigned,MISE-G2-P015,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.011,11,Felix Rollback,Pipeline Kitchen,Rollback & Fix-Forward,unassigned,MISE-G2-P011,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.012,12,Tariq Notesmith,Pipeline Kitchen,Release Notes Generator,unassigned,MISE-G2-P004,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.013,13,Ivun Cache,Pipeline Kitchen,Pipeline Cost Monitor,unassigned,MISE-G2-P018,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.014,14,Canary Taster,Pipeline Kitchen,Pipeline Observability,unassigned,MISE-PACK-016,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.015,15,Pipeline Sensei,Pipeline Kitchen,Pipeline Tuner Agent,unassigned,MISE-G2-P032,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.016,16,Template Tanaka,Platform Kitchen,Service Template Catalog,unassigned,MISE-G2-P083,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.017,17,Bootstrap Aiko,Platform Kitchen,New Service Wizard,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.018,18,Terra Forge,Platform Kitchen,Environment Provisioner,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.019,19,Schema Sora,Platform Kitchen,Database Blueprint Manager,unassigned,MISE-G2-P051,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.020,20,Runtime Riku,Platform Kitchen,Runtime Profile Manager,unassigned,MISE-G2-P027,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.021,21,Vault Hana,Platform Kitchen,Secrets & Config Broker,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.022,22,Policy Kenji,Platform Kitchen,Policy Packs,unassigned,MISE-G2-P005,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.023,23,Grafana Mei,Platform Kitchen,Shared Observability Pack,unassigned,MISE-G2-P074,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.024,24,Umami Code,Platform Kitchen,Traffic & Ingress Manager,unassigned,MISE-PACK-004,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.025,25,Queue Mizu,Platform Kitchen,Job & Queue Templates,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.026,26,Streama,Platform Kitchen,Data Streaming Profiles,unassigned,MISE-PACK-014,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.027,27,Preview Yuki,Platform Kitchen,Preview Environment Spawner,unassigned,MISE-G2-P038,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.028,28,Portal Rei,Platform Kitchen,Self-Service Portal UI,unassigned,MISE-G2-P081,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.029,29,Guardrail Goro,Platform Kitchen,Golden Path Guardrails,unassigned,MISE-G2-P066,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.030,30,Platform Sensei,Platform Kitchen,Platform Health Board,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.031,31,SLO Sage,Reliability Kitchen,SLO Definition Workflow,unassigned,MISE-PACK-018,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.032,32,Trace Sensei,Reliability Kitchen,Instrumentation Booster,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.033,33,Chaos Kaito,Reliability Kitchen,Load & Chaos Profiles,unassigned,MISE-G2-P056,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.034,34,Capacity Kanna,Reliability Kitchen,Pre-Deployment Reliability Check,unassigned,MISE-G2-P003,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.035,35,Canary Judge,Reliability Kitchen,Canary Judge,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.036,36,Alert Akira,Reliability Kitchen,Incident Detection Rules,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.037,37,Pager Hiro,Reliability Kitchen,Incident Triage Runbook,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.038,38,OnCall Naomi,Reliability Kitchen,On-Call Rotation Manager,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.039,39,Review Ren,Reliability Kitchen,Post-Incident Review,unassigned,MISE-G2-P030,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.040,40,Backlog Benji,Reliability Kitchen,Reliability Backlog Builder,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.041,41,Metrics Miko,Reliability Kitchen,SLO Dashboards,unassigned,MISE-PACK-017,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.042,42,Forecast Fuji,Reliability Kitchen,Capacity Planner,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.043,43,Resilience Ryu,Reliability Kitchen,Resilience Testing Loop,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.044,44,Impact Ichi,Reliability Kitchen,Customer Impact Simulator,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.045,45,Reliability Sensei,Reliability Kitchen,Reliability Advisor Agent,unassigned,MISE-G2-P026,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.046,46,Threat Taro,Security Kitchen,Threat Modeling Starter,unassigned,MISE-G2-P077,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.047,47,Secure Sakura,Security Kitchen,Secure Template Library,unassigned,MISE-G2-P008,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.048,48,Token Toshi,Security Kitchen,Credential Hygiene Scanner,unassigned,MISE-G2-P089,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.049,49,CVE Kumo,Security Kitchen,Dependency Risk Monitor,unassigned,MISE-G2-P091,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.050,50,Container Kage,Security Kitchen,Container Hardening Workflow,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.051,51,Seira Vaultkeeper,Security Kitchen,Secrets Lifecycle Manager,unassigned,MISE-G2-P022,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.052,52,Policy Ronin,Security Kitchen,Policy-as-Code Engine,unassigned,MISE-G2-P007,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.053,53,Merge Sentinel,Security Kitchen,Pre-Merge Security Gate,unassigned,MISE-G2-P010,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.054,54,Watchtower Yoru,Security Kitchen,Runtime Threat Detector,unassigned,MISE-G2-P036,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.055,55,Auditor Emi,Security Kitchen,Access Review Workflow,unassigned,MISE-G2-P034,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.056,56,Incident Kitsune,Security Kitchen,Security Incident Playbooks,unassigned,MISE-G2-P071,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.057,57,Evidence Scribe,Security Kitchen,Compliance Evidence Collector,unassigned,MISE-G2-P046,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.058,58,Nudge Neko,Security Kitchen,Security Training Nudges,unassigned,MISE-G2-P063,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.059,59,Scorecard Shin,Security Kitchen,Security Scorecard,unassigned,MISE-G2-P033,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.060,60,Red Oni,Security Kitchen,Red Team / Chaos Security Mode,unassigned,MISE-G2-P039,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.061,61,Taxonomy Taka,Data & Insight Kitchen,Event Taxonomy Manager,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.062,62,Lake Haru,Data & Insight Kitchen,Telemetry Ingestion Pipeline,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.063,63,Lattice,Data & Insight Kitchen,Trace Correlator,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.064,64,Repo Ranger,Data & Insight Kitchen,Repo Health Analyzer,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.065,65,DORA Daichi,Data & Insight Kitchen,Pipeline Analytics Engine,unassigned,MISE-G2-P023,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.066,66,Flag Fox,Data & Insight Kitchen,Feature Flag Analytics,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.067,67,Cost Kaito,Data & Insight Kitchen,Cost & Efficiency Monitor,unassigned,MISE-G2-P028,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.068,68,DX Mei,Data & Insight Kitchen,Developer Experience Survey Loop,unassigned,MISE-G2-P025,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.069,69,Revenue Rina,Data & Insight Kitchen,Customer Behavior → Incident Linker,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.070,70,Risk Ryota,Data & Insight Kitchen,Risk Scoring Model,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.071,71,Apprentice Kai,Data & Insight Kitchen,Self-Improvement Agent,unassigned,MISE-G2-P072,provisional,,canonical,high,Approve Generation One tool-face match
+miseos.character.072,72,Anomaly Aki,Data & Insight Kitchen,Anomaly Detection Studio,unassigned,MISE-G2-P057,canonical-candidate,,canonical,high,Approve Generation One tool-face match
+miseos.character.073,73,Leaderboard Leo,Data & Insight Kitchen,Scorecards & Leaderboards,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.074,74,Storyteller Sumi,Data & Insight Kitchen,Narrative Report Generator,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.075,75,Roadmap Sensei,Data & Insight Kitchen,Strategic Roadmap Recommender,unassigned,,missing,,canonical,high,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.076,76,Kurogami Senpai,Operations Kitchen,Orchestrate,unassigned,MISE-PACK-001,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.077,77,Tensho,Pipeline Kitchen,Task Flow,unassigned,MISE-PACK-002,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.078,78,Mizu,Operations Kitchen,Prepare,unassigned,MISE-PACK-003,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.079,79,Kaji,Operations Kitchen,Compute,unassigned,MISE-PACK-005,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.080,80,Yume,Pipeline Kitchen,Build,unassigned,MISE-PACK-006,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.081,81,Null-chan,Reliability Kitchen,Cleanse,unassigned,MISE-PACK-008,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.082,82,Flash Riku,Pipeline Kitchen,Deploy,unassigned,MISE-PACK-009,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.083,83,Seira,Platform Kitchen,Secure,unassigned,MISE-PACK-010,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.084,84,Kuro Guard,Platform Kitchen,Protect,unassigned,MISE-PACK-011,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.085,85,Scale Oni,Operations Kitchen,Scale,unassigned,MISE-PACK-012,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.086,86,Build-Kun,Pipeline Kitchen,Build,unassigned,MISE-PACK-013,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.087,87,Orchestra Core,Platform Kitchen,Coordinate,unassigned,MISE-PACK-015,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.088,88,Data-chan,Data & Insight Kitchen,Collect,unassigned,MISE-PACK-019,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.089,89,Insight Sensei,Data & Insight Kitchen,Analyze,unassigned,MISE-PACK-020,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.090,90,Chaos Analyst,Data & Insight Kitchen,Learn,unassigned,MISE-PACK-021,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.091,91,Growth Guru,Data & Insight Kitchen,Optimize,unassigned,MISE-PACK-022,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.092,92,Culture Chef,Data & Insight Kitchen,Grow,unassigned,MISE-PACK-023,canonical,,canonical,high,Approve Generation One tool-face match
+miseos.character.093,93,Velvet Vesper,Operations Kitchen,Guest Concierge,unassigned,MISE-G2-P043,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.094,94,Flavor Forager,Operations Kitchen,Ingredient Scout,unassigned,MISE-G2-P009,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.095,95,Crate Courier,Operations Kitchen,Provision Scout,unassigned,MISE-G2-P020,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.096,96,Ledger Ladle,Operations Kitchen,Cost Steward,unassigned,MISE-G2-P006,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.097,97,Beacon Broil,Operations Kitchen,Alert Dispatcher,unassigned,,missing,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.098,98,Ladle Lumen,Operations Kitchen,Broth Beacon,unassigned,MISE-G2-P064,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.099,99,Reserve Rune,Operations Kitchen,Backup Archivist,unassigned,MISE-G2-P031,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.100,100,Vacuum Vesper,Operations Kitchen,Seal Keeper,unassigned,MISE-G2-P035,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.101,101,Flavor Scribe,Operations Kitchen,Menu Curator,unassigned,MISE-G2-P085,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.102,102,Prep Pulse,Operations Kitchen,Mise Monitor,unassigned,MISE-G2-P050,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.103,103,Queue Quartz,Operations Kitchen,Service Timer,unassigned,MISE-G2-P024,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.104,104,Harvest Hex,Operations Kitchen,Produce Alchemist,unassigned,MISE-G2-P084,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.105,105,Garnish Ghost,Operations Kitchen,Finisher,unassigned,MISE-G2-P016,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.106,106,Pantry Paladin,Operations Kitchen,Provision Steward,unassigned,MISE-G2-P065,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.107,107,Ticket Tactician,Operations Kitchen,Order Strategist,unassigned,MISE-G2-P002,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.108,108,Plate Inspector,Operations Kitchen,Asset Auditor,unassigned,MISE-G2-P021,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.109,109,Timer Tactician,Operations Kitchen,Chrono Chef,unassigned,MISE-G2-P073,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.110,110,Recipe Ranger,Operations Kitchen,Knowledge Pathfinder,unassigned,MISE-G2-P060,provisional,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match
+miseos.character.111,111,Portion Paladin,Operations Kitchen,Balance Steward,unassigned,,missing,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match; create/locate Generation Two artwork
+miseos.character.112,112,Allergen Oracle,Operations Kitchen,Safety Seer,unassigned,MISE-G2-P067,canonical-candidate,,photo_aligned_canonical_completion,medium,Approve Generation One tool-face match

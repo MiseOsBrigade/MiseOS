@@ -1,0 +1,11 @@
+flowchart LR
+U[User] --> F[Canvas Frontend]
+F --> M[Inert PNG + JSON Manifest]
+F --> A[Authorization API]
+A --> G{Wallet Mode}
+G --> E[EVM Adapter]
+G --> O[OneGate / Neo N3 Adapter]
+G --> N[No Wallet]
+A --> R[Read-only Workflow Registry]
+R --> X[Allowlisted Workflow Executor]
+X --> L[Audit / Amplitude Events]

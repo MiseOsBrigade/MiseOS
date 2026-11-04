@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 720" role="img" aria-label="Alert Akira">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="38%" r="62%">
+      <stop offset="0" stop-color="#0EA5E9" stop-opacity="0.72"/>
+      <stop offset="0.56" stop-color="#0EA5E9" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0E0F10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coat" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8dfca"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="512" height="720" rx="42" fill="#0E0F10"/>
+  <rect x="14" y="14" width="484" height="692" rx="36" fill="#F6F1E7" opacity="0.96"/>
+  <path d="M46 86 C150 18, 360 28, 466 96" fill="none" stroke="#0EA5E9" stroke-width="3" opacity="0.42"/>
+  <circle cx="256" cy="306" r="210" fill="url(#halo)"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="256" cy="610" rx="116" ry="25" fill="#0E0F10" opacity=".22"/>
+    <path d="M148 226 C126 154 174 92 257 94 C342 96 386 156 365 226 Z" fill="#fff" stroke="#d8cda9" stroke-width="8"/>
+    <path d="M150 208 C163 160 203 136 257 137 C311 138 349 162 363 208 C320 190 196 190 150 208Z" fill="#f7f0db"/>
+    <path d="M177 238 C195 196 326 194 346 239 C343 283 317 319 257 321 C199 322 176 283 177 238Z" fill="#1B2A41"/>
+    <circle cx="256" cy="304" r="82" fill="#C97F4A" stroke="#4c2d1f" stroke-width="5"/>
+    <path d="M183 279 C219 244 291 240 331 277 C311 226 208 223 183 279Z" fill="#1B2A41"/>
+    <circle cx="225" cy="308" r="8" fill="#0E0F10"/><circle cx="289" cy="308" r="8" fill="#0E0F10"/>
+    <path d="M233 350 C249 363 272 363 288 350" fill="none" stroke="#0E0F10" stroke-width="5" stroke-linecap="round"/>
+    <path d="M166 406 C178 350 212 330 256 330 C301 330 338 350 350 406 L371 576 L141 576Z" fill="url(#coat)" stroke="#0E0F10" stroke-width="6"/>
+    <path d="M256 334 L256 576" stroke="#0E0F10" stroke-width="5" opacity=".82"/>
+    <circle cx="236" cy="402" r="7" fill="#0EA5E9"/><circle cx="276" cy="402" r="7" fill="#0EA5E9"/><circle cx="236" cy="462" r="7" fill="#0EA5E9"/><circle cx="276" cy="462" r="7" fill="#0EA5E9"/>
+    <path d="M150 425 C98 392 92 342 116 318 C143 329 167 365 178 407Z" fill="#f7f0db" stroke="#0E0F10" stroke-width="6"/>
+    <path d="M362 425 C414 392 420 342 396 318 C369 329 345 365 334 407Z" fill="#f7f0db" stroke="#0E0F10" stroke-width="6"/>
+    <circle cx="114" cy="314" r="28" fill="#0EA5E9" stroke="#0E0F10" stroke-width="6"/>
+    <text x="114" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#0E0F10">◎</text>
+    <rect x="184" y="574" width="44" height="74" rx="18" fill="#0E0F10"/><rect x="284" y="574" width="44" height="74" rx="18" fill="#0E0F10"/>
+  </g>
+  <text x="256" y="92" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="33" fill="#0E0F10" letter-spacing="1">Alert Akira</text>
+  <text x="256" y="129" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#27352f" font-weight="700">Incident Detection Rules</text>
+  <rect x="68" y="642" width="376" height="44" rx="22" fill="#0E0F10"/>
+  <text x="116" y="672" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="21" fill="#0EA5E9">#36</text>
+  <text x="275" y="671" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#F6F1E7">Reliability</text>
+  <text x="448" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="26" fill="#0EA5E9">AA</text>
+</svg>

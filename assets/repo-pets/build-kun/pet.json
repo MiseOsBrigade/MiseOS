@@ -1,0 +1,40 @@
+{
+  "slug": "build-kun",
+  "name": "Build-Kun",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Boulanger",
+  "department": "Pipeline Department",
+  "glyph": "📦",
+  "catchphrase": "Bakes fresh images from clean recipes. Every build is a new creation.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 4,
+      "files": 4,
+      "parent": 2,
+      "build": 10,
+      "docker": 8,
+      "ci": 5
+    },
+    "verbs": {
+      "enterDirectory": "opens the oven door into",
+      "inspectFile": "proofs the build recipe in",
+      "inspectConfig": "sets the bake profile in",
+      "inspectDocs": "reads the bakery notes in",
+      "inspectTests": "checks whether the loaf rises in",
+      "retreat": "sets the tray aside and exits"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/build-kun.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/build-kun.png",
+  "character": "build-kun",
+  "cards": [
+    "docs/characters/build-kun.md",
+    "docs/characters/build-kun.md"
+  ],
+  "page": "docs/repo-pets/build-kun.md",
+  "dir": "assets/repo-pets/build-kun"
+}

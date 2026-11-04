@@ -1,0 +1,41 @@
+name: Import MiseOS Bootstrap Registry
+
+on:
+  push:
+    paths:
+      - tools/import-miseos-bootstrap-registry.mjs
+      - .github/workflows/import-miseos-bootstrap-registry.yml
+      - .miseos/import/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-bootstrap-registry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate MiseOS Bootstrap Registry
+        run: node tools/import-miseos-bootstrap-registry.mjs
+
+      - name: Commit generated registry files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add miseos-bootstrap-registry
+          if git diff --cached --quiet; then
+            echo "No registry changes to commit."
+          else
+            git commit -m "Integrate MiseOS bootstrap registry"
+            git push
+          fi

@@ -1,0 +1,18 @@
+{
+  "slug": "vault-link",
+  "name": "Vault Link",
+  "kind": "brigade_mascot_agent",
+  "role": "Vault Connector",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:138",
+  "thumbnail": "agents/vault-link/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/vault-link.md",
+  "dir": "agents/vault-link",
+  "files": [
+    "agents/vault-link/Vault-Link.png"
+  ]
+}

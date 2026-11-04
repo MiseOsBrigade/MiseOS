@@ -1,0 +1,20 @@
+{
+  "slug": "gatekeeper",
+  "name": "Gatekeeper",
+  "kind": "brigade_mascot_agent",
+  "role": "Queue Gatekeeper",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:74",
+  "thumbnail": "agents/gatekeeper/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--gatekeeper.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/gatekeeper.md",
+  "dir": "agents/gatekeeper",
+  "files": [
+    "agents/gatekeeper/Gatekeeper.png"
+  ]
+}

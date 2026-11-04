@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.012",
+  "number": 12,
+  "slug": "tariq-notesmith",
+  "name": "Tariq Notesmith",
+  "mise_name": "Tariq Notesmith",
+  "codename": "TARIQ_NOTESMITH",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Pipeline Kitchen",
+  "department_code": "pipeline",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "agent_function": "Release Notes Generator",
+  "job_name": "Release Notes Generator",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#E97822",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Pipeline Kitchen operational aura",
+    "tool_symbol": "Release Notes Generator",
+    "avatar_path": "assets/characters/tariq-notesmith/card.jpg",
+    "card_path": "assets/characters/tariq-notesmith/card.jpg",
+    "primary_photo_page": 104,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-104.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Tariq Notesmith performs release notes generator within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Ivun Cache",
+      "Canary Taster",
+      "Pipeline Sensei"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 68,
+    "precision": 76,
+    "speed": 54,
+    "resilience": 76,
+    "intelligence": 80,
+    "teamwork": 73
+  },
+  "paths": {
+    "readme": "characters/tariq-notesmith/README.md",
+    "metadata": "characters/tariq-notesmith/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

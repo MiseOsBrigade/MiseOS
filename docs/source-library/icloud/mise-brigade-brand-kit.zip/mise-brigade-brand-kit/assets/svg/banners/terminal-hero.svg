@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+<title id="title">Mise Brigade terminal board</title>
+<desc id="desc">Chef-code inspired repository brand asset</desc>
+<defs>
+  <linearGradient id="miseFlame" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#F6C453"/>
+    <stop offset="52%" stop-color="#FF7A1A"/>
+    <stop offset="100%" stop-color="#EF4444"/>
+  </linearGradient>
+  <linearGradient id="miseSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1F2937"/>
+    <stop offset="100%" stop-color="#111827"/>
+  </linearGradient>
+  <linearGradient id="miseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#38BDF8"/>
+    <stop offset="100%" stop-color="#7CFFB2"/>
+  </linearGradient>
+  <radialGradient id="ember" cx="50%" cy="46%" r="70%">
+    <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0.32"/>
+    <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#0B0F14" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <pattern id="prepGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#94A3B8" stroke-opacity="0.12" stroke-width="1"/>
+  </pattern>
+  <style>
+    .title { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 72px; font-weight: 800; letter-spacing: -2px; fill: #F8F3E8; }
+    .subtitle { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 25px; font-weight: 600; fill: #94A3B8; letter-spacing: .5px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 22px; font-weight: 700; fill: #7CFFB2; }
+    .micro { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 17px; font-weight: 700; fill: #94A3B8; }
+    .label { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 34px; font-weight: 800; fill: #F8F3E8; }
+    .small { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial; font-size: 18px; font-weight: 650; fill: #94A3B8; }
+  </style>
+</defs>
+<rect width="1400" height="520" rx="42" fill="#0B0F14"/>
+<rect x="52" y="52" width="1296" height="416" rx="30" fill="#111827" stroke="#94A3B8" stroke-opacity=".28"/>
+<circle cx="96" cy="92" r="12" fill="#EF4444"/>
+<circle cx="134" cy="92" r="12" fill="#F6C453"/>
+<circle cx="172" cy="92" r="12" fill="#22C55E"/>
+<text x="82" y="164" class="mono">$ gh workflow run "Mise Repo Steward" -f mode=repo-clean -f apply_changes=true</text>
+<text x="82" y="222" class="micro">route: trusted collaborator · token: GITHUB_TOKEN · write gate: explicit apply</text>
+<text x="82" y="286" class="mono">&gt; branch mise/steward/repo-health prepared with [skip ci]</text>
+<text x="82" y="344" class="mono">&gt; report: docs/mise/repo-health.md</text>
+<text x="82" y="402" class="mono">&gt; status: clean kitchen, no recursive burn</text>
+<path d="M1075 180c58 36 72 91 41 151-23 45-73 73-128 73-30 0-57-8-81-24 84-18 132-75 168-200Z" fill="url(#miseFlame)" opacity=".95"/>
+<path d="M997 225c28 23 36 57 16 90-14 23-39 37-68 38 38-32 56-73 52-128Z" fill="#38BDF8" opacity=".95"/>
+</svg>

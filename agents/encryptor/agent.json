@@ -1,0 +1,20 @@
+{
+  "slug": "encryptor",
+  "name": "Encryptor",
+  "kind": "brigade_mascot_agent",
+  "role": "Encryption Specialist",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:130",
+  "thumbnail": "agents/encryptor/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--encryptor.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/encryptor.md",
+  "dir": "agents/encryptor",
+  "files": [
+    "agents/encryptor/Encryptor.png"
+  ]
+}

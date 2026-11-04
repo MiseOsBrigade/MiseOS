@@ -1,0 +1,12 @@
+{
+  "id": "action-release-sentinel",
+  "category": "action",
+  "title": "Release Sentinel Action",
+  "description": "Zero-dependency Node 24 Action that checks semantic version, changelog, and license release gates.",
+  "dependencies": [],
+  "files": [
+    "actions/release-sentinel/action.yml",
+    "actions/release-sentinel/dist/index.js"
+  ],
+  "notes": []
+}

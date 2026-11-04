@@ -1,0 +1,68 @@
+{
+  "id": "roadmap-sensei",
+  "number": 75,
+  "name": "Roadmap Sensei",
+  "miseName": "Mise StrategicRoadmapRecommender",
+  "codename": "chef.data-insight.strategic-roadmap-recommender",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "genesis",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Strategic Roadmap Recommender",
+    "signaturePhrase": "Strategic Roadmap Recommender done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in strategic roadmap recommender so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen strategic roadmap recommender aura",
+    "silhouette": "multinational chibi DevOps chef carrying a scroll",
+    "tool": "scroll",
+    "spritePath": "/assets/characters/roadmap-sensei/full-body.png",
+    "cardPath": "/assets/characters/roadmap-sensei/card.png"
+  },
+  "workflow": {
+    "jobName": "Strategic Roadmap Recommender",
+    "roleName": "Strategic Roadmap Recommender microagent",
+    "summary": "Runs strategic roadmap recommender for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Storyteller Sumi",
+      "Pipeline Sensei",
+      "Platform Sensei",
+      "Reliability Sensei"
+    ]
+  },
+  "stats": {
+    "power": 85,
+    "precision": 83,
+    "speed": 75,
+    "resilience": 97,
+    "intelligence": 88,
+    "teamwork": 93
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "roadmap-sensei",
+  "seasonOneCard": null,
+  "displayNumber": 75,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/roadmap-sensei",
+  "avatarSvg": "assets/characters/roadmap-sensei/avatar.svg",
+  "cardSvg": "assets/characters/roadmap-sensei/card.svg"
+}

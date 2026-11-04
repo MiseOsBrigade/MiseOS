@@ -1,0 +1,680 @@
+
+OpenAI
+langgenius
+·
+647,959
+Models provided by OpenAI, such as GPT-3.5-Turbo, GPT-4, and GPT-5.
+Anthropic
+langgenius
+·
+160,598
+Anthropic's powerful models.
+Amazon Bedrock
+langgenius
+·
+76,707
+The models of Amazon Bedrock
+Azure OpenAI
+langgenius
+·
+186,714
+Azure OpenAI Service Model
+Azure AI Studio
+langgenius
+·
+31,410
+Azure AI Studio
+Cohere
+langgenius
+·
+43,503
+Cohere
+Gemini
+langgenius
+·
+335,353
+Google's Gemini model.
+Hugging Face Hub
+langgenius
+·
+46,718
+Hugging Face Model
+Replicate
+langgenius
+·
+4,347
+Replicate
+DeepSeek
+langgenius
+·
+1,121,975
+Models provided by DeepSeek, such as deepseek-v4-flash, deepseek-v4-pro, deepseek-chat and deepseek-reasoner.
+Tongyi
+langgenius
+·
+1,148,552
+Tongyi
+Ollama
+langgenius
+·
+877,707
+Ollama
+OpenAI-API-compatible
+langgenius
+·
+774,515
+Model providers compatible with OpenAI's API standard, such as LM Studio or llama.cpp Service.
+Volcengine Ark (Endpoint)
+langgenius
+·
+740,686
+Call Volcengine Ark endpoints (Endpoint ID) from Dify. Supports LLM, text embedding, and speech-to-text.
+SiliconFlow
+langgenius
+·
+560,844
+SiliconFlow provides access to various models (LLMs, text embedding, reranking, STT, TTS), configurable via model name, API key, and other parameters.
+Hunyuan
+langgenius
+·
+440,937
+Models provided by Tencent Hunyuan, such as hunyuan-standard, hunyuan-standard-256k, hunyuan-pro, hunyuan-role, hunyuan-large, hunyuan-large-role, hunyuan-turbo-latest, hunyuan-large-longcontext, hunyuan-turbo, hunyuan-vision, hunyuan-turbo-vision, hunyuan-functioncall and hunyuan-lite.
+Xorbits Inference
+langgenius
+·
+243,757
+Xorbits Inference
+OpenRouter
+langgenius
+·
+157,058
+OpenRouter is a powerful platform that provides access to a diverse set of language models, including both commercial and open-source options.
+Minimax
+langgenius
+·
+138,200
+Minimax AI models for LLM, text embedding, and text-to-speech
+Text Embedding Inference
+langgenius
+·
+132,629
+A blazing fast inference solution for text embeddings models.
+Jina
+langgenius
+·
+128,453
+Embedding and Rerank Model Supported
+ZHIPU AI
+langgenius
+·
+124,498
+ZHIPU AI
+ModelScope
+langgenius
+·
+109,820
+Models provided by ModelScope
+vllm
+yangyaofei
+·
+87,279
+vllm provider for extra_body support https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html#id5
+LM Studio
+stvlynn
+·
+66,551
+Deploy local models using LM Studio
+Moonshot
+langgenius
+·
+65,604
+Models provided by Moonshot, such as kimi-k2.6, kimi-k2.5, kimi-k2, moonshot-v1-8k, moonshot-v1-32k, and moonshot-v1-128k.
+Vertex AI | Google Cloud Platform
+langgenius
+·
+60,776
+Vertex AI in Google Cloud Platform.
+ERNIE
+langgenius
+·
+51,788
+Baidu's ERNIE Model
+xAI
+langgenius
+·
+42,936
+xAI is a company working on building artificial intelligence to accelerate human scientific discovery. We are guided by our mission to advance our collective understanding of the universe.
+GPUStack
+langgenius
+·
+25,345
+GPUStack is an open-source GPU cluster manager for running AI models.
+GroqCloud
+langgenius
+·
+24,882
+GroqCloud provides access to the Groq Cloud API, which hosts models like LLama2 and Mixtral.
+LocalAI
+langgenius
+·
+24,754
+LocalAI
+ChatGLM
+langgenius
+·
+16,193
+ChatGLM
+Volcengine
+langgenius
+·
+15,687
+Volcengine Ark base and multimodal model invocation.
+Aihubmix
+langgenius
+·
+13,194
+One Gateway, Infinite Models；one-stop request: OpenAI, Claude, Gemini, DeepSeek, Qwen, and over 500 AI models.
+Huawei Cloud MaaS
+langgenius
+·
+12,113
+Huawei Cloud MaaS provides access to various models (LLMs), configurable via model name, API key, and other parameters.
+OpenLLM
+langgenius
+·
+11,640
+OpenLLM
+Fish Audio
+langgenius
+·
+9,637
+Models provided by Fish Audio, currently support TTS and ASR.
+MistralAI
+langgenius
+·
+9,111
+Models provided by MistralAI, including Magistral models with prompt_mode support, Mistral Large/Medium/Small, Pixtral vision models, Codestral for coding, specialized embedding models, and content moderation services.
+NVIDIA NIM
+langgenius
+·
+8,751
+NVIDIA NIM, a set of easy-to-use inference microservices.
+tencent
+langgenius
+·
+8,035
+Tencent
+Gitee AI
+langgenius
+·
+6,912
+快速体验大模型，领先探索 AI 开源世界
+Xiaomi MiMo
+langgenius
+·
+6,768
+Models provided by Xiaomi MiMo, such as mimo-v2.5-pro, mimo-v2.5, mimo-v2-flash. Supports Token Plan subscription.
+API Catalog
+langgenius
+·
+6,509
+API Catalog
+LKEAP
+higgs-projects
+·
+6,428
+Models provide by Tencent LKEAP, such as deepseek-v3-0324, deepseek-r1-0528.
+无问芯穹
+infiniai
+·
+6,209
+InfiniAI provides high-performance APIs for accelerating large model inference, covering multiple modalities such as text, images, and videos. It supports the latest open-source LLM models like DeepSeek, as well as SOTA embedding and reranking models such as Jina/bge. Configuration can be done via model names, API keys, and other parameters.
+Llama API
+langgenius
+·
+5,762
+Llama API
+Baichuan
+langgenius
+·
+5,535
+Baichuan
+PPIO
+cnjasonz
+·
+5,429
+PPIO is a cloud infrastructure provider offering a wide range of AI model services and cost-effective GPU computing services.
+Stepfun
+langgenius
+·
+5,272
+Models provided by stepfun, such as step-1-8k, step-1-32k、step-1v-8k、step-1v-32k, step-1-128k and step-1-256k
+01.AI
+langgenius
+·
+4,323
+Models provided by 01.AI, such as yi-34b-chat and yi-vl-plus.
+Qiniu AI
+qiniu
+·
+3,997
+Official Qiniu Cloud AI inference plugin for Dify. Supports multiple LLM models including GPT-OSS, DeepSeek, Claude, GLM, Kimi, Qwen, and Grok series with advanced capabilities like agent thinking, tool calls, and streaming.
+baidu_qianfan
+qianfan
+·
+3,818
+百度智能云千帆提供的 Dify 接入 SDK
+Voyage
+langgenius
+·
+3,237
+Voyage
+LongCat
+langgenius
+·
+3,078
+Models provided by LongCat, such as longcat-flash-chat.
+higress
+higress
+·
+2,882
+Higress AI Gateway model proxy. Access a wide range of model providers or self-hosted inference services via the Higress AI Gateway Model API.
+360 AI
+langgenius
+·
+2,852
+Models provided by 360 AI.
+Amazon SageMaker
+langgenius
+·
+2,844
+Self deployed model provider - Amazon SageMaker
+ElevenLabs
+cdpath
+·
+2,575
+ElevenLabs TTS/STT provider
+Together.AI
+langgenius
+·
+2,543
+together.ai
+OCI Generative AI
+langgenius
+·
+2,439
+Models provided by OCI, such as Grok 3/4, Gemini, gpt-oss, Llama, Cohere Command, etc.
+nomic
+langgenius
+·
+2,302
+Nomic
+DeerAPI
+langgenius
+·
+2,138
+AI large model API one-stop aggregation platform.
+lightrag
+dadastory
+·
+2,121
+using lightrag as the model provider
+Fireworks AI
+langgenius
+·
+2,002
+Fireworks AI
+Triton Inference Server
+langgenius
+·
+1,995
+Triton Inference Server
+SophNet
+axdlee
+·
+1,908
+SophNet provides full-blood DeepSeek R1/V3, Qwen, QwQ models, and its own DeepSeek V3 Fast model, as well as text-to-speech, image OCR, document parsing, and other models.
+UCloud
+ucloud
+·
+1,751
+UCloud provides quick access to mainstream model API, including DeepSeek, Qwen, Ernie, Flux, and other popular models for scenarios such as llm and text-to-image models.
+CometAPI
+langgenius
+·
+1,529
+500+ AI Model API, All In One API. Just In CometAPI.
+Lemonade
+langgenius
+·
+1,527
+Lemonade lets you run local models with NPU and GPU acceleration.
+Jiekou.AI
+captain1379
+·
+1,517
+Jiekou.AI is a one-stop LLM API platform, providing stable, efficient and economic enterprise-level API solutions.
+Claude Proxy
+zhuxiangyi
+·
+1,455
+Anthropic Claude models via custom proxy URL (OpenAI-compatible)
+upstage
+langgenius
+·
+1,242
+Upstage
+Mixedbread
+langgenius
+·
+1,233
+Mixedbread
+BurnCloud
+zuiyue-com
+·
+1,232
+BurnCloud provides stable, cost-effective open-source model API services, supporting Claude 4.0/3.7/3.5, GPT 4o/4o-mini/o1/4.5 preview/o1-mini, GPT-image-1, Gemini 2.5 pro/2.0, DeepSeek R1/V3 and other industry-leading large models.
+Novita
+langgenius
+·
+1,215
+Novita AI provides an LLM API that matches various application scenarios with high cost-effectiveness.
+302.AI
+302ai
+·
+1,126
+302.AI is a pay-as-you-go enterprise AI resource hub that offers the latest and most comprehensive AI models and APIs on the market, along with a variety of ready-to-use online AI applications.
+Novita
+novita
+·
+1,092
+Novita AI provides an LLM API that matches various application scenarios with high cost-effectiveness.
+voicevox
+uezo
+·
+1,073
+VOICEVOX text-to-speech custom model for Dify
+SambaCloud
+langgenius
+·
+1,064
+SambaCloud provides access to the SambaCloud API, which hosts LLama4, Qwen and DeepSeek Models.
+Compshare
+compshare
+·
+1,018
+Compshare provides quick access to mainstream model API, including DeepSeek, Qwen, Ernie, Flux, and other popular models for scenarios such as llm and text-to-image models.
+Huawei Cloud MaaS - HK
+langgenius
+·
+946
+Huawei Cloud MaaS provides access to various models (LLMs), configurable via model name, API key, and other parameters.
+AIPing
+aiping
+·
+944
+AIPing provides access to various models (LLMs, text embedding, reranking, image generation), configurable via model name, API key, and other parameters.
+ai-gateway
+aliyun
+·
+910
+Alibaba Cloud AI Gateway plugin
+perfxcloud
+langgenius
+·
+897
+PerfXCloud
+VESSL AI
+langgenius
+·
+856
+VESSL AI
+ZenMux
+zenmux
+·
+824
+Plugin to access models provided by zenmux.ai
+TokenPony
+shinemo
+·
+757
+TokenPony offers affordable and cutting-edge AI large model services, providing a unified API interface for accessing DeepSeek V3.1, DeepSeek V3, DeepSeek R1, Qwen3, Kimi K2, GLM 4.5, and more.
+GMI Cloud
+langgenius
+·
+738
+GMI Cloud
+Tencent Cloud ES
+tencent_cloud_es
+·
+730
+Tencent Cloud ES provides atomic services such as Embedding, Rerank, LLM, etc.
+FeatherlessAI
+featherlessai
+·
+695
+Featherless AI is a serverless inference provider that provides access to over 4200+ open source models, including LLama, Mistral, DeepSeek, Qwen, and more.
+GigaChat
+shamspias
+·
+674
+GigaChat - Russian AI assistant from Sber
+Netmind
+netmind
+·
+667
+netmind.ai
+zenlayer
+zenlayerai
+·
+640
+Fastest connect to all AI models - accelerate all your apps in one stop.
+IBM WatsonX
+pedrogomes02
+·
+632
+IBM WatsonX provider
+Pangu
+dadastory
+·
+625
+A llm plugin for huawei pangu model
+Canopy Wave
+arthur
+·
+622
+plugin for dify provided by Canopy Wave Inc.
+InsigmaAI
+cloudpureno1
+·
+611
+InsigmaAI .
+ernie paddle AI Studio
+paddle-aistudio
+·
+600
+The LLM API service provided by Star River Community offers developers a suite of foundational APIs that deliver capabilities of large language models like ERNIE. These services can be called directly using the native OpenAI Python SDK.
+Moments Infinity
+moments_infinity
+·
+595
+MaaS Yandao is a large model inference service provided by moments infinity based on domestic GPU computing power of different architectures and brands. It currently supports multiple large models.
+Fake Models
+kurokobo
+·
+577
+Fake LLM models that never relies on any external service and always returns dummy responses.
+Regolo.ai
+langgenius
+·
+574
+Regolo.ai
+lindormai
+jiangzhijie
+·
+548
+lindormai
+rankgpt
+ki3dn
+·
+525
+LLM-based RankGPT reranker supporting OpenAI, Google Gemini, Anthropic, DeepSeek, and Grok for reordering retrieved documents by query relevance.
+Zeabur AI Hub
+zeabur
+·
+501
+Access Claude, Gemini, GPT, DeepSeek and more via Zeabur AI Hub
+Atlas Cloud
+atlascloudai
+·
+498
+Plugin to access models provided by atlascloud.ai
+New API
+wanghualoong
+·
+487
+Connect Dify to a self-hosted New API gateway (QuantumNous/new-api), an OpenAI/Claude/Gemini-compatible model relay. Fixes Qwen multimodal input, embedding dimensions and speech-to-text compatibility.
+sakura-ai-engine
+tplog
+·
+475
+Sakura AI Engine model provider for Dify via the OpenAI-compatible API.
+Tencent TokenHub
+lws123321
+·
+470
+Models provided by Tencent TokenHub, including DeepSeek, Hunyuan, GLM, Kimi, MiniMax series.
+Modelhub
+master_lihuan
+·
+439
+Api_key:https://api.easyart.cc/register?aff=csdZ
+qianfan
+yimuu
+·
+436
+llm
+STACKIT Model Serving
+langenecker
+·
+401
+This is a model provider plugin to provide the ai models of stackit
+ShanZhiXingYu
+dzj
+·
+395
+ShanZhiXingYu Models provided by dazhuanjia.com
+LKEAP
+stvlynn
+·
+395
+Models provided by Tencent LKEAP International, including DeepSeek LLMs, text embedding and reranking.
+SuperlinkSlate
+lyrictian
+·
+394
+SuperlinkSlate provides access to various models (LLMs, text embedding), configurable via model name, API key, and other parameters.
+BytePlus ModelArk
+drpr
+·
+381
+BytePlus ModelArk models.
+Brainiall
+brainiall
+·
+313
+Brainiall LLM Gateway provides access to 113+ AI models from 17 providers including Claude, DeepSeek, Llama, Qwen, Nova, and Mistral through a single OpenAI-compatible API endpoint powered by AWS Bedrock.
+Anspire LLM (global)
+anchnet
+·
+301
+High availability model services specifically designed for critical business operations.
+tensdaq
+yeaosound
+·
+299
+Tensdaq is the first dynamic pricing MaaS platform in the world. powered by X-AIO.
+Anspire LLM
+anchnet
+·
+278
+High availability model services specifically designed for critical business operations.
+Lepton AI
+langgenius
+·
+239
+Lepton AI
+OVH AI Endpoints
+rungeard
+·
+117
+Access OVH AI Endpoints models through an OpenAI-compatible API.
+HPC-AI
+hpcaiteam
+·
+95
+HPC-AI provides OpenAI-compatible model APIs for high-performance inference.
+Avian
+avian
+·
+95
+Avian is an OpenAI-compatible inference API providing access to leading open-source models including DeepSeek V3.2, Kimi K2.5, GLM-5, and MiniMax M2.5 at competitive prices.
+Moyu AI
+fdq-shrimp
+·
+90
+Moyu AI model provider plugin for Dify. Supports 100+ LLM, vision, image and video generation models that are verified working.
+OrcaRouter
+continuum-ai-corp
+·
+81
+OrcaRouter is an OpenAI-compatible LLM gateway that routes requests across 40+ upstream providers (OpenAI, Anthropic, Google, DeepSeek, Qwen, Grok, and more) to the cheapest or fastest path, with adaptive routing, fallback chains, and pay-below-list-price billing.
+F5 Guardrail
+f5
+·
+68
+F5 Guardrail (CalypsoAI) prompts API as a Dify model provider. Routes prompts through F5 Guardrail's scanners and returns either the underlying LLM response or a blocked notice.
+MiroMind
+miromind
+·
+50
+MiroMind deep-research models. Long-running streaming research agents with reasoning, web search and inline citations.
+FunASR
+langgenius
+·
+31
+Fast open-source speech recognition from Alibaba DAMO Academy. 170x faster than Whisper.
+Skypool
+azard
+·
+29
+Skypool model provider for Dify, backed by Skypool's OpenAI-compatible API.
+Xiaoxia (小夏同学)
+xiaoxiatongxue
+·
+29
+Xiaoxia AI Hub - Unified access to multiple AI models (GPT, Claude, DeepSeek, Qwen, etc.) via OpenAI-compatible API.
+BytePlus ModelArk
+langgenius
+·
+26
+BytePlus ModelArk multimodal model invocation.
+AskSage
+jlay2026
+·
+23
+AskSage AI model provider - access GPT, Claude, Mistral, and other models through the AskSage platform.
+Skypool
+skypool
+·
+23
+Skypool model provider for Dify, backed by Skypool's OpenAI-compatible API.
+Atomic Chat
+yanalialiuk
+·
+11
+Run local LLMs privately with Atomic Chat's OpenAI-compatible API.
+TokenMix
+tokenmix
+·
+10

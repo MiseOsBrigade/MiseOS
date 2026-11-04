@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Mise PR outputs
+mise-pr-report.md
+mise-pr-report.json

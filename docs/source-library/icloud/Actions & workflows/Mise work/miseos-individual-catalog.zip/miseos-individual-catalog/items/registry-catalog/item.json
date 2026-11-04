@@ -1,0 +1,13 @@
+{
+  "id": "registry-catalog",
+  "category": "registry",
+  "title": "MiseOS Registry Catalog",
+  "description": "Original 23-item registry catalog manifest.",
+  "dependencies": [
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/registry-catalog.manifest.json"
+  ],
+  "notes": []
+}

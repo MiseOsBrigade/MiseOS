@@ -1,0 +1,20 @@
+{
+  "slug": "security-auditor",
+  "name": "Security Auditor",
+  "kind": "brigade_mascot_agent",
+  "role": "Security Auditor",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:136",
+  "thumbnail": "agents/security-auditor/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--security-auditor.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/security-auditor.md",
+  "dir": "agents/security-auditor",
+  "files": [
+    "agents/security-auditor/Security-Auditor.png"
+  ]
+}

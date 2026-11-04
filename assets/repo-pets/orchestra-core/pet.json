@@ -1,0 +1,50 @@
+{
+  "slug": "orchestra-core",
+  "name": "Orchestra Core",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Signature Repo Pet",
+  "department": "Mise OS",
+  "glyph": "🍳",
+  "catchphrase": "Every agent has a role. Every role has purpose.",
+  "behaviors": {
+    "preferred_paths": [
+      "README.md",
+      "src",
+      "docs",
+      ".github"
+    ],
+    "roaming_bias": {
+      "directories": 5,
+      "files": 3,
+      "parent": 2,
+      "config": 5,
+      "docs": 5,
+      "ci": 5,
+      "tests": 5,
+      "infra": 5
+    },
+    "verbs": {
+      "enterDirectory": "conducts the next movement inside",
+      "inspectFile": "listens for harmony in",
+      "inspectConfig": "aligns the orchestration score in",
+      "inspectDocs": "reads the symphony notes in",
+      "inspectTests": "checks the ensemble timing in",
+      "retreat": "returns to the conductor stand"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/orchestra-core.png"
+  ],
+  "source": "tools/repo-pet/src/characters.js",
+  "also_defined_in": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/orchestra-core.png",
+  "character": "orchestra-core",
+  "cards": [
+    "docs/characters/orchestra-core.md",
+    "docs/characters/orchestra-core.md",
+    "docs/characters/orchestra-core.md"
+  ],
+  "page": "docs/repo-pets/orchestra-core.md",
+  "dir": "assets/repo-pets/orchestra-core"
+}

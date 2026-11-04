@@ -1,0 +1,11 @@
+{
+  "id": "workflow-reusable-node-ci",
+  "category": "workflow",
+  "title": "Reusable Node CI",
+  "description": "Reusable workflow interface for Node CI.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/reusable-node-ci.yml"
+  ],
+  "notes": []
+}

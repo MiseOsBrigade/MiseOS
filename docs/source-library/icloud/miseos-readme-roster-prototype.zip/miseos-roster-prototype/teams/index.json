@@ -1,0 +1,445 @@
+{
+  "data-insight": {
+    "meta": {
+      "label": "Data & Insight Kitchen",
+      "short": "Data & Insight",
+      "tagline": "Learn. Optimize. Evolve.",
+      "verbs": "Collect \u00b7 Analyze \u00b7 Learn \u00b7 Forecast \u00b7 Grow",
+      "color": "#A98BE0",
+      "accent": "#A855F7",
+      "brief": "Turns repository events into dashboards, forecasts, stories, and better decisions."
+    },
+    "count": 20,
+    "members": [
+      "taxonomy-taka",
+      "lake-haru",
+      "lattice",
+      "repo-ranger",
+      "dora-daichi",
+      "flag-fox",
+      "cost-kaito",
+      "dx-mei",
+      "revenue-rina",
+      "risk-ryota",
+      "apprentice-kai",
+      "anomaly-aki",
+      "leaderboard-leo",
+      "storyteller-sumi",
+      "roadmap-sensei",
+      "data-chan",
+      "insight-sensei",
+      "chaos-analyst",
+      "growth-guru",
+      "culture-chef"
+    ],
+    "folder": "teams/data-insight/",
+    "lineups": {
+      "5": [
+        "lattice",
+        "roadmap-sensei",
+        "apprentice-kai",
+        "culture-chef",
+        "chaos-analyst"
+      ],
+      "7": [
+        "lattice",
+        "roadmap-sensei",
+        "apprentice-kai",
+        "culture-chef",
+        "chaos-analyst",
+        "insight-sensei",
+        "growth-guru"
+      ],
+      "10": [
+        "lattice",
+        "roadmap-sensei",
+        "apprentice-kai",
+        "culture-chef",
+        "chaos-analyst",
+        "insight-sensei",
+        "growth-guru",
+        "risk-ryota",
+        "data-chan",
+        "storyteller-sumi"
+      ],
+      "15": [
+        "lattice",
+        "roadmap-sensei",
+        "apprentice-kai",
+        "culture-chef",
+        "chaos-analyst",
+        "insight-sensei",
+        "growth-guru",
+        "risk-ryota",
+        "data-chan",
+        "storyteller-sumi",
+        "flag-fox",
+        "taxonomy-taka",
+        "cost-kaito",
+        "leaderboard-leo",
+        "dora-daichi"
+      ]
+    }
+  },
+  "operations": {
+    "meta": {
+      "label": "Operations Kitchen",
+      "short": "Operations",
+      "tagline": "Keep the kitchen running smoothly.",
+      "verbs": "Orchestrate \u00b7 Prepare \u00b7 Compute \u00b7 Scale \u00b7 Coordinate",
+      "color": "#D4AF37",
+      "accent": "#D4AF37",
+      "brief": "The mythic front line: planning, prep, scaling, and the spirit of service."
+    },
+    "count": 4,
+    "members": [
+      "kurogami-senpai",
+      "mizu",
+      "kaji",
+      "scale-oni"
+    ],
+    "folder": "teams/operations/",
+    "lineups": {
+      "5": [
+        "kurogami-senpai",
+        "scale-oni",
+        "kaji",
+        "mizu"
+      ],
+      "7": [
+        "kurogami-senpai",
+        "scale-oni",
+        "kaji",
+        "mizu"
+      ],
+      "10": [
+        "kurogami-senpai",
+        "scale-oni",
+        "kaji",
+        "mizu"
+      ],
+      "15": [
+        "kurogami-senpai",
+        "scale-oni",
+        "kaji",
+        "mizu"
+      ]
+    }
+  },
+  "pipeline": {
+    "meta": {
+      "label": "Pipeline Kitchen",
+      "short": "Pipeline",
+      "tagline": "Build. Test. Deploy. Repeat.",
+      "verbs": "Code \u00b7 Build \u00b7 Test \u00b7 Deploy \u00b7 Monitor",
+      "color": "#E97822",
+      "accent": "#F97316",
+      "brief": "Moves change safely from commit to production."
+    },
+    "count": 19,
+    "members": [
+      "alko-commit-chef",
+      "bruno-blast-radius",
+      "lila-branchkeeper",
+      "omar-reviewer",
+      "hugo-matrix",
+      "seira-scan",
+      "yume-builder",
+      "iron-hashi",
+      "nina-promoter",
+      "release-conductor",
+      "felix-rollback",
+      "tariq-notesmith",
+      "ivun-cache",
+      "canary-taster",
+      "pipeline-sensei",
+      "tensho",
+      "yume",
+      "flash-riku",
+      "build-kun"
+    ],
+    "folder": "teams/pipeline/",
+    "lineups": {
+      "5": [
+        "alko-commit-chef",
+        "iron-hashi",
+        "omar-reviewer",
+        "yume-builder",
+        "flash-riku"
+      ],
+      "7": [
+        "alko-commit-chef",
+        "iron-hashi",
+        "omar-reviewer",
+        "yume-builder",
+        "flash-riku",
+        "pipeline-sensei",
+        "bruno-blast-radius"
+      ],
+      "10": [
+        "alko-commit-chef",
+        "iron-hashi",
+        "omar-reviewer",
+        "yume-builder",
+        "flash-riku",
+        "pipeline-sensei",
+        "bruno-blast-radius",
+        "canary-taster",
+        "seira-scan",
+        "lila-branchkeeper"
+      ],
+      "15": [
+        "alko-commit-chef",
+        "iron-hashi",
+        "omar-reviewer",
+        "yume-builder",
+        "flash-riku",
+        "pipeline-sensei",
+        "bruno-blast-radius",
+        "canary-taster",
+        "seira-scan",
+        "lila-branchkeeper",
+        "build-kun",
+        "yume",
+        "tensho",
+        "felix-rollback",
+        "release-conductor"
+      ]
+    }
+  },
+  "platform": {
+    "meta": {
+      "label": "Platform Kitchen",
+      "short": "Platform",
+      "tagline": "The stage where services live.",
+      "verbs": "Template \u00b7 Provision \u00b7 Route \u00b7 Scale \u00b7 Observe",
+      "color": "#2E6B4E",
+      "accent": "#22C55E",
+      "brief": "Provides golden paths, shared runtime foundations, and self-service portals."
+    },
+    "count": 18,
+    "members": [
+      "template-tanaka",
+      "bootstrap-aiko",
+      "terra-forge",
+      "schema-sora",
+      "runtime-riku",
+      "vault-hana",
+      "policy-kenji",
+      "grafana-mei",
+      "umami-code",
+      "queue-mizu",
+      "streama",
+      "preview-yuki",
+      "portal-rei",
+      "guardrail-goro",
+      "platform-sensei",
+      "seira",
+      "kuro-guard",
+      "orchestra-core"
+    ],
+    "folder": "teams/platform/",
+    "lineups": {
+      "5": [
+        "bootstrap-aiko",
+        "umami-code",
+        "streama",
+        "queue-mizu",
+        "orchestra-core"
+      ],
+      "7": [
+        "bootstrap-aiko",
+        "umami-code",
+        "streama",
+        "queue-mizu",
+        "orchestra-core",
+        "seira",
+        "kuro-guard"
+      ],
+      "10": [
+        "bootstrap-aiko",
+        "umami-code",
+        "streama",
+        "queue-mizu",
+        "orchestra-core",
+        "seira",
+        "kuro-guard",
+        "platform-sensei",
+        "vault-hana",
+        "policy-kenji"
+      ],
+      "15": [
+        "bootstrap-aiko",
+        "umami-code",
+        "streama",
+        "queue-mizu",
+        "orchestra-core",
+        "seira",
+        "kuro-guard",
+        "platform-sensei",
+        "vault-hana",
+        "policy-kenji",
+        "guardrail-goro",
+        "template-tanaka",
+        "preview-yuki",
+        "portal-rei",
+        "grafana-mei"
+      ]
+    }
+  },
+  "reliability": {
+    "meta": {
+      "label": "Reliability Kitchen",
+      "short": "Reliability",
+      "tagline": "Observe. Measure. Improve.",
+      "verbs": "SLO \u00b7 Trace \u00b7 Test \u00b7 Measure \u00b7 Recover",
+      "color": "#1B2A41",
+      "accent": "#0EA5E9",
+      "brief": "Keeps services measurable, resilient, and ready for incidents."
+    },
+    "count": 16,
+    "members": [
+      "slo-sage",
+      "trace-sensei",
+      "chaos-kaito",
+      "capacity-kanna",
+      "canary-judge",
+      "alert-akira",
+      "pager-hiro",
+      "oncall-naomi",
+      "review-ren",
+      "backlog-benji",
+      "metrics-miko",
+      "forecast-fuji",
+      "resilience-ryu",
+      "impact-ichi",
+      "reliability-sensei",
+      "null-chan"
+    ],
+    "folder": "teams/reliability/",
+    "lineups": {
+      "5": [
+        "slo-sage",
+        "metrics-miko",
+        "reliability-sensei",
+        "resilience-ryu",
+        "trace-sensei"
+      ],
+      "7": [
+        "slo-sage",
+        "metrics-miko",
+        "reliability-sensei",
+        "resilience-ryu",
+        "trace-sensei",
+        "null-chan",
+        "canary-judge"
+      ],
+      "10": [
+        "slo-sage",
+        "metrics-miko",
+        "reliability-sensei",
+        "resilience-ryu",
+        "trace-sensei",
+        "null-chan",
+        "canary-judge",
+        "capacity-kanna",
+        "pager-hiro",
+        "chaos-kaito"
+      ],
+      "15": [
+        "slo-sage",
+        "metrics-miko",
+        "reliability-sensei",
+        "resilience-ryu",
+        "trace-sensei",
+        "null-chan",
+        "canary-judge",
+        "capacity-kanna",
+        "pager-hiro",
+        "chaos-kaito",
+        "alert-akira",
+        "review-ren",
+        "impact-ichi",
+        "backlog-benji",
+        "forecast-fuji"
+      ]
+    }
+  },
+  "security": {
+    "meta": {
+      "label": "Security Kitchen",
+      "short": "Security",
+      "tagline": "Guard. Audit. Comply.",
+      "verbs": "Threat Model \u00b7 Scan \u00b7 Gate \u00b7 Audit \u00b7 Approve",
+      "color": "#E5564B",
+      "accent": "#EF4444",
+      "brief": "Protects the kitchen from secrets leaks, bad inputs, and unsafe releases."
+    },
+    "count": 15,
+    "members": [
+      "threat-taro",
+      "secure-sakura",
+      "token-toshi",
+      "cve-kumo",
+      "container-kage",
+      "seira-vaultkeeper",
+      "policy-ronin",
+      "merge-sentinel",
+      "watchtower-yoru",
+      "auditor-emi",
+      "incident-kitsune",
+      "evidence-scribe",
+      "nudge-neko",
+      "scorecard-shin",
+      "red-oni"
+    ],
+    "folder": "teams/security/",
+    "lineups": {
+      "5": [
+        "policy-ronin",
+        "seira-vaultkeeper",
+        "red-oni",
+        "incident-kitsune",
+        "nudge-neko"
+      ],
+      "7": [
+        "policy-ronin",
+        "seira-vaultkeeper",
+        "red-oni",
+        "incident-kitsune",
+        "nudge-neko",
+        "cve-kumo",
+        "scorecard-shin"
+      ],
+      "10": [
+        "policy-ronin",
+        "seira-vaultkeeper",
+        "red-oni",
+        "incident-kitsune",
+        "nudge-neko",
+        "cve-kumo",
+        "scorecard-shin",
+        "merge-sentinel",
+        "evidence-scribe",
+        "token-toshi"
+      ],
+      "15": [
+        "policy-ronin",
+        "seira-vaultkeeper",
+        "red-oni",
+        "incident-kitsune",
+        "nudge-neko",
+        "cve-kumo",
+        "scorecard-shin",
+        "merge-sentinel",
+        "evidence-scribe",
+        "token-toshi",
+        "container-kage",
+        "watchtower-yoru",
+        "secure-sakura",
+        "auditor-emi",
+        "threat-taro"
+      ]
+    }
+  }
+}

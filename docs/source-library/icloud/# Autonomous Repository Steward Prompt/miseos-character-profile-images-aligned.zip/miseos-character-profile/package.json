@@ -1,0 +1,16 @@
+{
+  "name": "miseos-character-profile",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "npm run validate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

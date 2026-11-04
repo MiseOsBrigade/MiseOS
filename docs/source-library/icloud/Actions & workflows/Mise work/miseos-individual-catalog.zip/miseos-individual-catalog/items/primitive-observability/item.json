@@ -1,0 +1,16 @@
+{
+  "id": "primitive-observability",
+  "category": "platform",
+  "title": "OpenTelemetry + Logfire Collector",
+  "description": "OpenTelemetry host metrics collector configuration relocated out of .github/workflows.",
+  "dependencies": [
+    "LOGFIRE_TOKEN environment secret"
+  ],
+  "files": [
+    "ops/otel-collector.yaml",
+    "docs/OBSERVABILITY.md"
+  ],
+  "notes": [
+    "This is collector configuration, not a GitHub Actions workflow."
+  ]
+}

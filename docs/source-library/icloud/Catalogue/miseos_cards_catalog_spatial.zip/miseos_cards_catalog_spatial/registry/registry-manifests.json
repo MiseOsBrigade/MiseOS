@@ -1,0 +1,439 @@
+[
+  {
+    "catalog_number": 1,
+    "registry_id": "miseos.agent-sdk",
+    "name": "MiseOS Agent SDK",
+    "record_kind": "registry_manifest",
+    "type": "sdk",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/agent-sdk",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "sdk",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 2,
+    "registry_id": "miseos.analytics-engine",
+    "name": "MiseOS Analytics Engine",
+    "record_kind": "registry_manifest",
+    "type": "analytics",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/analytics-engine",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "analytics",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 3,
+    "registry_id": "miseos.attestation-gate",
+    "name": "MiseOS Attestation Gate",
+    "record_kind": "registry_manifest",
+    "type": "policy",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/attestation-gate",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "policy",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 4,
+    "registry_id": "miseos.cli",
+    "name": "MiseOS CLI",
+    "record_kind": "registry_manifest",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/cli",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "package",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 5,
+    "registry_id": "miseos.docs-builder",
+    "name": "MiseOS Docs Builder",
+    "record_kind": "registry_manifest",
+    "type": "container",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "ghcr.io/mise-os/miseos-docs-builder",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "container",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 6,
+    "registry_id": "miseos.docs-hub-template",
+    "name": "MiseOS Docs Hub Template",
+    "record_kind": "registry_manifest",
+    "type": "template",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/docs-hub-template; templates/docs-hub",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "template",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 7,
+    "registry_id": "miseos.gradle-plugin",
+    "name": "MiseOS Gradle Plugin",
+    "record_kind": "registry_manifest",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "dev.miseos.registry-plugin",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "package",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 8,
+    "registry_id": "miseos.maven-policy-adapter",
+    "name": "MiseOS Maven Policy Adapter",
+    "record_kind": "registry_manifest",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "dev.miseos:policy-adapter",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "package",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 9,
+    "registry_id": "miseos.nuget-client",
+    "name": "MiseOS NuGet Client",
+    "record_kind": "registry_manifest",
+    "type": "sdk",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "MiseOS.Registry.Client",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "sdk",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 10,
+    "registry_id": "miseos.policy-checker",
+    "name": "MiseOS Policy Checker",
+    "record_kind": "registry_manifest",
+    "type": "container",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "ghcr.io/mise-os/miseos-policy-checker",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "container",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 11,
+    "registry_id": "miseos.policy-engine",
+    "name": "MiseOS Policy Engine",
+    "record_kind": "registry_manifest",
+    "type": "policy",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/policy-engine; ghcr.io/mise-os/miseos-policy-checker",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "policy",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 12,
+    "registry_id": "miseos.registry-schema",
+    "name": "MiseOS Registry Schema",
+    "record_kind": "registry_manifest",
+    "type": "schema",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/registry-schema",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "schema",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 13,
+    "registry_id": "miseos.release-sentinel",
+    "name": "MiseOS Release Sentinel",
+    "record_kind": "registry_manifest",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/release-sentinel",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "agent",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 14,
+    "registry_id": "miseos.repo-steward",
+    "name": "MiseOS Repo Steward",
+    "record_kind": "registry_manifest",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/repo-steward",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "agent",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 15,
+    "registry_id": "miseos.ruby-steward",
+    "name": "MiseOS Ruby Steward",
+    "record_kind": "registry_manifest",
+    "type": "package",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "miseos-ruby-steward",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "package",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 16,
+    "registry_id": "miseos.runner",
+    "name": "MiseOS Runner",
+    "record_kind": "registry_manifest",
+    "type": "container",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "ghcr.io/mise-os/miseos-runner",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "container",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 17,
+    "registry_id": "miseos.sbom-indexer",
+    "name": "MiseOS SBOM Indexer",
+    "record_kind": "registry_manifest",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/sbom-indexer",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "agent",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 18,
+    "registry_id": "miseos.trust-graph",
+    "name": "MiseOS Trust Graph",
+    "record_kind": "registry_manifest",
+    "type": "analytics",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/trust-graph",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "analytics",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 19,
+    "registry_id": "miseos.workflow-linter",
+    "name": "MiseOS Workflow Linter",
+    "record_kind": "registry_manifest",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/workflow-linter",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "agent",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 20,
+    "registry_id": "miseos.workflow-pack",
+    "name": "MiseOS Workflow Pack",
+    "record_kind": "registry_manifest",
+    "type": "workflow",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/workflow-pack",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "workflow",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 21,
+    "registry_id": "miseos.repo-pet",
+    "name": "MiseOS Repo Pet",
+    "record_kind": "registry_manifest",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/repo-pet",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "agent",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 22,
+    "registry_id": "miseos.repo-reliability-kit",
+    "name": "MiseOS Repo Reliability Kit",
+    "record_kind": "registry_manifest",
+    "type": "workflow",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/repo-reliability-kit",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "workflow",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  },
+  {
+    "catalog_number": 23,
+    "registry_id": "miseos.orchestra-theme",
+    "name": "Mise Orchestra Theme",
+    "record_kind": "registry_manifest",
+    "type": "theme",
+    "version": "0.2.0",
+    "status": "experimental",
+    "artifact": "@mise-os/orchestra-theme",
+    "collection": "MiseOS Registry Manifests",
+    "is_character": false,
+    "marketplace_language": "product infrastructure",
+    "card_language": "registry manifest badge",
+    "capabilities": [
+      "theme",
+      "repo-safe",
+      "evidence-aware"
+    ]
+  }
+]

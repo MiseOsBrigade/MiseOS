@@ -1,0 +1,196 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #099 — Reserve Rune",
+  "description": "Reserve Rune serves the Operations Kitchen as the brigade's backup archivist. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/099-reserve-rune.jpg",
+  "animation_url": "media/animation/099-reserve-rune.mp4",
+  "external_url": "https://miseos.dev/agents/reserve-rune",
+  "background_color": "D4AF37",
+  "spatial_screen": {
+    "card_id": "MISE-099",
+    "level": 26,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 15,
+      "aligned_pages": [
+        15
+      ],
+      "reference_image": "assets/reference/page-015.jpg",
+      "thumbnail": "assets/thumbnails/page-015.jpg",
+      "alignment_confidence": "medium",
+      "provenance": "photo_aligned_completion"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.099",
+    "number": 99,
+    "slug": "reserve-rune",
+    "codename": "RESERVE_RUNE",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Operations Kitchen",
+    "department_code": "operations",
+    "role": "Backup Archivist",
+    "rarity": "Epic",
+    "rarity_tier": 3,
+    "level": 26
+  },
+  "lore": {
+    "summary": "Reserve Rune serves the Operations Kitchen as the brigade's backup archivist. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Reserve Rune performs backup archivist within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Vacuum Vesper",
+      "Flavor Scribe",
+      "Prep Pulse"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE BACKUP ARCHIVIST",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Backup Archivist Protocol",
+      "type": "active",
+      "effect": "Executes the core backup archivist workflow with evidence capture.",
+      "command": "MISE BACKUP ARCHIVIST"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next operations station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 82,
+    "precision": 67,
+    "speed": 71,
+    "resilience": 81,
+    "intelligence": 63,
+    "teamwork": 74
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Operations Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Backup Archivist"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Level",
+      "value": 26,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "photo_aligned_completion"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "medium"
+    },
+    {
+      "trait_type": "Power",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 67,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 71,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 81,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 63,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 74,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/099-reserve-rune.jpg",
+    "reference_art": "assets/reference/page-015.jpg",
+    "thumbnail": "assets/thumbnails/page-015.jpg",
+    "animation": {
+      "uri": "media/animation/099-reserve-rune.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/099-reserve-rune.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/099-reserve-rune.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/099-reserve-rune.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/099-reserve-rune.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "cache-cat",
+  "name": "Cache Cat",
+  "kind": "brigade_mascot_agent",
+  "role": "Cache Keeper",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:91",
+  "thumbnail": "agents/cache-cat/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": "cache-cat",
+  "page": "docs/agents/cache-cat.md",
+  "dir": "agents/cache-cat",
+  "files": [
+    "agents/cache-cat/Cache-Cat.png"
+  ]
+}

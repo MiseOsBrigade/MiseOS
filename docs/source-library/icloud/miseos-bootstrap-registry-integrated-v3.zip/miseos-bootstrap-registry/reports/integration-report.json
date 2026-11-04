@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-07-02T19:35:37.279Z",
+  "repository": "miseos-bootstrap-registry",
+  "version": "0.3.0",
+  "manifestCount": 25,
+  "scope": "@mise-os",
+  "containerNamespace": "ghcr.io/mise-os",
+  "firstPublishSequence": [
+    "ghcr.io/mise-os/miseos-runner",
+    "@mise-os/cli",
+    "@mise-os/policy-engine",
+    "@mise-os/release-sentinel"
+  ],
+  "integratedCapabilities": {
+    "orchestraDepartments": 6,
+    "founders": 5,
+    "pipelineMasters": 5,
+    "devopsMappings": 6,
+    "highRiskManifests": 5,
+    "mediumRiskManifests": 5,
+    "lowRiskManifests": 15
+  },
+  "nextActions": [
+    "Push repository to GitHub as Mise-OS/miseos-bootstrap-registry.",
+    "Enable branch protection and required status checks.",
+    "Run validate-registry, scorecard, and publish-container workflow in dry-run/manual mode.",
+    "Publish ghcr.io/mise-os/miseos-runner first.",
+    "Publish @mise-os/cli, @mise-os/policy-engine, and @mise-os/release-sentinel after runner is proven."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "storage",
+  "name": "Storage",
+  "kind": "brigade_mascot_agent",
+  "role": "Storage Manager",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:159",
+  "thumbnail": "agents/storage/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/storage.md",
+  "dir": "agents/storage",
+  "files": [
+    "agents/storage/Storage.png"
+  ]
+}

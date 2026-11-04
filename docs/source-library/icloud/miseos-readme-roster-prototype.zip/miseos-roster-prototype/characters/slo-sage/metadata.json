@@ -1,0 +1,80 @@
+{
+  "id": "slo-sage",
+  "number": 31,
+  "name": "SLO Sage",
+  "miseName": "Mise SloDefinitionWorkflow",
+  "codename": "chef.reliability.slo-definition-workflow",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "genesis",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Indian",
+    "title": "SLO Definition Workflow",
+    "signaturePhrase": "SLO Definition Workflow done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in slo definition workflow so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen slo definition workflow aura",
+    "silhouette": "multinational chibi DevOps chef carrying a scroll",
+    "tool": "scroll",
+    "spritePath": "/assets/characters/slo-sage/full-body.png",
+    "cardPath": "/assets/characters/slo-sage/card.png"
+  },
+  "workflow": {
+    "jobName": "SLO Definition Workflow",
+    "roleName": "SLO Definition Workflow microagent",
+    "summary": "Runs slo definition workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Trace Sensei",
+      "Alko Commit Chef",
+      "Template Tanaka",
+      "Threat Taro"
+    ]
+  },
+  "stats": {
+    "power": 85,
+    "precision": 98,
+    "speed": 95,
+    "resilience": 81,
+    "intelligence": 83,
+    "teamwork": 81
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "slo-sage",
+  "seasonOneCard": {
+    "id": "18",
+    "role": "Guest Chef",
+    "department": "Reliability",
+    "function": "Guarantee",
+    "rarity": "Epic",
+    "tier": "Promise Keeper",
+    "element": "Error Budget",
+    "ability": "SLO Ward",
+    "lore": "Protects the promises. Maintains SLOs and error budgets.",
+    "image_file": "cards/png/018-slo-sage.png",
+    "metadata_file": "metadata/erc721/018-slo-sage.json"
+  },
+  "displayNumber": 31,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/slo-sage",
+  "avatarSvg": "assets/characters/slo-sage/avatar.svg",
+  "cardSvg": "assets/characters/slo-sage/card.svg"
+}

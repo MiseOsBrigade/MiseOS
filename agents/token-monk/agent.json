@@ -1,0 +1,18 @@
+{
+  "slug": "token-monk",
+  "name": "Token Monk",
+  "kind": "brigade_mascot_agent",
+  "role": "Secrets Custodian",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:137",
+  "thumbnail": "agents/token-monk/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/token-monk.md",
+  "dir": "agents/token-monk",
+  "files": [
+    "agents/token-monk/Token-Monk.png"
+  ]
+}

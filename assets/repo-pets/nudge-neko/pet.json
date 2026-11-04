@@ -1,0 +1,23 @@
+{
+  "slug": "nudge-neko",
+  "name": "Nudge Neko",
+  "kind": "animal_character",
+  "species": "cat (neko)",
+  "species_source": "animal word in the name",
+  "role": "Security Training Nudges",
+  "department": "Security Kitchen",
+  "sprites": [
+    "assets/characters/nudge-neko/profile.svg",
+    "assets/player-cards/1by1-chefs/thumbs/nudge-neko.webp",
+    "assets/player-cards/registry-pages/thumbs/nudge-neko.webp"
+  ],
+  "behaviors": {},
+  "source": "data/characters/nudge-neko.json",
+  "character": "nudge-neko",
+  "cards": [
+    "docs/characters/nudge-neko.md",
+    "docs/characters/nudge-neko.md"
+  ],
+  "page": "docs/repo-pets/nudge-neko.md",
+  "dir": "assets/repo-pets/nudge-neko"
+}

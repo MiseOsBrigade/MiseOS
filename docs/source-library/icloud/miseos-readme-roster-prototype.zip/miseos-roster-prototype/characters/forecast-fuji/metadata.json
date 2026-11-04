@@ -1,0 +1,68 @@
+{
+  "id": "forecast-fuji",
+  "number": 42,
+  "name": "Forecast Fuji",
+  "miseName": "Mise CapacityPlanner",
+  "codename": "chef.reliability.capacity-planner",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "common",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Capacity Planner",
+    "signaturePhrase": "Capacity Planner done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in capacity planner so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen capacity planner aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/forecast-fuji/full-body.png",
+    "cardPath": "/assets/characters/forecast-fuji/card.png"
+  },
+  "workflow": {
+    "jobName": "Capacity Planner",
+    "roleName": "Capacity Planner microagent",
+    "summary": "Runs capacity planner for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Metrics Miko",
+      "Resilience Ryu",
+      "Tariq Notesmith",
+      "Preview Yuki"
+    ]
+  },
+  "stats": {
+    "power": 90,
+    "precision": 72,
+    "speed": 88,
+    "resilience": 90,
+    "intelligence": 76,
+    "teamwork": 76
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "forecast-fuji",
+  "seasonOneCard": null,
+  "displayNumber": 42,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/forecast-fuji",
+  "avatarSvg": "assets/characters/forecast-fuji/avatar.svg",
+  "cardSvg": "assets/characters/forecast-fuji/card.svg"
+}

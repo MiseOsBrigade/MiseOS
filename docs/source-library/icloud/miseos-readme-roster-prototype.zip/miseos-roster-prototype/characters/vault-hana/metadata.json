@@ -1,0 +1,68 @@
+{
+  "id": "vault-hana",
+  "number": 21,
+  "name": "Vault Hana",
+  "miseName": "Mise SecretsConfigBroker",
+  "codename": "chef.platform.secrets-config-broker",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "rare",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Secrets & Config Broker",
+    "signaturePhrase": "Secrets and Config Broker done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in secrets & config broker so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen secrets & config broker aura",
+    "silhouette": "multinational chibi DevOps chef carrying a key",
+    "tool": "key",
+    "spritePath": "/assets/characters/vault-hana/full-body.png",
+    "cardPath": "/assets/characters/vault-hana/card.png"
+  },
+  "workflow": {
+    "jobName": "Secrets & Config Broker",
+    "roleName": "Secrets & Config Broker microagent",
+    "summary": "Runs secrets & config broker for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Runtime Riku",
+      "Policy Kenji",
+      "Seira Scan",
+      "Alert Akira"
+    ]
+  },
+  "stats": {
+    "power": 91,
+    "precision": 83,
+    "speed": 89,
+    "resilience": 91,
+    "intelligence": 86,
+    "teamwork": 87
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "vault-hana",
+  "seasonOneCard": null,
+  "displayNumber": 21,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/vault-hana",
+  "avatarSvg": "assets/characters/vault-hana/avatar.svg",
+  "cardSvg": "assets/characters/vault-hana/card.svg"
+}

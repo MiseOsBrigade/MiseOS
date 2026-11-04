@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "2.0.0",
+  "company": {
+    "name": "MiseOS",
+    "category": ["Autonomous Development Platform", "Agent Orchestration OS", "Developer Operating System"],
+    "message": "MiseOS coordinates AI agents, repositories, tools, workflows, infrastructure, and approvals into a single operational system."
+  },
+  "products": {
+    "brigade": {
+      "name": "Brigade",
+      "role": "Agent Workforce",
+      "message": "Brigade is the autonomous workforce powering MiseOS.",
+      "launch_agent_count": 75,
+      "departments": {
+        "Executive": 10,
+        "Operations": 10,
+        "Service": 10,
+        "Engineering": 10,
+        "Security": 10,
+        "Infrastructure": 15,
+        "Ecosystem": 10
+      }
+    },
+    "platform_modules": ["Core", "Brigade", "Kitchen", "Orchestra", "Vault", "Observatory"]
+  },
+  "brand": {
+    "lead_mascot": "Kurogami",
+    "mascot_role": "Brand Layer",
+    "principle": "Mascots support the platform; they do not replace the product story.",
+    "colors": {
+      "Umami Black": "#0E0F10",
+      "Gold Ladle": "#D4AF37",
+      "Broth Cream": "#F6F1E7",
+      "Flame Orange": "#E97B22",
+      "Ink Blue": "#1B2A41",
+      "Matcha Green": "#2E6B4E"
+    }
+  },
+  "collectibles": {
+    "status": "post-platform-launch",
+    "purpose": "Participation and provenance, not the core product",
+    "legacy_character_collection_supply": 112,
+    "registry_manifests_excluded": true,
+    "first_series": "Executive Chefs — Series 001"
+  }
+}

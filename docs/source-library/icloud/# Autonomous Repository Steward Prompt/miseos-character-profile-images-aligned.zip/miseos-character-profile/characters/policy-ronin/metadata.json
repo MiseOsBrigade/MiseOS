@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.052",
+  "number": 52,
+  "slug": "policy-ronin",
+  "name": "Policy Ronin",
+  "mise_name": "Policy Ronin",
+  "codename": "POLICY_RONIN",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Policy-as-Code Engine",
+  "job_name": "Policy-as-Code Engine",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Policy-as-Code Engine",
+    "avatar_path": "assets/characters/policy-ronin/avatar.png",
+    "card_path": "assets/characters/policy-ronin/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Policy Ronin performs policy-as-code engine within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Merge Sentinel",
+      "Watchtower Yoru",
+      "Auditor Emi"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 74,
+    "precision": 77,
+    "speed": 80,
+    "resilience": 75,
+    "intelligence": 76,
+    "teamwork": 85
+  },
+  "paths": {
+    "readme": "characters/policy-ronin/README.md",
+    "metadata": "characters/policy-ronin/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

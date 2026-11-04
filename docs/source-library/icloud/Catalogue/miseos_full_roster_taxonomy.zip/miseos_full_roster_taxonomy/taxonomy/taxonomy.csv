@@ -1,0 +1,23 @@
+﻿taxonomy_group,key,label,value,color
+department,pipeline,Pipeline Kitchen,Build. Test. Deploy. Repeat.,#E97822
+department,platform,Platform Kitchen,Provide golden paths and stable service foundations.,#1B2A41
+department,reliability,Reliability Kitchen,Observe. Measure. Improve.,#2E6B4E
+department,security,Security Kitchen,Guard. Audit. Comply.,#8B1E2D
+department,data-insight,Data & Insight Kitchen,Learn. Optimize. Evolve.,#17A2A4
+department,operations,Operations Kitchen,Keep the kitchen running smoothly.,#D4AF37
+rarity,1,Common,Rarity tier 1,
+rarity,2,Rare,Rarity tier 2,
+rarity,3,Epic,Rarity tier 3,
+rarity,4,Legendary,Rarity tier 4,
+rarity,5,Genesis,Rarity tier 5,
+rarity,6,Mythic,Rarity tier 6,
+registry_type,agent,Agent,Registry infrastructure category,
+registry_type,analytics,Analytics,Registry infrastructure category,
+registry_type,container,Container,Registry infrastructure category,
+registry_type,package,Package,Registry infrastructure category,
+registry_type,policy,Policy,Registry infrastructure category,
+registry_type,schema,Schema,Registry infrastructure category,
+registry_type,sdk,Sdk,Registry infrastructure category,
+registry_type,template,Template,Registry infrastructure category,
+registry_type,theme,Theme,Registry infrastructure category,
+registry_type,workflow,Workflow,Registry infrastructure category,

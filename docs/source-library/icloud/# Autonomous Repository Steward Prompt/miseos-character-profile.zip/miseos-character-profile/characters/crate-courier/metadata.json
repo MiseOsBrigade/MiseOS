@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.095",
+  "number": 95,
+  "slug": "crate-courier",
+  "name": "Crate Courier",
+  "mise_name": "Crate Courier",
+  "codename": "CRATE_COURIER",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Provision Scout",
+  "job_name": "Provision Scout",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "uploaded_pdf_page_11",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Provision Scout",
+    "avatar_path": "assets/characters/crate-courier/avatar.png",
+    "card_path": "assets/characters/crate-courier/card.png",
+    "primary_photo_page": 11
+  },
+  "workflow": {
+    "summary": "Crate Courier performs provision scout within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Ledger Ladle",
+      "Beacon Broil",
+      "Ladle Lumen"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 61,
+    "precision": 80,
+    "speed": 53,
+    "resilience": 80,
+    "intelligence": 66,
+    "teamwork": 64
+  },
+  "paths": {
+    "readme": "characters/crate-courier/README.md",
+    "metadata": "characters/crate-courier/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "miseos.social-content.schema.json",
+  "title": "MiseOS Social Content Record",
+  "type": "object",
+  "required": [
+    "content_id",
+    "title",
+    "series",
+    "status",
+    "public_claim_level",
+    "formats",
+    "analytics",
+    "rights"
+  ],
+  "properties": {
+    "content_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "series": {
+      "type": "string"
+    },
+    "season": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "episode": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "in-production",
+        "review",
+        "scheduled",
+        "published",
+        "archived"
+      ]
+    },
+    "production_status": {
+      "type": "string"
+    },
+    "public_claim_level": {
+      "enum": [
+        "concept",
+        "designed",
+        "specified",
+        "scaffolded",
+        "implemented",
+        "tested",
+        "integrated",
+        "deployed",
+        "public"
+      ]
+    },
+    "featured_agents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "featured_products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "technical_concepts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formats": {
+      "type": "object"
+    },
+    "analytics": {
+      "type": "object"
+    },
+    "rights": {
+      "type": "object"
+    }
+  }
+}

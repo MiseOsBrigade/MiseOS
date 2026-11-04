@@ -1,0 +1,1166 @@
+{
+  "schema": "miseos.repo-pets.v1",
+  "count": 35,
+  "animals": 8,
+  "pets": [
+    {
+      "slug": "kurogami-senpai",
+      "name": "Kurogami Senpai",
+      "kind": "terminal_repo_pet+shimeji",
+      "species": null,
+      "role": "Chef de Cuisine",
+      "department": "Operations",
+      "glyph": "🥢",
+      "catchphrase": "Plans every move with precision.",
+      "behaviors": {
+        "preferred_paths": [
+          "src",
+          "docs",
+          "agents",
+          "workflows"
+        ],
+        "roaming_bias": {
+          "directories": 6,
+          "files": 2,
+          "parent": 2,
+          "config": 4,
+          "docs": 2,
+          "tests": 2
+        },
+        "verbs": {
+          "enterDirectory": "steps into the next station",
+          "inspectFile": "checks the recipe logic",
+          "inspectConfig": "aligns the service board",
+          "inspectDocs": "studies the kitchen lore",
+          "inspectTests": "verifies the plating standard",
+          "retreat": "returns to the pass"
+        },
+        "shimeji_states": [
+          "climb",
+          "idle",
+          "perch",
+          "walk"
+        ]
+      },
+      "sprites": [
+        "assets/repo-pets/sprites/kurogami/climb/frame_001.png",
+        "assets/repo-pets/sprites/kurogami/idle/frame_001.png",
+        "assets/repo-pets/sprites/kurogami/perch/frame_001.png",
+        "assets/repo-pets/sprites/kurogami/walk/frame_001.png",
+        "assets/repo-pets/cutouts/kurogami-senpai.png"
+      ],
+      "source": "tools/repo-pet/src/characters.js",
+      "also_defined_in": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "shimeji_states": {
+        "climb": [
+          "assets/repo-pets/sprites/kurogami/climb/frame_001.png",
+          "assets/repo-pets/sprites/kurogami/climb/frame_002.png",
+          "assets/repo-pets/sprites/kurogami/climb/frame_003.png",
+          "assets/repo-pets/sprites/kurogami/climb/frame_004.png",
+          "assets/repo-pets/sprites/kurogami/climb/frame_005.png",
+          "assets/repo-pets/sprites/kurogami/climb/frame_006.png"
+        ],
+        "idle": [
+          "assets/repo-pets/sprites/kurogami/idle/frame_001.png",
+          "assets/repo-pets/sprites/kurogami/idle/frame_002.png",
+          "assets/repo-pets/sprites/kurogami/idle/frame_003.png",
+          "assets/repo-pets/sprites/kurogami/idle/frame_004.png",
+          "assets/repo-pets/sprites/kurogami/idle/frame_005.png",
+          "assets/repo-pets/sprites/kurogami/idle/frame_006.png"
+        ],
+        "perch": [
+          "assets/repo-pets/sprites/kurogami/perch/frame_001.png",
+          "assets/repo-pets/sprites/kurogami/perch/frame_002.png",
+          "assets/repo-pets/sprites/kurogami/perch/frame_003.png",
+          "assets/repo-pets/sprites/kurogami/perch/frame_004.png"
+        ],
+        "walk": [
+          "assets/repo-pets/sprites/kurogami/walk/frame_001.png",
+          "assets/repo-pets/sprites/kurogami/walk/frame_002.png",
+          "assets/repo-pets/sprites/kurogami/walk/frame_003.png",
+          "assets/repo-pets/sprites/kurogami/walk/frame_004.png",
+          "assets/repo-pets/sprites/kurogami/walk/frame_005.png",
+          "assets/repo-pets/sprites/kurogami/walk/frame_006.png",
+          "assets/repo-pets/sprites/kurogami/walk/frame_007.png",
+          "assets/repo-pets/sprites/kurogami/walk/frame_008.png"
+        ]
+      },
+      "cutout": "assets/repo-pets/cutouts/kurogami-senpai.png",
+      "character": "kurogami-senpai",
+      "cards": [
+        "docs/characters/kurogami-senpai.md",
+        "docs/characters/kurogami-senpai.md",
+        "docs/characters/kurogami-senpai.md"
+      ],
+      "page": "docs/repo-pets/kurogami-senpai.md",
+      "dir": "assets/repo-pets/kurogami-senpai"
+    },
+    {
+      "slug": "seira",
+      "name": "Seira",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Navigator",
+      "department": "Routing",
+      "glyph": "🧭",
+      "catchphrase": "Finds the clean path through the repo.",
+      "behaviors": {
+        "preferred_paths": [
+          "src",
+          "lib",
+          "routes"
+        ],
+        "roaming_bias": {
+          "directories": 4,
+          "files": 3,
+          "parent": 2,
+          "secrets": 9,
+          "config": 6,
+          "docs": 2
+        },
+        "verbs": {
+          "enterDirectory": "quietly enters the vault corridor",
+          "inspectFile": "checks the seal around",
+          "inspectConfig": "samples the secret policy in",
+          "inspectDocs": "reads the cellar ledger in",
+          "inspectTests": "tests the lock ritual in",
+          "retreat": "locks the cellar and retreats"
+        }
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "also_defined_in": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "character": "seira",
+      "cards": [
+        "docs/characters/seira.md",
+        "docs/characters/seira.md",
+        "docs/characters/seira.md"
+      ],
+      "page": "docs/repo-pets/seira.md",
+      "dir": "assets/repo-pets/seira"
+    },
+    {
+      "slug": "mise-garde",
+      "name": "Mise Garde",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Quality Guard",
+      "department": "Review",
+      "glyph": "🛡️",
+      "catchphrase": "Checks before service.",
+      "behaviors": {
+        "preferred_paths": [
+          "test",
+          ".github",
+          "docs"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-garde.md",
+      "dir": "assets/repo-pets/mise-garde"
+    },
+    {
+      "slug": "mise-sauce",
+      "name": "Mise Sauce",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Workflow Saucer",
+      "department": "Automation",
+      "glyph": "🥣",
+      "catchphrase": "Turns repeatable work into flavor.",
+      "behaviors": {
+        "preferred_paths": [
+          ".github",
+          "scripts",
+          "bin"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-sauce.md",
+      "dir": "assets/repo-pets/mise-sauce"
+    },
+    {
+      "slug": "mise-locker",
+      "name": "Mise Locker",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Pattern Keeper",
+      "department": "Security",
+      "glyph": "🔐",
+      "catchphrase": "Protects secrets and reusable patterns.",
+      "behaviors": {
+        "preferred_paths": [
+          "docs",
+          "security",
+          "infra"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-locker.md",
+      "dir": "assets/repo-pets/mise-locker"
+    },
+    {
+      "slug": "mise-bootstrap",
+      "name": "Mise Bootstrap",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Repo Starter",
+      "department": "Setup",
+      "glyph": "🥾",
+      "catchphrase": "Gets every station ready.",
+      "behaviors": {
+        "preferred_paths": [
+          "templates",
+          "docs",
+          "package.json"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-bootstrap.md",
+      "dir": "assets/repo-pets/mise-bootstrap"
+    },
+    {
+      "slug": "mise-runtime",
+      "name": "Mise Runtime",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Timing Chef",
+      "department": "Runtime",
+      "glyph": "⏱️",
+      "catchphrase": "Keeps the service clock honest.",
+      "behaviors": {
+        "preferred_paths": [
+          "src",
+          "runtime",
+          "bin"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-runtime.md",
+      "dir": "assets/repo-pets/mise-runtime"
+    },
+    {
+      "slug": "mise-sommelier",
+      "name": "Mise Sommelier",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Traceability Steward",
+      "department": "Evidence",
+      "glyph": "🍷",
+      "catchphrase": "Pairs claims with proof.",
+      "behaviors": {
+        "preferred_paths": [
+          "docs",
+          "reports",
+          "trace"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-sommelier.md",
+      "dir": "assets/repo-pets/mise-sommelier"
+    },
+    {
+      "slug": "mise-apprentice",
+      "name": "Mise Apprentice",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Learning Agent",
+      "department": "Improvement",
+      "glyph": "📓",
+      "catchphrase": "Learns the kitchen one commit at a time.",
+      "behaviors": {
+        "preferred_paths": [
+          "docs",
+          "notes",
+          "test"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-apprentice.md",
+      "dir": "assets/repo-pets/mise-apprentice"
+    },
+    {
+      "slug": "mise-lattice",
+      "name": "Mise Lattice",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Integrity Graph",
+      "department": "Governance",
+      "glyph": "🕸️",
+      "catchphrase": "Connects purpose, policy, and proof.",
+      "behaviors": {
+        "preferred_paths": [
+          "governance",
+          "docs",
+          "policies"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-lattice.md",
+      "dir": "assets/repo-pets/mise-lattice"
+    },
+    {
+      "slug": "mise-gpu",
+      "name": "Mise GPU",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Heavy Lane Cook",
+      "department": "Acceleration",
+      "glyph": "⚡",
+      "catchphrase": "Handles the hot path.",
+      "behaviors": {
+        "preferred_paths": [
+          "compute",
+          "models",
+          "benchmarks"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-gpu.md",
+      "dir": "assets/repo-pets/mise-gpu"
+    },
+    {
+      "slug": "mise-soul",
+      "name": "Mise Soul",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Human-in-the-loop Steward",
+      "department": "Ethics",
+      "glyph": "🫶",
+      "catchphrase": "Keeps the system accountable to people.",
+      "behaviors": {
+        "preferred_paths": [
+          "docs",
+          "governance",
+          "community"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-soul.md",
+      "dir": "assets/repo-pets/mise-soul"
+    },
+    {
+      "slug": "mise-brigadier",
+      "name": "Mise Brigadier",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Repo Steward",
+      "department": "Merge Gates",
+      "glyph": "📋",
+      "catchphrase": "Keeps the brigade coordinated.",
+      "behaviors": {
+        "preferred_paths": [
+          ".github",
+          "docs",
+          "issues"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-brigadier.md",
+      "dir": "assets/repo-pets/mise-brigadier"
+    },
+    {
+      "slug": "mise-maestro",
+      "name": "Mise Maestro",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Control Plane Conductor",
+      "department": "Orchestration",
+      "glyph": "🎼",
+      "catchphrase": "Conducts the whole service.",
+      "behaviors": {
+        "preferred_paths": [
+          "orchestra",
+          "src",
+          "docs"
+        ]
+      },
+      "sprites": [],
+      "source": "tools/repo-pet/src/characters.js",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/mise-maestro.md",
+      "dir": "assets/repo-pets/mise-maestro"
+    },
+    {
+      "slug": "orchestra-core",
+      "name": "Orchestra Core",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Signature Repo Pet",
+      "department": "Mise OS",
+      "glyph": "🍳",
+      "catchphrase": "Every agent has a role. Every role has purpose.",
+      "behaviors": {
+        "preferred_paths": [
+          "README.md",
+          "src",
+          "docs",
+          ".github"
+        ],
+        "roaming_bias": {
+          "directories": 5,
+          "files": 3,
+          "parent": 2,
+          "config": 5,
+          "docs": 5,
+          "ci": 5,
+          "tests": 5,
+          "infra": 5
+        },
+        "verbs": {
+          "enterDirectory": "conducts the next movement inside",
+          "inspectFile": "listens for harmony in",
+          "inspectConfig": "aligns the orchestration score in",
+          "inspectDocs": "reads the symphony notes in",
+          "inspectTests": "checks the ensemble timing in",
+          "retreat": "returns to the conductor stand"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/orchestra-core.png"
+      ],
+      "source": "tools/repo-pet/src/characters.js",
+      "also_defined_in": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/orchestra-core.png",
+      "character": "orchestra-core",
+      "cards": [
+        "docs/characters/orchestra-core.md",
+        "docs/characters/orchestra-core.md",
+        "docs/characters/orchestra-core.md"
+      ],
+      "page": "docs/repo-pets/orchestra-core.md",
+      "dir": "assets/repo-pets/orchestra-core"
+    },
+    {
+      "slug": "tensho",
+      "name": "Tensho",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Expediter",
+      "department": "Pipeline Department",
+      "glyph": "🚀",
+      "catchphrase": "Keeps orders flowing. Chaos cannot stop the rush.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 4,
+          "files": 3,
+          "parent": 2,
+          "ci": 7,
+          "scripts": 5,
+          "tests": 3
+        },
+        "verbs": {
+          "enterDirectory": "rushes down the pipeline lane",
+          "inspectFile": "checks the delivery ticket",
+          "inspectConfig": "tunes the route map",
+          "inspectDocs": "skims the runbook",
+          "inspectTests": "checks the release gate",
+          "retreat": "sprints back to dispatch"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/tensho.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/tensho.png",
+      "character": "tensho",
+      "cards": [
+        "docs/characters/tensho.md",
+        "docs/characters/tensho.md",
+        "docs/characters/tensho.md"
+      ],
+      "page": "docs/repo-pets/tensho.md",
+      "dir": "assets/repo-pets/tensho"
+    },
+    {
+      "slug": "mizu",
+      "name": "Mizu",
+      "kind": "terminal_repo_pet+shimeji",
+      "species": null,
+      "role": "Prep Chef",
+      "department": "Operations Department",
+      "glyph": "💧",
+      "catchphrase": "Prepares everything in advance. Organization is key.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 5,
+          "files": 3,
+          "parent": 2,
+          "config": 4,
+          "data": 5,
+          "docs": 3
+        },
+        "verbs": {
+          "enterDirectory": "sets up mise en place inside",
+          "inspectFile": "preps the ingredients in",
+          "inspectConfig": "sorts the prep list",
+          "inspectDocs": "labels the recipe notes",
+          "inspectTests": "checks prep readiness",
+          "retreat": "flows back upstream"
+        },
+        "shimeji_states": [
+          "climb",
+          "idle",
+          "perch",
+          "walk"
+        ]
+      },
+      "sprites": [
+        "assets/repo-pets/sprites/mizu/climb/frame_001.png",
+        "assets/repo-pets/sprites/mizu/idle/frame_001.png",
+        "assets/repo-pets/sprites/mizu/perch/frame_001.png",
+        "assets/repo-pets/sprites/mizu/walk/frame_001.png",
+        "assets/repo-pets/cutouts/mizu.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "shimeji_states": {
+        "climb": [
+          "assets/repo-pets/sprites/mizu/climb/frame_001.png",
+          "assets/repo-pets/sprites/mizu/climb/frame_002.png",
+          "assets/repo-pets/sprites/mizu/climb/frame_003.png",
+          "assets/repo-pets/sprites/mizu/climb/frame_004.png",
+          "assets/repo-pets/sprites/mizu/climb/frame_005.png",
+          "assets/repo-pets/sprites/mizu/climb/frame_006.png"
+        ],
+        "idle": [
+          "assets/repo-pets/sprites/mizu/idle/frame_001.png",
+          "assets/repo-pets/sprites/mizu/idle/frame_002.png",
+          "assets/repo-pets/sprites/mizu/idle/frame_003.png",
+          "assets/repo-pets/sprites/mizu/idle/frame_004.png",
+          "assets/repo-pets/sprites/mizu/idle/frame_005.png",
+          "assets/repo-pets/sprites/mizu/idle/frame_006.png"
+        ],
+        "perch": [
+          "assets/repo-pets/sprites/mizu/perch/frame_001.png",
+          "assets/repo-pets/sprites/mizu/perch/frame_002.png",
+          "assets/repo-pets/sprites/mizu/perch/frame_003.png",
+          "assets/repo-pets/sprites/mizu/perch/frame_004.png"
+        ],
+        "walk": [
+          "assets/repo-pets/sprites/mizu/walk/frame_001.png",
+          "assets/repo-pets/sprites/mizu/walk/frame_002.png",
+          "assets/repo-pets/sprites/mizu/walk/frame_003.png",
+          "assets/repo-pets/sprites/mizu/walk/frame_004.png",
+          "assets/repo-pets/sprites/mizu/walk/frame_005.png",
+          "assets/repo-pets/sprites/mizu/walk/frame_006.png",
+          "assets/repo-pets/sprites/mizu/walk/frame_007.png",
+          "assets/repo-pets/sprites/mizu/walk/frame_008.png"
+        ]
+      },
+      "cutout": "assets/repo-pets/cutouts/mizu.png",
+      "character": "mizu",
+      "cards": [
+        "docs/characters/mizu.md",
+        "docs/characters/mizu.md"
+      ],
+      "page": "docs/repo-pets/mizu.md",
+      "dir": "assets/repo-pets/mizu"
+    },
+    {
+      "slug": "umami-code",
+      "name": "Umami Code",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Saucier",
+      "department": "Platform Department",
+      "glyph": "🍜",
+      "catchphrase": "Creates the API sauce that connects everything.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 4,
+          "files": 4,
+          "parent": 2,
+          "api": 8,
+          "config": 3,
+          "docs": 2
+        },
+        "verbs": {
+          "enterDirectory": "follows an API aroma into",
+          "inspectFile": "tastes the integration sauce in",
+          "inspectConfig": "balances the connector seasoning",
+          "inspectDocs": "reads the service menu",
+          "inspectTests": "samples the contract tests",
+          "retreat": "returns to the sauce station"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/umami-code.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/umami-code.png",
+      "character": "umami-code",
+      "cards": [
+        "docs/characters/umami-code.md",
+        "docs/characters/umami-code.md"
+      ],
+      "page": "docs/repo-pets/umami-code.md",
+      "dir": "assets/repo-pets/umami-code"
+    },
+    {
+      "slug": "kaji",
+      "name": "Kaji",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Grillardin",
+      "department": "Infrastructure Department",
+      "glyph": "🔥",
+      "catchphrase": "Handles the heat and keeps the engines burning.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 4,
+          "files": 4,
+          "parent": 2,
+          "infra": 7,
+          "docker": 8,
+          "config": 3
+        },
+        "verbs": {
+          "enterDirectory": "fires up the station inside",
+          "inspectFile": "sears through the compute logic in",
+          "inspectConfig": "adjusts the flame control in",
+          "inspectDocs": "checks the heat manual",
+          "inspectTests": "stress-tests the grill marks in",
+          "retreat": "backs away from the flames"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/kaji.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/kaji.png",
+      "character": "kaji",
+      "cards": [
+        "docs/characters/kaji.md",
+        "docs/characters/kaji.md",
+        "docs/characters/kaji.md",
+        "docs/characters/kaji.md"
+      ],
+      "page": "docs/repo-pets/kaji.md",
+      "dir": "assets/repo-pets/kaji"
+    },
+    {
+      "slug": "yume",
+      "name": "Yume",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Pastry Chef",
+      "department": "Pipeline Department",
+      "glyph": "🍰",
+      "catchphrase": "Turns code into beautiful artifacts. Perfection is the recipe.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 3,
+          "files": 5,
+          "parent": 2,
+          "assets": 8,
+          "build": 5,
+          "docs": 4
+        },
+        "verbs": {
+          "enterDirectory": "floats toward a sweeter shelf",
+          "inspectFile": "glazes the artifact recipe in",
+          "inspectConfig": "checks the bake temperature in",
+          "inspectDocs": "decorates the release notes",
+          "inspectTests": "samples the finished dish in",
+          "retreat": "twirls back to pastry"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/yume.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/yume.png",
+      "character": "yume",
+      "cards": [
+        "docs/characters/yume.md",
+        "docs/characters/yume.md"
+      ],
+      "page": "docs/repo-pets/yume.md",
+      "dir": "assets/repo-pets/yume"
+    },
+    {
+      "slug": "iron-hashi",
+      "name": "Iron Hashi",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Boucher",
+      "department": "Reliability Department",
+      "glyph": "⚖️",
+      "catchphrase": "No mistakes allowed. Validates everything with brutal precision.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 4,
+          "files": 4,
+          "parent": 2,
+          "tests": 9,
+          "schemas": 8,
+          "config": 4
+        },
+        "verbs": {
+          "enterDirectory": "cuts into the validation station",
+          "inspectFile": "slices through edge cases in",
+          "inspectConfig": "checks the schema knife line in",
+          "inspectDocs": "audits the rules written in",
+          "inspectTests": "sharpens the test blade on",
+          "retreat": "steps back with clean cuts"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/iron-hashi.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/iron-hashi.png",
+      "character": "iron-hashi",
+      "cards": [
+        "docs/characters/iron-hashi.md",
+        "docs/characters/iron-hashi.md",
+        "docs/characters/iron-hashi.md"
+      ],
+      "page": "docs/repo-pets/iron-hashi.md",
+      "dir": "assets/repo-pets/iron-hashi"
+    },
+    {
+      "slug": "null-chan",
+      "name": "Null-chan",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Plongeur",
+      "department": "Reliability Department",
+      "glyph": "🫧",
+      "catchphrase": "Cleans up what is not needed. Keeps the kitchen light.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 4,
+          "files": 4,
+          "parent": 3,
+          "cleanup": 9,
+          "logs": 5,
+          "tests": 3
+        },
+        "verbs": {
+          "enterDirectory": "slides into the cleanup sink",
+          "inspectFile": "wipes residue from",
+          "inspectConfig": "removes stale settings from",
+          "inspectDocs": "dusts the old notes in",
+          "inspectTests": "rinses the test basin in",
+          "retreat": "bubbles back to the dish pit"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/null-chan.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/null-chan.png",
+      "character": "null-chan",
+      "cards": [
+        "docs/characters/null-chan.md"
+      ],
+      "page": "docs/repo-pets/null-chan.md",
+      "dir": "assets/repo-pets/null-chan"
+    },
+    {
+      "slug": "flash-riku",
+      "name": "Flash Riku",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Runner",
+      "department": "Pipeline Department",
+      "glyph": "⚡",
+      "catchphrase": "Fastest chef in the kitchen. Delivers with zero delay.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 5,
+          "files": 3,
+          "parent": 2,
+          "ci": 8,
+          "scripts": 6,
+          "deploy": 9
+        },
+        "verbs": {
+          "enterDirectory": "dashes through",
+          "inspectFile": "speed-checks",
+          "inspectConfig": "tightens the deploy route in",
+          "inspectDocs": "skims the mission card in",
+          "inspectTests": "checks the launch signal in",
+          "retreat": "blinks back to staging"
+        }
+      },
+      "sprites": [],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "character": "flash-riku",
+      "cards": [
+        "docs/characters/flash-riku.md"
+      ],
+      "page": "docs/repo-pets/flash-riku.md",
+      "dir": "assets/repo-pets/flash-riku"
+    },
+    {
+      "slug": "kuro-guard",
+      "name": "Kuro Guard",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Steward",
+      "department": "Security Department",
+      "glyph": "🛡️",
+      "catchphrase": "The shield that stands between threats and the kitchen.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 5,
+          "files": 3,
+          "parent": 2,
+          "security": 10,
+          "infra": 4,
+          "config": 4
+        },
+        "verbs": {
+          "enterDirectory": "guards the entrance to",
+          "inspectFile": "checks the threat surface in",
+          "inspectConfig": "hardens the gate around",
+          "inspectDocs": "reviews the defense doctrine in",
+          "inspectTests": "guards the quality gate in",
+          "retreat": "falls back to perimeter watch"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/kuro-guard.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/kuro-guard.png",
+      "character": "kuro-guard",
+      "cards": [
+        "docs/characters/kuro-guard.md",
+        "docs/characters/kuro-guard.md",
+        "docs/characters/kuro-guard.md",
+        "docs/characters/kuro-guard.md"
+      ],
+      "page": "docs/repo-pets/kuro-guard.md",
+      "dir": "assets/repo-pets/kuro-guard"
+    },
+    {
+      "slug": "scale-oni",
+      "name": "Scale Oni",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Rotisseur",
+      "department": "Infrastructure Department",
+      "glyph": "📈",
+      "catchphrase": "When demand rises, he grows. Handles more and never backs down.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 5,
+          "files": 3,
+          "parent": 2,
+          "infra": 8,
+          "deploy": 6,
+          "performance": 8
+        },
+        "verbs": {
+          "enterDirectory": "expands into",
+          "inspectFile": "checks load capacity in",
+          "inspectConfig": "tunes autoscaling heat in",
+          "inspectDocs": "reads the capacity map in",
+          "inspectTests": "runs load rituals over",
+          "retreat": "shrinks back to standby"
+        }
+      },
+      "sprites": [],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "character": "scale-oni",
+      "cards": [
+        "docs/characters/scale-oni.md",
+        "docs/characters/scale-oni.md",
+        "docs/characters/scale-oni.md"
+      ],
+      "page": "docs/repo-pets/scale-oni.md",
+      "dir": "assets/repo-pets/scale-oni"
+    },
+    {
+      "slug": "build-kun",
+      "name": "Build-Kun",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Boulanger",
+      "department": "Pipeline Department",
+      "glyph": "📦",
+      "catchphrase": "Bakes fresh images from clean recipes. Every build is a new creation.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 4,
+          "files": 4,
+          "parent": 2,
+          "build": 10,
+          "docker": 8,
+          "ci": 5
+        },
+        "verbs": {
+          "enterDirectory": "opens the oven door into",
+          "inspectFile": "proofs the build recipe in",
+          "inspectConfig": "sets the bake profile in",
+          "inspectDocs": "reads the bakery notes in",
+          "inspectTests": "checks whether the loaf rises in",
+          "retreat": "sets the tray aside and exits"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/build-kun.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/build-kun.png",
+      "character": "build-kun",
+      "cards": [
+        "docs/characters/build-kun.md",
+        "docs/characters/build-kun.md"
+      ],
+      "page": "docs/repo-pets/build-kun.md",
+      "dir": "assets/repo-pets/build-kun"
+    },
+    {
+      "slug": "streama",
+      "name": "Streama",
+      "kind": "terminal_repo_pet",
+      "species": null,
+      "role": "Poissonnier",
+      "department": "Infrastructure Department",
+      "glyph": "🌊",
+      "catchphrase": "Streams data like water. Flow never stops.",
+      "behaviors": {
+        "roaming_bias": {
+          "directories": 4,
+          "files": 4,
+          "parent": 2,
+          "data": 10,
+          "api": 4,
+          "logs": 6
+        },
+        "verbs": {
+          "enterDirectory": "flows through",
+          "inspectFile": "channels data currents in",
+          "inspectConfig": "checks the stream valve in",
+          "inspectDocs": "reads the current map in",
+          "inspectTests": "watches the flow tests in",
+          "retreat": "drifts back to calm water"
+        }
+      },
+      "sprites": [
+        "assets/repo-pets/cutouts/streama.png"
+      ],
+      "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+      "cutout": "assets/repo-pets/cutouts/streama.png",
+      "character": "streama",
+      "cards": [
+        "docs/characters/streama.md",
+        "docs/characters/streama.md"
+      ],
+      "page": "docs/repo-pets/streama.md",
+      "dir": "assets/repo-pets/streama"
+    },
+    {
+      "slug": "cache-cat",
+      "name": "Cache Cat",
+      "kind": "brigade_mascot",
+      "species": "cat",
+      "species_source": "animal word in the name",
+      "role": "Cache Keeper",
+      "department": "Service Layer",
+      "sprites": [
+        "assets/repo-pets/cache-cat/Cache-Cat.png",
+        "assets/repo-pets/cutouts/cache-cat.png"
+      ],
+      "cutout": "assets/repo-pets/cutouts/cache-cat.png",
+      "behaviors": {
+        "walks_in_readme_strip": true
+      },
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:91",
+      "art_source": "icloud/Mise-OS-main.zip/Mise-OS-main/attached_assets/miseos_agents/03_service_layer/Cache-Cat.png",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/cache-cat.md",
+      "dir": "assets/repo-pets/cache-cat"
+    },
+    {
+      "slug": "patch-panda",
+      "name": "Patch Panda",
+      "kind": "brigade_mascot",
+      "species": "panda",
+      "species_source": "animal word in the name",
+      "role": "Hotfix Patcher",
+      "department": "Service Layer",
+      "sprites": [
+        "assets/repo-pets/patch-panda/Patch-Panda.png",
+        "assets/repo-pets/cutouts/patch-panda.png"
+      ],
+      "cutout": "assets/repo-pets/cutouts/patch-panda.png",
+      "behaviors": {
+        "walks_in_readme_strip": true
+      },
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:95",
+      "art_source": "icloud/Mise-OS-main.zip/Mise-OS-main/attached_assets/miseos_agents/03_service_layer/Patch-Panda.png",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/patch-panda.md",
+      "dir": "assets/repo-pets/patch-panda"
+    },
+    {
+      "slug": "relay-fox",
+      "name": "Relay Fox",
+      "kind": "brigade_mascot",
+      "species": "fox",
+      "species_source": "animal word in the name",
+      "role": "Message Relay",
+      "department": "Service Layer",
+      "sprites": [
+        "assets/repo-pets/relay-fox/Relay-Fox.png",
+        "assets/repo-pets/cutouts/relay-fox.png"
+      ],
+      "cutout": "assets/repo-pets/cutouts/relay-fox.png",
+      "behaviors": {
+        "walks_in_readme_strip": true
+      },
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:96",
+      "art_source": "icloud/Mise-OS-main.zip/Mise-OS-main/attached_assets/miseos_agents/03_service_layer/Relay-Fox.png",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/relay-fox.md",
+      "dir": "assets/repo-pets/relay-fox"
+    },
+    {
+      "slug": "ticket-tengu",
+      "name": "Ticket Tengu",
+      "kind": "brigade_mascot",
+      "species": "tengu (crow-like yōkai)",
+      "species_source": "animal word in the name",
+      "role": "Ticket Router",
+      "department": "Service Layer",
+      "sprites": [
+        "assets/repo-pets/ticket-tengu/Ticket-Tengu.png",
+        "assets/repo-pets/cutouts/ticket-tengu.png"
+      ],
+      "cutout": "assets/repo-pets/cutouts/ticket-tengu.png",
+      "behaviors": {
+        "walks_in_readme_strip": true
+      },
+      "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:98",
+      "art_source": "icloud/Mise-OS-main.zip/Mise-OS-main/attached_assets/miseos_agents/03_service_layer/Ticket-Tengu.png",
+      "character": null,
+      "cards": [],
+      "page": "docs/repo-pets/ticket-tengu.md",
+      "dir": "assets/repo-pets/ticket-tengu"
+    },
+    {
+      "slug": "orderly-owl",
+      "name": "Orderly Owl",
+      "kind": "animal_character",
+      "species": "owl",
+      "species_source": "animal word in the name",
+      "role": "Controleur",
+      "department": "Not yet defined in the source material",
+      "sprites": [
+        "assets/player-cards/1by1-chefs/thumbs/orderly-owl.webp"
+      ],
+      "behaviors": {},
+      "source": "data/characters/orderly-owl.json",
+      "character": "orderly-owl",
+      "cards": [
+        "docs/characters/orderly-owl.md"
+      ],
+      "page": "docs/repo-pets/orderly-owl.md",
+      "dir": "assets/repo-pets/orderly-owl"
+    },
+    {
+      "slug": "flag-fox",
+      "name": "Flag Fox",
+      "kind": "animal_character",
+      "species": "fox",
+      "species_source": "animal word in the name",
+      "role": "Feature Flag Analytics",
+      "department": "Data & Insight Kitchen",
+      "sprites": [
+        "assets/characters/flag-fox/profile.svg"
+      ],
+      "behaviors": {},
+      "source": "data/characters/flag-fox.json",
+      "character": "flag-fox",
+      "cards": [],
+      "page": "docs/repo-pets/flag-fox.md",
+      "dir": "assets/repo-pets/flag-fox"
+    },
+    {
+      "slug": "nudge-neko",
+      "name": "Nudge Neko",
+      "kind": "animal_character",
+      "species": "cat (neko)",
+      "species_source": "animal word in the name",
+      "role": "Security Training Nudges",
+      "department": "Security Kitchen",
+      "sprites": [
+        "assets/characters/nudge-neko/profile.svg",
+        "assets/player-cards/1by1-chefs/thumbs/nudge-neko.webp",
+        "assets/player-cards/registry-pages/thumbs/nudge-neko.webp"
+      ],
+      "behaviors": {},
+      "source": "data/characters/nudge-neko.json",
+      "character": "nudge-neko",
+      "cards": [
+        "docs/characters/nudge-neko.md",
+        "docs/characters/nudge-neko.md"
+      ],
+      "page": "docs/repo-pets/nudge-neko.md",
+      "dir": "assets/repo-pets/nudge-neko"
+    },
+    {
+      "slug": "incident-kitsune",
+      "name": "Incident Kitsune",
+      "kind": "animal_character",
+      "species": "fox (kitsune)",
+      "species_source": "animal word in the name",
+      "role": "Security Incident Playbooks",
+      "department": "Security Kitchen",
+      "sprites": [
+        "assets/characters/incident-kitsune/profile.svg",
+        "assets/player-cards/1by1-chefs/thumbs/incident-kitsune.webp"
+      ],
+      "behaviors": {},
+      "source": "data/characters/incident-kitsune.json",
+      "character": "incident-kitsune",
+      "cards": [
+        "docs/characters/incident-kitsune.md"
+      ],
+      "page": "docs/repo-pets/incident-kitsune.md",
+      "dir": "assets/repo-pets/incident-kitsune"
+    }
+  ]
+}

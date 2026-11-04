@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.docs-builder",
+  "name": "MiseOS Docs Builder",
+  "type": "container",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "Containerized documentation builder for registry docs, package pages, and GitHub Pages hub output.",
+  "artifacts": {
+    "container": "ghcr.io/mise-os/miseos-docs-builder",
+    "source": "containers/docs-builder"
+  },
+  "capabilities": [
+    "build_docs",
+    "validate_links",
+    "emit_docs_index"
+  ],
+  "permissions": {
+    "runtime": {
+      "filesystem": "read_write_workspace",
+      "network": "optional"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "base_image_change",
+      "network_surface_change"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Maintainer review required",
+    "patch": "Automated validation allowed"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_only",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": false,
+    "outputs": [
+      "docs_site",
+      "docs_report"
+    ]
+  }
+}

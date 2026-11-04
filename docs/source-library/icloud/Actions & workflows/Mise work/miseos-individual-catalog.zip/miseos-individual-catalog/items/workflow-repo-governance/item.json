@@ -1,0 +1,21 @@
+{
+  "id": "workflow-repo-governance",
+  "category": "workflow",
+  "title": "Repository Governance",
+  "description": "Repository governance workflow with its required local repo-health Action.",
+  "dependencies": [
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    ".gitignore"
+  ],
+  "files": [
+    ".github/workflows/repo-governance.yml",
+    "actions/repo-health/action.yml",
+    "actions/repo-health/dist/index.js"
+  ],
+  "notes": [
+    "The health score is based on expected governance files."
+  ]
+}

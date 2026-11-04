@@ -1,0 +1,68 @@
+{
+  "id": "omar-reviewer",
+  "number": 4,
+  "name": "Omar Reviewer",
+  "miseName": "Mise PrHygieneCheck",
+  "codename": "chef.pipeline.pr-hygiene-check",
+  "department": "pipeline",
+  "departmentLabel": "Pipeline Kitchen",
+  "departmentTagline": "Build. Test. Deploy. Repeat.",
+  "rarity": "genesis",
+  "roleCategory": "delivery",
+  "identity": {
+    "nationality": "Egyptian",
+    "title": "PR Hygiene Check",
+    "signaturePhrase": "PR Hygiene Check done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in pr hygiene check so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#F97316",
+    "aura": "Pipeline Kitchen pr hygiene check aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/omar-reviewer/full-body.png",
+    "cardPath": "/assets/characters/omar-reviewer/card.png"
+  },
+  "workflow": {
+    "jobName": "PR Hygiene Check",
+    "roleName": "PR Hygiene Check microagent",
+    "summary": "Runs pr hygiene check for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Lila Branchkeeper",
+      "Hugo Matrix",
+      "Schema Sora",
+      "Capacity Kanna"
+    ]
+  },
+  "stats": {
+    "power": 86,
+    "precision": 96,
+    "speed": 72,
+    "resilience": 90,
+    "intelligence": 80,
+    "teamwork": 76
+  },
+  "genesisVariant": true,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "omar-reviewer",
+  "seasonOneCard": null,
+  "displayNumber": 4,
+  "departmentColor": "#F97316",
+  "departmentShort": "Pipeline",
+  "assetBase": "assets/characters/omar-reviewer",
+  "avatarSvg": "assets/characters/omar-reviewer/avatar.svg",
+  "cardSvg": "assets/characters/omar-reviewer/card.svg"
+}

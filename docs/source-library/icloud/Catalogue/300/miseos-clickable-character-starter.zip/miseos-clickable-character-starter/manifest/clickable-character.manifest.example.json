@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "characterId": "miseos.character.demo",
+  "asset": {
+    "pngPath": "/assets/character-placeholder.png",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "hotspots": [
+    {
+      "id": "inspect-core",
+      "name": "Inspect character core",
+      "shape": {
+        "type": "circle",
+        "x": 512,
+        "y": 430,
+        "r": 180
+      },
+      "actionId": "inspect",
+      "requiresNft": false
+    },
+    {
+      "id": "launch-hand",
+      "name": "Launch approved workflow",
+      "shape": {
+        "type": "rect",
+        "x": 690,
+        "y": 480,
+        "w": 220,
+        "h": 300
+      },
+      "actionId": "launch_workflow",
+      "requiresNft": false
+    }
+  ],
+  "policies": {
+    "explicitConsent": true,
+    "noEmbeddedCode": true,
+    "allowlistOnly": true
+  }
+}

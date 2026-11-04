@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MiseOS Character Canon Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema",
+    "record_id",
+    "record_kind",
+    "canon_status",
+    "version",
+    "identity",
+    "classification",
+    "stats",
+    "media",
+    "provenance"
+  ],
+  "properties": {
+    "schema": {
+      "const": "miseos.character.canon.v1"
+    },
+    "record_kind": {
+      "const": "character_canon"
+    },
+    "canon_status": {
+      "enum": [
+        "CANON",
+        "INFERRED",
+        "PROPOSED",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "character_id",
+        "name",
+        "slug"
+      ]
+    },
+    "stats": {
+      "type": "object"
+    },
+    "media": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "object"
+    }
+  }
+}

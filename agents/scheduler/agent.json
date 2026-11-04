@@ -1,0 +1,20 @@
+{
+  "slug": "scheduler",
+  "name": "Scheduler",
+  "kind": "brigade_mascot_agent",
+  "role": "Job Scheduler",
+  "group": "Kitchen Operations",
+  "group_tagline": "Build · Schedule · Dispatch",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:79",
+  "thumbnail": "agents/scheduler/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--scheduler.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/scheduler.md",
+  "dir": "agents/scheduler",
+  "files": [
+    "agents/scheduler/Scheduler.png"
+  ]
+}

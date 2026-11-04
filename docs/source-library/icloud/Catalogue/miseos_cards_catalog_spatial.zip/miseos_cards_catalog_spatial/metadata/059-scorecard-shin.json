@@ -1,0 +1,197 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #059 — Scorecard Shin",
+  "description": "Scorecard Shin serves the Security Kitchen as the brigade's security scorecard. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/059-scorecard-shin.jpg",
+  "animation_url": "media/animation/059-scorecard-shin.mp4",
+  "external_url": "https://miseos.dev/agents/scorecard-shin",
+  "background_color": "8B1E2D",
+  "spatial_screen": {
+    "card_id": "MISE-059",
+    "level": 28,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": 79,
+      "aligned_pages": [
+        79,
+        85
+      ],
+      "reference_image": "assets/reference/page-079.jpg",
+      "thumbnail": "assets/thumbnails/page-079.jpg",
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.059",
+    "number": 59,
+    "slug": "scorecard-shin",
+    "codename": "SCORECARD_SHIN",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Security Kitchen",
+    "department_code": "security",
+    "role": "Security Scorecard",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 28
+  },
+  "lore": {
+    "summary": "Scorecard Shin serves the Security Kitchen as the brigade's security scorecard. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Scorecard Shin performs security scorecard within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Red Oni",
+      "Threat Taro",
+      "Secure Sakura"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE SECURITY SCORECARD",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Security Scorecard Protocol",
+      "type": "active",
+      "effect": "Executes the core security scorecard workflow with evidence capture.",
+      "command": "MISE SECURITY SCORECARD"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next security station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 79,
+    "precision": 82,
+    "speed": 55,
+    "resilience": 76,
+    "intelligence": 61,
+    "teamwork": 82
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Security Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Security Scorecard"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 28,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 79,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 55,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 61,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 82,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/059-scorecard-shin.jpg",
+    "reference_art": "assets/reference/page-079.jpg",
+    "thumbnail": "assets/thumbnails/page-079.jpg",
+    "animation": {
+      "uri": "media/animation/059-scorecard-shin.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/059-scorecard-shin.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/059-scorecard-shin.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/059-scorecard-shin.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/059-scorecard-shin.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

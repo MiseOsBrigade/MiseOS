@@ -1,0 +1,42 @@
+{
+  "slug": "kuro-guard",
+  "name": "Kuro Guard",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Steward",
+  "department": "Security Department",
+  "glyph": "🛡️",
+  "catchphrase": "The shield that stands between threats and the kitchen.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 5,
+      "files": 3,
+      "parent": 2,
+      "security": 10,
+      "infra": 4,
+      "config": 4
+    },
+    "verbs": {
+      "enterDirectory": "guards the entrance to",
+      "inspectFile": "checks the threat surface in",
+      "inspectConfig": "hardens the gate around",
+      "inspectDocs": "reviews the defense doctrine in",
+      "inspectTests": "guards the quality gate in",
+      "retreat": "falls back to perimeter watch"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/kuro-guard.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/kuro-guard.png",
+  "character": "kuro-guard",
+  "cards": [
+    "docs/characters/kuro-guard.md",
+    "docs/characters/kuro-guard.md",
+    "docs/characters/kuro-guard.md",
+    "docs/characters/kuro-guard.md"
+  ],
+  "page": "docs/repo-pets/kuro-guard.md",
+  "dir": "assets/repo-pets/kuro-guard"
+}

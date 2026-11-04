@@ -1,0 +1,92 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "catalog-registry-core-shared",
+  "name": "MiseOS Registry Shared Runtime",
+  "kind": "catalog_item",
+  "aliases": [],
+  "sources": {
+    "name": "data/imports/miseos-individual-catalog-items.json",
+    "role": "data/imports/miseos-individual-catalog-items.json (category)",
+    "workflow.summary": "data/imports/miseos-individual-catalog-items.json",
+    "implementation": "git ls-files grep + repo"
+  },
+  "catalog_item": {
+    "id": "registry-core-shared",
+    "category": "registry",
+    "title": "MiseOS Registry Shared Runtime",
+    "description": "Original shared TypeScript runtime, tests, license, and capability documentation used by the 23 registry baseline capabilities.",
+    "dependencies": [],
+    "files": [
+      "miseos-registry/LICENSE",
+      "miseos-registry/docs/REGISTRY-CAPABILITIES.md",
+      "miseos-registry/packages/core/package.json",
+      "miseos-registry/packages/core/tsconfig.json",
+      "miseos-registry/packages/core/src/index.ts",
+      "miseos-registry/packages/core/src/catalog.ts",
+      "miseos-registry/packages/core/src/helpers.ts",
+      "miseos-registry/packages/core/src/handlers.ts",
+      "miseos-registry/packages/core/src/runtime.ts",
+      "miseos-registry/packages/core/src/types.ts",
+      "miseos-registry/packages/core/test/core.test.ts"
+    ],
+    "notes": []
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "implementation": {
+    "code_refs": [],
+    "code_ref_count": 0,
+    "data_refs": [],
+    "doc_refs": [],
+    "payload_files": [
+      "tools/devops-foundry/LICENSE",
+      "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/package.json",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/catalog.ts",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/helpers.ts",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/index.ts",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/runtime.ts",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/types.ts",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+      "tools/devops-foundry/vendor/miseos-registry-core/packages/core/tsconfig.json"
+    ],
+    "tool_dir": "tools/devops-foundry",
+    "app_code_refs": [],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {},
+  "role": "registry",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Original shared TypeScript runtime, tests, license, and capability documentation used by the 23 registry baseline capabilities.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "installs_files": "miseos-registry/LICENSE, miseos-registry/docs/REGISTRY-CAPABILITIES.md, miseos-registry/packages/core/package.json, miseos-registry/packages/core/tsconfig.json, miseos-registry/packages/core/src/index.ts, miseos-registry/packages/core/src/catalog.ts, miseos-registry/packages/core/src/helpers.ts, miseos-registry/packages/core/src/handlers.ts, miseos-registry/packages/core/src/runtime.ts, miseos-registry/packages/core/src/types.ts, miseos-registry/packages/core/test/core.test.ts",
+      "source": "data/imports/miseos-individual-catalog-items.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Not yet defined in the source material",
+    "mission": "Not yet defined in the source material",
+    "problem": "Original shared TypeScript runtime, tests, license, and capability documentation used by the 23 registry baseline capabilities.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

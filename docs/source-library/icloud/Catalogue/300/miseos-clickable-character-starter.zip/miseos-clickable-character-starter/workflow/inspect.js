@@ -1,0 +1,1 @@
+export async function inspect(context){return{ok:true,action:'inspect',message:'Approved inspection workflow completed.',context}} export default inspect;

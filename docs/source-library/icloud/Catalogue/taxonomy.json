@@ -1,0 +1,84 @@
+{
+  "schema": "miseos.taxonomy.v2",
+  "official_model": {
+    "character_agents": 112,
+    "registry_manifests": 23,
+    "total_ecosystem_items": 135,
+    "canonical_statement": "112 character agents + 23 registry manifests = 135 MiseOS ecosystem items."
+  },
+  "record_kinds": {
+    "character_card": {
+      "count": 112,
+      "description": "Collectible brigade operator with mascot art, lore, workflow, stats, commands, and media extensions."
+    },
+    "registry_manifest": {
+      "count": 23,
+      "description": "Product infrastructure. Never counted as a character."
+    }
+  },
+  "departments": [
+    "Data & Insight Kitchen",
+    "Operations Kitchen",
+    "Pipeline Kitchen",
+    "Platform Kitchen",
+    "Reliability Kitchen",
+    "Security Kitchen"
+  ],
+  "rarities": [
+    "Common",
+    "Epic",
+    "Genesis",
+    "Legendary",
+    "Mythic",
+    "Rare"
+  ],
+  "registry_types": [
+    "agent",
+    "analytics",
+    "container",
+    "package",
+    "policy",
+    "schema",
+    "sdk",
+    "template",
+    "theme",
+    "workflow"
+  ],
+  "media_slots": [
+    "image",
+    "reference_art",
+    "thumbnail",
+    "animation",
+    "video",
+    "model_3d",
+    "audio",
+    "ar"
+  ],
+  "workflow_fields": [
+    "inputs",
+    "outputs",
+    "proof_gate",
+    "synced_agents",
+    "summary"
+  ],
+  "stat_fields": [
+    "power",
+    "precision",
+    "speed",
+    "resilience",
+    "intelligence",
+    "teamwork"
+  ],
+  "provenance_classes": [
+    "photo_aligned_completion",
+    "user_supplied_roster"
+  ],
+  "brand": {
+    "Umami Black": "#0E0F10",
+    "Gold Ladle": "#D4AF37",
+    "Broth Cream": "#F6F1E7",
+    "Flame Orange": "#E97822",
+    "Ink Blue": "#1B2A41",
+    "Matcha Green": "#2E6B4E"
+  }
+}

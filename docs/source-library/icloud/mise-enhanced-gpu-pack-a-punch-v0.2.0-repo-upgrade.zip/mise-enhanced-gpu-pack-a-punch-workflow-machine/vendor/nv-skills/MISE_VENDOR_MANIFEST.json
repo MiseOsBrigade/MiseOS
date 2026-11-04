@@ -1,0 +1,3751 @@
+{
+  "source": "uploaded skills-main.zip",
+  "file_count": 749,
+  "files": [
+    {
+      "path": "vendor/nv-skills/.github/CODEOWNERS",
+      "bytes": 184,
+      "sha256": "4f976f0062b84f6b4e6df025ed7f1c4cdc08bf79562a400095a3d5e574450ea0"
+    },
+    {
+      "path": "vendor/nv-skills/.github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 1715,
+      "sha256": "dd8a2a3e72283dac2103d43b459a60d5861ce995f6a94a569c20813e2b5c3dc5"
+    },
+    {
+      "path": "vendor/nv-skills/.github/scripts/regenerate-readme.sh",
+      "bytes": 5037,
+      "sha256": "aabb08189e3ca4b71c2fc178e83d998f2d8954a473440a013c7b297b5355054b"
+    },
+    {
+      "path": "vendor/nv-skills/.github/workflows/dco.yml",
+      "bytes": 2291,
+      "sha256": "c6ee7cf2e9c4dd984b3ac5c60aeae4cf02ed1ef9fa8062486a84c41f12c7b822"
+    },
+    {
+      "path": "vendor/nv-skills/.github/workflows/request-nvskills-ci.yml",
+      "bytes": 739,
+      "sha256": "89410cd4e01f43d191abe13ca874071755a84a6bae8009518b357596f1e6a6a2"
+    },
+    {
+      "path": "vendor/nv-skills/.github/workflows/sync-skills.yml",
+      "bytes": 13029,
+      "sha256": "7a424f2631ed5681ea67416057766eee583f0b893faed4605ebc9f590b32cc33"
+    },
+    {
+      "path": "vendor/nv-skills/.github/workflows/team-request.yml",
+      "bytes": 7958,
+      "sha256": "b4abd04071fd201afdfa553b19648f19b1ea2f09e7bf2975b6372f3f81ad3cc1"
+    },
+    {
+      "path": "vendor/nv-skills/.github/workflows/verify-authors.yml",
+      "bytes": 3936,
+      "sha256": "dd97e08fd825ec969cf69e9705826326077500ad767614604f865fff568f0c56"
+    },
+    {
+      "path": "vendor/nv-skills/.gitignore",
+      "bytes": 306,
+      "sha256": "00033ed15cc5907bb422139530fc83997ca7a2ed5bfda8233a84caa23a3dcab7"
+    },
+    {
+      "path": "vendor/nv-skills/CHANGELOG.md",
+      "bytes": 1935,
+      "sha256": "742113e80800bbbb7afbc5cf8a06553ef21302a214ab601d7687f17630b8ef97"
+    },
+    {
+      "path": "vendor/nv-skills/CODE_OF_CONDUCT.md",
+      "bytes": 1524,
+      "sha256": "70edad6dcb6eae0aa6aef8953b836dd6cea06c19137ac281dc653fe984889c97"
+    },
+    {
+      "path": "vendor/nv-skills/CONTRIBUTING.md",
+      "bytes": 2787,
+      "sha256": "d8d3649e2072faab67aa96ff35087410c22143cbeb8919562600aba18f08e29a"
+    },
+    {
+      "path": "vendor/nv-skills/LICENSE",
+      "bytes": 12140,
+      "sha256": "00ce71ae24185f8db95a290ecda0e0327d084e16d84de93793e412570deaa417"
+    },
+    {
+      "path": "vendor/nv-skills/README.md",
+      "bytes": 19164,
+      "sha256": "c66b52093737144a21504265e2d989ccaf1e335296525d1fefc6697021f47875"
+    },
+    {
+      "path": "vendor/nv-skills/SECURITY.md",
+      "bytes": 2036,
+      "sha256": "c7ef66b30978b5f0cd8301ca5fc942c9711bbaaf55bde8e524460f8756766b1c"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/README.md",
+      "bytes": 3497,
+      "sha256": "4816de2230a32281d7a54a6b0739b910b658e4012cab3f1797aec72ab177ac99"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/cuda-q.yml",
+      "bytes": 272,
+      "sha256": "1164218348535a78ae9d6865c4525d748d58670325779b5a5d8a61848d2e16a0"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/cuopt.yml",
+      "bytes": 240,
+      "sha256": "3ce3a19ca28585c1ac8a17eff658c94c6f77dc818c5e5888e52f6e7a7cc3cf19"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/dali.yml",
+      "bytes": 239,
+      "sha256": "0ed324035389b0df10853e654fe2e1265d89691c7c6898527c7ae7be69f26133"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/deepstream.yml",
+      "bytes": 179,
+      "sha256": "9298754c5e8fc2e3032b7c150e7465316b8f5f7e15a57468a14ff95877408564"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/megatron-bridge.yml",
+      "bytes": 249,
+      "sha256": "07a4a0a9b94b2bcbc14c04d6348f60aaba4626ed32d2a4eecf392506a6756af0"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/megatron-core.yml",
+      "bytes": 239,
+      "sha256": "b5bb79635df4f601e8e1451b4215b83151626a7fd75e909588716e096d1af261"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/model-optimizer.yml",
+      "bytes": 248,
+      "sha256": "9a1e1d960175d6e8f7948fd9dc29325494a6abca17fc3bb0aea168f14a54edf5"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/nemo-evaluator.yml",
+      "bytes": 380,
+      "sha256": "07ba52ea5f031ff834c7025ff6d908ae1535c890b231bfc5777f4151ac76233e"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/nemo-gym.yml",
+      "bytes": 210,
+      "sha256": "09eb3365a2476bf49ad46b09893295fa855ff1323204ba19253ef7fcdc8b5fa4"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/nemo-rl.yml",
+      "bytes": 191,
+      "sha256": "341fc4a37a4816797a39a14bdb71a01f69e677ddac2f094eec0f2e4f8320d450"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/nemoclaw.yml",
+      "bytes": 295,
+      "sha256": "790168513198ae1d2e2c1424b73fbd6e2c71b1a31f75362b7fa98b231c1463ae"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/nemotron-voice-agent.yml",
+      "bytes": 273,
+      "sha256": "a0b1f98337726eb6d00593d557090bd2f623ad2ebfc4e4411619fbba4a1bdaff"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/rag-blueprint.yml",
+      "bytes": 253,
+      "sha256": "09da3fe38670de703b0db98096706cfed2614714ce925d2789fcf778133d2676"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/tensorrt-llm.yml",
+      "bytes": 287,
+      "sha256": "d67e3d8538863e4649283071668271ee7bf358bf72611de1fae09b7c02da772a"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/tilegym.yml",
+      "bytes": 244,
+      "sha256": "c64f6e6ffa8b65e22656081e2b66f16de0c61a9e8e6eca498cbbde17344c86cb"
+    },
+    {
+      "path": "vendor/nv-skills/components.d/video-search-and-summarization.yml",
+      "bytes": 356,
+      "sha256": "f13037c42b7efccab6a2fb0906c454106e20de1d68db10bfe09297929ee697c8"
+    },
+    {
+      "path": "vendor/nv-skills/docs/README.md",
+      "bytes": 1702,
+      "sha256": "c8bd9650a4ca9af8bcf40f1d8140e97f1597d5601adc43008ad80d9cba8ce642"
+    },
+    {
+      "path": "vendor/nv-skills/docs/advanced-install.mdx",
+      "bytes": 3198,
+      "sha256": "e4c67f9b678e3215f7fd080d34e0c6c4e70d093155f3000246e349bb4b761f4f"
+    },
+    {
+      "path": "vendor/nv-skills/docs/agent-skill-trust-pipeline.mdx",
+      "bytes": 2954,
+      "sha256": "644217fd2150bec48dccf5dab395fe63389f2ac5ddbb0c61039a4ebaebb83cf4"
+    },
+    {
+      "path": "vendor/nv-skills/docs/index.mdx",
+      "bytes": 1793,
+      "sha256": "75c424850bd0ab5e626bf0036e7c32700af029a60fa89f2e1d22f5ae405ee4f7"
+    },
+    {
+      "path": "vendor/nv-skills/docs/release-checklist.mdx",
+      "bytes": 1961,
+      "sha256": "63b2d2abdd4b525dde9d83b24257fbf44764e3a8e8e9ebe252d24139dbfe62a2"
+    },
+    {
+      "path": "vendor/nv-skills/docs/scanning-agent-skills.mdx",
+      "bytes": 3702,
+      "sha256": "9e2dd317d5e996e59fbbf6da9dfbd8a20b01faa53eaf8681b9bf4acbcc7e985c"
+    },
+    {
+      "path": "vendor/nv-skills/docs/signing-agent-skills.mdx",
+      "bytes": 3215,
+      "sha256": "b779e7240a4e8e48894f6a604b09b035d96d7d2687dbe5847c4f9e084fbf114a"
+    },
+    {
+      "path": "vendor/nv-skills/docs/skill-cards.mdx",
+      "bytes": 3952,
+      "sha256": "77a944b41f41d32cbdf38e3a407de186d919ff3ba724b3036e9a3dd55e0fcac7"
+    },
+    {
+      "path": "vendor/nv-skills/fern/docs.yml",
+      "bytes": 1319,
+      "sha256": "ca54d1d406247aebde4da310fe2b23aa5d1219a2b7737f22c40b567b84dcc6b4"
+    },
+    {
+      "path": "vendor/nv-skills/fern/fern.config.json",
+      "bytes": 54,
+      "sha256": "aa9fade8da4c5d7437de1cb8b89fb1ce5c845eabdaa9c0e8ab7a83e895296d6f"
+    },
+    {
+      "path": "vendor/nv-skills/nv-agent-root-cert.pem",
+      "bytes": 847,
+      "sha256": "fc15d9749a8933482b896e2b204fa59dc7bd86aac48e508d159a8c6dd14420fc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/CUDA-Q/cudaq-guide/SKILL.md",
+      "bytes": 11379,
+      "sha256": "9ad397ba7bc84757a7e6bb8da1426564d9116bb9bc899e9da3778c16a9a9fbdc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/DALI/dali-dynamic-mode/SKILL.md",
+      "bytes": 8995,
+      "sha256": "f90211643ac3e00ba5ecb24c8676cd073a94405abdc4dd052fc5d51e4ac22161"
+    },
+    {
+      "path": "vendor/nv-skills/skills/DALI/dali-dynamic-mode/evals/evals.json",
+      "bytes": 7946,
+      "sha256": "35bb1d4cf1ee88e84c354944102bd9a8828e2cd70a62cb2f18d26237fd744c3d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/DALI/dali-dynamic-mode/evals/files/pipeline_to_convert.py",
+      "bytes": 823,
+      "sha256": "509239b25d677b044758c3cdf797f37b0eddbbad197394e2b27b52d84d31bd08"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/adding-model-support/SKILL.md",
+      "bytes": 19128,
+      "sha256": "2cb76bf05fb954b238b20e3d3e58896b9b98c2b6b7d9c8c8ca6eb8dd72f21123"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/adding-model-support/llm-patterns.md",
+      "bytes": 8327,
+      "sha256": "0e72b61f8b1bf1ce11d1d4166e4f924ad098f862e3d41165ce38fa63d2472a7d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/adding-model-support/recipe-patterns.md",
+      "bytes": 4656,
+      "sha256": "2aee4a2645b44aad9c0ef23b996d5480ef8baaf032af00a06af0b40e42db2df7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/adding-model-support/tests-and-examples.md",
+      "bytes": 11355,
+      "sha256": "75396d54a08fc42d5b9ff154a2fe83b326bb5daf904aca356f55cbc9bd082b0f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/adding-model-support/vlm-patterns.md",
+      "bytes": 8456,
+      "sha256": "65116d679b03fe766943620cc1cb89ef023838d26efb451e18ab9cdcf73ee34d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/build-and-dependency/SKILL.md",
+      "bytes": 6224,
+      "sha256": "c5b8a7b96a425dcfb03ca666d8df34ebaf8d2a950d4d8d45e7d306fc1a941358"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/bump-dependency/SKILL.md",
+      "bytes": 11996,
+      "sha256": "8c20612c829bc518468ff2d4b7410194d2d88603b802c9d4bc396e60623f9e6a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/cicd/SKILL.md",
+      "bytes": 5862,
+      "sha256": "8cffeadbd1f807f0ea418b6a33dc5f409e8680c39990fc7246e596133f78a387"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/linting-and-formatting/SKILL.md",
+      "bytes": 7487,
+      "sha256": "b5d33da418703d750c4ea30ed63908fe6de48126195483fd3810b81bfe582071"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/mlm-bridge-training/SKILL.md",
+      "bytes": 5629,
+      "sha256": "eb93d6ba6dfb60b7289a872e34605182138cfbc27207474fb3c90b6a2bddfe94"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/mlm-bridge-training/card.yaml",
+      "bytes": 2031,
+      "sha256": "b90dfaa42d20e152ca26b0e03d8b1f69b56c36b84bbfb0506e2d8cf812f9f177"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/multi-node-slurm/SKILL.md",
+      "bytes": 20828,
+      "sha256": "20a680bf45c32e0d67e7d06000976cfe37ad4fef388f27cdf89e40b1f6d0e0bb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/nemo-rl-e2e-testing/SKILL.md",
+      "bytes": 29831,
+      "sha256": "f809f2f4d17eaec43de438cc9596f293e6480ff8563e7cdf6c9073a2d8552eeb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/parity-testing/SKILL.md",
+      "bytes": 7259,
+      "sha256": "843a12e6c3c55d4d6bd1960035af0c7370d8e72ff510e554e6bdd56143c66846"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-activation-recompute/SKILL.md",
+      "bytes": 9223,
+      "sha256": "4e46981654b9c116fff0d8d753fd05f195d82a2608f0ca446cfd05880bf37c69"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-activation-recompute/card.yaml",
+      "bytes": 7907,
+      "sha256": "16cf2158d7fae8ea49875f2f9d1a23a76df7f7121371cac5f5031a260b01b024"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-cpu-offloading/SKILL.md",
+      "bytes": 11475,
+      "sha256": "5e9450c2347ced4aa5c887635a23d3e39a50e912f383cb6212441f7487d001b9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-cpu-offloading/card.yaml",
+      "bytes": 8241,
+      "sha256": "560c44bc9e5cdf4b7db9e93762e3d207651600c9241aaac354c36b6aa8fe0803"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-cuda-graphs/SKILL.md",
+      "bytes": 13956,
+      "sha256": "69e13b48b81bbe144a6f8cf422208f4361a650b5ee4c6bee5bf138deecca6a9c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-cuda-graphs/card.yaml",
+      "bytes": 13826,
+      "sha256": "a74af9b10bd22e917a61c9b21b71728e49f1153cc439ee4831d45fc5551fdcc3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-expert-parallel-overlap/SKILL.md",
+      "bytes": 10849,
+      "sha256": "b60dbb53750062ae5c538f0c55bf97bd5019832ef314123b45688c59b915ba5b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-expert-parallel-overlap/card.yaml",
+      "bytes": 7519,
+      "sha256": "7874d5ced6b095f3381b8944d7d4430d6686345f0b37e5344075f304c0f027e6"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-hierarchical-context-parallel/SKILL.md",
+      "bytes": 6141,
+      "sha256": "7a8d47e16abf918b33acd412c5857861058082f8b9654b5c3773944cd7b276b1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-hierarchical-context-parallel/card.yaml",
+      "bytes": 2800,
+      "sha256": "850639603fb4d5fea25d30d61314e4806cc97ec4bad6deb9477d33a24310bd54"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-megatron-fsdp/SKILL.md",
+      "bytes": 3846,
+      "sha256": "28489f98ce9deba1d119e49569664f1ec74e454570dbe28574f3cce80fc1a877"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-megatron-fsdp/card.yaml",
+      "bytes": 2108,
+      "sha256": "c75ca39e811b5a756ba16c0017363e90166dc0648d5550f06dca30aea12e9e3f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-memory-tuning/SKILL.md",
+      "bytes": 9564,
+      "sha256": "0fb75f4ca26f63662aea7d5455d56aefedf6086d6fc5df00c560e3f54ac4d924"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-memory-tuning/card.yaml",
+      "bytes": 6902,
+      "sha256": "fbeaea4e4094ed3da0459a67bdbcbdbdd8b5c68f3d8d85809d2b023027a6a682"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-comm-overlap/SKILL.md",
+      "bytes": 5031,
+      "sha256": "3af6d0be7f6983c8ee9fa22362c9c2e453624c8a0a291efe31f9b0b1e433401c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-comm-overlap/card.yaml",
+      "bytes": 2075,
+      "sha256": "c3328ec179c7846f3457c55dd84a6c572980598bea3dc3d611481cdf98825b4f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-dispatcher-selection/SKILL.md",
+      "bytes": 7904,
+      "sha256": "5e542325fff8cdffc0440d910fd681ad33c94cc1d25deaa022731b677b36a035"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-dispatcher-selection/card.yaml",
+      "bytes": 4045,
+      "sha256": "2cd098a0f36026f487fdc83c2a0e3e89cd193d76d329f16412413b6d8a724635"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-hardware-configs/SKILL.md",
+      "bytes": 5093,
+      "sha256": "523af3fa20de5af2ad617967928b7208705f00f90c47a5cbb175cb6897e8f2f6"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-hardware-configs/card.yaml",
+      "bytes": 5298,
+      "sha256": "0cae981c487ee3055ac6c23a82b9acccdc531286fb35e3974b0827780e2664fe"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-long-context/SKILL.md",
+      "bytes": 4876,
+      "sha256": "422091ca4389db8d712bbc23f3ae25e29e9f847b8f4974b2a4a221d2c38e420b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-long-context/card.yaml",
+      "bytes": 3531,
+      "sha256": "0820c9dcb16e38b3799002724bd932a90296e7c7721c06e58235b097dea82c47"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-optimization-workflow/SKILL.md",
+      "bytes": 5915,
+      "sha256": "50b430cdea7b851c64ec9b0ae58faee408a1c0a65d77e7063a0ed19304a858e0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-optimization-workflow/card.yaml",
+      "bytes": 5140,
+      "sha256": "76ce3dafac9486b559d56cd5db030ae1dc0d4925cd1f8aea5b6ed55584f305f5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-vlm-training/SKILL.md",
+      "bytes": 5095,
+      "sha256": "cd3ec672bf35b29becc04d5849ec08827133ccfe594e91d54980eba28ebb71db"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-moe-vlm-training/card.yaml",
+      "bytes": 2993,
+      "sha256": "8ed6c61a69500a3cf8b867b216ed1f8dddc52ec780cef11e4d1f45d361fcb194"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-parallelism-strategies/SKILL.md",
+      "bytes": 9138,
+      "sha256": "915b0269d0c5dcf26865cd7e5dac36d54014fd3b133971bedcb5b2d0148ef00d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-parallelism-strategies/card.yaml",
+      "bytes": 2948,
+      "sha256": "4421d86e72db9649e4fbc998f41c5d78879458e802db95e5a12effe1e796b15b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-sequence-packing/SKILL.md",
+      "bytes": 4849,
+      "sha256": "df4d0c53245cccfdbf5556f89d81180ec7d38c96f767c7ba9152eb4298135eda"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-sequence-packing/card.yaml",
+      "bytes": 4184,
+      "sha256": "ad7e4916298a438b3a5b6b090c459e386aac233a3281f5c58cb2eb988e918b7c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-tp-dp-comm-overlap/SKILL.md",
+      "bytes": 3661,
+      "sha256": "d984fe5f94ac0d6d6c9bef6df0d356cafec6e7973b9ba4dd2a1ec82409532c97"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/perf-tp-dp-comm-overlap/card.yaml",
+      "bytes": 2103,
+      "sha256": "b46cb2ee44f5a12368b13077f10b4e6066c0782f44e1c73bb36cc91d3602c1d3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/recipe-recommender/SKILL.md",
+      "bytes": 18276,
+      "sha256": "e8bdd92599291acdea57d16a405fa92436b7f5adb3ba2a23b3e91968384cae78"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/resiliency/SKILL.md",
+      "bytes": 11200,
+      "sha256": "a6530043662e383ce1061cdac7c6b1d1ffa2f6fffdddbbceedf187815de078c3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/resiliency/card.yaml",
+      "bytes": 4871,
+      "sha256": "f17f73d3d6f7847deabda33b2550168252c6cc0046cd8261bf9c8af13362ab33"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/testing/SKILL.md",
+      "bytes": 5312,
+      "sha256": "ae62a4476bc4c05e75105fc2b3befb1be50b53a7773e23b0fc1e90ef88871cc5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Bridge/verl-e2e-testing/SKILL.md",
+      "bytes": 24034,
+      "sha256": "39b695c58fe6ed4abb66a8d3e3f6be94c9988c44eb54984d85b62f0c30434111"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/build-and-dependency/SKILL.md",
+      "bytes": 7470,
+      "sha256": "74713615b3dc2d9d2f12d585be61d68edad78426703621d7bb1ebeca2aafa8fc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/bump-base-image/SKILL.md",
+      "bytes": 10263,
+      "sha256": "c2d3769fa3e4ed27351d1e3b94f60c4dcca6e3dbf323012730aa1d8eecb72ef0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/cicd/SKILL.md",
+      "bytes": 6514,
+      "sha256": "3c55a149576468a7b570cf21678c864fd852e80885852dd52988a3a8599f2263"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/create-issue/SKILL.md",
+      "bytes": 6287,
+      "sha256": "bf166ae9aa9fc3f564d27c406b3a04720d14ee9399deed77e3a4c9c4796a209d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/linting-and-formatting/SKILL.md",
+      "bytes": 1541,
+      "sha256": "e486763eaecb521118f4d339bb4e2b43f0d4929ff5f731a236bf95173cdc8b7e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/nightly-sync/SKILL.md",
+      "bytes": 27744,
+      "sha256": "cfea603fe8a2b59596bf1741fe70b72e9ed41d0110ef32d83d06d83c3d29c957"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/onboard-gb200-1node-tests/SKILL.md",
+      "bytes": 5354,
+      "sha256": "07941d6680d30a2f270cf73a9594431cd488a5f3f0392a04aa4afe29eff1d34e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/respond-to-issue/SKILL.md",
+      "bytes": 3656,
+      "sha256": "271210572d816c9ce4f9f93d6e58d8ae78152924038d9491be58101c6b4ed982"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/run-on-slurm/SKILL.md",
+      "bytes": 6227,
+      "sha256": "057b35f644b589f96019799b420d308de5b214f7e02365d82547c890c5058713"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/split-pr/SKILL.md",
+      "bytes": 3621,
+      "sha256": "17cecdbc96f557c5ad062abd7e94682448bf71df46d6be5be09dcdd7437d94fd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/testing/SKILL.md",
+      "bytes": 6853,
+      "sha256": "db6bd9afaa7c8dfa031ca16be09accac3ca50949be74fb91b022b7e604e2b3ed"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Megatron-Core/update-golden-values/SKILL.md",
+      "bytes": 11084,
+      "sha256": "020fc9fdfe4b8fc8405f92e273036baa07ff4ab6f1748995686650adfd779452"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/accessing-mlflow/SKILL.md",
+      "bytes": 4215,
+      "sha256": "76a7730247f7a44d9457bfd69420ad920b04afd3c0e4e22561925d83f630f0bb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/common/credentials.md",
+      "bytes": 3494,
+      "sha256": "a21b5fd796ff1a1d530fec34f9583ed6923cf36ee52789a876f4200a8d33491c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/common/environment-setup.md",
+      "bytes": 2685,
+      "sha256": "8bde4f6f71c34128ae590f68b8e3fae6f1f221d59e8467e4eb26561d0bee40fb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/common/remote-execution.md",
+      "bytes": 6065,
+      "sha256": "ebf5e4fe6b18a169acda457ef189dd0674c3c923cb89038c12ad63828113d797"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/common/remote_exec.sh",
+      "bytes": 20301,
+      "sha256": "1a4d7f6d892ff90ecb466a4919d8ffefdf4d6ecf9669bb375c9f9e54a7ec5b93"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/common/slurm-setup.md",
+      "bytes": 11234,
+      "sha256": "9ce058c7ba3214ec64a13d3da06399a9cbef36d4cfb3ae8bc0a8744c7b04b681"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/common/workspace-management.md",
+      "bytes": 3999,
+      "sha256": "0af4581302910660815c5a761c3e499f889853c42620dcf20d8c01d0cb4b3805"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/debug/SKILL.md",
+      "bytes": 1207,
+      "sha256": "ca69c900802f85288f4706f526a5a2b08a11e6d6d7eafa7cf1cb00dfa0349d8e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/SKILL.md",
+      "bytes": 10116,
+      "sha256": "63a566739da2186530bd1d9d8d1f121c5ccd3bf66f30e510b94826135bb12585"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/references/setup.md",
+      "bytes": 2491,
+      "sha256": "0db0b0b01aef691e44f5617cd430618bb8bc5c5fdec8460a87e3029c843349ba"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/references/sglang.md",
+      "bytes": 2136,
+      "sha256": "9bbab2762eea8791884e162b88537f6ff328768f95eb1fb51dd7d06b5ebca784"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/references/support-matrix.md",
+      "bytes": 2629,
+      "sha256": "be5ee8b4c5e09a9572ecc8fe3aa40059268eafe1b0463fad9db4ced95bc5ad1a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/references/trtllm.md",
+      "bytes": 3312,
+      "sha256": "cd6edfd032c3c38b4d91e6b5e4cc133c5dca2364b673c777c3cf5d5fb04fa5ee"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/references/unsupported-models.md",
+      "bytes": 4886,
+      "sha256": "c157b61261a1ee2801795af2bce85acc7ebc67d15689979378ce4f78564c5e3d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/references/vllm.md",
+      "bytes": 2586,
+      "sha256": "fbba52cb40fbe7ec0db067d5c0192b025ab76028088725aaa4e317fff87e5554"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/scripts/deploy.sh",
+      "bytes": 19425,
+      "sha256": "9282303374571d8de6340d45d8e4222494a4d93f892f1009a5ed6c90096a1e7d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/deployment/tests/evals.json",
+      "bytes": 3019,
+      "sha256": "205fa03cd218968092822f035de6ca0fdf30c14ce2cfa154a330804fe696e6e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/SKILL.md",
+      "bytes": 15963,
+      "sha256": "e621a18e224452c4625b7dc21a84d8e7d68ad129cd65572044e9974741859f03"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/env.example",
+      "bytes": 727,
+      "sha256": "6a3001e633a2641f00485e6531b41d61944999f6fb4a7c4c3edcc37bdaea78c9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/examples/example_eval.yaml",
+      "bytes": 3531,
+      "sha256": "16051329d3cf1b59f2da493c965b48429d358840b153ba5ea0c04ceb0696b422"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/tasks/aime2025.yaml",
+      "bytes": 673,
+      "sha256": "32826d1464401a8a4987df1bf423607d5e551f333c74b299174b9bdf38bfe314"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/tasks/gpqa.yaml",
+      "bytes": 454,
+      "sha256": "87ef119f16a204ba423c7a32c501023a5fed8a77bbe91c5efae5a75a0cd04d58"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/tasks/ifbench.yaml",
+      "bytes": 408,
+      "sha256": "f23f130a138d6f3f19d01f430b1a32cb44d135326af7cb0ec3fff02412e5f82b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/tasks/livecodebench.yaml",
+      "bytes": 475,
+      "sha256": "c7de14a46f97405a26930461d1a91b6616abf7cbe20c76b02bdcbad87e116fd1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/tasks/mmlu_pro.yaml",
+      "bytes": 480,
+      "sha256": "813e62e3b79884cc92f5380d7065d1bc2bba9468824ab78973754f0c34564553"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/recipes/tasks/scicode.yaml",
+      "bytes": 421,
+      "sha256": "b80cdab533a17074c24c90940f19e20ba1b20afb4b316da1de08d4549029c166"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/references/model-card-research.md",
+      "bytes": 2901,
+      "sha256": "f822099ed484694be4a30ab9191eae2c401a0834b2db9c8ec2251695c8e4ee19"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/references/multi-node.md",
+      "bytes": 1781,
+      "sha256": "4fb4cadacb7e02798371caa78f20f1248c9affa1e59ee3a5c03c65fdc8951708"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/references/quantization-benchmarks.md",
+      "bytes": 1291,
+      "sha256": "aae9a4c4ab91a0476580f3bd136a0f30a1e76fce9d1e69d5f7959c26a7c7a700"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/evaluation/tests/evals.json",
+      "bytes": 4510,
+      "sha256": "5767691455c90df2be71b7b1254b7407007a8818b27c5e1cecf6490ad926427a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/SKILL.md",
+      "bytes": 6035,
+      "sha256": "61e3cd0abcc63e345eea75b2f0757f65c9c381a1082c17b1426b497ce1268995"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/references/analyze-results.md",
+      "bytes": 4221,
+      "sha256": "6fd92ab192db036bef971b727d210c7487b415cfde2a575431ac834f7b58a228"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/references/benchmarks/swebench-general-info.md",
+      "bytes": 11726,
+      "sha256": "dba4cba3fc3a003173297e14f49fe9b16adb12281f50e899a31bbfdf75ad0d05"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/references/benchmarks/terminal-bench-general-info.md",
+      "bytes": 7908,
+      "sha256": "e6b16940bfb4a463b8b4731eb877835aa0d2cc84b048cf0faef7d850054d1d11"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/references/benchmarks/terminal-bench-trace-analysis.md",
+      "bytes": 5866,
+      "sha256": "12dcbd2936ea4d8ee25a6e3fcbc882f3a7e693c559f33246f8503f24d14aa8a7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/references/check-progress.md",
+      "bytes": 1234,
+      "sha256": "ddcf0e7c846cf644ea8115af6e7b54c6b6af8f5d86ed823f68c4d3e10cabd82b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/references/debug-failed-runs.md",
+      "bytes": 6777,
+      "sha256": "5c5b2cc7baabc1726bbc4d11de7f0ecccc90cbb6208aedc73762271695efd12e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/references/run-evaluation.md",
+      "bytes": 1122,
+      "sha256": "d3a072c3ff2a4cdb2ec8da304d2ab936cf2e74008e39c9748d8527143f422385"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/launching-evals/tests.json",
+      "bytes": 2743,
+      "sha256": "27b1ab77352d735ecb6099c2313e0d742c4f11dc4177b0ba43124a296956046f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/monitor/SKILL.md",
+      "bytes": 4036,
+      "sha256": "86d0796a89c554f93d71451fa5a3c8303a73d41d297557a4f0ab7aa43660a2e5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/ptq/SKILL.md",
+      "bytes": 8319,
+      "sha256": "acc42d3c146b7c20aaf0eacda2908bcf55d148899fd5b9e7ef39e83120ff7d6f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/ptq/references/checkpoint-validation.md",
+      "bytes": 4506,
+      "sha256": "f90a5184e22f79a2ee973e6842089a37ee9e1c69144fb32e9b2a78dc0553492f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/ptq/references/launcher-guide.md",
+      "bytes": 3069,
+      "sha256": "aa20e4bb29f60923d784ee28924321553cde3162a446e49848e1cc907f617f4f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/ptq/references/slurm-setup-ptq.md",
+      "bytes": 3660,
+      "sha256": "67c0acded11d6adc07395da409157d42a760846e6175d3bc0cf7094ee6fc1981"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/ptq/references/unsupported-models.md",
+      "bytes": 18659,
+      "sha256": "cabb3fe0de8af5af013d1f76f5a69b2bcd003fa3aa30d3a2930baea6da2b6c9e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/ptq/tests.json",
+      "bytes": 3473,
+      "sha256": "40429b8400cb6a4063d6355e0053fb3bc00dd22bbfa53d4d83040262c47e7852"
+    },
+    {
+      "path": "vendor/nv-skills/skills/Model-Optimizer/release-cherry-pick/SKILL.md",
+      "bytes": 2831,
+      "sha256": "47fab972cc05134cd2fc2d9c6e4511386487148f923a5b69bfdc9151cdda6079"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator/byob/SKILL.md",
+      "bytes": 14075,
+      "sha256": "ca2417a221dbdeede96f8e0474dc4dacd81bd4d6164053a46777378428c5065d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/accessing-mlflow/SKILL.md",
+      "bytes": 3780,
+      "sha256": "780752ef88001e20a33fd9546954208b709925de3d53de4c8cc9b35a77d860f5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/SKILL.md",
+      "bytes": 5744,
+      "sha256": "448dde3a17fc26664842d32d4bdc8304d5c7f48cf8ad8715f1a2465403cc243f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/references/analyze-results.md",
+      "bytes": 4221,
+      "sha256": "6fd92ab192db036bef971b727d210c7487b415cfde2a575431ac834f7b58a228"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/references/benchmarks/swebench-general-info.md",
+      "bytes": 11726,
+      "sha256": "dba4cba3fc3a003173297e14f49fe9b16adb12281f50e899a31bbfdf75ad0d05"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/references/benchmarks/terminal-bench-general-info.md",
+      "bytes": 7908,
+      "sha256": "e6b16940bfb4a463b8b4731eb877835aa0d2cc84b048cf0faef7d850054d1d11"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/references/benchmarks/terminal-bench-trace-analysis.md",
+      "bytes": 5866,
+      "sha256": "12dcbd2936ea4d8ee25a6e3fcbc882f3a7e693c559f33246f8503f24d14aa8a7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/references/check-progress.md",
+      "bytes": 1234,
+      "sha256": "ddcf0e7c846cf644ea8115af6e7b54c6b6af8f5d86ed823f68c4d3e10cabd82b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/references/debug-failed-runs.md",
+      "bytes": 6777,
+      "sha256": "5c5b2cc7baabc1726bbc4d11de7f0ecccc90cbb6208aedc73762271695efd12e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/references/run-evaluation.md",
+      "bytes": 1122,
+      "sha256": "d3a072c3ff2a4cdb2ec8da304d2ab936cf2e74008e39c9748d8527143f422385"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/launching-evals/tests.json",
+      "bytes": 2743,
+      "sha256": "27b1ab77352d735ecb6099c2313e0d742c4f11dc4177b0ba43124a296956046f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/nel-assistant/SKILL.md",
+      "bytes": 16748,
+      "sha256": "24e11158c8fdfde5dd89da9280be3e70099d59015f33ab44572a730c2f6619a9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Evaluator-Launcher/nel-assistant/evals/nemotron3-nano-bf16-reasoning.json",
+      "bytes": 2154,
+      "sha256": "82969c7de648222e026861d39af37ceb532af2b3c13829177833d1b1afc50492"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/add-benchmark/SKILL.md",
+      "bytes": 11127,
+      "sha256": "ad995f517d6b24db21d3d3077b1157be169d713ae134f5eb82f3cd849f07c566"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/add-benchmark/references/patterns.md",
+      "bytes": 25053,
+      "sha256": "245a86dc29055b8bc0a9ccffa7d8c48889794b425ab1ac9837e031d814f1d4d0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-debugging/SKILL.md",
+      "bytes": 3656,
+      "sha256": "1f005e915095fb5e896ca839b1c72c9ef5314c6e1f57bc8c903c0e33989302d1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-debugging/references/diagnostic-snippets.md",
+      "bytes": 4971,
+      "sha256": "56099e2008aa3092e219686e9c9b0712d28317768ce87c412d6531223f68de5e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-debugging/references/error-profiles.md",
+      "bytes": 9698,
+      "sha256": "74a4b9fed34aaa1cba7f9eb3398da2cc8d326eaa981e6dd63c1dbadda235b694"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-debugging/references/request-boundary-visibility.md",
+      "bytes": 4077,
+      "sha256": "4104bb74d4dc8133f55904cf7ee52ca6c80fc763811fe66f6a6fdcd9efa66243"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-debugging/references/vllm-tool-call-schema-checks.md",
+      "bytes": 2956,
+      "sha256": "2cc125f198bc71f9fe873797626aa80f44650151396dd226d9313ddbff39505d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-debugging/scripts/check_tool_call_jsonl.py",
+      "bytes": 11351,
+      "sha256": "44fbfe79f999ae227c25243168367eb0af257e17f1bd5ee5a0dee618c5c9b235"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-docs/SKILL.md",
+      "bytes": 13633,
+      "sha256": "e13bffc0a6c1800daabfd7fcbb1f75e8fdac6424d21c4f1b850316da830ed79e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/SKILL.md",
+      "bytes": 6197,
+      "sha256": "10f3d96052d0661a865bbb4b318fc7bf52a2b670d7a03395b0dc37d7d8a0a00e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/references/config-training-and-agent-ref.md",
+      "bytes": 4040,
+      "sha256": "b534678812c98da105b1487b0309c5c4a7623adb8190aae6176466e3a356f7a4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/references/conversion-patterns.md",
+      "bytes": 3460,
+      "sha256": "c264822e3084d80351a4c159a7a1369e1cf1d50d71fadb26b5cbb22f5471822e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/references/row-contract.md",
+      "bytes": 2877,
+      "sha256": "94b21bc40dc1ecdd61c64509817175a11b9fd2fa45d71201e9b253c2af7b11a3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/scripts/reference/chat_messages_to_pivot_dataset_reference.py",
+      "bytes": 21625,
+      "sha256": "c8028b8a7895f091209a9baee46a46412aa6dcf919dc071f65fbf8916225dc53"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/scripts/reference/conversational_messages_to_pivot_dataset_reference.py",
+      "bytes": 25038,
+      "sha256": "f2962cf91cfc3da9c4eb9477efc06088221bc64e4c3dc9f4cf7af5bee43240c4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/scripts/reference/generic_pivot_dataset_reference.py",
+      "bytes": 6941,
+      "sha256": "ef2f1e5e19b56104e4cd698c6f5a803a4b762f5677826f4a3ce5f1d61032c0b8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/scripts/reference/tool_messages_to_pivot_dataset_reference.py",
+      "bytes": 28753,
+      "sha256": "619962c62a9415604b9cd6b0c5e4863668430ebe3f195ebc2946ff7075616aa7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-pivot-datasets/scripts/validate_pivot_dataset.py",
+      "bytes": 12609,
+      "sha256": "550a3e9250a42e6d171ae65062c627fbcb0700f8e7ea04fd3d046ed247afa153"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-reward-profiling/SKILL.md",
+      "bytes": 2865,
+      "sha256": "09fc1501eb0593b8fbf1c0bba86935452426a43f150ca98b8269b5f1c0bcc20a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-reward-profiling/references/output-format.md",
+      "bytes": 2560,
+      "sha256": "70b43a93328ff1439c0828a4c94c48de4167472ac60fdc08526925b846f48914"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-Gym/nemo-gym-reward-profiling/references/quick-start.md",
+      "bytes": 1993,
+      "sha256": "ecc63b1dd8f6740adbfd4390d64be87c5ee21e38276388f8af6df661cc38a6fc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/auto-research/SKILL.md",
+      "bytes": 8626,
+      "sha256": "a941161e1f2d153ee416574ee0eae27244d1407be1f40aafb19dc881f988ad8b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/auto-research/references/experiment-log-template.md",
+      "bytes": 2582,
+      "sha256": "c1966e78917ff99111d6a7d61a6c6bd558c460e5811bfc71868579176b04bb25"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/auto-research/references/exploration-ideas.md",
+      "bytes": 5627,
+      "sha256": "57964942fb803031e3ae2d108ddc90f0cc6caa09342445c89000feae8245bd38"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/auto-research/references/git-workflow.md",
+      "bytes": 3856,
+      "sha256": "8d687af6fc23bd6c786469a79ea7fd0e7eda2795cd65b56dc273d72fea49c005"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/brev-etiquette/SKILL.md",
+      "bytes": 5182,
+      "sha256": "c06f9dd5ac72071c715185d9d1552ee6594892034eadcce60d0bd89d05d35257"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/build-and-dependency/SKILL.md",
+      "bytes": 2205,
+      "sha256": "56dbf4e9be3347b807e3a5eeeca2e5a78b61f3dfdb460b2f70e525ecff93d562"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/cicd/SKILL.md",
+      "bytes": 3040,
+      "sha256": "de0a0817af827025e4e2e0581f0b2cbcce9391b9b7f24075fc45c6b6c63f84b0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/config-conventions/SKILL.md",
+      "bytes": 3703,
+      "sha256": "7a048852536613ee11a856d29b75217ec7a6e5df076feac5d2c7f1b7d8e44456"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/contributing/SKILL.md",
+      "bytes": 1594,
+      "sha256": "6bf2fc06c5a87ee7ee39ca708b0bf196184ebfdb027716d80422b565c6f2ec76"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/copyright/SKILL.md",
+      "bytes": 1267,
+      "sha256": "5f39986192eca77b55157e4f3e4b57f79f41344d6146fd8b6bfe0c4c3d1df536"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/docs/SKILL.md",
+      "bytes": 1224,
+      "sha256": "c246f4715031a0c499dd4e8a6a3d242c8a9fe7df3760ba893056187b2a10fa60"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/error-handling/SKILL.md",
+      "bytes": 646,
+      "sha256": "8a73eb86f754a77fcc59f17352a8fa50f58d7988538abaacd37a186e42a867d4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/launch-nemo-rl/SKILL.md",
+      "bytes": 17820,
+      "sha256": "43a379e1f70c489cf28ff9085454d10f0064a41e6aad1f446f5d17ae1ee4c1ed"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/linting-and-formatting/SKILL.md",
+      "bytes": 3164,
+      "sha256": "c81bb723b266268bdf49369e8f9d8869dee652f67a1bfbb122fc07a27480b14a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/review-pr/SKILL.md",
+      "bytes": 9887,
+      "sha256": "32aa706ee0ad177d4668ed7cc379d14488a217fa3efa5895eef1c1575799600f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/review-pr/advanced.md",
+      "bytes": 2934,
+      "sha256": "9d5a3019693794d5765dca02d01636624b7a117150e47616c1117fbdc3a90a45"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/session-memory/SKILL.md",
+      "bytes": 5330,
+      "sha256": "af39779052496f8c3fbff7714b97bd805274f20f3944d8a66d6e9e3114146c18"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NeMo-RL/testing/SKILL.md",
+      "bytes": 2651,
+      "sha256": "461539997c26232a02f178bafa36c0b3697ab4422bcce2601e5379977bc1d80d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-contributor-create-pr/SKILL.md",
+      "bytes": 6784,
+      "sha256": "5889e7707904691e2fc8a62e49e1d021fff7f7fa9651b2100bc1ce839bd3a195"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-contributor-update-docs/SKILL.md",
+      "bytes": 12070,
+      "sha256": "d0e73f72c6f08ffc90a31167b871bd1161331c6c21887de49203a8399b64e633"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/SKILL.md",
+      "bytes": 4415,
+      "sha256": "da8a0ab0057f9a1c21d52d038bb195a4483fec8e99cd3b6561e5c4f36d3a9662"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/checks/fingerprint-extraction.md",
+      "bytes": 2230,
+      "sha256": "02b5dc6c79bedc98b26b887776418f2e12192eae65fb9e4cbacb2ebf43e9ad0e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/checks/relationship-judgment.md",
+      "bytes": 4410,
+      "sha256": "7f497f98c2d5505b734fba7468d8a5636f333b26af408a641f76de504adb8fb5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/relationship-rules.md",
+      "bytes": 4241,
+      "sha256": "1e1ebb844a53a478095ccfbd1b119d543b90acee1e2ef22f211414222134be4e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/repo-policy.md",
+      "bytes": 1744,
+      "sha256": "bd32683e4cb92281c7415cb74a6adb51074064f35b0390e7e856c882ca1abee2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/scripts/extract-fingerprint.sh",
+      "bytes": 5892,
+      "sha256": "f4fb7a5ef17962bc0ec4c0bed5df0aa51a9c4825b5167a4d9859e437a7425223"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/scripts/render-report.py",
+      "bytes": 4400,
+      "sha256": "740a5b1d1e44ccdbbcccd9d44ab9d6a0f6d04c6cf9c57b9a9b69e59280ad18ee"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/scripts/search-candidate-issues.sh",
+      "bytes": 3420,
+      "sha256": "b3dc5832fa9bd1bc3070bab09859e3ad03a79969403b0ccba55f6fd82c41a16f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/templates/report.md",
+      "bytes": 1795,
+      "sha256": "dd4a9540471f9c36ca5a8c87aeeffa1e8376d380cef8704d5191f4a2d9635c1e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cross-issue-sweep/validation/backtest.md",
+      "bytes": 2206,
+      "sha256": "728a37e43b689493412c0c1834de3255657e053e0d94e70344de1d28c82c1248"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-cut-release-tag/SKILL.md",
+      "bytes": 4461,
+      "sha256": "b7a507f8a8cc4dbd7d0bb01f713cfb220ac2f46e6c117da5c9289087866efc31"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/HOTSPOTS.md",
+      "bytes": 1415,
+      "sha256": "076ec7911ac4264f48d249cab958809eb85421a0ae64032c5bbcac84e29ab15f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/MERGE-GATE.md",
+      "bytes": 2644,
+      "sha256": "f16acd0572cd4d8b231c8926a3a4a43beb70762b18b8a24ea2c0a6121c587c4c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/PR-REVIEW-PRIORITIES.md",
+      "bytes": 3199,
+      "sha256": "fc93fedbf5f1c56c800a2b8f28bce13e5c2d0b90532203056688f8b9d422bfeb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/RISKY-AREAS.md",
+      "bytes": 756,
+      "sha256": "f3077682e142a118ee72bb6fa0880a8f8ef2c8c37d4a8efca178fcffe284128c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/SALVAGE-PR.md",
+      "bytes": 3430,
+      "sha256": "2dff98c2d200f85ae3f58030705816c64f85026146ede85dd2ab96b5b1a7eeea"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/SECURITY-SWEEP.md",
+      "bytes": 1661,
+      "sha256": "9337813b50ce77f159533f7a25648b472f31c5b0fb7fa635e2b0e5032cdb0f90"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/SEQUENCE-WORK.md",
+      "bytes": 1629,
+      "sha256": "c912f257ba86428cc075e173237feab1aa5774dff1e0926992a049d835915a79"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/SKILL.md",
+      "bytes": 3806,
+      "sha256": "cb0ca3ac3bb815e77627de61ec9a2ee5c78ecb14976cfd9878cdb6fd2a3be1ce"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/STATE-SCHEMA.md",
+      "bytes": 1513,
+      "sha256": "f72e049cee516252746765e90ef2b113a5f8d69f532c26c12a90eb9bf7cd1653"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/TEST-GAPS.md",
+      "bytes": 2285,
+      "sha256": "3bfe076c7c339aeee49135e6f3f75ba31cf7b140ef3071d61b271142207cbf07"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/bump-stragglers.ts",
+      "bytes": 2507,
+      "sha256": "d1b8b7d65ebf78f6d5c666f71ea521f0300fae137aa2c174160c2ac34f2f0368"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/check-gates.ts",
+      "bytes": 10345,
+      "sha256": "efe54f0cf326733aa816574fd5deb7df21919a2239748fc49a5c5936b8f66050"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/handoff-summary.ts",
+      "bytes": 3964,
+      "sha256": "95e3c5f1fc40461226a586c907cfd944e2f500bbed2d1fab2fd4a2c9d2a0aaf0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/hotspots.ts",
+      "bytes": 3996,
+      "sha256": "4c8fb99929564d9088068d38e3c596604d3c6da6591ec3b3b65a9c6ea38b5538"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/shared.ts",
+      "bytes": 6424,
+      "sha256": "299706e52d57c1aa170110fb3d215a63c9c2602a8c47085ea1dc21bbdea8b854"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/state.ts",
+      "bytes": 7886,
+      "sha256": "035cb0394c409e04249da0532d2b2d1dd767a0d48e78412be265ee14df271d48"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/triage.ts",
+      "bytes": 16406,
+      "sha256": "8a1131267e8e5abc5f221be95954d4330a7788201096d339e7562b11dde31e1f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/version-progress.ts",
+      "bytes": 2249,
+      "sha256": "75ba407e7a978ce13cc9c51ba8bd831a017be9c02ec20c5a004c6beeafd818a2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-day/scripts/version-target.ts",
+      "bytes": 4430,
+      "sha256": "298702d2587129e8b155b934ce1afe2887767b4b814735e6a2bd944fb552f252"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-evening/SKILL.md",
+      "bytes": 2676,
+      "sha256": "ecfaf72cf84911c116a6942d2a45510b96e7a65acc68a20fccbc17a28cb817bf"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-find-review-pr/SKILL.md",
+      "bytes": 3865,
+      "sha256": "bbded1e871c4f4a5521eac78594fe43097feac0cd5aad9dd2d53b1fc7840ec69"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-morning/SKILL.md",
+      "bytes": 3023,
+      "sha256": "2b0e67ed45c1b8c640ef4435c625f5f22bcb30f43d9a96bc473208a3ad0c356f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-normalize-title-tags/SKILL.md",
+      "bytes": 3190,
+      "sha256": "dd6f76b5c24b970a25ee450ac3e32d4a283eb658cfaea2f6e9b9445fd719cc12"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-normalize-title-tags/scripts/normalize-title-tags.ts",
+      "bytes": 7437,
+      "sha256": "7eb1b3f08189f71ce7c827d609abbdd128094ec3be25ee68620521ec13b81417"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/SKILL.md",
+      "bytes": 4232,
+      "sha256": "e4c64e1fcd1f0301ca8271fdd8bbfd6f0f9fdac2f588cb3090900813bf4f2821"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/checks/tier-0-gates.md",
+      "bytes": 3265,
+      "sha256": "4ea5a3431e1ad806fba865b559afa68c69676e2049399442ab920f80738cfa7c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/checks/tier-1-correctness.md",
+      "bytes": 4232,
+      "sha256": "b7da9110ba7681eb2eb7bcea89a6051d917c53d7561878fb28a81f15f0cd7bc8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/checks/tier-2-quality.md",
+      "bytes": 3813,
+      "sha256": "bd83f90502661d379e1ffe780fdbf8d5aa5fde87ebe3799245574eeb7c621170"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/repo-policy.md",
+      "bytes": 2543,
+      "sha256": "fbe4f83b0647383e4e8a0e4a4995a3c9f4d2a35782cc4349ac81a7e8d806cbcc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/scripts/check-coderabbit-threads.sh",
+      "bytes": 2887,
+      "sha256": "c6fea1b6d1ef610915d92ee150948cefbad4f57d1b7a8f9e4705b4f8d58a9f53"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/scripts/collect-gates.sh",
+      "bytes": 3498,
+      "sha256": "c3da1ccd7f795929eb9f592f57fe044b3410cb9c161bdf720fc8a2bc703d8145"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/scripts/find-candidates.sh",
+      "bytes": 3821,
+      "sha256": "d53684c2e65717a7e7d0a37742191be894e271a7542c592b218ab69c5598d31d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/scripts/parse-supersession.sh",
+      "bytes": 1853,
+      "sha256": "c06264e5053645a9c65294da6c04e79fb97ef69bb4e714e054b5fbdabe87352a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/scripts/render-verdict.py",
+      "bytes": 7122,
+      "sha256": "cde8d4cc4319fd9b7de1d5df46c60e87ff356d5b4c82120398a5bf86579a7b6b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/templates/verdict.md",
+      "bytes": 2992,
+      "sha256": "99b6ce61442abe451bf4f74c7c900e2e786b0d662965b35d3814a857e9816673"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/tiebreakers.md",
+      "bytes": 3119,
+      "sha256": "91686a8e895cead4bef3384b10464c6f1ab96e80282b7f007a715261c8c43f39"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-pr-comparator/validation/backtest.md",
+      "bytes": 3162,
+      "sha256": "2562d283c91acecf44860b967674d61b4106f14d1d7cb0bdb8e49db49be10077"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-security-code-review/SKILL.md",
+      "bytes": 7068,
+      "sha256": "14d2de46d4ad6dbe4598ebbc58a8ef843120aba556c1df2472c44889568b03ac"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-triage/SKILL.md",
+      "bytes": 4449,
+      "sha256": "42a43ca19d7f4ca21d07dcb1d339cd1121e10cd136ea73af1093d8f522e7915a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-maintainer-triage/references/triage-instructions.md",
+      "bytes": 8016,
+      "sha256": "8948efdd1f273b75617b857a66609fcb8b637b52949f1b2d1852e651134128d5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-skills-guide/SKILL.md",
+      "bytes": 5670,
+      "sha256": "6d62be66d7bc764300d0c7dafaf918c34285c3b4f680209cb524af49ef9d8020"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-agent-skills/SKILL.md",
+      "bytes": 849,
+      "sha256": "a512a362058fcd89c71052f2788c91d319b03143f8dc100cf693feeace7dcd2b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-agent-skills/references/agent-skills.md",
+      "bytes": 5650,
+      "sha256": "0e0d4a43516647882f5b6e414ef7104875eafacf4b1b74e7be243f2a863b22dd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-inference/SKILL.md",
+      "bytes": 21375,
+      "sha256": "807fce4e30aea2dcceadaa3c3720a4e58679eee0ca7a54333bdfebbd17e33c2e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-inference/references/inference-options.md",
+      "bytes": 12359,
+      "sha256": "bf899243b4c6e018b7373652e7dd9bc11e6c487b8152069331be32a59b15ed2d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-inference/references/set-up-sub-agent.md",
+      "bytes": 6726,
+      "sha256": "583a0dcba0ee3fa16dba7c92d8cd21be949447105d626ac3335d1204a528d8ff"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-inference/references/switch-inference-providers.md",
+      "bytes": 8308,
+      "sha256": "61082d51cdbcfa0451360cb840ba3a84544243c671772786fe6f066268dc011d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-inference/references/tool-calling-reliability.md",
+      "bytes": 5206,
+      "sha256": "b6368dbce4457440c8c8a89bfbdde5e2562da75575360b38c6ac8552e7b0821b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-security/SKILL.md",
+      "bytes": 1821,
+      "sha256": "e05e034733c35a5aeca5bb5c99b8e3eeea9c946e243ec02b8fc90fcc4b68c0a4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-security/references/best-practices.md",
+      "bytes": 39940,
+      "sha256": "0a114e86eeae3c7d928a61587ec3e2217321abb81390ac199fb41073d5ebb0f2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-security/references/credential-storage.md",
+      "bytes": 6286,
+      "sha256": "a4c729e3f832bc26be3c011e4f5e0247a83ffc4ff61c991bf687bcf78447df86"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-configure-security/references/openclaw-controls.md",
+      "bytes": 5995,
+      "sha256": "edf3305091732ba2a6dc7257873aadda8273b65df568dac2d59111624c1dfda1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-deploy-remote/SKILL.md",
+      "bytes": 9798,
+      "sha256": "6372c91c5ad9be2126c3c45b9b462cd53c885379018f1451a46cdc301fdbb0fe"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-deploy-remote/references/brev-web-ui.md",
+      "bytes": 6013,
+      "sha256": "994033dc65285da65e1ab9c5c050e461e51799642b51ea126f2a6cefdd3b1473"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-deploy-remote/references/install-openclaw-plugins.md",
+      "bytes": 3336,
+      "sha256": "aace3a17c95f5ecd6bbb7dc7abeb4b2ab770adabe5c8487f48ebcdc80cdb9daf"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-deploy-remote/references/sandbox-hardening.md",
+      "bytes": 4994,
+      "sha256": "e8a1b416e8b5ce06f671b57b98067bbedc5aa316ec57bd9327fab3e0ff2685b1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-get-started/SKILL.md",
+      "bytes": 20512,
+      "sha256": "e277cc82fc95b3bc7da81de92618dcb074bd981b37146225fa2582f1f16bd761"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-get-started/references/prerequisites.md",
+      "bytes": 4179,
+      "sha256": "f7d7d80fd8fd59e69f2f1eb220ec5b46b463dac2c22b9e15dd422e7ed3af3b83"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-get-started/references/quickstart-hermes.md",
+      "bytes": 6922,
+      "sha256": "432304f5612e8bfd76b5cad96a2bf066ddeff19e5c3a40e1a34ab5af148d5750"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-get-started/references/windows-preparation.md",
+      "bytes": 5920,
+      "sha256": "709be4305a6fd5a9820b378b0ca363e26edcc64d2688ce8321bdf42a44c6651c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-policy/SKILL.md",
+      "bytes": 12600,
+      "sha256": "c37b3c992362b988d02f3922e519d20c406e4a7117382f2fa30379c7f971605a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-policy/references/approve-network-requests.md",
+      "bytes": 2476,
+      "sha256": "9d82f2960c1a62e288b799439670c679626161bb80d0b647ed9869560e3bb878"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-policy/references/integration-policy-examples.md",
+      "bytes": 8854,
+      "sha256": "f35c25d0ef9815c665405198fff4ec5f1f82dd800ad3f5fec26c9e5dd57562d5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-sandboxes/SKILL.md",
+      "bytes": 14875,
+      "sha256": "89f7d8f112a107d1cf1533b4e5715090ede23f3ead0cd4d7ab07ad5b30316395"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-sandboxes/references/backup-restore.md",
+      "bytes": 6491,
+      "sha256": "0e61d329136eaeb2e21e340cd387b300b3a2037c760a8b8bbc2fda22cc8dcd27"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-sandboxes/references/messaging-channels.md",
+      "bytes": 11563,
+      "sha256": "b4670cd71bbff70724162b09cddf068436d7109026ecfcdf86b8c9ef07eb869f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-sandboxes/references/runtime-controls.md",
+      "bytes": 4878,
+      "sha256": "c5ccc38a75ec3e2ef937ee99ec1ffdbd09cd78be39dc10c5ede6d50304c5e6e2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-manage-sandboxes/references/workspace-files.md",
+      "bytes": 4592,
+      "sha256": "41e026d5ce412321692a0b776d4ccc76e9dbb99bca2f7e30ef0b29a44e3ff5b0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-monitor-sandbox/SKILL.md",
+      "bytes": 3649,
+      "sha256": "7340c9f4a7c3f36633d28c8f22e3b894f0987360a7a9aac9a380a3deef13da8d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-overview/SKILL.md",
+      "bytes": 2234,
+      "sha256": "42aaa9981375490751b33dd94bfabd06df15c260afbbdda3ddde9ecbef1fdb37"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-overview/references/ecosystem.md",
+      "bytes": 8198,
+      "sha256": "4bcdfe1cdf2b8142a105fcb1120c2f3126cf01cf5e403d6602c8537891b45d26"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-overview/references/how-it-works.md",
+      "bytes": 6646,
+      "sha256": "40b1729cc05a823631ba4c60efea904045498b7955ea85d7018a7be3c06c40af"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-overview/references/overview.md",
+      "bytes": 6095,
+      "sha256": "847104ede7d3cca2732788efb52970f41262a574b02cd7acfb3fab3105636133"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-overview/references/release-notes.md",
+      "bytes": 14911,
+      "sha256": "dbe351ccdd1af2f84a8aa3ebeb5be302d6a295fee434ac29264a3c96d0e13178"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-reference/SKILL.md",
+      "bytes": 2022,
+      "sha256": "6212f91325acfb9904d97ec8cf2d946ef0e4bef8046815c77a1fece6675ff65e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-reference/references/architecture.md",
+      "bytes": 14038,
+      "sha256": "c3e31e6ac25da5d719e1a9be882ec4707158540a2b25b6ed8f13ad01e6b974a4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-reference/references/cli-selection-guide.md",
+      "bytes": 7617,
+      "sha256": "c78a58e51d315f6d456e00d36bad7eb0c1026ebcec5c3a8b7b05f3437d01a00e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-reference/references/commands.md",
+      "bytes": 73340,
+      "sha256": "a013b34610a386a3fd41659ce68edf03d9ce1cd31a0b016a3a1498ccaf35a868"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-reference/references/network-policies.md",
+      "bytes": 5445,
+      "sha256": "f80e91ede87ffc22483a335e74fb3a7e09c51f3a670b327e643ec167b4dfa0a3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/NemoClaw/nemoclaw-user-reference/references/troubleshooting.md",
+      "bytes": 58915,
+      "sha256": "9bac0f30c4d1195879b70548897960eb038faa798076d3407ab8dd78540a9a5f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/README.md",
+      "bytes": 965,
+      "sha256": "b00fe64974f89029f1e382df38dd1c7fc2cda246fa9c6dab7c3bacbd92e814e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-accuracy-debug/SKILL.md",
+      "bytes": 19161,
+      "sha256": "a3537d1b373f4aea230bf6901d87f713e2116908c4dde80238bbd1fbb36d2ea1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-add-fusion-transformation/SKILL.md",
+      "bytes": 9293,
+      "sha256": "14c6b32521e0a29d1cfdf51b3229d3379ced8d9652f6b15a908d4e65a552dd10"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-conf-check/SKILL.md",
+      "bytes": 13842,
+      "sha256": "bbb9536b636b0b287e7621078c58858713b30d8a06b119cf0e07b158122ec7fb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-conf-check/references/config_log_patterns.md",
+      "bytes": 10862,
+      "sha256": "2ded0ac2ee022b2dc0009fe45eabccfbf3670d2b682a4457e85d20f38b293da1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-conf-check/references/graph_verification_patterns.md",
+      "bytes": 3730,
+      "sha256": "710b5a1fb5438f9510a1053aee840a09440fdbca2ee75363802b3f17d515bc50"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-conf-check/scripts/parse_config.py",
+      "bytes": 3672,
+      "sha256": "f3018d593e8c87905d056f6f6b3203d81e6410919925e7b4fdcc74c0b55d6127"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-graph-dump/SKILL.md",
+      "bytes": 5301,
+      "sha256": "5dcd458d4779a0d9bdfe012f2f223a9a6cbebbd7760a75dba0c0ddbde3931f1e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-layer-visualizer/SKILL.md",
+      "bytes": 11284,
+      "sha256": "a0808b7d8c3881388aa40ee02d6de5a2b5de5f1d1961daaf759ae62ede8a4773"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-layer-visualizer/scripts/extract_trace_kernels.py",
+      "bytes": 16358,
+      "sha256": "d052923689212e0639fbda8cb73b10478d4e879cdd89160f9cb5c9ec323f5c63"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-layer-visualizer/scripts/render_layer.py",
+      "bytes": 21315,
+      "sha256": "f3f454dcbbfbb97d3cf031706a593bba6fe605eee1b200a351d40cc074664451"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/ad-model-onboard/SKILL.md",
+      "bytes": 42327,
+      "sha256": "69dae596fcc218f3a341c75178c4c88df8e59ebf62d0edb1730d48e376d2398a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/exec-local-compile/SKILL.md",
+      "bytes": 3173,
+      "sha256": "81e7a5b02ee9b5f5b3f2956fbf95fac758890efe8ef4b7833f4b83b4aaa18193"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/exec-slurm-compile/SKILL.md",
+      "bytes": 10153,
+      "sha256": "882c1a727f1a6f71d905ef29aea241f5426392526a3ec8d51b88c0bbe908cc64"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/exec-slurm-compile/scripts/compile.sh",
+      "bytes": 1481,
+      "sha256": "6dba634a5fb2dcb4fcb18ee4e4ddc3259beb40b7cbed86bd557927280cecfda8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/exec-slurm-compile/scripts/compile.slurm",
+      "bytes": 1468,
+      "sha256": "b813c75ce1c9a0f1569a593980d590c3c4dd6d5be571fbcea6390dd2c2063f8a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/exec-slurm-compile/scripts/enroot-import",
+      "bytes": 4945,
+      "sha256": "c40a7b2806082c3a3a36337eac890eb28902a825983da4dabc914491ce16feed"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/exec-slurm-compile/scripts/submit_compile.sh",
+      "bytes": 2795,
+      "sha256": "69c6dea7633fe359b0623066dacee18de733ebe296bd10eb3713fbfb5f2751a0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/SKILL.md",
+      "bytes": 17091,
+      "sha256": "1226645bfd9c1bb0ced5847f7946fde62e3775c85ae185db5b5fc32c227b538a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/api-arch.md",
+      "bytes": 5142,
+      "sha256": "4e2de25ca628e916d0df20227695561ac68177746d474ee883f4af71fc42bbb5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/api-core.md",
+      "bytes": 7224,
+      "sha256": "a9eab4387bd320d13d1d1a2694a46345e525a98dfdef0dca96fe337db95cd61b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/api-nvgpu.md",
+      "bytes": 6776,
+      "sha256": "245a7a7ced609312a5cfe4ac0f5a85e96f381935f790429ee0b8c02cd1914d51"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/api-runtime-utils.md",
+      "bytes": 6066,
+      "sha256": "6b46bd148a11dfb5dba5ff5348b2da29fed2a531b08c90b6dfee375e98339da3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/concepts-architecture.md",
+      "bytes": 4614,
+      "sha256": "51d192ed6747ff9a6e5d7b33d7706550d4dd1572b75da1141773ba8f7ff7985c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/concepts-layouts.md",
+      "bytes": 6041,
+      "sha256": "1f1a9557c269758ebdbfd9401f7a85c0c90a12a153c3c6804bbfe7c70f8abf06"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/concepts-mma.md",
+      "bytes": 5359,
+      "sha256": "fefa8310bfe3d8e755a2a56887ff35ae46539fedb2c93f7a264534e70be1ada1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/concepts-tensors.md",
+      "bytes": 5709,
+      "sha256": "2e33c26eead8405e4070ec5a8f1080794104ec895e0e947280b2199b3851a967"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/patterns-compilation.md",
+      "bytes": 6883,
+      "sha256": "4e1e3bbb93c7c56b4ba7012aef810199705f3d0b67cd9dddf6515b5f9365d61d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/patterns-elementwise.md",
+      "bytes": 7668,
+      "sha256": "831cacc6f310a19c1b94b48da8558f2cb4b80a7ec72ca7fc800946c2d154c6f6"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/patterns-gemm.md",
+      "bytes": 9429,
+      "sha256": "1b39de2d516e728c7b814801cb4cceea8f670504b3e87d5e4865160bcfb1f13f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/patterns-getting-started.md",
+      "bytes": 5805,
+      "sha256": "ed1d50c4b0372d53c8001556d07cbc4e475f42d2148146e2dc3ac3899cc9da87"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/patterns-memory.md",
+      "bytes": 6064,
+      "sha256": "dbe913f849e500113f552e076c314eabdaf3053a1cb576b5c8580ef460451e24"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/patterns-pipeline.md",
+      "bytes": 6978,
+      "sha256": "b9a957a7dbc93df71e9c14996db7ebd5b6838c9207a72383567874f61455731d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/patterns-reduction.md",
+      "bytes": 7369,
+      "sha256": "6bd716f3308502fb3737bad7b7f6eeddc322f2814841e4ec437b693966c1b53e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/references/troubleshooting.md",
+      "bytes": 6363,
+      "sha256": "45b80a52e4fd1a700a3a1d3957281066d447cdd2b212f778d8dc095370698290"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/scripts/__init__.py",
+      "bytes": 684,
+      "sha256": "682bfaa341c7ffe63462cd184868193872660a502aa095758d27afc7a7a2def0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/scripts/benchmark_kernel.py",
+      "bytes": 11756,
+      "sha256": "ccf83efdb0fc75cdec5e3b9f37186fb3be34aa3645ff6226e7fb45a347709edd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-cute-writing/scripts/verify_kernel.py",
+      "bytes": 12646,
+      "sha256": "c9b0fae5ac2786737ff2a3cbe3dbc72ee3fdf6d153fe04b204583f11ca634a60"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-tileir-optimization/SKILL.md",
+      "bytes": 9493,
+      "sha256": "06d7b9bb039d794f066b393bb2078f36e746d35e8499cb92027781db09ced923"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-tileir-optimization/references/config-templates.md",
+      "bytes": 6678,
+      "sha256": "061e057bada218adb6f293acb29fc9cb3ae589254be94a14001f066c4c6c9835"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-tileir-optimization/references/tma-conversion.md",
+      "bytes": 3277,
+      "sha256": "b890fa62d3eb86ef14af9f62e2353e0b60cd5a67daaf20dc6f1addcda579173a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-tileir-optimization/scripts/classify_kernel.py",
+      "bytes": 14155,
+      "sha256": "e5bdac045166f31c28ee2f69804fffd59f7cb965ad2e571eb068b98bacb01c39"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-tileir-optimization/scripts/tileir_check.py",
+      "bytes": 5618,
+      "sha256": "5dd98a34c0560629f41f83b709f6f98af8f6f4eaced0a3bd88a4c07432ab719a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/SKILL.md",
+      "bytes": 15215,
+      "sha256": "5a379c6acccc28fc33269dde25610e65220264f84c78b66c8daab0493bcf6b7e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/api-core.md",
+      "bytes": 10382,
+      "sha256": "c7a8f5f415bb8920e35a0f68daa0eb7c3cd02d69cdbe081dc873a0b7bc85ba4f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/api-language.md",
+      "bytes": 12123,
+      "sha256": "5d1ce70a9377aa3762a5a4d00882e6255e65ceffb63e2cebcc2b32f02c5f6df5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/concepts-semantics.md",
+      "bytes": 7892,
+      "sha256": "003645e3dc86c3f197f67e04839cf9a702450c452d896460eb6a3923c810abce"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/operator-routing.md",
+      "bytes": 4428,
+      "sha256": "9e8fff7fb17f989a7582fb92f70575e0807baa70f6db668e9fd0702518f2fb69"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/patterns-advanced.md",
+      "bytes": 11758,
+      "sha256": "0bf98f72f23fc6448109801d6f4214dbfcc709ac771f62731978d591ff2e4a23"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/patterns-basic.md",
+      "bytes": 8812,
+      "sha256": "65c5f87f5bbd4b31cdb1421e154fe36511ebfb508570318b5a0d3b95bba8e15f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/patterns-fusion.md",
+      "bytes": 10665,
+      "sha256": "f21a367dc9bfa706f6256fc3e3cf25df0480bb2afb3e62dc2605b77a55646e78"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/patterns-gemm.md",
+      "bytes": 12553,
+      "sha256": "08de80010d9c8185b6b47b5d05301961d70731b00d9041b9b454cff7a454e94c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/references/troubleshooting.md",
+      "bytes": 10767,
+      "sha256": "031b44fabe159e5307063920bb2ce725bdccf2fa5573af1e1fed4ddb4fe028d7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/scripts/__init__.py",
+      "bytes": 684,
+      "sha256": "682bfaa341c7ffe63462cd184868193872660a502aa095758d27afc7a7a2def0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/scripts/benchmark_kernel.py",
+      "bytes": 9626,
+      "sha256": "e61443f0757f1276ca3f09940a3371063d2be8f6c9467b298bf3ddb342103209"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/kernel-triton-writing/scripts/verify_kernel.py",
+      "bytes": 12615,
+      "sha256": "e64107bf02298052dc6067b49a7adf8ac2143779e84f8ea73e5681c8f1982284"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-analysis/SKILL.md",
+      "bytes": 6281,
+      "sha256": "3dc61ee7815408010e9c1a145819337279cba21558b1e1eb91ee4850132652c7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/SKILL.md",
+      "bytes": 16979,
+      "sha256": "3d67ec2283758c289b98a4c69b1351796b51168fc17fc5ada1def86b21aac82b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/examples.md",
+      "bytes": 6972,
+      "sha256": "80ed0358a394e8f7c5e94cb1734aa1bc51769615538b84bb188e7c1447d86922"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/iteration-isolation-techniques.md",
+      "bytes": 6158,
+      "sha256": "cdb2b2e50cb3b105f1111bb7b540041c3c8e3251bd9d7abd25615affb23c103c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/kernel-level-analysis.md",
+      "bytes": 8174,
+      "sha256": "0831f4ee67863c36ab18ec50622238bfc0e76d180f6e6e1ed90327657071b291"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/metrics.md",
+      "bytes": 9185,
+      "sha256": "e74d84287b337f20c1821e9cb16bd0ff5a949985adadca89c96c34ae9b796d01"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/nsys-schema.md",
+      "bytes": 3185,
+      "sha256": "f1bd0f92d6bb7ef02e66edb53b0e4e6703374c3afa0e74fbe924dad52ba59899"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/output-format.md",
+      "bytes": 6271,
+      "sha256": "b6fba0675ca0c3fc763d977cf836ab9fa2fcb68c75e5a37cff2b3442629dbe63"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/phase-classification.md",
+      "bytes": 4234,
+      "sha256": "beda3ec65f736fd928c627cefebf01c503ceeaba3f4832d0ce08afc2fb3d2a51"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/thresholds.md",
+      "bytes": 3284,
+      "sha256": "c2e70a4e6b18cff5395e69b2cff2b47e68a8e68108fc2c11fc11af0b10541fc9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/references/trtllm-nvtx-ranges.md",
+      "bytes": 6646,
+      "sha256": "0e10733df20194fa327f44604094584f8c9316d41275fc3db5a62874a968b1ab"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/scripts/analyze_host_overhead.py",
+      "bytes": 28391,
+      "sha256": "b500b89a929ea02fd386f1048e6ec05559ef1399bb61b7fa9aaedffd4509a9e5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-analysis/scripts/detect_host_overhead.py",
+      "bytes": 21561,
+      "sha256": "509ca24aa491d7f29316d0209681d9e4e35a78a0509c57f4bc50d28de145249c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/SKILL.md",
+      "bytes": 14450,
+      "sha256": "d2e5446024840487a80f9f3cf47aa8ed6817a2014e14af1fda49bca3b7233078"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/communication-patterns.md",
+      "bytes": 6835,
+      "sha256": "73663e1cb07e3ba5e492b9f5602cf2a96343bcbba188027dd7fd168be450e9fd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/examples.md",
+      "bytes": 5481,
+      "sha256": "682eeac68f51065b9170939510f0da4004393ea9525bf77ddd7545aac87a6812"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/hot-path-files.md",
+      "bytes": 5410,
+      "sha256": "f2ce21c7a6bbb92ea6447cdefd194ccbd02711f24b3ad8bf42700549251b822e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/hotspot-classification.md",
+      "bytes": 14894,
+      "sha256": "51a71d8ee1c38675e5a88b0e049d60796bc3597d6b7fb6314b41f46be3e46022"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/optimization-patterns.md",
+      "bytes": 1231,
+      "sha256": "6ed79c88259bcf63985aa19f6a5bdf34deb21f12c716ca00a03bc23f772a778f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/optimization-strategy.md",
+      "bytes": 10104,
+      "sha256": "ae80f4a28a48aebe0ac468cdd631ec7cc0d3c6b4d9376dda00dd770fdc0c65a7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/patterns/compound-pitfalls.md",
+      "bytes": 7714,
+      "sha256": "b2d4af1cf11aabbff253cecbe5b146aabfeb820726eaeb2ae8f8beb5256938fe"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/patterns/gpu-graph.md",
+      "bytes": 7304,
+      "sha256": "d19b551e30269aee91fddedbe2e7c6fe73cba78d2208720961d4900ba320d459"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/patterns/loop-iteration.md",
+      "bytes": 7306,
+      "sha256": "3f6e94faae726636e72d485075f211a41e90539c5af2f851c55d8d3da2932a10"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/patterns/python-overhead.md",
+      "bytes": 6496,
+      "sha256": "ee04344f0a82faff1279c8ae75ef84cdb2411364d2b92feb5a44742dfa754fc2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/patterns/sync-alloc.md",
+      "bytes": 5275,
+      "sha256": "ac13594e49ec5fc673cc5ed6afd3dd3c1a124b7814e36c9f7d1fade2fcf7bebc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-host-optimization/references/patterns/system.md",
+      "bytes": 5604,
+      "sha256": "4ee9c0713d1e57d4a09f6fa815d11b3d80379acd0b5d58dd5518cbbdaebe476f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/SKILL.md",
+      "bytes": 14952,
+      "sha256": "c14e9fcf6879b253bee9951799d3ebc0f9219645542a2e2737fa301281239449"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/advanced-profiling.md",
+      "bytes": 7387,
+      "sha256": "02e824473fad5d81ab13c0c777bb85dda431edf849d95961e86dcac5d210be04"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/bottleneck-guide.md",
+      "bytes": 6580,
+      "sha256": "dcebe37171b326f6bc22ba6339082caedb71cdb2853574549fb45ee59e17a8f3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/cli-reference.md",
+      "bytes": 8800,
+      "sha256": "5ede87e9094254159b656c3d23cf7515aa7d0ba4a63cbe412e8e016e32dbb64f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/memory-analysis.md",
+      "bytes": 5865,
+      "sha256": "a2ac928cc2655bdcff4f58cf8e7793482f0f0717b74bae8c8652b381ac303647"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/metrics-guide.md",
+      "bytes": 6866,
+      "sha256": "f56b8d637a9b6b75866362307cb896fffd29662759e3dedaa8e14876b64be592"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/python-report-api.md",
+      "bytes": 6775,
+      "sha256": "1cff632e47bf9d00cc02e8f20cfcf6c0f67d4a4115575291794099b0d03dbdb5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/roofline-analysis.md",
+      "bytes": 5320,
+      "sha256": "5d0333378ce331e0a14558a3d72ed8510bd170cbb11e9ef52ad385af486f5c12"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-compute-analysis/references/sections-guide.md",
+      "bytes": 6924,
+      "sha256": "6737b97af7538b8d9f1f12767979f9b9c1a9db17dcbe3d3024f15bcf39fb1538"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/SKILL.md",
+      "bytes": 14511,
+      "sha256": "dfb23913b3ec249fe248903e13a27869bf4bca7756c641bfeee92ecd4f697930"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/references/app-preparation.md",
+      "bytes": 5922,
+      "sha256": "8cbae3129d32680b94dcdcf6c1fd0d5cd2deafed29fc39ed3760558cc32fcad2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/references/cli-post-collection.md",
+      "bytes": 6606,
+      "sha256": "583ea6a0bcfce8bfe6b1c76f75edaed66768627424427efeaafbc759039dbfee"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/references/cli-profiling.md",
+      "bytes": 8890,
+      "sha256": "2ea366f2488d659f94fc9f1b82d18a49d083e458d1aaee5ef778101fe520ed39"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/references/expert-systems.md",
+      "bytes": 5256,
+      "sha256": "82bd345b0d96160a330db99d33dbc619418d446012fe9d809e5cea22e4aee318"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/references/nvtx-analysis.md",
+      "bytes": 5670,
+      "sha256": "4f135c448b329ee789ad6bbdb20148e06b9c1015d999777f9620b0f764bb59fe"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/references/recipes-dl.md",
+      "bytes": 6850,
+      "sha256": "23a3953985992cf363dba9843cc8d6c425974a45548d09da9b8b575c6d495347"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-nsight-systems/references/stats-reports.md",
+      "bytes": 5796,
+      "sha256": "e19384e2b4e052bebef4dca5b6a28f7371c564ed5dd9a970f6e9e9906e9ce368"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-optimization/SKILL.md",
+      "bytes": 14164,
+      "sha256": "7930ed4c808363f1ee715b073c37f8ecd9688071d6827ff98fb8a11da44403b9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-cuda-graphs/SKILL.md",
+      "bytes": 23904,
+      "sha256": "aee437b6c16ce1799d35f4af30d0ee86c4059bb9756be0b3df27f319d06f117e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-cuda-graphs/references/api-pytorch.md",
+      "bytes": 7586,
+      "sha256": "6b18ace21928a28c02bde098f0b6b3a28b9674e99527d295bfc54ad60220b194"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-cuda-graphs/references/api-te-megatron.md",
+      "bytes": 8362,
+      "sha256": "e3627d22f8e634242f1c011227c2909712a02d4779faa1231fb4ed3a2a8ae33d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-cuda-graphs/references/patterns-compatibility.md",
+      "bytes": 4640,
+      "sha256": "b76b33c62ebff06d70e90d3061598c7ee137ab32c8029da82cc34b901148a8e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-cuda-graphs/references/patterns-dynamic.md",
+      "bytes": 8123,
+      "sha256": "b83cb623db04ce8c9e21becb1f77131bde58ad81de2d7ae0bae6ac7868550a56"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-cuda-graphs/references/troubleshooting.md",
+      "bytes": 8474,
+      "sha256": "accbc5560c9f607cdca49cc40567986fae983c94ac91b82fa65bfa4c67cdbd46"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-cuda-graphs/scripts/verify_workload.py",
+      "bytes": 7017,
+      "sha256": "e38fd12e57e75d13a9022a3954cfd0e6734b8520a6550428696df0ce2e387254"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-sync-free/SKILL.md",
+      "bytes": 10091,
+      "sha256": "bf46757e5ba4a750b3cbb7b9b971c33e34441aa83a2dce5714ce08022bfa4707"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-sync-free/references/sync-patterns.md",
+      "bytes": 15932,
+      "sha256": "edfc8133108e15b6f1fd2b88ab1ea20477d24271d39074fdcba88e9e2927e2f4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-torch-sync-free/scripts/verify_workload.py",
+      "bytes": 7001,
+      "sha256": "5d68035c1d7a4cd5cf30c5a794ab698bb10090af0b935a83e70eff58f0087251"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-workload-profiling/SKILL.md",
+      "bytes": 7859,
+      "sha256": "f68a26436acc1a43793dd748c36f6cb7b186bd8a625f774d08dc559178df2254"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-workload-profiling/references/benchmarking-patterns.md",
+      "bytes": 5173,
+      "sha256": "aa7af158d6f10677490df336a1578affc49a4a160a3d195c336b7c4188088c9d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-workload-profiling/references/nvtx-api.md",
+      "bytes": 2264,
+      "sha256": "305b7aaf7f5a88d373311da02749f272a3792284727f85d311e54b32ae04364c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/perf-workload-profiling/references/pytorch-profiler-api.md",
+      "bytes": 2061,
+      "sha256": "053c12812ae20266316667d31deb6f15b6fb7d495906c546d78d36afc3460357"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/trtllm-code-contribution/SKILL.md",
+      "bytes": 22714,
+      "sha256": "7dd51399f87b3e0b61ed90cb28b50c7045c8d26f739f1f2fb11971c39703e5ae"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/trtllm-codebase-exploration/SKILL.md",
+      "bytes": 9042,
+      "sha256": "c7816276e54f88881b408c58397635b35eb1206e01566efde561a58df14cce86"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/trtllm-flashinfer-upgrade/SKILL.md",
+      "bytes": 12154,
+      "sha256": "b2907a865df66b1334d17fcc6e63638bed2c62435a6fee7e85dd99f8ae415a67"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/trtllm-moe-develop/SKILL.md",
+      "bytes": 32495,
+      "sha256": "488a6ed166a5deef22b09f4c10c6089bd42ae77f5e97251d6d321f7f8ca81c68"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/trtllm-moe-develop/references/moe-canonical-code-examples.md",
+      "bytes": 21632,
+      "sha256": "15e20c20c09114208d699720d087a6dd55ab9bea90dbd4a66d3095566a1b2991"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/trtllm-serve-config-guide/SKILL.md",
+      "bytes": 5285,
+      "sha256": "ed255fb46cac49475713e2f696b8583b07906ba3ba11cb7b626566bc71a00468"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TensorRT-LLM/trtllm-serve-config-guide/references/knob-heuristics.md",
+      "bytes": 6051,
+      "sha256": "e0b6bf03feeb89f9ba2f42851f70cce7f4aff671a9a1181d01a7a67a0bf85147"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/adding-cutile-kernel/SKILL.md",
+      "bytes": 8222,
+      "sha256": "6fe186ed9e5cf976da22c8e8e0c5863a3d7a7d06373b5cb73d1e58c43d8435e4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/SKILL.md",
+      "bytes": 6924,
+      "sha256": "e19343bbd83afe06ad68f22e7bad9e0a02cfd714d7b9953cbfd7804969863b0c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/examples/01_add/cutile_julia.jl",
+      "bytes": 3710,
+      "sha256": "df8a58c551b6147c605de0c3f7a32d068fd3fb5b1563f415345b932dd1a097f5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/examples/01_add/cutile_python.py",
+      "bytes": 3818,
+      "sha256": "fdf0aae91cbd359f8362df676f18020b2bac2f749477f960ae6c6a27a65ebc22"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/examples/02_matmul/cutile_julia.jl",
+      "bytes": 4161,
+      "sha256": "309eb83333f5d1dfcd3a34af67c6fa6ae87d288cd0e89559b28b8609d6f37b87"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/examples/02_matmul/cutile_python.py",
+      "bytes": 2429,
+      "sha256": "6ab70da63819c7392ad29185c8b75c1746cca5825319f39663334f2b53abc171"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/examples/03_softmax/cutile_julia.jl",
+      "bytes": 9547,
+      "sha256": "edf71afce8e02deee4d2d21d05c988b601d5d6a2b4927089343b3eac0ac6ee25"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/examples/03_softmax/cutile_python.py",
+      "bytes": 8741,
+      "sha256": "c5f4d9192f0ae24c40a99d4e342da626830a48c63b8b0aaf8978ce2bfa8d1035"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/references/api-mapping.md",
+      "bytes": 16795,
+      "sha256": "9da8c873cf8529ead4b3093ffb1847925ccaf8ed10bd865527837141d767ffc3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/references/critical-rules.md",
+      "bytes": 5796,
+      "sha256": "93fd039a88d43c9f3acbacb4d611258b2219d576305859632582ce9b3fe5100c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/references/debugging.md",
+      "bytes": 2903,
+      "sha256": "17546891ebe3cf68726515dcbca31a1ee026ce7dde28f498e9f43d2115f30194"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/references/testing.md",
+      "bytes": 4312,
+      "sha256": "7dbe8732ccf33980a0303c1528972f1c2bb5fca4e6cdf65357198097d6cce37b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/scripts/validate_cutile_jl.py",
+      "bytes": 8702,
+      "sha256": "c2d120b09eaefb5c91187e70ce4616fac709a3fcf82b492bb14042da1c71b955"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-julia/translations/workflow.md",
+      "bytes": 16956,
+      "sha256": "be4ea2e8fb24f4bfe3f0734988b57183ebeef6a5f93c655ff2432ae3f086d126"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/SKILL.md",
+      "bytes": 17054,
+      "sha256": "dfb6fbe7c63b3e154fdea5fe4ffe398f1c894b65bb60add5e3ee3a2182b1c853"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/01_vector_add/cutile_kernel.py",
+      "bytes": 3862,
+      "sha256": "4211ccba262b6ae63dc244100b428e9c0a1cb14b03d5ebc18a48d2bf6b53268f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/01_vector_add/triton_kernel.py",
+      "bytes": 3395,
+      "sha256": "ee1f4866071b05bba75969ef26b61bbb7b8bf47414b6b2d40c591c2c12b015ef"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/02_softmax/cutile_kernel.py",
+      "bytes": 5004,
+      "sha256": "99e92d91556deb9c8fe2314c07c6a483f510b0395da897f50b49781d8ae530fc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/02_softmax/triton_kernel.py",
+      "bytes": 8872,
+      "sha256": "3eebff02c3655c9582d1d89a2c543e42f73d215ef52275ab94521b50dca165c0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/03_layernorm/cutile_kernel.py",
+      "bytes": 10818,
+      "sha256": "45ae30772e0bd0b65064c5ccbb00a4ad730722b46cd2a3aebef51ab0965f619e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/03_layernorm/triton_kernel.py",
+      "bytes": 12036,
+      "sha256": "a44274f98850ae1fbe636efe765e09fe616a8a07946c308f6242a286d4a2cf63"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/04_matmul/cutile_kernel.py",
+      "bytes": 6957,
+      "sha256": "e8320c259987e777c1772287d578b58872dd431a3c06b279b7ad3ea8e2e3e4ed"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/04_matmul/triton_kernel.py",
+      "bytes": 13640,
+      "sha256": "0f68bf9e620c60224c07abbeac2c846f9ff606b3c558de3e84be17d481426f4c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/05_attention/cutile_kernel.py",
+      "bytes": 8011,
+      "sha256": "e0d6a6843de8e0ee2afbc61261983040fdf5829f8397870b0f1d616dcf2511a7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/examples/05_attention/triton_kernel.py",
+      "bytes": 17945,
+      "sha256": "d22806246f8a20ef0e5914e8eba8e3f4d3d766d263f25641f83a2370ab0a28af"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/references/api-mapping.md",
+      "bytes": 17281,
+      "sha256": "d5a0390d4fa9d93305aee4fc0ac630c97ef7e2c287f13dbbdd03f81c1115e0b5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/references/debugging.md",
+      "bytes": 11686,
+      "sha256": "4a535331bea6dad1b141c4de9cb8dd7cad9d1ba24f091ec78a33cbd8d0961a4c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/references/gotchas.md",
+      "bytes": 4180,
+      "sha256": "7db2e03524a6490fabe72d11eaed241cdb9b4fa619cb342908c2888421d46e38"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/references/harness-integration.md",
+      "bytes": 6476,
+      "sha256": "9faba4468e4988ac683035535aac170bdc503b06c465b592425bcf3665a69313"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/references/optimization-strategy.md",
+      "bytes": 7999,
+      "sha256": "dd3c9f00c68b84c04005340e31223468296678ba796999ca0ef55c05339744b2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/references/optimizing-reference.md",
+      "bytes": 24007,
+      "sha256": "cee20688b3f7651b18813aa87debdf6fa5e0022ce1cd07e6394a21a70e8d226a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/references/performance-gotchas.md",
+      "bytes": 2375,
+      "sha256": "41f63ea6c3ca542ca8abe7deb17fc4e37ba73818f9576013e47ee5307d5ee842"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/translations/advanced-patterns.md",
+      "bytes": 8076,
+      "sha256": "7f89ccce2a0ea5d655782a2a5d1036e9932c81dae3c28ef51b3b031abc67e7f4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/translations/file-structure.md",
+      "bytes": 3119,
+      "sha256": "4f3a2b17aa6a9e136573d7767bdc9a853aa0a393fa3ac4284027e459e4681ccd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/converting-cutile-to-triton/translations/workflow.md",
+      "bytes": 26722,
+      "sha256": "d60932e752b939b7fc46c1538b6081589178771f597236a3c50a0f5a7eace8df"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/SKILL.md",
+      "bytes": 34980,
+      "sha256": "cab309aea5c68460c1dc359374327b2a41eb883edd50d59d684bd00c6c5223e3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/assets/examples/01_rmsnorm_occupancy_only/autotuned_launch.py",
+      "bytes": 8084,
+      "sha256": "49fc8ab77d7797bb2cfacb46d215b1ba2acf5b3ff8b76ac4bc8f963c27a4a1e8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/assets/examples/01_rmsnorm_occupancy_only/fixed_launch.py",
+      "bytes": 5736,
+      "sha256": "e057854b7bdd32f1e626915398e40cf0cad0002a778dd790ef4432dc2836c9ca"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/assets/examples/02_matmul_full_search/autotuned_launch.py",
+      "bytes": 9659,
+      "sha256": "1109270e0ab42b20829fcfa71b41db979c9c020ff0dc7f275ef3fb4f855d16b4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/assets/examples/02_matmul_full_search/fixed_launch.py",
+      "bytes": 5559,
+      "sha256": "0b1573e764ab3b2ff52ec12f3898d0db6a8129b645fbbee948e651ce3643e663"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/assets/examples/03_rope_inplace_splitbuffer/autotuned_launch.py",
+      "bytes": 11536,
+      "sha256": "b9f43806c2135800b6079cf7dd9c4fd4dca088f44dc6191098f095260c9f3d9a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/assets/examples/03_rope_inplace_splitbuffer/fixed_launch.py",
+      "bytes": 7724,
+      "sha256": "ceaf66920132a534516b55cb0c9bf902325e0fbc3c0a097e7583525d1541e4ac"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/references/hardware-constraints.md",
+      "bytes": 10726,
+      "sha256": "6e34525631f0b94422f2a23c05bc8dd1469db100719c5c7aa4518bc85fa26ef4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/references/kernel-type-templates.md",
+      "bytes": 51081,
+      "sha256": "3a02b6522969b1e1ef5a7cb5cd8ac77f916b9132657ed346a6bf477c85f4d0b1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/references/parameter-space-design.md",
+      "bytes": 11138,
+      "sha256": "518f35ade20c5c610483b78735c456aa104fcb45d0d0c98a39996a5a4cfbe8cb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-autotuning/references/search-strategies.md",
+      "bytes": 9016,
+      "sha256": "e442c8e0a3cfffe5b08f4bf9c359e6f3ae4a6c2dfb3132325eed0b7a881782a2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/SKILL.md",
+      "bytes": 20311,
+      "sha256": "c5c724e314335ac4f8faa62012a184075511c072f5bf3725b68b44387ef5d3de"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/convolution/README.md",
+      "bytes": 2965,
+      "sha256": "ac9a1f0f375428b68ca18ea929c204a4f5965a3f5fdd89a4c98247159675cfb8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/convolution/conv2d_with_bias_dilation_groups.py",
+      "bytes": 14820,
+      "sha256": "d103c5d5f1b5321d24f712ceeb4c707a7402c79e033a2a8e6e76f32833abd1ec"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/convolution/conv3d_with_bias_dilation_groups.py",
+      "bytes": 15644,
+      "sha256": "87b6b35a691da937444f23c20ba5ceab7a920a35fc3bc144094659ec3b358e67"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/convolution/conv_transpose_2d.py",
+      "bytes": 14615,
+      "sha256": "a30a831a0c637a82fadc687824106e61c31bf31774fc474446218d01f2b2d37d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/convolution/conv_transpose_3d.py",
+      "bytes": 15925,
+      "sha256": "143e6953aa6afd7cfc75b5cd0b147f9ab7467297dc30087a36e6546ea833f9d2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/matmul/README.md",
+      "bytes": 429,
+      "sha256": "b059b9cf5295042e24f6b7011bd99ed682114f57d2671e8f2dc474fccfc36b24"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/matmul/matmul_4d_tensors.py",
+      "bytes": 4317,
+      "sha256": "7055af71d1bbde37a0edf8a487982479fd82bafc9bca27211ebe44e41df0ae46"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/matmul/matrix_vector_multiplication.py",
+      "bytes": 2426,
+      "sha256": "79b723a74f740e448390f8b012bfef3b75bead34000507fdbed6090e5e1f220d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/matmul/split_k_gemm.py",
+      "bytes": 4912,
+      "sha256": "5723f8b3bf546b3c40a7938431c62a6619839ed2f1c0b34da2255abdaa08ecc5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/normalization/README.md",
+      "bytes": 241,
+      "sha256": "49a82d0d0139ef3a94a2f8dbf542d4d43f53e4a8d544b2e0ebbc6ede6343b4b0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/normalization/group_norm.py",
+      "bytes": 5652,
+      "sha256": "a9528f0761585e418deea87bc04bab371546b58996beb478d69bd79ecb1034ba"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/pooling/README.md",
+      "bytes": 121,
+      "sha256": "40fdc802b2fadb85e0af3ae769de10297b910178f4c05eae5b290872781be68b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/pooling/avgpool3d.py",
+      "bytes": 6780,
+      "sha256": "80bcecb612f89e9c9101ecc9719e20c105ae766f2e72d8d2e6e7b76abd4b9825"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/pooling/maxpool3d.py",
+      "bytes": 7427,
+      "sha256": "fe02d70bdc8fb1becbc9d97142a16b5390f5e29c68d6e6d3854ce0e83f5c964d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/scan/README.md",
+      "bytes": 116,
+      "sha256": "e8ab09629693496fb3f4a2f8642ffdfc7fa4d9096761ca13ee7332220a210488"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/scan/cumsum_cumprod_blocking.py",
+      "bytes": 2186,
+      "sha256": "7efa2af50d5d42c2b462eb5a7c2325a3960499c3dd13887063e733a1b9d88f1a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/examples/tilegym_and_examples_guide.md",
+      "bytes": 3276,
+      "sha256": "b6c13a6354fef8f6257433c0216071a4bd73e82d95aef72b2fc96f2c8b837704"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/guidelines/01_implementation_lessons.md",
+      "bytes": 8262,
+      "sha256": "42b0f32ca7906b3681eb197ab775fbd5d97173a54b22ae90b1d5939471707b21"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/guidelines/02_code_generation_rules.md",
+      "bytes": 10827,
+      "sha256": "d3830c88e3aee27fef1caeb8ef5e51b467197c0906bb713b33c2db7223ad8b46"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/guidelines/03_concepts.md",
+      "bytes": 4788,
+      "sha256": "d44dce12d0119f963000a1733799d0bac9c1d447ff0e0436cc599f7386b8effc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/orchestration/analyzer_agent.md",
+      "bytes": 11971,
+      "sha256": "1121e3f8ad568f82523735eac875c26ca0ca66161a7efe8ab398a8065a899065"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/orchestration/composer_agent.md",
+      "bytes": 11431,
+      "sha256": "e9eed9a1b4e5857be8cb6d57f99f3e82b35a431c8d3d31060ec35851e5e887b5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/orchestration/kernel_agent.md",
+      "bytes": 7469,
+      "sha256": "409987fb7a1e3d4794ff88d3198c04c1e5f326f6742bd774df43e4422a9ed704"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/orchestration/overview.md",
+      "bytes": 9945,
+      "sha256": "13bdfb1302d9d9b99f38721710ae5bb4f044cdec338e3244d3baf37e8fcdbbc5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/orchestration/workflow.md",
+      "bytes": 9138,
+      "sha256": "fda004bfb6f4829bf2f24d33e8dcab72eee3a523d0e049e2aa06f6adf65d293b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/torch-learner/examples/lstm_trace.md",
+      "bytes": 11444,
+      "sha256": "7577422ce54bc0b28fe5f96047045329d179c250196b3440a63708cfbade88fe"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/torch-learner/references/1_pytorch_codebase_map.md",
+      "bytes": 9146,
+      "sha256": "6f32124f603c99acd385e42eb06901186f6818bda2128532f30cecdbaad80cf5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/torch-learner/references/2_dispatch_mechanism.md",
+      "bytes": 9075,
+      "sha256": "d5f55ead4ef94fb9e137ce624e2ff910233921fcd654443c820a0f8603e6d67d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/torch-learner/references/3_tracing_strategies.md",
+      "bytes": 9024,
+      "sha256": "d8846bbbe014161148708f2b7de59fb95d1d7154de42146c107e121e3cf16423"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/torch-learner/references/4_language_layers.md",
+      "bytes": 13038,
+      "sha256": "d7e9a0b1aaec6055940ad9b722fe1b5c7e6ca444baa50369da67c48b350c5319"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/torch-learner/references/5_well_known_ops.md",
+      "bytes": 11439,
+      "sha256": "dc08d2b3a296472a4c85a8452d9050e5674ef745780888d080fdc5be78506570"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/cutile-python/torch-learner/tracing_workflow.md",
+      "bytes": 7401,
+      "sha256": "ceacca9ef09b2821dfe270cd10d0ca7a9a78285c6fc6690573e4c27f149bafdc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/improve-cutile-kernel-perf/SKILL.md",
+      "bytes": 7815,
+      "sha256": "82e5e1f16d4153ae98b07a91d28eb62d4ea977657940aac66cc62ddcef9d72e0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/improve-cutile-kernel-perf/references/cutile-api-reference.md",
+      "bytes": 31179,
+      "sha256": "3ec4044d66211377107e3a242ade3582da16dc4f110757dd8db479d32734f55c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/improve-cutile-kernel-perf/references/cutile-patterns-reference.md",
+      "bytes": 7788,
+      "sha256": "e84706e7100ace00aedb7cc62e168ed3195172efd56bb12a18b1bdf4eda9f21a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/improve-cutile-kernel-perf/references/ir-dump-guide.md",
+      "bytes": 8042,
+      "sha256": "2072767bdbc75a19d22ba2c3e034f6db17bb83d3d34ff8ea553c0ead535df8af"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/improve-cutile-kernel-perf/references/optimization-playbook.md",
+      "bytes": 15098,
+      "sha256": "4016306c1d7f01857428ce8713831b015d83ef8aef52125a509ec2fa965c7238"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/improve-cutile-kernel-perf/references/perf-knobs-catalog.md",
+      "bytes": 6686,
+      "sha256": "ac187fdeface924a94565d7011502850bcc692da4795849987c93aee9eb1475a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/improve-cutile-kernel-perf/references/performance-model.md",
+      "bytes": 19029,
+      "sha256": "17d793c940d80a48fff853753364b55dd52f44022a36c38607e9e529c39c40b7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/monkey-patch-kernels-to-transformers/SKILL.md",
+      "bytes": 2189,
+      "sha256": "0a972c05bb5be4a4e2fa72d6bd050fea47ee2b1644c24dbf8c89f3b5e0027c04"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/monkey-patch-kernels-to-transformers/references/auto-kernelize.md",
+      "bytes": 5414,
+      "sha256": "42fd8fba0748503d9279f274de108f9a983fcee234e755b8ef36449a28856389"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/monkey-patch-kernels-to-transformers/references/environment-setup.md",
+      "bytes": 1658,
+      "sha256": "b39ec8e53e2d85411d3fe16eb738130ee8afac47dd88e90a7654cca08ca8ca47"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/monkey-patch-kernels-to-transformers/references/kernel-integration.md",
+      "bytes": 12786,
+      "sha256": "7f9f5162a440825b9c225479516208079da79e8b439cf15b42fe68fe45cf50f0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/TileGym/monkey-patch-kernels-to-transformers/references/workflow-diagram.png",
+      "bytes": 1114199,
+      "sha256": "22eddd3d81b3c37d2b47665d6ff19701865364497991d65062e2f9ca3ef6ef85"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/SKILL.md",
+      "bytes": 11397,
+      "sha256": "7638c933ad90e286e1612610b9c2e80ba1683d0be771fd638c7893b5fbec14cb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/evals/evals.json",
+      "bytes": 57164,
+      "sha256": "4bb4def6f5bd69169354573a4a6fb7bf361d17b622c4875d4f3e0412f5ca3e41"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/resources/build_and_test.md",
+      "bytes": 1674,
+      "sha256": "06b51e2be78237d32174fba708fddef7320b5c5375018553f4c9933ea553938a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/resources/contributing.md",
+      "bytes": 5475,
+      "sha256": "5f4e63b3030a5501687c11f29d18752aae19bf3674ad752236b3d4917e5117e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/resources/conventions.md",
+      "bytes": 1869,
+      "sha256": "9919506d2ef728109bc85995820a03711da3dd65f2b61b559641a6236f9a8d3a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/resources/first_time_setup.md",
+      "bytes": 2363,
+      "sha256": "b528e6dd3dcbdaf39e86ed0c66dccb700bca1edd724974bb4ad117719884d518"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/resources/python_bindings.md",
+      "bytes": 8034,
+      "sha256": "4901ebe069e1ee0807942492607d12a9e6d28588e1dd47482ac74e6bcc458e3d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-developer/resources/troubleshooting.md",
+      "bytes": 2411,
+      "sha256": "92ad6bd1a2c668c28bc6f50ccc649a6a95a8b7086158be0d6892be95717e3a57"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-install/SKILL.md",
+      "bytes": 4326,
+      "sha256": "0aaa0a019862e4ffbd95b724e3e566aae3a94428d3a9cb5ae055103a36f0e3ea"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-install/evals/evals.json",
+      "bytes": 16196,
+      "sha256": "096eae9abbd79ae3c73bbe00adbb03eae96d5bd94ca57c519d9201b4d8d6e26c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-install/resources/verification_examples.md",
+      "bytes": 4249,
+      "sha256": "28bc88dfca1a9d93e4ceb571353506326435f53cd1206b1e12896bc131933dad"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/SKILL.md",
+      "bytes": 2999,
+      "sha256": "8c05e7427bd6248c8b56e9eaf94a926a8f308957ea411d2ef78c11d3332be408"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/README.md",
+      "bytes": 1712,
+      "sha256": "80080653f6b4f90f4a44f12f6705c7b933e6bf5586d721d536a417ea3099b99d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/lp_basic/README.md",
+      "bytes": 464,
+      "sha256": "83c1ecdbb8316212651abec800f208cf46c07426e30d75b47ca63946a8a4ff5b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/lp_basic/lp_simple.c",
+      "bytes": 3691,
+      "sha256": "68f451834ca097bf442cbc5677b4351ad765635550c7ab9fb48e73794bf91b89"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/lp_duals/README.md",
+      "bytes": 498,
+      "sha256": "28ad0ba9c2fe73b4eee30d70faa538f4aeb8a45a39063f964ea8affe93027f2d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/lp_duals/lp_duals.c",
+      "bytes": 4046,
+      "sha256": "0e9002ea18fd549d386c12d2a0b014a0ed08e54f157588b889233f2b15ed722e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/lp_warmstart/README.md",
+      "bytes": 289,
+      "sha256": "8eb19380b49c41036bf0e2ed4dc2a91a9ef3bc699c00362b8b7ea983d9acad43"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/milp_basic/README.md",
+      "bytes": 403,
+      "sha256": "25ec7979ae7843fe43f5ee2e93d97b93ba47df1b5cc8f476bc0964a5cb11eac0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/milp_basic/milp_simple.c",
+      "bytes": 3449,
+      "sha256": "46e0f74e9e5821581a54911dafc653e7ea13440c9d7b9f62dc2dd02645776ae1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/milp_production_planning/README.md",
+      "bytes": 457,
+      "sha256": "1e5a3b4bb66e40bc93a7e701a079ef62ba1ed4bf4a695d7939e0f12a997b2d70"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/milp_production_planning/milp_production.c",
+      "bytes": 3532,
+      "sha256": "f71da80e00b49bbabf62f727a1d9d48efb2e18421e833f3b6c533c5b2b86d364"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/mps_solver/README.md",
+      "bytes": 588,
+      "sha256": "cfb269628608b0d8f4dca39532a45cf0545eceb296f454c406ee219a6fb509a4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/mps_solver/data/sample.mps",
+      "bytes": 490,
+      "sha256": "30b3f871918160e9c1c5e760e39e9e5a973e51aaad09798765c8ca741641bb04"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/assets/mps_solver/mps_solver.c",
+      "bytes": 3479,
+      "sha256": "817587f30e5a713a326513fb2500c05b90258147cf16c194497440b002bd1a58"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/resources/examples.md",
+      "bytes": 9707,
+      "sha256": "9286ecba867e84a0ffacabcd126297ed20da707e9dd86eaca363668507c43c4e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/skill-card.md",
+      "bytes": 2012,
+      "sha256": "a24cc806a03805c26608f2c9cdcac336c69d99f5b8df77ae0f55ddd66faa69ae"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-c/skill.oms.sig",
+      "bytes": 7565,
+      "sha256": "2a1ecb8fb4a5301c7f37243a2fcc533afb7b39647d64c0bab12420ae1a87fcee"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/SKILL.md",
+      "bytes": 2741,
+      "sha256": "c94120dfdbf82da4af45010bdc9f1eb09b8475d3a50e36d6910c514d7b9b678b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/assets/README.md",
+      "bytes": 856,
+      "sha256": "e0ba100e776ae7047b4014da489c3e4f3d730752271998debc9af029953acc45"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/assets/lp_production/README.md",
+      "bytes": 192,
+      "sha256": "b25af53197c5d20ec2976ba786e6e6a25f0eb568d7c532eefeec06736d1925a8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/assets/lp_production/production.mps",
+      "bytes": 375,
+      "sha256": "e56ae2fef98dfa6b341566942aad5b7467958fcd92b793402f49d0c7bf762c01"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/assets/lp_simple/README.md",
+      "bytes": 191,
+      "sha256": "bc13fe6884a32d9da5b11475ccf98f68f1fdabe706d4b3c38c7be08401435bf5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/assets/lp_simple/sample.mps",
+      "bytes": 490,
+      "sha256": "30b3f871918160e9c1c5e760e39e9e5a973e51aaad09798765c8ca741641bb04"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/assets/milp_facility/README.md",
+      "bytes": 199,
+      "sha256": "cda5b7afe62b7169a160618ad16311924d3a07fadede5db41edb7df325c63b05"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/assets/milp_facility/facility.mps",
+      "bytes": 694,
+      "sha256": "368705697db45b3b3e1708bd1391e167d5a9f5348816514d0a801c2ce579f08c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/skill-card.md",
+      "bytes": 2005,
+      "sha256": "ff0687a0214e0999b5de1e7ff0014fff0f554f8e90d4f60da2cef231319f7593"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-cli/skill.oms.sig",
+      "bytes": 5861,
+      "sha256": "7838119c5f112eafa962eb604d08edbb0ff083cdbdf4b23f72f22cc3d5f827ee"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/SKILL.md",
+      "bytes": 12038,
+      "sha256": "79f4e542156e278baecf8b6608a71b5c5315be29d6a75984558b5fb4554d036f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/README.md",
+      "bytes": 579,
+      "sha256": "449f82b5460987df693b910a5e56a983cd6888b8afd7139605d6b83352595937"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/least_squares/README.md",
+      "bytes": 136,
+      "sha256": "668b72b0d819ac36af2381614ebb78db5377d091745f29e49801f28cce7f6acd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/least_squares/model.py",
+      "bytes": 831,
+      "sha256": "2caa81435a4136e871a3fbb4bbe108cc1b56fa392a466257884fc2f5c39e4d87"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/lp_basic/README.md",
+      "bytes": 207,
+      "sha256": "4acc17c77d3de29d7afe4d4176001f945f58f4f1f219854e57c7b28519284d25"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/lp_basic/model.py",
+      "bytes": 1122,
+      "sha256": "f941f7956ce689afbe9e8018899d651ae8823f1357fcaad14ab9e475e15f37bc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/lp_duals/README.md",
+      "bytes": 227,
+      "sha256": "24d1649b4200621a6d5f6be74923c797c7c8e551f4384da51a282262dff5bef0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/lp_duals/model.py",
+      "bytes": 1213,
+      "sha256": "50888d88c2df91597c5dfa4b223e75806eeda818232ab5c766301b7d5f248463"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/lp_warmstart/README.md",
+      "bytes": 140,
+      "sha256": "8dc345421a300259c62537e3eb6f040ba25de3ccabef07355423f3448ace5f88"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/lp_warmstart/model.py",
+      "bytes": 1860,
+      "sha256": "591ba5f376d666f7764f91d01635e05249929f4c0abd1d90c16dee647c04536f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/maximization_workaround/README.md",
+      "bytes": 152,
+      "sha256": "f936a6b8a716a92aa909de3e9215c67a309b2122a8a809cdd9dd654c5cc627b9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/maximization_workaround/model.py",
+      "bytes": 736,
+      "sha256": "4157cbfa815fe878316b95f1d4f6688c77cd0aa3bb8caa0835d98a4a108f0bf7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/milp_basic/README.md",
+      "bytes": 433,
+      "sha256": "0d6c4ba7dba018764c89699b9723bf59ba1ac4fc155c7551900665cfe929db4b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/milp_basic/incumbent_callback.py",
+      "bytes": 1857,
+      "sha256": "1220591fbbcd51807f1d126f8960fbd417177f56bab2e214cbc760169faacd16"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/milp_basic/model.py",
+      "bytes": 1184,
+      "sha256": "d48f179e2a8c097a80f532a1bc20c12944059affd42d2e50e226f66767918aa4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/milp_production_planning/README.md",
+      "bytes": 165,
+      "sha256": "4d7b2481d7e7cecb7ae7364078d3660dc511fe16b67f7288a521c7a8f6af3557"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/milp_production_planning/model.py",
+      "bytes": 1235,
+      "sha256": "0109d316bfdc037f2707f909e4134c4169d3703b3420c1239f140fed4439ccbf"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/mps_solver/README.md",
+      "bytes": 2248,
+      "sha256": "78a9078033d49a96774251aa7edf1322cf964b293a4f6376ed5b97aa199cffaa"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/mps_solver/data/README.md",
+      "bytes": 2025,
+      "sha256": "18d3b6047149167392e39ecd47326cc3ffe124c6ef9468d54172ac69603d2549"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/mps_solver/data/sample.mps",
+      "bytes": 490,
+      "sha256": "30b3f871918160e9c1c5e760e39e9e5a973e51aaad09798765c8ca741641bb04"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/mps_solver/model.py",
+      "bytes": 8409,
+      "sha256": "ae52c273cd3823e8a216207489eac919aac1b7ce59bde6960efef943457e4f4f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/mps_solver/results.md",
+      "bytes": 2521,
+      "sha256": "eb0cc93e3fb15c982a187cdca51068689380f2198cd4426a64f73b227ce8bf0e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/portfolio/README.md",
+      "bytes": 232,
+      "sha256": "8e09791f50d3edcc8d220f275a7d627ba400700a126eb039d4be8812d7659b9f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/assets/portfolio/model.py",
+      "bytes": 1610,
+      "sha256": "9dcf115d5887e4d903a897dbbbb49fe14fd8ad5f7ab420fd62df5601eebfc3b2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/evals/SOURCES.md",
+      "bytes": 1794,
+      "sha256": "d5f860c76800ae3a386f168f3fa4bd9302236e5745e6b9a27f6d7affbc117a2e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/evals/evals.json",
+      "bytes": 150775,
+      "sha256": "7331a4f0cf013fd718cf407ea22121d30726c3736cc22237f826b1734663a36c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-numerical-optimization-api-python/resources/qp_examples.md",
+      "bytes": 5800,
+      "sha256": "6e5aecf36d1d844406242a4a04844b43f6a6fd5b6bbbcd873c53f27912eece9a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/SKILL.md",
+      "bytes": 3171,
+      "sha256": "70033dabd105a7d92d87effe0860298ceb5c463cbd010561e16b6143be326fa2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/assets/README.md",
+      "bytes": 551,
+      "sha256": "0d77f8a6b790a9674e44758ea3045753f4a1dc417e201479dedee026e3f832e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/assets/pdp_basic/README.md",
+      "bytes": 255,
+      "sha256": "7cf3797d098a5534a0b2c1309f635d6e8ea7df62b9e59469b6e5642922d5cb44"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/assets/pdp_basic/model.py",
+      "bytes": 1568,
+      "sha256": "144da1df5de28d785a9b467b3d14417e716f532ac9b989046eaf7e4f5299a5fd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/assets/vrp_basic/README.md",
+      "bytes": 270,
+      "sha256": "4a223e1eb4d00b2e88b84a7ca30461660e480318e8ec4ba5060230cd982e534f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/assets/vrp_basic/model.py",
+      "bytes": 838,
+      "sha256": "5245b77465a26b68aefbaa3249b51ef0da4505f4e1974cf6d0f44b1c78fc8070"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/resources/examples.md",
+      "bytes": 7019,
+      "sha256": "5eb35735559d935c21e20a49591d54c9b6fa9247217aa4776a5f8983cbd27f81"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/resources/server_examples.md",
+      "bytes": 5794,
+      "sha256": "508bf4ae8cb5bc7e249b377260f1421b70d9d345bb5a6d16c6fa0b56e256825b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/skill-card.md",
+      "bytes": 1848,
+      "sha256": "6470c4c9a662c5466806df8af3e74d74ee80ecee7e8362f8bce324590082a79d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-routing-api-python/skill.oms.sig",
+      "bytes": 5805,
+      "sha256": "57cb66fc1e3676855529006ddbc963a5d4ef5cc7c2aec0c75a6126811853ae83"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/SKILL.md",
+      "bytes": 2803,
+      "sha256": "8c362611594980ad55cee3edc4d3678bd01706f6ae7346eae1ddcea2d109fea0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/README.md",
+      "bytes": 609,
+      "sha256": "a83cceb101feb28953be9fa0689f73174674914e6ecaa2cea93df102e00114ff"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/lp_basic/README.md",
+      "bytes": 369,
+      "sha256": "1c6e89eeee88de7d2968c684cf8b45ba9be0c2e4241e094f30f72c67034f1f7b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/lp_basic/client.py",
+      "bytes": 2337,
+      "sha256": "6a6ff52fec5c8fc2d5c52f28b90d63b855b4595e8471fe5d28a5071900076eeb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/milp_basic/README.md",
+      "bytes": 361,
+      "sha256": "faa4ee10a6585839aeb4492e077136038eeeb0bcdebb92a18b24eaa5ded2e659"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/milp_basic/client.py",
+      "bytes": 2323,
+      "sha256": "e6dced1ec5dc672d33b283e092b3904a4870ae105fb17e390430d583f72409a7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/pdp_basic/README.md",
+      "bytes": 288,
+      "sha256": "5c0b7e3c35eb111f9246d49a8022108b4d4e4ee284bef283f5aa2120fbc3ed0d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/pdp_basic/client.py",
+      "bytes": 2822,
+      "sha256": "a7b58ead93b0a53ea487ae9fb3da771b8b7abe9dcd920b593e0593184ecd5478"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/vrp_basic/README.md",
+      "bytes": 377,
+      "sha256": "6928074413dfe1ea415bf1dee79cebc186546feca8dc40fee1e42a29651e5164"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/vrp_basic/client.py",
+      "bytes": 3003,
+      "sha256": "63d1eb6df0c84177093804a66189fb6aae50a7ea4d7cdb7425e7a619ccc0b136"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/vrp_simple/README.md",
+      "bytes": 255,
+      "sha256": "6ec45bb5a5e0f1a122f241179187c4e608cbca88d8081da4229164d281316b5c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/assets/vrp_simple/client.py",
+      "bytes": 2680,
+      "sha256": "f7e1ae49607c94e3c818b169006a3834c762c158ffc2f436295d180c8259ee59"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/skill-card.md",
+      "bytes": 1860,
+      "sha256": "d5064e0ac6142943a201672d953b1706f0237d259a6577c075661b1c4aed37cc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-api-python/skill.oms.sig",
+      "bytes": 6769,
+      "sha256": "b24531eef87f46babf6981aa0eacdabe1ed9a83218126010cd4ae5cfeec344b8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-common/SKILL.md",
+      "bytes": 1460,
+      "sha256": "a23e1fcc9a2b0c080db5d5b28d2d86311d41744944d3cf1c61d27f21c780814e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-common/skill-card.md",
+      "bytes": 1811,
+      "sha256": "e14cf5c53ed7d4d64337806ab37c4f1d23e9f84cc84d82af14f301fd766b0cb2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-server-common/skill.oms.sig",
+      "bytes": 4149,
+      "sha256": "5eb80f91cf3cd8ee8bfcf1b37146806dc4ce0a90a9face4c69742c7abccd33ae"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-user-rules/SKILL.md",
+      "bytes": 8155,
+      "sha256": "c11988d40ef03712c38b6d48b04f2cef6c2724cbd361bfa02437854a000205c6"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-user-rules/skill-card.md",
+      "bytes": 2039,
+      "sha256": "1fcc332c3a304dda2465a1eb4e8de2d689ee5cdd90c91a956f4903e6c27ad0b5"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/cuopt-user-rules/skill.oms.sig",
+      "bytes": 4141,
+      "sha256": "75cf1087c79f440f417e5ab43af3bbfc05aefbf39a41b8f34bf3a12c844c0c0f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/numerical-optimization-formulation/SKILL.md",
+      "bytes": 18698,
+      "sha256": "671685f2e963d77f526f19e8ee4fb582fbb120999dc735e2498e5d73ed0fac10"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/numerical-optimization-formulation/skill-card.md",
+      "bytes": 1843,
+      "sha256": "758afe33c1fe1809d31495ee53ea758183c2ac123c527c16ed316f333dc9be3c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/numerical-optimization-formulation/skill.oms.sig",
+      "bytes": 4169,
+      "sha256": "f40b94e107109a07a3f173ec7e5d40f57be142abe85dd1feb21979f2fa5328bc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/routing-formulation/SKILL.md",
+      "bytes": 1280,
+      "sha256": "18a005a54fa2a32f7c1049733a4de5b11a7c3788deb59f1d2399a90358a46685"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/routing-formulation/skill-card.md",
+      "bytes": 1844,
+      "sha256": "88bccdbb2170beadfb28e16fdf7a0a4bec2761d1637d2db7b92330cb68ca4ae1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/routing-formulation/skill.oms.sig",
+      "bytes": 4149,
+      "sha256": "128ff786b079e5addf27e6b56167dd695e8e2d9467c6f4890eb980582f6f83a8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/skill-evolution/SKILL.md",
+      "bytes": 15088,
+      "sha256": "aad003f143a90e965d95de42a019956125368ceec4f0c0424f1db416f6427c0a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/skill-evolution/skill-card.md",
+      "bytes": 1785,
+      "sha256": "609a78fc67e565f41747c0ab03810d0e2cc97864650902d706891eaff78e90a0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/cuopt/skill-evolution/skill.oms.sig",
+      "bytes": 4141,
+      "sha256": "56f3a5a624142249744a69f44ccf4f36213c73db5cb256ffcc01712e1485109b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/.claude-plugin/plugin.json",
+      "bytes": 348,
+      "sha256": "47079f75f17f228964c47b0ff815e1578ff0488cd83aeaded480bf09d2aa3ec4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/SKILL.md",
+      "bytes": 11430,
+      "sha256": "2ed608ac928939886bd980be3de50eb4374f59da17627efee627a12787bb32be"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/evals/evals.json",
+      "bytes": 8159,
+      "sha256": "2c924d2e0e317b903144a15dc848dd7e999867a4cb7641ad430bdfe823d53460"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/best_practices.md",
+      "bytes": 34033,
+      "sha256": "859f2269901f8a5716302e808dd1ab619c5ed46f688dfe8514a64246cb9547ae"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/buffer_apis.md",
+      "bytes": 54809,
+      "sha256": "c40e8d38912c0bfefe4fcf0e57338e36c9ce0ad33e180b615a484f62a79ebd4e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/docker_containers.md",
+      "bytes": 8343,
+      "sha256": "58505ceb6875c4e2ea68c3aba454d62e386534c63233e042322f731fc9aec913"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/gstreamer_plugins.md",
+      "bytes": 32021,
+      "sha256": "f38f1b582cb6288656dc8dfbd070803bfcb5c73fd4bdd93eff33f2fe6d745515"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/kafka_messaging.md",
+      "bytes": 58936,
+      "sha256": "ba03d49e394d647428c1c23d4724c0365cbef37ccb085c2ffe14e93ff9ef653d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/media_extractor_advanced.md",
+      "bytes": 27694,
+      "sha256": "b9e1e11fd9aac184424724df901ba7a97584bec0722e74309007bde9d8bfad93"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/metamux_config.md",
+      "bytes": 12145,
+      "sha256": "d637ee96c572bd4924f09ae9b297f0b61fb48794ff69254eea9dc526451ea977"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/nvinfer_config.md",
+      "bytes": 21142,
+      "sha256": "5e672a35cf715c463afc561d638f90791f3c956d65e693d4d84c2c653dc06270"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/rest_api_dynamic.md",
+      "bytes": 11762,
+      "sha256": "c303af46e79ae2d0dc8eda61c6aab2c561d67d6651942d371205a611979625bc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/service_maker_api.md",
+      "bytes": 62737,
+      "sha256": "289a62e62c179b16b00414b249045102345ce96c3b37432f4d723fcbfb146ad0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/tracker_config.md",
+      "bytes": 50683,
+      "sha256": "8eff90630bfafb21ebe80f6012ef581c043dcfc1358998e155294ec69d1c3944"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/troubleshooting.md",
+      "bytes": 26167,
+      "sha256": "3c3ff11be2928ed46d0fda07b5aa8a411044e0c57487440dc44f429e55a291a9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/use_cases_pipelines.md",
+      "bytes": 35105,
+      "sha256": "820ac804f4c01b09b5710e214f3dd7fa87a1015f447c4a3ac01c7ed21be0b067"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-dev/references/utilities_config.md",
+      "bytes": 46152,
+      "sha256": "a83e12981c69732a41e3b5c63328ac2c8269205af448b03097356d9268cdf615"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/SKILL.md",
+      "bytes": 10282,
+      "sha256": "e60e05c0973d73c91a236eafd50fb8d5d8c225e08732d57172e53f540495eb1f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/references/engine-build.md",
+      "bytes": 15983,
+      "sha256": "131e51814be34cfec4041557f56b33d8441d6f21b9ed74f466fd6d7be877a730"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/references/model-acquire.md",
+      "bytes": 22571,
+      "sha256": "4e5bfd40f536e8246866d59ea1a8b005f0528636557a51b4b73347154b1bfb37"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/references/pipeline-run.md",
+      "bytes": 26112,
+      "sha256": "9bfe018e2da412c93cad7afe87c830a4c34d84b229f27a2cf57d1ecdfb9787bb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/references/report-generation.md",
+      "bytes": 26854,
+      "sha256": "cab3c636cc1f4c1f2a31f5d81358f036cca14a3335485dca0f3cc251c0a679a2"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/deepstream/benchmark-ds.sh",
+      "bytes": 3597,
+      "sha256": "f3df176d84a67d954424dbb6169c07486b870d141a23847effea2f82bca05b61"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/deepstream/ds-kitti-dump.sh",
+      "bytes": 4602,
+      "sha256": "cd1765a6ab609e2ff7d9ec8111a33dba3eff107382695b22754094d64363f153"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/deepstream/ds-perf-run.sh",
+      "bytes": 4889,
+      "sha256": "d15f1ddfb833be7f99e81e08f93dafcc3301a1de86827f651db500ccde88f1ce"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/deepstream/ds-single-stream.sh",
+      "bytes": 5015,
+      "sha256": "6b0e0e760dd07e4d2725422ef50f1eb271747b49f13c7842e3f11db46469ac5c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/deepstream/ds-sweep.sh",
+      "bytes": 11297,
+      "sha256": "ebd29d25904520e1438e19b7ec8ce41f95a1ea2458a49d08d15079620ae6b1e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/deepstream/extract-frame.sh",
+      "bytes": 1981,
+      "sha256": "fe8d806f46ceae8108653f607e08db509115a37862a53ef9546e437d9bd451f4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/engine/benchmark-trtexec.sh",
+      "bytes": 2783,
+      "sha256": "7452a467f56bedb0838d8e36ff970ac64600737c9beccae5f4ccacc309dc5ac9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/cleanup.sh",
+      "bytes": 2774,
+      "sha256": "4109f951adf7a03887cc1317e7c0c86d1c2d3083dc9ab97eb0f4f770a39ec0f4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/hf-download-config.sh",
+      "bytes": 2277,
+      "sha256": "b0d6000e29f75e995d97e82ee294f887f6cae48c527f6c652f286003a03f3811"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/hf-list-files.sh",
+      "bytes": 4449,
+      "sha256": "fe73a78050f375d02f60cb87fa76d157560b153e5ccf9d4b6d8d8d1303854fed"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/inspect-onnx.py",
+      "bytes": 3742,
+      "sha256": "5956305b04c811dd41f310f688bfc73584ab1fd2fc5f2c86d53ee965db9f0ea7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/make-static-batch-onnx.py",
+      "bytes": 2781,
+      "sha256": "1e3b622aa005d7318aec72eb6c0e965917e17cd4ea30b92bb071394fa1bd67dc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/ngc-download.sh",
+      "bytes": 3907,
+      "sha256": "44b2ccaa8cddb70d521d770621a3aa1d5ee542cf6f5130f858027a2997163d3b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/ngc-list-files.sh",
+      "bytes": 2676,
+      "sha256": "e3e5e09e68c2ffdf413f7331254c5ee8dd1c7b8e3c5072ea5a10baa1e1a95f40"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/model/safetensors-to-onnx.sh",
+      "bytes": 3259,
+      "sha256": "ccc9aba687e8601c2d254cfee0b750d6c042280b7362ba4e7c396aa0482f952b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/generate-benchmark-charts.py",
+      "bytes": 11108,
+      "sha256": "325a7a3a4a3740e6a3c86591f324e9cb512c65bdce010f7d954602182681e9e3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/latex-pdf-wrap.tex",
+      "bytes": 1689,
+      "sha256": "2b28a4e48349d140762aa20f12cea962a692cb7fee753715cb401ff9a33dd39d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/md-to-html-pdf.py",
+      "bytes": 5501,
+      "sha256": "a9817742347c1c203ccf3f91ac75360f91dfba605c2d5ae0dae5e79348650c48"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/md-to-pdf.sh",
+      "bytes": 2272,
+      "sha256": "ddeac58686835b41f2d0ccf047f075d152fb296c1c68b1d3fc3bd3da8f14c16b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/mermaid-puppeteer-root.json",
+      "bytes": 86,
+      "sha256": "896e2d8f3bd9e8622ed9c709fa9c597fbe3b98976f808b8eb22ddb0a715bdd53"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/mermaid-puppeteer.json",
+      "bytes": 42,
+      "sha256": "03ae81fddec97b7f37a4086f1accdf50bc4a8018d680d2de9b8f4dfd0fb60c0f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/pandoc-wrap-tables.lua",
+      "bytes": 2286,
+      "sha256": "b677ce07908bbd4a0c33df365e9b1c3d93c52c6f0daf82080cd41adc811425a7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/render-mermaid-for-pdf.py",
+      "bytes": 7548,
+      "sha256": "8c0f5f3584b9c13d1466747e2d843434b6244bc386a2547f778aa0da05eee1e3"
+    },
+    {
+      "path": "vendor/nv-skills/skills/deepstream/deepstream-import-vision-model/scripts/report/report-style.css",
+      "bytes": 1837,
+      "sha256": "eae9b479291527d2afbdbf0b45b64377c7b15f8392b2e7d28c3f488d725fa003"
+    },
+    {
+      "path": "vendor/nv-skills/skills/nemotron-voice-agent/nemotron-voice-agent-deploy/SKILL.md",
+      "bytes": 2313,
+      "sha256": "0bebca06c0c40824ca7b2f3ef18775d5f6006a4e6dd2b107d1960d2b11dce2ad"
+    },
+    {
+      "path": "vendor/nv-skills/skills/nemotron-voice-agent/nemotron-voice-agent-deploy/references/jetson-deployment.md",
+      "bytes": 2442,
+      "sha256": "e1ba7a0b9f9ec14dea611aa805a39a9c56b8b4d3c2f040d0f37ad1a809f680e4"
+    },
+    {
+      "path": "vendor/nv-skills/skills/nemotron-voice-agent/nemotron-voice-agent-deploy/references/workstation-deployment.md",
+      "bytes": 2792,
+      "sha256": "c5a561181d60747131e2ade472c36a39a08ea41d2f6568b495de47a375e6658c"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/SKILL.md",
+      "bytes": 8523,
+      "sha256": "4b8572ee525c578060c2c07142460b935e9c8eab069f9bcaada3d56416ff049e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/api-reference.md",
+      "bytes": 1487,
+      "sha256": "a113d2de19185ff03e5db15a9c77760d5fcad35e5daf968eaf03b76ea5b21419"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/data-catalog.md",
+      "bytes": 1751,
+      "sha256": "995dda145af478d4f143719c6ea91e8f690d7ab735f5a36d2c188e0c8574462f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/evaluation.md",
+      "bytes": 1030,
+      "sha256": "a211f744d82f0f4681ec4c2f6245e2100be29e88f81bc9c4ad6b14a4d3c3a8f1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/guardrails.md",
+      "bytes": 1687,
+      "sha256": "81a9b41d645fe98519a5b30c9dd08c0cc7884d0a08962a1df1826f533c5dc044"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/ingestion.md",
+      "bytes": 3608,
+      "sha256": "a719fd93000c82f785b81e623789371127e280483c9d580d109a85fd87cada76"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/mcp.md",
+      "bytes": 1330,
+      "sha256": "d56b81476c5da1fb4a539abd9108e6feeedea7619b99f5f5b021aa6c7ed6e802"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/migration.md",
+      "bytes": 1632,
+      "sha256": "23ebc0eb94fa5095111dc9fb7d68fe01f7576958f8f5384c9abbfe78bac00e98"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/models-and-infrastructure.md",
+      "bytes": 4303,
+      "sha256": "ed5fac2c7ae0293da8ea07ab602a71ddf2b8956d05458ec8c97ce5722f8b382f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/multimodal-query.md",
+      "bytes": 1877,
+      "sha256": "5e18228577dccf2d6039905fea16c3a6a8aa16cdc16e44d8ecfe7fe19ee76941"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/notebooks.md",
+      "bytes": 2479,
+      "sha256": "ab81bff7343bb8b5bf63772502c411a9e67d7c99d42fbe1d9b2af4a215d42f82"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/observability.md",
+      "bytes": 1484,
+      "sha256": "f1c2d3617770b4e660212ccde6d7ce3c363be2fd2fab28901fd3d767e0b5922a"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/query-and-conversation.md",
+      "bytes": 4438,
+      "sha256": "86dc98c84a097951df2aef4c9fd83105ab120bf8c1c0859659706b2e2bbbc9ac"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/reasoning-and-generation.md",
+      "bytes": 3323,
+      "sha256": "adb092f2fc22e151922a6bd8e4a8e892be70f96c0c5b7813a7ea5a8d64b27c24"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/search-and-retrieval.md",
+      "bytes": 3791,
+      "sha256": "22ec3f3ba44c80615ad9b8dc0f91897a379ddb42d000a3bf69439d0cae32ca5d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/summarization.md",
+      "bytes": 2103,
+      "sha256": "97f43900f70b3eb02dfe71e367ca9045ec2cea457afbca4a9c43c19aa4b3cd56"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/user-interface.md",
+      "bytes": 1311,
+      "sha256": "6574e002b6d0b7e88c27075e451837f5942600b66eccc61ee206202d1ac5e90f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/configure/vlm.md",
+      "bytes": 3131,
+      "sha256": "2f45f14a3946a82fc7c4508ee9ddc7d0e1f7ea4748318b44ffcee0897b3a2152"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/docker-nvidia-hosted.md",
+      "bytes": 2096,
+      "sha256": "c89f4b4d36a565b19d7bb94824add9805ea331140fc41bac31d76260ddff3160"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/docker-retrieval-only.md",
+      "bytes": 1688,
+      "sha256": "44d629a51b746e89ed2680669598958661e4c4064eac58c23b2548675399026d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/docker-self-hosted.md",
+      "bytes": 2340,
+      "sha256": "1fd41a62734cc0cfb19d2333938191ec47dbe3a00f54f93aa7bf15ce0b1c18f1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/docker.md",
+      "bytes": 3942,
+      "sha256": "a37c3374d11be93fb6ae3fe634e24d569b1eb1ea8e5b19027000abb4f8759819"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/helm-mig.md",
+      "bytes": 2076,
+      "sha256": "d1b0fdff3e5486c160623a68021226adb5ccff71a4ac44c6a8e30516081ff962"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/helm-standard.md",
+      "bytes": 2396,
+      "sha256": "54744f31ee5825c9a44a80ef851ecd9a34beb645e8c6cc2b65b278266ae497d1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/helm.md",
+      "bytes": 5144,
+      "sha256": "36d85076e7345470827030a96dc93fe3f942536c79442be75433d0a989d2a299"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/library-full.md",
+      "bytes": 2291,
+      "sha256": "7bc35d06548d0fbf9e5e4804566fee1a8ad66085aa6c5ab91ff91788778b88b9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/library-lite.md",
+      "bytes": 1744,
+      "sha256": "0642481c3c76eb8aee6145819a65338dcb3549864144e79362cf53d71abfd7e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy/library.md",
+      "bytes": 2278,
+      "sha256": "a98a09d5bd9b519bc3920481c3fcd7b0973760f10de6ce6858748f9a001c5672"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/deploy.md",
+      "bytes": 7961,
+      "sha256": "50bf4558c02effc218e0fb4c17c82df12c1084992b1b955a7970bf00990089f8"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/shutdown.md",
+      "bytes": 4516,
+      "sha256": "965f0316cc769d34a1d089ef9b42ad63488ca54167415fd8a3cf7074a36f8356"
+    },
+    {
+      "path": "vendor/nv-skills/skills/rag/rag-blueprint/references/troubleshoot.md",
+      "bytes": 8375,
+      "sha256": "dcfedd7b8aa33172987176624711bde434f0a9e31faf9f1c376387f0b6d67864"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/README.md",
+      "bytes": 3989,
+      "sha256": "883dd25c66eba5bb96c894338506577e2e6fd126ade7ffb319b364faa9d463da"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/alerts/SKILL.md",
+      "bytes": 16245,
+      "sha256": "436bca273cc202d1352551f6c8b45398f1683d459547881ffebf0573b8a1fc70"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/alerts/eval/alerts_vlm_real_time.json",
+      "bytes": 5141,
+      "sha256": "f6c6bcb8d04789cd396d2e78faa1534ce5a92ddf6aab964d1eba1461ca03ab27"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/SKILL.md",
+      "bytes": 18110,
+      "sha256": "cf4b99cf38502e67caf8512e00ae3cf94e01076837070c30da60b4729aef39d1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/eval/alerts_cv.json",
+      "bytes": 1983,
+      "sha256": "2ab43a1791e839702f2eab160c6753477a429d18979d03290538a5fb2a425772"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/eval/alerts_vlm.json",
+      "bytes": 1639,
+      "sha256": "35dcd6b85739fc015f4aeb79bb4a2179a0bce9e12094d32ec2bd59cb7a1c6a3f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/eval/base.json",
+      "bytes": 1468,
+      "sha256": "8a7165026a7bde781d69f107ae5eaec4275f92b8e8136bc3a5d51fb47f80c09d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/eval/lvs.json",
+      "bytes": 1545,
+      "sha256": "6917965c4611c9240e838cbeaa49043612c180552869d3e652b6c88cc28230cc"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/eval/search.json",
+      "bytes": 1503,
+      "sha256": "229a6669df4c18ff83b3480983a7aa1b95e739b7a75f33c6f316c667bf41280f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/alerts.md",
+      "bytes": 1566,
+      "sha256": "93a9e49306cebf9ddda5c24bbc30fb80187cb4c9507edef79b585c11a66c297e"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/base.md",
+      "bytes": 6924,
+      "sha256": "d83c99d978e67a367496d11c0f31e26e04c0675b7a6e406c7b3e2de1a38a9826"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/brev.md",
+      "bytes": 5746,
+      "sha256": "793704d6699e374343b8da165f243b0e54a12a52af2fdd0e126512ba92287fa0"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/data-directory.md",
+      "bytes": 876,
+      "sha256": "d628f78e5a0f59d0ea1910ddfebf8fb67ff7f2dd7acb9f2239942e7f36ef25a6"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/edge.md",
+      "bytes": 8711,
+      "sha256": "7adb33874a4a4f4d51999b729d3d9ed818f97afe3f61a5568d9a12e3aaf6950b"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/env-overrides.md",
+      "bytes": 3954,
+      "sha256": "0d9a2d96c05244e9fd21bfb1f5531b37703ec8cc5893e4c89729d3ba1a40ce80"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/lvs.md",
+      "bytes": 1095,
+      "sha256": "0c9e4c12b8e0d60d80bbd5fdaab9f573ca44c3df9e66178e65b8160fc6a7b028"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/ngc.md",
+      "bytes": 2341,
+      "sha256": "3aaddc7bc90e6c61d411493988e94426edd5c3c90a20b2ab41b6da434d1dbddd"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/prerequisites.md",
+      "bytes": 4862,
+      "sha256": "6d8eb1ffcd56bd90e1fb7b8e1ebe163950f070d6710edcdde2169e49db758a2f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/search.md",
+      "bytes": 1263,
+      "sha256": "190478d79afbe804ef799c2dcc3d86516c8888271700961b93a19245b9d59ee7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/teardown.md",
+      "bytes": 619,
+      "sha256": "b35647378926e3c4441c478182ec6175f785f2ce9b40a711695d245dda6410c6"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/references/troubleshooting.md",
+      "bytes": 972,
+      "sha256": "13683c0e36c0e45037724479e3916598c019ea961133a48bad93410267187575"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/deploy/scripts/brev_setup.sh",
+      "bytes": 2326,
+      "sha256": "c152ed40ada1a5bbf2170a1c3b95b002a5c9dd2752a3821a8d49bad26c0856b1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/report/SKILL.md",
+      "bytes": 4542,
+      "sha256": "26bae3f7111db6f5e1e5b7a54028a81b84bf9561fad9383b89eaf245cb30a606"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/report/eval/base_profile_report.json",
+      "bytes": 4124,
+      "sha256": "be900d30c053869c8123bd9b61d213f284426b4af387cc75fbe388f17ccc7048"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/rt-vlm/SKILL.md",
+      "bytes": 16977,
+      "sha256": "c58b6cb71320a3e92ac855ae1d02e09bacf6a6f1c8b5b640289245ad42a20bbb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/rt-vlm/eval/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/rt-vlm/eval/alerts_profile_api.json",
+      "bytes": 2728,
+      "sha256": "b64a94e1c92f30da8b7abe0bc68511b4a201599c0798ddaee3373aa08085bf58"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/rt-vlm/eval/standalone_api.json",
+      "bytes": 3540,
+      "sha256": "f2c69d6c8427485eab54401b2779732899d8cf2c4dd018896acc696fdccba1b1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/rt-vlm/references/deploy-rt-vlm-service.md",
+      "bytes": 27419,
+      "sha256": "38657f341529caf3083dbc0a0ee5464448f2241c3bcfcab2b1a1e3d3ea83d17d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/rt-vlm/references/kafka-workflows.md",
+      "bytes": 4083,
+      "sha256": "f8cb0c9056e6e201bd691971c20d67b753a1cccc4c2dbf2c2339b50a75339468"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/rt-vlm/scripts/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-analytics/SKILL.md",
+      "bytes": 5761,
+      "sha256": "6a0a9d04088fd06ba60f578ebda9a891066a9617d35189bbfe2feb4db6a23095"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-search/SKILL.md",
+      "bytes": 8754,
+      "sha256": "b0598909ba44deb93df5a1628a502bddc7bffba6218787062d44b36ab0fdea0f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-search/eval/search.json",
+      "bytes": 7625,
+      "sha256": "66188346cd6bb05535950b381e36f0ee62d81efa4db113fde9d9c4f3abf266f1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-search/references/discovery_modes.md",
+      "bytes": 2911,
+      "sha256": "1a897b93d5b3b5f59295579cd9f7b4e8349610ad96ff0e9749e9174a5ab5d867"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-search/references/troubleshooting.md",
+      "bytes": 5287,
+      "sha256": "a6f30ee155f616cf91d75ef408b78f3b344d3950b5426e8d755ab63bbdb98811"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/SKILL.md",
+      "bytes": 19557,
+      "sha256": "d0d074eef2b27f605224526e3bc82799fb2a4369b9d91cb522c3d8785374aaa6"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/eval/lvs_api_ops.json",
+      "bytes": 3831,
+      "sha256": "a02cc6b6e89309de94a6c486025ac2c53a1f1776377d1e0beffd965c1be52531"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/eval/lvs_profile_summarize.json",
+      "bytes": 3996,
+      "sha256": "78ab6d55808af7da8d7b5e7dd6bb6774f851ee19bc61c1b594cfd32ff4bc3cf1"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/references/deploy-lvs-service.md",
+      "bytes": 24183,
+      "sha256": "7135f8b5fac0764d46e590e2f8c29aea44a6ea080d1b72905db533aa83a7d855"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/references/hitl-prompts.md",
+      "bytes": 5424,
+      "sha256": "6b97309e60dbe97809c5a123e5cafbca0362b41c1e09a31ff6b4b4e250eaba54"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/references/lvs-api.md",
+      "bytes": 12262,
+      "sha256": "b255203a7fabdbc526822453b99a45831d50bc1eb396e0e1afd62240918c64fb"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/references/lvs-debugging.md",
+      "bytes": 7589,
+      "sha256": "ff5d55a21f06787afbe41e1615c453e4a5d9746f8abab470bb2be5612a1f2ce7"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/references/lvs-environment-variables.md",
+      "bytes": 6831,
+      "sha256": "148fead083c5c8f78b7eeca95f1f06e21c3bcc4264fc0ac20ff166051e8c5e86"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-summarization/references/lvs.env.example",
+      "bytes": 4061,
+      "sha256": "cf040e07958755b4a79d6c1680a0d5d7601fcdc9212d73679ca3a9e50747268f"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-understanding/SKILL.md",
+      "bytes": 3424,
+      "sha256": "d99e151386a851b3624bf0c0af905eebcdfb9712d5299ddea4ea171dba369a72"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/video-understanding/eval/base_profile_video_understanding.json",
+      "bytes": 3343,
+      "sha256": "30aad6848b205bd615bfd27437f59ed54dfc55278fbca97ba4bd20773c24c710"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/vios/SKILL.md",
+      "bytes": 17734,
+      "sha256": "9d700909aa2d78c5226f343dccbba4a1bc6de08a066f131e226a8f0676a2101d"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/vios/eval/base_profile_ops.json",
+      "bytes": 3232,
+      "sha256": "2983b52593e2e55ee39f39a07b8428e5055ce8a0dc99582773b60b7f03ccb5e9"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/vios/references/api-reference.md",
+      "bytes": 5945,
+      "sha256": "0edbb8db78a9c873072ee2248e449a651f158607acb26915111940e91fd3f0bf"
+    },
+    {
+      "path": "vendor/nv-skills/skills/video-search-and-summarization/vss-frag/SKILL.md",
+      "bytes": 9198,
+      "sha256": "6f9d681ca827c623b4d60afe772d206bf2e94557b5f4f2230ee527dda7d19575"
+    }
+  ]
+}

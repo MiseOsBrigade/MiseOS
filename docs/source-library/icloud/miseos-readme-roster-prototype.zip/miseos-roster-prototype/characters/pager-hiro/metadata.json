@@ -1,0 +1,68 @@
+{
+  "id": "pager-hiro",
+  "number": 37,
+  "name": "Pager Hiro",
+  "miseName": "Mise IncidentTriageRunbook",
+  "codename": "chef.reliability.incident-triage-runbook",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "common",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Incident Triage Runbook",
+    "signaturePhrase": "Incident Triage Runbook done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in incident triage runbook so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen incident triage runbook aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/pager-hiro/full-body.png",
+    "cardPath": "/assets/characters/pager-hiro/card.png"
+  },
+  "workflow": {
+    "jobName": "Incident Triage Runbook",
+    "roleName": "Incident Triage Runbook microagent",
+    "summary": "Runs incident triage runbook for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Alert Akira",
+      "OnCall Naomi",
+      "Yume Builder",
+      "Policy Kenji"
+    ]
+  },
+  "stats": {
+    "power": 80,
+    "precision": 79,
+    "speed": 86,
+    "resilience": 96,
+    "intelligence": 91,
+    "teamwork": 92
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "pager-hiro",
+  "seasonOneCard": null,
+  "displayNumber": 37,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/pager-hiro",
+  "avatarSvg": "assets/characters/pager-hiro/avatar.svg",
+  "cardSvg": "assets/characters/pager-hiro/card.svg"
+}

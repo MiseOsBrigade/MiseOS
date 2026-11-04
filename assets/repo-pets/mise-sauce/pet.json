@@ -1,0 +1,23 @@
+{
+  "slug": "mise-sauce",
+  "name": "Mise Sauce",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Workflow Saucer",
+  "department": "Automation",
+  "glyph": "🥣",
+  "catchphrase": "Turns repeatable work into flavor.",
+  "behaviors": {
+    "preferred_paths": [
+      ".github",
+      "scripts",
+      "bin"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-sauce.md",
+  "dir": "assets/repo-pets/mise-sauce"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "workflow-pages-static",
+  "category": "workflow",
+  "title": "GitHub Pages",
+  "description": "Static GitHub Pages build and deployment.",
+  "dependencies": [],
+  "files": [
+    ".github/workflows/pages-static.yml"
+  ],
+  "notes": []
+}

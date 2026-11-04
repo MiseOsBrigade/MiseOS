@@ -1,0 +1,68 @@
+{
+  "id": "reliability-sensei",
+  "number": 45,
+  "name": "Reliability Sensei",
+  "miseName": "Mise ReliabilityAdvisorAgent",
+  "codename": "chef.reliability.reliability-advisor-agent",
+  "department": "reliability",
+  "departmentLabel": "Reliability Kitchen",
+  "departmentTagline": "Observe. Measure. Improve.",
+  "rarity": "epic",
+  "roleCategory": "reliability",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Reliability Advisor Agent",
+    "signaturePhrase": "Reliability Advisor Agent done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in reliability advisor agent so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#0EA5E9",
+    "aura": "Reliability Kitchen reliability advisor agent aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/reliability-sensei/full-body.png",
+    "cardPath": "/assets/characters/reliability-sensei/card.png"
+  },
+  "workflow": {
+    "jobName": "Reliability Advisor Agent",
+    "roleName": "Reliability Advisor Agent microagent",
+    "summary": "Runs reliability advisor agent for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Impact Ichi",
+      "Pipeline Sensei",
+      "Platform Sensei",
+      "Red Oni"
+    ]
+  },
+  "stats": {
+    "power": 70,
+    "precision": 86,
+    "speed": 80,
+    "resilience": 94,
+    "intelligence": 89,
+    "teamwork": 78
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "reliability-sensei",
+  "seasonOneCard": null,
+  "displayNumber": 45,
+  "departmentColor": "#0EA5E9",
+  "departmentShort": "Reliability",
+  "assetBase": "assets/characters/reliability-sensei",
+  "avatarSvg": "assets/characters/reliability-sensei/avatar.svg",
+  "cardSvg": "assets/characters/reliability-sensei/card.svg"
+}

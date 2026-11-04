@@ -1,0 +1,78 @@
+{
+  "id": "orchestra-core",
+  "slug": "orchestra-core",
+  "number": 87,
+  "name": "Orchestra Core",
+  "miseName": "Mise Coordinate",
+  "codename": "chef.platform.coordinate",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "mythic",
+  "roleCategory": "coordinate",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Chef Spirit",
+    "signaturePhrase": "Orchestra Core keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "The soul of the platform. Sees everything and coordinates all."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen Golden Gate aura",
+    "silhouette": "chibi DevOps chef carrying Golden Gate",
+    "tool": "Golden Gate",
+    "spritePath": "/assets/characters/orchestra-core/full-body.png",
+    "cardPath": "/assets/characters/orchestra-core/card.png"
+  },
+  "workflow": {
+    "jobName": "Coordinate",
+    "roleName": "Chef Spirit microagent",
+    "summary": "The soul of the platform. Sees everything and coordinates all.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Kuro Guard",
+      "Template Tanaka"
+    ]
+  },
+  "stats": {
+    "power": 90,
+    "precision": 86,
+    "speed": 96,
+    "resilience": 85,
+    "intelligence": 88,
+    "teamwork": 94
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "15",
+    "role": "Chef Spirit",
+    "department": "Platform",
+    "function": "Coordinate",
+    "rarity": "Mythic",
+    "tier": "Soul of Platform",
+    "element": "Golden Gate",
+    "ability": "One Symphony",
+    "lore": "The soul of the platform. Sees everything and coordinates all.",
+    "image_file": "cards/png/015-orchestra-core.png",
+    "metadata_file": "metadata/erc721/015-orchestra-core.json"
+  },
+  "displayNumber": 87,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/orchestra-core",
+  "avatarSvg": "assets/characters/orchestra-core/avatar.svg",
+  "cardSvg": "assets/characters/orchestra-core/card.svg"
+}

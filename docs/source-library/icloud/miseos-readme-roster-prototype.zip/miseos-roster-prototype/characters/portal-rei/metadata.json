@@ -1,0 +1,68 @@
+{
+  "id": "portal-rei",
+  "number": 28,
+  "name": "Portal Rei",
+  "miseName": "Mise SelfServicePortalUi",
+  "codename": "chef.platform.self-service-portal-ui",
+  "department": "platform",
+  "departmentLabel": "Platform Kitchen",
+  "departmentTagline": "The stage where services live.",
+  "rarity": "common",
+  "roleCategory": "platform",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Self-Service Portal UI",
+    "signaturePhrase": "Self-Service Portal UI done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in self-service portal ui so the Platform Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#22C55E",
+    "aura": "Platform Kitchen self-service portal ui aura",
+    "silhouette": "multinational chibi DevOps chef carrying a tablet",
+    "tool": "tablet",
+    "spritePath": "/assets/characters/portal-rei/full-body.png",
+    "cardPath": "/assets/characters/portal-rei/card.png"
+  },
+  "workflow": {
+    "jobName": "Self-Service Portal UI",
+    "roleName": "Self-Service Portal UI microagent",
+    "summary": "Runs self-service portal ui for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Preview Yuki",
+      "Guardrail Goro",
+      "Ivun Cache",
+      "Resilience Ryu"
+    ]
+  },
+  "stats": {
+    "power": 84,
+    "precision": 91,
+    "speed": 82,
+    "resilience": 84,
+    "intelligence": 77,
+    "teamwork": 86
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "portal-rei",
+  "seasonOneCard": null,
+  "displayNumber": 28,
+  "departmentColor": "#22C55E",
+  "departmentShort": "Platform",
+  "assetBase": "assets/characters/portal-rei",
+  "avatarSvg": "assets/characters/portal-rei/avatar.svg",
+  "cardSvg": "assets/characters/portal-rei/card.svg"
+}

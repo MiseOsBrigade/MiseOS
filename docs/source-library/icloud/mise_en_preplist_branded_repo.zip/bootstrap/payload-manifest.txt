@@ -1,0 +1,6 @@
+package.json
+src/index.js
+test/index.test.js
+docs/APP_README.md
+
+sha256 bootstrap/payload.zip 162c8edc55cb255f6f0f11bca12a8ce8f2a96bc6cbc1d81de3dad9715b281f2e

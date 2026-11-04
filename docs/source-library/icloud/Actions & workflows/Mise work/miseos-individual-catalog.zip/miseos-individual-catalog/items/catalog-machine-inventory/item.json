@@ -1,0 +1,14 @@
+{
+  "id": "catalog-machine-inventory",
+  "category": "catalog",
+  "title": "Machine-Readable DevOps Inventory",
+  "description": "Machine-readable harvested inventory and de-duplication data.",
+  "dependencies": [],
+  "files": [
+    "catalog/devops-assets.json",
+    "catalog/devops-assets.csv",
+    "catalog/unique-assets.json",
+    "catalog/dedup-summary.json"
+  ],
+  "notes": []
+}

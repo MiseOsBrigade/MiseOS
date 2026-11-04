@@ -1,0 +1,25 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
+    "build": "pnpm run typecheck && pnpm -r --if-present run build",
+    "typecheck:libs": "tsc --build",
+    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck",
+    "film:intro": "PORT=5173 BASE_PATH=/ pnpm --filter @workspace/launch-film run dev",
+    "film:intro:build": "PORT=5173 BASE_PATH=/ pnpm --filter @workspace/launch-film run build",
+    "roam:repo": "node tools/repo-shemi-roamer/shemi-roamer.mjs . --max-depth=4 --tick=700",
+    "roam:repo:peek": "node tools/repo-shemi-roamer/shemi-roamer.mjs . --max-depth=5 --tick=700 --peek",
+    "roam:container": "node tools/repo-shemi-roamer/shemi-roamer.mjs / --max-depth=3 --tick=900"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "typescript": "~5.9.3"
+  },
+  "dependencies": {
+    "@replit/connectors-sdk": "^0.4.1"
+  }
+}

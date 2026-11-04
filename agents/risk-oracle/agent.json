@@ -1,0 +1,18 @@
+{
+  "slug": "risk-oracle",
+  "name": "Risk Oracle",
+  "kind": "brigade_mascot_agent",
+  "role": "Risk Analyst",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:134",
+  "thumbnail": "agents/risk-oracle/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/risk-oracle.md",
+  "dir": "agents/risk-oracle",
+  "files": [
+    "agents/risk-oracle/Risk-Oracle.png"
+  ]
+}

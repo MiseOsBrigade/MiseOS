@@ -1,0 +1,21 @@
+sequenceDiagram
+participant U as User
+participant F as Frontend
+participant A as API
+participant R as Workflow Registry
+participant X as Executor
+participant P as Amplitude
+U->>F: Open character surface
+F->>F: Render inert PNG
+U->>F: Click hotspot
+F->>U: Request explicit consent
+U-->>F: Consent granted
+F->>A: Authorize action
+A->>R: Confirm action is allowlisted
+R-->>A: Allowed module
+A-->>F: Authorization context
+F->>A: Execute workflow
+A->>X: Run local handler with timeout
+X-->>A: Structured result
+A->>P: Log completion/failure
+A-->>F: Return result

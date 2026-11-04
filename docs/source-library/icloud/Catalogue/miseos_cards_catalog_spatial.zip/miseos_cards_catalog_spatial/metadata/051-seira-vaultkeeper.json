@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #051 — Seira Vaultkeeper",
+  "description": "Seira Vaultkeeper serves the Security Kitchen as the brigade's secrets lifecycle manager. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/051-seira-vaultkeeper.svg",
+  "animation_url": "media/animation/051-seira-vaultkeeper.mp4",
+  "external_url": "https://miseos.dev/agents/seira-vaultkeeper",
+  "background_color": "8B1E2D",
+  "spatial_screen": {
+    "card_id": "MISE-051",
+    "level": 29,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.051",
+    "number": 51,
+    "slug": "seira-vaultkeeper",
+    "codename": "SEIRA_VAULTKEEPER",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Security Kitchen",
+    "department_code": "security",
+    "role": "Secrets Lifecycle Manager",
+    "rarity": "Genesis",
+    "rarity_tier": 5,
+    "level": 29
+  },
+  "lore": {
+    "summary": "Seira Vaultkeeper serves the Security Kitchen as the brigade's secrets lifecycle manager. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Seira Vaultkeeper performs secrets lifecycle manager within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Policy Ronin",
+      "Merge Sentinel",
+      "Watchtower Yoru"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE SECRETS LIFECYCLE MANAGER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Secrets Lifecycle Manager Protocol",
+      "type": "active",
+      "effect": "Executes the core secrets lifecycle manager workflow with evidence capture.",
+      "command": "MISE SECRETS LIFECYCLE MANAGER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next security station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 81,
+    "precision": 71,
+    "speed": 78,
+    "resilience": 90,
+    "intelligence": 68,
+    "teamwork": 91
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Security Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Secrets Lifecycle Manager"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Level",
+      "value": 29,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 81,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 71,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 78,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 90,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 68,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 91,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/051-seira-vaultkeeper.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/051-seira-vaultkeeper.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/051-seira-vaultkeeper.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/051-seira-vaultkeeper.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/051-seira-vaultkeeper.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/051-seira-vaultkeeper.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.072",
+  "number": 72,
+  "slug": "anomaly-aki",
+  "name": "Anomaly Aki",
+  "mise_name": "Anomaly Aki",
+  "codename": "ANOMALY_AKI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Anomaly Detection Studio",
+  "job_name": "Anomaly Detection Studio",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Anomaly Detection Studio",
+    "avatar_path": "assets/characters/anomaly-aki/avatar.png",
+    "card_path": "assets/characters/anomaly-aki/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Anomaly Aki performs anomaly detection studio within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Leaderboard Leo",
+      "Storyteller Sumi",
+      "Roadmap Sensei"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 76,
+    "precision": 73,
+    "speed": 67,
+    "resilience": 80,
+    "intelligence": 79,
+    "teamwork": 72
+  },
+  "paths": {
+    "readme": "characters/anomaly-aki/README.md",
+    "metadata": "characters/anomaly-aki/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

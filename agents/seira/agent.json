@@ -1,0 +1,22 @@
+{
+  "slug": "seira",
+  "name": "Seira",
+  "kind": "brigade_mascot_agent",
+  "role": "Signal Conductor",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:56",
+  "thumbnail": "agents/seira/thumb.png",
+  "character": "seira",
+  "cards": [
+    "docs/characters/seira.md",
+    "docs/characters/seira.md",
+    "docs/characters/seira.md"
+  ],
+  "pet": "seira",
+  "page": "docs/agents/seira.md",
+  "dir": "agents/seira",
+  "files": [
+    "agents/seira/Seira.png"
+  ]
+}

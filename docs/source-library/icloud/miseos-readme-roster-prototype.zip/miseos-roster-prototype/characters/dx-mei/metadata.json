@@ -1,0 +1,68 @@
+{
+  "id": "dx-mei",
+  "number": 68,
+  "name": "DX Mei",
+  "miseName": "Mise DeveloperExperienceSurveyLoop",
+  "codename": "chef.data-insight.developer-experience-survey-loop",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Chinese",
+    "title": "Developer Experience Survey Loop",
+    "signaturePhrase": "Developer Experience Survey Loop done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in developer experience survey loop so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen developer experience survey loop aura",
+    "silhouette": "multinational chibi DevOps chef carrying a orb",
+    "tool": "orb",
+    "spritePath": "/assets/characters/dx-mei/full-body.png",
+    "cardPath": "/assets/characters/dx-mei/card.png"
+  },
+  "workflow": {
+    "jobName": "Developer Experience Survey Loop",
+    "roleName": "Developer Experience Survey Loop microagent",
+    "summary": "Runs developer experience survey loop for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Cost Kaito",
+      "Revenue Rina",
+      "Iron Hashi",
+      "Grafana Mei"
+    ]
+  },
+  "stats": {
+    "power": 94,
+    "precision": 77,
+    "speed": 84,
+    "resilience": 78,
+    "intelligence": 74,
+    "teamwork": 96
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "dx-mei",
+  "seasonOneCard": null,
+  "displayNumber": 68,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/dx-mei",
+  "avatarSvg": "assets/characters/dx-mei/avatar.svg",
+  "cardSvg": "assets/characters/dx-mei/card.svg"
+}

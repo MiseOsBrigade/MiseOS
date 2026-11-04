@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.104",
+  "number": 104,
+  "slug": "harvest-hex",
+  "name": "Harvest Hex",
+  "mise_name": "Harvest Hex",
+  "codename": "HARVEST_HEX",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Operations Kitchen",
+  "department_code": "operations",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "agent_function": "Produce Alchemist",
+  "job_name": "Produce Alchemist",
+  "rarity": "Legendary",
+  "rarity_tier": 4,
+  "source": "uploaded_pdf_page_20",
+  "record_origin": "photo_aligned_completion",
+  "visual": {
+    "primary_color": "#D4AF37",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Operations Kitchen operational aura",
+    "tool_symbol": "Produce Alchemist",
+    "avatar_path": "assets/characters/harvest-hex/avatar.png",
+    "card_path": "assets/characters/harvest-hex/card.png",
+    "primary_photo_page": 20
+  },
+  "workflow": {
+    "summary": "Harvest Hex performs produce alchemist within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Garnish Ghost",
+      "Pantry Paladin",
+      "Ticket Tactician"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 87,
+    "precision": 81,
+    "speed": 57,
+    "resilience": 71,
+    "intelligence": 68,
+    "teamwork": 88
+  },
+  "paths": {
+    "readme": "characters/harvest-hex/README.md",
+    "metadata": "characters/harvest-hex/metadata.json"
+  },
+  "status": "photo_aligned_canonical_completion",
+  "confidence": "medium"
+}

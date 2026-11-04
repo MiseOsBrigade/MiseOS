@@ -1,0 +1,68 @@
+{
+  "id": "red-oni",
+  "number": 60,
+  "name": "Red Oni",
+  "miseName": "Mise RedTeam",
+  "codename": "chef.security.red-team-chaos-security-mode",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "epic",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Red Team / Chaos Security Mode",
+    "signaturePhrase": "Red Team / Chaos Security Mode done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in red team / chaos security mode so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen red team / chaos security mode aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/red-oni/full-body.png",
+    "cardPath": "/assets/characters/red-oni/card.png"
+  },
+  "workflow": {
+    "jobName": "Red Team / Chaos Security Mode",
+    "roleName": "Red Team / Chaos Security Mode microagent",
+    "summary": "Runs red team / chaos security mode for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Scorecard Shin",
+      "Pipeline Sensei",
+      "Platform Sensei",
+      "Reliability Sensei"
+    ]
+  },
+  "stats": {
+    "power": 91,
+    "precision": 84,
+    "speed": 77,
+    "resilience": 95,
+    "intelligence": 88,
+    "teamwork": 97
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "red-oni",
+  "seasonOneCard": null,
+  "displayNumber": 60,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/red-oni",
+  "avatarSvg": "assets/characters/red-oni/avatar.svg",
+  "cardSvg": "assets/characters/red-oni/card.svg"
+}

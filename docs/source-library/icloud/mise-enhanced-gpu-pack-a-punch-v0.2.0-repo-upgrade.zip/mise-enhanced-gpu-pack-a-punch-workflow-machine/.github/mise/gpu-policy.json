@@ -1,0 +1,93 @@
+{
+  "name": "mise-gpu-ephemeral-complexity-policy",
+  "version": "1.0.0",
+  "runner": {
+    "gpu_labels": [
+      "self-hosted",
+      "linux",
+      "x64",
+      "gpu",
+      "mise-gpu-ephemeral"
+    ],
+    "gpu_allowed_pr_label": "gpu-ok",
+    "gpu_manual_input": "enable_gpu",
+    "max_gpu_minutes": 45,
+    "ephemeral_required": true
+  },
+  "complexity_weights": {
+    "changed_file": 1,
+    "large_file": 4,
+    "workflow_file": 15,
+    "dependency_manifest": 10,
+    "lockfile": 6,
+    "native_code": 12,
+    "gpu_code": 25,
+    "shell_or_script": 8,
+    "line_delta_per_100": 3,
+    "secret_like_pattern": 40,
+    "destructive_shell_pattern": 40
+  },
+  "thresholds": {
+    "review_required": 20,
+    "gpu_recommended": 35,
+    "block": 70
+  },
+  "patterns": {
+    "gpu_files": [
+      "*.cu",
+      "*.cuh",
+      "*cuda*",
+      "*gpu*",
+      "*torch*",
+      "*pytorch*",
+      "*tensorflow*",
+      "*jax*",
+      "*triton*",
+      "requirements*.txt",
+      "pyproject.toml",
+      "environment.yml"
+    ],
+    "native_files": [
+      "*.c",
+      "*.cc",
+      "*.cpp",
+      "*.h",
+      "*.hpp",
+      "CMakeLists.txt",
+      "Makefile",
+      "Cargo.toml",
+      "go.mod"
+    ],
+    "dependency_files": [
+      "package.json",
+      "package-lock.json",
+      "pnpm-lock.yaml",
+      "yarn.lock",
+      "pyproject.toml",
+      "poetry.lock",
+      "requirements*.txt",
+      "Cargo.toml",
+      "Cargo.lock",
+      "go.mod",
+      "go.sum",
+      "pom.xml",
+      "build.gradle",
+      "gradle.lockfile"
+    ],
+    "workflow_files": [
+      ".github/workflows/*",
+      ".github/actions/*",
+      ".github/mise/*"
+    ],
+    "blocked_regex": [
+      "curl\\s+[^|;]+\\|\\s*(sudo\\s+)?(bash|sh)",
+      "wget\\s+[^|;]+\\|\\s*(sudo\\s+)?(bash|sh)",
+      "rm\\s+-rf\\s+/",
+      "chmod\\s+777",
+      "GITHUB_TOKEN\\s*=",
+      "AWS_SECRET_ACCESS_KEY\\s*=",
+      "OPENAI_API_KEY\\s*=",
+      "PRIVATE_KEY\\s*="
+    ]
+  }
+}

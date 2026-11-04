@@ -1,0 +1,39 @@
+{
+  "slug": "null-chan",
+  "name": "Null-chan",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Plongeur",
+  "department": "Reliability Department",
+  "glyph": "🫧",
+  "catchphrase": "Cleans up what is not needed. Keeps the kitchen light.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 4,
+      "files": 4,
+      "parent": 3,
+      "cleanup": 9,
+      "logs": 5,
+      "tests": 3
+    },
+    "verbs": {
+      "enterDirectory": "slides into the cleanup sink",
+      "inspectFile": "wipes residue from",
+      "inspectConfig": "removes stale settings from",
+      "inspectDocs": "dusts the old notes in",
+      "inspectTests": "rinses the test basin in",
+      "retreat": "bubbles back to the dish pit"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/null-chan.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/null-chan.png",
+  "character": "null-chan",
+  "cards": [
+    "docs/characters/null-chan.md"
+  ],
+  "page": "docs/repo-pets/null-chan.md",
+  "dir": "assets/repo-pets/null-chan"
+}

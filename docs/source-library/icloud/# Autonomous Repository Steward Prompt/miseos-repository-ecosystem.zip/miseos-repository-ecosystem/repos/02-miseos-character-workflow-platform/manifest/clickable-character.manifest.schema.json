@@ -1,0 +1,1 @@
+{"type":"object","required":["version","asset","signature","hotspots","policies"]}

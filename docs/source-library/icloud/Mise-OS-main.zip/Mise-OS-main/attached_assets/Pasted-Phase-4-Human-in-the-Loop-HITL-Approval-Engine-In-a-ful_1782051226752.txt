@@ -1,0 +1,22 @@
+Phase 4: Human-in-the-Loop (HITL) Approval Engine
+In a fully autonomous system, a hallucinating agent with access to production credentials is a catastrophic risk. The Mise Orchestra relies on a strict capability matrix. If an agent attempts an action flagged with a ⁠Critical⁠ or ⁠High⁠ risk level (e.g., ⁠k8s:namespace:delete⁠ or ⁠db:schema:drop⁠), the orchestration engine physically suspends the agent's execution thread and demands Human Cryptographic Approval.
+1. The Kitchen Metaphor: The Expediter's Pass
+￼ The Chef (Agent): Prepares the infrastructure change in a staging state.
+￼ The Expediter (Human): Reviews the proposed blast radius, the code diff, and the target environment.
+￼ The Ticket Spike (Approval): If approved, the ticket is spiked, the Vault dispenses the ephemeral token, and the deployment proceeds. If denied, the dish is thrown in the trash (Felix Rollback takes over).
+2. PostgreSQL Schema Extension (The Approval Ledger)
+We need to extend our ⁠runtime⁠ schema to track these paused states immutably. This ensures full SOC2 compliance and auditability for every AI-driven action.
+3. LangGraph Orchestration: The Breakpoint Flow
+To implement this dynamically, we use LangGraph's state graph with breakpoints. Here is how the state machine handles the suspension:
+1. The Interception: An agent (e.g., Nina Promoter, Role 9) attempts to call the ⁠DeployToProduction⁠ tool.
+2. The Graph Breakpoint: The LangGraph execution engine hits an ⁠interrupt_before⁠ node configured for the deployment tool.
+3. State Serialization: LangGraph freezes the entire memory state of the LLM into a binary blob and writes the ⁠runtime.approval_requests⁠ row. The agent goes to sleep, consuming zero compute.
+4. The Notification: The backend fires a webhook to Slack, Microsoft Teams, or the central SaaS Dashboard.
+5. The Resumption: The human clicks "Approve". The backend updates the database, re-hydrates the LangGraph state, hands the agent the HashiCorp Vault JIT token, and resumes execution.
+4. The Slack / Teams Interactive Payload
+When the agent pauses, the human team receives an interactive block kit message in their ChatOps channel. It is styled with the character's persona and Cyber-Surgical color.
+5. Security Guardrails: Preventing Authorization Bypass
+To ensure a compromised agent cannot simply spoof an HTTP request to its own ⁠/approve⁠ endpoint:
+1. Role-Based Access Control (RBAC): The ⁠tenant_auth.users⁠ table defines roles (Admin, Expediter, Developer). The ⁠/api/v1/approvals/{id}/resolve⁠ endpoint enforces that only a human with the ⁠Expediter⁠ or ⁠Admin⁠ role can hit it.
+2. Cryptographic Signatures (Slack): If the approval comes from Slack, the backend verifies the ⁠X-Slack-Signature⁠ header to ensure the payload actually originated from the authenticated Slack workspace.
+3. Vault Dependency: Even if the database status is maliciously flipped to ⁠Approved⁠, the worker node running the migration still has to request the token from Vault. Vault is configured to only dispense the token if a valid, cryptographically signed JWT representing a Human Admin is provided alongside the Agent's AppRole.

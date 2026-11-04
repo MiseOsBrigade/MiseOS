@@ -1,0 +1,20 @@
+{
+  "slug": "architect",
+  "name": "Architect",
+  "kind": "brigade_mascot_agent",
+  "role": "System Architect",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:110",
+  "thumbnail": "agents/architect/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--architect.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/architect.md",
+  "dir": "agents/architect",
+  "files": [
+    "agents/architect/Architect.png"
+  ]
+}

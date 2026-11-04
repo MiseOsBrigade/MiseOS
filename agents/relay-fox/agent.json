@@ -1,0 +1,18 @@
+{
+  "slug": "relay-fox",
+  "name": "Relay Fox",
+  "kind": "brigade_mascot_agent",
+  "role": "Message Relay",
+  "group": "Service Layer",
+  "group_tagline": "Runtime · Cache · Delivery",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:96",
+  "thumbnail": "agents/relay-fox/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": "relay-fox",
+  "page": "docs/agents/relay-fox.md",
+  "dir": "agents/relay-fox",
+  "files": [
+    "agents/relay-fox/Relay-Fox.png"
+  ]
+}

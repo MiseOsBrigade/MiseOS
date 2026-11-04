@@ -1,0 +1,23 @@
+{
+  "slug": "mise-gpu",
+  "name": "Mise GPU",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Heavy Lane Cook",
+  "department": "Acceleration",
+  "glyph": "⚡",
+  "catchphrase": "Handles the hot path.",
+  "behaviors": {
+    "preferred_paths": [
+      "compute",
+      "models",
+      "benchmarks"
+    ]
+  },
+  "sprites": [],
+  "source": "tools/repo-pet/src/characters.js",
+  "character": null,
+  "cards": [],
+  "page": "docs/repo-pets/mise-gpu.md",
+  "dir": "assets/repo-pets/mise-gpu"
+}

@@ -1,0 +1,267 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "catalog-registry-catalog",
+  "name": "MiseOS Registry Catalog",
+  "kind": "catalog_item",
+  "aliases": [],
+  "sources": {
+    "name": "data/imports/miseos-individual-catalog-items.json",
+    "role": "data/imports/miseos-individual-catalog-items.json (category)",
+    "workflow.summary": "data/imports/miseos-individual-catalog-items.json",
+    "dependencies": "data/imports/miseos-individual-catalog-items.json",
+    "implementation": "git ls-files grep + repo"
+  },
+  "catalog_item": {
+    "id": "registry-catalog",
+    "category": "registry",
+    "title": "MiseOS Registry Catalog",
+    "description": "Original 23-item registry catalog manifest.",
+    "dependencies": [
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/registry-catalog.manifest.json"
+    ],
+    "notes": []
+  },
+  "cards": [],
+  "collections": [],
+  "card_text": [],
+  "card_rarity_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "dependencies": [
+    "registry-schema"
+  ],
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/scripts/analyze-registry.mjs",
+        "line": 44,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/bootstrap-registry/scripts/export-registry.mjs",
+        "line": 12,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/mise.yaml",
+        "line": 11,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/catalog.ts",
+        "line": 9,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/miseos-platform/miseos_art_factory_v2_single.py",
+        "line": 31,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/registry-platform/mise.yaml",
+        "line": 11,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/catalog.ts",
+        "line": 14,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "tools/art-factory/miseos_art_factory_v2_single.py",
+        "line": 22,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "tools/devops-foundry/scripts/harvest_miseos_devops.py",
+        "line": 87,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/catalog.ts",
+        "line": 9,
+        "term": "registry-catalog"
+      }
+    ],
+    "code_ref_count": 10,
+    "data_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.agent-sdk.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.analytics-engine.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.attestation-gate.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.cli.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.docs-builder.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.docs-hub-template.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.gradle-plugin.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.maven-policy-adapter.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.nuget-client.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json",
+        "line": 2,
+        "term": "registry-catalog"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/README.md",
+        "line": 64,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 56,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/README.md",
+        "line": 51,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/miseos-platform/REGISTRY_CARD_GALLERY.md",
+        "line": 6,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 57,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/registry-platform/README.md",
+        "line": 51,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 74,
+        "term": "registry-catalog"
+      }
+    ],
+    "payload_files": [
+      "tools/devops-foundry/vendor/miseos-registry-core/registry/registry-catalog.manifest.json"
+    ],
+    "tool_dir": "tools/devops-foundry/vendor/miseos-registry-core/registry",
+    "app_code_refs": [
+      {
+        "path": "apps/bootstrap-registry/scripts/analyze-registry.mjs",
+        "line": 44,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/bootstrap-registry/scripts/export-registry.mjs",
+        "line": 12,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/mise.yaml",
+        "line": 11,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/catalog.ts",
+        "line": 9,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/miseos-platform/miseos_art_factory_v2_single.py",
+        "line": 31,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/registry-platform/mise.yaml",
+        "line": 11,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/catalog.ts",
+        "line": 14,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "tools/art-factory/miseos_art_factory_v2_single.py",
+        "line": 22,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "tools/devops-foundry/scripts/harvest_miseos_devops.py",
+        "line": 87,
+        "term": "registry-catalog"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/catalog.ts",
+        "line": 9,
+        "term": "registry-catalog"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {},
+  "role": "registry",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Original 23-item registry catalog manifest.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "installs_files": "miseos-registry/registry/registry-catalog.manifest.json",
+      "source": "data/imports/miseos-individual-catalog-items.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Not yet defined in the source material",
+    "mission": "Not yet defined in the source material",
+    "problem": "Original 23-item registry catalog manifest.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

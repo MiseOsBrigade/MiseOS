@@ -1,0 +1,31 @@
+kind = "video"
+previewPath = "/launch-film/"
+title = "MiseOS Launch Film"
+version = "1.0.0"
+id = "artifacts/launch-film"
+router = "path"
+
+[[integratedSkills]]
+name = "video-js"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/launch-film/" ]
+localPort = 23250
+
+[services.development]
+run = "pnpm --filter @workspace/launch-film run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/launch-film", "run", "build" ]
+publicDir = "artifacts/launch-film/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23250"
+BASE_PATH = "/launch-film/"

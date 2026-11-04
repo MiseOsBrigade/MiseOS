@@ -1,0 +1,123 @@
+name: Bootstrap Unzip
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Run even if .bootstrap/BOOTSTRAPPED already exists"
+        required: false
+        default: false
+        type: boolean
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - .github/workflows/bootstrap-unzip.yml
+      - bootstrap/payload.zip
+      - scripts/safe_unzip.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bootstrap-unzip-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  bootstrap:
+    name: Validate, unzip, test, and commit payload
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Stop if already bootstrapped
+        if: ${{ inputs.force != true }}
+        run: |
+          if [ -f ".bootstrap/BOOTSTRAPPED" ]; then
+            echo "Repository is already bootstrapped. Use workflow_dispatch with force=true to run again."
+            exit 0
+          fi
+
+      - name: Verify payload exists
+        run: |
+          test -f bootstrap/payload.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          payload = Path("bootstrap/payload.zip")
+          print(f"payload={payload}")
+          print(f"bytes={payload.stat().st_size}")
+          PY
+
+      - name: List payload manifest
+        run: |
+          python3 - <<'PY'
+          import zipfile
+          from pathlib import Path
+
+          payload = Path("bootstrap/payload.zip")
+          with zipfile.ZipFile(payload) as zf:
+              print("Payload entries:")
+              for name in zf.namelist():
+                  print(f" - {name}")
+          PY
+
+      - name: Safely extract payload
+        run: |
+          python3 scripts/safe_unzip.py bootstrap/payload.zip .
+
+      - name: Write bootstrap marker
+        run: |
+          mkdir -p .bootstrap
+          {
+            echo "bootstrapped_at=$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            echo "source_commit=${GITHUB_SHA}"
+            echo "workflow_run=${GITHUB_RUN_ID}"
+          } > .bootstrap/BOOTSTRAPPED
+
+      - name: Set up Node when package.json exists
+        if: ${{ hashFiles('package.json') != '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies when package.json exists
+        if: ${{ hashFiles('package.json') != '' }}
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Run tests when package.json defines test script
+        if: ${{ hashFiles('package.json') != '' }}
+        run: |
+          node - <<'NODE'
+          const fs = require("fs");
+          const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
+          if (!pkg.scripts || !pkg.scripts.test) {
+            console.log("No test script found; skipping tests.");
+            process.exit(0);
+          }
+          NODE
+          npm test
+
+      - name: Commit expanded repository
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "chore: unzip bootstrap payload"
+          git push

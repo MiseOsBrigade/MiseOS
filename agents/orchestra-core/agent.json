@@ -1,0 +1,22 @@
+{
+  "slug": "orchestra-core",
+  "name": "Orchestra Core",
+  "kind": "brigade_mascot_agent",
+  "role": "Chief Orchestrator",
+  "group": "Executive Chefs",
+  "group_tagline": "Leadership & Orchestration",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:53",
+  "thumbnail": "agents/orchestra-core/thumb.png",
+  "character": "orchestra-core",
+  "cards": [
+    "docs/characters/orchestra-core.md",
+    "docs/characters/orchestra-core.md",
+    "docs/characters/orchestra-core.md"
+  ],
+  "pet": "orchestra-core",
+  "page": "docs/agents/orchestra-core.md",
+  "dir": "agents/orchestra-core",
+  "files": [
+    "agents/orchestra-core/Orchestra-Core.png"
+  ]
+}

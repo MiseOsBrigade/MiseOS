@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.066",
+  "number": 66,
+  "slug": "flag-fox",
+  "name": "Flag Fox",
+  "mise_name": "Flag Fox",
+  "codename": "FLAG_FOX",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Feature Flag Analytics",
+  "job_name": "Feature Flag Analytics",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Feature Flag Analytics",
+    "avatar_path": "assets/characters/flag-fox/avatar.png",
+    "card_path": "assets/characters/flag-fox/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Flag Fox performs feature flag analytics within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Cost Kaito",
+      "DX Mei",
+      "Revenue Rina"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 79,
+    "precision": 62,
+    "speed": 66,
+    "resilience": 72,
+    "intelligence": 72,
+    "teamwork": 77
+  },
+  "paths": {
+    "readme": "characters/flag-fox/README.md",
+    "metadata": "characters/flag-fox/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

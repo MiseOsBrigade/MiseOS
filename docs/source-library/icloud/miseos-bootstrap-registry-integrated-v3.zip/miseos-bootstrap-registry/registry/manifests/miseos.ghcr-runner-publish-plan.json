@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.2.0",
+  "id": "miseos.ghcr-runner-publish-plan",
+  "name": "MiseOS GHCR Runner Publish Plan",
+  "type": "workflow",
+  "version": "0.1.0",
+  "status": "active",
+  "owner": {"name": "MiseOS", "kind": "organization", "github": "Mise-OS"},
+  "description": "The GHCR-first publication workflow that publishes the MiseOS runner before npm packages so future packages build from a known-good runtime.",
+  "artifacts": {"workflow": ".github/workflows/publish-container.yml", "container": "ghcr.io/mise-os/miseos-runner", "docs": "docs/ghcr-runner-first.md"},
+  "capabilities": ["publish_container", "tag_runner_image", "link_package_to_repo", "prepare_primary_npm_publish_sequence"],
+  "permissions": {"github": ["contents:read", "packages:write", "attestations:write"], "network": ["ghcr.io"], "filesystem": ["read"]},
+  "trust": {"licenseRequired": true, "sbomRequired": true, "provenanceRequired": true, "signedReleaseRequired": true, "artifactAttestationRequired": true, "scorecardRequired": true, "humanReviewRequiredFor": ["first_public_publish", "package_visibility_change", "workflow_permission_change", "runner_base_image_change"]},
+  "changePolicy": {"major": "Human review required for base image, package visibility, or permission changes.", "minor": "Allowed for additional tags, labels, and build metadata.", "patch": "Allowed for docs and workflow syntax fixes."},
+  "agentContract": {"loadStrategy": "manifest_plus_docs", "safeToRunWithoutHuman": false, "requiresNetwork": true, "outputs": ["container_image", "attestation", "publish_log"], "executionMode": "approved_write"},
+  "analytics": {"criticality": "critical", "maturity": "beta", "riskWeight": 0.67, "operationalTier": "runtime"},
+  "release": {"channel": "alpha", "cadence": "manual first publish, then release-tag driven", "currentStrategy": "Publish only after repository integration, branch protection, and validation workflows pass.", "nextMilestone": "Publish ghcr.io/mise-os/miseos-runner:0.1.0."},
+  "answers": {"what": "A workflow plan for publishing the MiseOS runner container first.", "does": "Builds, tags, pushes, and attests the GHCR runner before npm package publishing starts.", "owner": "MiseOS / Mise-OS organization.", "permissions": "GitHub Packages write access for GHCR, contents read, and attestations write.", "registry": "GitHub Container Registry at ghcr.io/mise-os/miseos-runner.", "changed": "Added explicit GHCR-first sequencing and safety gates.", "safe": "Safe only with approved release workflow execution and human review for first public publish.", "agentExecutable": "Agents may prepare checks, but publishing requires explicit approval."}
+}

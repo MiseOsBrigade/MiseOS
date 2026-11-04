@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "policy-ronin",
+    "number": 52,
+    "name": "Policy Ronin",
+    "miseName": "Mise PolicyAsCodeEngine",
+    "codename": "chef.security.policy-as-code-engine",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "genesis",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Policy-as-Code Engine",
+      "signaturePhrase": "Policy-as-Code Engine done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in policy-as-code engine so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen policy-as-code engine aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/policy-ronin/full-body.png",
+      "cardPath": "/assets/characters/policy-ronin/card.png"
+    },
+    "workflow": {
+      "jobName": "Policy-as-Code Engine",
+      "roleName": "Policy-as-Code Engine microagent",
+      "summary": "Runs policy-as-code engine for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Seira Vaultkeeper",
+        "Merge Sentinel",
+        "Yume Builder",
+        "Policy Kenji"
+      ]
+    },
+    "stats": {
+      "power": 95,
+      "precision": 98,
+      "speed": 77,
+      "resilience": 91,
+      "intelligence": 84,
+      "teamwork": 81
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "policy-ronin",
+    "seasonOneCard": null,
+    "displayNumber": 52,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/policy-ronin",
+    "avatarSvg": "assets/characters/policy-ronin/avatar.svg",
+    "cardSvg": "assets/characters/policy-ronin/card.svg"
+  },
+  {
+    "id": "seira-vaultkeeper",
+    "number": 51,
+    "name": "Seira Vaultkeeper",
+    "miseName": "Mise SecretsLifecycleManager",
+    "codename": "chef.security.secrets-lifecycle-manager",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "genesis",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Secrets Lifecycle Manager",
+      "signaturePhrase": "Secrets Lifecycle Manager done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in secrets lifecycle manager so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen secrets lifecycle manager aura",
+      "silhouette": "multinational chibi DevOps chef carrying a key",
+      "tool": "key",
+      "spritePath": "/assets/characters/seira-vaultkeeper/full-body.png",
+      "cardPath": "/assets/characters/seira-vaultkeeper/card.png"
+    },
+    "workflow": {
+      "jobName": "Secrets Lifecycle Manager",
+      "roleName": "Secrets Lifecycle Manager microagent",
+      "summary": "Runs secrets lifecycle manager for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Container Kage",
+        "Policy Ronin",
+        "Seira Scan",
+        "Vault Hana"
+      ]
+    },
+    "stats": {
+      "power": 96,
+      "precision": 97,
+      "speed": 74,
+      "resilience": 84,
+      "intelligence": 75,
+      "teamwork": 92
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "seira-vaultkeeper",
+    "seasonOneCard": null,
+    "displayNumber": 51,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/seira-vaultkeeper",
+    "avatarSvg": "assets/characters/seira-vaultkeeper/avatar.svg",
+    "cardSvg": "assets/characters/seira-vaultkeeper/card.svg"
+  },
+  {
+    "id": "red-oni",
+    "number": 60,
+    "name": "Red Oni",
+    "miseName": "Mise RedTeam",
+    "codename": "chef.security.red-team-chaos-security-mode",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "epic",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Red Team / Chaos Security Mode",
+      "signaturePhrase": "Red Team / Chaos Security Mode done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in red team / chaos security mode so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen red team / chaos security mode aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/red-oni/full-body.png",
+      "cardPath": "/assets/characters/red-oni/card.png"
+    },
+    "workflow": {
+      "jobName": "Red Team / Chaos Security Mode",
+      "roleName": "Red Team / Chaos Security Mode microagent",
+      "summary": "Runs red team / chaos security mode for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Scorecard Shin",
+        "Pipeline Sensei",
+        "Platform Sensei",
+        "Reliability Sensei"
+      ]
+    },
+    "stats": {
+      "power": 91,
+      "precision": 84,
+      "speed": 77,
+      "resilience": 95,
+      "intelligence": 88,
+      "teamwork": 97
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "red-oni",
+    "seasonOneCard": null,
+    "displayNumber": 60,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/red-oni",
+    "avatarSvg": "assets/characters/red-oni/avatar.svg",
+    "cardSvg": "assets/characters/red-oni/card.svg"
+  },
+  {
+    "id": "incident-kitsune",
+    "number": 56,
+    "name": "Incident Kitsune",
+    "miseName": "Mise SecurityIncidentPlaybooks",
+    "codename": "chef.security.security-incident-playbooks",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "rare",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Security Incident Playbooks",
+      "signaturePhrase": "Security Incident Playbooks done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in security incident playbooks so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen security incident playbooks aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/incident-kitsune/full-body.png",
+      "cardPath": "/assets/characters/incident-kitsune/card.png"
+    },
+    "workflow": {
+      "jobName": "Security Incident Playbooks",
+      "roleName": "Security Incident Playbooks microagent",
+      "summary": "Runs security incident playbooks for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Auditor Emi",
+        "Evidence Scribe",
+        "Felix Rollback",
+        "Streama"
+      ]
+    },
+    "stats": {
+      "power": 86,
+      "precision": 98,
+      "speed": 84,
+      "resilience": 86,
+      "intelligence": 93,
+      "teamwork": 84
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "incident-kitsune",
+    "seasonOneCard": null,
+    "displayNumber": 56,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/incident-kitsune",
+    "avatarSvg": "assets/characters/incident-kitsune/avatar.svg",
+    "cardSvg": "assets/characters/incident-kitsune/card.svg"
+  },
+  {
+    "id": "nudge-neko",
+    "number": 58,
+    "name": "Nudge Neko",
+    "miseName": "Mise SecurityTrainingNudges",
+    "codename": "chef.security.security-training-nudges",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "rare",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Security Training Nudges",
+      "signaturePhrase": "Security Training Nudges done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in security training nudges so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen security training nudges aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/nudge-neko/full-body.png",
+      "cardPath": "/assets/characters/nudge-neko/card.png"
+    },
+    "workflow": {
+      "jobName": "Security Training Nudges",
+      "roleName": "Security Training Nudges microagent",
+      "summary": "Runs security training nudges for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Evidence Scribe",
+        "Scorecard Shin",
+        "Ivun Cache",
+        "Portal Rei"
+      ]
+    },
+    "stats": {
+      "power": 78,
+      "precision": 94,
+      "speed": 84,
+      "resilience": 94,
+      "intelligence": 80,
+      "teamwork": 80
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "nudge-neko",
+    "seasonOneCard": null,
+    "displayNumber": 58,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/nudge-neko",
+    "avatarSvg": "assets/characters/nudge-neko/avatar.svg",
+    "cardSvg": "assets/characters/nudge-neko/card.svg"
+  },
+  {
+    "id": "cve-kumo",
+    "number": 49,
+    "name": "CVE Kumo",
+    "miseName": "Mise DependencyRiskMonitor",
+    "codename": "chef.security.dependency-risk-monitor",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "rare",
+    "roleCategory": "analytics",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Dependency Risk Monitor",
+      "signaturePhrase": "Dependency Risk Monitor done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in dependency risk monitor so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen dependency risk monitor aura",
+      "silhouette": "multinational chibi DevOps chef carrying a gauge",
+      "tool": "gauge",
+      "spritePath": "/assets/characters/cve-kumo/full-body.png",
+      "cardPath": "/assets/characters/cve-kumo/card.png"
+    },
+    "workflow": {
+      "jobName": "Dependency Risk Monitor",
+      "roleName": "Dependency Risk Monitor microagent",
+      "summary": "Runs dependency risk monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Token Toshi",
+        "Container Kage",
+        "Omar Reviewer",
+        "Schema Sora"
+      ]
+    },
+    "stats": {
+      "power": 81,
+      "precision": 78,
+      "speed": 79,
+      "resilience": 81,
+      "intelligence": 90,
+      "teamwork": 97
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "cve-kumo",
+    "seasonOneCard": null,
+    "displayNumber": 49,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/cve-kumo",
+    "avatarSvg": "assets/characters/cve-kumo/avatar.svg",
+    "cardSvg": "assets/characters/cve-kumo/card.svg"
+  },
+  {
+    "id": "scorecard-shin",
+    "number": 59,
+    "name": "Scorecard Shin",
+    "miseName": "Mise SecurityScorecard",
+    "codename": "chef.security.security-scorecard",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "rare",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Security Scorecard",
+      "signaturePhrase": "Security Scorecard done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in security scorecard so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen security scorecard aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/scorecard-shin/full-body.png",
+      "cardPath": "/assets/characters/scorecard-shin/card.png"
+    },
+    "workflow": {
+      "jobName": "Security Scorecard",
+      "roleName": "Security Scorecard microagent",
+      "summary": "Runs security scorecard for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Nudge Neko",
+        "Red Oni",
+        "Canary Taster",
+        "Guardrail Goro"
+      ]
+    },
+    "stats": {
+      "power": 93,
+      "precision": 84,
+      "speed": 75,
+      "resilience": 89,
+      "intelligence": 80,
+      "teamwork": 85
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "scorecard-shin",
+    "seasonOneCard": null,
+    "displayNumber": 59,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/scorecard-shin",
+    "avatarSvg": "assets/characters/scorecard-shin/avatar.svg",
+    "cardSvg": "assets/characters/scorecard-shin/card.svg"
+  },
+  {
+    "id": "merge-sentinel",
+    "number": 53,
+    "name": "Merge Sentinel",
+    "miseName": "Mise PreMergeSecurityGate",
+    "codename": "chef.security.pre-merge-security-gate",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "rare",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "South African",
+      "title": "Pre-Merge Security Gate",
+      "signaturePhrase": "Pre-Merge Security Gate done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in pre-merge security gate so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen pre-merge security gate aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/merge-sentinel/full-body.png",
+      "cardPath": "/assets/characters/merge-sentinel/card.png"
+    },
+    "workflow": {
+      "jobName": "Pre-Merge Security Gate",
+      "roleName": "Pre-Merge Security Gate microagent",
+      "summary": "Runs pre-merge security gate for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Policy Ronin",
+        "Watchtower Yoru",
+        "Iron Hashi",
+        "Grafana Mei"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 76,
+      "speed": 84,
+      "resilience": 74,
+      "intelligence": 97,
+      "teamwork": 98
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "merge-sentinel",
+    "seasonOneCard": null,
+    "displayNumber": 53,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/merge-sentinel",
+    "avatarSvg": "assets/characters/merge-sentinel/avatar.svg",
+    "cardSvg": "assets/characters/merge-sentinel/card.svg"
+  },
+  {
+    "id": "evidence-scribe",
+    "number": 57,
+    "name": "Evidence Scribe",
+    "miseName": "Mise ComplianceEvidenceCollector",
+    "codename": "chef.security.compliance-evidence-collector",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "rare",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Kenyan",
+      "title": "Compliance Evidence Collector",
+      "signaturePhrase": "Compliance Evidence Collector done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in compliance evidence collector so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen compliance evidence collector aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/evidence-scribe/full-body.png",
+      "cardPath": "/assets/characters/evidence-scribe/card.png"
+    },
+    "workflow": {
+      "jobName": "Compliance Evidence Collector",
+      "roleName": "Compliance Evidence Collector microagent",
+      "summary": "Runs compliance evidence collector for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Incident Kitsune",
+        "Nudge Neko",
+        "Tariq Notesmith",
+        "Preview Yuki"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 87,
+      "speed": 75,
+      "resilience": 81,
+      "intelligence": 90,
+      "teamwork": 85
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "evidence-scribe",
+    "seasonOneCard": null,
+    "displayNumber": 57,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/evidence-scribe",
+    "avatarSvg": "assets/characters/evidence-scribe/avatar.svg",
+    "cardSvg": "assets/characters/evidence-scribe/card.svg"
+  },
+  {
+    "id": "token-toshi",
+    "number": 48,
+    "name": "Token Toshi",
+    "miseName": "Mise CredentialHygieneScanner",
+    "codename": "chef.security.credential-hygiene-scanner",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "rare",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Credential Hygiene Scanner",
+      "signaturePhrase": "Credential Hygiene Scanner done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in credential hygiene scanner so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen credential hygiene scanner aura",
+      "silhouette": "multinational chibi DevOps chef carrying a key",
+      "tool": "key",
+      "spritePath": "/assets/characters/token-toshi/full-body.png",
+      "cardPath": "/assets/characters/token-toshi/card.png"
+    },
+    "workflow": {
+      "jobName": "Credential Hygiene Scanner",
+      "roleName": "Credential Hygiene Scanner microagent",
+      "summary": "Runs credential hygiene scanner for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Secure Sakura",
+        "CVE Kumo",
+        "Lila Branchkeeper",
+        "Terra Forge"
+      ]
+    },
+    "stats": {
+      "power": 77,
+      "precision": 72,
+      "speed": 71,
+      "resilience": 97,
+      "intelligence": 76,
+      "teamwork": 79
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "token-toshi",
+    "seasonOneCard": null,
+    "displayNumber": 48,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/token-toshi",
+    "avatarSvg": "assets/characters/token-toshi/avatar.svg",
+    "cardSvg": "assets/characters/token-toshi/card.svg"
+  },
+  {
+    "id": "container-kage",
+    "number": 50,
+    "name": "Container Kage",
+    "miseName": "Mise ContainerHardeningWorkflow",
+    "codename": "chef.security.container-hardening-workflow",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "common",
+    "roleCategory": "automation",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Container Hardening Workflow",
+      "signaturePhrase": "Container Hardening Workflow done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in container hardening workflow so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen container hardening workflow aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/container-kage/full-body.png",
+      "cardPath": "/assets/characters/container-kage/card.png"
+    },
+    "workflow": {
+      "jobName": "Container Hardening Workflow",
+      "roleName": "Container Hardening Workflow microagent",
+      "summary": "Runs container hardening workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "CVE Kumo",
+        "Seira Vaultkeeper",
+        "Hugo Matrix",
+        "Runtime Riku"
+      ]
+    },
+    "stats": {
+      "power": 93,
+      "precision": 92,
+      "speed": 95,
+      "resilience": 73,
+      "intelligence": 87,
+      "teamwork": 99
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "container-kage",
+    "seasonOneCard": null,
+    "displayNumber": 50,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/container-kage",
+    "avatarSvg": "assets/characters/container-kage/avatar.svg",
+    "cardSvg": "assets/characters/container-kage/card.svg"
+  },
+  {
+    "id": "watchtower-yoru",
+    "number": 54,
+    "name": "Watchtower Yoru",
+    "miseName": "Mise RuntimeThreatDetector",
+    "codename": "chef.security.runtime-threat-detector",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "common",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Runtime Threat Detector",
+      "signaturePhrase": "Runtime Threat Detector done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in runtime threat detector so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen runtime threat detector aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/watchtower-yoru/full-body.png",
+      "cardPath": "/assets/characters/watchtower-yoru/card.png"
+    },
+    "workflow": {
+      "jobName": "Runtime Threat Detector",
+      "roleName": "Runtime Threat Detector microagent",
+      "summary": "Runs runtime threat detector for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Merge Sentinel",
+        "Auditor Emi",
+        "Nina Promoter",
+        "Umami Code"
+      ]
+    },
+    "stats": {
+      "power": 77,
+      "precision": 85,
+      "speed": 95,
+      "resilience": 89,
+      "intelligence": 89,
+      "teamwork": 95
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "watchtower-yoru",
+    "seasonOneCard": null,
+    "displayNumber": 54,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/watchtower-yoru",
+    "avatarSvg": "assets/characters/watchtower-yoru/avatar.svg",
+    "cardSvg": "assets/characters/watchtower-yoru/card.svg"
+  },
+  {
+    "id": "secure-sakura",
+    "number": 47,
+    "name": "Secure Sakura",
+    "miseName": "Mise SecureTemplateLibrary",
+    "codename": "chef.security.secure-template-library",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "common",
+    "roleCategory": "platform",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Secure Template Library",
+      "signaturePhrase": "Secure Template Library done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in secure template library so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen secure template library aura",
+      "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+      "tool": "blueprint",
+      "spritePath": "/assets/characters/secure-sakura/full-body.png",
+      "cardPath": "/assets/characters/secure-sakura/card.png"
+    },
+    "workflow": {
+      "jobName": "Secure Template Library",
+      "roleName": "Secure Template Library microagent",
+      "summary": "Runs secure template library for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Threat Taro",
+        "Token Toshi",
+        "Bruno Blast-Radius",
+        "Bootstrap Aiko"
+      ]
+    },
+    "stats": {
+      "power": 81,
+      "precision": 74,
+      "speed": 71,
+      "resilience": 93,
+      "intelligence": 95,
+      "teamwork": 93
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "secure-sakura",
+    "seasonOneCard": null,
+    "displayNumber": 47,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/secure-sakura",
+    "avatarSvg": "assets/characters/secure-sakura/avatar.svg",
+    "cardSvg": "assets/characters/secure-sakura/card.svg"
+  },
+  {
+    "id": "auditor-emi",
+    "number": 55,
+    "name": "Auditor Emi",
+    "miseName": "Mise AccessReviewWorkflow",
+    "codename": "chef.security.access-review-workflow",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "common",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Access Review Workflow",
+      "signaturePhrase": "Access Review Workflow done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in access review workflow so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen access review workflow aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/auditor-emi/full-body.png",
+      "cardPath": "/assets/characters/auditor-emi/card.png"
+    },
+    "workflow": {
+      "jobName": "Access Review Workflow",
+      "roleName": "Access Review Workflow microagent",
+      "summary": "Runs access review workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Watchtower Yoru",
+        "Incident Kitsune",
+        "Release Conductor",
+        "Queue Mizu"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 93,
+      "speed": 77,
+      "resilience": 75,
+      "intelligence": 80,
+      "teamwork": 91
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "auditor-emi",
+    "seasonOneCard": null,
+    "displayNumber": 55,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/auditor-emi",
+    "avatarSvg": "assets/characters/auditor-emi/avatar.svg",
+    "cardSvg": "assets/characters/auditor-emi/card.svg"
+  },
+  {
+    "id": "threat-taro",
+    "number": 46,
+    "name": "Threat Taro",
+    "miseName": "Mise ThreatModelingStarter",
+    "codename": "chef.security.threat-modeling-starter",
+    "department": "security",
+    "departmentLabel": "Security Kitchen",
+    "departmentTagline": "Protect the kitchen.",
+    "rarity": "common",
+    "roleCategory": "security",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Threat Modeling Starter",
+      "signaturePhrase": "Threat Modeling Starter done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in threat modeling starter so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#FACC15",
+      "aura": "Security Kitchen threat modeling starter aura",
+      "silhouette": "multinational chibi DevOps chef carrying a shield",
+      "tool": "shield",
+      "spritePath": "/assets/characters/threat-taro/full-body.png",
+      "cardPath": "/assets/characters/threat-taro/card.png"
+    },
+    "workflow": {
+      "jobName": "Threat Modeling Starter",
+      "roleName": "Threat Modeling Starter microagent",
+      "summary": "Runs threat modeling starter for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Secure Sakura",
+        "Alko Commit Chef",
+        "Template Tanaka",
+        "SLO Sage"
+      ]
+    },
+    "stats": {
+      "power": 83,
+      "precision": 74,
+      "speed": 69,
+      "resilience": 87,
+      "intelligence": 87,
+      "teamwork": 81
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "threat-taro",
+    "seasonOneCard": null,
+    "displayNumber": 46,
+    "departmentColor": "#EF4444",
+    "departmentShort": "Security",
+    "assetBase": "assets/characters/threat-taro",
+    "avatarSvg": "assets/characters/threat-taro/avatar.svg",
+    "cardSvg": "assets/characters/threat-taro/card.svg"
+  }
+]

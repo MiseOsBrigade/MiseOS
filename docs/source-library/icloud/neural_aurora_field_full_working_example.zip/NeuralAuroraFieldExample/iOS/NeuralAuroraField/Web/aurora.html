@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Neural Aurora Field</title>
+  <style>
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: rgb(6, 8, 18); touch-action: none; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    canvas { display: block; width: 100vw; height: 100vh; background: rgb(6, 8, 18); }
+    #hud { position: fixed; left: 12px; bottom: 12px; color: rgba(255,255,255,0.82); font-size: 12px; line-height: 1.4; pointer-events: none; text-shadow: 0 1px 12px rgba(0, 255, 255, 0.35); }
+  </style>
+</head>
+<body>
+  <canvas id="aurora"></canvas>
+  <div id="hud">Neural Aurora Field</div>
+  <script>
+    const canvas = document.getElementById("aurora");
+    const ctx = canvas.getContext("2d", { alpha: false });
+    const hud = document.getElementById("hud");
+    const state = { t: 0, particles: 12000, fadeAlpha: 0.07, glowAlpha: 0.165, speed: Math.PI / 260, safeDivisor: 0.001, pointerX: 0.5, pointerY: 0.5, colorBias: 0, paused: false, frame: 0, lastTime: performance.now(), fps: 0 };
+    function resize() { const dpr = Math.min(window.devicePixelRatio || 1, 2); canvas.width = Math.floor(window.innerWidth * dpr); canvas.height = Math.floor(window.innerHeight * dpr); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.fillStyle = "rgb(6, 8, 18)"; ctx.fillRect(0, 0, window.innerWidth, window.innerHeight); }
+    function map(value, minA, maxA, minB, maxB) { return minB + ((value - minA) / (maxA - minA)) * (maxB - minB); }
+    function mag(a, b) { return Math.sqrt(a * a + b * b); }
+    function rgba(r, g, b, a) { return `rgba(${Math.max(0, Math.min(255, r))}, ${Math.max(0, Math.min(255, g))}, ${Math.max(0, Math.min(255, b))}, ${a})`; }
+    function sendToNative(payload) { if (window.webkit?.messageHandlers?.aurora) window.webkit.messageHandlers.aurora.postMessage(payload); }
+    function applyAuroraCommand(rawCommand) {
+      const command = String(rawCommand || "").toLowerCase();
+      if (command.includes("pause")) state.paused = true;
+      if (command.includes("play") || command.includes("resume")) state.paused = false;
+      if (command.includes("faster")) state.speed *= 1.25;
+      if (command.includes("slower") || command.includes("calm")) state.speed *= 0.8;
+      if (command.includes("more")) state.particles = Math.min(20000, state.particles + 2000);
+      if (command.includes("less") || command.includes("fewer")) state.particles = Math.max(2000, state.particles - 2000);
+      if (command.includes("blue")) state.colorBias = 0.7;
+      if (command.includes("green")) state.colorBias = 1.8;
+      if (command.includes("pink") || command.includes("rose")) state.colorBias = 3.2;
+      if (command.includes("reset")) { state.t = 0; state.particles = 12000; state.speed = Math.PI / 260; state.colorBias = 0; ctx.fillStyle = "rgb(6, 8, 18)"; ctx.fillRect(0, 0, window.innerWidth, window.innerHeight); }
+      sendToNative({ type: "command-applied", command, particles: state.particles, speed: state.speed, paused: state.paused });
+    }
+    window.applyAuroraCommand = applyAuroraCommand;
+    function draw() {
+      requestAnimationFrame(draw); if (state.paused) return;
+      const w = window.innerWidth, h = window.innerHeight, cx = w / 2, cy = h / 2;
+      ctx.globalCompositeOperation = "source-over"; ctx.fillStyle = `rgba(6, 8, 18, ${state.fadeAlpha})`; ctx.fillRect(0, 0, w, h);
+      const mx = map(state.pointerX, 0, 1, -2, 2); const my = map(state.pointerY, 0, 1, -2, 2);
+      ctx.globalCompositeOperation = "lighter"; ctx.lineWidth = 1.15;
+      for (let i = state.particles; i--;) {
+        const y = i / 235, x = i;
+        const k = (4 + Math.sin(y * 2 - state.t) * 3) * Math.cos(x / 29 + mx * 0.08);
+        const safeK = Math.abs(k) < state.safeDivisor ? state.safeDivisor * Math.sign(k || 1) : k;
+        const e = y / 8 - 13, d = mag(k, e);
+        const q = 3 * Math.sin(k * 2) + 0.3 / safeK + Math.sin(y / 25 + my * 0.1) * k * (9 + 4 * Math.sin(e * 9 - d * 3 + state.t * 2));
+        const c = d - state.t;
+        const px = cx + q + 30 * Math.cos(c) + 90 * Math.sin(state.t * 0.35);
+        const py = cy + q * Math.sin(c) + d * 39 - 180;
+        const hueShift = Math.sin(d * 0.8 + state.t * 2 + state.colorBias);
+        const r = 90 + 90 * Math.sin(hueShift + 0.2); const g = 120 + 80 * Math.sin(hueShift + 2.1); const b = 190 + 65 * Math.sin(hueShift + 4.2);
+        ctx.strokeStyle = rgba(r, g, b, state.glowAlpha); ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px + 0.01, py + 0.01); ctx.stroke();
+      }
+      ctx.globalCompositeOperation = "source-over"; ctx.strokeStyle = "rgba(0, 0, 0, 0.38)"; ctx.lineWidth = 80; ctx.strokeRect(0, 0, w, h);
+      state.t += state.speed; state.frame += 1;
+      if (state.frame % 30 === 0) { const now = performance.now(); state.fps = 30000 / (now - state.lastTime); state.lastTime = now; hud.textContent = `Neural Aurora Field | ${state.particles} particles | ${state.fps.toFixed(1)} fps`; sendToNative({ type: "metrics", particles: state.particles, fps: Number(state.fps.toFixed(1)), speed: state.speed }); }
+    }
+    window.addEventListener("resize", resize);
+    window.addEventListener("pointermove", e => { state.pointerX = e.clientX / window.innerWidth; state.pointerY = e.clientY / window.innerHeight; }, { passive: true });
+    window.addEventListener("pointerdown", e => { state.pointerX = e.clientX / window.innerWidth; state.pointerY = e.clientY / window.innerHeight; }, { passive: true });
+    resize(); draw();
+  </script>
+</body>
+</html>

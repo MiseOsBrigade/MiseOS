@@ -1,0 +1,17 @@
+{
+  "id": "registry-workflow-pack",
+  "category": "registry-capability",
+  "title": "MiseOS Workflow Pack",
+  "description": "Executable baseline capability for MiseOS Workflow Pack.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.workflow-pack.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: workflowPack",
+    "Source status: active"
+  ]
+}

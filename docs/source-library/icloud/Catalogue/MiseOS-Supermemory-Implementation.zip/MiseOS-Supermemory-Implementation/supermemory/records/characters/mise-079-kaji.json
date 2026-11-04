@@ -1,0 +1,26 @@
+{
+  "customId": "character-mise-079",
+  "content": "{\n  \"schema\": \"miseos.character.canon.v1\",\n  \"record_id\": \"MISE-079\",\n  \"record_kind\": \"character_canon\",\n  \"canon_status\": \"CANON\",\n  \"version\": \"1.0\",\n  \"identity\": {\n    \"character_id\": \"MISE-079\",\n    \"number\": 79,\n    \"name\": \"Kaji\",\n    \"slug\": \"kaji\"\n  },\n  \"classification\": {\n    \"department\": \"Operations Kitchen\",\n    \"department_code\": \"operations\",\n    \"role\": \"Compute\",\n    \"rarity\": \"Epic\",\n    \"level\": 26\n  },\n  \"command\": \"MISE COMPUTE\",\n  \"stats\": {\n    \"power\": 71,\n    \"precision\": 81,\n    \"speed\": 82,\n    \"resilience\": 68,\n    \"intelligence\": 66,\n    \"teamwork\": 76\n  },\n  \"media\": {\n    \"image\": \"assets/images/079-kaji.svg\",\n    \"metadata\": \"metadata/079-kaji.json\",\n    \"animation\": \"media/animation/079-kaji.mp4\",\n    \"model_3d\": \"media/models/079-kaji.glb\",\n    \"audio\": \"media/audio/079-kaji.mp3\",\n    \"ar\": \"media/ar/079-kaji.usdz\"\n  },\n  \"provenance\": {\n    \"source\": \"user_supplied_roster\",\n    \"confidence\": \"high\",\n    \"source_file\": \"cards-catalog.json\"\n  },\n  \"approval\": {\n    \"status\": \"approved\",\n    \"approved_by\": \"project_owner\",\n    \"approved_at\": \"UNKNOWN\"\n  },\n  \"continuity\": {\n    \"supersedes\": \"\",\n    \"superseded_by\": \"\",\n    \"alternate_form\": false,\n    \"retired\": false\n  }\n}",
+  "containerTag": "miseos-character-core",
+  "entityContext": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "taskType": "memory",
+  "metadata": {
+    "ecosystem": "miseos",
+    "project_id": "miseos-character-core",
+    "domain": "characters",
+    "record_kind": "character_canon",
+    "record_id": "MISE-079",
+    "canon_status": "CANON",
+    "version": "1.0",
+    "approval_status": "approved",
+    "source_type": "user_approved",
+    "language": "en",
+    "character_count_included": true,
+    "character_id": "MISE-079",
+    "character_slug": "kaji",
+    "department_code": "operations",
+    "rarity": "Epic",
+    "level": 26,
+    "source_file": "cards-catalog.json"
+  }
+}

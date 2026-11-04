@@ -1,0 +1,78 @@
+{
+  "id": "culture-chef",
+  "slug": "culture-chef",
+  "number": 92,
+  "name": "Culture Chef",
+  "miseName": "Mise Grow",
+  "codename": "chef.data-insight.grow",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "legendary",
+  "roleCategory": "grow",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Guest Chef",
+    "signaturePhrase": "Culture Chef keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Nurtures the team and culture. Happy chefs cook best."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen Living Root aura",
+    "silhouette": "chibi DevOps chef carrying Living Root",
+    "tool": "Living Root",
+    "spritePath": "/assets/characters/culture-chef/full-body.png",
+    "cardPath": "/assets/characters/culture-chef/card.png"
+  },
+  "workflow": {
+    "jobName": "Grow",
+    "roleName": "Guest Chef microagent",
+    "summary": "Nurtures the team and culture. Happy chefs cook best.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Growth Guru",
+      "Taxonomy Taka"
+    ]
+  },
+  "stats": {
+    "power": 88,
+    "precision": 76,
+    "speed": 98,
+    "resilience": 82,
+    "intelligence": 91,
+    "teamwork": 98
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "23",
+    "role": "Guest Chef",
+    "department": "Insights & Growth",
+    "function": "Grow",
+    "rarity": "Legendary",
+    "tier": "Human Systems",
+    "element": "Living Root",
+    "ability": "Team Bloom",
+    "lore": "Nurtures the team and culture. Happy chefs cook best.",
+    "image_file": "cards/png/023-culture-chef.png",
+    "metadata_file": "metadata/erc721/023-culture-chef.json"
+  },
+  "displayNumber": 92,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/culture-chef",
+  "avatarSvg": "assets/characters/culture-chef/avatar.svg",
+  "cardSvg": "assets/characters/culture-chef/card.svg"
+}

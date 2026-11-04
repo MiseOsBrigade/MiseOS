@@ -1,0 +1,24 @@
+registry_id,name,type
+miseos.agent-sdk,MiseOS Agent SDK,SDK
+miseos.analytics-engine,MiseOS Analytics Engine,Analytics
+miseos.attestation-gate,MiseOS Attestation Gate,Policy
+miseos.cli,MiseOS CLI,Package
+miseos.docs-builder,MiseOS Docs Builder,Container
+miseos.docs-hub-template,MiseOS Docs Hub Template,Template
+miseos.gradle-plugin,MiseOS Gradle Plugin,Package
+miseos.maven-policy-adapter,MiseOS Maven Policy Adapter,Package
+miseos.nuget-client,MiseOS NuGet Client,SDK
+miseos.policy-checker,MiseOS Policy Checker,Container
+miseos.policy-engine,MiseOS Policy Engine,Policy
+miseos.registry-schema,MiseOS Registry Schema,Schema
+miseos.release-sentinel,MiseOS Release Sentinel,Agent
+miseos.repo-steward,MiseOS Repo Steward,Agent
+miseos.ruby-steward,MiseOS Ruby Steward,Package
+miseos.runner,MiseOS Runner,Container
+miseos.sbom-indexer,MiseOS SBOM Indexer,Agent
+miseos.trust-graph,MiseOS Trust Graph,Analytics
+miseos.workflow-linter,MiseOS Workflow Linter,Agent
+miseos.workflow-pack,MiseOS Workflow Pack,Workflow
+miseos.repo-pet,MiseOS Repo Pet,Agent
+miseos.repo-reliability-kit,MiseOS Repo Reliability Kit,Workflow
+miseos.orchestra-theme,Mise Orchestra Theme,Theme

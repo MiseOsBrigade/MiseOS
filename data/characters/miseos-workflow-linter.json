@@ -1,0 +1,338 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "miseos-workflow-linter",
+  "name": "MiseOS Workflow Linter",
+  "kind": "registry_manifest",
+  "aliases": [
+    "MISEOS WORKFLOW LINTER"
+  ],
+  "sources": {
+    "name": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "registry_catalog": "data/imports/miseos-registry-catalog.csv",
+    "catalog_item": "data/imports/miseos-individual-catalog-items.json",
+    "aliases": "card titles / OCR in data/player-cards-ocr.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "role": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json (type)",
+    "workflow.summary": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json (capability.description)",
+    "runtime": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "permissions": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "distribution": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "marketplace": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "compatibility": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "pricing": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+    "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json (marketplace.category)"
+  },
+  "manifest_path": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json",
+  "registry_catalog": {
+    "id": "miseos.workflow-linter",
+    "name": "MiseOS Workflow Linter",
+    "type": "agent",
+    "version": "0.2.0",
+    "status": "experimental",
+    "tier": "governance",
+    "criticality": "high",
+    "registries": "npm",
+    "artifacts": "@mise-os/workflow-linter"
+  },
+  "catalog_item": {
+    "id": "registry-workflow-linter",
+    "category": "registry-capability",
+    "title": "MiseOS Workflow Linter",
+    "description": "Executable baseline capability for MiseOS Workflow Linter.",
+    "dependencies": [
+      "registry-core-shared",
+      "registry-schema"
+    ],
+    "files": [
+      "miseos-registry/registry/manifests/miseos.workflow-linter.manifest.json"
+    ],
+    "notes": [
+      "Runtime handler: workflowLinter",
+      "Source status: active"
+    ]
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-workflow-linter.webp",
+      "thumbnail": "assets/player-cards/long-cards/thumbs/miseos-workflow-linter.webp",
+      "collection": "long-cards",
+      "title": "MISEOS WORKFLOW LINTER",
+      "match_method": "title"
+    }
+  ],
+  "collections": [
+    "long-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/long-cards/miseos-workflow-linter.webp",
+      "printed_text": [
+        "MISEOS",
+        "EGISTRY",
+        "19",
+        "111",
+        "ULTRA",
+        "MYTHIC",
+        "workflow.yml",
+        "PARSE",
+        "Vsyntax:valid",
+        "INSPECT",
+        "100",
+        "steps:valid",
+        "VALIDATE",
+        "permissions:valid",
+        "ENFORCE",
+        "dependencies:ok",
+        "suggestion:simplify",
+        "CLEAN",
+        "SYNTAX",
+        "VOK",
+        "SECURITY",
+        "V OK",
+        "LOGIC",
+        "OK",
+        "EFFICIENCY",
+        "V OK",
+        "MISEOS WORKFLOW LINTER",
+        "AGENT",
+        "Guardian of clean automation.",
+        "He inspects. He validates. He corrects.",
+        "He ensures every workflow is worthy.",
+        "Precision is law. Quality is divine",
+        "ENFORCEMENT",
+        "AUTOMATION"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Ultra Mythic",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "runtime": {
+    "engine": "node",
+    "minimum_version": "20.11.0",
+    "handler": "workflowLinter"
+  },
+  "permissions": {
+    "network": "deny_by_default",
+    "filesystem": "workspace_scoped",
+    "process": "internal_allowlist"
+  },
+  "distribution": {
+    "channels": [
+      "npm",
+      "container",
+      "marketplace"
+    ]
+  },
+  "marketplace": {
+    "category": "agent",
+    "published": false
+  },
+  "compatibility": {
+    "miseos_schema": "^1.0.0",
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "pricing": {
+    "tier": "community",
+    "currency": "USD",
+    "amount": 0
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "workflowLinter"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "workflowLinter"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/test/core.test.ts",
+        "line": 6,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "workflowLinter"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
+        "line": 7,
+        "term": "miseos.workflow-linter"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
+        "line": 99,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/registry-metrics.json",
+        "line": 456,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/analytics/risk-matrix.csv",
+        "line": 23,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/analytics.json",
+        "line": 456,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/index.json",
+        "line": 86,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/generated/manifests/miseos.workflow-linter.json",
+        "line": 4,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/index.json",
+        "line": 86,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/manifests/miseos.workflow-linter.json",
+        "line": 4,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/registry/snapshots/current.json",
+        "line": 384,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.json",
+        "line": 456,
+        "term": "MiseOS Workflow Linter"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/bootstrap-registry/docs/registry-dashboard.md",
+        "line": 49,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "apps/bootstrap-registry/reports/registry-analytics.md",
+        "line": 54,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 23,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "apps/miseos-platform/output/manifests/REGISTRY_CATALOG.md",
+        "line": 37,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "apps/registry-platform/docs/REGISTRY-CAPABILITIES.md",
+        "line": 23,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/HARVEST_REPORT.md",
+        "line": 99,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "tools/devops-foundry/catalog/RECOMMENDED_TOOL_CATALOG.md",
+        "line": 27,
+        "term": "miseos.workflow-linter"
+      },
+      {
+        "path": "tools/devops-foundry/site/index.html",
+        "line": 1,
+        "term": "MiseOS Workflow Linter"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/docs/REGISTRY-CAPABILITIES.md",
+        "line": 23,
+        "term": "miseos.workflow-linter"
+      }
+    ],
+    "handler": {
+      "path": "apps/registry-platform/packages/core/src/handlers.ts",
+      "line": 31,
+      "name": "workflowLinter"
+    },
+    "app_code_refs": [
+      {
+        "path": "apps/gridops-platform/packages/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "workflowLinter"
+      },
+      {
+        "path": "apps/registry-platform/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "workflowLinter"
+      },
+      {
+        "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
+        "line": 28,
+        "term": "workflowLinter"
+      }
+    ],
+    "status": "implemented_in_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "miseos.workflow-linter"
+  },
+  "role": "Agent",
+  "department": "Not yet defined in the source material",
+  "department_mission": "Not yet defined in the source material",
+  "rarity": "Not yet defined in the source material",
+  "lore": "Not yet defined in the source material",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Executable baseline capability for MiseOS Workflow Linter.",
+    "inputs": "Not yet defined in the source material",
+    "outputs": "Not yet defined in the source material",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "actions": [
+    {
+      "operation": "workflowLinter",
+      "handler": "workflowLinter",
+      "source": "apps/registry-platform/registry/manifests/miseos.workflow-linter.manifest.json"
+    }
+  ],
+  "stats": "Not yet defined in the source material",
+  "related": "Not yet defined in the source material",
+  "helps": {
+    "station": "Registry (agent)",
+    "mission": "Not yet defined in the source material",
+    "problem": "Executable baseline capability for MiseOS Workflow Linter.",
+    "proof_gate": "Not yet defined in the source material"
+  },
+  "agents": [],
+  "repo_pets": []
+}

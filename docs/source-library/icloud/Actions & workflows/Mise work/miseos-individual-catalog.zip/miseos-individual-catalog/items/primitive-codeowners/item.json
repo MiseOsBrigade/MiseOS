@@ -1,0 +1,13 @@
+{
+  "id": "primitive-codeowners",
+  "category": "platform",
+  "title": "CODEOWNERS",
+  "description": "Organization ownership baseline.",
+  "dependencies": [],
+  "files": [
+    ".github/CODEOWNERS"
+  ],
+  "notes": [
+    "Replace YOUR-ORG placeholder teams before merge."
+  ]
+}

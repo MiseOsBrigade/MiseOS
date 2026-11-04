@@ -1,0 +1,11 @@
+{
+  "id": "registry-schema",
+  "category": "registry",
+  "title": "MiseOS Registry Schema",
+  "description": "Original registry manifest schema.",
+  "dependencies": [],
+  "files": [
+    "miseos-registry/registry/registry-catalog.schema.json"
+  ],
+  "notes": []
+}

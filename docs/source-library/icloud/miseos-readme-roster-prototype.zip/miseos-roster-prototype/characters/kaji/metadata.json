@@ -1,0 +1,78 @@
+{
+  "id": "kaji",
+  "slug": "kaji",
+  "number": 79,
+  "name": "Kaji",
+  "miseName": "Mise Compute",
+  "codename": "chef.operations.compute",
+  "department": "operations",
+  "departmentLabel": "Operations Kitchen",
+  "departmentTagline": "Keep the kitchen running smoothly.",
+  "rarity": "epic",
+  "roleCategory": "compute",
+  "identity": {
+    "nationality": "Mise Orchestra",
+    "title": "Grillardin",
+    "signaturePhrase": "Kaji keeps the kitchen rhythm clean, useful, and observable.",
+    "uniqueTrait": "Handles the heat and powers the compute line with blazing passion."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#D4AF37",
+    "aura": "Operations Kitchen Fire aura",
+    "silhouette": "chibi DevOps chef carrying Fire",
+    "tool": "Fire",
+    "spritePath": "/assets/characters/kaji/full-body.png",
+    "cardPath": "/assets/characters/kaji/card.png"
+  },
+  "workflow": {
+    "jobName": "Compute",
+    "roleName": "Grillardin microagent",
+    "summary": "Handles the heat and powers the compute line with blazing passion.",
+    "inputs": [
+      "repository state",
+      "incident context",
+      "team signal"
+    ],
+    "outputs": [
+      "status report",
+      "next-action recommendation",
+      "clean handoff"
+    ],
+    "syncsWith": [
+      "Mizu",
+      "Scale Oni"
+    ]
+  },
+  "stats": {
+    "power": 95,
+    "precision": 92,
+    "speed": 83,
+    "resilience": 94,
+    "intelligence": 97,
+    "teamwork": 87
+  },
+  "genesisVariant": false,
+  "universe": "Mise Orchestra Expansion",
+  "source": "mise_orchestra_cards.csv",
+  "seasonOneCard": {
+    "id": "5",
+    "role": "Grillardin",
+    "department": "Operations",
+    "function": "Compute",
+    "rarity": "Epic",
+    "tier": "Compute Core",
+    "element": "Fire",
+    "ability": "Blazing Compute",
+    "lore": "Handles the heat and powers the compute line with blazing passion.",
+    "image_file": "cards/png/005-kaji.png",
+    "metadata_file": "metadata/erc721/005-kaji.json"
+  },
+  "displayNumber": 79,
+  "departmentColor": "#D4AF37",
+  "departmentShort": "Operations",
+  "assetBase": "assets/characters/kaji",
+  "avatarSvg": "assets/characters/kaji/avatar.svg",
+  "cardSvg": "assets/characters/kaji/card.svg"
+}

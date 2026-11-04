@@ -1,0 +1,68 @@
+{
+  "id": "secure-sakura",
+  "number": 47,
+  "name": "Secure Sakura",
+  "miseName": "Mise SecureTemplateLibrary",
+  "codename": "chef.security.secure-template-library",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "common",
+  "roleCategory": "platform",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Secure Template Library",
+    "signaturePhrase": "Secure Template Library done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in secure template library so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen secure template library aura",
+    "silhouette": "multinational chibi DevOps chef carrying a blueprint",
+    "tool": "blueprint",
+    "spritePath": "/assets/characters/secure-sakura/full-body.png",
+    "cardPath": "/assets/characters/secure-sakura/card.png"
+  },
+  "workflow": {
+    "jobName": "Secure Template Library",
+    "roleName": "Secure Template Library microagent",
+    "summary": "Runs secure template library for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Threat Taro",
+      "Token Toshi",
+      "Bruno Blast-Radius",
+      "Bootstrap Aiko"
+    ]
+  },
+  "stats": {
+    "power": 81,
+    "precision": 74,
+    "speed": 71,
+    "resilience": 93,
+    "intelligence": 95,
+    "teamwork": 93
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "secure-sakura",
+  "seasonOneCard": null,
+  "displayNumber": 47,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/secure-sakura",
+  "avatarSvg": "assets/characters/secure-sakura/avatar.svg",
+  "cardSvg": "assets/characters/secure-sakura/card.svg"
+}

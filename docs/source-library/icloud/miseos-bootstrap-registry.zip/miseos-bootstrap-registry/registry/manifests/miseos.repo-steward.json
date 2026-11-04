@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "miseos.repo-steward",
+  "name": "MiseOS Repo Steward",
+  "type": "agent",
+  "version": "0.1.0",
+  "status": "experimental",
+  "owner": {
+    "name": "MiseOS",
+    "kind": "organization"
+  },
+  "description": "Repository health steward for branch protection, README quality, workflows, issue templates, and release readiness.",
+  "artifacts": {
+    "npm": "@miseos/repo-steward",
+    "source": "packages/repo-steward"
+  },
+  "capabilities": [
+    "repo_health_check",
+    "workflow_audit",
+    "release_readiness",
+    "docs_audit"
+  ],
+  "permissions": {
+    "github": {
+      "contents": "read",
+      "actions": "read",
+      "metadata": "read"
+    }
+  },
+  "trust": {
+    "licenseRequired": true,
+    "sbomRequired": true,
+    "provenanceRequired": true,
+    "signedReleaseRequired": true,
+    "humanReviewRequiredFor": [
+      "permission_change",
+      "major_version_upgrade"
+    ]
+  },
+  "changePolicy": {
+    "major": "Human review required",
+    "minor": "Maintainer review required",
+    "patch": "Automated validation allowed"
+  },
+  "agentContract": {
+    "loadStrategy": "manifest_plus_docs",
+    "safeToRunWithoutHuman": true,
+    "requiresNetwork": true,
+    "outputs": [
+      "repo_health_report"
+    ]
+  }
+}

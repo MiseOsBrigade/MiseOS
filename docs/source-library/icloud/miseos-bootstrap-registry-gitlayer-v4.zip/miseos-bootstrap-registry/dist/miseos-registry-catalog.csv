@@ -1,0 +1,22 @@
+id,name,type,version,status,tier,criticality,registries,artifacts
+miseos.agent-sdk,MiseOS Agent SDK,sdk,0.2.0,experimental,developer-tooling,high,npm,@mise-os/agent-sdk
+miseos.analytics-engine,MiseOS Analytics Engine,analytics,0.2.0,experimental,autonomy,high,npm,@mise-os/analytics-engine
+miseos.attestation-gate,MiseOS Attestation Gate,policy,0.2.0,experimental,governance,critical,npm,@mise-os/attestation-gate
+miseos.cli,MiseOS CLI,package,0.2.0,experimental,developer-tooling,high,npm,@mise-os/cli
+miseos.docs-builder,MiseOS Docs Builder,container,0.2.0,experimental,developer-tooling,medium,container,ghcr.io/mise-os/miseos-docs-builder
+miseos.docs-hub-template,MiseOS Docs Hub Template,template,0.2.0,experimental,expansion,medium,npm; repo,@mise-os/docs-hub-template; templates/docs-hub
+miseos.git-command-layer,MiseOS Git Command Layer,package,0.1.0,experimental,developer-tooling,high,script; docs; data; npm,scripts/mise-git.mjs; docs/miseos-git-command-guide.md; registry/git-command-map.json; @mise-os/cli
+miseos.gradle-plugin,MiseOS Gradle Plugin,package,0.2.0,experimental,expansion,medium,gradle,dev.miseos.registry-plugin
+miseos.maven-policy-adapter,MiseOS Maven Policy Adapter,package,0.2.0,experimental,expansion,medium,maven,dev.miseos:policy-adapter
+miseos.nuget-client,MiseOS NuGet Client,sdk,0.2.0,experimental,expansion,medium,nuget,MiseOS.Registry.Client
+miseos.policy-checker,MiseOS Policy Checker,container,0.2.0,experimental,governance,critical,container,ghcr.io/mise-os/miseos-policy-checker
+miseos.policy-engine,MiseOS Policy Engine,policy,0.2.0,experimental,governance,critical,npm; container,@mise-os/policy-engine; ghcr.io/mise-os/miseos-policy-checker
+miseos.registry-schema,MiseOS Registry Schema,schema,0.2.0,experimental,bootstrap,high,npm,@mise-os/registry-schema
+miseos.release-sentinel,MiseOS Release Sentinel,agent,0.2.0,experimental,autonomy,critical,npm,@mise-os/release-sentinel
+miseos.repo-steward,MiseOS Repo Steward,agent,0.2.0,experimental,governance,high,npm,@mise-os/repo-steward
+miseos.ruby-steward,MiseOS Ruby Steward,package,0.2.0,experimental,expansion,medium,rubygems,miseos-steward
+miseos.runner,MiseOS Runner,container,0.2.0,experimental,runtime,critical,container,ghcr.io/mise-os/miseos-runner
+miseos.sbom-indexer,MiseOS SBOM Indexer,agent,0.2.0,experimental,governance,critical,npm,@mise-os/sbom-indexer
+miseos.trust-graph,MiseOS Trust Graph,analytics,0.2.0,experimental,governance,high,npm,@mise-os/trust-graph
+miseos.workflow-linter,MiseOS Workflow Linter,agent,0.2.0,experimental,governance,high,npm,@mise-os/workflow-linter
+miseos.workflow-pack,MiseOS Workflow Pack,workflow,0.2.0,experimental,bootstrap,critical,repo,.github/workflows

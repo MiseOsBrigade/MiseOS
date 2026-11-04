@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #018 — Terra Forge",
+  "description": "Terra Forge serves the Platform Kitchen as the brigade's environment provisioner. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/018-terra-forge.svg",
+  "animation_url": "media/animation/018-terra-forge.mp4",
+  "external_url": "https://miseos.dev/agents/terra-forge",
+  "background_color": "1B2A41",
+  "spatial_screen": {
+    "card_id": "MISE-018",
+    "level": 22,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.018",
+    "number": 18,
+    "slug": "terra-forge",
+    "codename": "TERRA_FORGE",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Platform Kitchen",
+    "department_code": "platform",
+    "role": "Environment Provisioner",
+    "rarity": "Common",
+    "rarity_tier": 1,
+    "level": 22
+  },
+  "lore": {
+    "summary": "Terra Forge serves the Platform Kitchen as the brigade's environment provisioner. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Terra Forge performs environment provisioner within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Schema Sora",
+      "Runtime Riku",
+      "Vault Hana"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE ENVIRONMENT PROVISIONER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Environment Provisioner Protocol",
+      "type": "active",
+      "effect": "Executes the core environment provisioner workflow with evidence capture.",
+      "command": "MISE ENVIRONMENT PROVISIONER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next platform station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 68,
+    "precision": 68,
+    "speed": 79,
+    "resilience": 82,
+    "intelligence": 76,
+    "teamwork": 77
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Platform Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Environment Provisioner"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Level",
+      "value": 22,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 68,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 68,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 79,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 82,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 77,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/018-terra-forge.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/018-terra-forge.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/018-terra-forge.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/018-terra-forge.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/018-terra-forge.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/018-terra-forge.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

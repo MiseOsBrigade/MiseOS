@@ -1,0 +1,68 @@
+{
+  "id": "cost-kaito",
+  "number": 67,
+  "name": "Cost Kaito",
+  "miseName": "Mise CostEfficiencyMonitor",
+  "codename": "chef.data-insight.cost-efficiency-monitor",
+  "department": "data-insight",
+  "departmentLabel": "Data & Insight Kitchen",
+  "departmentTagline": "Learn. Optimize. Evolve.",
+  "rarity": "common",
+  "roleCategory": "analytics",
+  "identity": {
+    "nationality": "Japanese",
+    "title": "Cost & Efficiency Monitor",
+    "signaturePhrase": "Cost and Efficiency Monitor done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in cost & efficiency monitor so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#A855F7",
+    "aura": "Data & Insight Kitchen cost & efficiency monitor aura",
+    "silhouette": "multinational chibi DevOps chef carrying a gauge",
+    "tool": "gauge",
+    "spritePath": "/assets/characters/cost-kaito/full-body.png",
+    "cardPath": "/assets/characters/cost-kaito/card.png"
+  },
+  "workflow": {
+    "jobName": "Cost & Efficiency Monitor",
+    "roleName": "Cost & Efficiency Monitor microagent",
+    "summary": "Runs cost & efficiency monitor for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Flag Fox",
+      "DX Mei",
+      "Yume Builder",
+      "Policy Kenji"
+    ]
+  },
+  "stats": {
+    "power": 75,
+    "precision": 83,
+    "speed": 89,
+    "resilience": 79,
+    "intelligence": 95,
+    "teamwork": 87
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "cost-kaito",
+  "seasonOneCard": null,
+  "displayNumber": 67,
+  "departmentColor": "#A855F7",
+  "departmentShort": "Data & Insight",
+  "assetBase": "assets/characters/cost-kaito",
+  "avatarSvg": "assets/characters/cost-kaito/avatar.svg",
+  "cardSvg": "assets/characters/cost-kaito/card.svg"
+}

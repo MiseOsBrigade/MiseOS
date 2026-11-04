@@ -1,0 +1,18 @@
+{
+  "slug": "perf-chef",
+  "name": "Perf Chef",
+  "kind": "brigade_mascot_agent",
+  "role": "Performance Tuner",
+  "group": "Engineering & Development",
+  "group_tagline": "Code · Test · Review",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:115",
+  "thumbnail": "agents/perf-chef/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/perf-chef.md",
+  "dir": "agents/perf-chef",
+  "files": [
+    "agents/perf-chef/Perf-Chef.png"
+  ]
+}

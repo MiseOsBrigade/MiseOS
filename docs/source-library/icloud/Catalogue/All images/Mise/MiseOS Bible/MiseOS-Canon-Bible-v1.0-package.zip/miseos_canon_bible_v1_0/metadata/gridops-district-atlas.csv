@@ -1,0 +1,13 @@
+district_id,name,domain,purpose,primary_systems,accent
+GRID-001,Singularity Core,Cross-surface,Central obsidian-brain operating core,"Agent runtime, memory, knowledge, policy, evidence, registry, telemetry",#D4AF37
+GRID-010,GridOps Command Center,Operations,"Mission control, routing and state overview","Agent graph, timeline, incidents, approvals",#D4AF37
+GRID-020,Pipeline Kitchen,Pipeline Kitchen,Repository intake through verified release,"Commits, branches, tests, builds, releases",#E97822
+GRID-030,Platform Kitchen,Platform Kitchen,Golden paths and stable service foundations,"SDKs, containers, portals, schemas",#1B2A41
+GRID-040,Reliability Kitchen,Reliability Kitchen,"Observe, measure and improve","SLOs, traces, capacity, incidents",#2E6B4E
+GRID-050,Security Kitchen,Security Kitchen,"Guard, audit and comply","Identity, vulnerabilities, policies, evidence",#8B1E2D
+GRID-060,Data & Insight Kitchen,Data & Insight Kitchen,"Learn, optimize and evolve","Analytics, anomalies, cost, forecasts",#17A2A4
+GRID-070,Operations Kitchen,Operations Kitchen,Coordinate service execution,"Queues, schedules, tickets, handoffs",#D4AF37
+GRID-080,Registry Citadel,Registry,Packages and capability marketplace,"Manifests, versions, compatibility, provenance",#C8A951
+GRID-090,Memory Vault,Memory & Knowledge,Governed memory and lineage,"Knowledge graph, vectors, sources, retention",#7C3AED
+GRID-100,Human Approval Chamber,Governance,Protected decisions and explicit consent,"Approvals, exceptions, escalation, audit",#F8F4E3
+GRID-110,Release Horizon,Pipeline / Governance,Final verified publication boundary,"Attestation, deployment, rollback, release record",#F97316

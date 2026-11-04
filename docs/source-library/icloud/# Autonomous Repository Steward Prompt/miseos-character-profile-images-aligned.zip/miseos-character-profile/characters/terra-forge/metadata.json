@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.018",
+  "number": 18,
+  "slug": "terra-forge",
+  "name": "Terra Forge",
+  "mise_name": "Terra Forge",
+  "codename": "TERRA_FORGE",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Platform Kitchen",
+  "department_code": "platform",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "agent_function": "Environment Provisioner",
+  "job_name": "Environment Provisioner",
+  "rarity": "Common",
+  "rarity_tier": 1,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#1B2A41",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Platform Kitchen operational aura",
+    "tool_symbol": "Environment Provisioner",
+    "avatar_path": "assets/characters/terra-forge/avatar.png",
+    "card_path": "assets/characters/terra-forge/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Terra Forge performs environment provisioner within the Platform Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Schema Sora",
+      "Runtime Riku",
+      "Vault Hana"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 68,
+    "precision": 68,
+    "speed": 79,
+    "resilience": 82,
+    "intelligence": 76,
+    "teamwork": 77
+  },
+  "paths": {
+    "readme": "characters/terra-forge/README.md",
+    "metadata": "characters/terra-forge/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

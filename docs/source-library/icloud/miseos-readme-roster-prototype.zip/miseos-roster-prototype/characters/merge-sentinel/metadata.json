@@ -1,0 +1,68 @@
+{
+  "id": "merge-sentinel",
+  "number": 53,
+  "name": "Merge Sentinel",
+  "miseName": "Mise PreMergeSecurityGate",
+  "codename": "chef.security.pre-merge-security-gate",
+  "department": "security",
+  "departmentLabel": "Security Kitchen",
+  "departmentTagline": "Protect the kitchen.",
+  "rarity": "rare",
+  "roleCategory": "security",
+  "identity": {
+    "nationality": "South African",
+    "title": "Pre-Merge Security Gate",
+    "signaturePhrase": "Pre-Merge Security Gate done cleanly, safely, and in rhythm.",
+    "uniqueTrait": "Specializes in pre-merge security gate so the Security Kitchen can operate as a precise, repo-safe DevOps station."
+  },
+  "visual": {
+    "primaryColor": "#0E0F10",
+    "secondaryColor": "#F6F1E7",
+    "accentColor": "#FACC15",
+    "aura": "Security Kitchen pre-merge security gate aura",
+    "silhouette": "multinational chibi DevOps chef carrying a shield",
+    "tool": "shield",
+    "spritePath": "/assets/characters/merge-sentinel/full-body.png",
+    "cardPath": "/assets/characters/merge-sentinel/card.png"
+  },
+  "workflow": {
+    "jobName": "Pre-Merge Security Gate",
+    "roleName": "Pre-Merge Security Gate microagent",
+    "summary": "Runs pre-merge security gate for repository operations, producing evidence-first results before any risky change is allowed.",
+    "inputs": [
+      "repository state",
+      "mise policy",
+      "event context"
+    ],
+    "outputs": [
+      "status report",
+      "evidence packet",
+      "next-action recommendation"
+    ],
+    "syncsWith": [
+      "Policy Ronin",
+      "Watchtower Yoru",
+      "Iron Hashi",
+      "Grafana Mei"
+    ]
+  },
+  "stats": {
+    "power": 70,
+    "precision": 76,
+    "speed": 84,
+    "resilience": 74,
+    "intelligence": 97,
+    "teamwork": 98
+  },
+  "genesisVariant": false,
+  "universe": "MiseOS Core 75",
+  "source": "characters.generated.json",
+  "slug": "merge-sentinel",
+  "seasonOneCard": null,
+  "displayNumber": 53,
+  "departmentColor": "#EF4444",
+  "departmentShort": "Security",
+  "assetBase": "assets/characters/merge-sentinel",
+  "avatarSvg": "assets/characters/merge-sentinel/avatar.svg",
+  "cardSvg": "assets/characters/merge-sentinel/card.svg"
+}

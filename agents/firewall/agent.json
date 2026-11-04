@@ -1,0 +1,20 @@
+{
+  "slug": "firewall",
+  "name": "Firewall",
+  "kind": "brigade_mascot_agent",
+  "role": "Perimeter Guard",
+  "group": "Security & Quality",
+  "group_tagline": "Guard · Audit · Comply",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:131",
+  "thumbnail": "agents/firewall/thumb.png",
+  "character": null,
+  "cards": [
+    "docs/cards/1by1-chefs--firewall.md"
+  ],
+  "pet": null,
+  "page": "docs/agents/firewall.md",
+  "dir": "agents/firewall",
+  "files": [
+    "agents/firewall/Firewall.png"
+  ]
+}

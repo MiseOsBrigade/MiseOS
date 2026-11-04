@@ -1,0 +1,68 @@
+{
+  "id": "miseos.character.058",
+  "number": 58,
+  "slug": "nudge-neko",
+  "name": "Nudge Neko",
+  "mise_name": "Nudge Neko",
+  "codename": "NUDGE_NEKO",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Security Kitchen",
+  "department_code": "security",
+  "department_mission": "Guard. Audit. Comply.",
+  "agent_function": "Security Training Nudges",
+  "job_name": "Security Training Nudges",
+  "rarity": "Rare",
+  "rarity_tier": 2,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#8B1E2D",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Security Kitchen operational aura",
+    "tool_symbol": "Security Training Nudges",
+    "avatar_path": "assets/characters/nudge-neko/card.jpg",
+    "card_path": "assets/characters/nudge-neko/card.jpg",
+    "primary_photo_page": 80,
+    "image_alignment": {
+      "status": "matched",
+      "confidence": "high",
+      "source_file": "0ACE220D-32A1-49F3-A00C-69E4A6197ACC Compressed(1).pdf",
+      "source_thumbnail": "thumbnails/page-080.jpg"
+    }
+  },
+  "workflow": {
+    "summary": "Nudge Neko performs security training nudges within the Security Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Scorecard Shin",
+      "Red Oni",
+      "Threat Taro"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 65,
+    "precision": 84,
+    "speed": 73,
+    "resilience": 65,
+    "intelligence": 64,
+    "teamwork": 74
+  },
+  "paths": {
+    "readme": "characters/nudge-neko/README.md",
+    "metadata": "characters/nudge-neko/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

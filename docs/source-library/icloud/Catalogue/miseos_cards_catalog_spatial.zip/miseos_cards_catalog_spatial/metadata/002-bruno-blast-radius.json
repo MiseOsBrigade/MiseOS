@@ -1,0 +1,194 @@
+{
+  "schema": "miseos.card.metadata.v2",
+  "name": "MiseOS Agent #002 — Bruno Blast-Radius",
+  "description": "Bruno Blast-Radius serves the Pipeline Kitchen as the brigade's change impact scanner. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+  "image": "assets/images/002-bruno-blast-radius.svg",
+  "animation_url": "media/animation/002-bruno-blast-radius.mp4",
+  "external_url": "https://miseos.dev/agents/bruno-blast-radius",
+  "background_color": "E97822",
+  "spatial_screen": {
+    "card_id": "MISE-002",
+    "level": 17,
+    "display_mode": "spatial-screen-card",
+    "holographic": true,
+    "reference_art_packet": {
+      "primary_pdf_page": null,
+      "aligned_pages": [],
+      "reference_image": null,
+      "thumbnail": null,
+      "alignment_confidence": "high",
+      "provenance": "user_supplied_roster"
+    }
+  },
+  "identity": {
+    "id": "miseos.character.002",
+    "number": 2,
+    "slug": "bruno-blast-radius",
+    "codename": "BRUNO_BLAST_RADIUS",
+    "record_kind": "character_card",
+    "collection": "MiseOS Character Agents",
+    "department": "Pipeline Kitchen",
+    "department_code": "pipeline",
+    "role": "Change Impact Scanner",
+    "rarity": "Rare",
+    "rarity_tier": 2,
+    "level": 17
+  },
+  "lore": {
+    "summary": "Bruno Blast-Radius serves the Pipeline Kitchen as the brigade's change impact scanner. Their station converts uncertain repository work into evidence-backed service, preserving clean handoffs and operational memory.",
+    "station_oath": "Everything in its place before it ships.",
+    "universe": "MiseOS Brigade",
+    "license_note": "Collectible character metadata and artwork are brand/community assets. No investment, resale, profit, or financial-return claim is made."
+  },
+  "workflow": {
+    "summary": "Bruno Blast-Radius performs change impact scanner within the Pipeline Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Lila Branchkeeper",
+      "Omar Reviewer",
+      "Hugo Matrix"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "command": {
+    "primary": "MISE CHANGE IMPACT SCANNER",
+    "verify": "MISE VERIFY --EVIDENCE",
+    "handoff": "MISE HANDOFF --SYNC"
+  },
+  "abilities": [
+    {
+      "name": "Change Impact Scanner Protocol",
+      "type": "active",
+      "effect": "Executes the core change impact scanner workflow with evidence capture.",
+      "command": "MISE CHANGE IMPACT SCANNER"
+    },
+    {
+      "name": "Proof Before Plate",
+      "type": "passive",
+      "effect": "Blocks irreversible actions until the proof gate is satisfied.",
+      "command": "MISE VERIFY PROOF"
+    },
+    {
+      "name": "Synchronized Handoff",
+      "type": "team",
+      "effect": "Packages outputs for the next pipeline station without context loss.",
+      "command": "MISE HANDOFF --SYNC"
+    }
+  ],
+  "stats": {
+    "power": 66,
+    "precision": 70,
+    "speed": 62,
+    "resilience": 81,
+    "intelligence": 76,
+    "teamwork": 74
+  },
+  "traits": [
+    {
+      "trait_type": "Collection",
+      "value": "MiseOS Character Agents"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Pipeline Kitchen"
+    },
+    {
+      "trait_type": "Role",
+      "value": "Change Impact Scanner"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Level",
+      "value": 17,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Record Kind",
+      "value": "character_card"
+    },
+    {
+      "trait_type": "Provenance",
+      "value": "user_supplied_roster"
+    },
+    {
+      "trait_type": "Confidence",
+      "value": "high"
+    },
+    {
+      "trait_type": "Power",
+      "value": 66,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Precision",
+      "value": 70,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Speed",
+      "value": 62,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Resilience",
+      "value": 81,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Intelligence",
+      "value": 76,
+      "display_type": "number"
+    },
+    {
+      "trait_type": "Teamwork",
+      "value": 74,
+      "display_type": "number"
+    }
+  ],
+  "media": {
+    "image": "assets/images/002-bruno-blast-radius.svg",
+    "reference_art": null,
+    "thumbnail": null,
+    "animation": {
+      "uri": "media/animation/002-bruno-blast-radius.mp4",
+      "status": "slot"
+    },
+    "video": {
+      "uri": "media/video/002-bruno-blast-radius.mp4",
+      "status": "slot"
+    },
+    "model_3d": {
+      "uri": "media/models/002-bruno-blast-radius.glb",
+      "mime_type": "model/gltf-binary",
+      "status": "slot"
+    },
+    "audio": {
+      "uri": "media/audio/002-bruno-blast-radius.mp3",
+      "status": "slot"
+    },
+    "ar": {
+      "uri": "media/ar/002-bruno-blast-radius.usdz",
+      "mime_type": "model/vnd.usdz+zip",
+      "status": "slot"
+    }
+  },
+  "license": {
+    "artwork": "All rights reserved unless separately licensed.",
+    "metadata": "CC BY-NC 4.0 draft recommendation; confirm before publication.",
+    "commercial_use": "Requires an explicit MiseOS/GoodShyt commercial license.",
+    "disclaimer": "Not financial advice and not an investment product."
+  }
+}

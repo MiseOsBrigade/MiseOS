@@ -1,0 +1,18 @@
+{
+  "slug": "logger",
+  "name": "Logger",
+  "kind": "brigade_mascot_agent",
+  "role": "Log Aggregator",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:155",
+  "thumbnail": "agents/logger/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/logger.md",
+  "dir": "agents/logger",
+  "files": [
+    "agents/logger/Logger.png"
+  ]
+}

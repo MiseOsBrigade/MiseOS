@@ -1,0 +1,17 @@
+{
+  "id": "registry-repo-pet",
+  "category": "registry-capability",
+  "title": "MiseOS Repo Pet",
+  "description": "Executable baseline capability for MiseOS Repo Pet.",
+  "dependencies": [
+    "registry-core-shared",
+    "registry-schema"
+  ],
+  "files": [
+    "miseos-registry/registry/manifests/miseos.repo-pet.manifest.json"
+  ],
+  "notes": [
+    "Runtime handler: repoPet",
+    "Source status: active"
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "mise/issue-review",
+    "color": "38BDF8",
+    "description": "Issues, review notes, and triage station"
+  },
+  {
+    "name": "mise/merge-pr",
+    "color": "22C55E",
+    "description": "Merge and pull request stewardship"
+  },
+  {
+    "name": "mise/branch-corrections",
+    "color": "F6C453",
+    "description": "Branch corrections and next-branch recommendations"
+  },
+  {
+    "name": "mise/comments-commits",
+    "color": "8B5CF6",
+    "description": "Comment and commit digest station"
+  },
+  {
+    "name": "mise/repo-clean",
+    "color": "FF7A1A",
+    "description": "Repository cleanup and health reporting"
+  },
+  {
+    "name": "safety/apply-required",
+    "color": "EF4444",
+    "description": "Requires explicit apply before write action"
+  },
+  {
+    "name": "safety/no-pat-recursion",
+    "color": "0B0F14",
+    "description": "Blocks recursive automation patterns"
+  },
+  {
+    "name": "hub/ingredient",
+    "color": "F8F3E8",
+    "description": "Reusable ingredient for the Mise en Place Hub"
+  },
+  {
+    "name": "brigade/station",
+    "color": "94A3B8",
+    "description": "A repository station owned by the brigade system"
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.090",
+  "number": 90,
+  "slug": "chaos-analyst",
+  "name": "Chaos Analyst",
+  "mise_name": "Chaos Analyst",
+  "codename": "CHAOS_ANALYST",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Learn",
+  "job_name": "Learn",
+  "rarity": "Legendary",
+  "rarity_tier": 4,
+  "source": "mise_orchestra_cards.csv",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Learn",
+    "avatar_path": "assets/characters/chaos-analyst/avatar.png",
+    "card_path": "assets/characters/chaos-analyst/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Chaos Analyst performs learn within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Growth Guru",
+      "Culture Chef",
+      "Taxonomy Taka"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 67,
+    "precision": 78,
+    "speed": 59,
+    "resilience": 75,
+    "intelligence": 85,
+    "teamwork": 72
+  },
+  "paths": {
+    "readme": "characters/chaos-analyst/README.md",
+    "metadata": "characters/chaos-analyst/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}

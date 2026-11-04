@@ -1,0 +1,512 @@
+[
+  {
+    "id": "slo-sage",
+    "number": 31,
+    "name": "SLO Sage",
+    "miseName": "Mise SloDefinitionWorkflow",
+    "codename": "chef.reliability.slo-definition-workflow",
+    "department": "reliability",
+    "departmentLabel": "Reliability Kitchen",
+    "departmentTagline": "Observe. Measure. Improve.",
+    "rarity": "genesis",
+    "roleCategory": "reliability",
+    "identity": {
+      "nationality": "Indian",
+      "title": "SLO Definition Workflow",
+      "signaturePhrase": "SLO Definition Workflow done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in slo definition workflow so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen slo definition workflow aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/slo-sage/full-body.png",
+      "cardPath": "/assets/characters/slo-sage/card.png"
+    },
+    "workflow": {
+      "jobName": "SLO Definition Workflow",
+      "roleName": "SLO Definition Workflow microagent",
+      "summary": "Runs slo definition workflow for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Trace Sensei",
+        "Alko Commit Chef",
+        "Template Tanaka",
+        "Threat Taro"
+      ]
+    },
+    "stats": {
+      "power": 85,
+      "precision": 98,
+      "speed": 95,
+      "resilience": 81,
+      "intelligence": 83,
+      "teamwork": 81
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "slo-sage",
+    "seasonOneCard": {
+      "id": "18",
+      "role": "Guest Chef",
+      "department": "Reliability",
+      "function": "Guarantee",
+      "rarity": "Epic",
+      "tier": "Promise Keeper",
+      "element": "Error Budget",
+      "ability": "SLO Ward",
+      "lore": "Protects the promises. Maintains SLOs and error budgets.",
+      "image_file": "cards/png/018-slo-sage.png",
+      "metadata_file": "metadata/erc721/018-slo-sage.json"
+    },
+    "displayNumber": 31,
+    "departmentColor": "#0EA5E9",
+    "departmentShort": "Reliability",
+    "assetBase": "assets/characters/slo-sage",
+    "avatarSvg": "assets/characters/slo-sage/avatar.svg",
+    "cardSvg": "assets/characters/slo-sage/card.svg"
+  },
+  {
+    "id": "metrics-miko",
+    "number": 41,
+    "name": "Metrics Miko",
+    "miseName": "Mise SloDashboards",
+    "codename": "chef.reliability.slo-dashboards",
+    "department": "reliability",
+    "departmentLabel": "Reliability Kitchen",
+    "departmentTagline": "Observe. Measure. Improve.",
+    "rarity": "genesis",
+    "roleCategory": "reliability",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "SLO Dashboards",
+      "signaturePhrase": "SLO Dashboards done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in slo dashboards so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen slo dashboards aura",
+      "silhouette": "multinational chibi DevOps chef carrying a scroll",
+      "tool": "scroll",
+      "spritePath": "/assets/characters/metrics-miko/full-body.png",
+      "cardPath": "/assets/characters/metrics-miko/card.png"
+    },
+    "workflow": {
+      "jobName": "SLO Dashboards",
+      "roleName": "SLO Dashboards microagent",
+      "summary": "Runs slo dashboards for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Backlog Benji",
+        "Forecast Fuji",
+        "Felix Rollback",
+        "Streama"
+      ]
+    },
+    "stats": {
+      "power": 88,
+      "precision": 95,
+      "speed": 82,
+      "resilience": 80,
+      "intelligence": 89,
+      "teamwork": 84
+    },
+    "genesisVariant": true,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "metrics-miko",
+    "seasonOneCard": {
+      "id": "17",
+      "role": "Guest Chef",
+      "department": "Reliability",
+      "function": "Measure",
+      "rarity": "Epic",
+      "tier": "Observability Line",
+      "element": "Signal Clock",
+      "ability": "Metric Reading",
+      "lore": "Reads the numbers. Metrics guide every decision.",
+      "image_file": "cards/png/017-metrics-miko.png",
+      "metadata_file": "metadata/erc721/017-metrics-miko.json"
+    },
+    "displayNumber": 41,
+    "departmentColor": "#0EA5E9",
+    "departmentShort": "Reliability",
+    "assetBase": "assets/characters/metrics-miko",
+    "avatarSvg": "assets/characters/metrics-miko/avatar.svg",
+    "cardSvg": "assets/characters/metrics-miko/card.svg"
+  },
+  {
+    "id": "reliability-sensei",
+    "number": 45,
+    "name": "Reliability Sensei",
+    "miseName": "Mise ReliabilityAdvisorAgent",
+    "codename": "chef.reliability.reliability-advisor-agent",
+    "department": "reliability",
+    "departmentLabel": "Reliability Kitchen",
+    "departmentTagline": "Observe. Measure. Improve.",
+    "rarity": "epic",
+    "roleCategory": "reliability",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Reliability Advisor Agent",
+      "signaturePhrase": "Reliability Advisor Agent done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in reliability advisor agent so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen reliability advisor agent aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/reliability-sensei/full-body.png",
+      "cardPath": "/assets/characters/reliability-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Reliability Advisor Agent",
+      "roleName": "Reliability Advisor Agent microagent",
+      "summary": "Runs reliability advisor agent for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Impact Ichi",
+        "Pipeline Sensei",
+        "Platform Sensei",
+        "Red Oni"
+      ]
+    },
+    "stats": {
+      "power": 70,
+      "precision": 86,
+      "speed": 80,
+      "resilience": 94,
+      "intelligence": 89,
+      "teamwork": 78
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "reliability-sensei",
+    "seasonOneCard": null,
+    "displayNumber": 45,
+    "departmentColor": "#0EA5E9",
+    "departmentShort": "Reliability",
+    "assetBase": "assets/characters/reliability-sensei",
+    "avatarSvg": "assets/characters/reliability-sensei/avatar.svg",
+    "cardSvg": "assets/characters/reliability-sensei/card.svg"
+  },
+  {
+    "id": "resilience-ryu",
+    "number": 43,
+    "name": "Resilience Ryu",
+    "miseName": "Mise ResilienceTestingLoop",
+    "codename": "chef.reliability.resilience-testing-loop",
+    "department": "reliability",
+    "departmentLabel": "Reliability Kitchen",
+    "departmentTagline": "Observe. Measure. Improve.",
+    "rarity": "rare",
+    "roleCategory": "reliability",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Resilience Testing Loop",
+      "signaturePhrase": "Resilience Testing Loop done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in resilience testing loop so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen resilience testing loop aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/resilience-ryu/full-body.png",
+      "cardPath": "/assets/characters/resilience-ryu/card.png"
+    },
+    "workflow": {
+      "jobName": "Resilience Testing Loop",
+      "roleName": "Resilience Testing Loop microagent",
+      "summary": "Runs resilience testing loop for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Forecast Fuji",
+        "Impact Ichi",
+        "Ivun Cache",
+        "Portal Rei"
+      ]
+    },
+    "stats": {
+      "power": 92,
+      "precision": 76,
+      "speed": 94,
+      "resilience": 72,
+      "intelligence": 88,
+      "teamwork": 92
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "resilience-ryu",
+    "seasonOneCard": null,
+    "displayNumber": 43,
+    "departmentColor": "#0EA5E9",
+    "departmentShort": "Reliability",
+    "assetBase": "assets/characters/resilience-ryu",
+    "avatarSvg": "assets/characters/resilience-ryu/avatar.svg",
+    "cardSvg": "assets/characters/resilience-ryu/card.svg"
+  },
+  {
+    "id": "trace-sensei",
+    "number": 32,
+    "name": "Trace Sensei",
+    "miseName": "Mise InstrumentationBooster",
+    "codename": "chef.reliability.instrumentation-booster",
+    "department": "reliability",
+    "departmentLabel": "Reliability Kitchen",
+    "departmentTagline": "Observe. Measure. Improve.",
+    "rarity": "rare",
+    "roleCategory": "automation",
+    "identity": {
+      "nationality": "Japanese",
+      "title": "Instrumentation Booster",
+      "signaturePhrase": "Instrumentation Booster done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in instrumentation booster so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen instrumentation booster aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/trace-sensei/full-body.png",
+      "cardPath": "/assets/characters/trace-sensei/card.png"
+    },
+    "workflow": {
+      "jobName": "Instrumentation Booster",
+      "roleName": "Instrumentation Booster microagent",
+      "summary": "Runs instrumentation booster for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "SLO Sage",
+        "Chaos Kaito",
+        "Bruno Blast-Radius",
+        "Bootstrap Aiko"
+      ]
+    },
+    "stats": {
+      "power": 90,
+      "precision": 78,
+      "speed": 76,
+      "resilience": 94,
+      "intelligence": 98,
+      "teamwork": 76
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "trace-sensei",
+    "seasonOneCard": null,
+    "displayNumber": 32,
+    "departmentColor": "#0EA5E9",
+    "departmentShort": "Reliability",
+    "assetBase": "assets/characters/trace-sensei",
+    "avatarSvg": "assets/characters/trace-sensei/avatar.svg",
+    "cardSvg": "assets/characters/trace-sensei/card.svg"
+  },
+  {
+    "id": "null-chan",
+    "slug": "null-chan",
+    "number": 81,
+    "name": "Null-chan",
+    "miseName": "Mise Cleanse",
+    "codename": "chef.reliability.cleanse",
+    "department": "reliability",
+    "departmentLabel": "Reliability Kitchen",
+    "departmentTagline": "Observe. Measure. Improve.",
+    "rarity": "rare",
+    "roleCategory": "cleanse",
+    "identity": {
+      "nationality": "Mise Orchestra",
+      "title": "Plongeur",
+      "signaturePhrase": "Null-chan keeps the kitchen rhythm clean, useful, and observable.",
+      "uniqueTrait": "Cleans up what is not needed. Keeps the kitchen light."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen Void Soap aura",
+      "silhouette": "chibi DevOps chef carrying Void Soap",
+      "tool": "Void Soap",
+      "spritePath": "/assets/characters/null-chan/full-body.png",
+      "cardPath": "/assets/characters/null-chan/card.png"
+    },
+    "workflow": {
+      "jobName": "Cleanse",
+      "roleName": "Plongeur microagent",
+      "summary": "Cleans up what is not needed. Keeps the kitchen light.",
+      "inputs": [
+        "repository state",
+        "incident context",
+        "team signal"
+      ],
+      "outputs": [
+        "status report",
+        "next-action recommendation",
+        "clean handoff"
+      ],
+      "syncsWith": [
+        "Reliability Sensei",
+        "SLO Sage"
+      ]
+    },
+    "stats": {
+      "power": 91,
+      "precision": 94,
+      "speed": 96,
+      "resilience": 70,
+      "intelligence": 88,
+      "teamwork": 70
+    },
+    "genesisVariant": false,
+    "universe": "Mise Orchestra Expansion",
+    "source": "mise_orchestra_cards.csv",
+    "seasonOneCard": {
+      "id": "8",
+      "role": "Plongeur",
+      "department": "Reliability",
+      "function": "Cleanse",
+      "rarity": "Rare",
+      "tier": "Maintenance Line",
+      "element": "Void Soap",
+      "ability": "Null Sweep",
+      "lore": "Cleans up what is not needed. Keeps the kitchen light.",
+      "image_file": "cards/png/008-null-chan.png",
+      "metadata_file": "metadata/erc721/008-null-chan.json"
+    },
+    "displayNumber": 81,
+    "departmentColor": "#0EA5E9",
+    "departmentShort": "Reliability",
+    "assetBase": "assets/characters/null-chan",
+    "avatarSvg": "assets/characters/null-chan/avatar.svg",
+    "cardSvg": "assets/characters/null-chan/card.svg"
+  },
+  {
+    "id": "canary-judge",
+    "number": 35,
+    "name": "Canary Judge",
+    "miseName": "Mise CanaryJudge",
+    "codename": "chef.reliability.canary-judge",
+    "department": "reliability",
+    "departmentLabel": "Reliability Kitchen",
+    "departmentTagline": "Observe. Measure. Improve.",
+    "rarity": "rare",
+    "roleCategory": "reliability",
+    "identity": {
+      "nationality": "Chilean",
+      "title": "Canary Judge",
+      "signaturePhrase": "Canary Judge done cleanly, safely, and in rhythm.",
+      "uniqueTrait": "Specializes in canary judge so the Reliability Kitchen can operate as a precise, repo-safe DevOps station."
+    },
+    "visual": {
+      "primaryColor": "#0E0F10",
+      "secondaryColor": "#F6F1E7",
+      "accentColor": "#0EA5E9",
+      "aura": "Reliability Kitchen canary judge aura",
+      "silhouette": "multinational chibi DevOps chef carrying a orb",
+      "tool": "orb",
+      "spritePath": "/assets/characters/canary-judge/full-body.png",
+      "cardPath": "/assets/characters/canary-judge/card.png"
+    },
+    "workflow": {
+      "jobName": "Canary Judge",
+      "roleName": "Canary Judge microagent",
+      "summary": "Runs canary judge for repository operations, producing evidence-first results before any risky change is allowed.",
+      "inputs": [
+        "repository state",
+        "mise policy",
+        "event context"
+      ],
+      "outputs": [
+        "status report",
+        "evidence packet",
+        "next-action recommendation"
+      ],
+      "syncsWith": [
+        "Capacity Kanna",
+        "Alert Akira",
+        "Hugo Matrix",
+        "Runtime Riku"
+      ]
+    },
+    "stats": {
+      "power": 73,
+      "precision": 95,
+      "speed": 71,
+      "resilience": 73,
+      "intelligence": 89,
+      "teamwork": 81
+    },
+    "genesisVariant": false,
+    "universe": "MiseOS Core 75",
+    "source": "characters.generated.json",
+    "slug": "canary-judge",
+    "seasonOneCard": null,
+    "displayNumber": 35,
+    "departmentColor": "#0EA5E9",
+    "departmentShort": "Reliability",
+    "assetBase": "assets/characters/canary-judge",
+    "avatarSvg": "assets/characters/canary-judge/avatar.svg",
+    "cardSvg": "assets/characters/canary-judge/card.svg"
+  }
+]

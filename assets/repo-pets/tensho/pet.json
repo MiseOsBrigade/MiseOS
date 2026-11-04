@@ -1,0 +1,41 @@
+{
+  "slug": "tensho",
+  "name": "Tensho",
+  "kind": "terminal_repo_pet",
+  "species": null,
+  "role": "Expediter",
+  "department": "Pipeline Department",
+  "glyph": "🚀",
+  "catchphrase": "Keeps orders flowing. Chaos cannot stop the rush.",
+  "behaviors": {
+    "roaming_bias": {
+      "directories": 4,
+      "files": 3,
+      "parent": 2,
+      "ci": 7,
+      "scripts": 5,
+      "tests": 3
+    },
+    "verbs": {
+      "enterDirectory": "rushes down the pipeline lane",
+      "inspectFile": "checks the delivery ticket",
+      "inspectConfig": "tunes the route map",
+      "inspectDocs": "skims the runbook",
+      "inspectTests": "checks the release gate",
+      "retreat": "sprints back to dispatch"
+    }
+  },
+  "sprites": [
+    "assets/repo-pets/cutouts/tensho.png"
+  ],
+  "source": "extract/code/repopet2/repo-pet-update/src/characters.js",
+  "cutout": "assets/repo-pets/cutouts/tensho.png",
+  "character": "tensho",
+  "cards": [
+    "docs/characters/tensho.md",
+    "docs/characters/tensho.md",
+    "docs/characters/tensho.md"
+  ],
+  "page": "docs/repo-pets/tensho.md",
+  "dir": "assets/repo-pets/tensho"
+}

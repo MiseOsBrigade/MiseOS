@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.3.0",
+  "departments": {
+    "command": ["kurogami-senpai", "orchestra-core"],
+    "infrastructure": ["kaji", "scale-oni", "build-kun"],
+    "pipeline": ["alko-commit-chef", "bruno-blast-radius", "lila-branchkeeper", "omar-reviewer", "hugo-matrix"],
+    "platform": [],
+    "reliability": [],
+    "security": [],
+    "data-insights": []
+  },
+  "registryLanes": {
+    "command": ["@mise-os/cli", "@mise-os/agent-sdk"],
+    "pipeline": ["@mise-os/release-sentinel", "@mise-os/workflow-linter"],
+    "infrastructure": ["ghcr.io/mise-os/miseos-runner", "ghcr.io/mise-os/miseos-policy-checker"],
+    "security": ["@mise-os/policy-engine", "miseos.attestation-gate", "miseos.sbom-indexer"],
+    "reliability": ["miseos.reliability-kit", "miseos.repo-steward"],
+    "data-insights": ["@mise-os/analytics-engine", "@mise-os/trust-graph"]
+  }
+}

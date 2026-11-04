@@ -1,0 +1,387 @@
+{
+  "schema": "miseos.character-detail.v1",
+  "slug": "mizu",
+  "name": "Mizu",
+  "kind": "registry_character",
+  "aliases": [],
+  "sources": {
+    "name": "data/characters.json",
+    "cards": "data/player-cards.json",
+    "card_text": "data/player-cards-ocr.json (OCR of the card image)",
+    "card_rarity_printed": "data/player-cards-ocr.json",
+    "ids.registry_id": "characters/mizu/metadata.json",
+    "role": "characters/mizu/metadata.json",
+    "department": "characters/mizu/metadata.json",
+    "rarity": "characters/mizu/metadata.json",
+    "workflow.summary": "characters/mizu/metadata.json",
+    "workflow.inputs": "characters/mizu/metadata.json",
+    "workflow.outputs": "characters/mizu/metadata.json",
+    "workflow.proof_gate": "characters/mizu/metadata.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.character_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.card_id": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "ids.codename": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "stats": "data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)",
+    "level": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "related": "data/imports/miseos_character_master_inventory_001_300.csv",
+    "lore": "data/imports/merged_roster.json",
+    "orchestra_card": "data/imports/mise_orchestra_cards.csv",
+    "abilities": "data/imports/mise_orchestra_cards.csv",
+    "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
+    "implementation": "git ls-files grep + repo",
+    "helps.station": "characters/mizu/metadata.json",
+    "agents": "data/agents.json",
+    "repo_pets": "data/repo-pets.json"
+  },
+  "registry": {
+    "number": 12,
+    "profile": "characters/mizu/README.md",
+    "metadata": "characters/mizu/metadata.json",
+    "avatar": "assets/characters/mizu/profile.svg"
+  },
+  "cards": [
+    {
+      "file": "assets/player-cards/1by1-chefs/mizu.webp",
+      "thumbnail": "assets/player-cards/1by1-chefs/thumbs/mizu.webp",
+      "collection": "1by1-chefs",
+      "title": "Mizu",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/character-building/prepare.webp",
+      "thumbnail": "assets/player-cards/character-building/thumbs/prepare.webp",
+      "collection": "character-building",
+      "title": "PREPARE",
+      "match_method": "existing-index"
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/mizu.webp",
+      "thumbnail": "assets/player-cards/orchestra-trading-cards/thumbs/mizu.webp",
+      "collection": "orchestra-trading-cards",
+      "title": "Mizu",
+      "match_method": "existing-index"
+    }
+  ],
+  "collections": [
+    "1by1-chefs",
+    "character-building",
+    "orchestra-trading-cards"
+  ],
+  "card_text": [
+    {
+      "file": "assets/player-cards/1by1-chefs/mizu.webp",
+      "printed_text": [
+        "MISE",
+        "ORCHESTRA",
+        "MISE.OS",
+        "PREPMODULE",
+        "STATUS",
+        "READY",
+        "PREPSEQUENCE",
+        "WASH",
+        "CHOP",
+        "MEASURE",
+        "ALIGN",
+        "PLATE",
+        "SYNC",
+        "Mizu",
+        "Prep Chef"
+      ]
+    },
+    {
+      "file": "assets/player-cards/character-building/prepare.webp",
+      "printed_text": [
+        "COOK",
+        "COOK",
+        "ORCHERTATE",
+        "COOK",
+        "SCALE",
+        "PREPARE",
+        "DEPLOY"
+      ]
+    },
+    {
+      "file": "assets/player-cards/orchestra-trading-cards/mizu.webp",
+      "printed_text": [
+        "MISE ORCHESTRA",
+        "NO.003",
+        "Mizu",
+        "MO",
+        "RARE-ServiceLine",
+        "Prep Chef|Operations",
+        "ABILITY:PrepLedger",
+        "Prepares everything in advance.Organization is the recipe",
+        "Element:BlueWater.Function:Prepare",
+        "PREPARE",
+        "95",
+        "CLEAN",
+        "82",
+        "FLOW",
+        "84",
+        "COOK·ORCHESTRATE·DEPLOY",
+        "LPROVENANCE-READY",
+        "LES"
+      ]
+    }
+  ],
+  "card_rarity_printed": "Rare",
+  "card_stars_printed": "Not yet defined in the source material",
+  "card_meters_printed": "Not yet defined in the source material",
+  "level": 22,
+  "orchestra_card": {
+    "role": "Prep Chef",
+    "department": "Operations",
+    "function": "Prepare",
+    "rarity": "Rare",
+    "tier": "Service Line",
+    "element": "Blue Water",
+    "ability": "Prep Ledger",
+    "lore": "Prepares everything in advance. Organization is the recipe."
+  },
+  "abilities": [
+    "Prep Ledger"
+  ],
+  "profile_doc": "characters/mizu/README.md",
+  "canon_bible": {
+    "path": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf",
+    "mentions": [
+      {
+        "line": 491,
+        "text": "MISE-G2-P014 Mizu Mise Orchestra canonical-candidate 1E3334AB-3111- 14"
+      }
+    ]
+  },
+  "implementation": {
+    "code_refs": [
+      {
+        "path": "apps/bootstrap-registry/apps/registry-console/src/data/master-roster.generated.ts",
+        "line": 393,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/brigade-roster.ts",
+        "line": 178,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/brigade-gallery/src/data/master-roster.ts",
+        "line": 336,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/tools/generate-reference-frames.mjs",
+        "line": 14,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/miseos-platform/apps/shimeji-brigade/src/registry.js",
+        "line": 4,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 109,
+        "term": "Mizu"
+      }
+    ],
+    "code_ref_count": 6,
+    "data_refs": [
+      {
+        "path": "apps/bootstrap-registry/registry/cards/master-roster-cards.json",
+        "line": 345,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/assets/sprites/mizu/manifest.json",
+        "line": 3,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/src/character-registry.json",
+        "line": 6,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/projects/shimeji-brigade-v9/assets/sprites/mizu/manifest.json",
+        "line": 2,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/projects/shimeji-brigade-v9/src/character-registry.json",
+        "line": 4,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
+        "line": 1354,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/registry-atrium/collection-manifest.json",
+        "line": 30,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/registry-atrium/metadata/erc721/003-mizu.json",
+        "line": 2,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/voxel-world/src/data/miseos-ecosystem-135.json",
+        "line": 1354,
+        "term": "Mizu"
+      },
+      {
+        "path": "tools/art-factory/input/characters.generated.json",
+        "line": 568,
+        "term": "Mizu"
+      }
+    ],
+    "doc_refs": [
+      {
+        "path": "apps/brigade-gallery/prototype/holo-card-roster.html",
+        "line": 76,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/brigade-gallery/prototype/registry-atrium-gallery.html",
+        "line": 342,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/docs/SHIMEJI_BRIGADE_RELEASE.md",
+        "line": 8,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/docs/characters/CHARACTER_REGISTRY_001_300.md",
+        "line": 15,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/README.md",
+        "line": 45,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/brand/BRAND_GUIDE.md",
+        "line": 57,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/docs/REFERENCE_STATUS.md",
+        "line": 5,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/studio/index.html",
+        "line": 23,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/projects/shimeji-brigade-v9/README.md",
+        "line": 17,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/developer-platform/projects/shimeji-brigade-v9/assets/source/mizu/README.md",
+        "line": 1,
+        "term": "Mizu"
+      }
+    ],
+    "app_code_refs": [
+      {
+        "path": "apps/developer-platform/packages/shimeji-brigade/tools/generate-reference-frames.mjs",
+        "line": 14,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/miseos-platform/apps/shimeji-brigade/src/registry.js",
+        "line": 4,
+        "term": "Mizu"
+      },
+      {
+        "path": "apps/miseos-platform/packages/miseos-repo-pet/src/characters.js",
+        "line": 109,
+        "term": "Mizu"
+      }
+    ],
+    "status": "referenced_in_app_code",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+  },
+  "ids": {
+    "registry_id": "MISE-078",
+    "character_id": "miseos.character.078",
+    "card_id": "MISE-078",
+    "codename": "MIZU"
+  },
+  "role": "Prepare",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Rare",
+  "lore": "Mizu belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
+  "signature_phrase": "Not yet defined in the source material",
+  "workflow": {
+    "summary": "Mizu performs prepare within the Operations Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "actions": [
+    {
+      "command": "MISE PREPARE",
+      "source": "data/imports/miseos_character_master_inventory_001_300.csv"
+    }
+  ],
+  "stats": {
+    "power": 71,
+    "precision": 86,
+    "speed": 81,
+    "resilience": 73,
+    "intelligence": 84,
+    "teamwork": 67
+  },
+  "related": [
+    {
+      "name": "Kaji",
+      "slug": "kaji"
+    },
+    {
+      "name": "Scale Oni",
+      "slug": "scale-oni"
+    },
+    {
+      "name": "Velvet Vesper",
+      "slug": "velvet-vesper"
+    }
+  ],
+  "helps": {
+    "station": "Operations Kitchen",
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Mizu performs prepare within the Operations Kitchen.",
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "agents": [
+    {
+      "slug": "mizu",
+      "name": "Mizu",
+      "page": "docs/agents/mizu.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "slug": "mizu",
+      "name": "Mizu",
+      "page": "docs/repo-pets/mizu.md"
+    }
+  ]
+}

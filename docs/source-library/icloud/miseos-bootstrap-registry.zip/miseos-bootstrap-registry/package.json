@@ -1,0 +1,21 @@
+{
+  "name": "miseos-bootstrap-registry",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bootstrap registry for MiseOS packages, containers, agents, workflows, policies, templates, and release metadata.",
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "validate": "node scripts/validate-registry.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "test": "node scripts/test.mjs",
+    "sentinel:dry-run": "node packages/release-sentinel/src/index.js --dry-run",
+    "policy:check": "node packages/policy-engine/src/index.js registry/index.json"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

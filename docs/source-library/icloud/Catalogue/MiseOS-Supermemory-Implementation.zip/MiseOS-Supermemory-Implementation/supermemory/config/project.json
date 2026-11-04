@@ -1,0 +1,97 @@
+{
+  "schema": "miseos.supermemory.project.v1",
+  "project_id": "miseos-character-core",
+  "display_name": "MiseOS Character Intelligence Core",
+  "container_tag": "miseos-character-core",
+  "entity_context": "MiseOS Character Intelligence Core is the authoritative memory system for the 155 Character Project. Extract approved IDs, names, roles, visual traits, powers, relationships, metadata, corrections, and repository decisions. Label facts CANON, INFERRED, PROPOSED, CONFLICT, or UNKNOWN. Never promote proposals silently. Keep 112 current character-agent records separate from 23 registry manifests; the current catalog totals 135 ecosystem items, while 155 remains the broader target. Preserve versions and stable IDs. One solo character request means one separate image. Never store secrets or credentials.",
+  "api_base": "https://api.supermemory.ai",
+  "document_endpoint": "/v3/documents",
+  "profile_endpoint": "/v4/profile",
+  "task_type": "memory",
+  "canon_labels": [
+    "CANON",
+    "INFERRED",
+    "PROPOSED",
+    "CONFLICT",
+    "UNKNOWN"
+  ],
+  "record_collections": [
+    {
+      "key": "governance",
+      "path": "records/governance",
+      "default_status": "CANON",
+      "ingest_order": 10
+    },
+    {
+      "key": "characters",
+      "path": "records/characters",
+      "default_status": "CANON",
+      "ingest_order": 20
+    },
+    {
+      "key": "roster",
+      "path": "records/roster",
+      "default_status": "CANON",
+      "ingest_order": 30
+    },
+    {
+      "key": "factions",
+      "path": "records/factions",
+      "default_status": "CANON",
+      "ingest_order": 40
+    },
+    {
+      "key": "visual_guides",
+      "path": "records/visual-guides",
+      "default_status": "CANON",
+      "ingest_order": 50
+    },
+    {
+      "key": "registry_separation",
+      "path": "records/registry-separation",
+      "default_status": "CANON",
+      "ingest_order": 60
+    },
+    {
+      "key": "conversations",
+      "path": "records/conversations",
+      "default_status": "UNKNOWN",
+      "ingest_order": 70
+    },
+    {
+      "key": "proposals",
+      "path": "records/proposals",
+      "default_status": "PROPOSED",
+      "ingest_order": 80
+    },
+    {
+      "key": "conflicts",
+      "path": "records/conflicts",
+      "default_status": "CONFLICT",
+      "ingest_order": 90
+    },
+    {
+      "key": "archive",
+      "path": "records/archive",
+      "default_status": "CANON",
+      "ingest_order": 100,
+      "archived": true
+    }
+  ],
+  "metadata_contract": {
+    "required": [
+      "ecosystem",
+      "project_id",
+      "record_kind",
+      "record_id",
+      "canon_status",
+      "version",
+      "approval_status",
+      "source_type"
+    ],
+    "flat_values_only": true,
+    "max_custom_id_length": 100,
+    "max_container_tag_length": 100,
+    "max_entity_context_length": 1500
+  }
+}

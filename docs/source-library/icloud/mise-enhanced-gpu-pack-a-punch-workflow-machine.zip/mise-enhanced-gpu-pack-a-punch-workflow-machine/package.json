@@ -1,0 +1,25 @@
+{
+  "name": "mise-enhanced-gpu-pack-a-punch-workflow-machine",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable GitHub Actions stack for risk gates, quality orchestration, supply-chain checks, branch advice, and optional ephemeral GPU complexity lanes.",
+  "scripts": {
+    "validate:node": "node --check scripts/mise-utils.mjs && node --check scripts/mise-context.mjs && node --check scripts/mise-risk-gate.mjs && node --check scripts/mise-quality-runner.mjs && node --check scripts/mise-supply-chain.mjs && node --check scripts/mise-branch-advisor.mjs && node --check scripts/mise-report.mjs",
+    "validate:python": "python3 -m py_compile scripts/mise/complexity_measure.py scripts/mise/gpu_smoke_test.py scripts/mise/emit_evidence.py",
+    "validate": "npm run validate:node && npm run validate:python"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "github-actions",
+    "ci",
+    "self-hosted-runner",
+    "gpu",
+    "ephemeral-runner",
+    "supply-chain",
+    "risk-gate",
+    "quality"
+  ]
+}

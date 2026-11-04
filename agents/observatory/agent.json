@@ -1,0 +1,18 @@
+{
+  "slug": "observatory",
+  "name": "Observatory",
+  "kind": "brigade_mascot_agent",
+  "role": "Observability Hub",
+  "group": "Platform & Infrastructure",
+  "group_tagline": "Compute · Storage · Observe",
+  "source": "icloud/Mise-OS-main.zip/Mise-OS-main/artifacts/dashboard/src/lib/brigade-data.ts:157",
+  "thumbnail": "agents/observatory/thumb.png",
+  "character": null,
+  "cards": [],
+  "pet": null,
+  "page": "docs/agents/observatory.md",
+  "dir": "agents/observatory",
+  "files": [
+    "agents/observatory/Observatory.png"
+  ]
+}

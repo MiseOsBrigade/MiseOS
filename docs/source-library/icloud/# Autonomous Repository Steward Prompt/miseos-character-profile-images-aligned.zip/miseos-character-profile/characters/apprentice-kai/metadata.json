@@ -1,0 +1,62 @@
+{
+  "id": "miseos.character.071",
+  "number": 71,
+  "slug": "apprentice-kai",
+  "name": "Apprentice Kai",
+  "mise_name": "Apprentice Kai",
+  "codename": "APPRENTICE_KAI",
+  "record_kind": "character_card",
+  "collection": "MiseOS Character Agents",
+  "department": "Data & Insight Kitchen",
+  "department_code": "data-insight",
+  "department_mission": "Learn. Optimize. Evolve.",
+  "agent_function": "Self-Improvement Agent",
+  "job_name": "Self-Improvement Agent",
+  "rarity": "Genesis",
+  "rarity_tier": 5,
+  "source": "characters.generated.json",
+  "record_origin": "user_supplied_roster",
+  "visual": {
+    "primary_color": "#17A2A4",
+    "card_style": "black-gold holo DevOps orchestra",
+    "aura": "Data & Insight Kitchen operational aura",
+    "tool_symbol": "Self-Improvement Agent",
+    "avatar_path": "assets/characters/apprentice-kai/avatar.png",
+    "card_path": "assets/characters/apprentice-kai/card.png",
+    "primary_photo_page": null
+  },
+  "workflow": {
+    "summary": "Apprentice Kai performs self-improvement agent within the Data & Insight Kitchen.",
+    "inputs": [
+      "repository context",
+      "task request",
+      "policy constraints",
+      "current evidence"
+    ],
+    "outputs": [
+      "validated result",
+      "evidence record",
+      "handoff packet"
+    ],
+    "synced_agents": [
+      "Anomaly Aki",
+      "Leaderboard Leo",
+      "Storyteller Sumi"
+    ],
+    "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
+  },
+  "stats": {
+    "power": 84,
+    "precision": 78,
+    "speed": 83,
+    "resilience": 90,
+    "intelligence": 80,
+    "teamwork": 85
+  },
+  "paths": {
+    "readme": "characters/apprentice-kai/README.md",
+    "metadata": "characters/apprentice-kai/metadata.json"
+  },
+  "status": "canonical",
+  "confidence": "high"
+}
