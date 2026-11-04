@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/release-conductor.json`](../../data/characters/release-conductor.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Release Conductor <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Deployment Orchestrator <sub>source: `characters/release-conductor/metadata.json`</sub> |
 | Kitchen / department | Pipeline Kitchen <sub>source: `characters/release-conductor/metadata.json`</sub> |
 | Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -40,12 +40,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100%, 99.9% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 72 · precision 64 · speed 80 · resilience 79 · intelligence 81 · teamwork 83 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Release, Orchestration, Plan, Build, Deploy, Test <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Pinelane Department-kegz1 every change moving safely from commit to production. <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
 | Signature phrase | Deployment Orchestrator done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in deployment orchestrator so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -111,7 +111,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Reviewer](../agents/reviewer.md) · [Tester](../agents/tester.md) · [Quality Guard](../agents/quality-guard.md) <sub>source: `authored: card design (closest agents for theme "quality")`</sub>
+
+Repo pets: [Mise Garde](../repo-pets/mise-garde.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "quality")`</sub>
 
 ## Related characters
 
@@ -153,5 +155,12 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/release-conductor/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `data/player-cards-ocr.json (text printed on the card)` |
+| agents | `authored: card design (closest agents for theme "quality")` |
+| repo_pets | `authored: card design (closest repo pets for theme "quality")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

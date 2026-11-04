@@ -3,7 +3,9 @@
   "slug": "flash-riku",
   "name": "Flash Riku",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -31,7 +33,12 @@
     "implementation": "git ls-files grep + repo",
     "helps.station": "characters/flash-riku/metadata.json",
     "agents": "data/agents.json",
-    "repo_pets": "data/repo-pets.json"
+    "repo_pets": "data/repo-pets.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 4,
@@ -101,8 +108,8 @@
     }
   ],
   "card_rarity_printed": "Epic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "level": 20,
   "orchestra_card": {
     "role": "Runner",
@@ -256,7 +263,7 @@
   "department_mission": "Build. Test. Deploy. Repeat.",
   "rarity": "Epic",
   "lore": "Flash Riku belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
-  "signature_phrase": "Not yet defined in the source material",
+  "signature_phrase": "Green or it waits.",
   "workflow": {
     "summary": "Flash Riku performs deploy within the Pipeline Kitchen.",
     "inputs": [
@@ -319,5 +326,6 @@
       "name": "Flash Riku",
       "page": "docs/repo-pets/flash-riku.md"
     }
-  ]
+  ],
+  "theme": "pipeline"
 }

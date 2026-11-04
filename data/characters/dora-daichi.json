@@ -3,7 +3,9 @@
   "slug": "dora-daichi",
   "name": "DORA Daichi",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -29,7 +31,15 @@
     "role_category": "data/imports/merged_roster.json",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/dora-daichi/metadata.json"
+    "helps.station": "characters/dora-daichi/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"data\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"data\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 74,
@@ -105,8 +115,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "1.6%",
     "100%"
@@ -201,7 +211,7 @@
   "department": "Data & Insight Kitchen",
   "department_mission": "Learn. Optimize. Evolve.",
   "rarity": "Common",
-  "lore": "Not yet defined in the source material",
+  "lore": "Picture a clipboard of tally marks that becomes a chart by morning: that is where DORA Daichi is happiest. As Data & Insight Kitchen's specialist for pipeline analytics engine, DORA Daichi reads the numbers behind service (covers, waste, timings) and turns them into the next improvement. The card calls out Data&Insight, Kitchen, Dora Metrics: the checks DORA Daichi runs before calling anything ready.",
   "signature_phrase": "Pipeline Analytics Engine done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "DORA Daichi performs pipeline analytics engine within the Data & Insight Kitchen.",
@@ -269,6 +279,37 @@
     "problem": "DORA Daichi performs pipeline analytics engine within the Data & Insight Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Prometheus",
+      "slug": "prometheus"
+    },
+    {
+      "name": "Risk Oracle",
+      "slug": "risk-oracle"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Flag Fox",
+      "slug": "flag-fox"
+    },
+    {
+      "name": "Mise Lattice",
+      "slug": "mise-lattice"
+    }
+  ],
+  "abilities": [
+    "Data&Insight",
+    "Kitchen",
+    "Dora Metrics",
+    "Performance Trend",
+    "Lead Time",
+    "For Changes"
+  ],
+  "theme": "data"
 }

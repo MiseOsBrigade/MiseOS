@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/plate-inspector.json`](../../data/characters/plate-inspector.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Plate Inspector <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Asset Auditor <sub>source: `characters/plate-inspector/metadata.json`</sub> |
 | Kitchen / department | Operations Kitchen <sub>source: `characters/plate-inspector/metadata.json`</sub> |
 | Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -43,9 +43,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100%, 98.7%, 99.2% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 63 · precision 73 · speed 82 · resilience 75 · intelligence 72 · teamwork 86 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Abilities | Plating Protocol, Observe, Analyze, Measure, Refine, Approve <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Plate Inspector and they describe the pass under warm lights, tweezers in hand. As Operations Kitchen's Asset Auditor, Plate Inspector finishes and presents the work: composition, garnish and a final visual check at the pass, and the rest of the kitchen plans service around that rhythm. The card calls out Plating Protocol, Observe, Analyze: the checks Plate Inspector runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every plated dish accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -94,7 +94,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [UX Chef](../agents/ux-chef.md) · [DevRel](../agents/devrel.md) · [Doc Writer](../agents/doc-writer.md) <sub>source: `authored: card design (closest agents for theme "plate")`</sub>
+
+Repo pets: [Yume](../repo-pets/yume.md) · [Mise Garde](../repo-pets/mise-garde.md) <sub>source: `authored: card design (closest repo pets for theme "plate")`</sub>
 
 ## Related characters
 
@@ -127,5 +129,12 @@ _Not yet defined in the source material_
 | related | `data/imports/miseos_character_master_inventory_001_300.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/plate-inspector/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "plate")` |
+| repo_pets | `authored: card design (closest repo pets for theme "plate")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

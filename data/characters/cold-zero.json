@@ -3,7 +3,9 @@
   "slug": "cold-zero",
   "name": "Cold Zero",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -11,8 +13,30 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"cold\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "rarity": "authored: card design (default tier; no stars printed)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"cold\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"cold\")",
+    "workflow.inputs": "authored: card design (theme \"cold\")",
+    "workflow.outputs": "authored: card design (theme \"cold\")",
+    "workflow.proof_gate": "authored: card design (theme \"cold\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)",
+    "helps.problem": "authored: card design (theme \"cold\")",
+    "helps.proof_gate": "authored: card design (theme \"cold\")",
+    "agents": "authored: card design (closest agents for theme \"cold\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"cold\")",
+    "related": "authored: card design (same theme \"cold\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -56,8 +80,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -68,31 +92,131 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "coldZero",
+      "command": "mise roster run cold-zero --dept reliability-kitchen --solo --emit report",
+      "contract": "inputs: probe / sensor readings, storage map, HACCP limits, hold times → outputs: temperature log, drift alert, discard / re-chill decision; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Garde Glace",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Reliability Kitchen",
+  "department_mission": "Observe. Measure. Improve.",
+  "rarity": "Common",
+  "lore": "Picture the walk-in, humming at three degrees: that is where Cold Zero is happiest. As Reliability Kitchen's specialist for garde glace, Cold Zero keeps every item inside its safe temperature band and flags drift before it becomes spoilage. The card calls out Perfection, Excellence, Cold Mastery: the checks Cold Zero runs before calling anything ready.",
+  "signature_phrase": "Excellence: checked, not assumed.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Cold Zero keeps every item inside its safe temperature band and flags drift before it becomes spoilage.",
+    "inputs": [
+      "probe / sensor readings",
+      "storage map",
+      "HACCP limits",
+      "hold times"
+    ],
+    "outputs": [
+      "temperature log",
+      "drift alert",
+      "discard / re-chill decision"
+    ],
+    "proof_gate": "Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run cold-zero --dept reliability-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise cold-zero probe",
+      "reads": "probe / sensor readings",
+      "emits": "temperature log",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    },
+    {
+      "command": "mise cold-zero chill",
+      "reads": "storage map",
+      "emits": "drift alert",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    },
+    {
+      "command": "mise cold-zero log-temp",
+      "reads": "HACCP limits",
+      "emits": "discard / re-chill decision",
+      "status": "proposed",
+      "source": "authored: card design (theme \"cold\")"
+    }
+  ],
+  "stats": {
+    "power": 65,
+    "precision": 79,
+    "speed": 72,
+    "resilience": 73,
+    "intelligence": 76,
+    "teamwork": 68
+  },
+  "related": [
+    {
+      "name": "Steam Whisper",
+      "slug": "steam-whisper"
+    },
+    {
+      "name": "Temp Tamer",
+      "slug": "temp-tamer"
+    },
+    {
+      "name": "Null-chan",
+      "slug": "null-chan"
+    },
+    {
+      "name": "Resilience Ryu",
+      "slug": "resilience-ryu"
+    },
+    {
+      "name": "Forecast Fuji",
+      "slug": "forecast-fuji"
+    }
+  ],
   "helps": {
     "station": "Garde Glace",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Observe. Measure. Improve.",
+    "problem": "Silent drift (heat, latency, resource pressure) spoils work long before anyone notices.",
+    "proof_gate": "Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Alarmer",
+      "slug": "alarmer"
+    },
+    {
+      "name": "SRE Chef",
+      "slug": "sre-chef"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Runtime",
+      "slug": "mise-runtime"
+    },
+    {
+      "name": "Null-chan",
+      "slug": "null-chan"
+    }
+  ],
+  "abilities": [
+    "Perfection",
+    "Excellence",
+    "Cold Mastery",
+    "Temperature",
+    "Pure",
+    "Stability"
+  ],
+  "theme": "cold"
 }

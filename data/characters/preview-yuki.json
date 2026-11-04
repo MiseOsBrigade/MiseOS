@@ -31,7 +31,15 @@
     "role_category": "data/imports/merged_roster.json",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/preview-yuki/metadata.json"
+    "helps.station": "characters/preview-yuki/metadata.json",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"quality\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"quality\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 57,
@@ -87,9 +95,9 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "level": 21,
   "unique_trait": "Specializes in preview environment spawner so the Platform Kitchen can operate as a precise, repo-safe DevOps station.",
   "role_category": "delivery",
@@ -180,7 +188,7 @@
   "department": "Platform Kitchen",
   "department_mission": "Provide golden paths and stable service foundations.",
   "rarity": "Common",
-  "lore": "Not yet defined in the source material",
+  "lore": "Picture a spoon in every pot: that is where Preview Yuki is happiest. As Platform Kitchen's Preview Environment Spawner, Preview Yuki tastes and tests before anything is served: reviews, checks and canaries against the spec. The card calls out Preview Status, All Systems, Allocate: the checks Preview Yuki runs before calling anything ready.",
   "signature_phrase": "Preview Environment Spawner done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Preview Yuki performs preview environment spawner within the Platform Kitchen.",
@@ -248,6 +256,37 @@
     "problem": "Preview Yuki performs preview environment spawner within the Platform Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Reviewer",
+      "slug": "reviewer"
+    },
+    {
+      "name": "Tester",
+      "slug": "tester"
+    },
+    {
+      "name": "Quality Guard",
+      "slug": "quality-guard"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Garde",
+      "slug": "mise-garde"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Preview Status",
+    "All Systems",
+    "Allocate",
+    "Configure",
+    "Deploy",
+    "Preview"
+  ],
+  "theme": "quality"
 }

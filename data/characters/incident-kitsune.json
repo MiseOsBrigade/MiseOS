@@ -3,7 +3,9 @@
   "slug": "incident-kitsune",
   "name": "Incident Kitsune",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -29,7 +31,15 @@
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
     "helps.station": "characters/incident-kitsune/metadata.json",
-    "repo_pets": "data/repo-pets.json"
+    "repo_pets": "data/repo-pets.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"data\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 82,
@@ -97,9 +107,9 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "level": 25,
   "unique_trait": "Specializes in security incident playbooks so the Security Kitchen can operate as a precise, repo-safe DevOps station.",
   "role_category": "security",
@@ -205,7 +215,7 @@
   "department": "Security Kitchen",
   "department_mission": "Guard. Audit. Comply.",
   "rarity": "Rare",
-  "lore": "Not yet defined in the source material",
+  "lore": "Ask the brigade about Incident Kitsune and they describe a clipboard of tally marks that becomes a chart by morning. As Security Kitchen's specialist for security incident playbooks, Incident Kitsune reads the numbers behind service (covers, waste, timings) and turns them into the next improvement, and the rest of the kitchen plans service around that rhythm. The card calls out Incident Responseflow, Detect, Analyze: the checks Incident Kitsune runs before calling anything ready.",
   "signature_phrase": "Security Incident Playbooks done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Incident Kitsune performs security incident playbooks within the Security Kitchen.",
@@ -273,12 +283,34 @@
     "problem": "Incident Kitsune performs security incident playbooks within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Prometheus",
+      "slug": "prometheus"
+    },
+    {
+      "name": "Risk Oracle",
+      "slug": "risk-oracle"
+    }
+  ],
   "repo_pets": [
     {
       "slug": "incident-kitsune",
       "name": "Incident Kitsune",
       "page": "docs/repo-pets/incident-kitsune.md"
     }
-  ]
+  ],
+  "abilities": [
+    "Incident Responseflow",
+    "Detect",
+    "Analyze",
+    "Contain",
+    "Eradicate",
+    "Incident Status"
+  ],
+  "theme": "data"
 }

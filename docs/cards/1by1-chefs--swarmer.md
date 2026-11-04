@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/swarmer.webp"><img src="../../assets/player-cards/1by1-chefs/swarmer.webp" alt="Swarmer" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /8577DB5B-8C6C-41C7-967B-5A3AAA716C1D.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Swarmar](../agents/swarmar.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Chaos Kaito](../characters/chaos-kaito.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Swarm Coordinator <sub>source: `data/agents.json`</sub> |
+| Kitchen / department | Reliability Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/chaos-kaito.json`</sub> |
+| Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 67 · precision 80 · speed 85 · resilience 72 · intelligence 79 · teamwork 79 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "pipeline")`</sub> |
+| Abilities | Deployment, Protocol, Swarm Control, Swarm Units, Coordination, Orchestration <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Swarmer when something is missing, which is exactly the point. Swarmer runs an automated gate in the delivery pipeline; the image the crew uses for it is a conveyor of tickets moving through the pass. The card calls out Deployment, Protocol, Swarm Control: the checks Swarmer runs before calling anything ready. In the canon crosswalk this card is a provisional match for Chaos Kaito. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Build. Test. Deploy. Repeat. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Swarmar](../agents/swarmar.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "pipeline")`</sub> |
+| Related characters | [Chaos Kaito](../characters/chaos-kaito.md) · [Capacity Kanna](../characters/capacity-kanna.md) · [Bruno Blast Radius](../characters/bruno-blast-radius.md) · [Tariq Notesmith](../characters/tariq-notesmith.md) · [Pipeline Sensei](../characters/pipeline-sensei.md) · [Alko Commit Chef](../characters/alko-commit-chef.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "pipeline")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Swarmer runs an automated gate in the delivery pipeline. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Inputs | pull request or tag, workflow configuration, repository state |
+| Outputs | check run / status, annotations, release artefact or block |
+| Proof gate | Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail. |
+| Problem it addresses | Manual release steps are skipped under pressure. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run swarmer --dept reliability-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise swarmer check` · reads: `pull request or tag` · emits: `check run / status` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise swarmer gate` · reads: `workflow configuration` · emits: `annotations` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise swarmer publish` · reads: `repository state` · emits: `release artefact or block` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `swarmer` (not written yet)
+- Proposed command: `mise roster run swarmer --dept reliability-kitchen --solo --emit report`
+- Contract: inputs: pull request or tag, workflow configuration, repository state → outputs: check run / status, annotations, release artefact or block; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

@@ -3,7 +3,9 @@
   "slug": "canary-taster",
   "name": "Canary Taster",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -31,7 +33,13 @@
     "orchestra_card": "data/imports/mise_orchestra_cards.csv",
     "abilities": "data/imports/mise_orchestra_cards.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/canary-taster/metadata.json"
+    "helps.station": "characters/canary-taster/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 48,
@@ -280,8 +288,8 @@
     }
   ],
   "card_rarity_printed": "Rare",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "level": 19,
   "unique_trait": "Specializes in pipeline observability so the Pipeline Kitchen can operate as a precise, repo-safe DevOps station.",
   "role_category": "delivery",
@@ -469,6 +477,29 @@
     "problem": "Canary Taster performs pipeline observability within the Pipeline Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "theme": "security"
 }

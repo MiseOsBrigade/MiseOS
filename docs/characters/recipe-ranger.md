@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/recipe-ranger.json`](../../data/characters/recipe-ranger.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Recipe Ranger <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Knowledge Pathfinder <sub>source: `characters/recipe-ranger/metadata.json`</sub> |
 | Kitchen / department | Operations Kitchen <sub>source: `characters/recipe-ranger/metadata.json`</sub> |
 | Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -38,12 +38,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 68 · precision 63 · speed 58 · resilience 64 · intelligence 62 · teamwork 76 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Abilities | Recipe Route, Field Notes, Knowledge Trail, Basil Leaf, Observe, Taste <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Recipe Ranger and they describe the loading dock before dawn. As Operations Kitchen's Knowledge Pathfinder, Recipe Ranger scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on, and the rest of the kitchen plans service around that rhythm. The card calls out Recipe Route, Field Notes, Knowledge Trail: the checks Recipe Ranger runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every scout report accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -93,7 +93,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Steward Prime](../agents/steward-prime.md) · [PrepBot](../agents/prepbot.md) · [Storage](../agents/storage.md) <sub>source: `authored: card design (closest agents for theme "supply")`</sub>
+
+Repo pets: [Mise Sommelier](../repo-pets/mise-sommelier.md) · [Mizu](../repo-pets/mizu.md) <sub>source: `authored: card design (closest repo pets for theme "supply")`</sub>
 
 ## Related characters
 
@@ -132,5 +134,13 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/recipe-ranger/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "supply")` |
+| repo_pets | `authored: card design (closest repo pets for theme "supply")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

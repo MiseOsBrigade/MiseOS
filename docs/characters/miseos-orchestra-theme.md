@@ -5,18 +5,18 @@
 
 **Registry manifest (product / tool)** · Implementation: **Implemented in code** · Detail record: [`data/characters/miseos-orchestra-theme.json`](../../data/characters/miseos-orchestra-theme.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Mise Orchestra Theme <sub>source: `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Theme <sub>source: `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (type)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Platform Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "plate")`</sub> |
+| Department mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)`</sub> |
+| Registry rarity | Mythic <sub>source: `data/player-cards-ocr.json (printed rarity)`</sub> |
 | ID: registry_id | miseos.orchestra-theme <sub>source: `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 2 <sub>source: `data/player-cards.json`</sub> |
@@ -36,12 +36,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
+| Roster stats | power 69 · precision 88 · speed 76 · resilience 80 · intelligence 66 · teamwork 77 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "plate")`</sub> |
+| Abilities | Typography, Color, Harmony, Layout, Style, Voice <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Mise Orchestra Theme when something is missing, which is exactly the point. Mise Orchestra Theme finishes and presents the work: composition, garnish and a final visual check at the pass; the image the crew uses for it is the pass under warm lights, tweezers in hand. The card calls out Typography, Color, Harmony: the checks Mise Orchestra Theme runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Layout, then everything else. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -56,9 +56,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Step | Value |
 |---|---|
 | Summary | Executable baseline capability for Mise Orchestra Theme. <sub>source: `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (capability.description)`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | cooked components, plating spec / style guide, ticket <sub>source: `authored: card design (theme "plate")`</sub> |
+| Outputs | plated dish, pass photo / visual check, send-back note when something is off <sub>source: `authored: card design (theme "plate")`</sub> |
+| Proof gate | Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out. <sub>source: `authored: card design (theme "plate")`</sub> |
 
 ## Actions / commands
 
@@ -110,17 +110,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Registry (theme) <sub>source: `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (marketplace.category)`</sub> |
-| Mission | Not yet defined in the source material |
+| Mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)`</sub> |
 | Problem it addresses | Executable baseline capability for Mise Orchestra Theme. <sub>source: `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (capability.description)`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out. <sub>source: `authored: card design (theme "plate")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [UX Chef](../agents/ux-chef.md) · [DevRel](../agents/devrel.md) · [Doc Writer](../agents/doc-writer.md) <sub>source: `authored: card design (closest agents for theme "plate")`</sub>
+
+Repo pets: [Yume](../repo-pets/yume.md) · [Mise Garde](../repo-pets/mise-garde.md) <sub>source: `authored: card design (closest repo pets for theme "plate")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Queue Mizu](./queue-mizu.md) · [Template Tanaka](./template-tanaka.md) · [Terra Forge](./terra-forge.md) <sub>source: `authored: card design (same theme "plate" / same department)`</sub>
 
 ## Sources
 
@@ -142,5 +144,24 @@ _Not yet defined in the source material_
 | pricing | `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json` |
 | implementation | `git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts` |
 | helps.station | `apps/registry-platform/registry/manifests/miseos.orchestra-theme.manifest.json (marketplace.category)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "plate")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| rarity | `data/player-cards-ocr.json (printed rarity)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "plate")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "plate")` |
+| workflow.outputs | `authored: card design (theme "plate")` |
+| workflow.proof_gate | `authored: card design (theme "plate")` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "plate")` |
+| agents | `authored: card design (closest agents for theme "plate")` |
+| repo_pets | `authored: card design (closest repo pets for theme "plate")` |
+| related | `authored: card design (same theme "plate" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

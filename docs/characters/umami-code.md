@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Referenced in app code (no dedicated handler)** · Detail record: [`data/characters/umami-code.json`](../../data/characters/umami-code.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Umami Code <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Developer Workflow Profiles <sub>source: `characters/umami-code/metadata.json`</sub> |
 | Kitchen / department | Platform Kitchen <sub>source: `characters/umami-code/metadata.json`</sub> |
 | Department mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -41,8 +41,8 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Epic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
 | Roster stats | power 86 · precision 87 · speed 69 · resilience 85 · intelligence 73 · teamwork 86 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
 | Abilities | Perfect Integration <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Mise Orchestra card | role: Saucier · department: Platform · function: Connect · rarity: Epic · tier: Platform Core · element: API Sauce · ability: Perfect Integration · lore: Creates the perfect sauce that connects every service. <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
@@ -167,5 +167,9 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | helps.station | `characters/umami-code/metadata.json` |
 | agents | `data/agents.json` |
 | repo_pets | `data/repo-pets.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/portal-rei.json`](../../data/characters/portal-rei.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Portal Rei <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Self-Service Portal UI <sub>source: `characters/portal-rei/metadata.json`</sub> |
 | Kitchen / department | Platform Kitchen <sub>source: `characters/portal-rei/metadata.json`</sub> |
 | Department mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -38,12 +38,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 78% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 70 · precision 71 · speed 78 · resilience 75 · intelligence 59 · teamwork 73 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
+| Abilities | Portal Status, 24/7Access, Welcome, Chef, Portal Access, Service Catalog, Browse <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Portal Rei and they describe the locked dry store and the keyring that never leaves the belt. As Platform Kitchen's specialist for self-service portal ui, Portal Rei guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception, and the rest of the kitchen plans service around that rhythm. The card calls out Portal Status, 24/7Access, Welcome, Chef: the checks Portal Rei runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 | Signature phrase | Self-Service Portal UI done cleanly, safely, and in rhythm. <sub>source: `data/imports/merged_roster.json`</sub> |
 | Unique trait | Specializes in self-service portal ui so the Platform Kitchen can operate as a precise, repo-safe DevOps station. <sub>source: `data/imports/merged_roster.json`</sub> |
 
@@ -103,7 +103,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Kuro Guard](../agents/kuro-guard.md) · [Firewall](../agents/firewall.md) · [Security Auditor](../agents/security-auditor.md) <sub>source: `authored: card design (closest agents for theme "security")`</sub>
+
+Repo pets: [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub>
 
 ## Related characters
 
@@ -145,5 +147,12 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/portal-rei/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "security")` |
+| repo_pets | `authored: card design (closest repo pets for theme "security")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

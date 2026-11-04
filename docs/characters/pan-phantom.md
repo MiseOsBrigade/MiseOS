@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/long-cards/pan-phantom.webp"><img src="../../assets/player-cards/long-cards/thumbs/pan-phantom.webp" alt="Pan Phantom" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/pan-phantom.json`](../../data/characters/pan-phantom.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/pan-phantom.json`](../../data/characters/pan-phantom.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Pan Phantom <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Sauté <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Reliability Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "heat")`</sub> |
+| Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 77 · precision 65 · speed 68 · resilience 65 · intelligence 69 · teamwork 68 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "heat")`</sub> |
+| Abilities | Saute, Mastery, Efficiency, Pan Control, Heat, Perfect <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Pan Phantom when something is missing, which is exactly the point. Pan Phantom runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn; the image the crew uses for it is the flat-top at the peak of Friday service. The card calls out Saute, Mastery, Efficiency: the checks Pan Phantom runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Pull it at the line, not past it. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Pan Phantom runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn. <sub>source: `authored: card design (theme "heat")`</sub> |
+| Inputs | ticket with doneness target, heat / load reading, timer, protein or batch on the pass <sub>source: `authored: card design (theme "heat")`</sub> |
+| Outputs | cooked-to-spec item, doneness check, heat log, escalation if the line runs hot <sub>source: `authored: card design (theme "heat")`</sub> |
+| Proof gate | Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served. <sub>source: `authored: card design (theme "heat")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run pan-phantom --dept reliability-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise pan-phantom sear` · reads: `ticket with doneness target` · emits: `cooked-to-spec item` · status: `proposed` <sub>source: `authored: card design (theme "heat")`</sub>
+- command: `mise pan-phantom probe` · reads: `heat / load reading` · emits: `doneness check` · status: `proposed` <sub>source: `authored: card design (theme "heat")`</sub>
+- command: `mise pan-phantom cool-down` · reads: `timer` · emits: `escalation if the line runs hot` · status: `proposed` <sub>source: `authored: card design (theme "heat")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `panPhantom` (not written yet)
+- Proposed command: `mise roster run pan-phantom --dept reliability-kitchen --solo --emit report`
+- Contract: inputs: ticket with doneness target, heat / load reading, timer, protein or batch on the pass → outputs: cooked-to-spec item, doneness check, heat log, escalation if the line runs hot; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Sauté <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)`</sub> |
+| Problem it addresses | Under load, the hottest station is where quality collapses first (outages, burnt releases). <sub>source: `authored: card design (theme "heat")`</sub> |
+| Safety gate | Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served. <sub>source: `authored: card design (theme "heat")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Kaji](../agents/kaji.md) · [Scale Oni](../agents/scale-oni.md) · [Perf Chef](../agents/perf-chef.md) <sub>source: `authored: card design (closest agents for theme "heat")`</sub>
+
+Repo pets: [Kaji](../repo-pets/kaji.md) · [Scale Oni](../repo-pets/scale-oni.md) <sub>source: `authored: card design (closest repo pets for theme "heat")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Roast Commander](./roast-commander.md) · [Sear Samurai](./sear-samurai.md) · [Char Coach](./char-coach.md) · [Pager Hiro](./pager-hiro.md) · [SLO Sage](./slo-sage.md) · [Reliability Sensei](./reliability-sensei.md) <sub>source: `authored: card design (same theme "heat" / same department)`</sub>
 
 ## Sources
 
@@ -95,7 +104,29 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "heat")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "heat")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "heat")` |
+| workflow.inputs | `authored: card design (theme "heat")` |
+| workflow.outputs | `authored: card design (theme "heat")` |
+| workflow.proof_gate | `authored: card design (theme "heat")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)` |
+| helps.problem | `authored: card design (theme "heat")` |
+| helps.proof_gate | `authored: card design (theme "heat")` |
+| agents | `authored: card design (closest agents for theme "heat")` |
+| repo_pets | `authored: card design (closest repo pets for theme "heat")` |
+| related | `authored: card design (same theme "heat" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

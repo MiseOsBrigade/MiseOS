@@ -5,18 +5,18 @@
 
 **Registry manifest (product / tool)** · Implementation: **Implemented in code** · Detail record: [`data/characters/miseos-trust-graph.json`](../../data/characters/miseos-trust-graph.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | MiseOS Trust Graph <sub>source: `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Analytics <sub>source: `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json (type)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Data & Insight Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "data")`</sub> |
+| Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
+| Registry rarity | Ultra Mythic <sub>source: `data/player-cards-ocr.json (printed rarity)`</sub> |
 | ID: registry_id | miseos.trust-graph <sub>source: `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
@@ -34,12 +34,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Ultra Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
+| Roster stats | power 72 · precision 66 · speed 79 · resilience 78 · intelligence 86 · teamwork 78 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "data")`</sub> |
+| Abilities | Trust Path Ways, Nodes, Truth Light <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about MiseOS Trust Graph and they describe a clipboard of tally marks that becomes a chart by morning. As Data & Insight Kitchen's specialist for analytics, MiseOS Trust Graph reads the numbers behind service (covers, waste, timings) and turns them into the next improvement, and the rest of the kitchen plans service around that rhythm. The card calls out Trust Path Ways, Nodes, Truth Light: the checks MiseOS Trust Graph runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | No truth light left to chance. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -52,9 +52,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Step | Value |
 |---|---|
 | Summary | Executable baseline capability for MiseOS Trust Graph. <sub>source: `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json (capability.description)`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | service metrics, logs, historic baselines <sub>source: `authored: card design (theme "data")`</sub> |
+| Outputs | insight report, trend alert, recommended change <sub>source: `authored: card design (theme "data")`</sub> |
+| Proof gate | Evidence gate: every recommendation cites the metric and time window it came from. <sub>source: `authored: card design (theme "data")`</sub> |
 
 ## Actions / commands
 
@@ -110,17 +110,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Registry (analytics) <sub>source: `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json (marketplace.category)`</sub> |
-| Mission | Not yet defined in the source material |
+| Mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)`</sub> |
 | Problem it addresses | Executable baseline capability for MiseOS Trust Graph. <sub>source: `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json (capability.description)`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Evidence gate: every recommendation cites the metric and time window it came from. <sub>source: `authored: card design (theme "data")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `authored: card design (closest agents for theme "data")`</sub>
+
+Repo pets: [Flag Fox](../repo-pets/flag-fox.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "data")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[MiseOS Registry Schema](./miseos-registry-schema.md) · [MiseOS Analytics Engine](./miseos-analytics-engine.md) · [Insight Sensei](./insight-sensei.md) · [Anomaly Aki](./anomaly-aki.md) · [Lake Haru](./lake-haru.md) <sub>source: `authored: card design (same theme "data" / same department)`</sub>
 
 ## Sources
 
@@ -143,5 +145,24 @@ _Not yet defined in the source material_
 | pricing | `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json` |
 | implementation | `git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts` |
 | helps.station | `apps/registry-platform/registry/manifests/miseos.trust-graph.manifest.json (marketplace.category)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "data")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| rarity | `data/player-cards-ocr.json (printed rarity)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "data")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "data")` |
+| workflow.outputs | `authored: card design (theme "data")` |
+| workflow.proof_gate | `authored: card design (theme "data")` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Data & Insight Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "data")` |
+| agents | `authored: card design (closest agents for theme "data")` |
+| repo_pets | `authored: card design (closest repo pets for theme "data")` |
+| related | `authored: card design (same theme "data" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

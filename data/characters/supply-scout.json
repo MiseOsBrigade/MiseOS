@@ -3,7 +3,9 @@
   "slug": "supply-scout",
   "name": "Supply Scout",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -12,8 +14,29 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"supply\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "rarity": "authored: card design (from printed star count 5)",
+    "stats": "authored: card design (6-axis roster scale; printed meters mapped: teamwork←Inbound Supply 89%, resilience←Inventory Level 92%)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"supply\")",
+    "workflow.inputs": "authored: card design (theme \"supply\")",
+    "workflow.outputs": "authored: card design (theme \"supply\")",
+    "workflow.proof_gate": "authored: card design (theme \"supply\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "helps.problem": "authored: card design (theme \"supply\")",
+    "helps.proof_gate": "authored: card design (theme \"supply\")",
+    "agents": "authored: card design (closest agents for theme \"supply\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"supply\")",
+    "related": "authored: card design (same theme \"supply\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -72,7 +95,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "89%",
@@ -85,31 +108,136 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "supplyScout",
+      "command": "mise roster run supply-scout --dept operations-kitchen --solo --emit report",
+      "contract": "inputs: stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades → outputs: scout report, reserve status (ready / low / out), reorder list, traceability record; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Provisioner",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Legendary",
+  "lore": "Most of the brigade only notices Supply Scout when something is missing, which is exactly the point. Supply Scout scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on; the image the crew uses for it is the loading dock before dawn. The card calls out Inbound Supply, Stock Route, Inventory Level: the checks Supply Scout runs before calling anything ready.",
+  "signature_phrase": "Scout first, then service.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Supply Scout scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on.",
+    "inputs": [
+      "stock levels vs. par",
+      "supplier routes",
+      "delivery manifests",
+      "freshness / quality grades"
+    ],
+    "outputs": [
+      "scout report",
+      "reserve status (ready / low / out)",
+      "reorder list",
+      "traceability record"
+    ],
+    "proof_gate": "Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run supply-scout --dept operations-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise supply-scout scout",
+      "reads": "stock levels vs. par",
+      "emits": "scout report",
+      "status": "proposed",
+      "source": "authored: card design (theme \"supply\")"
+    },
+    {
+      "command": "mise supply-scout reserve",
+      "reads": "supplier routes",
+      "emits": "reserve status (ready / low / out)",
+      "status": "proposed",
+      "source": "authored: card design (theme \"supply\")"
+    },
+    {
+      "command": "mise supply-scout trace",
+      "reads": "delivery manifests",
+      "emits": "traceability record",
+      "status": "proposed",
+      "source": "authored: card design (theme \"supply\")"
+    }
+  ],
+  "stats": {
+    "power": 84,
+    "precision": 82,
+    "speed": 93,
+    "resilience": 92,
+    "intelligence": 82,
+    "teamwork": 89
+  },
+  "related": [
+    {
+      "name": "Spice Alchemist",
+      "slug": "spice-alchemist"
+    },
+    {
+      "name": "Grain Guardian",
+      "slug": "grain-guardian"
+    },
+    {
+      "name": "Herb Whisperer",
+      "slug": "herb-whisperer"
+    },
+    {
+      "name": "Ticket Tactician",
+      "slug": "ticket-tactician"
+    },
+    {
+      "name": "Harvest Hex",
+      "slug": "harvest-hex"
+    },
+    {
+      "name": "Allergen Oracle",
+      "slug": "allergen-oracle"
+    }
+  ],
   "helps": {
     "station": "Provisioner",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Stations stall mid-service when an ingredient (or dependency) runs out or arrives without provenance.",
+    "proof_gate": "Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Steward Prime",
+      "slug": "steward-prime"
+    },
+    {
+      "name": "PrepBot",
+      "slug": "prepbot"
+    },
+    {
+      "name": "Storage",
+      "slug": "storage"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Sommelier",
+      "slug": "mise-sommelier"
+    },
+    {
+      "name": "Mizu",
+      "slug": "mizu"
+    }
+  ],
+  "abilities": [
+    "Inbound Supply",
+    "Stock Route",
+    "Inventory Level",
+    "Route Secured",
+    "Scout Report",
+    "Ready Reserve"
+  ],
+  "theme": "supply"
 }

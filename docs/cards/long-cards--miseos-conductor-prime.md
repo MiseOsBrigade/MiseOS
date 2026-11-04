@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/long-cards/miseos-conductor-prime.webp"><img src="../../assets/player-cards/long-cards/miseos-conductor-prime.webp" alt="MiseOS Conductor Prime" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1024×1536 |
 | Original source | `extract:img-long-cards/Long cards /21761157-FDF5-4FD7-BB8A-82A656F1A91D.PNG` |
 | Duplicates | `extract:img-long-cards/Long cards /8D5638AD-B1A8-42AA-B49A-C5710631CEE6.PNG` |
-| Character | Not yet defined in the source material |
-| Agent | Not yet defined in the source material |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | Orchestra Supreme <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Operations Kitchen <sub>source: `authored: card design (theme "time")`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 79 · precision 73 · speed 79 · resilience 75 · intelligence 66 · teamwork 84 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "time")`</sub> |
+| Abilities | Orchestration- 100, Harmony, Command, Influence, Wisdom, Oneorchestra <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the ticket rail at full stretch, every slip in order: that is where MiseOS Conductor Prime is happiest. As Operations Kitchen's specialist for orchestra supreme, MiseOS Conductor Prime holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. The card calls out Orchestration- 100, Harmony, Command: the checks MiseOS Conductor Prime runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every fire order / run sheet accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Conductor](../agents/conductor.md) · [Scheduler](../agents/scheduler.md) · [Tensho](../agents/tensho.md) <sub>source: `authored: card design (closest agents for theme "time")`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Maestro](../repo-pets/mise-maestro.md) <sub>source: `authored: card design (closest repo pets for theme "time")`</sub> |
+| Related characters | [Kitchen Conductor](../characters/kitchen-conductor.md) · [Timer Tactician](../characters/timer-tactician.md) · [Orderly Owl](../characters/orderly-owl.md) · [Energy Keeper](../characters/energy-keeper.md) · [Pulse Captain](../characters/pulse-captain.md) <sub>source: `authored: card design (same theme "time")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | MiseOS Conductor Prime holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. <sub>source: `authored: card design (theme "time")`</sub> |
+| Inputs | open tickets, station capacity, shift roster, service timeline |
+| Outputs | fire order / run sheet, shift handoff note, bottleneck alert |
+| Proof gate | Expo check: a course is fired only when every component reports ready; handoffs require a written note. |
+| Problem it addresses | Without a conductor, stations fire out of sequence and work arrives cold or late. <sub>source: `authored: card design (theme "time")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run miseos-conductor-prime --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise miseos-conductor-prime fire` · reads: `open tickets` · emits: `fire order / run sheet` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise miseos-conductor-prime handoff` · reads: `station capacity` · emits: `shift handoff note` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise miseos-conductor-prime rebalance` · reads: `shift roster` · emits: `bottleneck alert` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `miseosConductorPrime` (not written yet)
+- Proposed command: `mise roster run miseos-conductor-prime --dept operations-kitchen --solo --emit report`
+- Contract: inputs: open tickets, station capacity, shift roster, service timeline → outputs: fire order / run sheet, shift handoff note, bottleneck alert; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

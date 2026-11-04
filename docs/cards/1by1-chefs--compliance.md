@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/compliance.webp"><img src="../../assets/player-cards/1by1-chefs/compliance.webp" alt="Compliance" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /3C08EDF1-AF16-412A-B410-6C46C9BED90C.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Compliance](../agents/compliance.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Policy Ronin](../characters/policy-ronin.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Policy Guardian <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Security Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/policy-ronin.json`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Legendary <sub>source: `authored: card design (from printed stars 5)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 88 · precision 95 · speed 88 · resilience 88 · intelligence 80 · teamwork 80 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "security")`</sub> |
+| Abilities | Protect, Document, Standards Enforced, Security, Policy Integrity, Privacy <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Compliance and they describe the locked dry store and the keyring that never leaves the belt. As Security Kitchen's Policy Guardian, Compliance guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception, and the rest of the kitchen plans service around that rhythm. The card calls out Protect, Document, Standards Enforced: the checks Compliance runs before calling anything ready. In the canon crosswalk this card is a provisional match for Policy Ronin. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every allow / deny decision accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Compliance](../agents/compliance.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub> |
+| Related characters | [Policy Ronin](../characters/policy-ronin.md) · [Guardrail Goro](../characters/guardrail-goro.md) · [Auditor Emi](../characters/auditor-emi.md) · [Container Kage](../characters/container-kage.md) · [Red Oni](../characters/red-oni.md) · [Secure Sakura](../characters/secure-sakura.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "security")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Compliance guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. <sub>source: `authored: card design (theme "security")`</sub> |
+| Inputs | access requests, policy set, scan findings, secret inventory |
+| Outputs | allow / deny decision, audit record, remediation ticket |
+| Proof gate | Policy gate: no access or release without a policy match and a recorded approver. |
+| Problem it addresses | Unchecked access and leaked secrets turn one mistake into an incident. <sub>source: `authored: card design (theme "security")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run compliance --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise compliance scan` · reads: `access requests` · emits: `allow / deny decision` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise compliance enforce` · reads: `policy set` · emits: `audit record` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise compliance audit` · reads: `scan findings` · emits: `remediation ticket` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `compliance` (not written yet)
+- Proposed command: `mise roster run compliance --dept security-kitchen --solo --emit report`
+- Contract: inputs: access requests, policy set, scan findings, secret inventory → outputs: allow / deny decision, audit record, remediation ticket; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

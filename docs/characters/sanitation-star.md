@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/sanitation-star.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/sanitation-star.webp" alt="Sanitation Star" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/sanitation-star.json`](../../data/characters/sanitation-star.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/sanitation-star.json`](../../data/characters/sanitation-star.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Sanitation Star <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Secure Sakura (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Hygiene Guardian <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Security Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/secure-sakura.json`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/secure-sakura.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 95 · precision 95 · speed 94 · resilience 90 · intelligence 92 · teamwork 83 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "clean")`</sub> |
+| Abilities | Hygiene Score, Sanitation Protocol, Wash, Rinse, Sterilized, Sanitize <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Sanitation Star when something is missing, which is exactly the point. Sanitation Star keeps the kitchen clean and the waste stream honest: sanitising surfaces, logging waste and closing contamination risks; the image the crew uses for it is a steel counter wiped until it reflects the ceiling lights. The card calls out Hygiene Score, Sanitation Protocol, Wash: the checks Sanitation Star runs before calling anything ready. In the canon crosswalk this card is a provisional match for Secure Sakura. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Clean is a habit, not an event. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Sanitation Star keeps the kitchen clean and the waste stream honest: sanitising surfaces, logging waste and closing contamination risks. <sub>source: `authored: card design (theme "clean")`</sub> |
+| Inputs | station checklist, waste log, sanitiser concentration readings, incident reports <sub>source: `authored: card design (theme "clean")`</sub> |
+| Outputs | sanitation sign-off, waste report, contamination alert <sub>source: `authored: card design (theme "clean")`</sub> |
+| Proof gate | Sanitation sign-off: a station reopens only after its checklist is complete and readings are in range; any contamination opens an incident. <sub>source: `authored: card design (theme "clean")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run sanitation-star --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise sanitation-star sanitize` · reads: `station checklist` · emits: `sanitation sign-off` · status: `proposed` <sub>source: `authored: card design (theme "clean")`</sub>
+- command: `mise sanitation-star audit-waste` · reads: `waste log` · emits: `waste report` · status: `proposed` <sub>source: `authored: card design (theme "clean")`</sub>
+- command: `mise sanitation-star sign-off` · reads: `sanitiser concentration readings` · emits: `contamination alert` · status: `proposed` <sub>source: `authored: card design (theme "clean")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `sanitationStar` (not written yet)
+- Proposed command: `mise roster run sanitation-star --dept security-kitchen --solo --emit report`
+- Contract: inputs: station checklist, waste log, sanitiser concentration readings, incident reports → outputs: sanitation sign-off, waste report, contamination alert; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Hygiene Guardian <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Problem it addresses | Residue (stale secrets, dead code, waste) quietly contaminates everything it touches. <sub>source: `authored: card design (theme "clean")`</sub> |
+| Safety gate | Sanitation sign-off: a station reopens only after its checklist is complete and readings are in range; any contamination opens an incident. <sub>source: `authored: card design (theme "clean")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Compliance](../agents/compliance.md) · [Scanner](../agents/scanner.md) · [Token Monk](../agents/token-monk.md) <sub>source: `authored: card design (closest agents for theme "clean")`</sub>
+
+Repo pets: [Mise Locker](../repo-pets/mise-locker.md) · [Kuro Guard](../repo-pets/kuro-guard.md) <sub>source: `authored: card design (closest repo pets for theme "clean")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Secure Sakura](./secure-sakura.md) · [No-Waste Ninja](./no-waste-ninja.md) · [Byte](./byte.md) · [Threat Taro](./threat-taro.md) · [Nudge Neko](./nudge-neko.md) · [Red Oni](./red-oni.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "clean" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/secure-sakura.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/secure-sakura.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "clean")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "clean")` |
+| workflow.inputs | `authored: card design (theme "clean")` |
+| workflow.outputs | `authored: card design (theme "clean")` |
+| workflow.proof_gate | `authored: card design (theme "clean")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| helps.problem | `authored: card design (theme "clean")` |
+| helps.proof_gate | `authored: card design (theme "clean")` |
+| agents | `authored: card design (closest agents for theme "clean")` |
+| repo_pets | `authored: card design (closest repo pets for theme "clean")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "clean" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

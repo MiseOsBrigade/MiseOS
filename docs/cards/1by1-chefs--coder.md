@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/coder.webp"><img src="../../assets/player-cards/1by1-chefs/coder.webp" alt="Coder" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /6C53B580-0E36-4D18-BB4E-BD53D8E03FEF.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Coder](../agents/coder.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Yume Builder](../characters/yume-builder.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Implementation Cook <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Pipeline Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume-builder.json`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Epic <sub>source: `authored: card design (from printed stars 4)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | 4 <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 73 · precision 78 · speed 100 · resilience 86 · intelligence 82 · teamwork 84 <sub>source: `authored: card design (6-axis roster scale; printed meters mapped: speed←Building Excellence 100%)`</sub> |
+| Abilities | Code Execution, Running, Implementation, Build Flow, Commit Quality, Plan <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a terminal glowing beside the prep list: that is where Coder is happiest. As Pipeline Kitchen's Implementation Cook, Coder turns a plan into working code through a plan, code, test, deploy loop. The card calls out Code Execution, Running, Implementation: the checks Coder runs before calling anything ready. In the canon crosswalk this card is a provisional match for Yume Builder. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Code. Compile. Cuisine. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Coder](../agents/coder.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Build-Kun](../repo-pets/build-kun.md) · [Mise Bootstrap](../repo-pets/mise-bootstrap.md) <sub>source: `authored: card design (closest repo pets for theme "code")`</sub> |
+| Related characters | [Yume Builder](../characters/yume-builder.md) · [Null-chan](../characters/null-chan.md) · [Backlog Benji](../characters/backlog-benji.md) · [DX Mei](../characters/dx-mei.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "code")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Coder turns a plan into working code through a plan, code, test, deploy loop. <sub>source: `authored: card design (theme "code")`</sub> |
+| Inputs | task / issue, repository context, acceptance criteria |
+| Outputs | commit / pull request, test results, deploy status |
+| Proof gate | CI gate: no merge without green tests and a reviewed diff. |
+| Problem it addresses | Ideas stall between plan and production. <sub>source: `authored: card design (theme "code")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run coder --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise coder plan` · reads: `task / issue` · emits: `commit / pull request` · status: `proposed` <sub>source: `authored: card design (theme "code")`</sub>
+- command: `mise coder build` · reads: `repository context` · emits: `test results` · status: `proposed` <sub>source: `authored: card design (theme "code")`</sub>
+- command: `mise coder ship` · reads: `acceptance criteria` · emits: `deploy status` · status: `proposed` <sub>source: `authored: card design (theme "code")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `coder` (not written yet)
+- Proposed command: `mise roster run coder --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: task / issue, repository context, acceptance criteria → outputs: commit / pull request, test results, deploy status; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

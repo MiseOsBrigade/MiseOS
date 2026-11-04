@@ -24,7 +24,25 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json (marketplace.category)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"platform\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "rarity": "data/player-cards-ocr.json (printed rarity)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"platform\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"platform\")",
+    "workflow.outputs": "authored: card design (theme \"platform\")",
+    "workflow.proof_gate": "authored: card design (theme \"platform\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"platform\")",
+    "agents": "authored: card design (closest agents for theme \"platform\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"platform\")",
+    "related": "authored: card design (same theme \"platform\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json",
   "registry_catalog": {
@@ -103,8 +121,8 @@
     }
   ],
   "card_rarity_printed": "Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -306,16 +324,24 @@
     "registry_id": "miseos.nuget-client"
   },
   "role": "SDK",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Platform Kitchen",
+  "department_mission": "Provide golden paths and stable service foundations.",
+  "rarity": "Mythic",
+  "lore": "Most of the brigade only notices MiseOS NuGet Client when something is missing, which is exactly the point. MiseOS NuGet Client provides a shared platform building block other kitchens install and build on; the image the crew uses for it is the stainless steel shelving every station is bolted to. The card calls out Request Package, Resolve, Dependencies: the checks MiseOS NuGet Client runs before calling anything ready.",
+  "signature_phrase": "No request package left to chance.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS NuGet Client.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "consumer repository",
+      "manifest / configuration",
+      "version pin"
+    ],
+    "outputs": [
+      "installed capability",
+      "version record",
+      "compatibility report"
+    ],
+    "proof_gate": "Golden-path gate: consumers install only pinned, signed versions that pass the registry schema."
   },
   "actions": [
     {
@@ -324,14 +350,77 @@
       "source": "apps/registry-platform/registry/manifests/miseos.nuget-client.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 67,
+    "precision": 75,
+    "speed": 81,
+    "resilience": 73,
+    "intelligence": 81,
+    "teamwork": 75
+  },
+  "related": [
+    {
+      "name": "MiseOS Ruby Steward",
+      "slug": "miseos-ruby-steward"
+    },
+    {
+      "name": "MiseOS Runner",
+      "slug": "miseos-runner"
+    },
+    {
+      "name": "MiseOS CLI",
+      "slug": "miseos-cli"
+    },
+    {
+      "name": "Streama",
+      "slug": "streama"
+    },
+    {
+      "name": "Runtime Riku",
+      "slug": "runtime-riku"
+    },
+    {
+      "name": "Portal Rei",
+      "slug": "portal-rei"
+    }
+  ],
   "helps": {
     "station": "Registry (sdk)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Provide golden paths and stable service foundations.",
     "problem": "Executable baseline capability for MiseOS NuGet Client.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Golden-path gate: consumers install only pinned, signed versions that pass the registry schema."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Architect",
+      "slug": "architect"
+    },
+    {
+      "name": "Terraformer",
+      "slug": "terraformer"
+    },
+    {
+      "name": "Docker",
+      "slug": "docker"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Bootstrap",
+      "slug": "mise-bootstrap"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Request Package",
+    "Resolve",
+    "Dependencies",
+    "Discover",
+    "Deliver",
+    "Install"
+  ],
+  "theme": "platform"
 }

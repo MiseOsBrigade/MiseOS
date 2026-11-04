@@ -3,7 +3,9 @@
   "slug": "miseos-repo-reliability-kit",
   "name": "MiseOS Repo Reliability Kit",
   "kind": "registry_manifest",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
     "catalog_item": "data/imports/miseos-individual-catalog-items.json",
@@ -17,7 +19,27 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (marketplace.category)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"pipeline\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "card_rarity_printed": "data/player-cards.json (no card for this entry)",
+    "card_stars_printed": "data/player-cards.json (no card for this entry)",
+    "card_meters_printed": "data/player-cards.json (no card for this entry)",
+    "rarity": "authored: card design (default tier; no stars printed)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"pipeline\")",
+    "abilities": "role from apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json (type) + authored: card design (workflow steps for theme \"pipeline\")",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"pipeline\")",
+    "workflow.outputs": "authored: card design (theme \"pipeline\")",
+    "workflow.proof_gate": "authored: card design (theme \"pipeline\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"pipeline\")",
+    "agents": "authored: card design (closest agents for theme \"pipeline\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"pipeline\")",
+    "related": "authored: card design (same theme \"pipeline\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json",
   "catalog_item": {
@@ -40,9 +62,9 @@
   "cards": [],
   "collections": [],
   "card_text": [],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "No card art linked, so nothing printed",
+  "card_stars_printed": "No card art linked",
+  "card_meters_printed": "No card art linked",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -107,9 +129,14 @@
         "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/test/core.test.ts",
         "line": 7,
         "term": "miseos.repo-reliability-kit"
+      },
+      {
+        "path": "tools/universe/scripts/import-universe.py",
+        "line": 163,
+        "term": "miseos-repo-reliability-kit"
       }
     ],
-    "code_ref_count": 6,
+    "code_ref_count": 7,
     "data_refs": [
       {
         "path": "apps/gridops-platform/data/miseos-ecosystem-135.json",
@@ -235,6 +262,11 @@
         "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
         "line": 53,
         "term": "repoReliabilityKit"
+      },
+      {
+        "path": "tools/universe/scripts/import-universe.py",
+        "line": 163,
+        "term": "miseos-repo-reliability-kit"
       }
     ],
     "status": "implemented_in_code",
@@ -244,16 +276,24 @@
     "registry_id": "miseos.repo-reliability-kit"
   },
   "role": "Workflow",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Rare",
+  "lore": "Most of the brigade only notices MiseOS Repo Reliability Kit when something is missing, which is exactly the point. MiseOS Repo Reliability Kit runs an automated gate in the delivery pipeline; the image the crew uses for it is a conveyor of tickets moving through the pass.",
+  "signature_phrase": "The gate never sleeps.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Repo Reliability Kit.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "pull request or tag",
+      "workflow configuration",
+      "repository state"
+    ],
+    "outputs": [
+      "check run / status",
+      "annotations",
+      "release artefact or block"
+    ],
+    "proof_gate": "Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail."
   },
   "actions": [
     {
@@ -262,14 +302,71 @@
       "source": "apps/registry-platform/registry/manifests/miseos.repo-reliability-kit.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 75,
+    "precision": 73,
+    "speed": 85,
+    "resilience": 67,
+    "intelligence": 74,
+    "teamwork": 71
+  },
+  "related": [
+    {
+      "name": "MiseOS Release Sentinel",
+      "slug": "miseos-release-sentinel"
+    },
+    {
+      "name": "MiseOS Workflow Pack",
+      "slug": "miseos-workflow-pack"
+    },
+    {
+      "name": "Tariq Notesmith",
+      "slug": "tariq-notesmith"
+    },
+    {
+      "name": "Seira Scan",
+      "slug": "seira-scan"
+    },
+    {
+      "name": "Release Conductor",
+      "slug": "release-conductor"
+    }
+  ],
   "helps": {
     "station": "Registry (workflow)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Build. Test. Deploy. Repeat.",
     "problem": "Executable baseline capability for MiseOS Repo Reliability Kit.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Pipeline",
+      "slug": "pipeline"
+    },
+    {
+      "name": "GitHub Chef",
+      "slug": "github-chef"
+    },
+    {
+      "name": "Argo Chef",
+      "slug": "argo-chef"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Tensho",
+      "slug": "tensho"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Workflow",
+    "Check",
+    "Gate",
+    "Publish"
+  ],
+  "theme": "pipeline"
 }

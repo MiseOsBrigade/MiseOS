@@ -3,7 +3,9 @@
   "slug": "allergen-oracle",
   "name": "Allergen Oracle",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -27,7 +29,15 @@
     "related": "data/imports/miseos_character_master_inventory_001_300.csv",
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/allergen-oracle/metadata.json"
+    "helps.station": "characters/allergen-oracle/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"data\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"data\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 66,
@@ -123,7 +133,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%"
@@ -175,8 +185,8 @@
   "department": "Operations Kitchen",
   "department_mission": "Keep the kitchen running smoothly.",
   "rarity": "Legendary",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "lore": "Picture a clipboard of tally marks that becomes a chart by morning: that is where Allergen Oracle is happiest. As Operations Kitchen's Safety Seer, Allergen Oracle reads the numbers behind service (covers, waste, timings) and turns them into the next improvement. The card calls out Safe Serve, Allergen Scan, Peanut: the checks Allergen Oracle runs before calling anything ready.",
+  "signature_phrase": "Learn. Optimize. Evolve.",
   "workflow": {
     "summary": "Allergen Oracle performs safety seer within the Operations Kitchen.",
     "inputs": [
@@ -226,6 +236,37 @@
     "problem": "Allergen Oracle performs safety seer within the Operations Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Observatory",
+      "slug": "observatory"
+    },
+    {
+      "name": "Prometheus",
+      "slug": "prometheus"
+    },
+    {
+      "name": "Risk Oracle",
+      "slug": "risk-oracle"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Flag Fox",
+      "slug": "flag-fox"
+    },
+    {
+      "name": "Mise Lattice",
+      "slug": "mise-lattice"
+    }
+  ],
+  "abilities": [
+    "Safe Serve",
+    "Allergen Scan",
+    "Peanut",
+    "Tree Nut",
+    "Dairy",
+    "Gluten"
+  ],
+  "theme": "data"
 }

@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/long-cards/knead-guardian.webp"><img src="../../assets/player-cards/long-cards/thumbs/knead-guardian.webp" alt="Knead Guardian" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/knead-guardian.json`](../../data/characters/knead-guardian.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/knead-guardian.json`](../../data/characters/knead-guardian.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Knead Guardian <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Patissier <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Pipeline Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "bread")`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Registry rarity | Legendary <sub>source: `authored: card design (from printed star count 5)`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 85 · precision 80 · speed 80 · resilience 99 · intelligence 85 · teamwork 87 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "bread")`</sub> |
+| Abilities | Signature, Focus, Rise To, Perfection, Doughsense, Texture Artistry <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the oven light at 4 a.m.: that is where Knead Guardian is happiest. As Pipeline Kitchen's Patissier, Knead Guardian runs the bake: mixing, proofing and baking on a fixed schedule so the line always has fresh builds. The card calls out Signature, Focus, Rise To: the checks Knead Guardian runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Proof before bake. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Knead Guardian runs the bake: mixing, proofing and baking on a fixed schedule so the line always has fresh builds. <sub>source: `authored: card design (theme "bread")`</sub> |
+| Inputs | dough / build recipe, proof timer, oven schedule <sub>source: `authored: card design (theme "bread")`</sub> |
+| Outputs | baked batch, bake log, reject count <sub>source: `authored: card design (theme "bread")`</sub> |
+| Proof gate | Proof gate: a batch goes in the oven only when proofing is complete; underproofed batches are held. <sub>source: `authored: card design (theme "bread")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run knead-guardian --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise knead-guardian mix` · reads: `dough / build recipe` · emits: `baked batch` · status: `proposed` <sub>source: `authored: card design (theme "bread")`</sub>
+- command: `mise knead-guardian proof` · reads: `proof timer` · emits: `bake log` · status: `proposed` <sub>source: `authored: card design (theme "bread")`</sub>
+- command: `mise knead-guardian bake` · reads: `oven schedule` · emits: `reject count` · status: `proposed` <sub>source: `authored: card design (theme "bread")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `kneadGuardian` (not written yet)
+- Proposed command: `mise roster run knead-guardian --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: dough / build recipe, proof timer, oven schedule → outputs: baked batch, bake log, reject count; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Patissier <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Problem it addresses | Rushed builds come out half-baked. <sub>source: `authored: card design (theme "bread")`</sub> |
+| Safety gate | Proof gate: a batch goes in the oven only when proofing is complete; underproofed batches are held. <sub>source: `authored: card design (theme "bread")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Build Kun](../agents/build-kun.md) · [Pipeline](../agents/pipeline.md) · [Automator](../agents/automator.md) <sub>source: `authored: card design (closest agents for theme "bread")`</sub>
+
+Repo pets: [Build-Kun](../repo-pets/build-kun.md) · [Yume](../repo-pets/yume.md) <sub>source: `authored: card design (closest repo pets for theme "bread")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Felix Rollback](./felix-rollback.md) · [Bruno Blast Radius](./bruno-blast-radius.md) · [Alko Commit Chef](./alko-commit-chef.md) <sub>source: `authored: card design (same theme "bread" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "bread")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| rarity | `authored: card design (from printed star count 5)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "bread")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "bread")` |
+| workflow.inputs | `authored: card design (theme "bread")` |
+| workflow.outputs | `authored: card design (theme "bread")` |
+| workflow.proof_gate | `authored: card design (theme "bread")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| helps.problem | `authored: card design (theme "bread")` |
+| helps.proof_gate | `authored: card design (theme "bread")` |
+| agents | `authored: card design (closest agents for theme "bread")` |
+| repo_pets | `authored: card design (closest repo pets for theme "bread")` |
+| related | `authored: card design (same theme "bread" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

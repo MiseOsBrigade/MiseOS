@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/reviewer.webp"><img src="../../assets/player-cards/1by1-chefs/reviewer.webp" alt="Reviewer" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /261F5B1A-4C3C-4242-982A-78885D6437DC.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Reviewer](../agents/reviewer.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Omar Reviewer](../characters/omar-reviewer.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Code Reviewer <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Pipeline Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/omar-reviewer.json`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Legendary <sub>source: `authored: card design (from printed stars 5)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 81 · precision 89 · speed 95 · resilience 90 · intelligence 80 · teamwork 89 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "quality")`</sub> |
+| Abilities | Quality Index, Review Protocol, Style Check, Logic Flow, Merge Readiness, Security Scan <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Reviewer and they describe a spoon in every pot. As Pipeline Kitchen's Code Reviewer, Reviewer tastes and tests before anything is served: reviews, checks and canaries against the spec, and the rest of the kitchen plans service around that rhythm. The card calls out Quality Index, Review Protocol, Style Check: the checks Reviewer runs before calling anything ready. In the canon crosswalk this card is a provisional match for Omar Reviewer. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | No inspectionmode left to chance. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Reviewer](../agents/reviewer.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Mise Garde](../repo-pets/mise-garde.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "quality")`</sub> |
+| Related characters | [Omar Reviewer](../characters/omar-reviewer.md) · [Nina Promoter](../characters/nina-promoter.md) · [Reliability Sensei](../characters/reliability-sensei.md) · [Chaos Kaito](../characters/chaos-kaito.md) · [Pager Hiro](../characters/pager-hiro.md) · [Runtime Riku](../characters/runtime-riku.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "quality")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Reviewer tastes and tests before anything is served: reviews, checks and canaries against the spec. <sub>source: `authored: card design (theme "quality")`</sub> |
+| Inputs | candidate change / dish, spec / acceptance tests, previous results |
+| Outputs | pass / send-back verdict, review notes, test evidence |
+| Proof gate | Taste gate: a change ships only with recorded evidence that it meets the spec. |
+| Problem it addresses | Defects reach the guest when nobody tastes before serving. <sub>source: `authored: card design (theme "quality")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run reviewer --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise reviewer taste` · reads: `candidate change / dish` · emits: `pass / send-back verdict` · status: `proposed` <sub>source: `authored: card design (theme "quality")`</sub>
+- command: `mise reviewer review` · reads: `spec / acceptance tests` · emits: `review notes` · status: `proposed` <sub>source: `authored: card design (theme "quality")`</sub>
+- command: `mise reviewer verdict` · reads: `previous results` · emits: `test evidence` · status: `proposed` <sub>source: `authored: card design (theme "quality")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `reviewer` (not written yet)
+- Proposed command: `mise roster run reviewer --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: candidate change / dish, spec / acceptance tests, previous results → outputs: pass / send-back verdict, review notes, test evidence; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

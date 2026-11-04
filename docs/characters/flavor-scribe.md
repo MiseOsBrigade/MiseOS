@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/flavor-scribe.json`](../../data/characters/flavor-scribe.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Flavor Scribe <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Menu Curator <sub>source: `characters/flavor-scribe/metadata.json`</sub> |
 | Kitchen / department | Operations Kitchen <sub>source: `characters/flavor-scribe/metadata.json`</sub> |
 | Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -37,13 +37,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 98.7% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 70 · precision 72 · speed 64 · resilience 74 · intelligence 74 · teamwork 81 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Abilities | Signature Dish, Echoes Of, Menu Blueprint, Umami, Appetizer, Main <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the back burner where the stockpots never go cold: that is where Flavor Scribe is happiest. As Operations Kitchen's Menu Curator, Flavor Scribe builds the base flavours other stations depend on: reductions, stocks and mother sauces that must taste the same every time. The card calls out Signature Dish, Echoes Of, Menu Blueprint: the checks Flavor Scribe runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Taste twice, ship once. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -90,7 +90,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Umami Code](../agents/umami-code.md) · [API Gateway](../agents/api-gateway.md) · [Architect](../agents/architect.md) <sub>source: `authored: card design (closest agents for theme "sauce")`</sub>
+
+Repo pets: [Umami Code](../repo-pets/umami-code.md) · [Mise Sauce](../repo-pets/mise-sauce.md) <sub>source: `authored: card design (closest repo pets for theme "sauce")`</sub>
 
 ## Related characters
 
@@ -122,5 +124,13 @@ _Not yet defined in the source material_
 | related | `data/imports/miseos_character_master_inventory_001_300.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/flavor-scribe/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "sauce")` |
+| repo_pets | `authored: card design (closest repo pets for theme "sauce")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

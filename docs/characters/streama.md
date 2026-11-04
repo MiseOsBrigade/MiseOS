@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Referenced in app code (no dedicated handler)** · Detail record: [`data/characters/streama.json`](../../data/characters/streama.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Streama <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Data Streaming Profiles <sub>source: `characters/streama/metadata.json`</sub> |
 | Kitchen / department | Platform Kitchen <sub>source: `characters/streama/metadata.json`</sub> |
 | Department mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -41,7 +41,7 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Rare <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 86 · precision 82 · speed 66 · resilience 71 · intelligence 82 · teamwork 88 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
 | Abilities | Smooth Flow <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
@@ -168,5 +168,8 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | helps.station | `characters/streama/metadata.json` |
 | agents | `data/agents.json` |
 | repo_pets | `data/repo-pets.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

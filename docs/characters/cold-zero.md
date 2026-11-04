@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/long-cards/cold-zero.webp"><img src="../../assets/player-cards/long-cards/thumbs/cold-zero.webp" alt="Cold Zero" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/cold-zero.json`](../../data/characters/cold-zero.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/cold-zero.json`](../../data/characters/cold-zero.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Cold Zero <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Garde Glace <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Reliability Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "cold")`</sub> |
+| Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 65 · precision 79 · speed 72 · resilience 73 · intelligence 76 · teamwork 68 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "cold")`</sub> |
+| Abilities | Perfection, Excellence, Cold Mastery, Temperature, Pure, Stability <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the walk-in, humming at three degrees: that is where Cold Zero is happiest. As Reliability Kitchen's specialist for garde glace, Cold Zero keeps every item inside its safe temperature band and flags drift before it becomes spoilage. The card calls out Perfection, Excellence, Cold Mastery: the checks Cold Zero runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Excellence: checked, not assumed. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Cold Zero keeps every item inside its safe temperature band and flags drift before it becomes spoilage. <sub>source: `authored: card design (theme "cold")`</sub> |
+| Inputs | probe / sensor readings, storage map, HACCP limits, hold times <sub>source: `authored: card design (theme "cold")`</sub> |
+| Outputs | temperature log, drift alert, discard / re-chill decision <sub>source: `authored: card design (theme "cold")`</sub> |
+| Proof gate | Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason. <sub>source: `authored: card design (theme "cold")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run cold-zero --dept reliability-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise cold-zero probe` · reads: `probe / sensor readings` · emits: `temperature log` · status: `proposed` <sub>source: `authored: card design (theme "cold")`</sub>
+- command: `mise cold-zero chill` · reads: `storage map` · emits: `drift alert` · status: `proposed` <sub>source: `authored: card design (theme "cold")`</sub>
+- command: `mise cold-zero log-temp` · reads: `HACCP limits` · emits: `discard / re-chill decision` · status: `proposed` <sub>source: `authored: card design (theme "cold")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `coldZero` (not written yet)
+- Proposed command: `mise roster run cold-zero --dept reliability-kitchen --solo --emit report`
+- Contract: inputs: probe / sensor readings, storage map, HACCP limits, hold times → outputs: temperature log, drift alert, discard / re-chill decision; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Garde Glace <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)`</sub> |
+| Problem it addresses | Silent drift (heat, latency, resource pressure) spoils work long before anyone notices. <sub>source: `authored: card design (theme "cold")`</sub> |
+| Safety gate | Temperature gate: readings outside the safe band for longer than the hold limit force a discard or re-chill; no override without a logged reason. <sub>source: `authored: card design (theme "cold")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Alarmer](../agents/alarmer.md) · [SRE Chef](../agents/sre-chef.md) <sub>source: `authored: card design (closest agents for theme "cold")`</sub>
+
+Repo pets: [Mise Runtime](../repo-pets/mise-runtime.md) · [Null-chan](../repo-pets/null-chan.md) <sub>source: `authored: card design (closest repo pets for theme "cold")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Steam Whisper](./steam-whisper.md) · [Temp Tamer](./temp-tamer.md) · [Null-chan](./null-chan.md) · [Resilience Ryu](./resilience-ryu.md) · [Forecast Fuji](./forecast-fuji.md) <sub>source: `authored: card design (same theme "cold" / same department)`</sub>
 
 ## Sources
 
@@ -95,7 +104,29 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "cold")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "cold")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "cold")` |
+| workflow.inputs | `authored: card design (theme "cold")` |
+| workflow.outputs | `authored: card design (theme "cold")` |
+| workflow.proof_gate | `authored: card design (theme "cold")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)` |
+| helps.problem | `authored: card design (theme "cold")` |
+| helps.proof_gate | `authored: card design (theme "cold")` |
+| agents | `authored: card design (closest agents for theme "cold")` |
+| repo_pets | `authored: card design (closest repo pets for theme "cold")` |
+| related | `authored: card design (same theme "cold" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

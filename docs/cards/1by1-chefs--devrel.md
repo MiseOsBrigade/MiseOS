@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/devrel.webp"><img src="../../assets/player-cards/1by1-chefs/devrel.webp" alt="DevRel" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /9BB16D37-6E38-4EB7-A93A-F4E525B2988A.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [DevRel](../agents/devrel.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [DX Mei](../characters/dx-mei.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | +DeveloperAdvocate <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Data & Insight Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/dx-mei.json`</sub> |
+| Department mission | Learn. Optimize. Evolve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 81 · precision 74 · speed 88 · resilience 72 · intelligence 66 · teamwork 66 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "code")`</sub> |
+| Abilities | Let'S, Build, Advocate, Community, And People, Listen <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices DevRel when something is missing, which is exactly the point. DevRel turns a plan into working code through a plan, code, test, deploy loop; the image the crew uses for it is a terminal glowing beside the prep list. The card calls out Let'S, Build, Advocate: the checks DevRel runs before calling anything ready. In the canon crosswalk this card is a provisional match for DX Mei. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Clean code, perfect dish. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [DevRel](../agents/devrel.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Build-Kun](../repo-pets/build-kun.md) · [Mise Bootstrap](../repo-pets/mise-bootstrap.md) <sub>source: `authored: card design (closest repo pets for theme "code")`</sub> |
+| Related characters | [DX Mei](../characters/dx-mei.md) · [Null-chan](../characters/null-chan.md) · [Yume Builder](../characters/yume-builder.md) · [Backlog Benji](../characters/backlog-benji.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "code")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | DevRel turns a plan into working code through a plan, code, test, deploy loop. <sub>source: `authored: card design (theme "code")`</sub> |
+| Inputs | task / issue, repository context, acceptance criteria |
+| Outputs | commit / pull request, test results, deploy status |
+| Proof gate | CI gate: no merge without green tests and a reviewed diff. |
+| Problem it addresses | Ideas stall between plan and production. <sub>source: `authored: card design (theme "code")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run devrel --dept data-insight-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise devrel plan` · reads: `task / issue` · emits: `commit / pull request` · status: `proposed` <sub>source: `authored: card design (theme "code")`</sub>
+- command: `mise devrel build` · reads: `repository context` · emits: `test results` · status: `proposed` <sub>source: `authored: card design (theme "code")`</sub>
+- command: `mise devrel ship` · reads: `acceptance criteria` · emits: `deploy status` · status: `proposed` <sub>source: `authored: card design (theme "code")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `devrel` (not written yet)
+- Proposed command: `mise roster run devrel --dept data-insight-kitchen --solo --emit report`
+- Contract: inputs: task / issue, repository context, acceptance criteria → outputs: commit / pull request, test results, deploy status; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

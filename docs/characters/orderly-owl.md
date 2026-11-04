@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/orderly-owl.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/orderly-owl.webp" alt="Orderly Owl" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/orderly-owl.json`](../../data/characters/orderly-owl.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/orderly-owl.json`](../../data/characters/orderly-owl.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Orderly Owl <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Review Ren (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Controleur <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Reliability Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/review-ren.json`</sub> |
+| Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/review-ren.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
+| Roster stats | power 83 · precision 89 · speed 87 · resilience 86 · intelligence 84 · teamwork 87 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "time")`</sub> |
+| Abilities | Order Index, Order Protocol, Audit Status, Organize, Verify, Align <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture the ticket rail at full stretch, every slip in order: that is where Orderly Owl is happiest. As Reliability Kitchen's specialist for controleur, Orderly Owl holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. The card calls out Order Index, Order Protocol, Audit Status: the checks Orderly Owl runs before calling anything ready. In the canon crosswalk this card is a provisional match for Review Ren. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every ticket, on time. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Orderly Owl holds the rhythm of service: sequencing tickets, staffing and timing so every station fires at the right moment. <sub>source: `authored: card design (theme "time")`</sub> |
+| Inputs | open tickets, station capacity, shift roster, service timeline <sub>source: `authored: card design (theme "time")`</sub> |
+| Outputs | fire order / run sheet, shift handoff note, bottleneck alert <sub>source: `authored: card design (theme "time")`</sub> |
+| Proof gate | Expo check: a course is fired only when every component reports ready; handoffs require a written note. <sub>source: `authored: card design (theme "time")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run orderly-owl --dept reliability-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise orderly-owl fire` · reads: `open tickets` · emits: `fire order / run sheet` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise orderly-owl handoff` · reads: `station capacity` · emits: `shift handoff note` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
+- command: `mise orderly-owl rebalance` · reads: `shift roster` · emits: `bottleneck alert` · status: `proposed` <sub>source: `authored: card design (theme "time")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `orderlyOwl` (not written yet)
+- Proposed command: `mise roster run orderly-owl --dept reliability-kitchen --solo --emit report`
+- Contract: inputs: open tickets, station capacity, shift roster, service timeline → outputs: fire order / run sheet, shift handoff note, bottleneck alert; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,18 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Controleur <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)`</sub> |
+| Problem it addresses | Without a conductor, stations fire out of sequence and work arrives cold or late. <sub>source: `authored: card design (theme "time")`</sub> |
+| Safety gate | Expo check: a course is fired only when every component reports ready; handoffs require a written note. <sub>source: `authored: card design (theme "time")`</sub> |
 
 ## Agents and repo pets
 
+Agents: [Conductor](../agents/conductor.md) · [Scheduler](../agents/scheduler.md) · [Tensho](../agents/tensho.md) <sub>source: `authored: card design (closest agents for theme "time")`</sub>
 
 Repo pets: [Orderly Owl](../repo-pets/orderly-owl.md) <sub>source: `data/repo-pets.json`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Review Ren](./review-ren.md) · [Energy Keeper](./energy-keeper.md) · [Kitchen Conductor](./kitchen-conductor.md) · [Pulse Captain](./pulse-captain.md) · [Reliability Sensei](./reliability-sensei.md) · [Trace Sensei](./trace-sensei.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "time" / same department)`</sub>
 
 ## Sources
 
@@ -96,8 +104,29 @@ _Not yet defined in the source material_
 | card_stars_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | repo_pets | `data/repo-pets.json` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/review-ren.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/review-ren.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "time")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "time")` |
+| workflow.inputs | `authored: card design (theme "time")` |
+| workflow.outputs | `authored: card design (theme "time")` |
+| workflow.proof_gate | `authored: card design (theme "time")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)` |
+| helps.problem | `authored: card design (theme "time")` |
+| helps.proof_gate | `authored: card design (theme "time")` |
+| agents | `authored: card design (closest agents for theme "time")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "time" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

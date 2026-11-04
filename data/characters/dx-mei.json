@@ -3,7 +3,9 @@
   "slug": "dx-mei",
   "name": "DX Mei",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "ids.registry_id": "characters/dx-mei/metadata.json",
@@ -25,7 +27,16 @@
     "unique_trait": "data/imports/merged_roster.json",
     "role_category": "data/imports/merged_roster.json",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/dx-mei/metadata.json"
+    "helps.station": "characters/dx-mei/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards.json (no card for this entry)",
+    "card_stars_printed": "data/player-cards.json (no card for this entry)",
+    "card_meters_printed": "data/player-cards.json (no card for this entry)",
+    "abilities": "role from characters/dx-mei/metadata.json + authored: card design (workflow steps for theme \"code\")",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"code\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"code\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 75,
@@ -36,9 +47,9 @@
   "cards": [],
   "collections": [],
   "card_text": [],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "No card art linked, so nothing printed",
+  "card_stars_printed": "No card art linked",
+  "card_meters_printed": "No card art linked",
   "level": 21,
   "unique_trait": "Specializes in developer experience survey loop so the Data & Insight Kitchen can operate as a precise, repo-safe DevOps station.",
   "role_category": "analytics",
@@ -120,7 +131,7 @@
   "department": "Data & Insight Kitchen",
   "department_mission": "Learn. Optimize. Evolve.",
   "rarity": "Common",
-  "lore": "Not yet defined in the source material",
+  "lore": "Ask the brigade about DX Mei and they describe a terminal glowing beside the prep list. As Data & Insight Kitchen's specialist for developer experience survey loop, DX Mei turns a plan into working code through a plan, code, test, deploy loop, and the rest of the kitchen plans service around that rhythm.",
   "signature_phrase": "Developer Experience Survey Loop done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "DX Mei performs developer experience survey loop within the Data & Insight Kitchen.",
@@ -188,6 +199,35 @@
     "problem": "DX Mei performs developer experience survey loop within the Data & Insight Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Coder",
+      "slug": "coder"
+    },
+    {
+      "name": "Build Kun",
+      "slug": "build-kun"
+    },
+    {
+      "name": "Debugger",
+      "slug": "debugger"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Build-Kun",
+      "slug": "build-kun"
+    },
+    {
+      "name": "Mise Bootstrap",
+      "slug": "mise-bootstrap"
+    }
+  ],
+  "abilities": [
+    "Developer Experience Survey Loop",
+    "Plan",
+    "Build",
+    "Ship"
+  ],
+  "theme": "code"
 }

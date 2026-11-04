@@ -17,7 +17,7 @@ const COLL = {
 const KIND = { registry_character: 'Registry character agent', registry_manifest: 'Registry manifest (product / tool)', card_character: 'Card-defined chef (catalogue: visual reference only)', catalog_item: 'Individual catalogue item (action / workflow / primitive)' };
 const STATUS = {
   implemented_in_code: 'Implemented in code', referenced_in_app_code: 'Referenced in app code (no dedicated handler)',
-  described_in_docs_only: 'Described in docs only', not_defined: UNDEF,
+  described_in_docs_only: 'Described in docs only', designed_not_implemented: 'Designed (not yet implemented in code)', reference_artwork: 'Reference artwork (no code applies)', not_defined: UNDEF,
 };
 
 const cardsDoc = JSON.parse(fs.readFileSync('data/player-cards.json', 'utf8'));
@@ -33,7 +33,7 @@ const link = (from, p, line) => `[\`${p}${line ? `:${line}` : ''}\`](${encodeURI
 export const cardPage = (c) => c.page;
 
 function cardGallery(out, cards) {
-  if (!cards.length) return `_${UNDEF} (no player card art is linked to this entry yet)._\n`;
+  if (!cards.length) return '_No player card art is linked to this entry yet (registry entry only)._\n';
   return cards.map((c) => `<a href="${rel(out, c.file)}"><img src="${rel(out, c.thumbnail)}" alt="${esc(c.title ?? path.basename(c.file))}" width="160" /></a>`).join('\n')
     + '\n\n| Card | Collection | Printed title | Match method | Full size |\n|---|---|---|---|---|\n'
     + cards.map((c) => `| \`${path.basename(c.file)}\` | ${COLL[c.collection] ?? c.collection} | ${esc(c.title ?? '—')} | ${c.match_method ?? '—'} | [open](${rel(out, c.file)}) |`).join('\n') + '\n';
@@ -47,7 +47,7 @@ function charPage(e) {
   L.push(`# ${e.name}`, '');
   if (e.cards[0]) L.push(`<a href="${rel(out, e.cards[0].file)}"><img src="${rel(out, e.cards[0].thumbnail)}" alt="${esc(e.name)}" width="240" align="right" /></a>`, '');
   L.push(`**${KIND[e.kind]}** · Implementation: **${STATUS[e.implementation.status]}** · Detail record: [\`data/characters/${e.slug}.json\`](../../data/characters/${e.slug}.json)`, '');
-  L.push('Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _' + UNDEF + '_.', '');
+  L.push('Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.', '');
   L.push('## Identity', '', '| Field | Value |', '|---|---|');
   row('Name', e.name, 'name');
   row('Aliases / printed variants', e.aliases.length ? e.aliases.join(', ') : UNDEF, 'aliases');
@@ -57,7 +57,7 @@ function charPage(e) {
   row('Registry rarity', e.rarity, 'rarity');
   if (e.level) row('Level', e.level, 'level');
   for (const [k, val] of Object.entries(e.ids ?? {})) row(`ID: ${k}`, val, `ids.${k}`);
-  row('Collections', e.collections.length ? e.collections.map((c) => COLL[c] ?? c).join(', ') : UNDEF, 'cards');
+  row('Collections', e.collections.length ? e.collections.map((c) => COLL[c] ?? c).join(', ') : 'None (no player card art linked)', 'cards');
   row('Cards linked', e.cards.length, 'cards');
   if (e.catalogue_status) row('Catalogue status', e.catalogue_status, 'catalogue_status');
   if (e.role_category) row('Role category', e.role_category, 'role_category');
@@ -108,13 +108,14 @@ function charPage(e) {
     if (e.profile_doc) L.push(`- ${link(out, e.profile_doc)}`);
     for (const r of im.doc_refs ?? []) L.push(`- ${link(out, r.path, r.line)}`);
   }
+  if (im.proposed) L.push(`- Proposed handler: \`${im.proposed.handler}\` (not written yet)`, `- Proposed command: \`${im.proposed.command}\``, `- Contract: ${esc(im.proposed.contract)}`, '', `<sub>source: \`${e.sources.implementation}\`</sub>`);
   if (im.status === 'not_defined') L.push(`_${UNDEF}: no code, workflow or docs reference this entry beyond its card art._`);
   L.push('', `<sub>${im.note}</sub>`);
   L.push('', '## Where and how it helps', '', '| Aspect | Value |', '|---|---|');
   row('Station / stage', e.helps.station, 'helps.station');
-  row('Mission', e.helps.mission, 'department_mission');
-  row('Problem it addresses', e.helps.problem, 'workflow.summary');
-  row('Safety gate', e.helps.proof_gate, 'workflow.proof_gate');
+  row('Mission', e.helps.mission, e.sources['helps.mission'] ? 'helps.mission' : 'department_mission');
+  row('Problem it addresses', e.helps.problem, e.sources['helps.problem'] ? 'helps.problem' : 'workflow.summary');
+  row('Safety gate', e.helps.proof_gate, e.sources['helps.proof_gate'] ? 'helps.proof_gate' : 'workflow.proof_gate');
   L.push('', '## Agents and repo pets', '');
   if (e.agents?.length) L.push('Agents: ' + e.agents.map((a) => `[${a.name}](../agents/${a.slug}.md)`).join(' · ') + src(e, 'agents'));
   if (e.repo_pets?.length) L.push('', 'Repo pets: ' + e.repo_pets.map((p) => `[${p.name}](../repo-pets/${p.slug}.md)`).join(' · ') + src(e, 'repo_pets'));
@@ -135,19 +136,41 @@ function charPage(e) {
 function unmatchedCardPage(c, ocr) {
   const out = c.page; const L = [];
   L.push('<!-- generated by tools/player-cards/scripts/build-character-pages.mjs; do not edit by hand -->');
-  L.push(`# Card: ${c.title ?? path.basename(c.file)}`, '');
+  L.push(`# Card: ${c.title ?? DET[c.file]?.title ?? path.basename(c.file)}`, '');
   L.push(`<a href="${rel(out, c.file)}"><img src="${rel(out, c.file)}" alt="${esc(c.title ?? '')}" width="480" /></a>`, '');
-  L.push(`This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [\`data/player-cards.json\`](../../data/player-cards.json) and OCR in [\`data/player-cards-ocr.json\`](../../data/player-cards-ocr.json).`, '');
+  L.push(`This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [\`data/player-cards.json\`](../../data/player-cards.json) and OCR in [\`data/player-cards-ocr.json\`](../../data/player-cards-ocr.json); the card profile comes from [\`data/card-details.json\`](../../data/card-details.json), where every field cites its source and values marked \`authored: card design\` were written for the card rather than found in the repo.`, '');
   L.push('| Field | Value |', '|---|---|');
-  L.push(`| Collection | ${COLL[c.collection] ?? c.collection} |`, `| Printed title | ${esc(c.title ?? UNDEF)} |`, `| File | [\`${c.file}\`](${rel(out, c.file)}) |`,
-    `| Original size | ${c.original_size ? c.original_size.join('×') : UNDEF} |`, `| Original source | \`${esc(c.source ?? UNDEF)}\` |`,
+  L.push(`| Collection | ${COLL[c.collection] ?? c.collection} |`, `| Printed title | ${esc(c.title ?? (DET[c.file] ? `${DET[c.file].title} (no title printed; name authored from the art)` : UNDEF))} |`, `| File | [\`${c.file}\`](${rel(out, c.file)}) |`,
+    `| Original size | ${c.original_size ? c.original_size.join('×') : 'Not recorded'} |`, `| Original source | \`${esc(c.source ?? UNDEF)}\` |`,
     `| Duplicates | ${c.duplicates?.length ? c.duplicates.map((d) => `\`${esc(d)}\``).join('<br>') : '—'} |`,
-    `| Character | ${UNDEF} |`, `| Agent | ${AG.filter((a) => a.cards.includes(c.page)).map((a) => `[${esc(a.name)}](../agents/${a.slug}.md)`).join(', ') || UNDEF} |`,
-    `| Repo pet | ${PE.filter((p) => p.cards.includes(c.page)).map((p) => `[${esc(p.name)}](../repo-pets/${p.slug}.md)`).join(', ') || UNDEF} |`, `| Workflow / actions / implementation | ${UNDEF} |`);
+  );
+  const d = DET[c.file];
+  if (d) {
+    const S = d.sources; const sb = (k) => (S[k] ? ` <sub>source: \`${esc(S[k])}\`</sub>` : '');
+    const lk = (xs, dir) => xs.map((x) => `[${esc(x.name)}](../${dir}/${x.slug}.md)`).join(' · ');
+    const arr = (x) => (Array.isArray(x) ? x.join(', ') : x);
+    L.push(`| Character | ${d.character ? `[${esc(d.character.name)}](../characters/${d.character.slug}.md) (canon crosswalk: ${d.character.status})` : 'No registry character matched yet (card-only design)'}${sb('character')} |`,
+      ...(d.visual ? [`| Visual design | ${esc(d.visual)}${sb('visual')} |`] : []), `| Role / title | ${esc(d.role)}${sb('role')} |`, `| Kitchen / department | ${esc(d.department)}${sb('department')} |`,
+      `| Department mission | ${esc(d.department_mission ?? 'n/a (spans every kitchen)')}${sb('department_mission')} |`, `| Rarity | ${esc(d.rarity)}${sb('rarity')} |`,
+      `| Printed rarity | ${esc(d.printed_rarity)}${sb('printed_rarity')} |`, `| Printed stars | ${esc(d.printed_stars)}${sb('printed_stars')} |`,
+      `| Roster stats | ${d.stats ? Object.entries(d.stats).map(([k, x]) => `${k} ${x}`).join(' · ') : 'Not applicable (reference artwork, not a playable character)'}${sb('stats')} |`,
+      `| Abilities | ${esc(d.abilities.join(', '))}${sb('abilities')} |`, `| Lore | ${esc(d.lore)}${sb('lore')} |`,
+      `| Signature phrase | ${esc(d.signature_phrase)}${sb('signature_phrase')} |`,
+      `| Agents | ${lk(d.agents, 'agents')}${sb('agents')} |`, `| Repo pets | ${lk(d.repo_pets, 'repo-pets')}${sb('repo_pets')} |`,
+      `| Related characters | ${lk(d.related, 'characters')}${sb('related')} |`);
+    L.push('', '## Workflow', '', '| Step | Value |', '|---|---|', `| Summary | ${esc(d.workflow.summary)}${sb('workflow')} |`, `| Inputs | ${esc(arr(d.workflow.inputs))} |`,
+      `| Outputs | ${esc(arr(d.workflow.outputs))} |`, `| Proof gate | ${esc(d.workflow.proof_gate)} |`, `| Problem it addresses | ${esc(d.problem)}${sb('problem')} |`);
+    L.push('', '## Actions / commands', '');
+    for (const a of d.actions) { const { source, ...rest } = a; L.push(`- ${Object.entries(rest).map(([k, x]) => `${k}: \`${x}\``).join(' · ')} <sub>source: \`${source}\`</sub>`); }
+    L.push('', '## Implementation', '', `**Status:** ${STATUS[d.implementation.status]}`, '', ...(d.implementation.handler ? [`- Proposed handler: \`${d.implementation.handler}\` (not written yet)`,
+      `- Proposed command: \`${d.implementation.command}\``, `- Contract: ${esc(d.implementation.contract)}`] : [d.implementation.note]), '', `<sub>source: \`${S.implementation}\`</sub>`);
+    L.push('', 'Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.');
+  }
   L.push('', '## Printed text (OCR)', '', ocr?.length ? ocr.map((x) => `- ${esc(x)}`).join('\n') : '_No text detected on this card._', '', '[← All characters](../characters/README.md)', '');
   return [out, L.join('\n')];
 }
 
+const DET = fs.existsSync('data/card-details.json') ? JSON.parse(fs.readFileSync('data/card-details.json', 'utf8')).cards : {};
 const AG = fs.existsSync('data/agents.json') ? JSON.parse(fs.readFileSync('data/agents.json', 'utf8')).agents : [];
 const PE = fs.existsSync('data/repo-pets.json') ? JSON.parse(fs.readFileSync('data/repo-pets.json', 'utf8')).pets : [];
 const v2 = (x) => (x === undefined || x === null || x === '' ? UNDEF : x);

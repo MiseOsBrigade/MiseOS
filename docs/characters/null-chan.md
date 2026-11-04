@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Referenced in app code (no dedicated handler)** · Detail record: [`data/characters/null-chan.json`](../../data/characters/null-chan.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Null-chan <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Null Chan <sub>source: `data/agents.json`</sub> |
 | Role / title | Cleanse <sub>source: `characters/null-chan/metadata.json`</sub> |
 | Kitchen / department | Reliability Kitchen <sub>source: `characters/null-chan/metadata.json`</sub> |
 | Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -42,13 +42,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Rare <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100%, 98.7% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 60 · precision 77 · speed 62 · resilience 66 · intelligence 70 · teamwork 70 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
 | Abilities | Null Sweep <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Mise Orchestra card | role: Plongeur · department: Reliability · function: Cleanse · rarity: Rare · tier: Maintenance Line · element: Void Soap · ability: Null Sweep · lore: Cleans up what is not needed. Keeps the kitchen light. <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Lore | Null-chan belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station. <sub>source: `data/imports/merged_roster.json`</sub> |
-| Signature phrase | Not yet defined in the source material |
+| Signature phrase | Every Action, then everything else. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -156,5 +156,9 @@ Repo pets: [Null-chan](../repo-pets/null-chan.md) <sub>source: `data/repo-pets.j
 | helps.station | `characters/null-chan/metadata.json` |
 | agents | `data/agents.json` |
 | repo_pets | `data/repo-pets.json` |
+| aliases | `data/agents.json` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

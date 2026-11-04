@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/ladle-lumen.json`](../../data/characters/ladle-lumen.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Ladle Lumen <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Broth Beacon <sub>source: `characters/ladle-lumen/metadata.json`</sub> |
 | Kitchen / department | Operations Kitchen <sub>source: `characters/ladle-lumen/metadata.json`</sub> |
 | Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -37,13 +37,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 80 · precision 76 · speed 67 · resilience 66 · intelligence 81 · teamwork 86 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Abilities | Broth Clarity, Broth Mastery, Aroma Resonance, Clarity, Umami, Depth <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Ladle Lumen when something is missing, which is exactly the point. Ladle Lumen builds the base flavours other stations depend on: reductions, stocks and mother sauces that must taste the same every time; the image the crew uses for it is the back burner where the stockpots never go cold. The card calls out Broth Clarity, Broth Mastery, Aroma Resonance: the checks Ladle Lumen runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Low and slow, never sloppy. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -90,7 +90,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Umami Code](../agents/umami-code.md) · [API Gateway](../agents/api-gateway.md) · [Architect](../agents/architect.md) <sub>source: `authored: card design (closest agents for theme "sauce")`</sub>
+
+Repo pets: [Umami Code](../repo-pets/umami-code.md) · [Mise Sauce](../repo-pets/mise-sauce.md) <sub>source: `authored: card design (closest repo pets for theme "sauce")`</sub>
 
 ## Related characters
 
@@ -128,5 +130,14 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/ladle-lumen/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "sauce")` |
+| repo_pets | `authored: card design (closest repo pets for theme "sauce")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

@@ -5,7 +5,7 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/vacuum-vesper.json`](../../data/characters/vacuum-vesper.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
@@ -37,13 +37,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
 | Roster stats | power 61 · precision 69 · speed 80 · resilience 78 · intelligence 61 · teamwork 83 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Abilities | Airpressure, Aled, Seal Mastery, Preservation, Protocol, Containment Level <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a shelf of labelled jars that each tell a story: that is where Vacuum Vesper is happiest. As Operations Kitchen's Seal Keeper, Vacuum Vesper manages slow processes (ferments, cures, brines) by tracking time, salinity and cultures until they are proven ready. The card calls out Airpressure, Aled, Seal Mastery: the checks Vacuum Vesper runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Start batch first, then service. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -90,7 +90,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Database](../agents/database.md) · [Logger](../agents/logger.md) · [Observatory](../agents/observatory.md) <sub>source: `authored: card design (closest agents for theme "ferment")`</sub>
+
+Repo pets: [Mise Apprentice](../repo-pets/mise-apprentice.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "ferment")`</sub>
 
 ## Related characters
 
@@ -130,5 +132,12 @@ Mentioned in [`docs/canon/MiseOS-Canon-Bible-v1.0.pdf`](../../docs/canon/MiseOS-
 | canon_bible | `docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/vacuum-vesper/metadata.json` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| agents | `authored: card design (closest agents for theme "ferment")` |
+| repo_pets | `authored: card design (closest repo pets for theme "ferment")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

@@ -3,45 +3,45 @@
 
 **Individual catalogue item (action / workflow / primitive)** · Implementation: **Implemented in code** · Detail record: [`data/characters/catalog-registry-schema.json`](../../data/characters/catalog-registry-schema.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | MiseOS Registry Schema <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | registry <sub>source: `data/imports/miseos-individual-catalog-items.json (category)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
-| Collections | Not yet defined in the source material |
+| Kitchen / department | Platform Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "platform")`</sub> |
+| Department mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Roster stats | power 74 · precision 78 · speed 80 · resilience 87 · intelligence 66 · teamwork 75 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "platform")`</sub> |
+| Abilities | registry, Install, Pin, Verify <sub>source: `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "platform")`</sub> |
+| Lore | Most of the brigade only notices MiseOS Registry Schema when something is missing, which is exactly the point. MiseOS Registry Schema provides a shared platform building block other kitchens install and build on; the image the crew uses for it is the stainless steel shelving every station is bolted to. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Build once, serve every kitchen. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 ## Workflow
 
 | Step | Value |
 |---|---|
 | Summary | Original registry manifest schema. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | consumer repository, manifest / configuration, version pin <sub>source: `authored: card design (theme "platform")`</sub> |
+| Outputs | installed capability, version record, compatibility report <sub>source: `authored: card design (theme "platform")`</sub> |
+| Proof gate | Golden-path gate: consumers install only pinned, signed versions that pass the registry schema. <sub>source: `authored: card design (theme "platform")`</sub> |
 
 ## Actions / commands
 
@@ -51,10 +51,10 @@ _Not yet defined in the source material (no player card art is linked to this en
 
 **Status:** Implemented in code
 
-- Tool directory: [`tools/devops-foundry/vendor/miseos-registry-core/registry`](../../tools/devops-foundry/vendor/miseos-registry-core/registry) (implemented in code)
+- Tool directory: [`apps/gridops-platform/packages/registry-platform/registry`](../../apps/gridops-platform/packages/registry-platform/registry) (implemented in code)
 
 Payload files (installed by this catalogue item):
-- [`tools/devops-foundry/vendor/miseos-registry-core/registry/registry-catalog.schema.json`](../../tools/devops-foundry/vendor/miseos-registry-core/registry/registry-catalog.schema.json)
+- [`apps/gridops-platform/packages/registry-platform/registry/registry-catalog.schema.json`](../../apps/gridops-platform/packages/registry-platform/registry/registry-catalog.schema.json)
 
 Application code that uses this entry:
 - [`apps/bootstrap-registry/packages/registry-schema/src/index.js:1`](../../apps/bootstrap-registry/packages/registry-schema/src/index.js#L1)
@@ -97,18 +97,20 @@ Docs that describe it (docs only, not code):
 
 | Aspect | Value |
 |---|---|
-| Station / stage | Not yet defined in the source material |
-| Mission | Not yet defined in the source material |
+| Station / stage | registry <sub>source: `role`</sub> |
+| Mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)`</sub> |
 | Problem it addresses | Original registry manifest schema. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Golden-path gate: consumers install only pinned, signed versions that pass the registry schema. <sub>source: `authored: card design (theme "platform")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Architect](../agents/architect.md) · [Terraformer](../agents/terraformer.md) · [Docker](../agents/docker.md) <sub>source: `authored: card design (closest agents for theme "platform")`</sub>
+
+Repo pets: [Mise Bootstrap](../repo-pets/mise-bootstrap.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "platform")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Dev Container / Codespaces](./catalog-primitive-devcontainer.md) · [npm GitHub Packages](./catalog-workflow-npm-github-package.md) · [Ruleset Baseline](./catalog-primitive-ruleset-baseline.md) · [Policy Kenji](./policy-kenji.md) · [Queue Mizu](./queue-mizu.md) · [Bootstrap Aiko](./bootstrap-aiko.md) <sub>source: `authored: card design (same theme "platform" / same department)`</sub>
 
 ## Sources
 
@@ -118,5 +120,26 @@ _Not yet defined in the source material_
 | role | `data/imports/miseos-individual-catalog-items.json (category)` |
 | workflow.summary | `data/imports/miseos-individual-catalog-items.json` |
 | implementation | `git ls-files grep + repo` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "platform")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "platform")` |
+| abilities | `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "platform")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "platform")` |
+| workflow.outputs | `authored: card design (theme "platform")` |
+| workflow.proof_gate | `authored: card design (theme "platform")` |
+| helps.station | `role` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "platform")` |
+| agents | `authored: card design (closest agents for theme "platform")` |
+| repo_pets | `authored: card design (closest repo pets for theme "platform")` |
+| related | `authored: card design (same theme "platform" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

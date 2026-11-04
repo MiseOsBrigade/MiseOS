@@ -3,7 +3,9 @@
   "slug": "miseos-repo-steward",
   "name": "MiseOS Repo Steward",
   "kind": "registry_manifest",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
     "registry_catalog": "data/imports/miseos-registry-catalog.csv",
@@ -21,7 +23,26 @@
     "compatibility": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
     "pricing": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
     "implementation": "git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts",
-    "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (marketplace.category)"
+    "helps.station": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json (marketplace.category)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"security\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "card_meters_printed": "data/player-cards-ocr.json (no % meters in OCR)",
+    "rarity": "data/player-cards-ocr.json (printed rarity)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"security\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "data/player-cards-ocr.json (text printed on the card)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.inputs": "authored: card design (theme \"security\")",
+    "workflow.outputs": "authored: card design (theme \"security\")",
+    "workflow.proof_gate": "authored: card design (theme \"security\")",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "helps.proof_gate": "authored: card design (theme \"security\")",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "related": "authored: card design (same theme \"security\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "manifest_path": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json",
   "registry_catalog": {
@@ -138,8 +159,8 @@
     }
   ],
   "card_rarity_printed": "Ultra Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
-  "card_meters_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
+  "card_meters_printed": "Not printed on the card",
   "runtime": {
     "engine": "node",
     "minimum_version": "20.11.0",
@@ -190,9 +211,14 @@
         "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
         "line": 26,
         "term": "repoSteward"
+      },
+      {
+        "path": "tools/universe/scripts/import-universe.py",
+        "line": 161,
+        "term": "MiseOS Repo Steward"
       }
     ],
-    "code_ref_count": 3,
+    "code_ref_count": 4,
     "data_refs": [
       {
         "path": "apps/bootstrap-registry/.miseos/sentinel/release-sentinel-report.json",
@@ -317,6 +343,11 @@
         "path": "tools/devops-foundry/vendor/miseos-registry-core/packages/core/src/handlers.ts",
         "line": 26,
         "term": "repoSteward"
+      },
+      {
+        "path": "tools/universe/scripts/import-universe.py",
+        "line": 161,
+        "term": "MiseOS Repo Steward"
       }
     ],
     "status": "implemented_in_code",
@@ -326,16 +357,25 @@
     "registry_id": "miseos.repo-steward"
   },
   "role": "Agent",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Security Kitchen",
+  "department_mission": "Guard. Audit. Comply.",
+  "rarity": "Ultra Mythic",
+  "lore": "Oversees all repositories with divine clarity Brings harmony to changes. Enforces sacred order.",
+  "signature_phrase": "Trust, then verify. Every time.",
   "workflow": {
     "summary": "Executable baseline capability for MiseOS Repo Steward.",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "inputs": [
+      "access requests",
+      "policy set",
+      "scan findings",
+      "secret inventory"
+    ],
+    "outputs": [
+      "allow / deny decision",
+      "audit record",
+      "remediation ticket"
+    ],
+    "proof_gate": "Policy gate: no access or release without a policy match and a recorded approver."
   },
   "actions": [
     {
@@ -344,14 +384,77 @@
       "source": "apps/registry-platform/registry/manifests/miseos.repo-steward.manifest.json"
     }
   ],
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "stats": {
+    "power": 72,
+    "precision": 80,
+    "speed": 75,
+    "resilience": 73,
+    "intelligence": 67,
+    "teamwork": 67
+  },
+  "related": [
+    {
+      "name": "MiseOS Maven Policy Adapter",
+      "slug": "miseos-maven-policy-adapter"
+    },
+    {
+      "name": "MiseOS Policy Engine",
+      "slug": "miseos-policy-engine"
+    },
+    {
+      "name": "MiseOS Repo Pet",
+      "slug": "miseos-repo-pet"
+    },
+    {
+      "name": "Container Kage",
+      "slug": "container-kage"
+    },
+    {
+      "name": "Merge Sentinel",
+      "slug": "merge-sentinel"
+    },
+    {
+      "name": "Policy Ronin",
+      "slug": "policy-ronin"
+    }
+  ],
   "helps": {
     "station": "Registry (agent)",
-    "mission": "Not yet defined in the source material",
+    "mission": "Guard. Audit. Comply.",
     "problem": "Executable baseline capability for MiseOS Repo Steward.",
-    "proof_gate": "Not yet defined in the source material"
+    "proof_gate": "Policy gate: no access or release without a policy match and a recorded approver."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "abilities": [
+    "Type: Agent",
+    "Branch",
+    "Guardian Ship",
+    "Merge",
+    "History",
+    "Discipline"
+  ],
+  "theme": "security"
 }

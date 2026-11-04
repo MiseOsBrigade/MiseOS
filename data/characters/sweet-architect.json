@@ -3,7 +3,9 @@
   "slug": "sweet-architect",
   "name": "Sweet Architect",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "Yume (canon crosswalk, provisional)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -12,8 +14,29 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv",
+    "department": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "rarity": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"plate\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"plate\")",
+    "workflow.inputs": "authored: card design (theme \"plate\")",
+    "workflow.outputs": "authored: card design (theme \"plate\")",
+    "workflow.proof_gate": "authored: card design (theme \"plate\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)",
+    "helps.problem": "authored: card design (theme \"plate\")",
+    "helps.proof_gate": "authored: card design (theme \"plate\")",
+    "agents": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json",
+    "repo_pets": "authored: card design (closest repo pets for theme \"plate\")",
+    "related": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme \"plate\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -65,7 +88,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%"
@@ -77,31 +100,127 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "sweetArchitect",
+      "command": "mise roster run sweet-architect --dept pipeline-kitchen --solo --emit report",
+      "contract": "inputs: cooked components, plating spec / style guide, ticket → outputs: plated dish, pass photo / visual check, send-back note when something is off; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Dessert Designer",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Pipeline Kitchen",
+  "department_mission": "Build. Test. Deploy. Repeat.",
+  "rarity": "Rare",
+  "lore": "Most of the brigade only notices Sweet Architect when something is missing, which is exactly the point. Sweet Architect finishes and presents the work: composition, garnish and a final visual check at the pass; the image the crew uses for it is the pass under warm lights, tweezers in hand. The card calls out Design Protocol, Creativity, Sweetness: the checks Sweet Architect runs before calling anything ready. In the canon crosswalk this card is a provisional match for Yume.",
+  "signature_phrase": "Every send-back note when something is off accounted for.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Sweet Architect finishes and presents the work: composition, garnish and a final visual check at the pass.",
+    "inputs": [
+      "cooked components",
+      "plating spec / style guide",
+      "ticket"
+    ],
+    "outputs": [
+      "plated dish",
+      "pass photo / visual check",
+      "send-back note when something is off"
+    ],
+    "proof_gate": "Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run sweet-architect --dept pipeline-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise sweet-architect plate",
+      "reads": "cooked components",
+      "emits": "plated dish",
+      "status": "proposed",
+      "source": "authored: card design (theme \"plate\")"
+    },
+    {
+      "command": "mise sweet-architect inspect",
+      "reads": "plating spec / style guide",
+      "emits": "pass photo / visual check",
+      "status": "proposed",
+      "source": "authored: card design (theme \"plate\")"
+    },
+    {
+      "command": "mise sweet-architect send",
+      "reads": "ticket",
+      "emits": "send-back note when something is off",
+      "status": "proposed",
+      "source": "authored: card design (theme \"plate\")"
+    }
+  ],
+  "stats": {
+    "power": 94,
+    "precision": 88,
+    "speed": 87,
+    "resilience": 91,
+    "intelligence": 83,
+    "teamwork": 89
+  },
+  "related": [
+    {
+      "name": "Yume",
+      "slug": "yume"
+    },
+    {
+      "name": "Plating Poet",
+      "slug": "plating-poet"
+    },
+    {
+      "name": "Zen Plater",
+      "slug": "zen-plater"
+    },
+    {
+      "name": "Cacao Alchemist",
+      "slug": "cacao-alchemist"
+    },
+    {
+      "name": "Release Conductor",
+      "slug": "release-conductor"
+    },
+    {
+      "name": "Hugo Matrix",
+      "slug": "hugo-matrix"
+    }
+  ],
   "helps": {
     "station": "Dessert Designer",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Build. Test. Deploy. Repeat.",
+    "problem": "Good work loses its value when the last step (UI, docs, release notes) is sloppy.",
+    "proof_gate": "Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "slug": "yume",
+      "name": "Yume",
+      "page": "docs/agents/yume.md"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Yume",
+      "slug": "yume"
+    },
+    {
+      "name": "Mise Garde",
+      "slug": "mise-garde"
+    }
+  ],
+  "abilities": [
+    "Design Protocol",
+    "Creativity",
+    "Sweetness",
+    "Precision",
+    "Texture",
+    "Harmony"
+  ],
+  "theme": "plate"
 }

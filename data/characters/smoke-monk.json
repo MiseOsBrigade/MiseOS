@@ -3,7 +3,9 @@
   "slug": "smoke-monk",
   "name": "Smoke Monk",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -12,8 +14,29 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "department": "authored: card design (kitchen chosen from role/printed text, theme \"heat\")",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "rarity": "authored: card design (from printed star count 5)",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"heat\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"heat\")",
+    "workflow.inputs": "authored: card design (theme \"heat\")",
+    "workflow.outputs": "authored: card design (theme \"heat\")",
+    "workflow.proof_gate": "authored: card design (theme \"heat\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Reliability Kitchen)",
+    "helps.problem": "authored: card design (theme \"heat\")",
+    "helps.proof_gate": "authored: card design (theme \"heat\")",
+    "agents": "authored: card design (closest agents for theme \"heat\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"heat\")",
+    "related": "authored: card design (same theme \"heat\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -64,7 +87,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%"
@@ -76,31 +99,136 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "smokeMonk",
+      "command": "mise roster run smoke-monk --dept reliability-kitchen --solo --emit report",
+      "contract": "inputs: ticket with doneness target, heat / load reading, timer, protein or batch on the pass → outputs: cooked-to-spec item, doneness check, heat log, escalation if the line runs hot; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Fumoir",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Reliability Kitchen",
+  "department_mission": "Observe. Measure. Improve.",
+  "rarity": "Legendary",
+  "lore": "Picture the flat-top at the peak of Friday service: that is where Smoke Monk is happiest. As Reliability Kitchen's specialist for fumoir, Smoke Monk runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn. The card calls out Smoke Control, Smoke Arts, Aroma Mastery: the checks Smoke Monk runs before calling anything ready.",
+  "signature_phrase": "Hot pan, calm hands.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Smoke Monk runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn.",
+    "inputs": [
+      "ticket with doneness target",
+      "heat / load reading",
+      "timer",
+      "protein or batch on the pass"
+    ],
+    "outputs": [
+      "cooked-to-spec item",
+      "doneness check",
+      "heat log",
+      "escalation if the line runs hot"
+    ],
+    "proof_gate": "Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run smoke-monk --dept reliability-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise smoke-monk sear",
+      "reads": "ticket with doneness target",
+      "emits": "cooked-to-spec item",
+      "status": "proposed",
+      "source": "authored: card design (theme \"heat\")"
+    },
+    {
+      "command": "mise smoke-monk probe",
+      "reads": "heat / load reading",
+      "emits": "doneness check",
+      "status": "proposed",
+      "source": "authored: card design (theme \"heat\")"
+    },
+    {
+      "command": "mise smoke-monk cool-down",
+      "reads": "timer",
+      "emits": "escalation if the line runs hot",
+      "status": "proposed",
+      "source": "authored: card design (theme \"heat\")"
+    }
+  ],
+  "stats": {
+    "power": 96,
+    "precision": 80,
+    "speed": 85,
+    "resilience": 93,
+    "intelligence": 93,
+    "teamwork": 82
+  },
+  "related": [
+    {
+      "name": "Ashen One",
+      "slug": "ashen-one"
+    },
+    {
+      "name": "Char Coach",
+      "slug": "char-coach"
+    },
+    {
+      "name": "Pan Phantom",
+      "slug": "pan-phantom"
+    },
+    {
+      "name": "SLO Sage",
+      "slug": "slo-sage"
+    },
+    {
+      "name": "Chaos Kaito",
+      "slug": "chaos-kaito"
+    },
+    {
+      "name": "Impact Ichi",
+      "slug": "impact-ichi"
+    }
+  ],
   "helps": {
     "station": "Fumoir",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Observe. Measure. Improve.",
+    "problem": "Under load, the hottest station is where quality collapses first (outages, burnt releases).",
+    "proof_gate": "Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kaji",
+      "slug": "kaji"
+    },
+    {
+      "name": "Scale Oni",
+      "slug": "scale-oni"
+    },
+    {
+      "name": "Perf Chef",
+      "slug": "perf-chef"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kaji",
+      "slug": "kaji"
+    },
+    {
+      "name": "Scale Oni",
+      "slug": "scale-oni"
+    }
+  ],
+  "abilities": [
+    "Smoke Control",
+    "Smoke Arts",
+    "Aroma Mastery",
+    "Infuse",
+    "Envelop",
+    "Transform"
+  ],
+  "theme": "heat"
 }

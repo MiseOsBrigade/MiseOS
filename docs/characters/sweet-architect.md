@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/sweet-architect.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/sweet-architect.webp" alt="Sweet Architect" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/sweet-architect.json`](../../data/characters/sweet-architect.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/sweet-architect.json`](../../data/characters/sweet-architect.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Sweet Architect <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Yume (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Dessert Designer <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Pipeline Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Registry rarity | Rare <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 94 · precision 88 · speed 87 · resilience 91 · intelligence 83 · teamwork 89 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "plate")`</sub> |
+| Abilities | Design Protocol, Creativity, Sweetness, Precision, Texture, Harmony <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Sweet Architect when something is missing, which is exactly the point. Sweet Architect finishes and presents the work: composition, garnish and a final visual check at the pass; the image the crew uses for it is the pass under warm lights, tweezers in hand. The card calls out Design Protocol, Creativity, Sweetness: the checks Sweet Architect runs before calling anything ready. In the canon crosswalk this card is a provisional match for Yume. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Every send-back note when something is off accounted for. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Sweet Architect finishes and presents the work: composition, garnish and a final visual check at the pass. <sub>source: `authored: card design (theme "plate")`</sub> |
+| Inputs | cooked components, plating spec / style guide, ticket <sub>source: `authored: card design (theme "plate")`</sub> |
+| Outputs | plated dish, pass photo / visual check, send-back note when something is off <sub>source: `authored: card design (theme "plate")`</sub> |
+| Proof gate | Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out. <sub>source: `authored: card design (theme "plate")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run sweet-architect --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise sweet-architect plate` · reads: `cooked components` · emits: `plated dish` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
+- command: `mise sweet-architect inspect` · reads: `plating spec / style guide` · emits: `pass photo / visual check` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
+- command: `mise sweet-architect send` · reads: `ticket` · emits: `send-back note when something is off` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `sweetArchitect` (not written yet)
+- Proposed command: `mise roster run sweet-architect --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: cooked components, plating spec / style guide, ticket → outputs: plated dish, pass photo / visual check, send-back note when something is off; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Dessert Designer <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Problem it addresses | Good work loses its value when the last step (UI, docs, release notes) is sloppy. <sub>source: `authored: card design (theme "plate")`</sub> |
+| Safety gate | Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out. <sub>source: `authored: card design (theme "plate")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Yume](../agents/yume.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json`</sub>
+
+Repo pets: [Yume](../repo-pets/yume.md) · [Mise Garde](../repo-pets/mise-garde.md) <sub>source: `authored: card design (closest repo pets for theme "plate")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Yume](./yume.md) · [Plating Poet](./plating-poet.md) · [Zen Plater](./zen-plater.md) · [Cacao Alchemist](./cacao-alchemist.md) · [Release Conductor](./release-conductor.md) · [Hugo Matrix](./hugo-matrix.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "plate" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "plate")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "plate")` |
+| workflow.inputs | `authored: card design (theme "plate")` |
+| workflow.outputs | `authored: card design (theme "plate")` |
+| workflow.proof_gate | `authored: card design (theme "plate")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| helps.problem | `authored: card design (theme "plate")` |
+| helps.proof_gate | `authored: card design (theme "plate")` |
+| agents | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/yume.json` |
+| repo_pets | `authored: card design (closest repo pets for theme "plate")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "plate" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

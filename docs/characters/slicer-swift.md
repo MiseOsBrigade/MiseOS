@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/slicer-swift.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/slicer-swift.webp" alt="Slicer Swift" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/slicer-swift.json`](../../data/characters/slicer-swift.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/slicer-swift.json`](../../data/characters/slicer-swift.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Slicer Swift <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Flash Riku (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Trancheur <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Pipeline Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Registry rarity | Epic <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 81 · precision 87 · speed 99 · resilience 85 · intelligence 85 · teamwork 79 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "blade")`</sub> |
+| Abilities | Swift Cut, Lv. Max, Slice Protocol, Precision, Speed, Technique <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Slicer Swift and they describe a freshly honed edge and a cutting board ruled in centimetres. As Pipeline Kitchen's specialist for trancheur, Slicer Swift breaks large work down into clean, consistent portions so every downstream station gets exactly what it needs, and the rest of the kitchen plans service around that rhythm. The card calls out Swift Cut, Lv. Max, Slice Protocol: the checks Slicer Swift runs before calling anything ready. In the canon crosswalk this card is a provisional match for Flash Riku. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Lv. Max: checked, not assumed. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Slicer Swift breaks large work down into clean, consistent portions so every downstream station gets exactly what it needs. <sub>source: `authored: card design (theme "blade")`</sub> |
+| Inputs | whole product / large task, portion spec, yield target <sub>source: `authored: card design (theme "blade")`</sub> |
+| Outputs | portioned units, yield report, trim / waste count <sub>source: `authored: card design (theme "blade")`</sub> |
+| Proof gate | Yield gate: portions are weighed against spec; out-of-tolerance cuts are re-trimmed or logged as waste before they reach a station. <sub>source: `authored: card design (theme "blade")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run slicer-swift --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise slicer-swift portion` · reads: `whole product / large task` · emits: `portioned units` · status: `proposed` <sub>source: `authored: card design (theme "blade")`</sub>
+- command: `mise slicer-swift weigh` · reads: `portion spec` · emits: `yield report` · status: `proposed` <sub>source: `authored: card design (theme "blade")`</sub>
+- command: `mise slicer-swift yield` · reads: `yield target` · emits: `trim / waste count` · status: `proposed` <sub>source: `authored: card design (theme "blade")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `slicerSwift` (not written yet)
+- Proposed command: `mise roster run slicer-swift --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: whole product / large task, portion spec, yield target → outputs: portioned units, yield report, trim / waste count; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Trancheur <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Problem it addresses | Oversized, uneven work items jam the line and waste effort. <sub>source: `authored: card design (theme "blade")`</sub> |
+| Safety gate | Yield gate: portions are weighed against spec; out-of-tolerance cuts are re-trimmed or logged as waste before they reach a station. <sub>source: `authored: card design (theme "blade")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Flash Riku](../agents/flash-riku.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json`</sub>
+
+Repo pets: [Iron Hashi](../repo-pets/iron-hashi.md) · [Flash Riku](../repo-pets/flash-riku.md) <sub>source: `authored: card design (closest repo pets for theme "blade")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Flash Riku](./flash-riku.md) · [Butcher Blade](./butcher-blade.md) · [Yume Builder](./yume-builder.md) · [Felix Rollback](./felix-rollback.md) · [Lila Branchkeeper](./lila-branchkeeper.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "blade" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "blade")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "blade")` |
+| workflow.inputs | `authored: card design (theme "blade")` |
+| workflow.outputs | `authored: card design (theme "blade")` |
+| workflow.proof_gate | `authored: card design (theme "blade")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| helps.problem | `authored: card design (theme "blade")` |
+| helps.proof_gate | `authored: card design (theme "blade")` |
+| agents | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/flash-riku.json` |
+| repo_pets | `authored: card design (closest repo pets for theme "blade")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "blade" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

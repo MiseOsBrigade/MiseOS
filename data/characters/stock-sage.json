@@ -3,7 +3,9 @@
   "slug": "stock-sage",
   "name": "Stock Sage",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "Pantry Paladin (canon crosswalk, provisional)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -11,8 +13,30 @@
     "card_meters_printed": "data/player-cards-ocr.json",
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
-    "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "implementation": "git ls-files grep + repo (no code found) + authored: proposed handler spec",
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv",
+    "department": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/pantry-paladin.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "rarity": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/pantry-paladin.json",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"sauce\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"sauce\")",
+    "workflow.inputs": "authored: card design (theme \"sauce\")",
+    "workflow.outputs": "authored: card design (theme \"sauce\")",
+    "workflow.proof_gate": "authored: card design (theme \"sauce\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)",
+    "helps.problem": "authored: card design (theme \"sauce\")",
+    "helps.proof_gate": "authored: card design (theme \"sauce\")",
+    "agents": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/pantry-paladin.json",
+    "repo_pets": "authored: card design (closest repo pets for theme \"sauce\")",
+    "related": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme \"sauce\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -69,8 +93,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -81,31 +105,135 @@
     "data_refs": [],
     "doc_refs": [],
     "app_code_refs": [],
-    "status": "not_defined",
-    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function."
+    "status": "designed_not_implemented",
+    "note": "implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.",
+    "proposed": {
+      "handler": "stockSage",
+      "command": "mise roster run stock-sage --dept operations-kitchen --solo --emit report",
+      "contract": "inputs: base recipe / spec, ingredient batch, taste targets (salt, acid, umami), station order → outputs: finished base batch, tasting note, batch label with date and allergens; refuses to emit 'ready' unless the proof gate passes"
+    }
   },
   "ids": {},
   "role": "Stockier",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Operations Kitchen",
+  "department_mission": "Keep the kitchen running smoothly.",
+  "rarity": "Epic",
+  "lore": "Most of the brigade only notices Stock Sage when something is missing, which is exactly the point. Stock Sage builds the base flavours other stations depend on: reductions, stocks and mother sauces that must taste the same every time; the image the crew uses for it is the back burner where the stockpots never go cold. The card calls out Simmer Mastery, Broth Craft, Select: the checks Stock Sage runs before calling anything ready. In the canon crosswalk this card is a provisional match for Pantry Paladin.",
+  "signature_phrase": "No elevate left to chance.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Stock Sage builds the base flavours other stations depend on: reductions, stocks and mother sauces that must taste the same every time.",
+    "inputs": [
+      "base recipe / spec",
+      "ingredient batch",
+      "taste targets (salt, acid, umami)",
+      "station order"
+    ],
+    "outputs": [
+      "finished base batch",
+      "tasting note",
+      "batch label with date and allergens"
+    ],
+    "proof_gate": "Taste-and-label check: a batch only ships to stations after it matches the spec on taste and carries a dated allergen label."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run stock-sage --dept operations-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise stock-sage reduce",
+      "reads": "base recipe / spec",
+      "emits": "finished base batch",
+      "status": "proposed",
+      "source": "authored: card design (theme \"sauce\")"
+    },
+    {
+      "command": "mise stock-sage taste",
+      "reads": "ingredient batch",
+      "emits": "tasting note",
+      "status": "proposed",
+      "source": "authored: card design (theme \"sauce\")"
+    },
+    {
+      "command": "mise stock-sage label",
+      "reads": "taste targets (salt, acid, umami)",
+      "emits": "batch label with date and allergens",
+      "status": "proposed",
+      "source": "authored: card design (theme \"sauce\")"
+    }
+  ],
+  "stats": {
+    "power": 77,
+    "precision": 73,
+    "speed": 80,
+    "resilience": 68,
+    "intelligence": 70,
+    "teamwork": 77
+  },
+  "related": [
+    {
+      "name": "Pantry Paladin",
+      "slug": "pantry-paladin"
+    },
+    {
+      "name": "Kombu Keeper",
+      "slug": "kombu-keeper"
+    },
+    {
+      "name": "Sauce Sage",
+      "slug": "sauce-sage"
+    },
+    {
+      "name": "Crisp Master",
+      "slug": "crisp-master"
+    },
+    {
+      "name": "Harvest Hex",
+      "slug": "harvest-hex"
+    },
+    {
+      "name": "Vacuum Vesper",
+      "slug": "vacuum-vesper"
+    }
+  ],
   "helps": {
     "station": "Stockier",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Keep the kitchen running smoothly.",
+    "problem": "Every dish downstream drifts when the shared base (or shared library) changes without anyone tasting it.",
+    "proof_gate": "Taste-and-label check: a batch only ships to stations after it matches the spec on taste and carries a dated allergen label."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Steward Prime",
+      "slug": "steward-prime"
+    },
+    {
+      "name": "PrepBot",
+      "slug": "prepbot"
+    },
+    {
+      "name": "Storage",
+      "slug": "storage"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Umami Code",
+      "slug": "umami-code"
+    },
+    {
+      "name": "Mise Sauce",
+      "slug": "mise-sauce"
+    }
+  ],
+  "abilities": [
+    "Simmer Mastery",
+    "Broth Craft",
+    "Select",
+    "Merge",
+    "Simmer",
+    "Refine"
+  ],
+  "theme": "sauce"
 }

@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/doc-writer.webp"><img src="../../assets/player-cards/1by1-chefs/doc-writer.webp" alt="Doc Writer" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /2F7CED4F-ADA2-4473-9038-1F8280839D1A.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Doc Writer](../agents/doc-writer.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Tariq Notesmith](../characters/tariq-notesmith.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Doc Scribe <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Pipeline Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/tariq-notesmith.json`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 69 · precision 65 · speed 84 · resilience 68 · intelligence 78 · teamwork 81 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "pipeline")`</sub> |
+| Abilities | Knowledge Base, Docs, Document, Track, Archive, Organize <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Picture a conveyor of tickets moving through the pass: that is where Doc Writer is happiest. As Pipeline Kitchen's specialist for doc scribe, Doc Writer runs an automated gate in the delivery pipeline. The card calls out Knowledge Base, Docs, Document: the checks Doc Writer runs before calling anything ready. In the canon crosswalk this card is a provisional match for Tariq Notesmith. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | No organize left to chance. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Doc Writer](../agents/doc-writer.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Tensho](../repo-pets/tensho.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "pipeline")`</sub> |
+| Related characters | [Tariq Notesmith](../characters/tariq-notesmith.md) · [Pipeline Sensei](../characters/pipeline-sensei.md) · [Capacity Kanna](../characters/capacity-kanna.md) · [Alko Commit Chef](../characters/alko-commit-chef.md) · [Bruno Blast Radius](../characters/bruno-blast-radius.md) · [Yume](../characters/yume.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "pipeline")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Doc Writer runs an automated gate in the delivery pipeline. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Inputs | pull request or tag, workflow configuration, repository state |
+| Outputs | check run / status, annotations, release artefact or block |
+| Proof gate | Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail. |
+| Problem it addresses | Manual release steps are skipped under pressure. <sub>source: `authored: card design (theme "pipeline")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run doc-writer --dept pipeline-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise doc-writer check` · reads: `pull request or tag` · emits: `check run / status` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise doc-writer gate` · reads: `workflow configuration` · emits: `annotations` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+- command: `mise doc-writer publish` · reads: `repository state` · emits: `release artefact or block` · status: `proposed` <sub>source: `authored: card design (theme "pipeline")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `docWriter` (not written yet)
+- Proposed command: `mise roster run doc-writer --dept pipeline-kitchen --solo --emit report`
+- Contract: inputs: pull request or tag, workflow configuration, repository state → outputs: check run / status, annotations, release artefact or block; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

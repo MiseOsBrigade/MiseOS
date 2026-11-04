@@ -3,20 +3,20 @@
 
 <a href="../../assets/player-cards/1by1-chefs/cacao-alchemist.webp"><img src="../../assets/player-cards/1by1-chefs/thumbs/cacao-alchemist.webp" alt="Cacao Alchemist" width="240" align="right" /></a>
 
-**Card-defined chef (catalogue: visual reference only)** · Implementation: **Not yet defined in the source material** · Detail record: [`data/characters/cacao-alchemist.json`](../../data/characters/cacao-alchemist.json)
+**Card-defined chef (catalogue: visual reference only)** · Implementation: **Designed (not yet implemented in code)** · Detail record: [`data/characters/cacao-alchemist.json`](../../data/characters/cacao-alchemist.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Cacao Alchemist <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Chocolatier <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Platform Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "plate")`</sub> |
+| Department mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)`</sub> |
+| Registry rarity | Legendary <sub>source: `authored: card design (from printed star count 5)`</sub> |
 | Collections | 1×1 Chefs <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -33,13 +33,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 99.9% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 91 · precision 98 · speed 87 · resilience 79 · intelligence 81 · teamwork 86 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "plate")`</sub> |
+| Abilities | Alchemical Grade, Chocolate Arts, Sweet Balance, Blend, Aroma, Temper <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Cacao Alchemist and they describe the pass under warm lights, tweezers in hand. As Platform Kitchen's Chocolatier, Cacao Alchemist finishes and presents the work: composition, garnish and a final visual check at the pass, and the rest of the kitchen plans service around that rhythm. The card calls out Alchemical Grade, Chocolate Arts, Sweet Balance: the checks Cacao Alchemist runs before calling anything ready. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | If it is not right, it goes back. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -51,20 +51,27 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Cacao Alchemist finishes and presents the work: composition, garnish and a final visual check at the pass. <sub>source: `authored: card design (theme "plate")`</sub> |
+| Inputs | cooked components, plating spec / style guide, ticket <sub>source: `authored: card design (theme "plate")`</sub> |
+| Outputs | plated dish, pass photo / visual check, send-back note when something is off <sub>source: `authored: card design (theme "plate")`</sub> |
+| Proof gate | Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out. <sub>source: `authored: card design (theme "plate")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run cacao-alchemist --dept platform-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise cacao-alchemist plate` · reads: `cooked components` · emits: `plated dish` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
+- command: `mise cacao-alchemist inspect` · reads: `plating spec / style guide` · emits: `pass photo / visual check` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
+- command: `mise cacao-alchemist send` · reads: `ticket` · emits: `send-back note when something is off` · status: `proposed` <sub>source: `authored: card design (theme "plate")`</sub>
 
 ## Implementation
 
-**Status:** Not yet defined in the source material
+**Status:** Designed (not yet implemented in code)
 
-_Not yet defined in the source material: no code, workflow or docs reference this entry beyond its card art._
+- Proposed handler: `cacaoAlchemist` (not written yet)
+- Proposed command: `mise roster run cacao-alchemist --dept platform-kitchen --solo --emit report`
+- Contract: inputs: cooked components, plating spec / style guide, ticket → outputs: plated dish, pass photo / visual check, send-back note when something is off; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `git ls-files grep + repo (no code found) + authored: proposed handler spec`</sub>
 
 <sub>implemented_in_code = a dedicated capability handler or tool directory exists; referenced_in_app_code = the entity is used by application source (e.g. repo-pet sprites, CLI) but has no dedicated handler. code_refs are files that reference this entity by name/slug/handler (grep), not a guarantee of a dedicated runtime; registry handler links point at the actual capability function.</sub>
 
@@ -73,17 +80,19 @@ _Not yet defined in the source material: no code, workflow or docs reference thi
 | Aspect | Value |
 |---|---|
 | Station / stage | Chocolatier <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Provide golden paths and stable service foundations. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)`</sub> |
+| Problem it addresses | Good work loses its value when the last step (UI, docs, release notes) is sloppy. <sub>source: `authored: card design (theme "plate")`</sub> |
+| Safety gate | Pass inspection: each plate is compared to the spec image before it leaves; mismatches go back, never out. <sub>source: `authored: card design (theme "plate")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [UX Chef](../agents/ux-chef.md) · [DevRel](../agents/devrel.md) · [Doc Writer](../agents/doc-writer.md) <sub>source: `authored: card design (closest agents for theme "plate")`</sub>
+
+Repo pets: [Yume](../repo-pets/yume.md) · [Mise Garde](../repo-pets/mise-garde.md) <sub>source: `authored: card design (closest repo pets for theme "plate")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Sweet Architect](./sweet-architect.md) · [Plating Poet](./plating-poet.md) · [Zen Plater](./zen-plater.md) · [Kuro Guard](./kuro-guard.md) · [Bootstrap Aiko](./bootstrap-aiko.md) · [Portal Rei](./portal-rei.md) <sub>source: `authored: card design (same theme "plate" / same department)`</sub>
 
 ## Sources
 
@@ -96,7 +105,28 @@ _Not yet defined in the source material_
 | card_meters_printed | `data/player-cards-ocr.json` |
 | role | `data/player-cards-ocr.json (subtitle printed under the name)` |
 | catalogue_status | `data/imports/photo-alignment.csv` |
-| implementation | `git ls-files grep + repo` |
+| implementation | `git ls-files grep + repo (no code found) + authored: proposed handler spec` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "plate")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| rarity | `authored: card design (from printed star count 5)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "plate")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "plate")` |
+| workflow.inputs | `authored: card design (theme "plate")` |
+| workflow.outputs | `authored: card design (theme "plate")` |
+| workflow.proof_gate | `authored: card design (theme "plate")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Platform Kitchen)` |
+| helps.problem | `authored: card design (theme "plate")` |
+| helps.proof_gate | `authored: card design (theme "plate")` |
+| agents | `authored: card design (closest agents for theme "plate")` |
+| repo_pets | `authored: card design (closest repo pets for theme "plate")` |
+| related | `authored: card design (same theme "plate" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

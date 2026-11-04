@@ -3,7 +3,9 @@
   "slug": "shift-sentinel",
   "name": "Shift Sentinel",
   "kind": "card_character",
-  "aliases": [],
+  "aliases": [
+    "Watchtower Yoru (canon crosswalk, provisional)"
+  ],
   "sources": {
     "name": "data/imports/photo-alignment.csv",
     "cards": "data/player-cards.json",
@@ -12,7 +14,29 @@
     "role": "data/player-cards-ocr.json (subtitle printed under the name)",
     "catalogue_status": "data/imports/photo-alignment.csv",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)"
+    "helps.station": "data/player-cards-ocr.json (subtitle printed under the name)",
+    "aliases": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv",
+    "department": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/watchtower-yoru.json",
+    "department_mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "rarity": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/watchtower-yoru.json",
+    "stats": "authored: card design (6-axis roster scale; baseline from stars + theme \"security\")",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "workflow.summary": "authored: card design (theme \"security\")",
+    "workflow.inputs": "authored: card design (theme \"security\")",
+    "workflow.outputs": "authored: card design (theme \"security\")",
+    "workflow.proof_gate": "authored: card design (theme \"security\")",
+    "actions": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)",
+    "helps.mission": "data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)",
+    "helps.problem": "authored: card design (theme \"security\")",
+    "helps.proof_gate": "authored: card design (theme \"security\")",
+    "agents": "authored: card design (closest agents for theme \"security\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"security\")",
+    "related": "docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme \"security\" / same department)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "photo_alignment": [
     {
@@ -120,8 +144,8 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -149,26 +173,121 @@
   },
   "ids": {},
   "role": "Veilleur",
-  "department": "Not yet defined in the source material",
-  "department_mission": "Not yet defined in the source material",
-  "rarity": "Not yet defined in the source material",
-  "lore": "Not yet defined in the source material",
-  "signature_phrase": "Not yet defined in the source material",
+  "department": "Security Kitchen",
+  "department_mission": "Guard. Audit. Comply.",
+  "rarity": "Common",
+  "lore": "Most of the brigade only notices Shift Sentinel when something is missing, which is exactly the point. Shift Sentinel guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception; the image the crew uses for it is the locked dry store and the keyring that never leaves the belt. The card calls out Coverage Matrix, Continuity, Guardian: the checks Shift Sentinel runs before calling anything ready. In the canon crosswalk this card is a provisional match for Watchtower Yoru.",
+  "signature_phrase": "Full Coverage, then everything else.",
   "workflow": {
-    "summary": "Not yet defined in the source material",
-    "inputs": "Not yet defined in the source material",
-    "outputs": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "summary": "Shift Sentinel guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception.",
+    "inputs": [
+      "access requests",
+      "policy set",
+      "scan findings",
+      "secret inventory"
+    ],
+    "outputs": [
+      "allow / deny decision",
+      "audit record",
+      "remediation ticket"
+    ],
+    "proof_gate": "Policy gate: no access or release without a policy match and a recorded approver."
   },
-  "actions": "Not yet defined in the source material",
-  "stats": "Not yet defined in the source material",
-  "related": "Not yet defined in the source material",
+  "actions": [
+    {
+      "command": "mise roster run shift-sentinel --dept security-kitchen --solo --emit report",
+      "status": "proposed",
+      "source": "authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)"
+    },
+    {
+      "command": "mise shift-sentinel scan",
+      "reads": "access requests",
+      "emits": "allow / deny decision",
+      "status": "proposed",
+      "source": "authored: card design (theme \"security\")"
+    },
+    {
+      "command": "mise shift-sentinel enforce",
+      "reads": "policy set",
+      "emits": "audit record",
+      "status": "proposed",
+      "source": "authored: card design (theme \"security\")"
+    },
+    {
+      "command": "mise shift-sentinel audit",
+      "reads": "scan findings",
+      "emits": "remediation ticket",
+      "status": "proposed",
+      "source": "authored: card design (theme \"security\")"
+    }
+  ],
+  "stats": {
+    "power": 79,
+    "precision": 81,
+    "speed": 73,
+    "resilience": 73,
+    "intelligence": 74,
+    "teamwork": 73
+  },
+  "related": [
+    {
+      "name": "Watchtower Yoru",
+      "slug": "watchtower-yoru"
+    },
+    {
+      "name": "Legacy Keeper",
+      "slug": "legacy-keeper"
+    },
+    {
+      "name": "Seira Vaultkeeper",
+      "slug": "seira-vaultkeeper"
+    },
+    {
+      "name": "Threat Taro",
+      "slug": "threat-taro"
+    },
+    {
+      "name": "CVE Kumo",
+      "slug": "cve-kumo"
+    }
+  ],
   "helps": {
     "station": "Veilleur",
-    "mission": "Not yet defined in the source material",
-    "problem": "Not yet defined in the source material",
-    "proof_gate": "Not yet defined in the source material"
+    "mission": "Guard. Audit. Comply.",
+    "problem": "Unchecked access and leaked secrets turn one mistake into an incident.",
+    "proof_gate": "Policy gate: no access or release without a policy match and a recorded approver."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Firewall",
+      "slug": "firewall"
+    },
+    {
+      "name": "Security Auditor",
+      "slug": "security-auditor"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Kuro Guard",
+      "slug": "kuro-guard"
+    },
+    {
+      "name": "Mise Locker",
+      "slug": "mise-locker"
+    }
+  ],
+  "abilities": [
+    "Coverage Matrix",
+    "Continuity",
+    "Guardian",
+    "Full Coverage",
+    "Consistency",
+    "Quality"
+  ],
+  "theme": "security"
 }

@@ -5,18 +5,18 @@
 
 **Registry manifest (product / tool)** · Implementation: **Implemented in code** · Detail record: [`data/characters/miseos-sbom-indexer.json`](../../data/characters/miseos-sbom-indexer.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | MiseOS SBOM Indexer <sub>source: `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | Agent <sub>source: `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json (type)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Operations Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "supply")`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
+| Registry rarity | Mythic <sub>source: `data/player-cards-ocr.json (printed rarity)`</sub> |
 | ID: registry_id | miseos.sbom-indexer <sub>source: `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json`</sub> |
 | Collections | Long Cards <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 1 <sub>source: `data/player-cards.json`</sub> |
@@ -34,12 +34,12 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Mythic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
+| Roster stats | power 73 · precision 80 · speed 79 · resilience 68 · intelligence 68 · teamwork 82 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "supply")`</sub> |
+| Abilities | Type: Agent, Dependency, Constellations, Sbom Schema, Spdx 2.3, Cyclonedx 1.6 <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | The oracle of materials and the keeper of truth. I see every component. I index every origin. <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | Scout first, then service. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -52,9 +52,9 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Step | Value |
 |---|---|
 | Summary | Executable baseline capability for MiseOS SBOM Indexer. <sub>source: `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json (capability.description)`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades <sub>source: `authored: card design (theme "supply")`</sub> |
+| Outputs | scout report, reserve status (ready / low / out), reorder list, traceability record <sub>source: `authored: card design (theme "supply")`</sub> |
+| Proof gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Actions / commands
 
@@ -110,17 +110,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Registry (agent) <sub>source: `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json (marketplace.category)`</sub> |
-| Mission | Not yet defined in the source material |
+| Mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)`</sub> |
 | Problem it addresses | Executable baseline capability for MiseOS SBOM Indexer. <sub>source: `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json (capability.description)`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. <sub>source: `authored: card design (theme "supply")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Steward Prime](../agents/steward-prime.md) · [PrepBot](../agents/prepbot.md) · [Storage](../agents/storage.md) <sub>source: `authored: card design (closest agents for theme "supply")`</sub>
+
+Repo pets: [Mise Sommelier](../repo-pets/mise-sommelier.md) · [Mizu](../repo-pets/mizu.md) <sub>source: `authored: card design (closest repo pets for theme "supply")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Ledger Ladle](./ledger-ladle.md) · [Crate Courier](./crate-courier.md) · [Ladle Lumen](./ladle-lumen.md) <sub>source: `authored: card design (same theme "supply" / same department)`</sub>
 
 ## Sources
 
@@ -143,5 +145,24 @@ _Not yet defined in the source material_
 | pricing | `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json` |
 | implementation | `git ls-files grep + apps/registry-platform/packages/core/src/handlers.ts` |
 | helps.station | `apps/registry-platform/registry/manifests/miseos.sbom-indexer.manifest.json (marketplace.category)` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "supply")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| rarity | `data/player-cards-ocr.json (printed rarity)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "supply")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `data/player-cards-ocr.json (text printed on the card)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "supply")` |
+| workflow.outputs | `authored: card design (theme "supply")` |
+| workflow.proof_gate | `authored: card design (theme "supply")` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Operations Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "supply")` |
+| agents | `authored: card design (closest agents for theme "supply")` |
+| repo_pets | `authored: card design (closest repo pets for theme "supply")` |
+| related | `authored: card design (same theme "supply" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

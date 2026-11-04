@@ -3,7 +3,9 @@
   "slug": "resilience-ryu",
   "name": "Resilience Ryu",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -29,7 +31,14 @@
     "unique_trait": "data/imports/merged_roster.json",
     "role_category": "data/imports/merged_roster.json",
     "implementation": "git ls-files grep + repo",
-    "helps.station": "characters/resilience-ryu/metadata.json"
+    "helps.station": "characters/resilience-ryu/metadata.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_stars_printed": "data/player-cards-ocr.json (no stars in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"quality\")",
+    "repo_pets": "authored: card design (closest repo pets for theme \"quality\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 98,
@@ -89,7 +98,7 @@
     }
   ],
   "card_rarity_printed": "Mythic",
-  "card_stars_printed": "Not yet defined in the source material",
+  "card_stars_printed": "Not printed on the card",
   "card_meters_printed": [
     "100%"
   ],
@@ -174,7 +183,7 @@
   "department": "Reliability Kitchen",
   "department_mission": "Observe. Measure. Improve.",
   "rarity": "Rare",
-  "lore": "Not yet defined in the source material",
+  "lore": "Ask the brigade about Resilience Ryu and they describe a spoon in every pot. As Reliability Kitchen's specialist for resilience testing loop, Resilience Ryu tastes and tests before anything is served: reviews, checks and canaries against the spec, and the rest of the kitchen plans service around that rhythm. The card calls out Incident Recovery, Uptime, Always On: the checks Resilience Ryu runs before calling anything ready.",
   "signature_phrase": "Resilience Testing Loop done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Resilience Ryu performs resilience testing loop within the Reliability Kitchen.",
@@ -242,6 +251,37 @@
     "problem": "Resilience Ryu performs resilience testing loop within the Reliability Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
-  "repo_pets": []
+  "agents": [
+    {
+      "name": "Reviewer",
+      "slug": "reviewer"
+    },
+    {
+      "name": "Tester",
+      "slug": "tester"
+    },
+    {
+      "name": "Quality Guard",
+      "slug": "quality-guard"
+    }
+  ],
+  "repo_pets": [
+    {
+      "name": "Mise Garde",
+      "slug": "mise-garde"
+    },
+    {
+      "name": "Mise Brigadier",
+      "slug": "mise-brigadier"
+    }
+  ],
+  "abilities": [
+    "Incident Recovery",
+    "Uptime",
+    "Always On",
+    "Slo Monitor",
+    "System Repair",
+    "Recovery"
+  ],
+  "theme": "quality"
 }

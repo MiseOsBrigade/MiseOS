@@ -5,14 +5,14 @@
 
 **Registry character agent** · Implementation: **Described in docs only** · Detail record: [`data/characters/metrics-miko.json`](../../data/characters/metrics-miko.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Metrics Miko <sub>source: `data/characters.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | SLO Dashboards <sub>source: `characters/metrics-miko/metadata.json`</sub> |
 | Kitchen / department | Reliability Kitchen <sub>source: `characters/metrics-miko/metadata.json`</sub> |
 | Department mission | Observe. Measure. Improve. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
@@ -39,8 +39,8 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 | Field | Value |
 |---|---|
 | Printed rarity | Epic <sub>source: `data/player-cards-ocr.json`</sub> |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json (no stars in OCR)`</sub> |
+| Printed meters | Not printed on the card <sub>source: `data/player-cards-ocr.json (no % meters in OCR)`</sub> |
 | Roster stats | power 67 · precision 82 · speed 61 · resilience 72 · intelligence 90 · teamwork 87 <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (roster stats, not OCR)`</sub> |
 | Abilities | Metric Reading <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
 | Mise Orchestra card | role: Guest Chef · department: Reliability · function: Measure · rarity: Epic · tier: Observability Line · element: Signal Clock · ability: Metric Reading · lore: Reads the numbers. Metrics guide every decision. <sub>source: `data/imports/mise_orchestra_cards.csv`</sub> |
@@ -109,7 +109,9 @@ Docs that describe it (docs only, not code):
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Observatory](../agents/observatory.md) · [Prometheus](../agents/prometheus.md) · [Risk Oracle](../agents/risk-oracle.md) <sub>source: `authored: card design (closest agents for theme "data")`</sub>
+
+Repo pets: [Flag Fox](../repo-pets/flag-fox.md) · [Mise Lattice](../repo-pets/mise-lattice.md) <sub>source: `authored: card design (closest repo pets for theme "data")`</sub>
 
 ## Related characters
 
@@ -146,5 +148,11 @@ _Not yet defined in the source material_
 | abilities | `data/imports/mise_orchestra_cards.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `characters/metrics-miko/metadata.json` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| card_stars_printed | `data/player-cards-ocr.json (no stars in OCR)` |
+| card_meters_printed | `data/player-cards-ocr.json (no % meters in OCR)` |
+| agents | `authored: card design (closest agents for theme "data")` |
+| repo_pets | `authored: card design (closest repo pets for theme "data")` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

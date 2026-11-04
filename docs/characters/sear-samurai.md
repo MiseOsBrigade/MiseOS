@@ -5,18 +5,18 @@
 
 **Card-defined chef (catalogue: visual reference only)** · Implementation: **Described in docs only** · Detail record: [`data/characters/sear-samurai.json`](../../data/characters/sear-samurai.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Sear Samurai <sub>source: `data/imports/photo-alignment.csv`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | Red Oni (canon crosswalk, provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
 | Role / title | Grillardin <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
+| Kitchen / department | Security Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Registry rarity | Epic <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json`</sub> |
 | Collections | 1×1 Chefs, Registry Catalogue Pages <sub>source: `data/player-cards.json`</sub> |
 | Cards linked | 3 <sub>source: `data/player-cards.json`</sub> |
 | Catalogue status | visual_reference_only <sub>source: `data/imports/photo-alignment.csv`</sub> |
@@ -37,13 +37,13 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json (no rarity word in OCR)`</sub> |
 | Printed stars | 5 <sub>source: `data/player-cards-ocr.json`</sub> |
 | Printed meters | 100% <sub>source: `data/player-cards-ocr.json`</sub> |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Roster stats | power 90 · precision 90 · speed 88 · resilience 80 · intelligence 85 · teamwork 95 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "heat")`</sub> |
+| Abilities | Heat Control, Sear Mastery, Timing, Char Artistry, Pressure, Angle <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Most of the brigade only notices Sear Samurai when something is missing, which is exactly the point. Sear Samurai runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn; the image the crew uses for it is the flat-top at the peak of Friday service. The card calls out Heat Control, Sear Mastery, Timing: the checks Sear Samurai runs before calling anything ready. In the canon crosswalk this card is a provisional match for Red Oni. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Sear·Strike, then everything else. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 <details><summary>Full printed card text (OCR)</summary>
 
@@ -59,14 +59,17 @@ Every field below comes from a repository source (shown as `source:`). Where no 
 
 | Step | Value |
 |---|---|
-| Summary | Not yet defined in the source material |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Summary | Sear Samurai runs the high-heat line: controls flame, timing and doneness so pressure never turns into burn. <sub>source: `authored: card design (theme "heat")`</sub> |
+| Inputs | ticket with doneness target, heat / load reading, timer, protein or batch on the pass <sub>source: `authored: card design (theme "heat")`</sub> |
+| Outputs | cooked-to-spec item, doneness check, heat log, escalation if the line runs hot <sub>source: `authored: card design (theme "heat")`</sub> |
+| Proof gate | Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served. <sub>source: `authored: card design (theme "heat")`</sub> |
 
 ## Actions / commands
 
-_Not yet defined in the source material_
+- command: `mise roster run sear-samurai --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise sear-samurai sear` · reads: `ticket with doneness target` · emits: `cooked-to-spec item` · status: `proposed` <sub>source: `authored: card design (theme "heat")`</sub>
+- command: `mise sear-samurai probe` · reads: `heat / load reading` · emits: `doneness check` · status: `proposed` <sub>source: `authored: card design (theme "heat")`</sub>
+- command: `mise sear-samurai cool-down` · reads: `timer` · emits: `escalation if the line runs hot` · status: `proposed` <sub>source: `authored: card design (theme "heat")`</sub>
 
 ## Implementation
 
@@ -86,17 +89,19 @@ Docs that describe it (docs only, not code):
 | Aspect | Value |
 |---|---|
 | Station / stage | Grillardin <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
-| Mission | Not yet defined in the source material |
-| Problem it addresses | Not yet defined in the source material |
-| Safety gate | Not yet defined in the source material |
+| Mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)`</sub> |
+| Problem it addresses | Under load, the hottest station is where quality collapses first (outages, burnt releases). <sub>source: `authored: card design (theme "heat")`</sub> |
+| Safety gate | Doneness gate: nothing leaves the station without a probe/timer reading inside the target band; overheated runs are pulled, not served. <sub>source: `authored: card design (theme "heat")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Kuro Guard](../agents/kuro-guard.md) · [Firewall](../agents/firewall.md) · [Security Auditor](../agents/security-auditor.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json`</sub>
+
+Repo pets: [Kaji](../repo-pets/kaji.md) · [Scale Oni](../repo-pets/scale-oni.md) <sub>source: `authored: card design (closest repo pets for theme "heat")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[Red Oni](./red-oni.md) · [Char Coach](./char-coach.md) · [Pan Phantom](./pan-phantom.md) · [Ashen One](./ashen-one.md) · [Evidence Scribe](./evidence-scribe.md) · [Token Toshi](./token-toshi.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "heat" / same department)`</sub>
 
 ## Sources
 
@@ -111,5 +116,26 @@ _Not yet defined in the source material_
 | catalogue_status | `data/imports/photo-alignment.csv` |
 | implementation | `git ls-files grep + repo` |
 | helps.station | `data/player-cards-ocr.json (subtitle printed under the name)` |
+| aliases | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv` |
+| department | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| card_rarity_printed | `data/player-cards-ocr.json (no rarity word in OCR)` |
+| rarity | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "heat")` |
+| abilities | `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.summary | `authored: card design (theme "heat")` |
+| workflow.inputs | `authored: card design (theme "heat")` |
+| workflow.outputs | `authored: card design (theme "heat")` |
+| workflow.proof_gate | `authored: card design (theme "heat")` |
+| actions | `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Security Kitchen)` |
+| helps.problem | `authored: card design (theme "heat")` |
+| helps.proof_gate | `authored: card design (theme "heat")` |
+| agents | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/red-oni.json` |
+| repo_pets | `authored: card design (closest repo pets for theme "heat")` |
+| related | `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv (canon counterpart) + authored: card design (same theme "heat" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)

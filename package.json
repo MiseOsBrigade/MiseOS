@@ -19,7 +19,8 @@
     "test:workspaces": "npm test --workspaces --if-present",
     "build:workspaces": "npm run build --workspaces --if-present",
     "cards:pages": "node tools/player-cards/scripts/build-character-pages.mjs",
-    "cards:align": "python3 tools/player-cards/scripts/align-characters.py && npm run cards:pages",
+    "cards:enrich": "python3 tools/player-cards/scripts/enrich-characters.py",
+    "cards:align": "python3 tools/player-cards/scripts/align-characters.py && npm run cards:enrich && npm run cards:pages",
     "validate:pages": "node scripts/validate-character-pages.mjs && node tools/player-cards/scripts/build-character-pages.mjs --check",
     "validate:universe": "node scripts/validate-universe.mjs",
     "universe:import": "python3 tools/universe/scripts/import-universe.py && python3 tools/universe/scripts/import-source-library.py && npm run cards:align && node tools/repo-pet/scripts/build-readme-pets.mjs"

@@ -3,7 +3,9 @@
   "slug": "build-kun",
   "name": "Build-Kun",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "Build Kun"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -33,7 +35,10 @@
     "implementation": "git ls-files grep + repo",
     "helps.station": "characters/build-kun/metadata.json",
     "agents": "data/agents.json",
-    "repo_pets": "data/repo-pets.json"
+    "repo_pets": "data/repo-pets.json",
+    "aliases": "data/agents.json",
+    "signature_phrase": "authored: card design (derived from printed card text/role)",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 1,
@@ -348,7 +353,7 @@
   "department_mission": "Build. Test. Deploy. Repeat.",
   "rarity": "Rare",
   "lore": "Build-Kun belongs to the Kitchen Chaos DevOps Universe, where every technical workflow becomes a coordinated brigade station.",
-  "signature_phrase": "Not yet defined in the source material",
+  "signature_phrase": "Sear first, then service.",
   "workflow": {
     "summary": "Build-Kun performs build within the Pipeline Kitchen.",
     "inputs": [
@@ -411,5 +416,6 @@
       "name": "Build-Kun",
       "page": "docs/repo-pets/build-kun.md"
     }
-  ]
+  ],
+  "theme": "heat"
 }

@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/1by1-chefs/dispatcher.webp"><img src="../../assets/player-cards/1by1-chefs/dispatcher.webp" alt="Dispatcher" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1254×1254 |
 | Original source | `extract:img-1by1-chefs/1by1 chefs /1F715020-F12D-47C9-AC1D-EB85F67C8A16.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | [Dispatcher](../agents/dispatcher.md) |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | [Ticket Tactician](../characters/ticket-tactician.md) (canon crosswalk: provisional) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv`</sub> |
+| Role / title | Task Dispatcher * <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Operations Kitchen <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv → data/characters/ticket-tactician.json`</sub> |
+| Department mission | Keep the kitchen running smoothly. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 70 · precision 67 · speed 81 · resilience 71 · intelligence 69 · teamwork 78 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "supply")`</sub> |
+| Abilities | Task Routing Protocol, Analyze, Dispatch, Assign, Optimize, Confirm <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | Ask the brigade about Dispatcher and they describe the loading dock before dawn. As Operations Kitchen's specialist for task dispatcher *, Dispatcher scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on, and the rest of the kitchen plans service around that rhythm. The card calls out Task Routing Protocol, Analyze, Dispatch: the checks Dispatcher runs before calling anything ready. In the canon crosswalk this card is a provisional match for Ticket Tactician. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | Optimize, then everything else. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Dispatcher](../agents/dispatcher.md) <sub>source: `data/agents.json`</sub> |
+| Repo pets | [Mise Sommelier](../repo-pets/mise-sommelier.md) · [Mizu](../repo-pets/mizu.md) <sub>source: `authored: card design (closest repo pets for theme "supply")`</sub> |
+| Related characters | [Ticket Tactician](../characters/ticket-tactician.md) · [Pantry Paladin](../characters/pantry-paladin.md) · [Beacon Broil](../characters/beacon-broil.md) · [Supply Scout](../characters/supply-scout.md) · [Spice Alchemist](../characters/spice-alchemist.md) · [Flavor Forager](../characters/flavor-forager.md) <sub>source: `docs/source-library/icloud/Catalogue/All images/Mise/MiseOS Bible/MiseOS-Canon-Bible-v1.0-package.zip/miseos_canon_bible_v1_0/registry/asset-registry.csv + authored: card design (same theme "supply")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Dispatcher scouts inbound supply, checks stock levels against par and secures the route for every ingredient the line depends on. <sub>source: `authored: card design (theme "supply")`</sub> |
+| Inputs | stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades |
+| Outputs | scout report, reserve status (ready / low / out), reorder list, traceability record |
+| Proof gate | Traceability check: every item in the report maps to a named supplier route and a quality grade; nothing is marked ready without both. |
+| Problem it addresses | Stations stall mid-service when an ingredient (or dependency) runs out or arrives without provenance. <sub>source: `authored: card design (theme "supply")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run dispatcher --dept operations-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise dispatcher scout` · reads: `stock levels vs. par` · emits: `scout report` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
+- command: `mise dispatcher reserve` · reads: `supplier routes` · emits: `reserve status (ready / low / out)` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
+- command: `mise dispatcher trace` · reads: `delivery manifests` · emits: `traceability record` · status: `proposed` <sub>source: `authored: card design (theme "supply")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `dispatcher` (not written yet)
+- Proposed command: `mise roster run dispatcher --dept operations-kitchen --solo --emit report`
+- Contract: inputs: stock levels vs. par, supplier routes, delivery manifests, freshness / quality grades → outputs: scout report, reserve status (ready / low / out), reorder list, traceability record; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

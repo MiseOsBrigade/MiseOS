@@ -3,7 +3,7 @@
 
 <a href="../../assets/player-cards/icloud-screens/token-taro.webp"><img src="../../assets/player-cards/icloud-screens/token-taro.webp" alt="Token Taro" width="480" /></a>
 
-This card is not yet matched to a registry character, registry manifest or catalogue chef. Fields below are read from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json).
+This card is not yet matched to a registry character, registry manifest or catalogue chef. File facts come from [`data/player-cards.json`](../../data/player-cards.json) and OCR in [`data/player-cards-ocr.json`](../../data/player-cards-ocr.json); the card profile comes from [`data/card-details.json`](../../data/card-details.json), where every field cites its source and values marked `authored: card design` were written for the card rather than found in the repo.
 
 | Field | Value |
 |---|---|
@@ -13,10 +13,49 @@ This card is not yet matched to a registry character, registry manifest or catal
 | Original size | 1024×1536 |
 | Original source | `icloud:A829FEB6-1923-4CCD-A9DB-CFA95806FD6A.PNG` |
 | Duplicates | — |
-| Character | Not yet defined in the source material |
-| Agent | Not yet defined in the source material |
-| Repo pet | Not yet defined in the source material |
-| Workflow / actions / implementation | Not yet defined in the source material |
+| Character | No registry character matched yet (card-only design) <sub>source: `data/player-cards.json + canon crosswalk (no registry match; card-only design)`</sub> |
+| Role / title | WORKFLOW <sub>source: `data/player-cards-ocr.json (subtitle printed under the name)`</sub> |
+| Kitchen / department | Security Kitchen <sub>source: `authored: card design (theme "security")`</sub> |
+| Department mission | Guard. Audit. Comply. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv`</sub> |
+| Rarity | Common <sub>source: `authored: card design (default tier)`</sub> |
+| Printed rarity | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Printed stars | Not printed on the card <sub>source: `data/player-cards-ocr.json`</sub> |
+| Roster stats | power 80 · precision 74 · speed 79 · resilience 73 · intelligence 66 · teamwork 77 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "security")`</sub> |
+| Abilities | Release, Build, Credential Vault, Generate, Vault Status, Rotate <sub>source: `data/player-cards-ocr.json (printed card labels, glued OCR words segmented)`</sub> |
+| Lore | "The best secrets are the ones that keep moving. <sub>source: `data/player-cards-ocr.json (text printed on the card)`</sub> |
+| Signature phrase | No key, no entry. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Agents | [Kuro Guard](../agents/kuro-guard.md) · [Firewall](../agents/firewall.md) · [Security Auditor](../agents/security-auditor.md) <sub>source: `authored: card design (closest agents for theme "security")`</sub> |
+| Repo pets | [Kuro Guard](../repo-pets/kuro-guard.md) · [Mise Locker](../repo-pets/mise-locker.md) <sub>source: `authored: card design (closest repo pets for theme "security")`</sub> |
+| Related characters | [Auditor Emi](../characters/auditor-emi.md) · [Merge Sentinel](../characters/merge-sentinel.md) · [Policy Kenji](../characters/policy-kenji.md) · [Vault Hana](../characters/vault-hana.md) · [Canary Taster](../characters/canary-taster.md) <sub>source: `authored: card design (same theme "security")`</sub> |
+
+## Workflow
+
+| Step | Value |
+|---|---|
+| Summary | Token Taro guards the perimeter of the kitchen: access, secrets and policy, with an audit trail for every exception. <sub>source: `authored: card design (theme "security")`</sub> |
+| Inputs | access requests, policy set, scan findings, secret inventory |
+| Outputs | allow / deny decision, audit record, remediation ticket |
+| Proof gate | Policy gate: no access or release without a policy match and a recorded approver. |
+| Problem it addresses | Unchecked access and leaked secrets turn one mistake into an incident. <sub>source: `authored: card design (theme "security")`</sub> |
+
+## Actions / commands
+
+- command: `mise roster run token-taro --dept security-kitchen --solo --emit report` · status: `proposed` <sub>source: `authored: follows data/imports/master-roster-cards.csv (mise roster run command convention)`</sub>
+- command: `mise token-taro scan` · reads: `access requests` · emits: `allow / deny decision` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise token-taro enforce` · reads: `policy set` · emits: `audit record` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+- command: `mise token-taro audit` · reads: `scan findings` · emits: `remediation ticket` · status: `proposed` <sub>source: `authored: card design (theme "security")`</sub>
+
+## Implementation
+
+**Status:** Designed (not yet implemented in code)
+
+- Proposed handler: `tokenTaro` (not written yet)
+- Proposed command: `mise roster run token-taro --dept security-kitchen --solo --emit report`
+- Contract: inputs: access requests, policy set, scan findings, secret inventory → outputs: allow / deny decision, audit record, remediation ticket; refuses to emit 'ready' unless the proof gate passes
+
+<sub>source: `no dedicated code for this card; authored: proposed handler spec`</sub>
+
+Values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py) from its printed text and theme; the rest cite the repo file they came from.
 
 ## Printed text (OCR)
 

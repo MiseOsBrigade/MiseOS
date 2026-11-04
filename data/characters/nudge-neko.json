@@ -3,7 +3,9 @@
   "slug": "nudge-neko",
   "name": "Nudge Neko",
   "kind": "registry_character",
-  "aliases": [],
+  "aliases": [
+    "None recorded (no alternate title in the canon crosswalk or agents.json)"
+  ],
   "sources": {
     "name": "data/characters.json",
     "cards": "data/player-cards.json",
@@ -31,7 +33,13 @@
     "canon_bible": "docs/canon/MiseOS-Canon-Bible-v1.0.pdf (pdftotext)",
     "implementation": "git ls-files grep + repo",
     "helps.station": "characters/nudge-neko/metadata.json",
-    "repo_pets": "data/repo-pets.json"
+    "repo_pets": "data/repo-pets.json",
+    "aliases": "data/player-cards.json + canon crosswalk (no alternate title found)",
+    "card_rarity_printed": "data/player-cards-ocr.json (no rarity word in OCR)",
+    "abilities": "data/player-cards-ocr.json (printed card labels, glued OCR words segmented)",
+    "lore": "authored: card design (derived from printed card text/role)",
+    "agents": "authored: card design (closest agents for theme \"clean\")",
+    "theme": "authored: card design (keyword theme used for authored fields)"
   },
   "registry": {
     "number": 87,
@@ -157,7 +165,7 @@
       ]
     }
   ],
-  "card_rarity_printed": "Not yet defined in the source material",
+  "card_rarity_printed": "Not printed on the card",
   "card_stars_printed": 5,
   "card_meters_printed": [
     "100%"
@@ -252,7 +260,7 @@
   "department": "Security Kitchen",
   "department_mission": "Guard. Audit. Comply.",
   "rarity": "Rare",
-  "lore": "Not yet defined in the source material",
+  "lore": "Picture a steel counter wiped until it reflects the ceiling lights: that is where Nudge Neko is happiest. As Security Kitchen's specialist for security training nudges, Nudge Neko keeps the kitchen clean and the waste stream honest: sanitising surfaces, logging waste and closing contamination risks. The card calls out Security, Kitchen, Gentle Nudge: the checks Nudge Neko runs before calling anything ready.",
   "signature_phrase": "Security Training Nudges done cleanly, safely, and in rhythm.",
   "workflow": {
     "summary": "Nudge Neko performs security training nudges within the Security Kitchen.",
@@ -320,12 +328,34 @@
     "problem": "Nudge Neko performs security training nudges within the Security Kitchen.",
     "proof_gate": "No merge, deployment, publication, billing action, or mint without evidence."
   },
-  "agents": [],
+  "agents": [
+    {
+      "name": "Compliance",
+      "slug": "compliance"
+    },
+    {
+      "name": "Scanner",
+      "slug": "scanner"
+    },
+    {
+      "name": "Token Monk",
+      "slug": "token-monk"
+    }
+  ],
   "repo_pets": [
     {
       "slug": "nudge-neko",
       "name": "Nudge Neko",
       "page": "docs/repo-pets/nudge-neko.md"
     }
-  ]
+  ],
+  "abilities": [
+    "Security",
+    "Kitchen",
+    "Gentle Nudge",
+    "Activated",
+    "Reminderstatus",
+    "Lock It"
+  ],
+  "theme": "clean"
 }

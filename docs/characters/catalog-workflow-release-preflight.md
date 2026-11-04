@@ -3,45 +3,45 @@
 
 **Individual catalogue item (action / workflow / primitive)** · Implementation: **Implemented in code** · Detail record: [`data/characters/catalog-workflow-release-preflight.json`](../../data/characters/catalog-workflow-release-preflight.json)
 
-Every field below comes from a repository source (shown as `source:`). Where no source exists the page says _Not yet defined in the source material_.
+Every field shows where its value comes from (`source:`). Repo-sourced values cite the repository or source-library file they were read from; values marked `authored: card design` were written for this card by [`enrich-characters.py`](../../tools/player-cards/scripts/enrich-characters.py), derived from the printed card text, role and kitchen theme, and are not claims about existing code.
 
 ## Identity
 
 | Field | Value |
 |---|---|
 | Name | Release Preflight <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Aliases / printed variants | Not yet defined in the source material |
+| Aliases / printed variants | None recorded (no alternate title in the canon crosswalk or agents.json) <sub>source: `data/player-cards.json + canon crosswalk (no alternate title found)`</sub> |
 | Role / title | workflow <sub>source: `data/imports/miseos-individual-catalog-items.json (category)`</sub> |
-| Kitchen / department | Not yet defined in the source material |
-| Department mission | Not yet defined in the source material |
-| Registry rarity | Not yet defined in the source material |
-| Collections | Not yet defined in the source material |
+| Kitchen / department | Pipeline Kitchen <sub>source: `authored: card design (kitchen chosen from role/printed text, theme "pipeline")`</sub> |
+| Department mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
+| Registry rarity | Common <sub>source: `authored: card design (default tier; no stars printed)`</sub> |
+| Collections | None (no player card art linked) |
 | Cards linked | 0 |
 
 ## Player cards
 
-_Not yet defined in the source material (no player card art is linked to this entry yet)._
+_No player card art is linked to this entry yet (registry entry only)._
 
 ## Card metadata (as printed)
 
 | Field | Value |
 |---|---|
-| Printed rarity | Not yet defined in the source material |
-| Printed stars | Not yet defined in the source material |
-| Printed meters | Not yet defined in the source material |
-| Roster stats | Not yet defined in the source material |
-| Abilities | Not yet defined in the source material |
-| Lore | Not yet defined in the source material |
-| Signature phrase | Not yet defined in the source material |
+| Printed rarity | No card art linked, so nothing printed <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed stars | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Printed meters | No card art linked <sub>source: `data/player-cards.json (no card for this entry)`</sub> |
+| Roster stats | power 71 · precision 76 · speed 77 · resilience 68 · intelligence 67 · teamwork 78 <sub>source: `authored: card design (6-axis roster scale; baseline from stars + theme "pipeline")`</sub> |
+| Abilities | workflow, Check, Gate, Publish <sub>source: `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "pipeline")`</sub> |
+| Lore | Picture a conveyor of tickets moving through the pass: that is where Release Preflight is happiest. As Pipeline Kitchen's specialist for workflow, Release Preflight runs an automated gate in the delivery pipeline. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
+| Signature phrase | The gate never sleeps. <sub>source: `authored: card design (derived from printed card text/role)`</sub> |
 
 ## Workflow
 
 | Step | Value |
 |---|---|
 | Summary | Release readiness workflow with its required local release-sentinel Action. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Inputs | Not yet defined in the source material |
-| Outputs | Not yet defined in the source material |
-| Proof gate | Not yet defined in the source material |
+| Inputs | pull request or tag, workflow configuration, repository state <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Outputs | check run / status, annotations, release artefact or block <sub>source: `authored: card design (theme "pipeline")`</sub> |
+| Proof gate | Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail. <sub>source: `authored: card design (theme "pipeline")`</sub> |
 
 ## Actions / commands
 
@@ -66,18 +66,20 @@ Dependencies: CHANGELOG.md; LICENSE <sub>source: `data/imports/miseos-individual
 
 | Aspect | Value |
 |---|---|
-| Station / stage | Not yet defined in the source material |
-| Mission | Not yet defined in the source material |
+| Station / stage | workflow <sub>source: `role`</sub> |
+| Mission | Build. Test. Deploy. Repeat. <sub>source: `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)`</sub> |
 | Problem it addresses | Release readiness workflow with its required local release-sentinel Action. <sub>source: `data/imports/miseos-individual-catalog-items.json`</sub> |
-| Safety gate | Not yet defined in the source material |
+| Safety gate | Pipeline gate: the job exits non-zero and blocks the merge or release when its checks fail. <sub>source: `authored: card design (theme "pipeline")`</sub> |
 
 ## Agents and repo pets
 
-_Not yet defined in the source material_
+Agents: [Pipeline](../agents/pipeline.md) · [GitHub Chef](../agents/github-chef.md) · [Argo Chef](../agents/argo-chef.md) <sub>source: `authored: card design (closest agents for theme "pipeline")`</sub>
+
+Repo pets: [Tensho](../repo-pets/tensho.md) · [Mise Brigadier](../repo-pets/mise-brigadier.md) <sub>source: `authored: card design (closest repo pets for theme "pipeline")`</sub>
 
 ## Related characters
 
-_Not yet defined in the source material_
+[npm GitHub Packages](./catalog-workflow-npm-github-package.md) · [Polyrepo Manifest Validation](./catalog-workflow-polyrepo-manifest.md) · [GitHub Pages](./catalog-workflow-pages-static.md) · [Yume Builder](./yume-builder.md) · [Felix Rollback](./felix-rollback.md) · [Nina Promoter](./nina-promoter.md) <sub>source: `authored: card design (same theme "pipeline" / same department)`</sub>
 
 ## Sources
 
@@ -88,5 +90,26 @@ _Not yet defined in the source material_
 | workflow.summary | `data/imports/miseos-individual-catalog-items.json` |
 | dependencies | `data/imports/miseos-individual-catalog-items.json` |
 | implementation | `git ls-files grep + repo` |
+| aliases | `data/player-cards.json + canon crosswalk (no alternate title found)` |
+| department | `authored: card design (kitchen chosen from role/printed text, theme "pipeline")` |
+| department_mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| card_rarity_printed | `data/player-cards.json (no card for this entry)` |
+| card_stars_printed | `data/player-cards.json (no card for this entry)` |
+| card_meters_printed | `data/player-cards.json (no card for this entry)` |
+| rarity | `authored: card design (default tier; no stars printed)` |
+| stats | `authored: card design (6-axis roster scale; baseline from stars + theme "pipeline")` |
+| abilities | `role from data/imports/miseos-individual-catalog-items.json (category) + authored: card design (workflow steps for theme "pipeline")` |
+| lore | `authored: card design (derived from printed card text/role)` |
+| signature_phrase | `authored: card design (derived from printed card text/role)` |
+| workflow.inputs | `authored: card design (theme "pipeline")` |
+| workflow.outputs | `authored: card design (theme "pipeline")` |
+| workflow.proof_gate | `authored: card design (theme "pipeline")` |
+| helps.station | `role` |
+| helps.mission | `data/imports/miseos_character_master_inventory_001_300.csv (mission of Pipeline Kitchen)` |
+| helps.proof_gate | `authored: card design (theme "pipeline")` |
+| agents | `authored: card design (closest agents for theme "pipeline")` |
+| repo_pets | `authored: card design (closest repo pets for theme "pipeline")` |
+| related | `authored: card design (same theme "pipeline" / same department)` |
+| theme | `authored: card design (keyword theme used for authored fields)` |
 
 [← All characters](./README.md)
